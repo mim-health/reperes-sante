@@ -1,6 +1,20 @@
 window.santeJusteEvidenceModel = {
-  version: '1.1',
+  version: '1.2',
   verifiedAt: '2026-08-20',
+  auditPolicy: {
+    frequency: 'quarterly',
+    intervalMonths: 3,
+    nextGlobalReviewBy: '2026-11-20',
+    scope: 'Toutes les fiches publiées et leurs sources',
+    checks: [
+      'Vérifier si une recommandation française plus récente a été publiée.',
+      'Vérifier si la société savante française pertinente a actualisé son référentiel.',
+      'Contrôler que chaque lien source fonctionne et pointe toujours vers le document cité.',
+      'Réexaminer tous les chiffres, seuils, posologies, délais, contre-indications et critères de recours aux soins.',
+      'Mettre à jour la date de vérification de la fiche après revue.',
+      'Retirer ou corriger immédiatement une fiche si une recommandation importante change avant l’audit trimestriel.'
+    ]
+  },
   commonRules: [
     'Définir précisément la question avant la recherche.',
     'Construire la réponse à partir des sources, jamais l’inverse.',
@@ -9,6 +23,7 @@ window.santeJusteEvidenceModel = {
     'Ne jamais ajouter une société savante uniquement pour enrichir la liste : seules les sources réellement consultées et contributives sont affichées.',
     'Compléter par une revue systématique, une méta-analyse ou une recommandation internationale récente lorsque les références françaises sont absentes, incomplètes, anciennes ou discordantes.',
     'Dater la vérification et signaler toute incertitude ou divergence.',
+    'Réauditer chaque fiche au minimum une fois par trimestre, et immédiatement si une nouvelle recommandation importante est publiée entre deux audits.',
     'Aucune donnée chiffrée, posologie, seuil d’âge, délai ou contre-indication sans source identifiable.',
     'Rédiger en langage grand public sans transformer l’information en diagnostic personnalisé.'
   ],
@@ -32,7 +47,7 @@ window.santeJusteEvidenceModel = {
   specialtyExamples: {
     pediatrie:['Société Française de Pédiatrie','sociétés pédiatriques spécialisées'],
     cardiologie:['Société Française de Cardiologie'],
-    vasculaire:['Société Française de Médecine Vasculaire'],
+    vasculaire:['Société Française de Médecine Vasculaire','Société Française de Phlébologie'],
     gastroenterologie:['Société Nationale Française de Gastro-Entérologie'],
     dermatologie:['Société Française de Dermatologie'],
     gynecologie:['Collège National des Gynécologues et Obstétriciens Français'],
