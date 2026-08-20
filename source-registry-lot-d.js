@@ -3,6 +3,8 @@ window.santeJusteSourceRegistry = {...(window.santeJusteSourceRegistry || {}),
 {org:'Assurance Maladie',title:'Phlébite et paraphlébite : symptômes et diagnostic',year:'18 mars 2026',url:'https://www.ameli.fr/assure/sante/themes/phlebite/symptomes-diagnostic-evolution'},
 {org:'Assurance Maladie',title:'Embolie pulmonaire',year:'3 juillet 2026',url:'https://www.ameli.fr/assure/sante/urgence/pathologies/embolie-pulmonaire'}],
 'jambes-lourdes-varices':[
+{org:'Société Française de Phlébologie',title:'J’ai les jambes lourdes',year:'ressource patient actuellement publiée',url:'https://www.sf-phlebologie.org/patients/jai-les-jambes-lourdes/'},
+{org:'Société Française de Phlébologie',title:'J’ai des varices',year:'ressource patient actuellement publiée',url:'https://www.sf-phlebologie.org/patients/jai-des-varices/'},
 {org:'Assurance Maladie',title:'Varices des jambes : que faire pour se sentir mieux ?',year:'18 mars 2026',url:'https://www.ameli.fr/assure/sante/themes/varices-jambes/que-faire'},
 {org:'Haute Autorité de Santé',title:'Critères d’orientation d’un patient avec maladie veineuse chronique vers la réadaptation vasculaire',year:'octobre 2024',url:'https://www.has-sante.fr/upload/docs/application/pdf/2024-10/fiche_orientation_readaptation_maladie_veineuse_chronique.pdf'}],
 'voyage-thrombose':[
