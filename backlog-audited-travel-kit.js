@@ -1,5 +1,6 @@
 // Santé Juste — fiche voyage / trousse à pharmacie
 // Audit initial : 20/08/2026 — réaudit prévu au plus tard : 20/11/2026
+// Déclenchement du redéploiement GitHub Pages : 20/08/2026 21:52
 window.SANTEJUSTE_BACKLOG_AUDITED = window.SANTEJUSTE_BACKLOG_AUDITED || [];
 window.SANTEJUSTE_BACKLOG_AUDITED.push({
   id: "voyage-trousse-pharmacie",
