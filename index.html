@@ -8,11 +8,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles-v2.css?v=20260821-3" />
+  <link rel="icon" href="logo-maca.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles-v2.css?v=20260821-4" />
 </head>
 <body>
 <header class="site-header">
-  <a class="brand" href="#">MACA<span>SANTÉ</span></a>
+  <a class="brand" href="#" aria-label="MACA Santé — accueil"><img src="logo-maca.svg" alt="" /><span class="brand-word">MACA <b>SANTÉ</b></span></a>
   <nav aria-label="Navigation principale">
     <a href="#questions">Questions</a>
     <a href="#comprendre">À la une</a>
@@ -35,29 +36,49 @@
   </div>
   <div class="filter-chips" id="category-filters" aria-label="Filtrer par rubrique"></div>
 </section>
-<section class="section library-section">
-  <div class="section-heading"><div><p class="eyebrow">LA BIBLIOTHÈQUE MACA SANTÉ</p><h2>Questions & réponses</h2></div></div>
-  <div class="qa-grid" id="qa-grid"></div>
-  <div class="no-results" id="no-results" hidden><strong>Aucun résultat pour cette recherche.</strong><p>Essayez un autre mot-clé ou choisissez une rubrique.</p></div>
-</section>
-<section class="hero-card" id="chiffre-du-jour">
-  <div class="hero-copy">
-    <span class="pill">LE CHIFFRE DU JOUR</span>
-    <p class="big-number">34 940</p>
-    <h2>personnes interrogées pour mieux connaître la santé des Français</h2>
-    <p>Le Baromètre 2024 de Santé publique France documente les comportements et habitudes de santé des adultes de 18 à 79 ans en France hexagonale.</p>
-    <div class="source-line"><span>Source vérifiée</span> Santé publique France · Baromètre 2024 · publié en 2025</div>
+
+<div class="magazine-layout">
+  <div class="main-feed">
+    <section class="section library-section">
+      <div class="section-heading"><div><p class="eyebrow">LA BIBLIOTHÈQUE MACA SANTÉ</p><h2>Questions & réponses</h2></div></div>
+      <div class="qa-grid" id="qa-grid"></div>
+      <div class="no-results" id="no-results" hidden><strong>Aucun résultat pour cette recherche.</strong><p>Essayez un autre mot-clé ou choisissez une rubrique.</p></div>
+    </section>
+
+    <section class="hero-card" id="chiffre-du-jour">
+      <div class="hero-copy">
+        <span class="pill">LE CHIFFRE DU JOUR</span>
+        <p class="big-number">34 940</p>
+        <h2>personnes interrogées pour mieux connaître la santé des Français</h2>
+        <p>Le Baromètre 2024 de Santé publique France documente les comportements et habitudes de santé des adultes de 18 à 79 ans en France hexagonale.</p>
+        <div class="source-line"><span>Source vérifiée</span> Santé publique France · Baromètre 2024 · publié en 2025</div>
+      </div>
+      <div class="hero-visual" aria-hidden="true"><div class="rings"><b>34k</b><small>répondants</small></div></div>
+    </section>
   </div>
-  <div class="hero-visual" aria-hidden="true"><div class="rings"><b>34k</b><small>répondants</small></div></div>
-</section>
-<section class="section" id="comprendre">
-  <div class="section-heading"><div><p class="eyebrow">À LIRE EN 3 MINUTES</p><h2>À la une</h2></div><button class="text-button" data-filter="all">6 sujets vérifiés →</button></div>
-  <div class="cards" id="article-grid"></div>
-</section>
-<section class="factcheck" id="verifier">
-  <div><span class="pill light">VRAI OU FAUX ?</span><h2>Chargement du dernier Vrai/Faux…</h2></div>
-  <div class="verdict"><span>VÉRIFIÉ</span><p>Le dernier sujet audité va s’afficher automatiquement.</p></div>
-</section>
+
+  <aside class="editorial-rail" aria-label="Sélection éditoriale MACA Santé">
+    <section class="rail-block rail-visual" id="comprendre">
+      <div class="rail-icon" aria-hidden="true">
+        <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" fill="none" stroke="currentColor" stroke-width="3" opacity=".22"/><path d="M38 78c8-5 15-15 18-28l9-19 8 6-7 18 13 8 15 3-3 8-18-2-14-8-6 12-15 16-7-6 7-8Z" fill="currentColor"/><circle cx="73" cy="24" r="8" fill="currentColor"/></svg>
+      </div>
+      <p class="eyebrow">BOUGER</p>
+      <h3>10 000 pas par jour : faut-il vraiment viser ce chiffre ?</h3>
+      <button class="rail-link" data-article="pas">Lire le décryptage →</button>
+    </section>
+
+    <section class="factcheck rail-block" id="verifier">
+      <div><span class="pill light">VRAI OU FAUX ?</span><h2>Chargement du dernier Vrai/Faux…</h2></div>
+      <div class="verdict"><span>VÉRIFIÉ</span><p>Le dernier sujet audité va s’afficher automatiquement.</p></div>
+    </section>
+
+    <section class="rail-block rail-news">
+      <div class="section-heading compact"><div><p class="eyebrow">À LIRE EN 3 MINUTES</p><h2>À la une</h2></div></div>
+      <div class="cards" id="article-grid"></div>
+    </section>
+  </aside>
+</div>
+
 <section class="section numbers" id="prevenir">
   <p class="eyebrow">LES FRANÇAIS ET LEUR SANTÉ</p>
   <h2>Trois données à retenir</h2>
@@ -82,7 +103,7 @@
 </section>
 </main>
 <div class="modal" id="article-modal" aria-hidden="true"><div class="modal-panel"><button class="close" aria-label="Fermer">×</button><div id="modal-content"></div></div></div>
-<footer><div class="brand">MACA<span>SANTÉ</span></div><p>Des réponses claires. Des sources solides.</p><p class="disclaimer">MACA Santé propose de l’information générale en santé et ne remplace pas un avis médical.</p><p><a href="mentions-legales.html">Mentions légales</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="contact.html">Contact</a></p><p class="disclaimer">© 2026 MACA Santé. Tous droits réservés.</p></footer>
+<footer><div class="brand"><img src="logo-maca.svg" alt="" /><span class="brand-word">MACA <b>SANTÉ</b></span></div><p>Des réponses claires. Des sources solides.</p><p class="disclaimer">MACA Santé propose de l’information générale en santé et ne remplace pas un avis médical.</p><p><a href="mentions-legales.html">Mentions légales</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="contact.html">Contact</a></p><p class="disclaimer">© 2026 MACA Santé. Tous droits réservés.</p></footer>
 <script src="qa-data.js"></script>
 <script src="evidence-model.js"></script>
 <script src="audit-overrides.js"></script>
