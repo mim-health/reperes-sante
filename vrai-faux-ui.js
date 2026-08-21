@@ -42,10 +42,15 @@
     {
       id:'cmv-grossesse-2026',category:'À LA UNE',icon:'CMV',
       title:'CMV pendant la grossesse : que se passe-t-il après un dépistage positif ?',
-      excerpt:'La HAS a précisé en août 2026 la prise en charge après le dépistage du CMV pendant la grossesse.',
-      source:'Haute Autorité de Santé · 4 août 2026',
-      url:'https://www.has-sante.fr/',
-      body:'La HAS a publié de nouvelles recommandations pour guider la prise en charge des femmes enceintes après dépistage du cytomégalovirus. Le dépistage systématique avait été recommandé en 2025 chez les femmes enceintes dont le statut sérologique est inconnu ou négatif. En cas de résultat évoquant une infection récente, la prise en charge repose sur une confirmation diagnostique et une évaluation spécialisée afin d’estimer le risque de transmission au fœtus et d’organiser le suivi.'
+      excerpt:'La HAS, le CNGOF et la Société Française de Pédiatrie convergent sur une prise en charge spécialisée, nuancée et fondée sur le risque réel pour le fœtus et l’enfant.',
+      source:'HAS · CNGOF · Société Française de Pédiatrie · 2025-2026',
+      url:'https://www.has-sante.fr/jcms/p_3748990/fr/depistage-du-cytomegalovirus-au-1er-trimestre-de-la-grossesse-prise-en-charge-et-suivi',
+      sources:[
+        {label:'Haute Autorité de Santé — Dépistage du CMV au 1er trimestre : prise en charge et suivi',url:'https://www.has-sante.fr/jcms/p_3748990/fr/depistage-du-cytomegalovirus-au-1er-trimestre-de-la-grossesse-prise-en-charge-et-suivi'},
+        {label:'CNGOF — Dépistage systématique du cytomégalovirus : en pratique',url:'https://cngof.fr/actualite/depistage-systematique-du-cytomegalovirus-cmv-en-pratique/'},
+        {label:'Société Française de Pédiatrie — veille et perfectionnement pédiatrique sur le CMV congénital',url:'https://www.sfpediatrie.com/ressources/veille-bibliographique-congres/larticle-du-trimestre-perfectionnement-pediatrie'}
+      ],
+      body:'Le CMV est une infection fréquente et souvent silencieuse. La HAS recommande un dépistage au premier trimestre chez les femmes enceintes séronégatives ou dont le statut est inconnu, avec répétition de la sérologie jusqu’à 13–14 SA si elle reste négative. En cas de primo-infection périconceptionnelle ou au premier trimestre, une confirmation diagnostique et un avis spécialisé sont nécessaires ; un traitement par valaciclovir peut être discuté et une amniocentèse peut être proposée à partir de 18 SA dans un cadre spécialisé. Le CNGOF rappelle qu’une infection maternelle ne signifie pas automatiquement infection fœtale : la transmission au premier trimestre est de l’ordre de 20 à 35 %, et une infection fœtale n’entraîne pas nécessairement de séquelles. Le suivi repose sur l’échographie spécialisée et, selon le contexte, le CPDPN. La Société Française de Pédiatrie complète ce cadre par le versant néonatal : lorsqu’une infection congénitale est confirmée, un suivi pédiatrique, notamment auditif et neurologique, est important car certaines séquelles peuvent apparaître secondairement, y compris chez des nouveau-nés initialement peu symptomatiques. Le message essentiel est donc d’éviter à la fois la banalisation et l’alarmisme : un résultat positif nécessite une prise en charge structurée, mais ne préjuge pas à lui seul du devenir de l’enfant.'
     },
     {
       id:'pneumocoque-2026',category:'À LA UNE',icon:'VPC',
@@ -94,7 +99,10 @@
     grid.innerHTML=validatedArticles.map(a=>`<article class="card" data-editorial-id="${a.id}" tabindex="0"><div class="card-art">${a.icon}</div><span class="category">${a.category}</span><h3>${a.title}</h3><p>${a.excerpt}</p><small>${a.source}</small></article>`).join('');
     const openEditorial=(id)=>{
       const a=validatedArticles.find(x=>x.id===id); if(!a||!modalContent) return;
-      modalContent.innerHTML=`<span class="pill">${a.category}</span><h2>${a.title}</h2><p>${a.body}</p><div class="source-box"><strong>Source vérifiée</strong><br>${a.source}<br><a href="${a.url}" target="_blank" rel="noopener">Consulter la source originale →</a></div>`;
+      const sourceBlock=(a.sources&&a.sources.length)
+        ? `<div class="source-box"><strong>Sources vérifiées</strong><ul>${a.sources.map(s=>`<li><a href="${s.url}" target="_blank" rel="noopener">${s.label}</a></li>`).join('')}</ul></div>`
+        : `<div class="source-box"><strong>Source vérifiée</strong><br>${a.source}<br><a href="${a.url}" target="_blank" rel="noopener">Consulter la source originale →</a></div>`;
+      modalContent.innerHTML=`<span class="pill">${a.category}</span><h2>${a.title}</h2><p>${a.body}</p>${sourceBlock}`;
       openModal();
     };
     grid.addEventListener('click',e=>{const c=e.target.closest('[data-editorial-id]');if(c)openEditorial(c.dataset.editorialId);});
