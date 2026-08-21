@@ -9,8 +9,7 @@ const articles = [
 const auditOverrides = new Map((window.auditedQuestionOverrides || []).map(item => [item.id, item]));
 const baseQuestions = (window.healthQuestions || []).map(q => ({...q, ...(auditOverrides.get(q.id) || {})}));
 const rawHealthQuestions = [...baseQuestions, ...(window.extraAuditedQuestions || [])];
-
-// Rubriques Santé Juste : vocabulaire grand public plutôt qu'une catégorie générique « Symptômes ».
+function normalizeText(value=''){return value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();}
 function publicCategory(q){
   const text=normalizeText(`${q.id} ${q.title} ${q.keywords||''}`);
   if(q.category!=='Symptômes') return q.category;
@@ -22,15 +21,44 @@ function publicCategory(q){
   if(/peau|dermat|tique|bouton|demange|prurit|rash/.test(text)) return 'Peau & dermatologie';
   return 'Santé au quotidien';
 }
+function iconForQuestion(q){
+  const text=normalizeText(`${q.id} ${q.title} ${q.keywords||''} ${q.category||''}`);
+  if(/course|running|marche|sport|activite physique/.test(text)) return '🏃';
+  if(/coeur|tension|hypertension|circulation|veine|thromb|palpitation/.test(text)) return '♡';
+  if(/sommeil|dorm|insom/.test(text)) return '☾';
+  if(/urine|cystite|urinaire/.test(text)) return '◇';
+  if(/tique|peau|dermat|bouton|rash/.test(text)) return '✦';
+  if(/medicament|paracetamol|ibuprofene|antibiot/.test(text)) return 'Rx';
+  if(/enfant|bebe|nourrisson|parent/.test(text)) return '◡';
+  if(/nutrition|aliment|fibre|sucre|hydrat/.test(text)) return '◌';
+  if(/respir|toux|orl|gorge|nez/.test(text)) return '≈';
+  return '＋';
+}
 const healthQuestions = rawHealthQuestions.map(q=>({...q,category:publicCategory(q)}));
-const grid=document.querySelector('#article-grid');const qaGrid=document.querySelector('#qa-grid');const modal=document.querySelector('#article-modal');const modalContent=document.querySelector('#modal-content');const searchInput=document.querySelector('#search-input');const clearSearch=document.querySelector('#clear-search');const filters=document.querySelector('#category-filters');const resultCount=document.querySelector('#result-count');const noResults=document.querySelector('#no-results');let activeCategory='Toutes';
-function normalizeText(value=''){return value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();}
-function renderCards(){grid.innerHTML=articles.map(a=>`<article class="card" data-id="${a.id}" tabindex="0"><div class="card-art">${a.icon}</div><span class="category">${a.category}</span><h3>${a.title}</h3><p>${a.excerpt}</p><small>${a.source}</small></article>`).join('');}
+const grid=document.querySelector('#article-grid');
+const qaGrid=document.querySelector('#qa-grid');
+const modal=document.querySelector('#article-modal');
+const modalContent=document.querySelector('#modal-content');
+const searchInput=document.querySelector('#search-input');
+const clearSearch=document.querySelector('#clear-search');
+const filters=document.querySelector('#category-filters');
+const noResults=document.querySelector('#no-results');
+let activeCategory='Toutes';
+function renderCards(){if(!grid)return;grid.innerHTML=articles.map(a=>`<article class="card" data-id="${a.id}" tabindex="0"><div class="card-art">${a.icon}</div><span class="category">${a.category}</span><h3>${a.title}</h3><p>${a.excerpt}</p><small>${a.source}</small></article>`).join('');}
 function openArticle(id){const a=articles.find(x=>x.id===id);if(!a)return;modalContent.innerHTML=`<span class="pill">${a.category}</span><h2>${a.title}</h2><p>${a.body}</p><div class="source-box"><strong>Source vérifiée</strong><br>${a.source}<br><a href="${a.url}" target="_blank" rel="noopener">Consulter la source originale →</a></div>`;openModal();}
 function openQuestion(id){const q=healthQuestions.find(x=>x.id===id);if(!q)return;const evidenceMeta=(q.verifiedAt||q.evidenceStatus)?`<div class="evidence-meta">${q.evidenceStatus?`<span>${q.evidenceStatus}</span>`:''}${q.verifiedAt?`<span>Vérifié le ${q.verifiedAt}</span>`:''}</div>`:'';modalContent.innerHTML=`<span class="pill">${q.category}</span><h2>${q.title}</h2><div class="answer-block"><strong>Réponse courte</strong><p>${q.answer}</p></div>${q.watch?`<div class="watch-block"><strong>À surveiller</strong><p>${q.watch}</p></div>`:''}<div class="source-box"><strong>Sources</strong><br>${q.source}<br>${evidenceMeta}<a href="${q.url}" target="_blank" rel="noopener">Consulter la source →</a></div>`;openModal();}
-function openModal(){modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';}function closeModal(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');document.body.style.overflow='';}
+function openModal(){modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';}
+function closeModal(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');document.body.style.overflow='';}
 function renderFilters(){const preferred=['Enfants & parents','Cœur & circulation','Digestion & ventre','Respiration & ORL','Santé au quotidien','Santé urinaire','Yeux & vision','Peau & dermatologie','Prévention & bien-être','Prévention','Médicaments','Santé des femmes','Après 60 ans','Santé mentale','Nutrition','Vrai / Faux'];const present=[...new Set(healthQuestions.map(q=>q.category))];const categories=['Toutes',...preferred.filter(c=>present.includes(c)),...present.filter(c=>!preferred.includes(c))];filters.innerHTML=categories.map(c=>`<button class="filter-chip ${c===activeCategory?'active':''}" data-category="${c}">${c}</button>`).join('');}
 function filteredQuestions(){const term=normalizeText(searchInput?.value.trim()||'');return healthQuestions.filter(q=>{const categoryOk=activeCategory==='Toutes'||q.category===activeCategory;const haystack=normalizeText(`${q.title} ${q.keywords} ${q.category} ${q.answer}`);return categoryOk&&(!term||haystack.includes(term));});}
-function renderQuestions(){if(!qaGrid)return;const items=filteredQuestions();qaGrid.innerHTML=items.map(q=>`<article class="qa-card" data-qid="${q.id}" tabindex="0"><div><span class="qa-category">${q.category}</span><h3>${q.title}</h3><p>${q.answer}</p><small>${q.source}${q.verifiedAt?` · Vérifié le ${q.verifiedAt}`:''}</small></div><span class="qa-arrow" aria-hidden="true">→</span></article>`).join('');resultCount.textContent=`${items.length} question${items.length>1?'s':''} disponible${items.length>1?'s':''}`;noResults.hidden=items.length!==0;clearSearch.hidden=!searchInput.value;}
-renderCards();renderFilters();renderQuestions();grid.addEventListener('click',e=>{const c=e.target.closest('.card');if(c)openArticle(c.dataset.id)});grid.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.closest('.card'))openArticle(e.target.closest('.card').dataset.id)});qaGrid.addEventListener('click',e=>{const c=e.target.closest('.qa-card');if(c)openQuestion(c.dataset.qid)});qaGrid.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.closest('.qa-card')){e.preventDefault();openQuestion(e.target.closest('.qa-card').dataset.qid)}});filters.addEventListener('click',e=>{const b=e.target.closest('.filter-chip');if(!b)return;activeCategory=b.dataset.category;renderFilters();renderQuestions();});searchInput.addEventListener('input',renderQuestions);clearSearch.addEventListener('click',()=>{searchInput.value='';searchInput.focus();renderQuestions();});document.querySelector('[data-article="pas"]').addEventListener('click',()=>openArticle('pas'));document.querySelector('.close').addEventListener('click',closeModal);modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+function renderQuestions(){if(!qaGrid)return;const items=filteredQuestions();qaGrid.innerHTML=items.map(q=>`<article class="qa-card" data-qid="${q.id}" tabindex="0"><div class="qa-icon" aria-hidden="true">${iconForQuestion(q)}</div><div><span class="qa-category">${q.category}</span><h3>${q.title}</h3><p>${q.answer}</p><small>${q.source}${q.verifiedAt?` · Vérifié le ${q.verifiedAt}`:''}</small></div><span class="qa-arrow" aria-hidden="true">→</span></article>`).join('');if(noResults)noResults.hidden=items.length!==0;if(clearSearch)clearSearch.hidden=!searchInput.value;}
+renderCards();renderFilters();renderQuestions();
+if(grid){grid.addEventListener('click',e=>{const c=e.target.closest('.card');if(c)openArticle(c.dataset.id)});grid.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.closest('.card'))openArticle(e.target.closest('.card').dataset.id)});}
+if(qaGrid){qaGrid.addEventListener('click',e=>{const c=e.target.closest('.qa-card');if(c)openQuestion(c.dataset.qid)});qaGrid.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.closest('.qa-card')){e.preventDefault();openQuestion(e.target.closest('.qa-card').dataset.qid)}});}
+if(filters)filters.addEventListener('click',e=>{const b=e.target.closest('.filter-chip');if(!b)return;activeCategory=b.dataset.category;renderFilters();renderQuestions();});
+if(searchInput)searchInput.addEventListener('input',renderQuestions);
+if(clearSearch)clearSearch.addEventListener('click',()=>{searchInput.value='';searchInput.focus();renderQuestions();});
+const pasLink=document.querySelector('[data-article="pas"]');if(pasLink)pasLink.addEventListener('click',()=>openArticle('pas'));
+const closeButton=document.querySelector('.close');if(closeButton)closeButton.addEventListener('click',closeModal);
+if(modal)modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
 const menuButton=document.querySelector('.menu');const mobileNav=document.querySelector('.site-header nav');if(menuButton&&mobileNav){menuButton.setAttribute('aria-expanded','false');menuButton.addEventListener('click',()=>{const isOpen=mobileNav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(isOpen));menuButton.textContent=isOpen?'×':'☰';});mobileNav.addEventListener('click',e=>{if(e.target.closest('a')){mobileNav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.textContent='☰';}});}
