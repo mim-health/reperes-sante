@@ -22,9 +22,20 @@
   if(modal) modal.addEventListener('click',e=>{if(e.target===modal) closeModal();});
   document.addEventListener('keydown',e=>{if(e.key==='Escape') closeModal();});
 
-  // Navigation mobile.
+  // Navigation mobile + retour visuel discret sur les cartes cliquables.
   const style=document.createElement('style');
-  style.textContent=`@media(max-width:800px){.site-header{height:auto!important;min-height:66px;flex-wrap:wrap;padding:10px 18px 9px!important}.site-header nav{display:flex!important;position:static!important;order:3;width:100%;flex-direction:row!important;gap:8px!important;overflow-x:auto;padding:8px 0 0!important;background:transparent!important;border:0!important;box-shadow:none!important;scrollbar-width:none}.site-header nav::-webkit-scrollbar{display:none}.site-header nav a{font-size:12px!important;padding:8px 12px!important;border:1px solid var(--line)!important;border-radius:999px;background:#fff;white-space:nowrap}.menu{display:none!important}.intro{padding-top:42px!important}}`;
+  style.textContent=`
+  @media(max-width:800px){
+    .site-header{height:auto!important;min-height:66px;flex-wrap:wrap;padding:10px 18px 9px!important}
+    .site-header nav{display:flex!important;position:static!important;order:3;width:100%;flex-direction:row!important;gap:8px!important;overflow-x:auto;padding:8px 0 0!important;background:transparent!important;border:0!important;box-shadow:none!important;scrollbar-width:none}
+    .site-header nav::-webkit-scrollbar{display:none}
+    .site-header nav a{font-size:12px!important;padding:8px 12px!important;border:1px solid var(--line)!important;border-radius:999px;background:#fff;white-space:nowrap}
+    .menu{display:none!important}
+    .intro{padding-top:42px!important}
+  }
+  #chiffre-du-jour[data-clickable="true"], .numbers article[data-clickable="true"]{cursor:pointer}
+  #chiffre-du-jour[data-clickable="true"]:focus-visible, .numbers article[data-clickable="true"]:focus-visible{outline:3px solid #2f7d6b;outline-offset:4px}
+  `;
   document.head.appendChild(style);
   const navLinks=document.querySelectorAll('.site-header nav a');
   if(navLinks[0]) navLinks[0].textContent='Recherche';
@@ -69,13 +80,67 @@
     grid.addEventListener('keydown',e=>{const c=e.target.closest('[data-editorial-id]');if(c&&(e.key==='Enter'||e.key===' ')){e.preventDefault();openEditorial(c.dataset.editorialId);}});
   }
 
+  function makeClickable(element, label, handler){
+    if(!element) return;
+    element.dataset.clickable='true';
+    element.setAttribute('role','button');
+    element.setAttribute('tabindex','0');
+    element.setAttribute('aria-label',label);
+    element.addEventListener('click',handler);
+    element.addEventListener('keydown',e=>{
+      if(e.key==='Enter'||e.key===' '){e.preventDefault();handler();}
+    });
+  }
+
   // CHIFFRE DU JOUR — un seul visible ; le prochain remplace celui-ci sans créer d'archive publique.
+  const heroSection=document.querySelector('#chiffre-du-jour');
   const hero=document.querySelector('#chiffre-du-jour .hero-copy');
   if(hero){
     hero.innerHTML=`<span class="pill">LE CHIFFRE DU JOUR</span><p class="big-number">1 sur 5</p><h2>adultes environ sont concernés par les acouphènes</h2><p>Chez certaines personnes, ces sons perçus sans source extérieure deviennent invalidants et peuvent perturber le sommeil, la concentration ou la vie sociale.</p><div class="source-line"><span>Source vérifiée</span> Haute Autorité de Santé · 16 juillet 2026</div>`;
   }
   const rings=document.querySelector('#chiffre-du-jour .rings');
   if(rings) rings.innerHTML='<b>1/5</b><small>adultes</small>';
+
+  makeClickable(heroSection,'En savoir plus sur le chiffre du jour : les acouphènes',()=>{
+    if(!modalContent) return;
+    modalContent.innerHTML=`<span class="pill">LE CHIFFRE DU JOUR</span><h2>Combien de personnes sont concernées par les acouphènes ?</h2><div class="answer-block"><strong>Réponse courte</strong><p>Environ un adulte sur cinq est concerné par des acouphènes.</p></div><p>Les acouphènes correspondent à la perception de sons sans source sonore extérieure. Leur retentissement est très variable : chez certaines personnes ils restent discrets, tandis que chez d’autres ils peuvent perturber le sommeil, la concentration ou la qualité de vie.</p><div class="watch-block"><strong>À retenir</strong><p>Des acouphènes persistants, unilatéraux, pulsatiles ou associés à une baisse auditive justifient une évaluation médicale adaptée.</p></div><div class="source-box"><strong>Source vérifiée</strong><br>Haute Autorité de Santé · 16 juillet 2026<br><a href="https://www.has-sante.fr/" target="_blank" rel="noopener">Consulter la source →</a></div>`;
+    openModal();
+  });
+
+  // Les trois données à retenir deviennent elles aussi des portes d'entrée vers une explication sourcée.
+  const statDetails=[
+    {
+      title:'Hypertension : combien d’adultes se déclarent concernés ?',
+      short:'En 2024, 22 % des adultes de 18 à 79 ans déclarent avoir une hypertension artérielle.',
+      body:'La fréquence augmente fortement avec l’âge. Ce chiffre correspond à une hypertension déclarée : il ne mesure pas à lui seul l’ensemble des personnes hypertendues, car une partie de l’HTA reste méconnue.',
+      source:'Santé publique France · Baromètre 2024',
+      url:'https://www.santepubliquefrance.fr/hypertension-arterielle/donnees'
+    },
+    {
+      title:'Combien de temps dorment en moyenne les adultes en France ?',
+      short:'Le Baromètre 2024 rapporte 7 h 32 de sommeil moyen sur 24 heures chez les adultes de 18 à 79 ans.',
+      body:'Une moyenne ne décrit pas toutes les situations : certaines personnes dorment nettement moins, d’autres davantage. La qualité du sommeil, les horaires et le retentissement dans la journée comptent autant que la durée brute.',
+      source:'Santé publique France · Baromètre 2024',
+      url:'https://www.santepubliquefrance.fr/sommeil/donnees'
+    },
+    {
+      title:'Les Français consomment-ils assez de fibres ?',
+      short:'Les apports moyens sont d’environ 18 g de fibres par jour, pour un repère de 30 g par jour chez l’adulte.',
+      body:'Les fruits et légumes, les légumes secs et les produits céréaliers complets ou peu raffinés sont les principales pistes pour augmenter les apports. L’objectif est la diversité alimentaire plutôt qu’un aliment miracle.',
+      source:'Anses · repères nutritionnels',
+      url:'https://www.anses.fr/fr/content/nutrition-et-cancers-quelles-recommandations'
+    }
+  ];
+
+  document.querySelectorAll('.numbers .stat-grid article').forEach((card,index)=>{
+    const detail=statDetails[index];
+    if(!detail) return;
+    makeClickable(card,`En savoir plus : ${detail.title}`,()=>{
+      if(!modalContent) return;
+      modalContent.innerHTML=`<span class="pill">DONNÉE À RETENIR</span><h2>${detail.title}</h2><div class="answer-block"><strong>Réponse courte</strong><p>${detail.short}</p></div><p>${detail.body}</p><div class="source-box"><strong>Source vérifiée</strong><br>${detail.source}<br><a href="${detail.url}" target="_blank" rel="noopener">Consulter la source →</a></div>`;
+      openModal();
+    });
+  });
 
   // VRAI/FAUX DU JOUR — un seul visible ; aujourd'hui : cortisol.
   const section=document.querySelector('#verifier');
