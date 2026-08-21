@@ -94,11 +94,9 @@
       if(answer.includes(t) || answer.includes(st)) score += 1;
     });
 
-    // Bonus si plusieurs mots différents de la question sont retrouvés.
     const baseTokens = clean(originalTerm).split(' ').filter(w => w.length > 2 && !STOPWORDS.has(w));
     const matches = baseTokens.filter(w => all.includes(w) || all.includes(stem(w))).length;
     if(matches >= 2) score += matches * 4;
-
     return score;
   }
 
@@ -120,13 +118,55 @@
     if(noResults){
       noResults.hidden = items.length !== 0;
       if(items.length === 0){
-        noResults.innerHTML = '<strong>MACA n’a pas encore trouvé de réponse proche.</strong><p>Essayez un mot plus simple ou un synonyme. Nous pourrons ensuite ajouter l’option « proposer cette question à la rédaction ».</p>';
+        noResults.innerHTML = '<strong>MACA n’a pas encore trouvé de réponse proche.</strong><p>Essayez un mot plus simple ou un synonyme.</p>';
       }
     }
     if(clearSearch) clearSearch.hidden = !searchInput.value;
   }
 
-  searchInput.addEventListener('input', () => setTimeout(renderSmart, 0));
+  function runSearch(){
+    // Une recherche porte toujours sur toute la bibliothèque.
+    activeCategory = 'Toutes';
+    if(typeof renderFilters === 'function') renderFilters();
+    renderSmart();
+    const library = document.querySelector('.library-section');
+    if(library) library.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+
+  // Recherche au fil de la frappe.
+  searchInput.addEventListener('input', () => {
+    activeCategory = 'Toutes';
+    if(typeof renderFilters === 'function') renderFilters();
+    setTimeout(renderSmart, 0);
+  });
+
+  // Entrée = lancement explicite de la recherche.
+  searchInput.addEventListener('keydown', e => {
+    if(e.key === 'Enter'){
+      e.preventDefault();
+      runSearch();
+    }
+  });
+
+  // La loupe devient un vrai déclencheur cliquable.
+  const searchIcon = document.querySelector('.search-icon');
+  if(searchIcon){
+    searchIcon.setAttribute('role','button');
+    searchIcon.setAttribute('tabindex','0');
+    searchIcon.setAttribute('aria-label','Lancer la recherche');
+    searchIcon.style.cursor='pointer';
+    searchIcon.addEventListener('click', runSearch);
+    searchIcon.addEventListener('keydown', e => {
+      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); runSearch(); }
+    });
+  }
+
+  // Le lien « Recherche » du menu place le curseur dans le champ.
+  const searchNav = document.querySelector('.site-header nav a[href="#questions"]');
+  if(searchNav){
+    searchNav.addEventListener('click', () => setTimeout(() => searchInput.focus(), 250));
+  }
+
   if(filters) filters.addEventListener('click', () => setTimeout(renderSmart, 0));
   if(clearSearch) clearSearch.addEventListener('click', () => setTimeout(renderSmart, 0));
 })();
