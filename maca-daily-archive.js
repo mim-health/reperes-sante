@@ -30,6 +30,20 @@
         url:'https://www.has-sante.fr/',
         keywords:'acouphenes oreilles sifflement bourdonnement audition orl sommeil un sur cinq 1 sur 5'
       }
+    },
+    {
+      id:'daily-vf-sel-tension-2026-08-22',
+      publishDate:'2026-08-22',
+      library:{
+        id:'q-sel-tension-arterielle',
+        category:'Cœur & circulation',
+        title:'Le sel fait-il monter la tension artérielle ?',
+        answer:'Oui. Une consommation élevée de sel favorise l’augmentation de la pression artérielle. Réduire les apports peut faire baisser la tension, en particulier chez les personnes hypertendues et celles plus sensibles au sodium.',
+        watch:'La sensibilité au sel varie selon les personnes. L’OMS recommande chez l’adulte moins de 5 g de sel par jour. Une grande partie du sel consommé provient des aliments transformés, pas seulement de la salière.',
+        source:'OMS · Fédération Française de Cardiologie · vérifié le 21/08/2026',
+        url:'https://www.who.int/news-room/fact-sheets/detail/salt-reduction',
+        keywords:'sel sodium tension pression artérielle hypertension HTA alimentation salière'
+      }
     }
   ];
 
