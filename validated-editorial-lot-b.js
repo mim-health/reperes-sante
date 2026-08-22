@@ -1,0 +1,12 @@
+/* MACA Santé — validation éditoriale médicale lot B — 22/08/2026.
+   Contrôle ciblé sur références françaises actuelles. */
+(function(){
+  const validated={
+    'fievre-enfant':{validationStatus:'VALIDATED',verifiedAt:'22/08/2026',nextAuditAt:'22/11/2026',auditIntervalMonths:3,evidenceStatus:'Sources françaises concordantes',source:'Assurance Maladie · HAS',url:'https://www.ameli.fr/assure/sante/themes/fievre-enfant/comprendre-gerer-fievre-enfant',auditNote:'Définition >38 °C et vigilance particulière avant 3 mois contrôlées.'},
+    'diarrhee-enfant':{validationStatus:'VALIDATED',verifiedAt:'22/08/2026',nextAuditAt:'22/11/2026',auditIntervalMonths:3,evidenceStatus:'Source nationale actuelle',source:'Assurance Maladie',url:'https://www.ameli.fr/assure/sante/themes/gastro-enterite-enfant/que-faire-quand-consulter',auditNote:'Risque de déshydratation, SRO, poursuite de l’allaitement/alimentation et avis rapide avant 2 ans contrôlés.'},
+    'vomissements-enfant':{validationStatus:'VALIDATED',verifiedAt:'22/08/2026',nextAuditAt:'22/11/2026',auditIntervalMonths:3,evidenceStatus:'Source nationale actuelle',source:'Assurance Maladie',url:'https://www.ameli.fr/assure/sante/themes/gastro-enterite-enfant/que-faire-quand-consulter',auditNote:'Réhydratation orale en petites quantités répétées et poursuite/reprise de l’alimentation contrôlées.'},
+    'sommeil-bebe':{validationStatus:'VALIDATED',verifiedAt:'22/08/2026',nextAuditAt:'22/11/2026',auditIntervalMonths:3,evidenceStatus:'Référence nationale 2025',source:'Ministère de la Santé · Carnet de santé de l’enfant 2025',url:'https://sante.gouv.fr/IMG/pdf/conseils_aux_parents_issus_carnet_de_sante_2025.pdf',auditNote:'Décubitus dorsal, lit propre, matelas ferme, absence d’objets mous et chambre parentale au moins 6 mois contrôlés.'},
+    'ecrans-petit':{validationStatus:'VALIDATED',verifiedAt:'22/08/2026',nextAuditAt:'22/11/2026',auditIntervalMonths:3,evidenceStatus:'Référence nationale 2025',source:'Ministère de la Santé · Carnet de santé de l’enfant 2025',url:'https://sante.gouv.fr/IMG/pdf/carnet_de_sante-_2025.pdf',auditNote:'Avant 3 ans sans écran, y compris en bruit de fond ; usage occasionnel et accompagné entre 3 et 6 ans contrôlés.'}
+  };
+  if(Array.isArray(window.auditedQuestionOverrides)) window.auditedQuestionOverrides=window.auditedQuestionOverrides.map(item=>validated[item.id]?{...item,...validated[item.id]}:item);
+})();
