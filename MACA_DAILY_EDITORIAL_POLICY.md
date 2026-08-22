@@ -4,7 +4,7 @@ Validé le 21/08/2026. Complété et verrouillé le 22/08/2026 — étape 5.
 
 ## Verrou du directeur éditorial
 
-Aucun nouveau contenu quotidien **À la une**, **Vrai/Faux du jour** ou **Chiffre du jour** ne doit être publié sans validation explicite du directeur éditorial.
+Aucun nouveau contenu quotidien **À la une**, **Vrai/Faux du jour**, **Chiffre du jour** ou **3 données à retenir** ne doit être publié sans validation explicite du directeur éditorial.
 
 Workflow obligatoire : **DRAFT → EDITOR_APPROVED → PUBLISHED**.
 
@@ -13,20 +13,21 @@ Workflow obligatoire : **DRAFT → EDITOR_APPROVED → PUBLISHED**.
 - **PUBLISHED** : publication autorisée uniquement après le statut `EDITOR_APPROVED`.
 - L'absence de réponse ou de validation ne vaut jamais approbation.
 - La veille et la préparation peuvent être automatisées ; **la décision éditoriale de publication ne l'est pas**.
-- Chaque matin, le directeur éditorial reçoit un lot court à valider comprenant les propositions du jour pour **À la une + Vrai/Faux + Chiffre du jour**, accompagnées de leurs sources essentielles.
+- Chaque matin, le directeur éditorial reçoit un lot court à valider comprenant **À la une + Vrai/Faux + Chiffre du jour + 3 données à retenir**, accompagné des sources essentielles.
 
-## Rendez-vous quotidiens
+## Rendez-vous éditoriaux
 
 - **Vrai/Faux du jour** : un seul sujet visible à la fois sur le site. Le nouveau sujet remplace le précédent.
 - Les tendances, affirmations et questions récurrentes repérées sur **TikTok, Instagram et autres réseaux sociaux** constituent un **signal de veille éditoriale** pertinent pour proposer un Vrai/Faux.
 - Un contenu issu des réseaux sociaux n'est **jamais utilisé comme preuve médicale** : l'affirmation doit être fact-checkée avec des sources médicales fiables et, autant que possible, primaires ou institutionnelles (HAS, ANSM, Santé publique France, Assurance Maladie, ministère, Anses, sociétés savantes, littérature scientifique pertinente).
 - Une tendance sociale n'est publiée en Vrai/Faux que si la question présente un intérêt réel pour le grand public et si une conclusion suffisamment robuste et nuancée peut être établie.
 - **Chiffre du jour** : un seul chiffre visible à la fois. Le nouveau chiffre remplace le précédent. Le chiffre doit être sourcé, daté et contextualisé ; un chiffre isolé ou trompeur n'est pas publié.
-- **Capitalisation automatique** : dès qu’un Vrai/Faux ou un Chiffre du jour n’est plus le contenu du jour, il est transformé en **question permanente** et ajouté à la bibliothèque Questions & réponses.
+- **3 données à retenir** : trois repères santé courts, fiables et mémorisables, présentés ensemble. Ils doivent être sourcés et contextualisés. Ils peuvent être liés à une actualité, à une recommandation ou à un thème utile au grand public et n'ont pas l'obligation d'être renouvelés chaque jour si aucun meilleur ensemble n'est proposé.
+- Les trois données doivent apporter trois informations distinctes ; elles ne doivent pas être trois reformulations du même chiffre ou message.
+- **Capitalisation** : lorsqu'un Vrai/Faux, un Chiffre du jour ou une donnée à retenir quitte sa mise en avant, son contenu utile peut être transformé en **question permanente** ou enrichir une fiche existante de la bibliothèque Questions & réponses.
 - La transformation conserve : la réponse essentielle, l’explication utile, les sources, la date de vérification, les mots-clés et une catégorie grand public.
 - Avant ajout à la bibliothèque, MACA vérifie qu’une fiche équivalente n’existe pas déjà afin d’éviter les doublons.
-- Les anciens Vrai/Faux et Chiffres du jour ne restent donc pas affichés comme archives éditoriales : ils deviennent du contenu documentaire durable.
-- **Bibliothèque Questions & réponses** : elle reste permanente et continue de s’enrichir au fil des rendez-vous quotidiens.
+- **Bibliothèque Questions & réponses** : elle reste permanente et continue de s’enrichir au fil des rendez-vous éditoriaux.
 
 ## À la une — règle éditoriale
 
@@ -59,14 +60,15 @@ La simple popularité sur les réseaux sociaux ne suffit pas à faire un À la u
 
 **Veille → sélection d’une actualité → contrôle de la source primaire → rédaction À la une → validation directeur éditorial → publication → retrait lorsque l’actualité vieillit → transformation éventuelle en fiche permanente.**
 
-## Séparation des trois flux
+## Séparation des quatre flux
 
 - **À la une** = ce qui vient de changer dans l'actualité médicale ou sanitaire.
 - **Vrai/Faux** = ce que le public se demande ou affirme, notamment ce qui émerge sur les réseaux sociaux, puis fact-checking médical.
 - **Chiffre du jour** = une donnée santé marquante, récente ou particulièrement utile, toujours contextualisée.
+- **3 données à retenir** = trois repères pédagogiques courts que le lecteur doit pouvoir mémoriser rapidement.
 
-Règle de synthèse : **réseaux sociaux = signal éditorial ; sources médicales = validation scientifique.**
+Règle de synthèse : **réseaux sociaux = signal éditorial ; sources médicales = validation scientifique ; directeur éditorial = validation avant publication.**
 
 ## Principe produit
 
-**L’actualité attire ; les rendez-vous quotidiens engagent ; la bibliothèque capitalise.**
+**L’actualité attire ; les rendez-vous éditoriaux engagent ; la bibliothèque capitalise.**
