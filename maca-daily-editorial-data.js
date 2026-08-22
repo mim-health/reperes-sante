@@ -1,0 +1,13 @@
+// MACA Santé — données éditoriales quotidiennes validées.
+// SOURCE UNIQUE DE DONNÉES : modifier cet objet lors de la validation quotidienne.
+window.MACA_DAILY_EDITORIAL = {
+ date:'22/08/2026',
+ articles:[
+  {id:'daily-rougeole',category:'À LA UNE',icon:'112',title:'Rougeole : où en est-on en France cet été ?',excerpt:'Depuis janvier 2026 : 112 cas signalés, 40 hospitalisations et 17 complications. Parmi les cas documentés, 53 % n’étaient pas à jour de leur vaccination.',source:'Santé publique France · 2026',body:'La rougeole continue de circuler en France. Depuis janvier 2026, 112 cas ont été signalés, avec 40 hospitalisations et 17 complications. Parmi les cas dont le statut vaccinal était documenté, 53 % n’étaient pas à jour de leur vaccination.'},
+  {id:'daily-sel',category:'VRAI OU FAUX',icon:'VRAI',title:'Le sel fait-il vraiment monter la tension ?',excerpt:'Vrai. Une consommation élevée de sel favorise l’augmentation de la pression artérielle.',source:'OMS · recommandations sur le sodium',body:'VRAI. Une consommation élevée de sel favorise l’augmentation de la pression artérielle. L’OMS recommande moins de 5 g de sel par jour chez l’adulte.'},
+  {id:'daily-acouphenes',category:'LE CHIFFRE DU JOUR',icon:'1 sur 5',title:'Acouphènes : combien d’adultes sont concernés ?',excerpt:'Environ 1 adulte sur 5 est concerné par des acouphènes.',source:'Haute Autorité de Santé · 16 juillet 2026',body:'Environ un adulte sur cinq est concerné par des acouphènes. Chez certaines personnes, ces sons perçus sans source extérieure deviennent invalidants et peuvent perturber le sommeil, la concentration ou la vie sociale.'},
+  {id:'daily-hta',category:'DONNÉES',icon:'22 %',title:'Hypertension : combien d’adultes français se savent concernés ?',excerpt:'En 2024, 22 % des 18–79 ans déclarent avoir une hypertension artérielle.',source:'Santé publique France · Baromètre 2024',body:'En 2024, 22 % des adultes de 18 à 79 ans déclarent avoir une hypertension artérielle.'},
+  {id:'daily-sommeil',category:'DONNÉES',icon:'7 h 32',title:'Sommeil : combien dorment réellement les Français ?',excerpt:'Les adultes de 18 à 79 ans déclarent dormir en moyenne 7 h 32 sur 24 heures.',source:'Santé publique France · Baromètre 2024',body:'Les adultes de 18 à 79 ans déclarent dormir en moyenne 7 h 32 sur 24 heures.'},
+  {id:'daily-courts-dormeurs',category:'DONNÉES',icon:'21,5 %',title:'Sommeil : quelle part des adultes sont de courts dormeurs ?',excerpt:'21,5 % des adultes sont des courts dormeurs.',source:'Santé publique France',body:'21,5 % des adultes sont considérés comme de courts dormeurs.'}
+ ]
+};
