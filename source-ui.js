@@ -27,6 +27,30 @@
   if(hub&&!hub.querySelector('.all-cards-link')){
     const wrap=document.createElement('div');wrap.className='all-cards-link';wrap.innerHTML='<a href="fiches.html">Voir toutes les fiches →</a>';hub.appendChild(wrap);
   }
-  input?.addEventListener('keydown',e=>{if(e.key==='Enter'&&input.value.trim()){e.preventDefault();e.stopImmediatePropagation();goToLibrary(`q=${encodeURIComponent(input.value.trim())}`);}},true);
+  input?.addEventListener('input',e=>{e.stopImmediatePropagation();},true);
+  input?.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();e.stopImmediatePropagation();const q=input.value.trim();goToLibrary(q?`q=${encodeURIComponent(q)}`:'');}},true);
   filters?.addEventListener('click',e=>{const b=e.target.closest('.filter-chip');if(!b)return;e.preventDefault();e.stopImmediatePropagation();const cat=b.dataset.category||'Toutes';goToLibrary(cat==='Toutes'?'':`cat=${encodeURIComponent(cat)}`);},true);
+})();
+
+/* Dedicated library: restore search/category passed by the home page.
+   This replaces the former window.searchInput check, because app.js uses lexical globals. */
+(() => {
+  if(!document.body.classList.contains('library-page')) return;
+  const params=new URLSearchParams(location.search);
+  const q=params.get('q');
+  const cat=params.get('cat');
+  const input=document.querySelector('#search-input');
+  const filters=document.querySelector('#category-filters');
+  if(q&&input){
+    input.value=q;
+    input.dispatchEvent(new Event('input',{bubbles:true}));
+    requestAnimationFrame(()=>input.focus());
+    return;
+  }
+  if(cat&&filters){
+    requestAnimationFrame(()=>{
+      const target=[...filters.querySelectorAll('.filter-chip')].find(b=>b.dataset.category===cat);
+      target?.click();
+    });
+  }
 })();
