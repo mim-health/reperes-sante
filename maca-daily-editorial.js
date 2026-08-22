@@ -14,9 +14,33 @@ const DAILY_EDITORIAL = {
 (function(){
   const grid=document.querySelector('#article-grid');
   if(!grid)return;
-  const render=()=>{grid.innerHTML=DAILY_EDITORIAL.articles.map(a=>`<article class="card" data-daily-id="${a.id}" tabindex="0"><div class="card-art">${a.icon}</div><span class="category">${a.category}</span><h3>${a.title}</h3><p>${a.excerpt}</p><small>${a.source}</small></article>`).join('');};
-  const openDaily=(id)=>{const a=DAILY_EDITORIAL.articles.find(x=>x.id===id);const modal=document.querySelector('#article-modal'),content=document.querySelector('#modal-content');if(!a||!modal||!content)return;content.innerHTML=`<span class="pill">${a.category}</span><h2>${a.title}</h2><p>${a.body}</p><div class="source-box"><strong>Source vérifiée</strong><br>${a.source}</div>`;modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';};
+
+  // The current homepage has no modal markup. Create it here so the daily layer
+  // stays self-contained and every editorial card remains clickable after rotation.
+  let modal=document.querySelector('#article-modal');
+  if(!modal){
+    modal=document.createElement('div');
+    modal.id='article-modal';
+    modal.className='modal';
+    modal.setAttribute('aria-hidden','true');
+    modal.innerHTML='<div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="daily-modal-title"><button class="close" type="button" aria-label="Fermer">×</button><div id="modal-content"></div></div>';
+    document.body.appendChild(modal);
+  }
+  const content=modal.querySelector('#modal-content');
+  const closeBtn=modal.querySelector('.close');
+  const closeModal=()=>{modal.classList.remove('open');modal.setAttribute('aria-hidden','true');document.body.style.overflow='';};
+  closeBtn?.addEventListener('click',closeModal);
+  modal.addEventListener('click',e=>{if(e.target===modal)closeModal();});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))closeModal();});
+
+  const render=()=>{grid.innerHTML=DAILY_EDITORIAL.articles.map(a=>`<article class="card" data-daily-id="${a.id}" tabindex="0" role="button" aria-label="Lire : ${a.title}"><div class="card-art">${a.icon}</div><span class="category">${a.category}</span><h3>${a.title}</h3><p>${a.excerpt}</p><small>${a.source}</small></article>`).join('');};
+  const openDaily=(id)=>{
+    const a=DAILY_EDITORIAL.articles.find(x=>x.id===id);
+    if(!a||!content)return;
+    content.innerHTML=`<span class="pill">${a.category}</span><h2 id="daily-modal-title">${a.title}</h2><p>${a.body}</p><div class="source-box"><strong>Source vérifiée</strong><br>${a.source}</div>`;
+    modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';closeBtn?.focus();
+  };
   render();
-  grid.addEventListener('click',e=>{const c=e.target.closest('[data-daily-id]');if(c){e.stopImmediatePropagation();openDaily(c.dataset.dailyId);}},true);
+  grid.addEventListener('click',e=>{const c=e.target.closest('[data-daily-id]');if(c){e.preventDefault();e.stopImmediatePropagation();openDaily(c.dataset.dailyId);}},true);
   grid.addEventListener('keydown',e=>{const c=e.target.closest('[data-daily-id]');if(c&&(e.key==='Enter'||e.key===' ')){e.preventDefault();e.stopImmediatePropagation();openDaily(c.dataset.dailyId);}},true);
 })();
