@@ -53,49 +53,62 @@ const filters=document.querySelector('#category-filters');
 const noResults=document.querySelector('#no-results');
 let activeCategory='Toutes';
 
-const STOPWORDS = new Set(['a','ai','au','aux','avec','ce','ces','dans','de','des','du','elle','en','est','et','fait','faire','faut','il','je','la','le','les','ma','mais','me','mes','mon','ne','nous','on','ou','par','pas','pour','que','quel','quelle','qui','sa','se','ses','son','sur','un','une','vous','votre','depuis','quand','comment','pourquoi','peut','peux','dois','doit','jai','cest']);
-const SYNONYMS = {
-  ventre:['abdominal','abdomen','digestif','digestion','estomac'], mal:['douleur','douloureux'],
-  coeur:['cardiaque','palpitation','palpitations'], tension:['hypertension','pression','arterielle'],
-  bouton:['boutons','eruption','rash','peau'], demange:['demangeaison','prurit','peau'],
-  toux:['tousser','respiratoire','respiration'], rhume:['nez','nasal','orl'], gorge:['angine','orl'],
-  pipi:['urine','urinaire','cystite'], urine:['urinaire','cystite','brulure'], brule:['brulure','brulures'],
-  dormir:['sommeil','insomnie'], dort:['sommeil','insomnie'], fatigue:['fatiguee','epuisement'],
-  bebe:['nourrisson','enfant'], enfant:['bebe','nourrisson','pediatrie'],
-  sport:['activite','physique','course','running','marche'], courir:['course','running','sport'],
-  medicament:['traitement','paracetamol','ibuprofene'], doliprane:['paracetamol'], advil:['ibuprofene'],
-  tique:['lyme','peau'], diarrhee:['selles','liquides','digestif'], constipation:['selles','transit','digestif'],
-  vomit:['vomissement','vomissements','digestif'], essouffle:['essoufflement','respiration','respiratoire'],
-  migraine:['tete','cephalee'], tete:['cephalee','migraine']
-};
+const STOPWORDS = new Set(['a','ai','au','aux','avec','ce','ces','dans','de','des','du','elle','en','est','et','fait','faire','faut','il','je','la','le','les','ma','mais','me','mes','mon','ne','nous','on','ou','par','pas','pour','que','quel','quelle','qui','sa','se','ses','son','sur','un','une','vous','votre','depuis','quand','comment','pourquoi','peut','peux','dois','doit','jai','cest','estce','avoir','chez']);
+const CONCEPTS = [
+  ['ventre','abdominal','abdomen','digestif','digestion','estomac'], ['mal','douleur','douloureux'],
+  ['coeur','cardiaque','palpitation','palpitations'], ['tension','hypertension','hta','pression arterielle'],
+  ['bouton','boutons','eruption','rash','peau'], ['demange','demangeaison','prurit'],
+  ['toux','tousser','respiratoire','respiration'], ['rhume','nez','nasal','orl'], ['gorge','angine','orl'],
+  ['pipi','urine','urinaire','cystite'], ['brule','brulure','brulures'], ['dormir','dort','sommeil','insomnie'],
+  ['fatigue','fatiguee','epuisement'], ['bebe','nourrisson'], ['enfant','pediatrie'],
+  ['sport','activite physique','course','courir','running','marche'], ['medicament','traitement'],
+  ['doliprane','paracetamol'], ['advil','nurofen','ibuprofene'], ['tique','lyme'],
+  ['diarrhee','selles liquides','gastro'], ['constipation','selles','transit'], ['vomit','vomissement','vomissements'],
+  ['essouffle','essoufflement'], ['migraine','tete','cephalee'], ['sel','sodium'],
+  ['acouphene','acouphenes','bourdonnement','bourdonnements','sifflement','sifflements']
+].map(group=>group.map(clean));
+
 function stem(word){
   if(word.length<5) return word;
   return word.replace(/(ements|ement|ations|ation|iques|ique|istes|iste)$/,'').replace(/(es|s)$/,'');
 }
-function queryTokens(value){
-  const base=clean(value).split(' ').filter(w=>w.length>1&&!STOPWORDS.has(w));
-  const expanded=new Set();
-  base.forEach(w=>{expanded.add(w);expanded.add(stem(w));(SYNONYMS[w]||[]).forEach(s=>{expanded.add(s);expanded.add(stem(s));});});
-  return [...expanded].filter(Boolean);
+function baseTokens(value){return clean(value).split(' ').filter(w=>w.length>1&&!STOPWORDS.has(w));}
+function tokenMatch(token,words){
+  const s=stem(token);
+  return words.some(w=>w===token||stem(w)===s||(token.length>=5&&(w.startsWith(token)||token.startsWith(w))));
+}
+function expandedTokens(base){
+  const out=new Set(base);
+  base.forEach(token=>CONCEPTS.forEach(group=>{
+    if(group.some(term=>term===token||term.split(' ').includes(token))) group.forEach(term=>term.split(' ').forEach(w=>out.add(w)));
+  }));
+  return [...out];
 }
 function scoreQuestion(q,term){
   const original=clean(term); if(!original) return 1;
   const title=clean(q.title||''), keywords=clean(q.keywords||''), category=clean(q.category||''), answer=clean(q.answer||'');
-  const all=`${title} ${keywords} ${category} ${answer}`;
-  let score=0;
-  if(title.includes(original)) score+=20;
-  if(keywords.includes(original)) score+=14;
-  queryTokens(term).forEach(t=>{
-    const s=stem(t);
-    if(title.includes(t)||title.includes(s)) score+=7;
-    if(keywords.includes(t)||keywords.includes(s)) score+=6;
-    if(category.includes(t)||category.includes(s)) score+=3;
-    if(answer.includes(t)||answer.includes(s)) score+=1;
+  const titleWords=baseTokens(title), keywordWords=baseTokens(keywords), categoryWords=baseTokens(category), answerWords=baseTokens(answer);
+  const base=baseTokens(term); if(!base.length) return 0;
+  let score=0, matchedBase=0;
+  if(title.includes(original)) score+=30;
+  if(keywords.includes(original)) score+=22;
+  base.forEach(t=>{
+    let matched=false;
+    if(tokenMatch(t,titleWords)){score+=10;matched=true;}
+    if(tokenMatch(t,keywordWords)){score+=8;matched=true;}
+    if(tokenMatch(t,categoryWords)){score+=2;matched=true;}
+    if(tokenMatch(t,answerWords)){score+=1;matched=true;}
+    if(matched) matchedBase++;
   });
-  const base=clean(term).split(' ').filter(w=>w.length>2&&!STOPWORDS.has(w));
-  const matches=base.filter(w=>all.includes(w)||all.includes(stem(w))).length;
-  if(matches>=2) score+=matches*4;
-  return score;
+  expandedTokens(base).filter(t=>!base.includes(t)).forEach(t=>{
+    if(tokenMatch(t,titleWords)) score+=3;
+    if(tokenMatch(t,keywordWords)) score+=2;
+  });
+  if(matchedBase>=2) score+=10+(matchedBase-2)*3;
+  const coverage=matchedBase/base.length;
+  if(matchedBase===0) return 0;
+  if(base.length>=2&&coverage<0.34) return 0;
+  return score>=8?score:0;
 }
 
 function renderCards(){if(!grid)return;grid.innerHTML=articles.map(a=>`<article class="card" data-id="${a.id}" tabindex="0"><div class="card-art">${a.icon}</div><span class="category">${a.category}</span><h3>${a.title}</h3><p>${a.excerpt}</p><small>${a.source}</small></article>`).join('');}
@@ -115,7 +128,7 @@ function filteredQuestions(){
   const term=searchInput?.value.trim()||'';
   const categoryItems=healthQuestions.filter(q=>activeCategory==='Toutes'||q.category===activeCategory);
   if(!term) return categoryItems;
-  return categoryItems.map(q=>({q,score:scoreQuestion(q,term)})).filter(x=>x.score>=3).sort((a,b)=>b.score-a.score).map(x=>x.q);
+  return categoryItems.map(q=>({q,score:scoreQuestion(q,term)})).filter(x=>x.score>0).sort((a,b)=>b.score-a.score).map(x=>x.q);
 }
 function renderQuestions(){
   if(!qaGrid)return;
@@ -123,7 +136,7 @@ function renderQuestions(){
   qaGrid.innerHTML=items.map(q=>`<article class="qa-card" data-qid="${q.id}" tabindex="0"><div class="qa-icon" aria-hidden="true">${iconForQuestion(q)}</div><div><span class="qa-category">${q.category}</span><h3>${q.title}</h3><p>${q.answer||''}</p><small>${q.source||''}${q.verifiedAt?` · Vérifié le ${q.verifiedAt}`:''}</small></div><span class="qa-arrow" aria-hidden="true">→</span></article>`).join('');
   if(noResults){
     noResults.hidden=items.length!==0;
-    if(items.length===0) noResults.innerHTML='<strong>MACA n’a pas encore trouvé de réponse proche.</strong><p>Essayez un mot plus simple ou un synonyme.</p>';
+    if(items.length===0) noResults.innerHTML='<strong>MACA n’a pas encore trouvé de réponse suffisamment proche.</strong><p>Essayez un mot plus simple ou un synonyme.</p>';
   }
   if(clearSearch)clearSearch.hidden=!searchInput?.value;
 }
