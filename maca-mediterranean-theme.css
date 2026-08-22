@@ -1,0 +1,14 @@
+:root{--ink:#082f49;--green:#082f49;--green-deep:#06263b;--mint:#f1eadf;--mint-soft:#faf6ef;--paper:#faf7f2;--white:#fffdf9;--warm:#f1e4d1;--accent:#c8623a;--muted:#65717a;--line:#e7ded1;--shadow:0 14px 38px rgba(8,47,73,.08)}
+body{background:linear-gradient(180deg,#fffdf9 0,#faf7f2 72%,#f5f1e9 100%);color:var(--ink)}
+.site-header{background:rgba(255,253,249,.96);border-bottom-color:#e9dfd2}
+.brand-word{font-family:'Newsreader',serif;font-size:25px;font-weight:700;letter-spacing:-.035em}.brand-word b{color:inherit;font-weight:700}.brand img{width:44px;height:44px}
+.site-header nav a:hover,.eyebrow,.rail-link,.source-box a{color:var(--accent)}
+.intro{padding-top:72px;padding-bottom:34px;text-align:left}.intro .eyebrow{color:var(--accent)}.intro h1{margin-left:0;max-width:900px;font-size:clamp(52px,6.4vw,82px);line-height:.96}.intro h1 em{color:var(--accent);font-style:normal}.lede{margin-left:0;color:#53636d}
+.search-hub{max-width:1120px}.search-box{border-radius:999px;border-color:#ded3c4;box-shadow:0 10px 28px rgba(8,47,73,.07)}.search-icon,.clear-search{color:var(--ink)}.clear-search{background:#f3ede4}.filter-chip{border-color:#ded3c4;color:var(--ink);background:#fffdf9}.filter-chip:hover,.filter-chip.active{background:var(--ink);border-color:var(--ink)}
+.qa-card,.rail-block,.stat-grid article,.hero-card{border-color:#e5dbce;background:#fffdf9;box-shadow:0 8px 26px rgba(8,47,73,.045)}.qa-card::before,.qa-arrow,.no-results,.answer-block,.modal-panel .source-box{background:#f5efe6;color:var(--ink)}.qa-category{color:var(--accent)}
+.factcheck{background:linear-gradient(145deg,#082f49,#0b3b5c);color:#fff}.factcheck .pill.light{color:var(--ink)}.factcheck .verdict>span{color:#ef9a78}
+.hero-card{background:#fffaf3}.hero-visual{background:var(--ink)}.big-number,.source-line span,.stat-grid strong{color:var(--accent)}
+.method{background:#f2eee7;border-color:#e2d9cd}.source-tags a,.source-tags span{border-color:#ded3c4;color:var(--ink);background:#fffdf9}
+.modal{background:rgba(8,47,73,.48)}.modal-panel{background:#fffdf9}.close{background:#f3ede4;color:var(--ink)}
+footer{background:#f7f2ea}footer a{color:var(--ink)}
+@media(max-width:800px){.brand-word{font-size:20px}.brand img{width:39px;height:39px}.intro{text-align:left;padding-top:42px}.intro h1{font-size:46px}.intro .lede{margin-left:0}.site-header nav{background:rgba(255,253,249,.99)}.filter-chips{scrollbar-width:none}.filter-chips::-webkit-scrollbar{display:none}}
