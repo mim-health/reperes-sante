@@ -37,30 +37,45 @@
   });
 })();
 
-/* MACA Stabilisation 2026-08-22: keyboard activation.
+/* MACA Stabilisation 2026-08-22: keyboard activation + focus restoration.
    Uses a synthetic click so app.js remains the single owner of modal opening. */
 (() => {
   let previousFocus = null;
+  const modal = document.querySelector('#article-modal');
+
+  function rememberCard(target) {
+    const card = target?.closest?.('.qa-card,.card');
+    if (card) previousFocus = card;
+    return card;
+  }
+
+  function restoreFocusAfterClose() {
+    if (!previousFocus) return;
+    setTimeout(() => {
+      if (modal?.getAttribute('aria-hidden') === 'true' && document.contains(previousFocus)) {
+        previousFocus.focus();
+      }
+    }, 0);
+  }
 
   document.addEventListener('keydown', e => {
     if (e.key !== 'Enter' && e.key !== ' ') return;
-    const card = e.target.closest?.('.qa-card,.card');
+    const card = rememberCard(e.target);
     if (!card) return;
     e.preventDefault();
-    previousFocus = card;
     card.click();
     requestAnimationFrame(() => document.querySelector('#article-modal .close')?.focus());
   });
 
   document.addEventListener('click', e => {
-    const card = e.target.closest?.('.qa-card,.card');
-    if (card) previousFocus = card;
+    rememberCard(e.target);
+    if (e.target.closest?.('#article-modal .close')) restoreFocusAfterClose();
+    else if (modal && e.target === modal) restoreFocusAfterClose();
   }, true);
 
   document.addEventListener('keydown', e => {
-    if (e.key !== 'Escape' || !previousFocus) return;
-    if (document.querySelector('#article-modal')?.getAttribute('aria-hidden') === 'false') {
-      setTimeout(() => previousFocus?.focus?.(), 0);
+    if (e.key === 'Escape' && modal?.getAttribute('aria-hidden') === 'false') {
+      restoreFocusAfterClose();
     }
   });
 })();
