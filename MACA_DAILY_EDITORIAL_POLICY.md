@@ -1,11 +1,14 @@
 # MACA Santé — politique éditoriale quotidienne
 
-Validé le 21/08/2026. Complété le 22/08/2026.
+Validé le 21/08/2026. Complété et verrouillé le 22/08/2026 — étape 5.
 
 ## Rendez-vous quotidiens
 
 - **Vrai/Faux du jour** : un seul sujet visible à la fois sur le site. Le nouveau sujet remplace le précédent.
-- **Chiffre du jour** : un seul chiffre visible à la fois. Le nouveau chiffre remplace le précédent.
+- Les tendances, affirmations et questions récurrentes repérées sur **TikTok, Instagram et autres réseaux sociaux** constituent un **signal de veille éditoriale** pertinent pour proposer un Vrai/Faux.
+- Un contenu issu des réseaux sociaux n'est **jamais utilisé comme preuve médicale** : l'affirmation doit être fact-checkée avec des sources médicales fiables et, autant que possible, primaires ou institutionnelles (HAS, ANSM, Santé publique France, Assurance Maladie, ministère, Anses, sociétés savantes, littérature scientifique pertinente).
+- Une tendance sociale n'est publiée en Vrai/Faux que si la question présente un intérêt réel pour le grand public et si une conclusion suffisamment robuste et nuancée peut être établie.
+- **Chiffre du jour** : un seul chiffre visible à la fois. Le nouveau chiffre remplace le précédent. Le chiffre doit être sourcé, daté et contextualisé ; un chiffre isolé ou trompeur n'est pas publié.
 - **Capitalisation automatique** : dès qu’un Vrai/Faux ou un Chiffre du jour n’est plus le contenu du jour, il est transformé en **question permanente** et ajouté à la bibliothèque Questions & réponses.
 - La transformation conserve : la réponse essentielle, l’explication utile, les sources, la date de vérification, les mots-clés et une catégorie grand public.
 - Avant ajout à la bibliothèque, MACA vérifie qu’une fiche équivalente n’existe pas déjà afin d’éviter les doublons.
@@ -42,6 +45,14 @@ La simple popularité sur les réseaux sociaux ne suffit pas à faire un À la u
 ### Cycle éditorial
 
 **Veille → sélection d’une actualité → contrôle de la source primaire → rédaction À la une → publication → retrait lorsque l’actualité vieillit → transformation éventuelle en fiche permanente.**
+
+## Séparation des trois flux
+
+- **À la une** = ce qui vient de changer dans l'actualité médicale ou sanitaire.
+- **Vrai/Faux** = ce que le public se demande ou affirme, notamment ce qui émerge sur les réseaux sociaux, puis fact-checking médical.
+- **Chiffre du jour** = une donnée santé marquante, récente ou particulièrement utile, toujours contextualisée.
+
+Règle de synthèse : **réseaux sociaux = signal éditorial ; sources médicales = validation scientifique.**
 
 ## Principe produit
 
