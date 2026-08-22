@@ -2,6 +2,19 @@
 
 Validé le 21/08/2026. Complété et verrouillé le 22/08/2026 — étape 5.
 
+## Verrou du directeur éditorial
+
+Aucun nouveau contenu quotidien **À la une**, **Vrai/Faux du jour** ou **Chiffre du jour** ne doit être publié sans validation explicite du directeur éditorial.
+
+Workflow obligatoire : **DRAFT → EDITOR_APPROVED → PUBLISHED**.
+
+- **DRAFT** : proposition préparée à partir de la veille, avec titre, angle, réponse/message essentiel, sources et date de vérification.
+- **EDITOR_APPROVED** : validation explicite du directeur éditorial. Il peut accepter, modifier ou refuser séparément chaque proposition.
+- **PUBLISHED** : publication autorisée uniquement après le statut `EDITOR_APPROVED`.
+- L'absence de réponse ou de validation ne vaut jamais approbation.
+- La veille et la préparation peuvent être automatisées ; **la décision éditoriale de publication ne l'est pas**.
+- Chaque matin, le directeur éditorial reçoit un lot court à valider comprenant les propositions du jour pour **À la une + Vrai/Faux + Chiffre du jour**, accompagnées de leurs sources essentielles.
+
 ## Rendez-vous quotidiens
 
 - **Vrai/Faux du jour** : un seul sujet visible à la fois sur le site. Le nouveau sujet remplace le précédent.
@@ -44,7 +57,7 @@ La simple popularité sur les réseaux sociaux ne suffit pas à faire un À la u
 
 ### Cycle éditorial
 
-**Veille → sélection d’une actualité → contrôle de la source primaire → rédaction À la une → publication → retrait lorsque l’actualité vieillit → transformation éventuelle en fiche permanente.**
+**Veille → sélection d’une actualité → contrôle de la source primaire → rédaction À la une → validation directeur éditorial → publication → retrait lorsque l’actualité vieillit → transformation éventuelle en fiche permanente.**
 
 ## Séparation des trois flux
 
