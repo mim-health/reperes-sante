@@ -10,181 +10,62 @@ const articles = [
 const auditOverrides = new Map((window.auditedQuestionOverrides || []).map(item => [item.id, item]));
 const baseQuestions = (window.healthQuestions || []).map(q => ({...q, ...(auditOverrides.get(q.id) || {})}));
 const rawHealthQuestions = [...baseQuestions, ...(window.extraAuditedQuestions || [])];
-
 function normalizeText(value=''){return String(value).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();}
 function clean(value=''){return normalizeText(value).replace(/[^a-z0-9%+\s-]/g,' ').replace(/\s+/g,' ').trim();}
-function publicCategory(q){
-  const text=normalizeText(`${q.id} ${q.title} ${q.keywords||''}`);
-  if(q.category!=='Symptômes') return q.category;
-  if(/palpitation|tension|hypertension|jambe|mollet|phleb|thromb|varice|veine|circulation|oedeme/.test(text)) return 'Cœur & circulation';
-  if(/reflux|rgo|estomac|ventre|abdomin|diarrh|constip|digest|vom/.test(text)) return 'Digestion & ventre';
-  if(/toux|respir|essouff|gorge|nez|rhume|oreille|orl/.test(text)) return 'Respiration & ORL';
-  if(/urine|urinaire|cystite|brulure urin/.test(text)) return 'Santé urinaire';
-  if(/oeil|oculaire|conjonctiv|vision/.test(text)) return 'Yeux & vision';
-  if(/peau|dermat|tique|bouton|demange|prurit|rash/.test(text)) return 'Peau & dermatologie';
-  return 'Santé au quotidien';
-}
-function iconForQuestion(q){
-  const text=normalizeText(`${q.id} ${q.title} ${q.keywords||''} ${q.category||''}`);
-  if(/course|running|marche|sport|activite physique/.test(text)) return '🏃';
-  if(/coeur|tension|hypertension|circulation|veine|thromb|palpitation/.test(text)) return '♡';
-  if(/sommeil|dorm|insom/.test(text)) return '☾';
-  if(/urine|cystite|urinaire/.test(text)) return '◇';
-  if(/tique|peau|dermat|bouton|rash/.test(text)) return '✦';
-  if(/medicament|paracetamol|ibuprofene|antibiot/.test(text)) return '💊';
-  if(/enfant|bebe|nourrisson|parent/.test(text)) return '◡';
-  if(/nutrition|aliment|fibre|sucre|hydrat/.test(text)) return '◌';
-  if(/respir|toux|orl|gorge|nez/.test(text)) return '≈';
-  return '＋';
-}
-
-const healthQuestions = rawHealthQuestions.map(q=>({...q,category:publicCategory(q)}));
-const grid=document.querySelector('#article-grid');
-const qaGrid=document.querySelector('#qa-grid');
-const modal=document.querySelector('#article-modal');
-const modalContent=document.querySelector('#modal-content');
-const searchInput=document.querySelector('#search-input');
-const clearSearch=document.querySelector('#clear-search');
-const filters=document.querySelector('#category-filters');
-const noResults=document.querySelector('#no-results');
-let activeCategory='Toutes';
-
-const STOPWORDS = new Set(['a','ai','au','aux','avec','ce','ces','dans','de','des','du','elle','en','est','et','fait','faire','faut','il','je','la','le','les','ma','mais','me','mes','mon','ne','nous','on','ou','par','pas','pour','que','quel','quelle','qui','sa','se','ses','son','sur','un','une','vous','votre','depuis','quand','comment','pourquoi','peut','peux','dois','doit','jai','cest','estce','avoir','chez']);
-const CONCEPTS = [
-  ['ventre','abdominal','abdomen','digestif','digestion','estomac'], ['mal','douleur','douloureux'],
-  ['coeur','cardiaque','palpitation','palpitations'], ['tension','hypertension','hta','pression arterielle'],
-  ['bouton','boutons','eruption','rash','peau'], ['demange','demangeaison','prurit'],
-  ['toux','tousser','respiratoire','respiration'], ['rhume','nez','nasal','orl'], ['gorge','angine','orl'],
-  ['pipi','urine','urinaire','cystite'], ['brule','brulure','brulures'], ['dormir','dort','sommeil','insomnie'],
-  ['fatigue','fatiguee','epuisement'], ['bebe','nourrisson'], ['enfant','pediatrie'],
-  ['sport','activite physique','course','courir','running','marche'], ['medicament','traitement'],
-  ['doliprane','paracetamol'], ['advil','nurofen','ibuprofene'], ['tique','lyme'],
-  ['diarrhee','selles liquides','gastro'], ['constipation','selles','transit'], ['vomit','vomissement','vomissements'],
-  ['essouffle','essoufflement'], ['migraine','tete','cephalee'], ['sel','sodium'],
-  ['acouphene','acouphenes','bourdonnement','bourdonnements','sifflement','sifflements']
-].map(group=>group.map(clean));
-
+function publicCategory(q){const text=normalizeText(`${q.id} ${q.title} ${q.keywords||''}`);if(q.category!=='Symptômes')return q.category;if(/palpitation|tension|hypertension|jambe|mollet|phleb|thromb|varice|veine|circulation|oedeme/.test(text))return 'Cœur & circulation';if(/reflux|rgo|estomac|ventre|abdomin|diarrh|constip|digest|vom/.test(text))return 'Digestion & ventre';if(/toux|respir|essouff|gorge|nez|rhume|oreille|orl/.test(text))return 'Respiration & ORL';if(/urine|urinaire|cystite|brulure urin/.test(text))return 'Santé urinaire';if(/oeil|oculaire|conjonctiv|vision/.test(text))return 'Yeux & vision';if(/peau|dermat|tique|bouton|demange|prurit|rash/.test(text))return 'Peau & dermatologie';return 'Santé au quotidien';}
+function iconForQuestion(q){const text=normalizeText(`${q.id} ${q.title} ${q.keywords||''} ${q.category||''}`);if(/course|running|marche|sport|activite physique/.test(text))return '🏃';if(/coeur|tension|hypertension|circulation|veine|thromb|palpitation/.test(text))return '♡';if(/sommeil|dorm|insom/.test(text))return '☾';if(/urine|cystite|urinaire/.test(text))return '◇';if(/tique|peau|dermat|bouton|rash/.test(text))return '✦';if(/medicament|paracetamol|ibuprofene|antibiot/.test(text))return '💊';if(/enfant|bebe|nourrisson|parent/.test(text))return '◡';if(/nutrition|aliment|fibre|sucre|hydrat/.test(text))return '◌';if(/respir|toux|orl|gorge|nez/.test(text))return '≈';return '＋';}
+const healthQuestions=rawHealthQuestions.map(q=>({...q,category:publicCategory(q)}));
+const grid=document.querySelector('#article-grid'),qaGrid=document.querySelector('#qa-grid'),modal=document.querySelector('#article-modal'),modalContent=document.querySelector('#modal-content'),searchInput=document.querySelector('#search-input'),clearSearch=document.querySelector('#clear-search'),filters=document.querySelector('#category-filters'),noResults=document.querySelector('#no-results');let activeCategory='Toutes';
+const STOPWORDS=new Set(['a','ai','au','aux','avec','ce','ces','dans','de','des','du','elle','en','est','et','fait','faire','faut','il','je','la','le','les','ma','mais','me','mes','mon','ne','nous','on','ou','par','pas','pour','que','quel','quelle','qui','sa','se','ses','son','sur','un','une','vous','votre','depuis','quand','comment','pourquoi','peut','peux','dois','doit','jai','cest','estce','avoir','chez']);
+const CONCEPTS=[['ventre','abdominal','abdomen','digestif','digestion','estomac'],['mal','douleur','douloureux'],['coeur','cardiaque','palpitation','palpitations'],['tension','hypertension','hta','pression arterielle'],['bouton','boutons','eruption','rash','peau'],['demange','demangeaison','prurit'],['toux','tousser','respiratoire','respiration'],['rhume','nez','nasal','orl'],['gorge','angine','orl'],['pipi','urine','urinaire','cystite'],['brule','brulure','brulures'],['dormir','dort','sommeil','insomnie'],['fatigue','fatiguee','epuisement'],['bebe','nourrisson'],['enfant','pediatrie'],['sport','activite physique','course','courir','running','marche'],['medicament','traitement'],['doliprane','paracetamol'],['advil','nurofen','ibuprofene'],['tique','lyme'],['diarrhee','selles liquides','gastro'],['constipation','selles','transit'],['vomit','vomissement','vomissements'],['essouffle','essoufflement'],['migraine','tete','cephalee'],['sel','sodium'],['acouphene','acouphenes','bourdonnement','bourdonnements','sifflement','sifflements']].map(group=>group.map(clean));
 function stem(word){if(word.length<5)return word;return word.replace(/(ements|ement|ations|ation|iques|ique|istes|iste)$/,'').replace(/(es|s)$/,'');}
 function baseTokens(value){return clean(value).split(' ').filter(w=>w.length>1&&!STOPWORDS.has(w));}
-function editDistance(a,b){
-  if(a===b)return 0;
-  if(Math.abs(a.length-b.length)>2)return 3;
-  const prev=Array.from({length:b.length+1},(_,i)=>i), cur=new Array(b.length+1);
-  for(let i=1;i<=a.length;i++){
-    cur[0]=i;
-    let rowMin=cur[0];
-    for(let j=1;j<=b.length;j++){
-      cur[j]=Math.min(cur[j-1]+1,prev[j]+1,prev[j-1]+(a[i-1]===b[j-1]?0:1));
-      rowMin=Math.min(rowMin,cur[j]);
-    }
-    if(rowMin>2)return 3;
-    for(let j=0;j<=b.length;j++)prev[j]=cur[j];
-  }
-  return prev[b.length];
-}
-function fuzzyWordMatch(a,b){
-  if(a.length<6||b.length<6)return false;
-  const maxDistance=Math.max(a.length,b.length)>=10?2:1;
-  return editDistance(a,b)<=maxDistance;
-}
-function tokenMatch(token,words,allowFuzzy=true){
-  const s=stem(token);
-  return words.some(w=>w===token||stem(w)===s||(token.length>=5&&(w.startsWith(token)||token.startsWith(w)))||(allowFuzzy&&fuzzyWordMatch(token,w)));
-}
-function expandedTokens(base){
-  const out=new Set(base);
-  base.forEach(token=>CONCEPTS.forEach(group=>{
-    if(group.some(term=>term===token||term.split(' ').includes(token)||term.split(' ').some(w=>fuzzyWordMatch(token,w)))) group.forEach(term=>term.split(' ').forEach(w=>out.add(w)));
-  }));
-  return [...out];
-}
-function rawScoreQuestion(q,term){
-  const original=clean(term); if(!original)return {score:1,matchedBase:0,coverage:1};
-  const title=clean(q.title||''), keywords=clean(q.keywords||''), category=clean(q.category||''), answer=clean(q.answer||'');
-  const titleWords=baseTokens(title), keywordWords=baseTokens(keywords), categoryWords=baseTokens(category), answerWords=baseTokens(answer);
-  const base=baseTokens(term); if(!base.length)return {score:0,matchedBase:0,coverage:0};
-  let score=0,matchedBase=0;
-  if(title.includes(original))score+=30;
-  if(keywords.includes(original))score+=22;
-  base.forEach(t=>{
-    let matched=false;
-    if(tokenMatch(t,titleWords)){score+=10;matched=true;}
-    if(tokenMatch(t,keywordWords)){score+=8;matched=true;}
-    if(tokenMatch(t,categoryWords,false)){score+=2;matched=true;}
-    if(tokenMatch(t,answerWords,false)){score+=1;matched=true;}
-    if(matched)matchedBase++;
-  });
-  expandedTokens(base).filter(t=>!base.includes(t)).forEach(t=>{
-    if(tokenMatch(t,titleWords,false))score+=3;
-    if(tokenMatch(t,keywordWords,false))score+=2;
-  });
-  if(matchedBase>=2)score+=10+(matchedBase-2)*3;
-  return {score,matchedBase,coverage:matchedBase/base.length};
-}
-function scoreQuestion(q,term){
-  const r=rawScoreQuestion(q,term);
-  if(r.matchedBase===0)return 0;
-  if(baseTokens(term).length>=2&&r.coverage<0.34)return 0;
-  return r.score>=8?r.score:0;
-}
-function relatedQuestions(term,excludeIds=new Set()){
-  if(!term)return [];
-  return healthQuestions.map(q=>({q,...rawScoreQuestion(q,term)}))
-    .filter(x=>!excludeIds.has(x.q.id)&&x.matchedBase>0&&x.score>=3)
-    .sort((a,b)=>b.score-a.score).slice(0,3).map(x=>x.q);
-}
+function editDistance(a,b){if(a===b)return 0;if(Math.abs(a.length-b.length)>2)return 3;const prev=Array.from({length:b.length+1},(_,i)=>i),cur=new Array(b.length+1);for(let i=1;i<=a.length;i++){cur[0]=i;let rowMin=cur[0];for(let j=1;j<=b.length;j++){cur[j]=Math.min(cur[j-1]+1,prev[j]+1,prev[j-1]+(a[i-1]===b[j-1]?0:1));rowMin=Math.min(rowMin,cur[j]);}if(rowMin>2)return 3;for(let j=0;j<=b.length;j++)prev[j]=cur[j];}return prev[b.length];}
+function fuzzyWordMatch(a,b){if(a.length<6||b.length<6)return false;const maxDistance=Math.max(a.length,b.length)>=10?2:1;return editDistance(a,b)<=maxDistance;}
+function tokenMatch(token,words,allowFuzzy=true){const s=stem(token);return words.some(w=>w===token||stem(w)===s||(token.length>=5&&(w.startsWith(token)||token.startsWith(w)))||(allowFuzzy&&fuzzyWordMatch(token,w)));}
+function expandedTokens(base){const out=new Set(base);base.forEach(token=>CONCEPTS.forEach(group=>{if(group.some(term=>term===token||term.split(' ').includes(token)||term.split(' ').some(w=>fuzzyWordMatch(token,w))))group.forEach(term=>term.split(' ').forEach(w=>out.add(w)));}));return [...out];}
+function rawScoreQuestion(q,term){const original=clean(term);if(!original)return {score:1,matchedBase:0,coverage:1};const title=clean(q.title||''),keywords=clean(q.keywords||''),category=clean(q.category||''),answer=clean(q.answer||'');const titleWords=baseTokens(title),keywordWords=baseTokens(keywords),categoryWords=baseTokens(category),answerWords=baseTokens(answer);const base=baseTokens(term);if(!base.length)return {score:0,matchedBase:0,coverage:0};let score=0,matchedBase=0;if(title.includes(original))score+=30;if(keywords.includes(original))score+=22;base.forEach(t=>{let matched=false;if(tokenMatch(t,titleWords)){score+=10;matched=true;}if(tokenMatch(t,keywordWords)){score+=8;matched=true;}if(tokenMatch(t,categoryWords,false)){score+=2;matched=true;}if(tokenMatch(t,answerWords,false)){score+=1;matched=true;}if(matched)matchedBase++;});expandedTokens(base).filter(t=>!base.includes(t)).forEach(t=>{if(tokenMatch(t,titleWords,false))score+=3;if(tokenMatch(t,keywordWords,false))score+=2;});if(matchedBase>=2)score+=10+(matchedBase-2)*3;return {score,matchedBase,coverage:matchedBase/base.length};}
+function scoreQuestion(q,term){const r=rawScoreQuestion(q,term);if(r.matchedBase===0)return 0;if(baseTokens(term).length>=2&&r.coverage<0.34)return 0;return r.score>=8?r.score:0;}
+function relatedQuestions(term,excludeIds=new Set()){if(!term)return [];return healthQuestions.map(q=>({q,...rawScoreQuestion(q,term)})).filter(x=>!excludeIds.has(x.q.id)&&x.matchedBase>0&&x.score>=3).sort((a,b)=>b.score-a.score).slice(0,3).map(x=>x.q);}
 function questionCard(q){return `<article class="qa-card" data-qid="${q.id}" tabindex="0"><div class="qa-icon" aria-hidden="true">${iconForQuestion(q)}</div><div><span class="qa-category">${q.category}</span><h3>${q.title}</h3><p>${q.answer||''}</p><small>${q.source||''}${q.verifiedAt?` · Vérifié le ${q.verifiedAt}`:''}</small></div><span class="qa-arrow" aria-hidden="true">→</span></article>`;}
-
 function renderCards(){if(!grid)return;grid.innerHTML=articles.map(a=>`<article class="card" data-id="${a.id}" tabindex="0"><div class="card-art">${a.icon}</div><span class="category">${a.category}</span><h3>${a.title}</h3><p>${a.excerpt}</p><small>${a.source}</small></article>`).join('');}
 function openArticle(id){const a=articles.find(x=>x.id===id);if(!a||!modalContent)return;modalContent.innerHTML=`<span class="pill">${a.category}</span><h2>${a.title}</h2><p>${a.body}</p><div class="source-box"><strong>Source vérifiée</strong><br>${a.source}<br><a href="${a.url}" target="_blank" rel="noopener">Consulter la source originale →</a></div>`;openModal();}
 function openQuestion(id){const q=healthQuestions.find(x=>x.id===id);if(!q||!modalContent)return;const evidenceMeta=(q.verifiedAt||q.evidenceStatus)?`<div class="evidence-meta">${q.evidenceStatus?`<span>${q.evidenceStatus}</span>`:''}${q.verifiedAt?`<span>Vérifié le ${q.verifiedAt}</span>`:''}</div>`:'';modalContent.innerHTML=`<span class="pill">${q.category}</span><h2>${q.title}</h2><div class="answer-block"><strong>Réponse courte</strong><p>${q.answer||''}</p></div>${q.watch?`<div class="watch-block"><strong>À surveiller</strong><p>${q.watch}</p></div>`:''}<div class="source-box"><strong>Sources</strong><br>${q.source||''}<br>${evidenceMeta}<a href="${q.url||'#'}" target="_blank" rel="noopener">Consulter la source →</a></div>`;openModal();}
 function openModal(){if(!modal)return;modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';}
 function closeModal(){if(!modal)return;modal.classList.remove('open');modal.setAttribute('aria-hidden','true');document.body.style.overflow='';}
-
-function renderFilters(){
-  if(!filters)return;
-  const preferred=['Enfants & parents','Cœur & circulation','Digestion & ventre','Respiration & ORL','Santé au quotidien','Santé urinaire','Yeux & vision','Peau & dermatologie','Prévention & bien-être','Prévention','Médicaments','Santé des femmes','Après 60 ans','Santé mentale','Nutrition','Vrai / Faux'];
-  const present=[...new Set(healthQuestions.map(q=>q.category).filter(Boolean))];
-  const categories=['Toutes',...preferred.filter(c=>present.includes(c)),...present.filter(c=>!preferred.includes(c))];
-  filters.innerHTML=categories.map(c=>`<button type="button" class="filter-chip ${c===activeCategory?'active':''}" data-category="${c}">${c}</button>`).join('');
-}
-function scoredQuestions(){
-  const term=searchInput?.value.trim()||'';
-  const categoryItems=healthQuestions.filter(q=>activeCategory==='Toutes'||q.category===activeCategory);
-  if(!term)return categoryItems.map(q=>({q,score:1}));
-  return categoryItems.map(q=>({q,score:scoreQuestion(q,term)})).filter(x=>x.score>0).sort((a,b)=>b.score-a.score);
-}
+function renderFilters(){if(!filters)return;const preferred=['Enfants & parents','Cœur & circulation','Digestion & ventre','Respiration & ORL','Santé au quotidien','Santé urinaire','Yeux & vision','Peau & dermatologie','Prévention & bien-être','Prévention','Médicaments','Santé de la femme'];const present=[...new Set(healthQuestions.map(q=>q.category))];const ordered=preferred.filter(c=>present.includes(c));present.filter(c=>!ordered.includes(c)).sort((a,b)=>a.localeCompare(b,'fr')).forEach(c=>ordered.push(c));const cats=['Toutes',...ordered];filters.innerHTML=cats.map(c=>`<button class="filter-chip ${c===activeCategory?'active':''}" data-category="${c}">${c}</button>`).join('');}
+function scoredQuestions(){const term=searchInput?.value.trim()||'';const categoryItems=healthQuestions.filter(q=>activeCategory==='Toutes'||q.category===activeCategory);if(!term)return categoryItems.map(q=>({q,score:1}));return categoryItems.map(q=>({q,score:scoreQuestion(q,term)})).filter(x=>x.score>0).sort((a,b)=>b.score-a.score);}
 function filteredQuestions(){return scoredQuestions().map(x=>x.q);}
-function renderQuestions(){
-  if(!qaGrid)return;
-  const term=searchInput?.value.trim()||'';
-  const scored=scoredQuestions();
-  const items=scored.map(x=>x.q);
-  const exactEnough=!term||scored.some(x=>x.score>=8);
-  if(items.length){
-    qaGrid.innerHTML=items.map(questionCard).join('');
-  }else{
-    const related=relatedQuestions(term);
-    qaGrid.innerHTML=related.length?`<div class="search-related-intro"><strong>Ces fiches peuvent aussi vous intéresser</strong><p>Elles sont proches de votre recherche mais ne constituent pas une réponse précise à votre question.</p></div>${related.map(questionCard).join('')}`:'';
-  }
-  if(noResults){
-    noResults.hidden=!term||items.length!==0;
-    if(term&&items.length===0)noResults.innerHTML='<strong>MaCaSanté n’a pas encore de fiche répondant précisément à cette question.</strong><p>Cette question pourra nous aider à enrichir nos prochaines fiches après vérification des sources.</p>';
-  }
-  if(clearSearch)clearSearch.hidden=!searchInput?.value;
-}
-function runSearch(){activeCategory='Toutes';renderFilters();renderQuestions();const library=document.querySelector('.library-section');if(library)library.scrollIntoView({behavior:'smooth',block:'start'});}
-
+function renderQuestions(){if(!qaGrid)return;const term=searchInput?.value.trim()||'';const scored=scoredQuestions();const items=scored.map(x=>x.q);if(items.length){qaGrid.innerHTML=items.map(questionCard).join('');}else{const related=relatedQuestions(term);qaGrid.innerHTML=related.length?`<div class="search-related-intro"><strong>Ces fiches peuvent aussi vous intéresser</strong><p>Elles sont proches de votre recherche mais ne constituent pas une réponse précise à votre question.</p></div>${related.map(questionCard).join('')}`:'';}if(noResults){noResults.hidden=!term||items.length!==0;if(term&&items.length===0)noResults.innerHTML='<strong>MaCaSanté n’a pas encore de fiche répondant précisément à cette question.</strong><p>Cette question pourra nous aider à enrichir nos prochaines fiches après vérification des sources.</p>';}if(clearSearch)clearSearch.hidden=!searchInput?.value;}
+function runSearch(){activeCategory='Toutes';renderFilters();renderQuestions();document.querySelector('.library-section')?.scrollIntoView({behavior:'smooth',block:'start'});}
 renderCards();renderFilters();renderQuestions();
-
-if(grid){grid.addEventListener('click',e=>{const c=e.target.closest('.card');if(c)openArticle(c.dataset.id)});}
-if(qaGrid){qaGrid.addEventListener('click',e=>{const c=e.target.closest('.qa-card');if(c)openQuestion(c.dataset.qid)});}
+if(grid)grid.addEventListener('click',e=>{const c=e.target.closest('.card');if(c)openArticle(c.dataset.id)});
+if(qaGrid)qaGrid.addEventListener('click',e=>{const c=e.target.closest('.qa-card');if(c)openQuestion(c.dataset.qid)});
 if(filters)filters.addEventListener('click',e=>{const b=e.target.closest('.filter-chip');if(!b)return;activeCategory=b.dataset.category||'Toutes';if(searchInput)searchInput.value='';renderFilters();renderQuestions();document.querySelector('.library-section')?.scrollIntoView({behavior:'smooth',block:'start'});});
 if(searchInput){searchInput.addEventListener('input',runSearch);searchInput.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();runSearch();}});}
 if(clearSearch)clearSearch.addEventListener('click',()=>{searchInput.value='';activeCategory='Toutes';renderFilters();renderQuestions();searchInput.focus();});
-const searchNav=document.querySelector('.site-header nav a[href="#questions"]');
-if(searchNav)searchNav.addEventListener('click',()=>setTimeout(()=>{searchInput?.focus();document.querySelector('#questions')?.scrollIntoView({behavior:'smooth',block:'start'});},0));
+const searchNav=document.querySelector('.site-header nav a[href="#questions"]');if(searchNav)searchNav.addEventListener('click',()=>setTimeout(()=>{searchInput?.focus();document.querySelector('#questions')?.scrollIntoView({behavior:'smooth',block:'start'});},0));
 const pasLink=document.querySelector('[data-article="pas"]');if(pasLink)pasLink.addEventListener('click',()=>openArticle('pas'));
 const closeButton=document.querySelector('.close');if(closeButton)closeButton.addEventListener('click',closeModal);
 if(modal)modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+
+/* MACA mobile navigation: accessible hamburger, closes after selection and outside click. */
+const mobileMenuButton=document.querySelector('.site-header .menu');
+const mobileNav=document.querySelector('.site-header nav');
+function setMobileMenu(open){
+  if(!mobileMenuButton||!mobileNav)return;
+  mobileNav.classList.toggle('open',open);
+  mobileMenuButton.setAttribute('aria-expanded',String(open));
+  mobileMenuButton.setAttribute('aria-label',open?'Fermer le menu':'Ouvrir le menu');
+}
+if(mobileMenuButton&&mobileNav){
+  mobileMenuButton.setAttribute('aria-expanded','false');
+  mobileMenuButton.setAttribute('aria-controls','maca-main-nav');
+  mobileNav.id='maca-main-nav';
+  mobileMenuButton.addEventListener('click',()=>setMobileMenu(!mobileNav.classList.contains('open')));
+  mobileNav.addEventListener('click',e=>{if(e.target.closest('a'))setMobileMenu(false);});
+  document.addEventListener('click',e=>{if(mobileNav.classList.contains('open')&&!e.target.closest('.site-header'))setMobileMenu(false);});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&mobileNav.classList.contains('open')){setMobileMenu(false);mobileMenuButton.focus();}});
+  window.addEventListener('resize',()=>{if(window.innerWidth>800)setMobileMenu(false);});
+}
