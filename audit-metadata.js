@@ -1,6 +1,7 @@
 /* MACA Santé — normalisation de la traçabilité éditoriale.
-   Cette couche n'accorde pas une validation médicale : elle complète uniquement
-   les métadonnées des contenus qui portent déjà une date de vérification. */
+   Cette couche n'accorde JAMAIS à elle seule une validation médicale.
+   VALIDATED doit être porté explicitement par la fiche après contrôle conforme
+   au cahier des charges éditorial médical. */
 (function(){
   function parseFrDate(value){
     const m=String(value||'').match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
@@ -18,7 +19,7 @@
     return {...item,
       nextAuditAt:item.nextAuditAt||plusThreeMonths(item.verifiedAt),
       auditIntervalMonths:item.auditIntervalMonths||3,
-      validationStatus:item.validationStatus||'VALIDATED'
+      validationStatus:item.validationStatus||'AUDITED_LEGACY'
     };
   }
   if(Array.isArray(window.auditedQuestionOverrides)) window.auditedQuestionOverrides=window.auditedQuestionOverrides.map(complete);
