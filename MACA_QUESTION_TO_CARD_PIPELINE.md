@@ -1,10 +1,48 @@
 # MaCa Santé — Cycle Question → Fiche
 
-Validé le 22/08/2026.
+Validé le 22/08/2026. Positionnement et boucle d'enrichissement précisés le 23/08/2026 à partir des tests utilisateurs V1.
+
+## Positionnement produit
+
+MaCa Santé est un **site d'information médicale**, pas un service de diagnostic et pas un substitut au médecin.
+
+Sa mission est de répondre aux **questions de santé que les gens se posent réellement et fréquemment**, avec des réponses simples et courtes dont le travail documentaire a été réalisé en amont : recherche, sélection, croisement et vérification des références médicales les plus solides et adaptées au sujet.
+
+La valeur de MaCa Santé repose donc sur :
+- des questions formulées comme le grand public se les pose réellement ;
+- un corpus de réponses préparées, structurées et réutilisables ;
+- des références médicales identifiées, privilégiant les sources françaises institutionnelles et les sociétés savantes ;
+- une synthèse compréhensible sans sacrifier la solidité documentaire ;
+- une date de vérification et un réaudit régulier ;
+- un corpus qui s'enrichit à partir des besoins réels observés chez les utilisateurs.
+
+MaCa Santé n'a pas vocation à analyser une photo pour donner un avis diagnostique, à poser un diagnostic personnalisé, ni à remplacer une consultation médicale.
+
+**Boucle produit de référence :**
+
+`VRAIES QUESTIONS UTILISATEURS → MEILLEURES SOURCES → RÉPONSE CLAIRE → CORPUS ENRICHI PAR LES USAGES`
 
 ## Objectif
 
 Toute question de santé pertinente identifiée par MaCa Santé doit pouvoir devenir un contenu générique, fiable, réutilisable et retrouvable par le moteur, sans créer une logique spécifique dans l'interface pour chaque nouvelle question.
+
+## Questions sans réponse : boucle d'enrichissement obligatoire
+
+Le moteur doit à terme permettre d'identifier les requêtes auxquelles le corpus ne fournit pas de réponse satisfaisante.
+
+Principes :
+- tracer la **requête ou sa forme normalisée**, pas l'identité de la personne ;
+- ne demander ni nom, ni adresse, ni coordonnées pour ce mécanisme ;
+- privilégier une collecte anonyme et agrégée ;
+- comptabiliser la fréquence des questions sans réponse ou insuffisamment couvertes ;
+- regrouper les formulations proches afin d'identifier un même besoin éditorial ;
+- utiliser le retour « Ai-je trouvé ma réponse ? Oui / Non » comme signal complémentaire lorsque cette fonction sera disponible ;
+- faire remonter les sujets récurrents dans une file éditoriale ;
+- ne jamais générer ni publier automatiquement une réponse médicale à partir de ces données.
+
+Une question récurrente non couverte devient une **CANDIDATE** et suit ensuite l'intégralité du pipeline éditorial et médical ci-dessous.
+
+Objectif : les échecs de recherche doivent progressivement améliorer le corpus sans transformer MaCa Santé en outil de profilage des utilisateurs.
 
 ## Pipeline éditorial obligatoire
 
@@ -94,11 +132,13 @@ Les synonymes ou concepts transversaux peuvent enrichir le moteur global lorsqu'
 ## Garde-fous
 
 - Pas de diagnostic personnalisé.
+- Pas d'analyse d'image visant à donner un avis diagnostique dans le périmètre actuel de MaCa Santé.
 - Pas de publication automatique d'une réponse générée.
 - Pas de création de doublon lorsque l'enrichissement d'une fiche existante suffit.
 - Pas de fiche sans source et traçabilité.
 - Pas de fiche publiée sans validation éditoriale explicite.
 - Toute donnée issue des réseaux sociaux sert au mieux de signal éditorial, jamais de preuve médicale.
+- Les requêtes sans réponse servent à mesurer les manques du corpus, pas à identifier ou profiler les utilisateurs.
 
 ## Critère de réussite de l'étape 6
 
