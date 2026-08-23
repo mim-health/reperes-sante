@@ -1,31 +1,30 @@
-/* MACA Santé — correctif robuste navigation inter-rubriques.
-   Chaque clic change directement la rubrique via ?rubrique=, sans retour à l'accueil.
-   Le rechargement garantit que l'ancien état JS ne peut plus bloquer la nouvelle rubrique. */
+/* MACA Santé — navigation inter-rubriques robuste.
+   Un clic utilisateur recharge directement fiches.html avec la rubrique demandée.
+   Au chargement neuf, le clic d'initialisation traverse normalement les filtres existants. */
 (function(){
   const box=document.getElementById('category-filters');
   if(!box)return;
-  const params=new URLSearchParams(location.search);
-  const requested=params.get('rubrique');
+  const requested=new URLSearchParams(location.search).get('rubrique');
+  let applying=false;
 
   box.addEventListener('click',function(e){
+    if(applying)return;
     const b=e.target.closest('.filter-chip');
     if(!b)return;
     const cat=b.dataset.category||b.textContent.trim()||'Toutes';
-    e.preventDefault();
-    e.stopImmediatePropagation();
+    e.preventDefault();e.stopImmediatePropagation();
     const u=new URL(location.href);
-    if(cat==='Toutes')u.searchParams.delete('rubrique');
-    else u.searchParams.set('rubrique',cat);
+    if(cat==='Toutes')u.searchParams.delete('rubrique'); else u.searchParams.set('rubrique',cat);
     location.href=u.pathname+u.search+'#questions';
   },true);
 
   if(requested){
     setTimeout(function(){
-      const buttons=[...box.querySelectorAll('.filter-chip')];
-      const target=buttons.find(b=>(b.dataset.category||b.textContent.trim())===requested);
+      const target=[...box.querySelectorAll('.filter-chip')].find(b=>(b.dataset.category||b.textContent.trim())===requested);
       if(!target)return;
-      /* Après chargement neuf, app.js est dans l'état Toutes : un seul clic suffit. */
+      applying=true;
       target.click();
-    },100);
+      applying=false;
+    },120);
   }
 })();
