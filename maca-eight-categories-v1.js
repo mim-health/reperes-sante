@@ -1,6 +1,6 @@
 /* MACA Santé V1 — navigation publique simplifiée à 8 rubriques.
-   Les catégories éditoriales fines restent dans les données source ; cette couche
-   regroupe uniquement leur présentation publique, sans supprimer aucune fiche. */
+   Correction 23/08 : un changement de rubrique relance le rendu complet avant filtrage,
+   afin de pouvoir passer directement d'une rubrique à l'autre. */
 (function(){
   const PUBLIC=['Santé au quotidien','Cœur & prévention','Médicaments','Santé des femmes & grossesse','Enfants & parents','Ados','Après 60 ans','Santé mentale'];
   const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
@@ -17,24 +17,37 @@
     return 'Santé au quotidien';
   }
   function remapCards(){document.querySelectorAll('#qa-grid .qa-card').forEach(card=>{const cat=card.querySelector('.qa-category');if(cat)cat.textContent=target(card);});}
-  function buildFilters(){
-    const box=document.querySelector('#category-filters'); if(!box)return;
-    const current=box.querySelector('.filter-chip.active')?.dataset.category||'Toutes';
-    box.innerHTML=['Toutes',...PUBLIC].map(c=>`<button class="filter-chip ${c===current?'active':''}" data-category="${c}">${c}</button>`).join('');
-  }
+  function buildFilters(){const box=document.querySelector('#category-filters');if(!box)return;box.innerHTML=['Toutes',...PUBLIC].map(c=>`<button class="filter-chip" data-category="${c}">${c}</button>`).join('');}
   function filterVisible(category){remapCards();document.querySelectorAll('#qa-grid .qa-card').forEach(card=>{const c=card.querySelector('.qa-category')?.textContent.trim();card.style.display=(category==='Toutes'||c===category)?'':'none';});}
   function init(){
-    const box=document.querySelector('#category-filters'), input=document.querySelector('#search-input'); if(!box)return;
-    buildFilters(); remapCards();
+    const box=document.querySelector('#category-filters'),input=document.querySelector('#search-input');if(!box)return;
+    buildFilters();
+    let publicActive='Toutes';
+    function select(category){
+      publicActive=category||'Toutes';
+      /* app.js avait éventuellement déjà réduit le DOM à l'ancienne catégorie.
+         On force d'abord son état interne sur Toutes et son rendu de la bibliothèque complète. */
+      const all=box.querySelector('[data-category="Toutes"]');
+      if(all){all.click();}
+      setTimeout(()=>{
+        box.querySelectorAll('.filter-chip').forEach(x=>x.classList.toggle('active',x.dataset.category===publicActive));
+        filterVisible(publicActive);
+        if(input){input.dataset.scope=publicActive;input.placeholder=publicActive==='Toutes'?'Rechercher : fièvre, sommeil, paracétamol, tique…':`Rechercher dans « ${publicActive} »…`;}
+      },0);
+    }
     box.addEventListener('click',e=>{
-      const b=e.target.closest('.filter-chip');if(!b)return;
-      e.stopImmediatePropagation();
-      box.querySelectorAll('.filter-chip').forEach(x=>x.classList.toggle('active',x===b));
-      filterVisible(b.dataset.category||'Toutes');
-      if(input){input.dataset.scope=b.dataset.category||'Toutes';input.placeholder=(b.dataset.category==='Toutes')?'Rechercher : fièvre, sommeil, paracétamol, tique…':`Rechercher dans « ${b.dataset.category} »…`;}
+      const b=e.target.closest('.filter-chip');if(!b||b.dataset.internalRefresh==='1')return;
+      const wanted=b.dataset.category||'Toutes';
+      if(wanted==='Toutes'){publicActive='Toutes';setTimeout(()=>{remapCards();box.querySelectorAll('.filter-chip').forEach(x=>x.classList.toggle('active',x.dataset.category==='Toutes'));},0);return;}
+      e.preventDefault();e.stopImmediatePropagation();
+      /* Déclenche explicitement le filtre Toutes d'app.js sans laisser l'ancienne rubrique bloquer le DOM. */
+      const all=box.querySelector('[data-category="Toutes"]');
+      if(all){all.dataset.internalRefresh='1';all.dispatchEvent(new MouseEvent('click',{bubbles:true}));delete all.dataset.internalRefresh;}
+      publicActive=wanted;
+      setTimeout(()=>{box.querySelectorAll('.filter-chip').forEach(x=>x.classList.toggle('active',x.dataset.category===wanted));filterVisible(wanted);if(input){input.dataset.scope=wanted;input.placeholder=`Rechercher dans « ${wanted} »…`; }},20);
     },true);
-    const observer=new MutationObserver(()=>{const active=box.querySelector('.filter-chip.active')?.dataset.category||'Toutes';remapCards();filterVisible(active);});
-    const grid=document.querySelector('#qa-grid');if(grid)observer.observe(grid,{childList:true});
+    const grid=document.querySelector('#qa-grid');if(grid)new MutationObserver(()=>{remapCards();if(publicActive!=='Toutes')filterVisible(publicActive);}).observe(grid,{childList:true});
+    remapCards();select('Toutes');
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
 })();
