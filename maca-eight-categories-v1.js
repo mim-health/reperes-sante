@@ -1,37 +1,43 @@
 /* MACA Santé — CANONICAL PUBLIC LIBRARY GUARD.
    Emergency anti-regression guard: the public taxonomy has 8 rubriques.
-   IMPORTANT: category filtering is handled here from the already-rendered full corpus so
-   legacy keyword heuristics in app.js cannot re-render an incorrect subset. */
+   Category filtering is handled here from the already-rendered corpus so legacy
+   keyword heuristics in app.js cannot leak cards into the wrong rubrique. */
 (function(){
   const PUBLIC=['Santé au quotidien','Cœur & prévention','Médicaments','Santé des femmes & grossesse','Enfants & parents','Ados','Après 60 ans','Santé mentale'];
   const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
-  const key=card=>norm(card.querySelector('h3')?.textContent||'');
+  const titleKey=card=>norm(card.querySelector('h3')?.textContent||'');
+  const idKey=card=>norm(card.dataset.qid||'');
 
-  /* Never use free-text keywords to move a card between rubriques.
-     Strong subject signals come only from the visible title + stable qid.
-     This specifically prevents sleep/stress keywords from moving baby or menopause cards
-     into Santé mentale. Existing public category is kept when no strong subject signal exists. */
+  /* IMPORTANT: classification uses only the visible subject (title + stable qid).
+     Never use free-text keywords. Strong medical subjects are resolved BEFORE the
+     already-rendered category, because app.js may already have misclassified it. */
   function target(card){
     const old=(card.querySelector('.qa-category')?.textContent||'').trim();
-    const title=norm(card.querySelector('h3')?.textContent||'');
-    const qid=norm(card.dataset.qid||'');
-    const subject=`${qid} ${title}`;
-    if(/bebe|nourrisson|enfant|parent|pediatr/.test(subject))return'Enfants & parents';
-    if(/grossesse|menopause|perimenopause|fertilit|contracept|pilule|gyneco|cmv|femme/.test(subject))return'Santé des femmes & grossesse';
-    if(/ado|adolesc/.test(subject))return'Ados';
-    if(/senior|apres 60|vieill|memoire|chute/.test(subject))return'Après 60 ans';
-    if(/depression|anxiet|angoisse|stress|psych|suicid|moral|sommeil|insom/.test(subject))return'Santé mentale';
+    const title=titleKey(card),qid=idKey(card),subject=`${qid} ${title}`;
+
+    if(/bebe|nourrisson|enfant|parent|pediatr|allait|biberon|poussee dentaire|bronchiolit/.test(subject))return'Enfants & parents';
+    if(/grossesse|enceinte|menopause|perimenopause|fertilit|contracept|pilule|gyneco|cmv|endometr|regles|femme/.test(subject))return'Santé des femmes & grossesse';
+    if(/\bado\b|adolesc/.test(subject))return'Ados';
+    if(/senior|apres 60|vieill|memoire|chute|osteopor/.test(subject))return'Après 60 ans';
+    if(/depression|depressif|anxiet|angoisse|attaque de panique|psych|suicid|moral|burn out|epuisement psych/.test(subject))return'Santé mentale';
+    if(/medicament|paracetamol|ibuprofene|antibiot|statine|levure de riz rouge|ordonnance|pharmaci/.test(subject))return'Médicaments';
+    if(/coeur|artere|cardio|tension|hypertension|cholesterol|circulation|veine|thromb|phleb|varice|avc|infarct|prevention cardiovascul/.test(subject))return'Cœur & prévention';
+
+    /* Sleep alone is not sufficient to classify a general-health card as mental health. */
+    if(/sommeil|dormir|insomnie/.test(subject))return'Santé au quotidien';
     if(PUBLIC.includes(old))return old;
-    if(/medicament|paracetamol|ibuprofene|antibiot|statine|levure de riz rouge/.test(subject))return'Médicaments';
-    if(/coeur|cardio|tension|hypertension|cholesterol|circulation|veine|thromb|phleb|varice|prevention/.test(subject))return'Cœur & prévention';
     return'Santé au quotidien';
   }
 
   function canonicalizeCards(){
-    const seen=new Set();
+    const seenTitles=new Set(),seenIds=new Set();
     document.querySelectorAll('#qa-grid .qa-card').forEach(card=>{
       const cat=card.querySelector('.qa-category');if(cat)cat.textContent=target(card);
-      const k=key(card);if(k&&seen.has(k)){card.remove();return;}if(k)seen.add(k);
+      const t=titleKey(card),id=idKey(card);
+      /* Remove duplicate cards by stable id OR normalized title. This fixes repeated
+         child cards without deleting anything from the medical source corpus. */
+      if((id&&seenIds.has(id))||(t&&seenTitles.has(t))){card.remove();return;}
+      if(id)seenIds.add(id);if(t)seenTitles.add(t);
     });
   }
   function canonicalFilterMarkup(active='Toutes'){
@@ -61,20 +67,14 @@
     stabilize();
     const box=document.querySelector('#category-filters'),input=document.querySelector('#search-input'),grid=document.querySelector('#qa-grid');if(!box)return;
     box.innerHTML=canonicalFilterMarkup(publicActive);canonicalizeCards();
-
-    /* Capture + stopImmediatePropagation is intentional: app.js previously re-rendered a
-       keyword-derived subset after our filter, which caused cross-category leakage. */
     box.addEventListener('click',e=>{
       const b=e.target.closest('.filter-chip');if(!b)return;
       const wanted=b.dataset.category||'Toutes';if(!['Toutes',...PUBLIC].includes(wanted))return;
-      e.preventDefault();e.stopImmediatePropagation();
-      publicActive=wanted;
-      enforceFilters();
+      e.preventDefault();e.stopImmediatePropagation();publicActive=wanted;enforceFilters();
       box.querySelectorAll('.filter-chip').forEach(x=>x.classList.toggle('active',x.dataset.category===wanted));
       filterVisible(wanted);
       if(input){input.dataset.scope=wanted;input.placeholder=wanted==='Toutes'?'Rechercher une question santé…':`Rechercher dans « ${wanted} »…`;}
     },true);
-
     if(grid)new MutationObserver(()=>{canonicalizeCards();filterVisible(publicActive);}).observe(grid,{childList:true});
     new MutationObserver(()=>enforceFilters()).observe(box,{childList:true,subtree:true});
     setTimeout(()=>{enforceFilters();canonicalizeCards();filterVisible(publicActive);},50);
