@@ -50,6 +50,35 @@ Chaque sujet À la une doit :
 5. être retiré de la mise en avant lorsqu’il n’est plus suffisamment actuel ;
 6. pouvoir devenir une **fiche permanente** si son contenu conserve un intérêt documentaire après sa sortie de À la une.
 
+### Direction artistique et iconographie — décision validée le 24/08/2026
+
+Chaque contenu **À la une / actualité** doit disposer d'une **iconographie spécifique au sujet**. L'illustration fait partie du contenu éditorial et ne doit pas être remplacée par une icône générique répétée selon la rubrique.
+
+Règles obligatoires :
+- privilégier les **illustrations originales MACA**, conçues spécifiquement pour le sujet ;
+- toute image externe doit être **librement exploitable dans le contexte prévu**, avec licence vérifiée avant publication ;
+- conserver les informations de **source, licence et crédit** lorsqu'elles sont nécessaires ;
+- fournir systématiquement un **texte alternatif pertinent** pour l'accessibilité ;
+- conserver **olive / vert d'eau** comme identité visuelle principale de MACA ;
+- autoriser des **couleurs secondaires plus lumineuses** dans les illustrations et cartes afin de rendre l'accueil plus vivant, sans perdre la cohérence de marque ;
+- éviter les icônes génériques répétées par rubrique ou les visuels interchangeables sans rapport précis avec le sujet ;
+- les cartes À la une doivent donner une place réelle au visuel, avec un rendu adapté au **desktop et au mobile**.
+
+Le modèle de données d'une actualité doit prévoir au minimum :
+```js
+{
+  image: 'chemin-ou-url',
+  imageAlt: 'Description utile et concise du visuel',
+  imageSource: 'MACA | source externe',
+  imageLicense: 'ORIGINAL_MACA | licence vérifiée',
+  imageCredit: 'Crédit si nécessaire'
+}
+```
+
+Pour une illustration originale MACA, `imageSource` doit l'indiquer explicitement et aucun crédit externe ne doit être inventé. Pour une image externe, `imageLicense` et `imageCredit` doivent être renseignés selon les conditions réelles d'utilisation.
+
+**Une actualité ne doit pas passer au statut PUBLISHED tant que son iconographie et, le cas échéant, sa licence/crédit n'ont pas été contrôlés.**
+
 ### Priorité de sélection
 
 Priorité : **nouvelle recommandation / mise à jour officielle > information sanitaire nationale > publication scientifique majeure > sujet d’actualité santé grand public**.
@@ -58,7 +87,7 @@ La simple popularité sur les réseaux sociaux ne suffit pas à faire un À la u
 
 ### Cycle éditorial
 
-**Veille → sélection d’une actualité → contrôle de la source primaire → rédaction À la une → validation directeur éditorial → publication → retrait lorsque l’actualité vieillit → transformation éventuelle en fiche permanente.**
+**Veille → sélection d’une actualité → contrôle de la source primaire → rédaction À la une → choix/création et contrôle de l'iconographie → validation directeur éditorial → publication → retrait lorsque l’actualité vieillit → transformation éventuelle en fiche permanente.**
 
 ## Séparation des quatre flux
 
