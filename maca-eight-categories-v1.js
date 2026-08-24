@@ -56,9 +56,10 @@
     },true);
     if(grid)new MutationObserver(()=>{canonicalizeCards();if(publicActive!=='Toutes')filterVisible(publicActive);}).observe(grid,{childList:true});
     new MutationObserver(()=>enforceFilters()).observe(box,{childList:true,subtree:true});
-    /* Final guard after all legacy scripts have initialized. */
     setTimeout(()=>{enforceFilters();canonicalizeCards();},50);
     setTimeout(()=>{enforceFilters();canonicalizeCards();},500);
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
 })();
+/* SEO links are deliberately isolated from taxonomy/search behavior. */
+(()=>{const s=document.createElement('script');s.src='seo-links.js?v=20260824-1';s.defer=true;document.head.appendChild(s);})();
