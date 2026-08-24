@@ -8,22 +8,24 @@
 <link rel="stylesheet" href="styles-v2.css?v=20260822-1"/>
 <link rel="stylesheet" href="maca-mediterranean-theme.css?v=20260822-1"/>
 <style>
-.daily-page{max-width:820px;margin:0 auto;padding:72px 24px 96px}.daily-back{display:inline-block;margin-bottom:36px;text-decoration:none}.daily-card{background:#fff;border:1px solid var(--line,#e5e7eb);border-radius:28px;padding:clamp(24px,5vw,48px)}.daily-card h1{margin:.5rem 0 1.25rem}.daily-value{font-size:clamp(2rem,8vw,4.5rem);font-weight:800;line-height:1;margin:.4rem 0 1rem}.daily-body{font-size:1.08rem;line-height:1.7}.daily-source{margin-top:28px;padding-top:20px;border-top:1px solid var(--line,#e5e7eb)}
+.daily-page{max-width:820px;margin:0 auto;padding:72px 24px 96px}.daily-back{display:inline-block;margin-bottom:36px;text-decoration:none}.daily-card{background:#fff;border:1px solid var(--line,#e5e7eb);border-radius:28px;padding:clamp(24px,5vw,48px)}.daily-card h1{margin:.5rem 0 1.25rem}.daily-value{font-size:clamp(2rem,8vw,4.5rem);font-weight:800;line-height:1;margin:.4rem 0 1rem}.daily-body{font-size:1.08rem;line-height:1.7}.daily-source{margin-top:28px;padding-top:20px;border-top:1px solid var(--line,#e5e7eb)}.daily-source-link{display:inline-block;margin-top:12px;font-weight:700;text-decoration:underline;text-underline-offset:3px}
 </style>
 </head>
 <body>
 <header class="site-header"><a class="brand" href="index.html" aria-label="MACA Santé — accueil"><img src="logo-maca.svg" alt=""/><span class="brand-word">macasante</span></a></header>
 <main class="daily-page"><a class="daily-back" href="index.html">← Retour à l’accueil</a><article id="daily-content" class="daily-card" aria-live="polite"></article></main>
-<script src="maca-daily-editorial-data.js?v=20260822-1"></script>
+<script src="maca-daily-editorial-data.js?v=20260824-2"></script>
 <script>
 (function(){
  const root=document.getElementById('daily-content');
  const id=new URLSearchParams(location.search).get('id');
  const data=window.MACA_DAILY_EDITORIAL;
  const item=data && Array.isArray(data.articles) ? data.articles.find(x=>x.id===id) : null;
+ const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  if(!item){root.innerHTML='<p class="eyebrow">MACA SANTÉ</p><h1>Contenu introuvable</h1><p>Ce contenu quotidien n’est plus disponible à cette adresse.</p>';return;}
  document.title=item.title+' — MACA Santé';
- root.innerHTML=`<p class="eyebrow">${item.category} · ${data.date}</p>${item.icon?`<div class="daily-value">${item.icon}</div>`:''}<h1>${item.title}</h1><p class="daily-body">${item.body}</p><div class="daily-source"><strong>Source vérifiée</strong><br>${item.source}</div>`;
+ const sourceLink=item.sourceUrl?`<br><a class="daily-source-link" href="${esc(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(item.sourceLabel||'Consulter la source officielle')} ↗</a>`:'';
+ root.innerHTML=`<p class="eyebrow">${esc(item.category)} · ${esc(data.date)}</p>${item.icon?`<div class="daily-value">${esc(item.icon)}</div>`:''}<h1>${esc(item.title)}</h1><p class="daily-body">${esc(item.body)}</p><div class="daily-source"><strong>Source vérifiée</strong><br>${esc(item.source)}${sourceLink}</div>`;
 })();
 </script>
 </body></html>
