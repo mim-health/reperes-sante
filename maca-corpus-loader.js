@@ -12,5 +12,5 @@
     'backlog-audited-reseaux-sociaux-jeunes-2026-08-24.js?v=20260824-2',
     'backlog-audited-gluten-ble-diagnostic-2026-08-24.js?v=20260824-2'
   ];
-  files.forEach(function(src){ document.write('<script src="'+src+'"><\\/script>'); });
+  files.forEach(function(src){ document.write('<script src="'+src+'"><\/script>'); });
 })();
