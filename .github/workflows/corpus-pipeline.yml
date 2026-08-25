@@ -1,0 +1,36 @@
+name: MACA Corpus Pipeline
+
+on:
+  pull_request:
+    branches:
+      - feat/v0-magazine
+    paths:
+      - 'corpus-manifest.js'
+      - 'corpus-loader.js'
+      - 'corpus-integrity.js'
+      - 'corpus-pipeline-test-card.js'
+      - 'scripts/test-corpus-pipeline.js'
+      - 'qa-data*.js'
+      - 'backlog-audited*.js'
+      - 'maca-extra-five.js'
+      - 'maca-daily-archive.js'
+      - 'structured-backlog-compat.js'
+      - '.github/workflows/corpus-pipeline.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  corpus-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout migration branch
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run corpus integrity gate
+        run: node scripts/test-corpus-pipeline.js
