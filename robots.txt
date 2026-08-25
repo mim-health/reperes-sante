@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://macasante.fr/sitemap.xml
+Sitemap: https://macasante.fr/sitemap-corpus-extra.xml
