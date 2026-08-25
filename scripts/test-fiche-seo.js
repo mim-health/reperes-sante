@@ -4,7 +4,7 @@ const required=[
   "MedicalWebPage",
   "MedicalEntity",
   "link[rel=\"canonical\"]",
-  "meta[name=\"description\"]",
+  "upsertMeta('description',desc)",
   "og:title",
   "og:description",
   "og:url",
