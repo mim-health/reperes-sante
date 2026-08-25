@@ -5,11 +5,8 @@ on:
     branches:
       - feat/v0-magazine
     paths:
-      - 'corpus-manifest.js'
-      - 'corpus-loader.js'
-      - 'corpus-integrity.js'
-      - 'corpus-pipeline-test-card.js'
-      - 'scripts/test-corpus-pipeline.js'
+      - 'corpus-*.js'
+      - 'scripts/test-corpus-*.js'
       - 'qa-data*.js'
       - 'backlog-audited*.js'
       - 'maca-extra-five.js'
@@ -34,3 +31,5 @@ jobs:
           node-version: '22'
       - name: Run corpus integrity gate
         run: node scripts/test-corpus-pipeline.js
+      - name: Run functional parity checks
+        run: node scripts/test-corpus-functional.js
