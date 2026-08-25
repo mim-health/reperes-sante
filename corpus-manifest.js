@@ -1,5 +1,4 @@
 /* MACA corpus manifest — single source of truth for corpus script loading.
- * Migration branch only: fix/corpus-pipeline.
  * Adding a validated medical card should require adding its data file once here.
  * UI/search/category scripts are intentionally NOT part of this manifest.
  */
@@ -37,5 +36,6 @@ window.MACA_CORPUS_MANIFEST = Object.freeze([
   'backlog-audited-couchage-nourrisson-2026-08-24.js?v=20260824-1',
   'backlog-audited-cancer-alcool-2026-08-24.js?v=20260824-2',
   'backlog-audited-reseaux-sociaux-jeunes-2026-08-24.js?v=20260824-2',
-  'backlog-audited-gluten-ble-diagnostic-2026-08-24.js?v=20260824-2'
+  'backlog-audited-gluten-ble-diagnostic-2026-08-24.js?v=20260824-2',
+  'backlog-audited-daily-2026-08-25.js?v=20260825-1'
 ]);
