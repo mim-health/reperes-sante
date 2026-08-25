@@ -4,14 +4,21 @@
   const root=document.querySelector('#seo-fiche');
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const strip=s=>String(s||'').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();
-  function fail(){document.title='Fiche introuvable — MACA Santé';const robots=document.querySelector('meta[name="robots"]');if(robots)robots.content='noindex,follow';root.innerHTML='<p class="eyebrow">MACA SANTÉ</p><h1>Fiche introuvable</h1><p><a href="fiches.html">Retour à toutes les fiches →</a></p>';}
+  const upsertMeta=(name,content)=>{let el=document.querySelector(`meta[name="${name}"]`);if(!el){el=document.createElement('meta');el.name=name;document.head.appendChild(el);}el.content=content;};
+  const upsertProperty=(property,content)=>{let el=document.querySelector(`meta[property="${property}"]`);if(!el){el=document.createElement('meta');el.setAttribute('property',property);document.head.appendChild(el);}el.content=content;};
+  function fail(){document.title='Fiche introuvable — MACA Santé';upsertMeta('robots','noindex,follow');root.innerHTML='<p class="eyebrow">MACA SANTÉ</p><h1>Fiche introuvable</h1><p><a href="fiches.html">Retour à toutes les fiches →</a></p>';}
   function render(q){
     const canonical=`https://macasante.fr/fiche.html?id=${encodeURIComponent(q.id)}`;
-    document.title=`${q.title} — MACA Santé`;
+    const title=`${strip(q.title)} — MACA Santé`;
     const desc=strip(q.answer||'Réponse santé claire et sourcée sur MACA Santé.').slice(0,155);
-    const meta=document.querySelector('meta[name="description"]');if(meta)meta.content=desc;
+    const modified=q.verifiedAt||q.updatedAt||'2026-08-25';
+    document.title=title;
+    upsertMeta('description',desc);upsertMeta('robots','index,follow');
+    upsertProperty('og:type','article');upsertProperty('og:site_name','MACA Santé');upsertProperty('og:locale','fr_FR');upsertProperty('og:title',title);upsertProperty('og:description',desc);upsertProperty('og:url',canonical);
+    upsertMeta('twitter:card','summary');upsertMeta('twitter:title',title);upsertMeta('twitter:description',desc);
     let link=document.querySelector('link[rel="canonical"]');if(!link){link=document.createElement('link');link.rel='canonical';document.head.appendChild(link);}link.href=canonical;
-    const schema=document.createElement('script');schema.type='application/ld+json';schema.textContent=JSON.stringify({'@context':'https://schema.org','@type':'MedicalWebPage',headline:q.title,description:desc,url:canonical,inLanguage:'fr-FR',publisher:{'@type':'Organization',name:'MACA Santé',url:'https://macasante.fr/'},dateModified:q.verifiedAt||q.updatedAt||'2026-08-25'});document.head.appendChild(schema);
+    document.querySelectorAll('script[data-maca-schema="fiche"]').forEach(el=>el.remove());
+    const schema=document.createElement('script');schema.type='application/ld+json';schema.dataset.macaSchema='fiche';schema.textContent=JSON.stringify({'@context':'https://schema.org','@type':'MedicalWebPage',headline:strip(q.title),description:desc,url:canonical,inLanguage:'fr-FR',isPartOf:{'@type':'WebSite',name:'MACA Santé',url:'https://macasante.fr/'},publisher:{'@type':'Organization',name:'MACA Santé',url:'https://macasante.fr/'},dateModified:modified,mainEntity:{'@type':'MedicalEntity',name:strip(q.title)}});document.head.appendChild(schema);
     const sourceUrl=q.url&&/^https?:\/\//i.test(q.url)?q.url:'';
     root.innerHTML=`<p class="eyebrow">${esc(q.category||'QUESTION SANTÉ')}</p><h1>${esc(q.title)}</h1><div class="answer-block"><strong>Réponse courte</strong><p>${esc(strip(q.answer||''))}</p></div>${q.watch?`<div class="watch-block"><strong>À retenir</strong><p>${esc(strip(q.watch))}</p></div>`:''}<div class="source-box"><strong>Sources</strong><p>${esc(strip(q.source||''))}</p>${q.verifiedAt?`<p><small>Vérifié le ${esc(q.verifiedAt)}</small></p>`:''}${sourceUrl?`<a href="${esc(sourceUrl)}" target="_blank" rel="noopener">Consulter la source →</a>`:''}</div><p><a href="fiches.html">← Toutes les fiches MACA Santé</a></p>`;
   }

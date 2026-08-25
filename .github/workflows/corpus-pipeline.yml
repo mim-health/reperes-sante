@@ -3,7 +3,7 @@ name: MACA Corpus Pipeline
 on:
   pull_request:
     branches: [feat/v0-magazine]
-    paths: ['index.html','fiches.html','fiche.html','sitemap.xml','corpus-*.js','scripts/generate-sitemap.js','scripts/test-corpus-*.js','scripts/test-ui-adapter.js','scripts/test-browser-entry.js','qa-data*.js','backlog-audited*.js','maca-extra-five.js','maca-daily-archive.js','structured-backlog-compat.js','.github/workflows/corpus-pipeline.yml']
+    paths: ['index.html','fiches.html','fiche.html','fiche-corpus-v2.js','sitemap.xml','corpus-*.js','scripts/generate-sitemap.js','scripts/test-corpus-*.js','scripts/test-fiche-seo.js','scripts/test-ui-adapter.js','scripts/test-browser-entry.js','qa-data*.js','backlog-audited*.js','maca-extra-five.js','maca-daily-archive.js','structured-backlog-compat.js','.github/workflows/corpus-pipeline.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -25,6 +25,8 @@ jobs:
         run: node scripts/test-ui-adapter.js
       - name: Browser V2 safety
         run: node scripts/test-browser-entry.js
+      - name: Individual fiche SEO regression
+        run: node scripts/test-fiche-seo.js
       - name: Sitemap equals canonical corpus
         env:
           SITEMAP_DATE: '2026-08-25'
