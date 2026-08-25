@@ -40,5 +40,6 @@ window.MACA_CORPUS_MANIFEST = Object.freeze([
   'backlog-audited-daily-2026-08-25.js?v=20260825-1',
   'backlog-audited-atherome-micronutrition-2026-08-25.js?v=20260825-1',
   'backlog-audited-gingembre-glycemie-2026-08-25.js?v=20260825-1',
-  'backlog-audited-omega3-2026-08-25.js?v=20260825-1'
+  'backlog-audited-omega3-2026-08-25.js?v=20260825-1',
+  'backlog-audited-varices-2026-08-25.js?v=20260825-1'
 ]);
