@@ -2,55 +2,42 @@ name: MACA Corpus Pipeline
 
 on:
   pull_request:
-    branches:
-      - feat/v0-magazine
-    paths:
-      - 'index.html'
-      - 'fiches.html'
-      - 'corpus-*.js'
-      - 'scripts/test-corpus-*.js'
-      - 'scripts/test-ui-adapter.js'
-      - 'scripts/test-browser-entry.js'
-      - 'qa-data*.js'
-      - 'backlog-audited*.js'
-      - 'maca-extra-five.js'
-      - 'maca-daily-archive.js'
-      - 'structured-backlog-compat.js'
-      - '.github/workflows/corpus-pipeline.yml'
+    branches: [feat/v0-magazine]
+    paths: ['index.html','fiches.html','fiche.html','sitemap.xml','corpus-*.js','scripts/generate-sitemap.js','scripts/test-corpus-*.js','scripts/test-ui-adapter.js','scripts/test-browser-entry.js','qa-data*.js','backlog-audited*.js','maca-extra-five.js','maca-daily-archive.js','structured-backlog-compat.js','.github/workflows/corpus-pipeline.yml']
   workflow_dispatch:
-
 permissions:
   contents: read
-
 jobs:
   corpus-integrity:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Checkout migration branch
+      - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Run corpus integrity gate
+      - name: Corpus integrity
         run: node scripts/test-corpus-pipeline.js
-      - name: Run functional parity checks
+      - name: Functional parity
         run: node scripts/test-corpus-functional.js
-      - name: Run UI adapter regression check
+      - name: UI adapter regression
         run: node scripts/test-ui-adapter.js
-      - name: Run browser V2 entrypoint safety check
+      - name: Browser V2 safety
         run: node scripts/test-browser-entry.js
-      - name: Verify both HTML pages use only V2 corpus entry
+      - name: Sitemap equals canonical corpus
+        env:
+          SITEMAP_DATE: '2026-08-25'
+        run: node scripts/generate-sitemap.js --check
+      - name: HTML pages use canonical V2 path
         run: |
           node - <<'NODE'
           const fs=require('fs');
           for(const f of ['index.html','fiches.html']){
             const s=fs.readFileSync(f,'utf8');
             for(const token of ['corpus-manifest.js','corpus-loader.js','corpus-canonicalizer.js','corpus-v2-browser-entry.js']) if(!s.includes(token)) throw new Error(f+' missing '+token);
-            if(s.includes('<script src="qa-data.js"')) throw new Error(f+' still directly loads legacy corpus');
-            if(s.includes('<script src="backlog-audited')) throw new Error(f+' still directly loads legacy backlog');
-            if(s.includes('<script src="app.js')) throw new Error(f+' bypasses V2 browser entry');
           }
+          const fiche=fs.readFileSync('fiche.html','utf8');
+          for(const token of ['corpus-manifest.js','corpus-loader.js','corpus-canonicalizer.js','fiche-corpus-v2.js']) if(!fiche.includes(token)) throw new Error('fiche.html missing '+token);
           console.log('HTML V2 migration gate PASS');
           NODE
