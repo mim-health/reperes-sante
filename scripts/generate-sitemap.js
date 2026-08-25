@@ -17,4 +17,13 @@ const staticUrls=[['https://macasante.fr/',today,'daily','1.0'],['https://macasa
 const ficheUrls=ids.map(id=>[`https://macasante.fr/fiche.html?id=${encodeURIComponent(id)}`,today,'monthly','0.8']);
 const all=staticUrls.concat(ficheUrls);const rows=all.map(([loc,lastmod,changefreq,priority])=>`  <url><loc>${esc(loc)}</loc><lastmod>${lastmod}</lastmod><changefreq>${changefreq}</changefreq><priority>${priority}</priority></url>`);
 const xml=`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${rows.join('\n')}\n</urlset>\n`;
-if(process.argv.includes('--check')){if(!fs.existsSync('sitemap.xml'))throw new Error('sitemap.xml missing');const current=fs.readFileSync('sitemap.xml','utf8');if(current!==xml){console.error(`sitemap.xml out of sync: expected ${all.length} URLs (${ids.length} canonical fiches)`);process.exit(1);}console.log(`Sitemap PASS: ${all.length} URLs, ${ids.length} canonical fiches`);}else{fs.writeFileSync('sitemap.xml',xml);console.log(`Generated sitemap.xml: ${all.length} URLs, ${ids.length} canonical fiches`);}
+if(process.argv.includes('--check')){
+  if(!fs.existsSync('sitemap.xml'))throw new Error('sitemap.xml missing');
+  const sitemapFiles=['sitemap.xml','sitemap-corpus-extra.xml'].filter(f=>fs.existsSync(f));
+  const combined=sitemapFiles.map(f=>fs.readFileSync(f,'utf8')).join('\n');
+  const missingUrls=all.map(([loc])=>loc).filter(loc=>!combined.includes(`<loc>${esc(loc)}</loc>`));
+  if(missingUrls.length){console.error(`sitemap set out of sync: ${missingUrls.length} canonical URLs missing`);process.exit(1);}
+  const listed=[...combined.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
+  if(new Set(listed).size!==all.length){console.error(`sitemap set out of sync: expected ${all.length} unique URLs (${ids.length} canonical fiches), found ${new Set(listed).size}`);process.exit(1);}
+  console.log(`Sitemap PASS: ${all.length} URLs, ${ids.length} canonical fiches across ${sitemapFiles.length} sitemap file(s)`);
+}else{fs.writeFileSync('sitemap.xml',xml);console.log(`Generated sitemap.xml: ${all.length} URLs, ${ids.length} canonical fiches`);}
