@@ -8,6 +8,7 @@ on:
       - 'corpus-*.js'
       - 'scripts/test-corpus-*.js'
       - 'scripts/test-ui-adapter.js'
+      - 'scripts/test-browser-entry.js'
       - 'qa-data*.js'
       - 'backlog-audited*.js'
       - 'maca-extra-five.js'
@@ -36,3 +37,5 @@ jobs:
         run: node scripts/test-corpus-functional.js
       - name: Run UI adapter regression check
         run: node scripts/test-ui-adapter.js
+      - name: Run browser V2 entrypoint safety check
+        run: node scripts/test-browser-entry.js
