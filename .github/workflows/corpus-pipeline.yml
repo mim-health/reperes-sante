@@ -6,38 +6,38 @@ on:
     paths: ['index.html','fiches.html','fiche.html','sitemap.xml','corpus-*.js','scripts/generate-sitemap.js','scripts/test-corpus-*.js','scripts/test-ui-adapter.js','scripts/test-browser-entry.js','qa-data*.js','backlog-audited*.js','maca-extra-five.js','maca-daily-archive.js','structured-backlog-compat.js','.github/workflows/corpus-pipeline.yml']
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
 jobs:
   corpus-integrity:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Checkout PR branch
+      - name: Checkout
         uses: actions/checkout@v4
-        with:
-          ref: ${{ github.head_ref || github.ref_name }}
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node scripts/test-corpus-pipeline.js
-      - run: node scripts/test-corpus-functional.js
-      - run: node scripts/test-ui-adapter.js
-      - run: node scripts/test-browser-entry.js
-      - name: Generate canonical sitemap
-        env:
-          SITEMAP_DATE: '2026-08-25'
-        run: node scripts/generate-sitemap.js
-      - name: Commit canonical sitemap once
-        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
-        run: |
-          if ! git diff --quiet -- sitemap.xml; then
-            git config user.name 'github-actions[bot]'
-            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add sitemap.xml
-            git commit -m 'Sync sitemap with current canonical corpus'
-            git push origin HEAD:${{ github.head_ref }}
-          fi
-      - name: Verify sitemap
+      - name: Corpus integrity
+        run: node scripts/test-corpus-pipeline.js
+      - name: Functional parity
+        run: node scripts/test-corpus-functional.js
+      - name: UI adapter regression
+        run: node scripts/test-ui-adapter.js
+      - name: Browser V2 safety
+        run: node scripts/test-browser-entry.js
+      - name: Sitemap equals canonical corpus
         env:
           SITEMAP_DATE: '2026-08-25'
         run: node scripts/generate-sitemap.js --check
+      - name: HTML pages use canonical V2 path
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          for(const f of ['index.html','fiches.html']){
+            const s=fs.readFileSync(f,'utf8');
+            for(const token of ['corpus-manifest.js','corpus-loader.js','corpus-canonicalizer.js','corpus-v2-browser-entry.js']) if(!s.includes(token)) throw new Error(f+' missing '+token);
+          }
+          const fiche=fs.readFileSync('fiche.html','utf8');
+          for(const token of ['corpus-manifest.js','corpus-loader.js','corpus-canonicalizer.js','fiche-corpus-v2.js']) if(!fiche.includes(token)) throw new Error('fiche.html missing '+token);
+          console.log('HTML V2 migration gate PASS');
+          NODE
