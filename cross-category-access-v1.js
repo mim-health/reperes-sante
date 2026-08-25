@@ -4,7 +4,7 @@
   const norm=s=>String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
   const rules=[
     {match:/melatonine/,cats:['Médicaments','Santé mentale']},
-    {match:/statine|cholesterol/,cats:['Médicaments','Cœur & prévention']},
+    {match:/statine|cholesterol|\bldl\b/,cats:['Médicaments','Cœur & prévention','Après 60 ans']},
     {match:/contracept|pilule/,cats:['Médicaments','Santé des femmes']},
     {match:/antidepresseur|anxiolytique|benzodiazepine/,cats:['Médicaments','Santé mentale']},
     {match:/sommeil|insomnie/,cats:['Santé mentale','Après 60 ans']},
