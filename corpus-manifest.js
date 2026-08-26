@@ -49,5 +49,6 @@ window.MACA_CORPUS_MANIFEST = Object.freeze([
   'backlog-audited-senior-endurance-force-equilibre-2026-08-26.js?v=20260826-1',
   'backlog-audited-harcelement-scolaire-2026-08-26.js?v=20260826-1',
   'backlog-audited-lot-eczema-psoriasis-spm-sii-2026-08-26.js?v=20260826-1',
-  'backlog-audited-lot2-thyroide-fer-foie-naevus-paresthesies-lactose-2026-08-26.js?v=20260826-1'
+  'backlog-audited-lot2-thyroide-fer-foie-naevus-paresthesies-lactose-2026-08-26.js?v=20260826-1',
+  'backlog-audited-ist-fatigue-taches-brunes-burnout-2026-08-26.js?v=20260826-1'
 ]);
