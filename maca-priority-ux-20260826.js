@@ -1,48 +1,22 @@
-/* MACA Santé — 26/08 priority UX: mobile hierarchy, one featured block, section identity in opened cards. */
+/* MACA Santé — 26/08 priority UX: mobile hierarchy, unified featured row, section identity, compact method. */
 (function(){
  'use strict';
- const sectionMap={
-  'Santé au quotidien':'daily','Cœur & prévention':'heart','Médicaments':'meds','Digestion & urinaire':'daily',
-  'Santé des femmes & grossesse':'women','Enfants & parents':'children','Ados':'teens','Après 60 ans':'seniors','Seniors':'seniors','Santé mentale':'mental'
- };
+ const sectionMap={'Santé au quotidien':'daily','Cœur & prévention':'heart','Médicaments':'meds','Digestion & urinaire':'daily','Santé des femmes & grossesse':'women','Enfants & parents':'children','Ados':'teens','Après 60 ans':'seniors','Seniors':'seniors','Santé mentale':'mental'};
  const tones={daily:['#d7e8df','#557060'],heart:['#e7a58b','#a24f3f'],meds:['#b8d6d8','#507d80'],women:['#dbc9dc','#816985'],children:['#efd38e','#94722f'],teens:['#bfc9df','#617092'],seniors:['#d5c5a6','#7c6b4f'],mental:['#c7d9c4','#60795d']};
- function applyModalIdentity(){
-  const panel=document.querySelector('.modal-panel'),content=document.querySelector('#modal-content');if(!panel||!content)return;
-  const label=content.querySelector('.pill')?.textContent?.trim(),key=sectionMap[label];
-  if(!key)return;
-  panel.dataset.section=key;const [tone,ink]=tones[key];panel.style.setProperty('--section-tone',tone);panel.style.setProperty('--section-ink',ink);
- }
- function consolidateFeatured(){
-  const comprendre=document.querySelector('#comprendre'),verifier=document.querySelector('#verifier'),news=document.querySelector('.rail-news');
-  if(comprendre)comprendre.hidden=true;if(verifier)verifier.hidden=true;
-  if(news){news.id='a-la-une';news.setAttribute('aria-label','À la une et vrai ou faux');const h=news.querySelector('h2');if(h)h.textContent='À la une';}
- }
- function labelAllFiches(){
-  document.querySelectorAll('#category-filters .filter-chip[data-category="Toutes"]').forEach(b=>{b.textContent='Toutes les fiches';b.setAttribute('aria-label','Afficher toutes les fiches');});
- }
- function alignNavigation(){
-  const nav=document.querySelector('.site-header nav');if(!nav)return;
-  nav.innerHTML='<a href="#questions">Recherche</a><a href="#chiffre-du-jour">Chiffre du jour</a><a href="#a-la-une">À la une</a><a href="#a-la-une" data-nav-fact>Vrai ou faux ?</a><a href="#sources">Notre méthode</a>';
- }
- function mobileOrder(){
-  if(!matchMedia('(max-width:800px)').matches)return;
-  const layout=document.querySelector('.magazine-layout'),main=document.querySelector('.main-feed'),rail=document.querySelector('.editorial-rail');
-  const library=document.querySelector('.library-section'),number=document.querySelector('#chiffre-du-jour'),news=document.querySelector('.rail-news'),stats=document.querySelector('#prevenir');
-  if(!layout||!main||!rail)return;
-  if(number)main.insertBefore(number,main.firstChild);
-  if(news)main.insertBefore(news,number?number.nextSibling:main.firstChild);
-  if(library)main.insertBefore(library,news?news.nextSibling:(number?number.nextSibling:main.firstChild));
-  if(stats)main.appendChild(stats);
-  rail.style.display='none';
- }
+ function applyModalIdentity(){const panel=document.querySelector('.modal-panel'),content=document.querySelector('#modal-content');if(!panel||!content)return;const label=content.querySelector('.pill')?.textContent?.trim(),key=sectionMap[label];if(!key)return;panel.dataset.section=key;const [tone,ink]=tones[key];panel.style.setProperty('--section-tone',tone);panel.style.setProperty('--section-ink',ink);}
+ function consolidateFeatured(){const comprendre=document.querySelector('#comprendre'),verifier=document.querySelector('#verifier'),news=document.querySelector('.rail-news');if(comprendre)comprendre.hidden=true;if(verifier)verifier.hidden=true;if(news){news.id='a-la-une';news.setAttribute('aria-label','À la une et vrai ou faux');const h=news.querySelector('h2');if(h)h.textContent='À la une';}}
+ function labelAllFiches(){document.querySelectorAll('#category-filters .filter-chip[data-category="Toutes"]').forEach(b=>{b.textContent='Toutes les fiches';b.setAttribute('aria-label','Afficher toutes les fiches');});}
+ function alignNavigation(){const nav=document.querySelector('.site-header nav');if(!nav)return;nav.innerHTML='<a href="#questions">Recherche</a><a href="#chiffre-du-jour">Chiffre du jour</a><a href="#a-la-une">À la une</a><a href="#a-la-une" data-nav-fact>Vrai ou faux ?</a><a href="#sources">Notre méthode</a>';}
+ function compactMethod(){const m=document.querySelector('#sources');if(!m)return;const steps=m.querySelector('.method-steps'),detail=m.querySelector('.method-detail'),note=m.querySelector('.method-note');if(steps)steps.innerHTML='<span><b>1</b> Question utile</span><span><b>2</b> Sources de référence</span><span><b>3</b> Sources croisées</span><span><b>4</b> Contrôle médical</span><span><b>5</b> Date & réaudit</span>';if(detail)detail.innerHTML='<strong>Traçabilité.</strong> Sources et date de vérification sont conservées pour chaque fiche.';if(note)note.textContent='Sources sélectionnées → comparaison assistée par IA → synthèse → contrôle médical → réaudit.';}
+ function mobileOrder(){if(!matchMedia('(max-width:800px)').matches)return;const main=document.querySelector('.main-feed'),rail=document.querySelector('.editorial-rail'),library=document.querySelector('.library-section'),number=document.querySelector('#chiffre-du-jour'),news=document.querySelector('.rail-news'),stats=document.querySelector('#prevenir');if(!main||!rail)return;if(number)main.insertBefore(number,main.firstChild);if(news)main.insertBefore(news,number?number.nextSibling:main.firstChild);if(library)main.insertBefore(library,news?news.nextSibling:(number?number.nextSibling:main.firstChild));if(stats)main.appendChild(stats);rail.style.display='none';}
  function addStyle(){if(document.querySelector('#maca-priority-ux-style'))return;const s=document.createElement('style');s.id='maca-priority-ux-style';s.textContent=`
-  .modal-panel[data-section]{position:relative;overflow:hidden;border-top:7px solid var(--section-tone)}
-  .modal-panel[data-section]::after{content:'';position:absolute;right:-34px;top:-38px;width:120px;height:120px;border:1px solid color-mix(in srgb,var(--section-ink) 22%,transparent);border-radius:50%;pointer-events:none}
-  .modal-panel[data-section] #modal-content>.pill{background:var(--section-tone);color:var(--section-ink);border:0}
-  .method-steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin:26px 0}.method-step{padding:18px;border:1px solid #d7dfd4;border-radius:18px;background:rgba(255,253,247,.82)}.method-step strong{display:block;margin-bottom:7px;color:var(--green-deep)}.method-step span{display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;border-radius:50%;background:#dfece5;margin-bottom:10px;font-weight:800}.method-detail{margin-top:18px;padding-top:18px;border-top:1px solid #d7dfd4}.method-detail strong{color:var(--green-deep)}
-  @media(max-width:800px){body:not(.library-page) .main-feed>.hero-card{order:1}body:not(.library-page) .main-feed>.rail-news{order:2;margin-top:24px}body:not(.library-page) .main-feed>.library-section{order:3}body:not(.library-page) .main-feed>.home-stats{order:4}.main-feed{display:flex;flex-direction:column}.method-steps{grid-template-columns:1fr}.site-header nav a{font-size:12px}}
+ .modal-panel[data-section]{position:relative;overflow:hidden;border-top:7px solid var(--section-tone)}.modal-panel[data-section]::after{content:'';position:absolute;right:-34px;top:-38px;width:120px;height:120px;border:1px solid color-mix(in srgb,var(--section-ink) 22%,transparent);border-radius:50%;pointer-events:none}.modal-panel[data-section] #modal-content>.pill{background:var(--section-tone);color:var(--section-ink);border:0}
+ /* Desktop: editorial content is a true horizontal row, not a narrow sidebar. */
+ @media(min-width:801px){.magazine-layout{display:block!important}.main-feed{width:100%!important}.editorial-rail{width:100%!important;max-width:none!important;display:block!important}.editorial-rail>.rail-news{width:100%!important;margin:32px 0!important}.rail-news #article-grid,.rail-news .cards{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:22px!important}.rail-news .article-card{min-width:0!important}.rail-news .article-image{height:180px!important}}
+ /* Method is a compact trust footer on the homepage. */
+ #sources.method{padding:46px max(24px,calc((100vw - 1180px)/2))!important;text-align:center!important}#sources.method>h2{font-size:clamp(28px,3vw,42px)!important;margin-bottom:10px!important}#sources.method>p:not(.method-detail):not(.method-note){max-width:850px;margin:0 auto 22px!important}.method-steps{display:flex!important;justify-content:center;align-items:center;flex-wrap:wrap;gap:8px!important;margin:18px auto!important;max-width:1000px}.method-steps>span{display:inline-flex;align-items:center;gap:7px;padding:9px 13px;border:1px solid #d7dfd4;border-radius:999px;background:rgba(255,253,247,.82);font-size:13px}.method-steps b{display:inline-flex;width:22px;height:22px;align-items:center;justify-content:center;border-radius:50%;background:#dfece5}.method-detail{margin:15px auto 0!important;max-width:760px!important;padding:0!important;border:0!important}.method-note{margin:12px auto 0!important;max-width:850px!important;font-size:12px!important}.source-tags{margin:15px 0!important}
+ @media(max-width:800px){body:not(.library-page) .main-feed>.hero-card{order:1}body:not(.library-page) .main-feed>.rail-news{order:2;margin-top:24px}body:not(.library-page) .main-feed>.library-section{order:3}body:not(.library-page) .main-feed>.home-stats{order:4}.main-feed{display:flex;flex-direction:column}.site-header nav a{font-size:12px}.rail-news #article-grid,.rail-news .cards{display:grid!important;grid-template-columns:1fr!important}.method-steps{justify-content:flex-start!important}#sources.method{padding:32px 22px!important}}
  `;document.head.appendChild(s);}
- function init(){addStyle();consolidateFeatured();labelAllFiches();alignNavigation();mobileOrder();const c=document.querySelector('#modal-content');if(c)new MutationObserver(applyModalIdentity).observe(c,{childList:true,subtree:true});const filters=document.querySelector('#category-filters');if(filters)new MutationObserver(labelAllFiches).observe(filters,{childList:true,subtree:true});}
- if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
- window.addEventListener('maca:v2-ui-ready',init);
+ function init(){addStyle();consolidateFeatured();labelAllFiches();alignNavigation();compactMethod();mobileOrder();const c=document.querySelector('#modal-content');if(c)new MutationObserver(applyModalIdentity).observe(c,{childList:true,subtree:true});const filters=document.querySelector('#category-filters');if(filters)new MutationObserver(labelAllFiches).observe(filters,{childList:true,subtree:true});}
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();window.addEventListener('maca:v2-ui-ready',init);
 })();
