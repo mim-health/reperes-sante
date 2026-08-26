@@ -10,7 +10,8 @@
     {match:/sommeil|insomnie/,cats:['Santé mentale','Après 60 ans']},
     {match:/vaccin|vaccination/,cats:['Médicaments','Santé au quotidien']},
     {match:/hypertension|tension arterielle/,cats:['Cœur & prévention','Après 60 ans']},
-    {match:/menopause|perimenopause/,cats:['Santé des femmes','Après 60 ans']}
+    {match:/menopause|perimenopause/,cats:['Santé des femmes','Après 60 ans']},
+    {match:/senior-endurance-force-equilibre/,cats:['Après 60 ans','Cœur & prévention']}
   ];
   function apply(list){
     if(!Array.isArray(list))return;
