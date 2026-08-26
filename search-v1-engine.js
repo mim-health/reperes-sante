@@ -132,11 +132,10 @@
     if(!meaningful.length) return [];
     const top = meaningful[0].score;
 
-    /* Generic precision guard: when the best result is a strong direct match,
-       do not pad the page with weakly related cards. This is corpus-wide,
-       never tied to a particular query. */
+    /* Precision guard: after a strong direct match, keep only results that are
+       genuinely close to the best score instead of filling the grid with weak matches. */
     const strongDirectMatch = meaningful[0].directCoverage === 1 && top >= 500;
-    const relativeFloor = strongDirectMatch ? 0.35 : 0.18;
+    const relativeFloor = strongDirectMatch ? 0.60 : 0.18;
     const floor = Math.max(base.length === 1 ? 70 : 110, top * relativeFloor);
 
     return meaningful.filter(item => item.score >= floor).slice(0,8);
