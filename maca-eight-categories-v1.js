@@ -7,7 +7,7 @@
   const canonicalByTitle=new Map((window.MACA_CANONICAL_CORPUS||[]).map(q=>[norm(q.title||q.question),q.publicCategory]));
   function categoryOf(card){return canonicalById.get(norm(card.dataset.qid))||canonicalByTitle.get(norm(card.querySelector('h3')?.textContent))||'Santé au quotidien';}
   function canonicalizeCards(){document.querySelectorAll('#qa-grid .qa-card').forEach(card=>{const cat=card.querySelector('.qa-category');if(cat)cat.textContent=categoryOf(card);});}
-  function markup(active){return ['Toutes',...PUBLIC].map(c=>`<button class="filter-chip ${c===active?'active':''}" data-category="${c}">${c}</button>`).join('');}
+  function markup(active){return ['Toutes',...PUBLIC].map(c=>`<button class="filter-chip ${c===active?'active':''}" data-category="${c}">${c==='Toutes'?'Toutes les fiches':c}</button>`).join('');}
   function init(){
     const box=document.querySelector('#category-filters'),grid=document.querySelector('#qa-grid'),input=document.querySelector('#search-input');if(!box||!grid)return;
     const requested=new URLSearchParams(location.search).get('category');
