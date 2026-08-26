@@ -14,7 +14,7 @@
     let active=PUBLIC.includes(requested)?requested:'Toutes';
     const apply=()=>{box.querySelectorAll('.filter-chip').forEach(x=>x.classList.toggle('active',x.dataset.category===active));canonicalizeCards();grid.querySelectorAll('.qa-card').forEach(card=>card.style.display=(active==='Toutes'||categoryOf(card)===active)?'':'none');if(input){input.dataset.scope=active;input.placeholder=active==='Toutes'?'Rechercher une question santé…':`Rechercher dans « ${active} »…`;}};
     box.innerHTML=markup(active);apply();
-    box.addEventListener('click',e=>{const b=e.target.closest('.filter-chip');if(!b)return;const wanted=b.dataset.category;if(!['Toutes',...PUBLIC].includes(wanted))return;e.preventDefault();e.stopImmediatePropagation();active=wanted;if(input&&wanted==='Toutes'){input.value='';input.dispatchEvent(new Event('input',{bubbles:true}));}apply();document.querySelector('#questions')?.scrollIntoView({behavior:'smooth',block:'start'});},true);
+    box.addEventListener('click',e=>{const b=e.target.closest('.filter-chip');if(!b)return;const wanted=b.dataset.category;if(!['Toutes',...PUBLIC].includes(wanted))return;e.preventDefault();e.stopImmediatePropagation();if(wanted==='Toutes'&&!document.body.classList.contains('library-page')){location.href='fiches.html';return;}active=wanted;if(input&&wanted==='Toutes'){input.value='';input.dispatchEvent(new Event('input',{bubbles:true}));}apply();document.querySelector('#questions')?.scrollIntoView({behavior:'smooth',block:'start'});},true);
     new MutationObserver(apply).observe(grid,{childList:true});
     if(active!=='Toutes')requestAnimationFrame(()=>document.querySelector('#questions')?.scrollIntoView({block:'start'}));
   }
