@@ -1,0 +1,4 @@
+// MACA Santé — fiche validée 27/08/2026 : aides domicile
+window.extraAuditedQuestions = [...(window.extraAuditedQuestions || []),
+{id:'aides-domicile-personne-agee',category:'Senior',title:'Quand demander des aides pour une personne âgée à domicile ?',keywords:'aide domicile autonomie senior CCAS mairie APA aidant',answer:'Mettre en place des aides au bon moment permet de préserver l’autonomie et de sécuriser le quotidien. Les premiers signes sont des difficultés pour les tâches habituelles ou la sécurité.',watch:'Contacter médecin traitant, mairie, CCAS ou services sociaux en cas de perte d’autonomie, chutes ou difficultés nouvelles.',source:'HAS · SFGG · CNEG · CNSA · Assurance Maladie · CCAS',verifiedAt:'27/08/2026',validationStatus:'VALIDATED'}
+];
