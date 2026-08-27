@@ -1,0 +1,4 @@
+// MACA Santé — fiche validée 27/08/2026 : tremblements
+window.extraAuditedQuestions = [...(window.extraAuditedQuestions || []),
+{id:'tremblements-causes-consulter',category:'Neurologie',title:'Tremblements : quelles sont les causes et quand consulter ?',keywords:'tremblements mains qui tremblent stress repos action neurologie parkinson senior',answer:'Les tremblements correspondent à des mouvements involontaires rythmiques. Ils peuvent être liés au stress, à la fatigue, à certains médicaments, à des troubles neurologiques ou à d’autres causes. Leur signification dépend de leur début, de leur évolution et du contexte.',watch:'Un tremblement nouveau, qui s’aggrave, apparaît au repos, s’accompagne de raideur, de troubles de l’équilibre ou d’autres signes neurologiques nécessite un avis médical.',source:'Société Française de Neurologie · Collège des enseignants de neurologie · France Parkinson',verifiedAt:'27/08/2026',validationStatus:'VALIDATED'}
+];
