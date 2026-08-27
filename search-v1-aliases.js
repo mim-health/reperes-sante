@@ -15,7 +15,10 @@
     'antibiotiques':'antibiotique rhume antibio rhume antibiotique virus',
     'pas-jour':'combien de pas par jour marcher marche quotidienne 10000 pas 7000 pas',
     'tique':'morsure tique piqure tique maladie lyme erytheme migrant',
-    'tremblements-causes-consulter':'tremblement tremblements je tremble mains qui tremblent main qui tremble secousses involontaires'
+    'tremblements-causes-consulter':'tremblement tremblements je tremble mains qui tremblent main qui tremble secousses involontaires',
+    'sommeil-apres-60-ans':'apnee apnée pauses respiratoires ronflement somnolence jour sommeil non reparateur',
+    'burnout-epuisement-professionnel':'burn out burnout epuisement travail stress professionnel fatigue travail',
+    'essoufflement-causes-alertes':'essoufflement souffle court manque air respiration difficile dyspnee je manque dair'
   };
   window.healthQuestions=window.healthQuestions.map(q=>aliases[q.id]?{...q,keywords:`${q.keywords||''} ${aliases[q.id]}`}:q);
 })();
