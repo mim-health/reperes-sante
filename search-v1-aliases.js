@@ -14,7 +14,8 @@
     'ibuprofene-enfant':'advil nurofen ibuprofene anti inflammatoire enfant',
     'antibiotiques':'antibiotique rhume antibio rhume antibiotique virus',
     'pas-jour':'combien de pas par jour marcher marche quotidienne 10000 pas 7000 pas',
-    'tique':'morsure tique piqure tique maladie lyme erytheme migrant'
+    'tique':'morsure tique piqure tique maladie lyme erytheme migrant',
+    'tremblements-causes-consulter':'tremblement tremblements je tremble mains qui tremblent main qui tremble secousses involontaires'
   };
   window.healthQuestions=window.healthQuestions.map(q=>aliases[q.id]?{...q,keywords:`${q.keywords||''} ${aliases[q.id]}`}:q);
 })();
