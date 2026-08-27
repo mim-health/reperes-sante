@@ -1,0 +1,4 @@
+// MACA Santé — fiche validée 27/08/2026 : pertes vaginales
+window.extraAuditedQuestions = [...(window.extraAuditedQuestions || []),
+{id:'pertes-vaginales-normales-consulter',category:'Gynécologie',title:'Pertes vaginales : quand sont-elles normales et quand consulter ?',keywords:'pertes vaginales pertes blanches infection mycose odeur demangeaisons',answer:'Les pertes vaginales sont souvent normales et varient selon le cycle. Un changement inhabituel accompagné d’odeur, démangeaisons, brûlures ou douleurs nécessite un avis médical.',watch:'Consulter en cas de douleurs, saignements inhabituels, odeur forte, brûlures ou changement important des pertes.',source:'HAS · CNGOF · Assurance Maladie',verifiedAt:'27/08/2026',validationStatus:'VALIDATED'}
+];
