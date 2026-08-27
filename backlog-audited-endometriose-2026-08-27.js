@@ -1,0 +1,4 @@
+// MACA Santé — fiche validée 27/08/2026 : endométriose
+window.extraAuditedQuestions = [...(window.extraAuditedQuestions || []),
+{id:'endometriose-symptomes-consulter',category:'Gynécologie',title:'Endométriose : quels sont les symptômes et quand consulter ?',keywords:'endométriose règles douloureuses douleurs pelviennes infertilité rapports',answer:'L’endométriose est une maladie gynécologique pouvant provoquer des douleurs, notamment pendant les règles, et parfois avoir un impact sur la qualité de vie ou la fertilité. Des douleurs importantes ou invalidantes doivent être évaluées.',watch:'Consulter en cas de douleurs importantes, douleurs pendant les rapports, douleurs cycliques digestives ou urinaires, ou difficultés à concevoir.',source:'HAS · CNGOF · ESHRE · publications PubMed',verifiedAt:'27/08/2026',validationStatus:'VALIDATED'}
+];
