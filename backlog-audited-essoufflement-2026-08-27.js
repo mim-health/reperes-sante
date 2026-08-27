@@ -1,0 +1,4 @@
+// MACA Santé — fiche validée 27/08/2026 : essoufflement
+window.extraAuditedQuestions = [...(window.extraAuditedQuestions || []),
+{id:'essoufflement-causes-alertes',category:'Respiration',title:'Essoufflement : causes fréquentes et signes d’alerte',keywords:'essoufflement souffle court manque air respiration dyspnee coeur poumons senior',answer:'L’essoufflement correspond à une sensation de difficulté à respirer ou de manque d’air. Il peut être lié à l’effort, à une maladie respiratoire, cardiovasculaire, à une baisse de condition physique ou à d’autres situations. L’analyse dépend du contexte et de l’apparition des symptômes.',watch:'Un essoufflement brutal, au repos, associé à une douleur thoracique, un malaise, des lèvres bleutées ou une aggravation rapide nécessite un avis médical urgent.',source:'SPLF · Société Française de Cardiologie · HAS · Assurance Maladie',verifiedAt:'27/08/2026',validationStatus:'VALIDATED'}
+];
