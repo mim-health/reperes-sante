@@ -1,0 +1,4 @@
+// MACA Santé — fiche validée 27/08/2026 : chutes personne âgée
+window.extraAuditedQuestions = [...(window.extraAuditedQuestions || []),
+{id:'chute-personne-agee-causes-consulter',category:'Senior',title:'Chute chez la personne âgée : quelles causes et quand consulter ?',keywords:'chute senior personne âgée équilibre fracture prévention',answer:'Les chutes chez la personne âgée peuvent être liées à une baisse musculaire, des troubles de l’équilibre, des médicaments ou l’environnement. Elles nécessitent une évaluation surtout si elles se répètent.',watch:'Avis médical en cas de traumatisme, chute répétée, malaise, perte de connaissance ou perte d’autonomie.',source:'HAS · SFGG · CNEG · Assurance Maladie · Santé publique France',verifiedAt:'27/08/2026',validationStatus:'VALIDATED'}
+];
