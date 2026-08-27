@@ -1,0 +1,4 @@
+// MACA Santé — fiche validée 27/08/2026 : fragilité Fried
+window.extraAuditedQuestions = [...(window.extraAuditedQuestions || []),
+{id:'fragilite-personne-agee-fried',category:'Senior',title:'Fragilité chez la personne âgée : comment la reconnaître ?',keywords:'fragilité senior Fried perte poids fatigue marche force musculaire autonomie',answer:'La fragilité correspond à une diminution des réserves de l’organisme augmentant le risque de chutes, hospitalisation et perte d’autonomie. Le modèle de Fried repose sur cinq critères : perte de poids, fatigue, baisse activité, ralentissement de marche et diminution de force musculaire.',watch:'Un avis médical est recommandé en cas de perte de poids, fatigue inhabituelle, baisse de mobilité ou perte d’autonomie.',source:'Fried et al. J Gerontol 2001 PubMed · HAS · SFGG · CNEG · CNSA · OMS',verifiedAt:'27/08/2026',validationStatus:'VALIDATED'}
+];
