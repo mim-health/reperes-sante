@@ -1,0 +1,4 @@
+// MACA Santé — fiche validée 27/08/2026 : SOPK
+window.extraAuditedQuestions = [...(window.extraAuditedQuestions || []),
+{id:'sopk-symptomes-prise-en-charge',category:'Gynécologie',title:'Syndrome des ovaires polykystiques (SOPK) : quels symptômes et quelle prise en charge ?',keywords:'SOPK ovaires polykystiques règles irrégulières acné pilosité hormones',answer:'Le SOPK est un trouble hormonal fréquent pouvant entraîner des règles irrégulières, des signes d’excès d’androgènes et parfois des troubles métaboliques.',watch:'Consulter en cas de troubles importants des règles, absence de règles, symptômes hormonaux marqués ou difficultés de conception.',source:'HAS · CNGOF · ESHRE · Endocrine Society · publications PubMed',verifiedAt:'27/08/2026',validationStatus:'VALIDATED'}
+];
