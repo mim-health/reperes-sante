@@ -1,0 +1,18 @@
+'use strict';
+const fs=require('fs'),vm=require('vm');
+const ALLOWED=new Set(['Santé au quotidien','Cœur & prévention','Digestion & urinaire','Santé des femmes & grossesse','Enfants & parents','Ados','Santé mentale','Seniors']);
+const norm=v=>String(v||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+const strip=s=>String(s).split('?')[0];
+function fail(m,d){console.error('\nFAIL:',m);if(d)console.error(d);process.exitCode=1;}
+const ms={window:{}};vm.createContext(ms);vm.runInContext(fs.readFileSync('corpus-manifest.js','utf8'),ms);const manifest=ms.window.MACA_CORPUS_MANIFEST;
+if(!Array.isArray(manifest)||!manifest.length){fail('manifest missing or empty');process.exit(1);}const files=manifest.map(strip);
+const missing=files.filter(f=>!fs.existsSync(f)),dupFiles=files.filter((f,i,a)=>a.indexOf(f)!==i);if(missing.length)fail('manifest references missing files',missing);if(dupFiles.length)fail('manifest contains duplicate files',dupFiles);
+const s={window:{},console};s.window.window=s.window;vm.createContext(s);for(const f of files){try{vm.runInContext(fs.readFileSync(f,'utf8'),s,{filename:f});}catch(e){fail('unable to execute '+f,e.stack||e.message);}}
+const w=s.window,raw=[].concat(Array.isArray(w.healthQuestions)?w.healthQuestions:[],Array.isArray(w.extraAuditedQuestions)?w.extraAuditedQuestions:[]).filter(Boolean);
+// Build the non-destructive canonical view, then validate the view that V2 will expose.
+vm.runInContext(fs.readFileSync('corpus-canonicalizer.js','utf8'),s,{filename:'corpus-canonicalizer.js'});const canonical=w.MACA_BUILD_CANONICAL_CORPUS();
+const ids=new Map(),titles=new Map(),dupIds=[],dupTitles=[],invalid=[];
+canonical.forEach((c,i)=>{const id=String(c.id||'').trim(),title=norm(c.title||c.question),cat=String(c.publicCategory||'').trim();if(id){if(ids.has(id))dupIds.push(id);else ids.set(id,i);}if(title){if(titles.has(title))dupTitles.push(c.title||c.question);else titles.set(title,i);}if(!ALLOWED.has(cat))invalid.push({id,title:c.title||c.question,category:cat});});
+if(dupIds.length)fail('canonical duplicate IDs',[...new Set(dupIds)]);if(dupTitles.length)fail('canonical duplicate titles',[...new Set(dupTitles)]);if(invalid.length)fail('canonical cards outside 8 categories',invalid);
+if(files.includes('corpus-pipeline-test-card.js'))fail('canary must stay outside production manifest');vm.runInContext(fs.readFileSync('corpus-pipeline-test-card.js','utf8'),s,{filename:'corpus-pipeline-test-card.js'});const post=[].concat(Array.isArray(w.healthQuestions)?w.healthQuestions:[],Array.isArray(w.extraAuditedQuestions)?w.extraAuditedQuestions:[]).filter(Boolean),canary=post.filter(c=>c.id==='maca-pipeline-canary-2026-08-25'),searchable=post.some(c=>c.id==='maca-pipeline-canary-2026-08-25'&&norm([c.title,c.question,(c.keywords||[]).join(' ')].join(' ')).includes('maca pipeline canary')),catOK=canary.length===1&&(canary[0].publicCategory||canary[0].category)==='Santé au quotidien';if(canary.length!==1)fail('canary count',{count:canary.length});if(!searchable)fail('canary search');if(!catOK)fail('canary category');
+console.log(JSON.stringify({manifestFiles:files.length,rawCards:raw.length,canonicalCards:canonical.length,removedByCanonicalization:raw.length-canonical.length,canonicalUniqueIds:ids.size,canonicalUniqueTitles:titles.size,missingFiles:missing.length,duplicateManifestFiles:dupFiles.length,canonicalDuplicateIds:dupIds.length,canonicalDuplicateTitles:dupTitles.length,invalidCanonicalCategories:invalid.length,canary:{presentExactlyOnce:canary.length===1,searchable,canonicalCategory:catOK},passed:process.exitCode!==1},null,2));if(process.exitCode===1)process.exit(1);

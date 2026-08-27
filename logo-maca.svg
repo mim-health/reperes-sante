@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Logo MACA Santé">
+  <circle cx="48" cy="48" r="46" fill="#aeb693"/>
+  <g fill="#33421f">
+    <path d="M43 79C49 68 52 57 52 45C52 36 55 28 61 22C58 31 57 39 57 47C57 60 52 72 44 80Z"/>
+    <path d="M49 48C41 47 34 42 30 34C38 33 45 36 50 42C52 44 52 46 52 48C51 48 50 48 49 48Z"/>
+    <path d="M56 42C62 35 70 31 80 31C75 39 68 45 58 47C56 47 55 46 55 45C55 44 55 43 56 42Z"/>
+    <path d="M47 58C41 57 36 53 33 47C39 46 44 48 48 52C50 54 50 56 49 58C49 58 48 58 47 58Z"/>
+  </g>
+  <path d="M56 26C58 18 63 12 69 9C70 17 67 24 61 29C59 30 57 29 56 26Z" fill="#cf6238"/>
+  <g fill="none" stroke="#c8cfb2" stroke-width="1.6" stroke-linecap="round">
+    <path d="M34 36C40 39 45 43 49 48"/>
+    <path d="M58 45C64 41 70 36 76 33"/>
+    <path d="M35 49C40 51 44 54 48 57"/>
+    <path d="M59 27C63 22 66 17 68 12"/>
+  </g>
+</svg>

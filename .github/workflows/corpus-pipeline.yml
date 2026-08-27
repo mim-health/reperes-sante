@@ -1,0 +1,47 @@
+name: MACA Corpus Pipeline
+
+on:
+  pull_request:
+    branches: [feat/v0-magazine]
+    paths: ['index.html','fiches.html','fiche.html','fiche-corpus-v2.js','home-category-routing.js','source-ui.js','sitemap.xml','corpus-*.js','scripts/generate-sitemap.js','scripts/test-corpus-*.js','scripts/test-fiche-seo.js','scripts/test-home-category-routing.js','scripts/test-ui-adapter.js','scripts/test-browser-entry.js','qa-data*.js','backlog-audited*.js','maca-extra-five.js','maca-daily-archive.js','structured-backlog-compat.js','.github/workflows/corpus-pipeline.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  corpus-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Corpus integrity
+        run: node scripts/test-corpus-pipeline.js
+      - name: Functional parity
+        run: node scripts/test-corpus-functional.js
+      - name: UI adapter regression
+        run: node scripts/test-ui-adapter.js
+      - name: Browser V2 safety
+        run: node scripts/test-browser-entry.js
+      - name: Homepage category routing
+        run: node scripts/test-home-category-routing.js
+      - name: Individual fiche SEO regression
+        run: node scripts/test-fiche-seo.js
+      - name: Sitemap equals canonical corpus
+        env:
+          SITEMAP_DATE: '2026-08-25'
+        run: node scripts/generate-sitemap.js --check
+      - name: HTML pages use canonical V2 path
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          for(const f of ['index.html','fiches.html']){
+            const s=fs.readFileSync(f,'utf8');
+            for(const token of ['corpus-manifest.js','corpus-loader.js','corpus-canonicalizer.js','corpus-v2-browser-entry.js']) if(!s.includes(token)) throw new Error(f+' missing '+token);
+          }
+          const fiche=fs.readFileSync('fiche.html','utf8');
+          for(const token of ['corpus-manifest.js','corpus-loader.js','corpus-canonicalizer.js','fiche-corpus-v2.js']) if(!fiche.includes(token)) throw new Error('fiche.html missing '+token);
+          console.log('HTML V2 migration gate PASS');
+          NODE
