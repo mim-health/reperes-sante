@@ -8,7 +8,7 @@
 const CATEGORY_MAP={
  'Médicaments':'Santé au quotidien','Prévention':'Cœur & prévention','Prévention & bien-être':'Santé au quotidien',
  'Nutrition':'Santé au quotidien','Symptômes':'Santé au quotidien','Sommeil':'Santé mentale','Sommeil & santé mentale':'Santé mentale',
- 'Après 60 ans':'Seniors','Santé des femmes':'Santé des femmes & grossesse','Grossesse & santé des femmes':'Santé des femmes & grossesse',
+ 'Après 60 ans':'Seniors','Senior':'Seniors','Santé des femmes':'Santé des femmes & grossesse','Grossesse & santé des femmes':'Santé des femmes & grossesse',
  'Enfant & bébé':'Enfants & parents','Enfants':'Enfants & parents','Digestion & ventre':'Digestion & urinaire','Digestion & nutrition':'Digestion & urinaire',
  'Santé urinaire':'Digestion & urinaire','Cœur & circulation':'Cœur & prévention','Cœur, circulation & prévention':'Cœur & prévention',
  'Respiration':'Santé au quotidien','Respiration & ORL':'Santé au quotidien','Peau & dermatologie':'Santé au quotidien',
