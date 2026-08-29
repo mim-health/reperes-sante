@@ -9,8 +9,9 @@
   .site-header nav a{padding:8px 13px!important;font-size:13px!important}
   .intro{padding:24px 18px 20px!important}
   .intro .eyebrow{margin-bottom:12px!important}
-  .intro h1{font-size:clamp(38px,11.2vw,48px)!important;line-height:.94!important;letter-spacing:-.045em!important;overflow-wrap:normal!important;word-break:normal!important;hyphens:none!important;max-width:100%!important}
-  .intro h1 em{display:inline!important}
+  .intro h1{font-size:clamp(32px,8.8vw,38px)!important;line-height:1.01!important;letter-spacing:-.035em!important;overflow-wrap:normal!important;word-break:normal!important;hyphens:none!important;max-width:100%!important}
+  .intro h1 br{display:block!important}
+  .intro h1 em{display:block!important;margin-top:2px!important}
   .intro .lede{margin-top:16px!important;font-size:16px!important;line-height:1.42!important}
   .trust-strip{padding-top:0!important;padding-bottom:14px!important}
   .trust-strip-inner{gap:0!important;border-radius:24px!important;overflow:hidden!important}
@@ -28,5 +29,5 @@
   .site-header .brand-word{max-width:calc(100% - 49px)!important}
   .site-header .brand-word::after{font-size:18px!important}
   .intro{padding-left:16px!important;padding-right:16px!important}
-  .intro h1{font-size:clamp(37px,11vw,45px)!important}
+  .intro h1{font-size:clamp(31px,8.6vw,36px)!important}
 }
