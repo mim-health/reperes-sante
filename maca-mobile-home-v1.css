@@ -1,0 +1,29 @@
+/* MACA Santé — mobile homepage refinement 29/08/2026. Visual only. */
+@media (max-width:800px){
+  .site-header{padding:14px 16px 10px!important}
+  .site-header .brand{display:flex!important;align-items:center!important;gap:12px!important;margin:0 0 12px!important;text-decoration:none!important}
+  .site-header .brand img{width:52px!important;height:52px!important;flex:0 0 52px!important}
+  .site-header .brand-word::after{font-size:22px!important;letter-spacing:-.035em!important;color:#46513e!important}
+  .site-header nav{gap:7px!important}
+  .site-header nav a{padding:8px 13px!important;font-size:13px!important}
+  .intro{padding:24px 18px 20px!important}
+  .intro .eyebrow{margin-bottom:12px!important}
+  .intro h1{font-size:clamp(38px,11.2vw,48px)!important;line-height:.94!important;letter-spacing:-.045em!important;overflow-wrap:normal!important;word-break:normal!important;hyphens:none!important;max-width:100%!important}
+  .intro h1 em{display:inline!important}
+  .intro .lede{margin-top:16px!important;font-size:16px!important;line-height:1.42!important}
+  .trust-strip{padding-top:0!important;padding-bottom:14px!important}
+  .trust-strip-inner{gap:0!important;border-radius:24px!important;overflow:hidden!important}
+  .trust-proof{padding:20px 22px!important;border-radius:0!important;margin:0!important}
+  .trust-proof+ .trust-proof{border-top:1px solid #d9dfd3!important}
+  .trust-proof strong{font-size:20px!important;line-height:1.15!important}
+  .trust-proof p{font-size:14px!important;line-height:1.42!important;margin-top:9px!important}
+  .search-hub{padding-top:18px!important;padding-bottom:18px!important}
+  .search-guide strong{font-size:clamp(28px,8vw,34px)!important;line-height:1.02!important}
+  .search-guide span{font-size:15px!important;line-height:1.4!important;margin-top:7px!important}
+}
+@media (max-width:430px){
+  .site-header .brand img{width:48px!important;height:48px!important;flex-basis:48px!important}
+  .site-header .brand-word::after{font-size:21px!important}
+  .intro{padding-left:16px!important;padding-right:16px!important}
+  .intro h1{font-size:clamp(37px,11vw,45px)!important}
+}
