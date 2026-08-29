@@ -14,7 +14,7 @@ const CATEGORY_MAP={
  'Respiration':'Santé au quotidien','Respiration & ORL':'Santé au quotidien','Peau & dermatologie':'Santé au quotidien',
  'Santé de l’homme':'Santé au quotidien','Voyage & prévention':'Santé au quotidien','Vrai ou faux ?':'Santé au quotidien',
  'Santé au quotidien':'Santé au quotidien','Cœur & prévention':'Cœur & prévention','Digestion & urinaire':'Digestion & urinaire',
- 'Santé des femmes & grossesse':'Santé des femmes & grossesse','Enfants & parents':'Enfants & parents','Ados':'Ados','Santé mentale':'Santé mentale','Seniors':'Seniors'
+ 'Santé des femmes & grossesse':'Santé des femmes & grossesse','Enfants & parents':'Enfants & parents','Ados':'Ados','Santé mentale':'Santé mentale','Seniors':'Seniors','Cancer':'Cancer'
 };
 const norm=v=>String(v||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 function build(){
