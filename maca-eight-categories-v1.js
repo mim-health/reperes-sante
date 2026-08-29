@@ -1,7 +1,7 @@
 /* MACA Santé — V2 canonical category navigation guard. */
 (function(){
   'use strict';
-  const PUBLIC=['Santé au quotidien','Cœur & prévention','Digestion & urinaire','Santé des femmes & grossesse','Enfants & parents','Ados','Santé mentale','Seniors','Cancer'];
+  const PUBLIC=['Ados','Cancer','Cœur & prévention','Digestion & urinaire','Enfants & parents','Santé au quotidien','Santé des femmes & grossesse','Santé mentale','Seniors'];
   const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
   const canonicalById=new Map((window.MACA_CANONICAL_CORPUS||[]).map(q=>[norm(q.id),q.publicCategory]));
   const canonicalByTitle=new Map((window.MACA_CANONICAL_CORPUS||[]).map(q=>[norm(q.title||q.question),q.publicCategory]));
