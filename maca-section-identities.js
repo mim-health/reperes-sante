@@ -10,10 +10,11 @@
   'Ados':'teens',
   'Après 60 ans':'seniors',
   'Seniors':'seniors',
-  'Santé mentale':'mental'
+  'Santé mentale':'mental',
+  'Cancer':'cancer'
  };
  const tones={
-  daily:['#d7e8df','#557060'],heart:['#e7a58b','#a24f3f'],meds:['#b8d6d8','#507d80'],women:['#dbc9dc','#816985'],children:['#efd38e','#94722f'],teens:['#bfc9df','#617092'],seniors:['#d5c5a6','#7c6b4f'],mental:['#c7d9c4','#60795d']
+  daily:['#d7e8df','#557060'],heart:['#e7a58b','#a24f3f'],meds:['#b8d6d8','#507d80'],women:['#dbc9dc','#816985'],children:['#efd38e','#94722f'],teens:['#bfc9df','#617092'],seniors:['#d5c5a6','#7c6b4f'],mental:['#c7d9c4','#60795d'],cancer:['#d8d3e3','#655d78']
  };
  function applyCards(){
   document.querySelectorAll('.qa-card').forEach(card=>{
@@ -36,7 +37,7 @@
   if(document.querySelector('#maca-open-card-section-style'))return;
   const style=document.createElement('style');
   style.id='maca-open-card-section-style';
-  style.textContent='.modal-panel[data-section]{border-top:7px solid var(--maca-section-tone);position:relative}.modal-panel[data-section] #modal-content>.pill{background:var(--maca-section-tone);color:var(--maca-section-ink);border:0}';
+  style.textContent='.modal-panel[data-section]{border-top:7px solid var(--maca-section-tone);position:relative}.modal-panel[data-section] #modal-content>.pill{background:var(--maca-section-tone);color:var(--maca-section-ink);border:0}.qa-card[data-section="seniors"]{border-top:4px solid #d5c5a6}.qa-card[data-section="cancer"]{border-top:4px solid #d8d3e3}';
   document.head.appendChild(style);
  }
  function apply(){ensureStyle();applyCards();applyOpenedCard();}
