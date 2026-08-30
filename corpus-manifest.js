@@ -56,5 +56,6 @@ window.MACA_CORPUS_MANIFEST = Object.freeze([
   'maca-extra-femmes-geriatrie-2026-08-27.js',
   'backlog-audited-obesite-diabete-2026-08-29.js',
   'backlog-audited-cancer-innovations-2026-08-29.js',
-  'backlog-audited-articulations-2026-08-30.js'
+  'backlog-audited-articulations-2026-08-30.js',
+  'backlog-audited-fatigue-enfant-rentree-2026-08-30.js'
 ]);
