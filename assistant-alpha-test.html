@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MACA Alpha V2 — Test</title>
+<style>
+body{margin:0;background:#faf7ef;font:14px system-ui,-apple-system,Segoe UI,sans-serif;color:#263936}
+.bar{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid #e4ded3;padding:10px 14px;display:flex;gap:10px;align-items:center;justify-content:space-between}
+.bar strong{font-size:13px}.meta{font-size:12px;color:#687873}.bar button{border:0;border-radius:999px;padding:9px 13px;background:#25745f;color:#fff;font-weight:700}
+iframe{display:block;width:100%;height:calc(100vh - 58px);border:0}
+.overlay{position:fixed;inset:0;z-index:20;background:rgba(38,57,54,.45);display:flex;align-items:center;justify-content:center;padding:20px}
+.card{width:min(420px,100%);background:#fff;border-radius:20px;padding:22px;box-shadow:0 18px 60px rgba(0,0,0,.18)}
+.card h1{font-size:21px;margin:0 0 8px}.card p{color:#687873;margin:0 0 16px;line-height:1.45}.ids{display:grid;grid-template-columns:1fr 1fr;gap:9px}.ids button{padding:13px;border:1px solid #d7ddd9;background:#f7faf8;border-radius:12px;font-weight:700;color:#263936}.hidden{display:none}
+</style>
+</head>
+<body>
+<div class="bar"><div><strong id="testerLabel">Alpha-test MACA V2</strong><div id="count" class="meta">0 essai enregistré</div></div><button id="share">Envoyer par WhatsApp</button></div>
+<iframe id="alpha" src="assistant-alpha.html" title="Assistant MACA Alpha V2"></iframe>
+<div id="pick" class="overlay"><div class="card"><h1>Bienvenue dans le test MACA</h1><p>Sélectionnez simplement l’identifiant qui vous a été attribué. Aucun compte ni nom n’est demandé.</p><div class="ids"><button data-id="Testeur 1">Testeur 1</button><button data-id="Testeur 2">Testeur 2</button><button data-id="Testeur 3">Testeur 3</button><button data-id="Testeur 4">Testeur 4</button><button data-id="Testeur 5">Testeur 5</button><button data-id="Testeur 6">Testeur 6</button><button data-id="Testeur 7">Testeur 7</button><button data-id="Testeur 8">Testeur 8</button><button data-id="Testeur 9">Testeur 9</button><button data-id="Testeur 10">Testeur 10</button></div></div></div>
+<script>
+(function(){
+'use strict';
+const KEY='maca-alpha-v2-searchv2-feedback';
+const TESTERKEY='maca-alpha-v2-tester';
+const frame=document.getElementById('alpha');
+const count=document.getElementById('count');
+const pick=document.getElementById('pick');
+const testerLabel=document.getElementById('testerLabel');
+let active=null;
+let tester=localStorage.getItem(TESTERKEY)||'';
+function logs(){try{return JSON.parse(localStorage.getItem(KEY)||'[]').filter(x=>!tester||x.tester===tester)}catch(e){return []}}
+function save(all){localStorage.setItem(KEY,JSON.stringify(all));const own=all.filter(x=>x.tester===tester);count.textContent=own.length+' essai'+(own.length>1?'s':'')+' enregistré'+(own.length>1?'s':'');}
+function allLogs(){try{return JSON.parse(localStorage.getItem(KEY)||'[]')}catch(e){return []}}
+function push(entry){const all=allLogs();all.push(entry);save(all);return all.length-1;}
+function patch(i,data){const all=allLogs();if(!all[i])return;Object.assign(all[i],data);save(all);}
+function setTester(id){tester=id;localStorage.setItem(TESTERKEY,id);testerLabel.textContent='MACA V2 — '+id;pick.classList.add('hidden');save(allLogs());}
+if(tester)setTester(tester);
+document.querySelectorAll('[data-id]').forEach(b=>b.addEventListener('click',()=>setTester(b.dataset.id)));
+frame.addEventListener('load',()=>{
+ const d=frame.contentDocument;const form=d.getElementById('form');if(!form)return;
+ form.addEventListener('submit',()=>{
+  const q=d.getElementById('alpha-query').value.trim();if(!q)return;
+  setTimeout(()=>{
+   const choices=[...d.querySelectorAll('#choices button')].map(b=>b.textContent.replace(/\s*→\s*$/,'').trim());
+   const bot=d.getElementById('bot2').textContent||'';
+   const none=/pas encore trouvé|pas trouvé|n'a pas trouvé/i.test(bot)||choices.length===0;
+   active=push({tester,at:new Date().toISOString(),query:q,status:none?'no_match':'match',proposals:choices,selected:null,vote:null});
+  },80);
+ },true);
+ d.getElementById('choices').addEventListener('click',e=>{const b=e.target.closest('button');if(!b||active===null)return;patch(active,{selected:b.textContent.replace(/\s*→\s*$/,'').trim()});});
+ d.querySelectorAll('[data-vote]').forEach(b=>b.addEventListener('click',()=>{if(active!==null)patch(active,{vote:b.dataset.vote});},true));
+});
+document.getElementById('share').addEventListener('click',()=>{
+ if(!tester){pick.classList.remove('hidden');return;}
+ const own=allLogs().filter(x=>x.tester===tester);
+ if(!own.length){alert('Aucun test à envoyer pour le moment.');return;}
+ const lines=['MACA V2 — '+tester,'Retours alpha : '+own.length+' test(s)',''];
+ own.forEach((t,i)=>{
+  lines.push((i+1)+'. « '+t.query+' »');
+  if(t.status==='no_match') lines.push('❌ Aucun résultat');
+  else lines.push('→ '+(t.selected||t.proposals.join(' / ')||'Résultat proposé'));
+  if(t.vote==='oui') lines.push('👍 Bonne réponse');
+  if(t.vote==='non') lines.push('👎 Mauvaise réponse');
+  lines.push('');
+ });
+ lines.push('Données générées automatiquement par l’alpha MACA V2.');
+ const url='https://wa.me/?text='+encodeURIComponent(lines.join('\n'));
+ window.location.href=url;
+});
+})();
+</script>
+</body>
+</html>
