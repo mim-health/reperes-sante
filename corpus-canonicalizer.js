@@ -9,12 +9,14 @@ const CATEGORY_MAP={
  'Médicaments':'Santé au quotidien','Prévention':'Cœur & prévention','Prévention & bien-être':'Santé au quotidien',
  'Nutrition':'Santé au quotidien','Symptômes':'Santé au quotidien','Sommeil':'Santé mentale','Sommeil & santé mentale':'Santé mentale',
  'Après 60 ans':'Seniors','Senior':'Seniors','Santé des femmes':'Santé des femmes & grossesse','Grossesse & santé des femmes':'Santé des femmes & grossesse',
- 'Enfant & bébé':'Enfants & parents','Enfants':'Enfants & parents','Digestion & ventre':'Digestion & urinaire','Digestion & nutrition':'Digestion & urinaire',
- 'Santé urinaire':'Digestion & urinaire','Cœur & circulation':'Cœur & prévention','Cœur, circulation & prévention':'Cœur & prévention',
+ 'Enfant & bébé':'Enfants & parents','Enfants':'Enfants & parents','Enfants & Ados':'Enfants & parents','Adolescents':'Ados',
+ 'Digestion & ventre':'Digestion & urinaire','Digestion & nutrition':'Digestion & urinaire','Santé urinaire':'Digestion & urinaire',
+ 'Cœur':'Cœur & prévention','Cœur & circulation':'Cœur & prévention','Cœur, circulation & prévention':'Cœur & prévention',
  'Respiration':'Santé au quotidien','Respiration & ORL':'Santé au quotidien','Peau & dermatologie':'Santé au quotidien',
  'Santé de l’homme':'Santé au quotidien','Voyage & prévention':'Santé au quotidien','Vrai ou faux ?':'Santé au quotidien',
+ 'Santé quotidienne':'Santé au quotidien','Santé sexuelle':'Santé au quotidien','Neurologie':'Santé au quotidien','Cancer':'Santé au quotidien',
  'Santé au quotidien':'Santé au quotidien','Cœur & prévention':'Cœur & prévention','Digestion & urinaire':'Digestion & urinaire',
- 'Santé des femmes & grossesse':'Santé des femmes & grossesse','Enfants & parents':'Enfants & parents','Ados':'Ados','Santé mentale':'Santé mentale','Seniors':'Seniors','Cancer':'Cancer'
+ 'Santé des femmes & grossesse':'Santé des femmes & grossesse','Enfants & parents':'Enfants & parents','Ados':'Ados','Santé mentale':'Santé mentale','Seniors':'Seniors'
 };
 const norm=v=>String(v||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 function build(){
