@@ -1,10 +1,19 @@
 // Compatibility bridge: converts structured audited cards into the legacy question shape used by app.js.
 (() => {
-  const structured = window.SANTEJUSTE_BACKLOG_AUDITED || [];
+  const structured = [
+    ...(Array.isArray(window.SANTEJUSTE_BACKLOG_AUDITED) ? window.SANTEJUSTE_BACKLOG_AUDITED : []),
+    ...(Array.isArray(window.MACA_BACKLOG_AUDITED) ? window.MACA_BACKLOG_AUDITED : [])
+  ];
   if (!structured.length) return;
-  const sourceRegistry = window.SANTEJUSTE_SOURCE_REGISTRY || {};
+  const sourceRegistry = window.SANTEJUSTE_SOURCE_REGISTRY || window.MACA_SOURCE_REGISTRY || {};
   const existing = new Set((window.extraAuditedQuestions || []).map(q => q.id));
-  const converted = structured.filter(q => !existing.has(q.id)).map(q => {
+  const seen = new Set(existing);
+  const converted = structured.filter(q => {
+    const id = String(q?.id || '').trim();
+    if (!id || seen.has(id)) return false;
+    seen.add(id);
+    return true;
+  }).map(q => {
     const sources = (q.sourceIds || []).map(id => sourceRegistry[id]).filter(Boolean);
     const sourceLabel = sources.map(s => s.name).join(' · ') || 'Sources vérifiées';
     const firstUrl = sources[0]?.url || '#';
