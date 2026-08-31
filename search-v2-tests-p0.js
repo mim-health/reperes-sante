@@ -12,7 +12,7 @@
     ['crampe au mollet',['crampes-musculaires-causes']],
     ['crampe au mollet et mollet gonfle',['jambe-gonflee-adulte']],
     ['perte de cheveux',['alopecie-causes-pelade-traitement']],
-    ['mes cheveux tombent',['alopecie-causes-pelade-traitement']],
+    ['je perds mes cheveux',['alopecie-causes-pelade-traitement']],
     ['mon enfant saigne du nez',['saignement-nez-enfant']],
     ['saignement de nez',[]],
     ['eczema',['eczema-que-faire']],
