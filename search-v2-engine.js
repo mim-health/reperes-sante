@@ -66,7 +66,12 @@
     const ambiguous=second&&second.score>=620&&!multiAllowed(top,second,query)&&(top.score-second.score<130||second.score/top.score>0.88);
     if(ambiguous)return {status:'none',reason:'ambiguous',matches:[],candidates:scored.slice(0,3).map(x=>({intentKey:x.intent.key,id:chooseTarget(x.intent,query),score:x.score})),context:[...ctx]};
     const selected=[top];if(second&&multiAllowed(top,second,query))selected.push(second);
-    return {status:'match',reason:'validated-referential',matches:selected.map(x=>({intentKey:x.intent.key,id:chooseTarget(x.intent,query),score:Math.round(x.score),confidence:x.score>=1000?'high':'medium',matchedAlias:x.alias||null,matchType:x.matchType||null})),context:[...ctx]};
+    let matches=selected.map(x=>({intentKey:x.intent.key,id:chooseTarget(x.intent,query),score:Math.round(x.score),confidence:x.score>=1000?'high':'medium',matchedAlias:x.alias||null,matchType:x.matchType||null}));
+    matches=matches.filter(m=>!(ref.excludedIds||[]).includes(m.id));
+    const map=corpusMap();
+    if(map.size)matches=matches.filter(m=>map.has(m.id));
+    if(!matches.length)return {status:'none',reason:'target-missing-or-excluded',matches:[],context:[...ctx]};
+    return {status:'match',reason:'validated-referential',matches,context:[...ctx]};
   }
   function rank(query,options={}){
     const resolved=resolve(query,options);if(resolved.status!=='match')return [];
