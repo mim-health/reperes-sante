@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><title>MACA V2 UI functional</title></head><body>
+<pre id="machine-result">{"ready":false}</pre>
+<iframe id="app" src="fiches.html" style="width:100%;height:900px;border:0"></iframe>
+<script>
+(function(){
+  'use strict';
+  const out=document.getElementById('machine-result');
+  const frame=document.getElementById('app');
+  const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+  const same=(a,b)=>JSON.stringify(a)===JSON.stringify(b);
+  async function waitReady(w){for(let i=0;i<200;i++){if(w.MACA_SEARCH_V2_UI&&w.document.documentElement.dataset.macaSearchEngine==='v2')return true;await sleep(50);}return false;}
+  async function main(){
+    await new Promise(resolve=>frame.addEventListener('load',resolve,{once:true}));
+    const w=frame.contentWindow,d=w.document;
+    const ready=await waitReady(w);
+    if(!ready){out.textContent=JSON.stringify({ready:false,error:w.MACA_V2_UI_ERROR||'V2 UI bridge not ready'});return;}
+    const checks=[];
+    function check(name,ok,detail){checks.push({name,ok:!!ok,detail});}
+    function run(query,expected){const ids=w.MACA_SEARCH_V2_UI.run(query);check(query,same(ids,expected),{expected,actual:ids});return ids;}
+
+    run('mal au ventre',['douleur-abdominale']);
+    run('acouphenes et vertiges',['acouphenes-adulte','vertiges-causes']);
+    run('rapport non protege',['rapport-non-protege-ist']);
+    run('je tousse du sang',[]);
+    run('saignement de nez',[]);
+    run('les yeux me piquent',[]);
+    run('toux seche',[]);
+    run('malaise',[]);
+
+    const abstainText=d.getElementById('no-results');
+    check('abstention visible',!abstainText.hidden&&d.querySelectorAll('#qa-grid .qa-card').length===0,{hidden:abstainText.hidden,count:d.querySelectorAll('#qa-grid .qa-card').length});
+
+    w.MACA_SEARCH_V2_UI.run('mal au ventre');
+    const card=d.querySelector('#qa-grid .qa-card[data-qid="douleur-abdominale"]');
+    const cardTitle=card&&card.querySelector('h3')&&card.querySelector('h3').textContent.trim();
+    if(card)card.click();
+    await sleep(20);
+    const modal=d.getElementById('article-modal');
+    const modalTitle=d.querySelector('#modal-content h2');
+    check('ouverture fiche',!!card&&modal&&modal.classList.contains('open')&&modalTitle&&modalTitle.textContent.trim()===cardTitle,{cardTitle,modalTitle:modalTitle&&modalTitle.textContent.trim(),modalOpen:modal&&modal.classList.contains('open')});
+
+    const scriptSrc=[...d.scripts].map(s=>s.src||'');
+    const forbidden=['search-v1-engine.js','search-v1-aliases.js','scoped-category-search-v1.js','category-query-routing-v1.js'];
+    const loadedForbidden=forbidden.filter(name=>scriptSrc.some(src=>src.includes(name)));
+    check('aucun moteur V1 parasite',typeof w.MACA_SEARCH_V1==='undefined'&&loadedForbidden.length===0,{globalV1:typeof w.MACA_SEARCH_V1,loadedForbidden});
+    check('moteur V2 chargé',!!w.MACA_SEARCH_V2&&!!w.MACA_SEARCH_V2_UI,{version:w.MACA_SEARCH_V2&&w.MACA_SEARCH_V2.version});
+
+    const input=d.getElementById('search-input');
+    const searchBox=d.querySelector('.search-box');
+    const noOverflow=d.documentElement.scrollWidth<=d.documentElement.clientWidth+2;
+    check('UI recherche visible',!!input&&!!searchBox&&getComputedStyle(searchBox).display!=='none'&&input.getBoundingClientRect().width>0,{inputWidth:input&&input.getBoundingClientRect().width,display:searchBox&&getComputedStyle(searchBox).display});
+    check('pas de débordement horizontal',noOverflow,{scrollWidth:d.documentElement.scrollWidth,clientWidth:d.documentElement.clientWidth});
+
+    const failed=checks.filter(x=>!x.ok);
+    out.textContent=JSON.stringify({ready:true,viewport:{width:innerWidth,height:innerHeight},total:checks.length,passed:checks.length-failed.length,failed:failed.length,checks,success:failed.length===0},null,2);
+  }
+  main().catch(err=>{out.textContent=JSON.stringify({ready:false,error:String(err&&err.stack||err)});});
+})();
+</script>
+</body></html>
