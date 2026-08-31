@@ -1,0 +1,70 @@
+name: MACA Search V2 Regression
+
+on:
+  pull_request:
+    branches:
+      - fix/corpus-v2-integrity-20260831
+    types: [opened, synchronize, reopened]
+
+jobs:
+  browser-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+
+      - name: Start static server
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/maca-http.log 2>&1 &
+          echo $! >/tmp/maca-http.pid
+          sleep 1
+
+      - name: Run canonical corpus regression in Chrome
+        run: |
+          set -euo pipefail
+          CHROME="$(command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          if [ -z "$CHROME" ]; then
+            echo "No Chrome/Chromium executable found on runner"
+            exit 2
+          fi
+          "$CHROME" \
+            --headless=new \
+            --disable-gpu \
+            --no-sandbox \
+            --disable-dev-shm-usage \
+            --virtual-time-budget=15000 \
+            --dump-dom \
+            "http://127.0.0.1:8765/search-v2-lab.html?autorun=1" \
+            > /tmp/maca-v2-dom.html
+
+          python3 - <<'PY'
+          import html, json, re, sys
+          dom = open('/tmp/maca-v2-dom.html', encoding='utf-8').read()
+          m = re.search(r'<pre id="machine-result"[^>]*>(.*?)</pre>', dom, re.S)
+          if not m:
+              print('Machine result not found in DOM')
+              print(dom[-5000:])
+              sys.exit(3)
+          raw = html.unescape(re.sub(r'<[^>]+>', '', m.group(1))).strip()
+          print('MACA_V2_MACHINE_RESULT=' + raw)
+          data = json.loads(raw)
+          if not data.get('ready'):
+              print('Lab did not become ready:', data)
+              sys.exit(4)
+          if data.get('total') != 120:
+              print('Expected 120 tests, got', data.get('total'))
+              sys.exit(5)
+          print('Canonical corpus size:', data.get('canonicalSize'))
+          print('Engine:', data.get('engine'))
+          print('Passed:', data.get('passed'), '/', data.get('total'))
+          if data.get('failed'):
+              print('Failures:')
+              for failure in data.get('failures', []):
+                  print(json.dumps(failure, ensure_ascii=False))
+              sys.exit(1)
+          PY
+
+      - name: Show server log on failure
+        if: failure()
+        run: cat /tmp/maca-http.log || true
