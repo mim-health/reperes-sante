@@ -20,7 +20,6 @@ window.MACA_CORPUS_MANIFEST = Object.freeze([
   'backlog-audited-fertility.js',
   'backlog-audited-perimenopause.js',
   'backlog-audited-travel-kit.js',
-  'structured-backlog-compat.js',
   'maca-extra-five.js',
   'backlog-audited-lot-k.js',
   'backlog-audited-lot-l.js?v=20260822-1',
@@ -57,5 +56,6 @@ window.MACA_CORPUS_MANIFEST = Object.freeze([
   'backlog-audited-obesite-diabete-2026-08-29.js',
   'backlog-audited-cancer-innovations-2026-08-29.js',
   'backlog-audited-articulations-2026-08-30.js',
-  'backlog-audited-fatigue-enfant-rentree-2026-08-30.js'
+  'backlog-audited-fatigue-enfant-rentree-2026-08-30.js',
+  'structured-backlog-compat.js?v=20260831-1'
 ]);
