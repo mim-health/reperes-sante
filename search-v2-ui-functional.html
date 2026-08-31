@@ -1,7 +1,7 @@
 <!doctype html>
-<html lang="fr"><head><meta charset="utf-8"><title>MACA V2 UI functional</title></head><body>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MACA V2 UI functional</title><style>html,body{margin:0;padding:0;width:100%;height:100%}#app{display:block;width:100vw;height:100vh;border:0}</style></head><body>
 <pre id="machine-result">{"ready":false}</pre>
-<iframe id="app" src="fiches.html" style="width:100%;height:900px;border:0"></iframe>
+<iframe id="app" src="fiches.html"></iframe>
 <script>
 (function(){
   'use strict';
@@ -50,10 +50,10 @@
     const searchBox=d.querySelector('.search-box');
     check('UI recherche visible',!!input&&!!searchBox&&getComputedStyle(searchBox).display!=='none'&&input.getBoundingClientRect().width>0,{inputWidth:input&&input.getBoundingClientRect().width,display:searchBox&&getComputedStyle(searchBox).display});
 
-    /* Diagnostic non bloquant : le ticket interdit toute modification de design/CSS. */
-    const layoutDiagnostic={horizontalOverflowPx:Math.max(0,d.documentElement.scrollWidth-d.documentElement.clientWidth),scrollWidth:d.documentElement.scrollWidth,clientWidth:d.documentElement.clientWidth};
     const failed=checks.filter(x=>!x.ok);
-    out.textContent=JSON.stringify({ready:true,viewport:{width:innerWidth,height:innerHeight},total:checks.length,passed:checks.length-failed.length,failed:failed.length,checks,layoutDiagnostic,success:failed.length===0},null,2);
+    const appViewport={width:w.innerWidth,height:w.innerHeight};
+    const layoutDiagnostic={horizontalOverflowPx:Math.max(0,d.documentElement.scrollWidth-d.documentElement.clientWidth),scrollWidth:d.documentElement.scrollWidth,clientWidth:d.documentElement.clientWidth};
+    out.textContent=JSON.stringify({ready:true,viewport:{width:innerWidth,height:innerHeight},appViewport,total:checks.length,passed:checks.length-failed.length,failed:failed.length,checks,layoutDiagnostic,success:failed.length===0},null,2);
   }
   main().catch(err=>{out.textContent=JSON.stringify({ready:false,error:String(err&&err.stack||err)});});
 })();
