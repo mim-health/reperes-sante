@@ -82,6 +82,8 @@ Cas de régression importants inclus :
 
 Le lab expose désormais un résultat machine contenant la taille réelle de `MACA_CANONICAL_CORPUS`, le nombre de tests réussis/échoués et le détail des différences. Le workflow Chrome headless charge directement le manifest et les scripts de la branche de PR : il teste donc le moteur contre le corpus canonique construit après les corrections d'intégrité de #13.
 
+La branche moteur a été réalignée sur la tête de `fix/corpus-v2-integrity-20260831` avant déclenchement de cette régression.
+
 ## Étape suivante avant activation
 
 1. obtenir 120/120 dans le workflow navigateur canonique ;
