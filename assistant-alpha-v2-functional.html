@@ -1,6 +1,6 @@
 <!doctype html>
-<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MACA Alpha V2 — Functional validation</title></head>
-<body><h1>MACA Alpha V2 — Functional validation</h1><iframe id="alpha" src="assistant-alpha.html" style="width:100%;height:760px;border:0"></iframe><pre id="machine-result">{"ready":false}</pre>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MACA Alpha V2 — Functional validation</title><style>html,body{margin:0;padding:0}iframe{display:block;width:100%;height:760px;border:0}</style></head>
+<body><h1>MACA Alpha V2 — Functional validation</h1><iframe id="alpha" src="assistant-alpha.html"></iframe><pre id="machine-result">{"ready":false}</pre>
 <script>
 (function(){'use strict';
 const cases=[
@@ -19,21 +19,14 @@ async function waitReady(){for(let i=0;i<250;i++){await sleep(80);try{const w=fr
 async function run(){await waitReady();const w=frame.contentWindow,d=frame.contentDocument;const failures=[];const details=[];
  for(const [query,expected] of cases){
   const input=d.getElementById('alpha-query');input.value=query;d.getElementById('form').dispatchEvent(new Event('submit',{bubbles:true,cancelable:true}));await sleep(40);
-  const engineIds=w.MACA_SEARCH_V2.rank(query).map(x=>x.q.id);
-  const engineTitles=w.MACA_SEARCH_V2.rank(query).map(x=>x.q.title||x.q.question||'Fiche MACA');
+  const ranked=w.MACA_SEARCH_V2.rank(query);const engineIds=ranked.map(x=>x.q.id);const engineTitles=ranked.map(x=>x.q.title||x.q.question||'Fiche MACA');
   const rendered=[...d.querySelectorAll('#choices button')].map(b=>b.textContent.replace(/\s*→\s*$/,'').trim());
-  const noneText=d.getElementById('bot2').textContent||'';
-  const renderedNone=rendered.length===0&&/pas encore trouvé/i.test(noneText);
-  const expectedOk=JSON.stringify(engineIds)===JSON.stringify(expected);
-  const renderOk=expected.length?JSON.stringify(rendered)===JSON.stringify(engineTitles):renderedNone;
-  const ok=expectedOk&&renderOk;
-  details.push({query,expected,engineIds,rendered,ok});
-  if(!ok)failures.push({query,expected,engineIds,rendered,noneText});
+  const noneText=d.getElementById('bot2').textContent||'';const renderedNone=rendered.length===0&&/pas encore trouvé/i.test(noneText);
+  const expectedOk=JSON.stringify(engineIds)===JSON.stringify(expected);const renderOk=expected.length?JSON.stringify(rendered)===JSON.stringify(engineTitles):renderedNone;const ok=expectedOk&&renderOk;
+  details.push({query,expected,engineIds,rendered,ok});if(!ok)failures.push({query,expected,engineIds,rendered,noneText});
  }
- const count=w.healthQuestions&&w.healthQuestions.length||0;
- const feedbackButtons=d.querySelectorAll('[data-vote]').length;
- const result={ready:true,success:failures.length===0&&count===180&&feedbackButtons===2,total:cases.length,passed:cases.length-failures.length,failed:failures.length,corpusCount:count,engineVersion:w.MACA_SEARCH_V2.version,feedbackButtons,viewport:{width:window.innerWidth,height:window.innerHeight},appViewport:{width:frame.contentWindow.innerWidth,height:frame.contentWindow.innerHeight},details,failures};
- out.textContent=JSON.stringify(result);
+ const count=w.healthQuestions&&w.healthQuestions.length||0;const feedbackButtons=d.querySelectorAll('[data-vote]').length;const overflow=Math.max(0,d.documentElement.scrollWidth-w.innerWidth);
+ const result={ready:true,success:failures.length===0&&count===180&&feedbackButtons===2&&overflow===0,total:cases.length,passed:cases.length-failures.length,failed:failures.length,corpusCount:count,engineVersion:w.MACA_SEARCH_V2.version,feedbackButtons,overflow,viewport:{width:window.innerWidth,height:window.innerHeight},appViewport:{width:w.innerWidth,height:w.innerHeight},details,failures};out.textContent=JSON.stringify(result);
 }
 run().catch(err=>{out.textContent=JSON.stringify({ready:true,success:false,error:String(err&&err.message||err),viewport:{width:window.innerWidth,height:window.innerHeight}});});
 })();
