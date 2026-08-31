@@ -1,25 +1,23 @@
-name: MACA Search V2 Regression
+name: MACA Search V2 UI Validation
 
 on:
   push:
     branches:
-      - feat/search-v2-p0-20260831
-    paths-ignore:
-      - docs/MACA_V2_REGRESSION_RESULT.json
+      - feat/search-v2-ui-20260831
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  browser-regression:
+  regression-and-ui:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
-      - name: Checkout V2 branch
+      - name: Checkout branche UI V2
         uses: actions/checkout@v4
         with:
-          ref: feat/search-v2-p0-20260831
+          ref: feat/search-v2-ui-20260831
 
       - name: Start static server
         run: |
@@ -27,69 +25,55 @@ jobs:
           echo $! >/tmp/maca-http.pid
           sleep 1
 
-      - name: Run canonical corpus regression in Chrome
-        env:
-          TESTED_SHA: ${{ github.sha }}
+      - name: Locate Chrome
         run: |
-          set -u
           CHROME="$(command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
-          CHROME_EXIT=0
-          if [ -z "$CHROME" ]; then
-            echo "No Chrome/Chromium executable found on runner"
-            CHROME_EXIT=2
-            : > /tmp/maca-v2-dom.html
-          else
-            "$CHROME" \
-              --headless=new \
-              --disable-gpu \
-              --no-sandbox \
-              --disable-dev-shm-usage \
-              --virtual-time-budget=20000 \
-              --dump-dom \
-              "http://127.0.0.1:8765/search-v2-lab.html?autorun=1" \
-              > /tmp/maca-v2-dom.html || CHROME_EXIT=$?
-          fi
-          export CHROME_EXIT
+          test -n "$CHROME" || { echo "No Chrome/Chromium executable found"; exit 2; }
+          echo "CHROME=$CHROME" >> "$GITHUB_ENV"
 
+      - name: Run 120 V2 regression tests
+        run: |
+          "$CHROME" --headless=new --disable-gpu --no-sandbox --disable-dev-shm-usage \
+            --virtual-time-budget=20000 --dump-dom \
+            "http://127.0.0.1:8765/search-v2-lab.html?autorun=1" > /tmp/v2-regression.html
           python3 - <<'PY'
-          import datetime, html, json, os, re
-          dom = open('/tmp/maca-v2-dom.html', encoding='utf-8', errors='replace').read()
-          m = re.search(r'<pre id="machine-result"[^>]*>(.*?)</pre>', dom, re.S)
-          if m:
-              raw = html.unescape(re.sub(r'<[^>]+>', '', m.group(1))).strip()
-              try:
-                  data = json.loads(raw)
-              except Exception as exc:
-                  data = {'ready': False, 'error': f'Invalid machine JSON: {exc}', 'raw': raw[:2000]}
-          else:
-              data = {'ready': False, 'error': 'Machine result not found in DOM'}
-          data['testedSha'] = os.environ.get('TESTED_SHA')
-          data['chromeExit'] = int(os.environ.get('CHROME_EXIT', '0'))
-          data['executedAt'] = datetime.datetime.now(datetime.timezone.utc).isoformat()
-          data['success'] = bool(data.get('ready') and data.get('total') == 120 and data.get('failed') == 0 and data['chromeExit'] == 0)
-          os.makedirs('docs', exist_ok=True)
-          with open('docs/MACA_V2_REGRESSION_RESULT.json', 'w', encoding='utf-8') as f:
-              json.dump(data, f, ensure_ascii=False, indent=2)
-              f.write('\n')
-          print(json.dumps(data, ensure_ascii=False, indent=2))
+          import html, json, re, sys
+          dom=open('/tmp/v2-regression.html',encoding='utf-8',errors='replace').read()
+          m=re.search(r'<pre id="machine-result"[^>]*>(.*?)</pre>',dom,re.S)
+          if not m:
+              print('Machine result missing'); sys.exit(1)
+          raw=html.unescape(re.sub(r'<[^>]+>','',m.group(1))).strip()
+          data=json.loads(raw)
+          print('V2_REGRESSION_RESULT='+json.dumps(data,ensure_ascii=False))
+          if not (data.get('ready') and data.get('total')==120 and data.get('failed')==0): sys.exit(1)
           PY
 
-      - name: Persist regression result
-        if: always()
+      - name: Functional search — desktop
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/MACA_V2_REGRESSION_RESULT.json
-          git diff --cached --quiet && exit 0
-          git commit -m "test: enregistrer résultat régression V2 [skip ci]"
-          git push origin HEAD:feat/search-v2-p0-20260831
-
-      - name: Fail workflow if regression failed
-        if: always()
-        run: |
+          "$CHROME" --headless=new --disable-gpu --no-sandbox --disable-dev-shm-usage \
+            --window-size=1440,1000 --virtual-time-budget=25000 --dump-dom \
+            "http://127.0.0.1:8765/search-v2-ui-functional.html" > /tmp/v2-ui-desktop.html
           python3 - <<'PY'
-          import json, sys
-          data=json.load(open('docs/MACA_V2_REGRESSION_RESULT.json', encoding='utf-8'))
-          if not data.get('success'):
-              sys.exit(1)
+          import html, json, re, sys
+          dom=open('/tmp/v2-ui-desktop.html',encoding='utf-8',errors='replace').read()
+          m=re.search(r'<pre id="machine-result"[^>]*>(.*?)</pre>',dom,re.S)
+          if not m: print('Desktop machine result missing'); sys.exit(1)
+          data=json.loads(html.unescape(re.sub(r'<[^>]+>','',m.group(1))).strip())
+          print('V2_UI_DESKTOP_RESULT='+json.dumps(data,ensure_ascii=False))
+          if not data.get('success'): sys.exit(1)
+          PY
+
+      - name: Functional search — mobile
+        run: |
+          "$CHROME" --headless=new --disable-gpu --no-sandbox --disable-dev-shm-usage \
+            --window-size=390,844 --virtual-time-budget=25000 --dump-dom \
+            "http://127.0.0.1:8765/search-v2-ui-functional.html" > /tmp/v2-ui-mobile.html
+          python3 - <<'PY'
+          import html, json, re, sys
+          dom=open('/tmp/v2-ui-mobile.html',encoding='utf-8',errors='replace').read()
+          m=re.search(r'<pre id="machine-result"[^>]*>(.*?)</pre>',dom,re.S)
+          if not m: print('Mobile machine result missing'); sys.exit(1)
+          data=json.loads(html.unescape(re.sub(r'<[^>]+>','',m.group(1))).strip())
+          print('V2_UI_MOBILE_RESULT='+json.dumps(data,ensure_ascii=False))
+          if not data.get('success'): sys.exit(1)
           PY
