@@ -16,8 +16,9 @@ Règle de sécurité produit : **un faux positif est plus grave qu'un non-résul
 
 - `search-v2-referential-p0.js` : traduction exécutable du lot P0 validé médicalement.
 - `search-v2-engine.js` : résolution déterministe et abstention.
-- `search-v2-tests-p0.js` : 74 cas de régression P0.
+- `search-v2-tests-p0.js` : 120 cas de régression P0.
 - `search-v2-regression-runner.js` : runner navigateur contre le corpus réellement chargé.
+- `search-v2-lab.html` : laboratoire navigateur isolé pour tester des formulations et lancer la régression sans toucher à l'accueil.
 
 ## Ordre de décision
 
@@ -29,7 +30,8 @@ Règle de sécurité produit : **un faux positif est plus grave qu'un non-résul
 6. arbitrages de sous-intentions : par exemple palpitations générales vs « quand consulter » ;
 7. seuil de confiance ;
 8. marge entre les deux meilleurs candidats ;
-9. en cas d'ambiguïté non autorisée : **aucun résultat**.
+9. vérification que l'ID cible n'est pas exclu et existe réellement dans le corpus chargé ;
+10. en cas d'ambiguïté ou de cible absente : **aucun résultat**.
 
 ## Ce que le moteur ne fait plus
 
@@ -61,7 +63,9 @@ Le moteur rend zéro résultat pour notamment :
 
 ## Test local effectué avant commit
 
-**74 / 74 cas P0 réussis** avec un corpus de test contenant les IDs attendus.
+**120 / 120 cas P0 réussis** avec un corpus de test contenant les IDs attendus.
+
+Le lot contient : formulations exactes, langage patient, sous-intentions, associations autorisées, fautes simples et vrais cas de non-résultat.
 
 Cas de régression importants inclus :
 
@@ -70,11 +74,11 @@ Cas de régression importants inclus :
 - `mal de tête` → `maux-tete` puis alternative migraine ;
 - `palpitations quand consulter` → fiche dédiée quand-consulter ;
 - `rapport non protégé pilule du lendemain` → contraception d'urgence prioritaire + fiche IST associée ;
+- `cistite` et `migrane` → tolérance à une coquille simple ;
 - requêtes d'abstention validées → zéro résultat.
 
 ## Étape suivante avant activation
 
-1. exécuter le runner dans le navigateur contre `MACA_CANONICAL_CORPUS` après la correction d'intégrité du corpus ;
-2. porter la régression à 100–150 questions ;
-3. vérifier les vrais « aucun résultat » ;
-4. seulement ensuite brancher ce moteur sur la barre d'accueil et le chatbot Alpha/V2.
+1. exécuter les 120 cas dans `search-v2-lab.html` contre le vrai `MACA_CANONICAL_CORPUS`, après fusion de la correction d'intégrité du corpus ;
+2. corriger toute différence liée à une fiche absente ou à un ID réel ;
+3. seulement ensuite brancher ce moteur sur la barre d'accueil et le chatbot Alpha/V2.
