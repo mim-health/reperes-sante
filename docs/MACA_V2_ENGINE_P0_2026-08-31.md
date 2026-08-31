@@ -19,6 +19,7 @@ Règle de sécurité produit : **un faux positif est plus grave qu'un non-résul
 - `search-v2-tests-p0.js` : 120 cas de régression P0.
 - `search-v2-regression-runner.js` : runner navigateur contre le corpus réellement chargé.
 - `search-v2-lab.html` : laboratoire navigateur isolé pour tester des formulations et lancer la régression sans toucher à l'accueil.
+- `.github/workflows/maca-search-v2-regression.yml` : exécution de `search-v2-lab.html?autorun=1` dans Chrome headless sur la branche de PR.
 
 ## Ordre de décision
 
@@ -77,8 +78,12 @@ Cas de régression importants inclus :
 - `cistite` et `migrane` → tolérance à une coquille simple ;
 - requêtes d'abstention validées → zéro résultat.
 
+## Régression navigateur sur corpus canonique
+
+Le lab expose désormais un résultat machine contenant la taille réelle de `MACA_CANONICAL_CORPUS`, le nombre de tests réussis/échoués et le détail des différences. Le workflow Chrome headless charge directement le manifest et les scripts de la branche de PR : il teste donc le moteur contre le corpus canonique construit après les corrections d'intégrité de #13.
+
 ## Étape suivante avant activation
 
-1. exécuter les 120 cas dans `search-v2-lab.html` contre le vrai `MACA_CANONICAL_CORPUS`, après fusion de la correction d'intégrité du corpus ;
+1. obtenir 120/120 dans le workflow navigateur canonique ;
 2. corriger toute différence liée à une fiche absente ou à un ID réel ;
 3. seulement ensuite brancher ce moteur sur la barre d'accueil et le chatbot Alpha/V2.
