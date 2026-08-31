@@ -63,17 +63,51 @@ jobs:
           if not data.get('success'): sys.exit(1)
           PY
 
-      - name: Functional search — mobile
+      - name: Functional search — true mobile emulation 390px and 375px
         run: |
           "$CHROME" --headless=new --disable-gpu --no-sandbox --disable-dev-shm-usage \
-            --window-size=390,844 --virtual-time-budget=25000 --dump-dom \
-            "http://127.0.0.1:8765/search-v2-ui-functional.html" > /tmp/v2-ui-mobile.html
-          python3 - <<'PY'
-          import html, json, re, sys
-          dom=open('/tmp/v2-ui-mobile.html',encoding='utf-8',errors='replace').read()
-          m=re.search(r'<pre id="machine-result"[^>]*>(.*?)</pre>',dom,re.S)
-          if not m: print('Mobile machine result missing'); sys.exit(1)
-          data=json.loads(html.unescape(re.sub(r'<[^>]+>','',m.group(1))).strip())
-          print('V2_UI_MOBILE_RESULT='+json.dumps(data,ensure_ascii=False))
-          if not data.get('success'): sys.exit(1)
-          PY
+            --remote-debugging-port=9222 --remote-allow-origins='*' about:blank \
+            >/tmp/maca-mobile-chrome.log 2>&1 &
+          CHROME_PID=$!
+          trap 'kill $CHROME_PID 2>/dev/null || true' EXIT
+          for i in $(seq 1 50); do
+            curl -fsS http://127.0.0.1:9222/json/version >/dev/null && break
+            sleep 0.1
+          done
+          curl -fsS http://127.0.0.1:9222/json/version >/dev/null
+          node <<'NODE'
+          const widths=[390,375];
+          const url='http://127.0.0.1:8765/search-v2-ui-functional.html';
+          const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+          async function testWidth(width){
+            const target=await fetch('http://127.0.0.1:9222/json/new?about:blank',{method:'PUT'}).then(r=>r.json());
+            const ws=new WebSocket(target.webSocketDebuggerUrl);
+            await new Promise((resolve,reject)=>{ws.addEventListener('open',resolve,{once:true});ws.addEventListener('error',reject,{once:true});});
+            let seq=0; const pending=new Map();
+            ws.addEventListener('message',ev=>{const msg=JSON.parse(ev.data);if(msg.id&&pending.has(msg.id)){const {resolve,reject}=pending.get(msg.id);pending.delete(msg.id);msg.error?reject(new Error(JSON.stringify(msg.error))):resolve(msg.result);}});
+            const send=(method,params={})=>new Promise((resolve,reject)=>{const id=++seq;pending.set(id,{resolve,reject});ws.send(JSON.stringify({id,method,params}));});
+            await send('Page.enable');
+            await send('Runtime.enable');
+            await send('Emulation.setDeviceMetricsOverride',{width,height:844,deviceScaleFactor:1,mobile:true,screenWidth:width,screenHeight:844,positionX:0,positionY:0});
+            await send('Emulation.setTouchEmulationEnabled',{enabled:true,maxTouchPoints:5});
+            await send('Page.navigate',{url});
+            let data=null;
+            for(let i=0;i<150;i++){
+              await sleep(100);
+              const r=await send('Runtime.evaluate',{expression:"document.getElementById('machine-result')?.textContent || ''",returnByValue:true});
+              const raw=r.result&&r.result.value;
+              if(!raw)continue;
+              try{const parsed=JSON.parse(raw);if(parsed.ready){data=parsed;break;}}catch{}
+            }
+            ws.close();
+            if(!data)throw new Error(`No functional result at ${width}px`);
+            const viewportOk=data.viewport&&data.viewport.width===width;
+            const appViewportOk=data.appViewport&&data.appViewport.width===width;
+            data.requestedWidth=width;
+            data.trueViewportOk=viewportOk;
+            data.trueAppViewportOk=appViewportOk;
+            console.log(`V2_UI_MOBILE_${width}_RESULT=`+JSON.stringify(data));
+            if(!(data.success&&data.total===13&&data.failed===0&&viewportOk&&appViewportOk))process.exitCode=1;
+          }
+          (async()=>{for(const width of widths)await testWidth(width);})().catch(err=>{console.error(err);process.exit(1);});
+          NODE
