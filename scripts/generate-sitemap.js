@@ -22,8 +22,8 @@ if(process.argv.includes('--check')){
   const sitemapFiles=['sitemap.xml','sitemap-corpus-extra.xml'].filter(f=>fs.existsSync(f));
   const combined=sitemapFiles.map(f=>fs.readFileSync(f,'utf8')).join('\n');
   const missingUrls=all.map(([loc])=>loc).filter(loc=>!combined.includes(`<loc>${esc(loc)}</loc>`));
-  if(missingUrls.length){console.error(`sitemap set out of sync: ${missingUrls.length} canonical URLs missing`);console.error('MACA_GENERATED_SITEMAP_BASE64='+Buffer.from(xml,'utf8').toString('base64'));process.exit(1);}
+  if(missingUrls.length){console.error(`sitemap set out of sync: ${missingUrls.length} canonical URLs missing`);process.exit(1);}
   const listed=[...combined.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
-  if(new Set(listed).size!==all.length){console.error(`sitemap set out of sync: expected ${all.length} unique URLs (${ids.length} canonical fiches), found ${new Set(listed).size}`);console.error('MACA_GENERATED_SITEMAP_BASE64='+Buffer.from(xml,'utf8').toString('base64'));process.exit(1);}
+  if(new Set(listed).size!==all.length){console.error(`sitemap set out of sync: expected ${all.length} unique URLs (${ids.length} canonical fiches), found ${new Set(listed).size}`);process.exit(1);}
   console.log(`Sitemap PASS: ${all.length} URLs, ${ids.length} canonical fiches across ${sitemapFiles.length} sitemap file(s)`);
 }else{fs.writeFileSync('sitemap.xml',xml);console.log(`Generated sitemap.xml: ${all.length} URLs, ${ids.length} canonical fiches`);}
