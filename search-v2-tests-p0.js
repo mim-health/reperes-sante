@@ -1,7 +1,7 @@
 /* MACA Santé — Regression cases for Search V2 P0. */
 (function(root){
   'use strict';
-  root.MACA_SEARCH_V2_P0_TESTS=[
+  const cases=[
     ['mal au ventre',['douleur-abdominale']],
     ['j ai une douleur abdominale',['douleur-abdominale']],
     ['reflux gastrique',['reflux-adulte']],
@@ -75,6 +75,53 @@
     ['diversification bebe',['diversification-alimentaire']],
     ['bouffees de chaleur menopause',['maca-menopause-bouffees']],
     ['perimenopause',['perimenopause-signes-quand-consulter']],
-    ['menopause',['menopause']]
-  ].map(([query,expectedIds])=>({query,expectedIds}));
+    ['menopause',['menopause']],
+    ['mon ventre me fait mal',['douleur-abdominale']],
+    ['mal d estomac',['douleur-abdominale']],
+    ['rgo',['reflux-adulte']],
+    ['pyrosis',['reflux-adulte']],
+    ['acide qui remonte',['reflux-adulte']],
+    ['crampes la nuit',['crampes-musculaires-causes']],
+    ['muscle qui se contracte',['crampes-musculaires-causes']],
+    ['alopecie',['alopecie-causes-pelade-traitement']],
+    ['pelade',['alopecie-causes-pelade-traitement']],
+    ['epistaxis enfant',['saignement-nez-enfant']],
+    ['dermatite atopique',['eczema-que-faire']],
+    ['peau seche qui gratte',['eczema-que-faire']],
+    ['conjonctivite enfant',['oeil-rouge-enfant']],
+    ['paupiere collee enfant',['oeil-rouge-enfant']],
+    ['douleur genou escaliers',['douleur-genou-escaliers']],
+    ['oreilles qui sifflent',['acouphenes-adulte']],
+    ['bruit dans l oreille',['acouphenes-adulte']],
+    ['tout tourne',['vertiges-causes']],
+    ['lumbago',['lombalgie-adulte']],
+    ['dos bloque',['lombalgie-adulte']],
+    ['insomnie',['insomnie-adulte']],
+    ['je me reveille la nuit',['insomnie-adulte']],
+    ['preservatif craque',['rapport-non-protege-ist']],
+    ['risque ist apres un rapport',['rapport-non-protege-ist']],
+    ['toux persistante',['toux-prolongee-adulte']],
+    ['toux chronique',['toux-prolongee-adulte']],
+    ['dyspnee',['essoufflement-adulte']],
+    ['vite essouffle',['essoufflement-adulte']],
+    ['extrasystoles',['palpitations-adulte']],
+    ['coeur qui saute',['palpitations-adulte']],
+    ['infection urinaire',['maca-cystite-reperes']],
+    ['envie frequente d uriner',['maca-cystite-reperes']],
+    ['cephalee',['maux-tete','migraine-que-faire']],
+    ['crise de migraine',['migraine-que-faire']],
+    ['naevus qui change',['grain-beaute-change-melanome']],
+    ['veines apparentes',['jambes-lourdes-varices']],
+    ['tvp',['jambe-gonflee-adulte']],
+    ['temperature chez l enfant',['fievre-enfant']],
+    ['mon ado est epuise depuis la reprise des cours',['fatigue-enfant-rentree']],
+    ['retirer une tique',['maca-tique-conduite']],
+    ['erytheme migrant',['tique']],
+    ['poux enfant',['poux-enfant-traitement']],
+    ['quand commencer la diversification bebe',['diversification-alimentaire']],
+    ['symptomes menopause',['menopause']],
+    ['cistite',['maca-cystite-reperes']],
+    ['migrane',['migraine-que-faire']]
+  ].map(([query,ids])=>({query,expectedIds:ids}));
+  root.MACA_SEARCH_V2_P0_TESTS=cases;
 })(typeof window!=='undefined'?window:globalThis);
