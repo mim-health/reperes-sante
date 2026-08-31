@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MACA — Search V2 P0 Lab</title>
+  <style>
+    body{font-family:system-ui,-apple-system,sans-serif;max-width:1050px;margin:32px auto;padding:0 20px;color:#1f2a24;background:#f7f5ef}h1{margin-bottom:4px}.muted{color:#667067}.panel{background:#fff;border:1px solid #d9ddd7;border-radius:14px;padding:18px;margin:18px 0}input{width:min(760px,100%);box-sizing:border-box;padding:12px 14px;border:1px solid #aab3aa;border-radius:10px;font-size:16px}button{padding:11px 15px;border:0;border-radius:10px;background:#52624d;color:#fff;font-weight:700;cursor:pointer;margin:8px 6px 0 0}.result{padding:10px 0;border-top:1px solid #eceeea}.ok{color:#236b3d}.bad{color:#9a3429}code{background:#eef0ec;padding:2px 5px;border-radius:5px}table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:8px;border-bottom:1px solid #eceeea;vertical-align:top}#machine-result{white-space:pre-wrap;font:12px ui-monospace,monospace}
+  </style>
+</head>
+<body>
+  <h1>MACA — moteur V2 P0</h1>
+  <p class="muted">Laboratoire isolé. Cette page ne remplace pas la recherche publique.</p>
+  <section class="panel"><strong>État</strong><div id="status">Chargement du corpus…</div></section>
+  <section class="panel"><label for="q"><strong>Tester une formulation</strong></label><br><input id="q" placeholder="Ex. crampe au mollet et mollet gonflé"><br><button id="go">Résoudre</button><div id="result"></div></section>
+  <section class="panel"><strong>Régression P0</strong><br><button id="run-tests">Lancer les 120 tests</button><div id="summary"></div><div id="failures"></div></section>
+  <pre id="machine-result" hidden></pre>
+
+  <script src="corpus-manifest.js?v=20260831-v2lab"></script>
+  <script src="corpus-loader.js?v=20260831-v2lab"></script>
+  <script src="corpus-canonicalizer.js?v=20260831-v2lab"></script>
+  <script>
+  (function(){
+    const status=document.getElementById('status'),result=document.getElementById('result'),summary=document.getElementById('summary'),failures=document.getElementById('failures'),machine=document.getElementById('machine-result');
+    function load(src){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=src;s.async=false;s.onload=resolve;s.onerror=()=>reject(new Error('Impossible de charger '+src));document.body.appendChild(s);});}
+    function exposeCanonical(){let canonical=window.MACA_BUILD_CANONICAL_CORPUS();if(typeof window.MACA_ADD_MULTI_SECTIONS==='function')canonical=window.MACA_ADD_MULTI_SECTIONS(canonical);window.MACA_CANONICAL_CORPUS=canonical;window.healthQuestions=canonical.slice();return canonical;}
+    function showQuery(){const query=document.getElementById('q').value.trim();const r=window.MACA_SEARCH_V2.resolve(query);const ranked=window.MACA_SEARCH_V2.rank(query);result.innerHTML=`<p><strong>Statut :</strong> <code>${r.status}</code> · <strong>raison :</strong> <code>${r.reason}</code></p>`+(ranked.length?ranked.map(x=>`<div class="result"><strong>${x.q.title||x.q.id}</strong><br><code>${x.q.id}</code> · score ${x.score} · ${x.confidence}</div>`).join(''):'<p>Aucune fiche retournée.</p>');}
+    function runTests(corpus){const report=window.MACA_SEARCH_V2_RUN_REGRESSION();summary.innerHTML=`<p class="${report.failed?'bad':'ok'}"><strong>${report.passed}/${report.total}</strong> tests réussis.</p>`;failures.innerHTML=report.failed?`<table><thead><tr><th>Requête</th><th>Attendu</th><th>Obtenu</th></tr></thead><tbody>${report.failures.map(f=>`<tr><td>${f.query}</td><td>${f.expected.join('<br>')}</td><td>${f.got.join('<br>')||'—'}</td></tr>`).join('')}</tbody></table>`:'';const payload={ready:true,canonicalSize:(corpus||window.MACA_CANONICAL_CORPUS||[]).length,engine:window.MACA_SEARCH_V2.version,total:report.total,passed:report.passed,failed:report.failed,failures:report.failures.map(f=>({query:f.query,expected:f.expected,got:f.got,reason:f.resolution&&f.resolution.reason}))};machine.hidden=false;machine.textContent=JSON.stringify(payload);document.body.dataset.regressionDone='true';document.body.dataset.regressionFailed=String(report.failed);return report;}
+    window.MACA_CORPUS_READY.then(()=>load('maca-multi-sections.js?v=20260831-v2lab')).then(()=>{const corpus=exposeCanonical();return load('search-v2-referential-p0.js?v=20260831-1').then(()=>load('search-v2-engine.js?v=20260831-3')).then(()=>load('search-v2-tests-p0.js?v=20260831-2')).then(()=>load('search-v2-regression-runner.js?v=20260831-1')).then(()=>corpus);}).then(corpus=>{status.innerHTML=`<span class="ok">Prêt</span> — ${corpus.length} fiches dans <code>MACA_CANONICAL_CORPUS</code> · moteur <code>${window.MACA_SEARCH_V2.version}</code>`;document.getElementById('go').onclick=showQuery;document.getElementById('run-tests').onclick=()=>runTests(corpus);document.getElementById('q').addEventListener('keydown',e=>{if(e.key==='Enter')showQuery();});if(new URLSearchParams(location.search).get('autorun')==='1')setTimeout(()=>runTests(corpus),50);}).catch(err=>{status.innerHTML=`<span class="bad">Erreur :</span> ${String(err.message||err)}`;machine.hidden=false;machine.textContent=JSON.stringify({ready:false,error:String(err&&err.message||err)});document.body.dataset.regressionDone='true';document.body.dataset.regressionFailed='999';console.error(err);});
+  })();
+  </script>
+</body>
+</html>

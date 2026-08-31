@@ -1,0 +1,13 @@
+{
+  "ready": true,
+  "canonicalSize": 180,
+  "engine": "2026-08-31-p0",
+  "total": 120,
+  "passed": 120,
+  "failed": 0,
+  "failures": [],
+  "testedSha": "d65cb234966a2827c87154731d10bd5bbafe8da7",
+  "chromeExit": 0,
+  "executedAt": "2026-08-31T14:06:05.934942+00:00",
+  "success": true
+}
