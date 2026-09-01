@@ -22,7 +22,7 @@ document.querySelectorAll('[data-vote]').forEach(b=>b.addEventListener('click',(
 window.MACA_CORPUS_READY
 .then(()=>load('maca-multi-sections.js?v=20260901-2'))
 .then(()=>{let canonical=window.MACA_BUILD_CANONICAL_CORPUS();if(typeof window.MACA_ADD_MULTI_SECTIONS==='function')canonical=window.MACA_ADD_MULTI_SECTIONS(canonical);window.MACA_CANONICAL_CORPUS=canonical.slice();window.healthQuestions=canonical.slice();return load('corpus-integrity.js?v=20260831-1');})
-.then(()=>load('search-v2-referential-p0.js?v=20260901-lot4'))
+.then(()=>load('search-v2-referential-p0.js?v=20260901-lot5'))
 .then(()=>load('search-v2-engine.js?v=20260831-p0'))
 .then(()=>load('search-v2-corpus-fallback.js?v=20260901-4'))
 .then(()=>{if(!window.MACA_SEARCH_V2)throw new Error('MACA_SEARCH_V2 indisponible');ready=true;$('load').textContent=window.healthQuestions.length+' fiches MACA chargées · moteur '+window.MACA_SEARCH_V2.version;$('alpha-query').disabled=false;document.querySelector('.send').disabled=false;$('alpha-query').focus();})
