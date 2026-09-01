@@ -8,7 +8,7 @@
   const homeAfter=['alphabetical-categories-v1.js?v=20260823-2','maca-eight-categories-v1.js?v=20260829-2','vrai-faux-ui.js','source-ui.js','maca-card-sources-ui.js?v=20260901-1','maca-daily-editorial-data.js?v=20260901-1','maca-daily-editorial.js?v=20260901-1','maca-daily-feature.js?v=20260829-3','maca-magazine-layout.js?v=20260829-mag4c'];
   const libraryAfter=['maca-eight-categories-v1.js?v=20260829-2','source-ui.js','maca-card-sources-ui.js?v=20260901-1','maca-section-identities.js?v=20260829-mag3','maca-magazine-layout.js?v=20260829-mag4c'];
   window.MACA_CORPUS_READY
-    .then(()=>load('maca-multi-sections.js?v=20260825-1'))
+    .then(()=>load('maca-multi-sections.js?v=20260901-2'))
     .then(()=>{exposeCanonical();return commonBeforeApp.reduce((p,src)=>p.then(()=>load(src)),Promise.resolve());})
     .then(()=>load('app.js?v=20260825-corpusv3'))
     .then(()=>load('search-v2-ui-bridge.js?v=20260831-1'))
