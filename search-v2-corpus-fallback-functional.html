@@ -1,5 +1,5 @@
 <!doctype html><html lang="fr"><head><meta charset="utf-8"><title>MACA Search V2 corpus fallback validation</title></head><body><pre id="machine-result"></pre>
-<script src="corpus-manifest.js?v=20260901-5"></script><script src="corpus-loader.js?v=20260829-1"></script><script src="corpus-canonicalizer.js?v=20260829-1"></script>
+<script src="corpus-manifest.js?v=20260901-6"></script><script src="corpus-loader.js?v=20260829-1"></script><script src="corpus-canonicalizer.js?v=20260829-1"></script>
 <script>
 (function(){'use strict';
 const out=document.getElementById('machine-result');
@@ -37,10 +37,20 @@ const cases=[
  ['j entends brutalement moins bien d une oreille',['baisse-audition-brutale']],
  ['on m a trouvé un nodule thyroide',['nodule-thyroide-inquietant']],
  ['vaccin zona après 65 ans',['vaccin-zona-apres-65']],
- ['douleur dans la poitrine',['douleur-thoracique-coeur']]
+ ['douleur dans la poitrine',['douleur-thoracique-coeur']],
+ ['fièvre adulte',['fievre-adulte-quand-sinquieter']],
+ ['crise de goutte',['goutte-alimentation']],
+ ['plaque douloureuse avec des vésicules',['zona-vesicules-douloureuses']],
+ ['prise de sang détecter cancer',['cancer-biopsie-liquide-ctdna']],
+ ['anticorps conjugués adc',['cancer-adc-anticorps-conjugues']],
+ ['plusieurs cancers dans ma famille test génétique',['cancer-oncogenetique-famille']],
+ ['rémission complète cancer guéri',['cancer-remission-guerison']],
+ ['cancer avec métastases',['cancer-metastases-definition']],
+ ['mal à la gorge antibiotiques',['mal-gorge-adulte-antibiotiques']],
+ ['je me gratte partout sans boutons',['prurit-generalise-causes']]
 ];
 window.MACA_CORPUS_READY
-.then(()=>load('maca-multi-sections.js?v=20260825-1'))
+.then(()=>load('maca-multi-sections.js?v=20260901-2'))
 .then(()=>{let canonical=window.MACA_BUILD_CANONICAL_CORPUS();if(typeof window.MACA_ADD_MULTI_SECTIONS==='function')canonical=window.MACA_ADD_MULTI_SECTIONS(canonical);window.MACA_CANONICAL_CORPUS=canonical.slice();window.healthQuestions=canonical.slice();return load('corpus-integrity.js?v=20260831-1');})
 .then(()=>load('search-v2-referential-p0.js?v=20260901-lot4'))
 .then(()=>load('search-v2-engine.js?v=20260831-p0'))
