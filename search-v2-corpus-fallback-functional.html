@@ -1,0 +1,34 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>MACA Search V2 corpus fallback validation</title></head><body><pre id="machine-result"></pre>
+<script src="corpus-manifest.js?v=20260829-1"></script><script src="corpus-loader.js?v=20260829-1"></script><script src="corpus-canonicalizer.js?v=20260829-1"></script>
+<script>
+(function(){'use strict';
+const out=document.getElementById('machine-result');
+function load(src){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=src;s.async=false;s.onload=resolve;s.onerror=()=>reject(new Error(src));document.body.appendChild(s);});}
+const cases=[
+ ['vaccin',['vaccins-adulte']],
+ ['vaccins',['vaccins-adulte']],
+ ['tension',['hta']],
+ ['hypertension',['hta']],
+ ['AVC',['avc-signes-risque-apres-50']],
+ ['douleur épaule',['douleur-epaule-lever-bras']],
+ ['pertes vaginales',['pertes-vaginales-2026-08-27']],
+ ['mon bébé a des régurgitations',['regurgitations-nourrisson']],
+ ['toux sèche',[]],
+ ['malaise',[]],
+ ['saignement de nez',[]],
+ ['je crache du sang',[]],
+ ['eczéma',['eczema-que-faire']]
+];
+window.MACA_CORPUS_READY
+.then(()=>load('maca-multi-sections.js?v=20260825-1'))
+.then(()=>{let canonical=window.MACA_BUILD_CANONICAL_CORPUS();if(typeof window.MACA_ADD_MULTI_SECTIONS==='function')canonical=window.MACA_ADD_MULTI_SECTIONS(canonical);window.MACA_CANONICAL_CORPUS=canonical.slice();window.healthQuestions=canonical.slice();return load('corpus-integrity.js?v=20260831-1');})
+.then(()=>load('search-v2-referential-p0.js?v=20260831-p0'))
+.then(()=>load('search-v2-engine.js?v=20260831-p0'))
+.then(()=>load('search-v2-corpus-fallback.js?v=20260901-1'))
+.then(()=>{
+ const results=cases.map(([query,expected])=>{const actual=window.MACA_SEARCH_V2.rank(query).map(x=>x.q.id);return {query,expected,actual,ok:JSON.stringify(actual)===JSON.stringify(expected)};});
+ const failed=results.filter(x=>!x.ok);out.textContent=JSON.stringify({ready:true,total:results.length,failed:failed.length,success:failed.length===0,corpusCount:window.healthQuestions.length,engine:window.MACA_SEARCH_V2.version,results},null,2);
+})
+.catch(error=>{out.textContent=JSON.stringify({ready:false,error:String(error&&error.message||error)});});
+})();
+</script></body></html>
