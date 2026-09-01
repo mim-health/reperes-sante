@@ -61,5 +61,6 @@ window.MACA_CORPUS_MANIFEST = Object.freeze([
   'backlog-audited-urologie-sexologie-femme-senior-lot2-2026-09-01.js?v=20260901-1',
   'backlog-audited-femme-senior-ophtalmo-douleurs-lot3-2026-09-01.js?v=20260901-1',
   'backlog-audited-orl-ophtalmo-articulations-lot4-2026-09-01.js?v=20260901-1',
+  'backlog-audited-fievre-goutte-zona-cancer-lot5-2026-09-01.js?v=20260901-1',
   'structured-backlog-compat.js?v=20260831-1'
 ]);

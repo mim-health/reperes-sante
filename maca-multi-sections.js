@@ -8,7 +8,7 @@ const RULES=[
  {section:'Santé mentale',re:/\b(d[eé]pression|anxi[eé]t[eé]|angoisse|stress|sommeil|insomnie|suicid|harc[eè]lement|moral)\b/i},
  {section:'Ados',re:/\b(ado|adolescent|pubert[eé]|harc[eè]lement|r[eé]seaux sociaux|contraception|acn[eé])\b/i},
  {section:'Santé des femmes & grossesse',re:/\b(grossesse|enceinte|m[eé]nopause|contraception|fertilit[eé]|post[- ]partum|endom[eé]triose|r[eè]gles)\b/i},
- {section:'Enfants & parents',re:/\b(enfant|b[eé]b[eé]|nourrisson|parent|p[eé]diatr|vaccin|fi[eè]vre)\b/i},
+ {section:'Enfants & parents',re:/\b(enfant|b[eé]b[eé]|nourrisson|parent|p[eé]diatr)\b/i},
  {section:'Médicaments',re:/\b(m[eé]dicament|parac[eé]tamol|ibuprof[eè]ne|antibiotique|statine|traitement|ordonnance)\b/i}
 ];
 function decorate(items){

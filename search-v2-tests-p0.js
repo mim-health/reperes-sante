@@ -62,7 +62,7 @@
     ['une jambe gonflee',['jambe-gonflee-adulte']],
     ['phlebite',['jambe-gonflee-adulte']],
     ['mon enfant a de la fievre',['fievre-enfant']],
-    ['fievre adulte',[]],
+    ['fievre adulte',['fievre-adulte-quand-sinquieter']],
     ['mon enfant est fatigue depuis la rentree',['fatigue-enfant-rentree']],
     ['fatigue',[]],
     ['je tousse du sang',[]],
