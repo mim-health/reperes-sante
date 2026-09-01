@@ -21,6 +21,7 @@ on:
       - backlog-audited-femme-senior-ophtalmo-douleurs-lot3-2026-09-01.js
       - backlog-audited-orl-ophtalmo-articulations-lot4-2026-09-01.js
       - backlog-audited-fievre-goutte-zona-cancer-lot5-2026-09-01.js
+      - backlog-audited-sante-quotidien-medocs-ophtalmo-bucco-2026-09-01.js
       - maca-card-sources-ui.js
       - .github/workflows/maca-search-v2-corpus-fallback.yml
   workflow_dispatch:
@@ -74,7 +75,7 @@ jobs:
           if not m: print('Corpus fallback result missing'); sys.exit(1)
           data=json.loads(html.unescape(re.sub(r'<[^>]+>','',m.group(1))).strip())
           print('CORPUS_FALLBACK='+json.dumps(data,ensure_ascii=False))
-          if not (data.get('ready') and data.get('success') and data.get('total')==43 and data.get('failed')==0 and data.get('corpusCount',0)>0): sys.exit(1)
+          if not (data.get('ready') and data.get('success') and data.get('total')==47 and data.get('failed')==0 and data.get('corpusCount',0)>0): sys.exit(1)
           PY
 
       - name: Audit every routable canonical fiche
