@@ -1,0 +1,110 @@
+name: MACA Assistant Widget Validation
+
+on:
+  pull_request:
+    branches:
+      - feat/v0-magazine
+    paths:
+      - fiches.html
+      - maca-assistant-widget.js
+      - assistant-alpha.html
+      - .github/workflows/maca-assistant-widget.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  widget-validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Checkout current revision
+        uses: actions/checkout@v4
+
+      - name: Structural checks
+        run: |
+          grep -q 'id="search-input"' fiches.html
+          grep -q 'maca-assistant-widget.js' fiches.html
+          if grep -q 'maca-assistant-widget.js' index.html; then
+            echo 'Assistant widget must not load on home page'; exit 1
+          fi
+          if grep -q 'MACA_SEARCH_V1' maca-assistant-widget.js; then
+            echo 'Legacy V1 engine reference found in widget'; exit 1
+          fi
+          grep -q 'assistant-alpha.html' maca-assistant-widget.js
+
+      - name: Start static server
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/maca-widget-http.log 2>&1 &
+          sleep 1
+
+      - name: Locate Chrome
+        run: |
+          CHROME="$(command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          test -n "$CHROME" || { echo "No Chrome/Chromium executable found"; exit 2; }
+          echo "CHROME=$CHROME" >> "$GITHUB_ENV"
+
+      - name: Validate desktop and mobile widget
+        run: |
+          "$CHROME" --headless=new --disable-gpu --no-sandbox --disable-dev-shm-usage \
+            --remote-debugging-port=9222 --remote-allow-origins='*' about:blank \
+            >/tmp/maca-widget-chrome.log 2>&1 &
+          CHROME_PID=$!
+          trap 'kill $CHROME_PID 2>/dev/null || true' EXIT
+          for i in $(seq 1 50); do
+            curl -fsS http://127.0.0.1:9222/json/version >/dev/null && break
+            sleep 0.1
+          done
+          curl -fsS http://127.0.0.1:9222/json/version >/dev/null
+          node <<'NODE'
+          const cases=[
+            {width:1440,height:1000,mobile:false},
+            {width:390,height:844,mobile:true},
+            {width:375,height:812,mobile:true}
+          ];
+          const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+          async function runCase(cfg){
+            const target=await fetch('http://127.0.0.1:9222/json/new?about:blank',{method:'PUT'}).then(r=>r.json());
+            const ws=new WebSocket(target.webSocketDebuggerUrl);
+            await new Promise((resolve,reject)=>{ws.addEventListener('open',resolve,{once:true});ws.addEventListener('error',reject,{once:true});});
+            let seq=0; const pending=new Map();
+            ws.addEventListener('message',ev=>{const msg=JSON.parse(ev.data);if(msg.id&&pending.has(msg.id)){const p=pending.get(msg.id);pending.delete(msg.id);msg.error?p.reject(new Error(JSON.stringify(msg.error))):p.resolve(msg.result);}});
+            const send=(method,params={})=>new Promise((resolve,reject)=>{const id=++seq;pending.set(id,{resolve,reject});ws.send(JSON.stringify({id,method,params}));});
+            const evalValue=async expression=>{
+              const r=await send('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});
+              if(r.exceptionDetails) throw new Error(JSON.stringify(r.exceptionDetails));
+              return r.result&&r.result.value;
+            };
+            await send('Page.enable'); await send('Runtime.enable');
+            await send('Emulation.setDeviceMetricsOverride',{width:cfg.width,height:cfg.height,deviceScaleFactor:1,mobile:cfg.mobile,screenWidth:cfg.width,screenHeight:cfg.height,positionX:0,positionY:0});
+            if(cfg.mobile) await send('Emulation.setTouchEmulationEnabled',{enabled:true,maxTouchPoints:5});
+            await send('Page.navigate',{url:'http://127.0.0.1:8765/fiches.html'});
+            let ready=false;
+            for(let i=0;i<220;i++){
+              await sleep(100);
+              ready=await evalValue(`Boolean(document.getElementById('maca-assistant-launcher') && window.MACA_SEARCH_V2 && document.getElementById('search-input'))`);
+              if(ready) break;
+            }
+            if(!ready) throw new Error(`Widget/search not ready at ${cfg.width}px`);
+            const before=await evalValue(`(()=>{const l=document.getElementById('maca-assistant-launcher');const p=document.getElementById('maca-assistant-panel');return {launcher:!!l,expanded:l?.getAttribute('aria-expanded'),open:p?.getAttribute('data-open')}})()`);
+            await evalValue(`document.getElementById('maca-assistant-launcher').click(); true`);
+            let frameReady=false;
+            for(let i=0;i<220;i++){
+              await sleep(100);
+              frameReady=await evalValue(`(()=>{const f=document.querySelector('.maca-assistant-frame');try{return Boolean(f?.contentWindow?.MACA_SEARCH_V2 && !f.contentDocument.getElementById('alpha-query')?.disabled)}catch(e){return false}})()`);
+              if(frameReady) break;
+            }
+            if(!frameReady) throw new Error(`Assistant iframe not ready at ${cfg.width}px`);
+            const data=await evalValue(`(()=>{const p=document.getElementById('maca-assistant-panel');const l=document.getElementById('maca-assistant-launcher');const f=document.querySelector('.maca-assistant-frame');const r=p.getBoundingClientRect();const fr=f.contentWindow;const q='J’ai mal au ventre';const topIds=window.MACA_SEARCH_V2.rank(q).map(x=>x.q?.id||x.q?.title||x.q?.question);const frameIds=fr.MACA_SEARCH_V2.rank(q).map(x=>x.q?.id||x.q?.title||x.q?.question);return {viewport:{w:innerWidth,h:innerHeight},expanded:l.getAttribute('aria-expanded'),open:p.getAttribute('data-open'),rect:{left:r.left,top:r.top,right:r.right,bottom:r.bottom,width:r.width,height:r.height},corpusCount:fr.healthQuestions?.length||0,engine:fr.MACA_SEARCH_V2.version,parity:JSON.stringify(topIds)===JSON.stringify(frameIds),overflowX:r.left<-.5||r.right>innerWidth+.5,overflowY:r.top<-.5||r.bottom>innerHeight+.5}})()`);
+            const mobileLayout=!cfg.mobile || (Math.abs(data.rect.left)<1 && Math.abs(data.rect.top)<1 && Math.abs(data.rect.width-cfg.width)<2);
+            const desktopLayout=cfg.mobile || (data.rect.width<=431 && data.rect.right<=cfg.width+1 && data.rect.bottom<=cfg.height+1);
+            const ok=before.launcher&&before.expanded==='false'&&before.open==='false'&&data.expanded==='true'&&data.open==='true'&&data.corpusCount===180&&data.parity&&!data.overflowX&&!data.overflowY&&mobileLayout&&desktopLayout;
+            console.log(`WIDGET_${cfg.width}_RESULT=`+JSON.stringify({...data,mobileLayout,desktopLayout,ok}));
+            await evalValue(`document.querySelector('.maca-assistant-close').click(); true`);
+            const closed=await evalValue(`document.getElementById('maca-assistant-panel').getAttribute('data-open')==='false' && document.getElementById('maca-assistant-launcher').getAttribute('aria-expanded')==='false'`);
+            ws.close();
+            if(!(ok&&closed)) throw new Error(`Widget validation failed at ${cfg.width}px`);
+          }
+          (async()=>{for(const cfg of cases)await runCase(cfg);})().catch(err=>{console.error(err);process.exit(1);});
+          NODE
