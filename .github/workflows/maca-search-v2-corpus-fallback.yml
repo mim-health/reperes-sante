@@ -9,6 +9,11 @@ on:
       - corpus-v2-browser-entry.js
       - assistant-alpha.html
       - search-v2-corpus-fallback-functional.html
+      - search-v2-full-corpus-audit.html
+      - corpus-manifest.js
+      - corpus-canonicalizer.js
+      - search-v2-referential-p0.js
+      - search-v2-engine.js
       - .github/workflows/maca-search-v2-corpus-fallback.yml
   workflow_dispatch:
 
@@ -18,7 +23,7 @@ permissions:
 jobs:
   corpus-coverage:
     runs-on: ubuntu-latest
-    timeout-minutes: 6
+    timeout-minutes: 8
     steps:
       - name: Checkout current revision
         uses: actions/checkout@v4
@@ -49,7 +54,7 @@ jobs:
           if not (data.get('ready') and data.get('total')==120 and data.get('failed')==0): sys.exit(1)
           PY
 
-      - name: Validate canonical corpus fallback
+      - name: Validate curated corpus fallback cases
         run: |
           "$CHROME" --headless=new --disable-gpu --no-sandbox --disable-dev-shm-usage \
             --virtual-time-budget=25000 --dump-dom \
@@ -62,4 +67,25 @@ jobs:
           data=json.loads(html.unescape(re.sub(r'<[^>]+>','',m.group(1))).strip())
           print('CORPUS_FALLBACK='+json.dumps(data,ensure_ascii=False))
           if not (data.get('ready') and data.get('success') and data.get('total')==13 and data.get('failed')==0 and data.get('corpusCount')==180): sys.exit(1)
+          PY
+
+      - name: Audit every routable canonical fiche
+        run: |
+          "$CHROME" --headless=new --disable-gpu --no-sandbox --disable-dev-shm-usage \
+            --virtual-time-budget=35000 --dump-dom \
+            "http://127.0.0.1:8765/search-v2-full-corpus-audit.html" > /tmp/full-corpus-audit.html
+          python3 - <<'PY'
+          import html, json, re, sys
+          dom=open('/tmp/full-corpus-audit.html',encoding='utf-8',errors='replace').read()
+          m=re.search(r'<pre id="machine-result"[^>]*>(.*?)</pre>',dom,re.S)
+          if not m: print('Full corpus audit result missing'); sys.exit(1)
+          data=json.loads(html.unescape(re.sub(r'<[^>]+>','',m.group(1))).strip())
+          print('FULL_CORPUS_AUDIT='+json.dumps(data,ensure_ascii=False))
+          title=data.get('titleCoverage',{})
+          probes=data.get('probeCoverage',{})
+          print(f"Coverage: corpus={data.get('corpusCount')} routable={data.get('routableCount')} excluded={data.get('excludedCount')} title={title.get('passed')}/{data.get('routableCount')} probes={probes.get('passed')}/{data.get('routableCount')}")
+          if not data.get('success'):
+              print('TITLE_FAILURES='+json.dumps(title.get('failures',[]),ensure_ascii=False))
+              print('PROBE_FAILURES='+json.dumps(probes.get('failures',[]),ensure_ascii=False))
+              sys.exit(1)
           PY
