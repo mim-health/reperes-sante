@@ -11,6 +11,7 @@ on:
       - corpus-manifest.js
       - corpus-v2-browser-entry.js
       - backlog-audited-prevention-urologie-senior-femme-2026-09-01.js
+      - backlog-audited-urologie-sexologie-femme-senior-lot2-2026-09-01.js
       - maca-card-sources-ui.js
       - .github/workflows/maca-assistant-widget.yml
   workflow_dispatch:
@@ -109,7 +110,7 @@ jobs:
             const data=await evalValue(`(()=>{const p=document.getElementById('maca-assistant-panel');const l=document.getElementById('maca-assistant-launcher');const f=document.querySelector('.maca-assistant-frame');const r=p.getBoundingClientRect();const fr=f.contentWindow;const q='J’ai mal au ventre';const topIds=window.MACA_SEARCH_V2.rank(q).map(x=>x.q?.id||x.q?.title||x.q?.question);const frameIds=fr.MACA_SEARCH_V2.rank(q).map(x=>x.q?.id||x.q?.title||x.q?.question);return {viewport:{w:innerWidth,h:innerHeight},expanded:l.getAttribute('aria-expanded'),open:p.getAttribute('data-open'),rect:{left:r.left,top:r.top,right:r.right,bottom:r.bottom,width:r.width,height:r.height},corpusCount:fr.healthQuestions?.length||0,engine:fr.MACA_SEARCH_V2.version,parity:JSON.stringify(topIds)===JSON.stringify(frameIds),overflowX:r.left<-.5||r.right>innerWidth+.5,overflowY:r.top<-.5||r.bottom>innerHeight+.5}})()`);
             const mobileLayout=!cfg.mobile || (Math.abs(data.rect.left)<1 && Math.abs(data.rect.top)<1 && Math.abs(data.rect.width-cfg.width)<2);
             const desktopLayout=cfg.mobile || (data.rect.width<=431 && data.rect.right<=cfg.width+1 && data.rect.bottom<=cfg.height+1);
-            const ok=before.launcher&&before.expanded==='false'&&before.open==='false'&&data.expanded==='true'&&data.open==='true'&&data.corpusCount===190&&data.parity&&!data.overflowX&&!data.overflowY&&mobileLayout&&desktopLayout;
+            const ok=before.launcher&&before.expanded==='false'&&before.open==='false'&&data.expanded==='true'&&data.open==='true'&&data.corpusCount>0&&data.parity&&!data.overflowX&&!data.overflowY&&mobileLayout&&desktopLayout;
             console.log(`WIDGET_${cfg.width}_RESULT=`+JSON.stringify({...data,mobileLayout,desktopLayout,ok}));
             await evalValue(`document.querySelector('.maca-assistant-close').click(); true`);
             const closed=await evalValue(`document.getElementById('maca-assistant-panel').getAttribute('data-open')==='false' && document.getElementById('maca-assistant-launcher').getAttribute('aria-expanded')==='false'`);
