@@ -27,7 +27,7 @@
   panel.setAttribute('aria-modal','false');
   panel.setAttribute('aria-labelledby','maca-assistant-title');
   panel.setAttribute('data-open','false');
-  panel.innerHTML=`<header class="maca-assistant-head"><div class="maca-assistant-head-copy"><strong class="maca-assistant-head-title" id="maca-assistant-title">Assistant MACA</strong><span class="maca-assistant-head-subtitle">Recherche dans nos fiches santé vérifiées</span></div><button class="maca-assistant-close" type="button" aria-label="Fermer l’assistant">×</button></header><iframe class="maca-assistant-frame" title="Assistant MACA" src="assistant-alpha.html"></iframe><span class="maca-assistant-screen-reader" aria-live="polite" id="maca-assistant-status"></span>`;
+  panel.innerHTML=`<header class="maca-assistant-head"><div class="maca-assistant-head-copy"><strong class="maca-assistant-head-title" id="maca-assistant-title">Assistant MACA</strong><span class="maca-assistant-head-subtitle">Recherche dans nos fiches santé vérifiées</span></div><button class="maca-assistant-close" type="button" aria-label="Fermer l’assistant">×</button></header><iframe class="maca-assistant-frame" title="Assistant MACA" src="assistant-alpha.html?v=20260901-catfix1"></iframe><span class="maca-assistant-screen-reader" aria-live="polite" id="maca-assistant-status"></span>`;
 
   document.body.appendChild(panel);
   document.body.appendChild(launcher);
