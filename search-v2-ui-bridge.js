@@ -4,6 +4,7 @@
 
   function init(){
     const engine=root.MACA_SEARCH_V2;
+    const categories=root.MACA_CATEGORY_ACCESS;
     const grid=document.getElementById('qa-grid');
     const originalInput=document.getElementById('search-input');
     const originalClear=document.getElementById('clear-search');
@@ -38,6 +39,8 @@
       ids.forEach(id=>{const tpl=templates.get(id);if(tpl)grid.appendChild(tpl.cloneNode(true));});
     }
 
+    function showAll(){renderIds(initialOrder);setNoResults(false);return initialOrder.slice();}
+
     function activateAllFilter(){
       if(!filters)return;
       const all=[...filters.querySelectorAll('.filter-chip')].find(b=>(b.dataset.category||b.textContent.trim())==='Toutes');
@@ -48,16 +51,31 @@
       }
     }
 
+    function categoryIds(term){
+      if(!categories)return null;
+      const category=categories.matchQuery(term);
+      if(!category)return null;
+      return {category,ids:categories.idsFor(category,root.MACA_CANONICAL_CORPUS||root.healthQuestions||[])};
+    }
+
     function runSearch(options={}){
       const term=input.value.trim();
       if(clear)clear.hidden=!term;
       if(!term){
         activateAllFilter();
-        renderIds(initialOrder);
-        setNoResults(false);
-        return [];
+        return showAll();
       }
       activateAllFilter();
+
+      /* Un nom exact de rubrique est une navigation, pas une requête médicale :
+         on affiche toutes les fiches de la rubrique avant tout scoring. */
+      const categoryMatch=categoryIds(term);
+      if(categoryMatch){
+        renderIds(categoryMatch.ids);
+        setNoResults(categoryMatch.ids.length===0);
+        return categoryMatch.ids;
+      }
+
       const ranked=engine.rank(term,options);
       const ids=ranked.map(item=>item.q&&item.q.id).filter(Boolean);
       renderIds(ids);
@@ -80,7 +98,8 @@
       version:engine.version,
       run(query,options={}){input.value=String(query||'');return runSearch(options);},
       input,
-      getVisibleIds(){return [...grid.querySelectorAll('.qa-card')].map(card=>card.dataset.qid);}
+      showAll,
+      getVisibleIds(){return [...grid.querySelectorAll('.qa-card')].filter(card=>card.style.display!=='none').map(card=>card.dataset.qid);}
     };
     document.documentElement.dataset.macaSearchEngine='v2';
   }
