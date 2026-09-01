@@ -11,14 +11,14 @@ function uniq(a){return [...new Set(a.filter(Boolean))];}
 function titleOf(q){return String(q&&(q.title||q.question)||'');}
 function keywordText(q){return Array.isArray(q&&q.keywords)?q.keywords.join(' '):String(q&&q.keywords||'');}
 function probes(q){
-  const title=titleOf(q),tw=words(title),kw=words(keywordText(q));
-  const p=[title];
+  const tw=words(titleOf(q)),kw=words(keywordText(q));
+  const p=[];
   for(const n of [4,3,2]){
     if(tw.length>=n){p.push(tw.slice(0,n).join(' '));p.push(tw.slice(-n).join(' '));}
-    for(let i=0;i+n<=Math.min(tw.length,9);i++)p.push(tw.slice(i,i+n).join(' '));
-    if(kw.length>=n){p.push(kw.slice(0,n).join(' '));for(let i=0;i+n<=Math.min(kw.length,9);i++)p.push(kw.slice(i,i+n).join(' '));}
+    for(let i=0;i+n<=Math.min(tw.length,10);i++)p.push(tw.slice(i,i+n).join(' '));
+    if(kw.length>=n){p.push(kw.slice(0,n).join(' '));for(let i=0;i+n<=Math.min(kw.length,10);i++)p.push(kw.slice(i,i+n).join(' '));}
   }
-  return uniq(p).filter(x=>words(x).length>=2 || norm(x).length>=4).slice(0,30);
+  return uniq(p).filter(x=>words(x).length>=2).slice(0,36);
 }
 function ids(query){return window.MACA_SEARCH_V2.rank(query).map(x=>x.q&&x.q.id).filter(Boolean);}
 window.MACA_CORPUS_READY
