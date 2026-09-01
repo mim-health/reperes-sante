@@ -47,16 +47,22 @@ jobs:
 
       - name: Validate desktop and mobile widget
         run: |
+          rm -rf /tmp/maca-widget-chrome-profile
           "$CHROME" --headless=new --disable-gpu --no-sandbox --disable-dev-shm-usage \
+            --user-data-dir=/tmp/maca-widget-chrome-profile \
             --remote-debugging-port=9222 --remote-allow-origins='*' about:blank \
             >/tmp/maca-widget-chrome.log 2>&1 &
           CHROME_PID=$!
           trap 'kill $CHROME_PID 2>/dev/null || true' EXIT
-          for i in $(seq 1 50); do
+          for i in $(seq 1 80); do
             curl -fsS http://127.0.0.1:9222/json/version >/dev/null && break
             sleep 0.1
           done
-          curl -fsS http://127.0.0.1:9222/json/version >/dev/null
+          if ! curl -fsS http://127.0.0.1:9222/json/version >/dev/null; then
+            echo 'Chrome remote debugging failed to start'
+            cat /tmp/maca-widget-chrome.log || true
+            exit 1
+          fi
           node <<'NODE'
           const cases=[
             {width:1440,height:1000,mobile:false},

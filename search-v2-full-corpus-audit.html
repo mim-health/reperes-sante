@@ -1,0 +1,65 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>MACA Search V2 — audit couverture corpus complet</title></head><body><pre id="machine-result"></pre>
+<script src="corpus-manifest.js?v=20260829-1"></script><script src="corpus-loader.js?v=20260829-1"></script><script src="corpus-canonicalizer.js?v=20260829-1"></script>
+<script>
+(function(){'use strict';
+const out=document.getElementById('machine-result');
+function load(src){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=src;s.async=false;s.onload=resolve;s.onerror=()=>reject(new Error(src));document.body.appendChild(s);});}
+const STOP=new Set(['a','ai','au','aux','avec','ce','ces','dans','de','des','du','elle','en','est','et','fait','faire','faut','il','je','j','la','le','les','ma','mais','me','mes','mon','ne','nous','on','ou','par','pas','pour','que','quel','quelle','quels','quelles','qui','sa','se','ses','son','sur','un','une','vous','votre','depuis','quand','comment','pourquoi','peut','peux','dois','doit','jai','cest','estce','avoir','chez']);
+function norm(v){return String(v||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/œ/g,'oe').replace(/[^a-z0-9]+/g,' ').replace(/\s+/g,' ').trim();}
+function words(v){return norm(v).split(' ').filter(x=>x.length>1&&!STOP.has(x));}
+function uniq(a){return [...new Set(a.filter(Boolean))];}
+function titleOf(q){return String(q&&(q.title||q.question)||'');}
+function keywordText(q){return Array.isArray(q&&q.keywords)?q.keywords.join(' '):String(q&&q.keywords||'');}
+function probes(q){
+  const tw=words(titleOf(q)),kw=words(keywordText(q));
+  const p=[];
+  for(const n of [4,3,2]){
+    if(tw.length>=n){p.push(tw.slice(0,n).join(' '));p.push(tw.slice(-n).join(' '));}
+    for(let i=0;i+n<=Math.min(tw.length,10);i++)p.push(tw.slice(i,i+n).join(' '));
+    if(kw.length>=n){p.push(kw.slice(0,n).join(' '));for(let i=0;i+n<=Math.min(kw.length,10);i++)p.push(kw.slice(i,i+n).join(' '));}
+  }
+  return uniq(p).filter(x=>words(x).length>=2).slice(0,36);
+}
+function ids(query){return window.MACA_SEARCH_V2.rank(query).map(x=>x.q&&x.q.id).filter(Boolean);}
+window.MACA_CORPUS_READY
+.then(()=>load('maca-multi-sections.js?v=20260825-1'))
+.then(()=>{let canonical=window.MACA_BUILD_CANONICAL_CORPUS();if(typeof window.MACA_ADD_MULTI_SECTIONS==='function')canonical=window.MACA_ADD_MULTI_SECTIONS(canonical);window.MACA_CANONICAL_CORPUS=canonical.slice();window.healthQuestions=canonical.slice();return load('corpus-integrity.js?v=20260831-1');})
+.then(()=>load('search-v2-referential-p0.js?v=20260831-p0'))
+.then(()=>load('search-v2-engine.js?v=20260831-p0'))
+.then(()=>load('search-v2-corpus-fallback.js?v=20260901-1'))
+.then(()=>{
+  const corpus=window.MACA_CANONICAL_CORPUS||[];
+  const excluded=new Set((window.MACA_V2_REFERENTIAL_P0&&window.MACA_V2_REFERENTIAL_P0.excludedIds)||[]);
+  const routable=corpus.filter(q=>q&&q.id&&!excluded.has(q.id));
+  const excludedPresent=corpus.filter(q=>q&&excluded.has(q.id)).map(q=>q.id);
+  const titleResults=[]; const probeResults=[];
+  for(const q of routable){
+    const title=titleOf(q); const titleIds=ids(title); const titleOk=titleIds.includes(q.id);
+    titleResults.push({id:q.id,title,actual:titleIds,ok:titleOk});
+    let winner=null,actual=[];
+    for(const probe of probes(q)){
+      const got=ids(probe);
+      if(got.includes(q.id)){winner=probe;actual=got;break;}
+      if(!actual.length&&got.length)actual=got;
+    }
+    probeResults.push({id:q.id,title,probe:winner,actual,ok:Boolean(winner)});
+  }
+  const titleFailures=titleResults.filter(x=>!x.ok);
+  const probeFailures=probeResults.filter(x=>!x.ok);
+  const result={
+    ready:true,
+    corpusCount:corpus.length,
+    excludedExpected:[...excluded],
+    excludedPresent,
+    excludedCount:excludedPresent.length,
+    routableCount:routable.length,
+    engine:window.MACA_SEARCH_V2.version,
+    titleCoverage:{passed:titleResults.length-titleFailures.length,failed:titleFailures.length,success:titleFailures.length===0,failures:titleFailures},
+    probeCoverage:{passed:probeResults.length-probeFailures.length,failed:probeFailures.length,success:probeFailures.length===0,failures:probeFailures},
+    success:corpus.length===180&&excludedPresent.length===excluded.size&&titleFailures.length===0&&probeFailures.length===0
+  };
+  out.textContent=JSON.stringify(result,null,2);
+})
+.catch(error=>{out.textContent=JSON.stringify({ready:false,error:String(error&&error.message||error)});});
+})();
+</script></body></html>
