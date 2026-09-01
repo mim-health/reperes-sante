@@ -7,6 +7,15 @@
   const upsertMeta=(name,content)=>{let el=document.querySelector(`meta[name="${name}"]`);if(!el){el=document.createElement('meta');el.name=name;document.head.appendChild(el);}el.content=content;};
   const upsertProperty=(property,content)=>{let el=document.querySelector(`meta[property="${property}"]`);if(!el){el=document.createElement('meta');el.setAttribute('property',property);document.head.appendChild(el);}el.content=content;};
   function fail(){document.title='Fiche introuvable — MACA Santé';upsertMeta('robots','noindex,follow');root.innerHTML='<p class="eyebrow">MACA SANTÉ</p><h1>Fiche introuvable</h1><p><a href="fiches.html">Retour à toutes les fiches →</a></p>';}
+  function sourcesHtml(q){
+    const sources=Array.isArray(q.sources)?q.sources.filter(s=>s&&/^https?:\/\//i.test(String(s.url||''))):[];
+    if(sources.length){
+      const rows=sources.map((s,i)=>`<div style="padding:${i?'12px 0 0':'8px 0 0'};${i?'border-top:1px solid #dce7e3;margin-top:12px;':''}"><div style="font-weight:700;color:#203631">${esc(s.org||'Source')}</div><div style="margin-top:3px;line-height:1.45">${esc(s.title||'')}${s.year?` · ${esc(s.year)}`:''}</div><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer" style="display:inline-block;margin-top:5px">Consulter cette source →</a></div>`).join('');
+      return `<div class="source-box"><strong>Sources utilisées</strong>${rows}${q.evidenceStatus?`<p><small>${esc(q.evidenceStatus)}</small></p>`:''}${q.verifiedAt?`<p><small>Vérifié le ${esc(q.verifiedAt)}</small></p>`:''}</div>`;
+    }
+    const sourceUrl=q.url&&/^https?:\/\//i.test(q.url)?q.url:'';
+    return `<div class="source-box"><strong>Sources</strong><p>${esc(strip(q.source||''))}</p>${q.verifiedAt?`<p><small>Vérifié le ${esc(q.verifiedAt)}</small></p>`:''}${sourceUrl?`<a href="${esc(sourceUrl)}" target="_blank" rel="noopener noreferrer">Consulter la source →</a>`:''}</div>`;
+  }
   function render(q){
     const canonical=`https://macasante.fr/fiche.html?id=${encodeURIComponent(q.id)}`;
     const title=`${strip(q.title)} — MACA Santé`;
@@ -19,8 +28,7 @@
     let link=document.querySelector('link[rel="canonical"]');if(!link){link=document.createElement('link');link.rel='canonical';document.head.appendChild(link);}link.href=canonical;
     document.querySelectorAll('script[data-maca-schema="fiche"]').forEach(el=>el.remove());
     const schema=document.createElement('script');schema.type='application/ld+json';schema.dataset.macaSchema='fiche';schema.textContent=JSON.stringify({'@context':'https://schema.org','@type':'MedicalWebPage',headline:strip(q.title),description:desc,url:canonical,inLanguage:'fr-FR',isPartOf:{'@type':'WebSite',name:'MACA Santé',url:'https://macasante.fr/'},publisher:{'@type':'Organization',name:'MACA Santé',url:'https://macasante.fr/'},dateModified:modified,mainEntity:{'@type':'MedicalEntity',name:strip(q.title)}});document.head.appendChild(schema);
-    const sourceUrl=q.url&&/^https?:\/\//i.test(q.url)?q.url:'';
-    root.innerHTML=`<p class="eyebrow">${esc(q.category||'QUESTION SANTÉ')}</p><h1>${esc(q.title)}</h1><div class="answer-block"><strong>Réponse courte</strong><p>${esc(strip(q.answer||''))}</p></div>${q.watch?`<div class="watch-block"><strong>À retenir</strong><p>${esc(strip(q.watch))}</p></div>`:''}<div class="source-box"><strong>Sources</strong><p>${esc(strip(q.source||''))}</p>${q.verifiedAt?`<p><small>Vérifié le ${esc(q.verifiedAt)}</small></p>`:''}${sourceUrl?`<a href="${esc(sourceUrl)}" target="_blank" rel="noopener">Consulter la source →</a>`:''}</div><p><a href="fiches.html">← Toutes les fiches MACA Santé</a></p>`;
+    root.innerHTML=`<p class="eyebrow">${esc(q.category||'QUESTION SANTÉ')}</p><h1>${esc(q.title)}</h1><div class="answer-block"><strong>Réponse courte</strong><p>${esc(strip(q.answer||''))}</p></div>${q.watch?`<div class="watch-block"><strong>À retenir</strong><p>${esc(strip(q.watch))}</p></div>`:''}${sourcesHtml(q)}<p><a href="fiches.html">← Toutes les fiches MACA Santé</a></p>`;
   }
   const id=new URLSearchParams(location.search).get('id');
   if(!id){fail();return;}
