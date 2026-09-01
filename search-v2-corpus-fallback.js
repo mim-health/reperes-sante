@@ -27,8 +27,6 @@
   function keywordText(q){return Array.isArray(q&&q.keywords)?q.keywords.join(' '):String(q&&q.keywords||'');}
   function titleText(q){return String(q&&(q.title||q.question)||'');}
   function contextAllows(q,ctx){
-    /* Population gating must come from the fiche title/question, not incidental keywords.
-       Example: CMV pregnancy mentions contact with young children in keywords but is not a pediatric fiche. */
     const title=norm(titleText(q));
     const explicitlyBaby=/\b(bebe|nourrisson)\b/.test(title);
     const explicitlyChild=/\b(enfant|chez l enfant|mon enfant)\b/.test(title);
@@ -90,7 +88,8 @@
     candidates.sort((a,b)=>b.score-a.score||Number(b.significantTitleExact)-Number(a.significantTitleExact)||b.titleHits-a.titleHits||b.keywordHits-a.keywordHits||a.index-b.index);
     if(!candidates.length)return null;
     const top=candidates[0],second=candidates[1];
-    if(second&&(top.score-second.score<150||second.score/top.score>0.88))return null;
+    const exactSpecificityWins=Boolean(top.significantTitleExact&&(!second||!second.significantTitleExact));
+    if(second&&!exactSpecificityWins&&(top.score-second.score<150||second.score/top.score>0.88))return null;
     return {status:'match',reason:'canonical-metadata',matches:[{intentKey:`canonical:${top.q.id}`,id:top.q.id,score:Math.round(top.score),confidence:top.score>=1000?'high':'medium',matchedAlias:norm(query),matchType:top.significantTitleExact?'canonical-title-significant':'canonical-metadata'}],context:[...ctx]};
   }
   function isExplicitAbstention(result){return result&&(/^abstain:/.test(result.reason||'')||result.reason==='empty-query');}
@@ -105,10 +104,8 @@
   function resolve(query,options={}){
     const exact=exactTitleResolve(query,options);
     if(exact)return exact;
-
     const first=baseResolve(query,options);
     if(isExplicitAbstention(first))return first;
-
     const metadata=metadataResolve(query,options);
     if(first&&first.status==='match'){
       if(mayOverrideBase(metadata,query))return metadata;
@@ -123,5 +120,5 @@
     return resolved.matches.map(m=>{const found=map.get(m.id);return found?{q:found.q,index:found.index,score:m.score,coverage:1,directCoverage:1,confidence:m.confidence,intentKey:m.intentKey,matchedAlias:m.matchedAlias}:null;}).filter(Boolean);
   }
 
-  root.MACA_SEARCH_V2={...base,version:'2026-09-01-p0-corpus3',resolve,rank};
+  root.MACA_SEARCH_V2={...base,version:'2026-09-01-p0-corpus4',resolve,rank};
 })(typeof window!=='undefined'?window:globalThis);
