@@ -14,8 +14,10 @@ on:
       - corpus-canonicalizer.js
       - search-v2-referential-p0.js
       - search-v2-engine.js
+      - search-v2-tests-p0.js
       - backlog-audited-prevention-urologie-senior-femme-2026-09-01.js
       - backlog-audited-urologie-sexologie-femme-senior-lot2-2026-09-01.js
+      - backlog-audited-femme-senior-ophtalmo-douleurs-lot3-2026-09-01.js
       - maca-card-sources-ui.js
       - .github/workflows/maca-search-v2-corpus-fallback.yml
   workflow_dispatch:
@@ -42,7 +44,7 @@ jobs:
           test -n "$CHROME" || { echo "No Chrome/Chromium executable found"; exit 2; }
           echo "CHROME=$CHROME" >> "$GITHUB_ENV"
 
-      - name: Preserve original 120 P0 regression tests
+      - name: Preserve 120 P0 regression tests
         run: |
           "$CHROME" --headless=new --disable-gpu --no-sandbox --disable-dev-shm-usage \
             --virtual-time-budget=20000 --dump-dom \
@@ -57,7 +59,7 @@ jobs:
           if not (data.get('ready') and data.get('total')==120 and data.get('failed')==0): sys.exit(1)
           PY
 
-      - name: Validate curated corpus fallback cases
+      - name: Validate curated corpus cases
         run: |
           "$CHROME" --headless=new --disable-gpu --no-sandbox --disable-dev-shm-usage \
             --virtual-time-budget=25000 --dump-dom \
@@ -69,7 +71,7 @@ jobs:
           if not m: print('Corpus fallback result missing'); sys.exit(1)
           data=json.loads(html.unescape(re.sub(r'<[^>]+>','',m.group(1))).strip())
           print('CORPUS_FALLBACK='+json.dumps(data,ensure_ascii=False))
-          if not (data.get('ready') and data.get('success') and data.get('total')==13 and data.get('failed')==0 and data.get('corpusCount',0)>0): sys.exit(1)
+          if not (data.get('ready') and data.get('success') and data.get('total')==23 and data.get('failed')==0 and data.get('corpusCount',0)>0): sys.exit(1)
           PY
 
       - name: Audit every routable canonical fiche
