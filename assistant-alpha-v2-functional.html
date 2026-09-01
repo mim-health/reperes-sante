@@ -26,7 +26,7 @@ async function run(){await waitReady();const w=frame.contentWindow,d=frame.conte
   details.push({query,expected,engineIds,rendered,ok});if(!ok)failures.push({query,expected,engineIds,rendered,noneText});
  }
  const count=w.healthQuestions&&w.healthQuestions.length||0;const feedbackButtons=d.querySelectorAll('[data-vote]').length;const overflow=Math.max(0,d.documentElement.scrollWidth-w.innerWidth);
- const result={ready:true,success:failures.length===0&&count===180&&feedbackButtons===2&&overflow===0,total:cases.length,passed:cases.length-failures.length,failed:failures.length,corpusCount:count,engineVersion:w.MACA_SEARCH_V2.version,feedbackButtons,overflow,viewport:{width:window.innerWidth,height:window.innerHeight},appViewport:{width:w.innerWidth,height:w.innerHeight},details,failures};out.textContent=JSON.stringify(result);
+ const result={ready:true,success:failures.length===0&&feedbackButtons===2&&overflow===0,total:cases.length,passed:cases.length-failures.length,failed:failures.length,corpusCount:count,engineVersion:w.MACA_SEARCH_V2.version,feedbackButtons,overflow,viewport:{width:window.innerWidth,height:window.innerHeight},appViewport:{width:w.innerWidth,height:w.innerHeight},details,failures};out.textContent=JSON.stringify(result);
 }
 run().catch(err=>{out.textContent=JSON.stringify({ready:true,success:false,error:String(err&&err.message||err),viewport:{width:window.innerWidth,height:window.innerHeight}});});
 })();

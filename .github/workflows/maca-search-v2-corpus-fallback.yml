@@ -14,6 +14,8 @@ on:
       - corpus-canonicalizer.js
       - search-v2-referential-p0.js
       - search-v2-engine.js
+      - backlog-audited-prevention-urologie-senior-femme-2026-09-01.js
+      - maca-card-sources-ui.js
       - .github/workflows/maca-search-v2-corpus-fallback.yml
   workflow_dispatch:
 
@@ -66,7 +68,7 @@ jobs:
           if not m: print('Corpus fallback result missing'); sys.exit(1)
           data=json.loads(html.unescape(re.sub(r'<[^>]+>','',m.group(1))).strip())
           print('CORPUS_FALLBACK='+json.dumps(data,ensure_ascii=False))
-          if not (data.get('ready') and data.get('success') and data.get('total')==13 and data.get('failed')==0 and data.get('corpusCount')==180): sys.exit(1)
+          if not (data.get('ready') and data.get('success') and data.get('total')==13 and data.get('failed')==0 and data.get('corpusCount')==190): sys.exit(1)
           PY
 
       - name: Audit every routable canonical fiche

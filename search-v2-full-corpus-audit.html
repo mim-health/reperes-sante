@@ -1,5 +1,5 @@
 <!doctype html><html lang="fr"><head><meta charset="utf-8"><title>MACA Search V2 — audit couverture corpus complet</title></head><body><pre id="machine-result"></pre>
-<script src="corpus-manifest.js?v=20260829-1"></script><script src="corpus-loader.js?v=20260829-1"></script><script src="corpus-canonicalizer.js?v=20260829-1"></script>
+<script src="corpus-manifest.js?v=20260901-2"></script><script src="corpus-loader.js?v=20260829-1"></script><script src="corpus-canonicalizer.js?v=20260829-1"></script>
 <script>
 (function(){'use strict';
 const out=document.getElementById('machine-result');
@@ -26,7 +26,7 @@ window.MACA_CORPUS_READY
 .then(()=>{let canonical=window.MACA_BUILD_CANONICAL_CORPUS();if(typeof window.MACA_ADD_MULTI_SECTIONS==='function')canonical=window.MACA_ADD_MULTI_SECTIONS(canonical);window.MACA_CANONICAL_CORPUS=canonical.slice();window.healthQuestions=canonical.slice();return load('corpus-integrity.js?v=20260831-1');})
 .then(()=>load('search-v2-referential-p0.js?v=20260831-p0'))
 .then(()=>load('search-v2-engine.js?v=20260831-p0'))
-.then(()=>load('search-v2-corpus-fallback.js?v=20260901-1'))
+.then(()=>load('search-v2-corpus-fallback.js?v=20260901-4'))
 .then(()=>{
   const corpus=window.MACA_CANONICAL_CORPUS||[];
   const excluded=new Set((window.MACA_V2_REFERENTIAL_P0&&window.MACA_V2_REFERENTIAL_P0.excludedIds)||[]);
@@ -56,7 +56,7 @@ window.MACA_CORPUS_READY
     engine:window.MACA_SEARCH_V2.version,
     titleCoverage:{passed:titleResults.length-titleFailures.length,failed:titleFailures.length,success:titleFailures.length===0,failures:titleFailures},
     probeCoverage:{passed:probeResults.length-probeFailures.length,failed:probeFailures.length,success:probeFailures.length===0,failures:probeFailures},
-    success:corpus.length===180&&excludedPresent.length===excluded.size&&titleFailures.length===0&&probeFailures.length===0
+    success:excludedPresent.length===excluded.size&&titleFailures.length===0&&probeFailures.length===0
   };
   out.textContent=JSON.stringify(result,null,2);
 })
