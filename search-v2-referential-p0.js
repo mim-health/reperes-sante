@@ -1,4 +1,4 @@
-/* MACA Santé — Référentiel exécutable V2 P0 — validé médicalement le 31/08/2026. */
+/* MACA Santé — Référentiel exécutable V2 P0 — validé médicalement, actualisé 01/09/2026. */
 (function(root){
   'use strict';
   const intents = [
@@ -9,6 +9,7 @@
     {key:'child-nosebleed',primaryId:'saignement-nez-enfant',aliases:['mon enfant saigne du nez','nez qui saigne chez mon enfant','epistaxis enfant','saignement de nez enfant','nez qui saigne enfant'],requirePopulation:['child','baby']},
     {key:'eczema',primaryId:'eczema-que-faire',aliases:['eczema','dermatite atopique','plaques rouges qui demangent','peau seche qui gratte','plaques qui grattent'],hardVetoUnlessPositive:['jambes lourdes','varices']},
     {key:'child-red-eye',primaryId:'oeil-rouge-enfant',aliases:['mon enfant a l oeil rouge','mon enfant a les yeux rouges','yeux rouges chez mon enfant','oeil rouge enfant','oeil qui coule enfant','paupières collees','paupiere collee','conjonctivite enfant'],requirePopulation:['child','baby']},
+    {key:'adult-red-eye',primaryId:'oeil-rouge-adulte',aliases:['oeil rouge','yeux rouges','j ai l oeil rouge','j ai les yeux rouges','conjonctivite adulte','oeil rouge douloureux','oeil rouge et douleur'],excludePopulations:['baby','child']},
     {key:'knee-pain',primaryId:'douleur-genou-escaliers',aliases:['mal au genou','douleur du genou','douleur au genou','douleur dans les escaliers','douleur genou escaliers','douleur autour de la rotule','douleur derriere la rotule','mal derriere la rotule'],hardVeto:['traumatisme important','traumatisme recent important','genou rouge et tres gonfle']},
     {key:'tinnitus',primaryId:'acouphenes-adulte',aliases:['acouphenes','acouphene','bourdonnements','bourdonnement','oreilles qui sifflent','oreille qui siffle','sifflement dans l oreille','sifflement dans les oreilles','bruit dans l oreille'],allowMultiWith:['vertigo']},
     {key:'vertigo',primaryId:'vertiges-causes',secondaryId:'vertiges-adulte',secondaryTriggers:['quand consulter','dois je consulter','signes d alerte','dangereux','urgence','inquietant'],aliases:['vertige','vertiges','tete qui tourne','tout tourne','sensation de tourner','perte d equilibre avec sensation de tourner'],allowMultiWith:['tinnitus']},
@@ -38,7 +39,7 @@
   ];
 
   const abstainRules = [
-    {key:'adult-eye-without-card',phrases:['yeux rouges','oeil rouge','yeux secs','oeil sec','les yeux me piquent','yeux qui piquent','oeil qui pique','picotement des yeux'],unlessPopulation:['child','baby']},
+    {key:'adult-eye-irritation-without-specific-card',phrases:['yeux secs','oeil sec','les yeux me piquent','yeux qui piquent','oeil qui pique','picotement des yeux'],unlessPopulation:['child','baby']},
     {key:'hemoptysis',phrases:['je tousse du sang','tousse du sang','hemoptysie']},
     {key:'tongue-tingling',phrases:['la langue me pique','langue qui pique','picotement de la langue','picotements de la langue']},
     {key:'isolated-neck-itch',phrases:['demangeaisons de la nuque','nuque qui gratte']},
@@ -46,7 +47,7 @@
   ];
 
   root.MACA_V2_REFERENTIAL_P0 = {
-    version:'2026-08-31-p0',
+    version:'2026-09-01-p0-lot3',
     validationStatus:'VALIDATED_MEDICAL_P0',
     source:'docs/MACA_V2_P0_VALIDATION_2026-08-31.md',
     excludedIds:['rgo-adulte','cystite-femme','essoufflement-causes-signes-alerte','palpitations','poux-enfant','diversification-alimentaire-bebe'],
