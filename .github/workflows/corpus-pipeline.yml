@@ -3,7 +3,7 @@ name: MACA Corpus Pipeline
 on:
   pull_request:
     branches: [feat/v0-magazine]
-    paths: ['index.html','fiches.html','fiche.html','fiche-corpus-v2.js','home-category-routing.js','source-ui.js','sitemap.xml','corpus-*.js','scripts/generate-sitemap.js','scripts/test-corpus-*.js','scripts/test-fiche-seo.js','scripts/test-home-category-routing.js','scripts/test-ui-adapter.js','scripts/test-browser-entry.js','qa-data*.js','backlog-audited*.js','maca-extra-five.js','maca-daily-archive.js','structured-backlog-compat.js','.github/workflows/corpus-pipeline.yml']
+    paths: ['index.html','fiches.html','fiche.html','fiche-corpus-v2.js','home-category-routing.js','source-ui.js','sitemap.xml','sitemap-corpus-extra.xml','corpus-*.js','scripts/generate-sitemap.js','scripts/test-corpus-*.js','scripts/test-fiche-seo.js','scripts/test-home-category-routing.js','scripts/test-ui-adapter.js','scripts/test-browser-entry.js','qa-data*.js','backlog-audited*.js','maca-extra-five.js','maca-daily-archive.js','structured-backlog-compat.js','.github/workflows/corpus-pipeline.yml']
   workflow_dispatch:
 permissions:
   contents: read

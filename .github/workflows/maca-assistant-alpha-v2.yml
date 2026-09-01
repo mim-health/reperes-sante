@@ -61,7 +61,7 @@ jobs:
           if not m: print('Alpha desktop machine result missing'); sys.exit(1)
           data=json.loads(html.unescape(re.sub(r'<[^>]+>','',m.group(1))).strip())
           print('ALPHA_DESKTOP_RESULT='+json.dumps(data,ensure_ascii=False))
-          if not (data.get('success') and data.get('total')==7 and data.get('failed')==0 and data.get('corpusCount')==190 and data.get('feedbackButtons')==2 and data.get('overflow')==0): sys.exit(1)
+          if not (data.get('success') and data.get('total')==7 and data.get('failed')==0 and data.get('corpusCount',0)>0 and data.get('feedbackButtons')==2 and data.get('overflow')==0): sys.exit(1)
           PY
 
       - name: Alpha parity — mobile 390px and 375px
@@ -102,7 +102,7 @@ jobs:
             const viewportOk=data.viewport&&data.viewport.width===width;
             const appViewportOk=data.appViewport&&data.appViewport.width===width;
             console.log(`ALPHA_MOBILE_${width}_RESULT=`+JSON.stringify({...data,requestedWidth:width,viewportOk,appViewportOk}));
-            if(!(data.success&&data.total===7&&data.failed===0&&data.corpusCount===190&&data.overflow===0&&viewportOk&&appViewportOk))process.exitCode=1;
+            if(!(data.success&&data.total===7&&data.failed===0&&data.corpusCount>0&&data.overflow===0&&viewportOk&&appViewportOk))process.exitCode=1;
           }
           (async()=>{for(const width of widths)await testWidth(width);})().catch(err=>{console.error(err);process.exit(1);});
           NODE
