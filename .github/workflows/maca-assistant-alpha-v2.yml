@@ -1,0 +1,119 @@
+name: MACA Assistant Alpha V2 Validation
+
+on:
+  push:
+    branches:
+      - feat/assistant-alpha-search-v2-20260831
+  pull_request:
+    branches:
+      - feat/v0-magazine
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  alpha-v2-validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout current revision
+        uses: actions/checkout@v4
+
+      - name: Start static server
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/maca-http.log 2>&1 &
+          echo $! >/tmp/maca-http.pid
+          sleep 1
+
+      - name: Locate Chrome
+        run: |
+          CHROME="$(command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          test -n "$CHROME" || { echo "No Chrome/Chromium executable found"; exit 2; }
+          echo "CHROME=$CHROME" >> "$GITHUB_ENV"
+
+      - name: Run 120 V2 regression tests
+        run: |
+          "$CHROME" --headless=new --disable-gpu --no-sandbox --disable-dev-shm-usage \
+            --virtual-time-budget=20000 --dump-dom \
+            "http://127.0.0.1:8765/search-v2-lab.html?autorun=1" > /tmp/v2-regression.html
+          python3 - <<'PY'
+          import html, json, re, sys
+          dom=open('/tmp/v2-regression.html',encoding='utf-8',errors='replace').read()
+          m=re.search(r'<pre id="machine-result"[^>]*>(.*?)</pre>',dom,re.S)
+          if not m:
+              print('Machine result missing'); sys.exit(1)
+          raw=html.unescape(re.sub(r'<[^>]+>','',m.group(1))).strip()
+          data=json.loads(raw)
+          print('V2_REGRESSION_RESULT='+json.dumps(data,ensure_ascii=False))
+          if not (data.get('ready') and data.get('total')==120 and data.get('failed')==0): sys.exit(1)
+          PY
+
+      - name: Alpha parity — desktop
+        run: |
+          "$CHROME" --headless=new --disable-gpu --no-sandbox --disable-dev-shm-usage \
+            --window-size=1440,1000 --virtual-time-budget=25000 --dump-dom \
+            "http://127.0.0.1:8765/assistant-alpha-v2-functional.html" > /tmp/alpha-desktop.html
+          python3 - <<'PY'
+          import html, json, re, sys
+          dom=open('/tmp/alpha-desktop.html',encoding='utf-8',errors='replace').read()
+          m=re.search(r'<pre id="machine-result"[^>]*>(.*?)</pre>',dom,re.S)
+          if not m: print('Alpha desktop machine result missing'); sys.exit(1)
+          data=json.loads(html.unescape(re.sub(r'<[^>]+>','',m.group(1))).strip())
+          print('ALPHA_DESKTOP_RESULT='+json.dumps(data,ensure_ascii=False))
+          if not (data.get('success') and data.get('total')==7 and data.get('failed')==0 and data.get('corpusCount')==180 and data.get('feedbackButtons')==2 and data.get('overflow')==0): sys.exit(1)
+          PY
+
+      - name: Alpha parity — mobile 390px and 375px
+        run: |
+          "$CHROME" --headless=new --disable-gpu --no-sandbox --disable-dev-shm-usage \
+            --remote-debugging-port=9222 --remote-allow-origins='*' about:blank \
+            >/tmp/maca-alpha-mobile-chrome.log 2>&1 &
+          CHROME_PID=$!
+          trap 'kill $CHROME_PID 2>/dev/null || true' EXIT
+          for i in $(seq 1 50); do
+            curl -fsS http://127.0.0.1:9222/json/version >/dev/null && break
+            sleep 0.1
+          done
+          curl -fsS http://127.0.0.1:9222/json/version >/dev/null
+          node <<'NODE'
+          const widths=[390,375];
+          const url='http://127.0.0.1:8765/assistant-alpha-v2-functional.html';
+          const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+          async function testWidth(width){
+            const target=await fetch('http://127.0.0.1:9222/json/new?about:blank',{method:'PUT'}).then(r=>r.json());
+            const ws=new WebSocket(target.webSocketDebuggerUrl);
+            await new Promise((resolve,reject)=>{ws.addEventListener('open',resolve,{once:true});ws.addEventListener('error',reject,{once:true});});
+            let seq=0;const pending=new Map();
+            ws.addEventListener('message',ev=>{const msg=JSON.parse(ev.data);if(msg.id&&pending.has(msg.id)){const {resolve,reject}=pending.get(msg.id);pending.delete(msg.id);msg.error?reject(new Error(JSON.stringify(msg.error))):resolve(msg.result);}});
+            const send=(method,params={})=>new Promise((resolve,reject)=>{const id=++seq;pending.set(id,{resolve,reject});ws.send(JSON.stringify({id,method,params}));});
+            await send('Page.enable');await send('Runtime.enable');
+            await send('Emulation.setDeviceMetricsOverride',{width,height:844,deviceScaleFactor:1,mobile:true,screenWidth:width,screenHeight:844,positionX:0,positionY:0});
+            await send('Emulation.setTouchEmulationEnabled',{enabled:true,maxTouchPoints:5});
+            await send('Page.navigate',{url});
+            let data=null;
+            for(let i=0;i<180;i++){
+              await sleep(100);
+              const r=await send('Runtime.evaluate',{expression:"document.getElementById('machine-result')?.textContent || ''",returnByValue:true});
+              const raw=r.result&&r.result.value;if(!raw)continue;
+              try{const parsed=JSON.parse(raw);if(parsed.ready){data=parsed;break;}}catch{}
+            }
+            ws.close();if(!data)throw new Error(`No Alpha result at ${width}px`);
+            const viewportOk=data.viewport&&data.viewport.width===width;
+            const appViewportOk=data.appViewport&&data.appViewport.width===width;
+            console.log(`ALPHA_MOBILE_${width}_RESULT=`+JSON.stringify({...data,requestedWidth:width,viewportOk,appViewportOk}));
+            if(!(data.success&&data.total===7&&data.failed===0&&data.corpusCount===180&&data.overflow===0&&viewportOk&&appViewportOk))process.exitCode=1;
+          }
+          (async()=>{for(const width of widths)await testWidth(width);})().catch(err=>{console.error(err);process.exit(1);});
+          NODE
+
+      - name: Preserve feedback and WhatsApp harness
+        run: |
+          grep -q 'data-vote="oui"' assistant-alpha.html
+          grep -q 'data-vote="non"' assistant-alpha.html
+          grep -q 'id="share"' assistant-alpha-test.html
+          grep -q 'https://wa.me/?text=' assistant-alpha-test.html
+          if grep -q 'MACA_SEARCH_V1' assistant-alpha.html; then
+            echo 'Legacy V1 engine reference found in Alpha'; exit 1
+          fi
+          grep -q 'MACA_SEARCH_V2.rank' assistant-alpha.html
