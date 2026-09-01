@@ -19,7 +19,7 @@
     ['plaques rouges qui demangent',['eczema-que-faire']],
     ['mon enfant a les yeux rouges',['oeil-rouge-enfant']],
     ['les yeux me piquent',[]],
-    ['yeux rouges',[]],
+    ['yeux rouges',['oeil-rouge-adulte']],
     ['mal au genou',['douleur-genou-escaliers']],
     ['douleur derriere la rotule',['douleur-genou-escaliers']],
     ['genou rouge et tres gonfle',[]],
