@@ -1,5 +1,5 @@
 <!doctype html><html lang="fr"><head><meta charset="utf-8"><title>MACA Search V2 corpus fallback validation</title></head><body><pre id="machine-result"></pre>
-<script src="corpus-manifest.js?v=20260829-1"></script><script src="corpus-loader.js?v=20260829-1"></script><script src="corpus-canonicalizer.js?v=20260829-1"></script>
+<script src="corpus-manifest.js?v=20260901-4"></script><script src="corpus-loader.js?v=20260829-1"></script><script src="corpus-canonicalizer.js?v=20260829-1"></script>
 <script>
 (function(){'use strict';
 const out=document.getElementById('machine-result');
@@ -17,14 +17,24 @@ const cases=[
  ['malaise',[]],
  ['saignement de nez',[]],
  ['je crache du sang',[]],
- ['eczéma',['eczema-que-faire']]
+ ['eczéma',['eczema-que-faire']],
+ ['j ai un fibrome',['fibrome-faut-il-operer']],
+ ['je saigne après les rapports',['saignement-apres-rapport']],
+ ['pilule après 40 ans',['contraception-apres-40-ans']],
+ ['perte de force avec l âge',['sarcopenie-perte-force-age']],
+ ['personne âgée soudainement confuse',['confusion-aigue-personne-agee']],
+ ['voile devant les yeux cataracte',['cataracte-quand-operer']],
+ ['dépistage glaucome après 40 ans',['glaucome-depistage-apres-40']],
+ ['oeil rouge',['oeil-rouge-adulte']],
+ ['douleur du dos descend dans la jambe',['sciatique-faut-il-irm']],
+ ['mal au cou faut il une irm',['cervicalgie-faut-il-imagerie']]
 ];
 window.MACA_CORPUS_READY
 .then(()=>load('maca-multi-sections.js?v=20260825-1'))
 .then(()=>{let canonical=window.MACA_BUILD_CANONICAL_CORPUS();if(typeof window.MACA_ADD_MULTI_SECTIONS==='function')canonical=window.MACA_ADD_MULTI_SECTIONS(canonical);window.MACA_CANONICAL_CORPUS=canonical.slice();window.healthQuestions=canonical.slice();return load('corpus-integrity.js?v=20260831-1');})
-.then(()=>load('search-v2-referential-p0.js?v=20260831-p0'))
+.then(()=>load('search-v2-referential-p0.js?v=20260901-lot3'))
 .then(()=>load('search-v2-engine.js?v=20260831-p0'))
-.then(()=>load('search-v2-corpus-fallback.js?v=20260901-1'))
+.then(()=>load('search-v2-corpus-fallback.js?v=20260901-4'))
 .then(()=>{
  const results=cases.map(([query,expected])=>{const actual=window.MACA_SEARCH_V2.rank(query).map(x=>x.q.id);return {query,expected,actual,ok:JSON.stringify(actual)===JSON.stringify(expected)};});
  const failed=results.filter(x=>!x.ok);out.textContent=JSON.stringify({ready:true,total:results.length,failed:failed.length,success:failed.length===0,corpusCount:window.healthQuestions.length,engine:window.MACA_SEARCH_V2.version,results},null,2);
