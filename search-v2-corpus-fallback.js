@@ -21,16 +21,21 @@
   function words(value){return norm(value).split(' ').filter(w=>w.length>1&&!STOPWORDS.has(w));}
   function stem(value){return value.length>=5?value.replace(/(es|s)$/,''):value;}
   function tokenEq(a,b){return a===b||stem(a)===stem(b);}
+  function sameWordSet(a,b){return a.length===b.length&&a.every(x=>b.some(y=>tokenEq(x,y)))&&b.every(x=>a.some(y=>tokenEq(x,y)));}
   function corpus(){return Array.isArray(root.MACA_CANONICAL_CORPUS)?root.MACA_CANONICAL_CORPUS:(Array.isArray(root.healthQuestions)?root.healthQuestions:[]);}
   function excludedIds(){return new Set((root.MACA_V2_REFERENTIAL_P0&&root.MACA_V2_REFERENTIAL_P0.excludedIds)||[]);}
   function keywordText(q){return Array.isArray(q&&q.keywords)?q.keywords.join(' '):String(q&&q.keywords||'');}
   function titleText(q){return String(q&&(q.title||q.question)||'');}
   function contextAllows(q,ctx){
-    const meta=norm(titleText(q)+' '+keywordText(q));
-    const pediatric=/\b(bebe|nourrisson|enfant)\b/.test(meta);
-    const adolescent=/\b(ado|adolescent|adolescente)\b/.test(meta);
-    if(pediatric&&!(ctx.has('baby')||ctx.has('child')||ctx.has('adolescent')))return false;
-    if(adolescent&&ctx.size&&!(ctx.has('adolescent')||ctx.has('child')))return false;
+    /* Population gating must come from the fiche title/question, not incidental keywords.
+       Example: CMV pregnancy mentions contact with young children in keywords but is not a pediatric fiche. */
+    const title=norm(titleText(q));
+    const explicitlyBaby=/\b(bebe|nourrisson)\b/.test(title);
+    const explicitlyChild=/\b(enfant|chez l enfant|mon enfant)\b/.test(title);
+    const explicitlyAdolescent=/\b(ado|adolescent|adolescente)\b/.test(title);
+    if(explicitlyBaby&&!(ctx.has('baby')||ctx.has('child')))return false;
+    if(explicitlyChild&&!(ctx.has('baby')||ctx.has('child')||ctx.has('adolescent')))return false;
+    if(explicitlyAdolescent&&ctx.size&&!(ctx.has('adolescent')||ctx.has('child')))return false;
     return true;
   }
   function resultFor(q,ctx,reason,score,matchedAlias,matchType){
@@ -73,18 +78,20 @@
       if(matched.length!==qWords.length)continue;
       const titleHits=qWords.filter(qw=>titleWords.some(tw=>tokenEq(qw,tw))).length;
       const keywordHits=qWords.filter(qw=>keyWords.some(kw=>tokenEq(qw,kw))).length;
+      const significantTitleExact=sameWordSet(qWords,titleWords);
       let score=760+(qWords.length*55)+(titleHits*55)+(keywordHits*10);
       const nq=norm(query),nt=norm(title);
       if(nq&&nt===nq)score=1390;
+      else if(significantTitleExact)score=1360;
       else if(nq.length>=4&&nt.includes(nq))score+=170;
       if(qWords.length===1)score=titleHits?1080:840;
-      candidates.push({q,index,score,titleHits,keywordHits});
+      candidates.push({q,index,score,titleHits,keywordHits,significantTitleExact});
     }
-    candidates.sort((a,b)=>b.score-a.score||b.titleHits-a.titleHits||b.keywordHits-a.keywordHits||a.index-b.index);
+    candidates.sort((a,b)=>b.score-a.score||Number(b.significantTitleExact)-Number(a.significantTitleExact)||b.titleHits-a.titleHits||b.keywordHits-a.keywordHits||a.index-b.index);
     if(!candidates.length)return null;
     const top=candidates[0],second=candidates[1];
     if(second&&(top.score-second.score<150||second.score/top.score>0.88))return null;
-    return {status:'match',reason:'canonical-metadata',matches:[{intentKey:`canonical:${top.q.id}`,id:top.q.id,score:Math.round(top.score),confidence:top.score>=1000?'high':'medium',matchedAlias:norm(query),matchType:'canonical-metadata'}],context:[...ctx]};
+    return {status:'match',reason:'canonical-metadata',matches:[{intentKey:`canonical:${top.q.id}`,id:top.q.id,score:Math.round(top.score),confidence:top.score>=1000?'high':'medium',matchedAlias:norm(query),matchType:top.significantTitleExact?'canonical-title-significant':'canonical-metadata'}],context:[...ctx]};
   }
   function isExplicitAbstention(result){return result&&(/^abstain:/.test(result.reason||'')||result.reason==='empty-query');}
   function mayOverrideBase(metadata,query){
@@ -116,5 +123,5 @@
     return resolved.matches.map(m=>{const found=map.get(m.id);return found?{q:found.q,index:found.index,score:m.score,coverage:1,directCoverage:1,confidence:m.confidence,intentKey:m.intentKey,matchedAlias:m.matchedAlias}:null;}).filter(Boolean);
   }
 
-  root.MACA_SEARCH_V2={...base,version:'2026-09-01-p0-corpus2',resolve,rank};
+  root.MACA_SEARCH_V2={...base,version:'2026-09-01-p0-corpus3',resolve,rank};
 })(typeof window!=='undefined'?window:globalThis);
