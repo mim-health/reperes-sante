@@ -1,0 +1,65 @@
+name: MACA Search V2 Corpus Coverage
+
+on:
+  pull_request:
+    branches:
+      - feat/v0-magazine
+    paths:
+      - search-v2-corpus-fallback.js
+      - corpus-v2-browser-entry.js
+      - assistant-alpha.html
+      - search-v2-corpus-fallback-functional.html
+      - .github/workflows/maca-search-v2-corpus-fallback.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  corpus-coverage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Checkout current revision
+        uses: actions/checkout@v4
+
+      - name: Start static server
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/maca-corpus-fallback-http.log 2>&1 &
+          sleep 1
+
+      - name: Locate Chrome
+        run: |
+          CHROME="$(command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          test -n "$CHROME" || { echo "No Chrome/Chromium executable found"; exit 2; }
+          echo "CHROME=$CHROME" >> "$GITHUB_ENV"
+
+      - name: Preserve original 120 P0 regression tests
+        run: |
+          "$CHROME" --headless=new --disable-gpu --no-sandbox --disable-dev-shm-usage \
+            --virtual-time-budget=20000 --dump-dom \
+            "http://127.0.0.1:8765/search-v2-lab.html?autorun=1" > /tmp/v2-regression.html
+          python3 - <<'PY'
+          import html, json, re, sys
+          dom=open('/tmp/v2-regression.html',encoding='utf-8',errors='replace').read()
+          m=re.search(r'<pre id="machine-result"[^>]*>(.*?)</pre>',dom,re.S)
+          if not m: print('Machine result missing'); sys.exit(1)
+          data=json.loads(html.unescape(re.sub(r'<[^>]+>','',m.group(1))).strip())
+          print('V2_P0='+json.dumps(data,ensure_ascii=False))
+          if not (data.get('ready') and data.get('total')==120 and data.get('failed')==0): sys.exit(1)
+          PY
+
+      - name: Validate canonical corpus fallback
+        run: |
+          "$CHROME" --headless=new --disable-gpu --no-sandbox --disable-dev-shm-usage \
+            --virtual-time-budget=25000 --dump-dom \
+            "http://127.0.0.1:8765/search-v2-corpus-fallback-functional.html" > /tmp/corpus-fallback.html
+          python3 - <<'PY'
+          import html, json, re, sys
+          dom=open('/tmp/corpus-fallback.html',encoding='utf-8',errors='replace').read()
+          m=re.search(r'<pre id="machine-result"[^>]*>(.*?)</pre>',dom,re.S)
+          if not m: print('Corpus fallback result missing'); sys.exit(1)
+          data=json.loads(html.unescape(re.sub(r'<[^>]+>','',m.group(1))).strip())
+          print('CORPUS_FALLBACK='+json.dumps(data,ensure_ascii=False))
+          if not (data.get('ready') and data.get('success') and data.get('total')==13 and data.get('failed')==0 and data.get('corpusCount')==180): sys.exit(1)
+          PY
