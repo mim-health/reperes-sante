@@ -27,7 +27,13 @@
     valuesOf(q).forEach(value=>{const canonical=canonicalName(value);if(canonical&&!out.includes(canonical))out.push(canonical);});
     return out;
   }
-  function primaryCategoryOf(q){return categoriesOf(q)[0]||'Santé au quotidien';}
+  function primaryCategoryOf(q){
+    if(!q)return'Santé au quotidien';
+    /* The editorial source category is authoritative when it already names a
+       public rubric (notably Cancer). publicCategory may contain an older
+       compatibility mapping such as Cancer -> Santé au quotidien. */
+    return canonicalName(q.category)||canonicalName(q.primaryCategory)||canonicalName(q.publicCategory)||categoriesOf(q)[0]||'Santé au quotidien';
+  }
   function matchQuery(query){return canonicalName(query);}
   function itemsFor(category,corpus){
     const canonical=canonicalName(category);
