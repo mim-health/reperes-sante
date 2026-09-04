@@ -45,7 +45,7 @@
 
   function loadStandaloneFicheTools(){
     if(!document.getElementById('seo-fiche')) return;
-    const scripts=['maca-discovery-loop.js?v=20260904-j15','maca-assistant-widget.js?v=20260904-j15'];
+    const scripts=['maca-discovery-loop.js?v=20260904-j15fix1','maca-assistant-widget.js?v=20260904-j15fix1'];
     scripts.reduce((chain,src)=>chain.then(()=>load(src)),Promise.resolve()).catch(error=>console.error('[MACA fiche tools]',error));
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',loadStandaloneFicheTools,{once:true});
