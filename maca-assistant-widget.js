@@ -30,7 +30,7 @@
   panel.setAttribute('aria-modal','false');
   panel.setAttribute('aria-labelledby','maca-assistant-title');
   panel.setAttribute('data-open','false');
-  panel.innerHTML=`<header class="maca-assistant-head"><div class="maca-assistant-head-main"><img class="maca-assistant-head-icon" src="logo-maca.svg" alt=""><div class="maca-assistant-head-copy"><strong class="maca-assistant-head-title" id="maca-assistant-title">Assistant MACA</strong><span class="maca-assistant-head-subtitle">Je recherche parmi les fiches MACA vérifiées et sourcées.</span></div></div><button class="maca-assistant-close" type="button" aria-label="Fermer l’assistant">×</button></header><iframe class="maca-assistant-frame" title="Assistant MACA" src="assistant-alpha.html?v=20260904-j15"></iframe><span class="maca-assistant-screen-reader" aria-live="polite" id="maca-assistant-status"></span>`;
+  panel.innerHTML=`<header class="maca-assistant-head"><div class="maca-assistant-head-main"><img class="maca-assistant-head-icon" src="logo-maca.svg" alt=""><div class="maca-assistant-head-copy"><strong class="maca-assistant-head-title" id="maca-assistant-title">Assistant MACA</strong><span class="maca-assistant-head-subtitle">Je recherche parmi les fiches MACA vérifiées et sourcées.</span></div></div><button class="maca-assistant-close" type="button" aria-label="Fermer l’assistant">×</button></header><iframe class="maca-assistant-frame" title="Assistant MACA" src="assistant-alpha.html?v=20260904-j15fix1"></iframe><span class="maca-assistant-screen-reader" aria-live="polite" id="maca-assistant-status"></span>`;
 
   document.body.appendChild(panel);
   document.body.appendChild(launcher);
@@ -59,7 +59,7 @@
     try{
       const href=frame.contentWindow.location.href;
       const parsed=new URL(href,window.location.href);
-      if(parsed.pathname.endsWith('/fiches.html')||parsed.pathname.endsWith('fiches.html')){
+      if(parsed.pathname.endsWith('/fiche.html')||parsed.pathname.endsWith('fiche.html')||parsed.pathname.endsWith('/fiches.html')||parsed.pathname.endsWith('fiches.html')){
         window.location.href=parsed.href;
         return;
       }
