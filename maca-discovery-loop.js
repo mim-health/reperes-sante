@@ -3,6 +3,7 @@
   'use strict';
 
   const RELATED=Object.freeze({
+    'fatigue-causes':['ferritine-basse-carence-fer','tsh-haute-basse-thyroide'],
     'vertiges-causes':['vertiges-adulte'],
     'vertiges-adulte':['vertiges-causes'],
     'palpitations-adulte':['palpitations-quand-consulter'],
