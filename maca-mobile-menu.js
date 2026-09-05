@@ -4,7 +4,7 @@
 
   if(!document.querySelector('link[data-maca-mobile-menu]')){
     var css=document.createElement('link');
-    css.rel='stylesheet';css.href='maca-mobile-menu.css?v=20260905-menu1';css.setAttribute('data-maca-mobile-menu','');
+    css.rel='stylesheet';css.href='maca-mobile-menu.css?v=20260905-menu2';css.setAttribute('data-maca-mobile-menu','');
     document.head.appendChild(css);
   }
 
@@ -31,7 +31,7 @@
 
   function closeMenu(){nav.classList.remove('open');button.setAttribute('aria-expanded','false');}
   function toggleMenu(){var open=!nav.classList.contains('open');nav.classList.toggle('open',open);button.setAttribute('aria-expanded',String(open));}
-  button.addEventListener('click',toggleMenu);
+  button.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();toggleMenu();});
   nav.addEventListener('click',function(e){if(e.target.closest('a'))closeMenu();});
   document.addEventListener('keydown',function(e){if(e.key==='Escape')closeMenu();});
   document.addEventListener('click',function(e){if(nav.classList.contains('open')&&!header.contains(e.target))closeMenu();});
