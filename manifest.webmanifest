@@ -1,0 +1,15 @@
+{
+  "name": "MACA Santé",
+  "short_name": "MACA",
+  "description": "Information santé claire, vérifiée et sourcée.",
+  "lang": "fr-FR",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#faf7ef",
+  "theme_color": "#66745a",
+  "icons": [
+    {"src":"/maca-icon-192.svg","sizes":"192x192","type":"image/svg+xml","purpose":"any maskable"},
+    {"src":"/maca-icon-512.svg","sizes":"512x512","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}
