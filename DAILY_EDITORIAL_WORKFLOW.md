@@ -36,9 +36,9 @@ Le sujet peut donc changer chaque jour sans modification du mécanisme de naviga
 Le clic/tap doit ouvrir un contenu utile avec au minimum le titre, une explication et la source. L'interaction doit aussi fonctionner au clavier (Tab puis Entrée/Espace). Une rotation éditoriale ne peut être considérée comme publiée tant que ces interactions n'ont pas été testées sur mobile et desktop.
 
 ## Fichier à modifier chaque jour
-`maca-daily-editorial.js`
+`maca-daily-editorial-data.js`
 
-Modifier uniquement l'objet `DAILY_EDITORIAL` après validation éditoriale :
+Modifier uniquement le lot éditorial après validation :
 - date ;
 - À la une ;
 - Vrai/Faux ;
@@ -59,42 +59,53 @@ Avant publication :
 4. vérifier le cadrage desktop et mobile ;
 5. ne publier l'image qu'avec le lot éditorial validé.
 
-## Cycle obligatoire : éditorial → fiche
-Avant de remplacer le contenu du jour précédent :
-1. identifier les À la une et Vrai/Faux ayant une valeur documentaire durable ;
-2. les transformer en fiches génériques et non datées lorsque cela est pertinent ;
-3. conserver les sources médicales et la date de dernière vérification ;
-4. contrôler les doublons avec le corpus existant ;
-5. intégrer les nouvelles fiches au corpus audité afin qu'elles soient retrouvables par la recherche ;
-6. seulement ensuite retirer l'ancien contenu de l'accueil.
+## Cycle OBLIGATOIRE : éditorial → corpus
+La validation éditoriale quotidienne n'est pas considérée comme terminée tant que la capitalisation vers le corpus n'a pas été examinée.
 
-Exemples déjà concernés :
-- CMV pendant la grossesse / conduite après dépistage positif ;
-- vaccination antipneumococcique / évolution de la stratégie vaccinale ;
-- maladie cœliaque / ne pas arrêter le gluten avant le diagnostic ;
-- cortisol, stress et fatigue ;
-- autres Vrai/Faux ou À la une validés présentant une valeur durable.
+Avant de remplacer le contenu du jour précédent, chaque sujet doit recevoir l'une de ces trois décisions :
+- **CRÉER** : le sujet apporte une information durable absente du corpus → créer une fiche courte ;
+- **FUSIONNER / ACTUALISER** : une fiche existe déjà → enrichir ou actualiser cette fiche plutôt que créer un doublon ;
+- **NE PAS CRÉER** : donnée trop ponctuelle, redondante ou sans valeur documentaire durable → conserver seulement l'historique éditorial.
 
-**Aucun ancien À la une ou Vrai/Faux pertinent ne doit être perdu lors d'une rotation quotidienne.**
+### Format attendu
+- viser en règle générale **1 à 3 fiches durables maximum par édition quotidienne** ;
+- une fiche doit répondre à **une vraie question du grand public** ;
+- réponse courte : l'essentiel en quelques phrases ;
+- conserver la source et la date de vérification ;
+- **ne pas créer une fiche distincte pour chaque chiffre** lorsque plusieurs chiffres documentent le même sujet ;
+- fusionner le À la une, le Vrai/Faux, le chiffre du jour et les données complémentaires lorsqu'ils racontent la même question ;
+- contrôler les doublons avant toute création ;
+- intégrer toute nouvelle fiche au corpus audité afin qu'elle soit retrouvable par la recherche.
+
+**Règle produit : le travail éditorial quotidien doit enrichir progressivement le patrimoine MACA, sans allonger inutilement les fiches ni gonfler artificiellement le corpus.**
+
+Exemples de bonnes capitalisations :
+- un À la une sur la vaccination HPV + ses chiffres de couverture → une seule fiche durable HPV ;
+- un À la une sur les statines + Vrai/Faux + données d'essais → une seule fiche statines ;
+- un chiffre sur le sel lorsque la fiche sel/tension existe déjà → pas de nouvelle fiche, actualisation si nécessaire.
+
+**Aucun ancien contenu pertinent ne doit être perdu lors d'une rotation quotidienne.**
 
 ## Ne pas modifier pour une simple rotation quotidienne
 - `app.js` (moteur, recherche, rendu des fiches) ;
-- `qa-data.js` et les lots de fiches auditées, sauf lors de l'étape explicite de conversion éditorial → fiche ;
 - CSS / direction artistique ;
 - architecture de recherche ;
 - mécanisme générique de navigation quotidienne.
 
+Les fichiers du corpus ne sont modifiés que dans l'étape explicite de capitalisation éditoriale validée.
+
 ## Contrôle après publication
-1. Vérifier le contenu dans `maca-daily-editorial.js`.
+1. Vérifier le contenu dans `maca-daily-editorial-data.js`.
 2. Vérifier que chaque contenu visible et sa destination ont le même identifiant éditorial.
 3. Vérifier que l'image correspond au sujet et que sa provenance/licence est documentée.
 4. Vérifier l'accueil desktop.
 5. Vérifier l'accueil mobile.
 6. Cliquer/taper À la une, Vrai/Faux, Chiffre du jour, les 3 données et toutes les cartes « À lire en 3 minutes » et contrôler que chaque page ouverte correspond exactement au sujet affiché.
 7. Tester ces mêmes contenus au clavier (Tab + Entrée/Espace).
-8. Vérifier que les contenus sortis de la rotation mais conservables existent comme fiches recherchables.
-9. Tester une recherche simple et une recherche visant une fiche issue d'un ancien contenu éditorial.
-10. Confirmer l'absence de régression du moteur.
-11. Conserver le commit GitHub du jour comme point de retour.
+8. Documenter pour chaque sujet la décision CRÉER / FUSIONNER / NE PAS CRÉER.
+9. Vérifier que les fiches créées ou actualisées sont bien chargées par `corpus-manifest.js`.
+10. Tester une recherche simple et une recherche visant une fiche issue de l'éditorial.
+11. Confirmer l'absence de régression du moteur.
+12. Conserver le commit GitHub du jour comme point de retour.
 
-Cette séparation évite de réécrire `app.js` à chaque veille quotidienne, empêche la perte des contenus éditoriaux validés et réduit le risque de casser le moteur ou les fiches validées.
+Cette séparation évite de réécrire le moteur à chaque veille quotidienne, empêche la perte des contenus éditoriaux validés et transforme progressivement le travail de rédaction en patrimoine documentaire durable pour MACA.
