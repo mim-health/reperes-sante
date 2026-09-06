@@ -1,5 +1,5 @@
 /* Deterministic MACA corpus loader. Migration branch only.
- * Starts canonical corpus downloads in parallel while preserving script execution order.
+ * Loads the canonical manifest sequentially so legacy global arrays keep their order.
  */
 (function () {
   'use strict';
@@ -32,7 +32,10 @@
     });
   }
 
-  window.MACA_CORPUS_READY = Promise.all(files.map(load)).then(() => {
+  window.MACA_CORPUS_READY = files.reduce(
+    (chain, src) => chain.then(() => load(src)),
+    Promise.resolve()
+  ).then(() => {
     window.dispatchEvent(new CustomEvent('maca:corpus-ready', { detail: { files: files.slice() } }));
     return files.slice();
   }).catch((error) => {
