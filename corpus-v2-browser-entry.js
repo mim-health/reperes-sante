@@ -4,6 +4,12 @@
   function load(src){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=src;s.async=false;s.onload=resolve;s.onerror=()=>reject(new Error('Unable to load UI script: '+src));document.body.appendChild(s);});}
   function exposeCanonical(){if(typeof window.MACA_BUILD_CANONICAL_CORPUS!=='function')throw new Error('MACA canonicalizer missing');let canonical=window.MACA_BUILD_CANONICAL_CORPUS();if(!Array.isArray(canonical)||!canonical.length)throw new Error('MACA canonical corpus empty');if(typeof window.MACA_ADD_MULTI_SECTIONS==='function')canonical=window.MACA_ADD_MULTI_SECTIONS(canonical);window.MACA_CANONICAL_CORPUS=canonical.slice();window.healthQuestions=canonical.slice();window.extraAuditedQuestions=[];window.MACA_UI_CORPUS_V2=true;}
   const page=document.body.classList.contains('library-page')?'library':'home';
+
+  /* Non-critical home actions: deliberately isolated from navigation and corpus UI. */
+  if(page==='home'){
+    load('maca-home-actions.js?v=20260906-1').catch(err=>console.error('[MACA home actions]',err));
+  }
+
   const commonBeforeApp=['corpus-integrity.js?v=20260831-1','maca-category-access.js?v=20260902-1','search-v2-referential-p0.js?v=20260901-lot5','search-v2-engine.js?v=20260831-p0','search-v2-corpus-fallback.js?v=20260901-4','search-v2-fatigue-fix.js?v=20260902-1','search-v2-harcelement-fix.js?v=20260903-1'];
   const homeAfter=['alphabetical-categories-v1.js?v=20260823-2','maca-eight-categories-v1.js?v=20260902-catfix2','vrai-faux-ui.js','source-ui.js','maca-card-sources-ui.js?v=20260901-1','maca-daily-feature.js?v=20260903-perf1','maca-assistant-widget.js?v=20260904-ux2'];
   const libraryAfter=['maca-eight-categories-v1.js?v=20260902-catfix2','source-ui.js','maca-card-sources-ui.js?v=20260901-1','maca-section-identities.js?v=20260829-mag3','maca-magazine-layout.js?v=20260829-mag4c'];
