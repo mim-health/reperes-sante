@@ -13,12 +13,12 @@
     const q=norm(query);
     if(/\b(estomac|ventre)\b/.test(q)&&/\b(brule|brulure|brulures)\b/.test(q)&&/\b(remonte|remontee|remontees|acide)\b/.test(q))return direct('reflux-adulte','reflux',query,'v15-reflux-language');
     if(/\b(brule|brulure|brulures)\b/.test(q)&&(/\bpipi\b/.test(q)||/\b(urin|urine|uriner|urinant)\b/.test(q)))return direct('maca-cystite-reperes','cystitis',query,'v15-cystitis-colloquial');
+    if(/\bimmunotherapie\b/.test(q)&&/\bcancer\b/.test(q))return direct('cancer-immunotherapie-comment-ca-marche','cancer-immunotherapy',query,'v15-cancer-immunotherapy-language');
+    if(/\bvarice|varices\b/.test(q)&&/\bcontention|compression|bas\b/.test(q))return direct('varices-contention-disparaitre','varices-compression',query,'v15-varices-compression-language');
     return null;
   }
   function resolve(query,options={}){if(safetyAbstain(query))return {status:'none',reason:'v15-safety-generic-antibiotic',matches:[],context:[]};return targeted(query)||baseResolve(query,options);}
   function rank(query,options={}){const r=resolve(query,options);if(!r||r.status!=='match')return [];const map=new Map(corpus().map((q,index)=>[q.id,{q,index}]));return r.matches.map(m=>{const f=map.get(m.id);return f?{q:f.q,index:f.index,score:m.score,coverage:1,directCoverage:1,confidence:m.confidence,intentKey:m.intentKey,matchedAlias:m.matchedAlias}:null;}).filter(Boolean);}
-  // Complements are deliberately separate from the primary decision. Only explicit,
-  // clinically non-inferential corpus relationships are allowed in this lab.
   const complementRules=[
     {when:/\b(remontee|remontees|reflux|rgo|acide|acides)\b/,primary:'reflux-adulte',ids:['douleur-abdominale']},
     {when:/\b(mal|maux|douleur)\b.*\b(tete)\b/,primary:'maux-tete',ids:['migraine-que-faire']},
@@ -31,5 +31,5 @@
     const complements=rule.ids.map(byId).filter(Boolean).filter(x=>x.id!==primary.q.id).slice(0,2);
     return {primary,complements,reason:complements.length?'v15-explicit-complements':'primary-only'};
   }
-  root.MACA_SEARCH_V15_LAB={...base,version:String(base.version||'')+'-v15lab2',resolve,rank,select};
+  root.MACA_SEARCH_V15_LAB={...base,version:String(base.version||'')+'-v15lab3',resolve,rank,select};
 })(typeof window!=='undefined'?window:globalThis);
