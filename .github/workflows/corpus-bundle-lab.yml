@@ -8,6 +8,7 @@ on:
       - '.github/workflows/corpus-bundle-lab.yml'
       - 'scripts/build-corpus-production.js'
       - 'scripts/test-corpus-bundle-equivalence.js'
+      - 'scripts/diagnose-corpus-structure.js'
   workflow_dispatch:
 
 permissions:
@@ -25,6 +26,9 @@ jobs:
 
       - name: Verify strict corpus equivalence
         run: node scripts/test-corpus-bundle-equivalence.js
+
+      - name: Diagnose corpus structure
+        run: node scripts/diagnose-corpus-structure.js
 
       - name: Show artifact sizes
         run: |
