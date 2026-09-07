@@ -1,4 +1,4 @@
-/* MACA LAB ONLY — GENERATED FILE. NOT WIRED TO PRODUCTION.
+/* MACA CORPUS PRODUCTION — GENERATED FILE. DO NOT EDIT BY HAND.
  * Generated from corpus-manifest.js in exact manifest order.
  */
 
