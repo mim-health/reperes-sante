@@ -54,7 +54,7 @@ function build() {
       sha256: sha256(body)
     });
   }
-  const banner = `/* MACA LAB ONLY — GENERATED FILE. NOT WIRED TO PRODUCTION.\n * Generated from corpus-manifest.js in exact manifest order.\n */\n`;
+  const banner = `/* MACA CORPUS PRODUCTION — GENERATED FILE. DO NOT EDIT BY HAND.\n * Generated from corpus-manifest.js in exact manifest order.\n */\n`;
   const bundle = banner + parts.join('');
   fs.writeFileSync(OUT_FILE, bundle, 'utf8');
   const metadata = {
