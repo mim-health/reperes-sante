@@ -46,7 +46,7 @@ function executeBundle() {
 }
 
 function stable(value) {
-  if (Array.isArray(value)) return value.map(stable);
+  if (Array.isArray(value)) return Array.from(value, stable);
   if (value && typeof value === 'object') {
     const out = {};
     for (const key of Object.keys(value).sort()) {
@@ -63,7 +63,9 @@ function canonicalSnapshot(ctx) {
     healthQuestions: Array.isArray(ctx.healthQuestions) ? ctx.healthQuestions : [],
     extraAuditedQuestions: Array.isArray(ctx.extraAuditedQuestions) ? ctx.extraAuditedQuestions : []
   };
-  return stable(arrays);
+  // Force a host-realm JSON structure so Node does not reject otherwise-identical
+  // arrays solely because they were created in separate vm contexts.
+  return JSON.parse(JSON.stringify(stable(arrays)));
 }
 
 function ids(snapshot) {
