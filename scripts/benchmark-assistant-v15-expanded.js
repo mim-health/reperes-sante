@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+'use strict';
+const fs=require('fs'),path=require('path'),vm=require('vm');const ROOT=path.resolve(__dirname,'..'),read=p=>fs.readFileSync(path.join(ROOT,p),'utf8');
+function ctx(){const c={console,setTimeout,clearTimeout,setInterval,clearInterval,CustomEvent:function(){},MutationObserver:function(){this.observe=()=>{};}};c.window=c;c.globalThis=c;c.addEventListener=()=>{};c.document={readyState:'complete',body:null,getElementById:()=>null,querySelector:()=>null};return vm.createContext(c)}function run(c,p){vm.runInContext(read(p),c,{filename:p})}
+const m={window:{}};vm.runInNewContext(read('corpus-manifest.js'),m);const c=ctx();m.window.MACA_CORPUS_MANIFEST.map(x=>String(x).split('?')[0]).forEach(f=>run(c,f));run(c,'corpus-canonicalizer.js');c.MACA_CANONICAL_CORPUS=Array.from(c.MACA_BUILD_CANONICAL_CORPUS());c.healthQuestions=c.MACA_CANONICAL_CORPUS.slice();['search-v2-referential-p0.js','search-v2-engine.js','search-v2-corpus-fallback.js','search-v2-fatigue-fix.js','search-v2-harcelement-fix.js','search-v2-retrouvabilite-pilot-fix.js','search-v15-lab-candidate.js'].forEach(f=>run(c,f));
+const cases=[
+['j ai des remontees acides','reflux-adulte'],['mon estomac me brule et ca remonte','reflux-adulte'],['brulures estomac acide qui remonte','reflux-adulte'],['reflux gastro oesophagien','reflux-adulte'],
+['ca brule quand je fais pipi','maca-cystite-reperes'],['brulure quand j urine','maca-cystite-reperes'],['j ai mal quand je fais pipi',null],['je fais pipi souvent',null],
+['mal a la tete','maux-tete'],['maux de tete','maux-tete'],['migraine','migraine-que-faire'],['bourdonnements oreilles','acouphenes-adulte'],['j ai des bourdonnements et des vertiges','acouphenes-adulte'],['la tete tourne','vertiges-causes'],
+['mon coeur s emballe','palpitations-adulte'],['palpitations','palpitations-adulte'],['diabete','diabete-type-2-depistage-complications'],['diabete type 2','diabete-type-2-depistage-complications'],
+['maux de ventre','douleur-abdominale'],['j ai mal au ventre','douleur-abdominale'],['douleur abdominale','douleur-abdominale'],['fatigue','fatigue-adulte'],['je suis toujours fatigue','fatigue-adulte'],
+['mon enfant est harcele a l ecole','harcelement-scolaire-signes-que-faire'],['harcelement scolaire','harcelement-scolaire-signes-que-faire'],['cyberharcelement', 'harcelement-scolaire-signes-que-faire'],
+['quel antibiotique prendre pour une infection',null],['quel antibiotique pour moi',null],['antibiotique pour angine',null],
+['douleur poitrine',null],['j ai du sang dans les urines','sang-dans-urines-hematurie'],['fuite urinaire','fuites-urinaires-age'],['omeprazole longtemps','ipp-long-cours-omeprazole'],['antihistaminique tous les jours','antihistaminique-tous-les-jours'],['fievre adulte quand s inquieter','fievre-adulte-quand-sinquieter'],
+['regles douloureuses',null],['bien etre adolescent',null],['creatine sport reins','creatine-sport-reins'],['arthrose traitement','arthrose-traitements-utiles'],['chondroitine arthrose','chondroitine-arthrose-efficacite'],
+['cancer intelligence artificielle','cancer-intelligence-artificielle-usages-reels'],['cancer metastases','cancer-metastases-definition'],['immunotherapie cancer','cancer-immunotherapie-comment-ca-marche'],['varices contention','varices-contention-disparaitre'],
+['je veux un diagnostic',null],['quel traitement dois je prendre',null],['mal partout depuis hier',null],['je ne me sens pas bien',null],['douleur bizarre',null],['medicament pour infection',null]
+];
+function first(engine,q){const r=engine.rank(q);return r&&r[0]&&r[0].q&&r[0].q.id||null}
+const rows=cases.map(([q,want])=>{const before=first(c.MACA_SEARCH_V2,q),after=first(c.MACA_SEARCH_V15_LAB,q);let cls;if(want){cls=after===want?'A':after?'B':'C'}else cls=after?'B':'D';return {q,want,before,after,class:cls,changed:before!==after}});
+const counts=rows.reduce((a,r)=>(a[r.class]++,a),{A:0,B:0,C:0,D:0});const regressions=rows.filter(r=>r.want&&r.before===r.want&&r.after!==r.want);console.log(JSON.stringify({total:rows.length,counts,regressions,changed:rows.filter(r=>r.changed),failures:rows.filter(r=>r.class==='B'||r.class==='C')},null,2));if(regressions.length)process.exit(1);
