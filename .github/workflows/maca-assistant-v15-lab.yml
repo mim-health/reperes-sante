@@ -8,6 +8,7 @@ on:
       - '.github/workflows/maca-assistant-v15-lab.yml'
       - 'scripts/audit-assistant-v15-initial.js'
       - 'scripts/test-assistant-v15-candidate.js'
+      - 'scripts/benchmark-assistant-v15-expanded.js'
       - 'search-v15-lab-candidate.js'
       - 'search-v2-*.js'
       - 'corpus-manifest.js'
@@ -32,3 +33,5 @@ jobs:
         run: node scripts/audit-assistant-v15-initial.js
       - name: Test V1.5 candidate corrections
         run: node scripts/test-assistant-v15-candidate.js
+      - name: Run expanded real-language benchmark
+        run: node scripts/benchmark-assistant-v15-expanded.js
