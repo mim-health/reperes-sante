@@ -9,6 +9,13 @@ const checks=[
  {q:'quel antibiotique prendre pour une infection',want:null}
 ];
 const rows=checks.map(x=>{const before=c.MACA_SEARCH_V2.rank(x.q).map(r=>r.q.id);const after=c.MACA_SEARCH_V15_LAB.rank(x.q).map(r=>r.q.id);const pass=x.want?after.includes(x.want):after.length===0;return {...x,before,after,pass,afterReason:c.MACA_SEARCH_V15_LAB.resolve(x.q).reason};});
-const suggestionQueries=['j ai des remontees acides','j ai mal a la tete','j ai des bourdonnements et des vertiges','mon coeur s emballe','diabete type 2'];
-const suggestions=suggestionQueries.map(q=>{const ids=c.MACA_SEARCH_V2.rank(q).map(r=>r.q.id);return {q,rankedIds:ids,currentComplementCount:Math.max(0,Math.min(2,ids.length-1))};});
-const ok=rows.every(x=>x.pass);console.log(JSON.stringify({ok,labVersion:c.MACA_SEARCH_V15_LAB.version,rows,suggestions,observation:'Current Assistant UI can only show complements already returned by rank(); rank() usually returns one item except explicit allowMultiWith pairs.'},null,2));if(!ok)process.exit(1);
+const selectionChecks=[
+ {q:'j ai des remontees acides',primary:'reflux-adulte',complements:['douleur-abdominale']},
+ {q:'j ai mal a la tete',primary:'maux-tete',complements:['migraine-que-faire']},
+ {q:'j ai des bourdonnements et des vertiges',primary:'acouphenes-adulte',complements:['vertiges-causes']},
+ {q:'mon coeur s emballe',primary:'palpitations-adulte',complements:[]},
+ {q:'diabete type 2',primary:'diabete-type-2-depistage-complications',complements:[]},
+ {q:'ca brule quand je fais pipi',primary:'maca-cystite-reperes',complements:[]}
+];
+const selections=selectionChecks.map(x=>{const s=c.MACA_SEARCH_V15_LAB.select(x.q);const gotPrimary=s.primary&&s.primary.q.id;const gotComplements=s.complements.map(q=>q.id);return {...x,gotPrimary,gotComplements,pass:gotPrimary===x.primary&&JSON.stringify(gotComplements)===JSON.stringify(x.complements),reason:s.reason};});
+const ok=rows.every(x=>x.pass)&&selections.every(x=>x.pass);console.log(JSON.stringify({ok,labVersion:c.MACA_SEARCH_V15_LAB.version,rows,selections,observation:'Primary decision remains separate; complements are explicit and capped at two.'},null,2));if(!ok)process.exit(1);
