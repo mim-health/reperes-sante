@@ -6,12 +6,17 @@ function manifest(){const s={window:{}};vm.runInNewContext(fs.readFileSync(path.
 function ctx(){const s={console,setTimeout,clearTimeout,CustomEvent:function(){}};s.window=s;s.globalThis=s;return vm.createContext(s);}
 function runFiles(c,files){for(const f of files)vm.runInContext(fs.readFileSync(path.join(ROOT,f),'utf8'),c,{filename:f});}
 function norm(v){return String(v||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();}
-const files=manifest(), c=ctx();runFiles(c,files);
-const raw=[...(Array.isArray(c.healthQuestions)?c.healthQuestions:[]),...(Array.isArray(c.extraAuditedQuestions)?c.extraAuditedQuestions:[])];
-const byId=new Map();raw.forEach((x,i)=>{const id=String(x&&x.id||'').trim();if(id){if(!byId.has(id))byId.set(id,[]);byId.get(id).push({i,title:x.title||x.question,category:x.publicCategory||x.category});}});
-const dup=[...byId].filter(([,v])=>v.length>1).map(([id,v])=>({id,count:v.length,occurrences:v}));
-runFiles(c,['corpus-canonicalizer.js']);const canonical=Array.from(c.MACA_BUILD_CANONICAL_CORPUS());
+function snapshot(files){const c=ctx();runFiles(c,files);const raw=[...(Array.isArray(c.healthQuestions)?c.healthQuestions:[]),...(Array.isArray(c.extraAuditedQuestions)?c.extraAuditedQuestions:[])];runFiles(c,['corpus-canonicalizer.js']);const canonical=Array.from(c.MACA_BUILD_CANONICAL_CORPUS()).map(x=>JSON.parse(JSON.stringify(x)));return {c,raw,canonical};}
+function byId(arr){return new Map(arr.map(x=>[String(x.id||''),x]));}
+const files=manifest();
+const current=snapshot(files);
+const compat='structured-backlog-compat.js';
+const migrations=files.filter(f=>/^migration-/.test(f));
+const base=files.filter(f=>f!==compat&&!/^migration-/.test(f));
+const candidate=[...base,compat,...migrations];
+const proposed=snapshot(candidate);
 const targets=['Moustique tigre : quelles maladies peut-il transmettre en France ?','West Nile : peut-on l’attraper en France ?','Fumées d’incendie : comment protéger sa santé ?'];
-const targetStatus=targets.map(title=>({title,rawMatches:raw.filter(x=>norm(x.title||x.question)===norm(title)).map(x=>x.id),canonicalMatches:canonical.filter(x=>norm(x.title||x.question)===norm(title)).map(x=>x.id)}));
-const counts={};canonical.forEach(x=>{const k=x.publicCategory||x.category||'';counts[k]=(counts[k]||0)+1;});
-console.log(JSON.stringify({ok:true,manifestCount:files.length,rawCount:raw.length,rawUniqueIds:byId.size,duplicateStableIds:dup.length,duplicateDetails:dup,canonicalCount:canonical.length,categoryCounts:counts,targetStatus,migrationCoeurPrevention:c.MACA_COEUR_PREVENTION_MIGRATION||null,preventionV2Lot1:c.MACA_PREVENTION_V2_LOT1||null,preventionV2Lot2:c.MACA_PREVENTION_V2_LOT2||null},null,2));
+const currentMap=byId(current.canonical), proposedMap=byId(proposed.canonical);
+const changed=[];for(const [id,a] of currentMap){const b=proposedMap.get(id);if(JSON.stringify(a)!==JSON.stringify(b))changed.push({id,currentTitle:a.title||a.question,proposedTitle:b&& (b.title||b.question),currentCategory:a.publicCategory||a.category,proposedCategory:b&&(b.publicCategory||b.category)});}
+const targetStatus=targets.map(title=>({title,current:current.canonical.filter(x=>norm(x.title||x.question)===norm(title)).map(x=>({id:x.id,category:x.publicCategory||x.category,hasDetail:!!x.detail})),proposed:proposed.canonical.filter(x=>norm(x.title||x.question)===norm(title)).map(x=>({id:x.id,category:x.publicCategory||x.category,hasDetail:!!x.detail}))}));
+console.log(JSON.stringify({ok:true,currentCanonicalCount:current.canonical.length,proposedCanonicalCount:proposed.canonical.length,changedCanonicalCards:changed.length,changed,targetStatus,currentMigration:current.c.MACA_COEUR_PREVENTION_MIGRATION||null,proposedMigration:proposed.c.MACA_COEUR_PREVENTION_MIGRATION||null,currentPreventionLot2:current.c.MACA_PREVENTION_V2_LOT2||null,proposedPreventionLot2:proposed.c.MACA_PREVENTION_V2_LOT2||null,candidateOrder:{compatIndex:candidate.indexOf(compat),firstMigrationIndex:candidate.findIndex(f=>/^migration-/.test(f)),lastMigrationIndex:candidate.map((f,i)=>/^migration-/.test(f)?i:-1).filter(i=>i>=0).pop()}},null,2));
