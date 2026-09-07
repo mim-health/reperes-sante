@@ -9,6 +9,15 @@ on:
       - 'scripts/build-corpus-production.js'
       - 'scripts/test-corpus-bundle-equivalence.js'
       - 'scripts/diagnose-corpus-structure.js'
+      - 'corpus-manifest.js'
+      - 'qa-data*.js'
+      - 'evidence-model.js'
+      - 'audit-overrides.js'
+      - 'backlog-*.js'
+      - 'maca-extra*.js'
+      - 'maca-daily-archive.js'
+      - 'structured-backlog-compat.js'
+      - 'migration-*.js'
   workflow_dispatch:
 
 permissions:
@@ -44,7 +53,7 @@ jobs:
           include-hidden-files: true
           retention-days: 3
 
-      - name: Publish validated bundle without wiring production
+      - name: Publish validated bundle
         run: |
           cp .maca-lab/corpus-production.js corpus-production.js
           git config user.name "github-actions[bot]"
