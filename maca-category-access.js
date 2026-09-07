@@ -1,13 +1,14 @@
 /* MACA Santé — canonical category access shared by library search, filters and assistant. */
 (function(root){
   'use strict';
-  const PUBLIC=['Ados','Cancer','Cœur & prévention','Digestion & urinaire','Enfants & parents','Santé au quotidien','Santé des femmes & grossesse','Santé mentale','Seniors'];
+  const PUBLIC=['Ados','Cancer','Cœur & circulation','Digestion & urinaire','Enfants & parents','Prévention & dépistage','Santé au quotidien','Santé des femmes & grossesse','Santé mentale','Seniors'];
   const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
   const aliases=new Map();
   function add(name,...values){[name,...values].forEach(v=>aliases.set(norm(v),name));}
   add('Ados','ado','adolescents','adolescent');
   add('Cancer','cancers','oncologie','cancérologie','cancerologie');
-  add('Cœur & prévention','coeur prevention','cœur prévention','coeur et prevention','cœur et prévention');
+  add('Cœur & circulation','coeur circulation','cœur circulation','coeur et circulation','cœur et circulation','Cœur & prévention','coeur prevention','cœur prévention','coeur et prevention','cœur et prévention');
+  add('Prévention & dépistage','prevention depistage','prévention dépistage','prevention et depistage','prévention et dépistage');
   add('Digestion & urinaire','digestion urinaire','digestion et urinaire');
   add('Enfants & parents','enfants parents','enfants et parents');
   add('Santé au quotidien','sante au quotidien');
@@ -29,9 +30,6 @@
   }
   function primaryCategoryOf(q){
     if(!q)return'Santé au quotidien';
-    /* The editorial source category is authoritative when it already names a
-       public rubric (notably Cancer). publicCategory may contain an older
-       compatibility mapping such as Cancer -> Santé au quotidien. */
     return canonicalName(q.category)||canonicalName(q.primaryCategory)||canonicalName(q.publicCategory)||categoriesOf(q)[0]||'Santé au quotidien';
   }
   function matchQuery(query){return canonicalName(query);}
