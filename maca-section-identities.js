@@ -1,12 +1,13 @@
 // MACA Santé — visual identity only. Does not alter corpus taxonomy or routing.
 (function(){
  const sectionMap={
-  'Santé au quotidien':'daily','Cœur & prévention':'heart','Médicaments':'meds','Digestion & urinaire':'digestion','Santé des femmes & grossesse':'women','Enfants & parents':'children','Ados':'teens','Après 60 ans':'seniors','Seniors':'seniors','Santé mentale':'mental','Cancer':'cancer'
+  'Santé au quotidien':'daily','Cœur & circulation':'heart','Cœur & prévention':'heart','Prévention & dépistage':'prevention','Médicaments':'meds','Digestion & urinaire':'digestion','Santé des femmes & grossesse':'women','Enfants & parents':'children','Ados':'teens','Après 60 ans':'seniors','Seniors':'seniors','Santé mentale':'mental','Cancer':'cancer'
  };
  const identities={
   daily:{tone:'#d7e8df',ink:'#557060',soft:'#eef6f1',mark:'✦'},
   heart:{tone:'#e7a58b',ink:'#a24f3f',soft:'#fbefea',mark:'♡'},
-  meds:{tone:'#b8d6d8',ink:'#507d80',soft:'#eaf5f5',mark:'+'},
+  prevention:{tone:'#b8d6d8',ink:'#507d80',soft:'#eaf5f5',mark:'✓'},
+  meds:{tone:'#c9c1d8',ink:'#6f6680',soft:'#f2f0f7',mark:'+'},
   digestion:{tone:'#e7d7a8',ink:'#796b3e',soft:'#faf5e6',mark:'◌'},
   women:{tone:'#dbc9dc',ink:'#816985',soft:'#f5edf5',mark:'◇'},
   children:{tone:'#efd38e',ink:'#94722f',soft:'#fcf5df',mark:'◡'},
