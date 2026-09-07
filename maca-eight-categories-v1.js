@@ -2,7 +2,7 @@
 (function(){
   'use strict';
   const access=window.MACA_CATEGORY_ACCESS;
-  const PUBLIC=access?access.PUBLIC:['Ados','Cancer','Cœur & prévention','Digestion & urinaire','Enfants & parents','Santé au quotidien','Santé des femmes & grossesse','Santé mentale','Seniors'];
+  const PUBLIC=access?access.PUBLIC:['Ados','Cancer','Cœur & circulation','Digestion & urinaire','Enfants & parents','Prévention & dépistage','Santé au quotidien','Santé des femmes & grossesse','Santé mentale','Seniors'];
   const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
   const canonicalById=new Map((window.MACA_CANONICAL_CORPUS||[]).map(q=>[norm(q.id),q]));
   const canonicalByTitle=new Map((window.MACA_CANONICAL_CORPUS||[]).map(q=>[norm(q.title||q.question),q]));
