@@ -85,7 +85,7 @@
     return files.slice();
   }
 
-  window.MACA_CORPUS_READY = load('corpus-production.js?v=20260907-bundle2')
+  window.MACA_CORPUS_READY = load('corpus-production.js?v=20260907-bundle3')
     .then(() => {
       assertBundleSentinels();
       return ready('bundle');
