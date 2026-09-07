@@ -37,4 +37,5 @@ jobs:
           name: maca-corpus-bundle-lab
           path: .maca-lab/
           if-no-files-found: error
+          include-hidden-files: true
           retention-days: 3
