@@ -1,6 +1,6 @@
 /* Deterministic MACA corpus loader. Migration branch only.
  * Fast path: one generated corpus bundle preserving exact manifest order.
- * Safe fallback: legacy sequential loading if the bundle cannot be loaded.
+ * Safe fallback: legacy sequential loading if the bundle cannot be loaded or fails V2 sentinels.
  */
 (function () {
   'use strict';
@@ -22,6 +22,9 @@
     return true;
   });
 
+  const initialHealthQuestions = Array.isArray(window.healthQuestions) ? window.healthQuestions.slice() : [];
+  const initialExtraAuditedQuestions = Array.isArray(window.extraAuditedQuestions) ? window.extraAuditedQuestions.slice() : [];
+
   function load(src) {
     return new Promise((resolve, reject) => {
       const script = document.createElement('script');
@@ -40,6 +43,40 @@
     );
   }
 
+  function latestCard(id) {
+    const all = []
+      .concat(Array.isArray(window.healthQuestions) ? window.healthQuestions : [])
+      .concat(Array.isArray(window.extraAuditedQuestions) ? window.extraAuditedQuestions : []);
+    for (let i = all.length - 1; i >= 0; i -= 1) {
+      if (String(all[i] && all[i].id || '') === id) return all[i];
+    }
+    return null;
+  }
+
+  function assertBundleSentinels() {
+    const expectedDetailed = [
+      'cancer-immunotherapie-comment-ca-marche',
+      'cancer-therapies-ciblees-biomarqueurs',
+      'cancer-intelligence-artificielle-usages-reels',
+      'cancer-radiotherapie-moderne-precision-reirradiation',
+      'moustique-tigre-maladies-france-20260824',
+      'west-nile-france-20260825',
+      'fumees-incendie-protection-20260825'
+    ];
+    const missing = expectedDetailed.filter((id) => {
+      const card = latestCard(id);
+      return !card || !String(card.detail || '').trim();
+    });
+    if (missing.length) {
+      throw new Error('Corpus bundle V2 stale/incomplete: ' + missing.join(', '));
+    }
+  }
+
+  function restoreInitialGlobals() {
+    window.healthQuestions = initialHealthQuestions.slice();
+    window.extraAuditedQuestions = initialExtraAuditedQuestions.slice();
+  }
+
   function ready(mode) {
     window.MACA_CORPUS_LOAD_MODE = mode;
     window.dispatchEvent(new CustomEvent('maca:corpus-ready', {
@@ -48,10 +85,14 @@
     return files.slice();
   }
 
-  window.MACA_CORPUS_READY = load('corpus-production.js?v=20260907-bundle1')
-    .then(() => ready('bundle'))
+  window.MACA_CORPUS_READY = load('corpus-production.js?v=20260907-bundle2')
+    .then(() => {
+      assertBundleSentinels();
+      return ready('bundle');
+    })
     .catch((bundleError) => {
-      console.warn('[MACA corpus] bundle unavailable, fallback sequential', bundleError);
+      console.warn('[MACA corpus] bundle unavailable or stale, fallback sequential', bundleError);
+      restoreInitialGlobals();
       return loadSequential().then(() => ready('sequential-fallback'));
     })
     .catch((error) => {
