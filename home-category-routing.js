@@ -1,7 +1,7 @@
 /* MACA Santé — single home category routing contract. */
 (function(){
   'use strict';
-  const PUBLIC=['Ados','Cancer','Cœur & prévention','Digestion & urinaire','Enfants & parents','Santé au quotidien','Santé des femmes & grossesse','Santé mentale','Seniors'];
+  const PUBLIC=['Ados','Cancer','Cœur & circulation','Digestion & urinaire','Enfants & parents','Prévention & dépistage','Santé au quotidien','Santé des femmes & grossesse','Santé mentale','Seniors'];
   window.MACA_HOME_CATEGORY_PARAM='category';
   window.MACA_HOME_PUBLIC_CATEGORIES=PUBLIC.slice();
   function init(){
