@@ -4,6 +4,7 @@
   const root=document.querySelector('#seo-fiche');
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const strip=s=>String(s||'').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();
+  const paragraphs=s=>String(s||'').split(/\n\s*\n/).map(p=>p.trim()).filter(Boolean).map(p=>`<p>${esc(p)}</p>`).join('');
   const upsertMeta=(name,content)=>{let el=document.querySelector(`meta[name="${name}"]`);if(!el){el=document.createElement('meta');el.name=name;document.head.appendChild(el);}el.content=content;};
   const upsertProperty=(property,content)=>{let el=document.querySelector(`meta[property="${property}"]`);if(!el){el=document.createElement('meta');el.setAttribute('property',property);document.head.appendChild(el);}el.content=content;};
   function fail(){document.title='Fiche introuvable — MACA Santé';upsertMeta('robots','noindex,follow');root.innerHTML='<p class="eyebrow">MACA SANTÉ</p><h1>Fiche introuvable</h1><p><a href="fiches.html">Retour à toutes les fiches →</a></p>';}
@@ -34,7 +35,9 @@
     let link=document.querySelector('link[rel="canonical"]');if(!link){link=document.createElement('link');link.rel='canonical';document.head.appendChild(link);}link.href=canonical;
     document.querySelectorAll('script[data-maca-schema="fiche"]').forEach(el=>el.remove());
     const schema=document.createElement('script');schema.type='application/ld+json';schema.dataset.macaSchema='fiche';schema.textContent=JSON.stringify({'@context':'https://schema.org','@type':'MedicalWebPage',headline:strip(q.title),description:desc,url:canonical,inLanguage:'fr-FR',isPartOf:{'@type':'WebSite',name:'MACA Santé',url:'https://macasante.fr/'},publisher:{'@type':'Organization',name:'MACA Santé',url:'https://macasante.fr/'},dateModified:modified,mainEntity:{'@type':'MedicalEntity',name:strip(q.title)}});document.head.appendChild(schema);
-    root.innerHTML=`<p class="eyebrow">${esc(q.category||'QUESTION SANTÉ')}</p><h1>${esc(q.title)}</h1><div class="answer-block"><strong>Réponse courte</strong><p>${esc(strip(q.answer||''))}</p></div>${q.watch?`<div class="watch-block"><strong>À retenir</strong><p>${esc(strip(q.watch))}</p></div>`:''}${sourcesHtml(q)}<p><a href="fiches.html">← Toutes les fiches MACA Santé</a></p>`;
+    const detailHtml=q.detail?`<div class="answer-block"><strong>Pour mieux comprendre</strong>${paragraphs(q.detail)}</div>`:'';
+    const watchHtml=q.watch?`<div class="watch-block"><strong>${esc(q.watchTitle||'À retenir')}</strong>${paragraphs(q.watch)}</div>`:'';
+    root.innerHTML=`<p class="eyebrow">${esc(q.category||'QUESTION SANTÉ')}</p><h1>${esc(q.title)}</h1><div class="answer-block"><strong>Réponse courte</strong>${paragraphs(q.answer||'')}</div>${detailHtml}${watchHtml}${sourcesHtml(q)}<p><a href="fiches.html">← Toutes les fiches MACA Santé</a></p>`;
   }
   const id=new URLSearchParams(location.search).get('id');
   if(!id){fail();return;}
