@@ -2,12 +2,13 @@
 (function(){
   'use strict';
   const root=document.querySelector('#seo-fiche');
-  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#39;'}[c]));
   const strip=s=>String(s||'').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();
   const paragraphs=s=>String(s||'').split(/\n\s*\n/).map(p=>p.trim()).filter(Boolean).map(p=>`<p>${esc(p)}</p>`).join('');
   const upsertMeta=(name,content)=>{let el=document.querySelector(`meta[name="${name}"]`);if(!el){el=document.createElement('meta');el.name=name;document.head.appendChild(el);}el.content=content;};
   const upsertProperty=(property,content)=>{let el=document.querySelector(`meta[property="${property}"]`);if(!el){el=document.createElement('meta');el.setAttribute('property',property);document.head.appendChild(el);}el.content=content;};
-  function fail(){document.title='Fiche introuvable — MACA Santé';upsertMeta('robots','noindex,follow');root.innerHTML='<p class="eyebrow">MACA SANTÉ</p><h1>Fiche introuvable</h1><p><a href="fiches.html">Retour à toutes les fiches →</a></p>';}
+  function failNotFound(){document.title='Fiche introuvable — MACA Santé';upsertMeta('robots','noindex,follow');root.innerHTML='<p class="eyebrow">MACA SANTÉ</p><h1>Fiche introuvable</h1><p><a href="fiches.html">Retour à toutes les fiches →</a></p>';}
+  function failTemporary(){document.title='Fiche temporairement indisponible — MACA Santé';root.innerHTML='<p class="eyebrow">MACA SANTÉ</p><h1>Cette fiche est temporairement indisponible</h1><p>Le contenu n’a pas pu être chargé. Vous pouvez réessayer dans quelques instants.</p><p><a href="fiches.html">Retour à toutes les fiches →</a></p>';}
   function resolvedSources(q){
     const direct=Array.isArray(q.sources)?q.sources.filter(s=>s&&/^https?:\/\//i.test(String(s.url||''))):[];
     if(direct.length)return direct;
@@ -40,7 +41,13 @@
     root.innerHTML=`<p class="eyebrow">${esc(q.category||'QUESTION SANTÉ')}</p><h1>${esc(q.title)}</h1><div class="answer-block"><strong>Réponse courte</strong>${paragraphs(q.answer||'')}</div>${detailHtml}${watchHtml}${sourcesHtml(q)}<p><a href="fiches.html">← Toutes les fiches MACA Santé</a></p>`;
   }
   const id=new URLSearchParams(location.search).get('id');
-  if(!id){fail();return;}
-  if(!window.MACA_CORPUS_READY||typeof window.MACA_CORPUS_READY.then!=='function'){fail();return;}
-  window.MACA_CORPUS_READY.then(()=>{if(typeof window.MACA_BUILD_CANONICAL_CORPUS!=='function')throw new Error('canonicalizer missing');const items=window.MACA_BUILD_CANONICAL_CORPUS();const q=items.find(x=>String(x.id)===String(id));if(!q){fail();return;}render(q);}).catch(err=>{console.error('[MACA fiche V2]',err);fail();});
+  if(!id){failNotFound();return;}
+  if(!window.MACA_CORPUS_READY||typeof window.MACA_CORPUS_READY.then!=='function'){failTemporary();return;}
+  window.MACA_CORPUS_READY.then(()=>{
+    if(typeof window.MACA_BUILD_CANONICAL_CORPUS!=='function')throw new Error('canonicalizer missing');
+    const items=window.MACA_BUILD_CANONICAL_CORPUS();
+    const q=items.find(x=>String(x.id)===String(id));
+    if(!q){failNotFound();return;}
+    render(q);
+  }).catch(err=>{console.error('[MACA fiche V2]',err);failTemporary();});
 })();
