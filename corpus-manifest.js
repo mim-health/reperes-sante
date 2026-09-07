@@ -69,5 +69,7 @@ window.MACA_CORPUS_MANIFEST = Object.freeze([
   'migration-cancer-editorial-2026-09-07.js?v=20260907-1',
   'migration-coeur-prevention-editorial-2026-09-07.js?v=20260907-1',
   'migration-ado-v2-lot1-2026-09-07.js?v=20260907-1',
+  'migration-ado-v2-lot2-2026-09-07.js?v=20260907-1',
+  'migration-ado-v2-lot3-2026-09-07.js?v=20260907-1',
   'structured-backlog-compat.js?v=20260831-1'
 ]);
