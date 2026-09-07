@@ -10,6 +10,7 @@ on:
       - 'scripts/test-corpus-bundle-equivalence.js'
       - 'scripts/diagnose-corpus-structure.js'
       - 'scripts/audit-seo-public-fiches.js'
+      - 'scripts/build-sitemap-from-corpus.js'
       - 'sitemap.xml'
       - 'fiche-corpus-v2.js'
       - 'corpus-manifest.js'
@@ -42,6 +43,9 @@ jobs:
       - name: Diagnose corpus structure
         run: node scripts/diagnose-corpus-structure.js
 
+      - name: Generate canonical sitemap
+        run: node scripts/build-sitemap-from-corpus.js
+
       - name: Audit public fiche SEO
         run: node scripts/audit-seo-public-fiches.js
 
@@ -59,15 +63,15 @@ jobs:
           include-hidden-files: true
           retention-days: 3
 
-      - name: Publish validated bundle
+      - name: Publish validated generated files
         run: |
           cp .maca-lab/corpus-production.js corpus-production.js
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add corpus-production.js
+          git add corpus-production.js sitemap.xml
           if git diff --cached --quiet; then
-            echo "Bundle unchanged"
+            echo "Generated files unchanged"
           else
-            git commit -m "build(perf): publier le bundle corpus validé"
+            git commit -m "build: publier corpus et sitemap validés"
             git push origin HEAD:feat/v0-magazine
           fi
