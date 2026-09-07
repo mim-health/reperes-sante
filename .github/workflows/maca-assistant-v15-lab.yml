@@ -1,0 +1,30 @@
+name: MACA Assistant V1.5 Lab
+
+on:
+  push:
+    branches:
+      - feat/v0-magazine
+    paths:
+      - '.github/workflows/maca-assistant-v15-lab.yml'
+      - 'scripts/audit-assistant-v15-initial.js'
+      - 'search-v2-*.js'
+      - 'corpus-manifest.js'
+      - 'corpus-canonicalizer.js'
+      - 'qa-data*.js'
+      - 'backlog-*.js'
+      - 'maca-extra*.js'
+      - 'migration-*.js'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  initial-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout exact commit
+        uses: actions/checkout@v4
+      - name: Run Assistant V1.5 initial benchmark
+        run: node scripts/audit-assistant-v15-initial.js
