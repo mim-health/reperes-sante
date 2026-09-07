@@ -9,7 +9,9 @@ on:
       - 'scripts/audit-assistant-v15-initial.js'
       - 'scripts/test-assistant-v15-candidate.js'
       - 'scripts/benchmark-assistant-v15-expanded.js'
+      - 'scripts/test-assistant-v15-viewmodel.js'
       - 'search-v15-lab-candidate.js'
+      - 'assistant-v15-viewmodel-candidate.js'
       - 'search-v2-*.js'
       - 'corpus-manifest.js'
       - 'corpus-canonicalizer.js'
@@ -35,3 +37,5 @@ jobs:
         run: node scripts/test-assistant-v15-candidate.js
       - name: Run expanded real-language benchmark
         run: node scripts/benchmark-assistant-v15-expanded.js
+      - name: Test V1.5 UI view model and production isolation
+        run: node scripts/test-assistant-v15-viewmodel.js
