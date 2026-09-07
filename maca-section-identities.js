@@ -7,7 +7,7 @@
   daily:{tone:'#d7e8df',ink:'#557060',soft:'#eef6f1',mark:'✦'},
   heart:{tone:'#e7a58b',ink:'#a24f3f',soft:'#fbefea',mark:'♡'},
   prevention:{tone:'#b8d6d8',ink:'#507d80',soft:'#eaf5f5',mark:'✓'},
-  meds:{tone:'#c9c1d8',ink:'#6f6680',soft:'#f2f0f7',mark:'+'},
+  meds:{tone:'#b8d6d8',ink:'#507d80',soft:'#eaf5f5',mark:'+'},
   digestion:{tone:'#e7d7a8',ink:'#796b3e',soft:'#faf5e6',mark:'◌'},
   women:{tone:'#dbc9dc',ink:'#816985',soft:'#f5edf5',mark:'◇'},
   children:{tone:'#efd38e',ink:'#94722f',soft:'#fcf5df',mark:'◡'},
