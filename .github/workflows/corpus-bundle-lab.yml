@@ -1,0 +1,40 @@
+name: corpus bundle lab
+
+on:
+  push:
+    branches:
+      - feat/v0-magazine
+    paths:
+      - '.github/workflows/corpus-bundle-lab.yml'
+      - 'scripts/build-corpus-production.js'
+      - 'scripts/test-corpus-bundle-equivalence.js'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  corpus-bundle-lab:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact commit
+        uses: actions/checkout@v4
+
+      - name: Build lab bundle
+        run: node scripts/build-corpus-production.js
+
+      - name: Verify strict corpus equivalence
+        run: node scripts/test-corpus-bundle-equivalence.js
+
+      - name: Show artifact sizes
+        run: |
+          wc -c .maca-lab/corpus-production.js
+          cat .maca-lab/corpus-production.meta.json | head -40
+
+      - name: Upload lab artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: maca-corpus-bundle-lab
+          path: .maca-lab/
+          if-no-files-found: error
+          retention-days: 3
