@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 'use strict';
+// Revalidation CI after manifest ordering correction.
 const fs=require('fs'),path=require('path'),vm=require('vm');
 const ROOT=path.resolve(__dirname,'..');
 function manifest(){const s={window:{}};vm.runInNewContext(fs.readFileSync(path.join(ROOT,'corpus-manifest.js'),'utf8'),s);return s.window.MACA_CORPUS_MANIFEST.map(x=>String(x).split('?')[0]);}
