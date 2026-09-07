@@ -9,6 +9,9 @@ on:
       - 'scripts/build-corpus-production.js'
       - 'scripts/test-corpus-bundle-equivalence.js'
       - 'scripts/diagnose-corpus-structure.js'
+      - 'scripts/audit-seo-public-fiches.js'
+      - 'sitemap.xml'
+      - 'fiche-corpus-v2.js'
       - 'corpus-manifest.js'
       - 'qa-data*.js'
       - 'evidence-model.js'
@@ -38,6 +41,9 @@ jobs:
 
       - name: Diagnose corpus structure
         run: node scripts/diagnose-corpus-structure.js
+
+      - name: Audit public fiche SEO
+        run: node scripts/audit-seo-public-fiches.js
 
       - name: Show artifact sizes
         run: |
