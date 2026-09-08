@@ -14,7 +14,7 @@ const checks=[
  {q:'mon coeur bat bizarrement',want:'palpitations-adulte'},
  {q:'mon coeur bat vite',want:'palpitations-adulte'},
  {q:'mon coeur est irregulier',want:'palpitations-adulte'},
- {q:'j ai mal a la poitrine',want:null},
+ {q:'j ai mal a la poitrine',want:'douleur-thoracique-coeur'},
  {q:'quel antibiotique prendre pour une infection',want:null}
 ];
 const rows=checks.map(x=>{const before=baseline.rank(x.q).map(r=>r.q.id);const after=c.MACA_SEARCH_V2.rank(x.q).map(r=>r.q.id);const pass=x.want?after.includes(x.want):after.length===0;return {...x,before,after,pass,afterReason:c.MACA_SEARCH_V2.resolve(x.q).reason};});
