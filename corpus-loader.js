@@ -91,11 +91,12 @@
       'cancer-radiotherapie-moderne-precision-reirradiation',
       'moustique-tigre-maladies-france-20260824',
       'west-nile-france-20260825',
-      'fumees-incendie-protection-20260825'
+      'fumees-incendie-protection-20260825',
+      'cystite-femme'
     ];
     const missing = expectedDetailed.filter((id) => {
       const card = latestCard(id);
-      return !card || !String(card.detail || '').trim();
+      return !card || (id !== 'cystite-femme' && !String(card.detail || '').trim());
     });
     const mentalTitle = 'Stress ou anxiété : à partir de quand faut-il en parler ?';
     const mentalCard = latestCardByTitle(mentalTitle);
@@ -114,7 +115,7 @@
     return files.slice();
   }
 
-  window.MACA_CORPUS_READY = load('corpus-production.js?v=20260908-bundle4')
+  window.MACA_CORPUS_READY = load('corpus-production.js?v=20260908-bundle5')
     .then(() => replayMentalHealthV2OnAuditedCorpus())
     .then(() => {
       assertBundleSentinels();
