@@ -6,6 +6,7 @@ const m={window:{}};vm.runInNewContext(read('corpus-manifest.js'),m);const c=ctx
 const checks=[
  {q:'cystite',status:'match',primary:'cystite-femme',complements:[],choices:[]},
  {q:'j ai la tete qui tourne',status:'choices',primary:'vertiges-causes',choices:['vertiges-causes','hypotension-orthostatique-lever']},
+ {q:'mon coeur bat bizarrement',status:'match',primary:'palpitations-adulte',complements:[],choices:[]},
  {q:'j ai des remontees acides',status:'match',primary:'reflux-adulte',complements:['douleur-abdominale'],choices:[]},
  {q:'ca brule quand je fais pipi',status:'match',primary:'cystite-femme',complements:[],choices:[]},
  {q:'diabete type 2',status:'match',primary:'diabete-type-2-depistage-complications',complements:[],choices:[]},
@@ -20,13 +21,13 @@ const productionWiring={
  bundleCacheBust:loader.includes("corpus-production.js?v=20260908-bundle5"),
  bundleSentinel:loader.includes("'cystite-femme'"),
  assistantLoaderVersion:assistant.includes('corpus-loader.js?v=20260908-v15-2'),
- assistantLoadsSearch:assistant.includes("load('search-v15-lab-candidate.js?v=20260908-v16-1')"),
- assistantLoadsViewModel:assistant.includes("load('assistant-v15-viewmodel-candidate.js?v=20260908-v16-1')"),
+ assistantLoadsSearch:assistant.includes("load('search-v15-lab-candidate.js?v=20260908-v16-2')"),
+ assistantLoadsViewModel:assistant.includes("load('assistant-v15-viewmodel-candidate.js?v=20260908-v16-2')"),
  assistantUsesViewModel:assistant.includes('MACA_ASSISTANT_V15_VIEWMODEL.build(query)'),
  assistantRendersChoices:assistant.includes("result.status==='choices'")&&assistant.includes('Choisissez la fiche qui correspond le mieux'),
  selectorMultiFiche:selector.includes('__macaMultiFiche:true')&&selector.includes('navigationAlternatives'),
- widgetVersion:widget.includes('assistant-alpha.html?v=20260908-v16-1'),
- libraryVersion:library.includes('corpus-loader.js?v=20260908-bundle5')&&library.includes('maca-assistant-widget.js?v=20260908-v16-1')&&library.includes('assistant-alpha.html?v=20260908-v16-1')&&library.includes('corpus-v2-browser-entry.js?v=20260908-v16-1'),
- homeWidgetVersion:entry.includes('maca-assistant-widget.js?v=20260908-v16-1')&&home.includes('corpus-v2-browser-entry.js?v=20260908-v16-1')
+ widgetVersion:widget.includes('assistant-alpha.html?v=20260908-v16-2'),
+ libraryVersion:library.includes('corpus-loader.js?v=20260908-bundle5')&&library.includes('maca-assistant-widget.js?v=20260908-v16-2')&&library.includes('assistant-alpha.html?v=20260908-v16-2')&&library.includes('corpus-v2-browser-entry.js?v=20260908-v16-2'),
+ homeWidgetVersion:entry.includes('maca-assistant-widget.js?v=20260908-v16-2')&&home.includes('corpus-v2-browser-entry.js?v=20260908-v16-2')
 };
 const officialGate=c.MACA_SEARCH_V2.__macaV15LanguageFix===true;const selectorGate=c.MACA_SEARCH_V15_LAB.__macaMultiFiche===true;const wiringOk=Object.values(productionWiring).every(Boolean);const ok=rows.every(r=>r.pass)&&officialGate&&selectorGate&&wiringOk&&canonicalCount===255&&hasCystitis&&hasOrthostatic;console.log(JSON.stringify({ok,rows,officialGate,selectorGate,canonicalCount,hasCystitis,hasOrthostatic,productionWiring,viewModelVersion:c.MACA_ASSISTANT_V15_VIEWMODEL.version},null,2));if(!ok)process.exit(1);
