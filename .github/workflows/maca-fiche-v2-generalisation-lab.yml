@@ -1,0 +1,18 @@
+name: MACA Fiche V2 Generalisation Lab
+on:
+  push:
+    branches:
+      - tech/fiche-v2-generalisation-20260908
+  workflow_dispatch:
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact commit
+        uses: actions/checkout@v4
+      - name: Test shared fiche V2 renderer
+        run: node scripts/test-fiche-v2-generalisation.js
+      - name: Syntax check renderer
+        run: node --check fiche-corpus-v2.js
+      - name: Existing public fiche SEO audit
+        run: node scripts/audit-seo-public-fiches.js

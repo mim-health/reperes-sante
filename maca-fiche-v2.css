@@ -1,0 +1,74 @@
+/* MACA Santé — gabarit partagé des fiches V2. */
+body.maca-fiche-v2{
+  --fv2-ink:#263a34;
+  --fv2-green:#61715d;
+  --fv2-green-deep:#33483f;
+  --fv2-sage:#aeb693;
+  --fv2-mint:#e6eee6;
+  --fv2-cream:#f7f1e5;
+  --fv2-paper:#fffdf8;
+  --fv2-orange:#cf6238;
+  --fv2-line:#d9dfd3;
+  background:linear-gradient(180deg,#fbf7ef 0%,#f4eee2 62%,#edf2e9 100%);
+  color:var(--fv2-ink);
+}
+body.maca-fiche-v2 .site-header{background:rgba(251,247,239,.96);border-bottom:1px solid rgba(97,113,93,.16);backdrop-filter:blur(10px)}
+body.maca-fiche-v2 .site-header .brand img{width:44px;height:44px}
+body.maca-fiche-v2 .site-header .brand-word::after{content:'MACA Santé';color:var(--fv2-green-deep);font-size:20px;letter-spacing:-.03em}
+body.maca-fiche-v2 .standalone-library{max-width:none;padding:0!important;margin:0!important}
+body.maca-fiche-v2 #seo-fiche{max-width:none;margin:0;padding:0}
+body.maca-fiche-v2 .maca-fv2-page{width:min(1100px,calc(100% - 44px));margin:0 auto;padding:54px 0 70px}
+body.maca-fiche-v2 .maca-fv2-back{display:inline-flex;align-items:center;gap:8px;margin-bottom:30px;color:var(--fv2-green);font-size:13px;font-weight:800;text-decoration:none}
+body.maca-fiche-v2 .maca-fv2-back:hover{color:var(--fv2-orange)}
+body.maca-fiche-v2 .maca-fv2-hero{position:relative;overflow:hidden;padding:46px 50px 48px;border:1px solid rgba(97,113,93,.16);border-radius:34px;background:radial-gradient(circle at 92% 5%,rgba(207,98,56,.10),transparent 25%),linear-gradient(145deg,#fffdf8 0%,#f3f0e5 100%);box-shadow:0 22px 60px rgba(51,72,63,.07)}
+body.maca-fiche-v2 .maca-fv2-hero::after{content:'';position:absolute;right:-38px;bottom:-58px;width:190px;height:190px;border:1px solid rgba(97,113,93,.13);border-radius:50%;pointer-events:none}
+body.maca-fiche-v2 .maca-fv2-brandline{display:flex;align-items:center;gap:10px;margin-bottom:28px;color:var(--fv2-green-deep);font-size:14px;font-weight:850;letter-spacing:-.02em}
+body.maca-fiche-v2 .maca-fv2-brandline img{width:34px;height:34px}
+body.maca-fiche-v2 .maca-fv2-meta{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+body.maca-fiche-v2 .maca-fv2-category,body.maca-fiche-v2 .maca-fv2-readtime{display:inline-flex;align-items:center;min-height:30px;padding:6px 11px;border-radius:999px;font-size:11px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}
+body.maca-fiche-v2 .maca-fv2-category{background:var(--fv2-green-deep);color:#fff}
+body.maca-fiche-v2 .maca-fv2-readtime{background:#f7e9df;color:#9c4b34}
+body.maca-fiche-v2 .maca-fv2-hero h1{position:relative;z-index:1;max-width:850px;margin:0;color:var(--fv2-green-deep);font-family:'Newsreader',Georgia,serif;font-size:clamp(42px,5.7vw,70px);font-weight:700;line-height:1.01;letter-spacing:-.035em}
+body.maca-fiche-v2 .maca-fv2-accent{width:56px;height:5px;margin-top:26px;border-radius:999px;background:var(--fv2-orange)}
+body.maca-fiche-v2 .maca-fv2-grid{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:28px;align-items:start;margin-top:28px}
+body.maca-fiche-v2 .maca-fv2-main{display:grid;gap:22px;min-width:0}
+body.maca-fiche-v2 .maca-fv2-card{border:1px solid rgba(97,113,93,.15);border-radius:28px;background:rgba(255,253,248,.96);box-shadow:0 12px 34px rgba(51,72,63,.045);padding:30px 32px}
+body.maca-fiche-v2 .maca-fv2-short{position:relative;background:linear-gradient(145deg,#e9f0e8,#f4f5ed);border-color:#cedbcf;padding:34px 36px}
+body.maca-fiche-v2 .maca-fv2-short::before{content:'';position:absolute;left:0;top:28px;bottom:28px;width:5px;border-radius:0 8px 8px 0;background:var(--fv2-orange)}
+body.maca-fiche-v2 .maca-fv2-kicker{display:flex;align-items:center;gap:9px;margin:0 0 15px;color:var(--fv2-green-deep);font-size:13px;font-weight:900;letter-spacing:.075em;text-transform:uppercase}
+body.maca-fiche-v2 .maca-fv2-kicker::before{content:'';width:10px;height:10px;border-radius:50%;background:var(--fv2-orange);box-shadow:0 0 0 5px rgba(207,98,56,.10)}
+body.maca-fiche-v2 .maca-fv2-short p{font-size:18px;line-height:1.66;color:#30443e}
+body.maca-fiche-v2 .maca-fv2-detail h2,body.maca-fiche-v2 .maca-fv2-vigilance h2,body.maca-fiche-v2 .maca-fv2-sources h2,body.maca-fiche-v2 .maca-fv2-related h2{margin:0 0 18px;color:var(--fv2-green-deep);font-family:'Newsreader',Georgia,serif;font-size:31px;line-height:1.08;letter-spacing:-.025em}
+body.maca-fiche-v2 .maca-fv2-detail p{margin:0 0 18px;font-size:17px;line-height:1.76;color:#3b4d47}
+body.maca-fiche-v2 .maca-fv2-detail p:last-child{margin-bottom:0}
+body.maca-fiche-v2 .maca-fv2-vigilance{background:#fff5ee;border-color:#edc9ba}
+body.maca-fiche-v2 .maca-fv2-vigilance h2{color:#8d4431}
+body.maca-fiche-v2 .maca-fv2-vigilance p{margin:0;font-size:16px;line-height:1.68;color:#62483f}
+body.maca-fiche-v2 .maca-fv2-side{display:grid;gap:18px;position:sticky;top:92px}
+body.maca-fiche-v2 .maca-fv2-sidecard{border:1px solid rgba(97,113,93,.15);border-radius:24px;background:#fffdf8;padding:23px;box-shadow:0 10px 28px rgba(51,72,63,.045)}
+body.maca-fiche-v2 .maca-fv2-sidecard strong{display:block;color:var(--fv2-green-deep);font-size:14px;margin-bottom:8px}
+body.maca-fiche-v2 .maca-fv2-sidecard p{margin:0;color:#65736e;font-size:13px;line-height:1.55}
+body.maca-fiche-v2 .maca-fv2-sources{margin-top:22px}
+body.maca-fiche-v2 .maca-fv2-source{padding:18px 0;border-top:1px solid var(--fv2-line)}
+body.maca-fiche-v2 .maca-fv2-source:first-of-type{border-top:0;padding-top:2px}
+body.maca-fiche-v2 .maca-fv2-source-org{color:var(--fv2-green-deep);font-size:14px;font-weight:850}
+body.maca-fiche-v2 .maca-fv2-source-title{margin-top:5px;color:#4b5d56;font-size:14px;line-height:1.45}
+body.maca-fiche-v2 .maca-fv2-source a{display:inline-flex;margin-top:7px;color:var(--fv2-orange);font-size:13px;font-weight:800;text-decoration:none}
+body.maca-fiche-v2 .maca-fv2-source a:hover{text-decoration:underline}
+body.maca-fiche-v2 .maca-fv2-verified{margin:15px 0 0;color:#73807a;font-size:12px}
+body.maca-fiche-v2 .maca-fv2-related{margin-top:22px}
+body.maca-fiche-v2 .maca-fv2-related-intro{margin:-6px 0 18px;color:#697770;font-size:14px;line-height:1.55}
+body.maca-fiche-v2 .maca-fv2-related-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+body.maca-fiche-v2 .maca-fv2-related-link{display:block;border:1px solid #d5ded3;border-radius:18px;background:#f8faf5;padding:17px 18px;color:var(--fv2-green-deep);text-decoration:none;transition:transform .15s ease,border-color .15s ease}
+body.maca-fiche-v2 .maca-fv2-related-link:hover{transform:translateY(-1px);border-color:#aebcaa}
+body.maca-fiche-v2 .maca-fv2-related-category{display:block;margin-bottom:6px;color:#7a887f;font-size:10px;font-weight:850;letter-spacing:.07em;text-transform:uppercase}
+body.maca-fiche-v2 .maca-fv2-related-title{display:block;font-family:'Newsreader',Georgia,serif;font-size:20px;font-weight:700;line-height:1.16}
+body.maca-fiche-v2 .maca-fv2-share{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:22px;padding:23px 25px;border-radius:24px;background:var(--fv2-green-deep);color:#fff}
+body.maca-fiche-v2 .maca-fv2-share strong{font-family:'Newsreader',Georgia,serif;font-size:23px}
+body.maca-fiche-v2 .maca-fv2-share p{margin:4px 0 0;color:#dfe9e1;font-size:12px}
+body.maca-fiche-v2 .maca-fv2-share button{flex:0 0 auto;border:0;border-radius:999px;background:#fff;color:var(--fv2-green-deep);padding:12px 17px;font-weight:850;cursor:pointer}
+body.maca-fiche-v2 .maca-fv2-share button:hover{background:#f4eee4}
+body.maca-fiche-v2 .maca-fv2-share-status{min-height:18px;margin-top:7px!important;color:#f2d7cb!important}
+body.maca-fiche-v2 footer{margin-top:0;background:#eaf0e7}
+@media(max-width:850px){body.maca-fiche-v2 .maca-fv2-page{width:min(100% - 30px,720px);padding:28px 0 48px}body.maca-fiche-v2 .maca-fv2-hero{padding:32px 28px 34px;border-radius:28px}body.maca-fiche-v2 .maca-fv2-hero h1{font-size:clamp(36px,9vw,50px)}body.maca-fiche-v2 .maca-fv2-grid{grid-template-columns:1fr;gap:20px}body.maca-fiche-v2 .maca-fv2-side{position:static;grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){body.maca-fiche-v2 .site-header{padding:10px 14px}body.maca-fiche-v2 .site-header .brand{margin-bottom:8px}body.maca-fiche-v2 .site-header .brand img{width:36px;height:36px}body.maca-fiche-v2 .site-header .brand-word::after{font-size:17px}body.maca-fiche-v2 .maca-fv2-page{width:calc(100% - 24px);padding-top:20px}body.maca-fiche-v2 .maca-fv2-back{margin-bottom:18px}body.maca-fiche-v2 .maca-fv2-hero{padding:26px 20px 29px;border-radius:24px}body.maca-fiche-v2 .maca-fv2-brandline{margin-bottom:20px}body.maca-fiche-v2 .maca-fv2-brandline img{width:30px;height:30px}body.maca-fiche-v2 .maca-fv2-meta{gap:7px;margin-bottom:14px}body.maca-fiche-v2 .maca-fv2-category,body.maca-fiche-v2 .maca-fv2-readtime{font-size:9px;letter-spacing:.07em;padding:6px 9px}body.maca-fiche-v2 .maca-fv2-hero h1{font-size:clamp(34px,11vw,43px);line-height:1.02}body.maca-fiche-v2 .maca-fv2-card{padding:24px 21px;border-radius:23px}body.maca-fiche-v2 .maca-fv2-short{padding:27px 22px 27px 27px}body.maca-fiche-v2 .maca-fv2-short p{font-size:16px;line-height:1.62}body.maca-fiche-v2 .maca-fv2-detail h2,body.maca-fiche-v2 .maca-fv2-vigilance h2,body.maca-fiche-v2 .maca-fv2-sources h2,body.maca-fiche-v2 .maca-fv2-related h2{font-size:27px}body.maca-fiche-v2 .maca-fv2-detail p{font-size:16px;line-height:1.7}body.maca-fiche-v2 .maca-fv2-side{grid-template-columns:1fr}body.maca-fiche-v2 .maca-fv2-related-grid{grid-template-columns:1fr}body.maca-fiche-v2 .maca-fv2-share{align-items:flex-start;flex-direction:column;padding:22px}body.maca-fiche-v2 .maca-fv2-share button{width:100%}}
