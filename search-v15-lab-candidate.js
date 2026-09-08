@@ -14,7 +14,7 @@
   function targeted(query){
     const q=norm(query);
     if(/\b(estomac|ventre)\b/.test(q)&&/\b(brule|brulure|brulures)\b/.test(q)&&/\b(remonte|remontee|remontees|acide)\b/.test(q))return direct('reflux-adulte','reflux',query,'v15-reflux-language');
-    if(cystitisLanguage(q))return direct('brulures-urinaires-adulte','cystitis',query,'v15-cystitis-language');
+    if(cystitisLanguage(q))return direct('cystite-femme','cystitis',query,'v15-cystitis-language');
     if(/\bimmunotherapie\b/.test(q)&&/\bcancer\b/.test(q))return direct('cancer-immunotherapie-comment-ca-marche','cancer-immunotherapy',query,'v15-cancer-immunotherapy-language');
     if(/\b(varice|varices)\b/.test(q)&&/\b(contention|compression|bas)\b/.test(q))return direct('varices-contention-disparaitre','varices-compression',query,'v15-varices-compression-language');
     return null;
@@ -26,7 +26,7 @@
     const map=new Map(corpus().map((q,index)=>[q.id,{q,index}]));
     return targetedResult.matches.map(m=>{const f=map.get(m.id);return f?{q:f.q,index:f.index,score:m.score,coverage:1,directCoverage:1,confidence:m.confidence,intentKey:m.intentKey,matchedAlias:m.matchedAlias}:null;}).filter(Boolean);
   }
-  const promoted={...base,version:String(base.version||'')+'-v15language2',resolve,rank,__macaV15LanguageFix:true};
+  const promoted={...base,version:String(base.version||'')+'-v15language3',resolve,rank,__macaV15LanguageFix:true};
   root.MACA_SEARCH_V2=promoted;
   const complementRules=[
     {when:/\b(remontee|remontees|reflux|rgo|acide|acides)\b/,primary:'reflux-adulte',ids:['douleur-abdominale']},

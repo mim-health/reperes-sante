@@ -5,12 +5,12 @@ function ctx(){const c={console,setTimeout,clearTimeout,setInterval,clearInterva
 const m={window:{}};vm.runInNewContext(read('corpus-manifest.js'),m);const files=m.window.MACA_CORPUS_MANIFEST.map(x=>String(x).split('?')[0]);const c=ctx();files.forEach(f=>run(c,f));run(c,'corpus-canonicalizer.js');c.MACA_CANONICAL_CORPUS=Array.from(c.MACA_BUILD_CANONICAL_CORPUS());c.healthQuestions=c.MACA_CANONICAL_CORPUS.slice();['search-v2-referential-p0.js','search-v2-engine.js','search-v2-corpus-fallback.js','search-v2-fatigue-fix.js','search-v2-harcelement-fix.js','search-v2-retrouvabilite-pilot-fix.js'].forEach(f=>run(c,f));const baseline=c.MACA_SEARCH_V2;run(c,'search-v15-lab-candidate.js');
 const checks=[
  {q:'mon estomac me brule et ca remonte',want:'reflux-adulte'},
- {q:'ca brule quand je fais pipi',want:'brulures-urinaires-adulte'},
- {q:'j ai envie de faire pipi tout le temps et ca brule',want:'brulures-urinaires-adulte'},
- {q:'je dois uriner souvent c est normal',want:'brulures-urinaires-adulte'},
- {q:'comment savoir si j ai une infection urinaire',want:'brulures-urinaires-adulte'},
- {q:'difference entre cystite et infection urinaire',want:'brulures-urinaires-adulte'},
- {q:'est ce que le cranberry peut aider pour une cystite',want:'brulures-urinaires-adulte'},
+ {q:'ca brule quand je fais pipi',want:'cystite-femme'},
+ {q:'j ai envie de faire pipi tout le temps et ca brule',want:'cystite-femme'},
+ {q:'je dois uriner souvent c est normal',want:'cystite-femme'},
+ {q:'comment savoir si j ai une infection urinaire',want:'cystite-femme'},
+ {q:'difference entre cystite et infection urinaire',want:'cystite-femme'},
+ {q:'est ce que le cranberry peut aider pour une cystite',want:'cystite-femme'},
  {q:'quel antibiotique prendre pour une infection',want:null}
 ];
 const rows=checks.map(x=>{const before=baseline.rank(x.q).map(r=>r.q.id);const after=c.MACA_SEARCH_V2.rank(x.q).map(r=>r.q.id);const pass=x.want?after.includes(x.want):after.length===0;return {...x,before,after,pass,afterReason:c.MACA_SEARCH_V2.resolve(x.q).reason};});
@@ -20,7 +20,7 @@ const selectionChecks=[
  {q:'j ai des bourdonnements et des vertiges',primary:'acouphenes-adulte',complements:['vertiges-causes']},
  {q:'mon coeur s emballe',primary:'palpitations-adulte',complements:[]},
  {q:'diabete type 2',primary:'diabete-type-2-depistage-complications',complements:[]},
- {q:'ca brule quand je fais pipi',primary:'brulures-urinaires-adulte',complements:[]}
+ {q:'ca brule quand je fais pipi',primary:'cystite-femme',complements:[]}
 ];
 const selections=selectionChecks.map(x=>{const s=c.MACA_SEARCH_V15_LAB.select(x.q);const gotPrimary=s.primary&&s.primary.q.id;const gotComplements=s.complements.map(q=>q.id);return {...x,gotPrimary,gotComplements,pass:gotPrimary===x.primary&&JSON.stringify(gotComplements)===JSON.stringify(x.complements),reason:s.reason};});
 const officialGate=c.MACA_SEARCH_V2.__macaV15LanguageFix===true;const ok=officialGate&&rows.every(x=>x.pass)&&selections.every(x=>x.pass);console.log(JSON.stringify({ok,officialGate,officialVersion:c.MACA_SEARCH_V2.version,selectorVersion:c.MACA_SEARCH_V15_LAB.version,rows,selections,observation:'MACA_SEARCH_V2 remains the official engine; complements are explicit and capped at two.'},null,2));if(!ok)process.exit(1);
