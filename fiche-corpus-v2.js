@@ -3,7 +3,7 @@
   'use strict';
   const root=document.querySelector('#seo-fiche');
   const OFFICIAL_LOGO='logo-maca-v3.svg?v=20260908-logo3';
-  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#39;'}[c]));
   const strip=s=>String(s||'').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();
   const paragraphs=s=>String(s||'').split(/\n\s*\n/).map(p=>p.trim()).filter(Boolean).map(p=>`<p>${esc(p)}</p>`).join('');
   const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
@@ -13,7 +13,7 @@
   const upsertMeta=(name,content)=>{let el=document.querySelector(`meta[name="${name}"]`);if(!el){el=document.createElement('meta');el.name=name;document.head.appendChild(el);}el.content=content;};
   const upsertProperty=(property,content)=>{let el=document.querySelector(`meta[property="${property}"]`);if(!el){el=document.createElement('meta');el.setAttribute('property',property);document.head.appendChild(el);}el.content=content;};
   function failNotFound(){document.title='Fiche introuvable — MACA Santé';upsertMeta('robots','noindex,follow');root.innerHTML='<p class="eyebrow">MACA SANTÉ</p><h1>Fiche introuvable</h1><p><a href="fiches.html">Retour à toutes les fiches →</a></p>';}
-  function failTemporary(){document.title='Fiche temporairement indisponible — MACA Santé';upsertMeta('robots','noindex,follow');root.innerHTML='<p class="eyebrow">MACA SANTÉ</p><h1>Cette fiche est temporairement indisponible</h1><p>Le contenu n’a pas pu être chargé. Vous pouvez réessayer dans quelques instants.</p><p><a href="fiches.html">Retour à toutes les fiches →</a></p>';}
+  function failTemporary(){document.title='Fiche temporairement indisponible — MACA Santé';root.innerHTML='<p class="eyebrow">MACA SANTÉ</p><h1>Cette fiche est temporairement indisponible</h1><p>Le contenu n’a pas pu être chargé. Vous pouvez réessayer dans quelques instants.</p><p><a href="fiches.html">Retour à toutes les fiches →</a></p>';}
   function resolvedSources(q){
     const direct=Array.isArray(q.sources)?q.sources.filter(s=>s&&/^https?:\/\//i.test(String(s.url||''))):[];
     if(direct.length)return direct;
