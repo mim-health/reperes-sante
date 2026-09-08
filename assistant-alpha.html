@@ -40,8 +40,8 @@ window.MACA_CORPUS_READY
 .then(()=>load('search-v2-fatigue-fix.js?v=20260902-1'))
 .then(()=>load('search-v2-harcelement-fix.js?v=20260903-1'))
 .then(()=>load('search-v2-retrouvabilite-pilot-fix.js?v=20260906-2'))
-.then(()=>load('search-v15-lab-candidate.js?v=20260908-v16-1'))
-.then(()=>load('assistant-v15-viewmodel-candidate.js?v=20260908-v16-1'))
+.then(()=>load('search-v15-lab-candidate.js?v=20260908-v16-2'))
+.then(()=>load('assistant-v15-viewmodel-candidate.js?v=20260908-v16-2'))
 .then(()=>{if(!window.MACA_SEARCH_V2||!window.MACA_SEARCH_V2.__macaV15LanguageFix)throw new Error('MACA_SEARCH_V2 V1.6 indisponible');if(!window.MACA_ASSISTANT_V15_VIEWMODEL)throw new Error('Viewmodel V1.6 indisponible');ready=true;$('load').textContent=window.healthQuestions.length+' fiches MACA chargées · moteur '+window.MACA_SEARCH_V2.version;$('alpha-query').disabled=false;document.querySelector('.send').disabled=false;$('alpha-query').focus();})
 .catch(err=>{$('load').textContent='Erreur de chargement du corpus.';console.error(err);});
 })();
