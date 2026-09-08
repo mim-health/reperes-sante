@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - feat/v0-magazine
+      - lab/assistant-multifiches-v16
     paths:
       - '.github/workflows/maca-assistant-v15-lab.yml'
       - 'scripts/audit-assistant-v15-initial.js'
