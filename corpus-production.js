@@ -3175,12 +3175,12 @@ Pour le grand public, le bon réflexe est donc de regarder la question posée : 
 Une alimentation variée et riche en aliments végétaux reste une approche générale de santé digestive ; elle ne doit pas être confondue avec la prise d’un complément probiotique destiné à une indication particulière.`
 };
 const duplicateTitles=new Set(['Brûlures urinaires : quand penser à une cystite ?']);
-const duplicateIds=new Set(['cystite-adulte','cystite-femme','brulures-urinaires-cystite','brulures-urinaires-quand-penser-cystite']);
-function keep(card){if(!card)return false;if(card.id==='brulures-urinaires-adulte')return true;return !duplicateIds.has(card.id)&&!duplicateTitles.has(card.title||card.question||'');}
+const duplicateIds=new Set(['cystite-adulte','brulures-urinaires-cystite','brulures-urinaires-quand-penser-cystite']);
+function keep(card){if(!card)return false;if(card.id==='cystite-femme')return true;return !duplicateIds.has(card.id)&&!duplicateTitles.has(card.title||card.question||'');}
 ['healthQuestions','extraAuditedQuestions','auditedQuestionOverrides','SANTEJUSTE_BACKLOG_AUDITED'].forEach(k=>{if(Array.isArray(window[k]))window[k]=window[k].filter(keep);});
 const pools=[window.healthQuestions,window.extraAuditedQuestions].filter(Array.isArray);const found=[];
 pools.forEach(pool=>pool.forEach(card=>{const d=details[card&&card.title];if(!d)return;card.detail=d;found.push(card.id||card.title);}));
-window.MACA_DIGESTION_URINAIRE_V2_LOT2={expected:7,matchedCount:new Set(found).size,matchedIds:[...new Set(found)],cystitisCanonical:'brulures-urinaires-adulte'};
+window.MACA_DIGESTION_URINAIRE_V2_LOT2={expected:7,matchedCount:new Set(found).size,matchedIds:[...new Set(found)],cystitisCanonical:'cystite-femme'};
 if(new Set(found).size!==7)console.error('[MACA Digestion & urinaire V2 lot2] correspondances inattendues',found);
 })();
 ;
