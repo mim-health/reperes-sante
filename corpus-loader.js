@@ -37,20 +37,50 @@
   }
 
   function loadSequential() {
-    return files.reduce(
-      (chain, src) => chain.then(() => load(src)),
-      Promise.resolve()
-    );
+    return files.reduce((chain, src) => chain.then(() => load(src)), Promise.resolve());
+  }
+
+  function allCards() {
+    return []
+      .concat(Array.isArray(window.healthQuestions) ? window.healthQuestions : [])
+      .concat(Array.isArray(window.extraAuditedQuestions) ? window.extraAuditedQuestions : []);
   }
 
   function latestCard(id) {
-    const all = []
-      .concat(Array.isArray(window.healthQuestions) ? window.healthQuestions : [])
-      .concat(Array.isArray(window.extraAuditedQuestions) ? window.extraAuditedQuestions : []);
+    const all = allCards();
     for (let i = all.length - 1; i >= 0; i -= 1) {
       if (String(all[i] && all[i].id || '') === id) return all[i];
     }
     return null;
+  }
+
+  function latestCardByTitle(title) {
+    const all = allCards();
+    for (let i = all.length - 1; i >= 0; i -= 1) {
+      if (String(all[i] && all[i].title || '') === title) return all[i];
+    }
+    return null;
+  }
+
+  /* Santé mentale V2 was authored as an in-place migration over healthQuestions.
+   * The canonical mental-health cards live in extraAuditedQuestions, so replay that
+   * validated migration once against that array before exposing the canonical corpus.
+   * No medical content, IDs, search logic or scoring is changed here.
+   */
+  function replayMentalHealthV2OnAuditedCorpus() {
+    const audited = Array.isArray(window.extraAuditedQuestions) ? window.extraAuditedQuestions : [];
+    if (!audited.length) return Promise.resolve();
+    const originalHealth = window.healthQuestions;
+    window.healthQuestions = audited;
+    return load('migration-sante-mentale-v2-2026-09-07.js?v=20260908-auditedfix1')
+      .then(() => {
+        window.extraAuditedQuestions = window.healthQuestions;
+        window.healthQuestions = originalHealth;
+      })
+      .catch((error) => {
+        window.healthQuestions = originalHealth;
+        throw error;
+      });
   }
 
   function assertBundleSentinels() {
@@ -67,9 +97,10 @@
       const card = latestCard(id);
       return !card || !String(card.detail || '').trim();
     });
-    if (missing.length) {
-      throw new Error('Corpus bundle V2 stale/incomplete: ' + missing.join(', '));
-    }
+    const mentalTitle = 'Stress ou anxiété : à partir de quand faut-il en parler ?';
+    const mentalCard = latestCardByTitle(mentalTitle);
+    if (!mentalCard || !String(mentalCard.detail || '').trim()) missing.push('sante-mentale-v2');
+    if (missing.length) throw new Error('Corpus bundle V2 stale/incomplete: ' + missing.join(', '));
   }
 
   function restoreInitialGlobals() {
@@ -79,13 +110,12 @@
 
   function ready(mode) {
     window.MACA_CORPUS_LOAD_MODE = mode;
-    window.dispatchEvent(new CustomEvent('maca:corpus-ready', {
-      detail: { files: files.slice(), mode }
-    }));
+    window.dispatchEvent(new CustomEvent('maca:corpus-ready', { detail: { files: files.slice(), mode } }));
     return files.slice();
   }
 
-  window.MACA_CORPUS_READY = load('corpus-production.js?v=20260907-bundle3')
+  window.MACA_CORPUS_READY = load('corpus-production.js?v=20260908-bundle4')
+    .then(() => replayMentalHealthV2OnAuditedCorpus())
     .then(() => {
       assertBundleSentinels();
       return ready('bundle');
@@ -93,7 +123,12 @@
     .catch((bundleError) => {
       console.warn('[MACA corpus] bundle unavailable or stale, fallback sequential', bundleError);
       restoreInitialGlobals();
-      return loadSequential().then(() => ready('sequential-fallback'));
+      return loadSequential()
+        .then(() => replayMentalHealthV2OnAuditedCorpus())
+        .then(() => {
+          assertBundleSentinels();
+          return ready('sequential-fallback');
+        });
     })
     .catch((error) => {
       console.error('[MACA corpus]', error);
