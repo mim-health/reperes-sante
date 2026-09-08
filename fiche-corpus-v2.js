@@ -3,6 +3,7 @@
   'use strict';
   const root=document.querySelector('#seo-fiche');
   const PROTOTYPE_ID='intolerance-gluten-tests-coeliaque-allergie-ble';
+  const PROTOTYPE_LOGO='logo-maca-v2.svg?v=20260908-logo2';
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const strip=s=>String(s||'').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();
   const paragraphs=s=>String(s||'').split(/\n\s*\n/).map(p=>p.trim()).filter(Boolean).map(p=>`<p>${esc(p)}</p>`).join('');
@@ -61,13 +62,14 @@
   }
   function renderPrototype(q,canonical){
     document.body.classList.add('maca-fiche-v2-prototype');
+    document.querySelectorAll('.site-header .brand img, footer .brand img').forEach(img=>{img.src=PROTOTYPE_LOGO;});
     const detail=q.detail?`<section class="maca-fv2-card maca-fv2-detail"><h2>Pour mieux comprendre</h2>${paragraphs(q.detail)}</section>`:'';
     const vigilance=q.watch?`<section class="maca-fv2-card maca-fv2-vigilance"><h2>${esc(q.watchTitle||'Point de vigilance')}</h2>${paragraphs(q.watch)}</section>`:'';
     const verified=q.verifiedAt?`<div class="maca-fv2-sidecard"><strong>Contenu vérifié</strong><p>Vérifié le ${esc(q.verifiedAt)}.</p></div>`:'';
     root.innerHTML=`<article class="maca-fv2-page">
       <a class="maca-fv2-back" href="fiches.html">← Toutes les fiches MACA Santé</a>
       <header class="maca-fv2-hero">
-        <div class="maca-fv2-brandline"><img src="logo-maca.svg" alt=""><span>MACA Santé</span></div>
+        <div class="maca-fv2-brandline"><img src="${PROTOTYPE_LOGO}" alt=""><span>MACA Santé</span></div>
         <div class="maca-fv2-meta"><span class="maca-fv2-category">${esc(q.category||'Question santé')}</span><span class="maca-fv2-readtime">À lire en 3 min</span></div>
         <h1>${esc(q.title)}</h1><div class="maca-fv2-accent" aria-hidden="true"></div>
       </header>
