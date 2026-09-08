@@ -11,6 +11,10 @@ const checks=[
  {q:'comment savoir si j ai une infection urinaire',want:'cystite-femme'},
  {q:'difference entre cystite et infection urinaire',want:'cystite-femme'},
  {q:'est ce que le cranberry peut aider pour une cystite',want:'cystite-femme'},
+ {q:'mon coeur bat bizarrement',want:'palpitations-adulte'},
+ {q:'mon coeur bat vite',want:'palpitations-adulte'},
+ {q:'mon coeur est irregulier',want:'palpitations-adulte'},
+ {q:'j ai mal a la poitrine',want:null},
  {q:'quel antibiotique prendre pour une infection',want:null}
 ];
 const rows=checks.map(x=>{const before=baseline.rank(x.q).map(r=>r.q.id);const after=c.MACA_SEARCH_V2.rank(x.q).map(r=>r.q.id);const pass=x.want?after.includes(x.want):after.length===0;return {...x,before,after,pass,afterReason:c.MACA_SEARCH_V2.resolve(x.q).reason};});
@@ -19,6 +23,7 @@ const selectionChecks=[
  {q:'j ai mal a la tete',primary:'maux-tete',complements:['migraine-que-faire']},
  {q:'j ai des bourdonnements et des vertiges',primary:'acouphenes-adulte',complements:['vertiges-causes']},
  {q:'mon coeur s emballe',primary:'palpitations-adulte',complements:[]},
+ {q:'mon coeur bat bizarrement',primary:'palpitations-adulte',complements:[]},
  {q:'diabete type 2',primary:'diabete-type-2-depistage-complications',complements:[]},
  {q:'ca brule quand je fais pipi',primary:'cystite-femme',complements:[]}
 ];
