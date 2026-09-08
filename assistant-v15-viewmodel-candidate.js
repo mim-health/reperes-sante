@@ -1,10 +1,10 @@
-/* MACA Assistant V1.5 — UI view model candidate. NOT WIRED TO PRODUCTION. */
+/* MACA Assistant V1.5 — production UI view model. */
 (function(root){
   'use strict';
   function build(query){
-    const engine=root.MACA_SEARCH_V15_LAB;
-    if(!engine||typeof engine.select!=='function')throw new Error('MACA_SEARCH_V15_LAB.select required');
-    const selection=engine.select(query);
+    const selector=root.MACA_SEARCH_V15_LAB;
+    if(!selector||typeof selector.select!=='function')throw new Error('MACA V1.5 selector required');
+    const selection=selector.select(query);
     if(!selection.primary){
       return {
         status:'none',
@@ -25,5 +25,5 @@
       selectionReason:selection.reason
     };
   }
-  root.MACA_ASSISTANT_V15_VIEWMODEL={version:'2026-09-07-v15-candidate1',build};
+  root.MACA_ASSISTANT_V15_VIEWMODEL={version:'2026-09-08-v15-1',build};
 })(typeof window!=='undefined'?window:globalThis);

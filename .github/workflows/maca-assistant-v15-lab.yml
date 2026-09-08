@@ -1,4 +1,4 @@
-name: MACA Assistant V1.5 Lab
+name: MACA Assistant V1.5
 
 on:
   push:
@@ -12,8 +12,15 @@ on:
       - 'scripts/test-assistant-v15-viewmodel.js'
       - 'search-v15-lab-candidate.js'
       - 'assistant-v15-viewmodel-candidate.js'
+      - 'assistant-alpha.html'
+      - 'maca-assistant-widget.js'
+      - 'corpus-v2-browser-entry.js'
+      - 'index.html'
+      - 'fiches.html'
       - 'search-v2-*.js'
       - 'corpus-manifest.js'
+      - 'corpus-loader.js'
+      - 'corpus-production.js'
       - 'corpus-canonicalizer.js'
       - 'qa-data*.js'
       - 'backlog-*.js'
@@ -25,17 +32,17 @@ permissions:
   contents: read
 
 jobs:
-  initial-audit:
+  v15-regression:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - name: Checkout exact commit
         uses: actions/checkout@v4
-      - name: Run Assistant V1.5 initial benchmark
+      - name: Run Assistant V1.5 baseline audit
         run: node scripts/audit-assistant-v15-initial.js
-      - name: Test V1.5 candidate corrections
+      - name: Test V1.5 official search adapter and complements
         run: node scripts/test-assistant-v15-candidate.js
       - name: Run expanded real-language benchmark
         run: node scripts/benchmark-assistant-v15-expanded.js
-      - name: Test V1.5 UI view model and production isolation
+      - name: Test V1.5 view model and production wiring
         run: node scripts/test-assistant-v15-viewmodel.js

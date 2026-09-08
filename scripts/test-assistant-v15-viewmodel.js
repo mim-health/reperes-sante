@@ -10,5 +10,13 @@ const checks=[
  {q:'je ne me sens pas bien',status:'none'}
 ];
 const rows=checks.map(x=>{const v=c.MACA_ASSISTANT_V15_VIEWMODEL.build(x.q);const gotPrimary=v.primary&&v.primary.id||null;const gotComplements=(v.complements||[]).map(q=>q.id);let pass=v.status===x.status;if(x.primary)pass=pass&&gotPrimary===x.primary&&JSON.stringify(gotComplements)===JSON.stringify(x.complements);if(x.status==='none')pass=pass&&v.proposeLabel==='Proposer cette question à MACA'&&v.exactQuestion===x.q;return {...x,gotPrimary,gotComplements,message:v.message,pass};});
-const productionFiles=['assistant-alpha.html','maca-assistant-widget.js','index.html','fiches.html'];const accidental=productionFiles.filter(f=>{const s=read(f);return s.includes('search-v15-lab-candidate.js')||s.includes('assistant-v15-viewmodel-candidate.js')||s.includes('MACA_SEARCH_V15_LAB')||s.includes('MACA_ASSISTANT_V15_VIEWMODEL');});
-const ok=rows.every(r=>r.pass)&&accidental.length===0;console.log(JSON.stringify({ok,rows,accidentalProductionWiring:accidental,viewModelVersion:c.MACA_ASSISTANT_V15_VIEWMODEL.version},null,2));if(!ok)process.exit(1);
+const assistant=read('assistant-alpha.html'),widget=read('maca-assistant-widget.js'),library=read('fiches.html'),entry=read('corpus-v2-browser-entry.js'),home=read('index.html');
+const productionWiring={
+ assistantLoadsSearch:assistant.includes("load('search-v15-lab-candidate.js?v=20260908-v15-1')"),
+ assistantLoadsViewModel:assistant.includes("load('assistant-v15-viewmodel-candidate.js?v=20260908-v15-1')"),
+ assistantUsesViewModel:assistant.includes('MACA_ASSISTANT_V15_VIEWMODEL.build(query)'),
+ widgetVersion:widget.includes('assistant-alpha.html?v=20260908-v15-1'),
+ libraryVersion:library.includes('maca-assistant-widget.js?v=20260908-v15-1')&&library.includes('assistant-alpha.html?v=20260908-v15-1')&&library.includes('corpus-v2-browser-entry.js?v=20260908-v15-1'),
+ homeVersion:entry.includes('maca-assistant-widget.js?v=20260908-v15-1')&&home.includes('corpus-v2-browser-entry.js?v=20260908-v15-1')
+};
+const officialGate=c.MACA_SEARCH_V2.__macaV15LanguageFix===true;const wiringOk=Object.values(productionWiring).every(Boolean);const ok=rows.every(r=>r.pass)&&officialGate&&wiringOk;console.log(JSON.stringify({ok,rows,officialGate,productionWiring,viewModelVersion:c.MACA_ASSISTANT_V15_VIEWMODEL.version},null,2));if(!ok)process.exit(1);
