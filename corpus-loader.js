@@ -115,7 +115,7 @@
     return files.slice();
   }
 
-  window.MACA_CORPUS_READY = load('corpus-production.js?v=20260908-bundle5')
+  window.MACA_CORPUS_READY = load('corpus-production.js?v=20260908-bundle6')
     .then(() => replayMentalHealthV2OnAuditedCorpus())
     .then(() => {
       assertBundleSentinels();
