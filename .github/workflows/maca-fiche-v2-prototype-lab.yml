@@ -1,0 +1,30 @@
+name: MACA Fiche V2 Prototype Lab
+
+on:
+  push:
+    branches:
+      - lab/fiche-v2-coeliaque-ux
+    paths:
+      - 'fiche.html'
+      - 'fiche-corpus-v2.js'
+      - 'maca-fiche-v2-prototype.css'
+      - 'scripts/test-fiche-v2-prototype.js'
+      - '.github/workflows/maca-fiche-v2-prototype-lab.yml'
+      - 'corpus-manifest.js'
+      - 'corpus-canonicalizer.js'
+      - 'corpus-production.js'
+      - 'migration-*.js'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  prototype-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout exact commit
+        uses: actions/checkout@v4
+      - name: Validate isolated coeliac fiche prototype
+        run: node scripts/test-fiche-v2-prototype.js
