@@ -29,7 +29,7 @@ const cases=[
  ['rapport sans preservatif',['rapport-non-protege-ist']],['pilule du lendemain',['contraception-urgence']],
  ['j ai une toux seche',['toux-seche-que-faire']],['je tousse depuis longtemps',['toux-prolongee-adulte']],['j ai mal a la gorge',['mal-gorge-adulte-antibiotiques']],
  ['je suis vite essouffle',['essoufflement-adulte']],['mon coeur s emballe',['palpitations-adulte','palpitations-quand-consulter']],
- ['ca brule quand je fais pipi',['maca-cystite-reperes']],['brulures quand j urine',['maca-cystite-reperes']],['infection urinaire',['maca-cystite-reperes']],
+ ['ca brule quand je fais pipi',['brulures-urinaires-adulte']],['brulures quand j urine',['brulures-urinaires-adulte']],['infection urinaire',['brulures-urinaires-adulte']],
  ['j ai mal a la tete',['maux-tete']],['migraine avec aura',['migraine-que-faire','migraine-adulte']],
  ['une jambe gonflee',['jambe-gonflee-adulte']],['j ai les jambes lourdes',['jambes-lourdes-varices']],
  ['mon enfant tousse',['toux-enfant']],['mon bebe a de la fievre',['fievre-enfant']],['j ai de la fievre',['fievre-adulte-quand-sinquieter']],

@@ -5,7 +5,7 @@ function ctx(){const c={console,setTimeout,clearTimeout,setInterval,clearInterva
 const m={window:{}};vm.runInNewContext(read('corpus-manifest.js'),m);const c=ctx();m.window.MACA_CORPUS_MANIFEST.map(x=>String(x).split('?')[0]).forEach(f=>run(c,f));run(c,'corpus-canonicalizer.js');c.MACA_CANONICAL_CORPUS=Array.from(c.MACA_BUILD_CANONICAL_CORPUS());c.healthQuestions=c.MACA_CANONICAL_CORPUS.slice();['search-v2-referential-p0.js','search-v2-engine.js','search-v2-corpus-fallback.js','search-v2-fatigue-fix.js','search-v2-harcelement-fix.js','search-v2-retrouvabilite-pilot-fix.js','search-v15-lab-candidate.js','assistant-v15-viewmodel-candidate.js'].forEach(f=>run(c,f));
 const checks=[
  {q:'j ai des remontees acides',status:'match',primary:'reflux-adulte',complements:['douleur-abdominale']},
- {q:'ca brule quand je fais pipi',status:'match',primary:'maca-cystite-reperes',complements:[]},
+ {q:'ca brule quand je fais pipi',status:'match',primary:'brulures-urinaires-adulte',complements:[]},
  {q:'quel antibiotique prendre pour une infection',status:'none'},
  {q:'je ne me sens pas bien',status:'none'}
 ];
