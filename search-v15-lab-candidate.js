@@ -1,9 +1,9 @@
-/* MACA Assistant V1.5 — production language adapter + strict complement selector. */
+/* MACA Assistant V1.6 — production language adapter + deterministic multi-fiche navigation. */
 (function(root){
   'use strict';
   const base=root.MACA_SEARCH_V2;
   if(!base)throw new Error('MACA_SEARCH_V2 required');
-  if(base.__macaV15LanguageFix&&root.MACA_SEARCH_V15_LAB&&typeof root.MACA_SEARCH_V15_LAB.select==='function')return;
+  if(base.__macaV15LanguageFix&&root.MACA_SEARCH_V15_LAB&&typeof root.MACA_SEARCH_V15_LAB.select==='function'&&root.MACA_SEARCH_V15_LAB.__macaMultiFiche)return;
   const norm=base.normalize||function(v){return String(v||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();};
   const corpus=()=>Array.isArray(root.MACA_CANONICAL_CORPUS)?root.MACA_CANONICAL_CORPUS:[];
   const byId=id=>corpus().find(q=>q&&q.id===id)||null;
@@ -28,17 +28,65 @@
   }
   const promoted={...base,version:String(base.version||'')+'-v15language3',resolve,rank,__macaV15LanguageFix:true};
   root.MACA_SEARCH_V2=promoted;
+
   const complementRules=[
     {when:/\b(remontee|remontees|reflux|rgo|acide|acides)\b/,primary:'reflux-adulte',ids:['douleur-abdominale']},
     {when:/\b(mal|maux|douleur)\b.*\b(tete)\b/,primary:'maux-tete',ids:['migraine-que-faire']},
     {when:/\b(bourdonnement|bourdonnements|acouphene|acouphenes)\b.*\b(vertige|vertiges|tourne)\b|\b(vertige|vertiges|tourne)\b.*\b(bourdonnement|bourdonnements|acouphene|acouphenes)\b/,primary:'acouphenes-adulte',ids:['vertiges-causes']}
   ];
-  function select(query,options={}){
-    const engine=root.MACA_SEARCH_V2;const primary=engine.rank(query,options)[0]||null;if(!primary)return {primary:null,complements:[],reason:'no-primary'};
-    const q=norm(query);const rule=complementRules.find(r=>r.primary===primary.q.id&&r.when.test(q));
-    if(!rule)return {primary,complements:[],reason:'primary-only'};
-    const complements=rule.ids.map(byId).filter(Boolean).filter(x=>x.id!==primary.q.id).slice(0,2);
-    return {primary,complements,reason:complements.length?'v15-explicit-complements':'primary-only'};
+
+  const NAV_STOPWORDS=new Set(['a','ai','au','aux','avec','ce','ces','dans','de','des','du','elle','en','est','et','fait','faire','faut','il','je','j','la','le','les','ma','mais','me','mes','mon','ne','nous','on','ou','par','pas','pour','que','quel','quelle','qui','sa','se','ses','son','sur','un','une','vous','votre','depuis','quand','comment','pourquoi','peut','peux','dois','doit','jai','cest','estce','avoir','chez']);
+  function navTokens(value){return norm(value).split(' ').filter(w=>w.length>1&&!NAV_STOPWORDS.has(w));}
+  function tokenEq(a,b){if(a===b)return true;const strip=x=>x.length>=5?x.replace(/(es|s)$/,''):x;return strip(a)===strip(b);}
+  function queryCore(query){return norm(query).replace(/^(j ai|jai|je|mon|ma|mes|un|une|le|la|les)\s+/,'').trim();}
+  const populationGroups=[
+    ['baby',/\b(bebe|nourrisson)\b/],
+    ['child',/\b(enfant|fils|fille)\b/],
+    ['adolescent',/\b(ado|adolescent|adolescente|jeune|jeunes)\b/],
+    ['female',/\b(femme|femmes|enceinte|grossesse)\b/],
+    ['male',/\b(homme|hommes)\b/],
+    ['senior',/\b(senior|seniors|personne agee|personnes agees|apres 60 ans|apres 65 ans)\b/]
+  ];
+  function populationCompatible(query,card){
+    const q=norm(query);
+    const candidate=norm(`${card&&card.title||card&&card.question||''} ${card&&card.id||''}`);
+    for(const [,rx] of populationGroups){if(rx.test(candidate)&&!rx.test(q))return false;}
+    return true;
   }
-  root.MACA_SEARCH_V15_LAB={...promoted,version:promoted.version+'-selector1',select};
+  function navigationAlternatives(query,primary){
+    if(!primary||!primary.q)return [];
+    const qTokens=navTokens(query);if(qTokens.length<2)return [];
+    const core=queryCore(query);
+    const rows=[];
+    for(const card of corpus()){
+      if(!card||!card.id||card.id===primary.q.id)continue;
+      const title=String(card.title||card.question||'');if(!title||!populationCompatible(query,card))continue;
+      const titleTokens=navTokens(title);if(!titleTokens.length)continue;
+      const hits=qTokens.filter(qt=>titleTokens.some(tt=>tokenEq(qt,tt))).length;
+      const coverage=hits/qTokens.length;
+      const phrase=core.length>=8&&norm(title).includes(core);
+      if(!(phrase||(hits>=2&&coverage===1)))continue;
+      const keywordTokens=navTokens(card.keywords||'');
+      const keywordHits=qTokens.filter(qt=>keywordTokens.some(kt=>tokenEq(qt,kt))).length;
+      const score=(phrase?1000:0)+(hits*100)+(keywordHits*10)-Math.max(0,titleTokens.length-hits);
+      rows.push({q:card,score,matchType:phrase?'title-phrase':'title-token-coverage'});
+    }
+    return rows.sort((a,b)=>b.score-a.score||String(a.q.title||'').localeCompare(String(b.q.title||''),'fr')).slice(0,2);
+  }
+
+  function select(query,options={}){
+    const engine=root.MACA_SEARCH_V2;
+    const ranked=engine.rank(query,options);
+    const primary=ranked[0]||null;
+    if(!primary)return {primary:null,complements:[],alternatives:[],reason:'no-primary'};
+    const q=norm(query);
+    const rule=complementRules.find(r=>r.primary===primary.q.id&&r.when.test(q));
+    if(rule){
+      const complements=rule.ids.map(byId).filter(Boolean).filter(x=>x.id!==primary.q.id).slice(0,2);
+      if(complements.length)return {primary,complements,alternatives:[],reason:'v15-explicit-complements'};
+    }
+    const alternatives=navigationAlternatives(query,primary);
+    return {primary,complements:[],alternatives,reason:alternatives.length?'v16-multi-fiche-navigation':'primary-only'};
+  }
+  root.MACA_SEARCH_V15_LAB={...promoted,version:promoted.version+'-selector2',select,__macaMultiFiche:true};
 })(typeof window!=='undefined'?window:globalThis);
