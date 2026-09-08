@@ -11,10 +11,16 @@
   function direct(id,intentKey,query,reason){if(!byId(id))return null;return {status:'match',reason,matches:[{intentKey,id,score:1180,confidence:'high',matchedAlias:norm(query),matchType:'v15-targeted-language'}],context:[]};}
   function safetyAbstain(query){const q=norm(query);return /\b(quel|quelle|quels|quelles)\b.*\bantibiotique\b/.test(q)&&!/(gorge|angine|trod)/.test(q);}
   function cystitisLanguage(q){const urinary=/\b(pipi|urin|urine|uriner|urinaire|urinaires)\b/.test(q);const burning=/\b(brule|brulure|brulures)\b/.test(q);const frequent=/\b(envie|envies|souvent|frequent|frequente|frequentes|frequemment)\b/.test(q);return /\bcystite\b/.test(q)||/\binfection urinaire\b/.test(q)||(urinary&&(burning||frequent));}
+  function palpitationsLanguage(q){
+    if(!/\bcoeur\b/.test(q))return false;
+    if(/\b(bat|battre|battement|battements|emballe|emballer|accelere|palpite|palpitation|palpitations)\b/.test(q))return true;
+    return /\bcoeur\b.*\b(vite|rapide|fort|irregulier|irreguliere|bizarre|bizarrement|etrange|saute)\b/.test(q);
+  }
   function targeted(query){
     const q=norm(query);
     if(/\b(estomac|ventre)\b/.test(q)&&/\b(brule|brulure|brulures)\b/.test(q)&&/\b(remonte|remontee|remontees|acide)\b/.test(q))return direct('reflux-adulte','reflux',query,'v15-reflux-language');
     if(cystitisLanguage(q))return direct('cystite-femme','cystitis',query,'v15-cystitis-language');
+    if(palpitationsLanguage(q))return direct('palpitations-adulte','palpitations',query,'v16-palpitations-language');
     if(/\bimmunotherapie\b/.test(q)&&/\bcancer\b/.test(q))return direct('cancer-immunotherapie-comment-ca-marche','cancer-immunotherapy',query,'v15-cancer-immunotherapy-language');
     if(/\b(varice|varices)\b/.test(q)&&/\b(contention|compression|bas)\b/.test(q))return direct('varices-contention-disparaitre','varices-compression',query,'v15-varices-compression-language');
     return null;
@@ -26,7 +32,7 @@
     const map=new Map(corpus().map((q,index)=>[q.id,{q,index}]));
     return targetedResult.matches.map(m=>{const f=map.get(m.id);return f?{q:f.q,index:f.index,score:m.score,coverage:1,directCoverage:1,confidence:m.confidence,intentKey:m.intentKey,matchedAlias:m.matchedAlias}:null;}).filter(Boolean);
   }
-  const promoted={...base,version:String(base.version||'')+'-v15language3',resolve,rank,__macaV15LanguageFix:true};
+  const promoted={...base,version:String(base.version||'')+'-v15language4',resolve,rank,__macaV15LanguageFix:true};
   root.MACA_SEARCH_V2=promoted;
 
   const complementRules=[
