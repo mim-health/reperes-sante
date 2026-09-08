@@ -47,9 +47,10 @@
     ['male',/\b(homme|hommes)\b/],
     ['senior',/\b(senior|seniors|personne agee|personnes agees|apres 60 ans|apres 65 ans)\b/]
   ];
-  function populationCompatible(query,title){
-    const q=norm(query),t=norm(title);
-    for(const [,rx] of populationGroups){if(rx.test(t)&&!rx.test(q))return false;}
+  function populationCompatible(query,card){
+    const q=norm(query);
+    const candidate=norm(`${card&&card.title||card&&card.question||''} ${card&&card.id||''}`);
+    for(const [,rx] of populationGroups){if(rx.test(candidate)&&!rx.test(q))return false;}
     return true;
   }
   function navigationAlternatives(query,primary){
@@ -59,7 +60,7 @@
     const rows=[];
     for(const card of corpus()){
       if(!card||!card.id||card.id===primary.q.id)continue;
-      const title=String(card.title||card.question||'');if(!title||!populationCompatible(query,title))continue;
+      const title=String(card.title||card.question||'');if(!title||!populationCompatible(query,card))continue;
       const titleTokens=navTokens(title);if(!titleTokens.length)continue;
       const hits=qTokens.filter(qt=>titleTokens.some(tt=>tokenEq(qt,tt))).length;
       const coverage=hits/qTokens.length;
