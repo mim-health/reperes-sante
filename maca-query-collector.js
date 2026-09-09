@@ -87,6 +87,7 @@
     label.append(checkbox,span);wrap.appendChild(label);container.appendChild(wrap);
     checkbox.addEventListener('change',()=>setConsent(checkbox.checked));
     root.addEventListener('maca:query-consent-change',e=>{checkbox.checked=Boolean(e.detail&&e.detail.consent);});
+    root.addEventListener('storage',e=>{if(e.key===CONSENT_KEY)checkbox.checked=e.newValue==='yes';});
   }
 
   root.MACA_QUERY_COLLECTOR={version:VERSION,endpoint:ENDPOINT,hasConsent,setConsent,sanitizeQuery,recordQuery,recordOpen,mountConsent};
