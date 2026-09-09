@@ -1,0 +1,14 @@
+name = "maca-query-collector"
+main = "worker.js"
+compatibility_date = "2026-09-09"
+
+[vars]
+ALLOWED_ORIGINS = "https://macasante.fr,https://www.macasante.fr"
+
+[triggers]
+crons = [ "17 3 * * *" ]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "maca-query-collection"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"

@@ -1,0 +1,44 @@
+name: Query collection V1 checks
+
+on:
+  push:
+    branches: [feat/query-collection-v1]
+  pull_request:
+    branches: [feat/v0-magazine]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check browser JavaScript syntax
+        run: |
+          node --check maca-query-collector.js
+          node --check maca-query-collector-search-adapter.js
+          node --check maca-query-collector-assistant-adapter.js
+          node --check maca-query-collector-frame-loader.js
+          node --check corpus-v2-browser-entry.js
+      - name: Check Worker module syntax
+        run: node --input-type=module --check < infra/query-collector-worker/worker.js
+      - name: Check D1 schema with SQLite
+        run: |
+          python - <<'PY'
+          import sqlite3
+          from pathlib import Path
+          con = sqlite3.connect(':memory:')
+          con.executescript(Path('infra/query-collector-worker/schema.sql').read_text())
+          tables = {r[0] for r in con.execute("select name from sqlite_master where type='table'")}
+          assert {'query_events','open_events'} <= tables, tables
+          print('schema ok')
+          PY
+      - name: Guard search engine files
+        run: |
+          git fetch origin feat/v0-magazine
+          changed="$(git diff --name-only origin/feat/v0-magazine...HEAD)"
+          echo "$changed"
+          if echo "$changed" | grep -Eq '^(search-v2-engine\.js|search-v2-referential-p0\.js|search-v2-corpus-fallback\.js|search-v2-fatigue-fix\.js|search-v2-harcelement-fix\.js|search-v2-retrouvabilite-pilot-fix\.js|search-v15-lab-candidate\.js|assistant-v15-viewmodel-candidate\.js)$'; then
+            echo 'Forbidden engine/viewmodel modification detected'
+            exit 1
+          fi
