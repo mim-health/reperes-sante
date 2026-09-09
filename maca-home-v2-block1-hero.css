@@ -24,6 +24,12 @@ body.maca-magazine-v1 .site-header .brand-word{
   letter-spacing:-.015em;
   color:#183d32;
 }
+/* Le thème historique génère aussi « MACA SANTE » en pseudo-élément.
+   Sur la preview, on conserve uniquement le libellé HTML existant. */
+body.maca-magazine-v1 .site-header .brand-word::after{
+  content:none!important;
+  display:none!important;
+}
 body.maca-magazine-v1 .site-header nav{
   gap:25px;
 }
@@ -41,9 +47,9 @@ body.maca-magazine-v1 .site-header nav a:hover{
 body.maca-magazine-v1 .intro{
   position:relative;
   width:min(1180px,calc(100% - 48px))!important;
-  min-height:430px;
-  margin:26px auto 30px!important;
-  padding:70px 64px 62px!important;
+  min-height:0!important;
+  margin:22px auto 26px!important;
+  padding:46px 56px 42px!important;
   overflow:hidden;
   box-sizing:border-box;
   text-align:left!important;
@@ -56,35 +62,35 @@ body.maca-magazine-v1 .intro{
 body.maca-magazine-v1 .intro:after{
   content:'';
   position:absolute;
-  width:310px;
-  height:310px;
-  right:-72px;
-  top:-82px;
-  border:1px solid rgba(217,223,203,.30);
+  width:230px;
+  height:230px;
+  right:-48px;
+  top:-62px;
+  border:1px solid rgba(217,223,203,.28);
   border-radius:50%;
-  box-shadow:0 0 0 52px rgba(217,223,203,.055),0 0 0 104px rgba(217,223,203,.035);
+  box-shadow:0 0 0 40px rgba(217,223,203,.05),0 0 0 80px rgba(217,223,203,.028);
   pointer-events:none;
 }
 body.maca-magazine-v1 .intro .eyebrow{
   position:relative;
   z-index:1;
-  margin-bottom:24px;
+  margin-bottom:16px;
   color:#d98966!important;
-  font-size:11px;
+  font-size:10px;
   font-weight:800;
   letter-spacing:.16em;
 }
 body.maca-magazine-v1 .intro h1{
   position:relative;
   z-index:1;
-  max-width:870px!important;
+  max-width:930px!important;
   margin:0;
   color:#fffaf0!important;
   font-family:Georgia,'Times New Roman',serif!important;
-  font-size:clamp(58px,7.2vw,92px)!important;
+  font-size:clamp(50px,5.6vw,72px)!important;
   font-weight:600;
-  line-height:.93!important;
-  letter-spacing:-.052em!important;
+  line-height:.96!important;
+  letter-spacing:-.045em!important;
 }
 body.maca-magazine-v1 .intro h1 em{
   color:#d9dfcb!important;
@@ -93,11 +99,11 @@ body.maca-magazine-v1 .intro h1 em{
 body.maca-magazine-v1 .intro .lede{
   position:relative;
   z-index:1;
-  max-width:715px!important;
-  margin-top:30px!important;
+  max-width:760px!important;
+  margin-top:20px!important;
   color:#f5efe2!important;
-  font-size:17px!important;
-  line-height:1.62!important;
+  font-size:16px!important;
+  line-height:1.55!important;
 }
 
 @media(max-width:800px){
@@ -114,30 +120,31 @@ body.maca-magazine-v1 .intro .lede{
   }
   body.maca-magazine-v1 .intro{
     width:calc(100% - 28px)!important;
-    min-height:0;
-    margin:14px auto 22px!important;
-    padding:42px 25px 38px!important;
+    min-height:0!important;
+    margin:14px auto 20px!important;
+    padding:32px 22px 28px!important;
     border-radius:10px!important;
   }
   body.maca-magazine-v1 .intro:after{
-    width:190px;
-    height:190px;
-    right:-72px;
-    top:-68px;
+    width:150px;
+    height:150px;
+    right:-54px;
+    top:-50px;
+    box-shadow:0 0 0 30px rgba(217,223,203,.045),0 0 0 60px rgba(217,223,203,.025);
   }
   body.maca-magazine-v1 .intro .eyebrow{
-    margin-bottom:18px;
-    font-size:10px;
-    line-height:1.45;
+    margin-bottom:14px;
+    font-size:9px;
+    line-height:1.4;
   }
   body.maca-magazine-v1 .intro h1{
     max-width:100%!important;
-    font-size:clamp(42px,12.5vw,58px)!important;
-    line-height:.96!important;
+    font-size:clamp(38px,11.4vw,50px)!important;
+    line-height:.98!important;
   }
   body.maca-magazine-v1 .intro .lede{
-    margin-top:24px!important;
+    margin-top:18px!important;
     font-size:15px!important;
-    line-height:1.55!important;
+    line-height:1.5!important;
   }
 }
