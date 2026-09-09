@@ -16,23 +16,35 @@
     if(/\b(bat|battre|battement|battements|emballe|emballer|accelere|palpite|palpitation|palpitations)\b/.test(q))return true;
     return /\bcoeur\b.*\b(vite|rapide|fort|irregulier|irreguliere|bizarre|bizarrement|etrange|saute)\b/.test(q);
   }
+  function coughLanguage(q){return /\b(toux|tousse|tousses|tousser|toussent|toussez|toussait|toussant)\b/.test(q);}
+  function childLanguage(q){return /\b(enfant|bebe|nourrisson|fils|fille)\b/.test(q);}
   function targeted(query){
     const q=norm(query);
     if(/\b(estomac|ventre)\b/.test(q)&&/\b(brule|brulure|brulures)\b/.test(q)&&/\b(remonte|remontee|remontees|acide)\b/.test(q))return direct('reflux-adulte','reflux',query,'v15-reflux-language');
     if(cystitisLanguage(q))return direct('cystite-femme','cystitis',query,'v15-cystitis-language');
     if(palpitationsLanguage(q))return direct('palpitations-adulte','palpitations',query,'v16-palpitations-language');
+    /* P0 09/09/2026: a bare/conjugated cough term must never fall through to an unrelated corpus fallback. */
+    if(coughLanguage(q)){
+      if(/\b(sang|hemoptysie)\b/.test(q))return null;
+      if(childLanguage(q))return direct('toux-enfant','child-cough',query,'p0-cough-child-language');
+      if(/\b(seche|sec|sans crachat|irritative)\b/.test(q))return direct('toux-seche-que-faire','dry-cough',query,'p0-cough-dry-language');
+      if(/\b(dure|longtemps|persistante|persistant|chronique|prolongee|prolonge)\b/.test(q))return direct('toux-prolongee-adulte','prolonged-cough',query,'p0-cough-prolonged-language');
+      /* Generic « toux / tousse / je tousse » is intentionally not forced to a specific adult subtype. */
+      return {status:'none',reason:'p0-cough-generic-abstain',matches:[],context:[]};
+    }
     if(/\bimmunotherapie\b/.test(q)&&/\bcancer\b/.test(q))return direct('cancer-immunotherapie-comment-ca-marche','cancer-immunotherapy',query,'v15-cancer-immunotherapy-language');
     if(/\b(varice|varices)\b/.test(q)&&/\b(contention|compression|bas)\b/.test(q))return direct('varices-contention-disparaitre','varices-compression',query,'v15-varices-compression-language');
     return null;
   }
-  function resolve(query,options={}){if(safetyAbstain(query))return {status:'none',reason:'v15-safety-generic-antibiotic',matches:[],context:[]};return targeted(query)||baseResolve(query,options);}
+  function resolve(query,options={}){if(safetyAbstain(query))return {status:'none',reason:'v15-safety-generic-antibiotic',matches:[],context:[]};const t=targeted(query);return t||baseResolve(query,options);}
   function rank(query,options={}){
     if(safetyAbstain(query))return [];
     const targetedResult=targeted(query);if(!targetedResult)return baseRank(query,options);
+    if(targetedResult.status!=='match')return [];
     const map=new Map(corpus().map((q,index)=>[q.id,{q,index}]));
     return targetedResult.matches.map(m=>{const f=map.get(m.id);return f?{q:f.q,index:f.index,score:m.score,coverage:1,directCoverage:1,confidence:m.confidence,intentKey:m.intentKey,matchedAlias:m.matchedAlias}:null;}).filter(Boolean);
   }
-  const promoted={...base,version:String(base.version||'')+'-v15language4',resolve,rank,__macaV15LanguageFix:true};
+  const promoted={...base,version:String(base.version||'')+'-v15language5-coughp0',resolve,rank,__macaV15LanguageFix:true};
   root.MACA_SEARCH_V2=promoted;
 
   const complementRules=[
