@@ -14,6 +14,8 @@
     .then(()=>{exposeCanonical();return commonBeforeApp.reduce((p,src)=>p.then(()=>load(src)),Promise.resolve());})
     .then(()=>load('app.js?v=20260825-corpusv3'))
     .then(()=>load('search-v2-ui-bridge.js?v=20260909-coughmap-2'))
+    .then(()=>load('maca-query-collector.js?v=20260909-v1'))
+    .then(()=>load('maca-query-collector-search-adapter.js?v=20260909-v1'))
     .then(()=>((page==='library'?libraryAfter:homeAfter).reduce((p,src)=>p.then(()=>load(src)),Promise.resolve())))
     .then(()=>window.dispatchEvent(new CustomEvent('maca:v2-ui-ready')))
     .catch(err=>{console.error('[MACA V2 browser entry]',err);window.MACA_V2_UI_ERROR=String(err&&err.message||err);});
