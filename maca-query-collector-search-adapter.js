@@ -1,12 +1,15 @@
 /* MACA Santé — adaptateur collecte V1 pour la barre de recherche. N'altère ni MACA_SEARCH_V2 ni son rendu. */
 (function(root){
   'use strict';
+  let initialized=false;
   function init(){
+    if(initialized)return;
     const collector=root.MACA_QUERY_COLLECTOR;
     const ui=root.MACA_SEARCH_V2_UI;
     const input=ui&&ui.input;
     const grid=document.getElementById('qa-grid');
     if(!collector||!ui||!input||!grid)return;
+    initialized=true;
     collector.mountConsent(document.querySelector('.search-hub')||input.parentElement);
 
     let timer=null;
