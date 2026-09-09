@@ -4,23 +4,16 @@
   function load(src){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=src;s.async=false;s.onload=resolve;s.onerror=()=>reject(new Error('Unable to load UI script: '+src));document.body.appendChild(s);});}
   function exposeCanonical(){if(typeof window.MACA_BUILD_CANONICAL_CORPUS!=='function')throw new Error('MACA canonicalizer missing');let canonical=window.MACA_BUILD_CANONICAL_CORPUS();if(!Array.isArray(canonical)||!canonical.length)throw new Error('MACA canonical corpus empty');if(typeof window.MACA_ADD_MULTI_SECTIONS==='function')canonical=window.MACA_ADD_MULTI_SECTIONS(canonical);window.MACA_CANONICAL_CORPUS=canonical.slice();window.healthQuestions=canonical.slice();window.extraAuditedQuestions=[];window.MACA_UI_CORPUS_V2=true;}
   const page=document.body.classList.contains('library-page')?'library':'home';
-
-  /* Non-critical home actions: deliberately isolated from navigation and corpus UI. */
-  if(page==='home'){
-    load('maca-home-actions.js?v=20260906-1').catch(err=>console.error('[MACA home actions]',err));
-  }
-
-  /* P0 09/09/2026: search bar and Assistant MUST share the same query-resolution layer.
-     The V1.6 language adapter promotes MACA_SEARCH_V2 itself, so every consumer of
-     MACA_SEARCH_V2.rank/resolve receives the same targeted language rules and abstentions. */
-  const commonBeforeApp=['corpus-integrity.js?v=20260831-1','maca-category-access.js?v=20260907-split1','search-v2-referential-p0.js?v=20260901-lot5','search-v2-engine.js?v=20260831-p0','search-v2-corpus-fallback.js?v=20260901-4','search-v2-fatigue-fix.js?v=20260902-1','search-v2-harcelement-fix.js?v=20260903-1','search-v2-retrouvabilite-pilot-fix.js?v=20260906-2','search-v15-lab-candidate.js?v=20260909-shared-search-assistant-1'];
+  if(page==='home'){load('maca-home-actions.js?v=20260906-1').catch(err=>console.error('[MACA home actions]',err));}
+  /* Search bar and Assistant share the same promoted MACA_SEARCH_V2 language layer. */
+  const commonBeforeApp=['corpus-integrity.js?v=20260831-1','maca-category-access.js?v=20260907-split1','search-v2-referential-p0.js?v=20260901-lot5','search-v2-engine.js?v=20260831-p0','search-v2-corpus-fallback.js?v=20260901-4','search-v2-fatigue-fix.js?v=20260902-1','search-v2-harcelement-fix.js?v=20260903-1','search-v2-retrouvabilite-pilot-fix.js?v=20260906-2','search-v15-lab-candidate.js?v=20260909-coughmap-2'];
   const homeAfter=['alphabetical-categories-v1.js?v=20260823-2','maca-eight-categories-v1.js?v=20260907-split1','vrai-faux-ui.js','source-ui.js','maca-card-sources-ui.js?v=20260901-1','maca-daily-feature.js?v=20260903-perf1','maca-assistant-widget.js?v=20260908-v16-2','maca-daily-editorial.js?v=20260906-late1'];
   const libraryAfter=['maca-eight-categories-v1.js?v=20260907-split1','source-ui.js','maca-card-sources-ui.js?v=20260901-1','maca-section-identities.js?v=20260907-split1','maca-magazine-layout.js?v=20260829-mag4c'];
   window.MACA_CORPUS_READY
     .then(()=>load('maca-multi-sections.js?v=20260901-2'))
     .then(()=>{exposeCanonical();return commonBeforeApp.reduce((p,src)=>p.then(()=>load(src)),Promise.resolve());})
     .then(()=>load('app.js?v=20260825-corpusv3'))
-    .then(()=>load('search-v2-ui-bridge.js?v=20260909-shared-search-assistant-1'))
+    .then(()=>load('search-v2-ui-bridge.js?v=20260909-coughmap-2'))
     .then(()=>((page==='library'?libraryAfter:homeAfter).reduce((p,src)=>p.then(()=>load(src)),Promise.resolve())))
     .then(()=>window.dispatchEvent(new CustomEvent('maca:v2-ui-ready')))
     .catch(err=>{console.error('[MACA V2 browser entry]',err);window.MACA_V2_UI_ERROR=String(err&&err.message||err);});
