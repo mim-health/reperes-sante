@@ -2,7 +2,10 @@
 (function(){
  const corpus=Array.isArray(window.healthQuestions)?window.healthQuestions:[];
  const items=corpus.filter(q=>String(q.category||q.publicCategory||'').trim()==='Santé au quotidien').sort((a,b)=>String(a.id||a.title).localeCompare(String(b.id||b.title),'fr'));if(!items.length)return;
- const d=new Date(),day=Math.floor(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())/86400000),item=items[((day%items.length)+items.length)%items.length];const library=document.querySelector('.main-feed .library-section');if(!library)return;
+ const configured=(window.MACA_DAILY_EDITORIAL&&Array.isArray(window.MACA_DAILY_EDITORIAL.articles))?window.MACA_DAILY_EDITORIAL.articles.find(x=>x.category==='FICHE DU JOUR'):null;
+ const preferredId=configured&&configured.corpusId?String(configured.corpusId):'';
+ const d=new Date(),day=Math.floor(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())/86400000),fallback=items[((day%items.length)+items.length)%items.length],item=items.find(q=>String(q.id||'')===preferredId)||fallback;
+ const library=document.querySelector('.main-feed .library-section');if(!library)return;
  const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));let text=String(item.answer||'').trim();if(text.length>190)text=text.slice(0,187).replace(/\s+\S*$/,'')+'…';
  let section=document.getElementById('daily-feature-slot');
  if(section){section.className='daily-feature daily-feature-reserve';section.removeAttribute('aria-hidden');}

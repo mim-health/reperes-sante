@@ -7,7 +7,7 @@
   if(page==='home'){load('maca-home-actions.js?v=20260906-1').catch(err=>console.error('[MACA home actions]',err));}
   /* Search bar and Assistant share the same promoted MACA_SEARCH_V2 language layer. */
   const commonBeforeApp=['corpus-integrity.js?v=20260831-1','maca-category-access.js?v=20260907-split1','search-v2-referential-p0.js?v=20260901-lot5','search-v2-engine.js?v=20260831-p0','search-v2-corpus-fallback.js?v=20260901-4','search-v2-fatigue-fix.js?v=20260902-1','search-v2-harcelement-fix.js?v=20260903-1','search-v2-retrouvabilite-pilot-fix.js?v=20260906-2','search-v15-lab-candidate.js?v=20260909-coughmap-2'];
-  const homeAfter=['alphabetical-categories-v1.js?v=20260823-2','maca-eight-categories-v1.js?v=20260907-split1','vrai-faux-ui.js','source-ui.js','maca-card-sources-ui.js?v=20260901-1','maca-daily-feature.js?v=20260903-perf1','maca-assistant-widget.js?v=20260908-v16-2','maca-daily-editorial.js?v=20260906-late1'];
+  const homeAfter=['maca-daily-editorial-data.js?v=20260911-editorial1','alphabetical-categories-v1.js?v=20260823-2','maca-eight-categories-v1.js?v=20260907-split1','vrai-faux-ui.js','source-ui.js','maca-card-sources-ui.js?v=20260901-1','maca-daily-feature.js?v=20260911-editorial1','maca-assistant-widget.js?v=20260908-v16-2','maca-daily-editorial.js?v=20260911-editorial1'];
   const libraryAfter=['maca-eight-categories-v1.js?v=20260907-split1','source-ui.js','maca-card-sources-ui.js?v=20260901-1','maca-section-identities.js?v=20260907-split1','maca-magazine-layout.js?v=20260829-mag4c'];
   window.MACA_CORPUS_READY
     .then(()=>load('maca-multi-sections.js?v=20260901-2'))
