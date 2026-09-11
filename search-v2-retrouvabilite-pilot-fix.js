@@ -9,6 +9,7 @@
   const OBESITY_ID='obesite-nouveaux-traitements-securite';
   const DIABETES_SCREENING_ID='diabete-type-2-depistage-complications';
   const DIABETES_YOUTH_ID='diabete-type-2-jeunes-adolescents';
+  const BRONCHIOLITIS_ID='bronchiolite-bebe-vaccin-grossesse-anticorps';
   const ADO_MESSAGE='Nous n’avons pas trouvé de fiche précise pour cette question. Retrouvez nos questions sur la santé des adolescents.';
   const WOMEN_MESSAGE='Nous n’avons pas encore de fiche précise sur cette question. Retrouvez nos questions dans Santé des femmes & grossesse.';
 
@@ -34,6 +35,7 @@
     function isMauxVentre(query){const q=plainNorm(query);return q==='maux de ventre'||q==='j ai des maux de ventre'||q==='jai des maux de ventre'||q==='des maux de ventre';}
     function directTarget(query){
       const q=plainNorm(query);
+      if(/\b(bronchiolite|beyfortus|abrysvo|nirsevimab|enflonsia|clesrovimab)\b/.test(q) || (/\bvrs\b/.test(q)&&/\b(bebe|nourrisson|grossesse|vaccin|vaccination|anticorps|prevention|proteger)\b/.test(q))) return {id:BRONCHIOLITIS_ID,intentKey:'bronchiolitis-rsv-prevention'};
       if(/\b(obesite|wegovy|mounjaro|semaglutide|tirzepatide|glp 1|glp1)\b/.test(q) || (/\b(traitement|traitements|medicament|medicaments)\b/.test(q)&&/\b(maigrir|obesite)\b/.test(q))) return {id:OBESITY_ID,intentKey:'obesity-treatment'};
       if(/\b(diabete|diabetique|diabetiques)\b/.test(q)){
         if(/\b(ado|ados|adolescent|adolescente|adolescents|adolescentes|jeune|jeunes|enfant|enfants)\b/.test(q))return {id:DIABETES_YOUTH_ID,intentKey:'type2-diabetes-youth'};
@@ -60,7 +62,7 @@
       const card=targetById(t.id);if(!card)return {status:'none',reason:t.intentKey+'-target-missing',matches:[],context:[]};
       return {status:'match',reason,matches:[{intentKey:t.intentKey,id:t.id,score:1180,confidence:'high',matchedAlias:norm(query),matchType:'direct-topic'}],context:[]};
     }
-    win.MACA_SEARCH_V2={...base,version:String(base.version||'')+'-retrouvabilite2',resolve,rank,retrievabilityFallback:fallbackFor,__macaRetrievabilitePilotFix:true};
+    win.MACA_SEARCH_V2={...base,version:String(base.version||'')+'-retrouvabilite3',resolve,rank,retrievabilityFallback:fallbackFor,__macaRetrievabilitePilotFix:true};
     return true;
   }
 
@@ -89,7 +91,7 @@
   function watchAssistant(){const existing=document.querySelector('.maca-assistant-frame');if(existing)wireAssistantFrame(existing);if(!document.body)return;new MutationObserver(()=>{const frame=document.querySelector('.maca-assistant-frame');if(frame)wireAssistantFrame(frame);}).observe(document.body,{childList:true,subtree:true});}
 
   installEngine(root);
-  root.MACA_RETRIEVABILITY_FALLBACKS={version:'2026-09-06-pilot2',match:fallbackFor};
+  root.MACA_RETRIEVABILITY_FALLBACKS={version:'2026-09-11-pilot3',match:fallbackFor};
   window.addEventListener('maca:v2-ui-ready',()=>{bindSearchFallback();watchAssistant();});
   if(document.readyState!=='loading')watchAssistant();else document.addEventListener('DOMContentLoaded',watchAssistant,{once:true});
 })(typeof window!=='undefined'?window:globalThis);
