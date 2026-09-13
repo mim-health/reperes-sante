@@ -1,0 +1,32 @@
+/* MACA Santé — accueil couverture pistache — 13/09/2026
+ * Homepage only. Existing MACA logo, corpus, search engine and fiche UI untouched.
+ */
+:root{--home-pistachio:#cbd8ad;--home-pistachio-deep:#b9c99a;--home-ink:#263b2b;--home-paper:#fffdf8;--home-orange:#cf6238}
+body.maca-magazine-v1{background:var(--home-paper)}
+body.maca-magazine-v1 .site-header{background:rgba(255,253,248,.96);border-bottom:1px solid rgba(38,59,43,.12)}
+body.maca-magazine-v1 .site-header .brand img{width:52px;height:52px}
+body.maca-magazine-v1 .site-header .brand-word{color:var(--home-ink)}
+body.maca-magazine-v1 .intro{position:relative;overflow:hidden;width:min(1280px,calc(100% - 48px));margin:22px auto 0;padding:64px 7% 58px;border-radius:3px;background:linear-gradient(112deg,var(--home-pistachio) 0%,#d9e2c2 68%,#c3d29f 100%);color:var(--home-ink);box-shadow:0 16px 40px rgba(47,62,40,.08)}
+body.maca-magazine-v1 .intro:before,body.maca-magazine-v1 .intro:after{content:"";position:absolute;pointer-events:none;border-radius:100% 0 100% 0;background:var(--home-ink);opacity:.92;transform:rotate(-28deg)}
+body.maca-magazine-v1 .intro:before{width:115px;height:36px;right:8%;top:18%}
+body.maca-magazine-v1 .intro:after{width:145px;height:42px;right:15%;bottom:18%;transform:rotate(25deg)}
+body.maca-magazine-v1 .intro .eyebrow{color:var(--home-ink);letter-spacing:.19em;font-weight:800}
+body.maca-magazine-v1 .intro h1{max-width:780px;color:var(--home-ink);font-size:clamp(54px,7.2vw,104px);line-height:.9;letter-spacing:-.055em;margin:18px 0 26px}
+body.maca-magazine-v1 .intro h1 em{color:var(--home-ink);font-style:normal}
+body.maca-magazine-v1 .intro .lede{max-width:690px;color:#354638;font-size:18px;line-height:1.58}
+body.maca-magazine-v1 .search-hub{width:min(1120px,calc(100% - 48px));margin:24px auto 22px!important;background:var(--home-paper)}
+body.maca-magazine-v1 .trust-strip{width:min(1120px,calc(100% - 48px));margin:0 auto 42px;order:initial}
+body.maca-magazine-v1 main{display:flex;flex-direction:column}
+body.maca-magazine-v1 .intro{order:1}
+body.maca-magazine-v1 .search-hub{order:2}
+body.maca-magazine-v1 .magazine-layout{order:3}
+body.maca-magazine-v1 .rail-news{order:4}
+body.maca-magazine-v1 .method{order:5}
+body.maca-magazine-v1 .trust-strip{order:6}
+body.maca-magazine-v1 .trust-strip-inner{background:#f7f8f1}
+body.maca-magazine-v1 .trust-proof{background:transparent}
+body.maca-magazine-v1 .trust-kicker,body.maca-magazine-v1 .eyebrow{color:var(--home-orange)}
+body.maca-magazine-v1 .method{background:#f7f8f1}
+body.maca-magazine-v1 .method:before{content:"NOTRE HISTOIRE";display:block;margin:0 auto 10px;text-align:center;color:var(--home-orange);font-size:12px;font-weight:800;letter-spacing:.18em}
+body.maca-magazine-v1 .method>p:first-of-type:before{content:"MACA Santé est né d’une idée simple : rendre l’information médicale fiable plus facile à comprendre, sans la simplifier à l’excès.\A\A";white-space:pre-wrap;font-family:Georgia,'Times New Roman',serif;font-size:21px;line-height:1.45;color:var(--home-ink)}
+@media(max-width:800px){body.maca-magazine-v1 .site-header .brand img{width:44px;height:44px}body.maca-magazine-v1 .intro{width:calc(100% - 28px);margin-top:12px;padding:42px 24px 38px;border-radius:2px}body.maca-magazine-v1 .intro h1{font-size:clamp(44px,13vw,62px)!important;line-height:.92!important;max-width:88%}body.maca-magazine-v1 .intro .lede{font-size:15px;line-height:1.5;max-width:88%}body.maca-magazine-v1 .intro:before{width:70px;height:22px;right:-5%;top:18%}body.maca-magazine-v1 .intro:after{width:90px;height:26px;right:-8%;bottom:15%}body.maca-magazine-v1 .search-hub,body.maca-magazine-v1 .trust-strip{width:calc(100% - 28px)}body.maca-magazine-v1 .trust-strip{margin-bottom:28px}}
