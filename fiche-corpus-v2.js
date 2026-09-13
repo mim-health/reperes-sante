@@ -2,7 +2,7 @@
 (function(){
   'use strict';
   const root=document.querySelector('#seo-fiche');
-  const OFFICIAL_LOGO='logo-maca-v3.svg?v=20260908-logo3';
+  const OFFICIAL_LOGO='logo-maca-officiel.svg?v=20260913-logo-officiel1';
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const strip=s=>String(s||'').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();
   const paragraphs=s=>String(s||'').split(/\n\s*\n/).map(p=>p.trim()).filter(Boolean).map(p=>`<p>${esc(p)}</p>`).join('');
@@ -56,7 +56,7 @@
     const detail=q.detail?`<section class="maca-fv2-card maca-fv2-detail"><h2>Pour mieux comprendre</h2>${paragraphs(q.detail)}</section>`:'';
     const vigilance=q.watch?`<section class="maca-fv2-card maca-fv2-vigilance"><h2>${esc(q.watchTitle||'Point de vigilance')}</h2>${paragraphs(q.watch)}</section>`:'';
     const verified=q.verifiedAt?`<div class="maca-fv2-sidecard"><strong>Contenu vérifié</strong><p>Vérifié le ${esc(q.verifiedAt)}.</p></div>`:'';
-    root.innerHTML=`<article class="maca-fv2-page"><a class="maca-fv2-back" href="fiches.html">← Toutes les fiches MACA Santé</a><header class="maca-fv2-hero"><div class="maca-fv2-brandline"><img src="${OFFICIAL_LOGO}" alt=""><span>MACA Santé</span></div><div class="maca-fv2-meta"><span class="maca-fv2-category">${esc(q.category||'Question santé')}</span><span class="maca-fv2-readtime">À lire en 3 min</span></div><h1>${esc(q.title)}</h1><div class="maca-fv2-accent" aria-hidden="true"></div></header><div class="maca-fv2-grid"><div class="maca-fv2-main"><section class="maca-fv2-card maca-fv2-short"><div class="maca-fv2-kicker">Réponse courte</div>${paragraphs(q.answer||'')}</section>${detail}${vigilance}${sourcesSection(q)}${relatedSection(q,items)}<section class="maca-fv2-share"><div><strong>Partager cette fiche</strong><p>Une réponse santé vérifiée et sourcée.</p><p id="maca-fv2-share-status" class="maca-fv2-share-status" aria-live="polite"></p></div><button id="maca-fv2-share-button" type="button">Partager</button></section></div><aside class="maca-fv2-side" aria-label="Repères sur la fiche">${verified}<div class="maca-fv2-sidecard"><strong>Information générale</strong><p>MACA Santé informe et ne remplace pas un avis médical.</p></div></aside></div></article>`;
+    root.innerHTML=`<article class="maca-fv2-page"><a class="maca-fv2-back" href="fiches.html">← Toutes les fiches MACA Santé</a><header class="maca-fv2-hero"><div class="maca-fv2-brandline"><img src="${OFFICIAL_LOGO}" alt="Logo MACA Santé"><span>MACA Santé</span></div><div class="maca-fv2-meta"><span class="maca-fv2-category">${esc(q.category||'Question santé')}</span><span class="maca-fv2-readtime">À lire en 3 min</span></div><h1>${esc(q.title)}</h1><div class="maca-fv2-accent" aria-hidden="true"></div></header><div class="maca-fv2-grid"><div class="maca-fv2-main"><section class="maca-fv2-card maca-fv2-short"><div class="maca-fv2-kicker">Réponse courte</div>${paragraphs(q.answer||'')}</section>${detail}${vigilance}${sourcesSection(q)}${relatedSection(q,items)}<section class="maca-fv2-share"><div><strong>Partager cette fiche</strong><p>Une réponse santé vérifiée et sourcée.</p><p id="maca-fv2-share-status" class="maca-fv2-share-status" aria-live="polite"></p></div><button id="maca-fv2-share-button" type="button">Partager</button></section></div><aside class="maca-fv2-side" aria-label="Repères sur la fiche">${verified}<div class="maca-fv2-sidecard"><strong>Information générale</strong><p>MACA Santé informe et ne remplace pas un avis médical.</p></div></aside></div></article>`;
     attachShare(q,canonical);
   }
   function render(q,items){
@@ -68,5 +68,5 @@
   }
   const id=new URLSearchParams(location.search).get('id');if(!id){failNotFound();return;}if(!window.MACA_CORPUS_READY||typeof window.MACA_CORPUS_READY.then!=='function'){failTemporary();return;}
   window.MACA_CORPUS_READY.then(()=>{if(typeof window.MACA_BUILD_CANONICAL_CORPUS!=='function')throw new Error('canonicalizer missing');const items=window.MACA_BUILD_CANONICAL_CORPUS();const q=items.find(x=>String(x.id)===String(id));if(!q){failNotFound();return;}render(q,items);}).catch(err=>{console.error('[MACA fiche V2]',err);failTemporary();});
-  window.MACA_FICHE_V2_UI={version:'2026-09-08-global1',relatedFiches};
+  window.MACA_FICHE_V2_UI={version:'2026-09-13-logo-officiel1',relatedFiches};
 })();
