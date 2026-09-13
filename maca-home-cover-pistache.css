@@ -4,7 +4,7 @@
 :root{--home-pistachio:#cbd8ad;--home-pistachio-deep:#b9c99a;--home-ink:#263b2b;--home-paper:#fffdf8;--home-orange:#cf6238}
 body.maca-magazine-v1{background:var(--home-paper)}
 body.maca-magazine-v1 .site-header{background:rgba(255,253,248,.96);border-bottom:1px solid rgba(38,59,43,.12)}
-body.maca-magazine-v1 .site-header .brand img{width:64px;height:64px}
+body.maca-magazine-v1 .site-header .brand img,body.maca-magazine-v1 footer .brand img{content:url('logo-maca-officiel.svg');width:64px;height:64px;object-fit:contain}
 /* Homepage brand: use the actual HTML text once; disable the legacy generated label. */
 body.maca-magazine-v1 .site-header .brand>.brand-word{display:inline-flex!important;align-items:center!important;font-size:26px!important;font-weight:800!important;line-height:1!important;letter-spacing:-.03em!important;color:var(--home-ink)!important;max-width:none!important;overflow:visible!important}
 body.maca-magazine-v1 .site-header .brand>.brand-word::after{content:none!important;display:none!important}
