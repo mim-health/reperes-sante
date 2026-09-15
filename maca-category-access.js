@@ -1,7 +1,7 @@
 /* MACA Santé — canonical category access shared by library search, filters and assistant. */
 (function(root){
   'use strict';
-  const PUBLIC=['Ados','Cancer','Cœur & circulation','Digestion & urinaire','Enfants & parents','Prévention & dépistage','Santé au quotidien','Santé des femmes & grossesse','Santé mentale','Seniors'];
+  const PUBLIC=['Ados','Cancer','Cœur & circulation','Digestion & urinaire','Enfants & parents','Os & articulations','Prévention & dépistage','Santé au quotidien','Santé des femmes & grossesse','Santé mentale','Seniors'];
   const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
   const aliases=new Map();
   function add(name,...values){[name,...values].forEach(v=>aliases.set(norm(v),name));}
@@ -11,6 +11,7 @@
   add('Prévention & dépistage','prevention depistage','prévention dépistage','prevention et depistage','prévention et dépistage');
   add('Digestion & urinaire','digestion urinaire','digestion et urinaire');
   add('Enfants & parents','enfants parents','enfants et parents');
+  add('Os & articulations','os articulations','os et articulations','articulations','rhumatologie','orthopedie','orthopédie','appareil locomoteur');
   add('Santé au quotidien','sante au quotidien');
   add('Santé des femmes & grossesse','sante des femmes grossesse','sante des femmes et grossesse');
   add('Santé mentale','sante mentale');
@@ -30,7 +31,7 @@
   }
   function primaryCategoryOf(q){
     if(!q)return'Santé au quotidien';
-    return canonicalName(q.category)||canonicalName(q.primaryCategory)||canonicalName(q.publicCategory)||categoriesOf(q)[0]||'Santé au quotidien';
+    return canonicalName(q.publicCategory)||canonicalName(q.category)||canonicalName(q.primaryCategory)||categoriesOf(q)[0]||'Santé au quotidien';
   }
   function matchQuery(query){return canonicalName(query);}
   function itemsFor(category,corpus){
