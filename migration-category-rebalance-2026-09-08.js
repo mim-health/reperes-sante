@@ -1,9 +1,9 @@
-/* MACA Santé — audit / rééquilibrage des catégories publiques — 08/09/2026
+/* MACA Santé — audit / rééquilibrage des catégories publiques — 15/09/2026
  * Classement éditorial uniquement. Aucun contenu médical, ID, slug, URL, source,
  * keyword, moteur de recherche ou logique Assistant n'est modifié.
  *
  * Principe : une fiche quitte « Santé au quotidien » seulement lorsqu'une des
- * catégories publiques existantes correspond clairement mieux à l'intention.
+ * catégories publiques correspond clairement mieux à l'intention.
  */
 (function(){
 'use strict';
@@ -37,7 +37,17 @@ const TARGETS={
   'tour-de-taille-risque-cardiovasculaire':'Cœur & circulation',
 
   // Santé des femmes & grossesse
-  'running-prolapsus-femme':'Santé des femmes & grossesse'
+  'running-prolapsus-femme':'Santé des femmes & grossesse',
+
+  // Os & articulations — nouvelle catégorie publique, 8 fiches existantes
+  'arthrose-faut-il-bouger':'Os & articulations',
+  'douleur-genou-escaliers':'Os & articulations',
+  'douleur-epaule-lever-bras':'Os & articulations',
+  'douleur-talon-matin':'Os & articulations',
+  'doigts-raides-matin':'Os & articulations',
+  'tendon-achille-repos-sport':'Os & articulations',
+  'collagene-douleurs-articulaires':'Os & articulations',
+  'osteodensitometrie-quand':'Os & articulations'
 };
 let hits=0;
 const found=new Set();
@@ -46,7 +56,7 @@ pools.forEach(pool=>pool.forEach(card=>{
   card.publicCategory=TARGETS[card.id];
   found.add(card.id); hits++;
 }));
-window.MACA_CATEGORY_REBALANCE_20260908={expected:Object.keys(TARGETS).length,found:[...found],hits};
+window.MACA_CATEGORY_REBALANCE_20260915={expected:Object.keys(TARGETS).length,found:[...found],hits};
 const missing=Object.keys(TARGETS).filter(id=>!found.has(id));
 if(missing.length) console.warn('[MACA category audit] IDs non trouvés:',missing);
 })();
