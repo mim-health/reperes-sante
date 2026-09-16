@@ -8,11 +8,17 @@
   const canonicalById=new Map(canonical.map(q=>[norm(q.id),q]));
   const canonicalByTitle=new Map(canonical.map(q=>[norm(q.title||q.question),q]));
   function questionOf(card){return canonicalById.get(norm(card.dataset.qid))||canonicalByTitle.get(norm(card.querySelector('h3')?.textContent))||null;}
-  function categoryOf(card){
-    const q=questionOf(card);
-    if(access&&q)return access.primaryCategoryOf(q);
-    return q?.publicCategory||q?.category||null;
+  function categoryOfQuestion(q){
+    if(!q)return null;
+    /* P0: preserve explicit canonical Cancer taxonomy before any legacy heuristic can
+       remap oncology cards to Santé au quotidien or Médicaments. */
+    const declared=[q.publicCategory,q.category,q.primaryCategory,...(Array.isArray(q.sections)?q.sections:[])];
+    if(declared.some(v=>access?access.canonicalName(v)==='Cancer':norm(v)==='cancer'))return 'Cancer';
+    if(/^cancer(?:-|$)/.test(norm(q.id).replace(/ /g,'-'))||/\b(cancer|oncologie|cancerologie)\b/.test(norm(`${q.title||''} ${q.keywords||''}`)))return 'Cancer';
+    if(access)return access.primaryCategoryOf(q);
+    return q.publicCategory||q.category||null;
   }
+  function categoryOf(card){return categoryOfQuestion(questionOf(card));}
   function canonicalizeCards(){document.querySelectorAll('#qa-grid .qa-card').forEach(card=>{const cat=card.querySelector('.qa-category'),value=categoryOf(card);if(cat&&value)cat.textContent=value;});}
   function markup(active){return ['Toutes',...PUBLIC].map(c=>`<button class="filter-chip ${c===active?'active':''}" data-category="${c}">${c==='Toutes'?'Toutes les fiches':c}</button>`).join('');}
   function init(){
@@ -21,8 +27,13 @@
     const requested=access?access.canonicalName(requestedRaw):requestedRaw;
     let active=PUBLIC.includes(requested)?requested:'Toutes';
     const apply=()=>{box.querySelectorAll('.filter-chip').forEach(x=>x.classList.toggle('active',x.dataset.category===active));canonicalizeCards();grid.querySelectorAll('.qa-card').forEach(card=>{const cat=categoryOf(card);card.style.display=(active==='Toutes'||cat===active)?'':'none';});if(input){input.dataset.scope=active;input.placeholder=active==='Toutes'?'Rechercher une question santé…':`Rechercher dans « ${active} »…`;}};
-    box.innerHTML=markup(active);apply();
-    box.addEventListener('click',e=>{const b=e.target.closest('.filter-chip');if(!b)return;const wanted=b.dataset.category;if(!['Toutes',...PUBLIC].includes(wanted))return;e.preventDefault();e.stopImmediatePropagation();if(wanted==='Toutes'&&!document.body.classList.contains('library-page')){location.href='fiches.html';return;}active=wanted;if(input)input.value='';if(window.MACA_SEARCH_V2_UI?.showAll)window.MACA_SEARCH_V2_UI.showAll();apply();document.querySelector('#questions')?.scrollIntoView({behavior:'smooth',block:'start'});},true);
+    const restoreAll=()=>{if(window.MACA_SEARCH_V2_UI?.showAll)window.MACA_SEARCH_V2_UI.showAll();};
+    box.innerHTML=markup(active);
+    /* A deep link such as ?category=Cancer may arrive after another UI layer has
+       already reduced the grid. Rebuild from the canonical V2 templates first. */
+    if(active!=='Toutes')restoreAll();
+    apply();
+    box.addEventListener('click',e=>{const b=e.target.closest('.filter-chip');if(!b)return;const wanted=b.dataset.category;if(!['Toutes',...PUBLIC].includes(wanted))return;e.preventDefault();e.stopImmediatePropagation();if(wanted==='Toutes'&&!document.body.classList.contains('library-page')){location.href='fiches.html';return;}active=wanted;if(input)input.value='';restoreAll();apply();document.querySelector('#questions')?.scrollIntoView({behavior:'smooth',block:'start'});},true);
     new MutationObserver(apply).observe(grid,{childList:true});
     if(active!=='Toutes')requestAnimationFrame(()=>document.querySelector('#questions')?.scrollIntoView({block:'start'}));
   }
