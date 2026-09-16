@@ -8,8 +8,10 @@ on:
       - '.github/workflows/assistant-v2-corpus.yml'
       - 'scripts/build-assistant-v2-corpus.js'
       - 'scripts/test-assistant-v2-retrieval.js'
+      - 'scripts/calibrate-assistant-v2-retrieval.js'
       - 'assistant-v2/retrieval.js'
       - 'assistant-v2/retrieval.test-cases.json'
+      - 'assistant-v2/retrieval.calibration-cases.json'
       - 'corpus-manifest.js'
       - 'corpus-canonicalizer.js'
       - 'maca-category-access.js'
@@ -39,20 +41,27 @@ jobs:
       - name: Test local retrieval baseline
         run: node scripts/test-assistant-v2-retrieval.js
 
+      - name: Calibrate retrieval on mixed 2B cases
+        run: node scripts/calibrate-assistant-v2-retrieval.js
+
       - name: Show structural report
         run: cat assistant-v2/corpus.report.json
 
       - name: Show retrieval benchmark summary
         run: node -e "const r=require('./assistant-v2/retrieval.report.json'); console.log(JSON.stringify({ok:r.ok,testCount:r.testCount,passed:r.passed,failed:r.failed,passRate:r.passRate},null,2))"
 
+      - name: Show 2B calibration summary
+        run: node -e "const r=require('./assistant-v2/retrieval.calibration.report.json'); console.log(JSON.stringify({caseCount:r.caseCount,classCounts:r.classCounts,retrieval:r.retrieval,scoreSeparation:r.scoreSeparation,suggestedBaselineRule:r.suggestedBaselineRule},null,2))"
+
       - name: Publish generated V2 artifacts on prototype branch only
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assistant-v2/corpus.json assistant-v2/corpus.report.json assistant-v2/retrieval.report.json
+          git add assistant-v2/corpus.json assistant-v2/corpus.report.json assistant-v2/retrieval.report.json assistant-v2/retrieval.calibration.report.json
           if git diff --cached --quiet; then
             echo "Assistant V2 artifacts unchanged"
           else
-            git commit -m "build(assistant-v2): publier corpus et benchmark retrieval"
+            git commit -m "build(assistant-v2): publier corpus et rapports retrieval"
+            git pull --rebase origin feat/assistant-ia-v2-closed-corpus
             git push origin HEAD:feat/assistant-ia-v2-closed-corpus
           fi
