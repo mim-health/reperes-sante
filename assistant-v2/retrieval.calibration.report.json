@@ -92,6 +92,658 @@
     "tn": 14,
     "fp": 0
   },
+  "retrievalMisses": [
+    {
+      "class": "answer",
+      "query": "j'ai les oreilles qui sifflent",
+      "expectedAny": [
+        "acouphenes-adulte"
+      ],
+      "expectedAll": [],
+      "topScore": 28.2045,
+      "topCoverage": 0.5,
+      "top5": [
+        {
+          "id": "q-acouphenes-frequence",
+          "title": "Combien de personnes sont concernées par les acouphènes ?",
+          "score": 28.2045,
+          "coverage": 0.5
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "mon enfant a les yeux rouges",
+      "expectedAny": [
+        "oeil-rouge-enfant"
+      ],
+      "expectedAll": [],
+      "topScore": 55.2161,
+      "topCoverage": 0.6667,
+      "top5": [
+        {
+          "id": "enfant-voit-mal-signes-depistage",
+          "title": "Comment savoir si mon enfant voit mal ?",
+          "score": 55.2161,
+          "coverage": 0.6667
+        },
+        {
+          "id": "deshydratation-enfant",
+          "title": "Comment repérer une déshydratation chez un enfant ?",
+          "score": 54.3577,
+          "coverage": 0.6667
+        },
+        {
+          "id": "oeil-rouge-adulte",
+          "title": "J’ai l’œil rouge : est-ce forcément une conjonctivite ?",
+          "score": 50.6745,
+          "coverage": 0.6667
+        },
+        {
+          "id": "convulsion-febrile-enfant",
+          "title": "Mon enfant convulse pendant une fièvre : que faut-il faire ?",
+          "score": 41.817,
+          "coverage": 0.6667
+        },
+        {
+          "id": "diarrhee-enfant",
+          "title": "Mon enfant a des selles liquides : que faire ?",
+          "score": 40.1928,
+          "coverage": 0.6667
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "je tousse depuis trois semaines",
+      "expectedAny": [
+        "toux-prolongee-adulte"
+      ],
+      "expectedAll": [],
+      "topScore": 27.6637,
+      "topCoverage": 0.25,
+      "top5": [
+        {
+          "id": "toux-enfant",
+          "title": "Mon enfant tousse : quand faut-il s’inquiéter ?",
+          "score": 27.6637,
+          "coverage": 0.25
+        },
+        {
+          "id": "pleurs-nourrisson",
+          "title": "Mon bébé pleure beaucoup : quand est-ce normal et quand demander un avis ?",
+          "score": 23.1918,
+          "coverage": 0.25
+        },
+        {
+          "id": "fuites-urinaires-age",
+          "title": "J’ai des fuites urinaires : est-ce normal avec l’âge ?",
+          "score": 18.6043,
+          "coverage": 0.25
+        },
+        {
+          "id": "cervicalgie-faut-il-imagerie",
+          "title": "J’ai mal au cou : faut-il faire une radio ou une IRM ?",
+          "score": 17.9747,
+          "coverage": 0.5
+        },
+        {
+          "id": "secheresse-vaginale-menopause",
+          "title": "J’ai une sécheresse vaginale depuis la ménopause : faut-il simplement l’accepter ?",
+          "score": 13.6565,
+          "coverage": 0.25
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "je n'arrive pas à m'endormir",
+      "expectedAny": [
+        "insomnie-adulte"
+      ],
+      "expectedAll": [],
+      "topScore": 82.038,
+      "topCoverage": 1,
+      "top5": [
+        {
+          "id": "ado-sommeil-endormissement",
+          "title": "Je n’arrive pas à m’endormir le soir : que faire ?",
+          "score": 82.038,
+          "coverage": 1
+        },
+        {
+          "id": "sommeil-bebe",
+          "title": "Mon bébé ne s’endort jamais seul : est-ce anormal ?",
+          "score": 6.7224,
+          "coverage": 0.5
+        },
+        {
+          "id": "varices-que-signifie",
+          "title": "J’ai des varices : qu’est-ce que cela signifie ?",
+          "score": 4.6273,
+          "coverage": 0.5
+        },
+        {
+          "id": "ado-fatigue",
+          "title": "Mon ado est toujours fatigué : est-ce normal ?",
+          "score": 4.2788,
+          "coverage": 0.5
+        },
+        {
+          "id": "harcelement-scolaire-signes-que-faire",
+          "title": "Harcèlement scolaire : quels signes doivent alerter et que faire ?",
+          "score": 3.777,
+          "coverage": 0.5
+        }
+      ]
+    },
+    {
+      "class": "personalized",
+      "query": "mon fils de 7 ans tousse depuis plusieurs jours, que dois-je lui donner ?",
+      "expectedAny": [
+        "toux-enfant"
+      ],
+      "expectedAll": [],
+      "topScore": 64.2372,
+      "topCoverage": 0.5,
+      "top5": [
+        {
+          "id": "mammographie-40-ans",
+          "title": "J’ai 40 ans : dois-je déjà faire une mammographie ?",
+          "score": 64.2372,
+          "coverage": 0.5
+        },
+        {
+          "id": "50-ans-coloscopie-depistage-colorectal",
+          "title": "J’ai 50 ans : dois-je faire une coloscopie ?",
+          "score": 47.0353,
+          "coverage": 0.25
+        },
+        {
+          "id": "depistages-40-50-ans",
+          "title": "J’ai entre 40 et 50 ans : quels dépistages dois-je penser à faire ?",
+          "score": 44.6884,
+          "coverage": 0.25
+        },
+        {
+          "id": "oubli-pilule",
+          "title": "J’ai oublié ma pilule : que dois-je faire ?",
+          "score": 40.3639,
+          "coverage": 0.5
+        },
+        {
+          "id": "melatonine-enfant-pour-dormir",
+          "title": "Peut-on donner de la mélatonine à un enfant pour dormir ?",
+          "score": 33.119,
+          "coverage": 0.125
+        }
+      ]
+    }
+  ],
+  "hardestAbstain": [
+    {
+      "class": "abstain",
+      "query": "comment réparer un robinet qui fuit ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "topScore": 64.7817,
+      "topCoverage": 0.3333,
+      "top5": [
+        {
+          "id": "fuites-urinaires-age",
+          "title": "J’ai des fuites urinaires : est-ce normal avec l’âge ?",
+          "score": 64.7817,
+          "coverage": 0.3333
+        },
+        {
+          "id": "constipation-enfant",
+          "title": "Mon enfant est constipé : quels repères sont utiles ?",
+          "score": 14.9043,
+          "coverage": 0.3333
+        },
+        {
+          "id": "prolapsus-boule-pesanteur-vaginale",
+          "title": "Je sens une boule ou une pesanteur dans le vagin : est-ce une descente d’organes ?",
+          "score": 12.1613,
+          "coverage": 0.3333
+        },
+        {
+          "id": "running-prolapsus-femme",
+          "title": "Le running favorise-t-il la descente d’organes chez la femme ?",
+          "score": 4.669,
+          "coverage": 0.3333
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "quel smartphone acheter cette année ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "topScore": 40.8761,
+      "topCoverage": 0.3333,
+      "top5": [
+        {
+          "id": "vitamine-d-toute-annee",
+          "title": "Faut-il prendre de la vitamine D toute l’année ?",
+          "score": 40.8761,
+          "coverage": 0.3333
+        },
+        {
+          "id": "reseaux-sociaux-tdah-attention-ados-20260902",
+          "title": "Les réseaux sociaux peuvent-ils provoquer un TDAH chez un adolescent ?",
+          "score": 21.9969,
+          "coverage": 0.3333
+        },
+        {
+          "id": "ado-ecrans-reseaux",
+          "title": "Écrans et réseaux sociaux : combien de temps par jour ?",
+          "score": 18.2509,
+          "coverage": 0.3333
+        },
+        {
+          "id": "reseaux-sociaux-effets-jeunes",
+          "title": "Réseaux sociaux : quels effets sur les adolescents ?",
+          "score": 15.9827,
+          "coverage": 0.3333
+        },
+        {
+          "id": "depistages-40-50-ans",
+          "title": "J’ai entre 40 et 50 ans : quels dépistages dois-je penser à faire ?",
+          "score": 15.8557,
+          "coverage": 0.3333
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "qu'est-ce que le syndrome d'Ehlers-Danlos ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "topScore": 40.1738,
+      "topCoverage": 0.3333,
+      "top5": [
+        {
+          "id": "syndrome-premenstruel-que-faire",
+          "title": "Syndrome prémenstruel : que peut-on vraiment faire ?",
+          "score": 40.1738,
+          "coverage": 0.3333
+        },
+        {
+          "id": "syndrome-intestin-irritable-que-faire",
+          "title": "Syndrome de l’intestin irritable : que peut-on vraiment faire ?",
+          "score": 32.8055,
+          "coverage": 0.3333
+        },
+        {
+          "id": "jambes-sans-repos",
+          "title": "J’ai besoin de bouger les jambes le soir : est-ce le syndrome des jambes sans repos ?",
+          "score": 24.6251,
+          "coverage": 0.3333
+        },
+        {
+          "id": "secheresse-vaginale-menopause",
+          "title": "J’ai une sécheresse vaginale depuis la ménopause : faut-il simplement l’accepter ?",
+          "score": 18.841,
+          "coverage": 0.3333
+        },
+        {
+          "id": "probiotiques-efficacite",
+          "title": "Les probiotiques sont-ils vraiment efficaces ?",
+          "score": 14.2518,
+          "coverage": 0.3333
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "quels sont les signes du syndrome de Marfan ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "topScore": 40.1738,
+      "topCoverage": 0.3333,
+      "top5": [
+        {
+          "id": "syndrome-premenstruel-que-faire",
+          "title": "Syndrome prémenstruel : que peut-on vraiment faire ?",
+          "score": 40.1738,
+          "coverage": 0.3333
+        },
+        {
+          "id": "syndrome-intestin-irritable-que-faire",
+          "title": "Syndrome de l’intestin irritable : que peut-on vraiment faire ?",
+          "score": 32.8055,
+          "coverage": 0.3333
+        },
+        {
+          "id": "jambes-sans-repos",
+          "title": "J’ai besoin de bouger les jambes le soir : est-ce le syndrome des jambes sans repos ?",
+          "score": 28.4699,
+          "coverage": 0.6667
+        },
+        {
+          "id": "sopk-2026-08-27",
+          "title": "Syndrome des ovaires polykystiques (SOPK) : quels symptômes ?",
+          "score": 19.3337,
+          "coverage": 0.6667
+        },
+        {
+          "id": "secheresse-vaginale-menopause",
+          "title": "J’ai une sécheresse vaginale depuis la ménopause : faut-il simplement l’accepter ?",
+          "score": 18.841,
+          "coverage": 0.3333
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "raconte-moi une histoire avec un dragon",
+      "expectedAny": [],
+      "expectedAll": [],
+      "topScore": 37.2507,
+      "topCoverage": 0.5,
+      "top5": [
+        {
+          "id": "tour-de-taille-risque-cardiovasculaire",
+          "title": "Votre tour de taille en dit-il plus sur votre santé que votre poids ?",
+          "score": 37.2507,
+          "coverage": 0.5
+        },
+        {
+          "id": "moustique-tigre-dengue-transmission-locale-20260829",
+          "title": "Voir un moustique tigre signifie-t-il que la dengue circule autour de moi ?",
+          "score": 22.3648,
+          "coverage": 0.25
+        },
+        {
+          "id": "harcelement-scolaire-signes-que-faire",
+          "title": "Harcèlement scolaire : quels signes doivent alerter et que faire ?",
+          "score": 8.2841,
+          "coverage": 0.25
+        },
+        {
+          "id": "cancer-oncogenetique-famille",
+          "title": "Plusieurs personnes de ma famille ont eu un cancer : dois-je faire un test génétique ?",
+          "score": 5.2935,
+          "coverage": 0.25
+        },
+        {
+          "id": "memoire",
+          "title": "Mémoire : quels changements doivent faire parler à son médecin ?",
+          "score": 4.4612,
+          "coverage": 0.25
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "comment traite-t-on une sarcoïdose pulmonaire ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "topScore": 28.5244,
+      "topCoverage": 0.3333,
+      "top5": [
+        {
+          "id": "jambe-gonflee-adulte",
+          "title": "Une jambe gonflée : quand faut-il s’inquiéter ?",
+          "score": 28.5244,
+          "coverage": 0.3333
+        },
+        {
+          "id": "varices-traitements-modernes",
+          "title": "Laser, radiofréquence, sclérose : comment traite-t-on les varices aujourd’hui ?",
+          "score": 17.23,
+          "coverage": 0.3333
+        },
+        {
+          "id": "essoufflement-causes-signes-alerte",
+          "title": "Essoufflement : causes fréquentes et signes d’alerte",
+          "score": 16.6796,
+          "coverage": 0.3333
+        },
+        {
+          "id": "essoufflement-adulte",
+          "title": "Je suis essoufflé : quand faut-il consulter ?",
+          "score": 14.0538,
+          "coverage": 0.3333
+        },
+        {
+          "id": "douleur-thoracique-coeur",
+          "title": "J’ai une douleur dans la poitrine : est-ce forcément le cœur ?",
+          "score": 9.6049,
+          "coverage": 0.3333
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "quelle voiture familiale consomme le moins ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "topScore": 22.414,
+      "topCoverage": 0.25,
+      "top5": [
+        {
+          "id": "bebe-tete-moins",
+          "title": "Mon bébé tète moins bien : est-ce inquiétant ?",
+          "score": 22.414,
+          "coverage": 0.25
+        },
+        {
+          "id": "etat-general-nourrisson",
+          "title": "Mon bébé n’est pas comme d’habitude : quels changements doivent attirer l’attention ?",
+          "score": 18.277,
+          "coverage": 0.25
+        },
+        {
+          "id": "baisse-libido-causes",
+          "title": "J’ai moins de désir sexuel : est-ce forcément hormonal ?",
+          "score": 13.6784,
+          "coverage": 0.25
+        },
+        {
+          "id": "troubles-erection-age-cardio",
+          "title": "Mes érections sont moins bonnes : est-ce seulement l’âge ?",
+          "score": 12.9353,
+          "coverage": 0.25
+        },
+        {
+          "id": "intolerance-gluten-tests-coeliaque-allergie-ble",
+          "title": "Je pense être intolérant au gluten : quels tests faut-il faire ?",
+          "score": 11.4917,
+          "coverage": 0.5
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "donne-moi une recette de tarte aux pommes",
+      "expectedAny": [],
+      "expectedAll": [],
+      "topScore": 22.3648,
+      "topCoverage": 0.2,
+      "top5": [
+        {
+          "id": "moustique-tigre-dengue-transmission-locale-20260829",
+          "title": "Voir un moustique tigre signifie-t-il que la dengue circule autour de moi ?",
+          "score": 22.3648,
+          "coverage": 0.2
+        },
+        {
+          "id": "deshydratation-enfant",
+          "title": "Comment repérer une déshydratation chez un enfant ?",
+          "score": 6.0262,
+          "coverage": 0.2
+        },
+        {
+          "id": "tour-de-taille-risque-cardiovasculaire",
+          "title": "Votre tour de taille en dit-il plus sur votre santé que votre poids ?",
+          "score": 3.9215,
+          "coverage": 0.2
+        },
+        {
+          "id": "pas-jour",
+          "title": "Faut-il absolument faire 10 000 pas par jour ?",
+          "score": 3.7794,
+          "coverage": 0.2
+        },
+        {
+          "id": "fievre-enfant",
+          "title": "Mon enfant a de la fièvre : que faut-il surveiller ?",
+          "score": 3.4182,
+          "coverage": 0.2
+        }
+      ]
+    }
+  ],
+  "suggestedRuleFalseNegatives": [
+    {
+      "class": "answer",
+      "query": "j'ai les oreilles qui sifflent",
+      "expectedAny": [
+        "acouphenes-adulte"
+      ],
+      "expectedAll": [],
+      "topScore": 28.2045,
+      "topCoverage": 0.5,
+      "top5": [
+        {
+          "id": "q-acouphenes-frequence",
+          "title": "Combien de personnes sont concernées par les acouphènes ?",
+          "score": 28.2045,
+          "coverage": 0.5
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "tout tourne autour de moi",
+      "expectedAny": [
+        "vertiges-causes",
+        "vertiges-adulte"
+      ],
+      "expectedAll": [],
+      "topScore": 47.0151,
+      "topCoverage": 0.3333,
+      "top5": [
+        {
+          "id": "hypotension-orthostatique-lever",
+          "title": "J’ai la tête qui tourne quand je me lève : est-ce ma tension ?",
+          "score": 47.0151,
+          "coverage": 0.3333
+        },
+        {
+          "id": "moustique-tigre-dengue-transmission-locale-20260829",
+          "title": "Voir un moustique tigre signifie-t-il que la dengue circule autour de moi ?",
+          "score": 35.2202,
+          "coverage": 0.6667
+        },
+        {
+          "id": "vertiges-adulte",
+          "title": "J’ai des vertiges : quels signes doivent faire consulter ?",
+          "score": 22.2503,
+          "coverage": 0.3333
+        },
+        {
+          "id": "vertiges-causes",
+          "title": "Vertiges : les causes fréquentes et les signes d’alerte",
+          "score": 12.199,
+          "coverage": 0.3333
+        },
+        {
+          "id": "enfant-voit-mal-signes-depistage",
+          "title": "Comment savoir si mon enfant voit mal ?",
+          "score": 11.8706,
+          "coverage": 0.6667
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "je tousse depuis trois semaines",
+      "expectedAny": [
+        "toux-prolongee-adulte"
+      ],
+      "expectedAll": [],
+      "topScore": 27.6637,
+      "topCoverage": 0.25,
+      "top5": [
+        {
+          "id": "toux-enfant",
+          "title": "Mon enfant tousse : quand faut-il s’inquiéter ?",
+          "score": 27.6637,
+          "coverage": 0.25
+        },
+        {
+          "id": "pleurs-nourrisson",
+          "title": "Mon bébé pleure beaucoup : quand est-ce normal et quand demander un avis ?",
+          "score": 23.1918,
+          "coverage": 0.25
+        },
+        {
+          "id": "fuites-urinaires-age",
+          "title": "J’ai des fuites urinaires : est-ce normal avec l’âge ?",
+          "score": 18.6043,
+          "coverage": 0.25
+        },
+        {
+          "id": "cervicalgie-faut-il-imagerie",
+          "title": "J’ai mal au cou : faut-il faire une radio ou une IRM ?",
+          "score": 17.9747,
+          "coverage": 0.5
+        },
+        {
+          "id": "secheresse-vaginale-menopause",
+          "title": "J’ai une sécheresse vaginale depuis la ménopause : faut-il simplement l’accepter ?",
+          "score": 13.6565,
+          "coverage": 0.25
+        }
+      ]
+    },
+    {
+      "class": "personalized",
+      "query": "ma TSH est à 8, est-ce que je dois commencer un traitement ?",
+      "expectedAny": [
+        "tsh-haute-basse-thyroide"
+      ],
+      "expectedAll": [],
+      "topScore": 79.7732,
+      "topCoverage": 0.25,
+      "top5": [
+        {
+          "id": "tsh-haute-basse-thyroide",
+          "title": "Ma TSH est trop haute ou trop basse : qu’est-ce que cela signifie ?",
+          "score": 79.7732,
+          "coverage": 0.25
+        },
+        {
+          "id": "nodule-thyroide-inquietant",
+          "title": "On m’a découvert un nodule de la thyroïde : est-ce forcément inquiétant ?",
+          "score": 35.0247,
+          "coverage": 0.25
+        },
+        {
+          "id": "rupture-medicament-que-faire",
+          "title": "Mon médicament est en rupture : que dois-je faire ?",
+          "score": 32.6799,
+          "coverage": 0.5
+        },
+        {
+          "id": "oubli-pilule",
+          "title": "J’ai oublié ma pilule : que dois-je faire ?",
+          "score": 24.4225,
+          "coverage": 0.5
+        },
+        {
+          "id": "rapport-non-protege-ist",
+          "title": "J’ai eu un rapport non protégé : que dois-je faire ?",
+          "score": 22.7375,
+          "coverage": 0.5
+        }
+      ]
+    }
+  ],
+  "suggestedRuleFalsePositives": [],
   "bestThresholdCandidates": [
     {
       "score": 37.5,
