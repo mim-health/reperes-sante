@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MACA Santé — Assistant V2 Retrieval Lab</title>
+  <style>
+    :root{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#17372f;background:#f6f0e4}
+    body{margin:0;padding:32px}
+    main{max-width:980px;margin:0 auto}
+    h1{margin:0 0 8px;font-size:32px}
+    .note{background:#e9efdf;border:1px solid #c7d4b6;border-radius:14px;padding:14px 16px;margin:16px 0 24px}
+    .panel{background:#fff;border-radius:18px;padding:20px;box-shadow:0 8px 30px rgba(23,55,47,.08)}
+    form{display:flex;gap:10px;flex-wrap:wrap}
+    input{flex:1;min-width:260px;font-size:17px;padding:13px 15px;border-radius:12px;border:1px solid #b9c1bb}
+    button{border:0;border-radius:12px;padding:13px 18px;font-weight:700;background:#17372f;color:#fff;cursor:pointer}
+    .meta{margin:16px 0;color:#5a6863;font-size:14px}
+    .result{border-top:1px solid #e3e6e3;padding:16px 0}
+    .rank{font-size:13px;color:#7b857f}
+    .title{font-size:18px;font-weight:750;margin:3px 0}
+    .cat{display:inline-block;background:#f0f3eb;border-radius:999px;padding:4px 9px;font-size:12px;margin:5px 0}
+    .score{font-variant-numeric:tabular-nums;font-size:14px}
+    .terms{font-size:13px;color:#5a6863;margin-top:6px}
+    details{margin-top:7px;font-size:13px;color:#46544f}
+    .empty{padding:18px 0;color:#6e7773}
+    .examples{margin-top:18px;display:flex;gap:8px;flex-wrap:wrap}
+    .examples button{background:#eef1e8;color:#17372f;font-weight:600;padding:8px 10px}
+  </style>
+</head>
+<body>
+<main>
+  <h1>MACA Santé — Retrieval V2 Lab</h1>
+  <p>Prototype isolé. Recherche uniquement dans le corpus MACA exporté. Aucune API, aucune génération médicale, aucune modification de V1.6.</p>
+  <div class="note"><strong>But :</strong> observer quelles fiches sont retrouvées et avec quels scores avant de brancher l’IA générative.</div>
+  <section class="panel">
+    <form id="search-form">
+      <input id="query" autocomplete="off" placeholder="Ex. : j'ai du sang dans les selles" aria-label="Question de test">
+      <button type="submit">Tester</button>
+    </form>
+    <div class="examples" id="examples"></div>
+    <div id="meta" class="meta">Chargement du corpus…</div>
+    <div id="results"></div>
+  </section>
+</main>
+<script src="./retrieval.js"></script>
+<script>
+(async function(){
+  const form=document.getElementById('search-form');
+  const input=document.getElementById('query');
+  const resultsEl=document.getElementById('results');
+  const metaEl=document.getElementById('meta');
+  const examplesEl=document.getElementById('examples');
+  const examples=["brûlures d'estomac","j'ai du sang dans les selles","j'ai souvent mal à la tête","mon cœur bat bizarrement","j'ai des acouphènes et des vertiges","brûlures en urinant"];
+  examples.forEach(text=>{const b=document.createElement('button');b.type='button';b.textContent=text;b.addEventListener('click',()=>{input.value=text;run(text);});examplesEl.appendChild(b);});
+
+  let corpus,index;
+  try{
+    const response=await fetch('./corpus.json',{cache:'no-store'});
+    if(!response.ok)throw new Error('HTTP '+response.status);
+    corpus=await response.json();
+    index=MACA_ASSISTANT_V2_RETRIEVAL.buildIndex(corpus);
+    metaEl.textContent=`Corpus chargé : ${index.size} fiches · moteur maca-v2-local-hybrid-bm25-v1`;
+  }catch(error){
+    metaEl.textContent='Impossible de charger le corpus : '+error.message;
+    return;
+  }
+
+  function esc(value){return String(value||'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));}
+  function run(query){
+    const out=MACA_ASSISTANT_V2_RETRIEVAL.search(index,query,{topK:5});
+    metaEl.textContent=`${out.results.length} résultat(s) parmi ${out.meta.indexSize} fiches · ${esc(out.meta.engine)}`;
+    if(!out.results.length){resultsEl.innerHTML='<div class="empty">Aucune fiche candidate.</div>';return;}
+    resultsEl.innerHTML=out.results.map((r,i)=>`<article class="result">
+      <div class="rank">#${i+1}</div>
+      <div class="title">${esc(r.title)}</div>
+      <div class="cat">${esc(r.primaryCategory)}</div>
+      <div class="score"><strong>Score ${r.score.toFixed(2)}</strong> · couverture ${(r.coverage*100).toFixed(0)} % · ID <code>${esc(r.id)}</code></div>
+      <div class="terms">Termes concordants : ${esc(r.matchedTerms.join(', ')||'—')}</div>
+      <details><summary>Détail du score</summary><pre>${esc(JSON.stringify(r.scoreParts,null,2))}</pre></details>
+    </article>`).join('');
+  }
+
+  form.addEventListener('submit',event=>{event.preventDefault();run(input.value);});
+})();
+</script>
+</body>
+</html>
