@@ -114,23 +114,6 @@ jobs:
             echo "Synthesis report absent."
           fi
 
-      - name: Publish generated V2 artifacts on prototype branch only
-        if: always()
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assistant-v2/corpus.json assistant-v2/corpus.report.json assistant-v2/retrieval.report.json assistant-v2/retrieval.calibration.report.json
-          if [ -f assistant-v2/embeddings.index.json ]; then git add assistant-v2/embeddings.index.json; fi
-          if [ -f assistant-v2/semantic.report.json ]; then git add assistant-v2/semantic.report.json; fi
-          if [ -f assistant-v2/synthesis.report.json ]; then git add assistant-v2/synthesis.report.json; fi
-          if git diff --cached --quiet; then
-            echo "Assistant V2 artifacts unchanged"
-          else
-            git commit -m "build(assistant-v2): publier rapports retrieval et synthèse"
-            git pull --rebase origin feat/assistant-ia-v2-closed-corpus
-            git push origin HEAD:feat/assistant-ia-v2-closed-corpus
-          fi
-
       - name: Enforce synthesis benchmark result
         if: always()
         run: |
@@ -139,3 +122,25 @@ jobs:
             exit 1
           fi
           node -e "const r=require('./assistant-v2/synthesis.report.json'); if(!r.ok){console.error('Étape 4 non verte:',r.failed,'échec(s),',r.contractValid,'contrats valides sur',r.caseCount); process.exit(1)}; console.log('Étape 4 verte:',r.passed+'/'+r.caseCount)"
+
+      - name: Publish generated V2 artifacts on prototype branch only
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin feat/assistant-ia-v2-closed-corpus --depth=1
+          REMOTE_HEAD="$(git rev-parse origin/feat/assistant-ia-v2-closed-corpus)"
+          if [ "$REMOTE_HEAD" != "$GITHUB_SHA" ]; then
+            echo "La branche a avancé depuis le démarrage du workflow ($GITHUB_SHA -> $REMOTE_HEAD). Publication ignorée pour éviter d'écraser des résultats plus récents."
+            exit 0
+          fi
+          git add assistant-v2/corpus.json assistant-v2/corpus.report.json assistant-v2/retrieval.report.json assistant-v2/retrieval.calibration.report.json
+          if [ -f assistant-v2/embeddings.index.json ]; then git add assistant-v2/embeddings.index.json; fi
+          if [ -f assistant-v2/semantic.report.json ]; then git add assistant-v2/semantic.report.json; fi
+          if [ -f assistant-v2/synthesis.report.json ]; then git add assistant-v2/synthesis.report.json; fi
+          if git diff --cached --quiet; then
+            echo "Assistant V2 artifacts unchanged"
+          else
+            git commit -m "build(assistant-v2): publier rapports retrieval et synthèse"
+            git push origin HEAD:feat/assistant-ia-v2-closed-corpus
+          fi
