@@ -1,0 +1,4154 @@
+{
+  "ok": true,
+  "phase": "3-semantic-retrieval",
+  "corpusFingerprint": "9e20504a0eb7ea8cf435a49a27737dca74f5a44031435c6eec163c7d57726d8d",
+  "corpusCardCount": 272,
+  "embedding": {
+    "model": "text-embedding-3-small",
+    "dimensions": 512,
+    "queryTokens": 685
+  },
+  "caseCount": 52,
+  "baselineLexical": {
+    "relevantCaseCount": 38,
+    "hitCount": 33,
+    "missCount": 5,
+    "hitRate": 0.8684
+  },
+  "pureSemantic": {
+    "relevantCaseCount": 38,
+    "hits": 38,
+    "misses": 0,
+    "hitRate": 1,
+    "byClass": {
+      "answer": {
+        "count": 24,
+        "hits": 24,
+        "hitRate": 1
+      },
+      "multi": {
+        "count": 6,
+        "hits": 6,
+        "hitRate": 1
+      },
+      "personalized": {
+        "count": 8,
+        "hits": 8,
+        "hitRate": 1
+      }
+    }
+  },
+  "hybrid": {
+    "relevantCaseCount": 38,
+    "hits": 37,
+    "misses": 1,
+    "hitRate": 0.9737,
+    "byClass": {
+      "answer": {
+        "count": 24,
+        "hits": 23,
+        "hitRate": 0.9583
+      },
+      "multi": {
+        "count": 6,
+        "hits": 6,
+        "hitRate": 1
+      },
+      "personalized": {
+        "count": 8,
+        "hits": 8,
+        "hitRate": 1
+      }
+    }
+  },
+  "semanticThresholdCalibration": {
+    "relevantTopSimilarity": {
+      "min": 0.3087,
+      "mean": 0.6151,
+      "max": 0.8056
+    },
+    "abstainTopSimilarity": {
+      "min": 0.1096,
+      "mean": 0.3142,
+      "max": 0.4673
+    },
+    "suggestedStrict": {
+      "threshold": 0.49,
+      "sensitivity": 0.8947,
+      "specificity": 1,
+      "balancedAccuracy": 0.9474,
+      "tp": 34,
+      "fn": 4,
+      "tn": 14,
+      "fp": 0
+    },
+    "best": [
+      {
+        "threshold": 0.43,
+        "sensitivity": 0.9737,
+        "specificity": 0.9286,
+        "balancedAccuracy": 0.9511,
+        "tp": 37,
+        "fn": 1,
+        "tn": 13,
+        "fp": 1
+      },
+      {
+        "threshold": 0.425,
+        "sensitivity": 0.9737,
+        "specificity": 0.9286,
+        "balancedAccuracy": 0.9511,
+        "tp": 37,
+        "fn": 1,
+        "tn": 13,
+        "fp": 1
+      },
+      {
+        "threshold": 0.42,
+        "sensitivity": 0.9737,
+        "specificity": 0.9286,
+        "balancedAccuracy": 0.9511,
+        "tp": 37,
+        "fn": 1,
+        "tn": 13,
+        "fp": 1
+      },
+      {
+        "threshold": 0.415,
+        "sensitivity": 0.9737,
+        "specificity": 0.9286,
+        "balancedAccuracy": 0.9511,
+        "tp": 37,
+        "fn": 1,
+        "tn": 13,
+        "fp": 1
+      },
+      {
+        "threshold": 0.41,
+        "sensitivity": 0.9737,
+        "specificity": 0.9286,
+        "balancedAccuracy": 0.9511,
+        "tp": 37,
+        "fn": 1,
+        "tn": 13,
+        "fp": 1
+      },
+      {
+        "threshold": 0.405,
+        "sensitivity": 0.9737,
+        "specificity": 0.9286,
+        "balancedAccuracy": 0.9511,
+        "tp": 37,
+        "fn": 1,
+        "tn": 13,
+        "fp": 1
+      },
+      {
+        "threshold": 0.4,
+        "sensitivity": 0.9737,
+        "specificity": 0.9286,
+        "balancedAccuracy": 0.9511,
+        "tp": 37,
+        "fn": 1,
+        "tn": 13,
+        "fp": 1
+      },
+      {
+        "threshold": 0.395,
+        "sensitivity": 0.9737,
+        "specificity": 0.9286,
+        "balancedAccuracy": 0.9511,
+        "tp": 37,
+        "fn": 1,
+        "tn": 13,
+        "fp": 1
+      },
+      {
+        "threshold": 0.49,
+        "sensitivity": 0.8947,
+        "specificity": 1,
+        "balancedAccuracy": 0.9474,
+        "tp": 34,
+        "fn": 4,
+        "tn": 14,
+        "fp": 0
+      },
+      {
+        "threshold": 0.485,
+        "sensitivity": 0.8947,
+        "specificity": 1,
+        "balancedAccuracy": 0.9474,
+        "tp": 34,
+        "fn": 4,
+        "tn": 14,
+        "fp": 0
+      },
+      {
+        "threshold": 0.48,
+        "sensitivity": 0.8947,
+        "specificity": 1,
+        "balancedAccuracy": 0.9474,
+        "tp": 34,
+        "fn": 4,
+        "tn": 14,
+        "fp": 0
+      },
+      {
+        "threshold": 0.475,
+        "sensitivity": 0.8947,
+        "specificity": 1,
+        "balancedAccuracy": 0.9474,
+        "tp": 34,
+        "fn": 4,
+        "tn": 14,
+        "fp": 0
+      }
+    ]
+  },
+  "semanticMisses": [],
+  "hybridMisses": [
+    {
+      "class": "answer",
+      "query": "mon enfant a les yeux rouges",
+      "expectedAny": [
+        "oeil-rouge-enfant"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": false,
+      "topSimilarity": 0.669306,
+      "semanticTop5": [
+        {
+          "id": "oeil-rouge-enfant",
+          "title": "Mon enfant a l’œil rouge ou qui coule : que regarder ?",
+          "similarity": 0.669306
+        },
+        {
+          "id": "oeil-rouge-adulte",
+          "title": "J’ai l’œil rouge : est-ce forcément une conjonctivite ?",
+          "similarity": 0.587412
+        },
+        {
+          "id": "saignement-nez-enfant",
+          "title": "Mon enfant saigne du nez : que faire ?",
+          "similarity": 0.555507
+        },
+        {
+          "id": "rash-enfant",
+          "title": "Des boutons apparaissent sur le ventre de mon enfant : que regarder ?",
+          "similarity": 0.529925
+        },
+        {
+          "id": "enfant-voit-mal-signes-depistage",
+          "title": "Comment savoir si mon enfant voit mal ?",
+          "similarity": 0.524403
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "oeil-rouge-adulte",
+          "title": "J’ai l’œil rouge : est-ce forcément une conjonctivite ?",
+          "rrfScore": 0.03200205
+        },
+        {
+          "id": "enfant-voit-mal-signes-depistage",
+          "title": "Comment savoir si mon enfant voit mal ?",
+          "rrfScore": 0.03177806
+        },
+        {
+          "id": "rash-enfant",
+          "title": "Des boutons apparaissent sur le ventre de mon enfant : que regarder ?",
+          "rrfScore": 0.03077652
+        },
+        {
+          "id": "diarrhee-enfant",
+          "title": "Mon enfant a des selles liquides : que faire ?",
+          "rrfScore": 0.03053613
+        },
+        {
+          "id": "convulsion-febrile-enfant",
+          "title": "Mon enfant convulse pendant une fièvre : que faut-il faire ?",
+          "rrfScore": 0.03011775
+        }
+      ]
+    }
+  ],
+  "hardestAbstain": [
+    {
+      "class": "abstain",
+      "query": "comment traite-t-on une sarcoïdose pulmonaire ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "semanticOk": null,
+      "hybridOk": null,
+      "topSimilarity": 0.467313,
+      "semanticTop5": [
+        {
+          "id": "psoriasis-traitements-efficaces",
+          "title": "J’ai du psoriasis : quels traitements sont efficaces ?",
+          "similarity": 0.467313
+        },
+        {
+          "id": "varices-traitements-modernes",
+          "title": "Laser, radiofréquence, sclérose : comment traite-t-on les varices aujourd’hui ?",
+          "similarity": 0.396903
+        },
+        {
+          "id": "poux-enfant",
+          "title": "Mon enfant a des poux : quel traitement est recommandé ?",
+          "similarity": 0.382234
+        },
+        {
+          "id": "syndrome-intestin-irritable-que-faire",
+          "title": "Syndrome de l’intestin irritable : que peut-on vraiment faire ?",
+          "similarity": 0.379966
+        },
+        {
+          "id": "eczema-que-faire",
+          "title": "J’ai de l’eczéma : que faire ?",
+          "similarity": 0.375029
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "varices-traitements-modernes",
+          "title": "Laser, radiofréquence, sclérose : comment traite-t-on les varices aujourd’hui ?",
+          "rrfScore": 0.03225806
+        },
+        {
+          "id": "jambe-gonflee-adulte",
+          "title": "Une jambe gonflée : quand faut-il s’inquiéter ?",
+          "rrfScore": 0.01639344
+        },
+        {
+          "id": "psoriasis-traitements-efficaces",
+          "title": "J’ai du psoriasis : quels traitements sont efficaces ?",
+          "rrfScore": 0.01639344
+        },
+        {
+          "id": "essoufflement-causes-signes-alerte",
+          "title": "Essoufflement : causes fréquentes et signes d’alerte",
+          "rrfScore": 0.01587302
+        },
+        {
+          "id": "poux-enfant",
+          "title": "Mon enfant a des poux : quel traitement est recommandé ?",
+          "rrfScore": 0.01587302
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "quels sont les signes du syndrome de Marfan ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "semanticOk": null,
+      "hybridOk": null,
+      "topSimilarity": 0.394113,
+      "semanticTop5": [
+        {
+          "id": "avc-signes-risque-apres-50",
+          "title": "AVC : quels signes doivent alerter et comment réduire le risque après 50 ans ?",
+          "similarity": 0.394113
+        },
+        {
+          "id": "jambes-lourdes-varices",
+          "title": "Jambes lourdes et varices : que peut-on faire ?",
+          "similarity": 0.375091
+        },
+        {
+          "id": "varices-que-signifie",
+          "title": "J’ai des varices : qu’est-ce que cela signifie ?",
+          "similarity": 0.372554
+        },
+        {
+          "id": "essoufflement-causes-signes-alerte",
+          "title": "Essoufflement : causes fréquentes et signes d’alerte",
+          "similarity": 0.356406
+        },
+        {
+          "id": "dmla-depistage-apres-50-ans",
+          "title": "Après 50 ans, faut-il faire dépister la DMLA ?",
+          "similarity": 0.356134
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "avc-signes-risque-apres-50",
+          "title": "AVC : quels signes doivent alerter et comment réduire le risque après 50 ans ?",
+          "rrfScore": 0.03109932
+        },
+        {
+          "id": "sciatique-faut-il-irm",
+          "title": "Ma douleur du dos descend dans la jambe : faut-il faire une IRM ?",
+          "rrfScore": 0.0298574
+        },
+        {
+          "id": "fourmillements-mains-pieds-causes",
+          "title": "J’ai des fourmillements dans les mains ou les pieds : quelles peuvent être les causes ?",
+          "rrfScore": 0.02941813
+        },
+        {
+          "id": "essoufflement-causes-signes-alerte",
+          "title": "Essoufflement : causes fréquentes et signes d’alerte",
+          "rrfScore": 0.02861201
+        },
+        {
+          "id": "syndrome-premenstruel-que-faire",
+          "title": "Syndrome prémenstruel : que peut-on vraiment faire ?",
+          "rrfScore": 0.01639344
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "comment réparer un robinet qui fuit ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "semanticOk": null,
+      "hybridOk": null,
+      "topSimilarity": 0.375771,
+      "semanticTop5": [
+        {
+          "id": "saignement-nez-adulte",
+          "title": "Je saigne du nez : que dois-je faire ?",
+          "similarity": 0.375771
+        },
+        {
+          "id": "fuites-urinaires-age",
+          "title": "J’ai des fuites urinaires : est-ce normal avec l’âge ?",
+          "similarity": 0.37257
+        },
+        {
+          "id": "saignement-nez-enfant",
+          "title": "Mon enfant saigne du nez : que faire ?",
+          "similarity": 0.358752
+        },
+        {
+          "id": "rhume-nez-bouche-enfant",
+          "title": "Que faire quand un enfant a le nez bouché ou un rhume ?",
+          "similarity": 0.35329
+        },
+        {
+          "id": "gencives-saignent-brossage",
+          "title": "Mes gencives saignent quand je me brosse les dents : est-ce normal ?",
+          "similarity": 0.347809
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "fuites-urinaires-age",
+          "title": "J’ai des fuites urinaires : est-ce normal avec l’âge ?",
+          "rrfScore": 0.03252247
+        },
+        {
+          "id": "saignement-nez-adulte",
+          "title": "Je saigne du nez : que dois-je faire ?",
+          "rrfScore": 0.01639344
+        },
+        {
+          "id": "constipation-enfant",
+          "title": "Mon enfant est constipé : quels repères sont utiles ?",
+          "rrfScore": 0.01612903
+        },
+        {
+          "id": "prolapsus-boule-pesanteur-vaginale",
+          "title": "Je sens une boule ou une pesanteur dans le vagin : est-ce une descente d’organes ?",
+          "rrfScore": 0.01587302
+        },
+        {
+          "id": "saignement-nez-enfant",
+          "title": "Mon enfant saigne du nez : que faire ?",
+          "rrfScore": 0.01587302
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "qu'est-ce que la maladie de Wilson ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "semanticOk": null,
+      "hybridOk": null,
+      "topSimilarity": 0.373577,
+      "semanticTop5": [
+        {
+          "id": "zona-adulte",
+          "title": "J’ai une éruption douloureuse d’un seul côté : peut-il s’agir d’un zona ?",
+          "similarity": 0.373577
+        },
+        {
+          "id": "rougeole-maladie-benigne-vaccination-20260827",
+          "title": "La rougeole est-elle vraiment une maladie bénigne ?",
+          "similarity": 0.368603
+        },
+        {
+          "id": "fourmillements-mains-pieds-causes",
+          "title": "J’ai des fourmillements dans les mains ou les pieds : quelles peuvent être les causes ?",
+          "similarity": 0.358551
+        },
+        {
+          "id": "syndrome-intestin-irritable-que-faire",
+          "title": "Syndrome de l’intestin irritable : que peut-on vraiment faire ?",
+          "similarity": 0.358322
+        },
+        {
+          "id": "confusion-aigue-personne-agee",
+          "title": "Une personne âgée devient soudainement confuse : est-ce Alzheimer ?",
+          "similarity": 0.350718
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "rougeole-maladie-benigne-vaccination-20260827",
+          "title": "La rougeole est-elle vraiment une maladie bénigne ?",
+          "rrfScore": 0.03175403
+        },
+        {
+          "id": "varices-que-signifie",
+          "title": "J’ai des varices : qu’est-ce que cela signifie ?",
+          "rrfScore": 0.02964427
+        },
+        {
+          "id": "confusion-aigue-personne-agee",
+          "title": "Une personne âgée devient soudainement confuse : est-ce Alzheimer ?",
+          "rrfScore": 0.02854251
+        },
+        {
+          "id": "dmla-depistage-apres-50-ans",
+          "title": "Après 50 ans, faut-il faire dépister la DMLA ?",
+          "rrfScore": 0.02638889
+        },
+        {
+          "id": "varices-contention-disparaitre",
+          "title": "Les bas de compression font-ils disparaître les varices ?",
+          "rrfScore": 0.01639344
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "quelle voiture familiale consomme le moins ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "semanticOk": null,
+      "hybridOk": null,
+      "topSimilarity": 0.341476,
+      "semanticTop5": [
+        {
+          "id": "regime-mediterraneen-perte-poids-20260831",
+          "title": "Le régime méditerranéen fait-il davantage maigrir ?",
+          "similarity": 0.341476
+        },
+        {
+          "id": "boissons-sucrees",
+          "title": "Boissons sucrées chez l’enfant : pourquoi les limiter ?",
+          "similarity": 0.332934
+        },
+        {
+          "id": "bebe-tete-moins",
+          "title": "Mon bébé tète moins bien : est-ce inquiétant ?",
+          "similarity": 0.321794
+        },
+        {
+          "id": "cholesterol-reduire-sans-medicament",
+          "title": "Comment réduire mon cholestérol sans médicament ?",
+          "similarity": 0.315711
+        },
+        {
+          "id": "desogestrel-meningiome-risque",
+          "title": "Je prends une pilule au désogestrel : dois-je m’inquiéter du risque de méningiome ?",
+          "similarity": 0.307303
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "bebe-tete-moins",
+          "title": "Mon bébé tète moins bien : est-ce inquiétant ?",
+          "rrfScore": 0.03226646
+        },
+        {
+          "id": "etat-general-nourrisson",
+          "title": "Mon bébé n’est pas comme d’habitude : quels changements doivent attirer l’attention ?",
+          "rrfScore": 0.02894955
+        },
+        {
+          "id": "baisse-libido-causes",
+          "title": "J’ai moins de désir sexuel : est-ce forcément hormonal ?",
+          "rrfScore": 0.02886003
+        },
+        {
+          "id": "projet-grossesse-quand-consulter",
+          "title": "Nous essayons d’avoir un enfant mais ça ne marche pas. Quand faut-il consulter ?",
+          "rrfScore": 0.025
+        },
+        {
+          "id": "regime-mediterraneen-perte-poids-20260831",
+          "title": "Le régime méditerranéen fait-il davantage maigrir ?",
+          "rrfScore": 0.01639344
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "comment apprendre le japonais rapidement ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "semanticOk": null,
+      "hybridOk": null,
+      "topSimilarity": 0.330877,
+      "semanticTop5": [
+        {
+          "id": "enfant-parle-peu-quand-sinquieter",
+          "title": "Mon enfant parle peu : quand faut-il s’inquiéter ?",
+          "similarity": 0.330877
+        },
+        {
+          "id": "diversification-alimentaire-bebe",
+          "title": "Diversification alimentaire : quand commencer ?",
+          "similarity": 0.299505
+        },
+        {
+          "id": "projet-grossesse-quand-consulter",
+          "title": "Nous essayons d’avoir un enfant mais ça ne marche pas. Quand faut-il consulter ?",
+          "similarity": 0.293971
+        },
+        {
+          "id": "baisse-audition-brutale",
+          "title": "J’entends brutalement moins bien d’une oreille : est-ce urgent ?",
+          "similarity": 0.282654
+        },
+        {
+          "id": "prevenir-declin-cognitif-vieillissant",
+          "title": "Peut-on prévenir le déclin cognitif en vieillissant ?",
+          "similarity": 0.282402
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "baisse-audition-brutale",
+          "title": "J’entends brutalement moins bien d’une oreille : est-ce urgent ?",
+          "rrfScore": 0.03100962
+        },
+        {
+          "id": "prevenir-declin-cognitif-vieillissant",
+          "title": "Peut-on prévenir le déclin cognitif en vieillissant ?",
+          "rrfScore": 0.03100962
+        },
+        {
+          "id": "ingestion-produit-toxique-enfant",
+          "title": "Mon enfant a avalé un médicament ou un produit ménager : que faire ?",
+          "rrfScore": 0.02813853
+        },
+        {
+          "id": "audition-apres-60-ans",
+          "title": "Après 60 ans, faut-il faire tester son audition ?",
+          "rrfScore": 0.02774589
+        },
+        {
+          "id": "intoxication-produit-menager-enfant",
+          "title": "Mon enfant a avalé un produit ménager : que faire ?",
+          "rrfScore": 0.0276929
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "comment déclarer mes impôts en ligne ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "semanticOk": null,
+      "hybridOk": null,
+      "topSimilarity": 0.324051,
+      "semanticTop5": [
+        {
+          "id": "diabete-type-2-depistage-complications",
+          "title": "Diabète de type 2 : pourquoi le dépister avant d’avoir des symptômes ?",
+          "similarity": 0.324051
+        },
+        {
+          "id": "aides-domicile-personne-agee-2026-08-27",
+          "title": "Quand demander des aides pour une personne âgée à domicile ?",
+          "similarity": 0.311159
+        },
+        {
+          "id": "harcelement-scolaire-signes-que-faire",
+          "title": "Harcèlement scolaire : quels signes doivent alerter et que faire ?",
+          "similarity": 0.308329
+        },
+        {
+          "id": "rapport-non-protege-ist",
+          "title": "J’ai eu un rapport non protégé : que dois-je faire ?",
+          "similarity": 0.30604
+        },
+        {
+          "id": "50-ans-coloscopie-depistage-colorectal",
+          "title": "J’ai 50 ans : dois-je faire une coloscopie ?",
+          "similarity": 0.304579
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "harcelement-scolaire-signes-que-faire",
+          "title": "Harcèlement scolaire : quels signes doivent alerter et que faire ?",
+          "rrfScore": 0.03226646
+        },
+        {
+          "id": "diabete-type-2-depistage-complications",
+          "title": "Diabète de type 2 : pourquoi le dépister avant d’avoir des symptômes ?",
+          "rrfScore": 0.01639344
+        },
+        {
+          "id": "aides-domicile-personne-agee-2026-08-27",
+          "title": "Quand demander des aides pour une personne âgée à domicile ?",
+          "rrfScore": 0.01612903
+        },
+        {
+          "id": "rapport-non-protege-ist",
+          "title": "J’ai eu un rapport non protégé : que dois-je faire ?",
+          "rrfScore": 0.015625
+        },
+        {
+          "id": "50-ans-coloscopie-depistage-colorectal",
+          "title": "J’ai 50 ans : dois-je faire une coloscopie ?",
+          "rrfScore": 0.01538462
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "qu'est-ce que le syndrome d'Ehlers-Danlos ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "semanticOk": null,
+      "hybridOk": null,
+      "topSimilarity": 0.317435,
+      "semanticTop5": [
+        {
+          "id": "varices-que-signifie",
+          "title": "J’ai des varices : qu’est-ce que cela signifie ?",
+          "similarity": 0.317435
+        },
+        {
+          "id": "jambes-lourdes-varices",
+          "title": "Jambes lourdes et varices : que peut-on faire ?",
+          "similarity": 0.303937
+        },
+        {
+          "id": "eczema-que-faire",
+          "title": "J’ai de l’eczéma : que faire ?",
+          "similarity": 0.3013
+        },
+        {
+          "id": "fourmillements-mains-pieds-causes",
+          "title": "J’ai des fourmillements dans les mains ou les pieds : quelles peuvent être les causes ?",
+          "similarity": 0.301052
+        },
+        {
+          "id": "jambes-sans-repos",
+          "title": "J’ai besoin de bouger les jambes le soir : est-ce le syndrome des jambes sans repos ?",
+          "similarity": 0.298868
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "jambes-sans-repos",
+          "title": "J’ai besoin de bouger les jambes le soir : est-ce le syndrome des jambes sans repos ?",
+          "rrfScore": 0.03125763
+        },
+        {
+          "id": "syndrome-intestin-irritable-que-faire",
+          "title": "Syndrome de l’intestin irritable : que peut-on vraiment faire ?",
+          "rrfScore": 0.03062179
+        },
+        {
+          "id": "fourmillements-mains-pieds-causes",
+          "title": "J’ai des fourmillements dans les mains ou les pieds : quelles peuvent être les causes ?",
+          "rrfScore": 0.03011775
+        },
+        {
+          "id": "sciatique-faut-il-irm",
+          "title": "Ma douleur du dos descend dans la jambe : faut-il faire une IRM ?",
+          "rrfScore": 0.0276929
+        },
+        {
+          "id": "syndrome-premenstruel-que-faire",
+          "title": "Syndrome prémenstruel : que peut-on vraiment faire ?",
+          "rrfScore": 0.01639344
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Les seuils sont exploratoires et ne sont pas branchés à la production.",
+    "Le benchmark compare exactement le même jeu 2B que le baseline lexical.",
+    "Le retrieval sémantique ne génère aucun contenu médical : il classe uniquement les fiches MACA."
+  ],
+  "rows": [
+    {
+      "class": "answer",
+      "query": "ça me brûle derrière le sternum après les repas",
+      "expectedAny": [
+        "rgo-adulte",
+        "reflux-adulte"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.557187,
+      "semanticTop5": [
+        {
+          "id": "rgo-adulte",
+          "title": "J’ai des brûlures d’estomac ou des remontées acides : que faire ?",
+          "similarity": 0.557187
+        },
+        {
+          "id": "reflux-adulte",
+          "title": "Reflux et brûlures d’estomac : quels conseils simples ?",
+          "similarity": 0.510327
+        },
+        {
+          "id": "douleur-thoracique-coeur",
+          "title": "J’ai une douleur dans la poitrine : est-ce forcément le cœur ?",
+          "similarity": 0.468998
+        },
+        {
+          "id": "essoufflement-adulte",
+          "title": "Je suis essoufflé : quand faut-il consulter ?",
+          "similarity": 0.417087
+        },
+        {
+          "id": "douleur-epaule-lever-bras",
+          "title": "J’ai mal à l’épaule quand je lève le bras : pourquoi ?",
+          "similarity": 0.416489
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "reflux-adulte",
+          "title": "Reflux et brûlures d’estomac : quels conseils simples ?",
+          "rrfScore": 0.03252247
+        },
+        {
+          "id": "rgo-adulte",
+          "title": "J’ai des brûlures d’estomac ou des remontées acides : que faire ?",
+          "rrfScore": 0.03226646
+        },
+        {
+          "id": "orthorexie-manger-trop-sain",
+          "title": "Manger trop « sain » peut-il devenir mauvais pour la santé ?",
+          "rrfScore": 0.02668564
+        },
+        {
+          "id": "ado-saute-repas-perte-poids-tca",
+          "title": "Mon adolescent saute des repas ou perd du poids : quand faut-il s’inquiéter ?",
+          "rrfScore": 0.01612903
+        },
+        {
+          "id": "douleur-thoracique-coeur",
+          "title": "J’ai une douleur dans la poitrine : est-ce forcément le cœur ?",
+          "rrfScore": 0.01587302
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "quand je vais aux toilettes il y a du rouge dans mes selles",
+      "expectedAny": [
+        "sang-dans-les-selles"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.692027,
+      "semanticTop5": [
+        {
+          "id": "sang-dans-les-selles",
+          "title": "J’ai du sang dans mes selles : que faire ?",
+          "similarity": 0.692027
+        },
+        {
+          "id": "sang-dans-urines-hematurie",
+          "title": "J’ai du sang dans les urines : est-ce forcément grave ?",
+          "similarity": 0.581007
+        },
+        {
+          "id": "hemorroides-que-faire",
+          "title": "Je pense avoir des hémorroïdes : que puis-je faire ?",
+          "similarity": 0.571703
+        },
+        {
+          "id": "constipation-adulte",
+          "title": "Je suis constipé : que peut-on faire ?",
+          "similarity": 0.50927
+        },
+        {
+          "id": "diarrhee-adulte",
+          "title": "J’ai la diarrhée : que faire et quand consulter ?",
+          "similarity": 0.499528
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "sang-dans-les-selles",
+          "title": "J’ai du sang dans mes selles : que faire ?",
+          "rrfScore": 0.03252247
+        },
+        {
+          "id": "constipation-adulte",
+          "title": "Je suis constipé : que peut-on faire ?",
+          "rrfScore": 0.03055037
+        },
+        {
+          "id": "diarrhee-adulte",
+          "title": "J’ai la diarrhée : que faire et quand consulter ?",
+          "rrfScore": 0.03053613
+        },
+        {
+          "id": "sang-dans-urines-hematurie",
+          "title": "J’ai du sang dans les urines : est-ce forcément grave ?",
+          "rrfScore": 0.03021354
+        },
+        {
+          "id": "diarrhee-enfant",
+          "title": "Mon enfant a des selles liquides : que faire ?",
+          "rrfScore": 0.03011775
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "j'ai mal à la poitrine",
+      "expectedAny": [
+        "douleur-thoracique-coeur"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.568696,
+      "semanticTop5": [
+        {
+          "id": "douleur-thoracique-coeur",
+          "title": "J’ai une douleur dans la poitrine : est-ce forcément le cœur ?",
+          "similarity": 0.568696
+        },
+        {
+          "id": "douleur-sein-cancer",
+          "title": "J’ai mal au sein : est-ce un signe de cancer ?",
+          "similarity": 0.501457
+        },
+        {
+          "id": "douleur-epaule-lever-bras",
+          "title": "J’ai mal à l’épaule quand je lève le bras : pourquoi ?",
+          "similarity": 0.458546
+        },
+        {
+          "id": "boule-dans-le-sein",
+          "title": "J’ai senti une boule dans mon sein : est-ce forcément un cancer ?",
+          "similarity": 0.4333
+        },
+        {
+          "id": "lombalgie-adulte",
+          "title": "J’ai mal au bas du dos : faut-il rester au repos ?",
+          "similarity": 0.38767
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "douleur-thoracique-coeur",
+          "title": "J’ai une douleur dans la poitrine : est-ce forcément le cœur ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "douleur-sein-cancer",
+          "title": "J’ai mal au sein : est-ce un signe de cancer ?",
+          "rrfScore": 0.03083491
+        },
+        {
+          "id": "lombalgie-adulte",
+          "title": "J’ai mal au bas du dos : faut-il rester au repos ?",
+          "rrfScore": 0.03053613
+        },
+        {
+          "id": "douleur-epaule-lever-bras",
+          "title": "J’ai mal à l’épaule quand je lève le bras : pourquoi ?",
+          "rrfScore": 0.02886003
+        },
+        {
+          "id": "douleur-talon-matin",
+          "title": "J’ai mal au talon surtout le matin : qu’est-ce que ça peut être ?",
+          "rrfScore": 0.028624
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "mon cœur saute parfois",
+      "expectedAny": [
+        "palpitations-adulte",
+        "palpitations",
+        "palpitations-quand-consulter"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.433358,
+      "semanticTop5": [
+        {
+          "id": "palpitations-adulte",
+          "title": "Je sens mon cœur battre fort ou irrégulièrement : que sont les palpitations ?",
+          "similarity": 0.433358
+        },
+        {
+          "id": "palpitations",
+          "title": "J’ai des palpitations : que faut-il savoir ?",
+          "similarity": 0.419619
+        },
+        {
+          "id": "palpitations-quand-consulter",
+          "title": "Palpitations : quand faut-il consulter ?",
+          "similarity": 0.411778
+        },
+        {
+          "id": "hypotension-orthostatique-lever",
+          "title": "J’ai la tête qui tourne quand je me lève : est-ce ma tension ?",
+          "similarity": 0.360592
+        },
+        {
+          "id": "vertiges-causes",
+          "title": "Vertiges : les causes fréquentes et les signes d’alerte",
+          "similarity": 0.339664
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "palpitations-adulte",
+          "title": "Je sens mon cœur battre fort ou irrégulièrement : que sont les palpitations ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "palpitations-quand-consulter",
+          "title": "Palpitations : quand faut-il consulter ?",
+          "rrfScore": 0.03079839
+        },
+        {
+          "id": "douleur-thoracique-coeur",
+          "title": "J’ai une douleur dans la poitrine : est-ce forcément le cœur ?",
+          "rrfScore": 0.0305789
+        },
+        {
+          "id": "mouches-volantes-quand-consulter",
+          "title": "Je vois des mouches volantes devant les yeux : est-ce normal ?",
+          "rrfScore": 0.02765065
+        },
+        {
+          "id": "essoufflement-adulte",
+          "title": "Je suis essoufflé : quand faut-il consulter ?",
+          "rrfScore": 0.02668564
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "je me réveille trois fois la nuit pour faire pipi",
+      "expectedAny": [
+        "nycturie-prostate"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.605689,
+      "semanticTop5": [
+        {
+          "id": "nycturie-prostate",
+          "title": "Je me lève plusieurs fois la nuit pour uriner : est-ce la prostate ?",
+          "similarity": 0.605689
+        },
+        {
+          "id": "fuites-urinaires-age",
+          "title": "J’ai des fuites urinaires : est-ce normal avec l’âge ?",
+          "similarity": 0.439744
+        },
+        {
+          "id": "ado-sommeil-endormissement",
+          "title": "Je n’arrive pas à m’endormir le soir : que faire ?",
+          "similarity": 0.428959
+        },
+        {
+          "id": "sommeil-apres-60-ans",
+          "title": "Sommeil après 60 ans : ce qui change vraiment",
+          "similarity": 0.405953
+        },
+        {
+          "id": "insomnie-adulte",
+          "title": "Je dors mal : que peut-on vraiment faire contre l’insomnie ?",
+          "similarity": 0.405127
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "nycturie-prostate",
+          "title": "Je me lève plusieurs fois la nuit pour uriner : est-ce la prostate ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "sommeil-bebe",
+          "title": "Mon bébé ne s’endort jamais seul : est-ce anormal ?",
+          "rrfScore": 0.03128055
+        },
+        {
+          "id": "insomnie-adulte",
+          "title": "Je dors mal : que peut-on vraiment faire contre l’insomnie ?",
+          "rrfScore": 0.03076923
+        },
+        {
+          "id": "jambes-sans-repos",
+          "title": "J’ai besoin de bouger les jambes le soir : est-ce le syndrome des jambes sans repos ?",
+          "rrfScore": 0.02941813
+        },
+        {
+          "id": "double-prise-medicament",
+          "title": "J’ai pris deux fois mon médicament par erreur : que faire ?",
+          "rrfScore": 0.0289916
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "j'ai les oreilles qui sifflent",
+      "expectedAny": [
+        "acouphenes-adulte"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.461762,
+      "semanticTop5": [
+        {
+          "id": "acouphenes-adulte",
+          "title": "J’ai des acouphènes : que faut-il savoir ?",
+          "similarity": 0.461762
+        },
+        {
+          "id": "baisse-audition-brutale",
+          "title": "J’entends brutalement moins bien d’une oreille : est-ce urgent ?",
+          "similarity": 0.450065
+        },
+        {
+          "id": "q-acouphenes-frequence",
+          "title": "Combien de personnes sont concernées par les acouphènes ?",
+          "similarity": 0.432997
+        },
+        {
+          "id": "audition-apres-60-ans",
+          "title": "Après 60 ans, faut-il faire tester son audition ?",
+          "similarity": 0.405517
+        },
+        {
+          "id": "douleur-oreille-enfant",
+          "title": "Mon enfant a mal à l’oreille : est-ce forcément une otite ?",
+          "similarity": 0.38411
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "q-acouphenes-frequence",
+          "title": "Combien de personnes sont concernées par les acouphènes ?",
+          "rrfScore": 0.03226646
+        },
+        {
+          "id": "acouphenes-adulte",
+          "title": "J’ai des acouphènes : que faut-il savoir ?",
+          "rrfScore": 0.01639344
+        },
+        {
+          "id": "baisse-audition-brutale",
+          "title": "J’entends brutalement moins bien d’une oreille : est-ce urgent ?",
+          "rrfScore": 0.01612903
+        },
+        {
+          "id": "audition-apres-60-ans",
+          "title": "Après 60 ans, faut-il faire tester son audition ?",
+          "rrfScore": 0.015625
+        },
+        {
+          "id": "douleur-oreille-enfant",
+          "title": "Mon enfant a mal à l’oreille : est-ce forcément une otite ?",
+          "rrfScore": 0.01538462
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "tout tourne autour de moi",
+      "expectedAny": [
+        "vertiges-causes",
+        "vertiges-adulte"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.308674,
+      "semanticTop5": [
+        {
+          "id": "vertiges-adulte",
+          "title": "J’ai des vertiges : quels signes doivent faire consulter ?",
+          "similarity": 0.308674
+        },
+        {
+          "id": "vertiges-causes",
+          "title": "Vertiges : les causes fréquentes et les signes d’alerte",
+          "similarity": 0.3075
+        },
+        {
+          "id": "mouches-volantes-quand-consulter",
+          "title": "Je vois des mouches volantes devant les yeux : est-ce normal ?",
+          "similarity": 0.298819
+        },
+        {
+          "id": "moustique-tigre-dengue-transmission-locale-20260829",
+          "title": "Voir un moustique tigre signifie-t-il que la dengue circule autour de moi ?",
+          "similarity": 0.290931
+        },
+        {
+          "id": "hypotension-orthostatique-lever",
+          "title": "J’ai la tête qui tourne quand je me lève : est-ce ma tension ?",
+          "similarity": 0.26378
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "vertiges-adulte",
+          "title": "J’ai des vertiges : quels signes doivent faire consulter ?",
+          "rrfScore": 0.03226646
+        },
+        {
+          "id": "hypotension-orthostatique-lever",
+          "title": "J’ai la tête qui tourne quand je me lève : est-ce ma tension ?",
+          "rrfScore": 0.03177806
+        },
+        {
+          "id": "moustique-tigre-dengue-transmission-locale-20260829",
+          "title": "Voir un moustique tigre signifie-t-il que la dengue circule autour de moi ?",
+          "rrfScore": 0.03175403
+        },
+        {
+          "id": "vertiges-causes",
+          "title": "Vertiges : les causes fréquentes et les signes d’alerte",
+          "rrfScore": 0.03175403
+        },
+        {
+          "id": "maca-tique-conduite",
+          "title": "Morsure de tique : que faut-il faire tout de suite ?",
+          "rrfScore": 0.02921109
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "douleur en bas du dos depuis hier",
+      "expectedAny": [
+        "lombalgie-adulte"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.543955,
+      "semanticTop5": [
+        {
+          "id": "lombalgie-adulte",
+          "title": "J’ai mal au bas du dos : faut-il rester au repos ?",
+          "similarity": 0.543955
+        },
+        {
+          "id": "mal-dos-travail-prevenir-installation",
+          "title": "Mal au dos au travail : que faire pour éviter que ça s’installe ?",
+          "similarity": 0.523527
+        },
+        {
+          "id": "sciatique-faut-il-irm",
+          "title": "Ma douleur du dos descend dans la jambe : faut-il faire une IRM ?",
+          "similarity": 0.452198
+        },
+        {
+          "id": "douleur-talon-matin",
+          "title": "J’ai mal au talon surtout le matin : qu’est-ce que ça peut être ?",
+          "similarity": 0.435321
+        },
+        {
+          "id": "jambes-sans-repos",
+          "title": "J’ai besoin de bouger les jambes le soir : est-ce le syndrome des jambes sans repos ?",
+          "similarity": 0.429111
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "lombalgie-adulte",
+          "title": "J’ai mal au bas du dos : faut-il rester au repos ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "mal-dos-travail-prevenir-installation",
+          "title": "Mal au dos au travail : que faire pour éviter que ça s’installe ?",
+          "rrfScore": 0.03175403
+        },
+        {
+          "id": "sciatique-faut-il-irm",
+          "title": "Ma douleur du dos descend dans la jambe : faut-il faire une IRM ?",
+          "rrfScore": 0.03174603
+        },
+        {
+          "id": "travail-ecran-douleurs-fatigue-visuelle-sedentarite",
+          "title": "Travail sur écran : comment limiter douleurs, fatigue visuelle et sédentarité ?",
+          "rrfScore": 0.02946912
+        },
+        {
+          "id": "douleur-rapports-dyspareunie",
+          "title": "J’ai mal pendant les rapports sexuels : est-ce normal ?",
+          "rrfScore": 0.02943723
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "mon épaule me fait mal quand je lève le bras",
+      "expectedAny": [
+        "douleur-epaule-lever-bras"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.729324,
+      "semanticTop5": [
+        {
+          "id": "douleur-epaule-lever-bras",
+          "title": "J’ai mal à l’épaule quand je lève le bras : pourquoi ?",
+          "similarity": 0.729324
+        },
+        {
+          "id": "cervicalgie-faut-il-imagerie",
+          "title": "J’ai mal au cou : faut-il faire une radio ou une IRM ?",
+          "similarity": 0.511372
+        },
+        {
+          "id": "douleur-thoracique-coeur",
+          "title": "J’ai une douleur dans la poitrine : est-ce forcément le cœur ?",
+          "similarity": 0.451249
+        },
+        {
+          "id": "arthrose-faut-il-bouger",
+          "title": "J’ai de l’arthrose : vaut-il mieux moins bouger ?",
+          "similarity": 0.446652
+        },
+        {
+          "id": "douleur-sein-cancer",
+          "title": "J’ai mal au sein : est-ce un signe de cancer ?",
+          "similarity": 0.443481
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "douleur-epaule-lever-bras",
+          "title": "J’ai mal à l’épaule quand je lève le bras : pourquoi ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "cervicalgie-faut-il-imagerie",
+          "title": "J’ai mal au cou : faut-il faire une radio ou une IRM ?",
+          "rrfScore": 0.03225806
+        },
+        {
+          "id": "douleur-thoracique-coeur",
+          "title": "J’ai une douleur dans la poitrine : est-ce forcément le cœur ?",
+          "rrfScore": 0.03102453
+        },
+        {
+          "id": "douleur-genou-escaliers",
+          "title": "J’ai mal au genou quand je monte les escaliers : pourquoi ?",
+          "rrfScore": 0.02885015
+        },
+        {
+          "id": "douleur-sein-cancer",
+          "title": "J’ai mal au sein : est-ce un signe de cancer ?",
+          "rrfScore": 0.02854251
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "j'ai mal au talon surtout le matin au réveil",
+      "expectedAny": [
+        "douleur-talon-matin"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.696147,
+      "semanticTop5": [
+        {
+          "id": "douleur-talon-matin",
+          "title": "J’ai mal au talon surtout le matin : qu’est-ce que ça peut être ?",
+          "similarity": 0.696147
+        },
+        {
+          "id": "tendon-achille-repos-sport",
+          "title": "J’ai mal au tendon d’Achille : faut-il arrêter complètement le sport ?",
+          "similarity": 0.534011
+        },
+        {
+          "id": "doigts-raides-matin",
+          "title": "J’ai les doigts raides le matin : est-ce de l’arthrose ?",
+          "similarity": 0.451787
+        },
+        {
+          "id": "douleur-genou-escaliers",
+          "title": "J’ai mal au genou quand je monte les escaliers : pourquoi ?",
+          "similarity": 0.44938
+        },
+        {
+          "id": "crampes-musculaires-causes",
+          "title": "Crampes musculaires : causes et solutions",
+          "similarity": 0.445822
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "douleur-talon-matin",
+          "title": "J’ai mal au talon surtout le matin : qu’est-ce que ça peut être ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "tendon-achille-repos-sport",
+          "title": "J’ai mal au tendon d’Achille : faut-il arrêter complètement le sport ?",
+          "rrfScore": 0.03225806
+        },
+        {
+          "id": "doigts-raides-matin",
+          "title": "J’ai les doigts raides le matin : est-ce de l’arthrose ?",
+          "rrfScore": 0.03174603
+        },
+        {
+          "id": "lombalgie-adulte",
+          "title": "J’ai mal au bas du dos : faut-il rester au repos ?",
+          "rrfScore": 0.02857726
+        },
+        {
+          "id": "insomnie-adulte",
+          "title": "Je dors mal : que peut-on vraiment faire contre l’insomnie ?",
+          "rrfScore": 0.02820513
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "mes doigts sont raides le matin",
+      "expectedAny": [
+        "doigts-raides-matin"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.697637,
+      "semanticTop5": [
+        {
+          "id": "doigts-raides-matin",
+          "title": "J’ai les doigts raides le matin : est-ce de l’arthrose ?",
+          "similarity": 0.697637
+        },
+        {
+          "id": "douleur-talon-matin",
+          "title": "J’ai mal au talon surtout le matin : qu’est-ce que ça peut être ?",
+          "similarity": 0.478539
+        },
+        {
+          "id": "fourmillements-mains-pieds-causes",
+          "title": "J’ai des fourmillements dans les mains ou les pieds : quelles peuvent être les causes ?",
+          "similarity": 0.423797
+        },
+        {
+          "id": "arthrose-faut-il-bouger",
+          "title": "J’ai de l’arthrose : vaut-il mieux moins bouger ?",
+          "similarity": 0.414046
+        },
+        {
+          "id": "crampes-musculaires-causes",
+          "title": "Crampes musculaires : causes et solutions",
+          "similarity": 0.41057
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "doigts-raides-matin",
+          "title": "J’ai les doigts raides le matin : est-ce de l’arthrose ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "douleur-talon-matin",
+          "title": "J’ai mal au talon surtout le matin : qu’est-ce que ça peut être ?",
+          "rrfScore": 0.03225806
+        },
+        {
+          "id": "cortisol-quoi-role",
+          "title": "Le cortisol, c’est quoi et à quoi ça sert ?",
+          "rrfScore": 0.01587302
+        },
+        {
+          "id": "fourmillements-mains-pieds-causes",
+          "title": "J’ai des fourmillements dans les mains ou les pieds : quelles peuvent être les causes ?",
+          "rrfScore": 0.01587302
+        },
+        {
+          "id": "arthrose-faut-il-bouger",
+          "title": "J’ai de l’arthrose : vaut-il mieux moins bouger ?",
+          "rrfScore": 0.015625
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "je perds mes cheveux par plaques",
+      "expectedAny": [
+        "alopecie-causes-pelade-traitement"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.589367,
+      "semanticTop5": [
+        {
+          "id": "alopecie-causes-pelade-traitement",
+          "title": "Je perds mes cheveux : quelles sont les causes et est-ce une pelade ?",
+          "similarity": 0.589367
+        },
+        {
+          "id": "prurit-generalise-causes",
+          "title": "Je me gratte partout sans avoir forcément de boutons : quelles peuvent être les causes ?",
+          "similarity": 0.46222
+        },
+        {
+          "id": "psoriasis-traitements-efficaces",
+          "title": "J’ai du psoriasis : quels traitements sont efficaces ?",
+          "similarity": 0.458692
+        },
+        {
+          "id": "poux-enfant",
+          "title": "Mon enfant a des poux : quel traitement est recommandé ?",
+          "similarity": 0.434678
+        },
+        {
+          "id": "poux-enfant-traitement",
+          "title": "Mon enfant a des poux : quel traitement fonctionne vraiment ?",
+          "similarity": 0.413462
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "alopecie-causes-pelade-traitement",
+          "title": "Je perds mes cheveux : quelles sont les causes et est-ce une pelade ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "psoriasis-traitements-efficaces",
+          "title": "J’ai du psoriasis : quels traitements sont efficaces ?",
+          "rrfScore": 0.03200205
+        },
+        {
+          "id": "perte-poids-involontaire",
+          "title": "Je perds du poids sans le vouloir : faut-il s’en inquiéter ?",
+          "rrfScore": 0.03102453
+        },
+        {
+          "id": "poux-enfant-traitement",
+          "title": "Mon enfant a des poux : quel traitement fonctionne vraiment ?",
+          "rrfScore": 0.03076923
+        },
+        {
+          "id": "poux-enfant",
+          "title": "Mon enfant a des poux : quel traitement est recommandé ?",
+          "rrfScore": 0.03033088
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "j'ai souvent les yeux secs",
+      "expectedAny": [
+        "yeux-secs-larmes-artificielles"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.62848,
+      "semanticTop5": [
+        {
+          "id": "yeux-secs-larmes-artificielles",
+          "title": "J’ai souvent les yeux secs : les larmes artificielles sont-elles utiles ?",
+          "similarity": 0.62848
+        },
+        {
+          "id": "bouche-seche-xerostomie",
+          "title": "J’ai souvent la bouche sèche : pourquoi ?",
+          "similarity": 0.573144
+        },
+        {
+          "id": "mouches-volantes-quand-consulter",
+          "title": "Je vois des mouches volantes devant les yeux : est-ce normal ?",
+          "similarity": 0.516368
+        },
+        {
+          "id": "oeil-rouge-adulte",
+          "title": "J’ai l’œil rouge : est-ce forcément une conjonctivite ?",
+          "similarity": 0.482243
+        },
+        {
+          "id": "oeil-rouge-enfant",
+          "title": "Mon enfant a l’œil rouge ou qui coule : que regarder ?",
+          "similarity": 0.459658
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "yeux-secs-larmes-artificielles",
+          "title": "J’ai souvent les yeux secs : les larmes artificielles sont-elles utiles ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "mouches-volantes-quand-consulter",
+          "title": "Je vois des mouches volantes devant les yeux : est-ce normal ?",
+          "rrfScore": 0.03200205
+        },
+        {
+          "id": "oeil-rouge-adulte",
+          "title": "J’ai l’œil rouge : est-ce forcément une conjonctivite ?",
+          "rrfScore": 0.03077652
+        },
+        {
+          "id": "enfant-voit-mal-signes-depistage",
+          "title": "Comment savoir si mon enfant voit mal ?",
+          "rrfScore": 0.03055037
+        },
+        {
+          "id": "bouche-seche-xerostomie",
+          "title": "J’ai souvent la bouche sèche : pourquoi ?",
+          "rrfScore": 0.03041475
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "mon enfant a les yeux rouges",
+      "expectedAny": [
+        "oeil-rouge-enfant"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": false,
+      "topSimilarity": 0.669306,
+      "semanticTop5": [
+        {
+          "id": "oeil-rouge-enfant",
+          "title": "Mon enfant a l’œil rouge ou qui coule : que regarder ?",
+          "similarity": 0.669306
+        },
+        {
+          "id": "oeil-rouge-adulte",
+          "title": "J’ai l’œil rouge : est-ce forcément une conjonctivite ?",
+          "similarity": 0.587412
+        },
+        {
+          "id": "saignement-nez-enfant",
+          "title": "Mon enfant saigne du nez : que faire ?",
+          "similarity": 0.555507
+        },
+        {
+          "id": "rash-enfant",
+          "title": "Des boutons apparaissent sur le ventre de mon enfant : que regarder ?",
+          "similarity": 0.529925
+        },
+        {
+          "id": "enfant-voit-mal-signes-depistage",
+          "title": "Comment savoir si mon enfant voit mal ?",
+          "similarity": 0.524403
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "oeil-rouge-adulte",
+          "title": "J’ai l’œil rouge : est-ce forcément une conjonctivite ?",
+          "rrfScore": 0.03200205
+        },
+        {
+          "id": "enfant-voit-mal-signes-depistage",
+          "title": "Comment savoir si mon enfant voit mal ?",
+          "rrfScore": 0.03177806
+        },
+        {
+          "id": "rash-enfant",
+          "title": "Des boutons apparaissent sur le ventre de mon enfant : que regarder ?",
+          "rrfScore": 0.03077652
+        },
+        {
+          "id": "diarrhee-enfant",
+          "title": "Mon enfant a des selles liquides : que faire ?",
+          "rrfScore": 0.03053613
+        },
+        {
+          "id": "convulsion-febrile-enfant",
+          "title": "Mon enfant convulse pendant une fièvre : que faut-il faire ?",
+          "rrfScore": 0.03011775
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "je saigne souvent du nez",
+      "expectedAny": [
+        "saignement-nez-adulte"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.672919,
+      "semanticTop5": [
+        {
+          "id": "saignement-nez-adulte",
+          "title": "Je saigne du nez : que dois-je faire ?",
+          "similarity": 0.672919
+        },
+        {
+          "id": "saignement-nez-enfant",
+          "title": "Mon enfant saigne du nez : que faire ?",
+          "similarity": 0.635879
+        },
+        {
+          "id": "gencives-saignent-brossage",
+          "title": "Mes gencives saignent quand je me brosse les dents : est-ce normal ?",
+          "similarity": 0.533644
+        },
+        {
+          "id": "saignement-apres-rapport",
+          "title": "Je saigne après les rapports sexuels : est-ce normal ?",
+          "similarity": 0.495638
+        },
+        {
+          "id": "regles-abondantes-saignements",
+          "title": "Mes règles sont très abondantes ou je saigne entre les règles : quand consulter ?",
+          "similarity": 0.492871
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "saignement-nez-adulte",
+          "title": "Je saigne du nez : que dois-je faire ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "saignement-nez-enfant",
+          "title": "Mon enfant saigne du nez : que faire ?",
+          "rrfScore": 0.03225806
+        },
+        {
+          "id": "saignement-apres-rapport",
+          "title": "Je saigne après les rapports sexuels : est-ce normal ?",
+          "rrfScore": 0.03125
+        },
+        {
+          "id": "rhume-nez-bouche-enfant",
+          "title": "Que faire quand un enfant a le nez bouché ou un rhume ?",
+          "rrfScore": 0.03079839
+        },
+        {
+          "id": "regles-abondantes-saignements",
+          "title": "Mes règles sont très abondantes ou je saigne entre les règles : quand consulter ?",
+          "rrfScore": 0.03030999
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "mon bébé a de la fièvre",
+      "expectedAny": [
+        "fievre-enfant"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.657319,
+      "semanticTop5": [
+        {
+          "id": "fievre-enfant",
+          "title": "Mon enfant a de la fièvre : que faut-il surveiller ?",
+          "similarity": 0.657319
+        },
+        {
+          "id": "convulsion-febrile-enfant",
+          "title": "Mon enfant convulse pendant une fièvre : que faut-il faire ?",
+          "similarity": 0.61263
+        },
+        {
+          "id": "fievre-adulte-quand-sinquieter",
+          "title": "J’ai de la fièvre : quand faut-il s’inquiéter chez l’adulte ?",
+          "similarity": 0.570061
+        },
+        {
+          "id": "etat-general-nourrisson",
+          "title": "Mon bébé n’est pas comme d’habitude : quels changements doivent attirer l’attention ?",
+          "similarity": 0.522495
+        },
+        {
+          "id": "douleur-oreille-enfant",
+          "title": "Mon enfant a mal à l’oreille : est-ce forcément une otite ?",
+          "similarity": 0.505625
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "fievre-enfant",
+          "title": "Mon enfant a de la fièvre : que faut-il surveiller ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "etat-general-nourrisson",
+          "title": "Mon bébé n’est pas comme d’habitude : quels changements doivent attirer l’attention ?",
+          "rrfScore": 0.03175403
+        },
+        {
+          "id": "fievre-adulte-quand-sinquieter",
+          "title": "J’ai de la fièvre : quand faut-il s’inquiéter chez l’adulte ?",
+          "rrfScore": 0.0305789
+        },
+        {
+          "id": "pleurs-nourrisson",
+          "title": "Mon bébé pleure beaucoup : quand est-ce normal et quand demander un avis ?",
+          "rrfScore": 0.0305789
+        },
+        {
+          "id": "bebe-tete-moins",
+          "title": "Mon bébé tète moins bien : est-ce inquiétant ?",
+          "rrfScore": 0.03011775
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "je tousse depuis trois semaines",
+      "expectedAny": [
+        "toux-prolongee-adulte"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.491978,
+      "semanticTop5": [
+        {
+          "id": "toux-prolongee-adulte",
+          "title": "Ma toux dure : à partir de quand faut-il en rechercher la cause ?",
+          "similarity": 0.491978
+        },
+        {
+          "id": "toux-seche-que-faire",
+          "title": "J’ai une toux sèche : faut-il prendre un sirop ?",
+          "similarity": 0.446647
+        },
+        {
+          "id": "toux-enfant",
+          "title": "Mon enfant tousse : quand faut-il s’inquiéter ?",
+          "similarity": 0.425682
+        },
+        {
+          "id": "rhume-nez-bouche-enfant",
+          "title": "Que faire quand un enfant a le nez bouché ou un rhume ?",
+          "similarity": 0.385431
+        },
+        {
+          "id": "fatigue-causes",
+          "title": "Je suis toujours fatigué : quelles causes rechercher ?",
+          "similarity": 0.36813
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "toux-enfant",
+          "title": "Mon enfant tousse : quand faut-il s’inquiéter ?",
+          "rrfScore": 0.03226646
+        },
+        {
+          "id": "toux-prolongee-adulte",
+          "title": "Ma toux dure : à partir de quand faut-il en rechercher la cause ?",
+          "rrfScore": 0.03109932
+        },
+        {
+          "id": "fatigue-enfant-rentree",
+          "title": "Mon enfant est fatigué depuis la rentrée : quand faut-il s’en préoccuper ?",
+          "rrfScore": 0.02797203
+        },
+        {
+          "id": "pleurs-nourrisson",
+          "title": "Mon bébé pleure beaucoup : quand est-ce normal et quand demander un avis ?",
+          "rrfScore": 0.01612903
+        },
+        {
+          "id": "toux-seche-que-faire",
+          "title": "J’ai une toux sèche : faut-il prendre un sirop ?",
+          "rrfScore": 0.01612903
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "je n'arrive pas à m'endormir",
+      "expectedAny": [
+        "insomnie-adulte"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.546194,
+      "semanticTop5": [
+        {
+          "id": "ado-sommeil-endormissement",
+          "title": "Je n’arrive pas à m’endormir le soir : que faire ?",
+          "similarity": 0.546194
+        },
+        {
+          "id": "insomnie-adulte",
+          "title": "Je dors mal : que peut-on vraiment faire contre l’insomnie ?",
+          "similarity": 0.535456
+        },
+        {
+          "id": "jambes-sans-repos",
+          "title": "J’ai besoin de bouger les jambes le soir : est-ce le syndrome des jambes sans repos ?",
+          "similarity": 0.485092
+        },
+        {
+          "id": "sommeil-bebe",
+          "title": "Mon bébé ne s’endort jamais seul : est-ce anormal ?",
+          "similarity": 0.451319
+        },
+        {
+          "id": "nycturie-prostate",
+          "title": "Je me lève plusieurs fois la nuit pour uriner : est-ce la prostate ?",
+          "similarity": 0.406557
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "ado-sommeil-endormissement",
+          "title": "Je n’arrive pas à m’endormir le soir : que faire ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "sommeil-bebe",
+          "title": "Mon bébé ne s’endort jamais seul : est-ce anormal ?",
+          "rrfScore": 0.03175403
+        },
+        {
+          "id": "ado-fatigue",
+          "title": "Mon ado est toujours fatigué : est-ce normal ?",
+          "rrfScore": 0.03011775
+        },
+        {
+          "id": "insomnie-adulte",
+          "title": "Je dors mal : que peut-on vraiment faire contre l’insomnie ?",
+          "rrfScore": 0.01612903
+        },
+        {
+          "id": "jambes-sans-repos",
+          "title": "J’ai besoin de bouger les jambes le soir : est-ce le syndrome des jambes sans repos ?",
+          "rrfScore": 0.01587302
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "j'ai des pertes vaginales inhabituelles",
+      "expectedAny": [
+        "pertes-vaginales-2026-08-27"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.671512,
+      "semanticTop5": [
+        {
+          "id": "pertes-vaginales-2026-08-27",
+          "title": "Pertes vaginales : quand sont-elles normales et quand consulter ?",
+          "similarity": 0.671512
+        },
+        {
+          "id": "prolapsus-boule-pesanteur-vaginale",
+          "title": "Je sens une boule ou une pesanteur dans le vagin : est-ce une descente d’organes ?",
+          "similarity": 0.60661
+        },
+        {
+          "id": "regles-abondantes-saignements",
+          "title": "Mes règles sont très abondantes ou je saigne entre les règles : quand consulter ?",
+          "similarity": 0.569721
+        },
+        {
+          "id": "douleur-rapports-dyspareunie",
+          "title": "J’ai mal pendant les rapports sexuels : est-ce normal ?",
+          "similarity": 0.559162
+        },
+        {
+          "id": "saignement-apres-menopause",
+          "title": "Je saigne alors que je suis ménopausée : est-ce normal ?",
+          "similarity": 0.545935
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "pertes-vaginales-2026-08-27",
+          "title": "Pertes vaginales : quand sont-elles normales et quand consulter ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "douleur-rapports-dyspareunie",
+          "title": "J’ai mal pendant les rapports sexuels : est-ce normal ?",
+          "rrfScore": 0.03125
+        },
+        {
+          "id": "secheresse-vaginale-menopause",
+          "title": "J’ai une sécheresse vaginale depuis la ménopause : faut-il simplement l’accepter ?",
+          "rrfScore": 0.03105441
+        },
+        {
+          "id": "saignement-apres-menopause",
+          "title": "Je saigne alors que je suis ménopausée : est-ce normal ?",
+          "rrfScore": 0.03076923
+        },
+        {
+          "id": "saignement-apres-rapport",
+          "title": "Je saigne après les rapports sexuels : est-ce normal ?",
+          "rrfScore": 0.0305789
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "j'ai senti une boule dans mon sein",
+      "expectedAny": [
+        "boule-dans-le-sein"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.543188,
+      "semanticTop5": [
+        {
+          "id": "boule-dans-le-sein",
+          "title": "J’ai senti une boule dans mon sein : est-ce forcément un cancer ?",
+          "similarity": 0.543188
+        },
+        {
+          "id": "douleur-sein-cancer",
+          "title": "J’ai mal au sein : est-ce un signe de cancer ?",
+          "similarity": 0.516982
+        },
+        {
+          "id": "douleur-thoracique-coeur",
+          "title": "J’ai une douleur dans la poitrine : est-ce forcément le cœur ?",
+          "similarity": 0.459527
+        },
+        {
+          "id": "nodule-thyroide-inquietant",
+          "title": "On m’a découvert un nodule de la thyroïde : est-ce forcément inquiétant ?",
+          "similarity": 0.405419
+        },
+        {
+          "id": "douleur-abdominale",
+          "title": "Mal au ventre : quels signes doivent alerter ?",
+          "similarity": 0.386018
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "boule-dans-le-sein",
+          "title": "J’ai senti une boule dans mon sein : est-ce forcément un cancer ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "douleur-sein-cancer",
+          "title": "J’ai mal au sein : est-ce un signe de cancer ?",
+          "rrfScore": 0.03225806
+        },
+        {
+          "id": "prolapsus-boule-pesanteur-vaginale",
+          "title": "Je sens une boule ou une pesanteur dans le vagin : est-ce une descente d’organes ?",
+          "rrfScore": 0.03036577
+        },
+        {
+          "id": "mammographie-40-ans",
+          "title": "J’ai 40 ans : dois-je déjà faire une mammographie ?",
+          "rrfScore": 0.03033088
+        },
+        {
+          "id": "nodule-thyroide-inquietant",
+          "title": "On m’a découvert un nodule de la thyroïde : est-ce forcément inquiétant ?",
+          "rrfScore": 0.03033088
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "ma TSH est élevée",
+      "expectedAny": [
+        "tsh-haute-basse-thyroide"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.657747,
+      "semanticTop5": [
+        {
+          "id": "tsh-haute-basse-thyroide",
+          "title": "Ma TSH est trop haute ou trop basse : qu’est-ce que cela signifie ?",
+          "similarity": 0.657747
+        },
+        {
+          "id": "nodule-thyroide-inquietant",
+          "title": "On m’a découvert un nodule de la thyroïde : est-ce forcément inquiétant ?",
+          "similarity": 0.542829
+        },
+        {
+          "id": "pth-elevee",
+          "title": "À quoi correspond une PTH augmentée ?",
+          "similarity": 0.512362
+        },
+        {
+          "id": "transaminases-elevees",
+          "title": "Mes transaminases sont élevées : est-ce forcément le foie ?",
+          "similarity": 0.470429
+        },
+        {
+          "id": "prise-poids-sans-raison",
+          "title": "Pourquoi je prends du poids alors que je ne mange pas plus ?",
+          "similarity": 0.454063
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "tsh-haute-basse-thyroide",
+          "title": "Ma TSH est trop haute ou trop basse : qu’est-ce que cela signifie ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "nodule-thyroide-inquietant",
+          "title": "On m’a découvert un nodule de la thyroïde : est-ce forcément inquiétant ?",
+          "rrfScore": 0.03225806
+        },
+        {
+          "id": "pth-elevee",
+          "title": "À quoi correspond une PTH augmentée ?",
+          "rrfScore": 0.03174603
+        },
+        {
+          "id": "transaminases-elevees",
+          "title": "Mes transaminases sont élevées : est-ce forcément le foie ?",
+          "rrfScore": 0.03125
+        },
+        {
+          "id": "fatigue-causes",
+          "title": "Je suis toujours fatigué : quelles causes rechercher ?",
+          "rrfScore": 0.03053613
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "j'ai 50 ans faut-il faire une coloscopie",
+      "expectedAny": [
+        "50-ans-coloscopie-depistage-colorectal"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.765588,
+      "semanticTop5": [
+        {
+          "id": "50-ans-coloscopie-depistage-colorectal",
+          "title": "J’ai 50 ans : dois-je faire une coloscopie ?",
+          "similarity": 0.765588
+        },
+        {
+          "id": "depistages-40-50-ans",
+          "title": "J’ai entre 40 et 50 ans : quels dépistages dois-je penser à faire ?",
+          "similarity": 0.625156
+        },
+        {
+          "id": "mammographie-40-ans",
+          "title": "J’ai 40 ans : dois-je déjà faire une mammographie ?",
+          "similarity": 0.598528
+        },
+        {
+          "id": "psa-depistage-prostate",
+          "title": "Faut-il faire un dosage du PSA pour dépister le cancer de la prostate ?",
+          "similarity": 0.541831
+        },
+        {
+          "id": "depistages-organises-adulte",
+          "title": "Quels dépistages de cancer sont organisés selon l’âge ?",
+          "similarity": 0.517836
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "50-ans-coloscopie-depistage-colorectal",
+          "title": "J’ai 50 ans : dois-je faire une coloscopie ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "depistages-40-50-ans",
+          "title": "J’ai entre 40 et 50 ans : quels dépistages dois-je penser à faire ?",
+          "rrfScore": 0.03225806
+        },
+        {
+          "id": "mammographie-40-ans",
+          "title": "J’ai 40 ans : dois-je déjà faire une mammographie ?",
+          "rrfScore": 0.03149802
+        },
+        {
+          "id": "dmla-depistage-apres-50-ans",
+          "title": "Après 50 ans, faut-il faire dépister la DMLA ?",
+          "rrfScore": 0.03079839
+        },
+        {
+          "id": "psa-depistage-prostate",
+          "title": "Faut-il faire un dosage du PSA pour dépister le cancer de la prostate ?",
+          "rrfScore": 0.03077652
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "peut-on donner de la mélatonine à un enfant pour dormir",
+      "expectedAny": [
+        "melatonine-enfant-pour-dormir"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.805567,
+      "semanticTop5": [
+        {
+          "id": "melatonine-enfant-pour-dormir",
+          "title": "Peut-on donner de la mélatonine à un enfant pour dormir ?",
+          "similarity": 0.805567
+        },
+        {
+          "id": "melatonine-complements",
+          "title": "La mélatonine en complément alimentaire est-elle sans risque ?",
+          "similarity": 0.689698
+        },
+        {
+          "id": "sommeil-bebe",
+          "title": "Mon bébé ne s’endort jamais seul : est-ce anormal ?",
+          "similarity": 0.596957
+        },
+        {
+          "id": "ado-sommeil-endormissement",
+          "title": "Je n’arrive pas à m’endormir le soir : que faire ?",
+          "similarity": 0.592349
+        },
+        {
+          "id": "insomnie-adulte",
+          "title": "Je dors mal : que peut-on vraiment faire contre l’insomnie ?",
+          "similarity": 0.562474
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "melatonine-enfant-pour-dormir",
+          "title": "Peut-on donner de la mélatonine à un enfant pour dormir ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "melatonine-complements",
+          "title": "La mélatonine en complément alimentaire est-elle sans risque ?",
+          "rrfScore": 0.03225806
+        },
+        {
+          "id": "constipation-enfant",
+          "title": "Mon enfant est constipé : quels repères sont utiles ?",
+          "rrfScore": 0.02946912
+        },
+        {
+          "id": "ado-sommeil-endormissement",
+          "title": "Je n’arrive pas à m’endormir le soir : que faire ?",
+          "rrfScore": 0.02828323
+        },
+        {
+          "id": "diarrhee-enfant",
+          "title": "Mon enfant a des selles liquides : que faire ?",
+          "rrfScore": 0.0275836
+        }
+      ]
+    },
+    {
+      "class": "answer",
+      "query": "les boissons énergisantes sont-elles dangereuses pour un ado",
+      "expectedAny": [
+        "ado-boissons-energisantes"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.768877,
+      "semanticTop5": [
+        {
+          "id": "ado-boissons-energisantes",
+          "title": "Boissons énergisantes : quels risques chez les adolescents ?",
+          "similarity": 0.768877
+        },
+        {
+          "id": "boissons-sucrees",
+          "title": "Boissons sucrées chez l’enfant : pourquoi les limiter ?",
+          "similarity": 0.554571
+        },
+        {
+          "id": "creatine-sport-reins-securite-20260905",
+          "title": "Créatine et sport : est-ce dangereux pour les reins ?",
+          "similarity": 0.516167
+        },
+        {
+          "id": "ado-saute-repas-perte-poids-tca",
+          "title": "Mon adolescent saute des repas ou perd du poids : quand faut-il s’inquiéter ?",
+          "similarity": 0.487075
+        },
+        {
+          "id": "melatonine-enfant-pour-dormir",
+          "title": "Peut-on donner de la mélatonine à un enfant pour dormir ?",
+          "similarity": 0.474957
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "ado-boissons-energisantes",
+          "title": "Boissons énergisantes : quels risques chez les adolescents ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "boissons-sucrees",
+          "title": "Boissons sucrées chez l’enfant : pourquoi les limiter ?",
+          "rrfScore": 0.03200205
+        },
+        {
+          "id": "creatine-sport-reins-securite-20260905",
+          "title": "Créatine et sport : est-ce dangereux pour les reins ?",
+          "rrfScore": 0.03015873
+        },
+        {
+          "id": "ado-fatigue",
+          "title": "Mon ado est toujours fatigué : est-ce normal ?",
+          "rrfScore": 0.02991071
+        },
+        {
+          "id": "ado-sommeil-endormissement",
+          "title": "Je n’arrive pas à m’endormir le soir : que faire ?",
+          "rrfScore": 0.0298574
+        }
+      ]
+    },
+    {
+      "class": "multi",
+      "query": "j'ai des acouphènes et des vertiges",
+      "expectedAny": [],
+      "expectedAll": [
+        "acouphenes-adulte",
+        "vertiges-causes"
+      ],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.598448,
+      "semanticTop5": [
+        {
+          "id": "vertiges-adulte",
+          "title": "J’ai des vertiges : quels signes doivent faire consulter ?",
+          "similarity": 0.598448
+        },
+        {
+          "id": "acouphenes-adulte",
+          "title": "J’ai des acouphènes : que faut-il savoir ?",
+          "similarity": 0.588278
+        },
+        {
+          "id": "vertiges-causes",
+          "title": "Vertiges : les causes fréquentes et les signes d’alerte",
+          "similarity": 0.583783
+        },
+        {
+          "id": "q-acouphenes-frequence",
+          "title": "Combien de personnes sont concernées par les acouphènes ?",
+          "similarity": 0.529312
+        },
+        {
+          "id": "hypotension-orthostatique-lever",
+          "title": "J’ai la tête qui tourne quand je me lève : est-ce ma tension ?",
+          "similarity": 0.50841
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "acouphenes-adulte",
+          "title": "J’ai des acouphènes : que faut-il savoir ?",
+          "rrfScore": 0.03225806
+        },
+        {
+          "id": "q-acouphenes-frequence",
+          "title": "Combien de personnes sont concernées par les acouphènes ?",
+          "rrfScore": 0.03201844
+        },
+        {
+          "id": "vertiges-adulte",
+          "title": "J’ai des vertiges : quels signes doivent faire consulter ?",
+          "rrfScore": 0.03201844
+        },
+        {
+          "id": "vertiges-causes",
+          "title": "Vertiges : les causes fréquentes et les signes d’alerte",
+          "rrfScore": 0.03125763
+        },
+        {
+          "id": "hypotension-orthostatique-lever",
+          "title": "J’ai la tête qui tourne quand je me lève : est-ce ma tension ?",
+          "rrfScore": 0.02967033
+        }
+      ]
+    },
+    {
+      "class": "multi",
+      "query": "j'ai souvent mal à la tête et parfois de vraies migraines",
+      "expectedAny": [],
+      "expectedAll": [
+        "maux-tete",
+        "migraine-que-faire"
+      ],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.60311,
+      "semanticTop5": [
+        {
+          "id": "migraine-que-faire",
+          "title": "J’ai des migraines : que puis-je faire ?",
+          "similarity": 0.60311
+        },
+        {
+          "id": "maux-tete",
+          "title": "Mal de tête : quand faut-il consulter rapidement ?",
+          "similarity": 0.58695
+        },
+        {
+          "id": "migraine-adulte",
+          "title": "Migraine : quand faut-il envisager un traitement de fond ?",
+          "similarity": 0.527751
+        },
+        {
+          "id": "hypotension-orthostatique-lever",
+          "title": "J’ai la tête qui tourne quand je me lève : est-ce ma tension ?",
+          "similarity": 0.477723
+        },
+        {
+          "id": "vertiges-adulte",
+          "title": "J’ai des vertiges : quels signes doivent faire consulter ?",
+          "similarity": 0.471642
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "migraine-que-faire",
+          "title": "J’ai des migraines : que puis-je faire ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "maux-tete",
+          "title": "Mal de tête : quand faut-il consulter rapidement ?",
+          "rrfScore": 0.03225806
+        },
+        {
+          "id": "hypotension-orthostatique-lever",
+          "title": "J’ai la tête qui tourne quand je me lève : est-ce ma tension ?",
+          "rrfScore": 0.03125
+        },
+        {
+          "id": "cervicalgie-faut-il-imagerie",
+          "title": "J’ai mal au cou : faut-il faire une radio ou une IRM ?",
+          "rrfScore": 0.02921109
+        },
+        {
+          "id": "vertiges-adulte",
+          "title": "J’ai des vertiges : quels signes doivent faire consulter ?",
+          "rrfScore": 0.02908325
+        }
+      ]
+    },
+    {
+      "class": "multi",
+      "query": "rapport non protégé et je voudrais savoir pour les IST et la pilule du lendemain",
+      "expectedAny": [],
+      "expectedAll": [
+        "rapport-non-protege-ist",
+        "contraception-urgence"
+      ],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.626904,
+      "semanticTop5": [
+        {
+          "id": "rapport-non-protege-ist",
+          "title": "J’ai eu un rapport non protégé : que dois-je faire ?",
+          "similarity": 0.626904
+        },
+        {
+          "id": "contraception-urgence",
+          "title": "Après un rapport mal protégé, jusqu’à quand peut-on utiliser une contraception d’urgence ?",
+          "similarity": 0.602176
+        },
+        {
+          "id": "oubli-pilule",
+          "title": "J’ai oublié ma pilule : que dois-je faire ?",
+          "similarity": 0.595285
+        },
+        {
+          "id": "contraception-apres-40-ans",
+          "title": "Après 40 ans, faut-il arrêter ou changer de pilule ?",
+          "similarity": 0.489731
+        },
+        {
+          "id": "oubli-medicament",
+          "title": "J’ai oublié de prendre un médicament : que faire en général ?",
+          "similarity": 0.481646
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "contraception-urgence",
+          "title": "Après un rapport mal protégé, jusqu’à quand peut-on utiliser une contraception d’urgence ?",
+          "rrfScore": 0.03252247
+        },
+        {
+          "id": "rapport-non-protege-ist",
+          "title": "J’ai eu un rapport non protégé : que dois-je faire ?",
+          "rrfScore": 0.03252247
+        },
+        {
+          "id": "oubli-pilule",
+          "title": "J’ai oublié ma pilule : que dois-je faire ?",
+          "rrfScore": 0.03174603
+        },
+        {
+          "id": "contraception-apres-40-ans",
+          "title": "Après 40 ans, faut-il arrêter ou changer de pilule ?",
+          "rrfScore": 0.03125
+        },
+        {
+          "id": "desogestrel-meningiome-risque",
+          "title": "Je prends une pilule au désogestrel : dois-je m’inquiéter du risque de méningiome ?",
+          "rrfScore": 0.02985075
+        }
+      ]
+    },
+    {
+      "class": "multi",
+      "query": "j'ai des brûlures d'estomac et aussi mal au ventre",
+      "expectedAny": [],
+      "expectedAll": [
+        "reflux-adulte",
+        "douleur-abdominale"
+      ],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.547837,
+      "semanticTop5": [
+        {
+          "id": "rgo-adulte",
+          "title": "J’ai des brûlures d’estomac ou des remontées acides : que faire ?",
+          "similarity": 0.547837
+        },
+        {
+          "id": "reflux-adulte",
+          "title": "Reflux et brûlures d’estomac : quels conseils simples ?",
+          "similarity": 0.495078
+        },
+        {
+          "id": "douleur-abdominale",
+          "title": "Mal au ventre : quels signes doivent alerter ?",
+          "similarity": 0.49231
+        },
+        {
+          "id": "ballonnements-ventre-gonfle",
+          "title": "J’ai le ventre gonflé : pourquoi et que faire ?",
+          "similarity": 0.484855
+        },
+        {
+          "id": "alcool-transit-digestion",
+          "title": "Pourquoi l’alcool peut-il perturber le transit et la digestion ?",
+          "similarity": 0.381767
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "rgo-adulte",
+          "title": "J’ai des brûlures d’estomac ou des remontées acides : que faire ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "reflux-adulte",
+          "title": "Reflux et brûlures d’estomac : quels conseils simples ?",
+          "rrfScore": 0.03225806
+        },
+        {
+          "id": "douleur-abdominale",
+          "title": "Mal au ventre : quels signes doivent alerter ?",
+          "rrfScore": 0.03174603
+        },
+        {
+          "id": "ballonnements-ventre-gonfle",
+          "title": "J’ai le ventre gonflé : pourquoi et que faire ?",
+          "rrfScore": 0.03077652
+        },
+        {
+          "id": "alcool-transit-digestion",
+          "title": "Pourquoi l’alcool peut-il perturber le transit et la digestion ?",
+          "rrfScore": 0.03076923
+        }
+      ]
+    },
+    {
+      "class": "multi",
+      "query": "mon cœur bat bizarrement et je suis essoufflé",
+      "expectedAny": [],
+      "expectedAll": [
+        "palpitations-adulte",
+        "essoufflement-adulte"
+      ],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.44664,
+      "semanticTop5": [
+        {
+          "id": "essoufflement-adulte",
+          "title": "Je suis essoufflé : quand faut-il consulter ?",
+          "similarity": 0.44664
+        },
+        {
+          "id": "palpitations-adulte",
+          "title": "Je sens mon cœur battre fort ou irrégulièrement : que sont les palpitations ?",
+          "similarity": 0.444331
+        },
+        {
+          "id": "palpitations",
+          "title": "J’ai des palpitations : que faut-il savoir ?",
+          "similarity": 0.425613
+        },
+        {
+          "id": "essoufflement-causes-signes-alerte",
+          "title": "Essoufflement : causes fréquentes et signes d’alerte",
+          "similarity": 0.412536
+        },
+        {
+          "id": "palpitations-quand-consulter",
+          "title": "Palpitations : quand faut-il consulter ?",
+          "similarity": 0.408868
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "essoufflement-adulte",
+          "title": "Je suis essoufflé : quand faut-il consulter ?",
+          "rrfScore": 0.03252247
+        },
+        {
+          "id": "palpitations-adulte",
+          "title": "Je sens mon cœur battre fort ou irrégulièrement : que sont les palpitations ?",
+          "rrfScore": 0.03252247
+        },
+        {
+          "id": "douleur-thoracique-coeur",
+          "title": "J’ai une douleur dans la poitrine : est-ce forcément le cœur ?",
+          "rrfScore": 0.03079839
+        },
+        {
+          "id": "essoufflement-causes-signes-alerte",
+          "title": "Essoufflement : causes fréquentes et signes d’alerte",
+          "rrfScore": 0.02951389
+        },
+        {
+          "id": "palpitations-quand-consulter",
+          "title": "Palpitations : quand faut-il consulter ?",
+          "rrfScore": 0.02946912
+        }
+      ]
+    },
+    {
+      "class": "multi",
+      "query": "j'ai mal au dos et la douleur descend dans la jambe",
+      "expectedAny": [
+        "sciatique-faut-il-irm",
+        "lombalgie-adulte"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.569131,
+      "semanticTop5": [
+        {
+          "id": "sciatique-faut-il-irm",
+          "title": "Ma douleur du dos descend dans la jambe : faut-il faire une IRM ?",
+          "similarity": 0.569131
+        },
+        {
+          "id": "lombalgie-adulte",
+          "title": "J’ai mal au bas du dos : faut-il rester au repos ?",
+          "similarity": 0.516187
+        },
+        {
+          "id": "mal-dos-travail-prevenir-installation",
+          "title": "Mal au dos au travail : que faire pour éviter que ça s’installe ?",
+          "similarity": 0.513661
+        },
+        {
+          "id": "jambe-gonflee-adulte",
+          "title": "Une jambe gonflée : quand faut-il s’inquiéter ?",
+          "similarity": 0.500545
+        },
+        {
+          "id": "jambes-lourdes-varices",
+          "title": "Jambes lourdes et varices : que peut-on faire ?",
+          "similarity": 0.478875
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "sciatique-faut-il-irm",
+          "title": "Ma douleur du dos descend dans la jambe : faut-il faire une IRM ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "mal-dos-travail-prevenir-installation",
+          "title": "Mal au dos au travail : que faire pour éviter que ça s’installe ?",
+          "rrfScore": 0.03200205
+        },
+        {
+          "id": "lombalgie-adulte",
+          "title": "J’ai mal au bas du dos : faut-il rester au repos ?",
+          "rrfScore": 0.03175403
+        },
+        {
+          "id": "jambe-gonflee-adulte",
+          "title": "Une jambe gonflée : quand faut-il s’inquiéter ?",
+          "rrfScore": 0.03149802
+        },
+        {
+          "id": "douleur-rapports-dyspareunie",
+          "title": "J’ai mal pendant les rapports sexuels : est-ce normal ?",
+          "rrfScore": 0.0290404
+        }
+      ]
+    },
+    {
+      "class": "personalized",
+      "query": "j'ai 82 ans, je me lève quatre fois la nuit pour uriner, quel traitement dois-je prendre ?",
+      "expectedAny": [
+        "nycturie-prostate"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.610722,
+      "semanticTop5": [
+        {
+          "id": "nycturie-prostate",
+          "title": "Je me lève plusieurs fois la nuit pour uriner : est-ce la prostate ?",
+          "similarity": 0.610722
+        },
+        {
+          "id": "fuites-urinaires-age",
+          "title": "J’ai des fuites urinaires : est-ce normal avec l’âge ?",
+          "similarity": 0.558248
+        },
+        {
+          "id": "polymedication-deprescription-senior",
+          "title": "Je prends beaucoup de médicaments : faut-il essayer d’en supprimer certains ?",
+          "similarity": 0.498143
+        },
+        {
+          "id": "calcul-renal-prevenir-recidive",
+          "title": "J’ai déjà eu un calcul rénal : comment éviter qu’il revienne ?",
+          "similarity": 0.48759
+        },
+        {
+          "id": "sommeil-apres-60-ans",
+          "title": "Sommeil après 60 ans : ce qui change vraiment",
+          "similarity": 0.479978
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "nycturie-prostate",
+          "title": "Je me lève plusieurs fois la nuit pour uriner : est-ce la prostate ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "rupture-medicament-que-faire",
+          "title": "Mon médicament est en rupture : que dois-je faire ?",
+          "rrfScore": 0.0289916
+        },
+        {
+          "id": "oubli-pilule",
+          "title": "J’ai oublié ma pilule : que dois-je faire ?",
+          "rrfScore": 0.02780974
+        },
+        {
+          "id": "contraception-apres-40-ans",
+          "title": "Après 40 ans, faut-il arrêter ou changer de pilule ?",
+          "rrfScore": 0.02742537
+        },
+        {
+          "id": "oubli-medicament",
+          "title": "J’ai oublié de prendre un médicament : que faire en général ?",
+          "rrfScore": 0.0272424
+        }
+      ]
+    },
+    {
+      "class": "personalized",
+      "query": "quelle pilule dois-je prendre à 43 ans si j'ai déjà fait une thrombose ?",
+      "expectedAny": [
+        "contraception-apres-40-ans",
+        "contraception-urgence"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.579885,
+      "semanticTop5": [
+        {
+          "id": "contraception-apres-40-ans",
+          "title": "Après 40 ans, faut-il arrêter ou changer de pilule ?",
+          "similarity": 0.579885
+        },
+        {
+          "id": "oubli-pilule",
+          "title": "J’ai oublié ma pilule : que dois-je faire ?",
+          "similarity": 0.536312
+        },
+        {
+          "id": "desogestrel-meningiome-risque",
+          "title": "Je prends une pilule au désogestrel : dois-je m’inquiéter du risque de méningiome ?",
+          "similarity": 0.529104
+        },
+        {
+          "id": "aspirine-apres-70-ans-prevention-primaire-20260826",
+          "title": "Après 70 ans, faut-il prendre de l’aspirine tous les jours pour prévenir les maladies cardiovasculaires ?",
+          "similarity": 0.528173
+        },
+        {
+          "id": "voyage-thrombose",
+          "title": "Voyage long : comment réduire le risque de thrombose ?",
+          "similarity": 0.51414
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "contraception-apres-40-ans",
+          "title": "Après 40 ans, faut-il arrêter ou changer de pilule ?",
+          "rrfScore": 0.03252247
+        },
+        {
+          "id": "oubli-pilule",
+          "title": "J’ai oublié ma pilule : que dois-je faire ?",
+          "rrfScore": 0.03252247
+        },
+        {
+          "id": "desogestrel-meningiome-risque",
+          "title": "Je prends une pilule au désogestrel : dois-je m’inquiéter du risque de méningiome ?",
+          "rrfScore": 0.03174603
+        },
+        {
+          "id": "voyage-thrombose",
+          "title": "Voyage long : comment réduire le risque de thrombose ?",
+          "rrfScore": 0.03100962
+        },
+        {
+          "id": "mammographie-40-ans",
+          "title": "J’ai 40 ans : dois-je déjà faire une mammographie ?",
+          "rrfScore": 0.03053613
+        }
+      ]
+    },
+    {
+      "class": "personalized",
+      "query": "je prends du désogestrel depuis six ans, dois-je l'arrêter à cause du risque de méningiome ?",
+      "expectedAny": [
+        "desogestrel-meningiome-risque"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.769103,
+      "semanticTop5": [
+        {
+          "id": "desogestrel-meningiome-risque",
+          "title": "Je prends une pilule au désogestrel : dois-je m’inquiéter du risque de méningiome ?",
+          "similarity": 0.769103
+        },
+        {
+          "id": "contraception-apres-40-ans",
+          "title": "Après 40 ans, faut-il arrêter ou changer de pilule ?",
+          "similarity": 0.561516
+        },
+        {
+          "id": "traitement-hormonal-menopause-risques-20260904",
+          "title": "Traitement hormonal de la ménopause : est-il forcément dangereux ?",
+          "similarity": 0.542041
+        },
+        {
+          "id": "contraception-urgence",
+          "title": "Après un rapport mal protégé, jusqu’à quand peut-on utiliser une contraception d’urgence ?",
+          "similarity": 0.491325
+        },
+        {
+          "id": "ipp-long-cours-omeprazole",
+          "title": "Les IPP au long cours sont-ils dangereux ?",
+          "similarity": 0.490933
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "desogestrel-meningiome-risque",
+          "title": "Je prends une pilule au désogestrel : dois-je m’inquiéter du risque de méningiome ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "contraception-apres-40-ans",
+          "title": "Après 40 ans, faut-il arrêter ou changer de pilule ?",
+          "rrfScore": 0.03200205
+        },
+        {
+          "id": "mammographie-40-ans",
+          "title": "J’ai 40 ans : dois-je déjà faire une mammographie ?",
+          "rrfScore": 0.03021354
+        },
+        {
+          "id": "ipp-long-cours-omeprazole",
+          "title": "Les IPP au long cours sont-ils dangereux ?",
+          "rrfScore": 0.02908325
+        },
+        {
+          "id": "oubli-pilule",
+          "title": "J’ai oublié ma pilule : que dois-je faire ?",
+          "rrfScore": 0.02877847
+        }
+      ]
+    },
+    {
+      "class": "personalized",
+      "query": "je prends de l'oméprazole depuis dix ans, est-ce que je dois l'arrêter demain ?",
+      "expectedAny": [
+        "ipp-long-cours-omeprazole"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.585648,
+      "semanticTop5": [
+        {
+          "id": "ipp-long-cours-omeprazole",
+          "title": "Les IPP au long cours sont-ils dangereux ?",
+          "similarity": 0.585648
+        },
+        {
+          "id": "rupture-medicament-que-faire",
+          "title": "Mon médicament est en rupture : que dois-je faire ?",
+          "similarity": 0.524504
+        },
+        {
+          "id": "polymedication-deprescription-senior",
+          "title": "Je prends beaucoup de médicaments : faut-il essayer d’en supprimer certains ?",
+          "similarity": 0.522951
+        },
+        {
+          "id": "desogestrel-meningiome-risque",
+          "title": "Je prends une pilule au désogestrel : dois-je m’inquiéter du risque de méningiome ?",
+          "similarity": 0.508254
+        },
+        {
+          "id": "statines-apres-70-75-ans-prevention-primaire-20260831",
+          "title": "Après 70 ans, les statines ont-elles encore un intérêt en prévention primaire ?",
+          "similarity": 0.484965
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "ipp-long-cours-omeprazole",
+          "title": "Les IPP au long cours sont-ils dangereux ?",
+          "rrfScore": 0.03201844
+        },
+        {
+          "id": "desogestrel-meningiome-risque",
+          "title": "Je prends une pilule au désogestrel : dois-je m’inquiéter du risque de méningiome ?",
+          "rrfScore": 0.03175403
+        },
+        {
+          "id": "contraception-apres-40-ans",
+          "title": "Après 40 ans, faut-il arrêter ou changer de pilule ?",
+          "rrfScore": 0.03102453
+        },
+        {
+          "id": "polymedication-deprescription-senior",
+          "title": "Je prends beaucoup de médicaments : faut-il essayer d’en supprimer certains ?",
+          "rrfScore": 0.0297619
+        },
+        {
+          "id": "statines-apres-70-75-ans-prevention-primaire-20260831",
+          "title": "Après 70 ans, les statines ont-elles encore un intérêt en prévention primaire ?",
+          "rrfScore": 0.02967033
+        }
+      ]
+    },
+    {
+      "class": "personalized",
+      "query": "ma TSH est à 8, est-ce que je dois commencer un traitement ?",
+      "expectedAny": [
+        "tsh-haute-basse-thyroide"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.624383,
+      "semanticTop5": [
+        {
+          "id": "tsh-haute-basse-thyroide",
+          "title": "Ma TSH est trop haute ou trop basse : qu’est-ce que cela signifie ?",
+          "similarity": 0.624383
+        },
+        {
+          "id": "nodule-thyroide-inquietant",
+          "title": "On m’a découvert un nodule de la thyroïde : est-ce forcément inquiétant ?",
+          "similarity": 0.513068
+        },
+        {
+          "id": "migraine-adulte",
+          "title": "Migraine : quand faut-il envisager un traitement de fond ?",
+          "similarity": 0.489729
+        },
+        {
+          "id": "traitement-hormonal-menopause-risques-20260904",
+          "title": "Traitement hormonal de la ménopause : est-il forcément dangereux ?",
+          "similarity": 0.481106
+        },
+        {
+          "id": "toux-seche-que-faire",
+          "title": "J’ai une toux sèche : faut-il prendre un sirop ?",
+          "similarity": 0.480336
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "tsh-haute-basse-thyroide",
+          "title": "Ma TSH est trop haute ou trop basse : qu’est-ce que cela signifie ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "nodule-thyroide-inquietant",
+          "title": "On m’a découvert un nodule de la thyroïde : est-ce forcément inquiétant ?",
+          "rrfScore": 0.03225806
+        },
+        {
+          "id": "fatigue-causes",
+          "title": "Je suis toujours fatigué : quelles causes rechercher ?",
+          "rrfScore": 0.03007689
+        },
+        {
+          "id": "migraine-adulte",
+          "title": "Migraine : quand faut-il envisager un traitement de fond ?",
+          "rrfScore": 0.02957165
+        },
+        {
+          "id": "mammographie-40-ans",
+          "title": "J’ai 40 ans : dois-je déjà faire une mammographie ?",
+          "rrfScore": 0.02941176
+        }
+      ]
+    },
+    {
+      "class": "personalized",
+      "query": "mon fils de 7 ans tousse depuis plusieurs jours, que dois-je lui donner ?",
+      "expectedAny": [
+        "toux-enfant"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.625092,
+      "semanticTop5": [
+        {
+          "id": "rhume-nez-bouche-enfant",
+          "title": "Que faire quand un enfant a le nez bouché ou un rhume ?",
+          "similarity": 0.625092
+        },
+        {
+          "id": "toux-enfant",
+          "title": "Mon enfant tousse : quand faut-il s’inquiéter ?",
+          "similarity": 0.59847
+        },
+        {
+          "id": "mal-gorge-enfant",
+          "title": "Mon enfant a mal à la gorge : faut-il un antibiotique ?",
+          "similarity": 0.553677
+        },
+        {
+          "id": "douleur-oreille-enfant",
+          "title": "Mon enfant a mal à l’oreille : est-ce forcément une otite ?",
+          "similarity": 0.51666
+        },
+        {
+          "id": "fievre-enfant",
+          "title": "Mon enfant a de la fièvre : que faut-il surveiller ?",
+          "similarity": 0.510943
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "toux-enfant",
+          "title": "Mon enfant tousse : quand faut-il s’inquiéter ?",
+          "rrfScore": 0.03001792
+        },
+        {
+          "id": "mammographie-40-ans",
+          "title": "J’ai 40 ans : dois-je déjà faire une mammographie ?",
+          "rrfScore": 0.01639344
+        },
+        {
+          "id": "rhume-nez-bouche-enfant",
+          "title": "Que faire quand un enfant a le nez bouché ou un rhume ?",
+          "rrfScore": 0.01639344
+        },
+        {
+          "id": "50-ans-coloscopie-depistage-colorectal",
+          "title": "J’ai 50 ans : dois-je faire une coloscopie ?",
+          "rrfScore": 0.01612903
+        },
+        {
+          "id": "depistages-40-50-ans",
+          "title": "J’ai entre 40 et 50 ans : quels dépistages dois-je penser à faire ?",
+          "rrfScore": 0.01587302
+        }
+      ]
+    },
+    {
+      "class": "personalized",
+      "query": "j'ai des palpitations ce soir, est-ce que je dois aller aux urgences ?",
+      "expectedAny": [
+        "palpitations-quand-consulter",
+        "palpitations-adulte",
+        "palpitations"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.687125,
+      "semanticTop5": [
+        {
+          "id": "palpitations",
+          "title": "J’ai des palpitations : que faut-il savoir ?",
+          "similarity": 0.687125
+        },
+        {
+          "id": "palpitations-quand-consulter",
+          "title": "Palpitations : quand faut-il consulter ?",
+          "similarity": 0.658489
+        },
+        {
+          "id": "palpitations-adulte",
+          "title": "Je sens mon cœur battre fort ou irrégulièrement : que sont les palpitations ?",
+          "similarity": 0.562192
+        },
+        {
+          "id": "essoufflement-adulte",
+          "title": "Je suis essoufflé : quand faut-il consulter ?",
+          "similarity": 0.548991
+        },
+        {
+          "id": "fourmillements-mains-pieds-causes",
+          "title": "J’ai des fourmillements dans les mains ou les pieds : quelles peuvent être les causes ?",
+          "similarity": 0.535027
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "palpitations",
+          "title": "J’ai des palpitations : que faut-il savoir ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "palpitations-quand-consulter",
+          "title": "Palpitations : quand faut-il consulter ?",
+          "rrfScore": 0.03225806
+        },
+        {
+          "id": "palpitations-adulte",
+          "title": "Je sens mon cœur battre fort ou irrégulièrement : que sont les palpitations ?",
+          "rrfScore": 0.03174603
+        },
+        {
+          "id": "jambes-sans-repos",
+          "title": "J’ai besoin de bouger les jambes le soir : est-ce le syndrome des jambes sans repos ?",
+          "rrfScore": 0.03033088
+        },
+        {
+          "id": "sante-mentale-crise-angoisse",
+          "title": "Crise d’angoisse : que faire quand elle survient ?",
+          "rrfScore": 0.02877847
+        }
+      ]
+    },
+    {
+      "class": "personalized",
+      "query": "j'ai très mal au tendon d'Achille après avoir couru, combien de jours dois-je arrêter le sport ?",
+      "expectedAny": [
+        "tendon-achille-repos-sport"
+      ],
+      "expectedAll": [],
+      "semanticOk": true,
+      "hybridOk": true,
+      "topSimilarity": 0.737585,
+      "semanticTop5": [
+        {
+          "id": "tendon-achille-repos-sport",
+          "title": "J’ai mal au tendon d’Achille : faut-il arrêter complètement le sport ?",
+          "similarity": 0.737585
+        },
+        {
+          "id": "maca-running-reprise",
+          "title": "Reprendre la course à pied : comment éviter d’en faire trop ?",
+          "similarity": 0.590201
+        },
+        {
+          "id": "lombalgie-adulte",
+          "title": "J’ai mal au bas du dos : faut-il rester au repos ?",
+          "similarity": 0.486437
+        },
+        {
+          "id": "sport-sedentarite-temps-assis-20260903",
+          "title": "Faire du sport suffit-il à compenser une journée passée assis ?",
+          "similarity": 0.486426
+        },
+        {
+          "id": "crampes-musculaires-causes",
+          "title": "Crampes musculaires : causes et solutions",
+          "similarity": 0.478668
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "tendon-achille-repos-sport",
+          "title": "J’ai mal au tendon d’Achille : faut-il arrêter complètement le sport ?",
+          "rrfScore": 0.03278689
+        },
+        {
+          "id": "sport-sedentarite-temps-assis-20260903",
+          "title": "Faire du sport suffit-il à compenser une journée passée assis ?",
+          "rrfScore": 0.03125
+        },
+        {
+          "id": "douleur-epaule-lever-bras",
+          "title": "J’ai mal à l’épaule quand je lève le bras : pourquoi ?",
+          "rrfScore": 0.03041475
+        },
+        {
+          "id": "maca-running-reprise",
+          "title": "Reprendre la course à pied : comment éviter d’en faire trop ?",
+          "rrfScore": 0.02928693
+        },
+        {
+          "id": "maca-hydratation-sport",
+          "title": "Faut-il boire avant d’avoir soif quand on fait du sport ?",
+          "rrfScore": 0.02898551
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "quelle est la capitale du Pérou ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "semanticOk": null,
+      "hybridOk": null,
+      "topSimilarity": 0.109604,
+      "semanticTop5": [
+        {
+          "id": "perimenopause-signes-quand-consulter",
+          "title": "Suis-je en préménopause ? Quels sont les signes et quand consulter ?",
+          "similarity": 0.109604
+        },
+        {
+          "id": "running-prolapsus-femme",
+          "title": "Le running favorise-t-il la descente d’organes chez la femme ?",
+          "similarity": 0.105243
+        },
+        {
+          "id": "prolapsus-boule-pesanteur-vaginale",
+          "title": "Je sens une boule ou une pesanteur dans le vagin : est-ce une descente d’organes ?",
+          "similarity": 0.104571
+        },
+        {
+          "id": "voyage-trousse-pharmacie",
+          "title": "Je pars à l’étranger : que mettre dans ma trousse à pharmacie ?",
+          "similarity": 0.103712
+        },
+        {
+          "id": "pth-elevee",
+          "title": "À quoi correspond une PTH augmentée ?",
+          "similarity": 0.091233
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "perimenopause-signes-quand-consulter",
+          "title": "Suis-je en préménopause ? Quels sont les signes et quand consulter ?",
+          "rrfScore": 0.01639344
+        },
+        {
+          "id": "running-prolapsus-femme",
+          "title": "Le running favorise-t-il la descente d’organes chez la femme ?",
+          "rrfScore": 0.01612903
+        },
+        {
+          "id": "prolapsus-boule-pesanteur-vaginale",
+          "title": "Je sens une boule ou une pesanteur dans le vagin : est-ce une descente d’organes ?",
+          "rrfScore": 0.01587302
+        },
+        {
+          "id": "voyage-trousse-pharmacie",
+          "title": "Je pars à l’étranger : que mettre dans ma trousse à pharmacie ?",
+          "rrfScore": 0.015625
+        },
+        {
+          "id": "pth-elevee",
+          "title": "À quoi correspond une PTH augmentée ?",
+          "rrfScore": 0.01538462
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "comment réparer un robinet qui fuit ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "semanticOk": null,
+      "hybridOk": null,
+      "topSimilarity": 0.375771,
+      "semanticTop5": [
+        {
+          "id": "saignement-nez-adulte",
+          "title": "Je saigne du nez : que dois-je faire ?",
+          "similarity": 0.375771
+        },
+        {
+          "id": "fuites-urinaires-age",
+          "title": "J’ai des fuites urinaires : est-ce normal avec l’âge ?",
+          "similarity": 0.37257
+        },
+        {
+          "id": "saignement-nez-enfant",
+          "title": "Mon enfant saigne du nez : que faire ?",
+          "similarity": 0.358752
+        },
+        {
+          "id": "rhume-nez-bouche-enfant",
+          "title": "Que faire quand un enfant a le nez bouché ou un rhume ?",
+          "similarity": 0.35329
+        },
+        {
+          "id": "gencives-saignent-brossage",
+          "title": "Mes gencives saignent quand je me brosse les dents : est-ce normal ?",
+          "similarity": 0.347809
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "fuites-urinaires-age",
+          "title": "J’ai des fuites urinaires : est-ce normal avec l’âge ?",
+          "rrfScore": 0.03252247
+        },
+        {
+          "id": "saignement-nez-adulte",
+          "title": "Je saigne du nez : que dois-je faire ?",
+          "rrfScore": 0.01639344
+        },
+        {
+          "id": "constipation-enfant",
+          "title": "Mon enfant est constipé : quels repères sont utiles ?",
+          "rrfScore": 0.01612903
+        },
+        {
+          "id": "prolapsus-boule-pesanteur-vaginale",
+          "title": "Je sens une boule ou une pesanteur dans le vagin : est-ce une descente d’organes ?",
+          "rrfScore": 0.01587302
+        },
+        {
+          "id": "saignement-nez-enfant",
+          "title": "Mon enfant saigne du nez : que faire ?",
+          "rrfScore": 0.01587302
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "quel smartphone acheter cette année ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "semanticOk": null,
+      "hybridOk": null,
+      "topSimilarity": 0.303356,
+      "semanticTop5": [
+        {
+          "id": "ado-ecrans-reseaux",
+          "title": "Écrans et réseaux sociaux : combien de temps par jour ?",
+          "similarity": 0.303356
+        },
+        {
+          "id": "ado-sommeil-endormissement",
+          "title": "Je n’arrive pas à m’endormir le soir : que faire ?",
+          "similarity": 0.279942
+        },
+        {
+          "id": "desogestrel-meningiome-risque",
+          "title": "Je prends une pilule au désogestrel : dois-je m’inquiéter du risque de méningiome ?",
+          "similarity": 0.277913
+        },
+        {
+          "id": "ecrans-petit",
+          "title": "Écrans avant 3 ans : quel est le repère français ?",
+          "similarity": 0.277394
+        },
+        {
+          "id": "reseaux-sociaux-effets-jeunes",
+          "title": "Réseaux sociaux : quels effets sur les adolescents ?",
+          "similarity": 0.270468
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "ado-ecrans-reseaux",
+          "title": "Écrans et réseaux sociaux : combien de temps par jour ?",
+          "rrfScore": 0.03226646
+        },
+        {
+          "id": "reseaux-sociaux-effets-jeunes",
+          "title": "Réseaux sociaux : quels effets sur les adolescents ?",
+          "rrfScore": 0.03100962
+        },
+        {
+          "id": "desogestrel-meningiome-risque",
+          "title": "Je prends une pilule au désogestrel : dois-je m’inquiéter du risque de méningiome ?",
+          "rrfScore": 0.0305789
+        },
+        {
+          "id": "depistages-40-50-ans",
+          "title": "J’ai entre 40 et 50 ans : quels dépistages dois-je penser à faire ?",
+          "rrfScore": 0.03053613
+        },
+        {
+          "id": "reseaux-sociaux-tdah-attention-ados-20260902",
+          "title": "Les réseaux sociaux peuvent-ils provoquer un TDAH chez un adolescent ?",
+          "rrfScore": 0.02911605
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "donne-moi une recette de tarte aux pommes",
+      "expectedAny": [],
+      "expectedAll": [],
+      "semanticOk": null,
+      "hybridOk": null,
+      "topSimilarity": 0.308087,
+      "semanticTop5": [
+        {
+          "id": "ingestion-produit-toxique-enfant",
+          "title": "Mon enfant a avalé un médicament ou un produit ménager : que faire ?",
+          "similarity": 0.308087
+        },
+        {
+          "id": "intoxication-produit-menager-enfant",
+          "title": "Mon enfant a avalé un produit ménager : que faire ?",
+          "similarity": 0.305886
+        },
+        {
+          "id": "toux-seche-que-faire",
+          "title": "J’ai une toux sèche : faut-il prendre un sirop ?",
+          "similarity": 0.289319
+        },
+        {
+          "id": "goutte-alimentation",
+          "title": "J’ai une crise de goutte : faut-il arrêter la viande, le fromage et l’alcool ?",
+          "similarity": 0.288652
+        },
+        {
+          "id": "prise-poids-sans-raison",
+          "title": "Pourquoi je prends du poids alors que je ne mange pas plus ?",
+          "similarity": 0.287909
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "diversification-alimentaire-bebe",
+          "title": "Diversification alimentaire : quand commencer ?",
+          "rrfScore": 0.02964427
+        },
+        {
+          "id": "ingestion-produit-toxique-enfant",
+          "title": "Mon enfant a avalé un médicament ou un produit ménager : que faire ?",
+          "rrfScore": 0.01639344
+        },
+        {
+          "id": "moustique-tigre-dengue-transmission-locale-20260829",
+          "title": "Voir un moustique tigre signifie-t-il que la dengue circule autour de moi ?",
+          "rrfScore": 0.01639344
+        },
+        {
+          "id": "deshydratation-enfant",
+          "title": "Comment repérer une déshydratation chez un enfant ?",
+          "rrfScore": 0.01612903
+        },
+        {
+          "id": "intoxication-produit-menager-enfant",
+          "title": "Mon enfant a avalé un produit ménager : que faire ?",
+          "rrfScore": 0.01612903
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "qui a gagné Roland-Garros ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "semanticOk": null,
+      "hybridOk": null,
+      "topSimilarity": 0.205255,
+      "semanticTop5": [
+        {
+          "id": "douleur-genou-escaliers",
+          "title": "J’ai mal au genou quand je monte les escaliers : pourquoi ?",
+          "similarity": 0.205255
+        },
+        {
+          "id": "vaccin-hpv-garcons-rattrapage-26-ans-20260830",
+          "title": "Vaccin HPV : concerne-t-il aussi les garçons ?",
+          "similarity": 0.196473
+        },
+        {
+          "id": "tendon-achille-repos-sport",
+          "title": "J’ai mal au tendon d’Achille : faut-il arrêter complètement le sport ?",
+          "similarity": 0.190173
+        },
+        {
+          "id": "running-prolapsus-femme",
+          "title": "Le running favorise-t-il la descente d’organes chez la femme ?",
+          "similarity": 0.185364
+        },
+        {
+          "id": "doigts-raides-matin",
+          "title": "J’ai les doigts raides le matin : est-ce de l’arthrose ?",
+          "similarity": 0.178883
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "douleur-genou-escaliers",
+          "title": "J’ai mal au genou quand je monte les escaliers : pourquoi ?",
+          "rrfScore": 0.01639344
+        },
+        {
+          "id": "vaccin-hpv-garcons-rattrapage-26-ans-20260830",
+          "title": "Vaccin HPV : concerne-t-il aussi les garçons ?",
+          "rrfScore": 0.01612903
+        },
+        {
+          "id": "tendon-achille-repos-sport",
+          "title": "J’ai mal au tendon d’Achille : faut-il arrêter complètement le sport ?",
+          "rrfScore": 0.01587302
+        },
+        {
+          "id": "running-prolapsus-femme",
+          "title": "Le running favorise-t-il la descente d’organes chez la femme ?",
+          "rrfScore": 0.015625
+        },
+        {
+          "id": "doigts-raides-matin",
+          "title": "J’ai les doigts raides le matin : est-ce de l’arthrose ?",
+          "rrfScore": 0.01538462
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "combien font 17 multiplié par 23 ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "semanticOk": null,
+      "hybridOk": null,
+      "topSimilarity": 0.309541,
+      "semanticTop5": [
+        {
+          "id": "fievre-adulte-quand-sinquieter",
+          "title": "J’ai de la fièvre : quand faut-il s’inquiéter chez l’adulte ?",
+          "similarity": 0.309541
+        },
+        {
+          "id": "oubli-pilule",
+          "title": "J’ai oublié ma pilule : que dois-je faire ?",
+          "similarity": 0.29738
+        },
+        {
+          "id": "double-prise-medicament",
+          "title": "J’ai pris deux fois mon médicament par erreur : que faire ?",
+          "similarity": 0.290532
+        },
+        {
+          "id": "mammographie-40-ans",
+          "title": "J’ai 40 ans : dois-je déjà faire une mammographie ?",
+          "similarity": 0.283352
+        },
+        {
+          "id": "oubli-medicament",
+          "title": "J’ai oublié de prendre un médicament : que faire en général ?",
+          "similarity": 0.28008
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "fievre-adulte-quand-sinquieter",
+          "title": "J’ai de la fièvre : quand faut-il s’inquiéter chez l’adulte ?",
+          "rrfScore": 0.01639344
+        },
+        {
+          "id": "varices-contention-disparaitre",
+          "title": "Les bas de compression font-ils disparaître les varices ?",
+          "rrfScore": 0.01639344
+        },
+        {
+          "id": "ado-ecrans-reseaux",
+          "title": "Écrans et réseaux sociaux : combien de temps par jour ?",
+          "rrfScore": 0.01612903
+        },
+        {
+          "id": "oubli-pilule",
+          "title": "J’ai oublié ma pilule : que dois-je faire ?",
+          "rrfScore": 0.01612903
+        },
+        {
+          "id": "double-prise-medicament",
+          "title": "J’ai pris deux fois mon médicament par erreur : que faire ?",
+          "rrfScore": 0.01587302
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "comment apprendre le japonais rapidement ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "semanticOk": null,
+      "hybridOk": null,
+      "topSimilarity": 0.330877,
+      "semanticTop5": [
+        {
+          "id": "enfant-parle-peu-quand-sinquieter",
+          "title": "Mon enfant parle peu : quand faut-il s’inquiéter ?",
+          "similarity": 0.330877
+        },
+        {
+          "id": "diversification-alimentaire-bebe",
+          "title": "Diversification alimentaire : quand commencer ?",
+          "similarity": 0.299505
+        },
+        {
+          "id": "projet-grossesse-quand-consulter",
+          "title": "Nous essayons d’avoir un enfant mais ça ne marche pas. Quand faut-il consulter ?",
+          "similarity": 0.293971
+        },
+        {
+          "id": "baisse-audition-brutale",
+          "title": "J’entends brutalement moins bien d’une oreille : est-ce urgent ?",
+          "similarity": 0.282654
+        },
+        {
+          "id": "prevenir-declin-cognitif-vieillissant",
+          "title": "Peut-on prévenir le déclin cognitif en vieillissant ?",
+          "similarity": 0.282402
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "baisse-audition-brutale",
+          "title": "J’entends brutalement moins bien d’une oreille : est-ce urgent ?",
+          "rrfScore": 0.03100962
+        },
+        {
+          "id": "prevenir-declin-cognitif-vieillissant",
+          "title": "Peut-on prévenir le déclin cognitif en vieillissant ?",
+          "rrfScore": 0.03100962
+        },
+        {
+          "id": "ingestion-produit-toxique-enfant",
+          "title": "Mon enfant a avalé un médicament ou un produit ménager : que faire ?",
+          "rrfScore": 0.02813853
+        },
+        {
+          "id": "audition-apres-60-ans",
+          "title": "Après 60 ans, faut-il faire tester son audition ?",
+          "rrfScore": 0.02774589
+        },
+        {
+          "id": "intoxication-produit-menager-enfant",
+          "title": "Mon enfant a avalé un produit ménager : que faire ?",
+          "rrfScore": 0.0276929
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "quelle voiture familiale consomme le moins ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "semanticOk": null,
+      "hybridOk": null,
+      "topSimilarity": 0.341476,
+      "semanticTop5": [
+        {
+          "id": "regime-mediterraneen-perte-poids-20260831",
+          "title": "Le régime méditerranéen fait-il davantage maigrir ?",
+          "similarity": 0.341476
+        },
+        {
+          "id": "boissons-sucrees",
+          "title": "Boissons sucrées chez l’enfant : pourquoi les limiter ?",
+          "similarity": 0.332934
+        },
+        {
+          "id": "bebe-tete-moins",
+          "title": "Mon bébé tète moins bien : est-ce inquiétant ?",
+          "similarity": 0.321794
+        },
+        {
+          "id": "cholesterol-reduire-sans-medicament",
+          "title": "Comment réduire mon cholestérol sans médicament ?",
+          "similarity": 0.315711
+        },
+        {
+          "id": "desogestrel-meningiome-risque",
+          "title": "Je prends une pilule au désogestrel : dois-je m’inquiéter du risque de méningiome ?",
+          "similarity": 0.307303
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "bebe-tete-moins",
+          "title": "Mon bébé tète moins bien : est-ce inquiétant ?",
+          "rrfScore": 0.03226646
+        },
+        {
+          "id": "etat-general-nourrisson",
+          "title": "Mon bébé n’est pas comme d’habitude : quels changements doivent attirer l’attention ?",
+          "rrfScore": 0.02894955
+        },
+        {
+          "id": "baisse-libido-causes",
+          "title": "J’ai moins de désir sexuel : est-ce forcément hormonal ?",
+          "rrfScore": 0.02886003
+        },
+        {
+          "id": "projet-grossesse-quand-consulter",
+          "title": "Nous essayons d’avoir un enfant mais ça ne marche pas. Quand faut-il consulter ?",
+          "rrfScore": 0.025
+        },
+        {
+          "id": "regime-mediterraneen-perte-poids-20260831",
+          "title": "Le régime méditerranéen fait-il davantage maigrir ?",
+          "rrfScore": 0.01639344
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "raconte-moi une histoire avec un dragon",
+      "expectedAny": [],
+      "expectedAll": [],
+      "semanticOk": null,
+      "hybridOk": null,
+      "topSimilarity": 0.238598,
+      "semanticTop5": [
+        {
+          "id": "moustique-tigre-dengue-transmission-locale-20260829",
+          "title": "Voir un moustique tigre signifie-t-il que la dengue circule autour de moi ?",
+          "similarity": 0.238598
+        },
+        {
+          "id": "nycturie-prostate",
+          "title": "Je me lève plusieurs fois la nuit pour uriner : est-ce la prostate ?",
+          "similarity": 0.228834
+        },
+        {
+          "id": "mouches-volantes-quand-consulter",
+          "title": "Je vois des mouches volantes devant les yeux : est-ce normal ?",
+          "similarity": 0.214578
+        },
+        {
+          "id": "maca-tique-conduite",
+          "title": "Morsure de tique : que faut-il faire tout de suite ?",
+          "similarity": 0.206134
+        },
+        {
+          "id": "insomnie-adulte",
+          "title": "Je dors mal : que peut-on vraiment faire contre l’insomnie ?",
+          "similarity": 0.204819
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "moustique-tigre-dengue-transmission-locale-20260829",
+          "title": "Voir un moustique tigre signifie-t-il que la dengue circule autour de moi ?",
+          "rrfScore": 0.03252247
+        },
+        {
+          "id": "memoire",
+          "title": "Mémoire : quels changements doivent faire parler à son médecin ?",
+          "rrfScore": 0.03030999
+        },
+        {
+          "id": "harcelement-scolaire-signes-que-faire",
+          "title": "Harcèlement scolaire : quels signes doivent alerter et que faire ?",
+          "rrfScore": 0.02995752
+        },
+        {
+          "id": "tour-de-taille-risque-cardiovasculaire",
+          "title": "Votre tour de taille en dit-il plus sur votre santé que votre poids ?",
+          "rrfScore": 0.01639344
+        },
+        {
+          "id": "nycturie-prostate",
+          "title": "Je me lève plusieurs fois la nuit pour uriner : est-ce la prostate ?",
+          "rrfScore": 0.01612903
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "comment déclarer mes impôts en ligne ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "semanticOk": null,
+      "hybridOk": null,
+      "topSimilarity": 0.324051,
+      "semanticTop5": [
+        {
+          "id": "diabete-type-2-depistage-complications",
+          "title": "Diabète de type 2 : pourquoi le dépister avant d’avoir des symptômes ?",
+          "similarity": 0.324051
+        },
+        {
+          "id": "aides-domicile-personne-agee-2026-08-27",
+          "title": "Quand demander des aides pour une personne âgée à domicile ?",
+          "similarity": 0.311159
+        },
+        {
+          "id": "harcelement-scolaire-signes-que-faire",
+          "title": "Harcèlement scolaire : quels signes doivent alerter et que faire ?",
+          "similarity": 0.308329
+        },
+        {
+          "id": "rapport-non-protege-ist",
+          "title": "J’ai eu un rapport non protégé : que dois-je faire ?",
+          "similarity": 0.30604
+        },
+        {
+          "id": "50-ans-coloscopie-depistage-colorectal",
+          "title": "J’ai 50 ans : dois-je faire une coloscopie ?",
+          "similarity": 0.304579
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "harcelement-scolaire-signes-que-faire",
+          "title": "Harcèlement scolaire : quels signes doivent alerter et que faire ?",
+          "rrfScore": 0.03226646
+        },
+        {
+          "id": "diabete-type-2-depistage-complications",
+          "title": "Diabète de type 2 : pourquoi le dépister avant d’avoir des symptômes ?",
+          "rrfScore": 0.01639344
+        },
+        {
+          "id": "aides-domicile-personne-agee-2026-08-27",
+          "title": "Quand demander des aides pour une personne âgée à domicile ?",
+          "rrfScore": 0.01612903
+        },
+        {
+          "id": "rapport-non-protege-ist",
+          "title": "J’ai eu un rapport non protégé : que dois-je faire ?",
+          "rrfScore": 0.015625
+        },
+        {
+          "id": "50-ans-coloscopie-depistage-colorectal",
+          "title": "J’ai 50 ans : dois-je faire une coloscopie ?",
+          "rrfScore": 0.01538462
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "qu'est-ce que le syndrome d'Ehlers-Danlos ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "semanticOk": null,
+      "hybridOk": null,
+      "topSimilarity": 0.317435,
+      "semanticTop5": [
+        {
+          "id": "varices-que-signifie",
+          "title": "J’ai des varices : qu’est-ce que cela signifie ?",
+          "similarity": 0.317435
+        },
+        {
+          "id": "jambes-lourdes-varices",
+          "title": "Jambes lourdes et varices : que peut-on faire ?",
+          "similarity": 0.303937
+        },
+        {
+          "id": "eczema-que-faire",
+          "title": "J’ai de l’eczéma : que faire ?",
+          "similarity": 0.3013
+        },
+        {
+          "id": "fourmillements-mains-pieds-causes",
+          "title": "J’ai des fourmillements dans les mains ou les pieds : quelles peuvent être les causes ?",
+          "similarity": 0.301052
+        },
+        {
+          "id": "jambes-sans-repos",
+          "title": "J’ai besoin de bouger les jambes le soir : est-ce le syndrome des jambes sans repos ?",
+          "similarity": 0.298868
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "jambes-sans-repos",
+          "title": "J’ai besoin de bouger les jambes le soir : est-ce le syndrome des jambes sans repos ?",
+          "rrfScore": 0.03125763
+        },
+        {
+          "id": "syndrome-intestin-irritable-que-faire",
+          "title": "Syndrome de l’intestin irritable : que peut-on vraiment faire ?",
+          "rrfScore": 0.03062179
+        },
+        {
+          "id": "fourmillements-mains-pieds-causes",
+          "title": "J’ai des fourmillements dans les mains ou les pieds : quelles peuvent être les causes ?",
+          "rrfScore": 0.03011775
+        },
+        {
+          "id": "sciatique-faut-il-irm",
+          "title": "Ma douleur du dos descend dans la jambe : faut-il faire une IRM ?",
+          "rrfScore": 0.0276929
+        },
+        {
+          "id": "syndrome-premenstruel-que-faire",
+          "title": "Syndrome prémenstruel : que peut-on vraiment faire ?",
+          "rrfScore": 0.01639344
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "qu'est-ce que la maladie de Wilson ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "semanticOk": null,
+      "hybridOk": null,
+      "topSimilarity": 0.373577,
+      "semanticTop5": [
+        {
+          "id": "zona-adulte",
+          "title": "J’ai une éruption douloureuse d’un seul côté : peut-il s’agir d’un zona ?",
+          "similarity": 0.373577
+        },
+        {
+          "id": "rougeole-maladie-benigne-vaccination-20260827",
+          "title": "La rougeole est-elle vraiment une maladie bénigne ?",
+          "similarity": 0.368603
+        },
+        {
+          "id": "fourmillements-mains-pieds-causes",
+          "title": "J’ai des fourmillements dans les mains ou les pieds : quelles peuvent être les causes ?",
+          "similarity": 0.358551
+        },
+        {
+          "id": "syndrome-intestin-irritable-que-faire",
+          "title": "Syndrome de l’intestin irritable : que peut-on vraiment faire ?",
+          "similarity": 0.358322
+        },
+        {
+          "id": "confusion-aigue-personne-agee",
+          "title": "Une personne âgée devient soudainement confuse : est-ce Alzheimer ?",
+          "similarity": 0.350718
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "rougeole-maladie-benigne-vaccination-20260827",
+          "title": "La rougeole est-elle vraiment une maladie bénigne ?",
+          "rrfScore": 0.03175403
+        },
+        {
+          "id": "varices-que-signifie",
+          "title": "J’ai des varices : qu’est-ce que cela signifie ?",
+          "rrfScore": 0.02964427
+        },
+        {
+          "id": "confusion-aigue-personne-agee",
+          "title": "Une personne âgée devient soudainement confuse : est-ce Alzheimer ?",
+          "rrfScore": 0.02854251
+        },
+        {
+          "id": "dmla-depistage-apres-50-ans",
+          "title": "Après 50 ans, faut-il faire dépister la DMLA ?",
+          "rrfScore": 0.02638889
+        },
+        {
+          "id": "varices-contention-disparaitre",
+          "title": "Les bas de compression font-ils disparaître les varices ?",
+          "rrfScore": 0.01639344
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "quels sont les signes du syndrome de Marfan ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "semanticOk": null,
+      "hybridOk": null,
+      "topSimilarity": 0.394113,
+      "semanticTop5": [
+        {
+          "id": "avc-signes-risque-apres-50",
+          "title": "AVC : quels signes doivent alerter et comment réduire le risque après 50 ans ?",
+          "similarity": 0.394113
+        },
+        {
+          "id": "jambes-lourdes-varices",
+          "title": "Jambes lourdes et varices : que peut-on faire ?",
+          "similarity": 0.375091
+        },
+        {
+          "id": "varices-que-signifie",
+          "title": "J’ai des varices : qu’est-ce que cela signifie ?",
+          "similarity": 0.372554
+        },
+        {
+          "id": "essoufflement-causes-signes-alerte",
+          "title": "Essoufflement : causes fréquentes et signes d’alerte",
+          "similarity": 0.356406
+        },
+        {
+          "id": "dmla-depistage-apres-50-ans",
+          "title": "Après 50 ans, faut-il faire dépister la DMLA ?",
+          "similarity": 0.356134
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "avc-signes-risque-apres-50",
+          "title": "AVC : quels signes doivent alerter et comment réduire le risque après 50 ans ?",
+          "rrfScore": 0.03109932
+        },
+        {
+          "id": "sciatique-faut-il-irm",
+          "title": "Ma douleur du dos descend dans la jambe : faut-il faire une IRM ?",
+          "rrfScore": 0.0298574
+        },
+        {
+          "id": "fourmillements-mains-pieds-causes",
+          "title": "J’ai des fourmillements dans les mains ou les pieds : quelles peuvent être les causes ?",
+          "rrfScore": 0.02941813
+        },
+        {
+          "id": "essoufflement-causes-signes-alerte",
+          "title": "Essoufflement : causes fréquentes et signes d’alerte",
+          "rrfScore": 0.02861201
+        },
+        {
+          "id": "syndrome-premenstruel-que-faire",
+          "title": "Syndrome prémenstruel : que peut-on vraiment faire ?",
+          "rrfScore": 0.01639344
+        }
+      ]
+    },
+    {
+      "class": "abstain",
+      "query": "comment traite-t-on une sarcoïdose pulmonaire ?",
+      "expectedAny": [],
+      "expectedAll": [],
+      "semanticOk": null,
+      "hybridOk": null,
+      "topSimilarity": 0.467313,
+      "semanticTop5": [
+        {
+          "id": "psoriasis-traitements-efficaces",
+          "title": "J’ai du psoriasis : quels traitements sont efficaces ?",
+          "similarity": 0.467313
+        },
+        {
+          "id": "varices-traitements-modernes",
+          "title": "Laser, radiofréquence, sclérose : comment traite-t-on les varices aujourd’hui ?",
+          "similarity": 0.396903
+        },
+        {
+          "id": "poux-enfant",
+          "title": "Mon enfant a des poux : quel traitement est recommandé ?",
+          "similarity": 0.382234
+        },
+        {
+          "id": "syndrome-intestin-irritable-que-faire",
+          "title": "Syndrome de l’intestin irritable : que peut-on vraiment faire ?",
+          "similarity": 0.379966
+        },
+        {
+          "id": "eczema-que-faire",
+          "title": "J’ai de l’eczéma : que faire ?",
+          "similarity": 0.375029
+        }
+      ],
+      "hybridTop5": [
+        {
+          "id": "varices-traitements-modernes",
+          "title": "Laser, radiofréquence, sclérose : comment traite-t-on les varices aujourd’hui ?",
+          "rrfScore": 0.03225806
+        },
+        {
+          "id": "jambe-gonflee-adulte",
+          "title": "Une jambe gonflée : quand faut-il s’inquiéter ?",
+          "rrfScore": 0.01639344
+        },
+        {
+          "id": "psoriasis-traitements-efficaces",
+          "title": "J’ai du psoriasis : quels traitements sont efficaces ?",
+          "rrfScore": 0.01639344
+        },
+        {
+          "id": "essoufflement-causes-signes-alerte",
+          "title": "Essoufflement : causes fréquentes et signes d’alerte",
+          "rrfScore": 0.01587302
+        },
+        {
+          "id": "poux-enfant",
+          "title": "Mon enfant a des poux : quel traitement est recommandé ?",
+          "rrfScore": 0.01587302
+        }
+      ]
+    }
+  ]
+}
