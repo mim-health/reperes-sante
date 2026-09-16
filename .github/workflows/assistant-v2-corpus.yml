@@ -95,3 +95,5 @@ jobs:
             git pull --rebase origin feat/assistant-ia-v2-closed-corpus
             git push origin HEAD:feat/assistant-ia-v2-closed-corpus
           fi
+
+# Triggered after provisioning OPENAI_API_KEY for the live semantic benchmark.
