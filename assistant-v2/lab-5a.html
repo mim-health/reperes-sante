@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MACA Santé — Assistant IA V2 — Lab 5A</title>
+<style>
+:root{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#173c33;background:#f6f1e7}body{margin:0}main{max-width:1180px;margin:auto;padding:28px 18px 60px}h1{font-family:Georgia,serif;font-size:34px;margin:0 0 6px}.muted{color:#66736e}.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:22px 0}.card{background:#fffdf8;border:1px solid #d8dfd8;border-radius:14px;padding:14px}.metric{font-size:28px;font-weight:700}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.toolbar input,.toolbar select{padding:10px 12px;border:1px solid #c8d1cb;border-radius:10px;background:white;min-width:180px}.case{background:#fffdf8;border:1px solid #d8dfd8;border-radius:14px;padding:16px;margin:12px 0}.case.ok{border-left:6px solid #3b7f63}.case.fail{border-left:6px solid #bf5b3f}.head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.pill{display:inline-block;padding:3px 8px;border-radius:999px;background:#e7eee8;font-size:12px;margin-right:6px}.question{font-weight:700;font-size:17px;margin:8px 0}.answer{white-space:pre-wrap;line-height:1.5;background:#f4f7f3;padding:12px;border-radius:10px}.cols{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.small{font-size:13px;line-height:1.45}ul{margin:6px 0 0 18px;padding:0}@media(max-width:760px){.cols{grid-template-columns:1fr}h1{font-size:28px}}
+</style>
+</head>
+<body><main>
+<h1>MACA Santé — Assistant IA V2</h1>
+<div class="muted">Laboratoire interne 5A — banc sauvage, corpus fermé, aucune exposition publique.</div>
+<div id="summary" class="summary"></div>
+<div class="toolbar">
+<input id="q" placeholder="Filtrer les questions…">
+<select id="classFilter"><option value="">Toutes les classes</option></select>
+<select id="statusFilter"><option value="">Tous les résultats</option><option value="ok">✅ Réussis</option><option value="fail">❌ Échecs</option></select>
+</div>
+<div id="cases"></div>
+</main>
+<script>
+let REPORT=null;
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+function metric(label,value,sub=''){return `<div class="card"><div class="muted small">${esc(label)}</div><div class="metric">${esc(value)}</div><div class="small muted">${esc(sub)}</div></div>`}
+function renderSummary(){
+ const r=REPORT;
+ document.getElementById('summary').innerHTML=[
+  metric('Cas sauvages',r.caseCount,'jamais utilisés dans les étapes 1–4'),
+  metric('Réussite',`${Math.round(r.passRate*1000)/10}%`,`${r.passed}/${r.caseCount}`),
+  metric('Grounding',`${Math.round(r.grounding.passRate*1000)/10}%`,`${r.grounding.supported}/${r.grounding.answerCount} réponses soutenues`),
+  metric('Abstention',`${Math.round(r.abstention.passRate*1000)/10}%`,`${r.abstention.correct}/${r.abstention.expected}`),
+  metric('Personnalisation',`${Math.round(r.personalization.passRate*1000)/10}%`,`${r.personalization.correct}/${r.personalization.expected}`)
+ ].join('');
+}
+function render(){
+ const text=document.getElementById('q').value.toLowerCase();
+ const cls=document.getElementById('classFilter').value;
+ const status=document.getElementById('statusFilter').value;
+ const rows=REPORT.rows.filter(r=>(!text||r.query.toLowerCase().includes(text))&&(!cls||r.class===cls)&&(!status||(status==='ok')===r.evaluation.ok));
+ document.getElementById('cases').innerHTML=rows.map(r=>{
+  const ok=r.evaluation.ok;
+  const used=r.result?.cards_used||[];
+  const top=r.selectedTop5||[];
+  const grounding=r.grounding||{};
+  return `<section class="case ${ok?'ok':'fail'}">
+   <div class="head"><div><span class="pill">${esc(r.id)}</span><span class="pill">${esc(r.class)}</span><span class="pill">sim. ${esc(r.topSimilarity)}</span></div><strong>${ok?'✅':'❌'}</strong></div>
+   <div class="question">${esc(r.query)}</div>
+   <div class="small muted">Statut : <b>${esc(r.result?.status||'—')}</b> · Contrat : ${r.contractOk?'OK':'ÉCHEC'} · Grounding : ${grounding.supported===true?'OK':grounding.supported===false?'ÉCHEC':'—'}</div>
+   ${r.result?.answer?`<div class="answer">${esc(r.result.answer)}</div>`:''}
+   <div class="cols">
+    <div class="small"><b>Top 5 retrieval</b><ul>${top.map(x=>`<li>${esc(x.id)} — ${esc(x.similarity)}</li>`).join('')}</ul></div>
+    <div class="small"><b>Fiches utilisées</b><ul>${used.length?used.map(x=>`<li>${esc(x)}</li>`).join(''):'<li>Aucune</li>'}</ul></div>
+   </div>
+   ${!ok?`<div class="small" style="margin-top:10px"><b>Détail évaluation :</b> ${esc(JSON.stringify(r.evaluation))}${r.contractErrors?.length?`<br><b>Contrat :</b> ${esc(r.contractErrors.join(' | '))}`:''}${grounding.reason?`<br><b>Grounding :</b> ${esc(grounding.reason)}`:''}</div>`:''}
+  </section>`;
+ }).join('')||'<div class="muted">Aucun cas pour ce filtre.</div>';
+}
+fetch('./lab-5a.report.json').then(r=>{if(!r.ok)throw new Error('rapport absent');return r.json()}).then(r=>{
+ REPORT=r;renderSummary();
+ const classes=[...new Set(r.rows.map(x=>x.class))];document.getElementById('classFilter').innerHTML+=[...classes].map(c=>`<option>${esc(c)}</option>`).join('');
+ ['q','classFilter','statusFilter'].forEach(id=>document.getElementById(id).addEventListener(id==='q'?'input':'change',render));render();
+}).catch(err=>{document.getElementById('cases').innerHTML=`<div class="case fail">Rapport 5A indisponible : ${esc(err.message)}</div>`});
+</script></body></html>
