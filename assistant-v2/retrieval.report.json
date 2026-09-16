@@ -3,10 +3,10 @@
   "engine": "maca-v2-local-hybrid-bm25-v1",
   "corpusFingerprint": "9e20504a0eb7ea8cf435a49a27737dca74f5a44031435c6eec163c7d57726d8d",
   "corpusCardCount": 272,
-  "testCount": 24,
-  "passed": 22,
-  "failed": 2,
-  "passRate": 0.9167,
+  "testCount": 26,
+  "passed": 26,
+  "failed": 0,
+  "passRate": 1,
   "rows": [
     {
       "query": "brûlures d'estomac",
@@ -254,7 +254,8 @@
       "query": "j'ai des palpitations",
       "ok": true,
       "expectedAny": [
-        "palpitations-adulte"
+        "palpitations-adulte",
+        "palpitations"
       ],
       "expectedAll": [],
       "top5": [
@@ -291,10 +292,90 @@
       ]
     },
     {
-      "query": "j'ai une cystite",
-      "ok": false,
+      "query": "j'ai une douleur dans la poitrine",
+      "ok": true,
       "expectedAny": [
-        "maca-cystite-reperes"
+        "douleur-thoracique-coeur"
+      ],
+      "expectedAll": [],
+      "top5": [
+        {
+          "id": "douleur-thoracique-coeur",
+          "title": "J’ai une douleur dans la poitrine : est-ce forcément le cœur ?",
+          "score": 137.1474,
+          "coverage": 1
+        },
+        {
+          "id": "sciatique-faut-il-irm",
+          "title": "Ma douleur du dos descend dans la jambe : faut-il faire une IRM ?",
+          "score": 19.9083,
+          "coverage": 0.5
+        },
+        {
+          "id": "douleur-rapports-dyspareunie",
+          "title": "J’ai mal pendant les rapports sexuels : est-ce normal ?",
+          "score": 17.6845,
+          "coverage": 0.5
+        },
+        {
+          "id": "endometriose-2026-08-27",
+          "title": "Endométriose : quels sont les symptômes et quand consulter ?",
+          "score": 16.4924,
+          "coverage": 0.5
+        },
+        {
+          "id": "travail-ecran-douleurs-fatigue-visuelle-sedentarite",
+          "title": "Travail sur écran : comment limiter douleurs, fatigue visuelle et sédentarité ?",
+          "score": 15.4126,
+          "coverage": 0.5
+        }
+      ]
+    },
+    {
+      "query": "douleur poitrine",
+      "ok": true,
+      "expectedAny": [
+        "douleur-thoracique-coeur"
+      ],
+      "expectedAll": [],
+      "top5": [
+        {
+          "id": "douleur-thoracique-coeur",
+          "title": "J’ai une douleur dans la poitrine : est-ce forcément le cœur ?",
+          "score": 132.1474,
+          "coverage": 1
+        },
+        {
+          "id": "sciatique-faut-il-irm",
+          "title": "Ma douleur du dos descend dans la jambe : faut-il faire une IRM ?",
+          "score": 19.9083,
+          "coverage": 0.5
+        },
+        {
+          "id": "douleur-rapports-dyspareunie",
+          "title": "J’ai mal pendant les rapports sexuels : est-ce normal ?",
+          "score": 17.6845,
+          "coverage": 0.5
+        },
+        {
+          "id": "endometriose-2026-08-27",
+          "title": "Endométriose : quels sont les symptômes et quand consulter ?",
+          "score": 16.4924,
+          "coverage": 0.5
+        },
+        {
+          "id": "travail-ecran-douleurs-fatigue-visuelle-sedentarite",
+          "title": "Travail sur écran : comment limiter douleurs, fatigue visuelle et sédentarité ?",
+          "score": 15.4126,
+          "coverage": 0.5
+        }
+      ]
+    },
+    {
+      "query": "j'ai une cystite",
+      "ok": true,
+      "expectedAny": [
+        "cystite-femme"
       ],
       "expectedAll": [],
       "top5": [
@@ -308,9 +389,9 @@
     },
     {
       "query": "brûlures en urinant",
-      "ok": false,
+      "ok": true,
       "expectedAny": [
-        "maca-cystite-reperes"
+        "cystite-femme"
       ],
       "expectedAll": [],
       "top5": [
@@ -392,7 +473,8 @@
       "ok": true,
       "expectedAny": [
         "vertiges-causes",
-        "vertiges-adulte"
+        "vertiges-adulte",
+        "hypotension-orthostatique-lever"
       ],
       "expectedAll": [],
       "top5": [
