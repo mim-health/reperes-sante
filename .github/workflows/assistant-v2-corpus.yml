@@ -9,7 +9,11 @@ on:
       - 'scripts/build-assistant-v2-corpus.js'
       - 'scripts/test-assistant-v2-retrieval.js'
       - 'scripts/calibrate-assistant-v2-retrieval.js'
+      - 'scripts/build-assistant-v2-embeddings.js'
+      - 'scripts/benchmark-assistant-v2-semantic.js'
+      - 'scripts/test-assistant-v2-semantic-module.js'
       - 'assistant-v2/retrieval.js'
+      - 'assistant-v2/semantic-retrieval.js'
       - 'assistant-v2/retrieval.test-cases.json'
       - 'assistant-v2/retrieval.calibration-cases.json'
       - 'corpus-manifest.js'
@@ -44,6 +48,22 @@ jobs:
       - name: Calibrate retrieval on mixed 2B cases
         run: node scripts/calibrate-assistant-v2-retrieval.js
 
+      - name: Test semantic module without API
+        run: node scripts/test-assistant-v2-semantic-module.js
+
+      - name: Build embeddings and benchmark semantic retrieval when API key exists
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          MACA_EMBEDDING_MODEL: text-embedding-3-small
+          MACA_EMBEDDING_DIMENSIONS: '512'
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "OPENAI_API_KEY absent: étape 3 live non exécutée, aucun coût API."
+            exit 0
+          fi
+          node scripts/build-assistant-v2-embeddings.js
+          node scripts/benchmark-assistant-v2-semantic.js
+
       - name: Show structural report
         run: cat assistant-v2/corpus.report.json
 
@@ -53,11 +73,21 @@ jobs:
       - name: Show 2B calibration summary
         run: node -e "const r=require('./assistant-v2/retrieval.calibration.report.json'); console.log(JSON.stringify({caseCount:r.caseCount,classCounts:r.classCounts,retrieval:r.retrieval,scoreSeparation:r.scoreSeparation,suggestedBaselineRule:r.suggestedBaselineRule},null,2))"
 
+      - name: Show semantic benchmark summary when available
+        run: |
+          if [ -f assistant-v2/semantic.report.json ]; then
+            node -e "const r=require('./assistant-v2/semantic.report.json'); console.log(JSON.stringify({embedding:r.embedding,baselineLexical:r.baselineLexical,pureSemantic:r.pureSemantic,hybrid:r.hybrid,semanticThreshold:r.semanticThresholdCalibration.suggestedStrict},null,2))"
+          else
+            echo "Semantic report absent: live API benchmark not run."
+          fi
+
       - name: Publish generated V2 artifacts on prototype branch only
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assistant-v2/corpus.json assistant-v2/corpus.report.json assistant-v2/retrieval.report.json assistant-v2/retrieval.calibration.report.json
+          if [ -f assistant-v2/embeddings.index.json ]; then git add assistant-v2/embeddings.index.json; fi
+          if [ -f assistant-v2/semantic.report.json ]; then git add assistant-v2/semantic.report.json; fi
           if git diff --cached --quiet; then
             echo "Assistant V2 artifacts unchanged"
           else
