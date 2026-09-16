@@ -12,10 +12,14 @@ on:
       - 'scripts/build-assistant-v2-embeddings.js'
       - 'scripts/benchmark-assistant-v2-semantic.js'
       - 'scripts/test-assistant-v2-semantic-module.js'
+      - 'scripts/benchmark-assistant-v2-synthesis.js'
       - 'assistant-v2/retrieval.js'
       - 'assistant-v2/semantic-retrieval.js'
+      - 'assistant-v2/contract.js'
+      - 'assistant-v2/synthesis.js'
       - 'assistant-v2/retrieval.test-cases.json'
       - 'assistant-v2/retrieval.calibration-cases.json'
+      - 'assistant-v2/synthesis.safety-cases.json'
       - 'corpus-manifest.js'
       - 'corpus-canonicalizer.js'
       - 'maca-category-access.js'
@@ -64,6 +68,22 @@ jobs:
           node scripts/build-assistant-v2-embeddings.js
           node scripts/benchmark-assistant-v2-semantic.js
 
+      - name: Run closed-corpus synthesis benchmark
+        id: synthesis_benchmark
+        continue-on-error: true
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          MACA_SYNTHESIS_MODEL: gpt-5.6-terra
+          MACA_SYNTHESIS_TOP_K: '5'
+          MACA_SYNTHESIS_MIN_SIMILARITY: '0.30'
+          MACA_SYNTHESIS_CONCURRENCY: '3'
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "OPENAI_API_KEY absent: étape 4 live non exécutée."
+            exit 1
+          fi
+          node scripts/benchmark-assistant-v2-synthesis.js
+
       - name: Show structural report
         run: cat assistant-v2/corpus.report.json
 
@@ -81,19 +101,37 @@ jobs:
             echo "Semantic report absent: live API benchmark not run."
           fi
 
+      - name: Show synthesis benchmark summary when available
+        if: always()
+        run: |
+          if [ -f assistant-v2/synthesis.report.json ]; then
+            node -e "const r=require('./assistant-v2/synthesis.report.json'); console.log(JSON.stringify({ok:r.ok,retrieval:r.retrieval,synthesis:r.synthesis,caseCount:r.caseCount,passed:r.passed,failed:r.failed,passRate:r.passRate,contractValid:r.contractValid,hardGateAbstains:r.hardGateAbstains,liveModelCalls:r.liveModelCalls,byClass:r.byClass,usage:r.usage},null,2))"
+          else
+            echo "Synthesis report absent."
+          fi
+
       - name: Publish generated V2 artifacts on prototype branch only
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assistant-v2/corpus.json assistant-v2/corpus.report.json assistant-v2/retrieval.report.json assistant-v2/retrieval.calibration.report.json
           if [ -f assistant-v2/embeddings.index.json ]; then git add assistant-v2/embeddings.index.json; fi
           if [ -f assistant-v2/semantic.report.json ]; then git add assistant-v2/semantic.report.json; fi
+          if [ -f assistant-v2/synthesis.report.json ]; then git add assistant-v2/synthesis.report.json; fi
           if git diff --cached --quiet; then
             echo "Assistant V2 artifacts unchanged"
           else
-            git commit -m "build(assistant-v2): publier corpus et rapports retrieval"
+            git commit -m "build(assistant-v2): publier rapports retrieval et synthèse"
             git pull --rebase origin feat/assistant-ia-v2-closed-corpus
             git push origin HEAD:feat/assistant-ia-v2-closed-corpus
           fi
 
-# Triggered after provisioning OPENAI_API_KEY for the live semantic benchmark.
+      - name: Enforce synthesis benchmark result
+        if: always()
+        run: |
+          if [ ! -f assistant-v2/synthesis.report.json ]; then
+            echo "Rapport synthèse absent"
+            exit 1
+          fi
+          node -e "const r=require('./assistant-v2/synthesis.report.json'); if(!r.ok){console.error('Étape 4 non verte:',r.failed,'échec(s),',r.contractValid,'contrats valides sur',r.caseCount); process.exit(1)}; console.log('Étape 4 verte:',r.passed+'/'+r.caseCount)"
