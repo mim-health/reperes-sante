@@ -7,6 +7,9 @@ on:
     paths:
       - '.github/workflows/assistant-v2-corpus.yml'
       - 'scripts/build-assistant-v2-corpus.js'
+      - 'scripts/test-assistant-v2-retrieval.js'
+      - 'assistant-v2/retrieval.js'
+      - 'assistant-v2/retrieval.test-cases.json'
       - 'corpus-manifest.js'
       - 'corpus-canonicalizer.js'
       - 'maca-category-access.js'
@@ -33,17 +36,23 @@ jobs:
       - name: Build isolated Assistant V2 corpus
         run: node scripts/build-assistant-v2-corpus.js
 
+      - name: Test local retrieval baseline
+        run: node scripts/test-assistant-v2-retrieval.js
+
       - name: Show structural report
         run: cat assistant-v2/corpus.report.json
+
+      - name: Show retrieval benchmark summary
+        run: node -e "const r=require('./assistant-v2/retrieval.report.json'); console.log(JSON.stringify({ok:r.ok,testCount:r.testCount,passed:r.passed,failed:r.failed,passRate:r.passRate},null,2))"
 
       - name: Publish generated V2 artifacts on prototype branch only
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assistant-v2/corpus.json assistant-v2/corpus.report.json
+          git add assistant-v2/corpus.json assistant-v2/corpus.report.json assistant-v2/retrieval.report.json
           if git diff --cached --quiet; then
-            echo "Assistant V2 corpus artifacts unchanged"
+            echo "Assistant V2 artifacts unchanged"
           else
-            git commit -m "build(assistant-v2): publier corpus fermé généré"
+            git commit -m "build(assistant-v2): publier corpus et benchmark retrieval"
             git push origin HEAD:feat/assistant-ia-v2-closed-corpus
           fi
