@@ -1,4 +1,4 @@
-/* MACA Santé — micro-correctif retrouvabilité pilote — 06/09/2026.
+/* MACA Santé — micro-correctif retrouvabilité pilote — 16/09/2026.
  * Ajoute uniquement des routes directes vers des fiches VALIDATED existantes.
  * Aucun changement de seuil, scoring général, corpus médical ou abstention globale.
  */
@@ -10,6 +10,8 @@
   const DIABETES_SCREENING_ID='diabete-type-2-depistage-complications';
   const DIABETES_YOUTH_ID='diabete-type-2-jeunes-adolescents';
   const BRONCHIOLITIS_ID='bronchiolite-bebe-vaccin-grossesse-anticorps';
+  const PARESTHESIA_ID='fourmillements-mains-pieds-causes';
+  const BLOOD_STOOL_ID='sang-dans-les-selles';
   const ADO_MESSAGE='Nous n’avons pas trouvé de fiche précise pour cette question. Retrouvez nos questions sur la santé des adolescents.';
   const WOMEN_MESSAGE='Nous n’avons pas encore de fiche précise sur cette question. Retrouvez nos questions dans Santé des femmes & grossesse.';
 
@@ -41,12 +43,21 @@
         if(/\b(ado|ados|adolescent|adolescente|adolescents|adolescentes|jeune|jeunes|enfant|enfants)\b/.test(q))return {id:DIABETES_YOUTH_ID,intentKey:'type2-diabetes-youth'};
         return {id:DIABETES_SCREENING_ID,intentKey:'type2-diabetes-screening'};
       }
+      /* Pilot 16/09: validated natural-language false negatives only. */
+      if(/\b(fourmi|fourmis|fourmillement|fourmillements|paresthesie|paresthesies|engourdissement|engourdissements)\b/.test(q)&&/\b(main|mains|pied|pieds)\b/.test(q)) return {id:PARESTHESIA_ID,intentKey:'paresthesia-hands-feet'};
+      if(/\b(sang|saigne|saignement)\b/.test(q)&&(/\b(selle|selles|toilette|toilettes|papier)\b/.test(q))) return {id:BLOOD_STOOL_ID,intentKey:'blood-in-stool'};
+      if(/\b(poitrine|thorax|thoracique)\b/.test(q)&&/\b(mal|douleur|douleurs|serre|serrement|gene)\b/.test(q)) return {titleIncludes:'douleur dans la poitrine',intentKey:'chest-pain'};
+      if((/\b(brulure|brulures|brule|brulent)\b/.test(q)&&/\b(estomac|repas|mange|manger|poitrine|sternum)\b/.test(q))||/\b(remontee|remontees|reflux)\b/.test(q)) return {titleIncludes:'brulures d estomac',intentKey:'reflux-heartburn'};
       return null;
     }
-    function targetById(id){return corpus().find(q=>q&&q.id===id)||null;}
+    function targetBySpec(t){
+      if(t.id)return corpus().find(q=>q&&q.id===t.id)||null;
+      if(t.titleIncludes){const needle=plainNorm(t.titleIncludes);return corpus().find(q=>plainNorm(q&&q.title).includes(needle))||null;}
+      return null;
+    }
     function forcedRank(query,t){
-      const card=targetById(t.id);if(!card)return [];
-      const items=corpus(),index=items.findIndex(x=>x&&x.id===t.id);
+      const card=targetBySpec(t);if(!card)return [];
+      const items=corpus(),index=items.indexOf(card);
       return [{q:card,index,score:1180,coverage:1,directCoverage:1,confidence:'high',intentKey:t.intentKey,matchedAlias:norm(query)}];
     }
     function rank(query,options={}){
@@ -59,10 +70,10 @@
       if(isMauxVentre(query)){t={id:TARGET_ID,intentKey:'abdominal-pain'};reason='pilot-maux-ventre-direct';}
       else {t=directTarget(query);reason='pilot-validated-topic-direct';}
       if(!t)return baseResolve(query,options);
-      const card=targetById(t.id);if(!card)return {status:'none',reason:t.intentKey+'-target-missing',matches:[],context:[]};
-      return {status:'match',reason,matches:[{intentKey:t.intentKey,id:t.id,score:1180,confidence:'high',matchedAlias:norm(query),matchType:'direct-topic'}],context:[]};
+      const card=targetBySpec(t);if(!card)return {status:'none',reason:t.intentKey+'-target-missing',matches:[],context:[]};
+      return {status:'match',reason,matches:[{intentKey:t.intentKey,id:card.id,score:1180,confidence:'high',matchedAlias:norm(query),matchType:'direct-topic'}],context:[]};
     }
-    win.MACA_SEARCH_V2={...base,version:String(base.version||'')+'-retrouvabilite3',resolve,rank,retrievabilityFallback:fallbackFor,__macaRetrievabilitePilotFix:true};
+    win.MACA_SEARCH_V2={...base,version:String(base.version||'')+'-retrouvabilite4',resolve,rank,retrievabilityFallback:fallbackFor,__macaRetrievabilitePilotFix:true};
     return true;
   }
 
@@ -91,7 +102,7 @@
   function watchAssistant(){const existing=document.querySelector('.maca-assistant-frame');if(existing)wireAssistantFrame(existing);if(!document.body)return;new MutationObserver(()=>{const frame=document.querySelector('.maca-assistant-frame');if(frame)wireAssistantFrame(frame);}).observe(document.body,{childList:true,subtree:true});}
 
   installEngine(root);
-  root.MACA_RETRIEVABILITY_FALLBACKS={version:'2026-09-11-pilot3',match:fallbackFor};
+  root.MACA_RETRIEVABILITY_FALLBACKS={version:'2026-09-16-pilot4',match:fallbackFor};
   window.addEventListener('maca:v2-ui-ready',()=>{bindSearchFallback();watchAssistant();});
   if(document.readyState!=='loading')watchAssistant();else document.addEventListener('DOMContentLoaded',watchAssistant,{once:true});
 })(typeof window!=='undefined'?window:globalThis);
