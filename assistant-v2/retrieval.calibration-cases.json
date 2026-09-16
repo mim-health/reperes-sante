@@ -33,7 +33,7 @@
 
   {"class":"personalized","query":"j'ai 82 ans, je me lève quatre fois la nuit pour uriner, quel traitement dois-je prendre ?","expectedAny":["nycturie-prostate"]},
   {"class":"personalized","query":"quelle pilule dois-je prendre à 43 ans si j'ai déjà fait une thrombose ?","expectedAny":["contraception-apres-40-ans","contraception-urgence"]},
-  {"class":"personalized","query":"je prends du désogestrel depuis six ans, dois-je l'arrêter à cause du risque de méningiome ?","expectedAny":["desogestrel-meningiome-2026-09-12","desogestrel-meningiome"]},
+  {"class":"personalized","query":"je prends du désogestrel depuis six ans, dois-je l'arrêter à cause du risque de méningiome ?","expectedAny":["desogestrel-meningiome-risque"]},
   {"class":"personalized","query":"je prends de l'oméprazole depuis dix ans, est-ce que je dois l'arrêter demain ?","expectedAny":["ipp-long-cours-omeprazole"]},
   {"class":"personalized","query":"ma TSH est à 8, est-ce que je dois commencer un traitement ?","expectedAny":["tsh-haute-basse-thyroide"]},
   {"class":"personalized","query":"mon fils de 7 ans tousse depuis plusieurs jours, que dois-je lui donner ?","expectedAny":["toux-enfant"]},
