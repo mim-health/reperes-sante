@@ -7,6 +7,7 @@
   {"query":"mon cœur bat bizarrement","expectedAny":["palpitations-adulte","palpitations-quand-consulter"]},
   {"query":"j'ai des palpitations","expectedAny":["palpitations-adulte","palpitations"]},
   {"query":"j'ai une douleur dans la poitrine","expectedAny":["douleur-thoracique-coeur"]},
+  {"query":"douleur poitrine","expectedAny":["douleur-thoracique-coeur"]},
   {"query":"j'ai une cystite","expectedAny":["cystite-femme"]},
   {"query":"brûlures en urinant","expectedAny":["cystite-femme"]},
   {"query":"j'ai des acouphènes et des vertiges","expectedAll":["acouphenes-adulte","vertiges-causes"]},
