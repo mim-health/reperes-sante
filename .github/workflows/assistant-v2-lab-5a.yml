@@ -1,0 +1,107 @@
+name: assistant v2 lab 5A
+
+on:
+  push:
+    branches:
+      - feat/assistant-ia-v2-closed-corpus
+    paths:
+      - '.github/workflows/assistant-v2-lab-5a.yml'
+      - 'scripts/run-assistant-v2-lab-5a.js'
+      - 'assistant-v2/lab-5a.cases.json'
+      - 'assistant-v2/contract.js'
+      - 'assistant-v2/synthesis.js'
+      - 'assistant-v2/semantic-retrieval.js'
+      - 'corpus-manifest.js'
+      - 'corpus-canonicalizer.js'
+      - 'maca-category-access.js'
+      - 'qa-data*.js'
+      - 'evidence-model.js'
+      - 'audit-overrides.js'
+      - 'backlog-*.js'
+      - 'maca-extra*.js'
+      - 'maca-daily-archive.js'
+      - 'structured-backlog-compat.js'
+      - 'migration-*.js'
+  workflow_dispatch:
+
+concurrency:
+  group: assistant-v2-lab-5a-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  lab-5a:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact commit
+        uses: actions/checkout@v4
+
+      - name: Rebuild isolated corpus
+        run: node scripts/build-assistant-v2-corpus.js
+
+      - name: Ensure semantic embeddings index
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          MACA_EMBEDDING_MODEL: text-embedding-3-small
+          MACA_EMBEDDING_DIMENSIONS: '512'
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "OPENAI_API_KEY absent: Lab 5A impossible."
+            exit 1
+          fi
+          node scripts/build-assistant-v2-embeddings.js
+
+      - name: Run frozen wild Lab 5A
+        id: lab_5a
+        continue-on-error: true
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          MACA_SYNTHESIS_MODEL: gpt-5.6-terra
+          MACA_GROUNDING_JUDGE_MODEL: gpt-5.6-terra
+          MACA_SYNTHESIS_TOP_K: '5'
+          MACA_SYNTHESIS_MIN_SIMILARITY: '0.30'
+          MACA_SYNTHESIS_CONCURRENCY: '3'
+        run: node scripts/run-assistant-v2-lab-5a.js
+
+      - name: Show Lab 5A summary
+        if: always()
+        run: |
+          if [ -f assistant-v2/lab-5a.report.json ]; then
+            node -e "const r=require('./assistant-v2/lab-5a.report.json'); console.log(JSON.stringify({ok:r.ok,phase:r.phase,caseCount:r.caseCount,passed:r.passed,failed:r.failed,passRate:r.passRate,byClass:r.byClass,grounding:r.grounding,abstention:r.abstention,personalization:r.personalization,usage:r.usage},null,2))"
+          else
+            echo "Rapport Lab 5A absent."
+          fi
+
+      - name: Publish Lab 5A report on prototype branch only
+        if: always()
+        run: |
+          if [ ! -f assistant-v2/lab-5a.report.json ]; then
+            echo "Aucun rapport à publier"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin feat/assistant-ia-v2-closed-corpus --depth=1
+          REMOTE_HEAD="$(git rev-parse origin/feat/assistant-ia-v2-closed-corpus)"
+          if [ "$REMOTE_HEAD" != "$GITHUB_SHA" ]; then
+            echo "La branche a avancé ($GITHUB_SHA -> $REMOTE_HEAD). Publication ignorée pour ne pas écraser un rapport plus récent."
+            exit 0
+          fi
+          git add assistant-v2/lab-5a.report.json
+          if git diff --cached --quiet; then
+            echo "Rapport Lab 5A inchangé"
+          else
+            git commit -m "build(assistant-v2): publier rapport Lab 5A"
+            git push origin HEAD:feat/assistant-ia-v2-closed-corpus
+          fi
+
+      - name: Enforce Lab 5A result
+        if: always()
+        run: |
+          if [ ! -f assistant-v2/lab-5a.report.json ]; then
+            echo "Rapport Lab 5A absent"
+            exit 1
+          fi
+          node -e "const r=require('./assistant-v2/lab-5a.report.json'); if(!r.ok){console.error('Lab 5A non vert:',r.failed,'échec(s) sur',r.caseCount); process.exit(1)}; console.log('Lab 5A vert:',r.passed+'/'+r.caseCount)"
