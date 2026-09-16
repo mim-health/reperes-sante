@@ -77,6 +77,22 @@ for(let score=0;score<=160;score+=2.5){
 candidates.sort((a,b)=>b.balancedAccuracy-a.balancedAccuracy||b.specificity-a.specificity||b.sensitivity-a.sensitivity||a.score-b.score||a.coverage-b.coverage);
 const strict=candidates.filter(c=>c.specificity===1).sort((a,b)=>b.sensitivity-a.sensitivity||b.balancedAccuracy-a.balancedAccuracy||a.score-b.score||a.coverage-b.coverage);
 const suggestedBaseline=(strict[0]||candidates[0]||null);
+const acceptBySuggested=row=>suggestedBaseline&&row.topScore>=suggestedBaseline.score&&row.topCoverage>=suggestedBaseline.coverage;
+
+const compactRow=row=>({
+  class:row.class,
+  query:row.query,
+  expectedAny:row.expectedAny,
+  expectedAll:row.expectedAll,
+  topScore:row.topScore,
+  topCoverage:row.topCoverage,
+  top5:row.top5
+});
+
+const retrievalMisses=relevant.filter(r=>!r.retrievalOk).map(compactRow);
+const hardestAbstain=[...abstain].sort((a,b)=>b.topScore-a.topScore).slice(0,8).map(compactRow);
+const suggestedRuleFalseNegatives=relevant.filter(r=>!acceptBySuggested(r)).map(compactRow);
+const suggestedRuleFalsePositives=abstain.filter(r=>acceptBySuggested(r)).map(compactRow);
 
 const report={
   ok:true,
@@ -95,6 +111,10 @@ const report={
     abstainTopScoreMean:round(avg(abstain.map(r=>r.topScore)))
   },
   suggestedBaselineRule:suggestedBaseline,
+  retrievalMisses,
+  hardestAbstain,
+  suggestedRuleFalseNegatives,
+  suggestedRuleFalsePositives,
   bestThresholdCandidates:candidates.slice(0,12),
   notes:[
     'Le seuil proposé est exploratoire et ne doit pas être appliqué en production.',
@@ -113,9 +133,11 @@ console.log(JSON.stringify({
   retrieval:report.retrieval,
   byClass:report.byClass,
   scoreSeparation:report.scoreSeparation,
-  suggestedBaselineRule:report.suggestedBaselineRule
+  suggestedBaselineRule:report.suggestedBaselineRule,
+  retrievalMisses:report.retrievalMisses.map(r=>({class:r.class,query:r.query,top5:r.top5.map(x=>x.id)})),
+  hardestAbstain:report.hardestAbstain.map(r=>({query:r.query,topScore:r.topScore,topCoverage:r.topCoverage,top:r.top5[0]&&r.top5[0].id})),
+  suggestedRuleFalseNegatives:report.suggestedRuleFalseNegatives.map(r=>r.query),
+  suggestedRuleFalsePositives:report.suggestedRuleFalsePositives.map(r=>r.query)
 },null,2));
 
-// Calibration is observational: do not fail CI because a difficult case misses.
-// Only structural corruption should fail the workflow.
 if(rows.length<50)process.exitCode=1;
