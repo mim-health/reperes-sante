@@ -5,11 +5,11 @@
   "model": "text-embedding-3-small",
   "dimensions": 512,
   "cardCount": 272,
-  "generatedAt": "2026-09-16T15:15:44.242Z",
+  "generatedAt": "2026-09-16T15:22:17.690Z",
   "build": {
-    "reused": 0,
-    "embedded": 272,
-    "totalTokens": 170070
+    "reused": 272,
+    "embedded": 0,
+    "totalTokens": 0
   },
   "vectors": [
     {
