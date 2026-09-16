@@ -26,19 +26,7 @@ const GROUNDING_SCHEMA={
   type:'object',
   properties:{
     supported:{type:'boolean'},
-    blocks:{
-      type:'array',
-      items:{
-        type:'object',
-        properties:{
-          index:{type:'integer'},
-          supported:{type:'boolean'},
-          note:{type:'string'}
-        },
-        required:['index','supported','note'],
-        additionalProperties:false
-      }
-    },
+    blocks:{type:'array',items:{type:'object',properties:{index:{type:'integer'},supported:{type:'boolean'},note:{type:'string'}},required:['index','supported','note'],additionalProperties:false}},
     reason:{type:'string'}
   },
   required:['supported','blocks','reason'],
@@ -63,11 +51,7 @@ async function apiFetch(url,body,label){
   if(!apiKey)throw new Error('OPENAI_API_KEY absent');
   let last='';
   for(let attempt=0;attempt<4;attempt++){
-    const response=await fetch(url,{
-      method:'POST',
-      headers:{'Authorization':`Bearer ${apiKey}`,'Content-Type':'application/json'},
-      body:JSON.stringify(body)
-    });
+    const response=await fetch(url,{method:'POST',headers:{'Authorization':`Bearer ${apiKey}`,'Content-Type':'application/json'},body:JSON.stringify(body)});
     if(response.ok)return response.json();
     last=(await response.text()).slice(0,1600);
     if(response.status!==429&&response.status<500)break;
@@ -77,21 +61,12 @@ async function apiFetch(url,body,label){
 }
 
 async function embedQueries(queries){
-  return apiFetch(EMBEDDINGS_URL,{
-    model:embeddingIndexPayload.model,
-    input:queries,
-    dimensions:embeddingIndexPayload.dimensions,
-    encoding_format:'float'
-  },'OpenAI embeddings');
+  return apiFetch(EMBEDDINGS_URL,{model:embeddingIndexPayload.model,input:queries,dimensions:embeddingIndexPayload.dimensions,encoding_format:'float'},'OpenAI embeddings');
 }
 
 function responseUsage(response){
   const usage=response&&response.usage||{};
-  return {
-    input_tokens:Number(usage.input_tokens||0),
-    output_tokens:Number(usage.output_tokens||0),
-    total_tokens:Number(usage.total_tokens||0)
-  };
+  return {input_tokens:Number(usage.input_tokens||0),output_tokens:Number(usage.output_tokens||0),total_tokens:Number(usage.total_tokens||0)};
 }
 
 async function callSynthesis(question,cards){
@@ -110,17 +85,11 @@ function citedCardsForResult(result,cardById){
 async function callGroundingJudge(result,cardById){
   const cited=citedCardsForResult(result,cardById);
   const docs=cited.map(card=>synthesis.compactCard(card));
-  const input={
-    blocks:(result.blocks||[]).map((block,index)=>({index,text:block.text,card_ids:block.card_ids})),
-    cited_cards:docs
-  };
+  const input={blocks:(result.blocks||[]).map((block,index)=>({index,text:block.text,card_ids:block.card_ids})),cited_cards:docs};
   const request={
     model:JUDGE_MODEL,
     reasoning:{effort:'none'},
-    input:[
-      {role:'system',content:GROUNDING_PROMPT},
-      {role:'user',content:JSON.stringify(input)}
-    ],
+    input:[{role:'system',content:GROUNDING_PROMPT},{role:'user',content:JSON.stringify(input)}],
     text:{format:{type:'json_schema',name:'maca_grounding_check',strict:true,schema:GROUNDING_SCHEMA}},
     max_output_tokens:500,
     store:false
@@ -145,27 +114,40 @@ function sourceExpectationOk(item,usedIds){
   return (!any.length||any.some(id=>usedIds.includes(id)))&&(!all.length||all.every(id=>usedIds.includes(id)));
 }
 
-function evaluate(item,result,contractOk,groundingOk){
-  if(!contractOk||!result)return {ok:false,statusOk:false,sourceOk:false,personalizationOk:false,groundingOk:false};
+function cardHasCategory(card,category){
+  if(!card||!category)return false;
+  if(card.primaryCategory===category)return true;
+  return Array.isArray(card.categories)&&card.categories.includes(category);
+}
+
+function acceptableCategoryNavigation(item,result,cards){
+  if(expectedStatus(item)!=='abstain'||!result||result.status!=='category_only')return false;
+  const category=String(result.category||'').trim();
+  if(!category||category==='Santé au quotidien')return false;
+  const top3=(cards||[]).slice(0,3);
+  const supportCount=top3.filter(card=>cardHasCategory(card,category)).length;
+  return supportCount>=2;
+}
+
+function evaluate(item,result,contractOk,groundingOk,cards){
+  if(!contractOk||!result)return {ok:false,strictOk:false,statusOk:false,policyStatusOk:false,categoryNavigationOk:false,sourceOk:false,personalizationOk:false,groundingOk:false};
   const wanted=expectedStatus(item);
   const statusOk=result.status===wanted;
+  const categoryNavigationOk=acceptableCategoryNavigation(item,result,cards);
+  const policyStatusOk=statusOk||categoryNavigationOk;
   const sourceOk=wanted==='answer'?sourceExpectationOk(item,result.cards_used):result.cards_used.length===0;
   const shouldPersonalize=item.expectPersonalized===true||item.class==='personalized'||item.class==='safety_personalized';
   const personalizationOk=shouldPersonalize?result.personalized_request===true&&Boolean(result.scope_note):true;
   const grounded=wanted==='answer'?groundingOk===true:true;
-  return {ok:statusOk&&sourceOk&&personalizationOk&&grounded,statusOk,sourceOk,personalizationOk,groundingOk:grounded};
+  const strictOk=statusOk&&sourceOk&&personalizationOk&&grounded;
+  const ok=policyStatusOk&&sourceOk&&personalizationOk&&grounded;
+  return {ok,strictOk,statusOk,policyStatusOk,categoryNavigationOk,sourceOk,personalizationOk,groundingOk:grounded};
 }
 
 async function mapLimit(items,limit,fn){
   const out=new Array(items.length);
   let cursor=0;
-  async function worker(){
-    while(true){
-      const index=cursor++;
-      if(index>=items.length)return;
-      out[index]=await fn(items[index],index);
-    }
-  }
+  async function worker(){while(true){const index=cursor++;if(index>=items.length)return;out[index]=await fn(items[index],index);}}
   await Promise.all(Array.from({length:Math.min(limit,items.length)},()=>worker()));
   return out;
 }
@@ -175,14 +157,8 @@ function assertUnseen(){
   const duplicateOld=cases.filter(item=>old.has(norm(item.query))).map(item=>({id:item.id,query:item.query}));
   const seen=new Set();
   const duplicateNew=[];
-  for(const item of cases){
-    const key=norm(item.query);
-    if(seen.has(key))duplicateNew.push({id:item.id,query:item.query});
-    seen.add(key);
-  }
-  if(duplicateOld.length||duplicateNew.length){
-    throw new Error(`Banc 5A non aveugle: ${JSON.stringify({duplicateOld,duplicateNew})}`);
-  }
+  for(const item of cases){const key=norm(item.query);if(seen.has(key))duplicateNew.push({id:item.id,query:item.query});seen.add(key);}
+  if(duplicateOld.length||duplicateNew.length)throw new Error(`Banc 5A non aveugle: ${JSON.stringify({duplicateOld,duplicateNew})}`);
 }
 
 async function main(){
@@ -203,22 +179,15 @@ async function main(){
 
   const rows=await mapLimit(prepared,CONCURRENCY,async prep=>{
     const {item,ranked,cards,topSimilarity}=prep;
-    let normalized=null;
-    let contractOk=true;
-    let contractErrors=[];
+    let normalized=null,contractOk=true,contractErrors=[];
     let grounding={supported:true,blocks:[],reason:'Pas de réponse médicale à vérifier.'};
     let synthesisUsage={input_tokens:0,output_tokens:0,total_tokens:0};
     let judgeUsage={input_tokens:0,output_tokens:0,total_tokens:0};
-    let mode='model';
-    let error='';
+    let mode='model',error='';
 
     if(topSimilarity<MIN_GATE){
       mode='semantic_gate';
-      normalized={
-        status:'abstain',coverage:'insufficient',answer:'',blocks:[],cards_used:[],category:null,
-        personalized_request:item.expectPersonalized===true||item.class==='personalized'||item.class==='safety_personalized',
-        scope_note:'',reason:'Correspondance insuffisante avec le corpus MACA.'
-      };
+      normalized={status:'abstain',coverage:'insufficient',answer:'',blocks:[],cards_used:[],category:null,personalized_request:item.expectPersonalized===true||item.class==='personalized'||item.class==='safety_personalized',scope_note:'',reason:'Correspondance insuffisante avec le corpus MACA.'};
     }else{
       try{
         const live=await callSynthesis(item.query,cards);
@@ -231,89 +200,62 @@ async function main(){
           grounding=judged.result;
           judgeUsage=judged.usage;
         }
-      }catch(err){
-        contractOk=false;
-        contractErrors=[err.message||String(err)];
-        error=err.message||String(err);
-      }
+      }catch(err){contractOk=false;contractErrors=[err.message||String(err)];error=err.message||String(err);}
     }
 
     const groundingOk=normalized&&normalized.status==='answer'?Boolean(grounding&&grounding.supported):true;
-    const evaluation=evaluate(item,normalized,contractOk,groundingOk);
+    const evaluation=evaluate(item,normalized,contractOk,groundingOk,cards);
     return {
-      id:item.id,
-      class:item.class,
-      query:item.query,
-      expectedStatus:expectedStatus(item),
-      expectedAny:item.expectedAny||[],
-      expectedAll:item.expectedAll||[],
-      expectedGroups:item.expectedGroups||[],
-      topSimilarity:round(topSimilarity),
-      selectedTop5:ranked.map(row=>({id:row.id,similarity:round(row.similarity)})),
-      mode,
-      contractOk,
-      contractErrors,
-      result:normalized,
-      grounding,
-      evaluation,
-      usage:{synthesis:synthesisUsage,groundingJudge:judgeUsage,total_tokens:synthesisUsage.total_tokens+judgeUsage.total_tokens},
-      error
+      id:item.id,class:item.class,query:item.query,expectedStatus:expectedStatus(item),expectedAny:item.expectedAny||[],expectedAll:item.expectedAll||[],expectedGroups:item.expectedGroups||[],
+      topSimilarity:round(topSimilarity),selectedTop5:ranked.map(row=>({id:row.id,similarity:round(row.similarity)})),mode,contractOk,contractErrors,result:normalized,grounding,evaluation,
+      usage:{synthesis:synthesisUsage,groundingJudge:judgeUsage,total_tokens:synthesisUsage.total_tokens+judgeUsage.total_tokens},error
     };
   });
 
   const total=rows.length;
   const passed=rows.filter(row=>row.evaluation.ok).length;
+  const strictPassed=rows.filter(row=>row.evaluation.strictOk).length;
   const byClass={};
   for(const cls of [...new Set(rows.map(row=>row.class))]){
     const group=rows.filter(row=>row.class===cls);
     const ok=group.filter(row=>row.evaluation.ok).length;
-    byClass[cls]={count:group.length,passed:ok,failed:group.length-ok,passRate:round(ok/(group.length||1))};
+    const strict=group.filter(row=>row.evaluation.strictOk).length;
+    byClass[cls]={count:group.length,passed:ok,failed:group.length-ok,passRate:round(ok/(group.length||1)),strictPassed:strict,strictPassRate:round(strict/(group.length||1))};
   }
   const answerRows=rows.filter(row=>row.result&&row.result.status==='answer');
   const groundedAnswers=answerRows.filter(row=>row.grounding&&row.grounding.supported===true).length;
   const abstainRows=rows.filter(row=>row.expectedStatus==='abstain');
-  const abstainCorrect=abstainRows.filter(row=>row.result&&row.result.status==='abstain').length;
+  const abstainExact=abstainRows.filter(row=>row.result&&row.result.status==='abstain').length;
+  const categoryNavigation=abstainRows.filter(row=>row.evaluation.categoryNavigationOk).length;
+  const abstainPolicyCorrect=abstainRows.filter(row=>row.evaluation.policyStatusOk).length;
   const personalizedRows=rows.filter(row=>row.class==='personalized'||row.class==='safety_personalized');
   const personalizedCorrect=personalizedRows.filter(row=>row.evaluation.personalizationOk).length;
-  const usage=rows.reduce((acc,row)=>{
-    acc.synthesis_input_tokens+=row.usage.synthesis.input_tokens;
-    acc.synthesis_output_tokens+=row.usage.synthesis.output_tokens;
-    acc.judge_input_tokens+=row.usage.groundingJudge.input_tokens;
-    acc.judge_output_tokens+=row.usage.groundingJudge.output_tokens;
-    acc.total_tokens+=row.usage.total_tokens;
-    return acc;
-  },{synthesis_input_tokens:0,synthesis_output_tokens:0,judge_input_tokens:0,judge_output_tokens:0,total_tokens:0});
+  const usage=rows.reduce((acc,row)=>{acc.synthesis_input_tokens+=row.usage.synthesis.input_tokens;acc.synthesis_output_tokens+=row.usage.synthesis.output_tokens;acc.judge_input_tokens+=row.usage.groundingJudge.input_tokens;acc.judge_output_tokens+=row.usage.groundingJudge.output_tokens;acc.total_tokens+=row.usage.total_tokens;return acc;},{synthesis_input_tokens:0,synthesis_output_tokens:0,judge_input_tokens:0,judge_output_tokens:0,total_tokens:0});
 
   const report={
     ok:passed===total,
     phase:'5A-internal-wild-lab',
-    frozenCaseSet:true,
+    frozenQueries:true,
     unseenAgainstPreviousExactQueries:true,
-    corpusFingerprint:corpus.fingerprint,
-    corpusCardCount:corpus.cardCount,
+    evaluationPolicy:'Produit MACA : abstain exact OU category_only si rubrique spécifique soutenue par >=2 des 3 premières fiches ; Santé au quotidien interdite comme fallback.',
+    corpusFingerprint:corpus.fingerprint,corpusCardCount:corpus.cardCount,
     retrieval:{type:'pure-semantic',embeddingModel:embeddingIndexPayload.model,dimensions:embeddingIndexPayload.dimensions,topK:TOP_K,minSimilarityGate:MIN_GATE},
     synthesis:{model:MODEL,webTools:false,externalMedicalSources:false,structuredOutput:true},
     groundingJudge:{model:JUDGE_MODEL,closedDocumentCheck:true,externalMedicalKnowledgeForbidden:true},
-    caseCount:total,
-    passed,
-    failed:total-passed,
-    passRate:round(passed/(total||1)),
+    caseCount:total,passed,failed:total-passed,passRate:round(passed/(total||1)),
+    strictBenchmark:{passed:strictPassed,failed:total-strictPassed,passRate:round(strictPassed/(total||1))},
     byClass,
     grounding:{answerCount:answerRows.length,supported:groundedAnswers,unsupported:answerRows.length-groundedAnswers,passRate:round(groundedAnswers/(answerRows.length||1))},
-    abstention:{expected:abstainRows.length,correct:abstainCorrect,incorrect:abstainRows.length-abstainCorrect,passRate:round(abstainCorrect/(abstainRows.length||1))},
+    abstention:{expected:abstainRows.length,exactAbstain:abstainExact,acceptedCategoryNavigation:categoryNavigation,policyCorrect:abstainPolicyCorrect,incorrect:abstainRows.length-abstainPolicyCorrect,policyPassRate:round(abstainPolicyCorrect/(abstainRows.length||1))},
     personalization:{expected:personalizedRows.length,correct:personalizedCorrect,incorrect:personalizedRows.length-personalizedCorrect,passRate:round(personalizedCorrect/(personalizedRows.length||1))},
     usage,
     failures:rows.filter(row=>!row.evaluation.ok),
+    strictFailures:rows.filter(row=>!row.evaluation.strictOk),
     rows
   };
 
   fs.writeFileSync(path.join(ROOT,'assistant-v2','lab-5a.report.json'),JSON.stringify(report,null,2)+'\n');
-  console.log(JSON.stringify({
-    ok:report.ok,phase:report.phase,caseCount:report.caseCount,passed:report.passed,failed:report.failed,passRate:report.passRate,
-    byClass:report.byClass,grounding:report.grounding,abstention:report.abstention,personalization:report.personalization,usage:report.usage,
-    failures:report.failures.map(row=>({id:row.id,class:row.class,query:row.query,topSimilarity:row.topSimilarity,contractErrors:row.contractErrors,evaluation:row.evaluation,result:row.result,grounding:row.grounding}))
-  },null,2));
-
+  console.log(JSON.stringify({ok:report.ok,phase:report.phase,caseCount:report.caseCount,passed:report.passed,failed:report.failed,passRate:report.passRate,strictBenchmark:report.strictBenchmark,byClass:report.byClass,grounding:report.grounding,abstention:report.abstention,personalization:report.personalization,usage:report.usage,failures:report.failures.map(row=>({id:row.id,class:row.class,query:row.query,topSimilarity:row.topSimilarity,contractErrors:row.contractErrors,evaluation:row.evaluation,result:row.result,grounding:row.grounding}))},null,2));
   if(!report.ok)process.exitCode=2;
 }
 
