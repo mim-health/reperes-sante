@@ -1,0 +1,49 @@
+name: assistant v2 closed corpus
+
+on:
+  push:
+    branches:
+      - feat/assistant-ia-v2-closed-corpus
+    paths:
+      - '.github/workflows/assistant-v2-corpus.yml'
+      - 'scripts/build-assistant-v2-corpus.js'
+      - 'corpus-manifest.js'
+      - 'corpus-canonicalizer.js'
+      - 'maca-category-access.js'
+      - 'qa-data*.js'
+      - 'evidence-model.js'
+      - 'audit-overrides.js'
+      - 'backlog-*.js'
+      - 'maca-extra*.js'
+      - 'maca-daily-archive.js'
+      - 'structured-backlog-compat.js'
+      - 'migration-*.js'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-assistant-v2-corpus:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact commit
+        uses: actions/checkout@v4
+
+      - name: Build isolated Assistant V2 corpus
+        run: node scripts/build-assistant-v2-corpus.js
+
+      - name: Show structural report
+        run: cat assistant-v2/corpus.report.json
+
+      - name: Publish generated V2 artifacts on prototype branch only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assistant-v2/corpus.json assistant-v2/corpus.report.json
+          if git diff --cached --quiet; then
+            echo "Assistant V2 corpus artifacts unchanged"
+          else
+            git commit -m "build(assistant-v2): publier corpus fermé généré"
+            git push origin HEAD:feat/assistant-ia-v2-closed-corpus
+          fi
