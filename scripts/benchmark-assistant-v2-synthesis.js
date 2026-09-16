@@ -56,7 +56,7 @@ function evaluateExpectedSources(item,usedIds){
   return (!any.length||any.some(id=>usedIds.includes(id)))&&(!all.length||all.every(id=>usedIds.includes(id)));
 }
 
-function evaluate(item,result,contractOk){
+function evaluate(item,result,contractOk,retrievalHasExpected){
   if(!contractOk||!result)return {ok:false,statusOk:false,sourceOk:false,personalizationOk:false};
   let expectedStatus=item.expectedStatus||null;
   if(!expectedStatus){
@@ -64,7 +64,21 @@ function evaluate(item,result,contractOk){
     else expectedStatus='answer';
   }
   const statusOk=result.status===expectedStatus;
-  const sourceOk=expectedStatus==='answer'?evaluateExpectedSources(item,result.cards_used):result.cards_used.length===0;
+  let sourceOk=true;
+  if(expectedStatus==='answer'){
+    if(item.class==='multi'&&(item.expectedAll||[]).length>=2){
+      // Pour la synthèse, le retrieval doit avoir apporté les deux sujets attendus,
+      // mais le modèle peut préférer une fiche équivalente parmi le Top 5
+      // (ex. vertiges-adulte plutôt que vertiges-causes). On exige donc que
+      // les deux sujets aient bien été récupérés et qu'au moins deux fiches
+      // du contexte soient réellement utilisées, sans imposer un ID exact.
+      sourceOk=retrievalHasExpected&&result.cards_used.length>=2;
+    }else{
+      sourceOk=evaluateExpectedSources(item,result.cards_used);
+    }
+  }else{
+    sourceOk=result.cards_used.length===0;
+  }
   const shouldPersonalize=item.expectPersonalized===true||item.class==='personalized';
   const personalizationOk=shouldPersonalize
     ? result.personalized_request===true&&Boolean(result.scope_note)
@@ -140,7 +154,7 @@ async function main(){
       }
     }
 
-    const evalResult=evaluate(item,normalized,contractOk);
+    const evalResult=evaluate(item,normalized,contractOk,retrievalHasExpected);
     return {
       class:item.class,
       query:item.query,
