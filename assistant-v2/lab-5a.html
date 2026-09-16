@@ -23,14 +23,16 @@
 let REPORT=null;
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
 function metric(label,value,sub=''){return `<div class="card"><div class="muted small">${esc(label)}</div><div class="metric">${esc(value)}</div><div class="small muted">${esc(sub)}</div></div>`}
+function pct(v){return `${Math.round(Number(v||0)*1000)/10}%`}
 function renderSummary(){
  const r=REPORT;
  document.getElementById('summary').innerHTML=[
-  metric('Cas sauvages',r.caseCount,'jamais utilisés dans les étapes 1–4'),
-  metric('Réussite',`${Math.round(r.passRate*1000)/10}%`,`${r.passed}/${r.caseCount}`),
-  metric('Grounding',`${Math.round(r.grounding.passRate*1000)/10}%`,`${r.grounding.supported}/${r.grounding.answerCount} réponses soutenues`),
-  metric('Abstention',`${Math.round(r.abstention.passRate*1000)/10}%`,`${r.abstention.correct}/${r.abstention.expected}`),
-  metric('Personnalisation',`${Math.round(r.personalization.passRate*1000)/10}%`,`${r.personalization.correct}/${r.personalization.expected}`)
+  metric('Cas sauvages',r.caseCount,'questions gelées et inédites'),
+  metric('Réussite produit',pct(r.passRate),`${r.passed}/${r.caseCount}`),
+  metric('Lecture stricte',pct(r.strictBenchmark?.passRate),`${r.strictBenchmark?.passed}/${r.caseCount}`),
+  metric('Grounding',pct(r.grounding?.passRate),`${r.grounding?.supported}/${r.grounding?.answerCount} réponses soutenues`),
+  metric('Abstention',pct(r.abstention?.policyPassRate),`${r.abstention?.policyCorrect}/${r.abstention?.expected}`),
+  metric('Personnalisation',pct(r.personalization?.passRate),`${r.personalization?.correct}/${r.personalization?.expected}`)
  ].join('');
 }
 function render(){
@@ -46,7 +48,7 @@ function render(){
   return `<section class="case ${ok?'ok':'fail'}">
    <div class="head"><div><span class="pill">${esc(r.id)}</span><span class="pill">${esc(r.class)}</span><span class="pill">sim. ${esc(r.topSimilarity)}</span></div><strong>${ok?'✅':'❌'}</strong></div>
    <div class="question">${esc(r.query)}</div>
-   <div class="small muted">Statut : <b>${esc(r.result?.status||'—')}</b> · Contrat : ${r.contractOk?'OK':'ÉCHEC'} · Grounding : ${grounding.supported===true?'OK':grounding.supported===false?'ÉCHEC':'—'}</div>
+   <div class="small muted">Statut : <b>${esc(r.result?.status||'—')}</b> · Contrat : ${r.contractOk?'OK':'ÉCHEC'} · Grounding : ${grounding.supported===true?'OK':grounding.supported===false?'ÉCHEC':'—'} · Strict : ${r.evaluation.strictOk?'OK':'ÉCHEC'}</div>
    ${r.result?.answer?`<div class="answer">${esc(r.result.answer)}</div>`:''}
    <div class="cols">
     <div class="small"><b>Top 5 retrieval</b><ul>${top.map(x=>`<li>${esc(x.id)} — ${esc(x.similarity)}</li>`).join('')}</ul></div>
@@ -58,7 +60,7 @@ function render(){
 }
 fetch('./lab-5a.report.json').then(r=>{if(!r.ok)throw new Error('rapport absent');return r.json()}).then(r=>{
  REPORT=r;renderSummary();
- const classes=[...new Set(r.rows.map(x=>x.class))];document.getElementById('classFilter').innerHTML+=[...classes].map(c=>`<option>${esc(c)}</option>`).join('');
+ const classes=[...new Set(r.rows.map(x=>x.class))];document.getElementById('classFilter').innerHTML+=classes.map(c=>`<option>${esc(c)}</option>`).join('');
  ['q','classFilter','statusFilter'].forEach(id=>document.getElementById(id).addEventListener(id==='q'?'input':'change',render));render();
 }).catch(err=>{document.getElementById('cases').innerHTML=`<div class="case fail">Rapport 5A indisponible : ${esc(err.message)}</div>`});
 </script></body></html>
