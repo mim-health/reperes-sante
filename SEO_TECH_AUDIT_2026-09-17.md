@@ -14,7 +14,7 @@ Audit du dépôt `mim-health/reperes-sante`, production GitHub Pages sur `feat/v
 ### 2. Gabarit des fiches
 Le renderer commun `fiche-corpus-v2.js` produit au runtime : title spécifique, meta description, canonical, H1, Open Graph, Twitter et JSON-LD `MedicalWebPage`. Une fiche inexistante passe en `noindex,follow`.
 
-Limite importante : le HTML source initial de `fiche.html` reste générique (`Fiche santé — MACA Santé`, description générique, pas de canonical/H1 spécifique avant JavaScript). Google peut rendre JavaScript, mais ce socle est moins robuste qu'un HTML pré-rendu et les crawlers sociaux peuvent ne pas exécuter ce JavaScript. Pas de modification structurelle faite à ce stade.
+Limite importante : le HTML source initial de `fiche.html` reste générique (`Fiche santé — MACA Santé`, description générique, pas de canonical/H1 spécifique avant JavaScript). Google peut rendre JavaScript, mais ce socle est moins robuste qu'un HTML pré-rendu et les crawlers sociaux peuvent ne pas exécuter ce JavaScript. Pas de pré-rendu ajouté dans ce correctif.
 
 ### 3. Sitemap
 - Le corpus canonique audité contient actuellement 273 fiches.
@@ -32,31 +32,42 @@ Limite importante : le HTML source initial de `fiche.html` reste générique (`F
 - Pas d'ajout de FAQ/medical schema artificiel. Un éventuel `Article` + `BreadcrumbList` ne serait pertinent qu'avec une évolution de pré-rendu et des champs visibles cohérents.
 
 ### 6. Maillage interne
-Point structurel principal : les cartes de la homepage et de `fiches.html` sont des `<article>` pilotés par JavaScript qui ouvrent une modale ; elles ne sont pas des liens HTML crawlables vers `fiche.html?id=...`. Le sitemap assure donc une part importante de la découverte des fiches. En revanche, le bloc `À lire aussi` des fiches génère de vrais liens vers des fiches liées lorsqu'il est présent.
+Constat initial : les cartes de la homepage et de `fiches.html` étaient des `<article>` pilotés par JavaScript qui ouvraient une modale, sans vrai lien HTML vers `fiche.html?id=...`. Le sitemap assurait donc une part importante de la découverte des fiches.
 
-Ce point peut affecter la découverte, la circulation du signal interne et la compréhension de la hiérarchie du corpus. Aucune modification n'a été faite car transformer les cartes en liens crawlables touche au comportement UX et doit être validé avant changement.
+Correction ciblée exécutée après validation : `seo-crawlable-fiche-links.js` ajoute au titre de chaque carte rendue un vrai lien `<a href="fiche.html?id=...">`. Le design reste inchangé. Un clic ordinaire conserve le comportement historique et ouvre la modale ; le lien reste présent dans le DOM et les clics modifiés conservent le comportement natif du navigateur.
+
+Un `MutationObserver` réapplique ces liens après les rerendus provoqués par la recherche ou les filtres. Le script est chargé sur la homepage et sur la bibliothèque. Les liens `À lire aussi` des fiches, déjà crawlables, restent inchangés.
 
 ### 7. Cas représentatifs
-- Homepage : head/canonical/OG/schema solides ; signal `/index.html` provenant des liens internes corrigé sur la branche.
-- `ecrans-petit` : présent dans le sitemap ; metadata spécifique générée par le renderer commun ; même limite de rendu JavaScript que les autres fiches.
-- `constipation-adulte` : présent dans le sitemap ; même architecture SEO. Son mauvais classement ne vient pas d'une absence du sitemap ou d'une absence de canonical au runtime. Le maillage interne insuffisant est un problème technique plus plausible à corriger avant de réécrire le contenu.
+- Homepage : head/canonical/OG/schema solides ; signal `/index.html` provenant des liens internes corrigé ; cartes de fiches désormais dotées de liens crawlables.
+- `ecrans-petit` : présent dans le sitemap ; metadata spécifique générée par le renderer commun ; accessible depuis le maillage crawlable.
+- `constipation-adulte` : présent dans le sitemap ; même architecture SEO ; bénéficie désormais également du renforcement du maillage interne. Son mauvais classement ne vient pas d'une absence du sitemap ou du canonical au runtime.
 
-## Corrections simples préparées sur `fix/seo-tech-2026-09-17`
+## Corrections préparées sur `fix/seo-tech-2026-09-17`
 - Liens homepage internes normalisés vers `/` au lieu de `/index.html` sur les pages publiques auditées.
 - `robots.txt` réduit au sitemap canonique unique.
 - `sitemap-corpus-extra.xml` redondant supprimé.
-- Contrôle sitemap renforcé : refuse désormais doublons, URLs non canoniques et fiches manquantes.
-- Nouveau audit CI dédié.
+- Contrôle sitemap renforcé : refuse doublons, URLs non canoniques et fiches manquantes.
+- Liens crawlables ajoutés aux titres des cartes de l'accueil et de la bibliothèque, sans changer l'UX ordinaire.
+- Audit CI dédié renforcé avec validation syntaxique et contrôles du maillage crawlable.
 
-## Tests
-GitHub Actions `SEO technical audit` : vert.
+## Tests SEO
+GitHub Actions `SEO technical audit` : vert après le changement de maillage (run 35238276935).
+- syntaxe des scripts validée ;
 - sitemap : 278 URLs uniques, 273 fiches canoniques ;
 - 0 fiche manquante ;
 - homepage canonical `/` ;
 - `/index.html` absent du sitemap et des liens internes audités ;
 - robots public et un seul sitemap ;
 - title/description/canonical/H1/OG/schema du renderer de fiches détectés ;
-- cas `ecrans-petit` et `constipation-adulte` présents.
+- cas `ecrans-petit` et `constipation-adulte` présents ;
+- enhancement de liens crawlables chargé sur accueil + bibliothèque ;
+- comportement modale préservé au clic ordinaire.
 
-## Modification structurelle proposée mais non exécutée
-Faire de chaque carte de fiche sur l'accueil/la bibliothèque un vrai lien crawlable vers son URL canonique, tout en conservant l'expérience de recherche et, si souhaité, la modale. À valider avant implémentation.
+## Contrôles historiques hors périmètre SEO
+La PR déclenche également d'anciens workflows globaux dont certains échouent pour des raisons indépendantes du présent correctif :
+
+- `Corpus Pipeline` attend encore une ancienne taxonomie à 8 catégories alors que le corpus public actuel utilise désormais les catégories récentes, notamment `Cœur & circulation`, `Prévention & dépistage` et `Os & articulations` ;
+- les bancs `Search V2 / Alpha V2` contiennent cinq attentes historiques sur l'ID `maca-cystite-reperes`, actuellement absent ou exclu du corpus testé.
+
+Aucun fichier de contenu médical, de moteur de recherche ou d'Assistant n'a été modifié pour contourner ces contrôles. Ces régressions historiques doivent être traitées séparément du lot SEO.
