@@ -19,11 +19,14 @@ const all=staticUrls.concat(ficheUrls);const rows=all.map(([loc,lastmod,changefr
 const xml=`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${rows.join('\n')}\n</urlset>\n`;
 if(process.argv.includes('--check')){
   if(!fs.existsSync('sitemap.xml'))throw new Error('sitemap.xml missing');
-  const sitemapFiles=['sitemap.xml','sitemap-corpus-extra.xml'].filter(f=>fs.existsSync(f));
-  const combined=sitemapFiles.map(f=>fs.readFileSync(f,'utf8')).join('\n');
-  const missingUrls=all.map(([loc])=>loc).filter(loc=>!combined.includes(`<loc>${esc(loc)}</loc>`));
-  if(missingUrls.length){console.error(`sitemap set out of sync: ${missingUrls.length} canonical URLs missing`);process.exit(1);}
-  const listed=[...combined.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
-  if(new Set(listed).size!==all.length){console.error(`sitemap set out of sync: expected ${all.length} unique URLs (${ids.length} canonical fiches), found ${new Set(listed).size}`);process.exit(1);}
-  console.log(`Sitemap PASS: ${all.length} URLs, ${ids.length} canonical fiches across ${sitemapFiles.length} sitemap file(s)`);
+  const sitemap=fs.readFileSync('sitemap.xml','utf8');
+  const missingUrls=all.map(([loc])=>loc).filter(loc=>!sitemap.includes(`<loc>${esc(loc)}</loc>`));
+  if(missingUrls.length){console.error(`sitemap.xml out of sync: ${missingUrls.length} canonical URLs missing`);process.exit(1);}
+  const listed=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
+  const unique=new Set(listed);
+  if(listed.length!==unique.size){console.error(`sitemap.xml contains duplicate <loc> entries: ${listed.length-unique.size}`);process.exit(1);}
+  if(unique.size!==all.length){console.error(`sitemap.xml out of sync: expected ${all.length} unique URLs (${ids.length} canonical fiches), found ${unique.size}`);process.exit(1);}
+  const extras=[...unique].filter(loc=>!all.some(([expected])=>expected===loc));
+  if(extras.length){console.error(`sitemap.xml contains ${extras.length} non-canonical URL(s)`);process.exit(1);}
+  console.log(`Sitemap PASS: ${all.length} unique URLs, ${ids.length} canonical fiches`);
 }else{fs.writeFileSync('sitemap.xml',xml);console.log(`Generated sitemap.xml: ${all.length} URLs, ${ids.length} canonical fiches`);}

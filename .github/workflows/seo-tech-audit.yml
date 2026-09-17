@@ -1,0 +1,46 @@
+name: SEO technical audit
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - fix/seo-tech-2026-09-17
+    paths:
+      - 'index.html'
+      - 'fiche.html'
+      - 'fiches.html'
+      - 'notre-histoire.html'
+      - 'mentions-legales.html'
+      - 'confidentialite.html'
+      - 'contact.html'
+      - 'daily.html'
+      - 'robots.txt'
+      - 'sitemap*.xml'
+      - 'fiche-corpus-v2.js'
+      - 'app.js'
+      - 'corpus-v2-browser-entry.js'
+      - 'seo-crawlable-fiche-links.js'
+      - 'SEO_TECH_AUDIT_2026-09-17.md'
+      - 'scripts/generate-sitemap.js'
+      - 'scripts/audit-seo-public-fiches.js'
+      - 'scripts/audit-seo-technical-2026-09-17.js'
+      - '.github/workflows/seo-tech-audit.yml'
+
+jobs:
+  seo-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate SEO enhancement syntax
+        run: |
+          node --check seo-crawlable-fiche-links.js
+          node --check corpus-v2-browser-entry.js
+      - name: Validate canonical sitemap
+        run: node scripts/generate-sitemap.js --check
+      - name: Validate public fiche SEO integrity
+        run: node scripts/audit-seo-public-fiches.js
+      - name: Validate technical SEO guardrails
+        run: node scripts/audit-seo-technical-2026-09-17.js
