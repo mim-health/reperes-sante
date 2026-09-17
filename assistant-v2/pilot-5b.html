@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>MACA Santé — Pilote Assistant IA V2</title>
+<style>
+:root{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#173c33;background:#f5f0e5}body{margin:0}main{max-width:760px;margin:auto;padding:26px 16px 60px}h1{font-family:Georgia,serif;font-size:34px;line-height:1.05;margin:0 0 8px}.muted{color:#68736f}.box{background:#fffdf8;border:1px solid #d8dfd8;border-radius:16px;padding:16px;margin:14px 0}.notice{background:#edf3ea}.row{display:flex;gap:10px;flex-wrap:wrap}input,textarea,button{font:inherit}input,textarea{width:100%;box-sizing:border-box;border:1px solid #c7d0ca;border-radius:12px;padding:12px;background:white}textarea{min-height:120px;resize:vertical}button{border:0;border-radius:999px;padding:10px 16px;background:#173c33;color:white;cursor:pointer}button.secondary{background:#e9eee9;color:#173c33}button:disabled{opacity:.55;cursor:wait}.answer{white-space:pre-wrap;line-height:1.55;font-size:17px}.sources a{color:#173c33}.pill{display:inline-block;padding:4px 9px;border-radius:999px;background:#e8efe9;font-size:12px;margin:2px 4px 2px 0}.hidden{display:none}.feedback button{min-width:100px}.error{color:#8b3524}.small{font-size:13px;line-height:1.45}.debug{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;white-space:pre-wrap;overflow:auto;background:#f3f4ef;padding:10px;border-radius:10px}@media(max-width:600px){h1{font-size:29px}}
+</style>
+</head>
+<body><main>
+<h1>MACA Santé</h1>
+<div class="muted">Pilote limité — Assistant IA V2</div>
+
+<div class="box notice small">
+<b>Test en conditions réelles.</b> Posez une question comme vous le feriez spontanément. L’Assistant répond uniquement à partir des fiches MACA Santé validées. Il ne pose pas de diagnostic et ne remplace pas une consultation. Pour ce pilote, ne saisissez pas de nom, adresse, date de naissance, numéro de téléphone ou autre information permettant de vous identifier.
+</div>
+
+<div id="access" class="box">
+<label for="code"><b>Code du pilote</b></label>
+<div class="row" style="margin-top:8px"><input id="code" type="password" autocomplete="off" placeholder="Code d’accès"><button id="unlock">Entrer</button></div>
+<div id="accessError" class="error small"></div>
+</div>
+
+<div id="pilot" class="hidden">
+<div class="box">
+<label for="question"><b>Votre question</b></label>
+<textarea id="question" maxlength="600" placeholder="Ex. : J’ai souvent un goût acide qui remonte après les repas, qu’est-ce que ça peut vouloir dire ?"></textarea>
+<div class="row" style="justify-content:space-between;align-items:center;margin-top:10px"><span id="count" class="muted small">0/600</span><button id="ask">Interroger MACA</button></div>
+</div>
+
+<div id="result" class="box hidden">
+<div id="status" class="small muted"></div>
+<div id="answer" class="answer"></div>
+<div id="scope" class="small muted" style="margin-top:10px"></div>
+<div id="sources" class="sources small" style="margin-top:14px"></div>
+<div class="feedback" style="margin-top:18px">
+<div class="small"><b>Cette réponse vous a-t-elle été utile ?</b></div>
+<div class="row" style="margin-top:8px"><button class="secondary" data-feedback="utile">👍 Utile</button><button class="secondary" data-feedback="ameliorer">👎 À améliorer</button></div>
+<textarea id="comment" placeholder="Commentaire facultatif : qu’est-ce qui vous a manqué ou surpris ?" style="min-height:74px;margin-top:10px"></textarea>
+</div>
+</div>
+
+<div id="sessionBox" class="box hidden">
+<b>Fin de votre test</b>
+<p class="small muted">Après 3 à 5 questions, copiez le compte rendu et envoyez-le à la personne qui vous a invité au pilote. Le rapport reste dans votre navigateur jusqu’à ce que vous le copiiez ou réinitialisiez la session.</p>
+<div class="row"><button id="copy" class="secondary">Copier le compte rendu</button><button id="reset" class="secondary">Réinitialiser</button></div>
+<div id="copyState" class="small muted" style="margin-top:8px"></div>
+</div>
+
+<details id="debugPanel" class="box hidden"><summary>Détails techniques du pilote</summary><pre id="debug" class="debug"></pre></details>
+</div>
+<script>
+const state={code:'',sessions:[],current:null};
+const $=id=>document.getElementById(id);
+const debugMode=new URLSearchParams(location.search).get('debug')==='1';
+if(debugMode)$('debugPanel').classList.remove('hidden');
+
+$('unlock').addEventListener('click',()=>{
+ const code=$('code').value.trim();
+ if(!code){$('accessError').textContent='Saisissez le code du pilote.';return;}
+ state.code=code;$('access').classList.add('hidden');$('pilot').classList.remove('hidden');$('question').focus();
+});
+$('question').addEventListener('input',()=>{$('count').textContent=`${$('question').value.length}/600`;});
+
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));}
+function sourceHtml(cards){if(!cards||!cards.length)return '<b>Fiches MACA utilisées :</b> aucune';return '<b>Fiches MACA utilisées :</b><br>'+cards.map(c=>c.url?`<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title)}</a>`:esc(c.title)).join('<br>');}
+function reportObject(){return {pilot:'MACA Assistant IA V2 — 5B',generated_at:new Date().toISOString(),responses:state.sessions.map(x=>({question:x.question,status:x.status,answer:x.answer,cards_used:x.cards_used,feedback:x.feedback||'',comment:x.comment||''}))};}
+
+$('ask').addEventListener('click',async()=>{
+ const question=$('question').value.trim();if(!question)return;
+ $('ask').disabled=true;$('ask').textContent='Analyse…';$('result').classList.add('hidden');
+ try{
+  const response=await fetch('/api/assistant-v2-pilot',{method:'POST',headers:{'Content-Type':'application/json','x-maca-pilot-code':state.code},body:JSON.stringify({question})});
+  if(response.status===401){throw new Error('Code du pilote incorrect.');}
+  const data=await response.json();if(!response.ok)throw new Error('Le pilote est momentanément indisponible.');
+  const visibleAnswer=data.status==='answer'&&data.answer?data.answer:data.status==='category_only'&&data.category?`Le corpus MACA ne contient pas de réponse suffisamment précise. La rubrique « ${data.category} » est la plus proche.`:'Le corpus MACA ne contient pas actuellement de fiche suffisamment pertinente pour répondre à cette question.';
+  $('status').textContent=data.status==='answer'?'Réponse issue du corpus MACA':data.status==='category_only'?'Orientation vers une rubrique MACA':'Aucun résultat suffisamment solide';
+  $('answer').textContent=visibleAnswer;
+  $('scope').textContent=data.scope_note||'';
+  $('sources').innerHTML=sourceHtml(data.cards_used||[]);
+  $('comment').value='';
+  state.current={question,status:data.status,answer:visibleAnswer,cards_used:(data.cards_used||[]).map(c=>({id:c.id,title:c.title})),feedback:'',comment:'',debug:data};
+  state.sessions.push(state.current);
+  $('result').classList.remove('hidden');$('sessionBox').classList.remove('hidden');
+  if(debugMode)$('debug').textContent=JSON.stringify(data,null,2);
+ }catch(err){$('result').classList.remove('hidden');$('status').textContent='Erreur';$('answer').textContent=err.message||'Erreur temporaire';$('sources').textContent='';$('scope').textContent='';}
+ finally{$('ask').disabled=false;$('ask').textContent='Interroger MACA';}
+});
+
+document.querySelectorAll('[data-feedback]').forEach(btn=>btn.addEventListener('click',()=>{if(!state.current)return;state.current.feedback=btn.dataset.feedback;document.querySelectorAll('[data-feedback]').forEach(b=>b.textContent=b.dataset.feedback===state.current.feedback?(b.dataset.feedback==='utile'?'✅ Utile':'✅ À améliorer'):(b.dataset.feedback==='utile'?'👍 Utile':'👎 À améliorer'));}));
+$('comment').addEventListener('input',()=>{if(state.current)state.current.comment=$('comment').value.trim();});
+$('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(JSON.stringify(reportObject(),null,2));$('copyState').textContent='Compte rendu copié. Vous pouvez maintenant le transmettre.';}catch(e){$('copyState').textContent='Impossible de copier automatiquement sur ce navigateur.';}});
+$('reset').addEventListener('click',()=>{state.sessions=[];state.current=null;$('question').value='';$('result').classList.add('hidden');$('sessionBox').classList.add('hidden');$('copyState').textContent='';$('count').textContent='0/600';});
+</script>
+</main></body></html>
