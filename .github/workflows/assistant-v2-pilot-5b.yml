@@ -1,0 +1,26 @@
+name: assistant v2 pilot 5B
+
+on:
+  push:
+    branches:
+      - feat/assistant-ia-v2-closed-corpus
+    paths:
+      - '.github/workflows/assistant-v2-pilot-5b.yml'
+      - 'api/assistant-v2-pilot.js'
+      - 'assistant-v2/pilot-5b.html'
+      - 'assistant-v2/PILOT_5B.md'
+      - 'scripts/test-assistant-v2-pilot-5b.js'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pilot-static-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Syntaxe endpoint Node
+        run: node --check api/assistant-v2-pilot.js
+      - name: Garde-fous pilote 5B
+        run: node scripts/test-assistant-v2-pilot-5b.js
