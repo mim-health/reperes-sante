@@ -7,6 +7,8 @@ const fiche=read('fiche.html');
 const library=read('fiches.html');
 const renderer=read('fiche-corpus-v2.js');
 const app=read('app.js');
+const browserEntry=read('corpus-v2-browser-entry.js');
+const crawlLinks=read('seo-crawlable-fiche-links.js');
 const robots=read('robots.txt');
 const sitemap=read('sitemap.xml');
 const publicHtml=['fiche.html','fiches.html','notre-histoire.html','mentions-legales.html','confidentialite.html','contact.html','daily.html'];
@@ -17,6 +19,7 @@ const indexHtmlLinks=publicHtml.flatMap(file=>{
 const locs=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
 const duplicateLocs=locs.filter((loc,i)=>locs.indexOf(loc)!==i);
 const sitemapLines=robots.split(/\r?\n/).filter(line=>/^Sitemap:/i.test(line.trim()));
+const crawlEnhancerLoadCount=(browserEntry.match(/seo-crawlable-fiche-links\.js/g)||[]).length;
 const checks={
   homepageCanonical:/<link\s+rel=["']canonical["']\s+href=["']https:\/\/macasante\.fr\/["']/i.test(index),
   homepageInSitemap:sitemap.includes('<loc>https://macasante.fr/</loc>'),
@@ -33,14 +36,18 @@ const checks={
   ficheRuntimeH1:/<h1>\$\{esc\(q\.title\)\}<\/h1>/.test(renderer),
   ficheRuntimeOpenGraph:/upsertProperty\('og:title',title\)/.test(renderer)&&/upsertProperty\('og:url',canonical\)/.test(renderer),
   ficheRuntimeSchema:/MedicalWebPage/.test(renderer),
-  missingFicheNoindex:/noindex,follow/.test(renderer)
+  missingFicheNoindex:/noindex,follow/.test(renderer),
+  crawlableFicheLinksLoadedOnHomeAndLibrary:crawlEnhancerLoadCount===2,
+  crawlableFicheLinksTargetCanonicalFiches:/link\.href=`fiche\.html\?id=\$\{encodeURIComponent\(id\)\}`/.test(crawlLinks),
+  crawlableFicheLinksPreserveModalUX:/ordinaryPrimaryClick/.test(crawlLinks)&&/event\.preventDefault\(\)/.test(crawlLinks)&&/MutationObserver/.test(crawlLinks)
 };
 const warnings={
   ficheMetadataClientRendered:!/<link\s+rel=["']canonical["']/i.test(fiche)&&/<title>Fiche santé — MACA Santé<\/title>/.test(fiche),
-  libraryCardsNotCrawlableAnchors:/function questionCard\(q\)\{return `<article/.test(app)&&/openQuestion\(c\.dataset\.qid\)/.test(app),
+  libraryCardsStillDependOnRenderedJs:/function questionCard\(q\)\{return `<article/.test(app),
+  libraryCardsHaveCrawlableRenderedLinks:checks.crawlableFicheLinksLoadedOnHomeAndLibrary&&checks.crawlableFicheLinksTargetCanonicalFiches,
   relatedFichesAreCrawlable:/maca-fv2-related-link[\s\S]*?fiche\.html\?id=/.test(renderer)
 };
 const failed=Object.entries(checks).filter(([,ok])=>!ok).map(([name])=>name);
-const result={ok:failed.length===0,checks,warnings,details:{indexHtmlLinks,duplicateLocs,sitemapUrlCount:locs.length,robotsSitemaps:sitemapLines}};
+const result={ok:failed.length===0,checks,warnings,details:{indexHtmlLinks,duplicateLocs,sitemapUrlCount:locs.length,robotsSitemaps:sitemapLines,crawlEnhancerLoadCount}};
 console.log(JSON.stringify(result,null,2));
 if(failed.length){console.error('SEO technical audit failed: '+failed.join(', '));process.exit(1);}
