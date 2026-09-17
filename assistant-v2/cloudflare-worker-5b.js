@@ -70,6 +70,12 @@ function getData(){
   return dataPromise;
 }
 
+function getOpenAIKey(env){
+  return env.OPENAI_API_KEY || env['CLÉ_API_OPENAI'] || env['CLE_API_OPENAI'] || '';
+}
+function getPilotCode(env){
+  return env.PILOT_ACCESS_CODE || env.MACA_CODE || env.CODE_MACA || env['CODE MACA'] || '';
+}
 function cors(origin,allowed){
   return {'Access-Control-Allow-Origin':origin===allowed?origin:allowed,'Access-Control-Allow-Headers':'content-type,x-maca-pilot-code','Access-Control-Allow-Methods':'POST,OPTIONS','Vary':'Origin','Cache-Control':'no-store'};
 }
@@ -83,7 +89,8 @@ function extractText(r){if(typeof r?.output_text==='string'&&r.output_text.trim(
 function uniq(a){return [...new Set(a)];}
 
 async function openai(env,url,body){
-  const r=await fetch(url,{method:'POST',headers:{Authorization:`Bearer ${env.OPENAI_API_KEY}`,'Content-Type':'application/json'},body:JSON.stringify(body)});
+  const apiKey=getOpenAIKey(env);
+  const r=await fetch(url,{method:'POST',headers:{Authorization:`Bearer ${apiKey}`,'Content-Type':'application/json'},body:JSON.stringify(body)});
   if(!r.ok)throw new Error(`openai_${r.status}`);
   return r.json();
 }
@@ -127,11 +134,13 @@ export default {
   async fetch(request,env){
     const origin=request.headers.get('Origin')||'';
     const allowed=env.ALLOWED_ORIGIN||'https://macasante.fr';
+    const apiKey=getOpenAIKey(env);
+    const pilotCode=getPilotCode(env);
     if(request.method==='OPTIONS')return new Response(null,{status:204,headers:cors(origin,allowed)});
     if(origin&&origin!==allowed)return response(origin,allowed,403,{error:'origin_denied'});
     if(request.method!=='POST')return response(origin,allowed,405,{error:'method_not_allowed'});
-    if(!env.OPENAI_API_KEY||!env.PILOT_ACCESS_CODE)return response(origin,allowed,503,{error:'pilot_not_configured'});
-    if((request.headers.get('x-maca-pilot-code')||'')!==env.PILOT_ACCESS_CODE)return response(origin,allowed,401,{error:'pilot_access_denied'});
+    if(!apiKey||!pilotCode)return response(origin,allowed,503,{error:'pilot_not_configured'});
+    if((request.headers.get('x-maca-pilot-code')||'')!==pilotCode)return response(origin,allowed,401,{error:'pilot_access_denied'});
     let body;try{body=await request.json();}catch{return response(origin,allowed,400,{error:'invalid_json'});}
     const question=String(body?.question||'').trim();
     if(!question||question.length>MAX_QUESTION_CHARS)return response(origin,allowed,400,{error:'invalid_question'});
