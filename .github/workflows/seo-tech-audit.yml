@@ -20,6 +20,7 @@ on:
       - 'app.js'
       - 'corpus-v2-browser-entry.js'
       - 'seo-crawlable-fiche-links.js'
+      - 'SEO_TECH_AUDIT_2026-09-17.md'
       - 'scripts/generate-sitemap.js'
       - 'scripts/audit-seo-public-fiches.js'
       - 'scripts/audit-seo-technical-2026-09-17.js'
