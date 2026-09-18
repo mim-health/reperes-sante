@@ -78,5 +78,11 @@ window.santeJusteSourceRegistry = {
 {org:'Assurance Maladie',title:'Rhinopharyngite de l’enfant : mesures utiles et surveillance',year:'page d’information',url:'https://www.ameli.fr/assure/sante/themes/rhinopharyngite-enfant'}],
 'douleur-oreille-enfant':[
 {org:'Haute Autorité de Santé / SPILF / GPIP',title:'Otite moyenne aiguë purulente de l’enfant de plus de 3 mois',year:'actualisation 2025',url:'https://www.has-sante.fr/jcms/c_2722749/fr/otite-moyenne-aigue-purulente-de-l-enfant-de-plus-de-3-mois'},
-{org:'Assurance Maladie',title:'Otite moyenne aiguë de l’enfant',year:'page d’information',url:'https://www.ameli.fr/assure/sante/themes/otite-moyenne-aigue'}]
+{org:'Assurance Maladie',title:'Otite moyenne aiguë de l’enfant',year:'page d’information',url:'https://www.ameli.fr/assure/sante/themes/otite-moyenne-aigue'}],
+'syndrome-nid-vide':[
+{org:'American Psychological Association',title:'The many pathways of empty nesting',year:'2026',url:'https://www.apa.org/monitor/2026/09/empty-nest-parents-goals-passions'},
+{org:'NHS / ICD-10',title:'Z60.0 — Problems of adjustment to life-cycle transitions',year:'ICD-10',url:'https://classbrowser.nhs.uk/ICD-10-5TH-Edition/vol1/block-z55-z65.htm'},
+{org:'Collischon M, Eberl A, Wolbring T',title:'Parental well-being when children move out: A panel study on short- and long-term effects',year:'2024',url:'https://pubmed.ncbi.nlm.nih.gov/39527853/'},
+{org:'Hartanto A, Sim L, Lee D, et al.',title:'Cultural contexts differentially shape parents’ loneliness and wellbeing during the empty nest period',year:'2024',url:'https://pubmed.ncbi.nlm.nih.gov/39489810/'},
+{org:'Société psychanalytique de Paris',title:'Le risque de la perte : angoisses et dépression au féminin',year:'éclairage psychanalytique',url:'https://www.spp.asso.fr/le-risque-de-la-perte-angoisses-et-depression-au-feminin/'}]
 };
