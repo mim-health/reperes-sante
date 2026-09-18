@@ -23,7 +23,7 @@
   function sourcesSection(q){
     const sources=resolvedSources(q);
     if(sources.length){
-      const rows=sources.map(s=>`<div class="maca-fv2-source"><div class="maca-fv2-source-org">${esc(s.org||s.label||'Source')}</div><div class="maca-fv2-source-title">${esc(s.title||s.label||'')}${s.year?` · ${esc(s.year)}`:''}</div><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">Consulter la source →</a></div>`).join('');
+      const rows=sources.map(s=>{const label=strip(s.label||'');const org=strip(s.org||'');const title=strip(s.title||'');const primary=org||(!title&&label?label:'Source');const secondary=title||(org&&label&&label!==org?label:'');return `<div class="maca-fv2-source"><div class="maca-fv2-source-org">${esc(primary)}</div>${secondary?`<div class="maca-fv2-source-title">${esc(secondary)}${s.year?` · ${esc(s.year)}`:''}</div>`:(s.year?`<div class="maca-fv2-source-title">${esc(s.year)}</div>`:'')}<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">Consulter la source →</a></div>`;}).join('');
       return `<section class="maca-fv2-card maca-fv2-sources"><h2>Sources</h2>${rows}${q.verifiedAt?`<p class="maca-fv2-verified">Vérifié le ${esc(q.verifiedAt)}</p>`:''}</section>`;
     }
     const sourceText=strip(q.source||'');
@@ -68,5 +68,5 @@
   }
   const id=new URLSearchParams(location.search).get('id');if(!id){failNotFound();return;}if(!window.MACA_CORPUS_READY||typeof window.MACA_CORPUS_READY.then!=='function'){failTemporary();return;}
   window.MACA_CORPUS_READY.then(()=>{if(typeof window.MACA_BUILD_CANONICAL_CORPUS!=='function')throw new Error('canonicalizer missing');const items=window.MACA_BUILD_CANONICAL_CORPUS();const q=items.find(x=>String(x.id)===String(id));if(!q){failNotFound();return;}render(q,items);}).catch(err=>{console.error('[MACA fiche V2]',err);failTemporary();});
-  window.MACA_FICHE_V2_UI={version:'2026-09-13-logo-officiel1',relatedFiches};
+  window.MACA_FICHE_V2_UI={version:'2026-09-18-source-label-fix1',relatedFiches};
 })();
