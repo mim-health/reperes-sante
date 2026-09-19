@@ -45,7 +45,7 @@ function renderQuestions(){if(!qaGrid)return;const term=searchInput?.value.trim(
 function runSearch(){activeCategory='Toutes';renderFilters();renderQuestions();document.querySelector('.library-section')?.scrollIntoView({behavior:'smooth',block:'start'});}
 renderCards();renderFilters();renderQuestions();
 if(grid)grid.addEventListener('click',e=>{const c=e.target.closest('.card');if(c)openArticle(c.dataset.id)});
-if(qaGrid)qaGrid.addEventListener('click',e=>{const c=e.target.closest('.qa-card');if(c)openQuestion(c.dataset.qid)});
+if(qaGrid)qaGrid.addEventListener('click',e=>{const c=e.target.closest('.qa-card');if(c)location.href=`fiche.html?id=${encodeURIComponent(c.dataset.qid)}`;});
 if(filters)filters.addEventListener('click',e=>{const b=e.target.closest('.filter-chip');if(!b)return;activeCategory=b.dataset.category||'Toutes';if(searchInput)searchInput.value='';renderFilters();renderQuestions();document.querySelector('.library-section')?.scrollIntoView({behavior:'smooth',block:'start'});});
 if(searchInput){searchInput.addEventListener('input',runSearch);searchInput.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();runSearch();}});}
 if(clearSearch)clearSearch.addEventListener('click',()=>{searchInput.value='';activeCategory='Toutes';renderFilters();renderQuestions();searchInput.focus();});
