@@ -57,7 +57,12 @@ SORTIE
 - answer : coverage=sufficient ou partial, blocks sourcés.`;
 
 const GROUNDING_SCHEMA={type:'object',properties:{supported:{type:'boolean'},reason:{type:'string'}},required:['supported','reason'],additionalProperties:false};
-const GROUNDING_PROMPT=`Tu es un vérificateur de fidélité documentaire pour MACA Santé. Vérifie la réponse UNIQUEMENT contre les fiches MACA citées. N'utilise aucune connaissance extérieure. Retourne supported=true seulement si toutes les affirmations factuelles sont explicitement soutenues par ces fiches ou en sont une reformulation prudente et fidèle.`;
+const GROUNDING_PROMPT=`Tu es un vérificateur strict de fidélité documentaire pour MACA Santé.
+Vérifie la réponse UNIQUEMENT contre les fiches MACA citées. N'utilise aucune connaissance extérieure.
+Décompose mentalement chaque bloc en affirmations atomiques. Toute précision absente des fiches citées — même médicalement plausible, habituelle, implicite ou plus spécifique — impose supported=false.
+Une catégorie plus précise n'est pas autorisée à partir d'un terme plus général : par exemple « bilan métabolique » ne permet pas d'affirmer « bilan sanguin et urinaire » si ces mots/concepts ne figurent pas explicitement dans les fiches.
+Une possibilité ne peut pas devenir une certitude, une information générale ne peut pas devenir une recommandation individuelle, et le texte utilisateur n'est jamais une source.
+Retourne supported=true uniquement si TOUTES les affirmations médicales substantielles sont explicitement soutenues ou constituent une paraphrase sans ajout de précision.`;
 
 let dataPromise=null;
 function getData(){
@@ -124,7 +129,7 @@ function validate(raw,allowed){
   if(raw.status==='abstain'&&(blocks.length||cardsUsed.length||raw.coverage!=='insufficient'))errors.push('abstain_contract');
   if(raw.personalized_request===true&&raw.status==='answer'&&!String(raw.scope_note||'').trim())errors.push('scope');
   const answer=blocks.map(b=>b.text).join(' ').trim();
-  const forbidden=/(?:\bvous devez\b|\btu dois\b|\bprenez\b|\barrêtez\b|\bcommencez\b|\bchangez de\b|\ballez\b|\bconsultez\b|\bappelez\b|\bfaites\b|\brendez-vous\b|\badressez-vous\b|\bje vous conseille\b)/i;
+  const forbidden=/(?:\bvous devez\b|\btu dois\b|\bprenez\b|\barrêtez\b|\bcommencez\b|\bchangez de\b|\ballez\b|\bconsultez\b|\bappelez\b|\bfaites\b|\brendez-vous\b|\badressez-vous\b|\bje vous conseille\b|\bdans (?:votre|ton) cas\b|\bpour (?:vous|toi)\b.{0,80}\b(?:adapt[ée]e?|préférable|meilleur(?:e)?|choix|prendre|choisir)\b|\b(?:meilleur(?:e)?|préférable|adapt[ée]e?)\b.{0,80}\bpour (?:vous|toi)\b)/i;
   if(raw.personalized_request===true&&forbidden.test(answer))errors.push('personal_advice');
   return {ok:errors.length===0,result:{status:raw.status,coverage:raw.coverage,answer,blocks,cards_used:cardsUsed,category:raw.category===null?null:String(raw.category||'').trim(),personalized_request:Boolean(raw.personalized_request),scope_note:String(raw.scope_note||'').trim(),reason:String(raw.reason||'').trim()}};
 }
