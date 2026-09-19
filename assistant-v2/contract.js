@@ -92,7 +92,7 @@
       errors.push('requête personnalisée répondue sans scope_note');
     }
 
-    const personalizedForbidden=/(?:\bvous devez\b|\btu dois\b|\bprenez\b|\barrêtez\b|\bcommencez\b|\bchangez de\b|\ballez\b|\bconsultez\b|\bappelez\b|\bfaites\b|\brendez-vous\b|\badressez-vous\b|\bje vous conseille\b)/i;
+    const personalizedForbidden=/(?:\bvous devez\b|\btu dois\b|\bprenez\b|\barrêtez\b|\bcommencez\b|\bchangez de\b|\ballez\b|\bconsultez\b|\bappelez\b|\bfaites\b|\brendez-vous\b|\badressez-vous\b|\bje vous conseille\b|\bdans (?:votre|ton) cas\b|\bpour (?:vous|toi)\b.{0,80}\b(?:adapt[ée]e?|préférable|meilleur(?:e)?|choix|prendre|choisir)\b|\b(?:meilleur(?:e)?|préférable|adapt[ée]e?)\b.{0,80}\bpour (?:vous|toi)\b)/i;
     const answerText=blocks.map(block=>block.text).join(' ').trim();
     if(options.rejectDirectPersonalAdvice!==false&&raw.personalized_request&&personalizedForbidden.test(answerText)){
       errors.push('formulation de conseil individualisé détectée');
