@@ -86,8 +86,13 @@ async function enforceRateLimit(env,key){
   const result=await env.RATE_LIMITER.limit({key});
   return result?.success?{ok:true}:{ok:false,reason:'rate_limited'};
 }
-function requestKey(request){
-  return request.headers.get('CF-Connecting-IP')||'unknown';
+async function requestKey(request,env){
+  const ip=request.headers.get('CF-Connecting-IP')||'unknown';
+  const salt=env.RATE_LIMIT_SALT||'';
+  if(!salt)return '';
+  const bytes=new TextEncoder().encode(salt+'|'+ip);
+  const digest=await crypto.subtle.digest('SHA-256',bytes);
+  return [...new Uint8Array(digest)].map(b=>b.toString(16).padStart(2,'0')).join('').slice(0,32);
 }
 function dot(a,b){let s=0;for(let i=0;i<a.length;i++)s+=a[i]*b[i];return s;}
 function norm(a){return Math.sqrt(dot(a,a));}
@@ -154,7 +159,9 @@ export default {
     if(declaredLength>MAX_BODY_BYTES)return response(origin,allowed,413,{error:'request_too_large'});
     if(!apiKey||!pilotCode)return response(origin,allowed,503,{error:'pilot_not_configured'});
     if((request.headers.get('x-maca-pilot-code')||'')!==pilotCode)return response(origin,allowed,401,{error:'pilot_access_denied'});
-    const limited=await enforceRateLimit(env,requestKey(request));
+    const rateKey=await requestKey(request,env);
+    if(!rateKey)return response(origin,allowed,503,{error:'rate_limit_privacy_not_configured'});
+    const limited=await enforceRateLimit(env,rateKey);
     if(!limited.ok)return response(origin,allowed,limited.reason==='rate_limited'?429:503,{error:limited.reason});
     let body;try{body=await request.json();}catch{return response(origin,allowed,400,{error:'invalid_json'});}
     const question=String(body?.question||'').trim();
