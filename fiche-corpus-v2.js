@@ -46,38 +46,32 @@
     return `<section class="maca-fv2-card maca-fv2-related"><h2>À lire aussi</h2><p class="maca-fv2-related-intro">D’autres fiches MACA proches de ce sujet.</p><div class="maca-fv2-related-grid">${cards}</div></section>`;
   }
   function attachShare(q,canonical){
-    const button=document.querySelector('#maca-fv2-share-button');const status=document.querySelector('#maca-fv2-share-status');if(!button)return;
+    const button=document.querySelector('#maca-fv2-share-button');
+    const status=document.querySelector('#maca-fv2-share-status');
+    if(!button)return;
     const title=`${strip(q.title)} — MACA Santé`;
-    const text=`${title}\nUne réponse santé vérifiée et sourcée.`;
-    const shareData={title,text,url:canonical};
-    const copyLink=async()=>{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(canonical);return true;}const area=document.createElement('textarea');area.value=canonical;area.setAttribute('readonly','');area.style.position='fixed';area.style.left='-9999px';document.body.appendChild(area);area.select();const ok=document.execCommand('copy');area.remove();return ok;};
+    const shareText=`${title}\nUne réponse santé vérifiée et sourcée.\n${canonical}`;
+    const copyLink=async()=>{
+      if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(canonical);return true;}
+      const area=document.createElement('textarea');area.value=canonical;area.setAttribute('readonly','');area.style.position='fixed';area.style.left='-9999px';document.body.appendChild(area);area.select();const ok=document.execCommand('copy');area.remove();return ok;
+    };
     button.addEventListener('click',async()=>{
       if(status)status.textContent='';
-      button.disabled=true;
       try{
         if(typeof navigator.share==='function'){
           try{
-            await navigator.share(shareData);
+            await navigator.share({title,text:shareText});
             if(status)status.textContent='Partage ouvert.';
             return;
           }catch(error){
             if(error&&error.name==='AbortError')return;
-            console.warn('[MACA share] native share failed, using fallback',error);
           }
         }
-        const message=encodeURIComponent(`${text}\n${canonical}`);
-        const whatsapp=`https://wa.me/?text=${message}`;
-        const popup=window.open(whatsapp,'_blank','noopener,noreferrer');
-        if(popup){
-          if(status)status.textContent='Ouverture de WhatsApp…';
-          return;
-        }
-        const copied=await copyLink();
-        if(status)status.textContent=copied?'Lien copié. Vous pouvez le coller dans WhatsApp.':'Le partage n’a pas pu être ouvert.';
+        window.location.href=`https://wa.me/?text=${encodeURIComponent(shareText)}`;
+        if(status)status.textContent='Ouverture de WhatsApp…';
       }catch(error){
-        console.error('[MACA share]',error);
         try{const copied=await copyLink();if(status)status.textContent=copied?'Lien copié. Vous pouvez le coller dans WhatsApp.':'Le partage n’a pas pu être ouvert.';}catch(_){if(status)status.textContent='Le partage n’a pas pu être ouvert.';}
-      }finally{button.disabled=false;}
+      }
     });
   }
   function renderFiche(q,canonical,items){
@@ -98,5 +92,5 @@
   }
   const id=new URLSearchParams(location.search).get('id');if(!id){failNotFound();return;}if(!window.MACA_CORPUS_READY||typeof window.MACA_CORPUS_READY.then!=='function'){failTemporary();return;}
   window.MACA_CORPUS_READY.then(()=>{if(typeof window.MACA_BUILD_CANONICAL_CORPUS!=='function')throw new Error('canonicalizer missing');const items=window.MACA_BUILD_CANONICAL_CORPUS();const q=items.find(x=>String(x.id)===String(id));if(!q){failNotFound();return;}render(q,items);}).catch(err=>{console.error('[MACA fiche V2]',err);failTemporary();});
-  window.MACA_FICHE_V2_UI={version:'2026-09-18-share-dom-fix3',relatedFiches};
+  window.MACA_FICHE_V2_UI={version:'2026-09-19-mobile-share-fix4',relatedFiches};
 })();
