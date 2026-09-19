@@ -10,6 +10,7 @@ const MODEL='gpt-5.6-terra';
 const TOP_K=5;
 const MIN_GATE=0.30;
 const MAX_QUESTION_CHARS=600;
+const MAX_BODY_BYTES=4096;
 
 const OUTPUT_SCHEMA={
   type:'object',
@@ -79,7 +80,15 @@ function getPilotCode(env){
 function cors(origin,allowed){
   return {'Access-Control-Allow-Origin':origin===allowed?origin:allowed,'Access-Control-Allow-Headers':'content-type,x-maca-pilot-code','Access-Control-Allow-Methods':'POST,OPTIONS','Vary':'Origin','Cache-Control':'no-store'};
 }
-function response(origin,allowed,status,body){return new Response(JSON.stringify(body),{status,headers:{...cors(origin,allowed),'Content-Type':'application/json; charset=utf-8'}});}
+function response(origin,allowed,status,body){return new Response(JSON.stringify(body),{status,headers:{...cors(origin,allowed),'Content-Type':'application/json; charset=utf-8','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer'}});}
+async function enforceRateLimit(env,key){
+  if(!env.RATE_LIMITER||typeof env.RATE_LIMITER.limit!=='function')return {ok:false,reason:'rate_limiter_not_configured'};
+  const result=await env.RATE_LIMITER.limit({key});
+  return result?.success?{ok:true}:{ok:false,reason:'rate_limited'};
+}
+function requestKey(request){
+  return request.headers.get('CF-Connecting-IP')||'unknown';
+}
 function dot(a,b){let s=0;for(let i=0;i<a.length;i++)s+=a[i]*b[i];return s;}
 function norm(a){return Math.sqrt(dot(a,a));}
 function cosine(a,b){const d=norm(a)*norm(b);return d?dot(a,b)/d:0;}
@@ -139,8 +148,14 @@ export default {
     if(request.method==='OPTIONS')return new Response(null,{status:204,headers:cors(origin,allowed)});
     if(origin&&origin!==allowed)return response(origin,allowed,403,{error:'origin_denied'});
     if(request.method!=='POST')return response(origin,allowed,405,{error:'method_not_allowed'});
+    const contentType=request.headers.get('content-type')||'';
+    if(!/^application\/json(?:\s*;|$)/i.test(contentType))return response(origin,allowed,415,{error:'unsupported_media_type'});
+    const declaredLength=Number(request.headers.get('content-length')||0);
+    if(declaredLength>MAX_BODY_BYTES)return response(origin,allowed,413,{error:'request_too_large'});
     if(!apiKey||!pilotCode)return response(origin,allowed,503,{error:'pilot_not_configured'});
     if((request.headers.get('x-maca-pilot-code')||'')!==pilotCode)return response(origin,allowed,401,{error:'pilot_access_denied'});
+    const limited=await enforceRateLimit(env,requestKey(request));
+    if(!limited.ok)return response(origin,allowed,limited.reason==='rate_limited'?429:503,{error:limited.reason});
     let body;try{body=await request.json();}catch{return response(origin,allowed,400,{error:'invalid_json'});}
     const question=String(body?.question||'').trim();
     if(!question||question.length>MAX_QUESTION_CHARS)return response(origin,allowed,400,{error:'invalid_question'});
