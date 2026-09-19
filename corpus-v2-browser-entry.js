@@ -12,7 +12,7 @@
   window.MACA_CORPUS_READY
     .then(()=>load('maca-multi-sections.js?v=20260901-2'))
     .then(()=>{exposeCanonical();return commonBeforeApp.reduce((p,src)=>p.then(()=>load(src)),Promise.resolve());})
-    .then(()=>load('app.js?v=20260825-corpusv3'))
+    .then(()=>load('app.js?v=20260919-canonical-fiche-p0'))
     .then(()=>load('search-v2-ui-bridge.js?v=20260909-coughmap-2'))
     .then(()=>((page==='library'?libraryAfter:homeAfter).reduce((p,src)=>p.then(()=>load(src)),Promise.resolve())))
     .then(()=>window.dispatchEvent(new CustomEvent('maca:v2-ui-ready')))
