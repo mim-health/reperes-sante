@@ -1,0 +1,9 @@
+intent_id,question_patient_normalisee,source_demande,source_url,couverture,fiche_maca_id
+ALZ_APRES_DIAGNOSTIC,Comment vivre et s’organiser après l’annonce d’un diagnostic d’Alzheimer ?,France Alzheimer,https://www.francealzheimer.org/le-diagnostic-comment-laffronter-et-imaginer-lapres/,ABSENT,
+ALZ_SOMMEIL,Pourquoi Alzheimer perturbe-t-il le sommeil et comment accompagner les nuits difficiles ?,France Alzheimer,https://www.francealzheimer.org/alzheimer-troubles-sommeil/,ABSENT,
+ALZ_REFUS_QUOTIDIEN,"Que faire face au refus de toilette, d’habillage ou de repas ?",France Alzheimer,https://www.francealzheimer.org/comprendre-la-maladie/la-maladie-dalzheimer/toilette-repas-etc-vos-questions-quotidien/,COUVERT,alzheimer-refus-soins-repas
+ALZ_CONDUITE,Quand faut-il arrêter la conduite avec Alzheimer ?,France Alzheimer,https://www.francealzheimer.org/comprendre-la-maladie/la-maladie-dalzheimer/toilette-repas-etc-vos-questions-quotidien/,COUVERT,alzheimer-conduite-automobile
+ALZ_ETABLISSEMENT,Quand envisager une entrée en établissement et comment la préparer ?,France Alzheimer,https://www.francealzheimer.org/comprendre-la-maladie/la-maladie-dalzheimer/toilette-repas-etc-vos-questions-quotidien/,COUVERT,alzheimer-entree-etablissement
+ALZ_TRAITEMENTS,Quels traitements de la maladie d’Alzheimer sont reconnus aujourd’hui ?,France Alzheimer,https://www.francealzheimer.org/comprendre-la-maladie/la-maladie-dalzheimer/,COUVERT,alzheimer-traitements-reconnus
+ALZ_AIDANT_REPIT,Comment éviter l’épuisement du proche aidant et trouver du répit ?,France Alzheimer,https://www.francealzheimer.org/le-diagnostic-comment-laffronter-et-imaginer-lapres/,PARTIELLEMENT COUVERT,alzheimer-entree-etablissement
+ALZ_CONSULT_MEMOIRE,À quoi sert une consultation mémoire et comment se déroule le parcours diagnostique ?,France Alzheimer,https://aides.francealzheimer.org/diagnostique/avant-le-diagnostic-scenario-1/2eme-etape/les-consultations-memoire/,PARTIELLEMENT COUVERT,memoire
