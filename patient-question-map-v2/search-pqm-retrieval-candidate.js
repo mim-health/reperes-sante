@@ -13,6 +13,7 @@ const byId=id=>corpus().find(x=>x&&x.id===id)||null;
 function has(q,re){return re.test(q);}
 function route(query){
  const q=norm(query);
+ if(has(q,/\b(glycemie|hypoglycemie|hypoglycemique)\b/)&&has(q,/\b(activite|sport|effort|exercice)\b/))return ['diabete-activite-physique-glycemie','pqm-glycemie-activite'];
  const mici=has(q,/\b(mici|crohn|rch|rectocolite)\b/), diab=has(q,/\b(diabete|diabetique|diabetiques)\b/), alz=has(q,/\b(alzheimer|demence|trouble neurocognitif)\b/);
  if(mici){
    if(has(q,/\b(alimentation|aliment|aliments|manger|mange|regime|nutrition|diversifier|diversification|variee|varie|plaisir)\b/)&&has(q,/\b(poussee|diversifier|diversification|variee|varie|plaisir|alimentation|manger)\b/))return ['mici-alimentation-poussee','pqm-mici-alimentation'];
@@ -32,7 +33,14 @@ function forced(query,spec){
  const card=byId(spec[0]);if(!card)return null;
  return {status:'match',reason:'pqm-validated-intent',matches:[{intentKey:spec[1],id:card.id,score:1180,confidence:'high',matchedAlias:norm(query),matchType:'pqm-disease-intent'}],context:[]};
 }
-function resolve(query,options={}){const spec=route(query);if(!spec)return baseResolve(query,options);return forced(query,spec)||baseResolve(query,options);}
-function rank(query,options={}){const spec=route(query);if(!spec)return baseRank(query,options);const r=forced(query,spec);if(!r)return baseRank(query,options);const card=byId(spec[0]),items=corpus();return [{q:card,index:items.indexOf(card),score:1180,coverage:1,directCoverage:1,confidence:'high',intentKey:spec[1],matchedAlias:norm(query)}];}
+function legacyDiabetesFalsePositive(query,result){
+ const q=norm(query);if(!/\b(diabete|diabetique|diabetiques)\b/.test(q))return false;
+ const id=result&&result.matches&&result.matches[0]&&result.matches[0].id;
+ if(id!=='diabete-type-2-depistage-complications'||(result&&result.reason)!=='pilot-validated-topic-direct')return false;
+ return /\b(aliment|aliments|alimentation|interdit|interdits|traitement|traitements|medicament|medicaments|quotidien)\b/.test(q)
+   && !/\b(depistage|depister|complication|complications|surveiller|rein|reins|yeux|nerf|nerfs|cardiovasculaire)\b/.test(q);
+}
+function resolve(query,options={}){const spec=route(query);if(spec)return forced(query,spec)||baseResolve(query,options);const r=baseResolve(query,options);if(legacyDiabetesFalsePositive(query,r))return {status:'none',reason:'pqm-legacy-diabetes-route-blocked',matches:[],context:r.context||[]};return r;}
+function rank(query,options={}){const spec=route(query);if(!spec){const r=resolve(query,options);if(r&&r.reason==='pqm-legacy-diabetes-route-blocked')return [];return baseRank(query,options);} const r=forced(query,spec);if(!r)return baseRank(query,options);const card=byId(spec[0]),items=corpus();return [{q:card,index:items.indexOf(card),score:1180,coverage:1,directCoverage:1,confidence:'high',intentKey:spec[1],matchedAlias:norm(query)}];}
 root.MACA_SEARCH_V2={...base,version:String(base.version||'')+'-pqm1retrieval1',resolve,rank,__macaPqmRetrieval:true};
 })(typeof window!=='undefined'?window:globalThis);
