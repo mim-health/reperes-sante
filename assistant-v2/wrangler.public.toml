@@ -1,0 +1,16 @@
+# MACA Assistant V2 — configuration Worker public
+# À utiliser pour le déploiement Cloudflare du fichier cloudflare-worker-public.js.
+# Les secrets OPENAI_API_KEY et RATE_LIMIT_SALT restent configurés dans Cloudflare.
+
+name = "voix-violette-a8e3"
+main = "cloudflare-worker-public.js"
+compatibility_date = "2026-09-22"
+
+[vars]
+ALLOWED_ORIGIN = "https://macasante.fr"
+
+[[unsafe.bindings]]
+name = "RATE_LIMITER"
+type = "ratelimit"
+namespace_id = "1001"
+simple = { limit = 20, period = 60 }
