@@ -2,8 +2,14 @@
 (function(){
 'use strict';
 const ENDPOINT='https://voix-violette-a8e3.dr-beddok.workers.dev/';
+// Public activation is fail-closed: production keeps V1 until the Worker advertises public readiness.
+const READY_URL=ENDPOINT+'?maca_public_ready=1';
 const supported=document.body.classList.contains('library-page')||document.body.classList.contains('maca-magazine-v1');
 if(!supported||document.getElementById('maca-v2-launcher'))return;
+
+async function publicReady(){try{const r=await fetch(READY_URL,{method:'GET',cache:'no-store'});const d=await r.json();return r.ok&&d&&d.service==='maca-assistant-v2'&&d.public_ready===true}catch{return false}}
+publicReady().then(ready=>{if(!ready)return;activate();});
+function activate(){
 
 const css=document.createElement('style');
 css.textContent=`
@@ -52,4 +58,5 @@ input.setAttribute('aria-label','Poser une question à l’Assistant MACA');inpu
 }
 bindSearch();
 window.MACA_ASSISTANT_V2={ask,open};
+}
 })();
