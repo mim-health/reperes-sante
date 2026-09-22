@@ -1,0 +1,34 @@
+name: assistant v2 dynamic red-team
+
+on:
+  pull_request:
+    branches:
+      - hardening/assistant-v2-public-readiness-20260919
+    paths:
+      - 'scripts/run-assistant-v2-red-team-live.js'
+      - 'assistant-v2/red-team-public-readiness.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  red-team:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Syntax check
+        run: node --check scripts/run-assistant-v2-red-team-live.js
+      - name: Run live Cloudflare red-team
+        env:
+          MACA_V2_ENDPOINT: ${{ secrets.MACA_V2_ENDPOINT }}
+          MACA_V2_PILOT_CODE: ${{ secrets.MACA_V2_PILOT_CODE }}
+        run: node scripts/run-assistant-v2-red-team-live.js
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: assistant-v2-red-team-report
+          path: assistant-v2/red-team-dynamic.report.json
+          if-no-files-found: ignore
