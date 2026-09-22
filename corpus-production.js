@@ -2584,6 +2584,41 @@ window.healthQuestions.push({
 });
 ;
 
+/* ===== MACA BUNDLE SOURCE: backlog-audited-biomarqueurs-sanguins-alzheimer-2026-09-22.js ===== */
+// MACA Santé — Radar Audience : biomarqueurs sanguins Alzheimer
+// Validation éditoriale : 22/09/2026 — réaudit rapproché, domaine diagnostique évolutif
+window.healthQuestions = window.healthQuestions || [];
+window.healthQuestions.push({
+  id:"prise-sang-diagnostic-alzheimer",
+  category:"Seniors",
+  title:"Une prise de sang peut-elle diagnostiquer la maladie d’Alzheimer ?",
+  keywords:"Alzheimer prise de sang test sanguin diagnostic biomarqueur biomarqueurs p-tau217 ptau217 amyloide amyloïde mémoire troubles cognitifs PET TEP ponction lombaire LCR dépistage",
+  answer:"Une prise de sang peut désormais aider fortement au diagnostic de la maladie d’Alzheimer chez certaines personnes qui présentent déjà des troubles cognitifs, mais elle ne remplace pas à elle seule l’évaluation médicale. Certains tests sanguins recherchent des biomarqueurs liés aux lésions caractéristiques de la maladie, notamment la protéine tau phosphorylée p-tau217. Les tests les plus performants peuvent servir à écarter ou à confirmer avec une forte probabilité la présence d’une pathologie Alzheimer dans un parcours diagnostique spécialisé. En revanche, il ne s’agit pas aujourd’hui d’un dépistage à faire chez toute personne sans symptôme pour savoir si elle développera un jour Alzheimer.",
+  detail:"Le diagnostic de la maladie d’Alzheimer ne repose pas sur un seul examen. Il commence par l’histoire des troubles, l’évaluation cognitive et clinique, la recherche d’autres causes possibles et, selon les situations, l’imagerie cérébrale et des examens biologiques. Jusqu’à récemment, confirmer la présence des lésions biologiques caractéristiques d’Alzheimer nécessitait surtout l’analyse de biomarqueurs dans le liquide céphalorachidien obtenu par ponction lombaire ou une imagerie TEP amyloïde.\n\nLes biomarqueurs sanguins changent progressivement cette situation. Parmi eux, la p-tau217 plasmatique est particulièrement étudiée. Elle reflète avec une bonne précision, pour certains tests validés, la probabilité de retrouver dans le cerveau les anomalies amyloïdes associées à la maladie d’Alzheimer. D’autres tests combinent plusieurs marqueurs liés à tau et à l’amyloïde.\n\nLes recommandations cliniques 2025 de l’Alzheimer’s Association concernent les personnes présentant un trouble cognitif objectif évaluées en consultation spécialisée. Elles indiquent qu’un test sanguin suffisamment performant peut être utilisé comme test de triage. Les tests atteignant des performances diagnostiques plus élevées peuvent, dans certaines conditions, remplacer la TEP amyloïde ou l’analyse des biomarqueurs du liquide céphalorachidien pour documenter une pathologie Alzheimer. Toutes les analyses disponibles sur le marché n’atteignent toutefois pas ces performances et leur interprétation dépend du contexte clinique.\n\nEn 2026, plusieurs tests sanguins ont franchi de nouvelles étapes réglementaires aux États-Unis. En septembre, deux nouveaux tests ont été autorisés pour aider à évaluer des adultes présentant des signes ou symptômes de déclin cognitif. L’un repose sur la p-tau217 ; l’autre combine des marqueurs amyloïdes et tau. Ces évolutions confirment que les biomarqueurs sanguins entrent progressivement dans le parcours diagnostique, mais elles ne transforment pas une prise de sang en diagnostic autonome.\n\nIl faut surtout distinguer diagnostic et dépistage. Ces tests ont été évalués principalement chez des personnes ayant déjà des plaintes ou troubles cognitifs et dans un parcours médical. Ils ne sont pas destinés à prédire, chez une personne en bonne santé et sans symptôme, si elle développera une maladie d’Alzheimer dans plusieurs années. Un résultat sanguin doit toujours être interprété avec l’âge, les symptômes, l’examen clinique et les autres éléments du bilan.\n\nEn France, la place exacte de ces nouveaux biomarqueurs sanguins dans le parcours de soins continue d’évoluer. Les références françaises historiques reposent encore sur une démarche clinique spécialisée, l’IRM et, lorsqu’une confirmation biologique est nécessaire, notamment les biomarqueurs du LCR ou la TEP. Les nouvelles données internationales rendent donc ce sujet particulièrement évolutif et justifient une réévaluation régulière de cette fiche.",
+  practical:[
+    "Une plainte de mémoire ne signifie pas automatiquement maladie d’Alzheimer : de nombreuses autres causes sont possibles.",
+    "Un test sanguin Alzheimer ne doit pas être interprété isolément : il s’intègre à une évaluation clinique et cognitive.",
+    "Les performances varient selon le biomarqueur et la méthode utilisée ; tous les tests commercialisés ne sont pas équivalents.",
+    "Ces tests ne constituent pas actuellement un dépistage généralisé chez les personnes sans trouble cognitif.",
+    "La place des biomarqueurs sanguins évolue rapidement : leur disponibilité et leurs indications peuvent différer selon les pays."
+  ],
+  watchTitle:"À retenir",
+  watch:"La nouveauté n’est pas qu’une prise de sang puisse, seule, « dire si l’on a Alzheimer ». C’est que certains biomarqueurs sanguins, notamment la p-tau217, atteignent désormais des performances permettant d’aider fortement le diagnostic chez des personnes présentant des troubles cognitifs. L’évaluation médicale reste indispensable et un test positif ne doit pas être interprété comme une prédiction individuelle de l’évolution future.",
+  source:"Alzheimer’s Association 2025 · JAMA 2026 · HAS",
+  url:"https://pmc.ncbi.nlm.nih.gov/articles/PMC12306682/",
+  sources:[
+    {org:"Alzheimer’s Association",title:"Clinical Practice Guideline on blood-based biomarkers in suspected Alzheimer’s disease",year:"2025",url:"https://pmc.ncbi.nlm.nih.gov/articles/PMC12306682/"},
+    {org:"JAMA",title:"FDA Approves 2 New Alzheimer Disease Blood Tests",year:"2026",url:"https://jamanetwork.com/journals/jama/fullarticle/2854427"},
+    {org:"Haute Autorité de Santé",title:"VIZAMYL — place dans la stratégie diagnostique de la maladie d’Alzheimer",year:"2022",url:"https://www.has-sante.fr/jcms/p_3352209/fr/vizamyl-flutemetamol-18f-produit-diagnostique-de-la-maladie-d-alzheimer"}
+  ],
+  verifiedAt:"22/09/2026",
+  nextAuditAt:"22/11/2026",
+  auditIntervalMonths:2,
+  validationStatus:"VALIDATED",
+  evidenceStatus:"VALIDÉ — guideline Alzheimer’s Association + actualité JAMA 2026 ; domaine en évolution rapide"
+});
+;
+
 /* ===== MACA BUNDLE SOURCE: structured-backlog-compat.js ===== */
 // Compatibility bridge: converts structured audited cards into the legacy question shape used by app.js.
 (() => {
