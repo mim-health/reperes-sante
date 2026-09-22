@@ -1,7 +1,7 @@
 /* MACA Santé — Assistant IA V2 unified entrypoint: search bar + floating assistant. */
 (function(){
 'use strict';
-const ENDPOINT='https://voix-violette-a8e3.dr-beddok.workers.dev/';
+const ENDPOINT='https://purple-voice-a8e3.dr-beddok.workers.dev/';
 // Public activation is fail-closed: production keeps V1 until the Worker advertises public readiness.
 const READY_URL=ENDPOINT+'?maca_public_ready=1';
 const supported=document.body.classList.contains('library-page')||document.body.classList.contains('maca-magazine-v1');
