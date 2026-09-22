@@ -153,6 +153,7 @@ export default {
     const allowed=env.ALLOWED_ORIGIN||'https://macasante.fr';
     const apiKey=getOpenAIKey(env);
     if(request.method==='OPTIONS')return new Response(null,{status:204,headers:cors(origin,allowed)});
+    if(request.method==='GET'&&new URL(request.url).searchParams.get('maca_public_ready')==='1')return response(origin,allowed,200,{service:'maca-assistant-v2',public_ready:true});
     if(origin&&origin!==allowed)return response(origin,allowed,403,{error:'origin_denied'});
     if(request.method!=='POST')return response(origin,allowed,405,{error:'method_not_allowed'});
     const contentType=request.headers.get('content-type')||'';
