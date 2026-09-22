@@ -61,3 +61,5 @@ async function ask(query) {
   console.log(`Dynamic red-team: ${report.summary.passed}/${report.summary.total} passed.`);
   if (failed) process.exit(1);
 })().catch(err=>{console.error('dynamic_redteam_error:',err.message);process.exit(2);});
+
+// validation-trigger: 2026-09-22
