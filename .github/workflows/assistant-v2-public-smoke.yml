@@ -1,0 +1,28 @@
+name: assistant v2 public smoke
+on:
+  pull_request:
+    branches: [feat/v0-magazine]
+  workflow_dispatch:
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Public readiness handshake
+        run: |
+          node - <<'NODE'
+          const endpoint='https://purple-voice-a8e3.dr-beddok.workers.dev/';
+          const r=await fetch(endpoint+'?maca_public_ready=1',{headers:{Origin:'https://macasante.fr'}});
+          const d=await r.json();
+          console.log(r.status,d);
+          if(!r.ok||d.service!=='maca-assistant-v2'||d.public_ready!==true) process.exit(1);
+          NODE
+      - name: Public question smoke test
+        run: |
+          node - <<'NODE'
+          const endpoint='https://purple-voice-a8e3.dr-beddok.workers.dev/';
+          const r=await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json',Origin:'https://macasante.fr'},body:JSON.stringify({question:'Le magnésium aide-t-il vraiment à dormir ?'})});
+          const d=await r.json();
+          console.log(r.status,d.status,d.error||'',d.cards_used?.map(x=>x.title)||[]);
+          if(!r.ok||!['answer','category_only','abstain'].includes(d.status)) process.exit(1);
+          NODE
