@@ -17,6 +17,8 @@ jobs:
         run: |
           grep -q "maca-assistant-v2-unified.js" corpus-v2-browser-entry.js
           grep -q "voix-violette-a8e3.dr-beddok.workers.dev" maca-assistant-v2-unified.js
+          grep -q "maca_public_ready" maca-assistant-v2-unified.js
+          grep -q "public_ready:true" assistant-v2/cloudflare-worker-public.js
           ! grep -q "maca-assistant-widget.js" fiches.html
           ! grep -q "x-maca-pilot-code" assistant-v2/cloudflare-worker-public.js
           grep -q "RATE_LIMITER" assistant-v2/cloudflare-worker-public.js
