@@ -23,3 +23,7 @@ jobs:
           ! grep -q "x-maca-pilot-code" assistant-v2/cloudflare-worker-public.js
           grep -q "RATE_LIMITER" assistant-v2/cloudflare-worker-public.js
           grep -q "RATE_LIMIT_SALT" assistant-v2/cloudflare-worker-public.js
+          grep -q 'name = "purple-voice-a8e3"' assistant-v2/wrangler.public.toml
+          grep -q 'name = "RATE_LIMITER"' assistant-v2/wrangler.public.toml
+          grep -q 'namespace_id = "1001"' assistant-v2/wrangler.public.toml
+          grep -q 'limit = 20, period = 60' assistant-v2/wrangler.public.toml
