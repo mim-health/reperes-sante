@@ -65,3 +65,5 @@ async function ask(query) {
 })().catch(err=>{console.error('dynamic_redteam_error:',err.message);process.exit(2);});
 
 // validation-trigger: 2026-09-22
+
+// targeted-replay-trigger: source_override
