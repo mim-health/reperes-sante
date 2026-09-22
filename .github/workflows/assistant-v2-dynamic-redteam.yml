@@ -1,6 +1,13 @@
 name: assistant v2 dynamic red-team
 
 on:
+  pull_request:
+    branches:
+      - hardening/assistant-v2-public-readiness-20260919
+    paths:
+      - '.github/workflows/assistant-v2-dynamic-redteam.yml'
+      - 'scripts/run-assistant-v2-red-team-live.js'
+      - 'assistant-v2/red-team-public-readiness.json'
   workflow_dispatch:
 
 permissions:
