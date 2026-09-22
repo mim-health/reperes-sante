@@ -2,7 +2,7 @@
 (function(){
 'use strict';
 const ENDPOINT='https://purple-voice-a8e3.dr-beddok.workers.dev/';
-// Public activation is fail-closed: production keeps V1 until the Worker advertises public readiness.
+// Public activation is fail-closed: V2 only takes control when the public Worker advertises readiness.
 const READY_URL=ENDPOINT+'?maca_public_ready=1';
 const supported=document.body.classList.contains('library-page')||document.body.classList.contains('maca-magazine-v1');
 if(!supported||document.getElementById('maca-v2-launcher'))return;
@@ -19,7 +19,7 @@ css.textContent=`
 .maca-v2-head{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;background:#faf7ef;border-bottom:1px solid #e7e1d7}.maca-v2-head strong{color:#263936}.maca-v2-close{border:0;background:transparent;font-size:25px;cursor:pointer}
 .maca-v2-body{padding:16px;overflow:auto;flex:1}.maca-v2-note{font-size:12px;color:#687873;line-height:1.45;margin:0 0 14px}.maca-v2-form{display:flex;gap:8px;align-items:flex-end}.maca-v2-form textarea{flex:1;min-height:72px;max-height:150px;resize:vertical;border:1px solid #c7d0ca;border-radius:14px;padding:11px;font:inherit}.maca-v2-send{border:0;border-radius:999px;background:#173c33;color:#fff;padding:11px 14px;font-weight:700;cursor:pointer}.maca-v2-send:disabled{opacity:.55}.maca-v2-result{margin-top:16px;padding-top:16px;border-top:1px solid #e7e1d7}.maca-v2-status{font-size:12px;color:#687873;margin-bottom:8px}.maca-v2-answer{font-size:16px;line-height:1.55;white-space:pre-wrap;color:#263936}.maca-v2-sources{margin-top:14px;font-size:12px;line-height:1.55}.maca-v2-sources a{color:#315b50}.maca-v2-scope{margin-top:10px;font-size:12px;color:#687873}.maca-v2-error{color:#8b3524}
 .search-box{display:flex!important}
-@media(max-width:640px){.maca-v2-launcher{right:14px;bottom:14px}.maca-v2-panel{inset:0;width:100vw;height:100dvh;border:0;border-radius:0}.maca-v2-head{padding-top:max(14px,env(safe-area-inset-top))}}
+@media(max-width:640px){body.maca-v2-open{overflow:hidden}.maca-v2-launcher{right:14px;bottom:14px}.maca-v2-panel{inset:0;width:100vw;height:100dvh;border:0;border-radius:0}.maca-v2-head{padding-top:max(14px,env(safe-area-inset-top))}}
 `;document.head.appendChild(css);
 
 const launcher=document.createElement('button');launcher.id='maca-v2-launcher';launcher.className='maca-v2-launcher';launcher.type='button';launcher.textContent='Assistant MACA';launcher.setAttribute('aria-expanded','false');
@@ -27,12 +27,12 @@ const panel=document.createElement('section');panel.className='maca-v2-panel';pa
 panel.innerHTML=`<header class="maca-v2-head"><div><strong>Assistant MACA</strong><div style="font-size:11px;color:#687873;margin-top:2px">Réponses issues des fiches MACA validées</div></div><button class="maca-v2-close" aria-label="Fermer">×</button></header><div class="maca-v2-body"><p class="maca-v2-note">Posez votre question avec vos mots. MACA recherche dans son corpus fermé et s’abstient lorsque l’information disponible n’est pas suffisante. Information générale, sans diagnostic ni conseil médical individualisé.</p><div class="maca-v2-form"><textarea maxlength="600" aria-label="Votre question" placeholder="Ex. : Le magnésium aide-t-il vraiment à dormir ?"></textarea><button class="maca-v2-send">Interroger</button></div><div class="maca-v2-result" hidden><div class="maca-v2-status"></div><div class="maca-v2-answer"></div><div class="maca-v2-scope"></div><div class="maca-v2-sources"></div></div></div>`;
 document.body.append(panel,launcher);
 const close=panel.querySelector('.maca-v2-close'),textarea=panel.querySelector('textarea'),send=panel.querySelector('.maca-v2-send'),result=panel.querySelector('.maca-v2-result'),status=panel.querySelector('.maca-v2-status'),answer=panel.querySelector('.maca-v2-answer'),scope=panel.querySelector('.maca-v2-scope'),sources=panel.querySelector('.maca-v2-sources');
-function open(q){panel.dataset.open='true';launcher.setAttribute('aria-expanded','true');if(q)textarea.value=q;setTimeout(()=>textarea.focus(),30)}
-function shut(){panel.dataset.open='false';launcher.setAttribute('aria-expanded','false')}
+function open(q){panel.dataset.open='true';launcher.setAttribute('aria-expanded','true');document.body.classList.add('maca-v2-open');if(q)textarea.value=q;setTimeout(()=>textarea.focus(),30)}
+function shut(){panel.dataset.open='false';launcher.setAttribute('aria-expanded','false');document.body.classList.remove('maca-v2-open')}
 launcher.onclick=()=>panel.dataset.open==='true'?shut():open();close.onclick=shut;document.addEventListener('keydown',e=>{if(e.key==='Escape')shut()});
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));}
 async function ask(q){
-q=String(q||textarea.value).trim();if(!q)return;open(q);send.disabled=true;send.textContent='Analyse…';result.hidden=false;status.textContent='Recherche dans les fiches MACA…';answer.textContent='';scope.textContent='';sources.textContent='';
+q=String(q||textarea.value).trim();if(!q)return;open(q);send.disabled=true;send.textContent='Analyse…';result.hidden=false;status.textContent='Recherche dans les fiches MACA…';answer.classList.remove('maca-v2-error');answer.textContent='';scope.textContent='';sources.textContent='';
 try{
 const r=await fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q})});
 const data=await r.json().catch(()=>({}));
