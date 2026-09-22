@@ -24,6 +24,7 @@ jobs:
         env:
           MACA_V2_ENDPOINT: ${{ secrets.MACA_V2_ENDPOINT }}
           MACA_V2_PILOT_CODE: ${{ secrets.MACA_V2_PILOT_CODE }}
+          MACA_V2_ONLY_CLASS: source_override
         run: node scripts/run-assistant-v2-red-team-live.js
       - name: Upload report
         if: always()
