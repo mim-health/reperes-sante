@@ -2,7 +2,7 @@
 
 État attendu avant fusion de la PR d’intégration :
 
-1. Déployer `cloudflare-worker-public.js` sur le Worker `voix-violette-a8e3`.
+1. Déployer `cloudflare-worker-public.js` sur le Worker `purple-voice-a8e3`.
 2. Conserver le secret `OPENAI_API_KEY`.
 3. Ajouter un secret aléatoire `RATE_LIMIT_SALT`.
 4. Activer le binding `RATE_LIMITER` (20 requêtes/minute/IP hashée).
