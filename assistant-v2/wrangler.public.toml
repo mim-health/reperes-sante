@@ -2,7 +2,7 @@
 # À utiliser pour le déploiement Cloudflare du fichier cloudflare-worker-public.js.
 # Les secrets OPENAI_API_KEY et RATE_LIMIT_SALT restent configurés dans Cloudflare.
 
-name = "voix-violette-a8e3"
+name = "purple-voice-a8e3"
 main = "cloudflare-worker-public.js"
 compatibility_date = "2026-09-22"
 
