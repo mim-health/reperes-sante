@@ -108,13 +108,15 @@ jobs:
           mkdir -p "$DEST"
           cp assistant-v2/corpus.json "$DEST/corpus.json"
           cp assistant-v2/embeddings.index.json "$DEST/embeddings.index.json"
-          node - <<NODE
+          node - "$VERSION" "$CARD_COUNT" <<'NODE'
           const fs=require('fs');
+          const version=process.argv[2];
+          const cardCount=Number(process.argv[3]);
           const latest={
             schemaVersion:1,
-            version:process.env.VERSION,
-            corpusFingerprint:process.env.VERSION,
-            cardCount:Number(process.env.CARD_COUNT),
+            version,
+            corpusFingerprint:version,
+            cardCount,
             sourceCommit:process.env.GITHUB_SHA,
             generatedAt:new Date().toISOString()
           };
@@ -135,6 +137,3 @@ jobs:
           fi
           git commit -m "build(assistant-v2): publish validated corpus artifacts $VERSION"
           git push origin "HEAD:$GITHUB_REF_NAME"
-        env:
-          VERSION: ${{ env.VERSION }}
-          CARD_COUNT: ${{ env.CARD_COUNT }}
