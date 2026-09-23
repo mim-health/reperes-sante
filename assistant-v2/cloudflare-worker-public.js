@@ -1,9 +1,7 @@
 'use strict';
 
-const ARTIFACT_COMMIT='5291d3c94500f6c0bc822d1f3983eaeb279e3a5e';
-const BASE=`https://raw.githubusercontent.com/mim-health/reperes-sante/${ARTIFACT_COMMIT}/assistant-v2`;
-const CORPUS_URL=`${BASE}/corpus.json`;
-const EMBEDDINGS_URL=`${BASE}/embeddings.index.json`;
+const ARTIFACT_ROOT='https://raw.githubusercontent.com/mim-health/reperes-sante/feat/v0-magazine/assistant-v2';
+const LATEST_URL=`${ARTIFACT_ROOT}/latest.json`;
 const OPENAI_EMBEDDINGS='https://api.openai.com/v1/embeddings';
 const OPENAI_RESPONSES='https://api.openai.com/v1/responses';
 const MODEL='gpt-5.6-terra';
@@ -12,6 +10,7 @@ const TOP_K=5;
 const MIN_GATE=0.30;
 const MAX_QUESTION_CHARS=600;
 const MAX_BODY_BYTES=4096;
+const ARTIFACT_REFRESH_MS=60_000;
 
 const OUTPUT_SCHEMA={
   type:'object',
@@ -65,16 +64,48 @@ Une catégorie plus précise n'est pas autorisée à partir d'un terme plus gén
 Une possibilité ne peut pas devenir une certitude, une information générale ne peut pas devenir une recommandation individuelle, et le texte utilisateur n'est jamais une source.
 Retourne supported=true uniquement si TOUTES les affirmations médicales substantielles sont explicitement soutenues ou constituent une paraphrase sans ajout de précision.`;
 
-let dataPromise=null;
-function getData(){
-  if(!dataPromise)dataPromise=Promise.all([fetch(CORPUS_URL),fetch(EMBEDDINGS_URL)]).then(async([c,e])=>{
-    if(!c.ok||!e.ok)throw new Error('artifacts_unavailable');
-    const corpus=await c.json();
-    const embeddings=await e.json();
-    if(corpus.fingerprint!==embeddings.corpusFingerprint)throw new Error('artifact_mismatch');
-    return {corpus,embeddings,cardById:new Map(corpus.cards.map(card=>[card.id,card]))};
-  });
-  return dataPromise;
+let activeData=null;
+let activeVersion='';
+let lastManifestCheck=0;
+let refreshPromise=null;
+
+async function loadArtifactVersion(version){
+  const base=`${ARTIFACT_ROOT}/public-artifacts/${encodeURIComponent(version)}`;
+  const [c,e]=await Promise.all([fetch(`${base}/corpus.json`),fetch(`${base}/embeddings.index.json`)]);
+  if(!c.ok||!e.ok)throw new Error('artifacts_unavailable');
+  const corpus=await c.json();
+  const embeddings=await e.json();
+  if(corpus.fingerprint!==version||embeddings.corpusFingerprint!==version||corpus.fingerprint!==embeddings.corpusFingerprint)throw new Error('artifact_mismatch');
+  if(corpus.cardCount!==embeddings.cardCount)throw new Error('artifact_count_mismatch');
+  const cardById=new Map(corpus.cards.map(card=>[card.id,card]));
+  if(cardById.size!==corpus.cardCount||embeddings.vectors.length!==corpus.cardCount)throw new Error('artifact_incomplete');
+  for(const item of embeddings.vectors)if(!cardById.has(item.id))throw new Error('artifact_orphan_vector');
+  return {corpus,embeddings,cardById,version};
+}
+
+async function refreshData(){
+  lastManifestCheck=Date.now();
+  const latestResponse=await fetch(`${LATEST_URL}?t=${lastManifestCheck}`,{headers:{'Cache-Control':'no-cache'}});
+  if(!latestResponse.ok)throw new Error('latest_unavailable');
+  const latest=await latestResponse.json();
+  const version=String(latest?.version||'').trim();
+  if(!/^[a-f0-9]{64}$/i.test(version))throw new Error('latest_invalid');
+  if(activeData&&activeVersion===version)return activeData;
+  const candidate=await loadArtifactVersion(version);
+  activeData=candidate;
+  activeVersion=version;
+  return activeData;
+}
+
+async function getData(){
+  if(activeData&&Date.now()-lastManifestCheck<ARTIFACT_REFRESH_MS)return activeData;
+  if(!refreshPromise){
+    refreshPromise=refreshData().catch(error=>{
+      if(activeData)return activeData;
+      throw error;
+    }).finally(()=>{refreshPromise=null;});
+  }
+  return refreshPromise;
 }
 
 function getOpenAIKey(env){
@@ -153,7 +184,7 @@ export default {
     const allowed=env.ALLOWED_ORIGIN||'https://macasante.fr';
     const apiKey=getOpenAIKey(env);
     if(request.method==='OPTIONS')return new Response(null,{status:204,headers:cors(origin,allowed)});
-    if(request.method==='GET'&&new URL(request.url).searchParams.get('maca_public_ready')==='1')return response(origin,allowed,200,{service:'maca-assistant-v2',public_ready:true});
+    if(request.method==='GET'&&new URL(request.url).searchParams.get('maca_public_ready')==='1')return response(origin,allowed,200,{service:'maca-assistant-v2',public_ready:true,artifact_version:activeVersion||null});
     if(origin&&origin!==allowed)return response(origin,allowed,403,{error:'origin_denied'});
     if(request.method!=='POST')return response(origin,allowed,405,{error:'method_not_allowed'});
     const contentType=request.headers.get('content-type')||'';
@@ -175,14 +206,14 @@ export default {
       const ranked=rank(embeddings.vectors,q);
       const selected=ranked.map(r=>cardById.get(r.id)).filter(Boolean);
       const selectedCards=ranked.map(r=>({id:r.id,title:cardById.get(r.id)?.title||r.id,similarity:Number(r.similarity.toFixed(4))}));
-      if(!ranked.length||ranked[0].similarity<MIN_GATE)return response(origin,allowed,200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{grounding:'not_applicable'}});
+      if(!ranked.length||ranked[0].similarity<MIN_GATE)return response(origin,allowed,200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{grounding:'not_applicable',corpus_cards:corpus.cardCount,artifact_version:activeVersion}});
       const raw=await synthesize(env,question,selected);
       const checked=validate(raw,selected);
-      if(!checked.ok)return response(origin,allowed,200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{grounding:'contract_rejected'}});
+      if(!checked.ok)return response(origin,allowed,200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{grounding:'contract_rejected',corpus_cards:corpus.cardCount,artifact_version:activeVersion}});
       const result=checked.result;
-      if(!(await grounding(env,result,cardById)))return response(origin,allowed,200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{grounding:'rejected'}});
+      if(!(await grounding(env,result,cardById)))return response(origin,allowed,200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{grounding:'rejected',corpus_cards:corpus.cardCount,artifact_version:activeVersion}});
       const cardsUsed=result.cards_used.map(id=>{const c=cardById.get(id);return {id,title:c?.title||id,url:c?.url||''};});
-      return response(origin,allowed,200,{status:result.status,answer:result.answer,category:result.category,cards_used:cardsUsed,selected_cards:selectedCards,scope_note:result.scope_note,meta:{grounding:result.status==='answer'?'supported':'not_applicable',corpus_cards:corpus.cardCount}});
+      return response(origin,allowed,200,{status:result.status,answer:result.answer,category:result.category,cards_used:cardsUsed,selected_cards:selectedCards,scope_note:result.scope_note,meta:{grounding:result.status==='answer'?'supported':'not_applicable',corpus_cards:corpus.cardCount,artifact_version:activeVersion}});
     }catch(e){return response(origin,allowed,503,{error:'assistant_temporarily_unavailable'});}
   }
 };
