@@ -1,6 +1,6 @@
 'use strict';
 
-const ARTIFACT_COMMIT='e01c76e76ec09a636fac9763dc2bad27fb1cb10d';
+const ARTIFACT_COMMIT='5291d3c94500f6c0bc822d1f3983eaeb279e3a5e';
 const BASE=`https://raw.githubusercontent.com/mim-health/reperes-sante/${ARTIFACT_COMMIT}/assistant-v2`;
 const CORPUS_URL=`${BASE}/corpus.json`;
 const EMBEDDINGS_URL=`${BASE}/embeddings.index.json`;
