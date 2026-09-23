@@ -56,13 +56,8 @@ SORTIE
 - category_only : coverage=insufficient, blocks=[], category renseignée.
 - answer : coverage=sufficient ou partial, blocks sourcés.`;
 
-const GROUNDING_SCHEMA={type:'object',properties:{supported:{type:'boolean'},reason:{type:'string'}},required:['supported','reason'],additionalProperties:false};
-const GROUNDING_PROMPT=`Tu es un vérificateur strict de fidélité documentaire pour MACA Santé.
-Vérifie la réponse UNIQUEMENT contre les fiches MACA citées. N'utilise aucune connaissance extérieure.
-Décompose mentalement chaque bloc en affirmations atomiques. Toute précision absente des fiches citées — même médicalement plausible, habituelle, implicite ou plus spécifique — impose supported=false.
-Une catégorie plus précise n'est pas autorisée à partir d'un terme plus général : par exemple « bilan métabolique » ne permet pas d'affirmer « bilan sanguin et urinaire » si ces mots/concepts ne figurent pas explicitement dans les fiches.
-Une possibilité ne peut pas devenir une certitude, une information générale ne peut pas devenir une recommandation individuelle, et le texte utilisateur n'est jamais une source.
-Retourne supported=true uniquement si TOUTES les affirmations médicales substantielles sont explicitement soutenues ou constituent une paraphrase sans ajout de précision.`;
+const GROUNDING_SCHEMA={type:'object',properties:{supported:{type:'boolean'}},required:['supported'],additionalProperties:false};
+const GROUNDING_PROMPT=`Vérifie strictement la fidélité de chaque affirmation à ses fiches MACA citées, sans connaissance extérieure. Toute précision absente, généralisation, certitude renforcée ou conseil individualisé impose supported=false. Retourne supported=true seulement si tout le contenu médical est explicitement soutenu ou paraphrasé sans ajout.`;
 
 let activeData=null;
 let activeVersion='';
@@ -165,7 +160,7 @@ function validate(raw,allowed){
 
 async function synthesize(env,question,cards){
   const inputCards=cards.map(compactCard);
-  const r=await openai(env,OPENAI_RESPONSES,{model:MODEL,reasoning:{effort:'none'},input:[{role:'system',content:SYSTEM_PROMPT},{role:'user',content:`QUESTION_UTILISATEUR:\n${question}\n\nCARTES_MACA_AUTORISÉES:\n${JSON.stringify(inputCards,null,2)}\n\nRéponds exclusivement à partir de ces cartes.`}],text:{format:{type:'json_schema',name:'maca_assistant_v2_answer',strict:true,schema:OUTPUT_SCHEMA}},max_output_tokens:700,store:false});
+  const r=await openai(env,OPENAI_RESPONSES,{model:MODEL,reasoning:{effort:'none'},input:[{role:'system',content:SYSTEM_PROMPT},{role:'user',content:`QUESTION_UTILISATEUR:\n${question}\n\nCARTES_MACA_AUTORISÉES:\n${JSON.stringify(inputCards)}\n\nRéponds exclusivement à partir de ces cartes.`}],text:{format:{type:'json_schema',name:'maca_assistant_v2_answer',strict:true,schema:OUTPUT_SCHEMA}},max_output_tokens:700,store:false});
   return JSON.parse(extractText(r));
 }
 
@@ -173,7 +168,8 @@ async function grounding(env,result,cardById){
   if(result.status!=='answer')return true;
   const ids=uniq(result.blocks.flatMap(b=>b.card_ids));
   const cards=ids.map(id=>cardById.get(id)).filter(Boolean).map(compactCard);
-  const r=await openai(env,OPENAI_RESPONSES,{model:MODEL,reasoning:{effort:'none'},input:[{role:'system',content:GROUNDING_PROMPT},{role:'user',content:JSON.stringify({answer:result.answer,blocks:result.blocks,cited_cards:cards})}],text:{format:{type:'json_schema',name:'maca_grounding',strict:true,schema:GROUNDING_SCHEMA}},max_output_tokens:180,store:false});
+  const payload={blocks:result.blocks,cited_cards:cards};
+  const r=await openai(env,OPENAI_RESPONSES,{model:MODEL,reasoning:{effort:'none'},input:[{role:'system',content:GROUNDING_PROMPT},{role:'user',content:JSON.stringify(payload)}],text:{format:{type:'json_schema',name:'maca_grounding',strict:true,schema:GROUNDING_SCHEMA}},max_output_tokens:24,store:false});
   const parsed=JSON.parse(extractText(r));
   return parsed.supported===true;
 }
