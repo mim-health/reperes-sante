@@ -1,0 +1,29 @@
+name: assistant v2 unified integration
+on:
+  pull_request:
+    branches: [feat/v0-magazine]
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Syntax checks
+        run: |
+          node --check maca-assistant-v2-unified.js
+          node --check corpus-v2-browser-entry.js
+          node --check assistant-v2/cloudflare-worker-public.js
+      - name: Integration assertions
+        run: |
+          grep -q "maca-assistant-v2-unified.js" corpus-v2-browser-entry.js
+          grep -q "purple-voice-a8e3.dr-beddok.workers.dev" maca-assistant-v2-unified.js
+          grep -q "maca_public_ready" maca-assistant-v2-unified.js
+          grep -q "public_ready:true" assistant-v2/cloudflare-worker-public.js
+          ! grep -q "maca-assistant-widget.js" fiches.html
+          ! grep -q "x-maca-pilot-code" assistant-v2/cloudflare-worker-public.js
+          grep -q "RATE_LIMITER" assistant-v2/cloudflare-worker-public.js
+          grep -q "RATE_LIMIT_SALT" assistant-v2/cloudflare-worker-public.js
+          grep -q 'name = "purple-voice-a8e3"' assistant-v2/wrangler.public.toml
+          grep -q 'name = "RATE_LIMITER"' assistant-v2/wrangler.public.toml
+          grep -q 'namespace_id = "1001"' assistant-v2/wrangler.public.toml
+          grep -q 'limit = 20, period = 60' assistant-v2/wrangler.public.toml

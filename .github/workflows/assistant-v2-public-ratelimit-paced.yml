@@ -1,0 +1,25 @@
+name: assistant v2 public rate-limit paced
+on:
+  pull_request:
+    branches: [feat/v0-magazine]
+  workflow_dispatch:
+jobs:
+  ratelimit-paced:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify Cloudflare rate limiter with paced requests
+        run: |
+          node - <<'NODE'
+          const endpoint='https://purple-voice-a8e3.dr-beddok.workers.dev/';
+          const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+          let got429=false;
+          for(let i=1;i<=35;i++){
+            const r=await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json',Origin:'https://macasante.fr'},body:'{}'});
+            console.log(i,r.status);
+            if(r.status===429){ got429=true; console.log('Rate limiter: HTTP 429 confirmed at request '+i); break; }
+            if(r.status!==400) throw new Error('Unexpected status before limit: '+r.status);
+            await sleep(2000);
+          }
+          if(!got429) throw new Error('No HTTP 429 observed during paced 35-request verification');
+          NODE

@@ -1,0 +1,14 @@
+name: assistant v2 public red-team
+on:
+  pull_request:
+    branches: [feat/v0-magazine]
+  workflow_dispatch:
+jobs:
+  redteam:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run 22-case public red-team
+        env:
+          MACA_V2_ENDPOINT: https://purple-voice-a8e3.dr-beddok.workers.dev/
+        run: node scripts/run-assistant-v2-red-team-live.js

@@ -1,0 +1,26 @@
+name: assistant v2 public rate-limit
+on:
+  pull_request:
+    branches: [feat/v0-magazine]
+  workflow_dispatch:
+jobs:
+  ratelimit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify burst safety without assuming strict counter consistency
+        run: |
+          node - <<'NODE'
+          const endpoint='https://purple-voice-a8e3.dr-beddok.workers.dev/';
+          let got429=false;
+          for(let i=1;i<=25;i++){
+            const r=await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json',Origin:'https://macasante.fr'},body:'{}'});
+            console.log(i,r.status);
+            if(r.status===429){ got429=true; continue; }
+            if(r.status!==400) throw new Error('Unexpected status during burst verification: '+r.status);
+          }
+          console.log(got429
+            ? 'Burst verification: HTTP 429 observed.'
+            : 'Burst verification: no 429 observed, compatible with Cloudflare Rate Limiting eventual consistency.');
+          console.log('Strict HTTP 429 enforcement is verified by assistant-v2-public-ratelimit-paced.yml.');
+          NODE
