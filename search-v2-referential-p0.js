@@ -28,7 +28,7 @@
     {key:'adult-sore-throat',primaryId:'mal-gorge-adulte-antibiotiques',aliases:['mal a la gorge','mal de gorge adulte','angine adulte','gorge rouge adulte','antibiotiques angine','trod angine'],excludePopulations:['baby','child']},
     {key:'breathlessness',primaryId:'essoufflement-adulte',aliases:['essoufflement','essouffle','souffle court','manque d air','vite essouffle','dyspnee'],excludePopulations:['baby','child']},
     {key:'palpitations',primaryId:'palpitations-adulte',secondaryId:'palpitations-quand-consulter',secondaryTriggers:['quand consulter','dois je consulter','dangereux','urgence','inquietant','grave'],aliases:['palpitations','palpitation','coeur qui s emballe','coeur qui bat fort','battements irreguliers','coeur qui saute','extrasystoles','extrasystole'],excludePopulations:['baby','child']},
-    {key:'cystitis',primaryId:'maca-cystite-reperes',aliases:['cystite','infection urinaire','brulures en urinant','brulure en urinant','envie frequente d uriner','envie de faire pipi souvent','envie de faire pipi tout le temps'],hardVetoUnlessPositive:['pertes vaginales']},
+    {key:'cystitis',primaryId:'cystite-femme',aliases:['cystite','infection urinaire','brulures en urinant','brulure en urinant','envie frequente d uriner','envie de faire pipi souvent','envie de faire pipi tout le temps'],hardVetoUnlessPositive:['pertes vaginales']},
     {key:'thyroid-nodule',primaryId:'nodule-thyroide-inquietant',aliases:['nodule thyroide','nodule thyroidien','boule thyroide','tirads','eu tirads','cytoponction thyroide']},
     {key:'headache-general',primaryId:'maux-tete',aliases:['mal de tete','maux de tete','cephalee','cephalees'],allowMultiWith:['migraine']},
     {key:'migraine',primaryId:'migraine-que-faire',secondaryId:'migraine-adulte',secondaryTriggers:['traitement de fond','crises frequentes','migraine frequente','migraines frequentes','trop de crises'],aliases:['migraine','migraines','crise de migraine','migraine avec aura','aura migraineuse'],associationAliases:['mal de tete','maux de tete','cephalee','cephalees'],allowMultiWith:['headache-general']},
@@ -64,7 +64,7 @@
     version:'2026-09-01-p0-lot5',
     validationStatus:'VALIDATED_MEDICAL_P0',
     source:'docs/MACA_V2_P0_VALIDATION_2026-08-31.md',
-    excludedIds:['rgo-adulte','cystite-femme','essoufflement-causes-signes-alerte','palpitations','poux-enfant','diversification-alimentaire-bebe'],
+    excludedIds:['rgo-adulte','essoufflement-causes-signes-alerte','palpitations','poux-enfant','diversification-alimentaire-bebe'],
     intents,
     abstainRules
   };
