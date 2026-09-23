@@ -1,0 +1,46 @@
+name: assistant v2 public health
+
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  public-health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Check public readiness and latency
+        shell: bash
+        run: |
+          set -euo pipefail
+          URL='https://purple-voice-a8e3.dr-beddok.workers.dev/?maca_public_ready=1'
+          TMP_BODY="$(mktemp)"
+          METRICS="$(curl -sS --fail-with-body -o "$TMP_BODY" -w '%{http_code} %{time_total}' "$URL")"
+          HTTP_CODE="${METRICS%% *}"
+          LATENCY="${METRICS##* }"
+          echo "HTTP_STATUS=$HTTP_CODE"
+          echo "LATENCY_SECONDS=$LATENCY"
+          cat "$TMP_BODY"
+          python3 - "$TMP_BODY" <<'PY'
+          import json,sys
+          p=sys.argv[1]
+          with open(p,encoding='utf-8') as f:
+              d=json.load(f)
+          if d.get('service')!='maca-assistant-v2':
+              raise SystemExit('unexpected service')
+          if d.get('public_ready') is not True:
+              raise SystemExit('public_ready is not true')
+          print('PUBLIC_READY_OK=true')
+          print('ARTIFACT_VERSION='+str(d.get('artifact_version')))
+          PY
+          python3 - "$LATENCY" <<'PY'
+          import sys
+          t=float(sys.argv[1])
+          if t>5:
+              raise SystemExit(f'readiness endpoint too slow: {t:.3f}s')
+          print(f'LATENCY_OK={t:.3f}s')
+          PY
