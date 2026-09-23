@@ -1,0 +1,73 @@
+name: assistant v2 artifacts sync P0
+
+on:
+  push:
+    branches:
+      - fix/assistant-v2-artifacts-sync-20260923
+    paths:
+      - '.github/workflows/assistant-v2-artifacts-sync-p0.yml'
+      - 'corpus-manifest.js'
+      - 'backlog-*.js'
+      - 'migration-*.js'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: assistant-v2-artifacts-sync-p0
+  cancel-in-progress: true
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build closed corpus from current canonical sources
+        run: node scripts/build-assistant-v2-corpus.js
+
+      - name: Verify 290 cards and dedicated Alzheimer blood-test card
+        run: |
+          node - <<'NODE'
+          const c=require('./assistant-v2/corpus.json');
+          if(c.cardCount!==290) throw new Error(`Expected 290 cards, got ${c.cardCount}`);
+          if(!c.cards.some(x=>x.id==='prise-sang-diagnostic-alzheimer')) throw new Error('Dedicated Alzheimer blood-test card missing');
+          console.log('Corpus P0 OK:',c.cardCount,'cards; dedicated card present; fingerprint',c.fingerprint);
+          NODE
+
+      - name: Run local retrieval baseline
+        run: node scripts/test-assistant-v2-retrieval.js
+
+      - name: Rebuild embeddings
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          MACA_EMBEDDING_MODEL: text-embedding-3-small
+          MACA_EMBEDDING_DIMENSIONS: '512'
+        run: |
+          test -n "$OPENAI_API_KEY" || { echo 'OPENAI_API_KEY missing'; exit 1; }
+          node scripts/build-assistant-v2-embeddings.js
+
+      - name: Verify artifact fingerprint parity
+        run: |
+          node - <<'NODE'
+          const c=require('./assistant-v2/corpus.json');
+          const e=require('./assistant-v2/embeddings.index.json');
+          if(e.corpusFingerprint!==c.fingerprint) throw new Error('Corpus/embeddings fingerprint mismatch');
+          if(!Array.isArray(e.vectors)||e.vectors.length!==290) throw new Error(`Expected 290 embedding vectors, got ${e.vectors?.length}`);
+          if(!e.vectors.some(x=>x.id==='prise-sang-diagnostic-alzheimer')) throw new Error('Dedicated Alzheimer card embedding missing');
+          console.log('Embeddings P0 OK:',e.vectors.length,'vectors');
+          NODE
+
+      - name: Publish immutable artifacts on technical branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assistant-v2/corpus.json assistant-v2/corpus.report.json assistant-v2/embeddings.index.json
+          if git diff --cached --quiet; then
+            echo 'Artifacts unchanged'
+            exit 0
+          fi
+          git commit -m "build(assistant-v2): sync 290-card public artifacts"
+          git push origin HEAD:fix/assistant-v2-artifacts-sync-20260923
