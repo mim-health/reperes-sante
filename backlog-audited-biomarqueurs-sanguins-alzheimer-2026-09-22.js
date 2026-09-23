@@ -24,6 +24,7 @@ window.healthQuestions.push({
     {org:"JAMA",title:"FDA Approves 2 New Alzheimer Disease Blood Tests",year:"2026",url:"https://jamanetwork.com/journals/jama/fullarticle/2854427"},
     {org:"Haute Autorité de Santé",title:"VIZAMYL — place dans la stratégie diagnostique de la maladie d’Alzheimer",year:"2022",url:"https://www.has-sante.fr/jcms/p_3352209/fr/vizamyl-flutemetamol-18f-produit-diagnostique-de-la-maladie-d-alzheimer"}
   ],
+  relatedIds:["alzheimer-traitements-reconnus","activite-physique-alzheimer-risque-demence","prevenir-declin-cognitif-vieillissant"],
   verifiedAt:"22/09/2026",
   nextAuditAt:"22/11/2026",
   auditIntervalMonths:2,
