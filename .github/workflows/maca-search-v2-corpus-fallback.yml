@@ -60,7 +60,7 @@ jobs:
           if not m: print('Machine result missing'); sys.exit(1)
           data=json.loads(html.unescape(re.sub(r'<[^>]+>','',m.group(1))).strip())
           print('V2_P0='+json.dumps(data,ensure_ascii=False))
-          if not (data.get('ready') and data.get('total')==120 and data.get('failed')==0): sys.exit(1)
+          if not (data.get('ready') and data.get('total')==132 and data.get('failed')==0): sys.exit(1)
           PY
 
       - name: Validate curated corpus cases
