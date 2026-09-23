@@ -2,9 +2,9 @@
   "ok": true,
   "schemaVersion": 1,
   "source": "MACA_CANONICAL_CORPUS",
-  "manifestEntries": 94,
-  "canonicalCardCount": 272,
-  "exportedCardCount": 272,
+  "manifestEntries": 106,
+  "canonicalCardCount": 290,
+  "exportedCardCount": 290,
   "activeCategories": [
     "Ados",
     "Cancer",
@@ -18,7 +18,7 @@
     "Santé mentale",
     "Seniors"
   ],
-  "fingerprint": "9e20504a0eb7ea8cf435a49a27737dca74f5a44031435c6eec163c7d57726d8d",
+  "fingerprint": "b043c76bbb1fb45a95ac47c0a6da76b1ea4b7f43c003a691d646a5f91df19f34",
   "fatalCount": 0,
   "warningCount": 55,
   "fatal": {
@@ -29,7 +29,9 @@
   },
   "warnings": {
     "invalidPrimaryCategory": [],
-    "noRecognizedCategory": [],
+    "noRecognizedCategory": [
+      "entorse-cheville-fracture"
+    ],
     "noAnswer": [],
     "noDetail": [
       "ibuprofene-enfant",
@@ -59,7 +61,6 @@
       "sante-mentale-anxiete-stress",
       "sante-mentale-depression-signes",
       "sante-mentale-crise-angoisse",
-      "sante-mentale-tdah-criteres-traitement",
       "marche-30-minutes",
       "couchage-bebe-securite-min",
       "activite-physique-traitement-cancer",
@@ -91,9 +92,9 @@
     "noSources": []
   },
   "fieldCoverage": {
-    "answer": 272,
-    "detail": 217,
-    "sources": 272,
-    "recognizedCategory": 272
+    "answer": 290,
+    "detail": 236,
+    "sources": 290,
+    "recognizedCategory": 289
   }
 }

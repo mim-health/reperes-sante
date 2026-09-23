@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "MACA_CANONICAL_CORPUS",
-  "manifestEntries": 94,
+  "manifestEntries": 106,
   "activeCategories": [
     "Ados",
     "Cancer",
@@ -15,7 +15,7 @@
     "Santé mentale",
     "Seniors"
   ],
-  "cardCount": 272,
+  "cardCount": 290,
   "cards": [
     {
       "id": "fievre-enfant",
@@ -3342,6 +3342,92 @@
       "retrievalText": "J’ai souvent la bouche sèche : pourquoi ?\n\nMots-clés : bouche sèche bouche seche manque salive xérostomie xerostomie hyposialie langue sèche salive médicaments bouche sèche déshydratation Sjögren diabète caries\n\nLa sensation de bouche sèche, ou xérostomie, est souvent liée à une diminution de la quantité de salive ou à une modification de sa composition. Une déshydratation et de nombreux médicaments peuvent la favoriser. Certaines maladies, notamment le syndrome de Gougerot-Sjögren ou le diabète, ainsi que certains traitements anticancéreux peuvent également être en cause. Lorsqu’elle persiste, la sécheresse buccale peut gêner pour parler, mâcher ou avaler et favoriser les caries, les infections buccales et les problèmes de gencives.\n\nLa salive protège la bouche, facilite la mastication et la déglutition et participe à la protection des dents. Une sensation persistante de bouche sèche peut donc devenir plus qu’un simple inconfort. Elle peut être favorisée par une hydratation insuffisante, mais aussi par de nombreux médicaments. Certaines maladies et certains traitements peuvent également diminuer la production de salive. Lorsque le problème dure, le risque de caries, d’irritations, d’infections buccales ou de difficultés à avaler augmente. Le bilan consiste notamment à revoir les médicaments et le contexte médical, sans interrompre seul un traitement. Une bonne hydratation et une hygiène bucco-dentaire régulière restent particulièrement importantes.\n\nUne sécheresse persistante mérite d’en rechercher la cause et de faire le point sur les médicaments pris, sans arrêter seul un traitement. Boire régulièrement, éviter le tabac et maintenir une bonne hygiène bucco-dentaire sont importants. Une sécheresse associée à une sécheresse marquée des yeux, des difficultés à avaler, des lésions buccales répétées ou une altération importante de l’état général justifie une évaluation médicale."
     },
     {
+      "id": "mal-dent-antibiotiques",
+      "title": "Mal de dent : faut-il forcément prendre des antibiotiques ?",
+      "primaryCategory": "Santé au quotidien",
+      "categories": [
+        "Santé au quotidien"
+      ],
+      "keywords": [
+        "mal de dent douleur dentaire antibiotique antibiotiques abcès dentaire infection dentaire amoxicilline dentiste anti inflammatoire gonflement fièvre antibiorésistance"
+      ],
+      "content": {
+        "answer": "Non. Une douleur dentaire ne signifie pas automatiquement qu’un antibiotique est nécessaire. Les douleurs dentaires sont le plus souvent d’origine inflammatoire : le traitement repose d’abord sur un geste dentaire qui traite la cause, associé si besoin à un traitement contre la douleur. Même lorsqu’une infection est présente, l’antibiotique n’est pas systématique. Lorsqu’il est indiqué, il complète le traitement local : il ne le remplace pas.",
+        "detail": "Les antibiotiques ont longtemps été associés, dans l’imaginaire collectif, aux infections et douleurs dentaires. Pourtant, les nouvelles recommandations de la Haute Autorité de Santé publiées en septembre 2026 rappellent un principe simple : la plupart des douleurs dentaires sont inflammatoires et ne nécessitent pas, à elles seules, d’antibiotiques.\n\nUne carie profonde, une inflammation de la pulpe ou certaines atteintes autour d’une dent peuvent provoquer une douleur très intense sans que la prise d’un antibiotique soit la réponse adaptée. Le traitement consiste avant tout à identifier puis traiter la cause : soin de la dent, drainage lorsqu’il est nécessaire, traitement endodontique ou extraction selon la situation. Des antalgiques peuvent être utilisés lorsque cela est indiqué.\n\nLorsqu’une infection d’origine dentaire justifie réellement une antibiothérapie, celle-ci doit autant que possible rester associée au geste local permettant de traiter la cause ou de drainer l’infection. La HAS recommande également une réévaluation dans les 48 à 72 heures après le début d’une antibiothérapie. Les traitements inutilement prolongés ne sont pas souhaitables : pour de nombreuses infections, des durées courtes peuvent être suffisantes selon la situation clinique et la prescription du professionnel.\n\nAutre idée reçue : prescrire un anti-inflammatoire ne signifie pas qu’il faut automatiquement ajouter un antibiotique. Les données examinées par la HAS n’ont pas montré de bénéfice à cette association systématique.\n\nEnfin, prendre de soi-même des antibiotiques restants d’une ancienne ordonnance est déconseillé. La molécule peut être inadaptée, masquer temporairement l’évolution d’une infection, provoquer des effets indésirables et contribuer à l’antibiorésistance.\n\nLe message à retenir est donc simple : devant un mal de dent, la priorité est de traiter la cause dentaire. Les antibiotiques restent utiles dans certaines infections et situations à risque, mais ils ne sont pas le traitement automatique de toute douleur dentaire.",
+        "usefulInfo": "",
+        "watch": "Un gonflement du visage ou du cou, la présence de pus, une difficulté à ouvrir la bouche ou de la fièvre doivent conduire à consulter rapidement un chirurgien-dentiste ou un médecin. Une gêne ou douleur buccale récente qui ne régresse pas mérite également une évaluation."
+      },
+      "sources": [
+        {
+          "label": "Prescription des antibiotiques en pratique bucco-dentaire",
+          "url": "https://www.has-sante.fr/jcms/p_3525810/fr/prescription-des-antibiotiques-en-pratique-bucco-dentaire"
+        },
+        {
+          "label": "En soins dentaires aussi, les antibiotiques ne sont pas automatiques",
+          "url": "https://www.has-sante.fr/jcms/p_4423461/fr/en-soins-dentaires-aussi-les-antibiotiques-ne-sont-pas-automatiques"
+        },
+        {
+          "label": "Haute Autorité de Santé — Prescription des antibiotiques en pratique bucco-dentaire, 2026",
+          "url": ""
+        }
+      ],
+      "url": "https://www.has-sante.fr/jcms/p_3525810/fr/prescription-des-antibiotiques-en-pratique-bucco-dentaire",
+      "metadata": {
+        "validationStatus": "VALIDATED",
+        "editorialStatus": "",
+        "evidenceStatus": "Recommandation française HAS 2026 — actualité Radar Audience",
+        "verifiedAt": "20/09/2026",
+        "nextAuditAt": "20/12/2026",
+        "auditIntervalMonths": null
+      },
+      "retrievalText": "Mal de dent : faut-il forcément prendre des antibiotiques ?\n\nMots-clés : mal de dent douleur dentaire antibiotique antibiotiques abcès dentaire infection dentaire amoxicilline dentiste anti inflammatoire gonflement fièvre antibiorésistance\n\nNon. Une douleur dentaire ne signifie pas automatiquement qu’un antibiotique est nécessaire. Les douleurs dentaires sont le plus souvent d’origine inflammatoire : le traitement repose d’abord sur un geste dentaire qui traite la cause, associé si besoin à un traitement contre la douleur. Même lorsqu’une infection est présente, l’antibiotique n’est pas systématique. Lorsqu’il est indiqué, il complète le traitement local : il ne le remplace pas.\n\nLes antibiotiques ont longtemps été associés, dans l’imaginaire collectif, aux infections et douleurs dentaires. Pourtant, les nouvelles recommandations de la Haute Autorité de Santé publiées en septembre 2026 rappellent un principe simple : la plupart des douleurs dentaires sont inflammatoires et ne nécessitent pas, à elles seules, d’antibiotiques.\n\nUne carie profonde, une inflammation de la pulpe ou certaines atteintes autour d’une dent peuvent provoquer une douleur très intense sans que la prise d’un antibiotique soit la réponse adaptée. Le traitement consiste avant tout à identifier puis traiter la cause : soin de la dent, drainage lorsqu’il est nécessaire, traitement endodontique ou extraction selon la situation. Des antalgiques peuvent être utilisés lorsque cela est indiqué.\n\nLorsqu’une infection d’origine dentaire justifie réellement une antibiothérapie, celle-ci doit autant que possible rester associée au geste local permettant de traiter la cause ou de drainer l’infection. La HAS recommande également une réévaluation dans les 48 à 72 heures après le début d’une antibiothérapie. Les traitements inutilement prolongés ne sont pas souhaitables : pour de nombreuses infections, des durées courtes peuvent être suffisantes selon la situation clinique et la prescription du professionnel.\n\nAutre idée reçue : prescrire un anti-inflammatoire ne signifie pas qu’il faut automatiquement ajouter un antibiotique. Les données examinées par la HAS n’ont pas montré de bénéfice à cette association systématique.\n\nEnfin, prendre de soi-même des antibiotiques restants d’une ancienne ordonnance est déconseillé. La molécule peut être inadaptée, masquer temporairement l’évolution d’une infection, provoquer des effets indésirables et contribuer à l’antibiorésistance.\n\nLe message à retenir est donc simple : devant un mal de dent, la priorité est de traiter la cause dentaire. Les antibiotiques restent utiles dans certaines infections et situations à risque, mais ils ne sont pas le traitement automatique de toute douleur dentaire.\n\nUn gonflement du visage ou du cou, la présence de pus, une difficulté à ouvrir la bouche ou de la fièvre doivent conduire à consulter rapidement un chirurgien-dentiste ou un médecin. Une gêne ou douleur buccale récente qui ne régresse pas mérite également une évaluation."
+    },
+    {
+      "id": "prise-sang-diagnostic-alzheimer",
+      "title": "Une prise de sang peut-elle diagnostiquer la maladie d’Alzheimer ?",
+      "primaryCategory": "Seniors",
+      "categories": [
+        "Seniors"
+      ],
+      "keywords": [
+        "Alzheimer prise de sang test sanguin diagnostic biomarqueur biomarqueurs p-tau217 ptau217 amyloide amyloïde mémoire troubles cognitifs PET TEP ponction lombaire LCR dépistage"
+      ],
+      "content": {
+        "answer": "Une prise de sang peut désormais aider fortement au diagnostic de la maladie d’Alzheimer chez certaines personnes qui présentent déjà des troubles cognitifs, mais elle ne remplace pas à elle seule l’évaluation médicale. Certains tests sanguins recherchent des biomarqueurs liés aux lésions caractéristiques de la maladie, notamment la protéine tau phosphorylée p-tau217. Les tests les plus performants peuvent servir à écarter ou à confirmer avec une forte probabilité la présence d’une pathologie Alzheimer dans un parcours diagnostique spécialisé. En revanche, il ne s’agit pas aujourd’hui d’un dépistage à faire chez toute personne sans symptôme pour savoir si elle développera un jour Alzheimer.",
+        "detail": "Le diagnostic de la maladie d’Alzheimer ne repose pas sur un seul examen. Il commence par l’histoire des troubles, l’évaluation cognitive et clinique, la recherche d’autres causes possibles et, selon les situations, l’imagerie cérébrale et des examens biologiques. Jusqu’à récemment, confirmer la présence des lésions biologiques caractéristiques d’Alzheimer nécessitait surtout l’analyse de biomarqueurs dans le liquide céphalorachidien obtenu par ponction lombaire ou une imagerie TEP amyloïde.\n\nLes biomarqueurs sanguins changent progressivement cette situation. Parmi eux, la p-tau217 plasmatique est particulièrement étudiée. Elle reflète avec une bonne précision, pour certains tests validés, la probabilité de retrouver dans le cerveau les anomalies amyloïdes associées à la maladie d’Alzheimer. D’autres tests combinent plusieurs marqueurs liés à tau et à l’amyloïde.\n\nLes recommandations cliniques 2025 de l’Alzheimer’s Association concernent les personnes présentant un trouble cognitif objectif évaluées en consultation spécialisée. Elles indiquent qu’un test sanguin suffisamment performant peut être utilisé comme test de triage. Les tests atteignant des performances diagnostiques plus élevées peuvent, dans certaines conditions, remplacer la TEP amyloïde ou l’analyse des biomarqueurs du liquide céphalorachidien pour documenter une pathologie Alzheimer. Toutes les analyses disponibles sur le marché n’atteignent toutefois pas ces performances et leur interprétation dépend du contexte clinique.\n\nEn 2026, plusieurs tests sanguins ont franchi de nouvelles étapes réglementaires aux États-Unis. En septembre, deux nouveaux tests ont été autorisés pour aider à évaluer des adultes présentant des signes ou symptômes de déclin cognitif. L’un repose sur la p-tau217 ; l’autre combine des marqueurs amyloïdes et tau. Ces évolutions confirment que les biomarqueurs sanguins entrent progressivement dans le parcours diagnostique, mais elles ne transforment pas une prise de sang en diagnostic autonome.\n\nIl faut surtout distinguer diagnostic et dépistage. Ces tests ont été évalués principalement chez des personnes ayant déjà des plaintes ou troubles cognitifs et dans un parcours médical. Ils ne sont pas destinés à prédire, chez une personne en bonne santé et sans symptôme, si elle développera une maladie d’Alzheimer dans plusieurs années. Un résultat sanguin doit toujours être interprété avec l’âge, les symptômes, l’examen clinique et les autres éléments du bilan.\n\nEn France, la place exacte de ces nouveaux biomarqueurs sanguins dans le parcours de soins continue d’évoluer. Les références françaises historiques reposent encore sur une démarche clinique spécialisée, l’IRM et, lorsqu’une confirmation biologique est nécessaire, notamment les biomarqueurs du LCR ou la TEP. Les nouvelles données internationales rendent donc ce sujet particulièrement évolutif et justifient une réévaluation régulière de cette fiche.",
+        "usefulInfo": "",
+        "watch": "La nouveauté n’est pas qu’une prise de sang puisse, seule, « dire si l’on a Alzheimer ». C’est que certains biomarqueurs sanguins, notamment la p-tau217, atteignent désormais des performances permettant d’aider fortement le diagnostic chez des personnes présentant des troubles cognitifs. L’évaluation médicale reste indispensable et un test positif ne doit pas être interprété comme une prédiction individuelle de l’évolution future."
+      },
+      "sources": [
+        {
+          "label": "Clinical Practice Guideline on blood-based biomarkers in suspected Alzheimer’s disease",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12306682/"
+        },
+        {
+          "label": "FDA Approves 2 New Alzheimer Disease Blood Tests",
+          "url": "https://jamanetwork.com/journals/jama/fullarticle/2854427"
+        },
+        {
+          "label": "VIZAMYL — place dans la stratégie diagnostique de la maladie d’Alzheimer",
+          "url": "https://www.has-sante.fr/jcms/p_3352209/fr/vizamyl-flutemetamol-18f-produit-diagnostique-de-la-maladie-d-alzheimer"
+        },
+        {
+          "label": "Alzheimer’s Association 2025 · JAMA 2026 · HAS",
+          "url": ""
+        }
+      ],
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12306682/",
+      "metadata": {
+        "validationStatus": "VALIDATED",
+        "editorialStatus": "",
+        "evidenceStatus": "VALIDÉ — guideline Alzheimer’s Association + actualité JAMA 2026 ; domaine en évolution rapide",
+        "verifiedAt": "22/09/2026",
+        "nextAuditAt": "22/11/2026",
+        "auditIntervalMonths": 2
+      },
+      "retrievalText": "Une prise de sang peut-elle diagnostiquer la maladie d’Alzheimer ?\n\nMots-clés : Alzheimer prise de sang test sanguin diagnostic biomarqueur biomarqueurs p-tau217 ptau217 amyloide amyloïde mémoire troubles cognitifs PET TEP ponction lombaire LCR dépistage\n\nUne prise de sang peut désormais aider fortement au diagnostic de la maladie d’Alzheimer chez certaines personnes qui présentent déjà des troubles cognitifs, mais elle ne remplace pas à elle seule l’évaluation médicale. Certains tests sanguins recherchent des biomarqueurs liés aux lésions caractéristiques de la maladie, notamment la protéine tau phosphorylée p-tau217. Les tests les plus performants peuvent servir à écarter ou à confirmer avec une forte probabilité la présence d’une pathologie Alzheimer dans un parcours diagnostique spécialisé. En revanche, il ne s’agit pas aujourd’hui d’un dépistage à faire chez toute personne sans symptôme pour savoir si elle développera un jour Alzheimer.\n\nLe diagnostic de la maladie d’Alzheimer ne repose pas sur un seul examen. Il commence par l’histoire des troubles, l’évaluation cognitive et clinique, la recherche d’autres causes possibles et, selon les situations, l’imagerie cérébrale et des examens biologiques. Jusqu’à récemment, confirmer la présence des lésions biologiques caractéristiques d’Alzheimer nécessitait surtout l’analyse de biomarqueurs dans le liquide céphalorachidien obtenu par ponction lombaire ou une imagerie TEP amyloïde.\n\nLes biomarqueurs sanguins changent progressivement cette situation. Parmi eux, la p-tau217 plasmatique est particulièrement étudiée. Elle reflète avec une bonne précision, pour certains tests validés, la probabilité de retrouver dans le cerveau les anomalies amyloïdes associées à la maladie d’Alzheimer. D’autres tests combinent plusieurs marqueurs liés à tau et à l’amyloïde.\n\nLes recommandations cliniques 2025 de l’Alzheimer’s Association concernent les personnes présentant un trouble cognitif objectif évaluées en consultation spécialisée. Elles indiquent qu’un test sanguin suffisamment performant peut être utilisé comme test de triage. Les tests atteignant des performances diagnostiques plus élevées peuvent, dans certaines conditions, remplacer la TEP amyloïde ou l’analyse des biomarqueurs du liquide céphalorachidien pour documenter une pathologie Alzheimer. Toutes les analyses disponibles sur le marché n’atteignent toutefois pas ces performances et leur interprétation dépend du contexte clinique.\n\nEn 2026, plusieurs tests sanguins ont franchi de nouvelles étapes réglementaires aux États-Unis. En septembre, deux nouveaux tests ont été autorisés pour aider à évaluer des adultes présentant des signes ou symptômes de déclin cognitif. L’un repose sur la p-tau217 ; l’autre combine des marqueurs amyloïdes et tau. Ces évolutions confirment que les biomarqueurs sanguins entrent progressivement dans le parcours diagnostique, mais elles ne transforment pas une prise de sang en diagnostic autonome.\n\nIl faut surtout distinguer diagnostic et dépistage. Ces tests ont été évalués principalement chez des personnes ayant déjà des plaintes ou troubles cognitifs et dans un parcours médical. Ils ne sont pas destinés à prédire, chez une personne en bonne santé et sans symptôme, si elle développera une maladie d’Alzheimer dans plusieurs années. Un résultat sanguin doit toujours être interprété avec l’âge, les symptômes, l’examen clinique et les autres éléments du bilan.\n\nEn France, la place exacte de ces nouveaux biomarqueurs sanguins dans le parcours de soins continue d’évoluer. Les références françaises historiques reposent encore sur une démarche clinique spécialisée, l’IRM et, lorsqu’une confirmation biologique est nécessaire, notamment les biomarqueurs du LCR ou la TEP. Les nouvelles données internationales rendent donc ce sujet particulièrement évolutif et justifient une réévaluation régulière de cette fiche.\n\nLa nouveauté n’est pas qu’une prise de sang puisse, seule, « dire si l’on a Alzheimer ». C’est que certains biomarqueurs sanguins, notamment la p-tau217, atteignent désormais des performances permettant d’aider fortement le diagnostic chez des personnes présentant des troubles cognitifs. L’évaluation médicale reste indispensable et un test positif ne doit pas être interprété comme une prédiction individuelle de l’évolution future."
+    },
+    {
       "id": "etat-general-nourrisson",
       "title": "Mon bébé n’est pas comme d’habitude : quels changements doivent attirer l’attention ?",
       "primaryCategory": "Enfants & parents",
@@ -3910,7 +3996,7 @@
         "Prévention & dépistage"
       ],
       "keywords": [
-        "vaccin adulte calendrier vaccinal rappel dTP coqueluche grippe covid HPV pneumocoque zona 65 ans"
+        "vaccin adulte calendrier vaccinal rappel dTP coqueluche grippe covid HPV pneumocoque zona 65 ans couverture vaccinale couverture vaccination population taux vacciné"
       ],
       "content": {
         "answer": "La vaccination ne s’arrête pas à l’enfance. Certains vaccins nécessitent des rappels à l’âge adulte et d’autres sont recommandés selon l’âge, l’état de santé, la grossesse, le métier ou certaines situations particulières.",
@@ -3920,7 +4006,19 @@
       },
       "sources": [
         {
-          "label": "Ministère de la Santé · HAS",
+          "label": "Ministère de la Santé — Calendrier vaccinal",
+          "url": "https://sante.gouv.fr/prevention-en-sante/preserver-sa-sante/vaccination/calendrier-vaccinal"
+        },
+        {
+          "label": "Santé publique France — Données de couverture vaccinale",
+          "url": "https://www.santepubliquefrance.fr/vaccination/donnees"
+        },
+        {
+          "label": "Santé publique France — Bilan de la couverture vaccinale 2025",
+          "url": "https://www.santepubliquefrance.fr/vaccination/bulletin-national/vaccination-des-enfants-adolescents-et-jeunes-adultes-en-france-bilan-de-la-couverture-vaccinale-en"
+        },
+        {
+          "label": "Ministère de la Santé · HAS · Santé publique France",
           "url": ""
         }
       ],
@@ -3928,12 +4026,12 @@
       "metadata": {
         "validationStatus": "",
         "editorialStatus": "",
-        "evidenceStatus": "Calendrier vaccinal français 2026 vérifié",
-        "verifiedAt": "20/08/2026",
+        "evidenceStatus": "VALIDÉ — fiche existante enrichie avec la notion de couverture vaccinale ; calendrier 2026 + bilan SPF 2025 publié en 2026",
+        "verifiedAt": "20/09/2026",
         "nextAuditAt": "",
         "auditIntervalMonths": null
       },
-      "retrievalText": "Quels vaccins faut-il vérifier à l’âge adulte ?\n\nMots-clés : vaccin adulte calendrier vaccinal rappel dTP coqueluche grippe covid HPV pneumocoque zona 65 ans\n\nLa vaccination ne s’arrête pas à l’enfance. Certains vaccins nécessitent des rappels à l’âge adulte et d’autres sont recommandés selon l’âge, l’état de santé, la grossesse, le métier ou certaines situations particulières.\n\nLa vaccination ne s’arrête pas à l’enfance. Certains vaccins nécessitent des rappels à l’âge adulte, tandis que d’autres deviennent particulièrement importants à certains âges ou en présence de certaines maladies.\n\nLe calendrier vaccinal français prévoit notamment des rappels contre la diphtérie, le tétanos et la poliomyélite à certains âges. L’objectif est d’entretenir une protection qui peut diminuer avec le temps.\n\nD’autres vaccinations sont recommandées en fonction du contexte. Avec l’âge ou certaines maladies, la vaccination contre la grippe, le Covid-19, le pneumocoque ou le zona peut devenir indiquée selon les recommandations applicables à la personne.\n\nLa grossesse constitue également une période où certaines vaccinations doivent être vérifiées ou proposées. Le métier peut compter aussi : certaines professions exposent davantage à certaines infections ou nécessitent une protection particulière.\n\nLes voyages sont un autre cas spécifique. Les vaccins nécessaires dépendent alors de la destination, de la durée et des conditions du séjour. Ils ne peuvent donc pas être résumés par une liste unique valable pour tous les voyageurs.\n\nLorsqu’on ne retrouve plus son carnet de vaccination, il ne faut pas conclure automatiquement qu’il faut tout recommencer. Un professionnel de santé peut aider à reconstituer l’historique disponible et à déterminer ce qui est réellement nécessaire.\n\nL’objectif pratique est donc simple : vérifier périodiquement que les rappels prévus et les vaccinations liées à l’âge, à la santé ou à certaines situations particulières sont bien à jour.\n\nIl ne faut pas conclure automatiquement qu’il faut tout recommencer.\n\nUn professionnel de santé peut aider à reconstituer l’historique disponible et déterminer les vaccinations ou rappels réellement nécessaires."
+      "retrievalText": "Quels vaccins faut-il vérifier à l’âge adulte ?\n\nMots-clés : vaccin adulte calendrier vaccinal rappel dTP coqueluche grippe covid HPV pneumocoque zona 65 ans couverture vaccinale couverture vaccination population taux vacciné\n\nLa vaccination ne s’arrête pas à l’enfance. Certains vaccins nécessitent des rappels à l’âge adulte et d’autres sont recommandés selon l’âge, l’état de santé, la grossesse, le métier ou certaines situations particulières.\n\nLa vaccination ne s’arrête pas à l’enfance. Certains vaccins nécessitent des rappels à l’âge adulte, tandis que d’autres deviennent particulièrement importants à certains âges ou en présence de certaines maladies.\n\nLe calendrier vaccinal français prévoit notamment des rappels contre la diphtérie, le tétanos et la poliomyélite à certains âges. L’objectif est d’entretenir une protection qui peut diminuer avec le temps.\n\nD’autres vaccinations sont recommandées en fonction du contexte. Avec l’âge ou certaines maladies, la vaccination contre la grippe, le Covid-19, le pneumocoque ou le zona peut devenir indiquée selon les recommandations applicables à la personne.\n\nLa grossesse constitue également une période où certaines vaccinations doivent être vérifiées ou proposées. Le métier peut compter aussi : certaines professions exposent davantage à certaines infections ou nécessitent une protection particulière.\n\nLes voyages sont un autre cas spécifique. Les vaccins nécessaires dépendent alors de la destination, de la durée et des conditions du séjour. Ils ne peuvent donc pas être résumés par une liste unique valable pour tous les voyageurs.\n\nLorsqu’on ne retrouve plus son carnet de vaccination, il ne faut pas conclure automatiquement qu’il faut tout recommencer. Un professionnel de santé peut aider à reconstituer l’historique disponible et à déterminer ce qui est réellement nécessaire.\n\nL’objectif pratique est donc simple : vérifier périodiquement que les rappels prévus et les vaccinations liées à l’âge, à la santé ou à certaines situations particulières sont bien à jour.\n\nIl ne faut pas conclure automatiquement qu’il faut tout recommencer.\n\nUn professionnel de santé peut aider à reconstituer l’historique disponible et déterminer les vaccinations ou rappels réellement nécessaires."
     },
     {
       "id": "depistages-organises-adulte",
@@ -6196,36 +6294,44 @@
     },
     {
       "id": "sante-mentale-tdah-criteres-traitement",
-      "title": "TDAH : quels sont les vrais critères et quand un médicament est-il justifié ?",
+      "title": "TDAH : comment le diagnostic est-il posé chez l’enfant ou l’adulte ?",
       "primaryCategory": "Santé mentale",
       "categories": [
         "Santé mentale"
       ],
       "keywords": [
-        "TDAH déficit attention hyperactivité impulsivité concentration diagnostic questionnaire test méthylphénidate ritaline traitement médicament enfant adolescent"
+        "TDAH déficit attention hyperactivité impulsivité concentration diagnostic questionnaire test méthylphénidate ritaline traitement médicament enfant adolescent adulte TDAH adulte diagnostic adulte attention travail organisation oubli"
       ],
       "content": {
-        "answer": "Être distrait, agité ou avoir du mal à se concentrer ne suffit pas pour avoir un TDAH. Le diagnostic repose sur des symptômes persistants d’inattention et/ou d’hyperactivité-impulsivité avec un retentissement réel sur le fonctionnement scolaire, familial ou social. L’évaluation comprend un entretien, un examen clinique, des informations provenant de plusieurs contextes et la recherche d’autres explications ou troubles associés. Aucun examen biologique, IRM, questionnaire ou bilan neuropsychologique ne confirme à lui seul le diagnostic. La prise en charge est globale et associe systématiquement des mesures non médicamenteuses. Lorsqu’un médicament est indiqué chez l’enfant ou l’adolescent, le méthylphénidate est le traitement pharmacologique de première intention selon la HAS ; efficacité et tolérance doivent être réévaluées régulièrement.",
-        "detail": "",
+        "answer": "Être distrait, agité ou avoir du mal à se concentrer ne suffit pas pour avoir un TDAH, chez l’enfant comme chez l’adulte. Le diagnostic repose sur des symptômes persistants d’inattention et/ou d’hyperactivité-impulsivité, présents depuis l’enfance, retrouvés dans plusieurs contextes et responsables d’un retentissement réel. Chez l’adulte, sommeil insuffisant, anxiété, dépression, consommation de substances ou d’autres situations peuvent produire des symptômes proches. Aucun questionnaire, bilan neuropsychologique, examen biologique ou IRM ne confirme à lui seul le diagnostic.",
+        "detail": "Le TDAH est un trouble du neurodéveloppement : même lorsqu’il est identifié à l’âge adulte, l’évaluation recherche donc une histoire compatible avec des symptômes ayant débuté pendant l’enfance. Le fait qu’une personne se sente aujourd’hui distraite, oublieuse ou désorganisée ne suffit pas à établir le diagnostic.\n\nChez l’adulte, la demande d’évaluation a augmenté. Une mise au point publiée dans JAMA en septembre 2026 souligne le rôle croissant des soins primaires et l’importance d’une démarche diagnostique structurée. Les manifestations peuvent être moins visibles que l’hyperactivité typiquement associée à l’enfance : difficultés d’organisation, gestion du temps, oublis répétés, impulsivité ou difficulté à maintenir l’attention peuvent être au premier plan.\n\nL’évaluation cherche surtout à savoir si les symptômes sont persistants, s’ils existaient déjà plus tôt dans la vie et s’ils ont un retentissement dans plusieurs domaines : études, travail, organisation quotidienne, relations ou vie familiale. Lorsque cela est possible, l’histoire scolaire et les informations de proches peuvent aider à reconstruire cette trajectoire.\n\nIl faut aussi rechercher d’autres explications. Manque chronique de sommeil, anxiété, dépression, consommation d’alcool ou d’autres substances, certains médicaments et d’autres troubles psychiatriques ou médicaux peuvent provoquer ou aggraver des difficultés d’attention. Plusieurs situations peuvent également coexister avec un véritable TDAH.\n\nLes questionnaires standardisés peuvent soutenir l’entretien mais ne constituent pas un diagnostic à eux seuls. Il n’existe pas non plus de prise de sang, d’IRM ou de test neuropsychologique unique permettant de confirmer le TDAH.\n\nChez l’enfant et l’adolescent, les recommandations françaises HAS encadrent précisément le diagnostic et la prise en charge. Chez l’adulte, la même exigence de diagnostic clinique structuré et de recherche des diagnostics différentiels est essentielle. La stratégie thérapeutique dépend ensuite du retentissement, des troubles associés et du contexte de la personne ; elle ne se résume pas à la prescription d’un médicament.",
         "usefulInfo": "",
-        "watch": "Difficultés de concentration ne signifie pas automatiquement TDAH ; un questionnaire positif ne suffit pas au diagnostic ; un diagnostic de TDAH ne conduit pas automatiquement à un médicament. Le choix d’un traitement dépend notamment de l’intensité du trouble, de son retentissement, des objectifs partagés et de la réponse aux interventions proposées."
+        "watch": "Une difficulté récente de concentration n’est pas automatiquement un TDAH. Un questionnaire positif ne suffit pas au diagnostic. Chez l’adulte, il faut notamment rechercher le sommeil, l’anxiété, la dépression, les substances et l’histoire des symptômes depuis l’enfance avant de conclure."
       },
       "sources": [
         {
-          "label": "Haute Autorité de Santé · Recommandation TDAH enfant et adolescent 2024 · actualisation thérapeutique 2026",
+          "label": "HAS — TDAH : diagnostic et interventions thérapeutiques chez l’enfant et l’adolescent",
+          "url": "https://www.has-sante.fr/jcms/p_3302482/fr/trouble-du-neurodeveloppement/tdah-diagnostic-et-interventions-therapeutiques-aupres-des-enfants-et-adolescents"
+        },
+        {
+          "label": "JAMA — As More Adults Seek ADHD Care, Primary Care Clinicians Are Tasked With Getting the Diagnosis Right, 18 septembre 2026",
+          "url": "https://jamanetwork.com/journals/jama/fullarticle/2854423"
+        },
+        {
+          "label": "HAS · JAMA",
           "url": ""
         }
       ],
-      "url": "https://www.has-sante.fr/jcms/p_3302482/fr/trouble-du-neurodeveloppement/tdah-diagnostic-et-interventions-therapeutiques-aupres-des-enfants-et-adolescents",
+      "url": "https://jamanetwork.com/journals/jama/fullarticle/2854423",
       "metadata": {
         "validationStatus": "VALIDATED",
         "editorialStatus": "",
-        "evidenceStatus": "Recommandation HAS 2024 croisée avec avis thérapeutiques HAS 2026",
-        "verifiedAt": "23/08/2026",
-        "nextAuditAt": "23/11/2026",
+        "evidenceStatus": "VALIDÉ — fiche existante élargie à l’adulte ; HAS + mise au point JAMA 18/09/2026",
+        "verifiedAt": "20/09/2026",
+        "nextAuditAt": "20/12/2026",
         "auditIntervalMonths": 3
       },
-      "retrievalText": "TDAH : quels sont les vrais critères et quand un médicament est-il justifié ?\n\nMots-clés : TDAH déficit attention hyperactivité impulsivité concentration diagnostic questionnaire test méthylphénidate ritaline traitement médicament enfant adolescent\n\nÊtre distrait, agité ou avoir du mal à se concentrer ne suffit pas pour avoir un TDAH. Le diagnostic repose sur des symptômes persistants d’inattention et/ou d’hyperactivité-impulsivité avec un retentissement réel sur le fonctionnement scolaire, familial ou social. L’évaluation comprend un entretien, un examen clinique, des informations provenant de plusieurs contextes et la recherche d’autres explications ou troubles associés. Aucun examen biologique, IRM, questionnaire ou bilan neuropsychologique ne confirme à lui seul le diagnostic. La prise en charge est globale et associe systématiquement des mesures non médicamenteuses. Lorsqu’un médicament est indiqué chez l’enfant ou l’adolescent, le méthylphénidate est le traitement pharmacologique de première intention selon la HAS ; efficacité et tolérance doivent être réévaluées régulièrement.\n\nDifficultés de concentration ne signifie pas automatiquement TDAH ; un questionnaire positif ne suffit pas au diagnostic ; un diagnostic de TDAH ne conduit pas automatiquement à un médicament. Le choix d’un traitement dépend notamment de l’intensité du trouble, de son retentissement, des objectifs partagés et de la réponse aux interventions proposées."
+      "retrievalText": "TDAH : comment le diagnostic est-il posé chez l’enfant ou l’adulte ?\n\nMots-clés : TDAH déficit attention hyperactivité impulsivité concentration diagnostic questionnaire test méthylphénidate ritaline traitement médicament enfant adolescent adulte TDAH adulte diagnostic adulte attention travail organisation oubli\n\nÊtre distrait, agité ou avoir du mal à se concentrer ne suffit pas pour avoir un TDAH, chez l’enfant comme chez l’adulte. Le diagnostic repose sur des symptômes persistants d’inattention et/ou d’hyperactivité-impulsivité, présents depuis l’enfance, retrouvés dans plusieurs contextes et responsables d’un retentissement réel. Chez l’adulte, sommeil insuffisant, anxiété, dépression, consommation de substances ou d’autres situations peuvent produire des symptômes proches. Aucun questionnaire, bilan neuropsychologique, examen biologique ou IRM ne confirme à lui seul le diagnostic.\n\nLe TDAH est un trouble du neurodéveloppement : même lorsqu’il est identifié à l’âge adulte, l’évaluation recherche donc une histoire compatible avec des symptômes ayant débuté pendant l’enfance. Le fait qu’une personne se sente aujourd’hui distraite, oublieuse ou désorganisée ne suffit pas à établir le diagnostic.\n\nChez l’adulte, la demande d’évaluation a augmenté. Une mise au point publiée dans JAMA en septembre 2026 souligne le rôle croissant des soins primaires et l’importance d’une démarche diagnostique structurée. Les manifestations peuvent être moins visibles que l’hyperactivité typiquement associée à l’enfance : difficultés d’organisation, gestion du temps, oublis répétés, impulsivité ou difficulté à maintenir l’attention peuvent être au premier plan.\n\nL’évaluation cherche surtout à savoir si les symptômes sont persistants, s’ils existaient déjà plus tôt dans la vie et s’ils ont un retentissement dans plusieurs domaines : études, travail, organisation quotidienne, relations ou vie familiale. Lorsque cela est possible, l’histoire scolaire et les informations de proches peuvent aider à reconstruire cette trajectoire.\n\nIl faut aussi rechercher d’autres explications. Manque chronique de sommeil, anxiété, dépression, consommation d’alcool ou d’autres substances, certains médicaments et d’autres troubles psychiatriques ou médicaux peuvent provoquer ou aggraver des difficultés d’attention. Plusieurs situations peuvent également coexister avec un véritable TDAH.\n\nLes questionnaires standardisés peuvent soutenir l’entretien mais ne constituent pas un diagnostic à eux seuls. Il n’existe pas non plus de prise de sang, d’IRM ou de test neuropsychologique unique permettant de confirmer le TDAH.\n\nChez l’enfant et l’adolescent, les recommandations françaises HAS encadrent précisément le diagnostic et la prise en charge. Chez l’adulte, la même exigence de diagnostic clinique structuré et de recherche des diagnostics différentiels est essentielle. La stratégie thérapeutique dépend ensuite du retentissement, des troubles associés et du contexte de la personne ; elle ne se résume pas à la prescription d’un médicament.\n\nUne difficulté récente de concentration n’est pas automatiquement un TDAH. Un questionnaire positif ne suffit pas au diagnostic. Chez l’adulte, il faut notamment rechercher le sommeil, l’anxiété, la dépression, les substances et l’histoire des symptômes depuis l’enfance avant de conclure."
     },
     {
       "id": "cholesterol-reduire-sans-medicament",
@@ -8434,6 +8540,18 @@
       },
       "sources": [
         {
+          "label": "Principes de la radiothérapie",
+          "url": "https://www.cancer.fr/personnes-malades/parcours-de-soins/principaux-traitements/radiotherapie"
+        },
+        {
+          "label": "Beddok A, Willmann J, Embring A et al. — Reirradiation: Standards, challenges, and patient-focused strategies across tumor types — CA Cancer J Clin, 2025",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40438993/"
+        },
+        {
+          "label": "Beddok A et al. — Radiomics-driven personalized radiotherapy for primary and recurrent tumors: a general review with a focus on reirradiation — Cancer Radiother, 2024",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39406602/"
+        },
+        {
           "label": "Institut national du cancer — principes de la radiothérapie. ESTRO/EORTC — consensus sur la réirradiation. Beddok A. et al. — CA Cancer Journal for Clinicians, 2025. Beddok A. et al. — Cancer Radiothérapie, 2024.",
           "url": ""
         }
@@ -10081,6 +10199,756 @@
       "retrievalText": "Peut-on réduire son risque d’Alzheimer en bougeant davantage ?\n\nMots-clés : Alzheimer démence activité physique sport exercice marche prévention cerveau mémoire risque déclin cognitif seniors Lancet OMS FINGER POINTER\n\nOui, l’activité physique régulière fait partie des comportements associés à un risque plus faible de démence, mais elle ne constitue pas une protection garantie contre la maladie d’Alzheimer. Une grande méta-analyse publiée en 2026 retrouve environ 20 % de risque de démence en moins chez les personnes ayant les niveaux d’activité physique les plus élevés, mais ces données sont principalement observationnelles. Les recommandations actuelles privilégient donc une approche globale : bouger régulièrement, mais aussi contrôler la tension artérielle, le diabète et le cholestérol, ne pas fumer, préserver l’audition, maintenir une alimentation équilibrée ainsi que des activités cognitives et sociales.\n\nL’idée que l’activité physique puisse protéger le cerveau ne repose plus sur une seule étude. En septembre 2026, une revue systématique et méta-analyse publiée dans The Lancet Public Health a regroupé 74 études portant sur plus de 4,2 millions de personnes, suivies pendant une durée médiane de dix ans. Les personnes ayant les niveaux d’activité physique les plus élevés présentaient globalement un risque de démence toutes causes environ 20 % plus faible et un risque de maladie d’Alzheimer environ 21 % plus faible que les moins actives.\n\nCes chiffres sont intéressants, mais ils doivent être interprétés avec prudence. La plupart des études sont observationnelles : elles montrent une association et ne permettent pas, à elles seules, de prouver que l’activité physique est directement responsable de la diminution du risque. Les personnes actives peuvent aussi avoir une meilleure santé générale, une alimentation différente ou davantage de relations sociales. À l’inverse, une maladie cérébrale débutante peut réduire progressivement l’activité physique plusieurs années avant que la démence ne soit diagnostiquée. Les auteurs de la méta-analyse évaluent d’ailleurs le niveau de certitude des preuves comme faible à très faible selon les domaines d’activité.\n\nUn résultat particulièrement intéressant est que toutes les formes d’activité physique ne donnent pas les mêmes associations. Dans cette analyse, l’activité pratiquée pendant les loisirs était associée à un risque plus faible de démence. Les résultats concernant l’activité professionnelle ou les déplacements étaient différents et beaucoup plus difficiles à interpréter. Il serait donc excessif de conclure que « plus on bouge, quelle que soit la façon, mieux on est protégé ». Ce travail suggère plutôt que la nature et le contexte de l’activité comptent et devront être mieux étudiés.\n\nD’autres données renforcent néanmoins l’intérêt de rester actif. Une méta-analyse récente de cohortes prospectives portant sur près de 2,9 millions de personnes retrouvait également un risque de démence plus faible chez les personnes régulièrement actives. Une grande étude prospective américaine publiée en 2026, reposant sur plusieurs décennies de suivi de l’activité physique, apporte aussi des données sur les liens entre activité au long cours et santé cognitive.\n\nSurtout, les essais d’intervention permettent de dépasser partiellement les simples associations. Dans l’essai randomisé US POINTER, publié dans le JAMA, 2 111 adultes de 60 à 79 ans présentant un risque accru de déclin cognitif ont suivi pendant deux ans deux programmes associant activité physique, alimentation, stimulation cognitive, engagement social et surveillance de la santé cardiovasculaire. La cognition globale s’est améliorée dans les deux groupes, avec une amélioration légèrement supérieure dans le programme le plus structuré. Cela ne prouve pas que l’exercice seul prévient Alzheimer : cela soutient plutôt une stratégie multidomaine.\n\nC’est également le message des recommandations 2026 de l’Organisation mondiale de la Santé et de la Lancet Commission sur la démence. L’activité physique fait partie des leviers modifiables, aux côtés notamment du tabac, de l’alcool, de l’hypertension, du diabète, du cholestérol, de l’audition, de l’alimentation, des activités cognitives et sociales et de certains facteurs environnementaux. L’OMS souligne qu’une part importante du risque de démence est liée à des facteurs potentiellement modifiables, sans signifier pour autant que chaque démence pourrait être évitée.\n\nLe message pratique est donc moins spectaculaire qu’une promesse « anti-Alzheimer », mais plus solide : rester physiquement actif au cours de la vie fait partie d’une stratégie favorable à la santé cérébrale. Il n’existe en revanche ni nombre magique de pas, ni sport précis, ni intensité unique dont on puisse affirmer qu’ils empêchent la maladie d’Alzheimer. Le bénéfice attendu s’inscrit dans une prévention globale et durable.\n\nBouger régulièrement est favorable à la santé générale et fait partie des stratégies recommandées pour réduire le risque de déclin cognitif et de démence, mais aucune activité physique ne garantit d’éviter Alzheimer. Une plainte de mémoire nouvelle, progressive ou ayant un retentissement sur la vie quotidienne mérite une évaluation médicale plutôt que d’être attribuée simplement à l’âge."
     },
     {
+      "id": "exercice-osteoporose-apres-50-ans",
+      "title": "Après 50 ans, quels exercices renforcent vraiment les os ?",
+      "primaryCategory": "Os & articulations",
+      "categories": [
+        "Os & articulations"
+      ],
+      "keywords": [
+        "ostéoporose osteoporose os exercice activité physique après 50 ans ménopause densité minérale osseuse DMO fracture marche renforcement musculaire résistance impact équilibre chute senior"
+      ],
+      "content": {
+        "answer": "L’activité physique aide à préserver la solidité des os après 50 ans, mais tous les exercices n’ont pas exactement les mêmes effets. Les données disponibles privilégient une combinaison de mouvements réalisés en charge, comme la marche soutenue, les escaliers, la danse ou certains exercices avec impacts adaptés, et de renforcement musculaire, avec poids, machines, élastiques ou poids du corps. Une grande méta-analyse publiée en septembre 2026 dans The BMJ, regroupant 124 essais randomisés et plus de 18 000 participants, confirme que plusieurs formes d’exercice peuvent améliorer la densité minérale osseuse. Le bénéfice varie toutefois selon l’exercice pratiqué et la partie du squelette étudiée. L’équilibre doit également être travaillé : il ne renforce pas nécessairement directement l’os, mais peut réduire le risque de chute — et donc de fracture.",
+        "detail": "L’os n’est pas une structure inerte. Il se renouvelle en permanence et s’adapte en partie aux contraintes mécaniques auxquelles il est soumis. Lorsqu’un muscle tire sur un os ou lorsque le squelette supporte le poids du corps et certains impacts, cela constitue un stimulus susceptible de favoriser le maintien de la masse et de la résistance osseuses.\n\nCe phénomène devient particulièrement important avec l’âge. La densité minérale osseuse diminue progressivement, avec une accélération chez les femmes après la ménopause en raison de la baisse des œstrogènes. Préserver ses os ne consiste donc pas uniquement à consommer suffisamment de calcium ou de vitamine D : l’activité physique constitue elle aussi un élément de la prévention.\n\nUne importante méta-analyse publiée dans The BMJ en septembre 2026 a regroupé 124 essais randomisés comprenant 18 429 adultes d’âge moyen ou plus âgés. Les chercheurs ont comparé différentes formes, intensités et quantités d’exercice. Leur conclusion principale est rassurante : plusieurs programmes d’activité physique améliorent certains paramètres de santé osseuse. Mais il n’existe pas un exercice unique supérieur dans toutes les situations.\n\nLes exercices dits en charge sollicitent le squelette parce que le corps travaille contre la gravité. Marcher d’un bon pas, monter des escaliers, danser, courir ou pratiquer certains sports en sont des exemples. Les activités comportant des impacts peuvent fournir un stimulus supplémentaire à l’os lorsqu’elles sont adaptées aux capacités de la personne.\n\nLe renforcement musculaire constitue l’autre grande composante. Squats adaptés, travail avec poids ou haltères, machines, élastiques ou exercices utilisant le poids du corps obligent les muscles à exercer une traction sur les os. Plusieurs méta-analyses chez les femmes ménopausées montrent un effet favorable du renforcement sur la densité osseuse, notamment au niveau du rachis lombaire et de la hanche. Des programmes suffisamment progressifs et poursuivis dans le temps semblent particulièrement intéressants.\n\nCela ne signifie pas pour autant qu’il faille commencer brutalement des exercices très intenses. L’intensité doit être progressive et adaptée au niveau initial, à l’âge, à l’équilibre et à l’existence éventuelle d’une ostéoporose ou de fractures antérieures.\n\nLa marche mérite également une nuance. Elle est excellente pour rester actif, entretenir les muscles et la santé cardiovasculaire et participer à la prévention des chutes. Mais une promenade tranquille n’apporte pas nécessairement à elle seule toutes les contraintes nécessaires pour stimuler au maximum l’os. Lorsque cela est possible, l’associer à du renforcement musculaire et à des exercices en charge plus soutenus est donc intéressant.\n\nEnfin, protéger ses os signifie aussi éviter les fractures. Chez une personne âgée ou présentant une fragilité osseuse, travailler l’équilibre, la coordination et la force des jambes peut diminuer le risque de chute. Des activités comme le tai-chi ou des exercices spécifiques d’équilibre ont donc leur place, même si leur objectif n’est pas exactement le même que celui du renforcement osseux.\n\nLe message à retenir n’est donc pas qu’il existe un « exercice miracle ». Les données actuelles plaident plutôt pour une combinaison : activité en charge + renforcement musculaire + équilibre, pratiqués régulièrement et adaptés à chacun.",
+        "usefulInfo": "En pratique : bouger régulièrement en charge (marche soutenue, escaliers, danse ou activité adaptée), renforcer les muscles environ 2 à 3 fois par semaine en augmentant progressivement la résistance, et travailler l’équilibre, particulièrement après 65 ans ou lorsque l’on se sent moins stable. La régularité compte davantage qu’une séance exceptionnelle : les bénéfices osseux se construisent sur plusieurs mois.",
+        "watch": "Un avis médical ou de kinésithérapie est préférable avant d’intensifier les impacts ou les charges en cas d’ostéoporose connue avec fracture antérieure, fractures répétées après traumatismes minimes, fracture récente, chutes répétées ou troubles importants de l’équilibre, douleur rachidienne nouvelle ou persistante, limitation importante de mobilité. En cas de fragilité vertébrale, certains mouvements répétés de flexion importante du dos ou certaines charges peuvent nécessiter une adaptation. L’objectif n’est pas d’arrêter de bouger, mais de choisir des exercices appropriés et sécurisés."
+      },
+      "sources": [
+        {
+          "label": "The BMJ — Effect of exercise on bone health in middle aged and older adults: hierarchical network meta-analysis of randomised trials",
+          "url": "https://www.bmj.com/content/394/bmj-2026-100561"
+        },
+        {
+          "label": "International Osteoporosis Foundation — Exercise and bone health",
+          "url": "https://www.osteoporosis.foundation/patients/prevention/exercise"
+        },
+        {
+          "label": "Royal Osteoporosis Society — Exercise and osteoporosis",
+          "url": "https://theros.org.uk/information-and-support/osteoporosis/living-with-osteoporosis/exercise-and-physical-activity-for-osteoporosis/"
+        },
+        {
+          "label": "The BMJ 2026 · International Osteoporosis Foundation · Royal Osteoporosis Society",
+          "url": ""
+        }
+      ],
+      "url": "https://www.bmj.com/content/394/bmj-2026-100561",
+      "metadata": {
+        "validationStatus": "VALIDATED",
+        "editorialStatus": "",
+        "evidenceStatus": "VALIDÉ — méta-analyse en réseau d’essais randomisés + recommandations",
+        "verifiedAt": "",
+        "nextAuditAt": "",
+        "auditIntervalMonths": null
+      },
+      "retrievalText": "Après 50 ans, quels exercices renforcent vraiment les os ?\n\nMots-clés : ostéoporose osteoporose os exercice activité physique après 50 ans ménopause densité minérale osseuse DMO fracture marche renforcement musculaire résistance impact équilibre chute senior\n\nL’activité physique aide à préserver la solidité des os après 50 ans, mais tous les exercices n’ont pas exactement les mêmes effets. Les données disponibles privilégient une combinaison de mouvements réalisés en charge, comme la marche soutenue, les escaliers, la danse ou certains exercices avec impacts adaptés, et de renforcement musculaire, avec poids, machines, élastiques ou poids du corps. Une grande méta-analyse publiée en septembre 2026 dans The BMJ, regroupant 124 essais randomisés et plus de 18 000 participants, confirme que plusieurs formes d’exercice peuvent améliorer la densité minérale osseuse. Le bénéfice varie toutefois selon l’exercice pratiqué et la partie du squelette étudiée. L’équilibre doit également être travaillé : il ne renforce pas nécessairement directement l’os, mais peut réduire le risque de chute — et donc de fracture.\n\nL’os n’est pas une structure inerte. Il se renouvelle en permanence et s’adapte en partie aux contraintes mécaniques auxquelles il est soumis. Lorsqu’un muscle tire sur un os ou lorsque le squelette supporte le poids du corps et certains impacts, cela constitue un stimulus susceptible de favoriser le maintien de la masse et de la résistance osseuses.\n\nCe phénomène devient particulièrement important avec l’âge. La densité minérale osseuse diminue progressivement, avec une accélération chez les femmes après la ménopause en raison de la baisse des œstrogènes. Préserver ses os ne consiste donc pas uniquement à consommer suffisamment de calcium ou de vitamine D : l’activité physique constitue elle aussi un élément de la prévention.\n\nUne importante méta-analyse publiée dans The BMJ en septembre 2026 a regroupé 124 essais randomisés comprenant 18 429 adultes d’âge moyen ou plus âgés. Les chercheurs ont comparé différentes formes, intensités et quantités d’exercice. Leur conclusion principale est rassurante : plusieurs programmes d’activité physique améliorent certains paramètres de santé osseuse. Mais il n’existe pas un exercice unique supérieur dans toutes les situations.\n\nLes exercices dits en charge sollicitent le squelette parce que le corps travaille contre la gravité. Marcher d’un bon pas, monter des escaliers, danser, courir ou pratiquer certains sports en sont des exemples. Les activités comportant des impacts peuvent fournir un stimulus supplémentaire à l’os lorsqu’elles sont adaptées aux capacités de la personne.\n\nLe renforcement musculaire constitue l’autre grande composante. Squats adaptés, travail avec poids ou haltères, machines, élastiques ou exercices utilisant le poids du corps obligent les muscles à exercer une traction sur les os. Plusieurs méta-analyses chez les femmes ménopausées montrent un effet favorable du renforcement sur la densité osseuse, notamment au niveau du rachis lombaire et de la hanche. Des programmes suffisamment progressifs et poursuivis dans le temps semblent particulièrement intéressants.\n\nCela ne signifie pas pour autant qu’il faille commencer brutalement des exercices très intenses. L’intensité doit être progressive et adaptée au niveau initial, à l’âge, à l’équilibre et à l’existence éventuelle d’une ostéoporose ou de fractures antérieures.\n\nLa marche mérite également une nuance. Elle est excellente pour rester actif, entretenir les muscles et la santé cardiovasculaire et participer à la prévention des chutes. Mais une promenade tranquille n’apporte pas nécessairement à elle seule toutes les contraintes nécessaires pour stimuler au maximum l’os. Lorsque cela est possible, l’associer à du renforcement musculaire et à des exercices en charge plus soutenus est donc intéressant.\n\nEnfin, protéger ses os signifie aussi éviter les fractures. Chez une personne âgée ou présentant une fragilité osseuse, travailler l’équilibre, la coordination et la force des jambes peut diminuer le risque de chute. Des activités comme le tai-chi ou des exercices spécifiques d’équilibre ont donc leur place, même si leur objectif n’est pas exactement le même que celui du renforcement osseux.\n\nLe message à retenir n’est donc pas qu’il existe un « exercice miracle ». Les données actuelles plaident plutôt pour une combinaison : activité en charge + renforcement musculaire + équilibre, pratiqués régulièrement et adaptés à chacun.\n\nEn pratique : bouger régulièrement en charge (marche soutenue, escaliers, danse ou activité adaptée), renforcer les muscles environ 2 à 3 fois par semaine en augmentant progressivement la résistance, et travailler l’équilibre, particulièrement après 65 ans ou lorsque l’on se sent moins stable. La régularité compte davantage qu’une séance exceptionnelle : les bénéfices osseux se construisent sur plusieurs mois.\n\nUn avis médical ou de kinésithérapie est préférable avant d’intensifier les impacts ou les charges en cas d’ostéoporose connue avec fracture antérieure, fractures répétées après traumatismes minimes, fracture récente, chutes répétées ou troubles importants de l’équilibre, douleur rachidienne nouvelle ou persistante, limitation importante de mobilité. En cas de fragilité vertébrale, certains mouvements répétés de flexion importante du dos ou certaines charges peuvent nécessiter une adaptation. L’objectif n’est pas d’arrêter de bouger, mais de choisir des exercices appropriés et sécurisés."
+    },
+    {
+      "id": "telephone-myopie-sommeil-enfant",
+      "title": "Téléphone, myopie et sommeil : que sait-on vraiment chez l’enfant ?",
+      "primaryCategory": "Enfants & parents",
+      "categories": [
+        "Enfants & parents"
+      ],
+      "keywords": [
+        "téléphone smartphone écran enfant adolescent myopie yeux vision sommeil coucher lumière bleue temps écran dehors extérieur travail de près"
+      ],
+      "content": {
+        "answer": "Passer beaucoup de temps sur un smartphone ou d’autres écrans est associé chez l’enfant à davantage de myopie et à un sommeil plus tardif ou plus court. Mais l’écran n’est probablement pas le seul responsable. Pour la myopie, plusieurs facteurs semblent intervenir ensemble : temps passé à regarder de près, écrans, lecture et devoirs prolongés, mais aussi manque de temps passé dehors. Pour le sommeil, le moment d’utilisation compte particulièrement : utiliser son téléphone le soir, au lit ou après l’heure du coucher peut retarder l’endormissement. Les réflexes les plus utiles sont d’éviter les longues périodes continues de vision de près, de favoriser les activités extérieures et d’éloigner les écrans du coucher et de la chambre.",
+        "detail": "La myopie correspond à un œil devenu trop long : l’image se forme en avant de la rétine et la vision de loin devient floue. Sa fréquence augmente dans de nombreux pays et les habitudes de vie des enfants font partie des facteurs étudiés.\n\nUne importante revue systématique avec méta-analyse publiée en 2025 a regroupé 45 études et 335 524 participants, âgés en moyenne d’environ 9 ans. Chaque heure quotidienne supplémentaire passée devant un écran numérique était associée à une augmentation d’environ 21 % des odds de myopie. L’association augmentait particulièrement entre une et quatre heures quotidiennes d’écran.\n\nCela ne signifie cependant pas qu’une heure de smartphone provoque directement une myopie. La plupart des études sont observationnelles. Un enfant qui utilise beaucoup les écrans peut également passer davantage de temps à lire ou travailler de près et moins de temps dehors.\n\nUne revue systématique européenne publiée en 2026 arrive justement à une conclusion prudente : écrans, travail prolongé de près et moindre exposition extérieure sont associés à la myopie, mais la qualité des preuves permettant d’isoler précisément le rôle des écrans reste faible à très faible. Une autre méta-analyse récente portant spécifiquement sur le travail de près retrouve également une association avec la myopie chez l’enfant.\n\nLe temps passé dehors est donc un message important. Les enfants passant davantage de temps à l’extérieur présentent globalement moins de risque de développer une myopie. Des essais randomisés récents renforcent l’intérêt d’augmenter les activités extérieures chez les enfants et adolescents. L’objectif n’est donc pas simplement de remplacer le téléphone par un livre pendant plusieurs heures : alterner les activités de près et passer régulièrement du temps dehors compte également.\n\nPour le sommeil, l’association avec les écrans est également bien documentée mais mérite d’être nuancée. Une méta-analyse de 21 études de cohorte totalisant plus de 548 000 participants retrouve davantage de sommeil court et un coucher plus tardif lorsque le temps d’écran augmente. Chaque heure supplémentaire était associée en moyenne à quelques minutes de sommeil en moins et à un coucher plus tardif.\n\nUne méta-analyse 2026 comparant un même jeune les jours où il utilise plus ou moins les écrans montre toutefois un effet beaucoup plus modeste : davantage d’écran est surtout associé à un endormissement plus tardif, sans détérioration systématique de tous les paramètres du sommeil. L’utilisation après l’heure du coucher semble particulièrement problématique.\n\nAutrement dit, le problème n’est probablement pas uniquement la lumière bleue. Le téléphone peut aussi repousser l’heure du coucher, maintenir l’enfant éveillé par les messages, vidéos ou jeux et rester accessible pendant la nuit.\n\nIl n’est donc pas nécessaire de présenter chaque minute d’écran comme dangereuse. L’âge de l’enfant, le contenu regardé, la durée, le moment de la journée et ce que l’écran remplace — sommeil, activité physique, sorties ou interactions — comptent aussi.",
+        "usefulInfo": "Pour les yeux : éviter les périodes très prolongées de travail ou d’écran à courte distance, faire régulièrement des pauses et favoriser quotidiennement les activités extérieures. Pour le sommeil : éloigner les écrans du coucher et laisser téléphone, tablette, console et ordinateur hors de la chambre pendant la nuit. L’Assurance Maladie recommande idéalement d’arrêter les écrans une à deux heures avant le coucher.",
+        "watch": "Un contrôle visuel est indiqué si l’enfant voit moins bien de loin, se rapproche anormalement des objets ou écrans, plisse fréquemment les yeux, se plaint régulièrement de difficultés visuelles ou si une myopie connue semble évoluer. Des difficultés d’endormissement persistantes, des réveils fréquents, une somnolence importante dans la journée ou un retentissement scolaire méritent également d’être évalués. L’écran peut contribuer au problème, mais il ne faut pas automatiquement lui attribuer tous les symptômes."
+      },
+      "sources": [
+        {
+          "label": "Digital Screen Time and Myopia: A Systematic Review and Dose-Response Meta-Analysis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39982728/"
+        },
+        {
+          "label": "Screen Time and Myopia-Related Outcomes in European Children: A Systematic Review",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42496488/"
+        },
+        {
+          "label": "Within-Person Association Between Daily Screen Use and Sleep in Youth: A Systematic Review and Meta-Analysis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41770550/"
+        },
+        {
+          "label": "Assurance Maladie — usage des écrans chez l’enfant et l’adolescent",
+          "url": "https://www.ameli.fr/assure/sante/themes/ecrans-enfance-adolescence/usage-ecran-age"
+        },
+        {
+          "label": "Méta-analyses myopie et sommeil 2025–2026 · Assurance Maladie",
+          "url": ""
+        }
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39982728/",
+      "metadata": {
+        "validationStatus": "VALIDATED",
+        "editorialStatus": "",
+        "evidenceStatus": "VALIDÉ — revues systématiques et méta-analyses + recommandations",
+        "verifiedAt": "",
+        "nextAuditAt": "",
+        "auditIntervalMonths": null
+      },
+      "retrievalText": "Téléphone, myopie et sommeil : que sait-on vraiment chez l’enfant ?\n\nMots-clés : téléphone smartphone écran enfant adolescent myopie yeux vision sommeil coucher lumière bleue temps écran dehors extérieur travail de près\n\nPasser beaucoup de temps sur un smartphone ou d’autres écrans est associé chez l’enfant à davantage de myopie et à un sommeil plus tardif ou plus court. Mais l’écran n’est probablement pas le seul responsable. Pour la myopie, plusieurs facteurs semblent intervenir ensemble : temps passé à regarder de près, écrans, lecture et devoirs prolongés, mais aussi manque de temps passé dehors. Pour le sommeil, le moment d’utilisation compte particulièrement : utiliser son téléphone le soir, au lit ou après l’heure du coucher peut retarder l’endormissement. Les réflexes les plus utiles sont d’éviter les longues périodes continues de vision de près, de favoriser les activités extérieures et d’éloigner les écrans du coucher et de la chambre.\n\nLa myopie correspond à un œil devenu trop long : l’image se forme en avant de la rétine et la vision de loin devient floue. Sa fréquence augmente dans de nombreux pays et les habitudes de vie des enfants font partie des facteurs étudiés.\n\nUne importante revue systématique avec méta-analyse publiée en 2025 a regroupé 45 études et 335 524 participants, âgés en moyenne d’environ 9 ans. Chaque heure quotidienne supplémentaire passée devant un écran numérique était associée à une augmentation d’environ 21 % des odds de myopie. L’association augmentait particulièrement entre une et quatre heures quotidiennes d’écran.\n\nCela ne signifie cependant pas qu’une heure de smartphone provoque directement une myopie. La plupart des études sont observationnelles. Un enfant qui utilise beaucoup les écrans peut également passer davantage de temps à lire ou travailler de près et moins de temps dehors.\n\nUne revue systématique européenne publiée en 2026 arrive justement à une conclusion prudente : écrans, travail prolongé de près et moindre exposition extérieure sont associés à la myopie, mais la qualité des preuves permettant d’isoler précisément le rôle des écrans reste faible à très faible. Une autre méta-analyse récente portant spécifiquement sur le travail de près retrouve également une association avec la myopie chez l’enfant.\n\nLe temps passé dehors est donc un message important. Les enfants passant davantage de temps à l’extérieur présentent globalement moins de risque de développer une myopie. Des essais randomisés récents renforcent l’intérêt d’augmenter les activités extérieures chez les enfants et adolescents. L’objectif n’est donc pas simplement de remplacer le téléphone par un livre pendant plusieurs heures : alterner les activités de près et passer régulièrement du temps dehors compte également.\n\nPour le sommeil, l’association avec les écrans est également bien documentée mais mérite d’être nuancée. Une méta-analyse de 21 études de cohorte totalisant plus de 548 000 participants retrouve davantage de sommeil court et un coucher plus tardif lorsque le temps d’écran augmente. Chaque heure supplémentaire était associée en moyenne à quelques minutes de sommeil en moins et à un coucher plus tardif.\n\nUne méta-analyse 2026 comparant un même jeune les jours où il utilise plus ou moins les écrans montre toutefois un effet beaucoup plus modeste : davantage d’écran est surtout associé à un endormissement plus tardif, sans détérioration systématique de tous les paramètres du sommeil. L’utilisation après l’heure du coucher semble particulièrement problématique.\n\nAutrement dit, le problème n’est probablement pas uniquement la lumière bleue. Le téléphone peut aussi repousser l’heure du coucher, maintenir l’enfant éveillé par les messages, vidéos ou jeux et rester accessible pendant la nuit.\n\nIl n’est donc pas nécessaire de présenter chaque minute d’écran comme dangereuse. L’âge de l’enfant, le contenu regardé, la durée, le moment de la journée et ce que l’écran remplace — sommeil, activité physique, sorties ou interactions — comptent aussi.\n\nPour les yeux : éviter les périodes très prolongées de travail ou d’écran à courte distance, faire régulièrement des pauses et favoriser quotidiennement les activités extérieures. Pour le sommeil : éloigner les écrans du coucher et laisser téléphone, tablette, console et ordinateur hors de la chambre pendant la nuit. L’Assurance Maladie recommande idéalement d’arrêter les écrans une à deux heures avant le coucher.\n\nUn contrôle visuel est indiqué si l’enfant voit moins bien de loin, se rapproche anormalement des objets ou écrans, plisse fréquemment les yeux, se plaint régulièrement de difficultés visuelles ou si une myopie connue semble évoluer. Des difficultés d’endormissement persistantes, des réveils fréquents, une somnolence importante dans la journée ou un retentissement scolaire méritent également d’être évalués. L’écran peut contribuer au problème, mais il ne faut pas automatiquement lui attribuer tous les symptômes."
+    },
+    {
+      "id": "syndrome-nid-vide",
+      "title": "Qu’appelle-t-on le syndrome du nid vide ?",
+      "primaryCategory": "Santé mentale",
+      "categories": [
+        "Santé mentale"
+      ],
+      "keywords": [
+        "syndrome nid vide départ enfants maison domicile parents solitude tristesse nostalgie séparation perte repères transition vie familiale empty nest"
+      ],
+      "content": {
+        "answer": "Le « syndrome du nid vide » désigne les difficultés émotionnelles que certains parents peuvent ressentir lorsque leurs enfants quittent le domicile familial. Cette période peut s’accompagner de tristesse, solitude, sentiment de vide, nostalgie ou perte de repères. Mais elle n’est pas nécessairement mal vécue : certains parents ressentent aussi davantage de liberté, une diminution des contraintes quotidiennes ou l’envie de développer de nouveaux projets. Malgré son nom, le « syndrome du nid vide » n’est pas considéré comme une maladie psychiatrique spécifique. Il correspond plutôt à une réaction possible face à une transition importante de la vie familiale.",
+        "detail": "Le départ d’un enfant modifie parfois profondément le quotidien.\n\nPendant de nombreuses années, l’organisation familiale, les habitudes et une partie du rôle des parents se sont construites autour de la présence des enfants. Lorsqu’ils deviennent autonomes et quittent le domicile, cet équilibre évolue.\n\nChez certains parents, ce changement peut provoquer un sentiment de perte ou de vide. La place occupée jusque-là par le rôle parental doit parfois être réaménagée et de nouveaux repères doivent se construire.\n\nMais cette expérience est très variable. Pour d’autres parents, le départ des enfants peut être vécu positivement : davantage de temps pour soi, pour le couple, les relations sociales, les activités personnelles ou de nouveaux projets.\n\nLes recherches contemporaines ont ainsi largement nuancé l’image classique d’un « nid vide » nécessairement associé à une souffrance psychologique. L’American Psychological Association souligne notamment que cette période peut correspondre à des trajectoires très différentes selon les personnes et leur contexte familial et social.\n\nEst-ce vraiment un « syndrome » ?\n\nLe terme est largement utilisé dans le langage courant, mais il peut être trompeur. Dans la CIM-10 utilisée par le NHS, le « empty nest syndrome » est rattaché au code Z60.0, correspondant aux difficultés d’adaptation aux transitions du cycle de vie (« Problems of adjustment to life-cycle transitions »). Il ne constitue donc pas, dans cette classification, un trouble psychiatrique autonome.\n\nCette distinction est importante : le départ des enfants constitue avant tout une transition de vie, susceptible d’entraîner chez certaines personnes une période d’adaptation plus difficile.\n\nEst-ce forcément une période difficile ?\n\nNon. Les études disponibles ne montrent pas que le départ des enfants entraîne systématiquement dépression, solitude ou diminution durable du bien-être. Des travaux récents montrent au contraire des trajectoires différentes selon les parents : certains connaissent une diminution transitoire de leur bien-être, tandis que d’autres vivent positivement cette nouvelle période de leur vie. Le contexte familial, social et culturel semble également jouer un rôle important dans la manière dont cette transition est vécue.\n\nUn autre regard : l’approche psychanalytique\n\nDans une approche psychanalytique, le départ des enfants peut également être envisagé comme une expérience de séparation et de perte, susceptible de réactiver chez certaines personnes d’autres expériences de séparation ou d’abandon.\n\nDes auteurs de la Société psychanalytique de Paris ont ainsi abordé le « nid vide » dans une réflexion plus large autour de la perte, de l’angoisse et de la dépression. Cette approche apporte un éclairage complémentaire sur la manière dont certains parents peuvent vivre cette période de transition.\n\nAvec la contribution d’Ève Piorowicz, psychologue clinicienne.",
+        "usefulInfo": "Cette période peut être l’occasion de réorganiser progressivement son quotidien : reprendre certaines activités, consacrer davantage de temps à ses relations sociales, à son couple lorsqu’on vit à deux, ou développer de nouveaux projets. La relation avec les enfants ne disparaît pas lorsqu’ils quittent le domicile : elle évolue progressivement vers une nouvelle relation entre parents et enfants devenus adultes. Il n’existe pas de « bonne » manière de vivre cette transition.",
+        "watch": "Une certaine nostalgie ou une période d’adaptation peuvent accompagner le départ des enfants. En revanche, lorsque la tristesse devient importante ou persistante, ou lorsqu’elle s’accompagne notamment d’une perte d’intérêt, d’un isolement, de troubles du sommeil ou d’un retentissement marqué sur la vie quotidienne, il est important de ne pas tout attribuer au « syndrome du nid vide ». Une souffrance psychologique plus importante peut justifier d’en parler avec un professionnel de santé."
+      },
+      "sources": [
+        {
+          "label": "American Psychological Association — The many pathways of empty nesting",
+          "url": "https://www.apa.org/monitor/2026/09/empty-nest-parents-goals-passions"
+        },
+        {
+          "label": "NHS / ICD-10 — Z60.0 Problems of adjustment to life-cycle transitions",
+          "url": "https://classbrowser.nhs.uk/ICD-10-5TH-Edition/vol1/block-z55-z65.htm"
+        },
+        {
+          "label": "Parental well-being when children move out: A panel study on short- and long-term effects",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39527853/"
+        },
+        {
+          "label": "Cultural contexts differentially shape parents’ loneliness and wellbeing during the empty nest period",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39489810/"
+        },
+        {
+          "label": "Société psychanalytique de Paris — Le risque de la perte : angoisses et dépression au féminin",
+          "url": "https://www.spp.asso.fr/le-risque-de-la-perte-angoisses-et-depression-au-feminin/"
+        },
+        {
+          "label": "American Psychological Association · NHS / ICD-10 · publications scientifiques 2024 · Société psychanalytique de Paris",
+          "url": ""
+        }
+      ],
+      "url": "https://www.apa.org/monitor/2026/09/empty-nest-parents-goals-passions",
+      "metadata": {
+        "validationStatus": "VALIDATED",
+        "editorialStatus": "",
+        "evidenceStatus": "VALIDÉ — source professionnelle, classification et études récentes",
+        "verifiedAt": "",
+        "nextAuditAt": "",
+        "auditIntervalMonths": null
+      },
+      "retrievalText": "Qu’appelle-t-on le syndrome du nid vide ?\n\nMots-clés : syndrome nid vide départ enfants maison domicile parents solitude tristesse nostalgie séparation perte repères transition vie familiale empty nest\n\nLe « syndrome du nid vide » désigne les difficultés émotionnelles que certains parents peuvent ressentir lorsque leurs enfants quittent le domicile familial. Cette période peut s’accompagner de tristesse, solitude, sentiment de vide, nostalgie ou perte de repères. Mais elle n’est pas nécessairement mal vécue : certains parents ressentent aussi davantage de liberté, une diminution des contraintes quotidiennes ou l’envie de développer de nouveaux projets. Malgré son nom, le « syndrome du nid vide » n’est pas considéré comme une maladie psychiatrique spécifique. Il correspond plutôt à une réaction possible face à une transition importante de la vie familiale.\n\nLe départ d’un enfant modifie parfois profondément le quotidien.\n\nPendant de nombreuses années, l’organisation familiale, les habitudes et une partie du rôle des parents se sont construites autour de la présence des enfants. Lorsqu’ils deviennent autonomes et quittent le domicile, cet équilibre évolue.\n\nChez certains parents, ce changement peut provoquer un sentiment de perte ou de vide. La place occupée jusque-là par le rôle parental doit parfois être réaménagée et de nouveaux repères doivent se construire.\n\nMais cette expérience est très variable. Pour d’autres parents, le départ des enfants peut être vécu positivement : davantage de temps pour soi, pour le couple, les relations sociales, les activités personnelles ou de nouveaux projets.\n\nLes recherches contemporaines ont ainsi largement nuancé l’image classique d’un « nid vide » nécessairement associé à une souffrance psychologique. L’American Psychological Association souligne notamment que cette période peut correspondre à des trajectoires très différentes selon les personnes et leur contexte familial et social.\n\nEst-ce vraiment un « syndrome » ?\n\nLe terme est largement utilisé dans le langage courant, mais il peut être trompeur. Dans la CIM-10 utilisée par le NHS, le « empty nest syndrome » est rattaché au code Z60.0, correspondant aux difficultés d’adaptation aux transitions du cycle de vie (« Problems of adjustment to life-cycle transitions »). Il ne constitue donc pas, dans cette classification, un trouble psychiatrique autonome.\n\nCette distinction est importante : le départ des enfants constitue avant tout une transition de vie, susceptible d’entraîner chez certaines personnes une période d’adaptation plus difficile.\n\nEst-ce forcément une période difficile ?\n\nNon. Les études disponibles ne montrent pas que le départ des enfants entraîne systématiquement dépression, solitude ou diminution durable du bien-être. Des travaux récents montrent au contraire des trajectoires différentes selon les parents : certains connaissent une diminution transitoire de leur bien-être, tandis que d’autres vivent positivement cette nouvelle période de leur vie. Le contexte familial, social et culturel semble également jouer un rôle important dans la manière dont cette transition est vécue.\n\nUn autre regard : l’approche psychanalytique\n\nDans une approche psychanalytique, le départ des enfants peut également être envisagé comme une expérience de séparation et de perte, susceptible de réactiver chez certaines personnes d’autres expériences de séparation ou d’abandon.\n\nDes auteurs de la Société psychanalytique de Paris ont ainsi abordé le « nid vide » dans une réflexion plus large autour de la perte, de l’angoisse et de la dépression. Cette approche apporte un éclairage complémentaire sur la manière dont certains parents peuvent vivre cette période de transition.\n\nAvec la contribution d’Ève Piorowicz, psychologue clinicienne.\n\nCette période peut être l’occasion de réorganiser progressivement son quotidien : reprendre certaines activités, consacrer davantage de temps à ses relations sociales, à son couple lorsqu’on vit à deux, ou développer de nouveaux projets. La relation avec les enfants ne disparaît pas lorsqu’ils quittent le domicile : elle évolue progressivement vers une nouvelle relation entre parents et enfants devenus adultes. Il n’existe pas de « bonne » manière de vivre cette transition.\n\nUne certaine nostalgie ou une période d’adaptation peuvent accompagner le départ des enfants. En revanche, lorsque la tristesse devient importante ou persistante, ou lorsqu’elle s’accompagne notamment d’une perte d’intérêt, d’un isolement, de troubles du sommeil ou d’un retentissement marqué sur la vie quotidienne, il est important de ne pas tout attribuer au « syndrome du nid vide ». Une souffrance psychologique plus importante peut justifier d’en parler avec un professionnel de santé."
+    },
+    {
+      "id": "diu-douleur-pose",
+      "title": "Pose d’un stérilet : peut-on réduire la douleur ?",
+      "primaryCategory": "Santé des femmes & grossesse",
+      "categories": [
+        "Santé des femmes & grossesse"
+      ],
+      "keywords": [
+        "DIU stérilet sterilet douleur pose insertion contraception anesthésie locale lidocaïne lidocaine mépivacaïne mepivacaine misoprostol nullipare gynécologie"
+      ],
+      "content": {
+        "answer": "Oui. La douleur lors de la pose d’un dispositif intra-utérin (DIU, souvent appelé « stérilet ») varie beaucoup d’une personne à l’autre, mais plusieurs moyens peuvent aider à la réduire. Des anesthésiques locaux ont montré un bénéfice dans certaines études. Un essai randomisé publié en 2026 apporte également des résultats encourageants avec la mépivacaïne administrée localement dans l’utérus. Il n’existe cependant pas une méthode unique adaptée à toutes les femmes : la prise en charge de la douleur peut être discutée avant la pose avec le professionnel qui réalise le geste.",
+        "detail": "La pose d’un DIU, au cuivre ou hormonal, est généralement rapide. Elle peut néanmoins provoquer des crampes et une douleur parfois importante. L’intensité varie considérablement : certaines femmes ressentent surtout une gêne brève, tandis que d’autres décrivent une douleur beaucoup plus marquée.\n\nLa douleur ne doit donc pas être considérée comme quelque chose qu’il faudrait nécessairement supporter sans en parler. Plusieurs approches ont été étudiées. Les recommandations récentes insistent notamment sur l’importance d’informer la patiente, de discuter de ses attentes et de proposer les options disponibles pour contrôler la douleur. Certains anesthésiques locaux, en particulier la lidocaïne sous différentes formes ou en bloc paracervical, peuvent diminuer la douleur lors de l’insertion.\n\nEn septembre 2026, un essai randomisé multicentrique publié dans JAMA, portant sur 370 femmes nullipares, a étudié une autre possibilité : la mépivacaïne, un anesthésique local administré dans l’utérus avant la pose. La douleur moyenne pendant l’insertion était d’environ 44/100 avec la mépivacaïne contre 59/100 avec le placebo, soit une différence d’environ 14 points sur 100. Davantage de participantes ont également considéré la douleur comme tolérable.\n\nCes résultats sont intéressants mais ne signifient pas que la mépivacaïne doit désormais être utilisée systématiquement. L’étude portait sur une population et un protocole précis. D’autres traitements ont été étudiés. Par exemple, le misoprostol n’est pas recommandé systématiquement avant une pose habituelle de DIU, même s’il peut avoir une place dans certaines circonstances particulières, notamment après un échec de pose.\n\nSi vous appréhendez la douleur, parlez-en avant la pose. Le médecin ou la sage-femme pourra expliquer le déroulement du geste et discuter des moyens disponibles pour améliorer votre confort. Il n’existe pas une stratégie identique pour toutes : le choix dépend notamment de la situation, des antécédents, de l’expérience éventuelle d’une précédente pose et des possibilités disponibles.",
+        "usefulInfo": "",
+        "watch": "Des crampes ou des saignements légers peuvent survenir après l’insertion. En revanche, une douleur très importante ou persistante, un saignement important, de la fièvre ou un malaise justifient un avis médical."
+      },
+      "sources": [
+        {
+          "label": "JAMA — essai randomisé multicentrique sur la mépivacaïne intra-utérine lors de la pose d’un DIU · 17 septembre 2026",
+          "url": "https://jamanetwork.com/"
+        },
+        {
+          "label": "ACOG — Pain Management for In-Office Uterine and Cervical Procedures · 2025",
+          "url": "https://www.acog.org/clinical/clinical-guidance/clinical-consensus/articles/2025/05/pain-management-for-in-office-uterine-and-cervical-procedures"
+        },
+        {
+          "label": "CDC — U.S. Selected Practice Recommendations for Contraceptive Use · 2024",
+          "url": "https://www.cdc.gov/mmwr/volumes/73/rr/rr7303a1.htm"
+        },
+        {
+          "label": "WHO — Selected Practice Recommendations for Contraceptive Use, 4th edition · 2025",
+          "url": "https://www.who.int/publications/i/item/9789240115606"
+        },
+        {
+          "label": "JAMA · ACOG · CDC · OMS",
+          "url": ""
+        }
+      ],
+      "url": "https://www.who.int/publications/i/item/9789240115606",
+      "metadata": {
+        "validationStatus": "VALIDATED",
+        "editorialStatus": "",
+        "evidenceStatus": "VALIDÉ — validation médicale MACA 19/09/2026",
+        "verifiedAt": "19/09/2026",
+        "nextAuditAt": "19/12/2026",
+        "auditIntervalMonths": 3
+      },
+      "retrievalText": "Pose d’un stérilet : peut-on réduire la douleur ?\n\nMots-clés : DIU stérilet sterilet douleur pose insertion contraception anesthésie locale lidocaïne lidocaine mépivacaïne mepivacaine misoprostol nullipare gynécologie\n\nOui. La douleur lors de la pose d’un dispositif intra-utérin (DIU, souvent appelé « stérilet ») varie beaucoup d’une personne à l’autre, mais plusieurs moyens peuvent aider à la réduire. Des anesthésiques locaux ont montré un bénéfice dans certaines études. Un essai randomisé publié en 2026 apporte également des résultats encourageants avec la mépivacaïne administrée localement dans l’utérus. Il n’existe cependant pas une méthode unique adaptée à toutes les femmes : la prise en charge de la douleur peut être discutée avant la pose avec le professionnel qui réalise le geste.\n\nLa pose d’un DIU, au cuivre ou hormonal, est généralement rapide. Elle peut néanmoins provoquer des crampes et une douleur parfois importante. L’intensité varie considérablement : certaines femmes ressentent surtout une gêne brève, tandis que d’autres décrivent une douleur beaucoup plus marquée.\n\nLa douleur ne doit donc pas être considérée comme quelque chose qu’il faudrait nécessairement supporter sans en parler. Plusieurs approches ont été étudiées. Les recommandations récentes insistent notamment sur l’importance d’informer la patiente, de discuter de ses attentes et de proposer les options disponibles pour contrôler la douleur. Certains anesthésiques locaux, en particulier la lidocaïne sous différentes formes ou en bloc paracervical, peuvent diminuer la douleur lors de l’insertion.\n\nEn septembre 2026, un essai randomisé multicentrique publié dans JAMA, portant sur 370 femmes nullipares, a étudié une autre possibilité : la mépivacaïne, un anesthésique local administré dans l’utérus avant la pose. La douleur moyenne pendant l’insertion était d’environ 44/100 avec la mépivacaïne contre 59/100 avec le placebo, soit une différence d’environ 14 points sur 100. Davantage de participantes ont également considéré la douleur comme tolérable.\n\nCes résultats sont intéressants mais ne signifient pas que la mépivacaïne doit désormais être utilisée systématiquement. L’étude portait sur une population et un protocole précis. D’autres traitements ont été étudiés. Par exemple, le misoprostol n’est pas recommandé systématiquement avant une pose habituelle de DIU, même s’il peut avoir une place dans certaines circonstances particulières, notamment après un échec de pose.\n\nSi vous appréhendez la douleur, parlez-en avant la pose. Le médecin ou la sage-femme pourra expliquer le déroulement du geste et discuter des moyens disponibles pour améliorer votre confort. Il n’existe pas une stratégie identique pour toutes : le choix dépend notamment de la situation, des antécédents, de l’expérience éventuelle d’une précédente pose et des possibilités disponibles.\n\nDes crampes ou des saignements légers peuvent survenir après l’insertion. En revanche, une douleur très importante ou persistante, un saignement important, de la fièvre ou un malaise justifient un avis médical."
+    },
+    {
+      "id": "entorse-cheville-fracture",
+      "title": "Je me suis tordu la cheville : entorse ou fracture, que faire ?",
+      "primaryCategory": "Santé au quotidien",
+      "categories": [],
+      "keywords": [
+        "cheville entorse fracture torsion tordu gonflement hématome appui marche Ottawa radiographie"
+      ],
+      "content": {
+        "answer": "Après une torsion de cheville, douleur, gonflement et hématome ne permettent pas toujours de distinguer une entorse d’une fracture. Une évaluation est particulièrement importante si vous avez du mal à marcher ou à prendre appui, si la douleur est très localisée sur un os ou s’il existe une déformation. Les professionnels utilisent notamment les critères d’Ottawa pour déterminer quand une radiographie est indiquée.",
+        "detail": "Une entorse correspond à un étirement excessif ou à une rupture partielle ou complète d’un ligament. La cheville externe est la plus souvent touchée. Mais une torsion peut aussi provoquer une fracture ou d’autres lésions : le gonflement ou l’hématome ne suffisent donc pas à faire la différence.\n\nPour rechercher une fracture, les professionnels prennent notamment en compte la localisation précise de la douleur osseuse et la capacité à prendre appui et à marcher. Les critères d’Ottawa constituent une référence pour guider l’indication d’une radiographie. Une radiographie n’est donc pas systématiquement nécessaire après chaque entorse. L’échographie, le scanner ou l’IRM ne sont pas non plus réalisés systématiquement lors d’une entorse récente.\n\nDans les premières heures, arrêtez l’activité. Repos relatif, froid protégé par un tissu, compression modérée et surélévation peuvent aider à limiter douleur et gonflement. Lorsque le diagnostic d’entorse est établi, la récupération ne repose pas sur une immobilisation prolongée systématique : la HAS privilégie une rééducation précoce et adaptée afin de récupérer la mobilité et de limiter le risque de récidive ou d’instabilité chronique.",
+        "usefulInfo": "",
+        "watch": "Consultez notamment si la douleur empêche de poursuivre l’activité, si la cheville gonfle rapidement, si vous avez du mal à marcher ou ne pouvez pas prendre appui. Une déformation évidente ou un trouble de la sensibilité ou de la circulation nécessite une évaluation rapide."
+      },
+      "sources": [
+        {
+          "label": "HAS — Entorse du ligament collatéral latéral de cheville : diagnostic, rééducation et reprise de l’activité · 2025",
+          "url": "https://www.has-sante.fr/jcms/p_3460983/fr/entorse-du-ligament-collateral-lateral-ligament-lateral-externe-de-cheville-diagnostic-reeducation-et-reprise-de-l-activite-physique-et-de-la-pratique-sportive"
+        },
+        {
+          "label": "HAS — Entorse de cheville : guide patient",
+          "url": "https://www.has-sante.fr/jcms/p_3602839/fr/entorse-de-cheville"
+        },
+        {
+          "label": "Assurance Maladie — Entorse de cheville : bons réflexes",
+          "url": "https://www.ameli.fr/assure/sante/themes/entorse-cheville/bons-reflexes-que-faire"
+        },
+        {
+          "label": "HAS · Assurance Maladie",
+          "url": ""
+        }
+      ],
+      "url": "",
+      "metadata": {
+        "validationStatus": "VALIDATED",
+        "editorialStatus": "",
+        "evidenceStatus": "VALIDÉ — validation médicale MACA 19/09/2026",
+        "verifiedAt": "19/09/2026",
+        "nextAuditAt": "19/12/2026",
+        "auditIntervalMonths": 3
+      },
+      "retrievalText": "Je me suis tordu la cheville : entorse ou fracture, que faire ?\n\nMots-clés : cheville entorse fracture torsion tordu gonflement hématome appui marche Ottawa radiographie\n\nAprès une torsion de cheville, douleur, gonflement et hématome ne permettent pas toujours de distinguer une entorse d’une fracture. Une évaluation est particulièrement importante si vous avez du mal à marcher ou à prendre appui, si la douleur est très localisée sur un os ou s’il existe une déformation. Les professionnels utilisent notamment les critères d’Ottawa pour déterminer quand une radiographie est indiquée.\n\nUne entorse correspond à un étirement excessif ou à une rupture partielle ou complète d’un ligament. La cheville externe est la plus souvent touchée. Mais une torsion peut aussi provoquer une fracture ou d’autres lésions : le gonflement ou l’hématome ne suffisent donc pas à faire la différence.\n\nPour rechercher une fracture, les professionnels prennent notamment en compte la localisation précise de la douleur osseuse et la capacité à prendre appui et à marcher. Les critères d’Ottawa constituent une référence pour guider l’indication d’une radiographie. Une radiographie n’est donc pas systématiquement nécessaire après chaque entorse. L’échographie, le scanner ou l’IRM ne sont pas non plus réalisés systématiquement lors d’une entorse récente.\n\nDans les premières heures, arrêtez l’activité. Repos relatif, froid protégé par un tissu, compression modérée et surélévation peuvent aider à limiter douleur et gonflement. Lorsque le diagnostic d’entorse est établi, la récupération ne repose pas sur une immobilisation prolongée systématique : la HAS privilégie une rééducation précoce et adaptée afin de récupérer la mobilité et de limiter le risque de récidive ou d’instabilité chronique.\n\nConsultez notamment si la douleur empêche de poursuivre l’activité, si la cheville gonfle rapidement, si vous avez du mal à marcher ou ne pouvez pas prendre appui. Une déformation évidente ou un trouble de la sensibilité ou de la circulation nécessite une évaluation rapide."
+    },
+    {
+      "id": "larmoiement-yeux",
+      "title": "J’ai souvent les yeux qui pleurent : pourquoi ?",
+      "primaryCategory": "Santé au quotidien",
+      "categories": [
+        "Santé au quotidien"
+      ],
+      "keywords": [
+        "yeux pleurent larmoiement larmes epiphora sécheresse oculaire allergie conjonctivite blépharite voies lacrymales"
+      ],
+      "content": {
+        "answer": "Avoir les yeux qui pleurent ne signifie pas forcément que l’on produit trop de larmes. Il existe deux grands mécanismes : l’œil produit davantage de larmes parce qu’il est irrité, ou les larmes s’évacuent moins bien. Paradoxalement, la sécheresse oculaire peut elle-même provoquer un larmoiement, notamment au vent, au froid ou pendant la lecture.",
+        "detail": "Les larmes protègent et humidifient la surface de l’œil. Après avoir été réparties par les clignements, elles sont normalement évacuées vers le nez par les voies lacrymales.\n\nUn larmoiement peut apparaître lorsque la surface de l’œil est sèche ou irritée, provoquant un larmoiement réflexe ; lors d’une allergie ou d’une conjonctivite ; en cas d’inflammation des paupières comme une blépharite ; si un problème des paupières perturbe la circulation des larmes ; ou lorsque les voies lacrymales évacuent mal les larmes.\n\nLa sécheresse oculaire est une cause fréquente et contre-intuitive : l’irritation de la surface de l’œil peut déclencher une production réflexe de larmes. Une allergie oculaire peut également associer démangeaisons et larmoiement.\n\nSi le phénomène est occasionnel, observez les circonstances : vent, froid, écrans, fumée, climatisation, allergènes ou port de lentilles peuvent apporter des indices. Si le larmoiement devient fréquent ou gênant, particulièrement s’il concerne surtout un seul œil, un examen ophtalmologique peut rechercher un problème de surface oculaire, de paupières ou d’évacuation des larmes.",
+        "usefulInfo": "",
+        "watch": "Une baisse récente de la vision, une douleur importante, une forte sensibilité à la lumière, un œil très rouge, un traumatisme ou des symptômes importants apparus brutalement nécessitent une évaluation médicale."
+      },
+      "sources": [
+        {
+          "label": "Assurance Maladie — Sécheresse oculaire : définition, symptômes et causes",
+          "url": "https://www.ameli.fr/assure/sante/themes/secheresse-oculaire/definition-symptomes-causes"
+        },
+        {
+          "label": "Assurance Maladie — Sécheresse oculaire : consultation et traitement",
+          "url": "https://www.ameli.fr/assure/sante/themes/secheresse-oculaire/consultation-traitement-yeux-secs"
+        },
+        {
+          "label": "Assurance Maladie — Conjonctivite : consultation et traitement",
+          "url": "https://www.ameli.fr/assure/sante/themes/conjonctivite/consultation-traitement"
+        },
+        {
+          "label": "Assurance Maladie · références ophtalmologiques",
+          "url": ""
+        }
+      ],
+      "url": "",
+      "metadata": {
+        "validationStatus": "VALIDATED",
+        "editorialStatus": "",
+        "evidenceStatus": "VALIDÉ — validation médicale MACA 19/09/2026",
+        "verifiedAt": "19/09/2026",
+        "nextAuditAt": "19/12/2026",
+        "auditIntervalMonths": 3
+      },
+      "retrievalText": "J’ai souvent les yeux qui pleurent : pourquoi ?\n\nMots-clés : yeux pleurent larmoiement larmes epiphora sécheresse oculaire allergie conjonctivite blépharite voies lacrymales\n\nAvoir les yeux qui pleurent ne signifie pas forcément que l’on produit trop de larmes. Il existe deux grands mécanismes : l’œil produit davantage de larmes parce qu’il est irrité, ou les larmes s’évacuent moins bien. Paradoxalement, la sécheresse oculaire peut elle-même provoquer un larmoiement, notamment au vent, au froid ou pendant la lecture.\n\nLes larmes protègent et humidifient la surface de l’œil. Après avoir été réparties par les clignements, elles sont normalement évacuées vers le nez par les voies lacrymales.\n\nUn larmoiement peut apparaître lorsque la surface de l’œil est sèche ou irritée, provoquant un larmoiement réflexe ; lors d’une allergie ou d’une conjonctivite ; en cas d’inflammation des paupières comme une blépharite ; si un problème des paupières perturbe la circulation des larmes ; ou lorsque les voies lacrymales évacuent mal les larmes.\n\nLa sécheresse oculaire est une cause fréquente et contre-intuitive : l’irritation de la surface de l’œil peut déclencher une production réflexe de larmes. Une allergie oculaire peut également associer démangeaisons et larmoiement.\n\nSi le phénomène est occasionnel, observez les circonstances : vent, froid, écrans, fumée, climatisation, allergènes ou port de lentilles peuvent apporter des indices. Si le larmoiement devient fréquent ou gênant, particulièrement s’il concerne surtout un seul œil, un examen ophtalmologique peut rechercher un problème de surface oculaire, de paupières ou d’évacuation des larmes.\n\nUne baisse récente de la vision, une douleur importante, une forte sensibilité à la lumière, un œil très rouge, un traumatisme ou des symptômes importants apparus brutalement nécessitent une évaluation médicale."
+    },
+    {
+      "id": "frequence-controle-vue",
+      "title": "À quelle fréquence faut-il faire contrôler sa vue ?",
+      "primaryCategory": "Prévention & dépistage",
+      "categories": [
+        "Prévention & dépistage"
+      ],
+      "keywords": [
+        "vue contrôle fréquence ophtalmologue examen yeux dépistage enfant 40 ans 50 ans 60 ans glaucome DMLA diabète myopie"
+      ],
+      "content": {
+        "answer": "Il n’existe pas une fréquence unique valable pour tout le monde. Le rythme dépend de l’âge, des symptômes et des facteurs de risque : antécédents familiaux, forte myopie, diabète, maladie oculaire connue, etc. En France, l’Assurance Maladie conseille notamment de faire contrôler régulièrement ses yeux à partir de 40 ans, notamment pour repérer précocement un glaucome.",
+        "detail": "Un contrôle de la vue ne sert pas uniquement à savoir s’il faut changer ses lunettes : certaines maladies oculaires peuvent évoluer longtemps sans symptôme.\n\nChez l’enfant, la vision fait partie du suivi médical et des dépistages organisés. En présence d’un strabisme, d’un comportement visuel inhabituel ou de difficultés visuelles, il ne faut pas attendre le prochain dépistage programmé.\n\nÀ partir de 40 ans, certaines maladies comme le glaucome peuvent évoluer sans symptôme. L’Assurance Maladie conseille donc de faire contrôler régulièrement ses yeux, même en l’absence de gêne particulière. La fréquence exacte doit être adaptée aux facteurs de risque et aux constatations de l’examen plutôt que fixée arbitrairement à une fois par an.\n\nAvec l’âge, la surveillance devient progressivement plus importante. Pour la DMLA, la HAS recommande chez les personnes de plus de 50 ans présentant au moins un facteur de risque, notamment des antécédents familiaux ou le tabagisme, une surveillance personnelle régulière de la vision et un examen ophtalmologique tous les 1 à 2 ans.\n\nDiabète, glaucome ou hypertension oculaire, forte myopie, maladie de la rétine, antécédents familiaux ou certains traitements peuvent justifier un calendrier particulier fixé par le professionnel de santé. Il n’existe donc pas de règle universelle du type « tout le monde doit consulter l’ophtalmologue une fois par an ».",
+        "usefulInfo": "",
+        "watch": "Un calendrier de surveillance concerne les personnes sans nouveau symptôme. Une baisse brutale de vision, un voile, une déformation nouvelle des lignes, l’apparition brutale de nombreux corps flottants ou d’éclairs lumineux, ou un œil rouge et très douloureux nécessitent une évaluation sans attendre le prochain contrôle programmé."
+      },
+      "sources": [
+        {
+          "label": "Assurance Maladie — Glaucome : symptômes et diagnostic",
+          "url": "https://www.ameli.fr/assure/sante/themes/glaucome/symptomes-diagnostic"
+        },
+        {
+          "label": "Assurance Maladie — Santé des yeux de l’enfant",
+          "url": "https://www.ameli.fr/assure/sante/themes/hypermetropie/sante-yeux-enfant"
+        },
+        {
+          "label": "HAS — Recommandations pour un repérage plus précoce de la DMLA",
+          "url": "https://www.has-sante.fr/jcms/p_3383775/fr/des-recommandations-pour-un-reperage-plus-precoce-de-la-dmla"
+        },
+        {
+          "label": "National Eye Institute — Get a dilated eye exam",
+          "url": "https://www.nei.nih.gov/eye-health-information/healthy-vision/finding-eye-doctor/get-dilated-eye-exam"
+        },
+        {
+          "label": "Assurance Maladie · HAS · National Eye Institute",
+          "url": ""
+        }
+      ],
+      "url": "",
+      "metadata": {
+        "validationStatus": "VALIDATED",
+        "editorialStatus": "",
+        "evidenceStatus": "VALIDÉ — validation médicale MACA 19/09/2026",
+        "verifiedAt": "19/09/2026",
+        "nextAuditAt": "19/12/2026",
+        "auditIntervalMonths": 3
+      },
+      "retrievalText": "À quelle fréquence faut-il faire contrôler sa vue ?\n\nMots-clés : vue contrôle fréquence ophtalmologue examen yeux dépistage enfant 40 ans 50 ans 60 ans glaucome DMLA diabète myopie\n\nIl n’existe pas une fréquence unique valable pour tout le monde. Le rythme dépend de l’âge, des symptômes et des facteurs de risque : antécédents familiaux, forte myopie, diabète, maladie oculaire connue, etc. En France, l’Assurance Maladie conseille notamment de faire contrôler régulièrement ses yeux à partir de 40 ans, notamment pour repérer précocement un glaucome.\n\nUn contrôle de la vue ne sert pas uniquement à savoir s’il faut changer ses lunettes : certaines maladies oculaires peuvent évoluer longtemps sans symptôme.\n\nChez l’enfant, la vision fait partie du suivi médical et des dépistages organisés. En présence d’un strabisme, d’un comportement visuel inhabituel ou de difficultés visuelles, il ne faut pas attendre le prochain dépistage programmé.\n\nÀ partir de 40 ans, certaines maladies comme le glaucome peuvent évoluer sans symptôme. L’Assurance Maladie conseille donc de faire contrôler régulièrement ses yeux, même en l’absence de gêne particulière. La fréquence exacte doit être adaptée aux facteurs de risque et aux constatations de l’examen plutôt que fixée arbitrairement à une fois par an.\n\nAvec l’âge, la surveillance devient progressivement plus importante. Pour la DMLA, la HAS recommande chez les personnes de plus de 50 ans présentant au moins un facteur de risque, notamment des antécédents familiaux ou le tabagisme, une surveillance personnelle régulière de la vision et un examen ophtalmologique tous les 1 à 2 ans.\n\nDiabète, glaucome ou hypertension oculaire, forte myopie, maladie de la rétine, antécédents familiaux ou certains traitements peuvent justifier un calendrier particulier fixé par le professionnel de santé. Il n’existe donc pas de règle universelle du type « tout le monde doit consulter l’ophtalmologue une fois par an ».\n\nUn calendrier de surveillance concerne les personnes sans nouveau symptôme. Une baisse brutale de vision, un voile, une déformation nouvelle des lignes, l’apparition brutale de nombreux corps flottants ou d’éclairs lumineux, ou un œil rouge et très douloureux nécessitent une évaluation sans attendre le prochain contrôle programmé."
+    },
+    {
+      "id": "mici-alimentation-poussee",
+      "title": "MICI : que manger pendant une poussée et comment reprendre une alimentation variée ?",
+      "primaryCategory": "Digestion & urinaire",
+      "categories": [
+        "Digestion & urinaire"
+      ],
+      "keywords": [
+        "MICI Crohn RCH rectocolite alimentation poussée régime fibres nutrition dénutrition diététicien plaisir alimentaire"
+      ],
+      "content": {
+        "answer": "Pendant une poussée de maladie de Crohn ou de rectocolite hémorragique, il n’existe pas un régime MICI unique. L’objectif est surtout de maintenir des apports suffisants tout en adaptant temporairement les aliments à ce qui est toléré. Les restrictions prolongées et systématiques sont à éviter. Lorsque les symptômes diminuent, une alimentation plus variée peut être reprise progressivement.",
+        "detail": "Lors d’une poussée, diarrhées, douleurs abdominales, nausées ou manque d’appétit peuvent rendre certains aliments difficiles à manger. Il est logique d’adapter temporairement l’alimentation aux symptômes, sans imposer une liste universelle d’aliments interdits. La tolérance est individuelle. Des aliments riches en fibres peuvent majorer certains symptômes chez certaines personnes pendant une poussée, alors qu’ils pourront être bien tolérés lorsque la maladie est contrôlée. En cas de sténose intestinale, des adaptations spécifiques peuvent être nécessaires avec l’équipe médicale.\n\nL’objectif reste de conserver suffisamment d’énergie, de protéines et de micronutriments. Une perte de poids involontaire, une alimentation très limitée ou des poussées répétées exposent davantage à la dénutrition. Lorsque la poussée s’améliore, il n’est généralement pas souhaitable de conserver sans raison toutes les exclusions mises en place pendant la période symptomatique. Les aliments peuvent être réintroduits progressivement selon leur tolérance afin de retrouver une alimentation aussi diversifiée que possible.\n\nLe plaisir de manger reste important. Des exclusions excessives peuvent rendre l’alimentation monotone, compliquer la vie sociale et favoriser des apports insuffisants.",
+        "usefulInfo": "",
+        "watch": "Pendant une poussée, privilégier ce qui est bien toléré, fractionner éventuellement les prises et veiller à l’hydratation. Une perte de poids, une réduction importante des apports, des difficultés à s’alimenter ou des restrictions multiples justifient d’en parler à l’équipe qui suit la MICI et, si besoin, à un diététicien."
+      },
+      "sources": [
+        {
+          "label": "ESPEN — Clinical Nutrition in Inflammatory Bowel Disease, 2023",
+          "url": "https://www.espen.org/guidelines/espen-scientific-guidelines-pdf-versions"
+        },
+        {
+          "label": "ECCO — European Crohn’s and Colitis Organisation",
+          "url": "https://www.ecco-ibd.eu/"
+        },
+        {
+          "label": "AGA — American Gastroenterological Association",
+          "url": "https://gastro.org/"
+        },
+        {
+          "label": "ESPEN · ECCO · AGA",
+          "url": ""
+        }
+      ],
+      "url": "",
+      "metadata": {
+        "validationStatus": "VALIDATED",
+        "editorialStatus": "",
+        "evidenceStatus": "VALIDÉ — Patient Question Map #1 — validation médicale MACA 19/09/2026",
+        "verifiedAt": "19/09/2026",
+        "nextAuditAt": "19/03/2027",
+        "auditIntervalMonths": 6
+      },
+      "retrievalText": "MICI : que manger pendant une poussée et comment reprendre une alimentation variée ?\n\nMots-clés : MICI Crohn RCH rectocolite alimentation poussée régime fibres nutrition dénutrition diététicien plaisir alimentaire\n\nPendant une poussée de maladie de Crohn ou de rectocolite hémorragique, il n’existe pas un régime MICI unique. L’objectif est surtout de maintenir des apports suffisants tout en adaptant temporairement les aliments à ce qui est toléré. Les restrictions prolongées et systématiques sont à éviter. Lorsque les symptômes diminuent, une alimentation plus variée peut être reprise progressivement.\n\nLors d’une poussée, diarrhées, douleurs abdominales, nausées ou manque d’appétit peuvent rendre certains aliments difficiles à manger. Il est logique d’adapter temporairement l’alimentation aux symptômes, sans imposer une liste universelle d’aliments interdits. La tolérance est individuelle. Des aliments riches en fibres peuvent majorer certains symptômes chez certaines personnes pendant une poussée, alors qu’ils pourront être bien tolérés lorsque la maladie est contrôlée. En cas de sténose intestinale, des adaptations spécifiques peuvent être nécessaires avec l’équipe médicale.\n\nL’objectif reste de conserver suffisamment d’énergie, de protéines et de micronutriments. Une perte de poids involontaire, une alimentation très limitée ou des poussées répétées exposent davantage à la dénutrition. Lorsque la poussée s’améliore, il n’est généralement pas souhaitable de conserver sans raison toutes les exclusions mises en place pendant la période symptomatique. Les aliments peuvent être réintroduits progressivement selon leur tolérance afin de retrouver une alimentation aussi diversifiée que possible.\n\nLe plaisir de manger reste important. Des exclusions excessives peuvent rendre l’alimentation monotone, compliquer la vie sociale et favoriser des apports insuffisants.\n\nPendant une poussée, privilégier ce qui est bien toléré, fractionner éventuellement les prises et veiller à l’hydratation. Une perte de poids, une réduction importante des apports, des difficultés à s’alimenter ou des restrictions multiples justifient d’en parler à l’équipe qui suit la MICI et, si besoin, à un diététicien."
+    },
+    {
+      "id": "diabete-activite-physique-glycemie",
+      "title": "Diabète et activité physique : comment gérer sa glycémie autour de l’effort ?",
+      "primaryCategory": "Santé au quotidien",
+      "categories": [
+        "Santé au quotidien"
+      ],
+      "keywords": [
+        "diabète sport activité physique effort glycémie hypoglycémie insuline glucides exercice surveillance"
+      ],
+      "content": {
+        "answer": "L’activité physique est recommandée aux personnes diabétiques. Mais l’effet sur la glycémie varie selon le type de diabète, l’activité, sa durée et les traitements. Chez les personnes utilisant de l’insuline ou certains médicaments hypoglycémiants, une hypoglycémie peut survenir pendant l’effort mais aussi plusieurs heures après. La surveillance et les adaptations doivent donc être individualisées.",
+        "detail": "Les muscles utilisent davantage de glucose lorsqu’ils travaillent et l’activité physique améliore la sensibilité à l’insuline. À long terme, elle participe à la santé cardiovasculaire, musculaire et métabolique. Mais la glycémie ne réagit pas toujours de la même façon : une activité d’endurance peut la faire baisser, tandis qu’un effort très intense peut parfois provoquer transitoirement une hausse.\n\nLe risque d’hypoglycémie concerne surtout les personnes traitées par insuline ou médicaments stimulant la sécrétion d’insuline. L’effort peut augmenter la sensibilité à l’insuline pendant plusieurs heures : une hypoglycémie peut donc apparaître après l’activité, parfois à distance.\n\nSelon la situation, il peut être nécessaire de surveiller la glycémie avant, pendant et après l’activité, d’avoir des glucides rapidement disponibles et d’adapter alimentation ou traitement selon le plan établi avec l’équipe soignante. Ces adaptations ne sont pas universelles. Tremblements, sueurs, faim, palpitations, difficultés de concentration ou confusion peuvent évoquer une hypoglycémie. Un seuil inférieur ou égal à 0,70 g/L (3,9 mmol/L) constitue un seuil d’alerte reconnu.",
+        "usefulInfo": "",
+        "watch": "Avant une activité nouvelle ou beaucoup plus intense, anticiper si nécessaire la surveillance et les adaptations avec l’équipe qui suit le diabète. Pour les personnes à risque d’hypoglycémie, disposer de glucides rapidement assimilables est important. Une hypoglycémie, un malaise ou une confusion impose d’interrompre l’effort et d’appliquer les consignes prévues. Une personne inconsciente ou incapable d’avaler nécessite une prise en charge urgente."
+      },
+      "sources": [
+        {
+          "label": "ADA — Standards of Care in Diabetes 2026",
+          "url": "https://diabetesjournals.org/care/issue/49/Supplement_1"
+        },
+        {
+          "label": "Assurance Maladie — Diabète et activité physique",
+          "url": "https://www.ameli.fr/assure/sante/themes/diabete-adulte/diabete-vivre-quotidien/activite-physique/diabete-activite-physique-fondamentaux"
+        },
+        {
+          "label": "EASD",
+          "url": "https://www.easd.org/"
+        },
+        {
+          "label": "ISPAD — Clinical Practice Consensus Guidelines",
+          "url": "https://www.ispad.org/resources/ispad-clinical-practice-consensus-guidelines.html"
+        },
+        {
+          "label": "ADA 2026 · Assurance Maladie · EASD · ISPAD",
+          "url": ""
+        }
+      ],
+      "url": "",
+      "metadata": {
+        "validationStatus": "VALIDATED",
+        "editorialStatus": "",
+        "evidenceStatus": "VALIDÉ — Patient Question Map #1 — validation médicale MACA 19/09/2026",
+        "verifiedAt": "19/09/2026",
+        "nextAuditAt": "19/03/2027",
+        "auditIntervalMonths": 6
+      },
+      "retrievalText": "Diabète et activité physique : comment gérer sa glycémie autour de l’effort ?\n\nMots-clés : diabète sport activité physique effort glycémie hypoglycémie insuline glucides exercice surveillance\n\nL’activité physique est recommandée aux personnes diabétiques. Mais l’effet sur la glycémie varie selon le type de diabète, l’activité, sa durée et les traitements. Chez les personnes utilisant de l’insuline ou certains médicaments hypoglycémiants, une hypoglycémie peut survenir pendant l’effort mais aussi plusieurs heures après. La surveillance et les adaptations doivent donc être individualisées.\n\nLes muscles utilisent davantage de glucose lorsqu’ils travaillent et l’activité physique améliore la sensibilité à l’insuline. À long terme, elle participe à la santé cardiovasculaire, musculaire et métabolique. Mais la glycémie ne réagit pas toujours de la même façon : une activité d’endurance peut la faire baisser, tandis qu’un effort très intense peut parfois provoquer transitoirement une hausse.\n\nLe risque d’hypoglycémie concerne surtout les personnes traitées par insuline ou médicaments stimulant la sécrétion d’insuline. L’effort peut augmenter la sensibilité à l’insuline pendant plusieurs heures : une hypoglycémie peut donc apparaître après l’activité, parfois à distance.\n\nSelon la situation, il peut être nécessaire de surveiller la glycémie avant, pendant et après l’activité, d’avoir des glucides rapidement disponibles et d’adapter alimentation ou traitement selon le plan établi avec l’équipe soignante. Ces adaptations ne sont pas universelles. Tremblements, sueurs, faim, palpitations, difficultés de concentration ou confusion peuvent évoquer une hypoglycémie. Un seuil inférieur ou égal à 0,70 g/L (3,9 mmol/L) constitue un seuil d’alerte reconnu.\n\nAvant une activité nouvelle ou beaucoup plus intense, anticiper si nécessaire la surveillance et les adaptations avec l’équipe qui suit le diabète. Pour les personnes à risque d’hypoglycémie, disposer de glucides rapidement assimilables est important. Une hypoglycémie, un malaise ou une confusion impose d’interrompre l’effort et d’appliquer les consignes prévues. Une personne inconsciente ou incapable d’avaler nécessite une prise en charge urgente."
+    },
+    {
+      "id": "alzheimer-refus-soins-repas",
+      "title": "Alzheimer : refus de toilette, de s’habiller ou de manger, comment réagir ?",
+      "primaryCategory": "Seniors",
+      "categories": [
+        "Seniors"
+      ],
+      "keywords": [
+        "Alzheimer démence aidant refus toilette habillage manger repas opposition comportement proche"
+      ],
+      "content": {
+        "answer": "Chez une personne atteinte d’Alzheimer ou d’un trouble neurocognitif, un refus n’est pas forcément une opposition volontaire. Il peut traduire une incompréhension, de la peur, de la douleur, de la fatigue, un besoin de pudeur ou une difficulté à exprimer ce qui ne va pas. Mieux vaut éviter le rapport de force, rechercher ce qui peut expliquer le refus et essayer à nouveau autrement ou plus tard.",
+        "detail": "Avec l’évolution d’une maladie d’Alzheimer, des gestes auparavant simples peuvent devenir difficiles à comprendre ou à organiser. La personne peut ne plus saisir pourquoi quelqu’un veut la déshabiller, la laver ou lui demander de manger. Pudeur, fatigue, troubles de mémoire ou difficultés physiques peuvent jouer un rôle.\n\nLa première réponse n’est généralement pas de forcer. Parler calmement, expliquer une étape à la fois, respecter les habitudes et l’intimité, proposer un choix simple ou reporter momentanément le soin peut faciliter les choses. Pour l’habillage, réduire le nombre de choix et présenter les vêtements dans l’ordre peut être plus facile qu’une consigne complexe. Pour les repas, un environnement calme, du temps suffisant et des aliments faciles à identifier et à manger peuvent aider.\n\nUn refus alimentaire persistant ne doit pas être attribué automatiquement à Alzheimer. Douleur dentaire, constipation, infection, trouble de déglutition, effet d’un médicament, dépression ou autre problème médical peuvent modifier brutalement le comportement ou l’alimentation.",
+        "usefulInfo": "",
+        "watch": "Éviter de discuter longuement pour convaincre. Parler simplement, préserver l’intimité, proposer plutôt qu’imposer et réessayer plus tard peuvent réduire la confrontation. Une modification brutale du comportement, une douleur suspectée, de la fièvre, une difficulté à avaler, une réduction importante des boissons ou des aliments, une perte de poids ou un épuisement de l’aidant doivent conduire à demander de l’aide."
+      },
+      "sources": [
+        {
+          "label": "HAS — Maladies neurodégénératives : adapter ses pratiques à domicile",
+          "url": "https://www.has-sante.fr/jcms/p_3217902/fr/maladies-neurodegeneratives-adapter-ses-pratiques-pour-accompagner-les-personnes-a-domicile"
+        },
+        {
+          "label": "HAS — Haute Autorité de santé",
+          "url": "https://www.has-sante.fr/"
+        },
+        {
+          "label": "NICE NG97 — Dementia",
+          "url": "https://www.nice.org.uk/guidance/ng97"
+        },
+        {
+          "label": "HAS · NICE",
+          "url": ""
+        }
+      ],
+      "url": "",
+      "metadata": {
+        "validationStatus": "VALIDATED",
+        "editorialStatus": "",
+        "evidenceStatus": "VALIDÉ — Patient Question Map #1 — validation médicale MACA 19/09/2026",
+        "verifiedAt": "19/09/2026",
+        "nextAuditAt": "19/03/2027",
+        "auditIntervalMonths": 6
+      },
+      "retrievalText": "Alzheimer : refus de toilette, de s’habiller ou de manger, comment réagir ?\n\nMots-clés : Alzheimer démence aidant refus toilette habillage manger repas opposition comportement proche\n\nChez une personne atteinte d’Alzheimer ou d’un trouble neurocognitif, un refus n’est pas forcément une opposition volontaire. Il peut traduire une incompréhension, de la peur, de la douleur, de la fatigue, un besoin de pudeur ou une difficulté à exprimer ce qui ne va pas. Mieux vaut éviter le rapport de force, rechercher ce qui peut expliquer le refus et essayer à nouveau autrement ou plus tard.\n\nAvec l’évolution d’une maladie d’Alzheimer, des gestes auparavant simples peuvent devenir difficiles à comprendre ou à organiser. La personne peut ne plus saisir pourquoi quelqu’un veut la déshabiller, la laver ou lui demander de manger. Pudeur, fatigue, troubles de mémoire ou difficultés physiques peuvent jouer un rôle.\n\nLa première réponse n’est généralement pas de forcer. Parler calmement, expliquer une étape à la fois, respecter les habitudes et l’intimité, proposer un choix simple ou reporter momentanément le soin peut faciliter les choses. Pour l’habillage, réduire le nombre de choix et présenter les vêtements dans l’ordre peut être plus facile qu’une consigne complexe. Pour les repas, un environnement calme, du temps suffisant et des aliments faciles à identifier et à manger peuvent aider.\n\nUn refus alimentaire persistant ne doit pas être attribué automatiquement à Alzheimer. Douleur dentaire, constipation, infection, trouble de déglutition, effet d’un médicament, dépression ou autre problème médical peuvent modifier brutalement le comportement ou l’alimentation.\n\nÉviter de discuter longuement pour convaincre. Parler simplement, préserver l’intimité, proposer plutôt qu’imposer et réessayer plus tard peuvent réduire la confrontation. Une modification brutale du comportement, une douleur suspectée, de la fièvre, une difficulté à avaler, une réduction importante des boissons ou des aliments, une perte de poids ou un épuisement de l’aidant doivent conduire à demander de l’aide."
+    },
+    {
+      "id": "alzheimer-conduite-automobile",
+      "title": "Alzheimer et conduite automobile : quand faut-il arrêter de conduire ?",
+      "primaryCategory": "Seniors",
+      "categories": [
+        "Seniors"
+      ],
+      "keywords": [
+        "Alzheimer démence conduite automobile permis voiture aptitude médecin agréé famille sécurité routière"
+      ],
+      "content": {
+        "answer": "La maladie d’Alzheimer peut altérer progressivement l’attention, le jugement, l’orientation et les capacités nécessaires à la conduite. En France, les troubles cognitifs font partie des situations encadrées par la réglementation sur l’aptitude médicale à conduire : la décision ne repose donc pas simplement sur l’avis de la famille ou sur l’âge. Une évaluation médicale de l’aptitude à la conduite est nécessaire selon la situation.",
+        "detail": "Conduire mobilise simultanément de nombreuses fonctions : comprendre son environnement, anticiper, décider rapidement, se repérer et réagir à un événement inattendu. Un trouble neurocognitif peut progressivement altérer certaines de ces capacités.\n\nDes événements répétés doivent attirer l’attention : se perdre sur des trajets familiers, nouvelles erreurs de conduite, accrochages, difficultés inhabituelles aux intersections, confusion entre commandes ou réactions devenues inadaptées. Ils ne constituent pas à eux seuls un diagnostic d’inaptitude mais justifient de poser la question.\n\nEn France, la conduite nécessite légalement une aptitude physique, cognitive et sensorielle. L’arrêté du 28 mars 2022 fixe les affections pouvant être incompatibles avec la conduite ou nécessiter restrictions et contrôle médical. Le médecin agréé pour le contrôle de l’aptitude médicale à la conduite joue un rôle spécifique dans cette procédure.\n\nAborder le sujet tôt permet aussi d’anticiper les alternatives : proches, transports, taxi, transport adapté ou services locaux. La voiture représente souvent autonomie, habitudes et vie sociale ; préparer la transition peut en réduire l’impact.",
+        "usefulInfo": "",
+        "watch": "Les proches peuvent noter des faits précis plutôt que discuter en termes généraux de bonne ou mauvaise conduite. En présence de troubles cognitifs connus ou de difficultés observées au volant, il est important d’aborder la question avec le médecin et de respecter la procédure française d’évaluation de l’aptitude. Une situation mettant immédiatement en danger la personne ou les autres ne doit pas attendre une consultation de routine."
+      },
+      "sources": [
+        {
+          "label": "Légifrance — Arrêté du 28 mars 2022",
+          "url": "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000045464096"
+        },
+        {
+          "label": "Service-Public.fr — Contrôle médical du permis de conduire",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F2686"
+        },
+        {
+          "label": "HAS — Haute Autorité de santé",
+          "url": "https://www.has-sante.fr/"
+        },
+        {
+          "label": "Légifrance · Service-Public.fr · HAS",
+          "url": ""
+        }
+      ],
+      "url": "",
+      "metadata": {
+        "validationStatus": "VALIDATED",
+        "editorialStatus": "",
+        "evidenceStatus": "VALIDÉ — Patient Question Map #1 — réglementation française — validation médicale MACA 19/09/2026",
+        "verifiedAt": "19/09/2026",
+        "nextAuditAt": "19/12/2026",
+        "auditIntervalMonths": 3
+      },
+      "retrievalText": "Alzheimer et conduite automobile : quand faut-il arrêter de conduire ?\n\nMots-clés : Alzheimer démence conduite automobile permis voiture aptitude médecin agréé famille sécurité routière\n\nLa maladie d’Alzheimer peut altérer progressivement l’attention, le jugement, l’orientation et les capacités nécessaires à la conduite. En France, les troubles cognitifs font partie des situations encadrées par la réglementation sur l’aptitude médicale à conduire : la décision ne repose donc pas simplement sur l’avis de la famille ou sur l’âge. Une évaluation médicale de l’aptitude à la conduite est nécessaire selon la situation.\n\nConduire mobilise simultanément de nombreuses fonctions : comprendre son environnement, anticiper, décider rapidement, se repérer et réagir à un événement inattendu. Un trouble neurocognitif peut progressivement altérer certaines de ces capacités.\n\nDes événements répétés doivent attirer l’attention : se perdre sur des trajets familiers, nouvelles erreurs de conduite, accrochages, difficultés inhabituelles aux intersections, confusion entre commandes ou réactions devenues inadaptées. Ils ne constituent pas à eux seuls un diagnostic d’inaptitude mais justifient de poser la question.\n\nEn France, la conduite nécessite légalement une aptitude physique, cognitive et sensorielle. L’arrêté du 28 mars 2022 fixe les affections pouvant être incompatibles avec la conduite ou nécessiter restrictions et contrôle médical. Le médecin agréé pour le contrôle de l’aptitude médicale à la conduite joue un rôle spécifique dans cette procédure.\n\nAborder le sujet tôt permet aussi d’anticiper les alternatives : proches, transports, taxi, transport adapté ou services locaux. La voiture représente souvent autonomie, habitudes et vie sociale ; préparer la transition peut en réduire l’impact.\n\nLes proches peuvent noter des faits précis plutôt que discuter en termes généraux de bonne ou mauvaise conduite. En présence de troubles cognitifs connus ou de difficultés observées au volant, il est important d’aborder la question avec le médecin et de respecter la procédure française d’évaluation de l’aptitude. Une situation mettant immédiatement en danger la personne ou les autres ne doit pas attendre une consultation de routine."
+    },
+    {
+      "id": "diabete-pied-prevention",
+      "title": "Diabète : comment prévenir les problèmes de pied et quels signes surveiller ?",
+      "primaryCategory": "Prévention & dépistage",
+      "categories": [
+        "Prévention & dépistage"
+      ],
+      "keywords": [
+        "diabète pied diabétique neuropathie plaie ulcère pieds prévention podologue chaussure callosité artériopathie"
+      ],
+      "content": {
+        "answer": "Le diabète peut diminuer la sensibilité des pieds et favoriser certaines atteintes des nerfs et des artères. Une petite plaie peut alors passer inaperçue et s’aggraver. La prévention repose notamment sur l’examen régulier des pieds, des chaussures adaptées et l’évaluation périodique du niveau de risque par les professionnels de santé. Une plaie, une rougeur inhabituelle, un gonflement ou une zone noire ne doivent pas être banalisés.",
+        "detail": "Avec le temps, le diabète peut provoquer une neuropathie : la sensibilité à la douleur, à la chaleur ou aux traumatismes peut diminuer. Une ampoule ou une petite blessure peut ainsi ne pas être ressentie. Le diabète peut également être associé à une atteinte artérielle réduisant la circulation dans les membres inférieurs.\n\nD’où l’intérêt de regarder régulièrement ses pieds, y compris la plante et les espaces entre les orteils : ampoule, fissure, plaie, rougeur, callosité inhabituelle ou changement de couleur méritent attention. Les chaussures doivent être adaptées et ne pas créer de zones de frottement ou de pression. Chez les personnes ayant perdu une partie de leur sensibilité, il faut éviter de marcher pieds nus.\n\nTous les patients diabétiques n’ont pas le même risque. Les recommandations prévoient une stratification selon notamment la neuropathie, l’atteinte artérielle, les déformations du pied et les antécédents d’ulcère ou d’amputation. La fréquence du suivi professionnel augmente avec le niveau de risque. Le suivi permet aussi de repérer les personnes pouvant bénéficier de soins podologiques, d’une prise en charge des callosités ou de chaussures spécifiques.",
+        "usefulInfo": "",
+        "watch": "Examiner régulièrement ses pieds, maintenir une hygiène simple, bien sécher notamment entre les orteils et vérifier l’absence de corps étranger ou de zone agressive dans les chaussures sont des mesures simples. Éviter de traiter soi-même une lésion profonde ou une callosité importante avec des instruments ou produits agressifs. Une plaie, une ampoule persistante, une rougeur ou un gonflement nouveaux, un écoulement, une modification de couleur ou une zone noire nécessitent un avis médical rapide."
+      },
+      "sources": [
+        {
+          "label": "IWGDF — Guidelines 2023",
+          "url": "https://iwgdfguidelines.org/guidelines-2023/"
+        },
+        {
+          "label": "IWGDF — Prevention guideline 2023",
+          "url": "https://iwgdfguidelines.org/prevention-guideline-2023/"
+        },
+        {
+          "label": "ADA — Standards of Care in Diabetes 2026: Foot Care",
+          "url": "https://diabetesjournals.org/care/article/49/Supplement_1/S261/163919/12-Retinopathy-Neuropathy-and-Foot-Care-Standards"
+        },
+        {
+          "label": "HAS — Haute Autorité de santé",
+          "url": "https://www.has-sante.fr/"
+        },
+        {
+          "label": "IWGDF 2023 · ADA 2026 · HAS",
+          "url": ""
+        }
+      ],
+      "url": "",
+      "metadata": {
+        "validationStatus": "VALIDATED",
+        "editorialStatus": "",
+        "evidenceStatus": "VALIDÉ — Patient Question Map #1 — validation médicale MACA 19/09/2026",
+        "verifiedAt": "19/09/2026",
+        "nextAuditAt": "19/03/2027",
+        "auditIntervalMonths": 6
+      },
+      "retrievalText": "Diabète : comment prévenir les problèmes de pied et quels signes surveiller ?\n\nMots-clés : diabète pied diabétique neuropathie plaie ulcère pieds prévention podologue chaussure callosité artériopathie\n\nLe diabète peut diminuer la sensibilité des pieds et favoriser certaines atteintes des nerfs et des artères. Une petite plaie peut alors passer inaperçue et s’aggraver. La prévention repose notamment sur l’examen régulier des pieds, des chaussures adaptées et l’évaluation périodique du niveau de risque par les professionnels de santé. Une plaie, une rougeur inhabituelle, un gonflement ou une zone noire ne doivent pas être banalisés.\n\nAvec le temps, le diabète peut provoquer une neuropathie : la sensibilité à la douleur, à la chaleur ou aux traumatismes peut diminuer. Une ampoule ou une petite blessure peut ainsi ne pas être ressentie. Le diabète peut également être associé à une atteinte artérielle réduisant la circulation dans les membres inférieurs.\n\nD’où l’intérêt de regarder régulièrement ses pieds, y compris la plante et les espaces entre les orteils : ampoule, fissure, plaie, rougeur, callosité inhabituelle ou changement de couleur méritent attention. Les chaussures doivent être adaptées et ne pas créer de zones de frottement ou de pression. Chez les personnes ayant perdu une partie de leur sensibilité, il faut éviter de marcher pieds nus.\n\nTous les patients diabétiques n’ont pas le même risque. Les recommandations prévoient une stratification selon notamment la neuropathie, l’atteinte artérielle, les déformations du pied et les antécédents d’ulcère ou d’amputation. La fréquence du suivi professionnel augmente avec le niveau de risque. Le suivi permet aussi de repérer les personnes pouvant bénéficier de soins podologiques, d’une prise en charge des callosités ou de chaussures spécifiques.\n\nExaminer régulièrement ses pieds, maintenir une hygiène simple, bien sécher notamment entre les orteils et vérifier l’absence de corps étranger ou de zone agressive dans les chaussures sont des mesures simples. Éviter de traiter soi-même une lésion profonde ou une callosité importante avec des instruments ou produits agressifs. Une plaie, une ampoule persistante, une rougeur ou un gonflement nouveaux, un écoulement, une modification de couleur ou une zone noire nécessitent un avis médical rapide."
+    },
+    {
+      "id": "maladie-chronique-travail-confidentialite",
+      "title": "Travail et maladie chronique : faut-il en parler à son employeur ou à ses collègues ?",
+      "primaryCategory": "Santé au quotidien",
+      "categories": [
+        "Santé au quotidien"
+      ],
+      "keywords": [
+        "maladie chronique travail employeur collègues confidentialité secret médical médecin du travail aménagement poste RQTH préreprise MICI diabète"
+      ],
+      "content": {
+        "answer": "En général, il n’est pas nécessaire de révéler son diagnostic à son employeur ou à ses collègues. Les informations médicales relèvent de la vie privée. En revanche, lorsqu’une maladie chronique entraîne des difficultés concrètes au travail, en parler au médecin du travail, soumis au secret médical, peut permettre de rechercher des aménagements sans communiquer le diagnostic à l’employeur.",
+        "detail": "Vivre avec une maladie chronique — diabète, MICI, maladie inflammatoire, cancer, maladie neurologique… — pose parfois une question délicate : qui doit savoir quoi dans l’entreprise ?\n\nIl faut distinguer le diagnostic de ses conséquences professionnelles. Le salarié n’a pas à communiquer à son employeur les informations concernant son état de santé. Le médecin du travail est soumis au secret médical : il peut proposer des adaptations ou restrictions sans expliquer à l’employeur la maladie qui les justifie.\n\nIl peut être utile de rechercher une adaptation lorsque la maladie a des conséquences concrètes : fatigue importante, besoin d’accéder fréquemment aux toilettes, contraintes liées aux repas ou aux traitements, limitations physiques, rendez-vous médicaux répétés ou difficulté à reprendre le même rythme après un arrêt. Le médecin du travail constitue alors l’interlocuteur privilégié. Selon la situation, il peut proposer une adaptation du poste ou du temps de travail. Après un arrêt prolongé, une visite de préreprise peut permettre d’anticiper les difficultés avant le retour. D’autres dispositifs peuvent être mobilisés selon la situation, notamment le temps partiel thérapeutique ou la RQTH.\n\nParler directement de sa maladie à son employeur reste un choix différent. Cela peut parfois simplifier l’organisation, mais il n’est pas nécessaire de raconter son histoire médicale pour exprimer un besoin professionnel. Même logique avec les collègues : certaines personnes souhaitent qu’un collègue de confiance sache quoi faire dans une situation prévisible, par exemple une hypoglycémie ; d’autres préfèrent conserver cette information privée.\n\nEnfin, l’état de santé et le handicap font partie des critères protégés contre les discriminations par le Code du travail.",
+        "usefulInfo": "",
+        "watch": "La question utile est souvent moins « dois-je dire quelle maladie j’ai ? » que « ai-je besoin d’un aménagement pour continuer à travailler dans de bonnes conditions ? ». En cas de difficulté durable, le médecin du travail peut être sollicité sans attendre que la situation se dégrade. Les informations médicales restent confidentielles."
+      },
+      "sources": [
+        {
+          "label": "Ministère du Travail — Quand et pourquoi parler de son problème de santé à son employeur ?",
+          "url": "https://travail-emploi.gouv.fr/quand-et-pourquoi-parler-de-son-probleme-de-sante-son-employeur"
+        },
+        {
+          "label": "Légifrance — Code du travail, article L1132-1",
+          "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042026716"
+        },
+        {
+          "label": "Assurance Maladie — Reprendre le travail après un arrêt maladie",
+          "url": "https://www.ameli.fr/assure/droits-demarches/maladie-accident-hospitalisation/arret-travail-maladie/reprendre-travail-apres-arret-maladie"
+        },
+        {
+          "label": "Ministère du Travail · Légifrance · Assurance Maladie",
+          "url": ""
+        }
+      ],
+      "url": "",
+      "metadata": {
+        "validationStatus": "VALIDATED",
+        "editorialStatus": "",
+        "evidenceStatus": "VALIDÉ — Patient Question Map #2 — validation médicale MACA 19/09/2026",
+        "verifiedAt": "19/09/2026",
+        "nextAuditAt": "19/03/2027",
+        "auditIntervalMonths": 6
+      },
+      "retrievalText": "Travail et maladie chronique : faut-il en parler à son employeur ou à ses collègues ?\n\nMots-clés : maladie chronique travail employeur collègues confidentialité secret médical médecin du travail aménagement poste RQTH préreprise MICI diabète\n\nEn général, il n’est pas nécessaire de révéler son diagnostic à son employeur ou à ses collègues. Les informations médicales relèvent de la vie privée. En revanche, lorsqu’une maladie chronique entraîne des difficultés concrètes au travail, en parler au médecin du travail, soumis au secret médical, peut permettre de rechercher des aménagements sans communiquer le diagnostic à l’employeur.\n\nVivre avec une maladie chronique — diabète, MICI, maladie inflammatoire, cancer, maladie neurologique… — pose parfois une question délicate : qui doit savoir quoi dans l’entreprise ?\n\nIl faut distinguer le diagnostic de ses conséquences professionnelles. Le salarié n’a pas à communiquer à son employeur les informations concernant son état de santé. Le médecin du travail est soumis au secret médical : il peut proposer des adaptations ou restrictions sans expliquer à l’employeur la maladie qui les justifie.\n\nIl peut être utile de rechercher une adaptation lorsque la maladie a des conséquences concrètes : fatigue importante, besoin d’accéder fréquemment aux toilettes, contraintes liées aux repas ou aux traitements, limitations physiques, rendez-vous médicaux répétés ou difficulté à reprendre le même rythme après un arrêt. Le médecin du travail constitue alors l’interlocuteur privilégié. Selon la situation, il peut proposer une adaptation du poste ou du temps de travail. Après un arrêt prolongé, une visite de préreprise peut permettre d’anticiper les difficultés avant le retour. D’autres dispositifs peuvent être mobilisés selon la situation, notamment le temps partiel thérapeutique ou la RQTH.\n\nParler directement de sa maladie à son employeur reste un choix différent. Cela peut parfois simplifier l’organisation, mais il n’est pas nécessaire de raconter son histoire médicale pour exprimer un besoin professionnel. Même logique avec les collègues : certaines personnes souhaitent qu’un collègue de confiance sache quoi faire dans une situation prévisible, par exemple une hypoglycémie ; d’autres préfèrent conserver cette information privée.\n\nEnfin, l’état de santé et le handicap font partie des critères protégés contre les discriminations par le Code du travail.\n\nLa question utile est souvent moins « dois-je dire quelle maladie j’ai ? » que « ai-je besoin d’un aménagement pour continuer à travailler dans de bonnes conditions ? ». En cas de difficulté durable, le médecin du travail peut être sollicité sans attendre que la situation se dégrade. Les informations médicales restent confidentielles."
+    },
+    {
+      "id": "maladie-chronique-voyage",
+      "title": "Voyager avec une maladie chronique : traitements, documents et précautions à prévoir",
+      "primaryCategory": "Santé au quotidien",
+      "categories": [
+        "Santé au quotidien"
+      ],
+      "keywords": [
+        "maladie chronique voyage médicaments ordonnance traitement avion douane conservation chaîne froid décalage horaire diabète MICI matériel hydratation alimentation"
+      ],
+      "content": {
+        "answer": "Une maladie chronique n’empêche pas nécessairement de voyager, mais elle demande davantage d’anticipation. Il faut notamment prévoir assez de médicaments pour le séjour avec une marge de sécurité, conserver l’ordonnance et les traitements dans leur emballage d’origine et vérifier leurs conditions de transport et de conservation. Pour certains médicaments ou matériels, des documents supplémentaires peuvent être nécessaires. Un décalage horaire important peut aussi nécessiter d’adapter les horaires de prise avec un professionnel de santé.",
+        "detail": "Le premier objectif est de ne pas interrompre involontairement son traitement pendant le voyage. Il est utile de prévoir une quantité suffisante pour toute la durée du séjour, avec une marge en cas d’imprévu, et de garder l’ordonnance avec soi. Pour l’étranger, la dénomination commune internationale des médicaments peut faciliter leur identification.\n\nEn avion, les médicaments indispensables et le matériel nécessaire pendant le trajet doivent rester accessibles. Conserver les traitements dans leur emballage d’origine facilite également les contrôles. Pour certains traitements injectables ou matériels, un certificat médical peut être utile. Les règles ne sont pas identiques dans tous les pays : certains médicaments, notamment ceux soumis à une réglementation particulière, nécessitent des documents spécifiques. Il faut vérifier les règles de la destination avant le départ.\n\nLes conditions de conservation comptent aussi. Certains traitements supportent mal la chaleur ou le gel et d’autres nécessitent des précautions particulières. Il ne faut pas improviser une conservation différente de celle prévue par le médicament.\n\nLe décalage horaire mérite une attention spécifique lorsque le traitement doit être pris à heures précises. L’adaptation dépend du médicament et ne doit pas être improvisée. Certaines maladies nécessitent ensuite des précautions supplémentaires. Pour le diabète, le rythme des injections, des repas, de la surveillance glycémique et le risque d’hypoglycémie peuvent nécessiter une préparation spécifique. Pour une MICI, l’anticipation peut davantage concerner l’accès aux toilettes, l’hydratation, l’alimentation et la continuité du traitement. Selon la destination, couverture des soins, vaccinations et accès à une assistance médicale peuvent également être anticipés.",
+        "usefulInfo": "",
+        "watch": "Avant le départ : traitement en quantité suffisante avec une marge raisonnable, ordonnance, emballages d’origine, documents nécessaires, conditions de conservation, règles du pays et éventuel décalage horaire. Un traitement complexe, injectable, thermosensible ou à horaires stricts mérite une préparation spécifique avec le médecin ou le pharmacien ; les doses ou intervalles ne doivent pas être modifiés au hasard."
+      },
+      "sources": [
+        {
+          "label": "Assurance Maladie — Préparer sa trousse de médicaments pour un voyage",
+          "url": "https://www.ameli.fr/assure/sante/medicaments/medicaments-et-situation-de-vie/preparer-trousse-medicaments-voyage"
+        },
+        {
+          "label": "Assurance Maladie — Traitement habituel et décalage horaire",
+          "url": "https://www.ameli.fr/assure/sante/themes/decalage-horaire-et-sante-jet-lag/traitement-decalage-horaire"
+        },
+        {
+          "label": "Assurance Maladie — Diabète : voyager en toute sécurité",
+          "url": "https://www.ameli.fr/assure/sante/themes/diabete-adulte/diabete-vivre-quotidien/vie-pratique/voyager-securite-diabete"
+        },
+        {
+          "label": "France Diplomatie — La santé en voyage",
+          "url": "https://www.diplomatie.gouv.fr/fr/informations-pratiques/preparer-son-depart/la-sante-en-voyage/"
+        },
+        {
+          "label": "Assurance Maladie · France Diplomatie · ANSM",
+          "url": ""
+        }
+      ],
+      "url": "",
+      "metadata": {
+        "validationStatus": "VALIDATED",
+        "editorialStatus": "",
+        "evidenceStatus": "VALIDÉ — Patient Question Map #2 — validation médicale MACA 19/09/2026",
+        "verifiedAt": "19/09/2026",
+        "nextAuditAt": "19/03/2027",
+        "auditIntervalMonths": 6
+      },
+      "retrievalText": "Voyager avec une maladie chronique : traitements, documents et précautions à prévoir\n\nMots-clés : maladie chronique voyage médicaments ordonnance traitement avion douane conservation chaîne froid décalage horaire diabète MICI matériel hydratation alimentation\n\nUne maladie chronique n’empêche pas nécessairement de voyager, mais elle demande davantage d’anticipation. Il faut notamment prévoir assez de médicaments pour le séjour avec une marge de sécurité, conserver l’ordonnance et les traitements dans leur emballage d’origine et vérifier leurs conditions de transport et de conservation. Pour certains médicaments ou matériels, des documents supplémentaires peuvent être nécessaires. Un décalage horaire important peut aussi nécessiter d’adapter les horaires de prise avec un professionnel de santé.\n\nLe premier objectif est de ne pas interrompre involontairement son traitement pendant le voyage. Il est utile de prévoir une quantité suffisante pour toute la durée du séjour, avec une marge en cas d’imprévu, et de garder l’ordonnance avec soi. Pour l’étranger, la dénomination commune internationale des médicaments peut faciliter leur identification.\n\nEn avion, les médicaments indispensables et le matériel nécessaire pendant le trajet doivent rester accessibles. Conserver les traitements dans leur emballage d’origine facilite également les contrôles. Pour certains traitements injectables ou matériels, un certificat médical peut être utile. Les règles ne sont pas identiques dans tous les pays : certains médicaments, notamment ceux soumis à une réglementation particulière, nécessitent des documents spécifiques. Il faut vérifier les règles de la destination avant le départ.\n\nLes conditions de conservation comptent aussi. Certains traitements supportent mal la chaleur ou le gel et d’autres nécessitent des précautions particulières. Il ne faut pas improviser une conservation différente de celle prévue par le médicament.\n\nLe décalage horaire mérite une attention spécifique lorsque le traitement doit être pris à heures précises. L’adaptation dépend du médicament et ne doit pas être improvisée. Certaines maladies nécessitent ensuite des précautions supplémentaires. Pour le diabète, le rythme des injections, des repas, de la surveillance glycémique et le risque d’hypoglycémie peuvent nécessiter une préparation spécifique. Pour une MICI, l’anticipation peut davantage concerner l’accès aux toilettes, l’hydratation, l’alimentation et la continuité du traitement. Selon la destination, couverture des soins, vaccinations et accès à une assistance médicale peuvent également être anticipés.\n\nAvant le départ : traitement en quantité suffisante avec une marge raisonnable, ordonnance, emballages d’origine, documents nécessaires, conditions de conservation, règles du pays et éventuel décalage horaire. Un traitement complexe, injectable, thermosensible ou à horaires stricts mérite une préparation spécifique avec le médecin ou le pharmacien ; les doses ou intervalles ne doivent pas être modifiés au hasard."
+    },
+    {
+      "id": "alzheimer-entree-etablissement",
+      "title": "Alzheimer : quand envisager une entrée en établissement et comment préparer cette décision ?",
+      "primaryCategory": "Seniors",
+      "categories": [
+        "Seniors"
+      ],
+      "keywords": [
+        "Alzheimer démence EHPAD établissement maison retraite entrée maintien domicile autonomie sécurité aidant épuisement accueil jour hébergement temporaire"
+      ],
+      "content": {
+        "answer": "Il n’existe pas un stade précis de la maladie d’Alzheimer qui impose automatiquement une entrée en établissement. La question se pose surtout lorsque la sécurité ou les besoins quotidiens deviennent difficiles à assurer à domicile malgré les aides, que la perte d’autonomie progresse ou que l’aidant s’épuise. Des solutions intermédiaires peuvent parfois prolonger le maintien à domicile. Si une entrée en établissement devient envisageable, l’anticiper et associer autant que possible la personne aux décisions facilite la transition.",
+        "detail": "Le diagnostic d’Alzheimer ne signifie pas qu’il faut quitter immédiatement son domicile. Les besoins évoluent progressivement et différemment d’une personne à l’autre.\n\nLa réflexion porte d’abord sur la vie quotidienne réelle : la personne peut-elle encore manger correctement, prendre ses traitements, se déplacer et rester seule sans risque excessif ? Existe-t-il des chutes répétées, des sorties avec désorientation, des oublis dangereux, des troubles du comportement difficiles à gérer ou un besoin croissant de surveillance ? Mais la sécurité n’est qu’une partie de la décision.\n\nIl faut également tenir compte de ce qui peut être organisé à domicile : aides professionnelles, soins, adaptation du logement, accueil de jour, soutien des proches ou hébergement temporaire. Ces solutions peuvent parfois maintenir plus longtemps un équilibre satisfaisant. La situation de l’aidant fait pleinement partie de l’évaluation. Un maintien à domicile qui n’est possible qu’au prix d’un épuisement physique ou psychologique majeur du conjoint ou de la famille n’est pas nécessairement durable.\n\nLorsque l’établissement devient une possibilité sérieuse, mieux vaut commencer à y réfléchir avant une situation de crise. Plusieurs éléments entrent alors en compte : degré d’autonomie, besoins médicaux et de surveillance, capacité de l’établissement à accompagner les troubles cognitifs, proximité des proches, coût et possibilités d’aides financières. La personne malade doit rester impliquée dans les décisions autant que ses capacités le permettent. Ses habitudes, ses souhaits et ses repères comptent.\n\nLa transition elle-même mérite d’être préparée : visiter si possible l’établissement, transmettre les habitudes de vie, les traitements, les besoins et les préférences, et conserver des repères familiers peuvent aider. L’entrée en établissement ne fait pas disparaître le rôle des proches : leur place évolue.",
+        "usefulInfo": "",
+        "watch": "Quatre questions peuvent structurer la réflexion : la personne est-elle suffisamment en sécurité ? Les aides à domicile répondent-elles encore à ses besoins ? Le niveau de surveillance est-il devenu difficilement compatible avec le domicile ? L’aidant peut-il continuer sans s’épuiser ? Aucune ne décide seule de l’entrée en établissement. Une aggravation brutale de la confusion ou de l’autonomie ne doit pas être attribuée automatiquement à Alzheimer : une cause médicale aiguë doit être recherchée."
+      },
+      "sources": [
+        {
+          "label": "HAS — Maladies neurodégénératives : accompagner les personnes à domicile",
+          "url": "https://www.has-sante.fr/jcms/p_3217902/fr/maladies-neurodegeneratives-adapter-ses-pratiques-pour-accompagner-les-personnes-a-domicile"
+        },
+        {
+          "label": "Pour les personnes âgées — Vivre à domicile avec la maladie d’Alzheimer",
+          "url": "https://www.pour-les-personnes-agees.gouv.fr/vivre-a-domicile/vivre-a-domicile-avec-une-maladie-ou-un-handicap/vivre-a-domicile-avec-la-maladie-d-alzheimer-ou-une-maladie-apparentee"
+        },
+        {
+          "label": "NICE NG97 — Dementia: assessment, management and support",
+          "url": "https://www.nice.org.uk/guidance/ng97"
+        },
+        {
+          "label": "Pour les personnes âgées — Préparer son entrée en maison de retraite",
+          "url": "https://www.pour-les-personnes-agees.gouv.fr/dossiers/preparer-son-entree-en-maison-de-retraite"
+        },
+        {
+          "label": "HAS · Pour les personnes âgées · NICE · France Alzheimer",
+          "url": ""
+        }
+      ],
+      "url": "",
+      "metadata": {
+        "validationStatus": "VALIDATED",
+        "editorialStatus": "",
+        "evidenceStatus": "VALIDÉ — Patient Question Map #2 — validation médicale MACA 19/09/2026",
+        "verifiedAt": "19/09/2026",
+        "nextAuditAt": "19/03/2027",
+        "auditIntervalMonths": 6
+      },
+      "retrievalText": "Alzheimer : quand envisager une entrée en établissement et comment préparer cette décision ?\n\nMots-clés : Alzheimer démence EHPAD établissement maison retraite entrée maintien domicile autonomie sécurité aidant épuisement accueil jour hébergement temporaire\n\nIl n’existe pas un stade précis de la maladie d’Alzheimer qui impose automatiquement une entrée en établissement. La question se pose surtout lorsque la sécurité ou les besoins quotidiens deviennent difficiles à assurer à domicile malgré les aides, que la perte d’autonomie progresse ou que l’aidant s’épuise. Des solutions intermédiaires peuvent parfois prolonger le maintien à domicile. Si une entrée en établissement devient envisageable, l’anticiper et associer autant que possible la personne aux décisions facilite la transition.\n\nLe diagnostic d’Alzheimer ne signifie pas qu’il faut quitter immédiatement son domicile. Les besoins évoluent progressivement et différemment d’une personne à l’autre.\n\nLa réflexion porte d’abord sur la vie quotidienne réelle : la personne peut-elle encore manger correctement, prendre ses traitements, se déplacer et rester seule sans risque excessif ? Existe-t-il des chutes répétées, des sorties avec désorientation, des oublis dangereux, des troubles du comportement difficiles à gérer ou un besoin croissant de surveillance ? Mais la sécurité n’est qu’une partie de la décision.\n\nIl faut également tenir compte de ce qui peut être organisé à domicile : aides professionnelles, soins, adaptation du logement, accueil de jour, soutien des proches ou hébergement temporaire. Ces solutions peuvent parfois maintenir plus longtemps un équilibre satisfaisant. La situation de l’aidant fait pleinement partie de l’évaluation. Un maintien à domicile qui n’est possible qu’au prix d’un épuisement physique ou psychologique majeur du conjoint ou de la famille n’est pas nécessairement durable.\n\nLorsque l’établissement devient une possibilité sérieuse, mieux vaut commencer à y réfléchir avant une situation de crise. Plusieurs éléments entrent alors en compte : degré d’autonomie, besoins médicaux et de surveillance, capacité de l’établissement à accompagner les troubles cognitifs, proximité des proches, coût et possibilités d’aides financières. La personne malade doit rester impliquée dans les décisions autant que ses capacités le permettent. Ses habitudes, ses souhaits et ses repères comptent.\n\nLa transition elle-même mérite d’être préparée : visiter si possible l’établissement, transmettre les habitudes de vie, les traitements, les besoins et les préférences, et conserver des repères familiers peuvent aider. L’entrée en établissement ne fait pas disparaître le rôle des proches : leur place évolue.\n\nQuatre questions peuvent structurer la réflexion : la personne est-elle suffisamment en sécurité ? Les aides à domicile répondent-elles encore à ses besoins ? Le niveau de surveillance est-il devenu difficilement compatible avec le domicile ? L’aidant peut-il continuer sans s’épuiser ? Aucune ne décide seule de l’entrée en établissement. Une aggravation brutale de la confusion ou de l’autonomie ne doit pas être attribuée automatiquement à Alzheimer : une cause médicale aiguë doit être recherchée."
+    },
+    {
+      "id": "cafe-coeur-cafeine",
+      "title": "Café et cœur : est-ce mauvais pour la santé cardiovasculaire ?",
+      "primaryCategory": "Cœur & circulation",
+      "categories": [
+        "Cœur & circulation"
+      ],
+      "keywords": [
+        "café cafe caféine caffeine cœur cardiovasculaire tension hypertension arythmie fibrillation atriale palpitations boisson énergisante energy drink"
+      ],
+      "content": {
+        "answer": "Pas de façon générale. Les données actuelles ne permettent pas de classer le café comme « mauvais pour le cœur ». Une déclaration scientifique récente de l’American Heart Association souligne que les effets dépendent de la source et de la quantité de caféine ainsi que du terrain. Chez la majorité des adultes qui consomment déjà du café ou du thé caféiné, une consommation modérée de caféine naturellement présente ne semble pas nocive pour le système cardiovasculaire. Cela ne signifie pas qu’il faille commencer à boire du café pour protéger son cœur, ni que café, caféine concentrée et boissons énergisantes soient équivalents.",
+        "detail": "Le mot « caféine » regroupe des situations très différentes. Une tasse de café ou de thé apporte de la caféine au sein d’une boisson complexe, alors que certaines boissons énergisantes ou produits concentrés peuvent apporter des doses élevées rapidement. C’est l’une des raisons pour lesquelles il est trompeur de résumer la question par « le café est bon » ou « le café est mauvais » pour le cœur.\n\nLa déclaration scientifique de l’American Heart Association publiée en 2026 insiste sur plusieurs dimensions : la quantité consommée, la source de la caféine et les différences individuelles de métabolisme. Certaines personnes ressentent palpitations, nervosité ou troubles du sommeil à des doses que d’autres tolèrent bien.\n\nLa pression artérielle peut augmenter transitoirement après une prise de caféine, surtout chez les personnes peu habituées. Cela ne signifie pas qu’une consommation habituelle modérée provoque automatiquement une hypertension chronique. Les données observationnelles disponibles sur le café et le thé sont globalement rassurantes, mais elles ne suffisent pas à recommander de commencer à en consommer dans un objectif cardiovasculaire.\n\nConcernant le rythme cardiaque, l’idée selon laquelle toute personne ayant des palpitations ou une fibrillation atriale devrait supprimer systématiquement le café n’est pas étayée de façon simple. Un essai randomisé publié dans JAMA a même montré que, chez des personnes atteintes de fibrillation atriale, la stratégie de consommation de café caféiné étudiée n’augmentait pas les récidives par rapport à l’abstinence. Cela ne transforme pas le café en traitement et ne signifie pas que chacun le tolère de la même façon.\n\nLes boissons énergisantes constituent un cas différent. Leur teneur en caféine, leur mode de consommation et parfois leur association à d’autres stimulants ou à l’alcool justifient davantage de prudence.\n\nLe message pratique est donc de raisonner en quantité, en source et en tolérance individuelle. Une consommation habituelle modérée de café n’a pas à être considérée automatiquement comme dangereuse pour le cœur, mais augmenter volontairement sa consommation pour obtenir un bénéfice cardiovasculaire n’est pas recommandé.",
+        "usefulInfo": "",
+        "watch": "Des palpitations importantes, un malaise, une douleur thoracique ou un essoufflement inhabituel nécessitent une évaluation médicale et ne doivent pas être attribués automatiquement au café. Une personne qui constate de façon reproductible que la caféine déclenche des symptômes peut réduire ses apports et en parler avec un professionnel de santé."
+      },
+      "sources": [
+        {
+          "label": "JAMA — Caffeine and Cardiovascular Health: What the Science Says, 18 septembre 2026",
+          "url": "https://jamanetwork.com/journals/jama/fullarticle/2854422"
+        },
+        {
+          "label": "JAMA — DECAF randomized clinical trial",
+          "url": "https://jamanetwork.com/journals/jama/fullarticle/2841253"
+        },
+        {
+          "label": "American Heart Association · JAMA",
+          "url": ""
+        }
+      ],
+      "url": "https://jamanetwork.com/journals/jama/fullarticle/2854422",
+      "metadata": {
+        "validationStatus": "VALIDATED",
+        "editorialStatus": "",
+        "evidenceStatus": "VALIDÉ — capitalisation éditoriale MACA 20/09/2026 ; déclaration scientifique AHA relayée par JAMA + essai randomisé DECAF",
+        "verifiedAt": "20/09/2026",
+        "nextAuditAt": "20/12/2026",
+        "auditIntervalMonths": 3
+      },
+      "retrievalText": "Café et cœur : est-ce mauvais pour la santé cardiovasculaire ?\n\nMots-clés : café cafe caféine caffeine cœur cardiovasculaire tension hypertension arythmie fibrillation atriale palpitations boisson énergisante energy drink\n\nPas de façon générale. Les données actuelles ne permettent pas de classer le café comme « mauvais pour le cœur ». Une déclaration scientifique récente de l’American Heart Association souligne que les effets dépendent de la source et de la quantité de caféine ainsi que du terrain. Chez la majorité des adultes qui consomment déjà du café ou du thé caféiné, une consommation modérée de caféine naturellement présente ne semble pas nocive pour le système cardiovasculaire. Cela ne signifie pas qu’il faille commencer à boire du café pour protéger son cœur, ni que café, caféine concentrée et boissons énergisantes soient équivalents.\n\nLe mot « caféine » regroupe des situations très différentes. Une tasse de café ou de thé apporte de la caféine au sein d’une boisson complexe, alors que certaines boissons énergisantes ou produits concentrés peuvent apporter des doses élevées rapidement. C’est l’une des raisons pour lesquelles il est trompeur de résumer la question par « le café est bon » ou « le café est mauvais » pour le cœur.\n\nLa déclaration scientifique de l’American Heart Association publiée en 2026 insiste sur plusieurs dimensions : la quantité consommée, la source de la caféine et les différences individuelles de métabolisme. Certaines personnes ressentent palpitations, nervosité ou troubles du sommeil à des doses que d’autres tolèrent bien.\n\nLa pression artérielle peut augmenter transitoirement après une prise de caféine, surtout chez les personnes peu habituées. Cela ne signifie pas qu’une consommation habituelle modérée provoque automatiquement une hypertension chronique. Les données observationnelles disponibles sur le café et le thé sont globalement rassurantes, mais elles ne suffisent pas à recommander de commencer à en consommer dans un objectif cardiovasculaire.\n\nConcernant le rythme cardiaque, l’idée selon laquelle toute personne ayant des palpitations ou une fibrillation atriale devrait supprimer systématiquement le café n’est pas étayée de façon simple. Un essai randomisé publié dans JAMA a même montré que, chez des personnes atteintes de fibrillation atriale, la stratégie de consommation de café caféiné étudiée n’augmentait pas les récidives par rapport à l’abstinence. Cela ne transforme pas le café en traitement et ne signifie pas que chacun le tolère de la même façon.\n\nLes boissons énergisantes constituent un cas différent. Leur teneur en caféine, leur mode de consommation et parfois leur association à d’autres stimulants ou à l’alcool justifient davantage de prudence.\n\nLe message pratique est donc de raisonner en quantité, en source et en tolérance individuelle. Une consommation habituelle modérée de café n’a pas à être considérée automatiquement comme dangereuse pour le cœur, mais augmenter volontairement sa consommation pour obtenir un bénéfice cardiovasculaire n’est pas recommandé.\n\nDes palpitations importantes, un malaise, une douleur thoracique ou un essoufflement inhabituel nécessitent une évaluation médicale et ne doivent pas être attribués automatiquement au café. Une personne qui constate de façon reproductible que la caféine déclenche des symptômes peut réduire ses apports et en parler avec un professionnel de santé."
+    },
+    {
       "id": "magnesium-sante",
       "title": "Le magnésium est-il bon pour ma santé ?",
       "primaryCategory": "Santé au quotidien",
@@ -10092,9 +10960,9 @@
       ],
       "content": {
         "answer": "Oui, le magnésium est indispensable. Mais non, prendre du magnésium en complément n'améliore pas automatiquement la santé lorsqu'on n'en manque pas. La correction d'un déficit est utile ; hors déficit, quelques bénéfices ciblés existent ou sont possibles, mais la plupart des promesses grand public sont exagérées.",
-        "detail": "Cette fiche répond à une situation fréquente de santé quotidienne. Oui, le magnésium est indispensable. Mais non, prendre du magnésium en complément n'améliore pas automatiquement la santé lorsqu'on n'en manque pas. La correction d'un déficit est utile ; hors déficit, quelques bénéfices ciblés existent ou sont possibles, mais la plupart des promesses grand public sont exagérées.\n\nPour l’interpréter correctement, il faut surtout regarder le contexte, l’évolution dans le temps et les signes associés plutôt qu’un symptôme isolé. Deux personnes présentant le même symptôme peuvent avoir des causes et des niveaux de gravité très différents. L’objectif n’est donc pas de poser soi-même un diagnostic, mais de comprendre les repères utiles, ce qui peut être surveillé et ce qui mérite un avis professionnel.\n\nLe point pratique à retenir est le suivant : Privilégier les sources alimentaires : fruits à coque et autres oléagineux, légumineuses, céréales complètes, chocolat, certains fruits de mer et certaines eaux minérales. Une fatigue, des crampes ou une insomnie persistantes ne doivent pas être automatiquement attribuées à un manque de magnésium. Le dosage sanguin ne résume pas parfaitement le statut corporel en magnésium ; son interprétation dépend du contexte clinique. Les compléments provoquent surtout des effets digestifs, notamment diarrhée ; prudence particulière en cas d'insuffisance rénale. La limite supérieure européenne de 250 mg/j concerne le magnésium ajouté par compléments/aliments enrichis, pas le magnésium naturellement présent dans l'alimentation.\n\nLorsque les symptômes persistent, se répètent, s’aggravent ou deviennent difficiles à expliquer, une évaluation permet de remettre le problème dans son contexte et d’éviter aussi bien la banalisation que l’inquiétude inutile.",
+        "detail": "Cette fiche répond à une situation fréquente de santé quotidienne. Oui, le magnésium est indispensable. Mais non, prendre du magnésium en complément n'améliore pas automatiquement la santé lorsqu'on n'en manque pas. La correction d'un déficit est utile ; hors déficit, quelques bénéfices ciblés existent ou sont possibles, mais la plupart des promesses grand public sont exagérées.\n\nPour l’interpréter correctement, il faut surtout regarder le contexte, l’évolution dans le temps et les signes associés plutôt qu’un symptôme isolé. Deux personnes présentant le même symptôme peuvent avoir des causes et des niveaux de gravité très différents. L’objectif n’est donc pas de poser soi-même un diagnostic, mais de comprendre les repères utiles, ce qui peut être surveillé et ce qui mérite un avis professionnel.\n\nLe point pratique à retenir est le suivant : Privilégier les sources alimentaires : fruits à coque et autres oléagineux, légumineuses, céréales complètes, chocolat, certains fruits de mer et certaines eaux minérales. Une fatigue, des crampes ou une insomnie persistantes ne doivent pas être automatiquement attribuées à un manque de magnésium. Pour le sommeil, les données actuelles ne permettent pas de recommander systématiquement un complément ni d’affirmer que le bisglycinate est la meilleure forme. Le dosage sanguin ne résume pas parfaitement le statut corporel en magnésium ; son interprétation dépend du contexte clinique. Les compléments provoquent surtout des effets digestifs, notamment diarrhée ; prudence particulière en cas d'insuffisance rénale. La limite supérieure européenne de 250 mg/j concerne le magnésium ajouté par compléments/aliments enrichis, pas le magnésium naturellement présent dans l'alimentation.\n\nLorsque les symptômes persistent, se répètent, s’aggravent ou deviennent difficiles à expliquer, une évaluation permet de remettre le problème dans son contexte et d’éviter aussi bien la banalisation que l’inquiétude inutile.",
         "usefulInfo": "",
-        "watch": "Privilégier les sources alimentaires : fruits à coque et autres oléagineux, légumineuses, céréales complètes, chocolat, certains fruits de mer et certaines eaux minérales. Une fatigue, des crampes ou une insomnie persistantes ne doivent pas être automatiquement attribuées à un manque de magnésium. Le dosage sanguin ne résume pas parfaitement le statut corporel en magnésium ; son interprétation dépend du contexte clinique. Les compléments provoquent surtout des effets digestifs, notamment diarrhée ; prudence particulière en cas d'insuffisance rénale. La limite supérieure européenne de 250 mg/j concerne le magnésium ajouté par compléments/aliments enrichis, pas le magnésium naturellement présent dans l'alimentation."
+        "watch": "Privilégier les sources alimentaires : fruits à coque et autres oléagineux, légumineuses, céréales complètes, chocolat, certains fruits de mer et certaines eaux minérales. Une fatigue, des crampes ou une insomnie persistantes ne doivent pas être automatiquement attribuées à un manque de magnésium. Pour le sommeil, les données actuelles ne permettent pas de recommander systématiquement un complément ni d’affirmer que le bisglycinate est la meilleure forme. Le dosage sanguin ne résume pas parfaitement le statut corporel en magnésium ; son interprétation dépend du contexte clinique. Les compléments provoquent surtout des effets digestifs, notamment diarrhée ; prudence particulière en cas d'insuffisance rénale. La limite supérieure européenne de 250 mg/j concerne le magnésium ajouté par compléments/aliments enrichis, pas le magnésium naturellement présent dans l'alimentation."
       },
       "sources": [
         {
@@ -10106,12 +10974,12 @@
       "metadata": {
         "validationStatus": "",
         "editorialStatus": "",
-        "evidenceStatus": "PREUVES SOLIDES : rôle physiologique du magnésium et traitement d'une carence. SIGNAL FAVORABLE CIBLÉ : petite baisse de pression artérielle ; prévention de certaines migraines. DONNÉES ENCORE INCERTAINES : anxiété, sommeil, dépression. PAS DE BÉNÉFICE CLINIQUEMENT PERTINENT DÉMONTRÉ : crampes nocturnes idiopathiques de l'adulte. DONNÉES 2026 : pas d'amélioration globale significative de l'insulinorésistance dans diabète/prédiabète. NON DÉMONTRÉ : supplémentation systématique pour énergie, immunité, anti-âge, longévité ou prévention générale chez une personne non carencée.",
-        "verifiedAt": "20/08/2026",
+        "evidenceStatus": "PREUVES SOLIDES : rôle physiologique du magnésium et traitement d'une carence. SIGNAL FAVORABLE CIBLÉ : petite baisse de pression artérielle ; prévention de certaines migraines. DONNÉES ENCORE INCERTAINES : sommeil — revue systématique 2026 de 12 essais randomisés, résultats incohérents et certitude faible à très faible ; un essai 2025 du bisglycinate montre un bénéfice faible. Aucune forme de magnésium n’est démontrée supérieure pour le sommeil. Anxiété et dépression : données encore incertaines. PAS DE BÉNÉFICE CLINIQUEMENT PERTINENT DÉMONTRÉ : crampes nocturnes idiopathiques de l'adulte. DONNÉES 2026 : pas d'amélioration globale significative de l'insulinorésistance dans diabète/prédiabète. NON DÉMONTRÉ : supplémentation systématique pour énergie, immunité, anti-âge, longévité ou prévention générale chez une personne non carencée.",
+        "verifiedAt": "19/09/2026",
         "nextAuditAt": "",
         "auditIntervalMonths": null
       },
-      "retrievalText": "Le magnésium est-il bon pour ma santé ?\n\nMots-clés : magnésium magnesium complément compléments alimentaires fatigue stress anxiété sommeil insomnie crampes migraine tension hypertension carence dépression diabète longévité nutrition\n\nOui, le magnésium est indispensable. Mais non, prendre du magnésium en complément n'améliore pas automatiquement la santé lorsqu'on n'en manque pas. La correction d'un déficit est utile ; hors déficit, quelques bénéfices ciblés existent ou sont possibles, mais la plupart des promesses grand public sont exagérées.\n\nCette fiche répond à une situation fréquente de santé quotidienne. Oui, le magnésium est indispensable. Mais non, prendre du magnésium en complément n'améliore pas automatiquement la santé lorsqu'on n'en manque pas. La correction d'un déficit est utile ; hors déficit, quelques bénéfices ciblés existent ou sont possibles, mais la plupart des promesses grand public sont exagérées.\n\nPour l’interpréter correctement, il faut surtout regarder le contexte, l’évolution dans le temps et les signes associés plutôt qu’un symptôme isolé. Deux personnes présentant le même symptôme peuvent avoir des causes et des niveaux de gravité très différents. L’objectif n’est donc pas de poser soi-même un diagnostic, mais de comprendre les repères utiles, ce qui peut être surveillé et ce qui mérite un avis professionnel.\n\nLe point pratique à retenir est le suivant : Privilégier les sources alimentaires : fruits à coque et autres oléagineux, légumineuses, céréales complètes, chocolat, certains fruits de mer et certaines eaux minérales. Une fatigue, des crampes ou une insomnie persistantes ne doivent pas être automatiquement attribuées à un manque de magnésium. Le dosage sanguin ne résume pas parfaitement le statut corporel en magnésium ; son interprétation dépend du contexte clinique. Les compléments provoquent surtout des effets digestifs, notamment diarrhée ; prudence particulière en cas d'insuffisance rénale. La limite supérieure européenne de 250 mg/j concerne le magnésium ajouté par compléments/aliments enrichis, pas le magnésium naturellement présent dans l'alimentation.\n\nLorsque les symptômes persistent, se répètent, s’aggravent ou deviennent difficiles à expliquer, une évaluation permet de remettre le problème dans son contexte et d’éviter aussi bien la banalisation que l’inquiétude inutile.\n\nPrivilégier les sources alimentaires : fruits à coque et autres oléagineux, légumineuses, céréales complètes, chocolat, certains fruits de mer et certaines eaux minérales. Une fatigue, des crampes ou une insomnie persistantes ne doivent pas être automatiquement attribuées à un manque de magnésium. Le dosage sanguin ne résume pas parfaitement le statut corporel en magnésium ; son interprétation dépend du contexte clinique. Les compléments provoquent surtout des effets digestifs, notamment diarrhée ; prudence particulière en cas d'insuffisance rénale. La limite supérieure européenne de 250 mg/j concerne le magnésium ajouté par compléments/aliments enrichis, pas le magnésium naturellement présent dans l'alimentation."
+      "retrievalText": "Le magnésium est-il bon pour ma santé ?\n\nMots-clés : magnésium magnesium complément compléments alimentaires fatigue stress anxiété sommeil insomnie crampes migraine tension hypertension carence dépression diabète longévité nutrition\n\nOui, le magnésium est indispensable. Mais non, prendre du magnésium en complément n'améliore pas automatiquement la santé lorsqu'on n'en manque pas. La correction d'un déficit est utile ; hors déficit, quelques bénéfices ciblés existent ou sont possibles, mais la plupart des promesses grand public sont exagérées.\n\nCette fiche répond à une situation fréquente de santé quotidienne. Oui, le magnésium est indispensable. Mais non, prendre du magnésium en complément n'améliore pas automatiquement la santé lorsqu'on n'en manque pas. La correction d'un déficit est utile ; hors déficit, quelques bénéfices ciblés existent ou sont possibles, mais la plupart des promesses grand public sont exagérées.\n\nPour l’interpréter correctement, il faut surtout regarder le contexte, l’évolution dans le temps et les signes associés plutôt qu’un symptôme isolé. Deux personnes présentant le même symptôme peuvent avoir des causes et des niveaux de gravité très différents. L’objectif n’est donc pas de poser soi-même un diagnostic, mais de comprendre les repères utiles, ce qui peut être surveillé et ce qui mérite un avis professionnel.\n\nLe point pratique à retenir est le suivant : Privilégier les sources alimentaires : fruits à coque et autres oléagineux, légumineuses, céréales complètes, chocolat, certains fruits de mer et certaines eaux minérales. Une fatigue, des crampes ou une insomnie persistantes ne doivent pas être automatiquement attribuées à un manque de magnésium. Pour le sommeil, les données actuelles ne permettent pas de recommander systématiquement un complément ni d’affirmer que le bisglycinate est la meilleure forme. Le dosage sanguin ne résume pas parfaitement le statut corporel en magnésium ; son interprétation dépend du contexte clinique. Les compléments provoquent surtout des effets digestifs, notamment diarrhée ; prudence particulière en cas d'insuffisance rénale. La limite supérieure européenne de 250 mg/j concerne le magnésium ajouté par compléments/aliments enrichis, pas le magnésium naturellement présent dans l'alimentation.\n\nLorsque les symptômes persistent, se répètent, s’aggravent ou deviennent difficiles à expliquer, une évaluation permet de remettre le problème dans son contexte et d’éviter aussi bien la banalisation que l’inquiétude inutile.\n\nPrivilégier les sources alimentaires : fruits à coque et autres oléagineux, légumineuses, céréales complètes, chocolat, certains fruits de mer et certaines eaux minérales. Une fatigue, des crampes ou une insomnie persistantes ne doivent pas être automatiquement attribuées à un manque de magnésium. Pour le sommeil, les données actuelles ne permettent pas de recommander systématiquement un complément ni d’affirmer que le bisglycinate est la meilleure forme. Le dosage sanguin ne résume pas parfaitement le statut corporel en magnésium ; son interprétation dépend du contexte clinique. Les compléments provoquent surtout des effets digestifs, notamment diarrhée ; prudence particulière en cas d'insuffisance rénale. La limite supérieure européenne de 250 mg/j concerne le magnésium ajouté par compléments/aliments enrichis, pas le magnésium naturellement présent dans l'alimentation."
     },
     {
       "id": "projet-grossesse-quand-consulter",
@@ -10534,5 +11402,5 @@
       "retrievalText": "Je n’arrive pas à m’endormir le soir : que faire ?\n\nMots-clés : ado adolescent sommeil endormissement dormir écrans téléphone portable réseaux sociaux coucher fatigue caféine rythme\n\nÀ l’adolescence, l’horloge biologique a naturellement tendance à se décaler : on s’endort plus tard, alors qu’il faut toujours dormir suffisamment.\n\nLes écrans tard le soir, les horaires irréguliers, la caféine et le manque d’exposition à la lumière le matin peuvent encore accentuer ce décalage.\n\nAvant de penser à un médicament, il est généralement utile de retrouver des horaires réguliers, surtout pour le lever, de préparer progressivement le sommeil le soir et de limiter ce qui retarde l’endormissement.\n\nSe coucher tard à l’adolescence n’est pas uniquement une question de mauvaise habitude ou de manque de volonté. Le fonctionnement du sommeil change réellement pendant cette période de la vie.\n\nLe rythme veille-sommeil dépend notamment d’une horloge interne qui organise sur environ 24 heures l’alternance entre éveil et sommeil. À l’adolescence, cette horloge tend naturellement à se décaler vers des horaires plus tardifs. L'envie de dormir arrive donc plus tard le soir, alors que les contraintes scolaires imposent souvent de se lever tôt. L'Assurance Maladie rappelle en 2026 que ces modifications sont liées à la maturation normale mais peuvent être accentuées par le mode de vie.\n\nLe résultat peut être un véritable cercle vicieux. L’adolescent s’endort tard, accumule du manque de sommeil pendant la semaine puis essaie de récupérer en se levant beaucoup plus tard le week-end. Mais ce décalage peut rendre encore plus difficile l’endormissement du dimanche soir et le réveil du lundi matin.\n\nLes écrans peuvent également participer au problème. Il ne s’agit pas seulement de la lumière : réseaux sociaux, vidéos, conversations, jeux ou notifications maintiennent aussi le cerveau dans un état d'éveil et repoussent facilement l'heure à laquelle on décide réellement de dormir. L'Assurance Maladie conseille une pause écran en soirée, idéalement une à deux heures avant le coucher, et de laisser téléphone et autres appareils hors de la chambre pendant la nuit.\n\nLa caféine mérite également d'être recherchée. Elle n'est pas seulement présente dans le café : thé, colas et surtout certaines boissons énergisantes peuvent en apporter. Consommée tardivement, elle peut retarder l'endormissement. Nicotine, alcool ou cannabis peuvent également perturber le sommeil, même lorsque certaines de ces substances donnent initialement l'impression de faciliter l'endormissement.\n\nPour recaler progressivement le sommeil, l'heure de lever est particulièrement importante. Des horaires relativement réguliers, y compris le week-end, aident à stabiliser le rythme. L'exposition à la lumière et l'activité pendant la journée participent également à cette synchronisation.\n\nLe soir, l'objectif n'est pas de « forcer » le sommeil. Une période plus calme, moins stimulante, permet de préparer l'endormissement. Aller au lit uniquement lorsque la somnolence apparaît et réserver autant que possible le lit au sommeil peuvent également aider. Pour les adolescents, les besoins restent importants : l'Assurance Maladie indique un objectif d'environ 8 à 10 heures de sommeil, selon les besoins individuels.\n\nEnfin, toutes les difficultés d'endormissement ne sont pas simplement liées aux horaires. Une anxiété, une dépression, certains médicaments, des substances ou d'autres troubles du sommeil peuvent également intervenir. Une insomnie qui dure et retentit réellement sur la journée mérite donc d'être explorée.\n\nLes premiers leviers sont simples : heure de lever régulière, lumière et activité pendant la journée, diminution des excitants, pause écran le soir et téléphone hors de la chambre.\n\nUne mauvaise nuit occasionnelle n'est pas inquiétante. En revanche, si les difficultés persistent, entraînent une somnolence importante, une baisse des performances, une irritabilité marquée ou s'accompagnent d'un mal-être psychologique, il est utile d'en parler à un professionnel de santé."
     }
   ],
-  "fingerprint": "9e20504a0eb7ea8cf435a49a27737dca74f5a44031435c6eec163c7d57726d8d"
+  "fingerprint": "b043c76bbb1fb45a95ac47c0a6da76b1ea4b7f43c003a691d646a5f91df19f34"
 }
