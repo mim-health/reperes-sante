@@ -121,7 +121,19 @@
     ['quand commencer la diversification bebe',['diversification-alimentaire']],
     ['symptomes menopause',['menopause']],
     ['cistite',['cystite-femme']],
-    ['migrane',['migraine-que-faire']]
+    ['migrane',['migraine-que-faire']],
+    ['Alzheimer',['alzheimer-traitements-reconnus','activite-physique-alzheimer-risque-demence','alzheimer-refus-soins-repas','alzheimer-conduite-automobile','alzheimer-entree-etablissement']],
+    ['maladie d Alzheimer',['alzheimer-traitements-reconnus','activite-physique-alzheimer-risque-demence','alzheimer-refus-soins-repas','alzheimer-conduite-automobile','alzheimer-entree-etablissement']],
+    ['traitement Alzheimer',['alzheimer-traitements-reconnus']],
+    ['quels medicaments pour Alzheimer',['alzheimer-traitements-reconnus']],
+    ['Alzheimer conduite automobile',['alzheimer-conduite-automobile']],
+    ['peut on conduire avec Alzheimer',['alzheimer-conduite-automobile']],
+    ['Alzheimer EHPAD',['alzheimer-entree-etablissement']],
+    ['Alzheimer entree en etablissement',['alzheimer-entree-etablissement']],
+    ['Alzheimer activite physique',['activite-physique-alzheimer-risque-demence']],
+    ['prevenir Alzheimer en bougeant',['activite-physique-alzheimer-risque-demence']],
+    ['Alzheimer refus de toilette',['alzheimer-refus-soins-repas']],
+    ['Alzheimer refuse de manger',['alzheimer-refus-soins-repas']]
   ].map(([query,ids])=>({query,expectedIds:ids}));
   root.MACA_SEARCH_V2_P0_TESTS=cases;
 })(typeof window!=='undefined'?window:globalThis);
