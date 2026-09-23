@@ -1,0 +1,140 @@
+name: assistant v2 auto-publish corpus
+
+on:
+  push:
+    branches:
+      - feat/v0-magazine
+      - feat/assistant-v2-auto-publish-20260923
+    paths:
+      - '.github/workflows/assistant-v2-auto-publish.yml'
+      - 'scripts/build-assistant-v2-corpus.js'
+      - 'scripts/build-assistant-v2-embeddings.js'
+      - 'corpus-manifest.js'
+      - 'corpus-canonicalizer.js'
+      - 'maca-category-access.js'
+      - 'qa-data*.js'
+      - 'evidence-model.js'
+      - 'audit-overrides.js'
+      - 'backlog-*.js'
+      - 'maca-extra*.js'
+      - 'maca-daily-archive.js'
+      - 'structured-backlog-compat.js'
+      - 'migration-*.js'
+  workflow_dispatch:
+
+concurrency:
+  group: assistant-v2-auto-publish-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  build-test-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact source commit
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Build closed corpus from canonical sources
+        run: node scripts/build-assistant-v2-corpus.js
+
+      - name: Verify corpus completeness
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const report=JSON.parse(fs.readFileSync('assistant-v2/corpus.report.json','utf8'));
+          const corpus=JSON.parse(fs.readFileSync('assistant-v2/corpus.json','utf8'));
+          if(!report.ok) throw new Error('Corpus build report is not OK');
+          if(report.canonicalCardCount!==report.exportedCardCount) throw new Error(`Corpus mismatch ${report.exportedCardCount}/${report.canonicalCardCount}`);
+          if(corpus.cardCount!==report.exportedCardCount) throw new Error('Corpus/report card count mismatch');
+          if(!corpus.cardCount) throw new Error('Empty corpus');
+          const ids=corpus.cards.map(c=>c.id);
+          if(new Set(ids).size!==ids.length) throw new Error('Duplicate card ids');
+          console.log(`Corpus complete: ${corpus.cardCount}/${report.canonicalCardCount} cards; fingerprint=${corpus.fingerprint}`);
+          NODE
+
+      - name: Restore previous embeddings for incremental reuse
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          try {
+            const latest=JSON.parse(fs.readFileSync('assistant-v2/latest.json','utf8'));
+            const previous=`assistant-v2/public-artifacts/${latest.version}/embeddings.index.json`;
+            if(fs.existsSync(previous)){
+              fs.copyFileSync(previous,'assistant-v2/embeddings.index.json');
+              console.log(`Previous embedding index restored from ${latest.version}`);
+            } else {
+              console.log('No previous embedding index found; full rebuild will be used.');
+            }
+          } catch(e) {
+            console.log('No valid latest.json; full rebuild will be used.');
+          }
+          NODE
+
+      - name: Build or incrementally refresh embeddings
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          MACA_EMBEDDING_MODEL: text-embedding-3-small
+          MACA_EMBEDDING_DIMENSIONS: '512'
+        run: node scripts/build-assistant-v2-embeddings.js
+
+      - name: Verify corpus/embedding atomic integrity
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const corpus=JSON.parse(fs.readFileSync('assistant-v2/corpus.json','utf8'));
+          const embeddings=JSON.parse(fs.readFileSync('assistant-v2/embeddings.index.json','utf8'));
+          if(corpus.fingerprint!==embeddings.corpusFingerprint) throw new Error('Fingerprint mismatch');
+          if(corpus.cardCount!==embeddings.cardCount) throw new Error(`Card count mismatch ${corpus.cardCount}/${embeddings.cardCount}`);
+          const corpusIds=new Set(corpus.cards.map(c=>c.id));
+          const vectorIds=new Set(embeddings.vectors.map(v=>v.id));
+          if(corpusIds.size!==vectorIds.size) throw new Error('ID set size mismatch');
+          for(const id of corpusIds) if(!vectorIds.has(id)) throw new Error(`Missing embedding for ${id}`);
+          for(const id of vectorIds) if(!corpusIds.has(id)) throw new Error(`Orphan embedding for ${id}`);
+          console.log(`Atomic integrity OK: ${corpus.cardCount} cards/vectors`);
+          NODE
+
+      - name: Run public search regression
+        run: node search-v2-tests-p0.js
+
+      - name: Publish immutable version and atomic latest pointer
+        run: |
+          VERSION="$(node -p "require('./assistant-v2/corpus.json').fingerprint")"
+          CARD_COUNT="$(node -p "require('./assistant-v2/corpus.json').cardCount")"
+          DEST="assistant-v2/public-artifacts/$VERSION"
+          mkdir -p "$DEST"
+          cp assistant-v2/corpus.json "$DEST/corpus.json"
+          cp assistant-v2/embeddings.index.json "$DEST/embeddings.index.json"
+          node - <<NODE
+          const fs=require('fs');
+          const latest={
+            schemaVersion:1,
+            version:process.env.VERSION,
+            corpusFingerprint:process.env.VERSION,
+            cardCount:Number(process.env.CARD_COUNT),
+            sourceCommit:process.env.GITHUB_SHA,
+            generatedAt:new Date().toISOString()
+          };
+          fs.writeFileSync('assistant-v2/latest.json',JSON.stringify(latest,null,2)+'\n');
+          NODE
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin "$GITHUB_REF_NAME" --depth=1
+          REMOTE_HEAD="$(git rev-parse "origin/$GITHUB_REF_NAME")"
+          if [ "$REMOTE_HEAD" != "$GITHUB_SHA" ]; then
+            echo "Branch advanced ($GITHUB_SHA -> $REMOTE_HEAD); skip publication. A newer run will publish the current corpus."
+            exit 0
+          fi
+          git add assistant-v2/latest.json "$DEST/corpus.json" "$DEST/embeddings.index.json"
+          if git diff --cached --quiet; then
+            echo "Artifacts already current."
+            exit 0
+          fi
+          git commit -m "build(assistant-v2): publish validated corpus artifacts $VERSION"
+          git push origin "HEAD:$GITHUB_REF_NAME"
+        env:
+          VERSION: ${{ env.VERSION }}
+          CARD_COUNT: ${{ env.CARD_COUNT }}
