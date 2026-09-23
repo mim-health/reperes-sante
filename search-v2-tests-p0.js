@@ -47,8 +47,8 @@
     ['palpitations',['palpitations-adulte']],
     ['coeur qui s emballe',['palpitations-adulte']],
     ['palpitations quand consulter',['palpitations-quand-consulter']],
-    ['cystite',['maca-cystite-reperes']],
-    ['brulures en urinant',['maca-cystite-reperes']],
+    ['cystite',['cystite-femme']],
+    ['brulures en urinant',['cystite-femme']],
     ['pertes vaginales',[]],
     ['mal de tete',['maux-tete','migraine-que-faire']],
     ['migraine',['migraine-que-faire']],
@@ -106,8 +106,8 @@
     ['vite essouffle',['essoufflement-adulte']],
     ['extrasystoles',['palpitations-adulte']],
     ['coeur qui saute',['palpitations-adulte']],
-    ['infection urinaire',['maca-cystite-reperes']],
-    ['envie frequente d uriner',['maca-cystite-reperes']],
+    ['infection urinaire',['cystite-femme']],
+    ['envie frequente d uriner',['cystite-femme']],
     ['cephalee',['maux-tete','migraine-que-faire']],
     ['crise de migraine',['migraine-que-faire']],
     ['naevus qui change',['grain-beaute-change-melanome']],
@@ -120,7 +120,7 @@
     ['poux enfant',['poux-enfant-traitement']],
     ['quand commencer la diversification bebe',['diversification-alimentaire']],
     ['symptomes menopause',['menopause']],
-    ['cistite',['maca-cystite-reperes']],
+    ['cistite',['cystite-femme']],
     ['migrane',['migraine-que-faire']]
   ].map(([query,ids])=>({query,expectedIds:ids}));
   root.MACA_SEARCH_V2_P0_TESTS=cases;
