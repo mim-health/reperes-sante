@@ -15,7 +15,7 @@ const CATEGORY_MAP={
  'Prévention & dépistage':'Prévention & dépistage',
  'Respiration':'Santé au quotidien','Respiration & ORL':'Santé au quotidien','Peau & dermatologie':'Santé au quotidien',
  'Santé de l’homme':'Santé au quotidien','Voyage & prévention':'Santé au quotidien','Vrai ou faux ?':'Santé au quotidien',
- 'Santé quotidienne':'Santé au quotidien','Santé sexuelle':'Santé au quotidien','Neurologie':'Santé au quotidien','Cancer':'Santé au quotidien',
+ 'Santé quotidienne':'Santé au quotidien','Santé sexuelle':'Santé au quotidien','Neurologie':'Santé au quotidien','Cancer':'Cancer',
  'Santé au quotidien':'Santé au quotidien','Digestion & urinaire':'Digestion & urinaire',
  'Santé des femmes & grossesse':'Santé des femmes & grossesse','Enfants & parents':'Enfants & parents','Ados':'Ados','Santé mentale':'Santé mentale','Seniors':'Seniors'
 };
