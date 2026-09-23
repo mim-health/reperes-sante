@@ -46,7 +46,7 @@ jobs:
           raw=html.unescape(re.sub(r'<[^>]+>','',m.group(1))).strip()
           data=json.loads(raw)
           print('V2_REGRESSION_RESULT='+json.dumps(data,ensure_ascii=False))
-          if not (data.get('ready') and data.get('total')==120 and data.get('failed')==0): sys.exit(1)
+          if not (data.get('ready') and data.get('total')==132 and data.get('failed')==0): sys.exit(1)
           PY
 
       - name: Alpha parity — desktop
