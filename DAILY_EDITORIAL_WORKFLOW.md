@@ -49,15 +49,20 @@ Modifier uniquement l'objet `DAILY_EDITORIAL` après validation éditoriale :
 
 Le mécanisme de navigation lui-même ne doit pas être réécrit à chaque rotation.
 
-## Validation quotidienne de l'iconographie
-L'iconographie fait partie du lot éditorial à valider chaque jour.
+## Validation quotidienne de l'iconographie — RÈGLE OBLIGATOIRE
+L'iconographie fait partie intégrante du lot éditorial quotidien. **Une édition ne peut jamais être déclarée publiée ou terminée tant que tous les contenus visibles nécessitant une image n'ont pas une iconographie valide.**
 
 Avant publication :
-1. l'image doit être directement cohérente avec le sujet de l'À la une ;
-2. éviter toute image générique ou décorative sans rapport avec le sujet ;
-3. vérifier le droit d'utilisation / la licence et conserver la provenance ;
-4. vérifier le cadrage desktop et mobile ;
-5. ne publier l'image qu'avec le lot éditorial validé.
+1. utiliser par défaut une **photographie réelle réutilisable** lorsque le bloc éditorial attend une photographie ;
+2. l'image doit être directement cohérente avec le sujet du contenu concerné, et pas seulement avec l'À la une ;
+3. vérifier explicitement le droit d'utilisation / la licence ;
+4. conserver obligatoirement pour chaque image : `image`, `imageAlt`, `imageCredit`, `imageSource` et `imageLicense` ;
+5. un placeholder, rectangle typographique, fallback graphique ou illustration automatique **ne constitue pas une iconographie valide** lorsqu'une photographie est attendue ;
+6. vérifier le cadrage et le rendu sur desktop et mobile ;
+7. contrôler l'absence de fallback graphique avant de considérer la rotation comme terminée ;
+8. ne publier l'image qu'avec le lot éditorial validé.
+
+**Invariant de publication : contenu éditorial validé + iconographie complète et documentée + contrôle du rendu = édition terminée.**
 
 ## Cycle obligatoire : éditorial → fiche
 Avant de remplacer le contenu du jour précédent :
