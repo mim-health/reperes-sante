@@ -49,15 +49,21 @@ Modifier uniquement le lot éditorial après validation :
 
 Le mécanisme de navigation lui-même ne doit pas être réécrit à chaque rotation.
 
-## Validation quotidienne de l'iconographie
-L'iconographie fait partie du lot éditorial à valider chaque jour.
+## Validation quotidienne de l'iconographie — RÈGLE OBLIGATOIRE DU MAGAZINE
+L'iconographie fait partie intégrante du lot éditorial quotidien du magazine MACA. **Une édition ne peut jamais être déclarée publiée ou terminée tant que tous les contenus visibles nécessitant une image n'ont pas une iconographie valide.**
 
 Avant publication :
-1. l'image doit être directement cohérente avec le sujet de l'À la une ;
-2. éviter toute image générique ou décorative sans rapport avec le sujet ;
-3. vérifier le droit d'utilisation / la licence et conserver la provenance ;
-4. vérifier le cadrage desktop et mobile ;
-5. ne publier l'image qu'avec le lot éditorial validé.
+1. utiliser par défaut une **photographie réelle réutilisable** lorsque le bloc éditorial attend une photographie ;
+2. contrôler l'iconographie de **tous les blocs concernés**, pas seulement l'À la une ;
+3. chaque image doit être directement cohérente avec le sujet du contenu concerné ;
+4. vérifier explicitement le droit d'utilisation / la licence et conserver la provenance ;
+5. renseigner obligatoirement `image`, `imageAlt`, `imageCredit`, `imageSource` et `imageLicense` pour chaque contenu illustré ;
+6. un placeholder, rectangle typographique, fallback graphique ou illustration automatique **ne constitue pas une iconographie valide** lorsqu'une photographie est attendue ;
+7. vérifier le cadrage et le rendu sur desktop et mobile ;
+8. contrôler l'absence d'image manquante ou de fallback avant de considérer la rotation comme terminée ;
+9. ne publier l'édition qu'avec son iconographie complète et validée.
+
+**Invariant magazine : contenu éditorial validé + iconographie complète/documentée + contrôle du rendu = édition terminée.**
 
 ## Cycle OBLIGATOIRE : éditorial → corpus
 La validation éditoriale quotidienne n'est pas considérée comme terminée tant que la capitalisation vers le corpus n'a pas été examinée.
