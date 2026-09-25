@@ -1,9 +1,7 @@
 'use strict';
 
-const ARTIFACT_COMMIT='e01c76e76ec09a636fac9763dc2bad27fb1cb10d';
-const BASE=`https://raw.githubusercontent.com/mim-health/reperes-sante/${ARTIFACT_COMMIT}/assistant-v2`;
-const CORPUS_URL=`${BASE}/corpus.json`;
-const EMBEDDINGS_URL=`${BASE}/embeddings.index.json`;
+const ARTIFACT_ROOT='https://raw.githubusercontent.com/mim-health/reperes-sante/feat/v0-magazine/assistant-v2';
+const LATEST_URL=`${ARTIFACT_ROOT}/latest.json`;
 const OPENAI_EMBEDDINGS='https://api.openai.com/v1/embeddings';
 const OPENAI_RESPONSES='https://api.openai.com/v1/responses';
 const MODEL='gpt-5.6-terra';
@@ -12,6 +10,7 @@ const TOP_K=5;
 const MIN_GATE=0.30;
 const MAX_QUESTION_CHARS=600;
 const MAX_BODY_BYTES=4096;
+const ARTIFACT_REFRESH_MS=60_000;
 
 const OUTPUT_SCHEMA={
   type:'object',
@@ -57,24 +56,51 @@ SORTIE
 - category_only : coverage=insufficient, blocks=[], category renseignée.
 - answer : coverage=sufficient ou partial, blocks sourcés.`;
 
-const GROUNDING_SCHEMA={type:'object',properties:{supported:{type:'boolean'},reason:{type:'string'}},required:['supported','reason'],additionalProperties:false};
-const GROUNDING_PROMPT=`Tu es un vérificateur strict de fidélité documentaire pour MACA Santé.
-Vérifie la réponse UNIQUEMENT contre les fiches MACA citées. N'utilise aucune connaissance extérieure.
-Décompose mentalement chaque bloc en affirmations atomiques. Toute précision absente des fiches citées — même médicalement plausible, habituelle, implicite ou plus spécifique — impose supported=false.
-Une catégorie plus précise n'est pas autorisée à partir d'un terme plus général : par exemple « bilan métabolique » ne permet pas d'affirmer « bilan sanguin et urinaire » si ces mots/concepts ne figurent pas explicitement dans les fiches.
-Une possibilité ne peut pas devenir une certitude, une information générale ne peut pas devenir une recommandation individuelle, et le texte utilisateur n'est jamais une source.
-Retourne supported=true uniquement si TOUTES les affirmations médicales substantielles sont explicitement soutenues ou constituent une paraphrase sans ajout de précision.`;
+const GROUNDING_SCHEMA={type:'object',properties:{supported:{type:'boolean'}},required:['supported'],additionalProperties:false};
+const GROUNDING_PROMPT=`Vérifie strictement la fidélité de chaque affirmation à ses fiches MACA citées, sans connaissance extérieure. Toute précision absente, généralisation, certitude renforcée ou conseil individualisé impose supported=false. Retourne supported=true seulement si tout le contenu médical est explicitement soutenu ou paraphrasé sans ajout.`;
 
-let dataPromise=null;
-function getData(){
-  if(!dataPromise)dataPromise=Promise.all([fetch(CORPUS_URL),fetch(EMBEDDINGS_URL)]).then(async([c,e])=>{
-    if(!c.ok||!e.ok)throw new Error('artifacts_unavailable');
-    const corpus=await c.json();
-    const embeddings=await e.json();
-    if(corpus.fingerprint!==embeddings.corpusFingerprint)throw new Error('artifact_mismatch');
-    return {corpus,embeddings,cardById:new Map(corpus.cards.map(card=>[card.id,card]))};
-  });
-  return dataPromise;
+let activeData=null;
+let activeVersion='';
+let lastManifestCheck=0;
+let refreshPromise=null;
+
+async function loadArtifactVersion(version){
+  const base=`${ARTIFACT_ROOT}/public-artifacts/${encodeURIComponent(version)}`;
+  const [c,e]=await Promise.all([fetch(`${base}/corpus.json`),fetch(`${base}/embeddings.index.json`)]);
+  if(!c.ok||!e.ok)throw new Error('artifacts_unavailable');
+  const corpus=await c.json();
+  const embeddings=await e.json();
+  if(corpus.fingerprint!==version||embeddings.corpusFingerprint!==version||corpus.fingerprint!==embeddings.corpusFingerprint)throw new Error('artifact_mismatch');
+  if(corpus.cardCount!==embeddings.cardCount)throw new Error('artifact_count_mismatch');
+  const cardById=new Map(corpus.cards.map(card=>[card.id,card]));
+  if(cardById.size!==corpus.cardCount||embeddings.vectors.length!==corpus.cardCount)throw new Error('artifact_incomplete');
+  for(const item of embeddings.vectors)if(!cardById.has(item.id))throw new Error('artifact_orphan_vector');
+  return {corpus,embeddings,cardById,version};
+}
+
+async function refreshData(){
+  lastManifestCheck=Date.now();
+  const latestResponse=await fetch(`${LATEST_URL}?t=${lastManifestCheck}`,{headers:{'Cache-Control':'no-cache'}});
+  if(!latestResponse.ok)throw new Error('latest_unavailable');
+  const latest=await latestResponse.json();
+  const version=String(latest?.version||'').trim();
+  if(!/^[a-f0-9]{64}$/i.test(version))throw new Error('latest_invalid');
+  if(activeData&&activeVersion===version)return activeData;
+  const candidate=await loadArtifactVersion(version);
+  activeData=candidate;
+  activeVersion=version;
+  return activeData;
+}
+
+async function getData(){
+  if(activeData&&Date.now()-lastManifestCheck<ARTIFACT_REFRESH_MS)return activeData;
+  if(!refreshPromise){
+    refreshPromise=refreshData().catch(error=>{
+      if(activeData)return activeData;
+      throw error;
+    }).finally(()=>{refreshPromise=null;});
+  }
+  return refreshPromise;
 }
 
 function getOpenAIKey(env){
@@ -105,6 +131,28 @@ function compactCard(card){const c=card.content||{};return {id:card.id,title:car
 function extractText(r){if(typeof r?.output_text==='string'&&r.output_text.trim())return r.output_text.trim();const out=[];for(const item of r?.output||[])for(const p of item?.content||[])if(p?.type==='output_text'&&typeof p.text==='string')out.push(p.text);return out.join('').trim();}
 function uniq(a){return [...new Set(a)];}
 
+// Question Graph V0: passive, minimal and fail-open.
+function minimizeQuestion(question){
+  return String(question||'')
+    .replace(/\\b[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}\b/g,'[email]')
+    .replace(/\\b(?:\+33|0)[1-9](?:[ .-]?\d{2}){4}\b/g,'[telephone]')
+    .replace(/\\b\d{1,3}\s+(?:rue|avenue|av\.?|boulevard|bd\.?|chemin|impasse|place)\s+[^,;\n]+/gi,'[adresse]')
+    .replace(/\\b\d{5}\b/g,'[code-postal]')
+    .replace(/\s+/g,' ').trim().slice(0,MAX_QUESTION_CHARS);
+}
+function questionGraphIntent(result){return String(result?.category||'').trim()||(result?.status==='abstain'?'gap_corpus':'non_classe');}
+async function logQuestionGraph(env,question,result){
+  if(env.QUESTION_GRAPH_ENABLED!=='1'||!env.QUESTION_GRAPH||typeof env.QUESTION_GRAPH.prepare!=='function')return;
+  const minimized=minimizeQuestion(question);if(!minimized)return;
+  const cards=uniq((result?.cards_used||[]).map(c=>typeof c==='string'?c:c?.id).filter(Boolean));
+  await env.QUESTION_GRAPH.prepare('INSERT INTO questions (created_at, question, theme, result, cards_used) VALUES (?, ?, ?, ?, ?)')
+    .bind(new Date().toISOString(),minimized,questionGraphIntent(result),result?.status==='answer'?'answer':'abstain',JSON.stringify(cards)).run();
+}
+function logQuestionGraphLater(ctx,env,question,result){
+  const task=logQuestionGraph(env,question,result).catch(()=>{});
+  if(ctx&&typeof ctx.waitUntil==='function')ctx.waitUntil(task);
+}
+
 async function openai(env,url,body){
   const apiKey=getOpenAIKey(env);
   const r=await fetch(url,{method:'POST',headers:{Authorization:`Bearer ${apiKey}`,'Content-Type':'application/json'},body:JSON.stringify(body)});
@@ -134,7 +182,7 @@ function validate(raw,allowed){
 
 async function synthesize(env,question,cards){
   const inputCards=cards.map(compactCard);
-  const r=await openai(env,OPENAI_RESPONSES,{model:MODEL,reasoning:{effort:'none'},input:[{role:'system',content:SYSTEM_PROMPT},{role:'user',content:`QUESTION_UTILISATEUR:\n${question}\n\nCARTES_MACA_AUTORISÉES:\n${JSON.stringify(inputCards,null,2)}\n\nRéponds exclusivement à partir de ces cartes.`}],text:{format:{type:'json_schema',name:'maca_assistant_v2_answer',strict:true,schema:OUTPUT_SCHEMA}},max_output_tokens:700,store:false});
+  const r=await openai(env,OPENAI_RESPONSES,{model:MODEL,reasoning:{effort:'none'},input:[{role:'system',content:SYSTEM_PROMPT},{role:'user',content:`QUESTION_UTILISATEUR:\n${question}\n\nCARTES_MACA_AUTORISÉES:\n${JSON.stringify(inputCards)}\n\nRéponds exclusivement à partir de ces cartes.`}],text:{format:{type:'json_schema',name:'maca_assistant_v2_answer',strict:true,schema:OUTPUT_SCHEMA}},max_output_tokens:700,store:false});
   return JSON.parse(extractText(r));
 }
 
@@ -142,18 +190,19 @@ async function grounding(env,result,cardById){
   if(result.status!=='answer')return true;
   const ids=uniq(result.blocks.flatMap(b=>b.card_ids));
   const cards=ids.map(id=>cardById.get(id)).filter(Boolean).map(compactCard);
-  const r=await openai(env,OPENAI_RESPONSES,{model:MODEL,reasoning:{effort:'none'},input:[{role:'system',content:GROUNDING_PROMPT},{role:'user',content:JSON.stringify({answer:result.answer,blocks:result.blocks,cited_cards:cards})}],text:{format:{type:'json_schema',name:'maca_grounding',strict:true,schema:GROUNDING_SCHEMA}},max_output_tokens:180,store:false});
+  const payload={blocks:result.blocks,cited_cards:cards};
+  const r=await openai(env,OPENAI_RESPONSES,{model:MODEL,reasoning:{effort:'none'},input:[{role:'system',content:GROUNDING_PROMPT},{role:'user',content:JSON.stringify(payload)}],text:{format:{type:'json_schema',name:'maca_grounding',strict:true,schema:GROUNDING_SCHEMA}},max_output_tokens:24,store:false});
   const parsed=JSON.parse(extractText(r));
   return parsed.supported===true;
 }
 
 export default {
-  async fetch(request,env){
+  async fetch(request,env,ctx){
     const origin=request.headers.get('Origin')||'';
     const allowed=env.ALLOWED_ORIGIN||'https://macasante.fr';
     const apiKey=getOpenAIKey(env);
     if(request.method==='OPTIONS')return new Response(null,{status:204,headers:cors(origin,allowed)});
-    if(request.method==='GET'&&new URL(request.url).searchParams.get('maca_public_ready')==='1')return response(origin,allowed,200,{service:'maca-assistant-v2',public_ready:true});
+    if(request.method==='GET'&&new URL(request.url).searchParams.get('maca_public_ready')==='1')return response(origin,allowed,200,{service:'maca-assistant-v2',public_ready:true,artifact_version:activeVersion||null});
     if(origin&&origin!==allowed)return response(origin,allowed,403,{error:'origin_denied'});
     if(request.method!=='POST')return response(origin,allowed,405,{error:'method_not_allowed'});
     const contentType=request.headers.get('content-type')||'';
@@ -175,14 +224,14 @@ export default {
       const ranked=rank(embeddings.vectors,q);
       const selected=ranked.map(r=>cardById.get(r.id)).filter(Boolean);
       const selectedCards=ranked.map(r=>({id:r.id,title:cardById.get(r.id)?.title||r.id,similarity:Number(r.similarity.toFixed(4))}));
-      if(!ranked.length||ranked[0].similarity<MIN_GATE)return response(origin,allowed,200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{grounding:'not_applicable'}});
+      if(!ranked.length||ranked[0].similarity<MIN_GATE){const out={status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{grounding:'not_applicable',corpus_cards:corpus.cardCount,artifact_version:activeVersion}};logQuestionGraphLater(ctx,env,question,out);return response(origin,allowed,200,out);}
       const raw=await synthesize(env,question,selected);
       const checked=validate(raw,selected);
-      if(!checked.ok)return response(origin,allowed,200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{grounding:'contract_rejected'}});
+      if(!checked.ok){const out={status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{grounding:'contract_rejected',corpus_cards:corpus.cardCount,artifact_version:activeVersion}};logQuestionGraphLater(ctx,env,question,out);return response(origin,allowed,200,out);}
       const result=checked.result;
-      if(!(await grounding(env,result,cardById)))return response(origin,allowed,200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{grounding:'rejected'}});
+      if(!(await grounding(env,result,cardById))){const out={status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{grounding:'rejected',corpus_cards:corpus.cardCount,artifact_version:activeVersion}};logQuestionGraphLater(ctx,env,question,out);return response(origin,allowed,200,out);}
       const cardsUsed=result.cards_used.map(id=>{const c=cardById.get(id);return {id,title:c?.title||id,url:c?.url||''};});
-      return response(origin,allowed,200,{status:result.status,answer:result.answer,category:result.category,cards_used:cardsUsed,selected_cards:selectedCards,scope_note:result.scope_note,meta:{grounding:result.status==='answer'?'supported':'not_applicable',corpus_cards:corpus.cardCount}});
+      const out={status:result.status,answer:result.answer,category:result.category,cards_used:cardsUsed,selected_cards:selectedCards,scope_note:result.scope_note,meta:{grounding:result.status==='answer'?'supported':'not_applicable',corpus_cards:corpus.cardCount,artifact_version:activeVersion}};logQuestionGraphLater(ctx,env,question,out);return response(origin,allowed,200,out);
     }catch(e){return response(origin,allowed,503,{error:'assistant_temporarily_unavailable'});}
   }
 };
