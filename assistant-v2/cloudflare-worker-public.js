@@ -105,6 +105,39 @@ function compactCard(card){const c=card.content||{};return {id:card.id,title:car
 function extractText(r){if(typeof r?.output_text==='string'&&r.output_text.trim())return r.output_text.trim();const out=[];for(const item of r?.output||[])for(const p of item?.content||[])if(p?.type==='output_text'&&typeof p.text==='string')out.push(p.text);return out.join('').trim();}
 function uniq(a){return [...new Set(a)];}
 
+// Question Graph V0: passive, server-side, fail-open telemetry.
+// Storage is intentionally separate from the assistant path. Enable only when
+// QUESTION_GRAPH_ENABLED="1" and a QUESTION_GRAPH binding exposing put() exists.
+function minimizeQuestion(question){
+  return String(question||'')
+    .replace(/\b[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}\b/g,'[email]')
+    .replace(/\b(?:\+33|0)[1-9](?:[ .-]?\d{2}){4}\b/g,'[telephone]')
+    .replace(/\b\d{1,3}\s+(?:rue|avenue|av\.?|boulevard|bd\.?|chemin|impasse|place)\s+[^,;\n]+/gi,'[adresse]')
+    .replace(/\b\d{5}\b/g,'[code-postal]')
+    .replace(/\s+/g,' ').trim().slice(0,MAX_QUESTION_CHARS);
+}
+function questionGraphIntent(result){
+  return String(result?.category||'').trim() || (result?.status==='abstain'?'gap_corpus':'non_classe');
+}
+async function logQuestionGraph(env,question,result){
+  if(env.QUESTION_GRAPH_ENABLED!=='1'||!env.QUESTION_GRAPH||typeof env.QUESTION_GRAPH.put!=='function')return;
+  const minimized=minimizeQuestion(question);
+  if(!minimized)return;
+  const row={
+    timestamp:new Date().toISOString(),
+    question:minimized,
+    intent:questionGraphIntent(result),
+    result:result?.status==='answer'?'answer':'abstain',
+    cards_used:uniq((result?.cards_used||[]).map(c=>typeof c==='string'?c:c?.id).filter(Boolean))
+  };
+  const id=crypto.randomUUID();
+  await env.QUESTION_GRAPH.put(`qg:v0:${row.timestamp}:${id}`,JSON.stringify(row));
+}
+function logQuestionGraphLater(ctx,env,question,result){
+  const task=logQuestionGraph(env,question,result).catch(()=>{});
+  if(ctx&&typeof ctx.waitUntil==='function')ctx.waitUntil(task);
+}
+
 async function openai(env,url,body){
   const apiKey=getOpenAIKey(env);
   const r=await fetch(url,{method:'POST',headers:{Authorization:`Bearer ${apiKey}`,'Content-Type':'application/json'},body:JSON.stringify(body)});
@@ -148,7 +181,7 @@ async function grounding(env,result,cardById){
 }
 
 export default {
-  async fetch(request,env){
+  async fetch(request,env,ctx){
     const origin=request.headers.get('Origin')||'';
     const allowed=env.ALLOWED_ORIGIN||'https://macasante.fr';
     const apiKey=getOpenAIKey(env);
@@ -175,14 +208,14 @@ export default {
       const ranked=rank(embeddings.vectors,q);
       const selected=ranked.map(r=>cardById.get(r.id)).filter(Boolean);
       const selectedCards=ranked.map(r=>({id:r.id,title:cardById.get(r.id)?.title||r.id,similarity:Number(r.similarity.toFixed(4))}));
-      if(!ranked.length||ranked[0].similarity<MIN_GATE)return response(origin,allowed,200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{grounding:'not_applicable'}});
+      if(!ranked.length||ranked[0].similarity<MIN_GATE){const out={status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{grounding:'not_applicable'}};logQuestionGraphLater(ctx,env,question,out);return response(origin,allowed,200,out);}
       const raw=await synthesize(env,question,selected);
       const checked=validate(raw,selected);
-      if(!checked.ok)return response(origin,allowed,200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{grounding:'contract_rejected'}});
+      if(!checked.ok){const out={status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{grounding:'contract_rejected'}};logQuestionGraphLater(ctx,env,question,out);return response(origin,allowed,200,out);}
       const result=checked.result;
-      if(!(await grounding(env,result,cardById)))return response(origin,allowed,200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{grounding:'rejected'}});
+      if(!(await grounding(env,result,cardById))){const out={status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{grounding:'rejected'}};logQuestionGraphLater(ctx,env,question,out);return response(origin,allowed,200,out);}
       const cardsUsed=result.cards_used.map(id=>{const c=cardById.get(id);return {id,title:c?.title||id,url:c?.url||''};});
-      return response(origin,allowed,200,{status:result.status,answer:result.answer,category:result.category,cards_used:cardsUsed,selected_cards:selectedCards,scope_note:result.scope_note,meta:{grounding:result.status==='answer'?'supported':'not_applicable',corpus_cards:corpus.cardCount}});
+      const out={status:result.status,answer:result.answer,category:result.category,cards_used:cardsUsed,selected_cards:selectedCards,scope_note:result.scope_note,meta:{grounding:result.status==='answer'?'supported':'not_applicable',corpus_cards:corpus.cardCount}};logQuestionGraphLater(ctx,env,question,out);return response(origin,allowed,200,out);
     }catch(e){return response(origin,allowed,503,{error:'assistant_temporarily_unavailable'});}
   }
 };
