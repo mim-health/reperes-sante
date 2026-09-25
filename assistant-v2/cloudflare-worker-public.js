@@ -107,7 +107,7 @@ function uniq(a){return [...new Set(a)];}
 
 // Question Graph V0: passive, server-side, fail-open telemetry.
 // Storage is intentionally separate from the assistant path. Enable only when
-// QUESTION_GRAPH_ENABLED="1" and a QUESTION_GRAPH binding exposing put() exists.
+// QUESTION_GRAPH_ENABLED="1" and a QUESTION_GRAPH D1 binding exposing prepare() exists.
 function minimizeQuestion(question){
   return String(question||'')
     .replace(/\b[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}\b/g,'[email]')
@@ -120,7 +120,7 @@ function questionGraphIntent(result){
   return String(result?.category||'').trim() || (result?.status==='abstain'?'gap_corpus':'non_classe');
 }
 async function logQuestionGraph(env,question,result){
-  if(env.QUESTION_GRAPH_ENABLED!=='1'||!env.QUESTION_GRAPH||typeof env.QUESTION_GRAPH.put!=='function')return;
+  if(env.QUESTION_GRAPH_ENABLED!=='1'||!env.QUESTION_GRAPH||typeof env.QUESTION_GRAPH.prepare!=='function')return;
   const minimized=minimizeQuestion(question);
   if(!minimized)return;
   const row={
@@ -130,8 +130,10 @@ async function logQuestionGraph(env,question,result){
     result:result?.status==='answer'?'answer':'abstain',
     cards_used:uniq((result?.cards_used||[]).map(c=>typeof c==='string'?c:c?.id).filter(Boolean))
   };
-  const id=crypto.randomUUID();
-  await env.QUESTION_GRAPH.put(`qg:v0:${row.timestamp}:${id}`,JSON.stringify(row));
+  await env.QUESTION_GRAPH
+    .prepare('INSERT INTO questions (created_at, question, theme, result, cards_used) VALUES (?, ?, ?, ?, ?)')
+    .bind(row.timestamp,row.question,row.intent,row.result,JSON.stringify(row.cards_used))
+    .run();
 }
 function logQuestionGraphLater(ctx,env,question,result){
   const task=logQuestionGraph(env,question,result).catch(()=>{});
