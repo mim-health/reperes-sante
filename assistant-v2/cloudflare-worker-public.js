@@ -134,11 +134,11 @@ function uniq(a){return [...new Set(a)];}
 // Question Graph V0: passive, minimal and fail-open.
 function minimizeQuestion(question){
   return String(question||'')
-    .replace(/\\b[\\w.+-]+@[\\w.-]+\\.[A-Za-z]{2,}\\b/g,'[email]')
-    .replace(/\\b(?:\\+33|0)[1-9](?:[ .-]?\\d{2}){4}\\b/g,'[telephone]')
-    .replace(/\\b\\d{1,3}\\s+(?:rue|avenue|av\\.?|boulevard|bd\\.?|chemin|impasse|place)\\s+[^,;\\n]+/gi,'[adresse]')
-    .replace(/\\b\\d{5}\\b/g,'[code-postal]')
-    .replace(/\\s+/g,' ').trim().slice(0,MAX_QUESTION_CHARS);
+    .replace(/\\b[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}\b/g,'[email]')
+    .replace(/\\b(?:\+33|0)[1-9](?:[ .-]?\d{2}){4}\b/g,'[telephone]')
+    .replace(/\\b\d{1,3}\s+(?:rue|avenue|av\.?|boulevard|bd\.?|chemin|impasse|place)\s+[^,;\n]+/gi,'[adresse]')
+    .replace(/\\b\d{5}\b/g,'[code-postal]')
+    .replace(/\s+/g,' ').trim().slice(0,MAX_QUESTION_CHARS);
 }
 function questionGraphIntent(result){return String(result?.category||'').trim()||(result?.status==='abstain'?'gap_corpus':'non_classe');}
 async function logQuestionGraph(env,question,result){
