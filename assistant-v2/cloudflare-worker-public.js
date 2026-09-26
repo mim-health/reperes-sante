@@ -153,8 +153,8 @@ function minimizeQuestion(question){
 function residualPersonalDataRisk(question){
   const q=String(question||'').trim();
   if(!q)return false;
+  if(/\b(?:je m['’]appelle|mon nom est)\b/i.test(q))return true;
   const patterns=[
-    /\b(?:je m['’]appelle|mon nom est|je suis)\s+[A-ZÀ-ÖØ-Ý][A-Za-zÀ-ÖØ-öø-ÿ'’.-]+(?:\s+[A-ZÀ-ÖØ-Ý][A-Za-zÀ-ÖØ-öø-ÿ'’.-]+){0,3}\b/,
     /\b(?:j['’]habite|je vis|mon adresse est|domicili[ée]\s+à)\b/i,
     /\b(?:mon employeur|je travaille (?:chez|à)|mon entreprise)\b/i,
     /\b(?:mon mari|ma femme|mon conjoint|ma conjointe|mon fils|ma fille|ma mère|mon père)\b/i,
