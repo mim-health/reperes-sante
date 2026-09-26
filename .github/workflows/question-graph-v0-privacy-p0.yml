@@ -1,0 +1,16 @@
+name: Question Graph V0 Privacy P0
+on:
+  pull_request:
+    paths:
+      - 'assistant-v2/cloudflare-worker-public.js'
+      - 'assistant-v2/test-question-graph-privacy.mjs'
+  workflow_dispatch:
+jobs:
+  privacy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node assistant-v2/test-question-graph-privacy.mjs
