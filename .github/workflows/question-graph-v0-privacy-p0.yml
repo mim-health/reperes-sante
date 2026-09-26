@@ -4,6 +4,7 @@ on:
     paths:
       - 'assistant-v2/cloudflare-worker-public.js'
       - 'assistant-v2/test-question-graph-privacy.mjs'
+      - '.github/workflows/question-graph-v0-privacy-p0.yml'
   workflow_dispatch:
 jobs:
   privacy:
@@ -13,4 +14,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Worker syntax\n        run: node --check assistant-v2/cloudflare-worker-public.js\n      - name: Privacy minimization\n        run: node assistant-v2/test-question-graph-privacy.mjs\n      - name: V2 invariant checks\n        run: |\n          grep -q 'const TOP_K=5;' assistant-v2/cloudflare-worker-public.js\n          grep -q 'const MIN_GATE=0.30;' assistant-v2/cloudflare-worker-public.js\n          grep -q 'RATE_LIMITER' assistant-v2/cloudflare-worker-public.js\n          grep -q 'GROUNDING_PROMPT' assistant-v2/cloudflare-worker-public.js
+      - name: Worker syntax
+        run: node --check assistant-v2/cloudflare-worker-public.js
+      - name: Privacy minimization
+        run: node assistant-v2/test-question-graph-privacy.mjs
+      - name: V2 invariant checks
+        run: |
+          grep -q 'const TOP_K=5;' assistant-v2/cloudflare-worker-public.js
+          grep -q 'const MIN_GATE=0.30;' assistant-v2/cloudflare-worker-public.js
+          grep -q 'RATE_LIMITER' assistant-v2/cloudflare-worker-public.js
+          grep -q 'GROUNDING_PROMPT' assistant-v2/cloudflare-worker-public.js
