@@ -11,6 +11,7 @@ const sandbox={MAX_QUESTION_CHARS:600};
 vm.createContext(sandbox);
 vm.runInContext(worker.slice(start,end),sandbox);
 const m=sandbox.minimizeQuestion;
+const stored=sandbox.questionGraphStoredQuestion;
 
 const cases=[
  ['nom+telephone',"Je m'appelle Jean Dupont, mon téléphone est 06 12 34 56 78",'[telephone]',['06 12 34 56 78']],
@@ -29,6 +30,22 @@ for(const [name,input,token,forbidden] of cases){
  console.log(ok?'OK':'FAIL',name,'=>',out);
  if(!ok)failed++;
 }
+const dropCases=[
+ ['name',"Je m'appelle Exemple Test et j'ai une question de santé"],
+ ['age',"J'ai 47 ans et je voudrais comprendre ce sujet"],
+ ['home',"J'habite à Ville Exemple et je cherche une information de santé"],
+ ['work',"Je travaille chez Société Exemple et je cherche une information"],
+ ['family',"Ma fille a une question de santé"],
+ ['appointment',"J'ai été hospitalisé le 12/03/2026 pour ce problème"]
+];
+for(const [name,input] of dropCases){
+ const out=stored(input);
+ const ok=out==='[question-non-conservee]';
+ console.log(ok?'OK':'FAIL','drop-'+name,'=>',out);
+ if(!ok)failed++;
+}
+const safeStored=stored('Quels sont les signes d’un AVC ?');
+if(safeStored!=='Quels sont les signes d’un AVC ?'){console.log('FAIL safe-store =>',safeStored);failed++;}else console.log('OK safe-store =>',safeStored);
 const long=m('x'.repeat(700));
 if(long.length!==600){console.log('FAIL length',long.length);failed++;}else console.log('OK length => 600');
 if(failed)process.exit(1);

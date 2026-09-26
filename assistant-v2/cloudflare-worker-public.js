@@ -150,10 +150,28 @@ function minimizeQuestion(question){
       .replace(/\s+/g,' ').trim().slice(0,MAX_QUESTION_CHARS);
   }catch{return '';}
 }
+function residualPersonalDataRisk(question){
+  const q=String(question||'').trim();
+  if(!q)return false;
+  if(/\b(?:je m['’]appelle|mon nom est)\b/i.test(q))return true;
+  const patterns=[
+    /\b(?:j['’]habite|je vis|mon adresse est|domicili[ée]\s+à)\b/i,
+    /\b(?:mon employeur|je travaille (?:chez|à)|mon entreprise)\b/i,
+    /\b(?:mon mari|ma femme|mon conjoint|ma conjointe|mon fils|ma fille|ma mère|mon père)\b/i,
+    /\b(?:j['’]ai|je suis âg[ée]e? de)\s+\d{1,3}\s+ans\b/i,
+    /\b(?:rendez-vous|hospitalis[ée]e?|op[ée]r[ée]e?)\s+(?:le\s+)?\d{1,2}[\/.-]\d{1,2}[\/.-]\d{2,4}\b/i
+  ];
+  return patterns.some(re=>re.test(q));
+}
+function questionGraphStoredQuestion(question){
+  const minimized=minimizeQuestion(question);
+  if(!minimized)return '';
+  return residualPersonalDataRisk(minimized)?'[question-non-conservee]':minimized;
+}
 function questionGraphIntent(result){return String(result?.category||'').trim()||(result?.status==='abstain'?'gap_corpus':'non_classe');}
 async function logQuestionGraph(env,question,result){
   if(env.QUESTION_GRAPH_ENABLED!=='1'||!env.QUESTION_GRAPH||typeof env.QUESTION_GRAPH.prepare!=='function')return;
-  const minimized=minimizeQuestion(question); if(!minimized)return;
+  const minimized=questionGraphStoredQuestion(question); if(!minimized)return;
   const cards=uniq((result?.cards_used||[]).map(c=>typeof c==='string'?c:c?.id).filter(Boolean));
   await env.QUESTION_GRAPH.prepare('INSERT INTO questions (created_at, question, theme, result, cards_used) VALUES (?, ?, ?, ?, ?)')
     .bind(new Date().toISOString(),minimized,questionGraphIntent(result),result?.status==='answer'?'answer':'abstain',JSON.stringify(cards)).run();
