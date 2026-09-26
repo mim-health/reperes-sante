@@ -26,5 +26,34 @@ window.extraAuditedQuestions.push(
     sourceUrl:'https://doi.org/10.1016/S2468-2667(25)00164-1',
     lastReviewed:'2026-08-23',
     auditDue:'2026-11-23'
+  },
+  {
+    id:'montres-connectees-fiabilite-sante',
+    category:'Santé au quotidien',
+    title:'Montres connectées : peut-on vraiment se fier aux données de santé ?',
+    keywords:'montre connectée smartwatch bracelet connecté fréquence cardiaque pouls pas calories sommeil saturation oxygène SpO2 VO2 max stress récupération ECG fibrillation atriale arythmie rythme irrégulier fiabilité',
+    answer:'Cela dépend de ce que la montre mesure. La fréquence cardiaque et le suivi global de l’activité font partie des indicateurs les plus utiles, alors que les calories dépensées, les stades du sommeil, la VO₂ max ou les scores de stress et de récupération sont davantage des estimations algorithmiques. Une montre peut être très utile pour suivre une tendance sans fournir pour autant une mesure médicale exacte.',
+    explanation:'Une montre connectée combine plusieurs capteurs et des algorithmes. La fréquence cardiaque au repos est généralement l’une des mesures les mieux évaluées, même si la précision peut diminuer avec les mouvements ou selon le dispositif. Le nombre de pas est utile pour suivre l’évolution de l’activité, sans être exact au pas près. La dépense énergétique est nettement plus approximative. Pour le sommeil, les montres peuvent aider à observer les horaires et la durée globale, mais distinguent moins précisément les différents stades qu’un examen médical du sommeil. La saturation en oxygène au poignet doit également être interprétée avec prudence. VO₂ max, stress, récupération, énergie ou âge cardiovasculaire reposent largement sur des calculs propres aux fabricants. Concernant la fibrillation atriale, certaines montres analysent le pouls et certaines enregistrent un ECG à une dérivation. Elles peuvent contribuer à repérer une arythmie intermittente, mais une notification de rythme irrégulier n’est pas à elle seule un diagnostic : mouvements, extrasystoles ou mauvaise qualité du signal peuvent produire des alertes erronées. Inversement, l’absence d’alerte n’exclut pas une fibrillation atriale. Un tracé inhabituel peut être conservé et montré à un professionnel de santé ; selon le contexte, un ECG médical ou un enregistrement prolongé peut être nécessaire. Détecter une fibrillation atriale ne signifie pas non plus qu’un traitement anticoagulant doit automatiquement être commencé : le risque d’AVC et de saignement doit être évalué individuellement.',
+    watch:'À retenir : regardez surtout les tendances répétées plutôt qu’un chiffre isolé. Mesurer ou détecter n’est pas diagnostiquer. Une anomalie répétée ou associée à des symptômes mérite d’être discutée avec un professionnel de santé. Douleur thoracique, malaise ou perte de connaissance, essoufflement important ou signes évocateurs d’AVC nécessitent une évaluation urgente, indépendamment de ce qu’affiche la montre.',
+    source:'ESC / EHRA · littérature de validation des dispositifs portables',
+    url:'https://www.escardio.org/Guidelines/Clinical-Practice-Guidelines/Atrial-Fibrillation',
+    sourceUrl:'https://pubmed.ncbi.nlm.nih.gov/39080098/',
+    additionalSources:[
+      'https://pubmed.ncbi.nlm.nih.gov/32897239/',
+      'https://pubmed.ncbi.nlm.nih.gov/35060915/'
+    ],
+    image:'https://images.pexels.com/photos/437037/pexels-photo-437037.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt:'Montre connectée portée au poignet.',
+    imageCredit:'Photo : Pixabay / Pexels',
+    imageSource:'https://www.pexels.com/photo/apple-apple-watch-2-black-chrome-437037/',
+    imageLicense:'Pexels License — free to use',
+    relatedIds:['marche-30-minutes','pas-jour'],
+    validationStatus:'PUBLISHED',
+    editorialStatus:'PUBLISHED',
+    verifiedAt:'2026-09-26',
+    nextAuditAt:'2026-12-26',
+    auditIntervalMonths:3,
+    lastReviewed:'2026-09-26',
+    auditDue:'2026-12-26'
   }
 );
