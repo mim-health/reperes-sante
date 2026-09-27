@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex,nofollow,noarchive">
 <title>MACA Santé — Pilote Assistant IA V2</title>
 <style>
-:root{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#173c33;background:#f5f0e5}body{margin:0}main{max-width:760px;margin:auto;padding:26px 16px 60px}h1{font-family:Georgia,serif;font-size:34px;line-height:1.05;margin:0 0 8px}.muted{color:#68736f}.box{background:#fffdf8;border:1px solid #d8dfd8;border-radius:16px;padding:16px;margin:14px 0}.notice{background:#edf3ea}.row{display:flex;gap:10px;flex-wrap:wrap}input,textarea,button{font:inherit}input,textarea{width:100%;box-sizing:border-box;border:1px solid #c7d0ca;border-radius:12px;padding:12px;background:white}textarea{min-height:120px;resize:vertical}button{border:0;border-radius:999px;padding:10px 16px;background:#173c33;color:white;cursor:pointer}button.secondary{background:#e9eee9;color:#173c33}button:disabled{opacity:.55;cursor:wait}.answer{white-space:pre-wrap;line-height:1.55;font-size:17px}.sources a{color:#173c33}.hidden{display:none}.feedback button{min-width:100px}.error{color:#8b3524}.small{font-size:13px;line-height:1.45}.debug{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;white-space:pre-wrap;overflow:auto;background:#f3f4ef;padding:10px;border-radius:10px}@media(max-width:600px){h1{font-size:29px}}
+:root{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#173c33;background:#f5f0e5}body{margin:0}main{max-width:760px;margin:auto;padding:26px 16px 60px}h1{font-family:Georgia,serif;font-size:34px;line-height:1.05;margin:0 0 8px}.muted{color:#68736f}.box{background:#fffdf8;border:1px solid #d8dfd8;border-radius:16px;padding:16px;margin:14px 0}.notice{background:#edf3ea}.row{display:flex;gap:10px;flex-wrap:wrap}input,textarea,button{font:inherit}input,textarea{width:100%;box-sizing:border-box;border:1px solid #c7d0ca;border-radius:12px;padding:12px;background:white}textarea{min-height:120px;resize:vertical}button{border:0;border-radius:999px;padding:10px 16px;background:#173c33;color:white;cursor:pointer}button.secondary{background:#e9eee9;color:#173c33}button:disabled{opacity:.55;cursor:wait}.voice-wrap{display:flex;gap:8px;align-items:flex-start}.voice-wrap textarea{flex:1}.voice-btn{flex:0 0 46px;width:46px;height:46px;padding:0;display:grid;place-items:center;font-size:20px;background:#e9eee9;color:#173c33;border:1px solid #c7d0ca}.voice-btn.listening{background:#173c33;color:white}.voice-status{min-height:20px;margin:7px 0 0}.voice-stop{padding:7px 12px;font-size:13px}.voice-warning{margin:5px 0 0}.answer{white-space:pre-wrap;line-height:1.55;font-size:17px}.sources a{color:#173c33}.hidden{display:none}.feedback button{min-width:100px}.error{color:#8b3524}.small{font-size:13px;line-height:1.45}.debug{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;white-space:pre-wrap;overflow:auto;background:#f3f4ef;padding:10px;border-radius:10px}@media(max-width:600px){h1{font-size:29px}}
 </style>
 </head>
 <body><main>
@@ -15,7 +15,7 @@
 <div class="box notice small"><b>Test en conditions réelles.</b> Posez une question comme vous le feriez spontanément. L’Assistant répond uniquement à partir des fiches MACA Santé validées. Il ne pose pas de diagnostic et ne remplace pas une consultation. Pour ce pilote, ne saisissez pas de nom, adresse, date de naissance, numéro de téléphone ou autre information permettant de vous identifier.</div>
 <div id="access" class="box"><label for="code"><b>Code du pilote</b></label><div class="row" style="margin-top:8px"><input id="code" type="password" autocomplete="off" placeholder="Code d’accès"><button id="unlock">Entrer</button></div><div id="accessError" class="error small"></div></div>
 <div id="pilot" class="hidden">
-<div class="box"><label for="question"><b>Votre question</b></label><textarea id="question" maxlength="600" placeholder="Ex. : J’ai souvent un goût acide qui remonte après les repas, qu’est-ce que ça peut vouloir dire ?"></textarea><p class="small muted">Pour améliorer MACA, les questions posées sont traitées dans le respect de votre confidentialité. N’indiquez aucune information permettant de vous identifier. <a href="../confidentialite.html" target="_blank" rel="noopener">En savoir plus</a></p><div class="row" style="justify-content:space-between;align-items:center;margin-top:10px"><span id="count" class="muted small">0/600</span><button id="ask">Interroger MACA</button></div></div>
+<div class="box"><label for="question"><b>Votre question</b></label><div class="voice-wrap"><textarea id="question" maxlength="600" placeholder="Ex. : J’ai souvent un goût acide qui remonte après les repas, qu’est-ce que ça peut vouloir dire ?"></textarea><button id="voice" class="voice-btn" type="button" aria-label="Dicter ma question" aria-pressed="false" title="Dicter ma question">🎙️</button></div><div class="row" style="align-items:center"><div id="voiceStatus" class="voice-status small muted" role="status" aria-live="polite"></div><button id="voiceStop" class="secondary voice-stop hidden" type="button">Arrêter</button></div><p class="small muted voice-warning">N’indiquez aucune information permettant de vous identifier.</p><p class="small muted">Pour améliorer MACA, les questions posées sont traitées dans le respect de votre confidentialité. N’indiquez aucune information permettant de vous identifier. <a href="../confidentialite.html" target="_blank" rel="noopener">En savoir plus</a></p><div class="row" style="justify-content:space-between;align-items:center;margin-top:10px"><span id="count" class="muted small">0/600</span><button id="ask">Interroger MACA</button></div></div>
 <div id="result" class="box hidden"><div id="status" class="small muted"></div><div id="answer" class="answer"></div><div id="scope" class="small muted" style="margin-top:10px"></div><div id="sources" class="sources small" style="margin-top:14px"></div><div class="feedback" style="margin-top:18px"><div class="small"><b>Cette réponse vous a-t-elle été utile ?</b></div><div class="row" style="margin-top:8px"><button class="secondary" data-feedback="utile">👍 Utile</button><button class="secondary" data-feedback="ameliorer">👎 À améliorer</button></div><textarea id="comment" placeholder="Commentaire facultatif : qu’est-ce qui vous a manqué ou surpris ?" style="min-height:74px;margin-top:10px"></textarea></div></div>
 <div id="sessionBox" class="box hidden"><b>Fin de votre test</b><p class="small muted">Après 3 à 5 questions, copiez le compte rendu et envoyez-le à la personne qui vous a invité au pilote. Le rapport reste dans votre navigateur jusqu’à ce que vous le copiiez ou réinitialisiez la session.</p><div class="row"><button id="copy" class="secondary">Copier le compte rendu</button><button id="reset" class="secondary">Réinitialiser</button></div><div id="copyState" class="small muted" style="margin-top:8px"></div></div>
 <details id="debugPanel" class="box hidden"><summary>Détails techniques du pilote</summary><pre id="debug" class="debug"></pre></details>
@@ -28,6 +28,59 @@ const debugMode=new URLSearchParams(location.search).get('debug')==='1';
 if(debugMode)$('debugPanel').classList.remove('hidden');
 $('unlock').addEventListener('click',()=>{const code=$('code').value.trim();if(!code){$('accessError').textContent='Saisissez le code du pilote.';return;}state.code=code;$('access').classList.add('hidden');$('pilot').classList.remove('hidden');$('question').focus();});
 $('question').addEventListener('input',()=>{$('count').textContent=`${$('question').value.length}/600`;});
+const SpeechRecognitionCtor=window.SpeechRecognition||window.webkitSpeechRecognition;
+let recognition=null;
+let voiceListening=false;
+function setVoiceStatus(message,listening=false){
+  $('voiceStatus').textContent=message||'';
+  $('voice').classList.toggle('listening',listening);
+  $('voice').setAttribute('aria-pressed',listening?'true':'false');
+  $('voiceStop').classList.toggle('hidden',!listening);
+  voiceListening=listening;
+}
+function voiceErrorMessage(code){
+  const messages={
+    'not-allowed':'Accès au microphone refusé. Vous pouvez continuer au clavier.',
+    'service-not-allowed':'Reconnaissance vocale non autorisée. Vous pouvez continuer au clavier.',
+    'audio-capture':'Microphone indisponible. Vous pouvez continuer au clavier.',
+    'no-speech':'Aucune parole détectée. Vous pouvez réessayer ou continuer au clavier.',
+    'network':'Reconnaissance interrompue par le réseau. Vous pouvez continuer au clavier.',
+    'aborted':'Dictée arrêtée.',
+    'language-not-supported':'Le français n’est pas disponible pour la reconnaissance vocale sur ce navigateur.'
+  };
+  return messages[code]||'La transcription a échoué. Vous pouvez continuer au clavier.';
+}
+function startVoice(){
+  if(!SpeechRecognitionCtor){
+    setVoiceStatus('La dictée vocale n’est pas compatible avec ce navigateur. La saisie clavier reste disponible.');
+    return;
+  }
+  if(voiceListening){try{recognition.stop();}catch(e){}return;}
+  try{
+    recognition=new SpeechRecognitionCtor();
+    recognition.lang='fr-FR';
+    recognition.continuous=false;
+    recognition.interimResults=false;
+    recognition.maxAlternatives=1;
+    recognition.onstart=()=>setVoiceStatus('Je vous écoute…',true);
+    recognition.onresult=(event)=>{
+      const transcript=Array.from(event.results).map(r=>r[0]&&r[0].transcript||'').join(' ').trim();
+      if(!transcript){setVoiceStatus('Aucune parole détectée. Vous pouvez réessayer ou continuer au clavier.');return;}
+      const q=$('question');
+      const prefix=q.value.trim();
+      q.value=(prefix?prefix+' ':'')+transcript;
+      q.value=q.value.slice(0,600);
+      q.dispatchEvent(new Event('input',{bubbles:true}));
+      setVoiceStatus('Transcription ajoutée. Vérifiez-la ou corrigez-la avant d’envoyer.');
+      q.focus();
+    };
+    recognition.onerror=(event)=>setVoiceStatus(voiceErrorMessage(event.error));
+    recognition.onend=()=>{if(voiceListening)setVoiceStatus($('voiceStatus').textContent==='Je vous écoute…'?'Dictée terminée. Vérifiez le texte avant d’envoyer.':$('voiceStatus').textContent);};
+    recognition.start();
+  }catch(e){setVoiceStatus('Impossible de démarrer la dictée. Vous pouvez continuer au clavier.');}
+}
+$('voice').addEventListener('click',startVoice);
+$('voiceStop').addEventListener('click',()=>{if(recognition){try{recognition.stop();}catch(e){}}});
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));}
 function sourceHtml(cards){if(!cards||!cards.length)return '<b>Fiches MACA utilisées :</b> aucune';return '<b>Fiches MACA utilisées :</b><br>'+cards.map(c=>c.url?`<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title)}</a>`:esc(c.title)).join('<br>');}
 function reportObject(){return {pilot:'MACA Assistant IA V2 — 5B',generated_at:new Date().toISOString(),responses:state.sessions.map(x=>({question:x.question,status:x.status,answer:x.answer,cards_used:x.cards_used,feedback:x.feedback||'',comment:x.comment||''}))};}
