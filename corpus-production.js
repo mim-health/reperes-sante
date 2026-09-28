@@ -3075,6 +3075,72 @@ window.extraAuditedQuestions=[...(window.extraAuditedQuestions||[]),
 ];
 ;
 
+/* ===== MACA BUNDLE SOURCE: backlog-audited-sexualite-sante-2026-09-28.js ===== */
+// MACA Santé — Sexualité & santé — validation médicale 28/09/2026
+window.extraAuditedQuestions=[...(window.extraAuditedQuestions||[]),
+{
+ id:'dyspareunie-douleur-rapports-causes',category:'Santé des femmes & grossesse',
+ title:'J’ai mal pendant les rapports : quelles peuvent être les causes ?',
+ keywords:'douleur rapports dyspareunie rapport douloureux pénétration douleur vagin vulve bassin sécheresse endométriose vulvodynie plancher pelvien',
+ answer:"Les douleurs pendant les rapports, appelées dyspareunies, peuvent avoir de nombreuses causes. Elles peuvent notamment être liées à une sécheresse vaginale, une infection, une endométriose, une vulvodynie, une tension excessive des muscles du plancher pelvien ou d’autres causes gynécologiques. Une douleur persistante mérite donc d’être évaluée plutôt que considérée comme normale.",
+ detail:"La localisation et le moment de la douleur donnent des informations utiles. Une douleur ressentie principalement à l’entrée du vagin peut notamment être associée à une sécheresse, une irritation, une infection, une affection vulvaire ou une vulvodynie. Une contraction involontaire importante des muscles du plancher pelvien peut également rendre la pénétration douloureuse ou difficile.\n\nUne douleur ressentie plus profondément dans le bassin peut avoir d’autres origines, notamment une endométriose ou certaines pathologies pelviennes. Après la ménopause, la diminution des œstrogènes peut entraîner sécheresse et fragilité des tissus génitaux ; MACA possède déjà une fiche spécifique sur ce syndrome génito-urinaire.\n\nLa douleur peut aussi entraîner anticipation, contraction musculaire, évitement des rapports et anxiété. Il n’est donc pas pertinent d’opposer systématiquement cause physique et cause psychologique.",
+ practical:["Repérer où se situe la douleur et depuis quand elle existe.","Noter si elle survient à chaque rapport et si d’autres symptômes sont associés.","Des traitements existent mais dépendent de la cause identifiée."],
+ watch:"Une douleur persistante, un saignement inhabituel, des pertes anormales, de la fièvre ou une douleur pelvienne importante nécessitent une évaluation médicale.",
+ source:"EAU · littérature internationale sur les douleurs sexuelles",
+ sources:[{label:"European Association of Urology — Sexual and Reproductive Health Guidelines",url:"https://uroweb.org/guidelines/sexual-and-reproductive-health"}],
+ verifiedAt:"28/09/2026",nextAuditAt:"28/03/2027",auditIntervalMonths:6,validationStatus:"VALIDATED",evidenceStatus:"VALIDÉ — validation médicale MACA 28/09/2026"
+},
+{
+ id:'difficulte-orgasme-causes-medicales',category:'Santé au quotidien',
+ title:'J’ai du mal à atteindre l’orgasme : peut-il y avoir une cause médicale ?',
+ keywords:'orgasme difficulté orgasme anorgasmie trouble orgasmique sexualité médicament antidépresseur ménopause diabète neurologique stress anxiété',
+ answer:"Oui. Les difficultés à atteindre l’orgasme peuvent être influencées par de nombreux facteurs : médicaments, maladies chroniques ou neurologiques, modifications hormonales, douleurs, mais également stress, anxiété, contexte relationnel ou stimulation sexuelle. Il est fréquent que plusieurs facteurs interviennent simultanément.",
+ detail:"L’orgasme résulte d’interactions complexes entre le cerveau, le système nerveux, les organes génitaux et le contexte émotionnel. Il existe une grande variabilité entre les personnes. Ne pas avoir systématiquement d’orgasme pendant un rapport ne constitue donc pas à lui seul une maladie.\n\nLa situation mérite davantage d’attention lorsqu’il existe un changement important par rapport au fonctionnement habituel ou une souffrance associée. Certains médicaments peuvent modifier la réponse sexuelle. C’est notamment le cas de certains antidépresseurs sérotoninergiques, qui peuvent retarder ou empêcher l’orgasme chez certaines personnes. Le diabète et certaines maladies neurologiques peuvent également modifier les voies nerveuses impliquées dans la réponse sexuelle.\n\nChez la femme, les modifications liées à la ménopause peuvent affecter la sexualité, notamment via sécheresse, douleur ou modification de l’excitation. Stress, dépression, anxiété et difficultés relationnelles peuvent intervenir indépendamment ou en association avec une cause médicale.",
+ practical:["Se demander si la difficulté a toujours existé ou si elle est nouvelle.","Repérer une éventuelle chronologie avec l’introduction d’un médicament, une maladie ou un événement particulier."],
+ watch:"Un médicament susceptible d’avoir des effets sexuels ne doit pas être arrêté brutalement sans en parler au prescripteur.",
+ source:"International Consultation on Sexual Medicine · EAU",
+ sources:[{label:"European Association of Urology — Sexual and Reproductive Health Guidelines",url:"https://uroweb.org/guidelines/sexual-and-reproductive-health"}],
+ verifiedAt:"28/09/2026",nextAuditAt:"28/03/2027",auditIntervalMonths:6,validationStatus:"VALIDATED",evidenceStatus:"VALIDÉ — validation médicale MACA 28/09/2026"
+},
+{
+ id:'antidepresseurs-effets-sexualite',category:'Santé mentale',
+ title:'Antidépresseurs : pourquoi peuvent-ils modifier la sexualité ?',
+ keywords:'antidépresseur sexualité libido orgasme érection lubrification ISRS sérotonine effets sexuels dysfonction sexuelle traitement dépression',
+ answer:"Certains antidépresseurs peuvent diminuer le désir, modifier l’excitation sexuelle ou rendre l’orgasme plus difficile. Ces effets sont particulièrement décrits avec certains médicaments agissant sur la sérotonine. Mais la dépression elle-même peut aussi altérer la sexualité : il faut donc distinguer autant que possible l’effet de la maladie de celui du traitement.",
+ detail:"La sexualité dépend de plusieurs systèmes cérébraux utilisant notamment sérotonine, dopamine et noradrénaline. Les antidépresseurs qui augmentent fortement l’activité sérotoninergique, notamment de nombreux ISRS, peuvent modifier cet équilibre.\n\nLes manifestations rapportées comprennent notamment diminution du désir, difficultés d’excitation ou d’érection, diminution de la lubrification et retard ou absence d’orgasme. La fréquence exacte est difficile à mesurer car ces symptômes sont parfois peu signalés spontanément et la dépression elle-même peut provoquer des troubles sexuels. Tous les antidépresseurs n’ont pas le même profil d’effets sexuels.\n\nLorsqu’un problème apparaît après l’introduction d’un traitement, plusieurs stratégies médicales peuvent parfois être discutées selon la situation. La décision dépend du bénéfice psychiatrique du médicament et du risque de rechute.",
+ practical:["Les effets sexuels sont une raison légitime d’en parler au médecin.","Comparer la sexualité avant la dépression, avant le traitement puis après son introduction peut aider à comprendre la chronologie."],
+ watch:"Ne pas diminuer ou arrêter seul un antidépresseur en raison d’un effet sexuel. Un arrêt brutal peut provoquer des symptômes d’arrêt et exposer à une rechute.",
+ source:"International Consultation on Sexual Medicine · littérature sur les dysfonctions sexuelles induites par les antidépresseurs",
+ sources:[{label:"International Consultation on Sexual Medicine — Journal of Sexual Medicine",url:"https://academic.oup.com/jsm"}],
+ verifiedAt:"28/09/2026",nextAuditAt:"28/03/2027",auditIntervalMonths:6,validationStatus:"VALIDATED",evidenceStatus:"VALIDÉ — validation médicale MACA 28/09/2026"
+},
+{
+ id:'sexualite-apres-infarctus-maladie-cardiaque',category:'Cœur & circulation',
+ title:'Après un infarctus ou avec une maladie cardiaque, peut-on reprendre une activité sexuelle ?',
+ keywords:'sexualité infarctus coeur cardiaque rapport sexuel après infarctus activité sexuelle angor insuffisance cardiaque sildenafil tadalafil nitrés réadaptation',
+ answer:"Dans de nombreuses situations cardiovasculaires stabilisées, une activité sexuelle peut être reprise. L’effort cardiovasculaire d’un rapport sexuel est généralement modéré. La décision dépend cependant de la stabilité de la maladie, des symptômes et de la capacité à réaliser un effort sans douleur thoracique ni essoufflement important.",
+ detail:"La peur de provoquer un nouvel infarctus est fréquente après un événement cardiovasculaire. Pourtant, l’activité sexuelle représente généralement un effort physique relativement bref.\n\nLes recommandations internationales évaluent notamment le risque selon la stabilité de la maladie cardiovasculaire et la capacité à effectuer une activité physique modérée. Une personne dont la maladie cardiovasculaire est stable, sans symptôme lors d’efforts habituels, présente généralement un risque différent d’une personne souffrant d’angor instable, d’insuffisance cardiaque décompensée ou de symptômes importants à faible effort.\n\nLa réadaptation cardiaque peut également aider à reprendre confiance dans ses capacités physiques. Certains médicaments cardiovasculaires peuvent influencer la fonction sexuelle. À l’inverse, les traitements de la dysfonction érectile peuvent être utilisés chez de nombreux patients cardiovasculaires, mais nécessitent une attention particulière aux interactions.",
+ practical:["Après un événement cardiaque, parler explicitement de sexualité lors du suivi est légitime.","La stabilité cardiovasculaire et la tolérance aux efforts habituels font partie des éléments discutés avec l’équipe médicale."],
+ watch:"Les médicaments de la dysfonction érectile de type sildénafil ou tadalafil ne doivent pas être associés aux dérivés nitrés en raison du risque de chute importante de la pression artérielle. Une douleur thoracique ou un malaise pendant une activité sexuelle doit être pris au sérieux comme lors de tout autre effort.",
+ source:"Princeton IV Consensus 2024 · AHA · ESC",
+ sources:[{label:"PubMed — Princeton IV Consensus Recommendations",url:"https://pubmed.ncbi.nlm.nih.gov/39115509/"},{label:"European Society of Cardiology — Clinical Practice Guidelines",url:"https://www.escardio.org/Guidelines/Clinical-Practice-Guidelines"}],
+ verifiedAt:"28/09/2026",nextAuditAt:"28/03/2027",auditIntervalMonths:6,validationStatus:"VALIDATED",evidenceStatus:"VALIDÉ — validation médicale MACA 28/09/2026"
+},
+{
+ id:'cancer-traitements-sexualite',category:'Cancer',
+ title:'Cancer et sexualité : pourquoi peut-elle changer pendant ou après les traitements ?',
+ keywords:'cancer sexualité libido érection lubrification orgasme douleur chimiothérapie radiothérapie hormonothérapie chirurgie prostate gynécologique image corporelle',
+ answer:"Le cancer et ses traitements peuvent modifier le désir, l’excitation, l’érection, la lubrification, l’orgasme ou provoquer des douleurs. Fatigue, modifications hormonales, chirurgie, radiothérapie, médicaments, image corporelle et conséquences psychologiques peuvent se combiner. Ces difficultés sont fréquentes et peuvent être abordées dans le parcours de soins.",
+ detail:"Les conséquences dépendent fortement du type de cancer et des traitements reçus. Une chirurgie pelvienne peut par exemple modifier certains nerfs ou structures impliqués dans la sexualité, notamment après certaines interventions pour cancer de la prostate, du rectum ou gynécologique.\n\nCertaines hormonothérapies peuvent diminuer les hormones sexuelles et modifier le désir, la fonction érectile ou entraîner des symptômes génito-urinaires. Une radiothérapie pelvienne peut également avoir des conséquences sur les tissus concernés.\n\nLes effets ne sont pas uniquement anatomiques ou hormonaux. Fatigue, douleur, peur d’une récidive, modification de l’image corporelle ou sentiment d’avoir un corps devenu médicalisé peuvent aussi modifier la sexualité. Il n’existe donc pas une sexualité « normale » à retrouver obligatoirement après un cancer. L’objectif est d’identifier ce qui constitue une difficulté pour la personne ou le couple et les solutions possibles.",
+ practical:["La sexualité fait partie de la qualité de vie après un cancer et peut être abordée pendant le suivi.","Demander si le traitement peut expliquer les changements constatés peut ouvrir la discussion avec l’équipe soignante.","Selon le problème, plusieurs professionnels peuvent participer à la prise en charge."],
+ watch:"Une douleur nouvelle, un saignement inhabituel ou un symptôme persistant après un traitement contre le cancer doit être évalué médicalement et ne doit pas être attribué automatiquement aux conséquences sexuelles du traitement.",
+ source:"ASCO · littérature internationale cancer et santé sexuelle",
+ sources:[{label:"American Society of Clinical Oncology — Cancer.Net: Sexual Health",url:"https://www.cancer.net/navigating-cancer-care/dating-sex-and-reproduction/sexual-health"}],
+ verifiedAt:"28/09/2026",nextAuditAt:"28/03/2027",auditIntervalMonths:6,validationStatus:"VALIDATED",evidenceStatus:"VALIDÉ — validation médicale MACA 28/09/2026"
+}
+];
+;
+
 /* ===== MACA BUNDLE SOURCE: structured-backlog-compat.js ===== */
 // Compatibility bridge: converts structured audited cards into the legacy question shape used by app.js.
 (() => {
