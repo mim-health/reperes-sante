@@ -1,0 +1,63 @@
+// MACA Santé — Chronic disease / post-consultation gaps — validation médicale 28/09/2026
+window.extraAuditedQuestions=[...(window.extraAuditedQuestions||[]),
+{
+ id:'asthme-controle-quotidien',category:'Santé au quotidien',
+ title:'Asthme : comment savoir si mon asthme est vraiment bien contrôlé ?',
+ keywords:'asthme contrôle symptômes nuit réveil essoufflement sifflement toux inhalateur secours exacerbation crise sport activité',
+ answer:"Un asthme bien contrôlé provoque peu de symptômes, peu ou pas de réveils nocturnes et limite peu les activités. Mais il faut aussi considérer le risque de futures crises : on peut avoir relativement peu de symptômes et conserver certains facteurs de risque d’exacerbation.",
+ detail:"L’asthme est une maladie respiratoire chronique dont les manifestations — essoufflement, sifflements, toux, oppression thoracique — peuvent varier dans le temps.\n\nPour évaluer le contrôle, on regarde notamment la fréquence des symptômes, les réveils nocturnes liés à l’asthme, la limitation des activités et l’utilisation du traitement de secours lorsqu’il s’agit d’un bronchodilatateur de courte durée d’action. Il faut cependant distinguer le contrôle des symptômes actuels du risque futur d’exacerbation. Les antécédents de crise, la fonction respiratoire lorsqu’elle est disponible, le tabagisme et d’autres facteurs de risque comptent également.\n\nLorsqu’un asthme semble mal contrôlé, cela ne signifie pas automatiquement qu’il est sévère. La technique d’utilisation de l’inhalateur, la prise effective du traitement, les facteurs déclenchants et d’éventuelles maladies associées doivent notamment être examinés.",
+ practical:["Repérer si l’asthme réveille la nuit ou limite les activités habituelles.","Signaler des symptômes devenus plus fréquents ou un recours croissant au traitement de secours.","Faire vérifier la technique d’utilisation de l’inhalateur lors du suivi."],
+ watch:"Une aggravation importante ou rapide de l’essoufflement, ou une crise ne répondant pas au traitement prévu, nécessite une prise en charge médicale adaptée.",
+ source:"GINA — Global Strategy for Asthma Management and Prevention",
+ sources:[{label:"GINA — Global Strategy for Asthma Management and Prevention",url:"https://ginasthma.org/2025-gina-strategy-report/"}],
+ verifiedAt:"28/09/2026",nextAuditAt:"28/03/2027",auditIntervalMonths:6,validationStatus:"VALIDATED",evidenceStatus:"VALIDÉ — validation médicale MACA 28/09/2026"
+},
+{
+ id:'dfg-baisse-comprendre',category:'Digestion & urinaire',
+ title:'Mon DFG a baissé : qu’est-ce que cela signifie ?',
+ keywords:'DFG DFGe débit filtration glomérulaire rein reins créatinine fonction rénale maladie rénale chronique MRC albuminurie analyse sang',
+ answer:"Le débit de filtration glomérulaire estimé (DFGe) donne une estimation du fonctionnement des reins. Un chiffre diminué mérite d’être compris dans son contexte, mais une seule valeur basse ne suffit pas à conclure à une maladie rénale chronique. La durée de l’anomalie, son évolution et l’albuminurie comptent également.",
+ detail:"Le DFGe est généralement calculé à partir de la créatinine sanguine. Il permet d’estimer la capacité des reins à filtrer le sang sans mesurer directement cette filtration.\n\nLes recommandations KDIGO classent la maladie rénale chronique en tenant compte de la cause, du niveau de filtration glomérulaire et de l’albuminurie. Deux personnes ayant un DFGe comparable peuvent donc avoir des situations et des risques différents.\n\nLa chronicité est essentielle : une maladie rénale chronique correspond à des anomalies de structure ou de fonction rénale présentes depuis au moins trois mois. Les résultats antérieurs et, si nécessaire, des mesures répétées permettent de distinguer une anomalie chronique d’une modification plus récente. Le médecin peut ainsi considérer la créatinine et le DFGe, mais aussi l’albuminurie et l’évolution des résultats.",
+ practical:["Comparer le résultat aux valeurs antérieures lorsqu’elles existent.","Demander si une recherche d’albuminurie est pertinente.","S’intéresser à l’évolution du DFGe plutôt qu’à un chiffre isolé."],
+ watch:"MACA peut expliquer ce que signifient DFGe, créatinine ou albuminurie, mais un résultat biologique individuel doit être interprété avec le contexte clinique.",
+ source:"KDIGO 2024 — Clinical Practice Guideline for CKD",
+ sources:[{label:"KDIGO — 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease",url:"https://kdigo.org/guidelines/ckd-evaluation-and-management/"}],
+ verifiedAt:"28/09/2026",nextAuditAt:"28/03/2027",auditIntervalMonths:6,validationStatus:"VALIDATED",evidenceStatus:"VALIDÉ — validation médicale MACA 28/09/2026"
+},
+{
+ id:'epilepsie-apres-diagnostic-quotidien',category:'Santé au quotidien',
+ title:'On vient de me diagnostiquer une épilepsie : qu’est-ce que cela va changer ?',
+ keywords:'épilepsie diagnostic crise convulsion quotidien traitement antiépileptique sport conduite permis sommeil travail voyage entourage',
+ answer:"Une épilepsie ne signifie pas nécessairement renoncer au sport, au travail, aux voyages ou à une vie autonome. Les conséquences dépendent notamment du type de crises et de leur contrôle. Certaines situations nécessitent toutefois des précautions particulières, notamment la conduite et les activités où une crise pourrait avoir des conséquences graves.",
+ detail:"Le terme épilepsie recouvre différentes maladies et différents types de crises. Leur fréquence, leur cause, leur réponse au traitement et leur évolution peuvent être très différentes d’une personne à l’autre.\n\nL’objectif du suivi est notamment de caractériser l’épilepsie, de contrôler les crises lorsqu’un traitement est nécessaire et de limiter autant que possible le retentissement de la maladie et du traitement sur la vie quotidienne.\n\nL’activité physique n’est pas systématiquement interdite. L’ILAE classe les activités selon le risque potentiel qu’entraînerait une crise : de nombreuses activités sont possibles, tandis que les sports aquatiques, en hauteur ou présentant un danger important nécessitent davantage de précautions. La conduite est soumise à des règles spécifiques d’aptitude médicale. Le sommeil et la régularité de prise d’un traitement lorsqu’il est prescrit font également partie des sujets importants du suivi.",
+ practical:["Demander quel type de crises a été identifié et quel est l’objectif du traitement.","Savoir ce que l’entourage doit faire en cas de crise.","Aborder spécifiquement sport, travail et conduite selon sa situation."],
+ watch:"Un traitement antiépileptique ne doit pas être modifié ou interrompu sans avis médical. Un projet de grossesse mérite également une discussion anticipée avec l’équipe médicale.",
+ source:"ILAE — International League Against Epilepsy",
+ sources:[{label:"ILAE — Guidelines and reports",url:"https://www.ilae.org/guidelines/guidelines-and-reports"},{label:"ILAE — Epilepsy, seizures, physical exercise and sports",url:"https://www.ilae.org/files/dmfile/physical-activity---recommendations.pdf"},{label:"Service-Public.fr — contrôle médical et permis de conduire",url:"https://www.service-public.fr/particuliers/vosdroits/F2686"}],
+ verifiedAt:"28/09/2026",nextAuditAt:"28/03/2027",auditIntervalMonths:6,validationStatus:"VALIDATED",evidenceStatus:"VALIDÉ — validation médicale MACA 28/09/2026"
+},
+{
+ id:'endometriose-apres-diagnostic',category:'Santé des femmes & grossesse',
+ title:'On m’a diagnostiqué une endométriose : que va-t-il se passer maintenant ?',
+ keywords:'endométriose diagnostic douleur règles pelvienne dyspareunie traitement hormonal chirurgie fertilité grossesse suivi qualité vie',
+ answer:"Un diagnostic d’endométriose ne signifie pas automatiquement chirurgie, infertilité ou aggravation progressive. La suite dépend principalement des symptômes, de leur retentissement, de la localisation de la maladie et d’un éventuel projet de grossesse. La prise en charge doit donc être individualisée.",
+ detail:"L’endométriose est très variable d’une personne à l’autre. L’intensité des symptômes et l’étendue des lésions ne suivent pas nécessairement une relation simple. Après le diagnostic, une première question est donc : qu’est-ce qui pose réellement problème aujourd’hui ?\n\nIl peut s’agir de douleurs pendant les règles, de douleurs pelviennes persistantes, de douleurs pendant les rapports sexuels, de symptômes digestifs ou urinaires dans certaines formes, d’un retentissement sur la vie quotidienne ou d’une problématique de fertilité.\n\nLes recommandations de l’ESHRE couvrent plusieurs possibilités thérapeutiques, notamment les traitements hormonaux et la chirurgie selon les situations. La chirurgie n’est pas une conséquence automatique du diagnostic. Le désir de grossesse peut modifier certaines décisions thérapeutiques, mais endométriose ne signifie pas infertilité. Douleur chronique, sexualité, fatigue, travail et conséquences psychologiques peuvent également faire partie des sujets du suivi.",
+ practical:["Identifier les symptômes qui ont le plus de retentissement au quotidien.","Demander si des examens complémentaires sont nécessaires.","Aborder les différentes options thérapeutiques et un éventuel projet de grossesse."],
+ watch:"Une douleur persistante ou ayant un retentissement important sur les activités, le travail, la sexualité ou la qualité de vie mérite d’être prise en compte dans le suivi.",
+ source:"ESHRE — Guideline Endometriosis",
+ sources:[{label:"ESHRE — Endometriosis Guideline",url:"https://www.eshre.eu/Guidelines-and-Legal/Guidelines/Endometriosis-guideline"},{label:"ESHRE — Guideline Endometriosis, Human Reproduction Open",url:"https://academic.oup.com/hropen/article/2022/2/hoac009/6537540"}],
+ verifiedAt:"28/09/2026",nextAuditAt:"28/03/2027",auditIntervalMonths:6,validationStatus:"VALIDATED",evidenceStatus:"VALIDÉ — validation médicale MACA 28/09/2026"
+},
+{
+ id:'steatose-foie-gras-masld',category:'Digestion & urinaire',
+ title:'Une échographie montre un « foie gras » : est-ce grave ?',
+ keywords:'foie gras stéatose hépatique MASLD MASH fibrose cirrhose échographie foie FIB-4 elastographie diabète obésité métabolique',
+ answer:"Le terme courant « foie gras » correspond à une stéatose hépatique, c’est-à-dire une accumulation de graisse dans le foie. Une stéatose ne signifie pas cirrhose. L’enjeu est surtout de comprendre sa cause et d’évaluer s’il existe une fibrose du foie, beaucoup plus importante pour estimer le risque d’évolution.",
+ detail:"La terminologie a changé récemment. Lorsqu’une stéatose est associée à au moins un facteur cardiométabolique et répond aux autres critères diagnostiques, elle peut entrer dans le cadre d’une MASLD — metabolic dysfunction-associated steatotic liver disease.\n\nCette maladie constitue un spectre : stéatose, puis chez certaines personnes inflammation et lésions cellulaires dans la MASH, fibrose et éventuellement cirrhose. Ces stades ne sont pas synonymes. Une échographie peut détecter une accumulation de graisse mais ne suffit pas à déterminer précisément le degré de fibrose.\n\nLes recommandations EASL–EASD–EASO proposent une évaluation progressive du risque. Des outils non invasifs utilisant des analyses sanguines, notamment le FIB-4, peuvent constituer une première étape ; une élastographie peut être utilisée lorsqu’une évaluation supplémentaire est nécessaire. Diabète de type 2, obésité abdominale, hypertension et anomalies lipidiques peuvent accompagner la MASLD : la prise en charge ne concerne donc pas uniquement le foie.",
+ practical:["Rechercher avec le professionnel de santé les facteurs métaboliques associés.","Distinguer la présence de graisse dans le foie de l’existence éventuelle d’une fibrose.","Demander si une évaluation complémentaire du risque de fibrose est nécessaire."],
+ watch:"Une stéatose découverte à l’échographie ne permet ni de conclure à une cirrhose, ni de prédire à elle seule l’évolution individuelle.",
+ source:"EASL–EASD–EASO 2024 · AASLD",
+ sources:[{label:"EASL–EASD–EASO — Clinical Practice Guidelines on MASLD, Journal of Hepatology 2024",url:"https://www.journal-of-hepatology.eu/article/S0168-8278(24)00329-5/fulltext"},{label:"AASLD — MASLD resources and practice guidance",url:"https://www.aasld.org/new-masld-nomenclature"}],
+ verifiedAt:"28/09/2026",nextAuditAt:"28/03/2027",auditIntervalMonths:6,validationStatus:"VALIDATED",evidenceStatus:"VALIDÉ — validation médicale MACA 28/09/2026"
+}
+];
