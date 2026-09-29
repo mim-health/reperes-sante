@@ -3141,6 +3141,28 @@ window.extraAuditedQuestions=[...(window.extraAuditedQuestions||[]),
 ];
 ;
 
+/* ===== MACA BUNDLE SOURCE: backlog-audited-infections-cancers-2026-09-29.js ===== */
+// MACA Santé — Radar Audience — validation médicale 29/09/2026
+window.extraAuditedQuestions=[...(window.extraAuditedQuestions||[]),
+{
+ id:'infection-provoquer-cancer',category:'Santé au quotidien',
+ title:'Une infection peut-elle provoquer un cancer ?',
+ keywords:'infection cancer HPV papillomavirus helicobacter pylori hépatite B VHB hépatite C VHC Epstein Barr EBV cancer contagieux prévention vaccination dépistage',
+ answer:"Oui, certaines infections peuvent augmenter le risque de développer certains cancers. Les principales sont liées au papillomavirus humain (HPV), à la bactérie Helicobacter pylori, aux virus des hépatites B et C et, plus rarement, à d’autres virus comme Epstein-Barr. Mais avoir une de ces infections ne signifie pas que l’on développera un cancer. Et le cancer lui-même n’est pas contagieux.",
+ detail:"Certaines infections peuvent persister longtemps dans l’organisme. Selon l’agent infectieux, elles peuvent provoquer une inflammation chronique, modifier le fonctionnement des cellules ou perturber certains mécanismes qui contrôlent leur multiplication. Au fil des années, cela peut favoriser l’apparition d’un cancer chez une partie des personnes infectées.\n\nLe papillomavirus humain (HPV) est responsable de la grande majorité des cancers du col de l’utérus et participe également à certains cancers de l’anus, de la vulve, du vagin, du pénis et de la sphère ORL. Helicobacter pylori est une bactérie qui colonise l’estomac : une infection persistante augmente notamment le risque de cancer de l’estomac. Les virus des hépatites B et C peuvent provoquer une infection chronique du foie et augmenter, à long terme, le risque de cancer du foie. Le virus Epstein-Barr (EBV), extrêmement fréquent dans la population, est associé à certains lymphomes et à certains cancers plus rares ; l’immense majorité des personnes ayant rencontré l’EBV ne développeront jamais ces cancers.\n\nÀ l’échelle mondiale, une analyse publiée en 2026 estime qu’environ 12 % des nouveaux cancers diagnostiqués en 2024 étaient attribuables à des infections, soit environ 2,3 millions de cas. Cette proportion varie considérablement selon les régions du monde et ne doit pas être interprétée comme le risque individuel d’une personne vivant en France.",
+ practical:["La vaccination contre le HPV permet de prévenir des infections responsables de plusieurs cancers.","La vaccination contre l’hépatite B contribue à prévenir des cancers du foie liés à une infection chronique.","Le dépistage du cancer du col de l’utérus, ainsi que la recherche et le traitement de certaines infections lorsqu’ils sont indiqués, participent à la prévention."],
+ watch:"Infection ne veut pas dire cancer. Une partie des cancers liés aux infections peut être prévenue grâce à la vaccination, au dépistage ou au traitement de l’infection. Le cancer lui-même ne se transmet pas d’une personne à une autre.",
+ source:"CIRC/IARC · The Lancet Oncology · OMS · INCa",
+ sources:[
+  {label:"IARC — Global burden of cancer attributable to infections in 2024",url:"https://www.iarc.who.int/news-events/global-burden-of-cancer-attributable-to-infections-in-2024-one-in-eight-cancers-worldwide-linked-to-infections/"},
+  {label:"OMS — Cancer du col de l’utérus",url:"https://www.who.int/fr/news-room/fact-sheets/detail/cervical-cancer"},
+  {label:"Institut national du cancer — Prévention des cancers",url:"https://www.e-cancer.fr/Comprendre-prevenir-depister/Reduire-les-risques-de-cancer"}
+ ],
+ verifiedAt:"29/09/2026",nextAuditAt:"29/03/2027",auditIntervalMonths:6,validationStatus:"VALIDATED",evidenceStatus:"VALIDÉ — validation médicale MACA 29/09/2026 · analyse mondiale IARC/Lancet Oncology 2026"
+}
+];
+;
+
 /* ===== MACA BUNDLE SOURCE: structured-backlog-compat.js ===== */
 // Compatibility bridge: converts structured audited cards into the legacy question shape used by app.js.
 (() => {
