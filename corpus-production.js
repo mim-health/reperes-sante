@@ -3165,7 +3165,7 @@ window.extraAuditedQuestions=[...(window.extraAuditedQuestions||[]),
 ;
 
 /* ===== MACA BUNDLE SOURCE: backlog-audited-scombrotoxisme-2026-09-29.js ===== */
-// MACA Santé — validation médicale 29/09/2026
+// MACA Santé — validation médicale 29/09/2026 · corpus Assistant V2
 window.extraAuditedQuestions=[...(window.extraAuditedQuestions||[]),
 {
  id:'thon-intoxication-histamine-scombrotoxisme',category:'Santé au quotidien',
