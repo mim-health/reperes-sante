@@ -3,6 +3,7 @@ window.extraAuditedQuestions=[...(window.extraAuditedQuestions||[]),{
  id:'burnout-parental-epuisement',
  category:'Enfants & parents',
  title:'Burn-out parental : comment savoir si l’on est plus que simplement fatigué ?',
+ contribution:'Avec la contribution d’Ève Piorowicz, psychologue clinicienne',
  keywords:'burn-out parental burnout parental épuisement parent fatigue craquer saturation distanciation émotionnelle dépression aide',
  answer:'Être épuisé par ses enfants à certaines périodes est fréquent. Le burn-out parental correspond à quelque chose de plus durable : un épuisement intense lié au rôle de parent, accompagné d’une perte de plaisir à être parent et parfois d’une prise de distance émotionnelle avec ses enfants. Les travaux de recherche le distinguent du burn-out professionnel et de la dépression, même si plusieurs difficultés peuvent coexister. Ce qui doit particulièrement attirer l’attention est le sentiment de ne plus avoir de ressources pour faire face au quotidien familial, surtout lorsqu’il dure, s’aggrave ou retentit sur la relation avec les enfants.',
  detail:`Le burn-out parental a été décrit comme la conséquence d’un stress parental chronique lorsque les contraintes deviennent durablement supérieures aux ressources disponibles pour y faire face.
