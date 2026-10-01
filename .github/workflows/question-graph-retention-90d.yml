@@ -1,0 +1,20 @@
+name: Question Graph Retention 90d
+on:
+  pull_request:
+    paths:
+      - 'assistant-v2/cloudflare-worker-public.js'
+      - 'assistant-v2/test-question-graph-retention.mjs'
+      - '.github/workflows/question-graph-retention-90d.yml'
+  workflow_dispatch:
+jobs:
+  retention:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Worker syntax
+        run: node --check assistant-v2/cloudflare-worker-public.js
+      - name: Retention policy
+        run: node assistant-v2/test-question-graph-retention.mjs
