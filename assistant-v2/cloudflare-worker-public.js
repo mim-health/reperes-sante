@@ -206,6 +206,12 @@ async function grounding(env,result,cardById){
 }
 
 export default {
+  async scheduled(controller,env,ctx){
+    if(!env.QUESTION_GRAPH||typeof env.QUESTION_GRAPH.prepare!=='function')return;
+    const purge=env.QUESTION_GRAPH.prepare("DELETE FROM questions WHERE created_at < datetime('now', '-90 days')").run().catch(()=>{});
+    if(ctx&&typeof ctx.waitUntil==='function')ctx.waitUntil(purge);
+    else await purge;
+  },
   async fetch(request,env,ctx){
     const origin=request.headers.get('Origin')||'';
     const allowed=env.ALLOWED_ORIGIN||'https://macasante.fr';
