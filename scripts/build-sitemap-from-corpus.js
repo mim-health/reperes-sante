@@ -24,7 +24,7 @@ for(const [loc,lastmod,changefreq,priority] of staticUrls)lines.push(`  <url><lo
 for(const q of canonical){
  const raw=String(q.verifiedAt||q.updatedAt||today).slice(0,10);
  const lastmod=/^\d{4}-\d{2}-\d{2}$/.test(raw)?raw:today;
- const loc=`https://macasante.fr/fiche.html?id=${encodeURIComponent(q.id)}`;
+ const loc=`https://macasante.fr/fiches-seo/${encodeURIComponent(q.id)}.html`;
  lines.push(`  <url><loc>${esc(loc)}</loc><lastmod>${lastmod}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>`);
 }
 lines.push('</urlset>','');
