@@ -56,10 +56,32 @@
       .slice(0, clamp(limit || 10, 1, 50));
   }
 
+  function inferScores(item) {
+    const q = normalize(item.question);
+    const source = normalize(item.source).toLowerCase();
+    const isQuestion = /[?]|\b(comment|pourquoi|est-ce|est ce|peut-on|peut on|dois-je|dois je|normal|grave|risque|quand|combien)\b/i.test(q);
+    const healthTerms = /\b(sante|medecin|traitement|cancer|douleur|fievre|sommeil|grossesse|bebe|enfant|vaccin|diabete|coeur|tension|medicament|fatigue|alimentation|allerg|asthme|bronch|depistage|menopause|alzheimer)\b/i.test(q);
+    return {
+      intent: isQuestion ? 25 : 15,
+      macaFit: healthTerms ? 25 : 12,
+      corpusFit: healthTerms ? 20 : 10,
+      distributionFit: /reddit|forum|facebook-public/.test(source) ? 20 : 15
+    };
+  }
+
+  function prepare(items) {
+    return (items || []).map(item => {
+      const inferred = inferScores(item);
+      return {...inferred, ...item};
+    });
+  }
+
   global.MACAGrowthEngineV0 = Object.freeze({
-    version: "0.1.0",
+    version: "0.2.0",
     scoreOpportunity,
     classifyMacaTest,
-    buildDigest
+    inferScores,
+    prepare,
+    buildDigest: (items, limit) => buildDigest(prepare(items), limit)
   });
 })(typeof window !== "undefined" ? window : globalThis);
