@@ -1,0 +1,15 @@
+<!doctype html><meta charset="utf-8"><title>MACA Growth Engine V0 test</title>
+<script src="./maca-growth-engine-v0.js"></script>
+<script>
+const sample=[
+ {source:"reddit",question:"Comment reprendre le sport après un cancer ?",intent:25,macaFit:25,corpusFit:23,distributionFit:20,macaTest:{answerUseful:true,sourcesPresent:true}},
+ {source:"facebook-public",question:"Mon enfant refuse les morceaux, est-ce normal ?",intent:25,macaFit:24,corpusFit:22,distributionFit:18,macaTest:{abstained:true}},
+ {source:"forum-public",question:"Comment reprendre le sport après un cancer ?",intent:20,macaFit:20,corpusFit:20,distributionFit:20}
+];
+const digest=MACAGrowthEngineV0.buildDigest(sample,10);
+console.table(digest);
+if(digest.length!==2) throw new Error("Deduplication failed");
+if(digest[0].growthScore!==93) throw new Error("Scoring failed");
+if(digest[0].status!=="GREEN") throw new Error("Classification failed");
+document.body.innerHTML="<h1>MACA Growth Engine V0: tests OK</h1><pre>"+JSON.stringify(digest,null,2)+"</pre>";
+</script>
