@@ -1,6 +1,6 @@
 'use strict';
 const fs=require('fs'),vm=require('vm');
-const ALLOWED=new Set(['Ados','Cancer','Cœur & circulation','Digestion & urinaire','Enfants & parents','Prévention & dépistage','Santé au quotidien','Santé des femmes & grossesse','Santé mentale','Seniors']);
+const ALLOWED=new Set(['Ados','Cancer','Cœur & circulation','Digestion & urinaire','Enfants & parents','Prévention & dépistage','Santé au quotidien','Santé des femmes & grossesse','Santé mentale','Seniors','Os & articulations']);
 const norm=v=>String(v||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const strip=s=>String(s).split('?')[0];
 function fail(m,d){console.error('\nFAIL:',m);if(d)console.error(d);process.exitCode=1;}
