@@ -2,7 +2,7 @@ name: Build static SEO fiches
 
 on:
   push:
-    branches: [ "feat/seo-static-fiches-20261002" ]
+    branches: [ "feat/v0-magazine", "feat/seo-static-fiches-20261002" ]
   workflow_dispatch:
 
 permissions:
