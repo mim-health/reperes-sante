@@ -2,7 +2,7 @@
 (function(){
   'use strict';
   const PUBLIC=['Ados','Cancer','Cœur & circulation','Digestion & urinaire','Enfants & parents','Os & articulations','Prévention & dépistage','Santé au quotidien','Santé des femmes & grossesse','Santé mentale','Seniors'];
-  window.MACA_HOME_CATEGORY_PARAM='category';
+  window.MACA_HOME_CATEGORY_PARAM='cat';
   window.MACA_HOME_PUBLIC_CATEGORIES=PUBLIC.slice();
   function init(){
     if(document.body.classList.contains('library-page'))return;
@@ -12,7 +12,7 @@
       const wanted=b.dataset.category||b.textContent.trim();
       if(wanted==='Toutes'||!PUBLIC.includes(wanted))return;
       e.preventDefault();e.stopImmediatePropagation();
-      location.assign(`fiches.html?category=${encodeURIComponent(wanted)}#questions`);
+      location.assign(`fiches.html?cat=${encodeURIComponent(wanted)}#questions`);
     },true);
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
