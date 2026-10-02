@@ -3206,6 +3206,31 @@ window.extraAuditedQuestions=[...(window.extraAuditedQuestions||[]),
 ];
 ;
 
+/* ===== MACA BUNDLE SOURCE: backlog-audited-lipoedeme-2026-10-02.js ===== */
+// MACA Santé — Lipœdème — validation médicale 02/10/2026
+window.extraAuditedQuestions=[...(window.extraAuditedQuestions||[]),
+{
+ id:'lipoedeme-reconnaitre-traitement',category:'Santé des femmes & grossesse',
+ title:'Lipœdème : comment le reconnaître et que peut-on vraiment faire ?',
+ keywords:'lipœdème lipoedème jambes grosses jambes douleur graisse tissu adipeux ecchymoses pieds épargnés obésité lymphœdème compression liposuccion femmes',
+ answer:"Le lipœdème est une maladie chronique du tissu adipeux qui touche très majoritairement les femmes. Il provoque typiquement une augmentation bilatérale et symétrique du tissu graisseux des jambes, parfois des bras, associée à une douleur ou une sensibilité des tissus. Les pieds sont généralement épargnés. Il ne s’agit pas simplement d’un surpoids et le diagnostic est avant tout clinique.",
+ detail:"Le lipœdème est encore souvent confondu avec l’obésité ou le lymphœdème. Le consensus international publié en 2026 le décrit comme une maladie chronique caractérisée par une augmentation bilatérale et symétrique du tissu adipeux sous-cutané des extrémités, accompagnée de douleur ou d’inconfort. Une sensation de lourdeur et une tendance aux ecchymoses peuvent également être rapportées. Les pieds sont classiquement épargnés, mais aucun signe isolé ne suffit à poser le diagnostic.\n\nIl n’existe actuellement ni prise de sang ni examen d’imagerie permettant, à lui seul, de confirmer un lipœdème. L’examen médical sert notamment à distinguer un lipœdème d’une obésité, d’un lymphœdème, d’une maladie veineuse ou d’autres causes d’augmentation du volume des jambes. Lipœdème et obésité peuvent par ailleurs coexister. Une perte de poids peut être bénéfique lorsqu’un excès pondéral est présent, sans nécessairement supprimer la disproportion caractéristique du lipœdème.\n\nLa prise en charge vise principalement à réduire les symptômes et à préserver la mobilité et la qualité de vie. Elle peut associer activité physique adaptée, compression selon les symptômes, prise en charge de la douleur et des maladies associées. La compression peut améliorer certains symptômes mais ne fait pas disparaître le tissu adipeux.\n\nChez certaines patientes correctement sélectionnées restant symptomatiques malgré une prise en charge conservatrice, une liposuccion utilisant une technique adaptée peut être discutée. Des études rapportent des améliorations de la douleur, de la mobilité et de la qualité de vie, mais la littérature reste dominée par des études observationnelles et le niveau de preuve demeure limité. Elle ne doit donc pas être présentée comme une solution universelle ni comme un simple geste esthétique.",
+ practical:["Une augmentation symétrique et disproportionnée du volume des jambes associée à une douleur ou une sensibilité peut justifier une évaluation médicale.","Le poids seul ne permet ni de confirmer ni d’exclure un lipœdème.","Activité physique adaptée et compression peuvent faire partie de la prise en charge selon les symptômes.","Avant d’envisager une liposuccion, le diagnostic et les autres causes possibles d’augmentation du volume des jambes doivent être évalués."],
+ watch:"Une jambe qui gonfle brutalement, surtout d’un seul côté, avec douleur, rougeur ou chaleur n’est pas une présentation habituelle d’un simple lipœdème et nécessite une évaluation rapide. Une dyspnée ou une douleur thoracique associée constitue une urgence.",
+ source:"Nature Communications · consensus international Lipedema World Alliance 2026",
+ sources:[
+  {label:"Nature Communications — Lipedema World Alliance Delphi Consensus 2026",url:"https://www.nature.com/articles/s41467-025-68232-z"},
+  {label:"PubMed — Lipedema World Alliance Delphi Consensus 2026",url:"https://pubmed.ncbi.nlm.nih.gov/41519859/"},
+  {label:"PubMed — S2k guideline on lipedema 2024",url:"https://pubmed.ncbi.nlm.nih.gov/39188170/"}
+ ],
+ image:"https://images.pexels.com/photos/3764014/pexels-photo-3764014.jpeg?auto=compress&cs=tinysrgb&w=1200",
+ imageAlt:"Femme lors d’une consultation médicale concernant les membres inférieurs.",
+ imageCredit:"Photo : Andrea Piacquadio / Pexels",imageSource:"https://www.pexels.com/",imageLicense:"Pexels License — free to use",
+ validationStatus:"PUBLISHED",editorialStatus:"PUBLISHED",verifiedAt:"2026-10-02",nextAuditAt:"2027-01-02",auditIntervalMonths:3,lastReviewed:"2026-10-02",auditDue:"2027-01-02"
+}
+];
+;
+
 /* ===== MACA BUNDLE SOURCE: backlog-audited-scombrotoxisme-2026-09-29.js ===== */
 // MACA Santé — validation médicale 29/09/2026 · corpus Assistant V2
 window.extraAuditedQuestions=[...(window.extraAuditedQuestions||[]),
