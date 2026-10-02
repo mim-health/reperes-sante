@@ -6,7 +6,7 @@
 (function(){
 'use strict';
 const CATEGORY_MAP={
- 'Médicaments':'Santé au quotidien','Prévention':'Cœur & circulation','Prévention & bien-être':'Santé au quotidien',
+ 'Médicaments':'Santé au quotidien','Os, articulations & douleurs':'Os & articulations','Os & articulations':'Os & articulations','Prévention':'Cœur & circulation','Prévention & bien-être':'Santé au quotidien',
  'Nutrition':'Santé au quotidien','Symptômes':'Santé au quotidien','Sommeil':'Santé mentale','Sommeil & santé mentale':'Santé mentale',
  'Après 60 ans':'Seniors','Senior':'Seniors','Santé des femmes':'Santé des femmes & grossesse','Grossesse & santé des femmes':'Santé des femmes & grossesse',
  'Enfant & bébé':'Enfants & parents','Enfants':'Enfants & parents','Enfants & Ados':'Enfants & parents','Adolescents':'Ados',
