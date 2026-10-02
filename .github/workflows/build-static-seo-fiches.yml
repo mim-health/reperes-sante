@@ -1,0 +1,36 @@
+name: Build static SEO fiches
+
+on:
+  push:
+    branches: [ "feat/seo-static-fiches-20261002" ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Generate crawlable fiche pages
+        run: node scripts/build-static-seo-fiches.js
+      - name: Rebuild sitemap
+        run: node scripts/build-sitemap-from-corpus.js
+      - name: Validate output
+        run: |
+          test -d fiches-seo
+          test "$(find fiches-seo -name '*.html' | wc -l)" -gt 250
+          grep -q '<h1>' fiches-seo/*.html
+          grep -q 'fiches-seo/' sitemap.xml
+          ! grep -q 'fiche.html?id=' sitemap.xml
+      - name: Commit generated SEO pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add fiches-seo sitemap.xml
+          git diff --cached --quiet || git commit -m "seo: generate static crawlable fiche pages"
+          git push
