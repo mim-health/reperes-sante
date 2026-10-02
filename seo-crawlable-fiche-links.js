@@ -21,7 +21,7 @@
 
       const link=document.createElement('a');
       link.className='maca-seo-fiche-link';
-      link.href=`fiche.html?id=${encodeURIComponent(id)}`;
+      link.href=`fiches-seo/${encodeURIComponent(id)}.html`;
       while(h3.firstChild)link.appendChild(h3.firstChild);
       h3.appendChild(link);
     });

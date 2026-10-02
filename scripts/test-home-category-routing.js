@@ -3,7 +3,7 @@ const routing=fs.readFileSync('home-category-routing.js','utf8');
 const source=fs.readFileSync('source-ui.js','utf8');
 const index=fs.readFileSync('index.html','utf8');
 const library=fs.readFileSync('fiches.html','utf8');
-const categories=['Santé au quotidien','Cœur & prévention','Digestion & urinaire','Santé des femmes & grossesse','Enfants & parents','Ados','Santé mentale','Seniors'];
+const categories=['Ados','Cancer','Cœur & circulation','Digestion & urinaire','Enfants & parents','Os & articulations','Prévention & dépistage','Santé au quotidien','Santé des femmes & grossesse','Santé mentale','Seniors'];
 for(const cat of categories) if(!routing.includes(cat)) throw new Error('Missing public category: '+cat);
 if(!routing.includes("MACA_HOME_CATEGORY_PARAM='cat'")) throw new Error('Home routing must expose canonical cat parameter');
 if(routing.includes('fiches.html?category=')) throw new Error('Legacy category parameter still present');
@@ -11,4 +11,4 @@ if(!routing.includes('fiches.html?cat=')) throw new Error('Home routing does not
 if(!source.includes("params.get('cat')")) throw new Error('Library does not restore cat parameter');
 if(!index.includes('home-category-routing.js')) throw new Error('Homepage missing routing script');
 if(!library.includes('id="category-filters"')) throw new Error('Library missing category filter target');
-console.log('Home → 8 categories routing gate PASS');
+console.log('Home → public categories routing gate PASS');

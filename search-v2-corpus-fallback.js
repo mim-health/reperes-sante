@@ -9,7 +9,7 @@
   if(!base||typeof base.resolve!=='function'||typeof base.rank!=='function')throw new Error('MACA_SEARCH_V2 required before corpus fallback');
 
   const baseResolve=base.resolve.bind(base);
-  const STOPWORDS=new Set(['a','ai','au','aux','avec','ce','ces','dans','de','des','du','elle','en','est','et','fait','faire','faut','il','je','j','la','le','les','ma','mais','me','mes','mon','ne','nous','on','ou','par','pas','pour','que','quel','quelle','quels','quelles','qui','sa','se','ses','son','sur','un','une','vous','votre','depuis','quand','comment','pourquoi','peut','peux','dois','doit','jai','cest','estce','avoir','chez']);
+  const STOPWORDS=new Set(['a','ai','au','aux','avec','ce','ces','dans','de','des','du','elle','en','est','et','fait','faire','faut','il','je','j','la','le','les','ma','mais','me','mes','mon','ne','nous','on','ou','par','pas','pour','que','quel','quelle','quels','quelles','qui','sa','se','ses','son','sur','un','une','vous','votre','depuis','longtemps','quand','comment','pourquoi','peut','peux','dois','doit','jai','cest','estce','avoir','chez']);
   const GENERIC_SINGLE=new Set(['douleur','mal','fatigue','malaise','sang','bouton','boutons','traitement','symptome','symptomes','adulte','enfant','femme','homme','senior','sante']);
   const ANCHORS=[
     {terms:['vaccin','vaccins','vaccination'],id:'vaccins-adulte'},

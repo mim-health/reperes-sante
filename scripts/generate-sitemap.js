@@ -14,7 +14,7 @@ if(missing.length) throw new Error('Canonical cards without stable ID: '+missing
 if(new Set(ids).size!==ids.length) throw new Error('Duplicate canonical IDs prevent sitemap generation');
 const today=process.env.SITEMAP_DATE||new Date().toISOString().slice(0,10);
 const staticUrls=[['https://macasante.fr/',today,'daily','1.0'],['https://macasante.fr/fiches.html',today,'daily','0.9'],['https://macasante.fr/mentions-legales.html','2026-08-21','yearly','0.2'],['https://macasante.fr/confidentialite.html','2026-08-21','yearly','0.2'],['https://macasante.fr/contact.html','2026-08-21','yearly','0.3']];
-const ficheUrls=ids.map(id=>[`https://macasante.fr/fiche.html?id=${encodeURIComponent(id)}`,today,'monthly','0.8']);
+const ficheUrls=ids.map(id=>[`https://macasante.fr/fiches-seo/${encodeURIComponent(id)}.html`,today,'monthly','0.8']);
 const all=staticUrls.concat(ficheUrls);const rows=all.map(([loc,lastmod,changefreq,priority])=>`  <url><loc>${esc(loc)}</loc><lastmod>${lastmod}</lastmod><changefreq>${changefreq}</changefreq><priority>${priority}</priority></url>`);
 const xml=`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${rows.join('\n')}\n</urlset>\n`;
 if(process.argv.includes('--check')){
