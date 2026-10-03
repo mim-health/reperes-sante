@@ -1,0 +1,40 @@
+name: MACA Growth Digest V0
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 5 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/growth-engine-v0-20261002
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Collect recent public Reddit questions
+        env:
+          GROWTH_SUBREDDITS: "ParentingFR,AskFrance"
+          GROWTH_REDDIT_LIMIT: "50"
+          GROWTH_USER_AGENT: "MACASante-GrowthRadar/0.1"
+        run: node scripts/growth-reddit-collector-v0.js
+      - name: Build daily Growth Top 10
+        env:
+          GROWTH_INPUT_PATH: "growth-input.json"
+          GROWTH_LIMIT: "10"
+        run: node scripts/growth-digest-v0.js
+      - name: Upload private digest artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: maca-growth-digest
+          path: |
+            growth-digest-latest.json
+            growth-digest-latest.md
+          retention-days: 14
