@@ -92,7 +92,10 @@
       'moustique-tigre-maladies-france-20260824',
       'west-nile-france-20260825',
       'fumees-incendie-protection-20260825',
-      'cystite-femme'
+      'cystite-femme',
+      'piqure-guepe-abeille-que-faire',
+      'brulure-domestique-premiers-gestes',
+      'morsure-chien-chat-que-faire'
     ];
     const missing = expectedDetailed.filter((id) => {
       const card = latestCard(id);
