@@ -6,20 +6,11 @@ on:
       - feat/v0-magazine
       - feat/assistant-v2-auto-publish-20260923
     paths:
+      - '*.js'
+      - 'scripts/build-assistant-v2-*.js'
+      - 'scripts/publish-assistant-v2.sh'
+      - 'scripts/test-assistant-v2-*.js'
       - '.github/workflows/assistant-v2-auto-publish.yml'
-      - 'scripts/build-assistant-v2-corpus.js'
-      - 'scripts/build-assistant-v2-embeddings.js'
-      - 'corpus-manifest.js'
-      - 'corpus-canonicalizer.js'
-      - 'maca-category-access.js'
-      - 'qa-data*.js'
-      - 'evidence-model.js'
-      - 'audit-overrides.js'
-      - 'backlog-*.js'
-      - 'maca-extra*.js'
-      - 'maca-daily-archive.js'
-      - 'structured-backlog-compat.js'
-      - 'migration-*.js'
   workflow_dispatch:
 
 concurrency:
@@ -98,59 +89,10 @@ jobs:
           NODE
 
       - name: Run public search regression
-        run: node search-v2-tests-p0.js
+        run: node scripts/test-assistant-v2-canonical.js
 
       - name: Publish immutable version and atomic latest pointer
-        run: |
-          VERSION="$(node -p "require('./assistant-v2/corpus.json').fingerprint")"
-          CARD_COUNT="$(node -p "require('./assistant-v2/corpus.json').cardCount")"
-          DEST="assistant-v2/public-artifacts/$VERSION"
-          mkdir -p "$DEST"
-          cp assistant-v2/corpus.json "$DEST/corpus.json"
-          cp assistant-v2/embeddings.index.json "$DEST/embeddings.index.json"
-          node - "$VERSION" "$CARD_COUNT" <<'NODE'
-          const fs=require('fs');
-          const version=process.argv[2];
-          const cardCount=Number(process.argv[3]);
-          const latest={
-            schemaVersion:1,
-            version,
-            corpusFingerprint:version,
-            cardCount,
-            sourceCommit:process.env.GITHUB_SHA,
-            generatedAt:new Date().toISOString()
-          };
-          fs.writeFileSync('assistant-v2/latest.json',JSON.stringify(latest,null,2)+'\n');
-          NODE
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git fetch origin "$GITHUB_REF_NAME" --depth=1
-          REMOTE_HEAD="$(git rev-parse "origin/$GITHUB_REF_NAME")"
-          if [ "$REMOTE_HEAD" != "$GITHUB_SHA" ]; then
-            echo "Branch advanced ($GITHUB_SHA -> $REMOTE_HEAD); skip publication. A newer run will publish the current corpus."
-            exit 0
-          fi
-          git add assistant-v2/latest.json "$DEST/corpus.json" "$DEST/embeddings.index.json"
-          if git diff --cached --quiet; then
-            echo "Artifacts already current."
-            exit 0
-          fi
-          git commit -m "build(assistant-v2): publish validated corpus artifacts $VERSION"
-          # The corpus-bundle workflow may publish generated files to the same branch in parallel.
-          # Rebase the immutable Assistant artifacts onto the latest branch head before pushing.
-          PUSHED=false
-          for attempt in 1 2 3; do
-            git fetch origin "$GITHUB_REF_NAME" --depth=1
-            git rebase "origin/$GITHUB_REF_NAME"
-            if git push origin "HEAD:$GITHUB_REF_NAME"; then
-              PUSHED=true
-              break
-            fi
-            echo "Concurrent branch update during Assistant publication; retry $attempt/3"
-            sleep 2
-          done
-          if [ "$PUSHED" != "true" ]; then
-            echo "Assistant artifact publication failed after 3 concurrency retries" >&2
-            exit 1
-          fi
-          echo "Assistant artifacts published successfully."
+        run: bash scripts/publish-assistant-v2.sh
+
+      - name: Detect live corpus desynchronization and verify acceptance cases
+        run: node scripts/test-assistant-v2-live-corpus.js
