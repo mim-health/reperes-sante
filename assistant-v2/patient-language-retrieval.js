@@ -16,13 +16,18 @@ function phraseMatch(query,phrase){
   return tokenCount>=3 && (` ${q} `).includes(` ${p} `);
 }
 
-function hasAny(query,list){
-  return (list||[]).some(value=>phraseMatch(query,value));
+function containsTerm(query,value){
+  const q=normalizePatientLanguage(query),v=normalizePatientLanguage(value);
+  return Boolean(q&&v&&(` ${q} `).includes(` ${v} `));
+}
+
+function hasAnyTerm(query,list){
+  return (list||[]).some(value=>containsTerm(query,value));
 }
 
 function entryAllowed(query,entry){
-  if(hasAny(query,entry.excludePhrases))return false;
-  if(entry.requiredPhrases&&entry.requiredPhrases.length&&!hasAny(query,entry.requiredPhrases))return false;
+  if(hasAnyTerm(query,entry.excludePhrases))return false;
+  if(entry.requiredPhrases&&entry.requiredPhrases.length&&!hasAnyTerm(query,entry.requiredPhrases))return false;
   return true;
 }
 
