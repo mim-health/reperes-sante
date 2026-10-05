@@ -88,6 +88,29 @@ async function ask(question){
   items=items.slice(0,limit);
   if(!items.length){console.error("No usable growth opportunities after normalization.");process.exit(4)}
   for(const item of items){item.macaTest=await ask(item.question);await sleep(1200)}
+  // Recommendations must follow the observed Assistant result, not estimated coverage.
+  const matchedCards=items.filter(x=>x.macaTest.status==="GREEN").flatMap(x=>x.macaTest.cards);
+  for(const item of items){
+    item.initialAction=item.action;
+    if(item.macaTest.status==="RED"){
+      item.action="FIX_PRODUCT";
+      item.reviewReason="Échec technique ou réponse sans fiche : vérifier avant toute diffusion.";
+    }else if(item.macaTest.status==="GAP"){
+      const query=fp(item.question);
+      const candidates=matchedCards.filter(c=>{
+        const label=fp(String(c.id||"").replace(/-/g," ")+" "+String(c.title||""));
+        return query.length>=4 && (" "+label+" ").includes(" "+query+" ");
+      });
+      item.relatedCards=[...new Map(candidates.map(c=>[c.id||c.title,c])).values()];
+      item.action=item.relatedCards.length?"FIX_PRODUCT":"REVIEW_GAP";
+      item.reviewReason=item.relatedCards.length
+        ?"Abstention malgré une fiche potentiellement liée retrouvée pour une autre requête : vérifier la recherche."
+        :"Abstention : vérifier le corpus avant de proposer un sujet éditorial.";
+    }else{
+      item.action=item.growthScore>=70?"REVIEW_DISTRIBUTION":item.growthScore>=50?"TEST":"WATCH";
+      item.reviewReason="Réponse avec fiche : proposition à valider humainement, aucune publication automatique.";
+    }
+  }
   fs.writeFileSync("growth-digest-latest.json",JSON.stringify(items,null,2)+"\n");
   const lines=["# MACA Growth — Digest","",`Généré: ${new Date().toISOString()} — ${items.length} opportunité(s).`,""];
   items.forEach((x,i)=>{
@@ -100,6 +123,8 @@ async function ask(question){
       `Source: ${x.source}${x.sourceUrl?" — "+x.sourceUrl:""}`,
       ...(g?[g]:[]),
       `Fiches MACA: ${x.macaTest.cards.map(c=>c.title||c.id).filter(Boolean).join(", ")||"aucune"}`,
+      `Décision: ${x.reviewReason}`,
+      ...(x.relatedCards&&x.relatedCards.length?[`Fiches à vérifier: ${x.relatedCards.map(c=>c.title||c.id).join(", ")}`]:[]),
       ""
     );
   });
