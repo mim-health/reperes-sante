@@ -5,11 +5,14 @@ on:
     branches:
       - feat/v0-magazine
       - feat/assistant-v2-auto-publish-20260923
+      - feat/assistant-v2-patient-language-retrieval-20261005
     paths:
       - '*.js'
       - 'scripts/build-assistant-v2-*.js'
       - 'scripts/publish-assistant-v2.sh'
       - 'scripts/test-assistant-v2-*.js'
+      - 'assistant-v2/patient-language-*.js'
+      - 'assistant-v2/patient-language-*.json'
       - '.github/workflows/assistant-v2-auto-publish.yml'
   workflow_dispatch:
 
@@ -87,6 +90,9 @@ jobs:
           for(const id of vectorIds) if(!corpusIds.has(id)) throw new Error(`Orphan embedding for ${id}`);
           console.log(`Atomic integrity OK: ${corpus.cardCount} cards/vectors`);
           NODE
+
+      - name: Run patient-language regression
+        run: node scripts/test-assistant-v2-patient-language.js
 
       - name: Run public search regression
         run: node scripts/test-assistant-v2-canonical.js
