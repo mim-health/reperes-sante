@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "version": "2026-10-05",
+  "policy": "human-validated-only",
+  "entries": [
+    {
+      "key": "nycturia",
+      "targetId": "nycturie-levers-nocturnes-uriner",
+      "canonicalAliases": [
+        "nycturie"
+      ],
+      "patientPhrases": [
+        "se lever la nuit pour uriner",
+        "se lever plusieurs fois la nuit pour uriner",
+        "uriner plusieurs fois la nuit",
+        "reveils nocturnes pour aller aux toilettes",
+        "je me leve plusieurs fois la nuit pour uriner"
+      ],
+      "medicalSynonyms": [
+        "mictions nocturnes",
+        "pollakiurie nocturne"
+      ],
+      "source": "Growth Engine / Google Search Console — validation humaine 2026-10-05",
+      "reason": "Relier le terme médical nycturie aux formulations spontanées de réveils nocturnes pour uriner."
+    },
+    {
+      "key": "sciatica-mri",
+      "targetId": "sciatique-irm-quand",
+      "canonicalAliases": [
+        "sciatique irm"
+      ],
+      "patientPhrases": [
+        "faut il une irm pour une sciatique",
+        "quand faire une irm pour une sciatique",
+        "dois je faire une irm pour une sciatique",
+        "irm obligatoire pour une sciatique"
+      ],
+      "medicalSynonyms": [
+        "lombosciatique irm",
+        "radiculalgie irm"
+      ],
+      "excludePhrases": [
+        "genou",
+        "epaule",
+        "cervicales",
+        "migraine",
+        "orl"
+      ],
+      "source": "Growth Engine / Google Search Console — validation humaine 2026-10-05",
+      "reason": "Mapper les requêtes IRM + sciatique vers la fiche dédiée sans élargir à l'imagerie générale."
+    },
+    {
+      "key": "postmenopausal-bleeding",
+      "targetId": "saignement-apres-menopause",
+      "canonicalAliases": [
+        "saignement apres menopause"
+      ],
+      "patientPhrases": [
+        "pertes de sang apres la menopause",
+        "je saigne apres la menopause",
+        "saigner apres la menopause",
+        "petites pertes de sang apres la menopause",
+        "saignement vaginal apres la menopause"
+      ],
+      "medicalSynonyms": [
+        "metrorragies postmenopausiques",
+        "saignement postmenopausique"
+      ],
+      "requiredPhrases": [
+        "menopause",
+        "menopausee",
+        "postmenopausique",
+        "postmenopausiques"
+      ],
+      "source": "Growth Engine / Google Search Console — validation humaine 2026-10-05",
+      "reason": "Distinguer explicitement les saignements post-ménopausiques des autres saignements gynécologiques."
+    },
+    {
+      "key": "reflux-pyrosis",
+      "targetId": "reflux-adulte",
+      "canonicalAliases": [
+        "pyrosis"
+      ],
+      "patientPhrases": [
+        "brulures d estomac",
+        "remontees acides",
+        "acide qui remonte"
+      ],
+      "medicalSynonyms": [
+        "rgo"
+      ],
+      "source": "Référentiel MACA_SEARCH_V2 déjà validé",
+      "reason": "Cas témoin de synonymie patient/médicale déjà stabilisée."
+    },
+    {
+      "key": "adult-epistaxis",
+      "targetId": "saignement-nez-adulte",
+      "canonicalAliases": [
+        "epistaxis"
+      ],
+      "patientPhrases": [
+        "saignement de nez",
+        "nez qui saigne",
+        "je saigne du nez"
+      ],
+      "medicalSynonyms": [],
+      "excludePhrases": [
+        "enfant",
+        "bebe",
+        "nourrisson"
+      ],
+      "source": "Référentiel MACA_SEARCH_V2 déjà validé",
+      "reason": "Cas témoin avec garde-fou de population."
+    },
+    {
+      "key": "adult-dyspnea",
+      "targetId": "essoufflement-adulte",
+      "canonicalAliases": [
+        "dyspnee"
+      ],
+      "patientPhrases": [
+        "essoufflement",
+        "manque d air",
+        "souffle court",
+        "vite essouffle"
+      ],
+      "medicalSynonyms": [],
+      "excludePhrases": [
+        "enfant",
+        "bebe",
+        "nourrisson"
+      ],
+      "source": "Référentiel MACA_SEARCH_V2 déjà validé",
+      "reason": "Cas témoin de traduction vocabulaire médical vers langage courant."
+    }
+  ]
+}
