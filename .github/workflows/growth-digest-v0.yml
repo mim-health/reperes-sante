@@ -1,6 +1,11 @@
 name: MACA Growth Digest V0
 
 on:
+  push:
+    branches:
+      - feat/growth-engine-v0-20261002
+    paths:
+      - .github/workflows/growth-digest-v0.yml
   workflow_dispatch:
   schedule:
     - cron: "15 5 * * *"
