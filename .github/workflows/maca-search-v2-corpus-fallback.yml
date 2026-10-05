@@ -48,7 +48,7 @@ jobs:
           test -n "$CHROME" || { echo "No Chrome/Chromium executable found"; exit 2; }
           echo "CHROME=$CHROME" >> "$GITHUB_ENV"
 
-      - name: Preserve 120 P0 regression tests
+      - name: Preserve P0 regression tests
         run: |
           "$CHROME" --headless=new --disable-gpu --no-sandbox --disable-dev-shm-usage \
             --virtual-time-budget=20000 --dump-dom \
@@ -60,7 +60,7 @@ jobs:
           if not m: print('Machine result missing'); sys.exit(1)
           data=json.loads(html.unescape(re.sub(r'<[^>]+>','',m.group(1))).strip())
           print('V2_P0='+json.dumps(data,ensure_ascii=False))
-          if not (data.get('ready') and data.get('total')==132 and data.get('failed')==0): sys.exit(1)
+          if not (data.get('ready') and data.get('total',0)>=132 and data.get('failed')==0): sys.exit(1)
           PY
 
       - name: Validate curated corpus cases

@@ -5,11 +5,14 @@ on:
     branches:
       - feat/v0-magazine
       - feat/assistant-v2-auto-publish-20260923
+      - feat/assistant-v2-patient-language-retrieval-20261005
     paths:
       - '*.js'
       - 'scripts/build-assistant-v2-*.js'
       - 'scripts/publish-assistant-v2.sh'
       - 'scripts/test-assistant-v2-*.js'
+      - 'assistant-v2/patient-language-*.js'
+      - 'assistant-v2/patient-language-*.json'
       - '.github/workflows/assistant-v2-auto-publish.yml'
   workflow_dispatch:
 
@@ -88,11 +91,16 @@ jobs:
           console.log(`Atomic integrity OK: ${corpus.cardCount} cards/vectors`);
           NODE
 
+      - name: Run patient-language regression
+        run: node scripts/test-assistant-v2-patient-language.js
+
       - name: Run public search regression
         run: node scripts/test-assistant-v2-canonical.js
 
       - name: Publish immutable version and atomic latest pointer
+        if: github.ref_name == 'feat/v0-magazine'
         run: bash scripts/publish-assistant-v2.sh
 
       - name: Detect live corpus desynchronization and verify acceptance cases
+        if: github.ref_name == 'feat/v0-magazine'
         run: node scripts/test-assistant-v2-live-corpus.js

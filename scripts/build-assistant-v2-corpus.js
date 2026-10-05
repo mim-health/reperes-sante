@@ -18,6 +18,7 @@ const ROOT = path.resolve(__dirname, '..');
 const OUT_DIR = path.join(ROOT, 'assistant-v2');
 const OUT_CORPUS = path.join(OUT_DIR, 'corpus.json');
 const OUT_REPORT = path.join(OUT_DIR, 'corpus.report.json');
+const ALIASES_PATH = path.join(OUT_DIR, 'patient-language-aliases.json');
 
 function read(rel) {
   return fs.readFileSync(path.join(ROOT, rel), 'utf8');
@@ -94,6 +95,25 @@ function compactJoin(parts) {
   return parts.map(cleanString).filter(Boolean).join('\n\n');
 }
 
+function loadPatientLanguageAliases() {
+  const registry = JSON.parse(fs.readFileSync(ALIASES_PATH, 'utf8'));
+  if (!registry || registry.schemaVersion !== 1 || !Array.isArray(registry.entries)) {
+    throw new Error('Registre patient-language invalide');
+  }
+  return registry;
+}
+
+function aliasesForCard(registry, id) {
+  const values = [];
+  for (const entry of registry.entries) {
+    if (entry.targetId !== id) continue;
+    for (const field of ['canonicalAliases', 'patientPhrases', 'medicalSynonyms']) {
+      if (Array.isArray(entry[field])) values.push(...entry[field]);
+    }
+  }
+  return [...new Set(values.map(cleanString).filter(Boolean))];
+}
+
 function build() {
   const files = manifestFiles();
   const context = createContext();
@@ -106,6 +126,7 @@ function build() {
   }
 
   const canonical = Array.from(context.MACA_BUILD_CANONICAL_CORPUS());
+  const patientLanguageAliases = loadPatientLanguageAliases();
 
   runFile(context, 'maca-category-access.js');
   const categoryAccess = context.MACA_CATEGORY_ACCESS;
@@ -128,6 +149,7 @@ function build() {
     const watch = cleanString(card.watch || card.vigilance);
     const url = cleanString(card.url);
     const sources = cleanSources(card);
+    const patientAliases = aliasesForCard(patientLanguageAliases, id);
 
     return {
       id,
@@ -154,6 +176,7 @@ function build() {
       retrievalText: compactJoin([
         title,
         keywords.length ? `Mots-clés : ${keywords.join(', ')}` : '',
+        patientAliases.length ? `Formulations patient validées : ${patientAliases.join(', ')}` : '',
         answer,
         detail,
         usefulInfo,
@@ -172,6 +195,12 @@ function build() {
   const noAnswer = [];
   const noDetail = [];
   const noSources = [];
+  const invalidAliasTargets = [];
+
+  const cardIds = new Set(cards.map(card => card.id).filter(Boolean));
+  for (const entry of patientLanguageAliases.entries) {
+    if (!entry || !cleanString(entry.targetId) || !cardIds.has(cleanString(entry.targetId))) invalidAliasTargets.push(entry && entry.targetId ? entry.targetId : '(missing targetId)');
+  }
 
   cards.forEach((card, index) => {
     if (!card.id) missingId.push(index);
@@ -191,7 +220,8 @@ function build() {
     missingId,
     duplicateIds: [...new Set(duplicateIds)],
     missingTitle,
-    missingRetrievalText
+    missingRetrievalText,
+    invalidAliasTargets
   };
 
   const warnings = {
@@ -208,6 +238,7 @@ function build() {
     manifestEntries: files.length,
     activeCategories,
     cardCount: cards.length,
+    patientLanguageAliases,
     cards
   };
 
@@ -233,6 +264,8 @@ function build() {
     exportedCardCount: cards.length,
     activeCategories,
     fingerprint,
+    patientLanguageAliasVersion: patientLanguageAliases.version || '',
+    patientLanguageAliasEntries: patientLanguageAliases.entries.length,
     fatalCount,
     warningCount,
     fatal,

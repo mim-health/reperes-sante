@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "suite": "assistant-v2-patient-language-regression",
+  "createdAt": "2026-10-05",
+  "cases": [
+    {
+      "question": "nycturie",
+      "expectedId": "nycturie-levers-nocturnes-uriner",
+      "expectedStatus": "answer",
+      "forbiddenIds": [
+        "insomnie-adulte",
+        "cystite-femme"
+      ],
+      "reason": "Terme médical exact vers la fiche nycturie validée.",
+      "source": "Growth Engine / Search Console",
+      "classification": "RETRIEVAL_GAP"
+    },
+    {
+      "question": "se lever la nuit pour uriner",
+      "expectedId": "nycturie-levers-nocturnes-uriner",
+      "expectedStatus": "answer",
+      "forbiddenIds": [
+        "insomnie-adulte",
+        "cystite-femme"
+      ],
+      "reason": "Formulation patient naturelle équivalente à nycturie.",
+      "source": "Growth Engine / Search Console",
+      "classification": "RETRIEVAL_GAP"
+    },
+    {
+      "question": "uriner plusieurs fois la nuit",
+      "expectedId": "nycturie-levers-nocturnes-uriner",
+      "expectedStatus": "answer",
+      "forbiddenIds": [
+        "insomnie-adulte",
+        "cystite-femme"
+      ],
+      "reason": "Formulation patient fréquente, sans symptôme de cystite implicite.",
+      "source": "Growth Engine / Search Console",
+      "classification": "RETRIEVAL_GAP"
+    },
+    {
+      "question": "sciatique IRM",
+      "expectedId": "sciatique-irm-quand",
+      "expectedStatus": "answer",
+      "forbiddenIds": [
+        "douleur-genou-escaliers"
+      ],
+      "reason": "Requête courte Search Console vers la fiche IRM dédiée.",
+      "source": "Growth Engine / Search Console",
+      "classification": "RETRIEVAL_GAP"
+    },
+    {
+      "question": "faut-il une IRM pour une sciatique",
+      "expectedId": "sciatique-irm-quand",
+      "expectedStatus": "answer",
+      "forbiddenIds": [
+        "douleur-genou-escaliers"
+      ],
+      "reason": "Question patient explicite sur l'indication d'IRM.",
+      "source": "Growth Engine / Search Console",
+      "classification": "RETRIEVAL_GAP"
+    },
+    {
+      "question": "saignement après ménopause",
+      "expectedId": "saignement-apres-menopause",
+      "expectedStatus": "answer",
+      "forbiddenIds": [
+        "saignement-nez-adulte",
+        "menopause"
+      ],
+      "reason": "Symptôme gynécologique post-ménopausique explicite.",
+      "source": "Growth Engine / Search Console",
+      "classification": "RETRIEVAL_GAP"
+    },
+    {
+      "question": "pertes de sang après la ménopause",
+      "expectedId": "saignement-apres-menopause",
+      "expectedStatus": "answer",
+      "forbiddenIds": [
+        "saignement-nez-adulte",
+        "menopause"
+      ],
+      "reason": "Formulation patient alternative du saignement post-ménopausique.",
+      "source": "Growth Engine / Search Console",
+      "classification": "RETRIEVAL_GAP"
+    }
+  ]
+}
