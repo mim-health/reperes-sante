@@ -133,7 +133,14 @@
     ['Alzheimer activite physique',['activite-physique-alzheimer-risque-demence']],
     ['prevenir Alzheimer en bougeant',['activite-physique-alzheimer-risque-demence']],
     ['Alzheimer refus de toilette',['alzheimer-refus-soins-repas']],
-    ['Alzheimer refuse de manger',['alzheimer-refus-soins-repas']]
+    ['Alzheimer refuse de manger',['alzheimer-refus-soins-repas']],
+    ['nycturie',['nycturie-levers-nocturnes-uriner']],
+    ['se lever la nuit pour uriner',['nycturie-levers-nocturnes-uriner']],
+    ['uriner plusieurs fois la nuit',['nycturie-levers-nocturnes-uriner']],
+    ['sciatique IRM',['sciatique-irm-quand']],
+    ['faut-il une IRM pour une sciatique',['sciatique-irm-quand']],
+    ['saignement apres menopause',['saignement-apres-menopause']],
+    ['pertes de sang apres la menopause',['saignement-apres-menopause']]
   ].map(([query,ids])=>({query,expectedIds:ids}));
   root.MACA_SEARCH_V2_P0_TESTS=cases;
 })(typeof window!=='undefined'?window:globalThis);
