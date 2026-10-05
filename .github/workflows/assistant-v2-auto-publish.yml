@@ -98,7 +98,9 @@ jobs:
         run: node scripts/test-assistant-v2-canonical.js
 
       - name: Publish immutable version and atomic latest pointer
+        if: github.ref_name == 'feat/v0-magazine'
         run: bash scripts/publish-assistant-v2.sh
 
       - name: Detect live corpus desynchronization and verify acceptance cases
+        if: github.ref_name == 'feat/v0-magazine'
         run: node scripts/test-assistant-v2-live-corpus.js
