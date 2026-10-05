@@ -70,4 +70,6 @@ function promoteValidatedMatch(ranked,match,semanticCandidate){
   return [promoted,...rest].slice(0,ranked.length||5);
 }
 
-module.exports={normalizePatientLanguage,phraseMatch,selectValidatedLanguageMatch,promoteValidatedMatch};
+const api={normalizePatientLanguage,phraseMatch,selectValidatedLanguageMatch,promoteValidatedMatch};
+if(typeof globalThis!=='undefined')globalThis.MACA_PATIENT_LANGUAGE_RETRIEVAL=api;
+if(typeof module!=='undefined'&&module.exports)module.exports=api;
