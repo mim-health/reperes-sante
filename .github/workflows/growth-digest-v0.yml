@@ -6,6 +6,7 @@ on:
       - feat/growth-engine-v0-20261002
     paths:
       - .github/workflows/growth-digest-v0.yml
+      - scripts/growth-digest-v0.js
   workflow_dispatch:
   schedule:
     - cron: "15 5 * * *"
@@ -39,6 +40,9 @@ jobs:
           GROWTH_INPUT_PATH: "growth-input.json"
           GROWTH_LIMIT: "10"
         run: node scripts/growth-digest-v0.js
+
+      - name: Show digest in run summary
+        run: cat growth-digest-latest.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload private digest artifact
         uses: actions/upload-artifact@v4
