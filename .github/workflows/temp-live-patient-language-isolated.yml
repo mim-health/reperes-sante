@@ -13,5 +13,5 @@ jobs:
           const question='sciatique IRM';
           const r=await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json',Origin:'https://macasante.fr'},body:JSON.stringify({question})});
           const d=await r.json().catch(()=>({}));
-          console.log(JSON.stringify({http:r.status,status:d.status,error:d.error,artifact_version:d?.meta?.artifact_version}));
+          console.log(JSON.stringify({http:r.status,status:d.status,error:d.error,diagnostic:d.diagnostic,artifact_version:d?.meta?.artifact_version}));
           NODE
