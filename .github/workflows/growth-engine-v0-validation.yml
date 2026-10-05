@@ -5,6 +5,7 @@ on:
     paths:
       - "maca-growth-*.js"
       - "scripts/growth-*.js"
+      - "growth-engine/**"
       - "growth-*.html"
       - ".github/workflows/growth-*.yml"
   workflow_dispatch:
@@ -20,6 +21,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
+
       - name: JavaScript syntax
         run: |
           node --check maca-growth-engine-v0.js
@@ -27,55 +29,78 @@ jobs:
           node --check maca-growth-ingest-v0.js
           node --check maca-growth-assistant-adapter-v0.js
           node --check scripts/growth-reddit-collector-v0.js
+          node --check scripts/growth-search-console-import-v0.js
+          node --check scripts/growth-search-console-fetch-v0.js
           node --check scripts/growth-digest-v0.js
+
       - name: Privacy guardrails
         run: |
           ! grep -Eiq '"author"|"username"|"user_id"|"ip_address"|"cookie"' scripts/growth-reddit-collector-v0.js
+
       - name: No automatic publishing
         run: |
           node - <<'NODE'
           const fs=require('fs');
-          const src=fs.readFileSync('scripts/growth-reddit-collector-v0.js','utf8');
-
-          // The collector must remain read-only. Reject explicit HTTP write methods
-          // and Reddit API endpoints used to create/edit/delete content.
+          const reddit=fs.readFileSync('scripts/growth-reddit-collector-v0.js','utf8');
           const forbidden=[
             /method\s*:\s*["'`]?(POST|PUT|PATCH|DELETE)\b/i,
             /reddit\.com\/api\/(submit|comment|editusertext|del)\b/i
           ];
           for(const re of forbidden){
-            if(re.test(src)){
+            if(re.test(reddit)){
               console.error('Automatic publishing guardrail triggered:', re);
               process.exit(1);
             }
           }
-          console.log('Read-only Reddit collector guardrail OK');
+          const daily=fs.readFileSync('.github/workflows/growth-digest-v0.yml','utf8');
+          if(/growth-reddit-collector-v0\.js/.test(daily)){
+            throw new Error('Reddit collector must not be used by the daily workflow while live access is blocked');
+          }
+          console.log('No automatic publishing and no blocked Reddit source in daily workflow');
           NODE
 
-  live-readonly-probe:
+  pipeline-contract-probe:
     runs-on: ubuntu-latest
     needs: static-validation
-    timeout-minutes: 5
+    timeout-minutes: 6
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - name: Collect public Reddit candidates
+
+      - name: Create Search Console contract fixture
+        run: |
+          cat > search-console-queries.csv <<'CSV'
+          Top queries,Clicks,Impressions,Position
+          piqure guepe que faire,1,120,12.4
+          brulure domestique premier geste,2,95,18.2
+          CSV
+
+      - name: Import Search Console fixture
         env:
-          GROWTH_SUBREDDITS: "ParentingFR,AskFrance"
-          GROWTH_REDDIT_LIMIT: "15"
-          GROWTH_USER_AGENT: "MACASante-GrowthRadar-validation/0.1"
-        run: node scripts/growth-reddit-collector-v0.js
-      - name: Validate minimized output
+          GSC_EXPORT: "search-console-queries.csv"
+          GROWTH_INPUT_PATH: "growth-input.json"
+        run: node scripts/growth-search-console-import-v0.js
+
+      - name: Build Growth digest against MACASANTÉ
+        env:
+          GROWTH_INPUT_PATH: "growth-input.json"
+          GROWTH_LIMIT: "2"
+        run: node scripts/growth-digest-v0.js
+
+      - name: Validate digest contract
         run: |
           node - <<'NODE'
           const fs=require('fs');
-          const a=JSON.parse(fs.readFileSync('growth-input.json','utf8'));
-          if(!Array.isArray(a)) throw new Error('output-not-array');
+          const a=JSON.parse(fs.readFileSync('growth-digest-latest.json','utf8'));
+          if(!Array.isArray(a)||a.length!==2) throw new Error('unexpected-digest-size');
           for(const x of a){
-            for(const forbidden of ['author','username','user_id','ip','cookie']) if(Object.hasOwn(x,forbidden)) throw new Error('forbidden-field:'+forbidden);
-            if(String(x.question||'').length>600) throw new Error('question-too-long');
+            if(x.source!=='google-search-console') throw new Error('wrong-source');
+            if(x.scoringModel!=='opportunity-v0') throw new Error('gsc-scoring-not-used');
+            if(!Number.isFinite(x.growthScore)) throw new Error('missing-score');
+            if(!x.gsc||!Number.isFinite(Number(x.gsc.impressions))) throw new Error('missing-gsc-metrics');
+            if(!x.macaTest||!['GREEN','GAP','RED'].includes(x.macaTest.status)) throw new Error('missing-maca-test');
           }
-          console.log('Candidates:',a.length,'— privacy output OK');
+          console.log('Search Console -> scoring -> MACASANTÉ -> digest contract OK');
           NODE
