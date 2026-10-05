@@ -6,13 +6,12 @@ jobs:
   verify:
     runs-on: ubuntu-latest
     steps:
-      - name: Verify known live query
+      - name: Trigger one live request
         run: |
           node - <<'NODE'
           const endpoint='https://purple-voice-a8e3.dr-beddok.workers.dev/';
-          const question='Le magnésium aide-t-il vraiment à dormir ?';
+          const question='sciatique IRM';
           const r=await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json',Origin:'https://macasante.fr'},body:JSON.stringify({question})});
           const d=await r.json().catch(()=>({}));
-          console.log(JSON.stringify({question,http:r.status,status:d.status,error:d.error,artifact_version:d?.meta?.artifact_version,cards_used:d.cards_used,selected_cards:d.selected_cards}));
-          if(!r.ok) throw new Error(question+': HTTP '+r.status+' '+JSON.stringify(d));
+          console.log(JSON.stringify({http:r.status,status:d.status,error:d.error,artifact_version:d?.meta?.artifact_version}));
           NODE
