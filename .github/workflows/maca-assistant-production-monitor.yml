@@ -1,0 +1,190 @@
+name: MACA Assistant production monitor
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check public Assistant
+        id: check
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+
+          const endpoint = 'https://purple-voice-a8e3.dr-beddok.workers.dev/';
+          const question = 'Le magnésium aide-t-il vraiment à dormir ?';
+
+          let result = {
+            healthy: false,
+            http: 0,
+            status: null,
+            error: null,
+            diagnostic: null,
+            detail: null
+          };
+
+          try {
+            const r = await fetch(endpoint, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'Origin': 'https://macasante.fr'
+              },
+              body: JSON.stringify({ question }),
+              signal: AbortSignal.timeout(25000)
+            });
+
+            result.http = r.status;
+            const text = await r.text();
+            let data = {};
+            try { data = JSON.parse(text); } catch {}
+
+            result.status = data?.status ?? null;
+            result.error = data?.error ?? null;
+            result.diagnostic = data?.diagnostic ?? null;
+            result.healthy = r.ok && ['answer','category_only','abstain','no_answer'].includes(String(data?.status || ''));
+
+            if (!result.healthy) {
+              result.detail = text.slice(0, 500);
+            }
+          } catch (e) {
+            result.detail = e?.message || String(e);
+          }
+
+          fs.writeFileSync('monitor-result.json', JSON.stringify(result, null, 2));
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `healthy=${result.healthy ? 'true' : 'false'}\n`);
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `http=${result.http}\n`);
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `error=${result.error || ''}\n`);
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `diagnostic=${result.diagnostic || ''}\n`);
+
+          console.log(JSON.stringify(result));
+          NODE
+
+      - name: Open or update P0 incident
+        if: steps.check.outputs.healthy != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          HTTP_STATUS: ${{ steps.check.outputs.http }}
+          ERROR_CODE: ${{ steps.check.outputs.error }}
+          DIAGNOSTIC: ${{ steps.check.outputs.diagnostic }}
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+
+          const token = process.env.GH_TOKEN;
+          const repo = process.env.REPO;
+          const [owner, name] = repo.split('/');
+          const title = '[P0] Assistant MACA indisponible en production';
+          const result = JSON.parse(fs.readFileSync('monitor-result.json', 'utf8'));
+
+          const headers = {
+            'Authorization': `Bearer ${token}`,
+            'Accept': 'application/vnd.github+json',
+            'X-GitHub-Api-Version': '2022-11-28',
+            'Content-Type': 'application/json'
+          };
+
+          async function api(path, options={}) {
+            const r = await fetch(`https://api.github.com/repos/${owner}/${name}${path}`, {
+              ...options,
+              headers: {...headers, ...(options.headers || {})}
+            });
+            if (!r.ok) throw new Error(`GitHub API ${r.status}: ${await r.text()}`);
+            return r.status === 204 ? null : r.json();
+          }
+
+          const issues = await api('/issues?state=open&per_page=100');
+          const existing = issues.find(i => !i.pull_request && i.title === title);
+
+          const now = new Date().toISOString();
+          const body = [
+            'Le moniteur automatique a détecté une indisponibilité de l’Assistant MACASANTÉ.',
+            '',
+            `- Date UTC : ${now}`,
+            `- HTTP : ${result.http || 'aucune réponse'}`,
+            `- error : ${result.error || 'n/a'}`,
+            `- diagnostic : ${result.diagnostic || 'n/a'}`,
+            '',
+            'Priorité : vérifier en premier le quota/crédit OpenAI si le diagnostic est `openai_429`, puis le Worker Cloudflare et les artefacts.',
+            '',
+            '_Créé automatiquement par MACA Assistant production monitor._'
+          ].join('\n');
+
+          if (existing) {
+            await api(`/issues/${existing.number}/comments`, {
+              method: 'POST',
+              body: JSON.stringify({body})
+            });
+            console.log(`Incident already open: #${existing.number}`);
+          } else {
+            const created = await api('/issues', {
+              method: 'POST',
+              body: JSON.stringify({title, body})
+            });
+            console.log(`Created incident #${created.number}`);
+          }
+          NODE
+
+      - name: Close incident after recovery
+        if: steps.check.outputs.healthy == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          node <<'NODE'
+          const token = process.env.GH_TOKEN;
+          const repo = process.env.REPO;
+          const [owner, name] = repo.split('/');
+          const title = '[P0] Assistant MACA indisponible en production';
+
+          const headers = {
+            'Authorization': `Bearer ${token}`,
+            'Accept': 'application/vnd.github+json',
+            'X-GitHub-Api-Version': '2022-11-28',
+            'Content-Type': 'application/json'
+          };
+
+          async function api(path, options={}) {
+            const r = await fetch(`https://api.github.com/repos/${owner}/${name}${path}`, {
+              ...options,
+              headers: {...headers, ...(options.headers || {})}
+            });
+            if (!r.ok) throw new Error(`GitHub API ${r.status}: ${await r.text()}`);
+            return r.status === 204 ? null : r.json();
+          }
+
+          const issues = await api('/issues?state=open&per_page=100');
+          const existing = issues.find(i => !i.pull_request && i.title === title);
+
+          if (existing) {
+            await api(`/issues/${existing.number}/comments`, {
+              method: 'POST',
+              body: JSON.stringify({body: `✅ Assistant de nouveau opérationnel — récupération détectée automatiquement à ${new Date().toISOString()}.`})
+            });
+            await api(`/issues/${existing.number}`, {
+              method: 'PATCH',
+              body: JSON.stringify({state:'closed'})
+            });
+            console.log(`Closed recovered incident #${existing.number}`);
+          } else {
+            console.log('Healthy; no open incident.');
+          }
+          NODE
+
+      - name: Fail workflow when Assistant is unavailable
+        if: steps.check.outputs.healthy != 'true'
+        run: |
+          echo "::error::Assistant MACA indisponible (HTTP ${{ steps.check.outputs.http }}, error=${{ steps.check.outputs.error }}, diagnostic=${{ steps.check.outputs.diagnostic }})"
+          exit 1
