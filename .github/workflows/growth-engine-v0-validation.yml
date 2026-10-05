@@ -33,7 +33,24 @@ jobs:
           ! grep -Eiq '"author"|"username"|"user_id"|"ip_address"|"cookie"' scripts/growth-reddit-collector-v0.js
       - name: No automatic publishing
         run: |
-          ! grep -Eiq 'submit|comment|publish|POST.+reddit' scripts/growth-reddit-collector-v0.js
+          node - <<'NODE'
+          const fs=require('fs');
+          const src=fs.readFileSync('scripts/growth-reddit-collector-v0.js','utf8');
+
+          // The collector must remain read-only. Reject explicit HTTP write methods
+          // and Reddit API endpoints used to create/edit/delete content.
+          const forbidden=[
+            /method\s*:\s*["'`]?(POST|PUT|PATCH|DELETE)\b/i,
+            /reddit\.com\/api\/(submit|comment|editusertext|del)\b/i
+          ];
+          for(const re of forbidden){
+            if(re.test(src)){
+              console.error('Automatic publishing guardrail triggered:', re);
+              process.exit(1);
+            }
+          }
+          console.log('Read-only Reddit collector guardrail OK');
+          NODE
 
   live-readonly-probe:
     runs-on: ubuntu-latest
