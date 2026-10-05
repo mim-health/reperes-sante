@@ -1,3 +1,4 @@
+import './patient-language-retrieval.js';
 'use strict';
 
 const ARTIFACT_ROOT='https://raw.githubusercontent.com/mim-health/reperes-sante/feat/v0-magazine/assistant-v2';
@@ -199,9 +200,25 @@ export default {
       const {corpus,embeddings,cardById}=await getData();
       const er=await openai(env,OPENAI_EMBEDDINGS,{model:embeddings.model,input:[question],dimensions:embeddings.dimensions,encoding_format:'float'});
       const q=er?.data?.[0]?.embedding;if(!q)throw new Error('embedding_missing');
-      const ranked=rank(embeddings.vectors,q);
+      let ranked=rank(embeddings.vectors,q);
+      const patientPolicy=globalThis.MACA_PATIENT_LANGUAGE_RETRIEVAL;
+      const lexicalMatch=patientPolicy&&typeof patientPolicy.selectValidatedLanguageMatch==='function'
+        ? patientPolicy.selectValidatedLanguageMatch(question,corpus.cards,corpus.patientLanguageAliases)
+        : null;
+      if(lexicalMatch){
+        const vectorItem=embeddings.vectors.find(item=>item.id===lexicalMatch.targetId);
+        const semanticCandidate=vectorItem?{id:vectorItem.id,similarity:cosine(q,vectorItem.vector)}:null;
+        ranked=patientPolicy.promoteValidatedMatch(ranked,lexicalMatch,semanticCandidate);
+      }
       const selected=ranked.map(r=>cardById.get(r.id)).filter(Boolean);
-      const selectedCards=ranked.map(r=>({id:r.id,title:cardById.get(r.id)?.title||r.id,similarity:Number(r.similarity.toFixed(4))}));
+      const selectedCards=ranked.map(r=>({
+        id:r.id,
+        title:cardById.get(r.id)?.title||r.id,
+        similarity:Number(r.similarity.toFixed(4)),
+        retrieval_level:r.retrievalLevel||4,
+        retrieval_reason:r.retrievalReason||'semantic',
+        matched_alias:r.matchedAlias||null
+      }));
       if(!ranked.length||ranked[0].similarity<MIN_GATE)return response(origin,allowed,200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{grounding:'not_applicable',corpus_cards:corpus.cardCount,artifact_version:activeVersion}});
       const raw=await synthesize(env,question,selected);
       const checked=validate(raw,selected);
