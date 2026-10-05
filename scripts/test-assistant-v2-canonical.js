@@ -19,7 +19,7 @@ assert(report.total>=132);assert.equal(report.failed,0,JSON.stringify(report.fai
 // Add a validated fixture only through the manifest, without touching the exporter or Worker.
 const temp=fs.mkdtempSync(path.join(os.tmpdir(),'maca-canonical-'));
 try{
-  for(const file of [...files,'corpus-canonicalizer.js','maca-category-access.js','scripts/build-assistant-v2-corpus.js']){
+  for(const file of [...files,'corpus-canonicalizer.js','maca-category-access.js','assistant-v2/patient-language-aliases.json','scripts/build-assistant-v2-corpus.js']){
     fs.mkdirSync(path.dirname(path.join(temp,file)),{recursive:true});fs.copyFileSync(path.join(root,file),path.join(temp,file));
   }
   const fixture={id:'test-corpus-vivant',title:'Test corpus vivant zeflorium',category:'Santé au quotidien',validationStatus:'VALIDATED',answer:'Contenu de test sans information médicale.',detail:'Détail de test.',keywords:['zeflorium'],sources:[{label:'Source de test',url:'https://example.com/test'}]};
