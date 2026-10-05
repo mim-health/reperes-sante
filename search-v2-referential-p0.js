@@ -55,7 +55,10 @@
     {key:'cancer-adc',primaryId:'cancer-adc-anticorps-conjugues',aliases:['adc cancer','anticorps conjugues','anticorps conjugue cancer','antibody drug conjugate','chimiotherapie ciblee adc']},
     {key:'cancer-genetics',primaryId:'cancer-oncogenetique-famille',aliases:['cancer hereditaire','oncogenetique','test genetique cancer','plusieurs cancers dans ma famille','cancer dans ma famille test genetique','brca famille','lynch famille']},
     {key:'cancer-remission',primaryId:'cancer-remission-guerison',aliases:['remission cancer','remission complete cancer','cancer en remission','cancer gueri remission','remission complete cancer gueri']},
-    {key:'cancer-metastasis',primaryId:'cancer-metastases-definition',aliases:['metastase','metastases','cancer metastatique','cancer avec metastases','stade 4 cancer','cancer propage']}
+    {key:'cancer-metastasis',primaryId:'cancer-metastases-definition',aliases:['metastase','metastases','cancer metastatique','cancer avec metastases','stade 4 cancer','cancer propage']},
+    {key:'nycturia-patient-language',primaryId:'nycturie-levers-nocturnes-uriner',aliases:['nycturie','se lever la nuit pour uriner','se lever plusieurs fois la nuit pour uriner','uriner plusieurs fois la nuit','reveils nocturnes pour aller aux toilettes','je me leve plusieurs fois la nuit pour uriner','mictions nocturnes','pollakiurie nocturne']},
+    {key:'sciatica-mri-patient-language',primaryId:'sciatique-irm-quand',aliases:['sciatique irm','faut il une irm pour une sciatique','quand faire une irm pour une sciatique','dois je faire une irm pour une sciatique','irm obligatoire pour une sciatique','lombosciatique irm','radiculalgie irm'],hardVeto:['genou','epaule','cervicales','migraine','orl']},
+    {key:'postmenopausal-bleeding-patient-language',primaryId:'saignement-apres-menopause',aliases:['saignement apres menopause','pertes de sang apres la menopause','je saigne apres la menopause','saigner apres la menopause','petites pertes de sang apres la menopause','saignement vaginal apres la menopause','metrorragies postmenopausiques','saignement postmenopausique'],requiredAny:['menopause','menopausee','postmenopausique','postmenopausiques'],preferOver:['menopause-general']}
   ];
 
   const abstainRules = [
@@ -66,7 +69,7 @@
   ];
 
   root.MACA_V2_REFERENTIAL_P0 = {
-    version:'2026-09-01-p0-lot5',
+    version:'2026-10-05-patient-language1',
     validationStatus:'VALIDATED_MEDICAL_P0',
     source:'docs/MACA_V2_P0_VALIDATION_2026-08-31.md',
     excludedIds:['rgo-adulte','essoufflement-causes-signes-alerte','palpitations','poux-enfant','diversification-alimentaire-bebe'],
