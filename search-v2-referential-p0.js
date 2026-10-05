@@ -72,7 +72,7 @@
     version:'2026-10-05-patient-language1',
     validationStatus:'VALIDATED_MEDICAL_P0',
     source:'docs/MACA_V2_P0_VALIDATION_2026-08-31.md',
-    excludedIds:['rgo-adulte','essoufflement-causes-signes-alerte','palpitations','poux-enfant','diversification-alimentaire-bebe'],
+    excludedIds:['rgo-adulte','essoufflement-causes-signes-alerte','palpitations','poux-enfant','diversification-alimentaire-bebe','boule-dans-le-sein'],
     intents,
     abstainRules
   };
