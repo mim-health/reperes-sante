@@ -33,7 +33,7 @@
   }
   function relatedFiches(q,items){
     const byId=new Map(items.map(x=>[String(x&&x.id||''),x]));
-    const explicit=(Array.isArray(q.relatedIds)?q.relatedIds:[]).map(id=>byId.get(String(id))).filter(x=>x&&String(x.id)!==String(q.id)).slice(0,3);
+    const explicit=(window.MACA_FICHE_SEO_METADATA?window.MACA_FICHE_SEO_METADATA.relatedIds(q):(Array.isArray(q.relatedIds)?q.relatedIds:[])).map(id=>byId.get(String(id))).filter(x=>x&&String(x.id)!==String(q.id)).slice(0,3);
     if(explicit.length)return explicit;
     const baseTitle=tokens(q.title);const baseKeywords=tokens(q.keywords);if(!baseTitle.length)return [];
     return items.filter(x=>x&&String(x.id)!==String(q.id)&&String(x.category||'')===String(q.category||''))
@@ -84,7 +84,7 @@
     attachShare(q,canonical);
   }
   function render(q,items){
-    const canonical=`https://macasante.fr/fiches-seo/${encodeURIComponent(q.id)}.html`;const title=`${strip(q.title)} — MACA Santé`;const desc=strip(q.answer||'Réponse santé claire et sourcée sur MACA Santé.').slice(0,155);const modified=q.verifiedAt||q.updatedAt||'2026-08-25';
+    const canonical=`https://macasante.fr/fiches-seo/${encodeURIComponent(q.id)}.html`;const title=`${strip(q.title)} — MACA Santé`;const desc=window.MACA_FICHE_SEO_METADATA?window.MACA_FICHE_SEO_METADATA.description(q):strip(q.answer||'Réponse santé claire et sourcée sur MACA Santé.').slice(0,155);const modified=q.verifiedAt||q.updatedAt||'2026-08-25';
     document.title=title;upsertMeta('description',desc);upsertMeta('robots','index,follow');upsertProperty('og:type','article');upsertProperty('og:site_name','MACA Santé');upsertProperty('og:locale','fr_FR');upsertProperty('og:title',title);upsertProperty('og:description',desc);upsertProperty('og:url',canonical);upsertMeta('twitter:card','summary');upsertMeta('twitter:title',title);upsertMeta('twitter:description',desc);
     let link=document.querySelector('link[rel="canonical"]');if(!link){link=document.createElement('link');link.rel='canonical';document.head.appendChild(link);}link.href=canonical;
     document.querySelectorAll('script[data-maca-schema="fiche"]').forEach(el=>el.remove());const schema=document.createElement('script');schema.type='application/ld+json';schema.dataset.macaSchema='fiche';schema.textContent=JSON.stringify({'@context':'https://schema.org','@type':'MedicalWebPage',headline:strip(q.title),description:desc,url:canonical,inLanguage:'fr-FR',isPartOf:{'@type':'WebSite',name:'MACA Santé',url:'https://macasante.fr/'},publisher:{'@type':'Organization',name:'MACA Santé',url:'https://macasante.fr/'},dateModified:modified,mainEntity:{'@type':'MedicalEntity',name:strip(q.title)}});document.head.appendChild(schema);
