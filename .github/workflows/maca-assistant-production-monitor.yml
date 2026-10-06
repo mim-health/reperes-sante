@@ -1,6 +1,9 @@
 name: MACA Assistant production monitor
 
 on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/maca-assistant-production-monitor.yml']
   schedule:
     - cron: "*/30 * * * *"
   workflow_dispatch:

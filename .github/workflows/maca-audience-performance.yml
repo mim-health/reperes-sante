@@ -8,6 +8,8 @@ on:
       - 'scripts/audience-search-console.js'
       - 'scripts/assistant-performance-probe.js'
   workflow_dispatch:
+  schedule:
+    - cron: '15 9 * * *'
 
 permissions:
   contents: read
