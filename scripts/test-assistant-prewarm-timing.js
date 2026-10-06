@@ -5,7 +5,7 @@ const source=fs.readFileSync('assistant-v2/cloudflare-worker-public.js','utf8');
 const original=execFileSync('git',['show','17cbe7a816320efd2fa99d4237368a0bfef21ef5:assistant-v2/cloudflare-worker-public.js'],{encoding:'utf8'});
 const version='a'.repeat(64);
 const card={id:'fixture',title:'Fiche de test',primaryCategory:'Seniors',content:{answer:'Information de test issue de la fiche.',detail:'Détail de test.'}};
-function sandbox(code,{raw,supported=true,vector=[1,0],failArtifacts=false}={}){
+function sandbox(code,{raw,rawSequence,supported=true,vector=[1,0],failArtifacts=false}={}){
   const calls=[];
   const c={console,Request,Response,Headers,URL,TextEncoder,Uint8Array,performance,crypto:crypto.webcrypto,setTimeout,clearTimeout};
   c.fetch=async(url,options)=>{
@@ -17,7 +17,7 @@ function sandbox(code,{raw,supported=true,vector=[1,0],failArtifacts=false}={}){
     else if(String(url).endsWith('/embeddings.index.json'))body={corpusFingerprint:version,cardCount:1,model:'embedding-fixture',dimensions:2,vectors:[{id:card.id,vector}]};
     else if(String(url).endsWith('/embeddings'))body={data:[{embedding:[1,0]}]};
     else if(options?.body&&JSON.parse(options.body).text.format.name==='maca_grounding')body={output_text:JSON.stringify({supported})};
-    else body={output_text:JSON.stringify(raw||{status:'answer',coverage:'sufficient',blocks:[{text:card.content.answer,card_ids:[card.id]}],category:null,personalized_request:false,scope_note:'',reason:''})};
+    else body={output_text:JSON.stringify((rawSequence?.length?rawSequence.shift():raw)||{status:'answer',coverage:'sufficient',blocks:[{text:card.content.answer,card_ids:[card.id]}],category:null,personalized_request:false,scope_note:'',reason:''})};
     return new Response(JSON.stringify(body),{headers:{'content-type':'application/json'}});
   };
   vm.createContext(c);
@@ -47,6 +47,21 @@ const request=()=>new Request('https://example.test/',{method:'POST',headers:{'C
     const s=sandbox(source,mode);const r=await s.c.worker.fetch(request(),env);const b=await r.json();
     assert.equal(b.status,'abstain');assert.equal(b.meta.grounding,mode.expected);assert.equal(b.cards_used.length,0);
   }
+  const valid={status:'answer',coverage:'sufficient',blocks:[{text:card.content.answer,card_ids:[card.id]}],category:null,personalized_request:false,scope_note:'',reason:''};
+  const malformed={...valid,blocks:[]};
+  const repaired=sandbox(source,{rawSequence:[malformed,valid]});
+  const repairedBody=await (await repaired.c.worker.fetch(request(),env)).json();
+  assert.equal(repairedBody.status,'answer');assert.equal(repairedBody.meta.grounding,'supported');
+  assert(Number.isFinite(repairedBody.meta.timings_ms.contract_repair));
+  assert.equal(repaired.calls.filter(x=>x.body?.text?.format?.name==='maca_assistant_v2_answer').length,2);
+  const persistent=sandbox(source,{raw:malformed});
+  const persistentBody=await (await persistent.c.worker.fetch(request(),env)).json();
+  assert.equal(persistentBody.meta.grounding,'contract_rejected');assert.equal(persistentBody.meta.repair_attempted,true);
+  assert.equal(persistent.calls.filter(x=>x.body?.text?.format?.name==='maca_assistant_v2_answer').length,2);
+  const foreign=sandbox(source,{raw:{...valid,blocks:[{text:'Test',card_ids:['foreign']}]}});
+  const foreignBody=await (await foreign.c.worker.fetch(request(),env)).json();
+  assert.equal(foreignBody.meta.repair_attempted,false);
+  assert.equal(foreign.calls.filter(x=>x.body?.text?.format?.name==='maca_assistant_v2_answer').length,1);
   const unavailable=sandbox(source,{failArtifacts:true});const pending=[];
   assert.equal((await unavailable.c.worker.fetch(new Request('https://example.test/?maca_public_ready=1'),env,{waitUntil:p=>pending.push(p)})).status,200);
   await Promise.all(pending);assert.equal((await unavailable.c.worker.fetch(request(),env)).status,503);

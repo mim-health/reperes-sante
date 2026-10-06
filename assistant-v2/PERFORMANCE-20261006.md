@@ -43,3 +43,6 @@ Il ne remplace pas un test avec les modèles réels.
 Le candidat doit rester isolé tant que le smoke, le red-team public 22/22 et
 le benchmark avant/après n’ont pas confirmé sa fidélité et son gain après
 déploiement contrôlé. Il n’existe pas de gain de production mesuré à ce stade.
+
+## Réparation bornée des erreurs de contrat
+Une seule nouvelle génération est autorisée pour les erreurs de structure. Une citation étrangère ou un conseil personnalisé rejeté ne déclenche pas de réparation. Chaque résultat réparé repasse validation et grounding. Les refus persistants exposent seulement les codes contract_errors et repair_attempted, sans texte utilisateur. Tests : réparation réussie, échec persistant limité à deux générations, citation étrangère sans relance. Le cas ménopause reste à vérifier après déploiement ; le code exact du refus en production n'était pas exposé auparavant.
