@@ -17,8 +17,8 @@ jobs:
         id: check
         shell: bash
         run: |
-          node <<'NODE'
-          const fs = require('fs');
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
 
           const endpoint = 'https://purple-voice-a8e3.dr-beddok.workers.dev/';
           const question = 'Le magnésium aide-t-il vraiment à dormir ?';
@@ -79,8 +79,8 @@ jobs:
           DIAGNOSTIC: ${{ steps.check.outputs.diagnostic }}
         shell: bash
         run: |
-          node <<'NODE'
-          const fs = require('fs');
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
 
           const token = process.env.GH_TOKEN;
           const repo = process.env.REPO;
@@ -143,7 +143,7 @@ jobs:
           REPO: ${{ github.repository }}
         shell: bash
         run: |
-          node <<'NODE'
+          node --input-type=module <<'NODE'
           const token = process.env.GH_TOKEN;
           const repo = process.env.REPO;
           const [owner, name] = repo.split('/');

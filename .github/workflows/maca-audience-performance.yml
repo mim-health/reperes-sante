@@ -1,0 +1,58 @@
+name: MACA audience and Assistant performance
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/maca-audience-performance.yml'
+      - 'scripts/audience-search-console.js'
+      - 'scripts/assistant-performance-probe.js'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audience:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Read Google Search Console
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_SITE_URL: 'sc-domain:macasante.fr'
+        run: node scripts/audience-search-console.js
+      - name: Publish audience summary
+        if: always()
+        run: test ! -f audience-google-latest.md || cat audience-google-latest.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: maca-audience-google
+          path: audience-google-latest.*
+          if-no-files-found: warn
+          retention-days: 14
+  performance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Measure ten complete fixed responses
+        run: node scripts/assistant-performance-probe.js
+      - name: Publish performance summary
+        if: always()
+        run: test ! -f assistant-performance-latest.md || cat assistant-performance-latest.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: maca-assistant-performance
+          path: assistant-performance-latest.*
+          if-no-files-found: warn
+          retention-days: 14
