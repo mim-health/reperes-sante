@@ -75,7 +75,10 @@ async function loadArtifactVersion(version){
   if(corpus.cardCount!==embeddings.cardCount)throw new Error('artifact_count_mismatch');
   const cardById=new Map(corpus.cards.map(card=>[card.id,card]));
   if(cardById.size!==corpus.cardCount||embeddings.vectors.length!==corpus.cardCount)throw new Error('artifact_incomplete');
-  for(const item of embeddings.vectors)if(!cardById.has(item.id))throw new Error('artifact_orphan_vector');
+  for(const item of embeddings.vectors){
+    if(!cardById.has(item.id))throw new Error('artifact_orphan_vector');
+    item.vectorNorm=norm(item.vector);
+  }
   return {corpus,embeddings,cardById,version};
 }
 
@@ -127,7 +130,13 @@ async function requestKey(request,env){
 function dot(a,b){let s=0;for(let i=0;i<a.length;i++)s+=a[i]*b[i];return s;}
 function norm(a){return Math.sqrt(dot(a,a));}
 function cosine(a,b){const d=norm(a)*norm(b);return d?dot(a,b)/d:0;}
-function rank(vectors,q){return vectors.map(x=>({id:x.id,similarity:cosine(q,x.vector)})).sort((a,b)=>b.similarity-a.similarity).slice(0,TOP_K);}
+function rank(vectors,q){
+  const queryNorm=norm(q);
+  return vectors.map(x=>{
+    const denominator=queryNorm*(x.vectorNorm??norm(x.vector));
+    return {id:x.id,similarity:denominator?dot(q,x.vector)/denominator:0};
+  }).sort((a,b)=>b.similarity-a.similarity).slice(0,TOP_K);
+}
 function compactCard(card){const c=card.content||{};return {id:card.id,title:card.title,category:card.primaryCategory||'',answer:c.answer||'',detail:c.detail||'',usefulInfo:c.usefulInfo||'',watch:c.watch||''};}
 function extractText(r){if(typeof r?.output_text==='string'&&r.output_text.trim())return r.output_text.trim();const out=[];for(const item of r?.output||[])for(const p of item?.content||[])if(p?.type==='output_text'&&typeof p.text==='string')out.push(p.text);return out.join('').trim();}
 function uniq(a){return [...new Set(a)];}
@@ -176,12 +185,17 @@ async function grounding(env,result,cardById){
 }
 
 export default {
-  async fetch(request,env){
+  async fetch(request,env,ctx){
     const origin=request.headers.get('Origin')||'';
     const allowed=env.ALLOWED_ORIGIN||'https://macasante.fr';
     const apiKey=getOpenAIKey(env);
     if(request.method==='OPTIONS')return new Response(null,{status:204,headers:cors(origin,allowed)});
-    if(request.method==='GET'&&new URL(request.url).searchParams.get('maca_public_ready')==='1')return response(origin,allowed,200,{service:'maca-assistant-v2',public_ready:true,artifact_version:activeVersion||null});
+    if(request.method==='GET'&&new URL(request.url).searchParams.get('maca_public_ready')==='1'){
+      // The widget already probes readiness before submission. Warm only the
+      // validated corpus/index: no model call, question or user data.
+      if(ctx&&typeof ctx.waitUntil==='function')ctx.waitUntil(getData().catch(()=>null));
+      return response(origin,allowed,200,{service:'maca-assistant-v2',public_ready:true,artifact_version:activeVersion||null});
+    }
     if(origin&&origin!==allowed)return response(origin,allowed,403,{error:'origin_denied'});
     if(request.method!=='POST')return response(origin,allowed,405,{error:'method_not_allowed'});
     const contentType=request.headers.get('content-type')||'';
@@ -196,10 +210,23 @@ export default {
     let body;try{body=await request.json();}catch{return response(origin,allowed,400,{error:'invalid_json'});}
     const question=String(body?.question||'').trim();
     if(!question||question.length>MAX_QUESTION_CHARS)return response(origin,allowed,400,{error:'invalid_question'});
+    const started=performance.now();
+    const timings={};
+    async function measured(stage,task){
+      const t=performance.now();
+      try{return await task();}finally{timings[stage]=Number((performance.now()-t).toFixed(1));}
+    }
+    function measuredResponse(status,body){
+      timings.total=Number((performance.now()-started).toFixed(1));
+      const result=response(origin,allowed,status,{...body,meta:{...(body.meta||{}),timings_ms:{...timings}}});
+      result.headers.set('Server-Timing',Object.entries(timings).map(([stage,ms])=>`${stage};dur=${ms}`).join(', '));
+      return result;
+    }
     try{
-      const {corpus,embeddings,cardById}=await getData();
-      const er=await openai(env,OPENAI_EMBEDDINGS,{model:embeddings.model,input:[question],dimensions:embeddings.dimensions,encoding_format:'float'});
+      const {corpus,embeddings,cardById,version}=await measured('artifacts',()=>getData());
+      const er=await measured('embedding',()=>openai(env,OPENAI_EMBEDDINGS,{model:embeddings.model,input:[question],dimensions:embeddings.dimensions,encoding_format:'float'}));
       const q=er?.data?.[0]?.embedding;if(!q)throw new Error('embedding_missing');
+      const retrievalStarted=performance.now();
       let ranked=rank(embeddings.vectors,q);
       const patientPolicy=globalThis.MACA_PATIENT_LANGUAGE_RETRIEVAL;
       const lexicalMatch=patientPolicy&&typeof patientPolicy.selectValidatedLanguageMatch==='function'
@@ -219,14 +246,15 @@ export default {
         retrieval_reason:r.retrievalReason||'semantic',
         matched_alias:r.matchedAlias||null
       }));
-      if(!ranked.length||ranked[0].similarity<MIN_GATE)return response(origin,allowed,200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{grounding:'not_applicable',corpus_cards:corpus.cardCount,artifact_version:activeVersion}});
-      const raw=await synthesize(env,question,selected);
+      timings.retrieval=Number((performance.now()-retrievalStarted).toFixed(1));
+      if(!ranked.length||ranked[0].similarity<MIN_GATE)return measuredResponse(200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{grounding:'not_applicable',corpus_cards:corpus.cardCount,artifact_version:version}});
+      const raw=await measured('synthesis',()=>synthesize(env,question,selected));
       const checked=validate(raw,selected);
-      if(!checked.ok)return response(origin,allowed,200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{grounding:'contract_rejected',corpus_cards:corpus.cardCount,artifact_version:activeVersion}});
+      if(!checked.ok)return measuredResponse(200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{grounding:'contract_rejected',corpus_cards:corpus.cardCount,artifact_version:version}});
       const result=checked.result;
-      if(!(await grounding(env,result,cardById)))return response(origin,allowed,200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{grounding:'rejected',corpus_cards:corpus.cardCount,artifact_version:activeVersion}});
+      if(!(await measured('grounding',()=>grounding(env,result,cardById))))return measuredResponse(200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{grounding:'rejected',corpus_cards:corpus.cardCount,artifact_version:version}});
       const cardsUsed=result.cards_used.map(id=>{const c=cardById.get(id);return {id,title:c?.title||id,url:c?.url||''};});
-      return response(origin,allowed,200,{status:result.status,answer:result.answer,category:result.category,cards_used:cardsUsed,selected_cards:selectedCards,scope_note:result.scope_note,meta:{grounding:result.status==='answer'?'supported':'not_applicable',corpus_cards:corpus.cardCount,artifact_version:activeVersion}});
-    }catch(e){return response(origin,allowed,503,{error:'assistant_temporarily_unavailable'});}
+      return measuredResponse(200,{status:result.status,answer:result.answer,category:result.category,cards_used:cardsUsed,selected_cards:selectedCards,scope_note:result.scope_note,meta:{grounding:result.status==='answer'?'supported':'not_applicable',corpus_cards:corpus.cardCount,artifact_version:version}});
+    }catch(e){return measuredResponse(503,{error:'assistant_temporarily_unavailable'});}
   }
 };
