@@ -1,6 +1,13 @@
 /* Shared presentation metadata. Does not alter the validated medical corpus. */
 (function(root){
   'use strict';
+  const titles={
+    'double-prise-medicament':'Médicament pris deux fois par erreur : que faire ?',
+    'sciatique-irm-quand':'Sciatique : quand faut-il faire une IRM ?',
+    'nycturie-levers-nocturnes-uriner':'Se lever la nuit pour uriner : causes de la nycturie',
+    'saignement-apres-menopause':'Saignements après la ménopause : pourquoi consulter ?'
+  };
+  function title(card){return titles[card.id]||card.title||card.question||'Question santé';}
   const descriptions={
     'double-prise-medicament':'Médicament pris deux fois par erreur : les informations à vérifier, les gestes à éviter et les repères pour demander un avis adapté.',
     'activite-physique-sommeil-20260824':'Activité physique et sommeil : ce que montrent les études, les bénéfices possibles et les limites des résultats sur l’apnée du sommeil.',
@@ -34,7 +41,7 @@
     return prefix.slice(0,boundary>0?boundary:154).replace(/[ ,;:]+$/,'')+'…';
   }
   function relatedIds(card){return Array.isArray(card.relatedIds)&&card.relatedIds.length?card.relatedIds:(related[card.id]||[]);}
-  const api={description,relatedIds};
+  const api={title,description,relatedIds};
   if(typeof module==='object'&&module.exports)module.exports=api;
   root.MACA_FICHE_SEO_METADATA=api;
 })(typeof globalThis==='object'?globalThis:this);

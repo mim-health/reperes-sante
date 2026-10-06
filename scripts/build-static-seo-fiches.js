@@ -23,7 +23,7 @@ const items=Array.from(ctx.MACA_BUILD_CANONICAL_CORPUS()).map(x=>JSON.parse(JSON
 fs.rmSync(OUT,{recursive:true,force:true});fs.mkdirSync(OUT,{recursive:true});
 for(const q of items){
   const id=String(q.id); const canonical=`https://macasante.fr/fiches-seo/${encodeURIComponent(id)}.html`;
-  const title=strip(q.title||q.question||'Question santé'); const desc=seo.description(q);
+  const title=strip(seo.title(q)); const desc=seo.description(q);
   const related=seo.relatedIds(q).map(id=>items.find(item=>item.id===id)).filter(item=>item&&item.id!==q.id).slice(0,3);
   const relatedHtml=related.length?`<section class="maca-fv2-card maca-fv2-related"><h2>À lire aussi</h2><ul>${related.map(item=>`<li><a href="${encodeURIComponent(item.id)}.html">${esc(item.title)}</a></li>`).join('')}</ul></section>`:'';
   const sources=(Array.isArray(q.sources)?q.sources:[]).filter(s=>s&&/^https?:\/\//.test(String(s.url||''))).map(s=>`<li><a href="${esc(s.url)}" rel="noopener noreferrer">${esc(s.label||s.title||s.org||'Source')}</a></li>`).join('');
