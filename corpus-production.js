@@ -3091,16 +3091,54 @@ window.extraAuditedQuestions=[...(window.extraAuditedQuestions||[]),
  verifiedAt:"28/09/2026",nextAuditAt:"28/03/2027",auditIntervalMonths:6,validationStatus:"VALIDATED",evidenceStatus:"VALIDÉ — validation médicale MACA 28/09/2026"
 },
 {
- id:'produits-enrichis-proteines-besoins',category:'Santé au quotidien',
- title:'Produits enrichis en protéines : ai-je vraiment besoin de plus de protéines ?',
- keywords:'protéines hyperprotéiné high protein barre boisson poudre yaourt besoin protéique muscle sport senior alimentation EFSA',
- answer:"Pas nécessairement. Les protéines sont indispensables, mais davantage n’est pas automatiquement meilleur. Les besoins dépendent notamment de l’âge, du poids, de l’activité physique et de certaines situations médicales. Beaucoup d’adultes peuvent couvrir leurs besoins avec une alimentation habituelle variée.",
- detail:"Les protéines participent notamment au renouvellement des tissus et au maintien de la masse musculaire. Pour un adulte en bonne santé, la référence européenne de l’EFSA est d’environ 0,83 g de protéines par kilogramme de poids corporel et par jour. Les besoins peuvent être différents dans certaines situations, notamment avec l’âge ou une activité sportive importante.\n\nChez les personnes âgées, plusieurs groupes d’experts ont proposé des apports plus élevés afin de contribuer au maintien de la masse et de la fonction musculaires, en association avec l’activité physique. Ces recommandations doivent toutefois être adaptées à la situation médicale, notamment en présence de certaines maladies rénales.\n\nLa mention « riche en protéines » sur un emballage ne signifie pas que le produit est globalement meilleur pour la santé. Il faut également regarder sa composition générale, notamment sa teneur en sucres, graisses, sel et son niveau de transformation. Barres, boissons, desserts ou poudres protéinées sont donc des produits alimentaires : leur intérêt dépend surtout du besoin réel auquel ils répondent.",
- practical:["Se demander si l’alimentation habituelle couvre déjà les besoins en protéines.","Ne pas juger la qualité globale d’un aliment sur la seule mention « riche en protéines ».","Associer la réflexion nutritionnelle à une activité physique régulière, notamment du renforcement musculaire."],
- watch:"Un apport protéique spécifique peut nécessiter une adaptation individuelle chez certaines personnes, notamment en cas de maladie rénale ou de situation nutritionnelle particulière.",
- source:"EFSA · PROT-AGE Study Group",
- sources:[{label:"EFSA — Dietary Reference Values for protein",url:"https://www.efsa.europa.eu/en/efsajournal/pub/2557"},{label:"PubMed — PROT-AGE Study Group recommendations",url:"https://pubmed.ncbi.nlm.nih.gov/23867520/"}],
- verifiedAt:"28/09/2026",nextAuditAt:"28/03/2027",auditIntervalMonths:6,validationStatus:"VALIDATED",evidenceStatus:"VALIDÉ — validation médicale MACA 28/09/2026"
+  "id": "produits-enrichis-proteines-besoins",
+  "category": "Santé au quotidien",
+  "title": "Produits enrichis en protéines : sont-ils vraiment utiles et quels bénéfices sont prouvés ?",
+  "keywords": "protéines hyperprotéiné high protein barre boisson poudre yaourt besoin protéique muscle sport senior alimentation EFSA supplémentation sarcopénie preuves bénéfices",
+  "answer": "Un produit enrichi en protéines peut être pratique pour compléter des apports insuffisants, mais il n’est pas automatiquement meilleur pour la santé. Les études montrent des bénéfices dans certains contextes, notamment lorsque la supplémentation accompagne un entraînement musculaire. Elles ne démontrent pas que chacun devrait acheter des yaourts, barres ou boissons « protéinés ». L’intérêt dépend de vos besoins, de votre alimentation et de votre état de santé.",
+  "detail": "Pourquoi voit-on autant de produits « protéinés » ?\n\nLeur présentation commerciale met en avant un nutriment associé aux muscles et à la forme physique. Les protéines participent effectivement à l’entretien et au renouvellement des tissus. Mais ce rôle indispensable ne signifie pas que davantage de protéines améliore systématiquement la santé.\n\nIl faut distinguer couvrir ses besoins, augmenter ses apports dans un objectif précis et acheter un produit enrichi. Ces trois démarches ne sont pas équivalentes. Les sources médicales présentées ici évaluent les besoins et la supplémentation ; elles n’expliquent pas, à elles seules, l’évolution des ventes de ces produits.\n\nQue garantit la mention « riche en protéines » ?\n\nDans l’Union européenne, elle signifie qu’au moins 20 % de l’énergie du produit provient des protéines. Elle ne signifie pas nécessairement 20 grammes de protéines pour 100 grammes de produit.\n\nCette mention décrit une composition. Elle ne garantit ni un bénéfice individuel, ni une meilleure qualité nutritionnelle globale. Un aliment peut aussi être naturellement riche en protéines, sans avoir été enrichi.\n\nQuels sont mes besoins ?\n\nPour un adulte en bonne santé, l’EFSA fixe un apport de référence d’environ 0,83 g/kg/jour, soit environ 58 g par jour pour une personne de 70 kg. Ce repère n’est ni un plafond ni un objectif adapté à toutes les situations.\n\nLes enquêtes examinées par l’EFSA montrent que les apports moyens des adultes européens atteignent souvent ou dépassent cette référence. Cela ne permet pas de conclure pour chaque personne, mais ne justifie pas une supplémentation générale. Les aliments habituels — œufs, poissons, viandes, produits laitiers, légumineuses — peuvent contribuer à couvrir les besoins.\n\nQuelles preuves chez les personnes qui font de la musculation ?\n\nUne méta-analyse publiée en 2024 retrouve, selon les protocoles, des gains supplémentaires de masse musculaire et de force lorsque des protéines sont ajoutées à un entraînement de résistance. Elle ne retrouve pas d’amélioration significative des performances fonctionnelles étudiées, comme la vitesse de marche. Une analyse publiée en 2026 retrouve également des effets sur certains critères selon les suppléments utilisés.\n\nCes résultats concernent une supplémentation associée à un entraînement. Ils ne prouvent pas qu’une barre ou un dessert enrichi particulier est supérieur à une alimentation habituelle apportant suffisamment de protéines. Ils ne démontrent pas non plus qu’augmenter indéfiniment les quantités augmente les bénéfices.\n\nEt chez les personnes âgées ?\n\nPréserver les muscles suppose une alimentation suffisante et une activité physique adaptée. L’ESPEN recommande généralement au moins 1 g/kg/jour chez les personnes âgées, avec une adaptation à leur situation médicale.\n\nToutefois, une synthèse de méta-analyses publiée en 2025 ne retrouve pas de bénéfice supplémentaire de la supplémentation sur la masse musculaire, la force ou les performances physiques chez les personnes âgées en bonne santé. Avoir besoin de protéines ne signifie donc pas avoir systématiquement besoin d’un supplément.\n\nChez les personnes présentant une sarcopénie ou une fragilité physique, une autre méta-analyse de 2025 retrouve des résultats prometteurs avec protéines et exercice, mais juge la qualité des preuves très faible. Le bénéfice ne doit pas être présenté comme garanti.\n\nEn cas de dénutrition, est-ce différent ?\n\nOui. Des apports insuffisants, une perte de poids ou une maladie peuvent nécessiter un soutien nutritionnel individualisé. Les compléments nutritionnels oraux utilisés dans ce cadre apportent de l’énergie et des nutriments pour répondre à des objectifs médicaux. Ils ne sont pas interchangeables avec les produits « protéinés » courants.\n\nComment choisir en pratique ?\n\nIdentifiez d’abord le besoin auquel le produit répond. Comparez les protéines par portion réellement consommée, les sucres, les graisses saturées, le sel et le prix avec une alternative habituelle.\n\nUn produit enrichi peut être une solution pratique. Son étiquette ne suffit pas à démontrer qu’il vous apportera un bénéfice supplémentaire.",
+  "practical": [
+    "Identifier le besoin auquel le produit répond.",
+    "Comparer les protéines par portion, la composition globale et le prix avec une alternative habituelle.",
+    "Les produits enrichis ne remplacent pas une alimentation suffisante ni l’activité physique."
+  ],
+  "watch": "Une perte de poids involontaire, une baisse persistante de l’appétit ou une diminution de la force mérite une évaluation médicale. En cas de maladie rénale ou de régime médical particulier, demandez conseil avant d’augmenter fortement vos apports protéiques. Les produits enrichis ne remplacent pas une alimentation suffisante ni l’activité physique.",
+  "source": "EFSA · Commission européenne · méta-analyses 2024–2026 · ESPEN",
+  "sources": [
+    {
+      "label": "EFSA, 2012 — Dietary Reference Values for protein",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/2557"
+    },
+    {
+      "label": "Commission européenne — Allégations nutritionnelles",
+      "url": "https://food.ec.europa.eu/food-safety/labelling-and-nutrition/nutrition-and-health-claims/nutrition-claims_en"
+    },
+    {
+      "label": "2024 — Timing and Types of Protein Supplementation, entraînement de résistance",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38039960/"
+    },
+    {
+      "label": "2025, Age and Ageing — Effects of supplemental protein in older people",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41385355/"
+    },
+    {
+      "label": "2025 — Protein supplementation for sarcopenia and physical frailty",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39955964/"
+    },
+    {
+      "label": "2026, Translational Sports Medicine — Protein-Based Dietary Supplements and Resistance Training",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41635649/"
+    },
+    {
+      "label": "ESPEN, 2022 — Clinical nutrition and hydration in geriatrics",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35306388/"
+    }
+  ],
+  "verifiedAt": "07/10/2026",
+  "nextAuditAt": "07/01/2027",
+  "auditIntervalMonths": 3,
+  "validationStatus": "VALIDATED",
+  "evidenceStatus": "VALIDÉ — validation médicale MACA 07/10/2026"
 },
 {
  id:'composition-corporelle-menopause-45-50',category:'Santé des femmes & grossesse',
@@ -3508,6 +3546,23 @@ window.extraAuditedQuestions=[...(window.extraAuditedQuestions||[]),{
  source:"UFC-Que Choisir — analyse de matchas, 2026",
  sources:[{label:"UFC-Que Choisir — Matchas : alerte à l’aluminium",url:"https://www.quechoisir.org/actualite-matchas-alerte-a-l-aluminium-video-n178450/"}],
  verifiedAt:"05/10/2026",nextAuditAt:"05/04/2027",auditIntervalMonths:6,validationStatus:"VALIDATED",evidenceStatus:"VALIDÉ — validation médicale MACA 05/10/2026 · signal de consommation, échantillon limité"
+}];
+;
+
+/* ===== MACA BUNDLE SOURCE: backlog-audited-anti-chute-cuir-chevelu-2026-10-07.js ===== */
+// MACASANTÉ — anti-chute / cuir chevelu sensible — validation médicale 07/10/2026
+window.extraAuditedQuestions=[...(window.extraAuditedQuestions||[]),{
+ id:'anti-chute-cheveux-cuir-chevelu-sensible',
+ category:'Santé au quotidien',
+ title:'Quel anti-chute choisir quand on a le cuir chevelu sensible ?',
+ keywords:'anti chute cheveux cuir chevelu sensible réactif minoxidil irritation démangeaisons rougeurs alopécie effluvium télogène propylène glycol mousse sérum vitamines compléments',
+ answer:"Il n’existe pas un produit anti-chute « le mieux toléré » pour tout le monde. Avant de choisir un traitement, il faut surtout comprendre pourquoi les cheveux tombent. Dans l’alopécie androgénétique, le minoxidil appliqué sur le cuir chevelu est l’un des traitements les mieux établis. Mais il peut provoquer irritation, démangeaisons, rougeurs ou desquamation chez certaines personnes. Lorsque le cuir chevelu est sensible, la formulation du produit compte : certains excipients, notamment le propylène glycol présent dans certaines solutions, peuvent participer à l’irritation. Changer de formulation peut parfois améliorer la tolérance, mais une irritation persistante doit surtout faire vérifier le diagnostic plutôt que multiplier les produits « anti-chute ».",
+ detail:"Une chute de cheveux peut avoir de nombreuses causes.\n\nL’alopécie androgénétique entraîne progressivement une diminution de la densité des cheveux. Un effluvium télogène provoque plutôt une chute diffuse, parfois quelques semaines ou mois après une maladie, une forte fièvre, un accouchement, une intervention chirurgicale, une perte de poids importante ou une autre situation ayant perturbé l’organisme.\n\nUne carence en fer, certains médicaments, une maladie thyroïdienne ou certaines maladies du cuir chevelu peuvent également intervenir. Un produit anti-chute n'est donc pas automatiquement la bonne réponse.\n\nLe minoxidil local est un traitement de référence de certaines alopécies, notamment l’alopécie androgénétique. Son efficacité n'est cependant pas immédiate : plusieurs mois peuvent être nécessaires avant d'évaluer correctement le résultat. Une augmentation transitoire de la chute peut parfois être observée au début du traitement.\n\nSon principal problème chez les personnes ayant un cuir chevelu sensible est sa tolérance locale. Des démangeaisons, rougeurs, sensations de brûlure, sécheresse ou desquamation peuvent apparaître. L'irritation peut être liée au minoxidil lui-même, mais également aux excipients de la préparation. Certaines formulations en mousse ou sans propylène glycol peuvent être mieux tolérées par certaines personnes que certaines solutions alcooliques classiques. Cela ne signifie toutefois pas qu'elles sont systématiquement mieux tolérées par tout le monde.\n\nLes compléments contenant biotine, zinc, fer ou différentes vitamines sont très largement commercialisés contre la chute des cheveux. Mais supplémenter une personne qui ne présente pas de déficit identifié n'est pas forcément utile. Une chute persistante mérite plutôt d'en rechercher la cause. Le même raisonnement s'applique aux nombreux sérums et lotions cosmétiques présentés comme « anti-chute » : leurs preuves d'efficacité sont généralement beaucoup moins solides que celles des traitements médicaux validés.",
+ practical:["Une chute de cheveux n'a pas toujours la même cause.","Le minoxidil local est l'un des traitements de référence de l'alopécie androgénétique.","Un cuir chevelu qui gratte ou devient rouge peut mal tolérer le produit ou certains de ses excipients.","Une autre formulation peut parfois être mieux tolérée.","Multiplier les sérums et compléments alimentaires n'est pas la meilleure stratégie sans avoir identifié la cause de la chute."],
+ watch:"Une chute brutale, des plaques sans cheveux, une douleur ou inflammation du cuir chevelu, une perte des sourcils ou des cils ou une chute importante persistante justifient un avis médical.",
+ source:"Société Française de Dermatologie / Dermato-Info · ANSM · recommandations dermatologiques européennes",
+ sources:[{label:"Dermato-Info — Société Française de Dermatologie",url:"https://dermato-info.fr/"},{label:"Société Française de Dermatologie",url:"https://www.sfdermato.org/"},{label:"ANSM — Agence nationale de sécurité du médicament",url:"https://ansm.sante.fr/"}],
+ verifiedAt:"07/10/2026",nextAuditAt:"07/04/2027",auditIntervalMonths:6,validationStatus:"VALIDATED",evidenceStatus:"VALIDÉ — validation médicale MACASANTÉ 07/10/2026"
 }];
 ;
 
