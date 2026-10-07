@@ -15,6 +15,6 @@ for(const a of archive){assert(['Décryptage','Recherche','Prévention','Actuali
 for(const a of ctx.window.MACA_DAILY_EDITORIAL.articles.filter(a=>a.category==='À LA UNE'))assert(archive.some(x=>x.id===a.id&&x.url===a.articleUrl&&x.status==='PUBLISHED'));
 assert(home.includes('href="magazine.html"'));
 const h={hidden:false};
-const runtime={window:{MACA_DAILY_EDITORIAL:{date:'07/10/2026',articles:[{id:'missing',category:'À LA UNE',articleUrl:'daily.html?id=missing'}]},MACA_MAGAZINE_ARTICLES:[]},document:{querySelector:q=>q==='#comprendre'?h:null,querySelectorAll:()=>[],addEventListener:()=>{},createElement:()=>({}),head:{appendChild:()=>{}}},console};
+const runtime={window:{addEventListener:()=>{},MACA_DAILY_EDITORIAL:{date:'07/10/2026',articles:[{id:'missing',category:'À LA UNE',articleUrl:'daily.html?id=missing'}]},MACA_MAGAZINE_ARTICLES:[]},document:{querySelector:q=>q==='#comprendre'?h:null,querySelectorAll:()=>[],addEventListener:()=>{},createElement:()=>({}),head:{appendChild:()=>{}}},console};
 vm.runInNewContext(read('maca-daily-editorial.js'),runtime);assert(h.hidden);
 console.log('PASS: native order, no CSS order or repair script, single editorial load, archive links, headline completeness gate and sitemap.');
