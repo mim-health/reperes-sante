@@ -4,7 +4,7 @@
  const data=window.MACA_DAILY_EDITORIAL;if(!data||!Array.isArray(data.articles)){console.error('MACA: données éditoriales quotidiennes absentes');return;}
  const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#39;'}[c]));
  const headlines=data.articles.filter(x=>x.category==='À LA UNE'), headline=headlines[0], reads=data.articles.filter(x=>x.category==='À LIRE EN 3 MIN').slice(0,3), fact=data.articles.find(x=>x.category==='VRAI OU FAUX'), numbers=data.articles.filter(x=>x.category==='LE CHIFFRE DU JOUR'), number=numbers[0];
- const dailyUrl=id=>`daily.html?id=${encodeURIComponent(id)}`;const byId=id=>data.articles.find(x=>x.id===id);const goDaily=id=>{if(byId(id))location.href=dailyUrl(id);};
+ const dailyUrl=id=>`daily.html?id=${encodeURIComponent(id)}`;const byId=id=>data.articles.find(x=>x.id===id);const goDaily=id=>{const item=byId(id);if(item)location.href=item.articleUrl||dailyUrl(id);};
  const clickable=(el,item)=>{if(!el||!item)return;el.dataset.dailyPage=item.id;el.tabIndex=0;el.setAttribute('role','link');el.setAttribute('aria-label','Lire : '+item.title);el.style.cursor='pointer';};
  const sourceAnchor=item=>item&&item.sourceUrl?`<a class="maca-source-link" data-maca-source="true" href="${esc(item.sourceUrl)}" target="_blank" rel="noopener noreferrer" aria-label="Consulter la source : ${esc(item.sourceLabel||item.source||'source')}">${esc(item.source)} ↗</a>`:esc(item&&item.source||'');
  const sourceLine=item=>`<span>Source vérifiée</span> ${sourceAnchor(item)}`;
