@@ -21,7 +21,8 @@ const staticUrls=[
 ];
 const magazineCtx={window:{}};vm.runInNewContext(fs.readFileSync(path.join(ROOT,'magazine-articles.js'),'utf8'),magazineCtx);
 staticUrls.push(['https://macasante.fr/magazine.html',today,'daily','0.8']);
-for(const a of magazineCtx.window.MACA_MAGAZINE_ARTICLES.filter(a=>a.status==='PUBLISHED'))staticUrls.push(['https://macasante.fr/'+a.url,a.date,'monthly','0.7']);
+vm.runInNewContext(fs.readFileSync(path.join(ROOT,'magazine-videos.js'),'utf8'),magazineCtx);
+for(const a of [...magazineCtx.window.MACA_MAGAZINE_ARTICLES,...magazineCtx.window.MACA_MAGAZINE_VIDEOS].filter(a=>a.status==='PUBLISHED'))staticUrls.push(['https://macasante.fr/'+a.url,a.date,'monthly','0.7']);
 
 const lines=['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'];
 for(const [loc,lastmod,changefreq,priority] of staticUrls)lines.push(`  <url><loc>${esc(loc)}</loc><lastmod>${lastmod}</lastmod><changefreq>${changefreq}</changefreq><priority>${priority}</priority></url>`);

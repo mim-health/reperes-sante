@@ -4,6 +4,8 @@ window.MACA_MAGAZINE_ARTICLES = [
     "id": "daily-oct7-trauma-20261007",
     "url": "article-7-octobre-impact-sante-mentale.html",
     "title": "Trois ans après le 7 octobre : que sait-on de l’impact psychologique en Israël ?",
+    "format": "article",
+    "keywords": ["7 octobre", "santé mentale", "stress post-traumatique"],
     "category": "Décryptage",
     "date": "2026-10-07",
     "status": "PUBLISHED",

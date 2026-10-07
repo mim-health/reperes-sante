@@ -13,12 +13,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
+      - name: Archive existing Max videos
+        if: github.ref_name == 'feat/v0-magazine'
+        run: python scripts/archive-max-videos.py
       - name: Validate homepage and Magazine invariants
         if: github.ref_name == 'feat/v0-magazine'
-        run: node scripts/test-home-magazine.js
+        run: |
+          node scripts/test-home-magazine.js
+          node scripts/test-magazine-videos.js
       - name: Generate crawlable fiche pages
         run: node scripts/build-static-seo-fiches.js
       - name: Rebuild sitemap
@@ -34,6 +41,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add fiches-seo sitemap.xml
+          git add fiches-seo sitemap.xml assets/videos
           git diff --cached --quiet || git commit -m "seo: generate static crawlable fiche pages"
           git push
