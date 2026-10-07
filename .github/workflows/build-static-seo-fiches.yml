@@ -16,6 +16,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
+      - name: Validate homepage and Magazine invariants
+        if: github.ref_name == 'feat/v0-magazine'
+        run: node scripts/test-home-magazine.js
       - name: Generate crawlable fiche pages
         run: node scripts/build-static-seo-fiches.js
       - name: Rebuild sitemap
