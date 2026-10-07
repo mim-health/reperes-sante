@@ -14,6 +14,10 @@ if(missing.length) throw new Error('Canonical cards without stable ID: '+missing
 if(new Set(ids).size!==ids.length) throw new Error('Duplicate canonical IDs prevent sitemap generation');
 const today=process.env.SITEMAP_DATE||new Date().toISOString().slice(0,10);
 const staticUrls=[['https://macasante.fr/',today,'daily','1.0'],['https://macasante.fr/fiches.html',today,'daily','0.9'],['https://macasante.fr/mentions-legales.html','2026-08-21','yearly','0.2'],['https://macasante.fr/confidentialite.html','2026-08-21','yearly','0.2'],['https://macasante.fr/contact.html','2026-08-21','yearly','0.3']];
+const magazineCtx={window:{}};vm.runInNewContext(fs.readFileSync('magazine-articles.js','utf8'),magazineCtx);
+staticUrls.push(['https://macasante.fr/magazine.html',today,'daily','0.8']);
+for(const a of magazineCtx.window.MACA_MAGAZINE_ARTICLES.filter(a=>a.status==='PUBLISHED'))staticUrls.push(['https://macasante.fr/'+a.url,a.date,'monthly','0.7']);
+
 const ficheUrls=ids.map(id=>[`https://macasante.fr/fiches-seo/${encodeURIComponent(id)}.html`,today,'monthly','0.8']);
 const all=staticUrls.concat(ficheUrls);const rows=all.map(([loc,lastmod,changefreq,priority])=>`  <url><loc>${esc(loc)}</loc><lastmod>${lastmod}</lastmod><changefreq>${changefreq}</changefreq><priority>${priority}</priority></url>`);
 const xml=`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${rows.join('\n')}\n</urlset>\n`;
@@ -30,3 +34,4 @@ if(process.argv.includes('--check')){
   if(extras.length){console.error(`sitemap.xml contains ${extras.length} non-canonical URL(s)`);process.exit(1);}
   console.log(`Sitemap PASS: ${all.length} unique URLs, ${ids.length} canonical fiches`);
 }else{fs.writeFileSync('sitemap.xml',xml);console.log(`Generated sitemap.xml: ${all.length} URLs, ${ids.length} canonical fiches`);}
+

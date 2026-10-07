@@ -1,3 +1,17 @@
+# Règle Magazine — validée le 07/10/2026, prioritaire sur les règles historiques ci-dessous
+
+- Fiche = réponse durable à une question patient. Article Magazine = décryptage d’une actualité ou publication scientifique.
+- Chaque À LA UNE renvoie obligatoirement à un article complet validé, sourcé, daté et partageable, jamais à une carte développée.
+- Ajouter l’article à `magazine-articles.js` et à l’archive statique `magazine.html` avant la mise en avant. Conserver cette entrée et cette page lors de toutes les rotations.
+- Rubriques initiales : Décryptage, Recherche, Prévention, Actualité santé.
+- `articleUrl` du À LA UNE doit correspondre à une entrée PUBLISHED du registre Magazine. Sans correspondance, le À LA UNE ne s’affiche pas.
+- Les articles Magazine restent hors `corpus-manifest.js` et du corpus Assistant. Aucun import automatique.
+- Une actualité peut révéler une question patient manquante : proposer une création ou un enrichissement de fiche, vérifier les doublons et attendre une validation explicite avant intégration.
+- Exécuter `node scripts/test-home-magazine.js` avant publication ; contrôler ensuite le site public sur desktop et mobile.
+- Homepage native : hero → vidéo Max → Assistant → reste du Magazine. Aucun déplacement correctif du DOM ni CSS order sur les blocs principaux.
+
+---
+
 # MACA Santé — politique éditoriale quotidienne
 
 Validé le 21/08/2026. Complété et verrouillé le 22/08/2026 — étape 5.
@@ -101,3 +115,4 @@ Règle de synthèse : **réseaux sociaux = signal éditorial ; sources médicale
 ## Principe produit
 
 **L’actualité attire ; les rendez-vous éditoriaux engagent ; la bibliothèque capitalise.**
+

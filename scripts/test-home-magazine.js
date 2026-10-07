@@ -1,0 +1,20 @@
+'use strict';
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const read=p=>fs.readFileSync(p,'utf8');
+const home=read('index.html'),css=read('maca-home-cover-pistache.css'),entry=read('corpus-v2-browser-entry.js');
+const main=home.split('<main>')[1].split('</main>')[0];
+const positions=['class="intro"','class="maca-video-feature"','class="search-hub"','class="magazine-layout"'].map(x=>main.indexOf(x));
+assert(positions.every((x,i)=>x>=0&&(!i||x>positions[i-1])));
+assert(!home.includes('maca-home-video-order-fix')&&!/order\s*:/.test(css));
+assert(!entry.includes('maca-daily-editorial-data.js')&&!entry.includes('maca-daily-editorial.js'));
+const ctx={window:{}};vm.createContext(ctx);
+for(const file of ['magazine-articles.js','maca-daily-editorial-data.js'])vm.runInContext(read(file),ctx);
+const archive=ctx.window.MACA_MAGAZINE_ARTICLES;
+assert(new Set(archive.map(a=>a.id)).size===archive.length);
+for(const a of archive){assert(['Décryptage','Recherche','Prévention','Actualité santé'].includes(a.category));assert(fs.existsSync(a.url));assert(read('magazine.html').includes('href="'+a.url+'"'));assert(read(a.url).includes('href="magazine.html"'));assert(read(a.url).includes('rel="canonical"'));assert(read('sitemap.xml').includes('https://macasante.fr/'+a.url));}
+for(const a of ctx.window.MACA_DAILY_EDITORIAL.articles.filter(a=>a.category==='À LA UNE'))assert(archive.some(x=>x.id===a.id&&x.url===a.articleUrl&&x.status==='PUBLISHED'));
+assert(home.includes('href="magazine.html"'));
+const h={hidden:false};
+const runtime={window:{MACA_DAILY_EDITORIAL:{date:'07/10/2026',articles:[{id:'missing',category:'À LA UNE',articleUrl:'daily.html?id=missing'}]},MACA_MAGAZINE_ARTICLES:[]},document:{querySelector:q=>q==='#comprendre'?h:null,querySelectorAll:()=>[],addEventListener:()=>{},createElement:()=>({}),head:{appendChild:()=>{}}},console};
+vm.runInNewContext(read('maca-daily-editorial.js'),runtime);assert(h.hidden);
+console.log('PASS: native order, no CSS order or repair script, single editorial load, archive links, headline completeness gate and sitemap.');

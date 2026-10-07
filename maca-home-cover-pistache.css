@@ -17,14 +17,14 @@ body.maca-magazine-v1 .intro h1{max-width:1040px;color:var(--home-ink);font-size
 body.maca-magazine-v1 .intro h1 em{display:block;color:var(--home-ink);font-style:normal;white-space:nowrap}
 body.maca-magazine-v1 .intro .lede{max-width:780px;color:#354638;font-size:18px;line-height:1.58}
 body.maca-magazine-v1 .search-hub{width:min(1120px,calc(100% - 48px));margin:24px auto 22px!important;background:var(--home-paper)}
-body.maca-magazine-v1 .trust-strip{width:min(1120px,calc(100% - 48px));margin:0 auto 42px;order:initial}
-body.maca-magazine-v1 main{display:flex;flex-direction:column}
-body.maca-magazine-v1 .intro{order:1}
-body.maca-magazine-v1 .search-hub{order:2}
-body.maca-magazine-v1 .magazine-layout{order:3}
-body.maca-magazine-v1 .rail-news{order:4}
-body.maca-magazine-v1 .method{order:5}
-body.maca-magazine-v1 .trust-strip{order:6}
+body.maca-magazine-v1 .trust-strip{width:min(1120px,calc(100% - 48px));margin:0 auto 42px}
+body.maca-magazine-v1 main{display:block}
+
+
+
+
+
+
 body.maca-magazine-v1 .trust-strip-inner{background:#f7f8f1}
 body.maca-magazine-v1 .trust-proof{background:transparent}
 body.maca-magazine-v1 .trust-kicker,body.maca-magazine-v1 .eyebrow{color:var(--home-orange)}
@@ -32,3 +32,7 @@ body.maca-magazine-v1 .method{background:#f7f8f1}
 body.maca-magazine-v1 .method:before{content:"NOTRE HISTOIRE";display:block;margin:0 auto 10px;text-align:center;color:var(--home-orange);font-size:12px;font-weight:800;letter-spacing:.18em}
 body.maca-magazine-v1 .method>p:first-of-type:before{content:"MACA Santé est né d’une idée simple : rendre l’information médicale fiable plus facile à comprendre, sans la simplifier à l’excès.\A\A";white-space:pre-wrap;font-family:Georgia,'Times New Roman',serif;font-size:21px;line-height:1.45;color:var(--home-ink)}
 @media(max-width:800px){body.maca-magazine-v1 .site-header{padding-top:10px;padding-bottom:10px}body.maca-magazine-v1 .site-header .brand{gap:13px}body.maca-magazine-v1 .site-header .brand img{width:64px!important;height:64px!important;flex:0 0 64px}body.maca-magazine-v1 .site-header .brand>.brand-word{font-size:25px!important;white-space:nowrap!important}body.maca-magazine-v1 .site-header .brand>.brand-word::after{content:none!important;display:none!important}body.maca-magazine-v1 .intro{width:calc(100% - 28px);margin-top:12px;padding:42px 24px 38px;border-radius:2px}body.maca-magazine-v1 .intro h1{font-size:clamp(44px,13vw,62px)!important;line-height:.92!important;max-width:100%}body.maca-magazine-v1 .intro h1 em{white-space:normal}body.maca-magazine-v1 .intro .lede{font-size:15px;line-height:1.5;max-width:100%}body.maca-magazine-v1 .search-hub,body.maca-magazine-v1 .trust-strip{width:calc(100% - 28px)}body.maca-magazine-v1 .trust-strip{margin-bottom:28px}}
+
+
+/* Homepage follows its native HTML order on every viewport. */
+body.maca-magazine-v1 .maca-video-feature{margin-top:24px}

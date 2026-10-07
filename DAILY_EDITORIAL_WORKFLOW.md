@@ -1,10 +1,24 @@
+# Règle Magazine — validée le 07/10/2026, prioritaire sur les règles historiques ci-dessous
+
+- Fiche = réponse durable à une question patient. Article Magazine = décryptage d’une actualité ou publication scientifique.
+- Chaque À LA UNE renvoie obligatoirement à un article complet validé, sourcé, daté et partageable, jamais à une carte développée.
+- Ajouter l’article à `magazine-articles.js` et à l’archive statique `magazine.html` avant la mise en avant. Conserver cette entrée et cette page lors de toutes les rotations.
+- Rubriques initiales : Décryptage, Recherche, Prévention, Actualité santé.
+- `articleUrl` du À LA UNE doit correspondre à une entrée PUBLISHED du registre Magazine. Sans correspondance, le À LA UNE ne s’affiche pas.
+- Les articles Magazine restent hors `corpus-manifest.js` et du corpus Assistant. Aucun import automatique.
+- Une actualité peut révéler une question patient manquante : proposer une création ou un enrichissement de fiche, vérifier les doublons et attendre une validation explicite avant intégration.
+- Exécuter `node scripts/test-home-magazine.js` avant publication ; contrôler ensuite le site public sur desktop et mobile.
+- Homepage native : hero → vidéo Max → Assistant → reste du Magazine. Aucun déplacement correctif du DOM ni CSS order sur les blocs principaux.
+
+---
+
 # MACA SANTE — voie à suivre pour la rotation éditoriale
 
 ## Principe
 La rotation quotidienne est isolée du moteur de recherche et du corpus des fiches.
 
 **Règle fondamentale : rotation de l'accueil ≠ suppression du contenu.**
-Un contenu éditorial validé qui quitte l'accueil doit être conservé lorsqu'il a une valeur durable et transformé en fiche générique, réutilisable et retrouvable par le moteur de recherche.
+Un article validé qui quitte l’accueil reste archivé dans le Magazine. Toute transformation en fiche durable nécessite une proposition et une validation distinctes.
 
 ## Règle d'interactivité de l'accueil
 **Tout contenu éditorial visible sur la page d'accueil doit être cliquable/tappable.**
@@ -115,3 +129,4 @@ Les fichiers du corpus ne sont modifiés que dans l'étape explicite de capitali
 12. Conserver le commit GitHub du jour comme point de retour.
 
 Cette séparation évite de réécrire le moteur à chaque veille quotidienne, empêche la perte des contenus éditoriaux validés et transforme progressivement le travail de rédaction en patrimoine documentaire durable pour MACA.
+
