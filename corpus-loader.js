@@ -104,6 +104,8 @@
     const mentalTitle = 'Stress ou anxiété : à partir de quand faut-il en parler ?';
     const mentalCard = latestCardByTitle(mentalTitle);
     if (!mentalCard || !String(mentalCard.detail || '').trim()) missing.push('sante-mentale-v2');
+    const proteinV3=latestCard('produits-enrichis-proteines-besoins');
+    if (!proteinV3 || !String(proteinV3.title||'').includes('font-ils maigrir')) missing.push('produits-proteines-v3');
     if (missing.length) throw new Error('Corpus bundle V2 stale/incomplete: ' + missing.join(', '));
   }
 
