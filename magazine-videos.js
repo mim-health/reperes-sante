@@ -1,5 +1,27 @@
-// Capsules déjà publiées, indépendantes du corpus Assistant.
+// Validated and integrity-checked videos.
 window.MACA_MAGAZINE_VIDEOS = [
+  {
+    "id": "proteines-v8",
+    "title": "Produits hyperprotéinés : vraiment meilleurs pour la santé ?",
+    "category": "Décryptage",
+    "date": "2026-10-09",
+    "excerpt": "Satiété, musculation et besoins réels : ce que montrent les études sur les protéines.",
+    "source": "produits-enrichis-proteines-besoins",
+    "keywords": [
+      "protéines",
+      "alimentation",
+      "satiété",
+      "musculation"
+    ],
+    "transcript": "Yaourts, barres, boissons… des protéines partout ! Mais est-ce meilleur pour la santé ? Selon une étude de synthèse de 2020, elles peuvent réduire la faim à court terme. Avec la musculation, certains suppléments favorisent aussi les gains musculaires. Mais ces études ne prouvent pas qu’un dessert enrichi soit meilleur. Si vos besoins sont couverts, inutile d’en ajouter systématiquement. Comparez les étiquettes ! Sources et explications sur macasante.fr.",
+    "url": "video-proteines-v8.html",
+    "format": "video",
+    "status": "PUBLISHED",
+    "video": "assets/videos/proteines-v8.mp4",
+    "image": "assets/videos/proteines-v8.jpg",
+    "imageAlt": "Produits hyperprotéinés : vraiment meilleurs pour la santé ?",
+    "sha256": "561fac4f09f6589c25437d0089c0b0299f3065915738ae59b3ad11b69751aedd"
+  },
   {
     "id": "max-cortisol",
     "url": "video-max-cortisol.html",
