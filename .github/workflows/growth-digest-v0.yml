@@ -35,6 +35,13 @@ jobs:
           GSC_OUTPUT: "growth-input.json"
         run: node scripts/growth-search-console-fetch-v0.js
 
+      - name: Read aggregate and per-page Search Console traffic
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_SITE_URL: "sc-domain:macasante.fr"
+          GSC_DAYS: "28"
+        run: node scripts/growth-traffic-audit-20261009.js
+
       - name: Build daily Growth Top 10
         env:
           GROWTH_INPUT_PATH: "growth-input.json"
@@ -49,6 +56,7 @@ jobs:
         with:
           name: maca-growth-digest
           path: |
+            growth-traffic-audit.json
             growth-digest-latest.json
             growth-digest-latest.md
           retention-days: 14
