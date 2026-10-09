@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url><loc>https://macasante.fr/</loc><lastmod>2026-10-09</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
   <url><loc>https://macasante.fr/fiches.html</loc><lastmod>2026-10-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
   <url><loc>https://macasante.fr/mentions-legales.html</loc><lastmod>2026-08-21</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
@@ -7,7 +7,7 @@
   <url><loc>https://macasante.fr/contact.html</loc><lastmod>2026-08-21</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://macasante.fr/magazine.html</loc><lastmod>2026-10-09</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://macasante.fr/article-7-octobre-impact-sante-mentale.html</loc><lastmod>2026-10-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://macasante.fr/video-proteines-v8.html</loc><lastmod>2026-10-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://macasante.fr/video-proteines-v8.html</loc><video:video><video:thumbnail_loc>https://macasante.fr/assets/videos/proteines-v8.jpg</video:thumbnail_loc><video:title>Produits hyperprotéinés : vraiment meilleurs pour la santé ?</video:title><video:description>Produits hyperprotéinés : sont-ils meilleurs pour la santé ? Une vidéo sur la satiété, la musculation et les besoins réels en protéines, avec sources scientifiques.</video:description><video:content_loc>https://macasante.fr/assets/videos/proteines-v8.mp4</video:content_loc><video:duration>23</video:duration><video:publication_date>2026-10-09T00:00:00+02:00</video:publication_date></video:video><lastmod>2026-10-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://macasante.fr/video-max-cortisol.html</loc><lastmod>2026-10-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://macasante.fr/video-max-sciatique-irm.html</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://macasante.fr/fiches-seo/fievre-enfant.html</loc><lastmod>2026-10-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
