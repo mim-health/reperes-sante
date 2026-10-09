@@ -1,0 +1,1168 @@
+{
+  "generated_at": "2026-10-09T09:35:14.511Z",
+  "cases": [
+    {
+      "intent": "ACTIVITE_PHYSIQUE_MICI",
+      "group": "MICI",
+      "question": "Puis-je pratiquer une activité physique avec une MICI ?",
+      "historical_coverage": "ABSENT",
+      "status": "category_only",
+      "cards": [],
+      "answer": "",
+      "meta": {
+        "grounding": "not_applicable",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 3.863
+    },
+    {
+      "intent": "ALIMENTATION_MICI_DIVERSIFICATION",
+      "group": "MICI",
+      "question": "Comment diversifier à nouveau son alimentation avec une MICI ?",
+      "historical_coverage": "COUVERT",
+      "status": "abstain",
+      "cards": [],
+      "answer": "",
+      "meta": {
+        "grounding": "rejected",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 6.918
+    },
+    {
+      "intent": "ALIMENTATION_MICI_PLAISIR",
+      "group": "MICI",
+      "question": "Comment conserver une alimentation-plaisir avec une MICI ?",
+      "historical_coverage": "COUVERT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "mici-alimentation-poussee",
+          "title": "MICI : que manger pendant une poussée et comment reprendre une alimentation variée ?",
+          "url": ""
+        }
+      ],
+      "answer": "Avec une MICI, conserver le plaisir de manger repose sur une alimentation adaptée à la tolérance individuelle plutôt que sur une liste universelle d’aliments interdits. Pendant une poussée, l’objectif est de maintenir des apports suffisants en adaptant temporairement les aliments aux symptômes ; lorsque ceux-ci diminuent, les aliments exclus peuvent être réintroduits progressivement afin de retrouver une alimentation aussi diversifiée que possible. Les restrictions prolongées et systématiques sont à éviter : des exclusions excessives peuvent rendre l’alimentation monotone, compliquer la vie sociale et favoriser des apports insuffisants. Des prises éventuellement fractionnées peuvent aussi être envisagées pendant une poussée, selon la tolérance. Une perte de poids involontaire, des apports très réduits, des difficultés à s’alimenter ou des restrictions multiples font partie des situations à aborder avec l’équipe qui suit la MICI ; un diététicien peut être associé si besoin.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 6.077
+    },
+    {
+      "intent": "ALIMENTATION_MICI_POUSSEE",
+      "group": "MICI",
+      "question": "Que manger pendant une poussée de MICI ?",
+      "historical_coverage": "COUVERT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "mici-alimentation-poussee",
+          "title": "MICI : que manger pendant une poussée et comment reprendre une alimentation variée ?",
+          "url": ""
+        }
+      ],
+      "answer": "Pendant une poussée de maladie de Crohn ou de rectocolite hémorragique, il n’existe pas de régime unique. L’objectif général est de maintenir des apports suffisants en adaptant temporairement l’alimentation à ce qui est toléré, sans liste universelle d’aliments interdits. Les aliments riches en fibres peuvent majorer certains symptômes chez certaines personnes pendant la poussée, mais leur tolérance est individuelle. Les apports en énergie, protéines et micronutriments restent importants. Fractionner les prises peut être envisagé, ainsi qu’une attention à l’hydratation. Lorsque les symptômes diminuent, les aliments temporairement exclus peuvent être réintroduits progressivement selon leur tolérance, afin de retrouver une alimentation aussi diversifiée que possible ; les restrictions prolongées et systématiques sont à éviter. Une perte de poids involontaire, des apports très réduits, des difficultés à s’alimenter ou des restrictions multiples exposent davantage à la dénutrition et justifient d’en parler à l’équipe qui suit la MICI ; un diététicien peut être sollicité si besoin. En cas de sténose intestinale, des adaptations spécifiques peuvent être nécessaires avec l’équipe médicale.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 6.363
+    },
+    {
+      "intent": "ALIMENTATION_SPORT_DIABETE",
+      "group": "Diabète",
+      "question": "Comment adapter l’alimentation à l’activité physique avec un diabète ?",
+      "historical_coverage": "COUVERT",
+      "status": "abstain",
+      "cards": [],
+      "answer": "",
+      "meta": {
+        "grounding": "rejected",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 6.942
+    },
+    {
+      "intent": "ALIMENTS_INTERDITS_DIABETE",
+      "group": "Diabète",
+      "question": "Y a-t-il des aliments interdits en cas de diabète ?",
+      "historical_coverage": "ABSENT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "diabete-restaurant-repas-amis",
+          "title": "Diabète : comment gérer un restaurant ou un repas chez des amis sans tout calculer ?",
+          "url": ""
+        },
+        {
+          "id": "diabete-alcool",
+          "title": "Peut-on boire de l’alcool lorsqu’on a un diabète ?",
+          "url": ""
+        }
+      ],
+      "answer": "Les cartes ne proposent pas de liste universelle d’aliments interdits en cas de diabète. Elles mettent plutôt l’accent sur la qualité globale de l’alimentation, les principales sources de glucides et des repères de quantité adaptés à la personne. Les glucides se trouvent notamment dans le pain, les féculents, les légumineuses, les fruits, certains produits laitiers, les desserts et les boissons sucrées, sans que cela signifie qu’ils doivent être supprimés. Un dessert peut trouver sa place dans un repas. L’alcool n’est pas automatiquement interdit, mais il peut modifier la glycémie et favoriser une hypoglycémie, surtout avec l’insuline ou certains médicaments ; boire à jeun est particulièrement déconseillé. Certaines situations peuvent justifier une abstention, notamment la grossesse, une maladie du foie, une pancréatite, certains médicaments, des antécédents d’addiction ou des hypoglycémies difficiles à percevoir.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 5.186
+    },
+    {
+      "intent": "APRES_DIAGNOSTIC_ALZHEIMER",
+      "group": "Alzheimer",
+      "question": "Comment faire face à l’annonce et à l’après-diagnostic d’Alzheimer ?",
+      "historical_coverage": "ABSENT",
+      "status": "technical_error",
+      "cards": [],
+      "answer": "",
+      "meta": {},
+      "technical_error": "HTTP 503: {\"error\":\"assistant_temporarily_unavailable\",\"diagnostic\":\"Unterminated string in JSON at position 3293 (line 1 column 3294)\"}",
+      "elapsed": 9.173
+    },
+    {
+      "intent": "COMPLICATIONS_DIABETE",
+      "group": "Diabète",
+      "question": "Quelles complications du diabète faut-il surveiller ?",
+      "historical_coverage": "COUVERT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "diabete-pied-prevention",
+          "title": "Diabète : comment prévenir les problèmes de pied et quels signes surveiller ?",
+          "url": ""
+        },
+        {
+          "id": "diabete-malade-mange-moins-traitement",
+          "title": "Diabète : que faire de mon traitement quand je suis malade et que je mange moins ?",
+          "url": ""
+        }
+      ],
+      "answer": "Les cartes décrivent notamment des complications et atteintes possibles au niveau des pieds : diminution de la sensibilité liée à une neuropathie, atteinte des artères des membres inférieurs, plaies ou ampoules pouvant passer inaperçues et s’aggraver. Les signes mentionnés sont une plaie, une ampoule persistante, une fissure, une rougeur, un gonflement, un écoulement, une callosité inhabituelle, un changement de couleur ou une zone noire. Lors d’une maladie aiguë, les cartes mentionnent aussi le risque de déséquilibre glycémique, d’hypoglycémies ou d’hyperglycémie importante, de déshydratation et, en cas de manque important d’insuline, de production de corps cétoniques puis d’acidocétose diabétique. Vomissements répétés, impossibilité de boire, cétones importantes, douleurs abdominales, respiration inhabituelle, somnolence ou confusion font partie des signes cités.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 6.572
+    },
+    {
+      "intent": "CONDUITE_ALZHEIMER",
+      "group": "Alzheimer",
+      "question": "Quand et comment arrêter la conduite avec Alzheimer ?",
+      "historical_coverage": "COUVERT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "alzheimer-conduite-automobile",
+          "title": "Alzheimer et conduite automobile : quand faut-il arrêter de conduire ?",
+          "url": ""
+        }
+      ],
+      "answer": "Avec Alzheimer, l’arrêt de la conduite ne repose pas simplement sur l’âge ou l’avis de la famille. La maladie peut altérer progressivement l’attention, le jugement, l’orientation et d’autres capacités nécessaires au volant ; en France, les troubles cognitifs relèvent d’une réglementation sur l’aptitude médicale à conduire. Selon la situation, une évaluation médicale de cette aptitude est nécessaire, avec un rôle spécifique du médecin agréé pour le contrôle de l’aptitude médicale à la conduite. Des faits répétés peuvent justifier de poser la question : se perdre sur des trajets familiers, erreurs nouvelles de conduite, accrochages, difficultés inhabituelles aux intersections, confusion entre les commandes ou réactions inadaptées. Ces éléments ne suffisent pas seuls à conclure à une inaptitude. Les proches peuvent noter des faits précis plutôt que discuter de manière générale de la qualité de conduite, puis aborder ces observations avec le médecin dans le cadre de la procédure d’évaluation. Aborder le sujet tôt permet d’anticiper la transition et les alternatives de déplacement : proches, transports, taxi, transport adapté ou services locaux. Préparer ces solutions peut réduire l’impact de l’arrêt de la voiture sur l’autonomie, les habitudes et la vie sociale. Une situation mettant immédiatement en danger la personne ou les autres ne doit pas attendre une consultation de routine.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 6.942
+    },
+    {
+      "intent": "DROITS_AIDANT_ALZHEIMER",
+      "group": "Alzheimer",
+      "question": "Qui peut être reconnu comme proche aidant ?",
+      "historical_coverage": "ABSENT",
+      "status": "category_only",
+      "cards": [],
+      "answer": "",
+      "meta": {
+        "grounding": "not_applicable",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 2.327
+    },
+    {
+      "intent": "ENTREE_ETABLISSEMENT_ALZHEIMER",
+      "group": "Alzheimer",
+      "question": "Quand envisager une entrée en établissement pour Alzheimer ?",
+      "historical_coverage": "COUVERT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "alzheimer-entree-etablissement",
+          "title": "Alzheimer : quand envisager une entrée en établissement et comment préparer cette décision ?",
+          "url": ""
+        },
+        {
+          "id": "alzheimer-rester-seul-domicile",
+          "title": "Une personne atteinte d’Alzheimer peut-elle rester seule à la maison ?",
+          "url": ""
+        }
+      ],
+      "answer": "Il n’existe pas de stade précis de la maladie d’Alzheimer qui impose automatiquement une entrée en établissement. La réflexion se pose surtout lorsque la sécurité ou les besoins quotidiens deviennent difficiles à assurer à domicile malgré les aides, lorsque la perte d’autonomie progresse, ou lorsque l’aidant s’épuise. Les éléments à examiner comprennent notamment la capacité à manger, prendre les traitements, se déplacer et rester seul sans risque excessif ; des chutes répétées, des sorties avec désorientation, des oublis dangereux, des troubles du comportement difficiles à gérer ou un besoin accru de surveillance peuvent peser dans la réflexion. Les aides professionnelles, soins, adaptation du logement, accueil de jour, soutien des proches ou hébergement temporaire peuvent parfois prolonger un maintien à domicile satisfaisant. Si l’entrée devient une possibilité sérieuse, l’anticipation peut faciliter la transition : degré d’autonomie, besoins médicaux et de surveillance, accompagnement des troubles cognitifs par l’établissement, proximité des proches, coût et aides financières sont des éléments à considérer. La personne concernée peut rester associée aux décisions autant que ses capacités le permettent ; ses habitudes, souhaits et repères comptent. Une aggravation brutale de la confusion ou de l’autonomie ne doit pas être attribuée automatiquement à Alzheimer : une cause médicale aiguë doit être recherchée.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 6.504
+    },
+    {
+      "intent": "FATIGUE_TRAITEMENTS_MICI",
+      "group": "MICI",
+      "question": "La fatigue peut-elle être liée aux traitements de la MICI ?",
+      "historical_coverage": "ABSENT",
+      "status": "category_only",
+      "cards": [],
+      "answer": "",
+      "meta": {
+        "grounding": "not_applicable",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 2.513
+    },
+    {
+      "intent": "GLYCEMIE_SPORT_DIABETE",
+      "group": "Diabète",
+      "question": "Comment gérer glycémie/hypoglycémie avant une activité physique ?",
+      "historical_coverage": "COUVERT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "diabete-activite-physique-glycemie",
+          "title": "Diabète et activité physique : comment gérer sa glycémie autour de l’effort ?",
+          "url": ""
+        },
+        {
+          "id": "maca-hydratation-sport",
+          "title": "Faut-il boire avant d’avoir soif quand on fait du sport ?",
+          "url": "https://www.sports.gouv.fr/"
+        }
+      ],
+      "answer": "Autour de l’activité physique, l’effet sur la glycémie varie selon le type de diabète, le type et la durée de l’activité, ainsi que les traitements. Une activité d’endurance peut faire baisser la glycémie, tandis qu’un effort très intense peut parfois provoquer une hausse transitoire. Le risque d’hypoglycémie concerne surtout les personnes traitées par insuline ou par certains médicaments stimulant la sécrétion d’insuline. Elle peut survenir pendant l’effort, mais aussi plusieurs heures après, car l’activité peut augmenter la sensibilité à l’insuline pendant plusieurs heures. Selon la situation et le plan établi avec l’équipe soignante, la surveillance de la glycémie avant, pendant et après l’activité, la disponibilité de glucides rapidement assimilables et des adaptations de l’alimentation ou du traitement peuvent être nécessaires. Ces adaptations ne sont pas universelles. Avant une activité nouvelle ou beaucoup plus intense, elles peuvent être anticipées avec l’équipe qui suit le diabète. Tremblements, sueurs, faim, palpitations, difficultés de concentration ou confusion peuvent évoquer une hypoglycémie. Une glycémie inférieure ou égale à 0,70 g/L (3,9 mmol/L) constitue un seuil d’alerte reconnu. Une hypoglycémie, un malaise ou une confusion impose d’interrompre l’effort et d’appliquer les consignes prévues ; une personne inconsciente ou incapable d’avaler nécessite une prise en charge urgente. Pour l’hydratation, lors d’un effort prolongé ou par forte chaleur, il est utile de boire régulièrement sans excès ; pour une activité courte et modérée, l’eau suffit le plus souvent.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 6.66
+    },
+    {
+      "intent": "GROSSESSE_MICI",
+      "group": "MICI",
+      "question": "Comment gérer une grossesse avec une MICI ?",
+      "historical_coverage": "ABSENT",
+      "status": "category_only",
+      "cards": [],
+      "answer": "",
+      "meta": {
+        "grounding": "not_applicable",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 2.581
+    },
+    {
+      "intent": "PIED_DIABETIQUE",
+      "group": "Diabète",
+      "question": "Comment prévenir et repérer les complications du pied diabétique ?",
+      "historical_coverage": "COUVERT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "diabete-pied-prevention",
+          "title": "Diabète : comment prévenir les problèmes de pied et quels signes surveiller ?",
+          "url": ""
+        }
+      ],
+      "answer": "Le diabète peut diminuer la sensibilité des pieds et être associé à des atteintes des nerfs et des artères. Une ampoule ou une petite blessure peut alors ne pas être ressentie et s’aggraver. La prévention comprend l’examen régulier des pieds — y compris la plante et les espaces entre les orteils — à la recherche d’ampoule, fissure, plaie, rougeur, callosité inhabituelle ou changement de couleur. Des mesures simples sont de maintenir une hygiène des pieds, de bien sécher entre les orteils, de vérifier l’absence de corps étranger ou de zone agressive dans les chaussures, et de porter des chaussures adaptées ne créant pas de frottement ou de pression. En cas de diminution de sensibilité, éviter la marche pieds nus. Il est également recommandé de ne pas traiter soi-même une lésion profonde ou une callosité importante avec des instruments ou des produits agressifs. Les signes à ne pas banaliser sont une plaie, une ampoule persistante, une rougeur ou un gonflement nouveaux, un écoulement, une modification de couleur ou une zone noire. Ces situations nécessitent un avis médical rapide. Le risque n’est pas identique pour toutes les personnes diabétiques : il est évalué notamment selon la neuropathie, l’atteinte artérielle, les déformations du pied et les antécédents d’ulcère ou d’amputation. La fréquence du suivi professionnel augmente avec le niveau de risque ; ce suivi peut aussi repérer les besoins en soins podologiques, prise en charge des callosités ou chaussures spécifiques.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 7.156
+    },
+    {
+      "intent": "QUOTIDIEN_TRAITEMENT_DIABETE",
+      "group": "Diabète",
+      "question": "Comment gérer le diabète au quotidien selon son traitement ?",
+      "historical_coverage": "ABSENT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "diabete-malade-mange-moins-traitement",
+          "title": "Diabète : que faire de mon traitement quand je suis malade et que je mange moins ?",
+          "url": ""
+        },
+        {
+          "id": "diabete-activite-physique-glycemie",
+          "title": "Diabète et activité physique : comment gérer sa glycémie autour de l’effort ?",
+          "url": ""
+        },
+        {
+          "id": "diabete-restaurant-repas-amis",
+          "title": "Diabète : comment gérer un restaurant ou un repas chez des amis sans tout calculer ?",
+          "url": ""
+        },
+        {
+          "id": "diabete-voyage-avion-decalage-horaire",
+          "title": "Diabète : comment préparer un voyage, l’avion et le décalage horaire ?",
+          "url": ""
+        }
+      ],
+      "answer": "La gestion quotidienne du diabète dépend du type de diabète et du traitement : il n’existe pas une règle unique, notamment pour l’insuline et les médicaments pouvant provoquer une hypoglycémie. Les adaptations de l’alimentation ou du traitement sont à individualiser avec l’équipe soignante. Autour de l’activité physique, l’effet sur la glycémie varie selon l’effort et le traitement. Avec l’insuline ou certains médicaments hypoglycémiants, une hypoglycémie peut survenir pendant l’effort ou plusieurs heures après ; la surveillance et les adaptations relèvent d’un plan individualisé. Tremblements, sueurs, faim, palpitations, difficultés de concentration ou confusion peuvent évoquer une hypoglycémie. Un seuil inférieur ou égal à 0,70 g/L (3,9 mmol/L) est un seuil d’alerte reconnu. Pour les repas au restaurant ou chez des proches, l’objectif n’est pas de peser tous les aliments : repérer les principales sources de glucides, garder des repères sur les quantités et considérer l’ensemble du repas peut aider. Les glucides se trouvent notamment dans le pain, les féculents, les légumineuses, les fruits, certains produits laitiers, les desserts et les boissons sucrées. Un repas inhabituel occasionnel ne résume pas l’équilibre du diabète. En cas de maladie avec fièvre, vomissements, diarrhée ou alimentation réduite, la glycémie peut augmenter ou diminuer. Arrêter indistinctement les traitements n’est pas approprié ; l’insuline ne doit pas être arrêtée arbitrairement, particulièrement dans le diabète de type 1. Certains médicaments peuvent nécessiter une interruption temporaire dans des situations telles que déshydratation, jeûne ou maladie aiguë, selon des règles personnalisées. L’hydratation est un élément essentiel. En voyage, une préparation comprend une quantité suffisante de médicaments et de matériel, une ordonnance, l’insuline et le matériel indispensable accessibles en cabine, ainsi qu’un traitement de secours de l’hypoglycémie. En cas de décalage horaire, l’adaptation de l’insuline dépend de plusieurs facteurs et ne suit pas de formule universelle.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 8.857
+    },
+    {
+      "intent": "REFUS_ALIMENTATION_ALZHEIMER",
+      "group": "Alzheimer",
+      "question": "Que faire si une personne Alzheimer refuse de manger ?",
+      "historical_coverage": "COUVERT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "alzheimer-refus-soins-repas",
+          "title": "Alzheimer : refus de toilette, de s’habiller ou de manger, comment réagir ?",
+          "url": ""
+        }
+      ],
+      "answer": "Chez une personne atteinte d’Alzheimer, le refus de manger n’est pas forcément volontaire. Il peut être lié à une incompréhension, à la peur, à la fatigue, à une douleur ou à une difficulté à exprimer ce qui ne va pas. Éviter le rapport de force et chercher ce qui peut expliquer le refus sont des principes importants. Pour les repas, un environnement calme, des portions plus petites, des aliments familiers et faciles à saisir ou à manger, ainsi que suffisamment de temps, peuvent aider. Les difficultés à reconnaître les aliments, à utiliser les couverts ou un environnement bruyant peuvent aussi diminuer l’envie de manger. L’hydratation fait également partie des éléments à vérifier. Un changement alimentaire ne doit pas être attribué automatiquement à Alzheimer : douleur dentaire, prothèse mal adaptée, constipation, infection, nausées, dépression, effet médicamenteux ou autre problème médical peuvent diminuer l’appétit. Si le refus est brutal alors que les repas se passaient auparavant correctement, il peut aussi être associé à une douleur, une maladie aiguë, un nouveau médicament, une rétention urinaire, une fatigue inhabituelle ou un syndrome confusionnel. Une évaluation médicale est indiquée notamment en cas de difficulté à avaler, d’étouffements répétés, de toux pendant les repas, de voix mouillée après avoir avalé, de repas devenus très longs, de forte réduction des boissons ou des aliments, de signes de déshydratation, de perte de poids, de fièvre, de somnolence inhabituelle, de douleur suspectée ou d’altération générale.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 7.281
+    },
+    {
+      "intent": "REFUS_HABILLAGE_ALZHEIMER",
+      "group": "Alzheimer",
+      "question": "Que faire si une personne Alzheimer refuse de s’habiller ?",
+      "historical_coverage": "COUVERT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "alzheimer-refus-soins-repas",
+          "title": "Alzheimer : refus de toilette, de s’habiller ou de manger, comment réagir ?",
+          "url": ""
+        }
+      ],
+      "answer": "Chez une personne atteinte d’Alzheimer, le refus de s’habiller n’est pas forcément volontaire : il peut être lié à une incompréhension, à la peur, à une douleur, à la fatigue, à la pudeur ou à une difficulté à exprimer un inconfort. Éviter le rapport de force et chercher ce qui peut expliquer le refus peuvent aider. Pour faciliter l’habillage, il peut être utile de réduire le choix à deux vêtements, de les présenter dans l’ordre où ils seront mis, de donner davantage de temps et de guider sans corriger chaque erreur. Préserver l’autonomie peut être plus important que rechercher une tenue parfaite lorsque la tenue choisie n’est ni dangereuse ni totalement inadaptée. Si le refus apparaît brutalement alors que l’habillage se passait auparavant correctement, il peut être associé à un changement récent, par exemple une douleur, une chute, une maladie aiguë, un nouveau médicament, une constipation, une rétention urinaire, une fatigue inhabituelle ou un syndrome confusionnel. Une modification rapide du comportement n’est pas nécessairement une progression de la maladie. Une modification brutale du comportement, une douleur suspectée, de la fièvre, une somnolence inhabituelle ou une altération générale nécessitent une évaluation médicale. La recherche de relais peut aussi être importante si les conflits répétés épuisent ou mettent en difficulté l’aidant.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 6.291
+    },
+    {
+      "intent": "REFUS_TOILETTE_ALZHEIMER",
+      "group": "Alzheimer",
+      "question": "Que faire si une personne Alzheimer refuse la toilette ?",
+      "historical_coverage": "COUVERT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "alzheimer-refus-soins-repas",
+          "title": "Alzheimer : refus de toilette, de s’habiller ou de manger, comment réagir ?",
+          "url": ""
+        }
+      ],
+      "answer": "Chez une personne atteinte d’Alzheimer, le refus de toilette n’est pas forcément volontaire : il peut traduire une incompréhension, de la peur, une douleur, de la fatigue, un besoin de pudeur ou une difficulté à exprimer un inconfort. Éviter le rapport de force et chercher ce qui gêne peut aider. Pour la toilette, les éléments qui peuvent être adaptés sont notamment la température de la pièce, le respect de l’intimité, une explication étape par étape, un autre horaire, une autre personne pour aider, ou une toilette partielle plutôt qu’une douche complète. Laisser la personne réaliser elle-même ce qu’elle peut encore faire peut aussi réduire la confrontation. Si le refus survient brutalement alors que la toilette se passait auparavant correctement, les cartes indiquent de rechercher un changement récent, par exemple une douleur, une chute, une maladie aiguë, un nouveau médicament, une constipation, une rétention urinaire, une fatigue inhabituelle ou un syndrome confusionnel. Une modification rapide du comportement n’est pas nécessairement une progression de la maladie. Une modification brutale du comportement, une douleur suspectée, de la fièvre, une somnolence inhabituelle ou une altération générale nécessitent une évaluation médicale. Lorsque les conflits répétés épuisent l’aidant ou compromettent sa sécurité, le recours à un relais fait aussi partie des éléments à prendre en compte.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 6.011
+    },
+    {
+      "intent": "SEXUALITE_DESIR_ENFANT_MICI",
+      "group": "MICI",
+      "question": "Comment concilier MICI, sexualité et désir d’enfant ?",
+      "historical_coverage": "ABSENT",
+      "status": "category_only",
+      "cards": [],
+      "answer": "",
+      "meta": {
+        "grounding": "not_applicable",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 2.065
+    },
+    {
+      "intent": "SOMMEIL_ALZHEIMER",
+      "group": "Alzheimer",
+      "question": "Pourquoi Alzheimer perturbe-t-il le sommeil ?",
+      "historical_coverage": "ABSENT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "alzheimer-deambulation-nuit",
+          "title": "Alzheimer : il se réveille et déambule la nuit — que peut-on faire ?",
+          "url": ""
+        }
+      ],
+      "answer": "Dans la maladie d’Alzheimer, les troubles neurocognitifs peuvent accentuer la désorganisation du rythme veille-sommeil : certaines personnes dorment davantage le jour, se réveillent plusieurs fois la nuit ou ne reconnaissent plus correctement l’heure. Elles peuvent ainsi se lever la nuit en pensant qu’il est temps de commencer la journée ou de partir travailler. Les perturbations nocturnes ne sont toutefois pas toujours directement dues à Alzheimer. Le besoin d’uriner, la soif, une douleur, la constipation, une température inconfortable, certains médicaments, l’apnée du sommeil, le syndrome des jambes sans repos ou d’autres troubles peuvent aussi perturber le sommeil. Le cadre de vie et le rythme de la journée peuvent également jouer : ne pas retrouver les toilettes peut prolonger les déplacements nocturnes, tandis qu’une lumière intense toute la nuit peut entretenir la confusion entre jour et nuit. Une faible exposition à la lumière naturelle, peu d’activité durant la journée ou de longues siestes tardives peuvent contribuer au décalage veille-sommeil.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 6.778
+    },
+    {
+      "intent": "SPORT_A_JEUN_DIABETE",
+      "group": "Diabète",
+      "question": "Faut-il faire du sport à jeun avec un diabète ?",
+      "historical_coverage": "PARTIELLEMENT COUVERT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "diabete-activite-physique-glycemie",
+          "title": "Diabète et activité physique : comment gérer sa glycémie autour de l’effort ?",
+          "url": ""
+        }
+      ],
+      "answer": "L’activité physique est recommandée dans le diabète, mais l’effet de l’effort sur la glycémie varie selon le type de diabète, l’activité, sa durée et les traitements. Les cartes ne donnent pas de règle universelle permettant de répondre par oui ou non au sport à jeun. Chez les personnes utilisant de l’insuline ou certains médicaments hypoglycémiants, une hypoglycémie peut survenir pendant l’effort ou plusieurs heures après ; la surveillance et les adaptations sont donc individualisées. Selon la situation, la glycémie peut nécessiter une surveillance avant, pendant et après l’activité ; il peut aussi être nécessaire d’avoir des glucides rapidement disponibles et d’adapter l’alimentation ou le traitement selon le plan établi avec l’équipe soignante. Ces adaptations ne sont pas universelles.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 4.588
+    },
+    {
+      "intent": "SUIVI_DIABETOLOGUE",
+      "group": "Diabète",
+      "question": "Quand consulter un diabétologue ?",
+      "historical_coverage": "ABSENT",
+      "status": "category_only",
+      "cards": [],
+      "answer": "",
+      "meta": {
+        "grounding": "not_applicable",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 2.152
+    },
+    {
+      "intent": "TRAVAIL_DIABETE_DIVULGATION",
+      "group": "Diabète",
+      "question": "Faut-il signaler son diabète à un futur employeur ?",
+      "historical_coverage": "COUVERT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "maladie-chronique-travail-confidentialite",
+          "title": "Travail et maladie chronique : faut-il en parler à son employeur ou à ses collègues ?",
+          "url": ""
+        }
+      ],
+      "answer": "En général, il n’est pas nécessaire de révéler son diabète à un futur employeur : les informations médicales relèvent de la vie privée. Le diagnostic n’a pas à être communiqué à l’employeur. Si le diabète entraîne des difficultés concrètes au travail ou un besoin d’aménagement, le médecin du travail, soumis au secret médical, peut rechercher des adaptations ou restrictions sans communiquer le diagnostic à l’employeur. Parler directement de la maladie à l’employeur reste un choix distinct ; il peut parfois simplifier l’organisation, sans qu’il soit nécessaire de raconter son histoire médicale pour exprimer un besoin professionnel.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 4.175
+    },
+    {
+      "intent": "TRAVAIL_MICI_DIVULGATION",
+      "group": "MICI",
+      "question": "Faut-il parler de sa MICI au travail ?",
+      "historical_coverage": "COUVERT",
+      "status": "abstain",
+      "cards": [],
+      "answer": "",
+      "meta": {
+        "grounding": "contract_rejected",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 4.335
+    },
+    {
+      "intent": "VOYAGE_DIABETE",
+      "group": "Diabète",
+      "question": "Quel impact le voyage peut-il avoir sur le diabète ?",
+      "historical_coverage": "COUVERT",
+      "status": "abstain",
+      "cards": [],
+      "answer": "",
+      "meta": {
+        "grounding": "rejected",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 6.742
+    },
+    {
+      "intent": "VOYAGE_MICI_PREPARATION",
+      "group": "MICI",
+      "question": "Que prévoir pour voyager avec une MICI ?",
+      "historical_coverage": "COUVERT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "maladie-chronique-voyage",
+          "title": "Voyager avec une maladie chronique : traitements, documents et précautions à prévoir",
+          "url": ""
+        },
+        {
+          "id": "mici-alimentation-poussee",
+          "title": "MICI : que manger pendant une poussée et comment reprendre une alimentation variée ?",
+          "url": ""
+        }
+      ],
+      "answer": "Pour voyager avec une MICI, l’anticipation peut notamment porter sur l’accès aux toilettes, l’hydratation, l’alimentation et la continuité du traitement. Une maladie chronique n’empêche pas nécessairement de voyager, mais demande une préparation adaptée. Pour les traitements : prévoir une quantité suffisante pour toute la durée du séjour avec une marge en cas d’imprévu, garder l’ordonnance et les médicaments dans leur emballage d’origine, et vérifier les conditions de transport et de conservation. Pendant un trajet en avion, les médicaments indispensables et le matériel nécessaire gagnent à rester accessibles. Certains traitements injectables ou matériels peuvent nécessiter un certificat médical, et les règles du pays de destination peuvent exiger des documents spécifiques. En cas de décalage horaire, l’adaptation des horaires dépend du médicament et ne doit pas être improvisée. Les traitements complexes, injectables, thermosensibles ou à horaires stricts nécessitent une préparation spécifique avec un médecin ou un pharmacien. Pour l’alimentation, il n’existe pas de régime MICI universel. Lors de symptômes ou d’une poussée, l’alimentation peut être adaptée temporairement à ce qui est toléré, en veillant aux apports et à l’hydratation. Les restrictions prolongées et systématiques sont à éviter ; quand les symptômes diminuent, la diversification peut être reprise progressivement selon la tolérance. Selon la destination, il peut aussi être utile d’anticiper la couverture des soins, les vaccinations et l’accès à une assistance médicale.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 7.393
+    },
+    {
+      "intent": "ALZ_APRES_DIAGNOSTIC",
+      "group": "alzheimer",
+      "question": "Comment vivre et s’organiser après l’annonce d’un diagnostic d’Alzheimer ?",
+      "historical_coverage": "ABSENT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "alzheimer-rester-seul-domicile",
+          "title": "Une personne atteinte d’Alzheimer peut-elle rester seule à la maison ?",
+          "url": ""
+        },
+        {
+          "id": "alzheimer-traitements-reconnus",
+          "title": "Alzheimer : quels traitements sont aujourd’hui reconnus ?",
+          "url": "https://www.has-sante.fr/jcms/p_3702487/fr/leqembi-lecanemab-maladie-d-alzheimer"
+        },
+        {
+          "id": "alzheimer-rentrer-chez-soi",
+          "title": "Alzheimer : « Il veut rentrer chez lui » alors qu’il est déjà chez lui — que faire ?",
+          "url": ""
+        },
+        {
+          "id": "alzheimer-entree-etablissement",
+          "title": "Alzheimer : quand envisager une entrée en établissement et comment préparer cette décision ?",
+          "url": ""
+        },
+        {
+          "id": "alzheimer-conduite-automobile",
+          "title": "Alzheimer et conduite automobile : quand faut-il arrêter de conduire ?",
+          "url": ""
+        }
+      ],
+      "answer": "Après l’annonce, l’organisation peut s’appuyer sur les capacités réelles dans la vie quotidienne plutôt que sur le seul diagnostic : appeler de l’aide, manger et boire, gérer les médicaments, utiliser les appareils domestiques, s’orienter et réagir après une chute. Ces capacités peuvent évoluer et être réévaluées régulièrement, notamment après une chute, une errance, une erreur médicamenteuse, une hospitalisation ou une aggravation cognitive. Le maintien à domicile peut parfois être soutenu par des passages de proches, une aide à domicile, la livraison de repas, la préparation ou la sécurisation des médicaments, la téléassistance et une organisation différente de certaines activités. L’objectif est de rechercher un équilibre entre autonomie et sécurité, sans viser un risque zéro impossible à atteindre. La prise en charge globale comprend aussi l’activité physique adaptée, le maintien des activités sociales et cognitives, la correction des troubles auditifs et visuels, la prévention des chutes, la nutrition, l’adaptation du domicile, le traitement des maladies associées et le soutien des aidants. Pour les proches, certains changements de comportement gagnent à être abordés en reconnaissant d’abord l’émotion et en proposant ensuite une activité ou un repère familier. Par exemple, « je veux rentrer chez moi » peut exprimer un besoin de sécurité, de la fatigue ou de l’inquiétude ; argumenter sur l’erreur factuelle peut augmenter l’anxiété. Noter l’heure, le contexte et ce qui précède ces épisodes peut aider à identifier des déclencheurs. L’entrée en établissement n’est pas imposée automatiquement par un diagnostic d’Alzheimer. La réflexion peut tenir compte de la sécurité, des besoins quotidiens, des aides possibles à domicile, de l’évolution de l’autonomie et de l’épuisement éventuel de l’aidant. Si cette option devient envisagée, son anticipation et l’implication de la personne autant que possible peuvent faciliter la transition. La conduite peut nécessiter une évaluation de l’aptitude selon la situation. Des difficultés telles que se perdre sur des trajets familiers, des erreurs nouvelles de conduite, des accrochages ou des réactions inadaptées peuvent conduire à poser cette question ; en France, les troubles cognitifs relèvent d’une procédure d’évaluation médicale de l’aptitude à conduire.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 9.66
+    },
+    {
+      "intent": "ALZ_SOMMEIL",
+      "group": "alzheimer",
+      "question": "Pourquoi Alzheimer perturbe-t-il le sommeil et comment accompagner les nuits difficiles ?",
+      "historical_coverage": "ABSENT",
+      "status": "technical_error",
+      "cards": [],
+      "answer": "",
+      "meta": {},
+      "technical_error": "HTTP 503: {\"error\":\"assistant_temporarily_unavailable\",\"diagnostic\":\"Unterminated string in JSON at position 3199 (line 1 column 3200)\"}",
+      "elapsed": 9.06
+    },
+    {
+      "intent": "ALZ_REFUS_QUOTIDIEN",
+      "group": "alzheimer",
+      "question": "Que faire face au refus de toilette, d’habillage ou de repas ?",
+      "historical_coverage": "COUVERT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "alzheimer-refus-soins-repas",
+          "title": "Alzheimer : refus de toilette, de s’habiller ou de manger, comment réagir ?",
+          "url": ""
+        }
+      ],
+      "answer": "Chez une personne atteinte d’Alzheimer ou d’un trouble neurocognitif, le refus de toilette, d’habillage ou de repas peut exprimer une incompréhension, de la peur, une douleur, de la fatigue, un besoin de pudeur ou une difficulté à dire ce qui ne va pas. Il est préférable d’éviter le rapport de force, de chercher ce qui gêne et de réessayer autrement ou à un autre moment. Pour la toilette, les éléments modifiables peuvent inclure le froid, la douleur lors des mouvements, la nudité ou un intervenant peu connu. Une toilette partielle, un autre horaire, la préparation de la pièce, le respect de l’intimité, une explication étape par étape et le maintien des gestes que la personne peut encore réaliser peuvent réduire la confrontation. Pour l’habillage, limiter le choix à deux vêtements, les présenter dans l’ordre d’utilisation, laisser du temps et guider plutôt que corriger chaque erreur peut faciliter la situation. Pour les repas, un environnement calme, de petites portions, des aliments familiers et faciles à saisir ou à manger, ainsi qu’un temps suffisant, peuvent aider ; l’hydratation mérite aussi une attention. Un refus brutal ou un changement récent mérite de rechercher notamment douleur, chute, maladie aiguë, nouveau médicament, constipation, rétention urinaire, fatigue inhabituelle ou syndrome confusionnel. Une baisse durable des apports ne doit pas être attribuée automatiquement à Alzheimer : douleur dentaire, prothèse mal adaptée, infection, nausées, dépression, effet médicamenteux ou autre problème médical peuvent intervenir. Une évaluation médicale est indiquée en cas de modification brutale du comportement, douleur suspectée, fièvre, somnolence inhabituelle ou altération générale. Des difficultés à avaler, étouffements répétés, une toux pendant les repas, une voix mouillée après avoir avalé, une forte réduction des boissons ou aliments, des signes de déshydratation ou une perte de poids nécessitent également un avis. Le report d’un soin non urgent, la modification de l’horaire ou un relais professionnel peuvent être envisagés lorsque les conflits se répètent ou que l’aidant s’épuise.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 8.726
+    },
+    {
+      "intent": "ALZ_CONDUITE",
+      "group": "alzheimer",
+      "question": "Quand faut-il arrêter la conduite avec Alzheimer ?",
+      "historical_coverage": "COUVERT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "alzheimer-conduite-automobile",
+          "title": "Alzheimer et conduite automobile : quand faut-il arrêter de conduire ?",
+          "url": ""
+        }
+      ],
+      "answer": "Avec la maladie d’Alzheimer, l’arrêt de la conduite ne se décide pas uniquement selon l’âge ou l’avis de la famille. En France, les troubles cognitifs sont encadrés par la réglementation sur l’aptitude médicale à conduire : une évaluation médicale de l’aptitude est nécessaire selon la situation, avec un rôle spécifique du médecin agréé pour ce contrôle. La question doit être posée en présence de faits répétés tels que se perdre sur des trajets familiers, commettre de nouvelles erreurs de conduite ou des accrochages, avoir des difficultés inhabituelles aux intersections, confondre les commandes ou réagir de façon inadaptée. Ces signes ne constituent pas seuls une preuve d’inaptitude, mais justifient d’aborder l’aptitude à conduire. Les proches peuvent noter des faits précis observés plutôt que discuter de manière générale de la qualité de conduite. Lorsque des troubles cognitifs sont connus ou que des difficultés au volant sont observées, la question est à aborder avec le médecin dans le respect de la procédure française d’évaluation. Une situation mettant immédiatement en danger la personne ou les autres ne doit pas attendre une consultation de routine. Aborder ce sujet tôt permet d’anticiper des alternatives de déplacement : proches, transports, taxi, transport adapté ou services locaux.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 6.512
+    },
+    {
+      "intent": "ALZ_ETABLISSEMENT",
+      "group": "alzheimer",
+      "question": "Quand envisager une entrée en établissement et comment la préparer ?",
+      "historical_coverage": "COUVERT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "alzheimer-entree-etablissement",
+          "title": "Alzheimer : quand envisager une entrée en établissement et comment préparer cette décision ?",
+          "url": ""
+        },
+        {
+          "id": "aides-domicile-personne-agee-2026-08-27",
+          "title": "Quand demander des aides pour une personne âgée à domicile ?",
+          "url": ""
+        }
+      ],
+      "answer": "Dans le contexte de la maladie d’Alzheimer, il n’existe pas de stade qui impose automatiquement une entrée en établissement. La réflexion se pose surtout si la sécurité ou les besoins quotidiens ne peuvent plus être assurés à domicile malgré les aides, si la perte d’autonomie progresse, si la surveillance nécessaire devient difficilement compatible avec le domicile, ou si l’aidant s’épuise. Aucune de ces questions ne décide seule de l’entrée. Avant une entrée, des solutions intermédiaires peuvent parfois prolonger le maintien à domicile : aides professionnelles, soins, adaptation du logement, accueil de jour, soutien des proches ou hébergement temporaire. L’évaluation peut porter sur ce que la personne réalise encore seule, avec aide, ou ne peut plus réaliser, notamment pour les repas, la toilette, les traitements, les déplacements et les courses. Lorsque l’établissement devient une possibilité sérieuse, l’anticipation avant une crise peut faciliter la transition. Les éléments à considérer incluent le degré d’autonomie, les besoins médicaux et de surveillance, la capacité de l’établissement à accompagner les troubles cognitifs, la proximité des proches, le coût et les possibilités d’aides financières. La personne concernée peut être associée autant que possible aux décisions, en tenant compte de ses souhaits, habitudes et repères. La préparation peut comprendre la visite de l’établissement lorsque cela est possible, ainsi que la transmission des habitudes de vie, traitements, besoins et préférences. Conserver des repères familiers peut aider lors de la transition. Le rôle des proches ne disparaît pas avec l’entrée en établissement : il évolue.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 8.063
+    },
+    {
+      "intent": "ALZ_TRAITEMENTS",
+      "group": "alzheimer",
+      "question": "Quels traitements de la maladie d’Alzheimer sont reconnus aujourd’hui ?",
+      "historical_coverage": "COUVERT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "alzheimer-traitements-reconnus",
+          "title": "Alzheimer : quels traitements sont aujourd’hui reconnus ?",
+          "url": "https://www.has-sante.fr/jcms/p_3702487/fr/leqembi-lecanemab-maladie-d-alzheimer"
+        }
+      ],
+      "answer": "Il n’existe pas de traitement qui guérisse la maladie d’Alzheimer ou restaure les capacités cognitives perdues. La prise en charge associe des mesures non médicamenteuses, l’accompagnement de la personne et des aidants, la correction de facteurs aggravants et, dans certaines situations, des médicaments. Les traitements symptomatiques historiques sont le donépézil, la rivastigmine, la galantamine et la mémantine. Ils ont des indications selon les situations, mais leur bénéfice est limité. En France, la HAS a jugé leur intérêt clinique insuffisant et ils ne sont plus remboursés. Deux anticorps anti-amyloïde, le lécanémab (Leqembi) et le donanémab (Kisunla), ont reçu une autorisation européenne pour certaines personnes ayant une maladie à un stade précoce, une pathologie amyloïde confirmée et répondant à des critères précis, notamment liés au statut ApoE ε4. Ils peuvent ralentir modestement la progression chez certains patients, sans guérir la maladie ni restaurer les fonctions perdues. Ces anticorps nécessitent une sélection et une surveillance spécialisées, notamment en raison du risque d’ARIA, anomalies à l’IRM pouvant correspondre à des œdèmes ou des microhémorragies cérébrales. Une autorisation européenne ne signifie pas automatiquement disponibilité, recommandation ou remboursement en France : la HAS a rendu des avis défavorables au remboursement du lécanémab puis du donanémab dans les conditions évaluées. Les composantes non médicamenteuses restent fondamentales : activité physique adaptée, activités sociales et cognitives, prise en charge des troubles auditifs et visuels, nutrition, prévention des chutes, adaptation du domicile, traitement des maladies associées et soutien des aidants.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 6.801
+    },
+    {
+      "intent": "ALZ_AIDANT_REPIT",
+      "group": "alzheimer",
+      "question": "Comment éviter l’épuisement du proche aidant et trouver du répit ?",
+      "historical_coverage": "PARTIELLEMENT COUVERT",
+      "status": "abstain",
+      "cards": [],
+      "answer": "",
+      "meta": {
+        "grounding": "rejected",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 7.339
+    },
+    {
+      "intent": "ALZ_CONSULT_MEMOIRE",
+      "group": "alzheimer",
+      "question": "À quoi sert une consultation mémoire et comment se déroule le parcours diagnostique ?",
+      "historical_coverage": "PARTIELLEMENT COUVERT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "memoire",
+          "title": "Mémoire : quels changements doivent faire parler à son médecin ?",
+          "url": "https://www.ameli.fr/assure/sante/themes/maladie-alzheimer"
+        }
+      ],
+      "answer": "Une consultation pour des difficultés de mémoire sert à préciser ce qui a changé, depuis quand les troubles évoluent et leur retentissement concret sur la vie quotidienne. Elle vise aussi à rechercher des causes potentiellement corrigibles : par exemple un sommeil insuffisant, une dépression ou une anxiété, une baisse de l’audition ou de la vision, certains médicaments, l’alcool, une maladie aiguë ou certains troubles métaboliques. Elle permet de distinguer un vieillissement habituel, un trouble cognitif léger, une maladie neurocognitive ou une autre cause. Le parcours diagnostique commence par un entretien portant sur le début des troubles, leur progression et leurs conséquences dans les activités habituelles. Des tests cognitifs courts peuvent le compléter. Selon le contexte, une prise de sang, une évaluation de l’audition ou de la vision, une imagerie cérébrale ou un avis spécialisé peuvent être proposés. Un test de mémoire isolé ne suffit pas à établir un diagnostic : son interprétation repose aussi sur l’histoire de la personne, son niveau antérieur et son autonomie. Une confusion apparue brutalement en quelques heures ou quelques jours relève d’une recherche rapide de cause aiguë, plutôt que d’un simple vieillissement de la mémoire.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 5.461
+    },
+    {
+      "intent": "CAN_FATIGUE",
+      "group": "cancer",
+      "question": "Comment gérer la fatigue pendant et après les traitements du cancer ?",
+      "historical_coverage": "ABSENT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "chimiotherapie-effets-indesirables-signaux-alerte",
+          "title": "Chimiothérapie : quels effets indésirables sont fréquents et lesquels doivent alerter ?",
+          "url": ""
+        },
+        {
+          "id": "activite-physique-traitement-cancer",
+          "title": "Peut-on faire de l’activité physique pendant un traitement contre le cancer ?",
+          "url": "https://www.has-sante.fr/upload/docs/application/pdf/2019-07/app_247_ref_aps_cancers_cd_vf.pdf"
+        },
+        {
+          "id": "fatigue-causes",
+          "title": "Je suis toujours fatigué : quelles causes rechercher ?",
+          "url": ""
+        }
+      ],
+      "answer": "La fatigue est fréquente pendant les traitements contre le cancer. Elle peut avoir plusieurs causes : le traitement lui-même, une anémie, une infection, la douleur, un sommeil perturbé ou la maladie. Les causes et les effets indésirables varient selon les traitements ; les consignes propres au protocole donné par l’équipe d’oncologie constituent donc le repère prioritaire. Lorsque l’état de santé le permet, une activité physique adaptée fait partie des soins oncologiques de support. Marche, déplacements, exercices adaptés ou renforcement peuvent contribuer à limiter le déconditionnement, réduire la fatigue liée au cancer, et maintenir les capacités physiques et la qualité de vie. L’objectif n’est pas de dépasser ses capacités, mais d’éviter autant que possible une inactivité prolongée ; l’activité est à adapter au cancer, aux traitements, à la fatigue et aux complications éventuelles. Des symptômes importants pendant une chimiothérapie peuvent nécessiter d’être signalés selon les consignes reçues : fièvre, frissons ou signes d’infection, vomissements ou diarrhées importants, impossibilité de boire, essoufflement inhabituel, saignement anormal ou altération rapide de l’état général. Une baisse des globules rouges peut favoriser fatigue et essoufflement, et des prises de sang régulières permettent de surveiller certains paramètres sanguins. Après les traitements, une fatigue qui dure plusieurs semaines, gêne fortement les activités, ou s’accompagne notamment de perte de poids, fièvre, essoufflement, douleurs importantes ou signes de dépression mérite une évaluation. Les examens éventuels sont orientés par le contexte, l’évolution et les signes associés, plutôt que par un bilan sanguin systématique.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 6.37
+    },
+    {
+      "intent": "CAN_ACTIVITE",
+      "group": "cancer",
+      "question": "Peut-on pratiquer une activité physique pendant un traitement contre le cancer ?",
+      "historical_coverage": "COUVERT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "activite-physique-traitement-cancer",
+          "title": "Peut-on faire de l’activité physique pendant un traitement contre le cancer ?",
+          "url": "https://www.has-sante.fr/upload/docs/application/pdf/2019-07/app_247_ref_aps_cancers_cd_vf.pdf"
+        }
+      ],
+      "answer": "Oui, dans de nombreuses situations : une activité physique adaptée peut être pratiquée pendant les traitements contre le cancer lorsque l’état de santé le permet. Elle fait partie des soins oncologiques de support et peut contribuer à limiter le déconditionnement physique, réduire la fatigue liée au cancer, maintenir les capacités physiques et la qualité de vie. Cela peut inclure la marche, les déplacements, des exercices adaptés ou du renforcement ; il ne s’agit pas nécessairement de faire du sport. L’activité doit être adaptée au cancer, aux traitements, à la fatigue et aux éventuelles complications. Certaines situations peuvent nécessiter des précautions ou une adaptation temporaire ; l’équipe d’oncologie peut préciser les activités adaptées à la situation. L’objectif n’est pas de dépasser ses capacités, mais d’éviter autant que possible une inactivité prolongée.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 4.446
+    },
+    {
+      "intent": "CAN_ALIMENTATION",
+      "group": "cancer",
+      "question": "Comment adapter son alimentation lorsque le cancer ou les traitements modifient l’appétit ou le goût ?",
+      "historical_coverage": "ABSENT",
+      "status": "category_only",
+      "cards": [],
+      "answer": "",
+      "meta": {
+        "grounding": "not_applicable",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 2.717
+    },
+    {
+      "intent": "CAN_SEXUALITE",
+      "group": "cancer",
+      "question": "Comment le cancer et ses traitements peuvent-ils modifier la sexualité et à qui en parler ?",
+      "historical_coverage": "ABSENT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "cancer-traitements-sexualite",
+          "title": "Cancer et sexualité : pourquoi peut-elle changer pendant ou après les traitements ?",
+          "url": ""
+        }
+      ],
+      "answer": "Le cancer et ses traitements peuvent modifier le désir, l’excitation, l’érection, la lubrification, l’orgasme ou provoquer des douleurs. Les conséquences varient selon le cancer et les traitements : chirurgie, radiothérapie pelvienne, hormonothérapies et médicaments peuvent être impliqués. La fatigue, la douleur, les modifications hormonales, l’image corporelle, la peur d’une récidive et des conséquences psychologiques peuvent aussi contribuer à ces changements. Ces difficultés sont fréquentes et peuvent être abordées dans le parcours de soins. Il n’existe pas une sexualité « normale » qu’il faudrait obligatoirement retrouver après un cancer : l’enjeu est d’identifier ce qui représente une difficulté pour la personne ou le couple, ainsi que les solutions possibles. Une douleur nouvelle, un saignement inhabituel ou un symptôme persistant après un traitement contre le cancer ne doit pas être attribué automatiquement aux conséquences sexuelles du traitement : une évaluation médicale est nécessaire.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 4.565
+    },
+    {
+      "intent": "CAN_TRAVAIL",
+      "group": "cancer",
+      "question": "Comment préparer le maintien ou le retour au travail pendant ou après un cancer ?",
+      "historical_coverage": "PARTIELLEMENT COUVERT",
+      "status": "category_only",
+      "cards": [],
+      "answer": "",
+      "meta": {
+        "grounding": "not_applicable",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 1.998
+    },
+    {
+      "intent": "CAN_DROITS",
+      "group": "cancer",
+      "question": "Quelles aides sociales et financières mobiliser quand le cancer désorganise la vie quotidienne ?",
+      "historical_coverage": "ABSENT",
+      "status": "category_only",
+      "cards": [],
+      "answer": "",
+      "meta": {
+        "grounding": "not_applicable",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 1.914
+    },
+    {
+      "intent": "CAN_EFFETS_IND",
+      "group": "cancer",
+      "question": "Comment reconnaître et gérer les effets indésirables des traitements anticancéreux ?",
+      "historical_coverage": "ABSENT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "chimiotherapie-effets-indesirables-signaux-alerte",
+          "title": "Chimiothérapie : quels effets indésirables sont fréquents et lesquels doivent alerter ?",
+          "url": ""
+        },
+        {
+          "id": "cancer-immunotherapie-comment-ca-marche",
+          "title": "Immunothérapie contre le cancer : comment ça marche ?",
+          "url": ""
+        }
+      ],
+      "answer": "Les effets indésirables varient selon le type de traitement et, pour la chimiothérapie, selon les médicaments utilisés. Ils ne surviennent pas de la même manière chez toutes les personnes. Avec une chimiothérapie, peuvent notamment survenir : fatigue, nausées ou vomissements, diarrhée ou constipation, aphtes ou inflammation de la bouche, modification du goût, chute des cheveux, atteinte des ongles, baisse de certaines cellules sanguines et fourmillements ou engourdissements des mains et des pieds. La baisse des globules blancs peut augmenter le risque d’infection ; celle des globules rouges peut favoriser fatigue et essoufflement ; celle des plaquettes peut augmenter le risque de saignement. Des prises de sang régulières servent à surveiller ces paramètres. Les nausées et vomissements peuvent souvent être prévenus ou réduits par les traitements antiémétiques prescrits. Sous chimiothérapie, une fièvre, des frissons ou des signes d’infection doivent être signalés rapidement à l’équipe selon le protocole reçu. Des vomissements ou diarrhées importants, l’impossibilité de boire, un essoufflement inhabituel, un saignement anormal ou une altération rapide de l’état général font aussi partie des situations à signaler selon les consignes de l’équipe. Il n’est pas nécessaire d’attendre la consultation suivante pour évoquer un effet important : certains effets peuvent être prévenus, traités ou conduire à une adaptation temporaire du traitement. Les immunothérapies ont des effets indésirables différents selon leur type. Avec les inhibiteurs de points de contrôle, une activation excessive du système immunitaire peut provoquer une inflammation d’organes sains, notamment de la peau, de l’intestin, du foie, des poumons, de la thyroïde ou d’autres glandes. Tout symptôme nouveau pendant une immunothérapie est à signaler à l’équipe qui suit le traitement, car une prise en charge adaptée peut être nécessaire.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 8.642
+    },
+    {
+      "intent": "CAN_APRES",
+      "group": "cancer",
+      "question": "Que se passe-t-il après la fin des traitements et comment reprendre une vie quotidienne ?",
+      "historical_coverage": "PARTIELLEMENT COUVERT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "cancer-remission-guerison",
+          "title": "Mon cancer est en rémission complète : est-ce que cela veut dire que je suis guéri ?",
+          "url": "https://pediatrie.e-cancer.fr/parent/parcours/quand-parle-t-on-de-guerison/remission-et-guerison"
+        },
+        {
+          "id": "cancer-traitements-sexualite",
+          "title": "Cancer et sexualité : pourquoi peut-elle changer pendant ou après les traitements ?",
+          "url": ""
+        }
+      ],
+      "answer": "Après un traitement contre le cancer, une rémission complète signifie que les examens disponibles ne retrouvent plus de signe détectable du cancer. Cela ne permet pas toujours de parler immédiatement de guérison : une surveillance est maintenue, selon des modalités et une durée qui dépendent notamment du cancer concerné et de la situation individuelle. Le suivi prend aussi en compte les conséquences des traitements et l’état de santé général. La reprise de la vie quotidienne peut aussi inclure les changements liés aux traitements, par exemple la fatigue, la douleur, l’image corporelle ou la sexualité. Après un cancer, il n’existe pas une sexualité « normale » à retrouver obligatoirement : les difficultés éventuelles peuvent être abordées dans le parcours de soins.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 5.39
+    },
+    {
+      "intent": "IC_AGGRAVATION",
+      "group": "insuffisance-cardiaque",
+      "question": "Quels signes montrent que mon insuffisance cardiaque s’aggrave et quand demander de l’aide ?",
+      "historical_coverage": "PARTIELLEMENT COUVERT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "insuffisance-cardiaque-signes-aggravation",
+          "title": "Insuffisance cardiaque : prise de poids, jambes gonflées, essoufflement… quels signes doivent alerter ?",
+          "url": ""
+        },
+        {
+          "id": "insuffisance-cardiaque-surveillance-poids",
+          "title": "Insuffisance cardiaque : faut-il se peser tous les jours et que faut-il surveiller à la maison ?",
+          "url": ""
+        },
+        {
+          "id": "essoufflement-adulte",
+          "title": "Je suis essoufflé : quand faut-il consulter ?",
+          "url": "https://www.ameli.fr/assure/sante/themes/essoufflement-recent/je-suis-brutalement-essouffle-et-j-ai-du-mal-respirer-que-faire"
+        }
+      ],
+      "answer": "Dans l’insuffisance cardiaque, les signes qui peuvent évoquer une aggravation sont : un essoufflement qui augmente ou survient pour des efforts auparavant bien tolérés, une prise de poids rapide, des chevilles ou jambes davantage gonflées, et une fatigue inhabituelle. Une difficulté nouvelle à rester allongé ou des réveils nocturnes avec manque d’air peuvent aussi accompagner cette évolution. Le repère EPOF correspond à : Essoufflement, Prise de poids, Œdèmes, Fatigue. Une prise de poids rapide, notamment de l’ordre de 2 à 3 kg en quelques jours à une semaine, peut faire rechercher une rétention de liquide. Une augmentation rapide et inhabituelle du poids, particulièrement lorsqu’elle s’associe à l’essoufflement ou aux œdèmes, mérite d’être signalée selon les consignes de l’équipe médicale. Les changements par rapport à l’état habituel sont plus importants à repérer qu’un symptôme ancien et stable. Une prise en charge urgente est nécessaire en cas d’essoufflement brutal ou très important, de douleur thoracique, de malaise ou de détresse respiratoire. Les cartes indiquent aussi l’appel au 15 ou au 112 si l’essoufflement s’accompagne notamment de lèvres bleutées, confusion, respiration très difficile ou signes de défaillance circulatoire.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 6.547
+    },
+    {
+      "intent": "IC_POIDS",
+      "group": "insuffisance-cardiaque",
+      "question": "Pourquoi dois-je surveiller mon poids et que signifie une prise de poids rapide ?",
+      "historical_coverage": "ABSENT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "insuffisance-cardiaque-surveillance-poids",
+          "title": "Insuffisance cardiaque : faut-il se peser tous les jours et que faut-il surveiller à la maison ?",
+          "url": ""
+        },
+        {
+          "id": "insuffisance-cardiaque-signes-aggravation",
+          "title": "Insuffisance cardiaque : prise de poids, jambes gonflées, essoufflement… quels signes doivent alerter ?",
+          "url": ""
+        },
+        {
+          "id": "prise-poids-sans-raison",
+          "title": "Pourquoi je prends du poids alors que je ne mange pas plus ?",
+          "url": ""
+        }
+      ],
+      "answer": "La surveillance du poids peut aider à repérer une évolution inhabituelle. En cas d’insuffisance cardiaque, une augmentation rapide du poids peut être l’un des signes d’une accumulation de liquide, parfois avant que les jambes ne paraissent gonflées. L’essoufflement, les œdèmes et une fatigue inhabituelle font aussi partie des éléments à surveiller ; le poids ne suffit pas à lui seul. Une prise de poids rapide peut aussi avoir plusieurs causes et ne signifie pas forcément que l’alimentation est seule en cause : baisse de l’activité physique, diminution de la masse musculaire, sommeil insuffisant, changements hormonaux ou certains médicaments sont notamment cités. Une prise de poids rapide associée à des œdèmes, un essoufflement ou une fatigue inhabituelle nécessite un avis médical. Dans le contexte d’une insuffisance cardiaque, une prise de poids rapide de l’ordre de 2 à 3 kg en quelques jours à une semaine est un repère pouvant faire rechercher une rétention de liquide. Les modalités et la fréquence des pesées dépendent toutefois de la situation et des consignes de l’équipe soignante.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 6.21
+    },
+    {
+      "intent": "IC_SEL_LIQUIDES",
+      "group": "insuffisance-cardiaque",
+      "question": "Dois-je limiter le sel ou les liquides avec une insuffisance cardiaque ?",
+      "historical_coverage": "ABSENT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "insuffisance-cardiaque-sel-boissons",
+          "title": "Insuffisance cardiaque : faut-il vraiment manger sans sel et limiter les boissons ?",
+          "url": ""
+        }
+      ],
+      "answer": "Avec une insuffisance cardiaque, le message n’est pas « zéro sel » ni « boire le moins possible ». Il est raisonnable d’éviter les apports excessifs de sel, mais un régime extrêmement pauvre en sel n’est pas recommandé systématiquement. Une grande partie du sel provient des aliments transformés. La limitation importante des boissons n’est pas une règle universelle chez une personne stable. Une restriction hydrique de l’ordre de 1,5 à 2 litres par jour peut être envisagée dans certaines situations particulières, notamment certaines insuffisances cardiaques sévères ou une hyponatrémie. Les besoins peuvent évoluer avec la chaleur, la fièvre ou des pertes digestives. Les substituts de sel peuvent être riches en potassium, alors que plusieurs médicaments de l’insuffisance cardiaque peuvent augmenter le potassium sanguin. Une restriction très importante de sel ou de boissons ne doit pas être entreprise de sa propre initiative.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 5.03
+    },
+    {
+      "intent": "IC_ACTIVITE",
+      "group": "insuffisance-cardiaque",
+      "question": "Quelle activité physique puis-je pratiquer avec une insuffisance cardiaque ?",
+      "historical_coverage": "ABSENT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "senior-endurance-force-equilibre",
+          "title": "Après 65 ans, faut-il travailler l’endurance, la force et l’équilibre ?",
+          "url": "https://www.has-sante.fr/upload/docs/application/pdf/2019-07/app_248_ref_aps_pa_vf.pdf"
+        },
+        {
+          "id": "apres-infarctus-traitements-readaptation-prevention",
+          "title": "Après un infarctus : à quoi servent les traitements et la réadaptation cardiaque ?",
+          "url": ""
+        },
+        {
+          "id": "insuffisance-cardiaque-surveillance-poids",
+          "title": "Insuffisance cardiaque : faut-il se peser tous les jours et que faut-il surveiller à la maison ?",
+          "url": ""
+        }
+      ],
+      "answer": "Pour une maladie chronique, l’exercice n’est pas automatiquement interdit, mais il peut nécessiter une adaptation. Les cartes évoquent l’endurance, le renforcement musculaire et les exercices d’équilibre comme dimensions complémentaires de l’activité physique ; parmi les exemples d’endurance figurent la marche rapide, le vélo ou la natation. La progression peut se faire à partir de périodes courtes, avec une augmentation progressive selon les capacités. En cas de maladie cardiovasculaire instable, de limitation importante ou de reprise après une longue période d’inactivité, les cartes indiquent qu’un avis professionnel peut aider à fixer le niveau de départ et que l’activité peut nécessiter un accompagnement. La réadaptation cardiaque comprend une reprise progressive et encadrée de l’activité physique ainsi qu’une évaluation des capacités. Dans l’insuffisance cardiaque, une modification de l’état habituel peut notamment associer essoufflement apparaissant plus facilement, œdèmes, difficulté nouvelle à dormir allongé ou fatigue nettement plus importante. Une augmentation rapide et inhabituelle du poids, particulièrement avec essoufflement ou œdèmes, mérite d’être signalée.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 6.578
+    },
+    {
+      "intent": "IC_MEDICAMENTS",
+      "group": "insuffisance-cardiaque",
+      "question": "Comment gérer plusieurs médicaments et leurs effets indésirables dans l’insuffisance cardiaque ?",
+      "historical_coverage": "ABSENT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "polymedication-deprescription-senior",
+          "title": "Je prends beaucoup de médicaments : faut-il essayer d’en supprimer certains ?",
+          "url": "https://www.ameli.fr/medecin/sante-prevention/medicaments/risque-iatrogenique-prevention-chez-la-personne-agee-de-65-ans-et-plus/prevention-du-risque-iatrogenique-l-essentiel"
+        },
+        {
+          "id": "medicaments-complements-interactions",
+          "title": "Médicaments et compléments alimentaires : peut-on les prendre ensemble ?",
+          "url": "https://www.ameli.fr/assure/sante/medicaments/effets-indesirables-et-interactions-lies-aux-medicaments/interactions-aliments-boissons-tabac-avec-medicaments"
+        },
+        {
+          "id": "automedication-sans-ordonnance-risques",
+          "title": "Sans ordonnance veut-il dire sans risque ?",
+          "url": ""
+        },
+        {
+          "id": "insuffisance-cardiaque-surveillance-poids",
+          "title": "Insuffisance cardiaque : faut-il se peser tous les jours et que faut-il surveiller à la maison ?",
+          "url": ""
+        }
+      ],
+      "answer": "Dans l’insuffisance cardiaque, plusieurs médicaments peuvent être nécessaires. Avec la polymédication, les risques d’interactions, d’effets indésirables et d’erreurs de prise augmentent. Une revue régulière de l’ensemble de l’ordonnance permet de vérifier l’utilité de chaque traitement, l’adaptation des doses et d’éventuelles associations problématiques. Elle inclut aussi les médicaments sans ordonnance, l’automédication et les compléments alimentaires. Des symptômes tels que vertiges, hypotension, somnolence, confusion, constipation, troubles de l’équilibre ou chutes peuvent être liés à des traitements, mais il peut être difficile d’identifier un médicament responsable isolément. Une revue globale est donc plus utile qu’un arrêt improvisé d’un seul produit. Certains médicaments ne doivent pas être arrêtés brutalement et peuvent nécessiter une diminution progressive ou une surveillance spécifique. Les compléments, vitamines, minéraux et produits à base de plantes peuvent modifier l’action des médicaments, en diminuer l’efficacité ou en augmenter les effets indésirables. Un produit « naturel » ou vendu sans ordonnance n’est donc pas nécessairement dépourvu d’interactions. De même, cumuler sans le savoir plusieurs produits contenant la même substance peut augmenter les risques. Dans l’insuffisance cardiaque, le suivi de l’état habituel peut aussi inclure le poids, l’essoufflement, les œdèmes et une fatigue inhabituelle. Une augmentation rapide et inhabituelle du poids, surtout associée à l’essoufflement ou aux œdèmes, mérite d’être signalée. La carte précise de ne pas modifier seul un traitement diurétique à partir du poids, sauf stratégie préalablement définie avec l’équipe médicale.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 7.473
+    },
+    {
+      "intent": "IC_VOYAGE_AVION",
+      "group": "insuffisance-cardiaque",
+      "question": "Puis-je voyager en avion avec une insuffisance cardiaque ?",
+      "historical_coverage": "PARTIELLEMENT COUVERT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "maladie-chronique-voyage",
+          "title": "Voyager avec une maladie chronique : traitements, documents et précautions à prévoir",
+          "url": ""
+        },
+        {
+          "id": "insuffisance-cardiaque-signes-aggravation",
+          "title": "Insuffisance cardiaque : prise de poids, jambes gonflées, essoufflement… quels signes doivent alerter ?",
+          "url": ""
+        }
+      ],
+      "answer": "Les cartes indiquent qu’une maladie chronique n’empêche pas nécessairement de voyager, y compris en avion, mais qu’une préparation est nécessaire : quantité suffisante de traitements avec une marge, ordonnance, emballages d’origine, documents éventuels, conditions de conservation et règles du pays de destination. Les médicaments indispensables pendant le trajet doivent rester accessibles. Pour l’insuffisance cardiaque, les éléments importants à repérer sont une augmentation de l’essoufflement, une prise de poids rapide, des chevilles ou jambes davantage gonflées, ou une fatigue inhabituelle. Un essoufflement brutal ou très important, une douleur thoracique, un malaise ou une détresse respiratoire relèvent d’une prise en charge urgente.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 5.038
+    },
+    {
+      "intent": "IC_TRAVAIL",
+      "group": "insuffisance-cardiaque",
+      "question": "Puis-je continuer à travailler avec une insuffisance cardiaque et faut-il adapter mon activité ?",
+      "historical_coverage": "PARTIELLEMENT COUVERT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "apres-infarctus-traitements-readaptation-prevention",
+          "title": "Après un infarctus : à quoi servent les traitements et la réadaptation cardiaque ?",
+          "url": ""
+        },
+        {
+          "id": "senior-endurance-force-equilibre",
+          "title": "Après 65 ans, faut-il travailler l’endurance, la force et l’équilibre ?",
+          "url": "https://www.has-sante.fr/upload/docs/application/pdf/2019-07/app_248_ref_aps_pa_vf.pdf"
+        },
+        {
+          "id": "insuffisance-cardiaque-surveillance-poids",
+          "title": "Insuffisance cardiaque : faut-il se peser tous les jours et que faut-il surveiller à la maison ?",
+          "url": ""
+        }
+      ],
+      "answer": "Le retour au travail dépend notamment de la récupération, de la fonction cardiaque, du type d’activité et d’éventuelles complications. Ces questions font partie du suivi et de la réadaptation cardiaque. Une maladie chronique n’interdit pas automatiquement l’activité, mais elle peut nécessiter une adaptation. Dans l’insuffisance cardiaque, la surveillance porte aussi sur l’essoufflement, les œdèmes et une fatigue inhabituelle. Une augmentation rapide et inhabituelle du poids, particulièrement lorsqu’elle s’accompagne d’essoufflement ou d’œdèmes, mérite d’être signalée.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 5.025
+    },
+    {
+      "intent": "IC_SEXUALITE",
+      "group": "insuffisance-cardiaque",
+      "question": "Puis-je continuer à avoir des rapports sexuels avec une insuffisance cardiaque ?",
+      "historical_coverage": "ABSENT",
+      "status": "answer",
+      "cards": [
+        {
+          "id": "sexualite-apres-infarctus-maladie-cardiaque",
+          "title": "Après un infarctus ou avec une maladie cardiaque, peut-on reprendre une activité sexuelle ?",
+          "url": ""
+        }
+      ],
+      "answer": "Dans de nombreuses situations cardiovasculaires stabilisées, une activité sexuelle peut être reprise. L’effort cardiovasculaire d’un rapport sexuel est généralement modéré. Cette question dépend toutefois de la stabilité de la maladie, des symptômes et de la capacité à réaliser un effort sans douleur thoracique ni essoufflement important. Une insuffisance cardiaque décompensée ou des symptômes importants à faible effort correspondent à une situation différente d’une maladie stable sans symptômes lors des efforts habituels. Une douleur thoracique ou un malaise pendant l’activité sexuelle doit être pris au sérieux, comme lors de tout autre effort. Les médicaments de la dysfonction érectile de type sildénafil ou tadalafil ne doivent pas être associés aux dérivés nitrés, en raison d’un risque de chute importante de la pression artérielle.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 357,
+        "artifact_version": "cd125fbdf25bea6c4a4e002f7fbdb2ec6f758cd9b9f3f96dba4a84ebe92be014"
+      },
+      "technical_error": null,
+      "elapsed": 5.724
+    }
+  ]
+}
