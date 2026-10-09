@@ -1,0 +1,22 @@
+name: Patient Question Map live replay 51
+on:
+  push:
+    branches: [audit/question-map-replay-20261009]
+    paths: ['pqm-relaunch/**', '.github/workflows/pqm-replay-20261009.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Replay authorized general questions against MACA public Assistant
+        run: python3 pqm-relaunch/replay.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pqm-replay-20261009
+          path: pqm-relaunch/replay-2026-10-09.json
+          retention-days: 30

@@ -1,0 +1,28 @@
+intent_id,pathologie,question_intent_exacte,moteur_avant,fiche_retrouvee_avant,moteur_apres,fiche_retrouvee_apres,couverture_contenu_avant,couverture_contenu_apres,source_urls
+ACTIVITE_PHYSIQUE_MICI,MICI,Puis-je pratiquer une activité physique avec une MICI ?,ABSENT,,ABSENT,,ABSENT,ABSENT,https://www.afa.asso.fr/mediatheque-boutique/fiches-thematiques/
+ALIMENTATION_MICI_DIVERSIFICATION,MICI,Comment diversifier à nouveau son alimentation avec une MICI ?,ABSENT,,ABSENT,,ABSENT,COUVERT,https://www.afa.asso.fr/alimentation-et-mici/lafa-vous-accompagne/alimentation-services/
+ALIMENTATION_MICI_PLAISIR,MICI,Comment conserver une alimentation-plaisir avec une MICI ?,ABSENT,,ABSENT,,ABSENT,COUVERT,https://www.afa.asso.fr/alimentation-et-mici/lafa-vous-accompagne/alimentation-services/
+ALIMENTATION_MICI_POUSSEE,MICI,Que manger pendant une poussée de MICI ?,ABSENT,,COUVERT,mici-alimentation-poussee,ABSENT,COUVERT,https://www.afa.asso.fr/alimentation-et-mici/lafa-vous-accompagne/alimentation-services/
+ALIMENTATION_SPORT_DIABETE,Diabète,Comment adapter l’alimentation à l’activité physique avec un diabète ?,ABSENT,,ABSENT,,ABSENT,COUVERT,https://www.federationdesdiabetiques.org/diabete/alimentation/alimentation-et-activite-physique
+ALIMENTS_INTERDITS_DIABETE,Diabète,Y a-t-il des aliments interdits en cas de diabète ?,ABSENT,,ABSENT,,ABSENT,ABSENT,https://www.federationdesdiabetiques.org/diabete/alimentation
+APRES_DIAGNOSTIC_ALZHEIMER,Alzheimer,Comment faire face à l’annonce et à l’après-diagnostic d’Alzheimer ?,ABSENT,,ABSENT,,ABSENT,ABSENT,https://www.francealzheimer.org/le-diagnostic-comment-laffronter-et-imaginer-lapres/
+COMPLICATIONS_DIABETE,Diabète,Quelles complications du diabète faut-il surveiller ?,COUVERT,diabete-type-2-depistage-complications,COUVERT,diabete-type-2-depistage-complications,COUVERT,COUVERT,https://www.federationdesdiabetiques.org/
+CONDUITE_ALZHEIMER,Alzheimer,Quand et comment arrêter la conduite avec Alzheimer ?,ABSENT,,COUVERT,alzheimer-conduite-automobile,ABSENT,COUVERT,https://www.francealzheimer.org/comprendre-la-maladie/la-maladie-dalzheimer/toilette-repas-etc-vos-questions-quotidien/
+DROITS_AIDANT_ALZHEIMER,Alzheimer,Qui peut être reconnu comme proche aidant ?,ABSENT,,ABSENT,,ABSENT,ABSENT,https://aides.francealzheimer.org/
+ENTREE_ETABLISSEMENT_ALZHEIMER,Alzheimer,Quand envisager une entrée en établissement pour Alzheimer ?,ABSENT,,COUVERT,alzheimer-entree-etablissement,ABSENT,COUVERT,https://www.francealzheimer.org/comprendre-la-maladie/la-maladie-dalzheimer/toilette-repas-etc-vos-questions-quotidien/
+FATIGUE_TRAITEMENTS_MICI,MICI,La fatigue peut-elle être liée aux traitements de la MICI ?,ABSENT,,ABSENT,,ABSENT,ABSENT,https://www.afa.asso.fr/
+GLYCEMIE_SPORT_DIABETE,Diabète,Comment gérer glycémie/hypoglycémie avant une activité physique ?,ABSENT,,ABSENT,,ABSENT,COUVERT,https://www.federationdesdiabetiques.org/
+GROSSESSE_MICI,MICI,Comment gérer une grossesse avec une MICI ?,ABSENT,,ABSENT,,ABSENT,ABSENT,https://www.afa.asso.fr/
+PIED_DIABETIQUE,Diabète,Comment prévenir et repérer les complications du pied diabétique ?,ABSENT,,ABSENT,,ABSENT,COUVERT,https://www.federationdesdiabetiques.org/
+QUOTIDIEN_TRAITEMENT_DIABETE,Diabète,Comment gérer le diabète au quotidien selon son traitement ?,ABSENT,,ABSENT,,ABSENT,ABSENT,https://www.federationdesdiabetiques.org/
+REFUS_ALIMENTATION_ALZHEIMER,Alzheimer,Que faire si une personne Alzheimer refuse de manger ?,ABSENT,,ABSENT,,PARTIELLEMENT COUVERT,COUVERT,https://www.francealzheimer.org/comprendre-la-maladie/la-maladie-dalzheimer/toilette-repas-etc-vos-questions-quotidien/
+REFUS_HABILLAGE_ALZHEIMER,Alzheimer,Que faire si une personne Alzheimer refuse de s’habiller ?,ABSENT,,ABSENT,,PARTIELLEMENT COUVERT,COUVERT,https://www.francealzheimer.org/comprendre-la-maladie/la-maladie-dalzheimer/toilette-repas-etc-vos-questions-quotidien/
+REFUS_TOILETTE_ALZHEIMER,Alzheimer,Que faire si une personne Alzheimer refuse la toilette ?,ABSENT,,ABSENT,,PARTIELLEMENT COUVERT,COUVERT,https://www.francealzheimer.org/comprendre-la-maladie/la-maladie-dalzheimer/toilette-repas-etc-vos-questions-quotidien/
+SEXUALITE_DESIR_ENFANT_MICI,MICI,"Comment concilier MICI, sexualité et désir d’enfant ?",ABSENT,,ABSENT,,ABSENT,ABSENT,https://www.afa.asso.fr/
+SOMMEIL_ALZHEIMER,Alzheimer,Pourquoi Alzheimer perturbe-t-il le sommeil ?,ABSENT,,ABSENT,,ABSENT,ABSENT,https://www.francealzheimer.org/alzheimer-troubles-sommeil/
+SPORT_A_JEUN_DIABETE,Diabète,Faut-il faire du sport à jeun avec un diabète ?,ABSENT,,ABSENT,,ABSENT,PARTIELLEMENT COUVERT,https://www.federationdesdiabetiques.org/
+SUIVI_DIABETOLOGUE,Diabète,Quand consulter un diabétologue ?,ABSENT,,ABSENT,,ABSENT,ABSENT,https://www.federationdesdiabetiques.org/
+TRAVAIL_DIABETE_DIVULGATION,Diabète,Faut-il signaler son diabète à un futur employeur ?,ABSENT,,ABSENT,,ABSENT,COUVERT,https://www.federationdesdiabetiques.org/
+TRAVAIL_MICI_DIVULGATION,MICI,Faut-il parler de sa MICI au travail ?,ABSENT,,COUVERT,maladie-chronique-travail-confidentialite,ABSENT,COUVERT,https://www.afa.asso.fr/vivre-avec-une-mici/gerer-son-quotidien/vie-professionnelle/en-parler-ou-pas/
+VOYAGE_DIABETE,Diabète,Quel impact le voyage peut-il avoir sur le diabète ?,ABSENT,,ABSENT,,ABSENT,COUVERT,https://www.federationdesdiabetiques.org/
+VOYAGE_MICI_PREPARATION,MICI,Que prévoir pour voyager avec une MICI ?,ABSENT,,COUVERT,maladie-chronique-voyage,PARTIELLEMENT COUVERT,COUVERT,https://www.afa.asso.fr/vivre-avec-une-mici/gerer-son-quotidien/voyage-deplacement/
