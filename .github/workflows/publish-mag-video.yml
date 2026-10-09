@@ -1,0 +1,43 @@
+name: Publish validated Mag videos
+on:
+  push:
+    branches: [feat/v0-magazine]
+    paths: ['media-publishing/**', 'scripts/publish-mag-video.py', '.github/workflows/publish-mag-video.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: mag-video-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/v0-magazine
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install media verification tools
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: Verify original bytes and full decoding, then generate pages
+        run: python3 scripts/publish-mag-video.py
+      - name: Validate archive, fiche links and sitemap
+        run: |
+          node scripts/build-sitemap-from-corpus.js
+          node scripts/test-magazine-videos.js
+      - name: Publish assets and pages atomically
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/videos magazine-videos.js magazine.html video-*.html sitemap.xml
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'media: publish validated videos with verified original bytes'
+          for attempt in 1 2 3; do
+            git push origin HEAD:feat/v0-magazine && exit 0
+            git fetch origin feat/v0-magazine
+            git rebase origin/feat/v0-magazine || exit 1
+          done
+          exit 1

@@ -1,0 +1,33 @@
+{
+  "id": "proteines-v8",
+  "validated": true,
+  "parts": [
+    "media-publishing/proteines-v8/part-000.bin",
+    "media-publishing/proteines-v8/part-001.bin"
+  ],
+  "size": 14291431,
+  "sha256": "561fac4f09f6589c25437d0089c0b0299f3065915738ae59b3ad11b69751aedd",
+  "poster": "media-publishing/proteines-v8/poster.jpg",
+  "title": "Produits hyperprotéinés : vraiment meilleurs pour la santé ?",
+  "category": "Décryptage",
+  "date": "2026-10-09",
+  "excerpt": "Satiété, musculation et besoins réels : ce que montrent les études sur les protéines.",
+  "source": "produits-enrichis-proteines-besoins",
+  "keywords": [
+    "protéines",
+    "alimentation",
+    "satiété",
+    "musculation"
+  ],
+  "transcript": "Yaourts, barres, boissons… des protéines partout ! Mais est-ce meilleur pour la santé ? Selon une étude de synthèse de 2020, elles peuvent réduire la faim à court terme. Avec la musculation, certains suppléments favorisent aussi les gains musculaires. Mais ces études ne prouvent pas qu’un dessert enrichi soit meilleur. Si vos besoins sont couverts, inutile d’en ajouter systématiquement. Comparez les étiquettes ! Sources et explications sur macasante.fr.",
+  "sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32768415/",
+      "title": "Kohanmoo et al., 2020 — Protéines et satiété : méta-analyse"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38039960/",
+      "title": "Zhou et al., 2024 — Timing and Types of Protein Supplementation, entraînement de résistance"
+    }
+  ]
+}

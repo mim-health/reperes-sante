@@ -1,0 +1,10 @@
+{
+  "id": "transfer-test",
+  "validated": true,
+  "verify_only": true,
+  "parts": [
+    "media-publishing/transfer-test/part-000.bin"
+  ],
+  "size": 819741,
+  "sha256": "d427627b055455eaa5fdd81c23b1233232a9fb2c58fdd6c0e60127b07f981a1c"
+}
