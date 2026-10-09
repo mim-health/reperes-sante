@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Replay authorized general questions against MACA public Assistant
-        run: python3 pqm-relaunch/replay.py
+        run: node pqm-relaunch/replay.js
       - uses: actions/upload-artifact@v4
         if: always()
         with:
