@@ -2,16 +2,21 @@ name: Publish validated Mag videos
 on:
   push:
     branches: [feat/v0-magazine]
-    paths: ['media-publishing/**', 'scripts/publish-mag-video.py', '.github/workflows/publish-mag-video.yml']
+    paths: ['media-publishing/**', 'scripts/publish-mag-video.py', 'scripts/verify-mag-video-public.py', '.github/workflows/publish-mag-video.yml']
   workflow_dispatch:
 permissions:
   contents: write
+  pages: write
+  id-token: write
 concurrency:
   group: mag-video-publication
   cancel-in-progress: false
 jobs:
   publish:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -41,3 +46,15 @@ jobs:
             git rebase origin/feat/v0-magazine || exit 1
           done
           exit 1
+      - name: Assemble public site without transfer fragments
+        run: |
+          mkdir -p _site
+          rsync -a --exclude='.git' --exclude='.github' --exclude='media-publishing' --exclude='scripts' --exclude='_site' ./ _site/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Deploy verified site to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Verify public original bytes and permanent page
+        run: python3 scripts/verify-mag-video-public.py
