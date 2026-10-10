@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "18e796df4b32aa567e196fec170a7bdd768377e0c757760c0c9d65ce4d1d7cc5",
-  "corpusFingerprint": "18e796df4b32aa567e196fec170a7bdd768377e0c757760c0c9d65ce4d1d7cc5",
-  "cardCount": 370,
-  "sourceCommit": "ddc15be2d3f4fc1dcc61384259e9c70066c54cdf",
-  "generatedAt": "2026-10-10T06:22:54.574Z"
+  "version": "917b0e6e034791ef4534c5562584f77cf53dc76c3aa41c003041545ded0c889a",
+  "corpusFingerprint": "917b0e6e034791ef4534c5562584f77cf53dc76c3aa41c003041545ded0c889a",
+  "cardCount": 374,
+  "sourceCommit": "767abca7aadd5f6761628c5fc0e01af64a7727f7",
+  "generatedAt": "2026-10-10T11:33:18.674Z"
 }
