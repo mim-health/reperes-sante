@@ -8,5 +8,6 @@ window.MACA_CORPUS_MANIFEST = Object.freeze([
 'backlog-audited-question-map-lot2-2026-10-09.js?v=20261009-1',
 'backlog-audited-chocolat-sante-2026-10-10.js?v=20261010-1',
 'backlog-audited-cannabis-sommeil-2026-10-10.js?v=20261010-1',
+'backlog-audited-musicotherapie-2026-10-10.js?v=20261010-1',
 'backlog-audited-medecine-generale-2026-10-10.js?v=20261010-1'
 ]);
