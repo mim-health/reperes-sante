@@ -24,12 +24,12 @@
     const sources=resolvedSources(q);
     if(sources.length){
       const rows=sources.map(s=>{const label=strip(s.label||'');const org=strip(s.org||'');const title=strip(s.title||'');const primary=org||(!title&&label?label:'Source');const secondary=title||(org&&label&&label!==org?label:'');return `<div class="maca-fv2-source"><div class="maca-fv2-source-org">${esc(primary)}</div>${secondary?`<div class="maca-fv2-source-title">${esc(secondary)}${s.year?` · ${esc(s.year)}`:''}</div>`:(s.year?`<div class="maca-fv2-source-title">${esc(s.year)}</div>`:'')}<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">Consulter la source →</a></div>`;}).join('');
-      return `<section class="maca-fv2-card maca-fv2-sources"><h2>Sources</h2>${rows}${q.verifiedAt?`<p class="maca-fv2-verified">Vérifié le ${esc(q.verifiedAt)}</p>`:''}</section>`;
+      return `<section id="sources-scientifiques" tabindex="-1" class="maca-fv2-card maca-fv2-sources"><h2>Sources scientifiques</h2>${rows}${q.verifiedAt?`<p class="maca-fv2-verified">Vérifié le ${esc(q.verifiedAt)}</p>`:''}</section>`;
     }
     const sourceText=strip(q.source||'');
     const sourceUrl=q.url&&/^https?:\/\//i.test(String(q.url||''))?q.url:'';
     if(!sourceText&&!sourceUrl&&!q.verifiedAt)return '';
-    return `<section class="maca-fv2-card maca-fv2-sources"><h2>Sources</h2>${sourceText?`<div class="maca-fv2-source"><div class="maca-fv2-source-title">${esc(sourceText)}</div>${sourceUrl?`<a href="${esc(sourceUrl)}" target="_blank" rel="noopener noreferrer">Consulter la source →</a>`:''}</div>`:''}${q.verifiedAt?`<p class="maca-fv2-verified">Vérifié le ${esc(q.verifiedAt)}</p>`:''}</section>`;
+    return `<section id="sources-scientifiques" tabindex="-1" class="maca-fv2-card maca-fv2-sources"><h2>Sources scientifiques</h2>${sourceText?`<div class="maca-fv2-source"><div class="maca-fv2-source-title">${esc(sourceText)}</div>${sourceUrl?`<a href="${esc(sourceUrl)}" target="_blank" rel="noopener noreferrer">Consulter la source →</a>`:''}</div>`:''}${q.verifiedAt?`<p class="maca-fv2-verified">Vérifié le ${esc(q.verifiedAt)}</p>`:''}</section>`;
   }
   function relatedFiches(q,items){
     const byId=new Map(items.map(x=>[String(x&&x.id||''),x]));
@@ -74,14 +74,22 @@
       }
     });
   }
+  function parseAuditDate(value){
+    const text=String(value||'');const m=text.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
+    return new Date(m?`${m[3]}-${m[2]}-${m[1]}T00:00:00`:text).getTime();
+  }
   function renderFiche(q,canonical,items){
     document.body.classList.add('maca-fiche-v2');
     document.querySelectorAll('.site-header .brand img, footer .brand img').forEach(img=>{img.src=OFFICIAL_LOGO;});
     const detail=q.detail?`<section class="maca-fv2-card maca-fv2-detail"><h2>Pour mieux comprendre</h2>${paragraphs(q.detail)}</section>`:'';
     const vigilance=q.watch?`<section class="maca-fv2-card maca-fv2-vigilance"><h2>${esc(q.watchTitle||'Point de vigilance')}</h2>${paragraphs(q.watch)}</section>`:'';
     const verified=q.verifiedAt?`<div class="maca-fv2-sidecard"><strong>Contenu vérifié</strong><p>Vérifié le ${esc(q.verifiedAt)}.</p></div>`:'';
+    const sourceBlock=sourcesSection(q);
+    const validated=String(q.validationStatus||'').toUpperCase()==='VALIDATED' && (!q.nextAuditAt || parseAuditDate(q.nextAuditAt)>=new Date().setHours(0,0,0,0));
+    const validation=validated?'<a class="maca-fv2-validation" href="notre-histoire.html#validation-medicale">Validée médicalement</a>':'';
+    const sourceLink=sourceBlock?'<a class="maca-fv2-source-cta" href="#sources-scientifiques">Voir les sources scientifiques <span aria-hidden="true">↓</span></a>':'';
     const displayTitle=window.MACA_FICHE_SEO_METADATA?window.MACA_FICHE_SEO_METADATA.title(q):q.title;
-    root.innerHTML=`<article class="maca-fv2-page"><a class="maca-fv2-back" href="fiches.html">← Toutes les fiches MACA Santé</a><header class="maca-fv2-hero"><div class="maca-fv2-brandline"><img src="${OFFICIAL_LOGO}" alt="Logo MACA Santé"><span>MACA Santé</span></div><div class="maca-fv2-meta"><span class="maca-fv2-category">${esc(q.category||'Question santé')}</span><span class="maca-fv2-readtime">À lire en 3 min</span></div><h1>${esc(displayTitle)}</h1><div class="maca-fv2-accent" aria-hidden="true"></div></header><div class="maca-fv2-grid"><div class="maca-fv2-main"><section class="maca-fv2-card maca-fv2-short"><div class="maca-fv2-kicker">Réponse courte</div>${paragraphs(q.answer||'')}</section>${detail}${vigilance}<section class="maca-fv2-share maca-fv2-share-top"><div><strong>Partager cette fiche</strong><p>WhatsApp, messages ou autres applications.</p><p id="maca-fv2-share-status" class="maca-fv2-share-status" aria-live="polite"></p></div><button id="maca-fv2-share-button" type="button">Partager</button></section>${sourcesSection(q)}${relatedSection(q,items)}</div><aside class="maca-fv2-side" aria-label="Repères sur la fiche">${verified}<div class="maca-fv2-sidecard"><strong>Information générale</strong><p>MACA Santé informe et ne remplace pas un avis médical.</p></div></aside></div></article>`;
+    root.innerHTML=`<article class="maca-fv2-page"><a class="maca-fv2-back" href="fiches.html">← Toutes les fiches MACA Santé</a><header class="maca-fv2-hero"><div class="maca-fv2-brandline"><img src="${OFFICIAL_LOGO}" alt="Logo MACA Santé"><span>MACA Santé</span></div><div class="maca-fv2-meta"><span class="maca-fv2-category">${esc(q.category||'Question santé')}</span><span class="maca-fv2-readtime">À lire en 3 min</span></div><h1>${esc(displayTitle)}</h1>${validation}<div class="maca-fv2-accent" aria-hidden="true"></div></header><div class="maca-fv2-grid"><div class="maca-fv2-main"><section class="maca-fv2-card maca-fv2-short"><div class="maca-fv2-kicker">Réponse courte</div>${paragraphs(q.answer||'')}${sourceLink}</section>${detail}${vigilance}<section class="maca-fv2-share maca-fv2-share-top"><div><strong>Partager cette fiche</strong><p>WhatsApp, messages ou autres applications.</p><p id="maca-fv2-share-status" class="maca-fv2-share-status" aria-live="polite"></p></div><button id="maca-fv2-share-button" type="button">Partager</button></section>${sourceBlock}${relatedSection(q,items)}</div><aside class="maca-fv2-side" aria-label="Repères sur la fiche">${verified}<div class="maca-fv2-sidecard"><strong>Information générale</strong><p>MACA Santé informe et ne remplace pas un avis médical.</p></div></aside></div></article>`;
     attachShare(q,canonical);
   }
   function render(q,items){

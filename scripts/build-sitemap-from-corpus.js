@@ -13,6 +13,7 @@ if(new Set(ids).size!==ids.length)throw new Error('Duplicate canonical IDs');
 const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&apos;');
 const today=new Date().toISOString().slice(0,10);
 const staticUrls=[
+ ['https://macasante.fr/notre-histoire.html',today,'monthly','0.6'],
  ['https://macasante.fr/',today,'daily','1.0'],
  ['https://macasante.fr/fiches.html',today,'daily','0.9'],
  ['https://macasante.fr/mentions-legales.html','2026-08-21','yearly','0.2'],
