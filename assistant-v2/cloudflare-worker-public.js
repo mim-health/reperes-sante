@@ -169,19 +169,20 @@ function validate(raw,allowed){
   return {ok:errors.length===0,result:{status:raw.status,coverage:raw.coverage,answer,blocks,cards_used:cardsUsed,category:raw.category===null?null:String(raw.category||'').trim(),personalized_request:Boolean(raw.personalized_request),scope_note:GENERAL_SCOPE_NOTE,reason:String(raw.reason||'').trim()}};
 }
 
-async function synthesize(env,question,cards){
+async function synthesize(env,question,cards,repair=null){
   const inputCards=cards.map(compactCard);
-  const r=await openai(env,OPENAI_RESPONSES,{model:MODEL,reasoning:{effort:'none'},input:[{role:'system',content:SYSTEM_PROMPT},{role:'user',content:`QUESTION_UTILISATEUR:\n${question}\n\nCARTES_MACA_AUTORISÉES:\n${JSON.stringify(inputCards)}\n\nRéponds exclusivement à partir de ces cartes.`}],text:{format:{type:'json_schema',name:'maca_assistant_v2_answer',strict:true,schema:OUTPUT_SCHEMA}},max_output_tokens:2200,store:false});
+  const correction=repair?`\n\nRÉVISION CONTRÔLÉE : la première réponse a été rejetée. Les remarques ci-dessous ne sont PAS des sources. Supprime les affirmations contestées et toute précision non explicitement présente dans les extraits. Ne les remplace pas par de nouveaux faits. Préfère reprendre la formulation exacte du corpus. Si la question ne peut plus recevoir une réponse documentée, abstiens-toi.\n${JSON.stringify(repair)}`:'';
+  const r=await openai(env,OPENAI_RESPONSES,{model:MODEL,reasoning:{effort:'none'},input:[{role:'system',content:SYSTEM_PROMPT},{role:'user',content:`QUESTION_UTILISATEUR:\n${question}\n\nCARTES_MACA_AUTORISÉES:\n${JSON.stringify(inputCards)}\n\nRéponds exclusivement à partir de ces cartes.${correction}`}],text:{format:{type:'json_schema',name:'maca_assistant_v2_answer',strict:true,schema:OUTPUT_SCHEMA}},max_output_tokens:2200,store:false});
   return JSON.parse(extractText(r));
 }
 
 async function grounding(env,result,cardById){
-  if(result.status!=='answer')return true;
+  if(result.status!=='answer')return {ok:true,verdicts:[]};
   // Only verified quotations for THIS block are visible to its verifier.
   const payload={blocks:result.blocks.map((block,block_index)=>({block_index,text:block.text,evidence:block.evidence}))};
   const r=await openai(env,OPENAI_RESPONSES,{model:MODEL,reasoning:{effort:'low'},input:[{role:'system',content:GROUNDING_PROMPT},{role:'user',content:JSON.stringify(payload)}],text:{format:{type:'json_schema',name:'maca_grounding',strict:true,schema:GROUNDING_SCHEMA}},max_output_tokens:1800,store:false});
   const parsed=JSON.parse(extractText(r));
-  return globalThis.MACA_GROUNDING_CONTRACT.verdictsValid(parsed,result.blocks.length);
+  return {ok:globalThis.MACA_GROUNDING_CONTRACT.verdictsValid(parsed,result.blocks.length),verdicts:Array.isArray(parsed.verdicts)?parsed.verdicts:[]};
 }
 
 export default {
@@ -232,8 +233,15 @@ export default {
       const raw=await synthesize(env,question,selected);
       const checked=validate(raw,selected);
       if(!checked.ok)return response(origin,allowed,200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{worker_revision:WORKER_REVISION,grounding:'contract_rejected',corpus_cards:corpus.cardCount,artifact_version:activeVersion}});
-      const result=checked.result;
-      if(!(await grounding(env,result,cardById)))return response(origin,allowed,200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{worker_revision:WORKER_REVISION,grounding:'rejected',corpus_cards:corpus.cardCount,artifact_version:activeVersion}});
+      let result=checked.result;
+      let proof=await grounding(env,result,cardById);
+      if(!proof.ok){
+        // One bounded repair, still under the same closed-corpus contract.
+        const revised=await synthesize(env,question,selected,{previous_blocks:result.blocks,verdicts:proof.verdicts});
+        const rechecked=validate(revised,selected);
+        if(rechecked.ok){result=rechecked.result;proof=await grounding(env,result,cardById);}
+        if(!rechecked.ok||!proof.ok)return response(origin,allowed,200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{worker_revision:WORKER_REVISION,grounding:'rejected',corpus_cards:corpus.cardCount,artifact_version:activeVersion}});
+      }
       const cardsUsed=result.cards_used.map(id=>{const c=cardById.get(id);return {id,title:c?.title||id,url:c?.url||'',date:c?.metadata?.publishedAt||null,source_type:c?.metadata?.sourceType||'fiche'};});
       return response(origin,allowed,200,{status:result.status,answer:result.answer,category:result.category,cards_used:cardsUsed,selected_cards:selectedCards,scope_note:result.scope_note,meta:{worker_revision:WORKER_REVISION,grounding:result.status==='answer'?'supported':'not_applicable',corpus_cards:corpus.cardCount,artifact_version:activeVersion}});
     }catch(e){return response(origin,allowed,503,{error:'assistant_temporarily_unavailable'});}

@@ -16,15 +16,15 @@ assert(!verdictsValid({verdicts:[{block_index:1,supported:true,unsupported_claim
 assert(!verdictsValid({verdicts:[{block_index:0,supported:true,unsupported_claims:['Ajout non sourcé']}]},1));
 assert(!verdictsValid({verdicts:[{block_index:0,supported:false,unsupported_claims:[]}]},1));
 const workerCode=fs.readFileSync('assistant-v2/cloudflare-worker-public.js','utf8').replace(/^import .*;\n/gm,'').replace('export default {','globalThis.worker = {');
-async function simulate(raw,verdicts){
- const calls=[];const version='a'.repeat(64);
+async function simulate(raw,verdicts,repair=null){
+ const calls=[];let generations=0,checks=0;const version='a'.repeat(64);
  const s={console,Response,Request,URL,TextEncoder,crypto:webcrypto,MACA_GROUNDING_CONTRACT:{evidenceValid,verdictsValid}};
  s.fetch=async(url,options={})=>{calls.push({url,body:options.body&&JSON.parse(options.body)});let data;
   if(url.includes('latest.json'))data={version};
   else if(url.endsWith('corpus.json'))data={fingerprint:version,cardCount:1,cards:[card]};
   else if(url.endsWith('embeddings.index.json'))data={corpusFingerprint:version,cardCount:1,vectors:[{id:'a',vector:[1,0]}],model:'test',dimensions:2};
   else if(url.endsWith('/embeddings'))data={data:[{embedding:[1,0]}]};
-  else {const request=JSON.parse(options.body);data={output_text:JSON.stringify(request.text.format.name==='maca_grounding'?{verdicts}:raw)};}
+  else {const request=JSON.parse(options.body);const value=request.text.format.name==='maca_grounding'?{verdicts:checks++>0?(repair?.verdicts||verdicts):verdicts}:generations++>0?(repair?.raw||raw):raw;data={output_text:JSON.stringify(value)};}
   return new Response(JSON.stringify(data),{status:200});
  };
  vm.createContext(s);vm.runInContext(workerCode,s);
@@ -39,5 +39,7 @@ async function simulate(raw,verdicts){
  r=await simulate({...raw,blocks:[{...good,text:'L’étude prouve la guérison du cancer.'}]},[{block_index:0,supported:false,unsupported_claims:['Causalité ajoutée']}]);assert.equal(r.data.status,'abstain');assert.equal(r.data.meta.grounding,'rejected');
  r=await simulate(raw,[]);assert.equal(r.data.status,'abstain');
  r=await simulate({...raw,blocks:[{...good,text:'Prenez ce médicament.'}]},[{block_index:0,supported:true,unsupported_claims:[]}]);assert.equal(r.data.status,'abstain','Advice blocked even when personalization flag is false');
- console.log(JSON.stringify({ok:true,mechanicalChecks:11,workerFlows:5,scopeNoteAndPerBlockEvidence:true}));
+ r=await simulate({...raw,blocks:[{...good,text:'L’étude prouve la guérison du cancer.'}]},[{block_index:0,supported:false,unsupported_claims:['Causalité ajoutée']}],{raw,verdicts:[{block_index:0,supported:true,unsupported_claims:[]}]});assert.equal(r.data.status,'answer');assert.equal(r.data.answer,good.text);assert.equal(r.calls.filter(c=>c.body?.text?.format?.name==='maca_assistant_v2_answer').length,2,'Only one repair allowed');
+ r=await simulate(raw,[{block_index:0,supported:false,unsupported_claims:['Ajout']}],{raw:{...raw,blocks:[{...good,text:'Le risque baisse de 99 %.'}]},verdicts:[{block_index:0,supported:true,unsupported_claims:[]}]});assert.equal(r.data.status,'abstain','Repair cannot bypass mechanical evidence');
+ console.log(JSON.stringify({ok:true,mechanicalChecks:11,workerFlows:7,scopeNoteAndPerBlockEvidence:true,boundedRepair:true}));
 })().catch(e=>{console.error(e);process.exitCode=1;});

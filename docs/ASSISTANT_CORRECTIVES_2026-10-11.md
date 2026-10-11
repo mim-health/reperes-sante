@@ -22,7 +22,7 @@
 - 47 cas du jeu de recherche complémentaire avec le corpus actuel.
 - 8 formulations IPP vérifiées dans la recherche et le retrieval Worker ; 5 garde-fous de contexte.
 - 7 cas de langage patient, dont 4 négatifs.
-- 11 vérifications mécaniques et 5 parcours Worker simulés, dont ajout de chiffre, note médicale inventée, verdict incomplet, causalité non soutenue et conseil individualisé.
+- 11 vérifications mécaniques et 7 parcours Worker simulés, dont ajout de chiffre, note médicale inventée, verdict incomplet, causalité non soutenue et conseil individualisé.
 - Tests d’archivage Mag, corrections, retraits, programmation et changement d’heure, accueil et vidéos.
 
 Les tests simulés vérifient le refus en cas de verdict négatif ; ils ne prouvent pas l’infaillibilité du vérificateur IA. Les tests publics sont nécessaires après déploiement. Le jeu original des 51 questions n’est pas disponible dans le dépôt et n’est pas déclaré rejoué.
@@ -52,3 +52,5 @@ Le premier déploiement Worker a été arrêté après succès des tests : le se
 Un test du Worker candidat avec les vraies API de génération et de vérification est ajouté avant l’étape Cloudflare, en utilisant uniquement les artefacts du dépôt. Il vérifie trois réponses couvertes et une question hors corpus, sans prouver le déploiement du serveur.
 
 Un échec SEO concurrent a également été constaté : push rejeté parce que la publication Mag avait avancé la branche. Le workflow SEO utilise désormais la même file de publication que Le Mag, part de la branche actuelle et peut reprendre un push avec rebase sans force ; un conflit interrompt la publication.
+
+Le premier test réel a effectivement détecté des précisions absentes des extraits (« mois ou années », « remontées acides »). Une unique révision contrôlée supprime désormais les affirmations contestées, puis repasse les mêmes contrôles mécaniques et sémantiques. En cas de nouvel échec, la réponse est abandonnée. Ce mécanisme ne transforme pas les remarques du vérificateur en source médicale et ne modifie pas le corpus.
