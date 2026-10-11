@@ -1,7 +1,7 @@
 'use strict';
 const assert=require('assert/strict');
 const endpoint='https://purple-voice-a8e3.dr-beddok.workers.dev/';
-const revision='2026-10-11-ipp-grounding1';
+const revision='2026-10-11-resilience2';
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 async function ask(question){
  for(let attempt=0;attempt<3;attempt++){

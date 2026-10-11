@@ -16,10 +16,11 @@ assert(!verdictsValid({verdicts:[{block_index:1,supported:true,unsupported_claim
 assert(!verdictsValid({verdicts:[{block_index:0,supported:true,unsupported_claims:['Ajout non sourcé']}]},1));
 assert(!verdictsValid({verdicts:[{block_index:0,supported:false,unsupported_claims:[]}]},1));
 const workerCode=fs.readFileSync('assistant-v2/cloudflare-worker-public.js','utf8').replace(/^import .*;\n/gm,'').replace('export default {','globalThis.worker = {');
-async function simulate(raw,verdicts,repair=null){
- const calls=[];let generations=0,checks=0;const version='a'.repeat(64);
- const s={console,Response,Request,URL,TextEncoder,crypto:webcrypto,MACA_GROUNDING_CONTRACT:{evidenceValid,verdictsValid}};
+async function simulate(raw,verdicts,repair=null,fault=null){
+ const calls=[];let generations=0,checks=0,failures=0;const version='a'.repeat(64);
+ const s={console,AbortController,setTimeout,clearTimeout,Response,Request,URL,TextEncoder,crypto:webcrypto,MACA_GROUNDING_CONTRACT:{evidenceValid,verdictsValid}};
  s.fetch=async(url,options={})=>{calls.push({url,body:options.body&&JSON.parse(options.body)});let data;
+  if(url.endsWith('/embeddings')&&fault&&failures++<fault.count)return new Response('{}',{status:fault.status});
   if(url.includes('latest.json'))data={version};
   else if(url.endsWith('corpus.json'))data={fingerprint:version,cardCount:1,cards:[card]};
   else if(url.endsWith('embeddings.index.json'))data={corpusFingerprint:version,cardCount:1,vectors:[{id:'a',vector:[1,0]}],model:'test',dimensions:2};
@@ -29,7 +30,7 @@ async function simulate(raw,verdicts,repair=null){
  };
  vm.createContext(s);vm.runInContext(workerCode,s);
  const r=await s.worker.fetch(new Request('https://worker.test/',{method:'POST',headers:{Origin:'https://macasante.fr','Content-Type':'application/json','CF-Connecting-IP':'test'},body:JSON.stringify({question:'Que montre cette étude ?'})}),{OPENAI_API_KEY:'test',RATE_LIMIT_SALT:'test',RATE_LIMITER:{limit:async()=>({success:true})}});
- assert.equal(r.status,200);return {data:await r.json(),calls};
+ assert.equal(r.status,fault?.expectedHttp||200);return {data:await r.json(),calls};
 }
 (async()=>{
  const raw={status:'answer',coverage:'sufficient',blocks:[good],category:'Cancer',personalized_request:false,scope_note:'Une dose inventée de 900 mg guérit le cancer.',reason:''};
@@ -41,5 +42,9 @@ async function simulate(raw,verdicts,repair=null){
  r=await simulate({...raw,blocks:[{...good,text:'Prenez ce médicament.'}]},[{block_index:0,supported:true,unsupported_claims:[]}]);assert.equal(r.data.status,'abstain','Advice blocked even when personalization flag is false');
  r=await simulate({...raw,blocks:[{...good,text:'L’étude prouve la guérison du cancer.'}]},[{block_index:0,supported:false,unsupported_claims:['Causalité ajoutée']}],{raw,verdicts:[{block_index:0,supported:true,unsupported_claims:[]}]});assert.equal(r.data.status,'answer');assert.equal(r.data.answer,good.text);assert.equal(r.calls.filter(c=>c.body?.text?.format?.name==='maca_assistant_v2_answer').length,2,'Only one repair allowed');
  r=await simulate(raw,[{block_index:0,supported:false,unsupported_claims:['Ajout']}],{raw:{...raw,blocks:[{...good,text:'Le risque baisse de 99 %.'}]},verdicts:[{block_index:0,supported:true,unsupported_claims:[]}]});assert.equal(r.data.status,'abstain','Repair cannot bypass mechanical evidence');
- console.log(JSON.stringify({ok:true,mechanicalChecks:11,workerFlows:7,scopeNoteAndPerBlockEvidence:true,boundedRepair:true}));
+ r=await simulate({...raw,blocks:[{...good,evidence:[{card_id:'a',quote:'Citation inventée sans source.'}]}]},[{block_index:0,supported:true,unsupported_claims:[]}],{raw,verdicts:[{block_index:0,supported:true,unsupported_claims:[]}]});assert.equal(r.data.status,'answer','A repaired quotation must pass the full contract and semantic check');assert.equal(r.calls.filter(c=>c.body?.text?.format?.name==='maca_assistant_v2_answer').length,2);
+ r=await simulate(raw,[{block_index:0,supported:true,unsupported_claims:[]}],null,{count:1,status:503});assert.equal(r.data.status,'answer');assert.equal(r.calls.filter(c=>c.url.endsWith('/embeddings')).length,2,'Retry temporary upstream failure once');
+ r=await simulate(raw,[],null,{count:99,status:503,expectedHttp:503});assert.equal(r.calls.filter(c=>c.url.endsWith('/embeddings')).length,2,'Persistent failure must remain an error');
+ r=await simulate(raw,[],null,{count:99,status:401,expectedHttp:503});assert.equal(r.calls.filter(c=>c.url.endsWith('/embeddings')).length,1,'Do not retry configuration failures');
+ console.log(JSON.stringify({ok:true,mechanicalChecks:11,workerFlows:11,scopeNoteAndPerBlockEvidence:true,boundedRepair:true}));
 })().catch(e=>{console.error(e);process.exitCode=1;});

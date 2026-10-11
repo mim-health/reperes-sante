@@ -5,7 +5,7 @@
   function exposeCanonical(){if(typeof window.MACA_BUILD_CANONICAL_CORPUS!=='function')throw new Error('MACA canonicalizer missing');let canonical=window.MACA_BUILD_CANONICAL_CORPUS();if(!Array.isArray(canonical)||!canonical.length)throw new Error('MACA canonical corpus empty');if(typeof window.MACA_ADD_MULTI_SECTIONS==='function')canonical=window.MACA_ADD_MULTI_SECTIONS(canonical);window.MACA_CANONICAL_CORPUS=canonical.slice();window.healthQuestions=canonical.slice();window.extraAuditedQuestions=[];window.MACA_UI_CORPUS_V2=true;}
   const page=document.body.classList.contains('library-page')?'library':'home';
   // The remote Assistant does not depend on the local fiche corpus.
-  load('maca-assistant-metrics.js?v=20261011-pilot3').then(()=>load('maca-assistant-v2-unified.js?v=20261011-pilot3')).catch(err=>console.error('[MACA Assistant entry]',err));
+  load('maca-assistant-metrics.js?v=20261011-repair1').then(()=>load('maca-assistant-v2-unified.js?v=20261011-repair1')).catch(err=>console.error('[MACA Assistant entry]',err));
   if(page==='home'){load('maca-home-actions.js?v=20260906-1').catch(err=>console.error('[MACA home actions]',err));}
   /* Search bar and Assistant share the same promoted MACA_SEARCH_V2 language layer. */
   const commonBeforeApp=['corpus-integrity.js?v=20260831-1','maca-category-access.js?v=20260907-split1','search-v2-referential-p0.js?v=20260923-pqm-v2-1','search-v2-engine.js?v=20260831-p0','ipp-retrieval-policy.js?v=20261011-1','search-v2-corpus-fallback.js?v=20261011-ipp1','search-v2-fatigue-fix.js?v=20260902-1','search-v2-harcelement-fix.js?v=20260903-1','search-v2-retrouvabilite-pilot-fix.js?v=20260906-2','search-v15-lab-candidate.js?v=20260909-coughmap-2','search-v2-pqm-retrieval-fix.js?v=20260920-pqm1'];

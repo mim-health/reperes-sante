@@ -9,7 +9,7 @@ const OPENAI_EMBEDDINGS='https://api.openai.com/v1/embeddings';
 const OPENAI_RESPONSES='https://api.openai.com/v1/responses';
 const MODEL='gpt-5.6-terra';
 // Public endpoint: no client secret. Abuse protection is enforced server-side by RATE_LIMITER.
-const WORKER_REVISION='2026-10-11-ipp-grounding1';
+const WORKER_REVISION='2026-10-11-resilience2';
 const GENERAL_SCOPE_NOTE='Information générale issue des contenus MACASANTÉ ; elle ne remplace pas une consultation médicale et ne détermine pas une conduite individuelle.';
 const TOP_K=5;
 const MIN_GATE=0.30;
@@ -143,9 +143,20 @@ function uniq(a){return [...new Set(a)];}
 
 async function openai(env,url,body){
   const apiKey=getOpenAIKey(env);
-  const r=await fetch(url,{method:'POST',headers:{Authorization:`Bearer ${apiKey}`,'Content-Type':'application/json'},body:JSON.stringify(body)});
-  if(!r.ok)throw new Error(`openai_${r.status}`);
-  return r.json();
+  for(let attempt=0;attempt<2;attempt++){
+    const remaining=(env.requestDeadline||Date.now()+40000)-Date.now();
+    if(remaining<1000)throw new Error('upstream_timeout');
+    const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),Math.min(20000,remaining));
+    try{
+      const r=await fetch(url,{method:'POST',headers:{Authorization:`Bearer ${apiKey}`,'Content-Type':'application/json'},body:JSON.stringify(body),signal:controller.signal});
+      if(!r.ok){const error=new Error(`openai_${r.status}`);error.retryable=[429,500,502,503,504].includes(r.status);throw error;}
+      return await r.json();
+    }catch(error){
+      if(attempt||!(error.retryable||error.name==='AbortError'||error.name==='TypeError'))throw error;
+      if((env.requestDeadline||Date.now()+40000)-Date.now()<2000)throw error;
+      await new Promise(resolve=>setTimeout(resolve,400));
+    }finally{clearTimeout(timer);}
+  }
 }
 
 function validate(raw,allowed){
@@ -157,7 +168,7 @@ function validate(raw,allowed){
   if(!Array.isArray(raw.blocks))errors.push('blocks');
   const blocks=[];const used=[];
   if(raw.blocks?.length>6)errors.push('too_many_blocks');
-  for(const b of raw.blocks||[]){const text=String(b?.text||'').trim();const ids=uniq(Array.isArray(b?.card_ids)?b.card_ids.map(x=>String(x).trim()).filter(Boolean):[]);if(!text||!ids.length)errors.push('block');for(const id of ids){if(!allowedIds.has(id))errors.push('foreign_id');used.push(id);}const evidence=Array.isArray(b?.evidence)?b.evidence:[];const block={text,card_ids:ids,evidence};if(!globalThis.MACA_GROUNDING_CONTRACT.evidenceValid(block,allowed))errors.push('evidence');blocks.push(block);}
+  for(const b of Array.isArray(raw.blocks)?raw.blocks:[]){const text=String(b?.text||'').trim();const ids=uniq(Array.isArray(b?.card_ids)?b.card_ids.map(x=>String(x).trim()).filter(Boolean):[]);if(!text||!ids.length)errors.push('block');for(const id of ids){if(!allowedIds.has(id))errors.push('foreign_id');used.push(id);}const evidence=Array.isArray(b?.evidence)?b.evidence:[];const block={text,card_ids:ids,evidence};if(!globalThis.MACA_GROUNDING_CONTRACT.evidenceValid(block,allowed))errors.push('evidence');blocks.push(block);}
   const cardsUsed=uniq(used);
   if(raw.status==='answer'&&(!blocks.length||!cardsUsed.length||raw.coverage==='insufficient'))errors.push('answer_contract');
   if(raw.status==='category_only'&&(blocks.length||cardsUsed.length||!String(raw.category||'').trim()))errors.push('category_contract');
@@ -166,13 +177,13 @@ function validate(raw,allowed){
   const answer=blocks.map(b=>b.text).join(' ').trim();
   const forbidden=/(?:\bvous devez\b|\btu dois\b|\bprenez\b|\barrêtez\b|\bcommencez\b|\bchangez de\b|\ballez\b|\bconsultez\b|\bappelez\b|\bfaites\b|\brendez-vous\b|\badressez-vous\b|\bje vous conseille\b|\bdans (?:votre|ton) cas\b|\bpour (?:vous|toi)\b.{0,80}\b(?:adapt[ée]e?|préférable|meilleur(?:e)?|choix|prendre|choisir)\b|\b(?:meilleur(?:e)?|préférable|adapt[ée]e?)\b.{0,80}\bpour (?:vous|toi)\b)/i;
   if(forbidden.test(answer))errors.push('personal_advice');
-  return {ok:errors.length===0,result:{status:raw.status,coverage:raw.coverage,answer,blocks,cards_used:cardsUsed,category:raw.category===null?null:String(raw.category||'').trim(),personalized_request:Boolean(raw.personalized_request),scope_note:GENERAL_SCOPE_NOTE,reason:String(raw.reason||'').trim()}};
+  return {ok:errors.length===0,errors,result:{status:raw.status,coverage:raw.coverage,answer,blocks,cards_used:cardsUsed,category:raw.category===null?null:String(raw.category||'').trim(),personalized_request:Boolean(raw.personalized_request),scope_note:GENERAL_SCOPE_NOTE,reason:String(raw.reason||'').trim()}};
 }
 
 async function synthesize(env,question,cards,repair=null){
   const inputCards=cards.map(compactCard);
   const correction=repair?`\n\nRÉVISION CONTRÔLÉE : la première réponse a été rejetée. Les remarques ci-dessous ne sont PAS des sources. Supprime les affirmations contestées et toute précision non explicitement présente dans les extraits. Ne les remplace pas par de nouveaux faits. Préfère reprendre la formulation exacte du corpus. Si la question ne peut plus recevoir une réponse documentée, abstiens-toi.\n${JSON.stringify(repair)}`:'';
-  const r=await openai(env,OPENAI_RESPONSES,{model:MODEL,reasoning:{effort:'none'},input:[{role:'system',content:SYSTEM_PROMPT},{role:'user',content:`QUESTION_UTILISATEUR:\n${question}\n\nCARTES_MACA_AUTORISÉES:\n${JSON.stringify(inputCards)}\n\nRéponds exclusivement à partir de ces cartes.${correction}`}],text:{format:{type:'json_schema',name:'maca_assistant_v2_answer',strict:true,schema:OUTPUT_SCHEMA}},max_output_tokens:2200,store:false});
+  const r=await openai(env,OPENAI_RESPONSES,{model:MODEL,reasoning:{effort:'none'},input:[{role:'system',content:SYSTEM_PROMPT},{role:'user',content:`QUESTION_UTILISATEUR:\n${question}\n\nCARTES_MACA_AUTORISÉES:\n${JSON.stringify(inputCards)}\n\nRéponds exclusivement à partir de ces cartes.${correction}`}],text:{format:{type:'json_schema',name:'maca_assistant_v2_answer',strict:true,schema:OUTPUT_SCHEMA}},max_output_tokens:3200,store:false});
   return JSON.parse(extractText(r));
 }
 
@@ -181,7 +192,7 @@ async function grounding(env,result,cardById){
   // Only verified quotations for THIS block are visible to its verifier.
   const payload={blocks:result.blocks.map((block,block_index)=>({block_index,text:block.text,evidence:block.evidence}))};
   const r=await openai(env,OPENAI_RESPONSES,{model:MODEL,reasoning:{effort:'low'},input:[{role:'system',content:GROUNDING_PROMPT},{role:'user',content:JSON.stringify(payload)}],text:{format:{type:'json_schema',name:'maca_grounding',strict:true,schema:GROUNDING_SCHEMA}},max_output_tokens:1800,store:false});
-  const parsed=JSON.parse(extractText(r));
+  let parsed;try{parsed=JSON.parse(extractText(r));}catch(error){if(error instanceof SyntaxError)return {ok:false,verdicts:[]};throw error;}
   return {ok:globalThis.MACA_GROUNDING_CONTRACT.verdictsValid(parsed,result.blocks.length),verdicts:Array.isArray(parsed.verdicts)?parsed.verdicts:[]};
 }
 
@@ -207,8 +218,9 @@ export default {
     const question=String(body?.question||'').trim();
     if(!question||question.length>MAX_QUESTION_CHARS)return response(origin,allowed,400,{error:'invalid_question'});
     try{
+      const runtime=Object.assign(Object.create(env),{requestDeadline:Date.now()+40000});
       const {corpus,embeddings,cardById}=await getData();
-      const er=await openai(env,OPENAI_EMBEDDINGS,{model:embeddings.model,input:[question],dimensions:embeddings.dimensions,encoding_format:'float'});
+      const er=await openai(runtime,OPENAI_EMBEDDINGS,{model:embeddings.model,input:[question],dimensions:embeddings.dimensions,encoding_format:'float'});
       const q=er?.data?.[0]?.embedding;if(!q)throw new Error('embedding_missing');
       let ranked=rank(embeddings.vectors,q);
       const patientPolicy=globalThis.MACA_PATIENT_LANGUAGE_RETRIEVAL;
@@ -230,18 +242,21 @@ export default {
         matched_alias:r.matchedAlias||null
       }));
       if(!ranked.length||ranked[0].similarity<MIN_GATE)return response(origin,allowed,200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{worker_revision:WORKER_REVISION,grounding:'not_applicable',corpus_cards:corpus.cardCount,artifact_version:activeVersion}});
-      const raw=await synthesize(env,question,selected);
-      const checked=validate(raw,selected);
-      if(!checked.ok)return response(origin,allowed,200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{worker_revision:WORKER_REVISION,grounding:'contract_rejected',corpus_cards:corpus.cardCount,artifact_version:activeVersion}});
-      let result=checked.result;
-      let proof=await grounding(env,result,cardById);
-      if(!proof.ok){
-        // One bounded repair, still under the same closed-corpus contract.
-        const revised=await synthesize(env,question,selected,{previous_blocks:result.blocks,verdicts:proof.verdicts});
-        const rechecked=validate(revised,selected);
-        if(rechecked.ok){result=rechecked.result;proof=await grounding(env,result,cardById);}
-        if(!rechecked.ok||!proof.ok)return response(origin,allowed,200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{worker_revision:WORKER_REVISION,grounding:'rejected',corpus_cards:corpus.cardCount,artifact_version:activeVersion}});
+      let result,proof,repair=null,rejection='contract_rejected';
+      // At most one repair, including malformed JSON and mechanical evidence failures.
+      for(let attempt=0;attempt<2;attempt++){
+        let raw;
+        try{raw=await synthesize(runtime,question,selected,repair);}catch(error){
+          if(!(error instanceof SyntaxError))throw error;
+          repair={errors:['invalid_output_json']};continue;
+        }
+        const checked=validate(raw,selected);
+        if(!checked.ok){repair={errors:checked.errors||['invalid_contract'],previous_blocks:Array.isArray(raw?.blocks)?raw.blocks:[]};continue;}
+        result=checked.result;proof=await grounding(runtime,result,cardById);
+        if(proof.ok)break;
+        rejection='rejected';repair={previous_blocks:result.blocks,verdicts:proof.verdicts};
       }
+      if(!result||!proof?.ok)return response(origin,allowed,200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{worker_revision:WORKER_REVISION,grounding:rejection,corpus_cards:corpus.cardCount,artifact_version:activeVersion}});
       const cardsUsed=result.cards_used.map(id=>{const c=cardById.get(id);return {id,title:c?.title||id,url:c?.url||'',date:c?.metadata?.publishedAt||null,source_type:c?.metadata?.sourceType||'fiche'};});
       return response(origin,allowed,200,{status:result.status,answer:result.answer,category:result.category,cards_used:cardsUsed,selected_cards:selectedCards,scope_note:result.scope_note,meta:{worker_revision:WORKER_REVISION,grounding:result.status==='answer'?'supported':'not_applicable',corpus_cards:corpus.cardCount,artifact_version:activeVersion}});
     }catch(e){return response(origin,allowed,503,{error:'assistant_temporarily_unavailable'});}

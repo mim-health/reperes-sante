@@ -32,7 +32,7 @@ feedback.querySelectorAll('button').forEach(b=>b.onclick=()=>{record('feedback',
 function open(q){if(panel.dataset.open!=='true')record('open');panel.dataset.open='true';launcher.setAttribute('aria-expanded','true');document.body.classList.add('maca-v2-open');if(q)textarea.value=q;setTimeout(()=>textarea.focus(),30)}
 function shut(){panel.dataset.open='false';launcher.setAttribute('aria-expanded','false');document.body.classList.remove('maca-v2-open')}
 launcher.onclick=()=>panel.dataset.open==='true'?shut():open();close.onclick=shut;document.addEventListener('keydown',e=>{if(e.key==='Escape')shut()});
-function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#039;'}[c]));}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));}
 async function ask(q){
  if(busy)return;
  q=String(q||textarea.value).trim();if(!q)return;open(q);
@@ -41,16 +41,26 @@ async function ask(q){
  status.textContent='Recherche dans les fiches et Le Mag…';answer.classList.remove('maca-v2-error');answer.textContent='';scope.textContent='';sources.textContent='';
  const started=Date.now(),controller=new AbortController(),timer=setTimeout(()=>controller.abort(),45000);lastVersion='';record('question_sent');
  try{
-  const r=await fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q}),signal:controller.signal});
+  let r;
+  for(let attempt=0;attempt<2;attempt++){
+   r=await fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q}),signal:controller.signal});
+   if(attempt||![502,503,504].includes(r.status))break;
+   record('error',{error:'server',durationMs:Date.now()-started});
+   status.textContent='Service momentanément indisponible ; nouvelle tentative…';
+   await new Promise(resolve=>setTimeout(resolve,400));
+  }
   if(!r.ok){const e=new Error(r.status===429?'Trop de demandes successives. Réessayez dans un instant.':'Assistant momentanément indisponible. Réessayez.');e.code=r.status===429?'rate_limit':r.status>=500?'server':'invalid_response';throw e;}
   let data;try{data=await r.json();}catch{const e=new Error('Réponse illisible. Réessayez.');e.code='invalid_response';throw e;}
   if(!data||!['answer','category_only','abstain'].includes(data.status)||(data.status==='answer'&&!data.answer)||!Array.isArray(data.cards_used)){const e=new Error('Réponse incomplète. Réessayez.');e.code='invalid_response';throw e;}
   lastVersion=data.meta?.artifact_version||'';
   if(data.status==='answer'){status.textContent='Réponse issue du corpus MACA';answer.textContent=data.answer;}
   else if(data.status==='category_only'&&data.category){status.textContent='Information insuffisante pour une réponse précise';answer.textContent='La rubrique « '+data.category+' » est la plus proche dans le corpus MACA.';}
+  else if(['contract_rejected','rejected'].includes(data.meta?.grounding)){status.textContent='Réponse non validée';answer.textContent='Je n’ai pas pu produire une réponse suffisamment fidèle aux sources. Vous pouvez consulter directement les fiches proposées ci-dessous ou reformuler votre question.';}
   else{status.textContent='Aucun résultat suffisamment solide';answer.textContent='Le corpus MACA ne contient pas actuellement de contenu suffisamment pertinent pour répondre à cette question.';}
   scope.textContent=data.scope_note||'';
-  sources.innerHTML=data.cards_used.length?'<b>Sources MACASANTÉ utilisées</b><br>'+data.cards_used.map(c=>{
+  const suggestions=data.status!=='answer'&&['contract_rejected','rejected'].includes(data.meta?.grounding)?(data.selected_cards||[]).filter(c=>/^[a-z0-9][a-z0-9-]*$/i.test(c.id||'')&&!c.id.startsWith('mag-')).slice(0,3):[];
+  const linkedCards=data.cards_used.length?data.cards_used:suggestions;
+  sources.innerHTML=linkedCards.length?'<b>'+(data.cards_used.length?'Sources MACASANTÉ utilisées':'Fiches à consulter — aucune réponse validée')+'</b><br>'+linkedCards.map(c=>{
    const mag=String(c.id||'').startsWith('mag-');
    const href=mag&&/^https:\/\/macasante\.fr\/[a-z0-9-]+\.html$/.test(c.url||'')?c.url:(!mag&&c.id&&/^[a-z0-9][a-z0-9-]*$/i.test(c.id))?'fiche.html?id='+encodeURIComponent(c.id):'';
    const type=mag?'Actualité — Le Mag':'Fiche de référence';
