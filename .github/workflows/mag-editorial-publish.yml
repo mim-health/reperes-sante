@@ -1,0 +1,99 @@
+name: Mag validated editorial publication
+on:
+  push:
+    branches: [feat/v0-magazine]
+    paths:
+      - 'editorial/content.json'
+      - 'editorial/catchup.json'
+      - 'scripts/mag-editorial.js'
+      - 'scripts/test-mag-editorial.js'
+      - 'scripts/publish-mag-generated.sh'
+      - 'scripts/verify-mag-public.js'
+      - '.github/workflows/mag-editorial-publish.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: pages-site-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/v0-magazine
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Validate and prepare complete edition
+        run: |
+          node scripts/mag-editorial.js --dry-run
+          node scripts/test-mag-editorial.js
+          node scripts/mag-editorial.js
+          node scripts/build-sitemap-from-corpus.js
+          node scripts/test-home-magazine.js
+          node scripts/test-magazine-videos.js
+          node scripts/build-assistant-v2-corpus.js
+          node scripts/test-assistant-v2-canonical.js
+          node scripts/test-assistant-v2-patient-language.js
+      - name: Commit generated site without overwriting source
+        run: bash scripts/publish-mag-generated.sh
+      - name: Assemble site
+        run: |
+          mkdir -p _site
+          rsync -a --exclude='.git' --exclude='.github' --exclude='media-publishing' --exclude='scripts' --exclude='_site' --exclude='assistant-v2/corpus.json' --exclude='assistant-v2/corpus.report.json' ./ _site/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Deploy coherent homepage and archive
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Verify public site
+        run: node scripts/verify-mag-public.js
+      - name: Rebuild closed corpus from published source
+        run: node scripts/build-assistant-v2-corpus.js
+      - name: Restore previous embeddings
+        run: |
+          node - <<'JS'
+          const fs=require('fs'),latest=JSON.parse(fs.readFileSync('assistant-v2/latest.json','utf8'));
+          const previous='assistant-v2/public-artifacts/'+latest.version+'/embeddings.index.json';
+          if(fs.existsSync(previous))fs.copyFileSync(previous,'assistant-v2/embeddings.index.json');
+          JS
+      - name: Build incremental embeddings
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          MACA_EMBEDDING_MODEL: text-embedding-3-small
+          MACA_EMBEDDING_DIMENSIONS: '512'
+        run: node scripts/build-assistant-v2-embeddings.js
+      - name: Publish versioned Assistant artifacts
+        env:
+          GITHUB_REF_NAME: feat/v0-magazine
+        run: bash scripts/publish-assistant-v2.sh
+      - name: Verify active index and Mag answer
+        run: node scripts/verify-mag-public.js --assistant
+      - name: Persist execution report
+        if: always()
+        env:
+          RESULT: ${{ job.status }}
+          SITE_OUTCOME: ${{ steps.deployment.outcome }}
+        run: |
+          node - <<'JS'
+          const fs=require('fs');const report={sourceCommit:process.env.GITHUB_SHA,runUrl:'https://github.com/'+process.env.GITHUB_REPOSITORY+'/actions/runs/'+process.env.GITHUB_RUN_ID,result:process.env.RESULT,siteDeployment:process.env.SITE_OUTCOME,finishedAt:new Date().toISOString()};
+          fs.writeFileSync('mag-execution-report.json',JSON.stringify(report,null,2)+'\n');
+          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,'```json\n'+JSON.stringify(report,null,2)+'\n```\n');
+          JS
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mag-execution-report
+          path: |
+            mag-execution-report.json
+            editorial/manifest.json
+            editorial/candidate-fiches.json

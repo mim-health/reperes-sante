@@ -13,7 +13,7 @@ const missing=ids.map((id,i)=>id?null:(cards[i].title||cards[i].question||`card 
 if(missing.length) throw new Error('Canonical cards without stable ID: '+missing.join(' | '));
 if(new Set(ids).size!==ids.length) throw new Error('Duplicate canonical IDs prevent sitemap generation');
 const today=process.env.SITEMAP_DATE||new Date().toISOString().slice(0,10);
-const staticUrls=[['https://macasante.fr/',today,'daily','1.0'],['https://macasante.fr/fiches.html',today,'daily','0.9'],['https://macasante.fr/mentions-legales.html','2026-08-21','yearly','0.2'],['https://macasante.fr/confidentialite.html','2026-08-21','yearly','0.2'],['https://macasante.fr/contact.html','2026-08-21','yearly','0.3']];
+const staticUrls=[['https://macasante.fr/notre-histoire.html',today,'monthly','0.6'],['https://macasante.fr/',today,'daily','1.0'],['https://macasante.fr/fiches.html',today,'daily','0.9'],['https://macasante.fr/mentions-legales.html','2026-08-21','yearly','0.2'],['https://macasante.fr/confidentialite.html','2026-08-21','yearly','0.2'],['https://macasante.fr/contact.html','2026-08-21','yearly','0.3']];
 const magazineCtx={window:{}};vm.runInNewContext(fs.readFileSync('magazine-articles.js','utf8'),magazineCtx);
 staticUrls.push(['https://macasante.fr/magazine.html',today,'daily','0.8']);
 vm.runInNewContext(fs.readFileSync('magazine-videos.js','utf8'),magazineCtx);

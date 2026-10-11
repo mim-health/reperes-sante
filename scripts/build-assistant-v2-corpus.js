@@ -185,6 +185,9 @@ function build() {
     };
   });
 
+  const mag = require('./mag-editorial').magCards(ROOT);
+  cards.push(...mag);
+
   const duplicateIds = [];
   const seenIds = new Set();
   const missingId = [];
@@ -261,6 +264,7 @@ function build() {
     source: 'MACA_CANONICAL_CORPUS',
     manifestEntries: files.length,
     canonicalCardCount: canonical.length,
+    magazineDocumentCount: mag.length,
     exportedCardCount: cards.length,
     activeCategories,
     fingerprint,
