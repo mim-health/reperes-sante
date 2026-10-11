@@ -14,6 +14,10 @@ on:
       - 'scripts/publish-mag-generated.sh'
       - 'scripts/verify-mag-public.js'
       - 'corpus-v2-browser-entry.js'
+      - 'maca-assistant-v2-unified.js'
+      - 'maca-assistant-metrics.js'
+      - 'scripts/test-assistant-pilot.js'
+      - 'confidentialite.html'
       - 'ipp-retrieval-policy.js'
       - 'search-v2-corpus-fallback.js'
       - 'scripts/test-ipp-retrieval.js'
@@ -42,6 +46,7 @@ jobs:
           node-version: '20'
       - name: Validate and prepare complete edition
         run: |
+          node scripts/test-assistant-pilot.js
           node scripts/test-content-duplicates.js
           node scripts/audit-content-duplicates.js
           node scripts/mag-editorial.js --dry-run
