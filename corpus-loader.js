@@ -120,7 +120,7 @@
     return files.slice();
   }
 
-  window.MACA_CORPUS_READY = load('corpus-production.js?v=20260908-bundle6')
+  function loadFullCorpus() { return load('corpus-production.js?v=3c42ae649e8a1f17')
     .then(() => replayMentalHealthV2OnAuditedCorpus())
     .then(() => {
       assertBundleSentinels();
@@ -139,5 +139,24 @@
     .catch((error) => {
       console.error('[MACA corpus]', error);
       throw error;
-    });
+    }); }
+  const FICHE_DATA_REVISION = '3c42ae649e8a1f17';
+  const ficheId = new URLSearchParams(location.search).get('id');
+  const isFiche = !!document.querySelector('#seo-fiche') && !!ficheId;
+  async function loadFiche() {
+    const controller=new AbortController();
+    const timer=setTimeout(()=>controller.abort(),8000);
+    try {
+      const response=await fetch('fiches-data/'+encodeURIComponent(ficheId)+'.json?v='+FICHE_DATA_REVISION,{signal:controller.signal});
+      if(!response.ok)throw new Error('Fiche HTTP '+response.status);
+      const payload=await response.json();
+      if(!payload.fiche || String(payload.fiche.id)!==ficheId || !Array.isArray(payload.related))throw new Error('Invalid fiche payload');
+      window.healthQuestions=[...payload.related,payload.fiche];
+      window.extraAuditedQuestions=[];
+      return ready('individual-fiche');
+    } finally { clearTimeout(timer); }
+  }
+  window.MACA_CORPUS_READY=isFiche
+    ? loadFiche().catch(error=>{console.warn('[MACA fiche] individual load failed, full corpus fallback',error);restoreInitialGlobals();return loadFullCorpus();})
+    : loadFullCorpus();
 })();

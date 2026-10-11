@@ -32,8 +32,14 @@ jobs:
           node scripts/audit-content-duplicates.js
           node scripts/test-home-magazine.js
           node scripts/test-magazine-videos.js
+      - name: Generate and verify current fast corpus
+        run: |
+          node scripts/build-corpus-production.js --publish
+          node scripts/test-corpus-bundle-equivalence.js
       - name: Generate crawlable fiche pages
-        run: node scripts/build-static-seo-fiches.js
+        run: |
+          node scripts/build-static-seo-fiches.js
+          node scripts/test-fiche-fast-load.js
       - name: Rebuild sitemap
         run: node scripts/build-sitemap-from-corpus.js
       - name: Validate output
@@ -47,7 +53,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add fiches-seo sitemap.xml assets/videos
+          git add fiches-seo fiches-data corpus-production.js corpus-loader.js index.html fiches.html fiche.html sitemap.xml assets/videos
           git diff --cached --quiet || git commit -m "seo: generate static crawlable fiche pages"
           for attempt in 1 2 3; do
             if git push origin "HEAD:refs/heads/$GITHUB_REF_NAME"; then exit 0; fi

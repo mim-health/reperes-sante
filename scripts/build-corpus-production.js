@@ -65,6 +65,21 @@ function build() {
     files
   };
   fs.writeFileSync(META_FILE, JSON.stringify(metadata, null, 2) + '\n', 'utf8');
+  if(process.argv.includes('--publish')) {
+    // One source revision for bundle, individual payloads and browser cache keys.
+    const revision=metadata.bundleSha256.slice(0,16);
+    fs.writeFileSync(path.join(ROOT,'corpus-production.js'),bundle);
+    const loaderPath=path.join(ROOT,'corpus-loader.js');
+    let loader=fs.readFileSync(loaderPath,'utf8');
+    loader=loader.replace(/corpus-production\.js\?v=[^'"\s]+/g,'corpus-production.js?v='+revision);
+    loader=loader.replace(/const FICHE_DATA_REVISION = '[^']*'/,"const FICHE_DATA_REVISION = '"+revision+"'");
+    fs.writeFileSync(loaderPath,loader);
+    const loaderRevision=sha256(loader).slice(0,16);
+    for(const name of ['index.html','fiches.html','fiche.html']) {
+      const file=path.join(ROOT,name);
+      fs.writeFileSync(file,fs.readFileSync(file,'utf8').replace(/corpus-loader\.js\?v=[^'"\s<>]+/g,'corpus-loader.js?v='+loaderRevision));
+    }
+  }
   console.log(JSON.stringify({
     ok: true,
     manifestCount: metadata.manifestCount,

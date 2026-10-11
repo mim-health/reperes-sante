@@ -10,6 +10,7 @@ const fs=require('fs'),path=require('path'),vm=require('vm');
 const seo=require('../fiche-seo-metadata.js');
 const ROOT=path.resolve(__dirname,'..');
 const OUT=path.join(ROOT,'fiches-seo');
+const DATA=path.join(ROOT,'fiches-data');
 const read=p=>fs.readFileSync(path.join(ROOT,p),'utf8');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const strip=s=>String(s||'').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();
@@ -18,11 +19,21 @@ const paras=s=>String(s||'').split(/\n\s*\n/).map(x=>x.trim()).filter(Boolean).m
 const manifestCtx={window:{}};vm.runInNewContext(read('corpus-manifest.js'),manifestCtx);
 const ctx={console,setTimeout,clearTimeout,CustomEvent:function(){}};ctx.window=ctx;ctx.globalThis=ctx;vm.createContext(ctx);
 for(const raw of manifestCtx.window.MACA_CORPUS_MANIFEST){const f=String(raw).split('?')[0];vm.runInContext(read(f),ctx,{filename:f});}
+// Match the validated browser replay before exporting any individual fiche.
+const originalHealth=ctx.healthQuestions;
+ctx.healthQuestions=ctx.extraAuditedQuestions;
+vm.runInContext(read('migration-sante-mentale-v2-2026-09-07.js'),ctx);
+ctx.extraAuditedQuestions=ctx.healthQuestions;
+ctx.healthQuestions=originalHealth;
 vm.runInContext(read('corpus-canonicalizer.js'),ctx,{filename:'corpus-canonicalizer.js'});
 for(const file of ['source-registry.js','source-registry-magnesium.js']) vm.runInContext(read(file),ctx,{filename:file});
 const items=Array.from(ctx.MACA_BUILD_CANONICAL_CORPUS()).map(x=>JSON.parse(JSON.stringify(x)));
+fs.rmSync(DATA,{recursive:true,force:true});fs.mkdirSync(DATA,{recursive:true});
 fs.rmSync(OUT,{recursive:true,force:true});fs.mkdirSync(OUT,{recursive:true});
 for(const q of items){
+  const relatedIds=new Set(seo.relatedIds(q));
+  const relatedMetadata=items.filter(x=>x.id!==q.id && (x.category===q.category || relatedIds.has(x.id))).map(x=>({id:x.id,title:x.title,category:x.category,keywords:x.keywords}));
+  fs.writeFileSync(path.join(DATA,String(q.id)+'.json'),JSON.stringify({fiche:q,related:relatedMetadata}));
   const id=String(q.id); const canonical=`https://macasante.fr/fiches-seo/${encodeURIComponent(id)}.html`;
   const title=strip(seo.title(q)); const desc=seo.description(q);
   const related=seo.relatedIds(q).map(id=>items.find(item=>item.id===id)).filter(item=>item&&item.id!==q.id).slice(0,3);
