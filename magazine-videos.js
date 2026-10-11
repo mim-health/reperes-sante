@@ -1,28 +1,26 @@
-window.MACA_MAGAZINE_VIDEOS=[
+// Validated and integrity-checked videos.
+window.MACA_MAGAZINE_VIDEOS = [
   {
     "id": "proteines-v8",
-    "url": "video-proteines-v8.html",
     "title": "Produits hyperprotéinés : vraiment meilleurs pour la santé ?",
-    "format": "video",
     "category": "Décryptage",
-    "theme": "Alimentation",
     "date": "2026-10-09",
-    "status": "PUBLISHED",
     "excerpt": "Satiété, musculation et besoins réels : ce que montrent les études sur les protéines.",
-    "image": "assets/videos/proteines-v8.jpg",
-    "imageAlt": "Produits hyperprotéinés : vraiment meilleurs pour la santé ?",
+    "source": "produits-enrichis-proteines-besoins",
     "keywords": [
       "protéines",
       "alimentation",
       "satiété",
       "musculation"
     ],
-    "medicalStatus": "LEGACY_REVIEW_REQUIRED",
-    "referenceFicheId": "produits-enrichis-proteines-besoins",
-    "version": "f26124310b0b2a2af292d6bfaaf96526e7ac8aefb71fe41e25c4ed72635a1fcf",
-    "video": "assets/videos/proteines-v8.mp4",
     "transcript": "Yaourts, barres, boissons… des protéines partout ! Mais est-ce meilleur pour la santé ? Selon une étude de synthèse de 2020, elles peuvent réduire la faim à court terme. Avec la musculation, certains suppléments favorisent aussi les gains musculaires. Mais ces études ne prouvent pas qu’un dessert enrichi soit meilleur. Si vos besoins sont couverts, inutile d’en ajouter systématiquement. Comparez les étiquettes ! Sources et explications sur macasante.fr.",
-    "source": "produits-enrichis-proteines-besoins"
+    "url": "video-proteines-v8.html",
+    "format": "video",
+    "status": "PUBLISHED",
+    "video": "assets/videos/proteines-v8.mp4",
+    "image": "assets/videos/proteines-v8.jpg",
+    "imageAlt": "Produits hyperprotéinés : vraiment meilleurs pour la santé ?",
+    "sha256": "561fac4f09f6589c25437d0089c0b0299f3065915738ae59b3ad11b69751aedd"
   },
   {
     "id": "max-cortisol",
