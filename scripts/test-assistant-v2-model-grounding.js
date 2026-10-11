@@ -11,7 +11,7 @@ const latest=JSON.parse(fs.readFileSync('assistant-v2/latest.json','utf8'));
 const embeddings=JSON.parse(fs.readFileSync('assistant-v2/public-artifacts/'+latest.version+'/embeddings.index.json','utf8'));
 assert.equal(corpus.cardCount,embeddings.cardCount,'Build embeddings before testing if document count changed');
 embeddings.corpusFingerprint=corpus.fingerprint;
-const code=fs.readFileSync('assistant-v2/cloudflare-worker-public.js','utf8').replace(/^import .*;\n/gm,'').replace('export default {','globalThis.worker = {');
+const code=fs.readFileSync('assistant-v2/cloudflare-worker-public.js','utf8').replace(/^import .*;\n/gm,'').replace('export default {','globalThis.worker = {').replace('catch(e){return response','catch(e){console.error(\'TEST_ONLY_ERROR\',e.message);return response');
 const s={console,Response,Request,URL,TextEncoder,crypto:webcrypto,MACA_GROUNDING_CONTRACT:contract,MACA_PATIENT_LANGUAGE_RETRIEVAL:patient,MACA_IPP_RETRIEVAL:globalThis.MACA_IPP_RETRIEVAL};
 const traces=[];
 s.fetch=async(url,options)=>{
@@ -19,6 +19,7 @@ s.fetch=async(url,options)=>{
  if(url.endsWith('/corpus.json'))return Response.json(corpus);
  if(url.endsWith('/embeddings.index.json'))return Response.json(embeddings);
  const response=await fetch(url,{...options,signal:AbortSignal.timeout(120000)});
+ if(!response.ok)console.error('TEST_ONLY_API_ERROR',url,response.status);
  if(url.endsWith('/responses')){const output=await response.clone().json();traces.push({format:JSON.parse(options.body).text.format.name,input:JSON.parse(options.body).text.format.name==='maca_grounding'?JSON.parse(JSON.parse(options.body).input[1].content):null,output});}
  return response;
 };
