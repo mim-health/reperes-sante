@@ -23,3 +23,9 @@ Tests locaux : 139 contrôles canoniques, 47 complémentaires, 8 IPP, 7 langage 
 Le workflow de publication exécute le modèle réel sur les cas IPP, Galleri, diabète quotidien, après-diagnostic Alzheimer, médicaments d’insuffisance cardiaque, piqûre de guêpe et hors corpus avant tout déploiement. Les vérifications publiques exigent la nouvelle révision.
 
 Aucun texte médical modifié. La publication du Worker nécessite le secret Cloudflare déjà signalé ; la présence de fichiers corrigés dans GitHub ne prouve pas leur activation.
+
+## Résultat effectif
+
+Interface publiée et vérifiée, fichiers publics identiques au correctif : [publication réussie](https://github.com/mim-health/reperes-sante/actions/runs/38156197477). Huit cas avec le modèle réel PASS : [validation et blocage de publication](https://github.com/mim-health/reperes-sante/actions/runs/38156197469). Le secret `CLOUDFLARE_API_TOKEN` est vide ; les étapes de déploiement et de vérification publique du Worker ont été sautées. La correction du moteur est prête mais non active. Configurer ce secret dans GitHub puis relancer « Assistant V2 verified Worker publication » sur `feat/v0-magazine`.
+
+[Preuves de vérification](assistant-audit-2026-10-11/repair-verification.json).

@@ -18,7 +18,7 @@ Branche : `feat/v0-magazine`. Corpus public : 394 documents (377 fiches, 17 arti
 
 ## Corrections complémentaires publiées
 
-Reprise limitée des HTTP 502/503/504 et distinction entre rejet de fidélité et absence de corpus. Le cas Alzheimer affiche maintenant les fiches candidates sans les présenter comme les sources d’une réponse validée ; le cas diabète a répondu lors du nouveau rejeu. Scripts publics comparés à la version corrigée : identiques. [Preuves](repair-verification.json). Le Worker corrigé est dans GitHub mais sa révision `2026-10-11-resilience2` n’est pas active ; ne pas présenter les erreurs comme toutes résolues.
+Reprise limitée des HTTP 502/503/504 et distinction entre rejet de fidélité et absence de corpus. Le cas Alzheimer affiche maintenant les fiches candidates sans les présenter comme les sources d’une réponse validée ; le cas diabète a répondu lors du nouveau rejeu. Scripts publics comparés à la version corrigée : identiques. [Preuves](repair-verification.json). Le Worker corrigé a passé les huit essais avec le modèle réel, dont les questions Alzheimer, diabète, médicaments d’insuffisance cardiaque et piqûre de guêpe. [Run 38156197469](https://github.com/mim-health/reperes-sante/actions/runs/38156197469) : validation PASS puis publication BLOQUÉE car `CLOUDFLARE_API_TOKEN` est absent. Sa révision `2026-10-11-resilience2` n’est pas active ; ne pas présenter les erreurs comme toutes résolues.
 
 ## Corrections techniques
 

@@ -40,5 +40,11 @@
     "artifact_version": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c"
   },
   "workerExpectedRevision": "2026-10-11-resilience2",
-  "workerDeployed": false
+  "workerDeployed": false,
+  "workerPublication": "BLOCKED_MISSING_CLOUDFLARE_API_TOKEN",
+  "realModelChecks": 8,
+  "realModelResult": "PASS",
+  "realModelProductionDeployment": false,
+  "workerDeploymentStep": "skipped",
+  "workerPublicVerificationStep": "skipped"
 }
