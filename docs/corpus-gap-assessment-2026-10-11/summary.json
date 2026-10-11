@@ -1,0 +1,14 @@
+{
+  "reference_fiches": 377,
+  "mag_documents": 17,
+  "sans_detail": 53,
+  "questions_candidates": 30,
+  "dedicated_not_found": 10,
+  "partial": 20,
+  "priorities": {
+    "P1": 10,
+    "P2": 16,
+    "P3": 4
+  },
+  "fingerprint": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c"
+}
