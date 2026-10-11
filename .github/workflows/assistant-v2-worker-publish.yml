@@ -9,6 +9,7 @@ on:
       - 'ipp-retrieval-policy.js'
       - 'scripts/test-assistant-v2-grounding.js'
       - 'scripts/test-assistant-v2-correctives-live.js'
+      - 'scripts/test-assistant-v2-model-grounding.js'
       - '.github/workflows/assistant-v2-worker-publish.yml'
   workflow_dispatch:
 permissions:
@@ -32,6 +33,10 @@ jobs:
           node scripts/test-assistant-v2-grounding.js
           node scripts/test-assistant-v2-canonical.js
           node scripts/test-assistant-v2-patient-language.js
+      - name: Verify real model source fidelity before deployment
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: node scripts/test-assistant-v2-model-grounding.js
       - name: Check deployment configuration
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

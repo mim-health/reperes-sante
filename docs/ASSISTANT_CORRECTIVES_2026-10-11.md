@@ -42,3 +42,13 @@ Retour arrière : rétablir les fichiers Worker de la dernière révision foncti
 Pour les 20 contenus des éditions des 10 et 11 octobre, les 6 exclusions sont attendues : 2 aperçus renvoient à une fiche existante et 4 brèves nécessitent une référence précise. Ils ne doivent pas être rendus éligibles par un changement technique de statut. Les contenus historiques et vidéos supplémentaires en attente de validation restent exclus selon leur propre statut.
 
 La validation médicale et la transformation en fiche restent humaines.
+
+## Vérification de livraison
+
+La publication Mag/site a réussi. Les scripts de recherche réellement servis sur macasante.fr et le cache de l’entrée navigateur ont été contrôlés ; les requêtes long cours et arrêt trouvent leurs fiches respectives. Le manifeste actif de l’Assistant correspond aux 14 documents Mag éligibles, et une réponse Galleri sourcée a été vérifiée.
+
+Le premier déploiement Worker a été arrêté après succès des tests : le secret CLOUDFLARE_API_TOKEN n’est pas configuré dans le contexte GitHub. Le Worker public ne présente pas la nouvelle révision ; le renforcement de fidélité et le routage Worker ne sont donc pas annoncés actifs.
+
+Un test du Worker candidat avec les vraies API de génération et de vérification est ajouté avant l’étape Cloudflare, en utilisant uniquement les artefacts du dépôt. Il vérifie trois réponses couvertes et une question hors corpus, sans prouver le déploiement du serveur.
+
+Un échec SEO concurrent a également été constaté : push rejeté parce que la publication Mag avait avancé la branche. Le workflow SEO utilise désormais la même file de publication que Le Mag, part de la branche actuelle et peut reprendre un push avec rebase sans force ; un conflit interrompt la publication.
