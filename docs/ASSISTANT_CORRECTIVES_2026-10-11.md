@@ -54,3 +54,9 @@ Un test du Worker candidat avec les vraies API de génération et de vérificati
 Un échec SEO concurrent a également été constaté : push rejeté parce que la publication Mag avait avancé la branche. Le workflow SEO utilise désormais la même file de publication que Le Mag, part de la branche actuelle et peut reprendre un push avec rebase sans force ; un conflit interrompt la publication.
 
 Le premier test réel a effectivement détecté des précisions absentes des extraits (« mois ou années », « remontées acides »). Une unique révision contrôlée supprime désormais les affirmations contestées, puis repasse les mêmes contrôles mécaniques et sémantiques. En cas de nouvel échec, la réponse est abandonnée. Ce mécanisme ne transforme pas les remarques du vérificateur en source médicale et ne modifie pas le corpus.
+
+## État final des contrôles
+
+Le run https://github.com/mim-health/reperes-sante/actions/runs/38127965160 a réussi les contrôles locaux et les quatre cas avec les API réelles : IPP au long cours, arrêt des IPP, objectif principal de Galleri et absence de réponse médicale pour le sujet fictif hors corpus. Il s’est ensuite arrêté à la configuration Cloudflare, faute de CLOUDFLARE_API_TOKEN. Aucun déploiement du Worker n’a eu lieu. Le run SEO du même commit a réussi.
+
+La vérification finale distingue donc : recherche/site et liens du corpus corrigés en ligne ; contrat renforcé de fidélité vérifié dans le code candidat avec le modèle réel, mais activation publique en attente de la configuration Cloudflare. Les 14 documents Mag restent synchronisés. Aucun changement de validation médicale ni ajout automatique des six contenus exclus.
