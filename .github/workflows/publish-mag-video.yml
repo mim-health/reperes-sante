@@ -9,7 +9,7 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  group: mag-video-publication
+  group: pages-site-publication
   cancel-in-progress: false
 jobs:
   publish:

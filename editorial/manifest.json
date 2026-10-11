@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "editionId": "edition-2026-10-11",
+  "editionDate": "2026-10-11",
+  "sourceFingerprint": "e2560f60bd9068125d4ce8b99e8018fda80a41c2819540a85d05cf4e267449f4",
+  "missingEdition": false,
+  "site": "prepared",
+  "assistant": "pending",
+  "eligible": [
+    {
+      "id": "mag-daily-galleri-20261011",
+      "version": "90cd0b1b857ae696ea4335a21cd0dca60232b9c535579da6f890b44f95f5b75b",
+      "url": "article-depistage-multicancer-galleri.html",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "mag-daily-diabete-20261011",
+      "version": "823f7b6b624c40e13abab34bd29a7bb8fd81227ff1eee3162b73bb7703502c7b",
+      "url": "article-diabete-protection-coeur-reins.html",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "mag-daily-activite-jeunes-20261011",
+      "version": "5ec7b3ab24a78a79c3cce3cd4a34a9a1755abe5f062f3554e90a72d95f83f148",
+      "url": "article-activite-jeunes-metabolisme.html",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "mag-daily-chaleur-coeur-20261011",
+      "version": "cc69a01394e28aa2bddb3c8fe9f0c478e34e0fa4b27205bd2d1618aab2511f7c",
+      "url": "article-chaleur-maladie-cardiaque.html",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "mag-daily-eau-vf-20261011",
+      "version": "0aa68b7e8f432cb0e7c8847acdb95694a8b8b3f4708fb4fac3e54357a93cc845",
+      "url": "vrai-faux-deux-litres-eau.html",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "mag-daily-grippe-20261011",
+      "version": "74f8034e9e68c96f8146f89ba491316dc1e447b98094d44823e1016019be3603",
+      "url": "mag-daily-grippe-20261011.html",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "mag-daily-sepsis-ia-20261011",
+      "version": "444db9d4f193ec417f5b7a414ba8b39580b8eb30e27d5743b5a3b156a575cebe",
+      "url": "mag-daily-sepsis-ia-20261011.html",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "mag-daily-anticoagulants-20261011",
+      "version": "6f105c5644ae36f247e72150103cca63c1290b27d7e6d849cf6414095c058070",
+      "url": "mag-daily-anticoagulants-20261011.html",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "mag-daily-schizophrenie-20261011",
+      "version": "7ae431d0329198da734876c5a73511a19391c47f5c8a39b6306ba06f4ce36a77",
+      "url": "mag-daily-schizophrenie-20261011.html",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "mag-daily-cannabis-sommeil-20261010",
+      "version": "61edeb7b1f5a572cd0f9abe6feaeffc5cb353d4bef3c39a4179cfa84301e39a4",
+      "url": "article-cannabis-sommeil.html",
+      "date": "2026-10-10"
+    },
+    {
+      "id": "mag-daily-fertilite-cancer-enfant-20261010",
+      "version": "50375912d34192a22f7f7572fcbb23e1bc423b1f153d6588bc23bd7dd0c6a943",
+      "url": "article-fertilite-apres-cancer.html",
+      "date": "2026-10-10"
+    },
+    {
+      "id": "mag-daily-tabac-incitations-20261010",
+      "version": "f6f1435032d92c2a4515208ee10325e04eea203042a20068c69cbec79b64b7f7",
+      "url": "article-arreter-fumer-recompenses.html",
+      "date": "2026-10-10"
+    },
+    {
+      "id": "mag-daily-hpylori-20261010",
+      "version": "b68650a1c259839bde3d9506a45fcd6d12b36c8cea5d8035164bc462d7083ce6",
+      "url": "article-helicobacter-pylori.html",
+      "date": "2026-10-10"
+    },
+    {
+      "id": "mag-daily-angine-vf-20261010",
+      "version": "2f5e723c9791bdcba3fc5aed0cd16f854f8061bd78148c1952870eb57ec4db5d",
+      "url": "vrai-faux-angine-antibiotiques.html",
+      "date": "2026-10-10"
+    }
+  ],
+  "reviewRequired": [
+    "daily-oct7-trauma-20261007",
+    "proteines-v8",
+    "max-cortisol",
+    "max-sciatique-irm"
+  ]
+}

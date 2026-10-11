@@ -1,3 +1,9 @@
+# Règle prioritaire — 11 octobre 2026
+
+Accueil → archives permanentes Le Mag → Assistant fermé pour les contenus validés et sourcés. Source unique : `editorial/content.json` ; pipeline et exploitation : `editorial/README.md`. Les registres quotidiens sont générés. La règle historique excluant tout article du corpus IA est remplacée par une indexation conditionnelle, avec provenance, date et URL. Les fiches restent soumises à une sélection et une validation humaines distinctes. Ne jamais publier une nouvelle édition à partir des anciens fichiers générés sans l’enregistrer dans la source persistante.
+
+---
+
 # Règle Magazine — validée le 07/10/2026, prioritaire sur les règles historiques ci-dessous
 
 - Fiche = réponse durable à une question patient. Article Magazine = décryptage d’une actualité ou publication scientifique.

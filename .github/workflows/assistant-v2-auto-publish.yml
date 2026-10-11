@@ -8,6 +8,7 @@ on:
       - feat/assistant-v2-patient-language-retrieval-20261005
     paths:
       - '*.js'
+      - 'scripts/mag-editorial.js'
       - 'scripts/build-assistant-v2-*.js'
       - 'scripts/publish-assistant-v2.sh'
       - 'scripts/test-assistant-v2-*.js'
@@ -42,7 +43,7 @@ jobs:
           const report=JSON.parse(fs.readFileSync('assistant-v2/corpus.report.json','utf8'));
           const corpus=JSON.parse(fs.readFileSync('assistant-v2/corpus.json','utf8'));
           if(!report.ok) throw new Error('Corpus build report is not OK');
-          if(report.canonicalCardCount!==report.exportedCardCount) throw new Error(`Corpus mismatch ${report.exportedCardCount}/${report.canonicalCardCount}`);
+          if(report.canonicalCardCount+(report.magazineDocumentCount||0)!==report.exportedCardCount) throw new Error(`Corpus mismatch ${report.exportedCardCount}/${report.canonicalCardCount}`);
           if(corpus.cardCount!==report.exportedCardCount) throw new Error('Corpus/report card count mismatch');
           if(!corpus.cardCount) throw new Error('Empty corpus');
           const ids=corpus.cards.map(c=>c.id);
