@@ -22,7 +22,7 @@ Gestion des erreurs réseau/serveur et du délai maximal, prévention des double
 
 Les événements restent dans le stockage de session du navigateur, avec export manuel volontaire (200 événements maximum). Ils ne contiennent ni question, réponse, IP, identité, ni URL ; aucun envoi publicitaire. La collecte centrale automatique et le comptage des visiteurs uniques ne sont pas mis en place. L’export joint prouve un clic vers une source et un vote, pas une appréciation clinique.
 
-Le chargement de l’Assistant est rendu indépendant du chargement des fiches locales ; vérification du déploiement de cette dernière optimisation à effectuer après publication.
+Le chargement de l’Assistant est rendu indépendant du chargement des fiches locales. Publication réussie : [run 38155615166](https://github.com/mim-health/reperes-sante/actions/runs/38155615166). Le script public `pilot3` et l’ouverture du panneau après rechargement ont été vérifiés dans le navigateur. Le contrôle public de révision du Worker échoue toujours : révision absente malgré le corpus actif correct.
 
 ## Anomalies et clôture
 

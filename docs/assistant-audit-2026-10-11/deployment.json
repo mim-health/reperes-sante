@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-11",
+  "siteCommit": "0e66cd8230d52d8b76a3081d6d810d49e3970f20",
+  "publicationRun": 38155615166,
+  "publicationConclusion": "success",
+  "entryPilot3Http": 200,
+  "browserPanelOpenedAfterReload": true,
+  "readyResponse": {
+    "service": "maca-assistant-v2",
+    "public_ready": true,
+    "artifact_version": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c"
+  },
+  "requiredWorkerRevision": "2026-10-11-ipp-grounding1",
+  "observedWorkerRevision": null,
+  "fidelityDeploymentCheck": "FAIL",
+  "realMobileCheck": "NOT_EXECUTED"
+}
