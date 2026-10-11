@@ -22,12 +22,12 @@ Le contrôle est exécuté avant publication Mag, avant génération SEO sur la 
 
 ## Historique et rapprochements à examiner
 
-Les 26 occurrences supplémentaires du corpus brut correspondent aux identifiants réutilisés dans les versions historiques. `editorial/reviewed-corpus-overrides.json` fige les empreintes et les fichiers de ces occurrences déjà présentes ; ce recensement technique ne constitue pas une validation médicale de chaque version. Aucun texte historique n'est effacé. Toute nouvelle révision d'un identifiant existant doit être examinée et explicitement inscrite dans ce registre, sans le régénérer aveuglément.
+Les 26 occurrences supplémentaires du corpus brut correspondent aux identifiants réutilisés dans les versions historiques. `editorial/reviewed-corpus-overrides.json` fige les empreintes, l’ordre des occurrences et les fichiers de ces occurrences déjà présentes ; ce recensement technique ne constitue pas une validation médicale de chaque version. Aucun texte historique n'est effacé. Toute nouvelle révision d'un identifiant existant doit être examinée et explicitement inscrite dans ce registre, sans le régénérer aveuglément.
 
 Le rapport contient 21 paires de titres proches, calculées par recoupement lexical. Certaines sont des rapprochements légitimes entre une fiche et un article/une vidéo, ou des maladies différentes avec une formulation comparable. D'autres sujets déjà proches (sang dans les urines, boule dans le sein, diversification, produits ménagers, poux, levers nocturnes) peuvent justifier un examen éditorial. Ce signal ne démontre ni équivalence médicale ni doublon à supprimer. Les fusions et transformations en fiche restent soumises à décision humaine. Le rapprochement lexical ne garantit pas de détecter toutes les paraphrases.
 
 ## Vérification
 
-11 scénarios anti-doublons positifs/négatifs, tests de rotation/programmation/retrait/idempotence, 139 recherches de non-régression, 8 questions IPP, 47 scénarios de recherche de secours, 5 garde-fous de population, contrôles Mag/vidéos, 11 contrôles mécaniques et 7 flux simulés de fidélité, 7 tests de langage patient.
+12 scénarios anti-doublons positifs/négatifs, tests de rotation/programmation/retrait/idempotence, 139 recherches de non-régression, 8 questions IPP, 47 scénarios de recherche de secours, 5 garde-fous de population, contrôles Mag/vidéos, 11 contrôles mécaniques et 7 flux simulés de fidélité, 7 tests de langage patient.
 
 La réussite locale prépare la livraison. Le succès du déploiement public et de l'index actif doit être vérifié séparément. Le correctif de fidélité du Worker livré précédemment reste tributaire de son déploiement Cloudflare ; cette livraison ne résout pas l'absence de jeton de déploiement constatée auparavant.

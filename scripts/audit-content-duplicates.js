@@ -24,7 +24,7 @@ function audit(data, baseline = {}) {
   for (const [file] of repeated(data.files, f => f)) errors.push('Manifest file repeated: ' + file);
   for (const [id, rows] of repeated(data.raw, row => row.card.id || 'title:' + normalize(row.card.title))) {
     const signatures = rows.map(row => row.file + ':' + fingerprint(row.card));
-    if (!baseline[id] || JSON.stringify([...signatures].sort()) !== JSON.stringify([...baseline[id]].sort())) errors.push('Unreviewed corpus override: ' + id);
+    if (!baseline[id] || JSON.stringify(signatures) !== JSON.stringify(baseline[id])) errors.push('Unreviewed corpus override: ' + id);
     revisions.push({ id, occurrences: rows.length, files: rows.map(row => row.file) });
   }
   for (const [name, items, getTitle, getBody] of [

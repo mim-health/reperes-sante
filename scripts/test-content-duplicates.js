@@ -6,6 +6,7 @@ let tests = 1;
 function rejects(mutate, pattern) { const d = copy(data); mutate(d); assert(a.audit(d, baseline).errors.some(e => pattern.test(e)), pattern.toString()); tests++; }
 rejects(d => d.files.push(d.files[0]), /Manifest file repeated/);
 rejects(d => d.raw.push(copy(d.raw[0])), /Unreviewed corpus override/);
+rejects(d => d.raw.reverse(), /Unreviewed corpus override/);
 rejects(d => { const group = a.repeated(d.raw, r => r.card.id)[0][1]; group[0].card.answer += ' altered'; }, /Unreviewed corpus override/);
 rejects(d => d.canonical.push({...copy(d.canonical[0]), id: 'new-copy', title: d.canonical[0].title.toUpperCase().replace(/ /g, ' — ')}), /duplicate normalized title/);
 rejects(d => d.canonical.push({...copy(d.canonical[0]), id: 'new-copy', title: 'Autre titre'}), /duplicate full text/);
