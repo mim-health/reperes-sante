@@ -1,0 +1,38 @@
+{
+  "fiches": 377,
+  "ameli_seule": 24,
+  "ameli_presente": 98,
+  "liens_generaux": 54,
+  "sans_url": 125,
+  "corpus_fingerprint": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c",
+  "lots": {
+    "2026-10-12": 76,
+    "2026-10-13": 76,
+    "2026-10-14": 76,
+    "2026-10-15": 76,
+    "2026-10-16": 73
+  },
+  "premier_lot_approfondi": [
+    "cancer-immunotherapie-comment-ca-marche",
+    "cancer-intelligence-artificielle-usages-reels",
+    "cancer-nouveaux-traitements-2026",
+    "cancer-therapies-ciblees-biomarqueurs",
+    "cholesterol-reduire-sans-medicament",
+    "rgo-adulte",
+    "asthme-enfant-arret-traitement-fond-20260901",
+    "convulsion-febrile-enfant",
+    "etat-general-nourrisson",
+    "fievre-enfant",
+    "ingestion-produit-toxique-enfant",
+    "pleurs-nourrisson",
+    "poux-enfant",
+    "depistages-organises-adulte",
+    "diabete-type-2-depistage-complications",
+    "biosimilaires-fiabilite-substitution-20260902",
+    "brulure",
+    "double-prise-medicament",
+    "maca-tique-conduite",
+    "oubli-medicament"
+  ],
+  "statut": "Inventaire automatisé : aucune nouvelle revalidation scientifique ou médicale"
+}
