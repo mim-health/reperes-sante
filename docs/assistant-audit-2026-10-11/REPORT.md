@@ -1,6 +1,6 @@
 # Assistant MACASANTÉ — audit du 11 octobre 2026
 
-**Décision : BLOQUÉ / NO-GO pour un premier test autonome auprès de 30 utilisateurs extérieurs.**
+**Décision : fiabiliser l’Assistant avant d’intensifier sa promotion.** Le site est déjà public et dépasse 30 utilisateurs, selon Romain BEDDOK. La formulation initiale « premier test auprès de 30 utilisateurs » décrivait le ticket, pas la réalité de son audience.
 
 Branche : `feat/v0-magazine`. Corpus public : 394 documents (377 fiches, 17 articles), empreinte `f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c`.
 
@@ -15,6 +15,10 @@ Branche : `feat/v0-magazine`. Corpus public : 394 documents (377 fiches, 17 arti
 | Fidélité déployée | BLOQUÉ | Révision attendue `2026-10-11-ipp-grounding1` absente ; jeton Cloudflare manquant |
 | Mesures / interface | PASS | Ouverture, envoi, réponse/abstention, erreur, délai, clic source et Utile/Pas utile ; export réel joint |
 | Mobile réel | BLOQUÉ | Aucun essai sur téléphone physique disponible ; clavier, tactile et ouverture des liens restent à vérifier |
+
+## Corrections complémentaires publiées
+
+Reprise limitée des HTTP 502/503/504 et distinction entre rejet de fidélité et absence de corpus. Le cas Alzheimer affiche maintenant les fiches candidates sans les présenter comme les sources d’une réponse validée ; le cas diabète a répondu lors du nouveau rejeu. Scripts publics comparés à la version corrigée : identiques. [Preuves](repair-verification.json). Le Worker corrigé est dans GitHub mais sa révision `2026-10-11-resilience2` n’est pas active ; ne pas présenter les erreurs comme toutes résolues.
 
 ## Corrections techniques
 

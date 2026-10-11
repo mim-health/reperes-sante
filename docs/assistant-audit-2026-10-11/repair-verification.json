@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-10-11T16:39:52.995Z",
+  "siteCommit": "cb544c1716660a918ce968a0c23b982ae1f067ab",
+  "sitePublicationRun": 38156197477,
+  "sitePublication": "success",
+  "assets": [
+    {
+      "path": "maca-assistant-v2-unified.js",
+      "http": 200,
+      "sha256": "577be12ef480e1561a8acabff2a72476eb92a302095dbcb91a64d73f60b05222",
+      "matchesCandidate": true
+    },
+    {
+      "path": "corpus-v2-browser-entry.js",
+      "http": 200,
+      "sha256": "c88e1ee779236f6fc87fc0856b546818895f47533e4d9ff94b0aceee0fd2ed06",
+      "matchesCandidate": true
+    }
+  ],
+  "browser": [
+    {
+      "question": "Comment faire face à l’annonce et à l’après-diagnostic d’Alzheimer ?",
+      "result": "Réponse non validée",
+      "message": "Je n’ai pas pu produire une réponse suffisamment fidèle aux sources.",
+      "suggestion": "fiche.html?id=alzheimer-apres-diagnostic"
+    },
+    {
+      "question": "Comment gérer le diabète au quotidien selon son traitement ?",
+      "result": "Réponse issue du corpus MACA",
+      "sources": [
+        "diabete-organisation-traitement",
+        "diabete-malade-mange-moins-traitement"
+      ]
+    }
+  ],
+  "workerPublicationRun": 38156197469,
+  "workerReady": {
+    "service": "maca-assistant-v2",
+    "public_ready": true,
+    "artifact_version": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c"
+  },
+  "workerExpectedRevision": "2026-10-11-resilience2",
+  "workerDeployed": false
+}
