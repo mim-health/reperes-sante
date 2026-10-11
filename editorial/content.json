@@ -193,7 +193,7 @@
       "url": "mag-daily-brulure-20261010.html",
       "format": "article",
       "category": "Actualité santé",
-      "theme": "SANTÉ AU QUOTIDIEN",
+      "theme": "Santé au quotidien",
       "keywords": [
         "SANTÉ AU QUOTIDIEN",
         "Je me suis brûlé à la maison : que faire immédiatement ?"
@@ -230,7 +230,7 @@
       "url": "vrai-faux-angine-antibiotiques.html",
       "format": "vrai-faux",
       "category": "Prévention",
-      "theme": "Prévention",
+      "theme": "Santé au quotidien",
       "keywords": [
         "Prévention"
       ],
@@ -269,7 +269,7 @@
       "url": "mag-daily-sante-mentale-9-20261010.html",
       "format": "article",
       "category": "Actualité santé",
-      "theme": "9 %",
+      "theme": "Santé mentale",
       "keywords": [
         "9 %",
         "9 % des pays interrogés ont entièrement adopté des soins psychiatriques communautaires"
@@ -306,7 +306,7 @@
       "url": "mag-daily-hpv-grossesse-20261010.html",
       "format": "article",
       "category": "Actualité santé",
-      "theme": "HPV",
+      "theme": "Prévention & dépistage",
       "keywords": [
         "HPV",
         "Vaccination HPV avant grossesse : pas de signal défavorable identifié"
@@ -343,7 +343,7 @@
       "url": "mag-daily-roxadustat-20261010.html",
       "format": "article",
       "category": "Actualité santé",
-      "theme": "CARDIOLOGIE",
+      "theme": "Cœur & circulation",
       "keywords": [
         "CARDIOLOGIE",
         "Après un infarctus, un traitement expérimental n'a pas atteint son objectif principal"
@@ -380,7 +380,7 @@
       "url": "mag-daily-infections-cancer-20261010.html",
       "format": "article",
       "category": "Actualité santé",
-      "theme": "CANCER",
+      "theme": "Cancer",
       "keywords": [
         "CANCER",
         "Une part des cancers mondiaux est attribuable aux infections"
@@ -561,7 +561,7 @@
       "url": "mag-daily-entorse-20261011.html",
       "format": "article",
       "category": "Actualité santé",
-      "theme": "CHEVILLE",
+      "theme": "Os & articulations",
       "keywords": [
         "CHEVILLE",
         "Cheville tordue : entorse ou fracture ?"
@@ -598,7 +598,7 @@
       "url": "vrai-faux-deux-litres-eau.html",
       "format": "vrai-faux",
       "category": "Prévention",
-      "theme": "Faux",
+      "theme": "Santé au quotidien",
       "keywords": [
         "Faux"
       ],
@@ -633,7 +633,7 @@
       "url": "mag-daily-grippe-20261011.html",
       "format": "article",
       "category": "Actualité santé",
-      "theme": "115 000",
+      "theme": "Prévention & dépistage",
       "keywords": [
         "115 000",
         "Passages aux urgences pour syndrome grippal en 2025–2026"
@@ -669,7 +669,7 @@
       "url": "mag-daily-sepsis-ia-20261011.html",
       "format": "article",
       "category": "Actualité santé",
-      "theme": "PÉDIATRIE",
+      "theme": "Enfants & parents",
       "keywords": [
         "PÉDIATRIE",
         "Sepsis pédiatrique : les limites d’une alerte par intelligence artificielle"
@@ -705,7 +705,7 @@
       "url": "mag-daily-anticoagulants-20261011.html",
       "format": "article",
       "category": "Actualité santé",
-      "theme": "CARDIOLOGIE",
+      "theme": "Cœur & circulation",
       "keywords": [
         "CARDIOLOGIE",
         "Anticoagulants en institution : un bénéfice et un risque à mettre en balance"
@@ -741,7 +741,7 @@
       "url": "mag-daily-schizophrenie-20261011.html",
       "format": "article",
       "category": "Actualité santé",
-      "theme": "SANTÉ MENTALE",
+      "theme": "Santé mentale",
       "keywords": [
         "SANTÉ MENTALE",
         "Schizophrénie : une intervention numérique en complément des soins"
@@ -820,7 +820,7 @@
       "url": "video-proteines-v8.html",
       "format": "video",
       "category": "Décryptage",
-      "theme": "Décryptage",
+      "theme": "Alimentation",
       "keywords": [
         "protéines",
         "alimentation",
@@ -861,7 +861,7 @@
       "url": "video-max-cortisol.html",
       "format": "video",
       "category": "Décryptage",
-      "theme": "Décryptage",
+      "theme": "Santé au quotidien",
       "keywords": [
         "cortisol",
         "stress",
@@ -892,7 +892,7 @@
       "url": "video-max-sciatique-irm.html",
       "format": "video",
       "category": "Prévention",
-      "theme": "Prévention",
+      "theme": "Os & articulations",
       "keywords": [
         "sciatique",
         "IRM",
