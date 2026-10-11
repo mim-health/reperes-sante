@@ -10,12 +10,12 @@ files.forEach(run);run('corpus-canonicalizer.js');s.MACA_BUILD_CANONICAL_CORPUS(
 const exported=JSON.parse(fs.readFileSync(path.join(root,'assistant-v2/corpus.json'),'utf8'));
 assert.deepEqual(exported.cards.filter(c=>c.metadata.sourceType!=='magazine').map(c=>c.id),Array.from(s.MACA_CANONICAL_CORPUS,c=>c.id));
 for(const id of ['piqure-guepe-abeille-que-faire','brulure-domestique-premiers-gestes','morsure-chien-chat-que-faire']){
-  const card=exported.cards.find(c=>c.id===id);assert(card,id);assert.equal(card.metadata.validationStatus,'VALIDATED');assert(card.content.answer);assert(card.sources.length);
+  const card=exported.cards.find(c=>c.id===id);assert(card,id);assert.equal(card.metadata.validationStatus,'VALIDATED');assert(card.content.answer);assert(card.sources.length);assert.equal(card.url,'https://macasante.fr/fiche.html?id='+encodeURIComponent(id));
 }
 ['maca-category-access.js','search-v2-referential-p0.js','search-v2-engine.js','search-v2-pqm-retrieval-fix.js','search-v2-tests-p0.js','search-v2-regression-runner.js'].forEach(run);
 const report=s.MACA_SEARCH_V2_RUN_REGRESSION();
 assert(report.total>=132);assert.equal(report.failed,0,JSON.stringify(report.failures));
-['search-v2-corpus-fallback.js','search-v2-fatigue-fix.js','search-v2-harcelement-fix.js','search-v2-retrouvabilite-pilot-fix.js','search-v2-pqm-retrieval-fix.js'].forEach(run);
+['ipp-retrieval-policy.js','search-v2-corpus-fallback.js','search-v2-fatigue-fix.js','search-v2-harcelement-fix.js','search-v2-retrouvabilite-pilot-fix.js','search-v2-pqm-retrieval-fix.js'].forEach(run);
 // Add a validated fixture only through the manifest, without touching the exporter or Worker.
 const temp=fs.mkdtempSync(path.join(os.tmpdir(),'maca-canonical-'));
 try{

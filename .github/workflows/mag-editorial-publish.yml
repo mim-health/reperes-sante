@@ -9,6 +9,10 @@ on:
       - 'scripts/test-mag-editorial.js'
       - 'scripts/publish-mag-generated.sh'
       - 'scripts/verify-mag-public.js'
+      - 'corpus-v2-browser-entry.js'
+      - 'ipp-retrieval-policy.js'
+      - 'search-v2-corpus-fallback.js'
+      - 'scripts/test-ipp-retrieval.js'
       - '.github/workflows/mag-editorial-publish.yml'
   workflow_dispatch:
 permissions:
@@ -42,6 +46,8 @@ jobs:
           node scripts/test-magazine-videos.js
           node scripts/build-assistant-v2-corpus.js
           node scripts/test-assistant-v2-canonical.js
+          node scripts/test-ipp-retrieval.js
+          node scripts/test-assistant-v2-grounding.js
           node scripts/test-assistant-v2-patient-language.js
       - name: Commit generated site without overwriting source
         run: bash scripts/publish-mag-generated.sh

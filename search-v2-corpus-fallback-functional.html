@@ -58,7 +58,8 @@ window.MACA_CORPUS_READY
 .then(()=>{let canonical=window.MACA_BUILD_CANONICAL_CORPUS();if(typeof window.MACA_ADD_MULTI_SECTIONS==='function')canonical=window.MACA_ADD_MULTI_SECTIONS(canonical);window.MACA_CANONICAL_CORPUS=canonical.slice();window.healthQuestions=canonical.slice();return load('corpus-integrity.js?v=20260831-1');})
 .then(()=>load('search-v2-referential-p0.js?v=20260901-lot5'))
 .then(()=>load('search-v2-engine.js?v=20260831-p0'))
-.then(()=>load('search-v2-corpus-fallback.js?v=20260901-4'))
+.then(()=>load('ipp-retrieval-policy.js?v=20261011-1'))
+.then(()=>load('search-v2-corpus-fallback.js?v=20261011-ipp1'))
 .then(()=>{
  const results=cases.map(([query,expected])=>{const actual=window.MACA_SEARCH_V2.rank(query).map(x=>x.q.id);return {query,expected,actual,ok:JSON.stringify(actual)===JSON.stringify(expected)};});
  const failed=results.filter(x=>!x.ok);out.textContent=JSON.stringify({ready:true,total:results.length,failed:failed.length,success:failed.length===0,corpusCount:window.healthQuestions.length,engine:window.MACA_SEARCH_V2.version,results},null,2);

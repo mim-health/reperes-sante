@@ -12,6 +12,8 @@ on:
       - 'scripts/build-assistant-v2-*.js'
       - 'scripts/publish-assistant-v2.sh'
       - 'scripts/test-assistant-v2-*.js'
+      - 'scripts/test-ipp-retrieval.js'
+      - 'ipp-retrieval-policy.js'
       - 'assistant-v2/patient-language-*.js'
       - 'assistant-v2/patient-language-*.json'
       - '.github/workflows/assistant-v2-auto-publish.yml'
@@ -96,7 +98,10 @@ jobs:
         run: node scripts/test-assistant-v2-patient-language.js
 
       - name: Run public search regression
-        run: node scripts/test-assistant-v2-canonical.js
+        run: |
+          node scripts/test-assistant-v2-canonical.js
+          node scripts/test-ipp-retrieval.js
+          node scripts/test-assistant-v2-grounding.js
 
       - name: Publish immutable version and atomic latest pointer
         if: github.ref_name == 'feat/v0-magazine'

@@ -37,6 +37,9 @@ function selectValidatedLanguageMatch(question,cards,registry){
   const cardList=Array.isArray(cards)?cards:[];
   const byId=new Map(cardList.map(card=>[card.id,card]));
 
+  const ippId=globalThis.MACA_IPP_RETRIEVAL?.target(question);
+  if(ippId&&byId.has(ippId))return {targetId:ippId,key:'ipp-intent',level:2,matchType:'ipp-intent',matched:q};
+
   const titleMatches=cardList.filter(card=>normalizePatientLanguage(card.title)===q);
   if(titleMatches.length===1){
     return {targetId:titleMatches[0].id,key:'canonical-title',level:1,matchType:'exact-title',matched:q};

@@ -147,7 +147,8 @@ function build() {
     const detail = cleanString(card.detail || card.explanation);
     const usefulInfo = cleanString(card.usefulInfo || card.useful || card.practical);
     const watch = cleanString(card.watch || card.vigilance);
-    const url = cleanString(card.url);
+    // card.url can be a scientific reference, not the public MACA document.
+    const url = `https://macasante.fr/fiche.html?id=${encodeURIComponent(id)}`;
     const sources = cleanSources(card);
     const patientAliases = aliasesForCard(patientLanguageAliases, id);
 

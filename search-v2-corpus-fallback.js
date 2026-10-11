@@ -106,6 +106,9 @@
     if(exact)return exact;
     const first=baseResolve(query,options);
     if(isExplicitAbstention(first))return first;
+    const ippId=root.MACA_IPP_RETRIEVAL?.target(query);
+    const ipp=ippId&&corpus().find(card=>card.id===ippId&&!excludedIds().has(card.id));
+    if(ipp)return resultFor(ipp,base.detectContext?base.detectContext(query,options):new Set(),'ipp-validated-intent',1450,norm(query),'ipp-intent');
     const metadata=metadataResolve(query,options);
     if(first&&first.status==='match'){
       if(mayOverrideBase(metadata,query))return metadata;

@@ -1,0 +1,49 @@
+name: Assistant V2 verified Worker publication
+on:
+  push:
+    branches: [feat/v0-magazine]
+    paths:
+      - 'assistant-v2/cloudflare-worker-public.js'
+      - 'assistant-v2/grounding-contract.js'
+      - 'assistant-v2/patient-language-retrieval.js'
+      - 'ipp-retrieval-policy.js'
+      - 'scripts/test-assistant-v2-grounding.js'
+      - 'scripts/test-assistant-v2-correctives-live.js'
+      - '.github/workflows/assistant-v2-worker-publish.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: assistant-v2-worker-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify source contract and retrieval
+        run: |
+          node --check assistant-v2/cloudflare-worker-public.js
+          node scripts/build-assistant-v2-corpus.js
+          node scripts/test-ipp-retrieval.js
+          node scripts/test-assistant-v2-grounding.js
+          node scripts/test-assistant-v2-canonical.js
+          node scripts/test-assistant-v2-patient-language.js
+      - name: Check deployment configuration
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            echo '::error::Worker deployment blocked: configure CLOUDFLARE_API_TOKEN with permission to edit this Worker. Source checks passed; production Worker is unchanged.'
+            exit 1
+          fi
+      - name: Deploy verified Worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@4.149.0 deploy --config assistant-v2/wrangler.public.toml
+      - name: Verify production revision and source fidelity cases
+        run: node scripts/test-assistant-v2-correctives-live.js
