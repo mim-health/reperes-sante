@@ -1,0 +1,315 @@
+{
+  "generatedAt": "2026-10-11T16:20:19.774Z",
+  "corpusVersion": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c",
+  "anomalies": [
+    {
+      "question": "Puis-je pratiquer une activité physique avec une MICI ?",
+      "intent": "ACTIVITE_PHYSIQUE_MICI",
+      "expected": "Réponse uniquement si corpus pertinent ; manque éditorial à examiner",
+      "got": {
+        "http": 200,
+        "status": "category_only",
+        "error": null,
+        "grounding": "not_applicable",
+        "selected": [
+          "insuffisance-cardiaque-activite-physique",
+          "mici-alimentation-poussee",
+          "apnee-sommeil-exercice-physique-20260826",
+          "activite-physique-traitement-cancer",
+          "senior-endurance-force-equilibre"
+        ]
+      },
+      "version": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c",
+      "classification": "REVIEW_COVERAGE",
+      "medicalChange": "No automatic change"
+    },
+    {
+      "question": "Comment faire face à l’annonce et à l’après-diagnostic d’Alzheimer ?",
+      "intent": "APRES_DIAGNOSTIC_ALZHEIMER",
+      "expected": "Réponse documentaire si corpus pertinent, sinon abstention explicite sans erreur technique",
+      "got": {
+        "http": 200,
+        "status": "abstain",
+        "error": null,
+        "grounding": "contract_rejected",
+        "selected": [
+          "alzheimer-apres-diagnostic",
+          "alzheimer-entree-etablissement",
+          "alzheimer-consultation-memoire",
+          "alzheimer-aidants-droits-repit",
+          "alzheimer-agitation-agressivite"
+        ]
+      },
+      "version": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c",
+      "classification": "REVIEW_COVERAGE",
+      "medicalChange": "No automatic change"
+    },
+    {
+      "question": "Quelles complications du diabète faut-il surveiller ?",
+      "intent": "COMPLICATIONS_DIABETE",
+      "expected": "Réponse documentaire si corpus pertinent, sinon abstention explicite sans erreur technique",
+      "got": {
+        "http": 200,
+        "status": "abstain",
+        "error": null,
+        "grounding": "rejected",
+        "selected": [
+          "diabete-complications-suivi",
+          "diabete-pied-prevention",
+          "diabete-malade-mange-moins-traitement",
+          "diabete-fortes-chaleurs",
+          "acidocetose-diabetique-symptomes-prevention"
+        ]
+      },
+      "version": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c",
+      "classification": "REVIEW_COVERAGE",
+      "medicalChange": "No automatic change"
+    },
+    {
+      "question": "Qui peut être reconnu comme proche aidant ?",
+      "intent": "DROITS_AIDANT_ALZHEIMER",
+      "expected": "Réponse documentaire si corpus pertinent, sinon abstention explicite sans erreur technique",
+      "got": {
+        "http": 200,
+        "status": "abstain",
+        "error": null,
+        "grounding": "rejected",
+        "selected": [
+          "alzheimer-aidants-droits-repit",
+          "aides-domicile-personne-agee-2026-08-27",
+          "alzheimer-rester-seul-domicile",
+          "alzheimer-apres-diagnostic",
+          "alzheimer-refus-soins-repas"
+        ]
+      },
+      "version": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c",
+      "classification": "REVIEW_COVERAGE",
+      "medicalChange": "No automatic change"
+    },
+    {
+      "question": "Comment gérer une grossesse avec une MICI ?",
+      "intent": "GROSSESSE_MICI",
+      "expected": "Réponse uniquement si corpus pertinent ; manque éditorial à examiner",
+      "got": {
+        "http": 200,
+        "status": "category_only",
+        "error": null,
+        "grounding": "not_applicable",
+        "selected": [
+          "mici-alimentation-poussee",
+          "cmv-grossesse",
+          "grossesse-alimentation-activite-physique",
+          "contraception-urgence",
+          "desogestrel-meningiome-risque"
+        ]
+      },
+      "version": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c",
+      "classification": "REVIEW_COVERAGE",
+      "medicalChange": "No automatic change"
+    },
+    {
+      "question": "Comment gérer le diabète au quotidien selon son traitement ?",
+      "intent": "QUOTIDIEN_TRAITEMENT_DIABETE",
+      "expected": "Réponse documentaire si corpus pertinent, sinon abstention explicite sans erreur technique",
+      "got": {
+        "http": 503,
+        "status": "technical_error",
+        "error": "assistant_temporarily_unavailable",
+        "grounding": null,
+        "selected": []
+      },
+      "version": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c",
+      "classification": "FAIL_TECHNICAL",
+      "medicalChange": "No automatic change"
+    },
+    {
+      "question": "Comment concilier MICI, sexualité et désir d’enfant ?",
+      "intent": "SEXUALITE_DESIR_ENFANT_MICI",
+      "expected": "Réponse uniquement si corpus pertinent ; manque éditorial à examiner",
+      "got": {
+        "http": 200,
+        "status": "category_only",
+        "error": null,
+        "grounding": "not_applicable",
+        "selected": [
+          "mici-alimentation-poussee",
+          "cmv-grossesse",
+          "projet-grossesse-quand-consulter",
+          "antidepresseurs-effets-sexualite",
+          "desogestrel-meningiome-risque"
+        ]
+      },
+      "version": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c",
+      "classification": "REVIEW_COVERAGE",
+      "medicalChange": "No automatic change"
+    },
+    {
+      "question": "Quand consulter un diabétologue ?",
+      "intent": "SUIVI_DIABETOLOGUE",
+      "expected": "Réponse documentaire si corpus pertinent, sinon abstention explicite sans erreur technique",
+      "got": {
+        "http": 200,
+        "status": "abstain",
+        "error": null,
+        "grounding": "rejected",
+        "selected": [
+          "diabete-complications-suivi",
+          "diabete-type-2-depistage-complications",
+          "diabete-pied-prevention",
+          "diabete-restaurant-repas-amis",
+          "diabete-organisation-traitement"
+        ]
+      },
+      "version": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c",
+      "classification": "REVIEW_COVERAGE",
+      "medicalChange": "No automatic change"
+    },
+    {
+      "question": "Faut-il signaler son diabète à un futur employeur ?",
+      "intent": "TRAVAIL_DIABETE_DIVULGATION",
+      "expected": "Réponse documentaire si corpus pertinent, sinon abstention explicite sans erreur technique",
+      "got": {
+        "http": 200,
+        "status": "abstain",
+        "error": null,
+        "grounding": "rejected",
+        "selected": [
+          "maladie-chronique-travail-confidentialite",
+          "diabete-type-2-depistage-complications",
+          "mag-sfe-2026-diabete-type-1-diagnostic-precoce",
+          "diabete-complications-suivi",
+          "diabete-restaurant-repas-amis"
+        ]
+      },
+      "version": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c",
+      "classification": "REVIEW_COVERAGE",
+      "medicalChange": "No automatic change"
+    },
+    {
+      "question": "Faut-il parler de sa MICI au travail ?",
+      "intent": "TRAVAIL_MICI_DIVULGATION",
+      "expected": "Réponse documentaire si corpus pertinent, sinon abstention explicite sans erreur technique",
+      "got": {
+        "http": 200,
+        "status": "abstain",
+        "error": null,
+        "grounding": "contract_rejected",
+        "selected": [
+          "maladie-chronique-travail-confidentialite",
+          "mici-alimentation-poussee",
+          "insuffisance-cardiaque-travail",
+          "anxiete-adulte",
+          "desogestrel-meningiome-risque"
+        ]
+      },
+      "version": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c",
+      "classification": "REVIEW_COVERAGE",
+      "medicalChange": "No automatic change"
+    },
+    {
+      "question": "Comment vivre et s’organiser après l’annonce d’un diagnostic d’Alzheimer ?",
+      "intent": "ALZ_APRES_DIAGNOSTIC",
+      "expected": "Réponse documentaire si corpus pertinent, sinon abstention explicite sans erreur technique",
+      "got": {
+        "http": 503,
+        "status": "technical_error",
+        "error": "assistant_temporarily_unavailable",
+        "grounding": null,
+        "selected": []
+      },
+      "version": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c",
+      "classification": "FAIL_TECHNICAL",
+      "medicalChange": "No automatic change"
+    },
+    {
+      "question": "Comment le cancer et ses traitements peuvent-ils modifier la sexualité et à qui en parler ?",
+      "intent": "CAN_SEXUALITE",
+      "expected": "Réponse documentaire si corpus pertinent, sinon abstention explicite sans erreur technique",
+      "got": {
+        "http": 200,
+        "status": "abstain",
+        "error": null,
+        "grounding": "rejected",
+        "selected": [
+          "cancer-traitements-sexualite",
+          "cancer-vie-apres-traitements",
+          "antidepresseurs-effets-sexualite",
+          "mag-daily-fertilite-cancer-enfant-20261010",
+          "activite-physique-traitement-cancer"
+        ]
+      },
+      "version": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c",
+      "classification": "REVIEW_COVERAGE",
+      "medicalChange": "No automatic change"
+    },
+    {
+      "question": "Comment préparer le maintien ou le retour au travail pendant ou après un cancer ?",
+      "intent": "CAN_TRAVAIL",
+      "expected": "Réponse documentaire si corpus pertinent, sinon abstention explicite sans erreur technique",
+      "got": {
+        "http": 200,
+        "status": "abstain",
+        "error": null,
+        "grounding": "contract_rejected",
+        "selected": [
+          "cancer-reprise-travail",
+          "cancer-vie-apres-traitements",
+          "activite-physique-traitement-cancer",
+          "cancer-traitements-sexualite",
+          "cancer-sein-surveillance-recidive"
+        ]
+      },
+      "version": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c",
+      "classification": "REVIEW_COVERAGE",
+      "medicalChange": "No automatic change"
+    },
+    {
+      "question": "Que se passe-t-il après la fin des traitements et comment reprendre une vie quotidienne ?",
+      "intent": "CAN_APRES",
+      "expected": "Réponse documentaire si corpus pertinent, sinon abstention explicite sans erreur technique",
+      "got": {
+        "http": 200,
+        "status": "abstain",
+        "error": null,
+        "grounding": "contract_rejected",
+        "selected": [
+          "cancer-vie-apres-traitements",
+          "cancer-reprise-travail",
+          "alzheimer-apres-diagnostic",
+          "cancer-remission-guerison",
+          "antidepresseurs-delai-duree-arret"
+        ]
+      },
+      "version": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c",
+      "classification": "REVIEW_COVERAGE",
+      "medicalChange": "No automatic change"
+    },
+    {
+      "question": "Comment gérer plusieurs médicaments et leurs effets indésirables dans l’insuffisance cardiaque ?",
+      "intent": "IC_MEDICAMENTS",
+      "expected": "Réponse documentaire si corpus pertinent, sinon abstention explicite sans erreur technique",
+      "got": {
+        "http": 503,
+        "status": "technical_error",
+        "error": "assistant_temporarily_unavailable",
+        "grounding": null,
+        "selected": []
+      },
+      "version": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c",
+      "classification": "FAIL_TECHNICAL",
+      "medicalChange": "No automatic change"
+    },
+    {
+      "question": "Que faire après une piqûre de guêpe ?",
+      "expected": "answer après récupération du corpus actif",
+      "got": {
+        "http": 200,
+        "status": "abstain"
+      },
+      "version": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c",
+      "classification": "FAIL_INTERMITTENT_COVERAGE",
+      "evidence": "https://github.com/mim-health/reperes-sante/actions/runs/38155086163",
+      "note": "Premier cas voisin answer puis ce cas abstain ; ne pas affaiblir le test pour masquer cet échec."
+    }
+  ]
+}

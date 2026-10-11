@@ -1,0 +1,466 @@
+{
+  "generatedAt": "2026-10-11T16:20:57.583Z",
+  "corpusVersion": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c",
+  "results": [
+    {
+      "id": "mici-alimentation-poussee",
+      "url": "https://macasante.fr/fiche.html?id=mici-alimentation-poussee",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "diabete-activite-physique-glycemie",
+      "url": "https://macasante.fr/fiche.html?id=diabete-activite-physique-glycemie",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "diabete-restaurant-repas-amis",
+      "url": "https://macasante.fr/fiche.html?id=diabete-restaurant-repas-amis",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "diabete-alcool",
+      "url": "https://macasante.fr/fiche.html?id=diabete-alcool",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "alzheimer-conduite-automobile",
+      "url": "https://macasante.fr/fiche.html?id=alzheimer-conduite-automobile",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "alzheimer-apres-diagnostic",
+      "url": "https://macasante.fr/fiche.html?id=alzheimer-apres-diagnostic",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "alzheimer-entree-etablissement",
+      "url": "https://macasante.fr/fiche.html?id=alzheimer-entree-etablissement",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "alzheimer-rester-seul-domicile",
+      "url": "https://macasante.fr/fiche.html?id=alzheimer-rester-seul-domicile",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "alzheimer-aidants-droits-repit",
+      "url": "https://macasante.fr/fiche.html?id=alzheimer-aidants-droits-repit",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "fatigue-causes",
+      "url": "https://macasante.fr/fiche.html?id=fatigue-causes",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "diabete-pied-prevention",
+      "url": "https://macasante.fr/fiche.html?id=diabete-pied-prevention",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "diabete-complications-suivi",
+      "url": "https://macasante.fr/fiche.html?id=diabete-complications-suivi",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "alzheimer-refus-soins-repas",
+      "url": "https://macasante.fr/fiche.html?id=alzheimer-refus-soins-repas",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "alzheimer-deambulation-nuit",
+      "url": "https://macasante.fr/fiche.html?id=alzheimer-deambulation-nuit",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "alzheimer-rentrer-chez-soi",
+      "url": "https://macasante.fr/fiche.html?id=alzheimer-rentrer-chez-soi",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "diabete-voyage-avion-decalage-horaire",
+      "url": "https://macasante.fr/fiche.html?id=diabete-voyage-avion-decalage-horaire",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "maladie-chronique-voyage",
+      "url": "https://macasante.fr/fiche.html?id=maladie-chronique-voyage",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "voyage-trousse-pharmacie",
+      "url": "https://macasante.fr/fiche.html?id=voyage-trousse-pharmacie",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "aides-domicile-personne-agee-2026-08-27",
+      "url": "https://macasante.fr/fiche.html?id=aides-domicile-personne-agee-2026-08-27",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "alzheimer-traitements-reconnus",
+      "url": "https://macasante.fr/fiche.html?id=alzheimer-traitements-reconnus",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "alzheimer-consultation-memoire",
+      "url": "https://macasante.fr/fiche.html?id=alzheimer-consultation-memoire",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "chimiotherapie-effets-indesirables-signaux-alerte",
+      "url": "https://macasante.fr/fiche.html?id=chimiotherapie-effets-indesirables-signaux-alerte",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "activite-physique-traitement-cancer",
+      "url": "https://macasante.fr/fiche.html?id=activite-physique-traitement-cancer",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "cancer-vie-apres-traitements",
+      "url": "https://macasante.fr/fiche.html?id=cancer-vie-apres-traitements",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "perte-poids-involontaire",
+      "url": "https://macasante.fr/fiche.html?id=perte-poids-involontaire",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "cancer-immunotherapie-comment-ca-marche",
+      "url": "https://macasante.fr/fiche.html?id=cancer-immunotherapie-comment-ca-marche",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "insuffisance-cardiaque-signes-aggravation",
+      "url": "https://macasante.fr/fiche.html?id=insuffisance-cardiaque-signes-aggravation",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "insuffisance-cardiaque-surveillance-poids",
+      "url": "https://macasante.fr/fiche.html?id=insuffisance-cardiaque-surveillance-poids",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "essoufflement-adulte",
+      "url": "https://macasante.fr/fiche.html?id=essoufflement-adulte",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "prise-poids-sans-raison",
+      "url": "https://macasante.fr/fiche.html?id=prise-poids-sans-raison",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "insuffisance-cardiaque-sel-boissons",
+      "url": "https://macasante.fr/fiche.html?id=insuffisance-cardiaque-sel-boissons",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "insuffisance-cardiaque-activite-physique",
+      "url": "https://macasante.fr/fiche.html?id=insuffisance-cardiaque-activite-physique",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "insuffisance-cardiaque-voyage-avion",
+      "url": "https://macasante.fr/fiche.html?id=insuffisance-cardiaque-voyage-avion",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "insuffisance-cardiaque-travail",
+      "url": "https://macasante.fr/fiche.html?id=insuffisance-cardiaque-travail",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "sexualite-apres-infarctus-maladie-cardiaque",
+      "url": "https://macasante.fr/fiche.html?id=sexualite-apres-infarctus-maladie-cardiaque",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "hyperaldosteronisme-primaire-hypertension",
+      "url": "https://macasante.fr/fiche.html?id=hyperaldosteronisme-primaire-hypertension",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "acidocetose-diabetique-symptomes-prevention",
+      "url": "https://macasante.fr/fiche.html?id=acidocetose-diabetique-symptomes-prevention",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "mag-sfe-2026-diabete-type-1-diagnostic-precoce",
+      "url": "https://macasante.fr/article-sfe-2026-diabete-type-1-diagnostic-precoce.html",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": true,
+      "staticFicheHttp": null,
+      "pass": true
+    },
+    {
+      "id": "mag-sfe-2026-hypertension-cause-hormonale",
+      "url": "https://macasante.fr/article-sfe-2026-hypertension-cause-hormonale.html",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": true,
+      "staticFicheHttp": null,
+      "pass": true
+    },
+    {
+      "id": "mag-medecine-preventive-predictive-2026-10-11",
+      "url": "https://macasante.fr/article-medecine-preventive-predictive-2026-10-11.html",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": true,
+      "staticFicheHttp": null,
+      "pass": true
+    },
+    {
+      "id": "mag-daily-galleri-20261011",
+      "url": "https://macasante.fr/article-depistage-multicancer-galleri.html",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": true,
+      "staticFicheHttp": null,
+      "pass": true
+    },
+    {
+      "id": "arreter-omeprazole-pantoprazole-ipp",
+      "url": "https://macasante.fr/fiche.html?id=arreter-omeprazole-pantoprazole-ipp",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "ipp-long-cours-omeprazole",
+      "url": "https://macasante.fr/fiche.html?id=ipp-long-cours-omeprazole",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "obesite-nouveaux-traitements-securite",
+      "url": "https://macasante.fr/fiche.html?id=obesite-nouveaux-traitements-securite",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "douleur-thoracique-coeur",
+      "url": "https://macasante.fr/fiche.html?id=douleur-thoracique-coeur",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    },
+    {
+      "id": "cancer-biopsie-liquide-ctdna",
+      "url": "https://macasante.fr/fiche.html?id=cancer-biopsie-liquide-ctdna",
+      "http": 200,
+      "knownValidatedDocument": true,
+      "expectedUrl": true,
+      "magTitleFound": null,
+      "staticFicheHttp": 200,
+      "pass": true
+    }
+  ]
+}

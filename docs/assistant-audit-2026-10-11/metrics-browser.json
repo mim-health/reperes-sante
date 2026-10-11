@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "mode": "local-manual-export",
+  "events": [
+    {
+      "event": "open",
+      "elapsedSeconds": 15
+    },
+    {
+      "event": "question_sent",
+      "elapsedSeconds": 16
+    },
+    {
+      "event": "answer",
+      "elapsedSeconds": 19,
+      "durationMs": 3126,
+      "corpusVersion": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c"
+    },
+    {
+      "event": "feedback",
+      "elapsedSeconds": 51,
+      "value": "not_useful",
+      "corpusVersion": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c"
+    },
+    {
+      "event": "source_click",
+      "elapsedSeconds": 63,
+      "sourceType": "magazine",
+      "corpusVersion": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c"
+    }
+  ]
+}

@@ -1,0 +1,308 @@
+[
+  {
+    "intent": "ACTIVITE_PHYSIQUE_MICI",
+    "group": "MICI",
+    "question": "Puis-je pratiquer une activité physique avec une MICI ?",
+    "historical_coverage": "ABSENT"
+  },
+  {
+    "intent": "ALIMENTATION_MICI_DIVERSIFICATION",
+    "group": "MICI",
+    "question": "Comment diversifier à nouveau son alimentation avec une MICI ?",
+    "historical_coverage": "COUVERT"
+  },
+  {
+    "intent": "ALIMENTATION_MICI_PLAISIR",
+    "group": "MICI",
+    "question": "Comment conserver une alimentation-plaisir avec une MICI ?",
+    "historical_coverage": "COUVERT"
+  },
+  {
+    "intent": "ALIMENTATION_MICI_POUSSEE",
+    "group": "MICI",
+    "question": "Que manger pendant une poussée de MICI ?",
+    "historical_coverage": "COUVERT"
+  },
+  {
+    "intent": "ALIMENTATION_SPORT_DIABETE",
+    "group": "Diabète",
+    "question": "Comment adapter l’alimentation à l’activité physique avec un diabète ?",
+    "historical_coverage": "COUVERT"
+  },
+  {
+    "intent": "ALIMENTS_INTERDITS_DIABETE",
+    "group": "Diabète",
+    "question": "Y a-t-il des aliments interdits en cas de diabète ?",
+    "historical_coverage": "ABSENT"
+  },
+  {
+    "intent": "APRES_DIAGNOSTIC_ALZHEIMER",
+    "group": "Alzheimer",
+    "question": "Comment faire face à l’annonce et à l’après-diagnostic d’Alzheimer ?",
+    "historical_coverage": "ABSENT"
+  },
+  {
+    "intent": "COMPLICATIONS_DIABETE",
+    "group": "Diabète",
+    "question": "Quelles complications du diabète faut-il surveiller ?",
+    "historical_coverage": "COUVERT"
+  },
+  {
+    "intent": "CONDUITE_ALZHEIMER",
+    "group": "Alzheimer",
+    "question": "Quand et comment arrêter la conduite avec Alzheimer ?",
+    "historical_coverage": "COUVERT"
+  },
+  {
+    "intent": "DROITS_AIDANT_ALZHEIMER",
+    "group": "Alzheimer",
+    "question": "Qui peut être reconnu comme proche aidant ?",
+    "historical_coverage": "ABSENT"
+  },
+  {
+    "intent": "ENTREE_ETABLISSEMENT_ALZHEIMER",
+    "group": "Alzheimer",
+    "question": "Quand envisager une entrée en établissement pour Alzheimer ?",
+    "historical_coverage": "COUVERT"
+  },
+  {
+    "intent": "FATIGUE_TRAITEMENTS_MICI",
+    "group": "MICI",
+    "question": "La fatigue peut-elle être liée aux traitements de la MICI ?",
+    "historical_coverage": "ABSENT"
+  },
+  {
+    "intent": "GLYCEMIE_SPORT_DIABETE",
+    "group": "Diabète",
+    "question": "Comment gérer glycémie/hypoglycémie avant une activité physique ?",
+    "historical_coverage": "COUVERT"
+  },
+  {
+    "intent": "GROSSESSE_MICI",
+    "group": "MICI",
+    "question": "Comment gérer une grossesse avec une MICI ?",
+    "historical_coverage": "ABSENT"
+  },
+  {
+    "intent": "PIED_DIABETIQUE",
+    "group": "Diabète",
+    "question": "Comment prévenir et repérer les complications du pied diabétique ?",
+    "historical_coverage": "COUVERT"
+  },
+  {
+    "intent": "QUOTIDIEN_TRAITEMENT_DIABETE",
+    "group": "Diabète",
+    "question": "Comment gérer le diabète au quotidien selon son traitement ?",
+    "historical_coverage": "ABSENT"
+  },
+  {
+    "intent": "REFUS_ALIMENTATION_ALZHEIMER",
+    "group": "Alzheimer",
+    "question": "Que faire si une personne Alzheimer refuse de manger ?",
+    "historical_coverage": "COUVERT"
+  },
+  {
+    "intent": "REFUS_HABILLAGE_ALZHEIMER",
+    "group": "Alzheimer",
+    "question": "Que faire si une personne Alzheimer refuse de s’habiller ?",
+    "historical_coverage": "COUVERT"
+  },
+  {
+    "intent": "REFUS_TOILETTE_ALZHEIMER",
+    "group": "Alzheimer",
+    "question": "Que faire si une personne Alzheimer refuse la toilette ?",
+    "historical_coverage": "COUVERT"
+  },
+  {
+    "intent": "SEXUALITE_DESIR_ENFANT_MICI",
+    "group": "MICI",
+    "question": "Comment concilier MICI, sexualité et désir d’enfant ?",
+    "historical_coverage": "ABSENT"
+  },
+  {
+    "intent": "SOMMEIL_ALZHEIMER",
+    "group": "Alzheimer",
+    "question": "Pourquoi Alzheimer perturbe-t-il le sommeil ?",
+    "historical_coverage": "ABSENT"
+  },
+  {
+    "intent": "SPORT_A_JEUN_DIABETE",
+    "group": "Diabète",
+    "question": "Faut-il faire du sport à jeun avec un diabète ?",
+    "historical_coverage": "PARTIELLEMENT COUVERT"
+  },
+  {
+    "intent": "SUIVI_DIABETOLOGUE",
+    "group": "Diabète",
+    "question": "Quand consulter un diabétologue ?",
+    "historical_coverage": "ABSENT"
+  },
+  {
+    "intent": "TRAVAIL_DIABETE_DIVULGATION",
+    "group": "Diabète",
+    "question": "Faut-il signaler son diabète à un futur employeur ?",
+    "historical_coverage": "COUVERT"
+  },
+  {
+    "intent": "TRAVAIL_MICI_DIVULGATION",
+    "group": "MICI",
+    "question": "Faut-il parler de sa MICI au travail ?",
+    "historical_coverage": "COUVERT"
+  },
+  {
+    "intent": "VOYAGE_DIABETE",
+    "group": "Diabète",
+    "question": "Quel impact le voyage peut-il avoir sur le diabète ?",
+    "historical_coverage": "COUVERT"
+  },
+  {
+    "intent": "VOYAGE_MICI_PREPARATION",
+    "group": "MICI",
+    "question": "Que prévoir pour voyager avec une MICI ?",
+    "historical_coverage": "COUVERT"
+  },
+  {
+    "intent": "ALZ_APRES_DIAGNOSTIC",
+    "group": "alzheimer",
+    "question": "Comment vivre et s’organiser après l’annonce d’un diagnostic d’Alzheimer ?",
+    "historical_coverage": "ABSENT"
+  },
+  {
+    "intent": "ALZ_SOMMEIL",
+    "group": "alzheimer",
+    "question": "Pourquoi Alzheimer perturbe-t-il le sommeil et comment accompagner les nuits difficiles ?",
+    "historical_coverage": "ABSENT"
+  },
+  {
+    "intent": "ALZ_REFUS_QUOTIDIEN",
+    "group": "alzheimer",
+    "question": "Que faire face au refus de toilette, d’habillage ou de repas ?",
+    "historical_coverage": "COUVERT"
+  },
+  {
+    "intent": "ALZ_CONDUITE",
+    "group": "alzheimer",
+    "question": "Quand faut-il arrêter la conduite avec Alzheimer ?",
+    "historical_coverage": "COUVERT"
+  },
+  {
+    "intent": "ALZ_ETABLISSEMENT",
+    "group": "alzheimer",
+    "question": "Quand envisager une entrée en établissement et comment la préparer ?",
+    "historical_coverage": "COUVERT"
+  },
+  {
+    "intent": "ALZ_TRAITEMENTS",
+    "group": "alzheimer",
+    "question": "Quels traitements de la maladie d’Alzheimer sont reconnus aujourd’hui ?",
+    "historical_coverage": "COUVERT"
+  },
+  {
+    "intent": "ALZ_AIDANT_REPIT",
+    "group": "alzheimer",
+    "question": "Comment éviter l’épuisement du proche aidant et trouver du répit ?",
+    "historical_coverage": "PARTIELLEMENT COUVERT"
+  },
+  {
+    "intent": "ALZ_CONSULT_MEMOIRE",
+    "group": "alzheimer",
+    "question": "À quoi sert une consultation mémoire et comment se déroule le parcours diagnostique ?",
+    "historical_coverage": "PARTIELLEMENT COUVERT"
+  },
+  {
+    "intent": "CAN_FATIGUE",
+    "group": "cancer",
+    "question": "Comment gérer la fatigue pendant et après les traitements du cancer ?",
+    "historical_coverage": "ABSENT"
+  },
+  {
+    "intent": "CAN_ACTIVITE",
+    "group": "cancer",
+    "question": "Peut-on pratiquer une activité physique pendant un traitement contre le cancer ?",
+    "historical_coverage": "COUVERT"
+  },
+  {
+    "intent": "CAN_ALIMENTATION",
+    "group": "cancer",
+    "question": "Comment adapter son alimentation lorsque le cancer ou les traitements modifient l’appétit ou le goût ?",
+    "historical_coverage": "ABSENT"
+  },
+  {
+    "intent": "CAN_SEXUALITE",
+    "group": "cancer",
+    "question": "Comment le cancer et ses traitements peuvent-ils modifier la sexualité et à qui en parler ?",
+    "historical_coverage": "ABSENT"
+  },
+  {
+    "intent": "CAN_TRAVAIL",
+    "group": "cancer",
+    "question": "Comment préparer le maintien ou le retour au travail pendant ou après un cancer ?",
+    "historical_coverage": "PARTIELLEMENT COUVERT"
+  },
+  {
+    "intent": "CAN_DROITS",
+    "group": "cancer",
+    "question": "Quelles aides sociales et financières mobiliser quand le cancer désorganise la vie quotidienne ?",
+    "historical_coverage": "ABSENT"
+  },
+  {
+    "intent": "CAN_EFFETS_IND",
+    "group": "cancer",
+    "question": "Comment reconnaître et gérer les effets indésirables des traitements anticancéreux ?",
+    "historical_coverage": "ABSENT"
+  },
+  {
+    "intent": "CAN_APRES",
+    "group": "cancer",
+    "question": "Que se passe-t-il après la fin des traitements et comment reprendre une vie quotidienne ?",
+    "historical_coverage": "PARTIELLEMENT COUVERT"
+  },
+  {
+    "intent": "IC_AGGRAVATION",
+    "group": "insuffisance-cardiaque",
+    "question": "Quels signes montrent que mon insuffisance cardiaque s’aggrave et quand demander de l’aide ?",
+    "historical_coverage": "PARTIELLEMENT COUVERT"
+  },
+  {
+    "intent": "IC_POIDS",
+    "group": "insuffisance-cardiaque",
+    "question": "Pourquoi dois-je surveiller mon poids et que signifie une prise de poids rapide ?",
+    "historical_coverage": "ABSENT"
+  },
+  {
+    "intent": "IC_SEL_LIQUIDES",
+    "group": "insuffisance-cardiaque",
+    "question": "Dois-je limiter le sel ou les liquides avec une insuffisance cardiaque ?",
+    "historical_coverage": "ABSENT"
+  },
+  {
+    "intent": "IC_ACTIVITE",
+    "group": "insuffisance-cardiaque",
+    "question": "Quelle activité physique puis-je pratiquer avec une insuffisance cardiaque ?",
+    "historical_coverage": "ABSENT"
+  },
+  {
+    "intent": "IC_MEDICAMENTS",
+    "group": "insuffisance-cardiaque",
+    "question": "Comment gérer plusieurs médicaments et leurs effets indésirables dans l’insuffisance cardiaque ?",
+    "historical_coverage": "ABSENT"
+  },
+  {
+    "intent": "IC_VOYAGE_AVION",
+    "group": "insuffisance-cardiaque",
+    "question": "Puis-je voyager en avion avec une insuffisance cardiaque ?",
+    "historical_coverage": "PARTIELLEMENT COUVERT"
+  },
+  {
+    "intent": "IC_TRAVAIL",
+    "group": "insuffisance-cardiaque",
+    "question": "Puis-je continuer à travailler avec une insuffisance cardiaque et faut-il adapter mon activité ?",
+    "historical_coverage": "PARTIELLEMENT COUVERT"
+  },
+  {
+    "intent": "IC_SEXUALITE",
+    "group": "insuffisance-cardiaque",
+    "question": "Puis-je continuer à avoir des rapports sexuels avec une insuffisance cardiaque ?",
+    "historical_coverage": "ABSENT"
+  }
+]

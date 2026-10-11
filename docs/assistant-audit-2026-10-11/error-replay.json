@@ -1,0 +1,148 @@
+{
+  "generatedAt": "2026-10-11T16:18:49.018Z",
+  "corpusVersion": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c",
+  "notAScoreReplacement": true,
+  "results": [
+    {
+      "intent": "QUOTIDIEN_TRAITEMENT_DIABETE",
+      "question": "Comment gérer le diabète au quotidien selon son traitement ?",
+      "expected": "HTTP 200 et réponse ou abstention explicite, pas de HTTP 503",
+      "firstHttp": 503,
+      "http": 503,
+      "durationMs": 13060,
+      "error": "assistant_temporarily_unavailable",
+      "diagnostic": "Unterminated string in JSON at position 3226 (line 1 column 3227)"
+    },
+    {
+      "intent": "ALZ_APRES_DIAGNOSTIC",
+      "question": "Comment vivre et s’organiser après l’annonce d’un diagnostic d’Alzheimer ?",
+      "expected": "HTTP 200 et réponse ou abstention explicite, pas de HTTP 503",
+      "firstHttp": 503,
+      "http": 200,
+      "durationMs": 14117,
+      "status": "abstain",
+      "answer": "",
+      "category": null,
+      "cards_used": [],
+      "selected_cards": [
+        {
+          "id": "alzheimer-apres-diagnostic",
+          "title": "Alzheimer : que faire dans les premières semaines après le diagnostic ?",
+          "similarity": 0.7735,
+          "retrieval_level": 4,
+          "retrieval_reason": "semantic",
+          "matched_alias": null
+        },
+        {
+          "id": "alzheimer-entree-etablissement",
+          "title": "Alzheimer : quand envisager une entrée en établissement et comment préparer cette décision ?",
+          "similarity": 0.7014,
+          "retrieval_level": 4,
+          "retrieval_reason": "semantic",
+          "matched_alias": null
+        },
+        {
+          "id": "alzheimer-aidants-droits-repit",
+          "title": "Alzheimer : quelles aides et quels droits pour les proches aidants ?",
+          "similarity": 0.6729,
+          "retrieval_level": 4,
+          "retrieval_reason": "semantic",
+          "matched_alias": null
+        },
+        {
+          "id": "alzheimer-rester-seul-domicile",
+          "title": "Une personne atteinte d’Alzheimer peut-elle rester seule à la maison ?",
+          "similarity": 0.6705,
+          "retrieval_level": 4,
+          "retrieval_reason": "semantic",
+          "matched_alias": null
+        },
+        {
+          "id": "alzheimer-consultation-memoire",
+          "title": "Alzheimer : comment se déroule une consultation mémoire ?",
+          "similarity": 0.6283,
+          "retrieval_level": 4,
+          "retrieval_reason": "semantic",
+          "matched_alias": null
+        }
+      ],
+      "scope_note": "",
+      "meta": {
+        "grounding": "contract_rejected",
+        "corpus_cards": 394,
+        "artifact_version": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c"
+      }
+    },
+    {
+      "intent": "IC_MEDICAMENTS",
+      "question": "Comment gérer plusieurs médicaments et leurs effets indésirables dans l’insuffisance cardiaque ?",
+      "expected": "HTTP 200 et réponse ou abstention explicite, pas de HTTP 503",
+      "firstHttp": 503,
+      "http": 200,
+      "durationMs": 14301,
+      "status": "answer",
+      "answer": "Dans l’insuffisance cardiaque, plusieurs médicaments peuvent être nécessaires et la stratégie dépend notamment de la fraction d’éjection, de la congestion et des autres maladies. Les médicaments sont généralement pris régulièrement, y compris lorsque les symptômes s’améliorent. Les diurétiques traitent surtout la congestion, tandis que certains autres traitements réduisent les hospitalisations ou la mortalité dans des formes précises de la maladie. Pour sécuriser une ordonnance complexe, une liste à jour peut préciser le nom de chaque médicament, sa dose, son horaire, son motif et les contrôles prévus. Un pilulier, des rappels et des instructions écrites en cas d’oubli peuvent limiter les erreurs. Doubler systématiquement la dose suivante est dangereux. Après une hospitalisation ou une modification de traitement, une conciliation médicamenteuse aide à éviter les doublons ou la reprise involontaire d’un ancien médicament. Les médicaments sur ordonnance, ceux achetés sans ordonnance et les compléments alimentaires doivent être considérés ensemble, car des interactions sont possibles. Les anti-inflammatoires non stéroïdiens et certains substituts de sel riches en potassium peuvent poser problème. La tension, la créatinine et le potassium sont surveillés selon le traitement et les changements de dose. Une fatigue nouvelle, des vertiges, une toux ou des mictions très fréquentes peuvent être des effets indésirables à signaler avec leur chronologie. Ces symptômes ne signifient pas automatiquement qu’un traitement doit être arrêté : l’équipe soignante peut évaluer la tension, le bilan biologique ou le lien avec un médicament, et parfois adapter l’horaire ou la dose. Une revue globale de l’ordonnance est particulièrement utile lorsqu’il existe plusieurs médicaments, des effets indésirables ou une ordonnance complexe. La surveillance à domicile peut inclure le poids, les œdèmes et le degré d’essoufflement, avec des seuils d’alerte individualisés. Un malaise, une forte réduction des urines, une dyspnée croissante ou une prise de poids rapide avec œdèmes nécessitent une évaluation. En cas de fièvre avec déshydratation, vomissements, diarrhée ou diminution des apports hydriques, des consignes temporaires peuvent être nécessaires, à définir avec l’équipe médicale plutôt que par arrêt autonome des traitements.",
+      "category": "Cœur & circulation",
+      "cards_used": [
+        {
+          "id": "insuffisance-cardiaque-medicaments-quotidien",
+          "title": "Insuffisance cardiaque : comment gérer les médicaments au quotidien ?",
+          "url": "https://macasante.fr/fiche.html?id=insuffisance-cardiaque-medicaments-quotidien"
+        },
+        {
+          "id": "polymedication-deprescription-senior",
+          "title": "Je prends beaucoup de médicaments : faut-il essayer d’en supprimer certains ?",
+          "url": "https://macasante.fr/fiche.html?id=polymedication-deprescription-senior"
+        }
+      ],
+      "selected_cards": [
+        {
+          "id": "insuffisance-cardiaque-medicaments-quotidien",
+          "title": "Insuffisance cardiaque : comment gérer les médicaments au quotidien ?",
+          "similarity": 0.7511,
+          "retrieval_level": 4,
+          "retrieval_reason": "semantic",
+          "matched_alias": null
+        },
+        {
+          "id": "polymedication-deprescription-senior",
+          "title": "Je prends beaucoup de médicaments : faut-il essayer d’en supprimer certains ?",
+          "similarity": 0.6652,
+          "retrieval_level": 4,
+          "retrieval_reason": "semantic",
+          "matched_alias": null
+        },
+        {
+          "id": "insuffisance-cardiaque-activite-physique",
+          "title": "Insuffisance cardiaque : peut-on pratiquer une activité physique ?",
+          "similarity": 0.6078,
+          "retrieval_level": 4,
+          "retrieval_reason": "semantic",
+          "matched_alias": null
+        },
+        {
+          "id": "insuffisance-cardiaque-travail",
+          "title": "Insuffisance cardiaque : peut-on continuer à travailler ?",
+          "similarity": 0.5936,
+          "retrieval_level": 4,
+          "retrieval_reason": "semantic",
+          "matched_alias": null
+        },
+        {
+          "id": "deprescription-medicaments-apres-75-ans",
+          "title": "Trop de médicaments après 75 ans : lesquels peut-on arrêter ?",
+          "similarity": 0.5875,
+          "retrieval_level": 4,
+          "retrieval_reason": "semantic",
+          "matched_alias": null
+        }
+      ],
+      "scope_note": "Ces informations sont générales et ne remplacent pas une évaluation individualisée : les autres maladies, les traitements associés et les préférences peuvent modifier les décisions.",
+      "meta": {
+        "grounding": "supported",
+        "corpus_cards": 394,
+        "artifact_version": "f18e9123988d3026c15a57ca85c2f4e497606b892c6d171693168b80a4eb322c"
+      }
+    }
+  ]
+}
