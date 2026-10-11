@@ -36,6 +36,28 @@
           "url": "https://www.endocrine.org/clinical-practice-guidelines/primary-aldosteronism-2"
         }
       ]
+    },
+    {
+      "id": "medecine-preventive-predictive-2026-10-11",
+      "date": "2026-10-11",
+      "format": "decryptage",
+      "title": "Médecine préventive et prédictive : peut-on éviter une maladie avant qu’elle apparaisse ?",
+      "intro": "Génétique, intelligence artificielle et dépistage : ce que la médecine peut réellement anticiper, et les limites des prédictions individuelles.",
+      "body": "La médecine préventive vise à réduire le risque de maladie ou à la détecter assez tôt pour améliorer son pronostic. Vaccination, arrêt du tabac, contrôle de la pression artérielle et dépistages recommandés sont des exemples d’interventions dont les bénéfices sont établis.\n\nLa médecine prédictive cherche à estimer le risque futur d’une maladie à partir d’antécédents, de données cliniques, biologiques ou génétiques. Une probabilité élevée ne signifie pas que la maladie apparaîtra ; une probabilité faible ne garantit pas qu’elle n’apparaîtra jamais.\n\nDans certaines familles, l’identification de variants pathogènes de BRCA1 ou BRCA2 permet d’adapter la surveillance et de discuter des mesures préventives. Pour les maladies multifactorielles, les scores de risque polygénique sont prometteurs mais leur bénéfice clinique en dépistage systématique reste à établir selon les situations et les populations.\n\nL’intelligence artificielle peut aider à analyser des images ou à stratifier les risques, mais une bonne performance statistique ne prouve pas à elle seule une amélioration de la santé des patients. Les modèles doivent être validés à l’extérieur de leur population de développement et évalués sur leurs conséquences cliniques.\n\nLes tests sanguins multicancers sont également étudiés, mais leur capacité à réduire la mortalité en dépistage généralisé n’est pas suffisamment démontrée. Ils ne remplacent pas les programmes de dépistage recommandés.\n\nLa personnalisation la plus utile consiste souvent à adapter les décisions aux facteurs de risque, aux antécédents et aux préférences de la personne. L’objectif n’est pas de multiplier les examens : il est de proposer des interventions qui améliorent réellement la santé.\n\nÀ retenir : prédire une probabilité n’est pas connaître l’avenir. Le progrès consiste surtout à mieux prévenir.",
+      "sources": [
+        {
+          "label": "European Heart Journal — scores de risque polygénique (2025)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39906985/"
+        },
+        {
+          "label": "National Cancer Institute — Cancer Screening Overview",
+          "url": "https://www.cancer.gov/about-cancer/screening/hp-screening-overview-pdq"
+        },
+        {
+          "label": "Agence de la biomédecine — Génétique médicale",
+          "url": "https://www.agence-biomedecine.fr/fr/genetique-medicale/genetique-medicale"
+        }
+      ]
     }
   ]
 }
