@@ -1,0 +1,41 @@
+{
+  "status": "VALIDATED_EDITORIAL_PENDING_MAG_INTEGRATION",
+  "articles": [
+    {
+      "id": "sfe-2026-diabete-type-1-diagnostic-precoce",
+      "date": "2026-10-11",
+      "format": "decryptage",
+      "title": "Diabète de type 1 : quatre signes à reconnaître avant l’urgence",
+      "intro": "Soif intense, urines abondantes, amaigrissement et fatigue peuvent annoncer un diabète de type 1. La cohorte française SFDT1 présentée au congrès SFE 2026 rappelle l’importance d’un diagnostic précoce.",
+      "body": "Le diabète de type 1 est une maladie auto-immune pouvant apparaître à tout âge. Un manque d’insuline provoque une augmentation du glucose sanguin. Une soif inhabituelle, des urines fréquentes, une perte de poids et une fatigue importante doivent conduire à contrôler rapidement la glycémie. Chez l’enfant, la reprise d’énurésie peut également alerter.\n\nAu congrès SFE 2026, la cohorte française SFDT1 a rapporté que 10,6 % de 3 548 participants avaient été admis en réanimation au moment du diagnostic. Cette présentation initiale grave était associée à davantage de complications ophtalmologiques et d’hypoglycémies sévères à distance. Cette observation ne démontre pas un lien causal : d’autres facteurs peuvent expliquer une partie de l’association.\n\nUne carence majeure en insuline peut provoquer une acidocétose : vomissements, douleurs abdominales, respiration profonde ou rapide, somnolence ou confusion sont des signes d’urgence. Appelez le 15 ou le 112 en cas de suspicion.\n\nLe message essentiel : un diabète de type 1 peut survenir chez un adulte comme chez un enfant. Reconnaître les premiers symptômes permet d’éviter un retard de diagnostic.",
+      "sources": [
+        {
+          "label": "SFE — Programme 2026, CO-017",
+          "url": "https://www.congres-sfe.com/2026/programme"
+        },
+        {
+          "label": "SFDT1 — données de cohorte",
+          "url": "https://fr.linkedin.com/posts/sfdt1_dt1-sfe2026-activity-7513972039574257664-grSJ"
+        }
+      ]
+    },
+    {
+      "id": "sfe-2026-hypertension-cause-hormonale",
+      "date": "2026-10-11",
+      "format": "decryptage",
+      "title": "Hypertension : et si le problème venait d’une hormone ?",
+      "intro": "Une production excessive d’aldostérone peut être responsable d’une hypertension, même lorsque le potassium sanguin est normal. Le diagnostic peut modifier le traitement.",
+      "body": "L’hyperaldostéronisme primaire est l’une des causes hormonales les plus importantes d’hypertension. L’aldostérone, fabriquée par les glandes surrénales, régule l’équilibre du sodium et du potassium. Produite en excès, elle favorise l’élévation de la pression artérielle et les complications cardiovasculaires.\n\nLe congrès SFE 2026 a consacré une session au diagnostic de cette affection. Les recommandations internationales de 2025 suggèrent d’envisager un dépistage chez toutes les personnes hypertendues ; il s’agit d’une recommandation conditionnelle, à adapter au contexte clinique et aux ressources disponibles. Ce n’est pas une découverte du congrès, mais une évolution récente des pratiques.\n\nLe dépistage repose sur des dosages d’aldostérone et de rénine. Certains traitements influencent les résultats : ils ne doivent jamais être arrêtés sans supervision médicale. Une prise en charge ciblée est possible, avec des médicaments antagonistes de l’aldostérone ou, dans certaines formes unilatérales, une chirurgie.\n\nÀ retenir : rechercher une cause hormonale peut permettre de traiter le mécanisme de l’hypertension, et pas seulement ses chiffres.",
+      "sources": [
+        {
+          "label": "SFE — Programme 2026, SY-001",
+          "url": "https://www.congres-sfe.com/2026/programme"
+        },
+        {
+          "label": "Endocrine Society — Recommandations 2025",
+          "url": "https://www.endocrine.org/clinical-practice-guidelines/primary-aldosteronism-2"
+        }
+      ]
+    }
+  ]
+}
