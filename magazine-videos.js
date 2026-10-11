@@ -1,26 +1,28 @@
-// Validated and integrity-checked videos.
-window.MACA_MAGAZINE_VIDEOS = [
+window.MACA_MAGAZINE_VIDEOS=[
   {
     "id": "proteines-v8",
+    "url": "video-proteines-v8.html",
     "title": "Produits hyperprotéinés : vraiment meilleurs pour la santé ?",
+    "format": "video",
     "category": "Décryptage",
+    "theme": "Alimentation",
     "date": "2026-10-09",
+    "status": "PUBLISHED",
     "excerpt": "Satiété, musculation et besoins réels : ce que montrent les études sur les protéines.",
-    "source": "produits-enrichis-proteines-besoins",
+    "image": "assets/videos/proteines-v8.jpg",
+    "imageAlt": "Produits hyperprotéinés : vraiment meilleurs pour la santé ?",
     "keywords": [
       "protéines",
       "alimentation",
       "satiété",
       "musculation"
     ],
-    "transcript": "Yaourts, barres, boissons… des protéines partout ! Mais est-ce meilleur pour la santé ? Selon une étude de synthèse de 2020, elles peuvent réduire la faim à court terme. Avec la musculation, certains suppléments favorisent aussi les gains musculaires. Mais ces études ne prouvent pas qu’un dessert enrichi soit meilleur. Si vos besoins sont couverts, inutile d’en ajouter systématiquement. Comparez les étiquettes ! Sources et explications sur macasante.fr.",
-    "url": "video-proteines-v8.html",
-    "format": "video",
-    "status": "PUBLISHED",
+    "medicalStatus": "LEGACY_REVIEW_REQUIRED",
+    "referenceFicheId": "produits-enrichis-proteines-besoins",
+    "version": "f26124310b0b2a2af292d6bfaaf96526e7ac8aefb71fe41e25c4ed72635a1fcf",
     "video": "assets/videos/proteines-v8.mp4",
-    "image": "assets/videos/proteines-v8.jpg",
-    "imageAlt": "Produits hyperprotéinés : vraiment meilleurs pour la santé ?",
-    "sha256": "561fac4f09f6589c25437d0089c0b0299f3065915738ae59b3ad11b69751aedd"
+    "transcript": "Yaourts, barres, boissons… des protéines partout ! Mais est-ce meilleur pour la santé ? Selon une étude de synthèse de 2020, elles peuvent réduire la faim à court terme. Avec la musculation, certains suppléments favorisent aussi les gains musculaires. Mais ces études ne prouvent pas qu’un dessert enrichi soit meilleur. Si vos besoins sont couverts, inutile d’en ajouter systématiquement. Comparez les étiquettes ! Sources et explications sur macasante.fr.",
+    "source": "produits-enrichis-proteines-besoins"
   },
   {
     "id": "max-cortisol",
@@ -28,7 +30,7 @@ window.MACA_MAGAZINE_VIDEOS = [
     "title": "Stress, fatigue : faut-il faire baisser son cortisol ?",
     "format": "video",
     "category": "Décryptage",
-    "theme": "Décryptage",
+    "theme": "Santé au quotidien",
     "date": "2026-10-07",
     "status": "PUBLISHED",
     "excerpt": "Max explique le rôle du cortisol et les limites d’un dosage isolé.",
@@ -40,6 +42,7 @@ window.MACA_MAGAZINE_VIDEOS = [
       "fatigue"
     ],
     "medicalStatus": "LEGACY_REVIEW_REQUIRED",
+    "referenceFicheId": "q-cortisol-stress-fatigue",
     "version": "078d2d1c4d7361a291ad3889f8bd557f3aaa4638bee4555cf65c0a54ccd1ff2c",
     "video": "assets/videos/max-cortisol.mp4",
     "transcript": "Stressé, fatigué… faut-il faire baisser son cortisol ? Pas forcément ! Cette hormone est indispensable : elle aide votre corps à mobiliser de l’énergie et à réagir au stress. Son taux varie naturellement dans la journée. Fatigue ou stress ne prouvent donc pas qu’on en a trop. Et un dosage isolé n’est pas un test du stress ! Si la fatigue persiste, parlez-en à votre médecin. Retrouvez la fiche sur Maca Santé.",
@@ -51,7 +54,7 @@ window.MACA_MAGAZINE_VIDEOS = [
     "title": "Sciatique : faut-il forcément faire une IRM ?",
     "format": "video",
     "category": "Prévention",
-    "theme": "Prévention",
+    "theme": "Os & articulations",
     "date": "2026-10-06",
     "status": "PUBLISHED",
     "excerpt": "Max présente les repères pour comprendre quand une IRM est utile.",
@@ -63,6 +66,7 @@ window.MACA_MAGAZINE_VIDEOS = [
       "douleur"
     ],
     "medicalStatus": "LEGACY_REVIEW_REQUIRED",
+    "referenceFicheId": "sciatique-irm-quand",
     "version": "85d6d02e680743a9c7cd365601cf378c985239b85eaf138e3cea70fe23dcab6e",
     "video": "assets/videos/max-sciatique-irm.mp4",
     "transcript": "Sciatique : faut-il forcément faire une IRM ? Non. Pas systématiquement. Dans la plupart des cas, l’examen médical suffit au début. L’IRM devient surtout utile si la douleur persiste, s’aggrave, ou si une faiblesse apparaît dans la jambe. Et si vous avez des troubles urinaires, une perte de sensibilité ou une paralysie : consultez rapidement. MACASANTÉ — l’information santé sous contrôle médical.",

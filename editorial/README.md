@@ -34,7 +34,7 @@ La migration conserve les éditions 10 et 11 octobre. Quatre contenus plus ancie
 
 ## Candidats fiches
 
-Mettre `candidateFiche: true` pour sélectionner un article. Le pipeline alimente `editorial/candidate-fiches.json` sans créer ni publier de fiche. Avant préparation : vérifier les doublons et choisir créer/enrichir/ne pas créer. La nouvelle fiche suit le format MACA et sa validation habituelle. Ajouter `ficheId` à l’article après publication ; le lien apparaît sur la page. Le lien inverse doit être ajouté lors de l’enrichissement validé de la fiche dans le corpus. Aucune nouvelle fiche médicale n’est créée par ce lot.
+Mettre `candidateFiche: true` pour sélectionner un article. Le pipeline alimente `editorial/candidate-fiches.json` sans créer ni publier de fiche. Avant préparation : vérifier les doublons et choisir créer/enrichir/ne pas créer. La nouvelle fiche suit le format MACA et sa validation habituelle. Ajouter `ficheId` à l’article après publication ; le lien apparaît sur la page. Le lien inverse apparaît automatiquement sur fiche.html pour les articles/vidéos publiés qui portent ce ficheId. Aucune nouvelle fiche médicale n’est créée par ce lot.
 
 ## Contrôles et statut
 
@@ -47,3 +47,5 @@ Mettre `candidateFiche: true` pour sélectionner un article. Le pipeline aliment
 Le workflow conserve un rapport d’exécution, un résumé GitHub et les manifestes même en cas d’échec. `editorial/manifest.json` décrit une préparation, **pas une preuve de succès du déploiement**. Un site déployé et un échec IA sont distingués. L’objectif de 15 minutes est une cible, non un SLA garanti par GitHub Actions ou la tâche ChatGPT.
 
 Les 51 formulations originales ne sont pas présentes dans le dépôt : `docs/editorial/question-map-51-suivi-2026-10-09.md` le constate. Ne pas inventer ce jeu de test ni annoncer l’avoir rejoué. Les requêtes des tests ne sont ni conservées dans les journaux ni associées à des données personnelles.
+
+Les publications vidéo vérifiées alimentent la même source persistante. Un manifeste média validé sans auteur/date de validation médicale précise reste visible, mais exclu de l’IA. Les champs validatedBy, validatedAt et validationEvidence permettent une reprise documentée de cette validation.
