@@ -17,6 +17,7 @@ window.MACA_MAGAZINE_ARTICLES=[
       "insomnie"
     ],
     "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
     "version": "61edeb7b1f5a572cd0f9abe6feaeffc5cb353d4bef3c39a4179cfa84301e39a4"
   },
   {
@@ -35,6 +36,7 @@ window.MACA_MAGAZINE_ARTICLES=[
       "Cancer"
     ],
     "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
     "version": "50375912d34192a22f7f7572fcbb23e1bc423b1f153d6588bc23bd7dd0c6a943"
   },
   {
@@ -53,6 +55,7 @@ window.MACA_MAGAZINE_ARTICLES=[
       "Prévention"
     ],
     "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
     "version": "f6f1435032d92c2a4515208ee10325e04eea203042a20068c69cbec79b64b7f7"
   },
   {
@@ -71,6 +74,7 @@ window.MACA_MAGAZINE_ARTICLES=[
       "Digestion"
     ],
     "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
     "version": "b68650a1c259839bde3d9506a45fcd6d12b36c8cea5d8035164bc462d7083ce6"
   },
   {
@@ -90,6 +94,7 @@ window.MACA_MAGAZINE_ARTICLES=[
       "Je me suis brûlé à la maison : que faire immédiatement ?"
     ],
     "medicalStatus": "VALIDATED",
+    "referenceFicheId": "brulure-domestique-premiers-gestes",
     "version": "70739b7b671937ac43abb7f87423fdb5536a4dc2872d352a2f0f1958584eb3fc"
   },
   {
@@ -108,6 +113,7 @@ window.MACA_MAGAZINE_ARTICLES=[
       "Prévention"
     ],
     "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
     "version": "2f5e723c9791bdcba3fc5aed0cd16f854f8061bd78148c1952870eb57ec4db5d"
   },
   {
@@ -127,6 +133,7 @@ window.MACA_MAGAZINE_ARTICLES=[
       "9 % des pays interrogés ont entièrement adopté des soins psychiatriques communautaires"
     ],
     "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
     "version": "87f266d66665771e00804baea88877b975251b32629f7e29a52b7c53ae38a9fa"
   },
   {
@@ -146,6 +153,7 @@ window.MACA_MAGAZINE_ARTICLES=[
       "Vaccination HPV avant grossesse : pas de signal défavorable identifié"
     ],
     "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
     "version": "4daa8016eb63e16e948580dc25c677ade9ea0ee64336243528699b48ce56a0f9"
   },
   {
@@ -165,6 +173,7 @@ window.MACA_MAGAZINE_ARTICLES=[
       "Après un infarctus, un traitement expérimental n'a pas atteint son objectif principal"
     ],
     "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
     "version": "f1ad8151535b948728feef45bac9ad47ce5d724d79d1a63f000aae653c6a010a"
   },
   {
@@ -184,6 +193,7 @@ window.MACA_MAGAZINE_ARTICLES=[
       "Une part des cancers mondiaux est attribuable aux infections"
     ],
     "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
     "version": "57c6c7f3a132d83be0de1e7fab697848b5a320ec169eead7560d0f9335a2ba61"
   },
   {
@@ -202,6 +212,7 @@ window.MACA_MAGAZINE_ARTICLES=[
       "Dépistage"
     ],
     "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
     "version": "90cd0b1b857ae696ea4335a21cd0dca60232b9c535579da6f890b44f95f5b75b"
   },
   {
@@ -220,6 +231,7 @@ window.MACA_MAGAZINE_ARTICLES=[
       "Diabète"
     ],
     "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
     "version": "823f7b6b624c40e13abab34bd29a7bb8fd81227ff1eee3162b73bb7703502c7b"
   },
   {
@@ -238,6 +250,7 @@ window.MACA_MAGAZINE_ARTICLES=[
       "Activité Physique"
     ],
     "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
     "version": "5ec7b3ab24a78a79c3cce3cd4a34a9a1755abe5f062f3554e90a72d95f83f148"
   },
   {
@@ -256,6 +269,7 @@ window.MACA_MAGAZINE_ARTICLES=[
       "Cœur"
     ],
     "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
     "version": "cc69a01394e28aa2bddb3c8fe9f0c478e34e0fa4b27205bd2d1618aab2511f7c"
   },
   {
@@ -275,6 +289,7 @@ window.MACA_MAGAZINE_ARTICLES=[
       "Cheville tordue : entorse ou fracture ?"
     ],
     "medicalStatus": "VALIDATED",
+    "referenceFicheId": "entorse-cheville-fracture",
     "version": "2717a00a8059c20d22ef9b5ad1220d7ffcbbaa2cf777f7fda909f21b3156f48d"
   },
   {
@@ -293,6 +308,7 @@ window.MACA_MAGAZINE_ARTICLES=[
       "Faux"
     ],
     "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
     "version": "0aa68b7e8f432cb0e7c8847acdb95694a8b8b3f4708fb4fac3e54357a93cc845"
   },
   {
@@ -312,6 +328,7 @@ window.MACA_MAGAZINE_ARTICLES=[
       "Passages aux urgences pour syndrome grippal en 2025–2026"
     ],
     "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
     "version": "74f8034e9e68c96f8146f89ba491316dc1e447b98094d44823e1016019be3603"
   },
   {
@@ -331,6 +348,7 @@ window.MACA_MAGAZINE_ARTICLES=[
       "Sepsis pédiatrique : les limites d’une alerte par intelligence artificielle"
     ],
     "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
     "version": "444db9d4f193ec417f5b7a414ba8b39580b8eb30e27d5743b5a3b156a575cebe"
   },
   {
@@ -350,6 +368,7 @@ window.MACA_MAGAZINE_ARTICLES=[
       "Anticoagulants en institution : un bénéfice et un risque à mettre en balance"
     ],
     "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
     "version": "6f105c5644ae36f247e72150103cca63c1290b27d7e6d849cf6414095c058070"
   },
   {
@@ -369,6 +388,7 @@ window.MACA_MAGAZINE_ARTICLES=[
       "Schizophrénie : une intervention numérique en complément des soins"
     ],
     "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
     "version": "7ae431d0329198da734876c5a73511a19391c47f5c8a39b6306ba06f4ce36a77"
   },
   {
@@ -389,6 +409,7 @@ window.MACA_MAGAZINE_ARTICLES=[
       "stress post-traumatique"
     ],
     "medicalStatus": "LEGACY_REVIEW_REQUIRED",
+    "referenceFicheId": null,
     "version": "575e05f4058beb0cd5a5170d0f44db2c0ed597898a169dcf932f4ce2bfa5e68e"
   }
 ];

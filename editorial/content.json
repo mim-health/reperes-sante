@@ -849,7 +849,7 @@
       "publicationStatus": "PUBLISHED",
       "standalone": true,
       "candidateFiche": false,
-      "legacyEvidence": "Registre préexistant PUBLISHED ; auteur/date de validation à confirmer avant indexation IA.",
+      "legacyEvidence": "Media manifest validated=true; source bytes verified. Record medical validator/date before IA indexing.",
       "assistantPolicy": "REFERENCE_FICHE_ONLY"
     },
     {
