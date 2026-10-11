@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "editionId": "edition-2026-10-11",
   "editionDate": "2026-10-11",
-  "sourceFingerprint": "46129271406863b788f8ec8ec865329cadb51ab6cc5a3936002950d740aced48",
+  "sourceFingerprint": "0ad5b81e710122293586e6a14c0adc10b0624e08310c64a4bd225f2edce07cbb",
   "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
@@ -59,6 +59,24 @@
       "id": "mag-daily-schizophrenie-20261011",
       "version": "7ae431d0329198da734876c5a73511a19391c47f5c8a39b6306ba06f4ce36a77",
       "url": "mag-daily-schizophrenie-20261011.html",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "mag-sfe-2026-diabete-type-1-diagnostic-precoce",
+      "version": "8395c0a5156c0996fec7e1e5e35906c353c2a92b5f5bba5a0bcd32eb03b5421f",
+      "url": "article-sfe-2026-diabete-type-1-diagnostic-precoce.html",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "mag-sfe-2026-hypertension-cause-hormonale",
+      "version": "e32200a5808f750f51e1802fe1d711424d13e1fcc6985489638d5b7f8e76b476",
+      "url": "article-sfe-2026-hypertension-cause-hormonale.html",
+      "date": "2026-10-11"
+    },
+    {
+      "id": "mag-medecine-preventive-predictive-2026-10-11",
+      "version": "cd2f226d280a0b3b0decf820c7cdf655f14420df99ac87e99572c3ef3638ecdb",
+      "url": "article-medecine-preventive-predictive-2026-10-11.html",
       "date": "2026-10-11"
     },
     {

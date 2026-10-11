@@ -411,5 +411,71 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "LEGACY_REVIEW_REQUIRED",
     "referenceFicheId": null,
     "version": "575e05f4058beb0cd5a5170d0f44db2c0ed597898a169dcf932f4ce2bfa5e68e"
+  },
+  {
+    "id": "sfe-2026-diabete-type-1-diagnostic-precoce",
+    "url": "article-sfe-2026-diabete-type-1-diagnostic-precoce.html",
+    "title": "Diabète de type 1 : quatre signes à reconnaître avant l’urgence",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Endocrinologie",
+    "date": "2026-10-11",
+    "status": "PUBLISHED",
+    "excerpt": "Soif intense, urines abondantes, amaigrissement et fatigue peuvent annoncer un diabète de type 1. La cohorte française SFDT1 présentée au congrès SFE 2026 rappelle l’importance d’un diagnostic précoce.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "diabète de type 1",
+      "diagnostic précoce",
+      "acidocétose",
+      "SFE 2026"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "acidocetose-diabetique-symptomes-prevention",
+    "version": "8395c0a5156c0996fec7e1e5e35906c353c2a92b5f5bba5a0bcd32eb03b5421f"
+  },
+  {
+    "id": "sfe-2026-hypertension-cause-hormonale",
+    "url": "article-sfe-2026-hypertension-cause-hormonale.html",
+    "title": "Hypertension : et si le problème venait d’une hormone ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Endocrinologie",
+    "date": "2026-10-11",
+    "status": "PUBLISHED",
+    "excerpt": "Une production excessive d’aldostérone peut être responsable d’une hypertension, même lorsque le potassium sanguin est normal. Le diagnostic peut modifier le traitement.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "hypertension",
+      "aldostérone",
+      "hyperaldostéronisme primaire",
+      "SFE 2026"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "hyperaldosteronisme-primaire-hypertension",
+    "version": "e32200a5808f750f51e1802fe1d711424d13e1fcc6985489638d5b7f8e76b476"
+  },
+  {
+    "id": "medecine-preventive-predictive-2026-10-11",
+    "url": "article-medecine-preventive-predictive-2026-10-11.html",
+    "title": "Médecine préventive et prédictive : peut-on éviter une maladie avant qu’elle apparaisse ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Prévention",
+    "date": "2026-10-11",
+    "status": "PUBLISHED",
+    "excerpt": "Génétique, intelligence artificielle et dépistage : ce que la médecine peut réellement anticiper, et les limites des prédictions individuelles.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "médecine préventive",
+      "médecine prédictive",
+      "dépistage",
+      "intelligence artificielle"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "cd2f226d280a0b3b0decf820c7cdf655f14420df99ac87e99572c3ef3638ecdb"
   }
 ];

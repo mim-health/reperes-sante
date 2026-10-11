@@ -5,6 +5,10 @@ on:
     paths:
       - 'editorial/content.json'
       - 'editorial/catchup.json'
+      - 'editorial/reviewed-corpus-overrides.json'
+      - 'editorial-sfe-2026-10-11.json'
+      - 'scripts/audit-content-duplicates.js'
+      - 'scripts/test-content-duplicates.js'
       - 'scripts/mag-editorial.js'
       - 'scripts/test-mag-editorial.js'
       - 'scripts/publish-mag-generated.sh'
@@ -38,6 +42,8 @@ jobs:
           node-version: '20'
       - name: Validate and prepare complete edition
         run: |
+          node scripts/test-content-duplicates.js
+          node scripts/audit-content-duplicates.js
           node scripts/mag-editorial.js --dry-run
           node scripts/test-mag-editorial.js
           node scripts/mag-editorial.js
@@ -103,3 +109,4 @@ jobs:
             mag-execution-report.json
             editorial/manifest.json
             editorial/candidate-fiches.json
+            editorial/duplicates-report.json

@@ -115,6 +115,7 @@ function aliasesForCard(registry, id) {
 }
 
 function build() {
+  require('./audit-content-duplicates').run(ROOT);
   const files = manifestFiles();
   const context = createContext();
 

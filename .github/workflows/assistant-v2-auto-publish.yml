@@ -9,6 +9,9 @@ on:
     paths:
       - '*.js'
       - 'scripts/mag-editorial.js'
+      - 'scripts/audit-content-duplicates.js'
+      - 'scripts/test-content-duplicates.js'
+      - 'editorial/reviewed-corpus-overrides.json'
       - 'scripts/build-assistant-v2-*.js'
       - 'scripts/publish-assistant-v2.sh'
       - 'scripts/test-assistant-v2-*.js'

@@ -29,6 +29,7 @@ jobs:
       - name: Validate homepage and Magazine invariants
         if: github.ref_name == 'feat/v0-magazine'
         run: |
+          node scripts/audit-content-duplicates.js
           node scripts/test-home-magazine.js
           node scripts/test-magazine-videos.js
       - name: Generate crawlable fiche pages

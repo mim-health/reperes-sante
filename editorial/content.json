@@ -913,6 +913,124 @@
       "candidateFiche": false,
       "legacyEvidence": "Registre préexistant PUBLISHED ; auteur/date de validation à confirmer avant indexation IA.",
       "assistantPolicy": "REFERENCE_FICHE_ONLY"
+    },
+    {
+      "id": "sfe-2026-diabete-type-1-diagnostic-precoce",
+      "date": "2026-10-11",
+      "title": "Diabète de type 1 : quatre signes à reconnaître avant l’urgence",
+      "answer": "Soif intense, urines abondantes, amaigrissement et fatigue peuvent annoncer un diabète de type 1. La cohorte française SFDT1 présentée au congrès SFE 2026 rappelle l’importance d’un diagnostic précoce.",
+      "html": "<article><h1>Diabète de type 1 : quatre signes à reconnaître avant l’urgence</h1><p>Soif intense, urines abondantes, amaigrissement et fatigue peuvent annoncer un diabète de type 1. La cohorte française SFDT1 présentée au congrès SFE 2026 rappelle l’importance d’un diagnostic précoce.</p><p>Le diabète de type 1 est une maladie auto-immune pouvant apparaître à tout âge. Un manque d’insuline provoque une augmentation du glucose sanguin. Une soif inhabituelle, des urines fréquentes, une perte de poids et une fatigue importante doivent conduire à contrôler rapidement la glycémie. Chez l’enfant, la reprise d’énurésie peut également alerter.</p><p>Au congrès SFE 2026, la cohorte française SFDT1 a rapporté que 10,6 % de 3 548 participants avaient été admis en réanimation au moment du diagnostic. Cette présentation initiale grave était associée à davantage de complications ophtalmologiques et d’hypoglycémies sévères à distance. Cette observation ne démontre pas un lien causal : d’autres facteurs peuvent expliquer une partie de l’association.</p><p>Une carence majeure en insuline peut provoquer une acidocétose : vomissements, douleurs abdominales, respiration profonde ou rapide, somnolence ou confusion sont des signes d’urgence. Appelez le 15 ou le 112 en cas de suspicion.</p><p>Le message essentiel : un diabète de type 1 peut survenir chez un adulte comme chez un enfant. Reconnaître les premiers symptômes permet d’éviter un retard de diagnostic.</p><h2>Sources</h2><ul><li><a href=\"https://www.congres-sfe.com/2026/programme\">SFE — Programme 2026, CO-017</a></li><li><a href=\"https://fr.linkedin.com/posts/sfdt1_dt1-sfe2026-activity-7513972039574257664-grSJ\">SFDT1 — données de cohorte</a></li></ul></article>",
+      "url": "article-sfe-2026-diabete-type-1-diagnostic-precoce.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Endocrinologie",
+      "keywords": [
+        "diabète de type 1",
+        "diagnostic précoce",
+        "acidocétose",
+        "SFE 2026"
+      ],
+      "ficheId": "acidocetose-diabetique-symptomes-prevention",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "standalone": true,
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-11",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Production éditoriale déclarée validée par le fondateur dans le résumé de pilotage du 11 octobre 2026 ; raccordement technique du texte enregistré, sans modification médicale.",
+        "contentHash": "8395c0a5156c0996fec7e1e5e35906c353c2a92b5f5bba5a0bcd32eb03b5421f"
+      },
+      "sources": [
+        {
+          "label": "SFE — Programme 2026, CO-017",
+          "url": "https://www.congres-sfe.com/2026/programme"
+        },
+        {
+          "label": "SFDT1 — données de cohorte",
+          "url": "https://fr.linkedin.com/posts/sfdt1_dt1-sfe2026-activity-7513972039574257664-grSJ"
+        }
+      ]
+    },
+    {
+      "id": "sfe-2026-hypertension-cause-hormonale",
+      "date": "2026-10-11",
+      "title": "Hypertension : et si le problème venait d’une hormone ?",
+      "answer": "Une production excessive d’aldostérone peut être responsable d’une hypertension, même lorsque le potassium sanguin est normal. Le diagnostic peut modifier le traitement.",
+      "html": "<article><h1>Hypertension : et si le problème venait d’une hormone ?</h1><p>Une production excessive d’aldostérone peut être responsable d’une hypertension, même lorsque le potassium sanguin est normal. Le diagnostic peut modifier le traitement.</p><p>L’hyperaldostéronisme primaire est l’une des causes hormonales les plus importantes d’hypertension. L’aldostérone, fabriquée par les glandes surrénales, régule l’équilibre du sodium et du potassium. Produite en excès, elle favorise l’élévation de la pression artérielle et les complications cardiovasculaires.</p><p>Le congrès SFE 2026 a consacré une session au diagnostic de cette affection. Les recommandations internationales de 2025 suggèrent d’envisager un dépistage chez toutes les personnes hypertendues ; il s’agit d’une recommandation conditionnelle, à adapter au contexte clinique et aux ressources disponibles. Ce n’est pas une découverte du congrès, mais une évolution récente des pratiques.</p><p>Le dépistage repose sur des dosages d’aldostérone et de rénine. Certains traitements influencent les résultats : ils ne doivent jamais être arrêtés sans supervision médicale. Une prise en charge ciblée est possible, avec des médicaments antagonistes de l’aldostérone ou, dans certaines formes unilatérales, une chirurgie.</p><p>À retenir : rechercher une cause hormonale peut permettre de traiter le mécanisme de l’hypertension, et pas seulement ses chiffres.</p><h2>Sources</h2><ul><li><a href=\"https://www.congres-sfe.com/2026/programme\">SFE — Programme 2026, SY-001</a></li><li><a href=\"https://www.endocrine.org/clinical-practice-guidelines/primary-aldosteronism-2\">Endocrine Society — Recommandations 2025</a></li></ul></article>",
+      "url": "article-sfe-2026-hypertension-cause-hormonale.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Endocrinologie",
+      "keywords": [
+        "hypertension",
+        "aldostérone",
+        "hyperaldostéronisme primaire",
+        "SFE 2026"
+      ],
+      "ficheId": "hyperaldosteronisme-primaire-hypertension",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "standalone": true,
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-11",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Production éditoriale déclarée validée par le fondateur dans le résumé de pilotage du 11 octobre 2026 ; raccordement technique du texte enregistré, sans modification médicale.",
+        "contentHash": "e32200a5808f750f51e1802fe1d711424d13e1fcc6985489638d5b7f8e76b476"
+      },
+      "sources": [
+        {
+          "label": "SFE — Programme 2026, SY-001",
+          "url": "https://www.congres-sfe.com/2026/programme"
+        },
+        {
+          "label": "Endocrine Society — Recommandations 2025",
+          "url": "https://www.endocrine.org/clinical-practice-guidelines/primary-aldosteronism-2"
+        }
+      ]
+    },
+    {
+      "id": "medecine-preventive-predictive-2026-10-11",
+      "date": "2026-10-11",
+      "title": "Médecine préventive et prédictive : peut-on éviter une maladie avant qu’elle apparaisse ?",
+      "answer": "Génétique, intelligence artificielle et dépistage : ce que la médecine peut réellement anticiper, et les limites des prédictions individuelles.",
+      "html": "<article><h1>Médecine préventive et prédictive : peut-on éviter une maladie avant qu’elle apparaisse ?</h1><p>Génétique, intelligence artificielle et dépistage : ce que la médecine peut réellement anticiper, et les limites des prédictions individuelles.</p><p>La médecine préventive vise à réduire le risque de maladie ou à la détecter assez tôt pour améliorer son pronostic. Vaccination, arrêt du tabac, contrôle de la pression artérielle et dépistages recommandés sont des exemples d’interventions dont les bénéfices sont établis.</p><p>La médecine prédictive cherche à estimer le risque futur d’une maladie à partir d’antécédents, de données cliniques, biologiques ou génétiques. Une probabilité élevée ne signifie pas que la maladie apparaîtra ; une probabilité faible ne garantit pas qu’elle n’apparaîtra jamais.</p><p>Dans certaines familles, l’identification de variants pathogènes de BRCA1 ou BRCA2 permet d’adapter la surveillance et de discuter des mesures préventives. Pour les maladies multifactorielles, les scores de risque polygénique sont prometteurs mais leur bénéfice clinique en dépistage systématique reste à établir selon les situations et les populations.</p><p>L’intelligence artificielle peut aider à analyser des images ou à stratifier les risques, mais une bonne performance statistique ne prouve pas à elle seule une amélioration de la santé des patients. Les modèles doivent être validés à l’extérieur de leur population de développement et évalués sur leurs conséquences cliniques.</p><p>Les tests sanguins multicancers sont également étudiés, mais leur capacité à réduire la mortalité en dépistage généralisé n’est pas suffisamment démontrée. Ils ne remplacent pas les programmes de dépistage recommandés.</p><p>La personnalisation la plus utile consiste souvent à adapter les décisions aux facteurs de risque, aux antécédents et aux préférences de la personne. L’objectif n’est pas de multiplier les examens : il est de proposer des interventions qui améliorent réellement la santé.</p><p>À retenir : prédire une probabilité n’est pas connaître l’avenir. Le progrès consiste surtout à mieux prévenir.</p><h2>Sources</h2><ul><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/39906985/\">European Heart Journal — scores de risque polygénique (2025)</a></li><li><a href=\"https://www.cancer.gov/about-cancer/screening/hp-screening-overview-pdq\">National Cancer Institute — Cancer Screening Overview</a></li><li><a href=\"https://www.agence-biomedecine.fr/fr/genetique-medicale/genetique-medicale\">Agence de la biomédecine — Génétique médicale</a></li></ul></article>",
+      "url": "article-medecine-preventive-predictive-2026-10-11.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Prévention",
+      "keywords": [
+        "médecine préventive",
+        "médecine prédictive",
+        "dépistage",
+        "intelligence artificielle"
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "standalone": true,
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-11",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Production éditoriale déclarée validée par le fondateur dans le résumé de pilotage du 11 octobre 2026 ; raccordement technique du texte enregistré, sans modification médicale.",
+        "contentHash": "cd2f226d280a0b3b0decf820c7cdf655f14420df99ac87e99572c3ef3638ecdb"
+      },
+      "sources": [
+        {
+          "label": "European Heart Journal — scores de risque polygénique (2025)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39906985/"
+        },
+        {
+          "label": "National Cancer Institute — Cancer Screening Overview",
+          "url": "https://www.cancer.gov/about-cancer/screening/hp-screening-overview-pdq"
+        },
+        {
+          "label": "Agence de la biomédecine — Génétique médicale",
+          "url": "https://www.agence-biomedecine.fr/fr/genetique-medicale/genetique-medicale"
+        }
+      ]
     }
   ],
   "editions": [
