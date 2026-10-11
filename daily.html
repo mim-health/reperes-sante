@@ -14,12 +14,14 @@
 <body>
 <header class="site-header"><a class="brand" href="/" aria-label="MACA Santé — accueil"><img src="logo-maca.svg" alt=""/><span class="brand-word">macasante</span></a></header>
 <main class="daily-page"><a class="daily-back" href="/">← Retour à l’accueil</a><article id="daily-content" class="daily-card" aria-live="polite"></article></main>
-<script src="maca-daily-editorial-data.js?v=20260923-editorial"></script>
+<script src="maca-daily-editorial-data.js?v=20261011-home"></script>
+<script src="maca-editorial-history.js?v=20261011-home"></script>
 <script>
 (function(){
  const root=document.getElementById('daily-content');
  const id=new URLSearchParams(location.search).get('id');
- const data=window.MACA_DAILY_EDITORIAL;
+ const editions=[window.MACA_DAILY_EDITORIAL,...(window.MACA_EDITORIAL_HISTORY||[])];
+ const data=editions.find(d=>d&&d.articles.some(x=>x.id===id));
  const item=data && Array.isArray(data.articles) ? data.articles.find(x=>x.id===id) : null;
  const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  if(!item){root.innerHTML='<p class="eyebrow">MACA SANTÉ</p><h1>Contenu introuvable</h1><p>Ce contenu quotidien n’est plus disponible à cette adresse.</p>';return;}

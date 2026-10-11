@@ -1,5 +1,4 @@
-// Archives du Mag, indépendantes du corpus Assistant. Date = édition de la veille.
-window.MACA_MAGAZINE_ARTICLES = [
+window.MACA_MAGAZINE_ARTICLES=[
   {
     "id": "daily-cannabis-sommeil-20261010",
     "url": "article-cannabis-sommeil.html",
@@ -102,6 +101,86 @@ window.MACA_MAGAZINE_ARTICLES = [
     "imageAlt": "",
     "keywords": [
       "Prévention"
+    ]
+  },
+  {
+    "id": "daily-galleri-20261011",
+    "url": "article-depistage-multicancer-galleri.html",
+    "title": "Une simple prise de sang peut-elle dépister plusieurs cancers ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Dépistage",
+    "date": "2026-10-11",
+    "status": "PUBLISHED",
+    "excerpt": "Le grand essai NHS-Galleri n’a pas atteint son objectif principal : réduire les diagnostics de cancers aux stades III et IV réunis. Le signal favorable sur le stade IV seul reste à confirmer.",
+    "image": "https://images.pexels.com/photos/4248219/pexels-photo-4248219.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Tubes de prélèvement sanguin.",
+    "keywords": [
+      "Dépistage"
+    ]
+  },
+  {
+    "id": "daily-diabete-20261011",
+    "url": "article-diabete-protection-coeur-reins.html",
+    "title": "Diabète de type 2 : protéger le cœur et les reins, au-delà de la glycémie",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Diabète",
+    "date": "2026-10-11",
+    "status": "PUBLISHED",
+    "excerpt": "Le consensus ADA/EASD 2026 élargit les objectifs : glycémie, poids et protection des organes. Certains traitements sont choisis selon le risque cardiovasculaire et rénal, avec une décision individualisée.",
+    "image": "https://images.pexels.com/photos/11354239/pexels-photo-11354239.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Mesure de la glycémie avec un glucomètre.",
+    "keywords": [
+      "Diabète"
+    ]
+  },
+  {
+    "id": "daily-activite-jeunes-20261011",
+    "url": "article-activite-jeunes-metabolisme.html",
+    "title": "Bouger protège-t-il la santé métabolique des jeunes ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Activité Physique",
+    "date": "2026-10-11",
+    "status": "PUBLISHED",
+    "excerpt": "Une analyse de 14 cohortes trouve des associations favorables modestes avec certains marqueurs. Elle ne permet pas d’affirmer que l’activité explique à elle seule ces différences.",
+    "image": "https://images.pexels.com/photos/14972595/pexels-photo-14972595.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Jeunes jouant au basket-ball.",
+    "keywords": [
+      "Activité Physique"
+    ]
+  },
+  {
+    "id": "daily-chaleur-coeur-20261011",
+    "url": "article-chaleur-maladie-cardiaque.html",
+    "title": "Maladie cardiaque et chaleur : comment anticiper les risques ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Cœur",
+    "date": "2026-10-11",
+    "status": "PUBLISHED",
+    "excerpt": "Préparer les épisodes de chaleur avec son équipe soignante, adapter les activités et connaître les signes d’alerte : les conseils de la Société européenne de cardiologie.",
+    "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Échange avec un professionnel de santé.",
+    "keywords": [
+      "Cœur"
+    ]
+  },
+  {
+    "id": "daily-eau-vf-20261011",
+    "url": "vrai-faux-deux-litres-eau.html",
+    "title": "Tout le monde doit boire exactement deux litres d’eau par jour.",
+    "format": "vrai-faux",
+    "category": "Prévention",
+    "theme": "Faux",
+    "date": "2026-10-11",
+    "status": "PUBLISHED",
+    "excerpt": "FAUX. Les repères EFSA portent sur l’eau totale, boissons et aliments compris : environ 2 litres pour les femmes et 2,5 litres pour les hommes, dans des conditions modérées. Les besoins varient.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Faux"
     ]
   }
 ];
