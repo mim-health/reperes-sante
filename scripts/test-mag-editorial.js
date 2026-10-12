@@ -1,6 +1,9 @@
 'use strict';
 const assert=require('assert/strict'),fs=require('fs'),os=require('os'),path=require('path');
 const m=require('./mag-editorial'),source=m.read(),copy=x=>JSON.parse(JSON.stringify(x));
+// These historical scenarios use a fixed 10–11 October fixture, independent of later editions.
+source.editions=source.editions.filter(e=>e.date<='2026-10-11');
+source.contents=source.contents.filter(c=>c.date<='2026-10-11');
 const before=m.assemble(source,new Date('2026-10-10T08:00:00+02:00')),after=m.assemble(source,new Date('2026-10-11T08:00:00+02:00'));
 assert.equal(before.current.date,'2026-10-10');assert(!before.published.some(c=>c.id==='sfe-2026-diabete-type-1-diagnostic-precoce'),'Standalone article must respect publication date');assert.equal(after.current.date,'2026-10-11');for(const c of before.published)assert(after.published.some(x=>x.id===c.id&&x.url===c.url));
 const root=fs.mkdtempSync(path.join(os.tmpdir(),'mag-'));

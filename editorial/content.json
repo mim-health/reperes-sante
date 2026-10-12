@@ -1031,6 +1031,375 @@
           "url": "https://www.agence-biomedecine.fr/fr/genetique-medicale/genetique-medicale"
         }
       ]
+    },
+    {
+      "id": "daily-survodutide-20261012",
+      "date": "2026-10-12",
+      "title": "Obésité et diabète : que montre le nouvel essai sur le survodutide ?",
+      "answer": "Un essai de phase 3 montre une perte de poids supérieure au placebo chez des adultes avec diabète de type 2. Le survodutide reste expérimental : ces résultats ne prouvent pas sa supériorité sur les traitements disponibles.",
+      "html": "<article><img src=\"assets/editorial/2026-10-12/survodutide.svg\" alt=\"Recherche sur le poids et la glycémie\" width=\"1200\" height=\"675\"><p><small>Illustration originale MACASANTÉ, schématique et non diagnostique.</small></p><p class=\"eyebrow\">À LA UNE · 12 OCTOBRE 2026</p><h1>Obésité et diabète : que montre le nouvel essai sur le survodutide ?</h1><p><strong>Un essai de phase 3 montre une perte de poids supérieure au placebo chez des adultes avec diabète de type 2. Le survodutide reste expérimental : ces résultats ne prouvent pas sa supériorité sur les traitements disponibles.</strong></p><h2>La réponse</h2><p>Le survodutide est une piste thérapeutique supplémentaire étudiée chez des adultes vivant avec un diabète de type 2 et un surpoids ou une obésité. Le nouvel essai montre un effet sur le poids et la glycémie. Il ne suffit pas à déterminer sa place par rapport aux médicaments déjà disponibles.</p><h2>Ce que montre l’essai</h2><p>Publié le 1er octobre 2026 dans le New England Journal of Medicine, SYNCHRONIZE-2 est un essai randomisé de phase 3 portant sur 752 adultes. À 76 semaines, la perte moyenne de poids est de 9,8 % dans le groupe recevant 6 mg de survodutide, contre 3,9 % sous placebo. Le résultat correspond à une moyenne de groupe : il ne prédit pas la réponse individuelle.</p><h2>Ce que l’on ne peut pas conclure</h2><p>L’étude compare le traitement à un placebo, et non aux autres médicaments du poids. Elle ne démontre donc pas une supériorité sur ces traitements. Elle ne démontre pas non plus ici un bénéfice sur la mortalité. Une baisse de poids ou de glycémie est un résultat utile, mais ne répond pas à toutes les questions sur les conséquences à long terme.</p><h2>Tolérance et limites</h2><p>Les effets digestifs sont fréquents. Le traitement demeure expérimental dans cette publication et l’essai est financé par l’industrie. L’interprétation doit tenir compte à la fois de l’efficacité mesurée, de la tolérance et des limites de la comparaison.</p><h2>À retenir pour les patients</h2><p>Cette publication aide à comprendre les résultats réels derrière les annonces sur les nouveaux traitements. Elle ne constitue pas une invitation à modifier son traitement. Le choix d’une prise en charge reste individualisé avec l’équipe soignante.</p><h2>Sources</h2><ul><li><a href=\"https://www.nejm.org/doi/10.1056/NEJMoa2607219\">NEJM — SYNCHRONIZE-2, 1er octobre 2026, doi:10.1056/NEJMoa2607219</a></li><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/42820639/\">PubMed — PMID 42820639</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "url": "mag-survodutide-20261012.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Obésité & diabète",
+      "keywords": [
+        "Obésité & diabète",
+        "survodutide"
+      ],
+      "sources": [
+        {
+          "label": "NEJM — SYNCHRONIZE-2, 1er octobre 2026, doi:10.1056/NEJMoa2607219",
+          "url": "https://www.nejm.org/doi/10.1056/NEJMoa2607219"
+        },
+        {
+          "label": "PubMed — PMID 42820639",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42820639/"
+        }
+      ],
+      "image": "assets/editorial/2026-10-12/survodutide.svg",
+      "imageAlt": "Recherche sur le poids et la glycémie",
+      "imageCredit": "Illustration originale MACASANTÉ",
+      "imageSource": "https://macasante.fr/assets/editorial/2026-10-12/survodutide.svg",
+      "imageLicense": "Création originale MACASANTÉ — utilisation autorisée par le titulaire du site",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-12",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de la conférence du 12 octobre 2026 et de son iconographie : « Ok validation avrc iconographie ». Mise en forme des contenus approuvés sans ajout de résultat médical.",
+        "contentHash": "76f0b91ddfa6a5ed3f3e7aaca33a6d236633d5f313843ccd48bdabcebd804cf0"
+      }
+    },
+    {
+      "id": "daily-famille-20261012",
+      "date": "2026-10-12",
+      "title": "Alcool et drogues chez les ados : accompagner les parents peut-il aider ?",
+      "answer": "Un essai américain rapporte des bénéfices d’un programme familial structuré intégré aux soins primaires. Il ne permet pas d’attribuer les mêmes effets à une application seule ou à quelques conseils.",
+      "html": "<article><img src=\"assets/editorial/2026-10-12/famille.svg\" alt=\"Dialogue entre parents et adolescents\" width=\"1200\" height=\"675\"><p><small>Illustration originale MACASANTÉ, schématique et non diagnostique.</small></p><p class=\"eyebrow\">À LIRE EN 3 MIN · 12 OCTOBRE 2026</p><h1>Alcool et drogues chez les ados : accompagner les parents peut-il aider ?</h1><p><strong>Un essai américain rapporte des bénéfices d’un programme familial structuré intégré aux soins primaires. Il ne permet pas d’attribuer les mêmes effets à une application seule ou à quelques conseils.</strong></p><h2>La réponse</h2><p>Un accompagnement structuré des familles peut contribuer à prévenir certaines consommations à risque. Un essai randomisé récent fournit des résultats encourageants pour un programme précis, évalué dans une population précise.</p><h2>Ce qu’apporte la nouvelle étude</h2><p>Publié le 9 octobre 2026 dans JAMA Network Open, l’essai évalue eHealth Familias Unidas Primary Care auprès de 456 familles hispaniques américaines. Le programme familial numérique est intégré aux soins primaires. Comparé aux soins habituels, il rapporte une réduction de l’usage de drogues au fil du suivi et de certaines initiations aux consommations d’alcool et de drogues.</p><h2>Pourquoi le cadre compte</h2><p>Le résultat concerne un dispositif organisé, et pas seulement l’accès à un outil numérique. Il serait excessif d’affirmer qu’une application seule, une conversation isolée ou quelques conseils produisent le même effet. Un programme évalué doit être décrit avec son contexte et ses limites.</p><h2>Ce que cela peut apporter aux familles</h2><p>L’intérêt est de montrer que la prévention peut inclure les parents et s’inscrire dans un accompagnement de soins. Le sujet permet d’aborder les consommations sans réduire la prévention à une injonction ou à la seule responsabilité de l’adolescent.</p><h2>Les limites</h2><p>La population étudiée et le contexte américain limitent la transposition directe aux familles françaises. Les résultats n’établissent pas l’efficacité de tous les programmes familiaux ni de tous les outils numériques. La capacité à maintenir ce dispositif dans les organisations de soins reste à étudier.</p><h2>À retenir</h2><p>Le message est celui d’un accompagnement structuré prometteur. Il ne s’agit ni d’une solution universelle ni d’une garantie individuelle de prévention.</p><h2>Sources</h2><ul><li><a href=\"https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855123\">JAMA Network Open — essai randomisé, 9 octobre 2026, doi:10.1001/jamanetworkopen.2026.37908</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "url": "mag-famille-20261012.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Ados",
+      "keywords": [
+        "Ados",
+        "famille"
+      ],
+      "sources": [
+        {
+          "label": "JAMA Network Open — essai randomisé, 9 octobre 2026, doi:10.1001/jamanetworkopen.2026.37908",
+          "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855123"
+        }
+      ],
+      "image": "assets/editorial/2026-10-12/famille.svg",
+      "imageAlt": "Dialogue entre parents et adolescents",
+      "imageCredit": "Illustration originale MACASANTÉ",
+      "imageSource": "https://macasante.fr/assets/editorial/2026-10-12/famille.svg",
+      "imageLicense": "Création originale MACASANTÉ — utilisation autorisée par le titulaire du site",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-12",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de la conférence du 12 octobre 2026 et de son iconographie : « Ok validation avrc iconographie ». Mise en forme des contenus approuvés sans ajout de résultat médical.",
+        "contentHash": "173ba79e57f428949a9414427c0989386723efec3d46922afd85e652707e1630"
+      }
+    },
+    {
+      "id": "daily-coqueluche-20261012",
+      "date": "2026-10-12",
+      "title": "Coqueluche : où en est le vaccin par le nez ?",
+      "answer": "Un essai de phase 2b montre une réponse immunitaire nasale encourageante chez les 6–17 ans. Il ne démontre pas encore une réduction des cas de coqueluche ou de la transmission.",
+      "html": "<article><img src=\"assets/editorial/2026-10-12/coqueluche.svg\" alt=\"Recherche sur un vaccin nasal\" width=\"1200\" height=\"675\"><p><small>Illustration originale MACASANTÉ, schématique et non diagnostique.</small></p><p class=\"eyebrow\">À LIRE EN 3 MIN · 12 OCTOBRE 2026</p><h1>Coqueluche : où en est le vaccin par le nez ?</h1><p><strong>Un essai de phase 2b montre une réponse immunitaire nasale encourageante chez les 6–17 ans. Il ne démontre pas encore une réduction des cas de coqueluche ou de la transmission.</strong></p><h2>La réponse</h2><p>Un vaccin nasal contre la coqueluche est en cours de recherche. Les résultats récents sont encourageants sur la réponse immunitaire et la tolérance, mais ne démontrent pas encore une protection clinique contre la maladie ou sa transmission.</p><h2>Ce que l’essai a étudié</h2><p>Publié le 1er octobre 2026 dans Lancet Infectious Diseases, l’essai randomisé de phase 2b évalue le candidat vaccin BPZE1 chez des enfants de 6 à 17 ans. Il montre une réponse immunitaire nasale. Cette voie d’administration intéresse les chercheurs parce qu’elle vise les muqueuses.</p><h2>Réponse immunitaire et protection : deux questions différentes</h2><p>Mesurer une réponse immunitaire est une étape de développement. Ce résultat ne permet pas, à lui seul, de conclure que les enfants auront moins de coqueluches ou qu’ils transmettront moins la bactérie. Pour répondre à ces questions, des évaluations complémentaires sont nécessaires.</p><h2>Que sait-on de la tolérance ?</h2><p>La tolérance observée dans l’essai est encourageante. Cela ne clôt pas l’évaluation de la sécurité : les conclusions restent liées à la population, à l’effectif et au suivi de cette étude. Le financement industriel fait également partie des éléments à rendre transparents.</p><h2>Ce que cela change aujourd’hui</h2><p>Cette publication ne justifie aucun changement du calendrier vaccinal. Le candidat vaccin ne doit pas être présenté comme un remplacement acquis des vaccins actuellement utilisés.</p><h2>À retenir</h2><p>Il s’agit d’une avancée de recherche, avec des limites explicites. Le progrès mesuré porte ici sur une réponse immunitaire nasale, pas sur une diminution démontrée des cas ou de la transmission.</p><h2>Sources</h2><ul><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/42822488/\">Lancet Infectious Diseases — phase 2b, 1er octobre 2026, doi:10.1016/S1473-3099(26)00470-6 ; PMID 42822488</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "url": "mag-coqueluche-20261012.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Enfants & parents",
+      "keywords": [
+        "Enfants & parents",
+        "coqueluche"
+      ],
+      "sources": [
+        {
+          "label": "Lancet Infectious Diseases — phase 2b, 1er octobre 2026, doi:10.1016/S1473-3099(26)00470-6 ; PMID 42822488",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42822488/"
+        }
+      ],
+      "image": "assets/editorial/2026-10-12/coqueluche.svg",
+      "imageAlt": "Recherche sur un vaccin nasal",
+      "imageCredit": "Illustration originale MACASANTÉ",
+      "imageSource": "https://macasante.fr/assets/editorial/2026-10-12/coqueluche.svg",
+      "imageLicense": "Création originale MACASANTÉ — utilisation autorisée par le titulaire du site",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-12",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de la conférence du 12 octobre 2026 et de son iconographie : « Ok validation avrc iconographie ». Mise en forme des contenus approuvés sans ajout de résultat médical.",
+        "contentHash": "b822f25c98c737b95d87d7b5b5ac27f611638f2a75ba79ba93b279df92352f41"
+      }
+    },
+    {
+      "id": "daily-souhaits-20261012",
+      "date": "2026-10-12",
+      "title": "Faire connaître ses souhaits de soins : quel accompagnement aide vraiment ?",
+      "answer": "L’essai EQUAL ACP ne montre pas de supériorité significative entre deux démarches d’anticipation des soins. Il invite à discuter de ses souhaits, sans confondre résultat américain et cadre français.",
+      "html": "<article><img src=\"assets/editorial/2026-10-12/souhaits.svg\" alt=\"Échange sur les souhaits de soins\" width=\"1200\" height=\"675\"><p><small>Illustration originale MACASANTÉ, schématique et non diagnostique.</small></p><p class=\"eyebrow\">À LIRE EN 3 MIN · 12 OCTOBRE 2026</p><h1>Faire connaître ses souhaits de soins : quel accompagnement aide vraiment ?</h1><p><strong>L’essai EQUAL ACP ne montre pas de supériorité significative entre deux démarches d’anticipation des soins. Il invite à discuter de ses souhaits, sans confondre résultat américain et cadre français.</strong></p><h2>La réponse</h2><p>Un accompagnement peut aider à aborder ses souhaits de soins. Toutefois, le nouvel essai EQUAL ACP ne montre pas de différence significative sur son critère principal entre une démarche facilitée et une démarche autoguidée.</p><h2>Ce que l’étude compare</h2><p>Publié le 7 octobre 2026 dans JAMA, cet essai porte sur des personnes âgées atteintes d’une maladie grave aux États-Unis. Il compare deux démarches d’anticipation des soins. Le critère principal inclut à la fois des documents et des discussions sur les préférences de soins.</p><h2>Comment interpréter le résultat ?</h2><p>L’absence de différence significative ne prouve pas que les deux approches sont équivalentes. Elle ne signifie pas non plus que discuter de ses souhaits est inutile. Elle indique que l’essai n’a pas démontré la supériorité attendue sur le critère choisi.</p><h2>Une question concrète pour les patients</h2><p>L’intérêt de ce sujet est d’ouvrir une discussion avec ses proches et son médecin sur ce qui compte pour soi. Une réflexion sur les soins futurs peut être accompagnée, selon la situation et le souhait de la personne.</p><h2>Le repère français</h2><p>La HAS propose un guide pour aider à réfléchir à ses directives anticipées et à les rédiger. La réflexion peut aussi être l’occasion de faire connaître ses souhaits à la personne de confiance. Le cadre français doit être distingué des dispositifs américains évalués dans cet essai.</p><h2>Les limites à conserver</h2><p>Les résultats concernent un contexte américain et un critère mêlant plusieurs formes d’anticipation. Ils ne permettent pas de désigner une méthode universellement meilleure. Le choix d’un accompagnement reste lié aux besoins de chacun.</p><h2>Sources</h2><ul><li><a href=\"https://jamanetwork.com/journals/jama/article-abstract/2854960\">JAMA — EQUAL ACP, 7 octobre 2026, doi:10.1001/jama.2026.17619</a></li><li><a href=\"https://www.has-sante.fr/jcms/c_2722363/fr/rediger-ses-directives-anticipees\">HAS — Pour tous, comment rédiger vos directives anticipées</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "url": "mag-souhaits-20261012.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Seniors",
+      "keywords": [
+        "Seniors",
+        "souhaits"
+      ],
+      "sources": [
+        {
+          "label": "JAMA — EQUAL ACP, 7 octobre 2026, doi:10.1001/jama.2026.17619",
+          "url": "https://jamanetwork.com/journals/jama/article-abstract/2854960"
+        },
+        {
+          "label": "HAS — Pour tous, comment rédiger vos directives anticipées",
+          "url": "https://www.has-sante.fr/jcms/c_2722363/fr/rediger-ses-directives-anticipees"
+        }
+      ],
+      "image": "assets/editorial/2026-10-12/souhaits.svg",
+      "imageAlt": "Échange sur les souhaits de soins",
+      "imageCredit": "Illustration originale MACASANTÉ",
+      "imageSource": "https://macasante.fr/assets/editorial/2026-10-12/souhaits.svg",
+      "imageLicense": "Création originale MACASANTÉ — utilisation autorisée par le titulaire du site",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": true,
+      "validation": {
+        "validatedAt": "2026-10-12",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de la conférence du 12 octobre 2026 et de son iconographie : « Ok validation avrc iconographie ». Mise en forme des contenus approuvés sans ajout de résultat médical.",
+        "contentHash": "3c95ee994a228d619800c1a7a40afc7e4401136068651c1c6a65fe58f5ef1075"
+      }
+    },
+    {
+      "id": "daily-complements-20261012",
+      "date": "2026-10-12",
+      "title": "Médicaments et compléments alimentaires : peut-on les prendre ensemble ?",
+      "answer": "Pas toujours. Signalez aussi les plantes, vitamines et compléments au médecin ou au pharmacien. Retrouvez la fiche existante et validée du corpus MACASANTÉ.",
+      "html": "<article><img src=\"assets/editorial/2026-10-12/complements.svg\" alt=\"Médicaments et compléments alimentaires\" width=\"1200\" height=\"675\"><p><small>Illustration originale MACASANTÉ, schématique et non diagnostique.</small></p><p class=\"eyebrow\">FICHE DU JOUR · 12 OCTOBRE 2026</p><h1>Médicaments et compléments alimentaires : peut-on les prendre ensemble ?</h1><p><strong>Pas toujours. Signalez aussi les plantes, vitamines et compléments au médecin ou au pharmacien. Retrouvez la fiche existante et validée du corpus MACASANTÉ.</strong></p><h2>La fiche en rotation</h2><p>Un complément alimentaire peut modifier l’action d’un médicament. Être vendu sans ordonnance ou présenté comme naturel ne garantit pas l’absence d’interaction. Cette sélection renvoie à la fiche de référence déjà validée ; elle ne crée pas une nouvelle fiche.</p><h2>Sources</h2><ul><li><a href=\"https://macasante.fr/fiche.html?id=medicaments-complements-interactions\">MACASANTÉ — fiche validée le 25 septembre 2026</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "url": "mag-complements-20261012.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "Santé au quotidien",
+      "keywords": [
+        "Santé au quotidien",
+        "complements"
+      ],
+      "sources": [
+        {
+          "label": "MACASANTÉ — fiche validée le 25 septembre 2026",
+          "url": "https://macasante.fr/fiche.html?id=medicaments-complements-interactions"
+        }
+      ],
+      "image": "assets/editorial/2026-10-12/complements.svg",
+      "imageAlt": "Médicaments et compléments alimentaires",
+      "imageCredit": "Illustration originale MACASANTÉ",
+      "imageSource": "https://macasante.fr/assets/editorial/2026-10-12/complements.svg",
+      "imageLicense": "Création originale MACASANTÉ — utilisation autorisée par le titulaire du site",
+      "ficheId": "medicaments-complements-interactions",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-12",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de la conférence du 12 octobre 2026 et de son iconographie : « Ok validation avrc iconographie ». Mise en forme des contenus approuvés sans ajout de résultat médical.",
+        "contentHash": "eacd45b5111d8b28862d42809823299d6f12df29672a7ddbc99f99cfee4f9831"
+      },
+      "assistantPolicy": "REFERENCE_FICHE_ONLY"
+    },
+    {
+      "id": "daily-osteoporose-20261012",
+      "date": "2026-10-12",
+      "title": "Sans douleur, je ne peux pas avoir d’ostéoporose.",
+      "answer": "FAUX. L’ostéoporose peut rester silencieuse jusqu’à une fracture. L’absence de douleur ne suffit pas à l’exclure.",
+      "html": "<article><img src=\"assets/editorial/2026-10-12/osteoporose.svg\" alt=\"Os et prévention des fractures\" width=\"1200\" height=\"675\"><p><small>Illustration originale MACASANTÉ, schématique et non diagnostique.</small></p><p class=\"eyebrow\">VRAI OU FAUX · 12 OCTOBRE 2026</p><h1>Sans douleur, je ne peux pas avoir d’ostéoporose.</h1><p><strong>FAUX. L’ostéoporose peut rester silencieuse jusqu’à une fracture. L’absence de douleur ne suffit pas à l’exclure.</strong></p><h2>Verdict : FAUX</h2><p>L’ostéoporose peut ne provoquer aucun symptôme perceptible avant une fracture. L’absence de douleur ne permet donc pas d’écarter cette maladie.</p><h2>Sources</h2><ul><li><a href=\"https://rheumatology.org/I-Am-A/Patient-Caregiver/Diseases-Conditions/Osteoporosis\">American College of Rheumatology — Osteoporosis, mise à jour juin 2025</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "url": "mag-osteoporose-20261012.html",
+      "format": "vrai-faux",
+      "category": "Prévention",
+      "theme": "Os & articulations",
+      "keywords": [
+        "Os & articulations",
+        "osteoporose"
+      ],
+      "sources": [
+        {
+          "label": "American College of Rheumatology — Osteoporosis, mise à jour juin 2025",
+          "url": "https://rheumatology.org/I-Am-A/Patient-Caregiver/Diseases-Conditions/Osteoporosis"
+        }
+      ],
+      "image": "assets/editorial/2026-10-12/osteoporose.svg",
+      "imageAlt": "Os et prévention des fractures",
+      "imageCredit": "Illustration originale MACASANTÉ",
+      "imageSource": "https://macasante.fr/assets/editorial/2026-10-12/osteoporose.svg",
+      "imageLicense": "Création originale MACASANTÉ — utilisation autorisée par le titulaire du site",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-12",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de la conférence du 12 octobre 2026 et de son iconographie : « Ok validation avrc iconographie ». Mise en forme des contenus approuvés sans ajout de résultat médical.",
+        "contentHash": "250c98ccbdc36948ab0b3f60f17b825e21ab2507e25c9576bb2bf53757969627"
+      }
+    },
+    {
+      "id": "daily-audition-20261012",
+      "date": "2026-10-12",
+      "title": "Plus d’un milliard de jeunes exposés à des niveaux sonores potentiellement dangereux",
+      "answer": "L’OMS rappelle ce risque lié à l’écoute et aux loisirs sonores. Ce chiffre mesure une exposition à risque, pas le nombre de jeunes déjà atteints de surdité.",
+      "html": "<article><img src=\"assets/editorial/2026-10-12/audition.svg\" alt=\"Protection de l’audition et écoute musicale\" width=\"1200\" height=\"675\"><p><small>Illustration originale MACASANTÉ, schématique et non diagnostique.</small></p><p class=\"eyebrow\">LE CHIFFRE DU JOUR · 12 OCTOBRE 2026</p><h1>Plus d’un milliard de jeunes exposés à des niveaux sonores potentiellement dangereux</h1><p><strong>L’OMS rappelle ce risque lié à l’écoute et aux loisirs sonores. Ce chiffre mesure une exposition à risque, pas le nombre de jeunes déjà atteints de surdité.</strong></p><h2>Le chiffre et son contexte</h2><p>Plus d’un milliard de jeunes sont exposés à des niveaux sonores potentiellement dangereux, selon l’estimation rappelée par l’OMS le 1er octobre 2026. Ce rappel s’appuie sur une estimation antérieure : ce n’est pas une nouvelle mesure de prévalence publiée ce jour-là. Il ne signifie pas qu’un milliard de jeunes sont déjà atteints de surdité.</p><h2>Sources</h2><ul><li><a href=\"https://www.who.int/news-room/articles-detail/call-for-commitments-to--make-listening-safe--across-the-world\">OMS — Make Listening Safe, 1er octobre 2026</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "url": "mag-audition-20261012.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "Prévention & dépistage",
+      "keywords": [
+        "Prévention & dépistage",
+        "audition"
+      ],
+      "sources": [
+        {
+          "label": "OMS — Make Listening Safe, 1er octobre 2026",
+          "url": "https://www.who.int/news-room/articles-detail/call-for-commitments-to--make-listening-safe--across-the-world"
+        }
+      ],
+      "image": "assets/editorial/2026-10-12/audition.svg",
+      "imageAlt": "Protection de l’audition et écoute musicale",
+      "imageCredit": "Illustration originale MACASANTÉ",
+      "imageSource": "https://macasante.fr/assets/editorial/2026-10-12/audition.svg",
+      "imageLicense": "Création originale MACASANTÉ — utilisation autorisée par le titulaire du site",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-12",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de la conférence du 12 octobre 2026 et de son iconographie : « Ok validation avrc iconographie ». Mise en forme des contenus approuvés sans ajout de résultat médical.",
+        "contentHash": "d9347009177792ec368ab6b6ec43ca80822d930f59a87cc2e8d23f42c2b2750d"
+      }
+    },
+    {
+      "id": "daily-masque-20261012",
+      "date": "2026-10-12",
+      "title": "Masque en milieu de soins : un avis pour la période d’épidémies hivernales",
+      "answer": "Un avis SF2H du 30 septembre 2026 porte sur la période d’épidémies hivernales pendant laquelle le masque est recommandé dans les établissements sanitaires et médico-sociaux.",
+      "html": "<article><p class=\"eyebrow\">DONNÉES · 12 OCTOBRE 2026</p><h1>Masque en milieu de soins : un avis pour la période d’épidémies hivernales</h1><p><strong>Un avis SF2H du 30 septembre 2026 porte sur la période d’épidémies hivernales pendant laquelle le masque est recommandé dans les établissements sanitaires et médico-sociaux.</strong></p><h2>Le repère</h2><p>La Société française d’hygiène hospitalière a publié un avis daté du 30 septembre 2026 sur la période d’épidémies hivernales communautaires pendant laquelle le port du masque est recommandé à l’intérieur des bâtiments des établissements de santé et médico-sociaux. Ce repère ne doit pas être présenté comme une obligation générale dans tous les lieux publics.</p><h2>Sources</h2><ul><li><a href=\"https://www.sf2h.net/commissions/conseil-scientifique.html\">SF2H — Conseil scientifique, avis du 30 septembre 2026</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "url": "mag-masque-20261012.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "Prévention & dépistage",
+      "keywords": [
+        "Prévention & dépistage",
+        "masque"
+      ],
+      "sources": [
+        {
+          "label": "SF2H — Conseil scientifique, avis du 30 septembre 2026",
+          "url": "https://www.sf2h.net/commissions/conseil-scientifique.html"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-12",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de la conférence du 12 octobre 2026 et de son iconographie : « Ok validation avrc iconographie ». Mise en forme des contenus approuvés sans ajout de résultat médical.",
+        "contentHash": "5e3773f1ebce94c3b76759c66c571a744b186109ae82418817809ab6f5089df3"
+      }
+    },
+    {
+      "id": "daily-varicelle-20261012",
+      "date": "2026-10-12",
+      "title": "Vaccination contre la varicelle : un cadrage, pas encore une recommandation définitive",
+      "answer": "La note de cadrage HAS actualisée en octobre annonce un travail d’évaluation. Elle ne constitue pas une recommandation définitive de vaccination généralisée.",
+      "html": "<article><p class=\"eyebrow\">DONNÉES · 12 OCTOBRE 2026</p><h1>Vaccination contre la varicelle : un cadrage, pas encore une recommandation définitive</h1><p><strong>La note de cadrage HAS actualisée en octobre annonce un travail d’évaluation. Elle ne constitue pas une recommandation définitive de vaccination généralisée.</strong></p><h2>Ce que signifie une note de cadrage</h2><p>La note de cadrage de la HAS concerne l’évaluation d’une vaccination contre la varicelle chez les nourrissons de 12 mois et plus. Actualisée en octobre 2026, elle annonce un travail d’évaluation. Une note de cadrage ne constitue pas une recommandation définitive de vaccination généralisée.</p><h2>Sources</h2><ul><li><a href=\"https://www.has-sante.fr/jcms/p_3777770/fr/recommandation-vaccinale-contre-la-varicelle-chez-les-nourrissons-de-12-mois-et-plus-note-de-cadrage\">HAS — Varicelle, note de cadrage actualisée en octobre 2026</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "url": "mag-varicelle-20261012.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "Enfants & parents",
+      "keywords": [
+        "Enfants & parents",
+        "varicelle"
+      ],
+      "sources": [
+        {
+          "label": "HAS — Varicelle, note de cadrage actualisée en octobre 2026",
+          "url": "https://www.has-sante.fr/jcms/p_3777770/fr/recommandation-vaccinale-contre-la-varicelle-chez-les-nourrissons-de-12-mois-et-plus-note-de-cadrage"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-12",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de la conférence du 12 octobre 2026 et de son iconographie : « Ok validation avrc iconographie ». Mise en forme des contenus approuvés sans ajout de résultat médical.",
+        "contentHash": "bffddca93cc13f9fd61bfb505cf957e196c9d0da89b9991a3cb959fefe756fe6"
+      }
+    },
+    {
+      "id": "daily-douleur-20261012",
+      "date": "2026-10-12",
+      "title": "Après une opération : intégrer les options non médicamenteuses",
+      "answer": "Un essai publié le 25 septembre rapporte une réduction de l’exposition aux opioïdes avec un programme intégrant des options non médicamenteuses, sans modification des résultats rapportés par les patients.",
+      "html": "<article><p class=\"eyebrow\">DONNÉES · 12 OCTOBRE 2026</p><h1>Après une opération : intégrer les options non médicamenteuses</h1><p><strong>Un essai publié le 25 septembre rapporte une réduction de l’exposition aux opioïdes avec un programme intégrant des options non médicamenteuses, sans modification des résultats rapportés par les patients.</strong></p><h2>Ce qu’apporte l’essai</h2><p>Un essai randomisé en grappes publié le 25 septembre 2026 dans JAMA Network Open évalue un programme de prise en charge périopératoire favorisant des options non médicamenteuses. Il rapporte une diminution de l’exposition aux opioïdes, sans modification des résultats rapportés par les patients. Le résultat concerne un programme organisé : il ne démontre pas que toute méthode non médicamenteuse a le même effet.</p><h2>Sources</h2><ul><li><a href=\"https://media.jamanetwork.com/media-releases/10.1001/jamanetworkopen.2026.35900\">JAMA Network Open — 25 septembre 2026, doi:10.1001/jamanetworkopen.2026.35900</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "url": "mag-douleur-20261012.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "Santé au quotidien",
+      "keywords": [
+        "Santé au quotidien",
+        "douleur"
+      ],
+      "sources": [
+        {
+          "label": "JAMA Network Open — 25 septembre 2026, doi:10.1001/jamanetworkopen.2026.35900",
+          "url": "https://media.jamanetwork.com/media-releases/10.1001/jamanetworkopen.2026.35900"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-12",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de la conférence du 12 octobre 2026 et de son iconographie : « Ok validation avrc iconographie ». Mise en forme des contenus approuvés sans ajout de résultat médical.",
+        "contentHash": "8e041a09d29d30cfbd9b559de2dc5e71d38dc649f3812057a567c207090a7584"
+      }
     }
   ],
   "editions": [
@@ -1147,6 +1516,64 @@
           "contentId": "daily-schizophrenie-20261011",
           "slot": "DONNÉES",
           "icon": "SANTÉ MENTALE"
+        }
+      ]
+    },
+    {
+      "id": "edition-2026-10-12",
+      "date": "2026-10-12",
+      "publishAt": "2026-10-12T08:00:00+02:00",
+      "complete": true,
+      "items": [
+        {
+          "contentId": "daily-survodutide-20261012",
+          "slot": "À LA UNE",
+          "icon": "RECHERCHE"
+        },
+        {
+          "contentId": "daily-famille-20261012",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "ADOLESCENTS"
+        },
+        {
+          "contentId": "daily-coqueluche-20261012",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "VACCIN EXPÉRIMENTAL"
+        },
+        {
+          "contentId": "daily-souhaits-20261012",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "SOUHAITS DE SOINS"
+        },
+        {
+          "contentId": "daily-complements-20261012",
+          "slot": "FICHE DU JOUR",
+          "icon": "SANTÉ AU QUOTIDIEN"
+        },
+        {
+          "contentId": "daily-osteoporose-20261012",
+          "slot": "VRAI OU FAUX",
+          "icon": "FAUX"
+        },
+        {
+          "contentId": "daily-audition-20261012",
+          "slot": "LE CHIFFRE DU JOUR",
+          "icon": "PLUS D’UN MILLIARD"
+        },
+        {
+          "contentId": "daily-masque-20261012",
+          "slot": "DONNÉES",
+          "icon": "PRÉVENTION"
+        },
+        {
+          "contentId": "daily-varicelle-20261012",
+          "slot": "DONNÉES",
+          "icon": "TRAVAUX EN COURS"
+        },
+        {
+          "contentId": "daily-douleur-20261012",
+          "slot": "DONNÉES",
+          "icon": "APRÈS UNE OPÉRATION"
         }
       ]
     }
