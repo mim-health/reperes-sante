@@ -1,0 +1,31 @@
+name: Assistant V2 isolated grounding validation
+on:
+  push:
+    branches: [fix/assistant-v2-grounding-repair-20261012]
+    paths:
+      - 'assistant-v2/cloudflare-worker-public.js'
+      - '.github/workflows/assistant-v2-grounding-pr60.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate source syntax and regression
+        run: |
+          node --check assistant-v2/cloudflare-worker-public.js
+          node scripts/build-assistant-v2-corpus.js
+          node scripts/test-ipp-retrieval.js
+          node scripts/test-assistant-v2-grounding.js
+          node scripts/test-assistant-v2-canonical.js
+          node scripts/test-assistant-v2-patient-language.js
+      - name: Verify model fidelity with real API
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: node scripts/test-assistant-v2-model-grounding.js
