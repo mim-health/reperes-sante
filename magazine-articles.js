@@ -49,8 +49,8 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-10",
     "status": "PUBLISHED",
     "excerpt": "Oui, dans un essai américain, des récompenses liées à un arrêt vérifié ont augmenté les chances de sevrage à six mois. Elles complétaient une aide médicale. En France, l’accompagnement et les traitements du manque restent les repères concrets pour préparer son arrêt.",
-    "image": "assets/mag-tabac.svg",
-    "imageAlt": "Cigarette barrée : arrêt du tabac.",
+    "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Entretien de prévention.",
     "keywords": [
       "Prévention"
     ],
@@ -68,8 +68,8 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-10",
     "status": "PUBLISHED",
     "excerpt": "Chez l’adulte, une infection confirmée conduit généralement à proposer un traitement d’éradication, même si les symptômes sont discrets. Il faut d’abord établir le diagnostic, choisir un traitement adapté et vérifier ensuite que la bactérie a bien disparu.",
-    "image": "assets/mag-estomac.svg",
-    "imageAlt": "Illustration de l'estomac et de la bactérie.",
+    "image": "https://images.pexels.com/photos/4226119/pexels-photo-4226119.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Consultation médicale digestive.",
     "keywords": [
       "Digestion"
     ],
@@ -87,8 +87,8 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-10",
     "status": "PUBLISHED",
     "excerpt": "Les premiers gestes utiles et les signes d'alerte après une brûlure domestique.",
-    "image": "assets/mag-brulure.svg",
-    "imageAlt": "Illustration d'une brûlure domestique.",
+    "image": "https://images.pexels.com/photos/4226119/pexels-photo-4226119.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Soins médicaux.",
     "keywords": [
       "SANTÉ AU QUOTIDIEN",
       "Je me suis brûlé à la maison : que faire immédiatement ?"
@@ -263,8 +263,8 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-11",
     "status": "PUBLISHED",
     "excerpt": "Préparer les épisodes de chaleur avec son équipe soignante, adapter les activités et connaître les signes d’alerte : les conseils de la Société européenne de cardiologie.",
-    "image": "assets/mag-chaleur.svg",
-    "imageAlt": "Illustration du cœur exposé à la chaleur.",
+    "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Échange avec un professionnel de santé.",
     "keywords": [
       "Cœur"
     ],
@@ -282,8 +282,8 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-11",
     "status": "PUBLISHED",
     "excerpt": "Les signes d’alerte et les repères pour savoir quand faire examiner une cheville après un traumatisme.",
-    "image": "assets/mag-cheville.svg",
-    "imageAlt": "Illustration d'une cheville douloureuse.",
+    "image": "https://images.pexels.com/photos/4226119/pexels-photo-4226119.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Examen médical.",
     "keywords": [
       "CHEVILLE",
       "Cheville tordue : entorse ou fracture ?"
