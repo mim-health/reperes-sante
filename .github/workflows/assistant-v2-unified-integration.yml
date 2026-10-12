@@ -27,3 +27,26 @@ jobs:
           grep -q 'name = "RATE_LIMITER"' assistant-v2/wrangler.public.toml
           grep -q 'namespace_id = "1001"' assistant-v2/wrangler.public.toml
           grep -q 'limit = 20, period = 60' assistant-v2/wrangler.public.toml
+
+  source-fidelity-pr60:
+    if: github.event_name == 'pull_request' && github.head_ref == 'fix/assistant-v2-grounding-repair-20261012'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build corpus and run deterministic safeguards
+        run: |
+          node scripts/build-assistant-v2-corpus.js
+          node scripts/test-ipp-retrieval.js
+          node scripts/test-assistant-v2-grounding.js
+          node scripts/test-assistant-v2-canonical.js
+          node scripts/test-assistant-v2-patient-language.js
+      - name: Verify live-model source fidelity without deployment
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: node scripts/test-assistant-v2-model-grounding.js
