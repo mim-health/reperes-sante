@@ -243,8 +243,8 @@ export default {
       }));
       if(!ranked.length||ranked[0].similarity<MIN_GATE)return response(origin,allowed,200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:selectedCards,scope_note:'',meta:{worker_revision:WORKER_REVISION,grounding:'not_applicable',corpus_cards:corpus.cardCount,artifact_version:activeVersion}});
       let result,proof,repair=null,rejection='contract_rejected';
-      // At most one repair, including malformed JSON and mechanical evidence failures.
-      for(let attempt=0;attempt<2;attempt++){
+      // Allow two bounded repairs after the initial draft. Every candidate still needs full mechanical and independent semantic validation; otherwise fail closed.
+      for(let attempt=0;attempt<3;attempt++){
         let raw;
         try{raw=await synthesize(runtime,question,selected,repair);}catch(error){
           if(!(error instanceof SyntaxError))throw error;
