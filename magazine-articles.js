@@ -477,5 +477,205 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "cd2f226d280a0b3b0decf820c7cdf655f14420df99ac87e99572c3ef3638ecdb"
+  },
+  {
+    "id": "daily-survodutide-20261012",
+    "url": "mag-survodutide-20261012.html",
+    "title": "Obésité et diabète : que montre le nouvel essai sur le survodutide ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Obésité & diabète",
+    "date": "2026-10-12",
+    "status": "PUBLISHED",
+    "excerpt": "Un essai de phase 3 montre une perte de poids supérieure au placebo chez des adultes avec diabète de type 2. Le survodutide reste expérimental : ces résultats ne prouvent pas sa supériorité sur les traitements disponibles.",
+    "image": "assets/editorial/2026-10-12/survodutide.svg",
+    "imageAlt": "Recherche sur le poids et la glycémie",
+    "keywords": [
+      "Obésité & diabète",
+      "survodutide"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "76f0b91ddfa6a5ed3f3e7aaca33a6d236633d5f313843ccd48bdabcebd804cf0"
+  },
+  {
+    "id": "daily-famille-20261012",
+    "url": "mag-famille-20261012.html",
+    "title": "Alcool et drogues chez les ados : accompagner les parents peut-il aider ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Ados",
+    "date": "2026-10-12",
+    "status": "PUBLISHED",
+    "excerpt": "Un essai américain rapporte des bénéfices d’un programme familial structuré intégré aux soins primaires. Il ne permet pas d’attribuer les mêmes effets à une application seule ou à quelques conseils.",
+    "image": "assets/editorial/2026-10-12/famille.svg",
+    "imageAlt": "Dialogue entre parents et adolescents",
+    "keywords": [
+      "Ados",
+      "famille"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "173ba79e57f428949a9414427c0989386723efec3d46922afd85e652707e1630"
+  },
+  {
+    "id": "daily-coqueluche-20261012",
+    "url": "mag-coqueluche-20261012.html",
+    "title": "Coqueluche : où en est le vaccin par le nez ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Enfants & parents",
+    "date": "2026-10-12",
+    "status": "PUBLISHED",
+    "excerpt": "Un essai de phase 2b montre une réponse immunitaire nasale encourageante chez les 6–17 ans. Il ne démontre pas encore une réduction des cas de coqueluche ou de la transmission.",
+    "image": "assets/editorial/2026-10-12/coqueluche.svg",
+    "imageAlt": "Recherche sur un vaccin nasal",
+    "keywords": [
+      "Enfants & parents",
+      "coqueluche"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "b822f25c98c737b95d87d7b5b5ac27f611638f2a75ba79ba93b279df92352f41"
+  },
+  {
+    "id": "daily-souhaits-20261012",
+    "url": "mag-souhaits-20261012.html",
+    "title": "Faire connaître ses souhaits de soins : quel accompagnement aide vraiment ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Seniors",
+    "date": "2026-10-12",
+    "status": "PUBLISHED",
+    "excerpt": "L’essai EQUAL ACP ne montre pas de supériorité significative entre deux démarches d’anticipation des soins. Il invite à discuter de ses souhaits, sans confondre résultat américain et cadre français.",
+    "image": "assets/editorial/2026-10-12/souhaits.svg",
+    "imageAlt": "Échange sur les souhaits de soins",
+    "keywords": [
+      "Seniors",
+      "souhaits"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "3c95ee994a228d619800c1a7a40afc7e4401136068651c1c6a65fe58f5ef1075"
+  },
+  {
+    "id": "daily-complements-20261012",
+    "url": "mag-complements-20261012.html",
+    "title": "Médicaments et compléments alimentaires : peut-on les prendre ensemble ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé au quotidien",
+    "date": "2026-10-12",
+    "status": "PUBLISHED",
+    "excerpt": "Pas toujours. Signalez aussi les plantes, vitamines et compléments au médecin ou au pharmacien. Retrouvez la fiche existante et validée du corpus MACASANTÉ.",
+    "image": "assets/editorial/2026-10-12/complements.svg",
+    "imageAlt": "Médicaments et compléments alimentaires",
+    "keywords": [
+      "Santé au quotidien",
+      "complements"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "medicaments-complements-interactions",
+    "version": "eacd45b5111d8b28862d42809823299d6f12df29672a7ddbc99f99cfee4f9831"
+  },
+  {
+    "id": "daily-osteoporose-20261012",
+    "url": "mag-osteoporose-20261012.html",
+    "title": "Sans douleur, je ne peux pas avoir d’ostéoporose.",
+    "format": "vrai-faux",
+    "category": "Prévention",
+    "theme": "Os & articulations",
+    "date": "2026-10-12",
+    "status": "PUBLISHED",
+    "excerpt": "FAUX. L’ostéoporose peut rester silencieuse jusqu’à une fracture. L’absence de douleur ne suffit pas à l’exclure.",
+    "image": "assets/editorial/2026-10-12/osteoporose.svg",
+    "imageAlt": "Os et prévention des fractures",
+    "keywords": [
+      "Os & articulations",
+      "osteoporose"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "250c98ccbdc36948ab0b3f60f17b825e21ab2507e25c9576bb2bf53757969627"
+  },
+  {
+    "id": "daily-audition-20261012",
+    "url": "mag-audition-20261012.html",
+    "title": "Plus d’un milliard de jeunes exposés à des niveaux sonores potentiellement dangereux",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Prévention & dépistage",
+    "date": "2026-10-12",
+    "status": "PUBLISHED",
+    "excerpt": "L’OMS rappelle ce risque lié à l’écoute et aux loisirs sonores. Ce chiffre mesure une exposition à risque, pas le nombre de jeunes déjà atteints de surdité.",
+    "image": "assets/editorial/2026-10-12/audition.svg",
+    "imageAlt": "Protection de l’audition et écoute musicale",
+    "keywords": [
+      "Prévention & dépistage",
+      "audition"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "d9347009177792ec368ab6b6ec43ca80822d930f59a87cc2e8d23f42c2b2750d"
+  },
+  {
+    "id": "daily-masque-20261012",
+    "url": "mag-masque-20261012.html",
+    "title": "Masque en milieu de soins : un avis pour la période d’épidémies hivernales",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Prévention & dépistage",
+    "date": "2026-10-12",
+    "status": "PUBLISHED",
+    "excerpt": "Un avis SF2H du 30 septembre 2026 porte sur la période d’épidémies hivernales pendant laquelle le masque est recommandé dans les établissements sanitaires et médico-sociaux.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Prévention & dépistage",
+      "masque"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "5e3773f1ebce94c3b76759c66c571a744b186109ae82418817809ab6f5089df3"
+  },
+  {
+    "id": "daily-varicelle-20261012",
+    "url": "mag-varicelle-20261012.html",
+    "title": "Vaccination contre la varicelle : un cadrage, pas encore une recommandation définitive",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Enfants & parents",
+    "date": "2026-10-12",
+    "status": "PUBLISHED",
+    "excerpt": "La note de cadrage HAS actualisée en octobre annonce un travail d’évaluation. Elle ne constitue pas une recommandation définitive de vaccination généralisée.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Enfants & parents",
+      "varicelle"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "bffddca93cc13f9fd61bfb505cf957e196c9d0da89b9991a3cb959fefe756fe6"
+  },
+  {
+    "id": "daily-douleur-20261012",
+    "url": "mag-douleur-20261012.html",
+    "title": "Après une opération : intégrer les options non médicamenteuses",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé au quotidien",
+    "date": "2026-10-12",
+    "status": "PUBLISHED",
+    "excerpt": "Un essai publié le 25 septembre rapporte une réduction de l’exposition aux opioïdes avec un programme intégrant des options non médicamenteuses, sans modification des résultats rapportés par les patients.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Santé au quotidien",
+      "douleur"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "8e041a09d29d30cfbd9b559de2dc5e71d38dc649f3812057a567c207090a7584"
   }
 ];

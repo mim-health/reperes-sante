@@ -1,12 +1,66 @@
 {
   "schemaVersion": 1,
-  "editionId": "edition-2026-10-11",
-  "editionDate": "2026-10-11",
-  "sourceFingerprint": "0ad5b81e710122293586e6a14c0adc10b0624e08310c64a4bd225f2edce07cbb",
-  "missingEdition": true,
+  "editionId": "edition-2026-10-12",
+  "editionDate": "2026-10-12",
+  "sourceFingerprint": "03e6362789deb6f19cd02119fc26dccbbd7dc36ea60e220da5f38ace7181c8d9",
+  "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-daily-survodutide-20261012",
+      "version": "76f0b91ddfa6a5ed3f3e7aaca33a6d236633d5f313843ccd48bdabcebd804cf0",
+      "url": "mag-survodutide-20261012.html",
+      "date": "2026-10-12"
+    },
+    {
+      "id": "mag-daily-famille-20261012",
+      "version": "173ba79e57f428949a9414427c0989386723efec3d46922afd85e652707e1630",
+      "url": "mag-famille-20261012.html",
+      "date": "2026-10-12"
+    },
+    {
+      "id": "mag-daily-coqueluche-20261012",
+      "version": "b822f25c98c737b95d87d7b5b5ac27f611638f2a75ba79ba93b279df92352f41",
+      "url": "mag-coqueluche-20261012.html",
+      "date": "2026-10-12"
+    },
+    {
+      "id": "mag-daily-souhaits-20261012",
+      "version": "3c95ee994a228d619800c1a7a40afc7e4401136068651c1c6a65fe58f5ef1075",
+      "url": "mag-souhaits-20261012.html",
+      "date": "2026-10-12"
+    },
+    {
+      "id": "mag-daily-osteoporose-20261012",
+      "version": "250c98ccbdc36948ab0b3f60f17b825e21ab2507e25c9576bb2bf53757969627",
+      "url": "mag-osteoporose-20261012.html",
+      "date": "2026-10-12"
+    },
+    {
+      "id": "mag-daily-audition-20261012",
+      "version": "d9347009177792ec368ab6b6ec43ca80822d930f59a87cc2e8d23f42c2b2750d",
+      "url": "mag-audition-20261012.html",
+      "date": "2026-10-12"
+    },
+    {
+      "id": "mag-daily-masque-20261012",
+      "version": "5e3773f1ebce94c3b76759c66c571a744b186109ae82418817809ab6f5089df3",
+      "url": "mag-masque-20261012.html",
+      "date": "2026-10-12"
+    },
+    {
+      "id": "mag-daily-varicelle-20261012",
+      "version": "bffddca93cc13f9fd61bfb505cf957e196c9d0da89b9991a3cb959fefe756fe6",
+      "url": "mag-varicelle-20261012.html",
+      "date": "2026-10-12"
+    },
+    {
+      "id": "mag-daily-douleur-20261012",
+      "version": "8e041a09d29d30cfbd9b559de2dc5e71d38dc649f3812057a567c207090a7584",
+      "url": "mag-douleur-20261012.html",
+      "date": "2026-10-12"
+    },
     {
       "id": "mag-daily-galleri-20261011",
       "version": "90cd0b1b857ae696ea4335a21cd0dca60232b9c535579da6f890b44f95f5b75b",

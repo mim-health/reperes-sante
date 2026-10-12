@@ -295,6 +295,19 @@
     },
     {
       "left": {
+        "id": "medicaments-complements-interactions",
+        "title": "Médicaments et compléments alimentaires : peut-on les prendre ensemble ?",
+        "type": "fiche"
+      },
+      "right": {
+        "id": "daily-complements-20261012",
+        "title": "Médicaments et compléments alimentaires : peut-on les prendre ensemble ?",
+        "type": "Mag"
+      },
+      "score": 1
+    },
+    {
+      "left": {
         "id": "diversification-alimentaire",
         "title": "Diversification alimentaire : quand commencer et par quoi ?",
         "type": "fiche"
@@ -454,6 +467,6 @@
     "manifestFiles": 139,
     "rawFiches": 403,
     "canonicalFiches": 377,
-    "magContents": 27
+    "magContents": 37
   }
 }
