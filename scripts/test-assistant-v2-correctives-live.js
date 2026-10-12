@@ -11,7 +11,22 @@ async function ask(question){
  }
 }
 (async()=>{
- const ready=await fetch(endpoint+'?maca_public_ready=1');assert(ready.ok);assert.equal((await ready.json()).worker_revision,revision,'Worker code has not been deployed');
+ // Allow bounded Cloudflare propagation time after Wrangler reports a successful publish.
+ // A stale revision, transient HTTP failure or malformed response remains a hard failure
+ // if the expected revision is not visible after all attempts.
+ let readyRevision='unavailable';let readyError='';let readyOk=false;
+ for(let attempt=1;attempt<=6;attempt++){
+  try{
+   const ready=await fetch(endpoint+'?maca_public_ready=1',{signal:AbortSignal.timeout(15000),cache:'no-store'});
+   if(!ready.ok)throw new Error('Readiness HTTP '+ready.status);
+   const data=await ready.json();readyRevision=String(data.worker_revision||'missing');
+   readyOk=data.service==='maca-assistant-v2'&&data.public_ready===true&&readyRevision===revision;
+   if(readyOk){console.log(JSON.stringify({check:'production-revision',attempt,revision}));break;}
+   readyError='Unexpected readiness: service='+data.service+' public_ready='+data.public_ready+' revision='+readyRevision;
+  }catch(error){readyError=String(error.message||error);}
+  if(attempt<6)await sleep(10000);
+ }
+ assert(readyOk,'Expected revision '+revision+' not publicly ready after 6 attempts: '+readyError);
  for(const [question,id] of [['Oméprazole depuis longtemps','ipp-long-cours-omeprazole'],['Puis-je arrêter mon oméprazole ?','arreter-omeprazole-pantoprazole-ipp']]){
   const d=await ask(question);assert.equal(d.selected_cards[0].id,id);assert.equal(d.selected_cards[0].retrieval_reason,'ipp-intent');assert.equal(d.status,'answer',JSON.stringify(d));assert.equal(d.meta.grounding,'supported');assert(d.cards_used.length);for(const c of d.cards_used)assert(c.url.startsWith('https://macasante.fr/'));console.log(JSON.stringify({test:id,status:d.status,revision:d.meta.worker_revision,sources:d.cards_used.map(c=>c.id)}));await sleep(4000);
  }
