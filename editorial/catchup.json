@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-11T07:25:40.025Z",
+  "checkedAt": "2026-10-12T07:01:35+02:00",
   "timezone": "Europe/Paris",
-  "reason": "Initial acceptance test of daily catch-up trigger"
+  "controlId": "mag-check-20261012T050135Z-570e5aa82e94",
+  "reason": "Daily catch-up of complete validated editions; no medical content changes"
 }
