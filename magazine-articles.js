@@ -677,5 +677,43 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "8e041a09d29d30cfbd9b559de2dc5e71d38dc649f3812057a567c207090a7584"
+  },
+  {
+    "id": "urolithine-a-20261012",
+    "url": "article-urolithine-a.html",
+    "title": "L’urolithine A protège-t-elle vraiment le cerveau et les vaisseaux ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Compléments alimentaires",
+    "date": "2026-10-12",
+    "status": "PUBLISHED",
+    "excerpt": "Cet essai ne démontre ni amélioration de la fonction vasculaire périphérique ni bénéfice cognitif. Un signal biologique cérébral mérite des recherches supplémentaires.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Compléments alimentaires"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "7f7b4d0cc6146d4db15dc5bc6a2810bbfb422b0e608881dbb92fe420fb723f29"
+  },
+  {
+    "id": "optogenetique-20261012",
+    "url": "article-optogenetique-vision.html",
+    "title": "Une nouvelle thérapie peut-elle rendre la vue ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Vision",
+    "date": "2026-10-12",
+    "status": "PUBLISHED",
+    "excerpt": "Une petite étude montre une amélioration de la sensibilité lumineuse chez certains patients atteints de rétinite pigmentaire avancée. Elle ne démontre pas une restauration de la vision normale.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Vision"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "ab67d4cb027ec3fbcdb31f22e59993dbcaba7ed2f8920534b12ce1c0b5540b45"
   }
 ];

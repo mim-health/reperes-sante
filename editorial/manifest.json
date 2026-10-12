@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "editionId": "edition-2026-10-12",
   "editionDate": "2026-10-12",
-  "sourceFingerprint": "03e6362789deb6f19cd02119fc26dccbbd7dc36ea60e220da5f38ace7181c8d9",
+  "sourceFingerprint": "1d0486f54ad80f8f3d4024bf1716e4f4c4145188cd43b94fbf8c901303b0d664",
   "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
@@ -59,6 +59,18 @@
       "id": "mag-daily-douleur-20261012",
       "version": "8e041a09d29d30cfbd9b559de2dc5e71d38dc649f3812057a567c207090a7584",
       "url": "mag-douleur-20261012.html",
+      "date": "2026-10-12"
+    },
+    {
+      "id": "mag-urolithine-a-20261012",
+      "version": "7f7b4d0cc6146d4db15dc5bc6a2810bbfb422b0e608881dbb92fe420fb723f29",
+      "url": "article-urolithine-a.html",
+      "date": "2026-10-12"
+    },
+    {
+      "id": "mag-optogenetique-20261012",
+      "version": "ab67d4cb027ec3fbcdb31f22e59993dbcaba7ed2f8920534b12ce1c0b5540b45",
+      "url": "article-optogenetique-vision.html",
       "date": "2026-10-12"
     },
     {
