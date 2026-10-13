@@ -5,5 +5,12 @@
     "url": "mag-souhaits-20261012.html",
     "existingFicheId": null,
     "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-robot-20261013",
+    "title": "Prothèse du genou : le robot fait-il vraiment mieux ?",
+    "url": "mag-robot-20261013.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
   }
 ]

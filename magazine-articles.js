@@ -715,5 +715,225 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "ab67d4cb027ec3fbcdb31f22e59993dbcaba7ed2f8920534b12ce1c0b5540b45"
+  },
+  {
+    "id": "daily-infarctus-20261013",
+    "url": "mag-infarctus-20261013.html",
+    "title": "Infarctus : rapprocher les soins spécialisés peut-il sauver des vies ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Cœur & circulation",
+    "date": "2026-10-13",
+    "status": "PUBLISHED",
+    "excerpt": "Une nouvelle cohorte américaine associe l’ouverture de centres d’angioplastie à une meilleure survie dans les territoires auparavant mal desservis. Le bénéfice n’est pas retrouvé dans les zones déjà équipées.",
+    "image": "assets/editorial/2026-10-13/infarctus.svg",
+    "imageAlt": "Accès rapide aux soins spécialisés après un infarctus",
+    "keywords": [
+      "Cœur & circulation",
+      "infarctus"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "f6c4f9932c8749cc06c5ce1771f07dc175a2b3550438907cb66527e5d19f83ae"
+  },
+  {
+    "id": "daily-robot-20261013",
+    "url": "mag-robot-20261013.html",
+    "title": "Prothèse du genou : le robot fait-il vraiment mieux ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Os & articulations",
+    "date": "2026-10-13",
+    "status": "PUBLISHED",
+    "excerpt": "Une grande étude britannique ne retrouve pas de différence significative sur les reprises chirurgicales ou les complications pendant l’intervention. La technologie seule ne garantit pas un meilleur résultat.",
+    "image": "assets/editorial/2026-10-13/robot.svg",
+    "imageAlt": "Prothèse du genou et assistance robotique",
+    "keywords": [
+      "Os & articulations",
+      "robot"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "cfcec9f1500d0969505c1fe1b5a23efd5957ecf98698b71fcacc6fd747bca752"
+  },
+  {
+    "id": "daily-colorectal-20261013",
+    "url": "mag-colorectal-20261013.html",
+    "title": "Test colorectal positif : comment éviter de perdre la suite du parcours ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Digestion & urinaire",
+    "date": "2026-10-13",
+    "status": "PUBLISHED",
+    "excerpt": "L’accompagnement et les rappels améliorent la réalisation de la coloscopie après un test de selles anormal. Le dépistage ne s’arrête pas au résultat du test.",
+    "image": "assets/editorial/2026-10-13/colorectal.svg",
+    "imageAlt": "Accompagnement du parcours après un test colorectal positif",
+    "keywords": [
+      "Digestion & urinaire",
+      "colorectal"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "ff436da126f953d4fe0716437bddd2aa5560e90d42fa3b18acbf69f421e5a421"
+  },
+  {
+    "id": "daily-incertitudes-20261013",
+    "url": "mag-incertitudes-20261013.html",
+    "title": "Nouveau médicament contre le cancer : faut-il aussi expliquer ce qu’on ignore ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Cancer",
+    "date": "2026-10-13",
+    "status": "PUBLISHED",
+    "excerpt": "Deux essais montrent que décrire clairement les incertitudes modifie des décisions hypothétiques de traitement. Bénéfices, risques et incertitudes doivent tous être compréhensibles pour décider.",
+    "image": "assets/editorial/2026-10-13/incertitudes.svg",
+    "imageAlt": "Discussion des bénéfices, des risques et des incertitudes",
+    "keywords": [
+      "Cancer",
+      "incertitudes"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "2f3853e46328a02d76899848e7d46e7dc0e9a36bae55733526f153f7276b315b"
+  },
+  {
+    "id": "daily-migraine-20261013",
+    "url": "mag-migraine-20261013.html",
+    "title": "Migraine : quand faut-il envisager un traitement de fond ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé au quotidien",
+    "date": "2026-10-13",
+    "status": "PUBLISHED",
+    "excerpt": "Une migraine répétée ou invalidante mérite de discuter d’une prévention avec son médecin. Tenir un calendrier des céphalées aide à préparer cette discussion.",
+    "image": "assets/editorial/2026-10-13/migraine.svg",
+    "imageAlt": "Migraine et calendrier des céphalées",
+    "keywords": [
+      "Santé au quotidien",
+      "migraine"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "migraine-adulte",
+    "version": "4b634eef9e7bfb5e791157da50834d86dc7e505c01a56ea62002f4c2936bf51f"
+  },
+  {
+    "id": "daily-cystite-20261013",
+    "url": "mag-cystite-20261013.html",
+    "title": "Boire beaucoup d’eau suffit toujours à traiter une cystite.",
+    "format": "vrai-faux",
+    "category": "Prévention",
+    "theme": "Santé au quotidien",
+    "date": "2026-10-13",
+    "status": "PUBLISHED",
+    "excerpt": "FAUX. L’hydratation peut accompagner la prise en charge, mais ne remplace pas l’évaluation ni un antibiotique lorsqu’il est indiqué.",
+    "image": "assets/editorial/2026-10-13/cystite.svg",
+    "imageAlt": "Hydratation et évaluation d’une cystite",
+    "keywords": [
+      "Santé au quotidien",
+      "cystite"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "225026bcf649a699499634f4a7b80aac5f7c801a8324f3cac509269f04556b28"
+  },
+  {
+    "id": "daily-fertilite-20261013",
+    "url": "mag-fertilite-20261013.html",
+    "title": "Infertilité : environ une personne sur six au cours de la vie",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Femmes & grossesse",
+    "date": "2026-10-13",
+    "status": "PUBLISHED",
+    "excerpt": "L’estimation mondiale publiée par l’OMS en 2023 concerne une expérience au cours de la vie, pas la proportion de personnes actuellement infertiles.",
+    "image": "assets/editorial/2026-10-13/fertilite.svg",
+    "imageAlt": "Parcours de fertilité",
+    "keywords": [
+      "Femmes & grossesse",
+      "fertilite"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "772023421845e6fbd4f59a21f2caf8112e97909ba98b93ed786a6ff9068cca85"
+  },
+  {
+    "id": "daily-vaccination-20261013",
+    "url": "mag-vaccination-20261013.html",
+    "title": "Grippe–Covid : la campagne conjointe ouvre le 13 octobre",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Prévention & dépistage",
+    "date": "2026-10-13",
+    "status": "PUBLISHED",
+    "excerpt": "La campagne conjointe débute ce 13 octobre 2026, avec des calendriers particuliers à Mayotte et à La Réunion.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Prévention & dépistage",
+      "vaccination"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "a92dc5067b615b1db22a53a3008fe5a5b9b427dcf08d88eebabef49ed9c0decc"
+  },
+  {
+    "id": "daily-eczema-20261013",
+    "url": "mag-eczema-20261013.html",
+    "title": "Eczéma atopique : les émollients restent un traitement de fond",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé au quotidien",
+    "date": "2026-10-13",
+    "status": "PUBLISHED",
+    "excerpt": "Les recommandations SFD actualisées en mars 2026 maintiennent les émollients quotidiens parmi les traitements de fond. Un rappel pratique, pas une nouvelle découverte.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Santé au quotidien",
+      "eczema"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "e7cf5c6d1c6a07e4bb159c185b64c410bd5aa637c98f2937fb12c23cff6af787"
+  },
+  {
+    "id": "daily-rhume-20261013",
+    "url": "mag-rhume-20261013.html",
+    "title": "Rhume : la pseudoéphédrine n’est pas un médicament à banaliser",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé au quotidien",
+    "date": "2026-10-13",
+    "status": "PUBLISHED",
+    "excerpt": "Les médicaments oraux contenant de la pseudoéphédrine nécessitent une ordonnance depuis décembre 2024. Leur banalisation reste à éviter.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Santé au quotidien",
+      "rhume"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "1b33800ac123c264cc9a64aa78d158028e57106045efd8366e149255be7bcd10"
+  },
+  {
+    "id": "daily-tomosynthese-20261013",
+    "url": "article-octobre-rose-tomosynthese-tosyma-20261013.html",
+    "title": "La mammographie 3D évite-t-elle davantage de cancers entre deux dépistages ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Cancer du sein",
+    "date": "2026-10-13",
+    "status": "PUBLISHED",
+    "excerpt": "Le nouvel essai TOSYMA apporte un signal favorable, mais ne démontre pas une diminution statistiquement significative des cancers invasifs apparus dans les deux années suivant un dépistage négatif. Une meilleure détection ne suffit pas à démontrer un bénéfice clinique supplémentaire.",
+    "image": "assets/editorial/2026-10-13/tomosynthese.svg",
+    "imageAlt": "Illustration schématique de la mammographie 2D et de la tomosynthèse ; aucune image diagnostique réelle",
+    "keywords": [
+      "Cancer du sein",
+      "tomosynthese"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "71cdc1fbf1ca14b26b4489b733752c3954381af6018ac3edddac2efeefc48a92"
   }
 ];

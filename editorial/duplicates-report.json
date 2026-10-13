@@ -360,6 +360,19 @@
     },
     {
       "left": {
+        "id": "migraine-adulte",
+        "title": "Migraine : quand faut-il envisager un traitement de fond ?",
+        "type": "fiche"
+      },
+      "right": {
+        "id": "daily-migraine-20261013",
+        "title": "Migraine : quand faut-il envisager un traitement de fond ?",
+        "type": "Mag"
+      },
+      "score": 1
+    },
+    {
+      "left": {
         "id": "q-cortisol-stress-fatigue",
         "title": "Stress, fatigue : faut-il faire baisser son cortisol ?",
         "type": "fiche"
@@ -467,6 +480,6 @@
     "manifestFiles": 139,
     "rawFiches": 403,
     "canonicalFiches": 377,
-    "magContents": 39
+    "magContents": 50
   }
 }

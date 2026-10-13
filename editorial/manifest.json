@@ -1,12 +1,72 @@
 {
   "schemaVersion": 1,
-  "editionId": "edition-2026-10-12",
-  "editionDate": "2026-10-12",
-  "sourceFingerprint": "1d0486f54ad80f8f3d4024bf1716e4f4c4145188cd43b94fbf8c901303b0d664",
-  "missingEdition": true,
+  "editionId": "edition-2026-10-13",
+  "editionDate": "2026-10-13",
+  "sourceFingerprint": "245463cbc158fc9fca467853d1397f815558da09327423f2d9010b5889d41902",
+  "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-daily-infarctus-20261013",
+      "version": "f6c4f9932c8749cc06c5ce1771f07dc175a2b3550438907cb66527e5d19f83ae",
+      "url": "mag-infarctus-20261013.html",
+      "date": "2026-10-13"
+    },
+    {
+      "id": "mag-daily-robot-20261013",
+      "version": "cfcec9f1500d0969505c1fe1b5a23efd5957ecf98698b71fcacc6fd747bca752",
+      "url": "mag-robot-20261013.html",
+      "date": "2026-10-13"
+    },
+    {
+      "id": "mag-daily-colorectal-20261013",
+      "version": "ff436da126f953d4fe0716437bddd2aa5560e90d42fa3b18acbf69f421e5a421",
+      "url": "mag-colorectal-20261013.html",
+      "date": "2026-10-13"
+    },
+    {
+      "id": "mag-daily-incertitudes-20261013",
+      "version": "2f3853e46328a02d76899848e7d46e7dc0e9a36bae55733526f153f7276b315b",
+      "url": "mag-incertitudes-20261013.html",
+      "date": "2026-10-13"
+    },
+    {
+      "id": "mag-daily-cystite-20261013",
+      "version": "225026bcf649a699499634f4a7b80aac5f7c801a8324f3cac509269f04556b28",
+      "url": "mag-cystite-20261013.html",
+      "date": "2026-10-13"
+    },
+    {
+      "id": "mag-daily-fertilite-20261013",
+      "version": "772023421845e6fbd4f59a21f2caf8112e97909ba98b93ed786a6ff9068cca85",
+      "url": "mag-fertilite-20261013.html",
+      "date": "2026-10-13"
+    },
+    {
+      "id": "mag-daily-vaccination-20261013",
+      "version": "a92dc5067b615b1db22a53a3008fe5a5b9b427dcf08d88eebabef49ed9c0decc",
+      "url": "mag-vaccination-20261013.html",
+      "date": "2026-10-13"
+    },
+    {
+      "id": "mag-daily-eczema-20261013",
+      "version": "e7cf5c6d1c6a07e4bb159c185b64c410bd5aa637c98f2937fb12c23cff6af787",
+      "url": "mag-eczema-20261013.html",
+      "date": "2026-10-13"
+    },
+    {
+      "id": "mag-daily-rhume-20261013",
+      "version": "1b33800ac123c264cc9a64aa78d158028e57106045efd8366e149255be7bcd10",
+      "url": "mag-rhume-20261013.html",
+      "date": "2026-10-13"
+    },
+    {
+      "id": "mag-daily-tomosynthese-20261013",
+      "version": "71cdc1fbf1ca14b26b4489b733752c3954381af6018ac3edddac2efeefc48a92",
+      "url": "article-octobre-rose-tomosynthese-tosyma-20261013.html",
+      "date": "2026-10-13"
+    },
     {
       "id": "mag-daily-survodutide-20261012",
       "version": "76f0b91ddfa6a5ed3f3e7aaca33a6d236633d5f313843ccd48bdabcebd804cf0",
