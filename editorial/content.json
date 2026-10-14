@@ -1958,6 +1958,465 @@
         "modifications": "Recadrage 3:2, redimensionnement 1200 × 800, compression JPEG. Aucun ajout ni manipulation médicale.",
         "context": "Photographie d’illustration ; ne représente pas les participants aux études ni un dispositif étudié."
       }
+    },
+    {
+      "id": "daily-might-20261014",
+      "date": "2026-10-14",
+      "title": "Cancers dans la famille : une meilleure information aide-t-elle à franchir le pas du test génétique ?",
+      "answer": "Un test peut être indiqué sans être réalisé. L’essai américain MiGHT compare un accompagnement téléphonique, une information numérique et les soins habituels chez 793 adultes répondant déjà à des critères d’évaluation génétique.",
+      "url": "mag-might-20261014.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "Oncogénétique",
+      "keywords": [
+        "Oncogénétique",
+        "might"
+      ],
+      "sources": [
+        {
+          "label": "JAMA Network Open — MiGHT, 13 octobre 2026, DOI 10.1001/jamanetworkopen.2026.38274",
+          "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855266"
+        }
+      ],
+      "ficheId": "cancer-oncogenetique-famille",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": true,
+      "image": "assets/editorial/2026-10-14/photos/might.jpg",
+      "imageAlt": "Échange entre professionnels et patiente dans une scène de consultation.",
+      "imageCredit": "RDNE Stock project / Pexels",
+      "imageSource": "https://www.pexels.com/photo/doctor-talking-to-a-patient-6129681/",
+      "imageLicense": "Pexels License — utilisation éditoriale et commerciale gratuite, recadrage autorisé ; https://www.pexels.com/license/",
+      "imageRights": {
+        "author": "RDNE Stock project",
+        "sourceUrl": "https://www.pexels.com/photo/doctor-talking-to-a-patient-6129681/",
+        "originalUrl": "https://images.pexels.com/photos/6129681/pexels-photo-6129681.jpeg",
+        "licenseUrl": "https://www.pexels.com/license/",
+        "verifiedAt": "2026-10-14",
+        "modifications": "Recadrage 3:2, redimensionnement 1200 × 800, compression JPEG.",
+        "context": "Photographie d’illustration ; ne représente pas les participants, le traitement ou la maladie étudiés."
+      },
+      "html": "<article><img src=\"assets/editorial/2026-10-14/photos/might.jpg\" alt=\"Échange entre professionnels et patiente dans une scène de consultation.\" width=\"1200\" height=\"800\" style=\"height:auto\"><p><small>Photo d’illustration · <a href=\"https://www.pexels.com/photo/doctor-talking-to-a-patient-6129681/\">RDNE Stock project / Pexels</a> · <a href=\"https://www.pexels.com/license/\">Licence</a>.</small></p><p class=\"eyebrow\">À LA UNE · 14 OCTOBRE 2026</p><h1>Cancers dans la famille : une meilleure information aide-t-elle à franchir le pas du test génétique ?</h1><p><strong>Un test peut être indiqué sans être réalisé. L’essai américain MiGHT compare un accompagnement téléphonique, une information numérique et les soins habituels chez 793 adultes répondant déjà à des critères d’évaluation génétique.</strong></p><p>À six mois, parmi les répondants, 7,3 % ont réalisé le test dans le groupe numérique contre 2,2 % avec les soins habituels : différence observée de 5,1 points. L’accompagnement téléphonique n’améliore pas significativement ce critère principal à six mois ; un bénéfice est observé à douze mois.</p><p>À retenir : informer et accompagner peut faciliter un parcours indiqué ; cela ne justifie pas un test génétique pour tout le monde.</p><p>Intérêt patient : préparer les antécédents familiaux et discuter d’une éventuelle consultation d’oncogénétique.</p><p>Limites : recours total aux tests faible, résultats déclarés par les participants, données manquantes, contexte américain ; pas de bénéfice démontré sur l’incidence du cancer ou la mortalité.</p><h2>Sources</h2><ul><li><a href=\"https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855266\">JAMA Network Open — MiGHT, 13 octobre 2026, DOI 10.1001/jamanetworkopen.2026.38274</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-14T08:34:48+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de l’édition complète du 14 octobre, de l’article Octobre Rose et mise en ligne : « parfait validation et mise en ligne ». Textes approuvés mis en forme ; photographies sous licence Pexels conformément à la demande d’iconographie premium libre de droits. Statut expérimental et disponibilité non établie conservés après vérification du 14 octobre.",
+        "contentHash": "995d9a8a6f78446cbd66b08db58428b7fda6dbe743d46285daba75971cd77ae0"
+      }
+    },
+    {
+      "id": "daily-postpartum-20261014",
+      "date": "2026-10-14",
+      "title": "Après l’accouchement : un accompagnement aide, mais ne remplace pas un suivi complet",
+      "answer": "Essai randomisé publié le 7 octobre : 9,4 % des participantes accompagnées ont reçu les six éléments de suivi attendus contre 7,9 % avec les soins habituels ; différence non significative. Certaines composantes du suivi et la transition vers les soins primaires sont améliorées.",
+      "url": "mag-postpartum-20261014.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "Suivi après accouchement",
+      "keywords": [
+        "Suivi après accouchement",
+        "postpartum"
+      ],
+      "sources": [
+        {
+          "label": "JAMA Health Forum — essai randomisé, 7 octobre 2026, DOI 10.1001/jamahealthforum.2026.3338",
+          "url": "https://jamanetwork.com/journals/jama-health-forum/fullarticle/2854595"
+        },
+        {
+          "label": "PubMed — PMID 42826032",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42826032/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": true,
+      "image": "assets/editorial/2026-10-14/photos/postpartum.jpg",
+      "imageAlt": "Une mère tenant son bébé à la maison.",
+      "imageCredit": "Helena Lopes / Pexels",
+      "imageSource": "https://www.pexels.com/photo/mother-and-baby-at-home-in-cozy-setting-27175810/",
+      "imageLicense": "Pexels License — utilisation éditoriale et commerciale gratuite, recadrage autorisé ; https://www.pexels.com/license/",
+      "imageRights": {
+        "author": "Helena Lopes",
+        "sourceUrl": "https://www.pexels.com/photo/mother-and-baby-at-home-in-cozy-setting-27175810/",
+        "originalUrl": "https://images.pexels.com/photos/27175810/pexels-photo-27175810.jpeg",
+        "licenseUrl": "https://www.pexels.com/license/",
+        "verifiedAt": "2026-10-14",
+        "modifications": "Recadrage 3:2, redimensionnement 1200 × 800, compression JPEG.",
+        "context": "Photographie d’illustration ; ne représente pas les participants, le traitement ou la maladie étudiés."
+      },
+      "html": "<article><img src=\"assets/editorial/2026-10-14/photos/postpartum.jpg\" alt=\"Une mère tenant son bébé à la maison.\" width=\"1200\" height=\"800\" style=\"height:auto\"><p><small>Photo d’illustration · <a href=\"https://www.pexels.com/photo/mother-and-baby-at-home-in-cozy-setting-27175810/\">Helena Lopes / Pexels</a> · <a href=\"https://www.pexels.com/license/\">Licence</a>.</small></p><p class=\"eyebrow\">À LIRE EN 3 MIN · 14 OCTOBRE 2026</p><h1>Après l’accouchement : un accompagnement aide, mais ne remplace pas un suivi complet</h1><p><strong>Essai randomisé publié le 7 octobre : 9,4 % des participantes accompagnées ont reçu les six éléments de suivi attendus contre 7,9 % avec les soins habituels ; différence non significative. Certaines composantes du suivi et la transition vers les soins primaires sont améliorées.</strong></p><p>Organiser aussi les soins de la mère après la naissance. Le résultat ne permet pas d’affirmer que l’accompagnement garantit un meilleur suivi.</p><h2>Sources</h2><ul><li><a href=\"https://jamanetwork.com/journals/jama-health-forum/fullarticle/2854595\">JAMA Health Forum — essai randomisé, 7 octobre 2026, DOI 10.1001/jamahealthforum.2026.3338</a></li><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/42826032/\">PubMed — PMID 42826032</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-14T08:34:48+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de l’édition complète du 14 octobre, de l’article Octobre Rose et mise en ligne : « parfait validation et mise en ligne ». Textes approuvés mis en forme ; photographies sous licence Pexels conformément à la demande d’iconographie premium libre de droits. Statut expérimental et disponibilité non établie conservés après vérification du 14 octobre.",
+        "contentHash": "c587a46edf2a7c0266dd6a0163334892a5f6083a912ea8f420ad6b8a7126c05b"
+      }
+    },
+    {
+      "id": "daily-diabete-detresse-20261014",
+      "date": "2026-10-14",
+      "title": "Diabète : quand la charge du traitement devient trop lourde, il faut aussi en parler",
+      "answer": "Les recommandations EASD du 15 septembre 2026 reconnaissent la détresse liée au diabète : lassitude, peur des glycémies et poids quotidien du traitement. Ce vécu mérite un entretien et une aide adaptée ; il ne signifie pas automatiquement dépression.",
+      "url": "mag-diabete-detresse-20261014.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "Diabète",
+      "keywords": [
+        "Diabète",
+        "diabete-detresse"
+      ],
+      "sources": [
+        {
+          "label": "EASD / Diabetologia — 15 septembre 2026",
+          "url": "https://link.springer.com/article/10.1007/s00125-026-06840-0"
+        },
+        {
+          "label": "PubMed — PMID 42744915",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42744915/"
+        },
+        {
+          "label": "Société francophone du diabète — détresse liée au diabète",
+          "url": "https://www.sfdiabete.org/groupes-de-travail/groupes-de-travail/en-activite/detresse-liee-au-diabete"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": true,
+      "image": "assets/editorial/2026-10-14/photos/diabete-detresse.jpg",
+      "imageAlt": "Mesure de la glycémie avec un lecteur.",
+      "imageCredit": "Pavel Danilyuk / Pexels",
+      "imageSource": "https://www.pexels.com/photo/close-up-of-hands-holding-glucose-meter-7653134/",
+      "imageLicense": "Pexels License — utilisation éditoriale et commerciale gratuite, recadrage autorisé ; https://www.pexels.com/license/",
+      "imageRights": {
+        "author": "Pavel Danilyuk",
+        "sourceUrl": "https://www.pexels.com/photo/close-up-of-hands-holding-glucose-meter-7653134/",
+        "originalUrl": "https://images.pexels.com/photos/7653134/pexels-photo-7653134.jpeg",
+        "licenseUrl": "https://www.pexels.com/license/",
+        "verifiedAt": "2026-10-14",
+        "modifications": "Recadrage 3:2, redimensionnement 1200 × 800, compression JPEG.",
+        "context": "Photographie d’illustration ; ne représente pas les participants, le traitement ou la maladie étudiés."
+      },
+      "html": "<article><img src=\"assets/editorial/2026-10-14/photos/diabete-detresse.jpg\" alt=\"Mesure de la glycémie avec un lecteur.\" width=\"1200\" height=\"800\" style=\"height:auto\"><p><small>Photo d’illustration · <a href=\"https://www.pexels.com/photo/close-up-of-hands-holding-glucose-meter-7653134/\">Pavel Danilyuk / Pexels</a> · <a href=\"https://www.pexels.com/license/\">Licence</a>.</small></p><p class=\"eyebrow\">À LIRE EN 3 MIN · 14 OCTOBRE 2026</p><h1>Diabète : quand la charge du traitement devient trop lourde, il faut aussi en parler</h1><p><strong>Les recommandations EASD du 15 septembre 2026 reconnaissent la détresse liée au diabète : lassitude, peur des glycémies et poids quotidien du traitement. Ce vécu mérite un entretien et une aide adaptée ; il ne signifie pas automatiquement dépression.</strong></p><p>Intérêt : ouvrir une conversation concrète plutôt que culpabiliser une personne pour ses résultats glycémiques.</p><p>Limites : recommandations conditionnelles pour certaines interventions ; projets français de la SFD encore en préparation.</p><h2>Sources</h2><ul><li><a href=\"https://link.springer.com/article/10.1007/s00125-026-06840-0\">EASD / Diabetologia — 15 septembre 2026</a></li><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/42744915/\">PubMed — PMID 42744915</a></li><li><a href=\"https://www.sfdiabete.org/groupes-de-travail/groupes-de-travail/en-activite/detresse-liee-au-diabete\">Société francophone du diabète — détresse liée au diabète</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-14T08:34:48+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de l’édition complète du 14 octobre, de l’article Octobre Rose et mise en ligne : « parfait validation et mise en ligne ». Textes approuvés mis en forme ; photographies sous licence Pexels conformément à la demande d’iconographie premium libre de droits. Statut expérimental et disponibilité non établie conservés après vérification du 14 octobre.",
+        "contentHash": "c7e19fc07adcbcd300180e6d3d83c53a65fd4899c2ccf749fd703ffbafb63b78"
+      }
+    },
+    {
+      "id": "daily-angioedeme-20261014",
+      "date": "2026-10-14",
+      "title": "Angiœdème héréditaire : une gélule pour soulager les crises, que montre l’essai ?",
+      "answer": "RAPIDe-3, publié le 8 octobre, randomise 134 participants ; 88 entrent dans l’analyse principale comparant deux crises traitées. Le délai médian jusqu’au début du soulagement est de 1,28 heure avec le deucrictibant contre plus de 12 heures avec le placebo.",
+      "url": "mag-angioedeme-20261014.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "Maladies rares",
+      "keywords": [
+        "Maladies rares",
+        "angioedeme"
+      ],
+      "sources": [
+        {
+          "label": "Lancet — RAPIDe-3, 8 octobre 2026, DOI 10.1016/S0140-6736(26)01296-1",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42849489/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": true,
+      "image": "assets/editorial/2026-10-14/photos/angioedeme.jpg",
+      "imageAlt": "Professionnelle de santé échangeant avec une patiente.",
+      "imageCredit": "Tima Miroshnichenko / Pexels",
+      "imageSource": "https://www.pexels.com/photo/doctor-looking-at-a-digital-tablet-while-standing-beside-a-patient-6011599/",
+      "imageLicense": "Pexels License — utilisation éditoriale et commerciale gratuite, recadrage autorisé ; https://www.pexels.com/license/",
+      "imageRights": {
+        "author": "Tima Miroshnichenko",
+        "sourceUrl": "https://www.pexels.com/photo/doctor-looking-at-a-digital-tablet-while-standing-beside-a-patient-6011599/",
+        "originalUrl": "https://images.pexels.com/photos/6011599/pexels-photo-6011599.jpeg",
+        "licenseUrl": "https://www.pexels.com/license/",
+        "verifiedAt": "2026-10-14",
+        "modifications": "Recadrage 3:2, redimensionnement 1200 × 800, compression JPEG.",
+        "context": "Photographie d’illustration ; ne représente pas les participants, le traitement ou la maladie étudiés."
+      },
+      "html": "<article><img src=\"assets/editorial/2026-10-14/photos/angioedeme.jpg\" alt=\"Professionnelle de santé échangeant avec une patiente.\" width=\"1200\" height=\"800\" style=\"height:auto\"><p><small>Photo d’illustration · <a href=\"https://www.pexels.com/photo/doctor-looking-at-a-digital-tablet-while-standing-beside-a-patient-6011599/\">Tima Miroshnichenko / Pexels</a> · <a href=\"https://www.pexels.com/license/\">Licence</a>.</small></p><p class=\"eyebrow\">À LIRE EN 3 MIN · 14 OCTOBRE 2026</p><h1>Angiœdème héréditaire : une gélule pour soulager les crises, que montre l’essai ?</h1><p><strong>RAPIDe-3, publié le 8 octobre, randomise 134 participants ; 88 entrent dans l’analyse principale comparant deux crises traitées. Le délai médian jusqu’au début du soulagement est de 1,28 heure avec le deucrictibant contre plus de 12 heures avec le placebo.</strong></p><p>Intérêt : une voie orale pourrait faciliter le traitement précoce d’une maladie rare déjà diagnostiquée.</p><p>Limites : placebo, pas de comparaison directe aux traitements actifs ; petit effectif et recul limité. La disponibilité en France n’est pas établie par les sources vérifiées. Ce traitement ne s’adresse pas aux allergies ordinaires et ne change pas la conduite d’urgence face à une atteinte respiratoire.</p><h2>Sources</h2><ul><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/42849489/\">Lancet — RAPIDe-3, 8 octobre 2026, DOI 10.1016/S0140-6736(26)01296-1</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-14T08:34:48+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de l’édition complète du 14 octobre, de l’article Octobre Rose et mise en ligne : « parfait validation et mise en ligne ». Textes approuvés mis en forme ; photographies sous licence Pexels conformément à la demande d’iconographie premium libre de droits. Statut expérimental et disponibilité non établie conservés après vérification du 14 octobre.",
+        "contentHash": "1155906768c007cbd05e737c55ce833fe9e2008246ba3233dd31222603ba3c92"
+      }
+    },
+    {
+      "id": "daily-nez-20261014",
+      "date": "2026-10-14",
+      "title": "Je saigne du nez : que dois-je faire ?",
+      "answer": "Retrouvez la fiche MACASANTÉ de référence sur les saignements de nez.",
+      "url": "mag-nez-20261014.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "Santé au quotidien",
+      "keywords": [
+        "Santé au quotidien",
+        "nez"
+      ],
+      "sources": [
+        {
+          "label": "MACASANTÉ — fiche existante validée",
+          "url": "https://macasante.fr/fiche.html?id=saignement-nez-adulte"
+        }
+      ],
+      "ficheId": "saignement-nez-adulte",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "html": "<article><p class=\"eyebrow\">FICHE DU JOUR · 14 OCTOBRE 2026</p><h1>Je saigne du nez : que dois-je faire ?</h1><p><strong>Retrouvez la fiche MACASANTÉ de référence sur les saignements de nez.</strong></p><p><a href=\"fiche.html?id=saignement-nez-adulte\">Lire la fiche santé validée →</a></p><h2>Sources</h2><ul><li><a href=\"https://macasante.fr/fiche.html?id=saignement-nez-adulte\">MACASANTÉ — fiche existante validée</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-14T08:34:48+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de l’édition complète du 14 octobre, de l’article Octobre Rose et mise en ligne : « parfait validation et mise en ligne ». Textes approuvés mis en forme ; photographies sous licence Pexels conformément à la demande d’iconographie premium libre de droits. Statut expérimental et disponibilité non établie conservés après vérification du 14 octobre.",
+        "contentHash": "05e23eae63fa1d89477c78331af4c1bffd7f51f80f06abd4df696bba04455501"
+      },
+      "assistantPolicy": "REFERENCE_FICHE_ONLY"
+    },
+    {
+      "id": "daily-gluten-vf-20261014",
+      "date": "2026-10-14",
+      "title": "Pour rechercher une maladie cœliaque, faut-il d’abord arrêter le gluten ?",
+      "answer": "FAUX. Commencer un régime sans gluten avant le bilan peut fausser les résultats.",
+      "url": "mag-gluten-vf-20261014.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "Santé digestive",
+      "keywords": [
+        "Santé digestive",
+        "gluten-vf"
+      ],
+      "sources": [
+        {
+          "label": "SNFGE — maladie cœliaque",
+          "url": "https://www.snfge.org/grand-public/maladies-digestives/maladie-coeliaque"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "image": "assets/editorial/2026-10-14/photos/gluten.jpg",
+      "imageAlt": "Pain présenté sur une table.",
+      "imageCredit": "hello aesthe / Pexels",
+      "imageSource": "https://www.pexels.com/photo/bread-on-table-16471854/",
+      "imageLicense": "Pexels License — utilisation éditoriale et commerciale gratuite, recadrage autorisé ; https://www.pexels.com/license/",
+      "imageRights": {
+        "author": "hello aesthe",
+        "sourceUrl": "https://www.pexels.com/photo/bread-on-table-16471854/",
+        "originalUrl": "https://images.pexels.com/photos/16471854/pexels-photo-16471854.jpeg",
+        "licenseUrl": "https://www.pexels.com/license/",
+        "verifiedAt": "2026-10-14",
+        "modifications": "Recadrage 3:2, redimensionnement 1200 × 800, compression JPEG.",
+        "context": "Photographie d’illustration ; ne représente pas les participants, le traitement ou la maladie étudiés."
+      },
+      "html": "<article><img src=\"assets/editorial/2026-10-14/photos/gluten.jpg\" alt=\"Pain présenté sur une table.\" width=\"1200\" height=\"800\" style=\"height:auto\"><p><small>Photo d’illustration · <a href=\"https://www.pexels.com/photo/bread-on-table-16471854/\">hello aesthe / Pexels</a> · <a href=\"https://www.pexels.com/license/\">Licence</a>.</small></p><p class=\"eyebrow\">VRAI OU FAUX · 14 OCTOBRE 2026</p><h1>Pour rechercher une maladie cœliaque, faut-il d’abord arrêter le gluten ?</h1><p><strong>FAUX. Commencer un régime sans gluten avant le bilan peut fausser les résultats.</strong></p><p>Discuter du diagnostic avant une éviction ; ne pas reprendre seul du gluten si une maladie a déjà été diagnostiquée.</p><h2>Sources</h2><ul><li><a href=\"https://www.snfge.org/grand-public/maladies-digestives/maladie-coeliaque\">SNFGE — maladie cœliaque</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-14T08:34:48+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de l’édition complète du 14 octobre, de l’article Octobre Rose et mise en ligne : « parfait validation et mise en ligne ». Textes approuvés mis en forme ; photographies sous licence Pexels conformément à la demande d’iconographie premium libre de droits. Statut expérimental et disponibilité non établie conservés après vérification du 14 octobre.",
+        "contentHash": "34740c7508fde1427a94c254a110dfbabed37e0ec3522010f3786c6dd8b003a7"
+      }
+    },
+    {
+      "id": "daily-hypertension-20261014",
+      "date": "2026-10-14",
+      "title": "1,4 milliard d’adultes vivent avec une hypertension dans le monde",
+      "answer": "1,4 milliard : nombre estimé d’adultes de 30 à 79 ans vivant avec une hypertension dans le monde en 2024.",
+      "url": "mag-hypertension-20261014.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "Santé cardiovasculaire",
+      "keywords": [
+        "Santé cardiovasculaire",
+        "hypertension"
+      ],
+      "sources": [
+        {
+          "label": "OMS — hypertension, rapport du 23 septembre 2025",
+          "url": "https://www.who.int/fr/news-room/fact-sheets/detail/hypertension"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "html": "<article><p class=\"eyebrow\">LE CHIFFRE DU JOUR · 14 OCTOBRE 2026</p><h1>1,4 milliard d’adultes vivent avec une hypertension dans le monde</h1><p><strong>1,4 milliard : nombre estimé d’adultes de 30 à 79 ans vivant avec une hypertension dans le monde en 2024.</strong></p><p>Selon le rapport OMS publié le 23 septembre 2025. Chiffre mondial, pas français ; repère de contexte, pas nouveauté du jour.</p><h2>Sources</h2><ul><li><a href=\"https://www.who.int/fr/news-room/fact-sheets/detail/hypertension\">OMS — hypertension, rapport du 23 septembre 2025</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-14T08:34:48+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de l’édition complète du 14 octobre, de l’article Octobre Rose et mise en ligne : « parfait validation et mise en ligne ». Textes approuvés mis en forme ; photographies sous licence Pexels conformément à la demande d’iconographie premium libre de droits. Statut expérimental et disponibilité non établie conservés après vérification du 14 octobre.",
+        "contentHash": "09c9e9d4e5dc2a1376e7b90938c88f9c0cd3918053491060d22730d5ae661f53"
+      }
+    },
+    {
+      "id": "daily-monoxyde-20261014",
+      "date": "2026-10-14",
+      "title": "Chauffage : préserver la ventilation",
+      "answer": "Aérer au moins dix minutes par jour et ne pas boucher les entrées d’air contribue à prévenir les intoxications au monoxyde de carbone.",
+      "url": "mag-monoxyde-20261014.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "Prévention",
+      "keywords": [
+        "Prévention",
+        "monoxyde"
+      ],
+      "sources": [
+        {
+          "label": "Santé publique France — prévention du monoxyde de carbone",
+          "url": "https://www.santepubliquefrance.fr/monoxyde-de-carbone/comment-reduire-le-risque-dintoxication-au-monoxyde-de-carbone"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "html": "<article><p class=\"eyebrow\">DONNÉES · 14 OCTOBRE 2026</p><h1>Chauffage : préserver la ventilation</h1><p><strong>Aérer au moins dix minutes par jour et ne pas boucher les entrées d’air contribue à prévenir les intoxications au monoxyde de carbone.</strong></p><h2>Sources</h2><ul><li><a href=\"https://www.santepubliquefrance.fr/monoxyde-de-carbone/comment-reduire-le-risque-dintoxication-au-monoxyde-de-carbone\">Santé publique France — prévention du monoxyde de carbone</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-14T08:34:48+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de l’édition complète du 14 octobre, de l’article Octobre Rose et mise en ligne : « parfait validation et mise en ligne ». Textes approuvés mis en forme ; photographies sous licence Pexels conformément à la demande d’iconographie premium libre de droits. Statut expérimental et disponibilité non établie conservés après vérification du 14 octobre.",
+        "contentHash": "7cb59da1bf74d45a4e332d7dee89eaff958f8c2b31b889299c474150102ffc35"
+      }
+    },
+    {
+      "id": "daily-paracetamol-20261014",
+      "date": "2026-10-14",
+      "title": "Paracétamol : vérifier les médicaments pris ensemble",
+      "answer": "Vérifier si plusieurs spécialités contiennent du paracétamol pour éviter un cumul involontaire.",
+      "url": "mag-paracetamol-20261014.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "Médicaments",
+      "keywords": [
+        "Médicaments",
+        "paracetamol"
+      ],
+      "sources": [
+        {
+          "label": "Assurance Maladie — utiliser les antalgiques",
+          "url": "https://www.ameli.fr/assure/sante/medicaments/utiliser-recycler-medicaments/utiliser-antalgiques"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "html": "<article><p class=\"eyebrow\">DONNÉES · 14 OCTOBRE 2026</p><h1>Paracétamol : vérifier les médicaments pris ensemble</h1><p><strong>Vérifier si plusieurs spécialités contiennent du paracétamol pour éviter un cumul involontaire.</strong></p><h2>Sources</h2><ul><li><a href=\"https://www.ameli.fr/assure/sante/medicaments/utiliser-recycler-medicaments/utiliser-antalgiques\">Assurance Maladie — utiliser les antalgiques</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-14T08:34:48+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de l’édition complète du 14 octobre, de l’article Octobre Rose et mise en ligne : « parfait validation et mise en ligne ». Textes approuvés mis en forme ; photographies sous licence Pexels conformément à la demande d’iconographie premium libre de droits. Statut expérimental et disponibilité non établie conservés après vérification du 14 octobre.",
+        "contentHash": "48579b058ea921031dbe85af1e0048c50d5083bd29f4aa36fc5fd5cb8c59adb6"
+      }
+    },
+    {
+      "id": "daily-hpv-20261014",
+      "date": "2026-10-14",
+      "title": "HPV : une vaccination pour les filles et les garçons",
+      "answer": "La vaccination HPV est recommandée aux filles et garçons de 11 à 14 ans révolus.",
+      "url": "mag-hpv-20261014.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "Vaccination",
+      "keywords": [
+        "Vaccination",
+        "hpv"
+      ],
+      "sources": [
+        {
+          "label": "Assurance Maladie — vaccination HPV",
+          "url": "https://www.ameli.fr/assure/actualites/infections-papillomavirus-humains-se-vacciner-jeune-pour-une-protection-optimale"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "html": "<article><p class=\"eyebrow\">DONNÉES · 14 OCTOBRE 2026</p><h1>HPV : une vaccination pour les filles et les garçons</h1><p><strong>La vaccination HPV est recommandée aux filles et garçons de 11 à 14 ans révolus.</strong></p><h2>Sources</h2><ul><li><a href=\"https://www.ameli.fr/assure/actualites/infections-papillomavirus-humains-se-vacciner-jeune-pour-une-protection-optimale\">Assurance Maladie — vaccination HPV</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-14T08:34:48+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de l’édition complète du 14 octobre, de l’article Octobre Rose et mise en ligne : « parfait validation et mise en ligne ». Textes approuvés mis en forme ; photographies sous licence Pexels conformément à la demande d’iconographie premium libre de droits. Statut expérimental et disponibilité non établie conservés après vérification du 14 octobre.",
+        "contentHash": "36d051d668bf5c1c57ce5384d91534e567d1bd20f9f8126d760993ecb5ed2ad1"
+      }
+    },
+    {
+      "id": "daily-evera-20261014",
+      "date": "2026-10-14",
+      "title": "Cancer du sein avancé : le giredestrant peut-il retarder la progression après une hormonothérapie ?",
+      "answer": "Oui, dans un essai de phase III chez des patients ayant un cancer du sein avancé ER positif et HER2 négatif, déjà traité par un inhibiteur de CDK4/6 associé à une hormonothérapie. L’association giredestrant–évérolimus retarde la progression par rapport à une hormonothérapie standard associée à l’évérolimus. Cela ne démontre pas encore que les patients vivent plus longtemps, et ne permet pas d’annoncer un traitement disponible en France.",
+      "url": "article-octobre-rose-giredestrant-evera-20261014.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Cancer du sein",
+      "keywords": [
+        "Cancer du sein",
+        "evera"
+      ],
+      "sources": [
+        {
+          "label": "NEJM — Mayer et collaborateurs, 30 septembre 2026, DOI 10.1056/NEJMoa2602457",
+          "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2602457"
+        },
+        {
+          "label": "Résumé primaire PubMed — PMID 42814929",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42814929/"
+        },
+        {
+          "label": "Registre evERA — NCT05306340",
+          "url": "https://clinicaltrials.gov/study/NCT05306340"
+        },
+        {
+          "label": "ASCO Post — compte rendu du 5 octobre 2026, pas une recommandation ASCO",
+          "url": "https://ascopost.com/news/october-2026/er-positive-her2-negative-advanced-breast-cancer-giredestrant-plus-everolimus/"
+        },
+        {
+          "label": "EMA — risques connus de l’évérolimus",
+          "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/afinitor"
+        },
+        {
+          "label": "Roche — statut expérimental, 1er octobre 2026",
+          "url": "https://www.roche.com/media/releases/med-cor-2026-10-01"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "image": "assets/editorial/2026-10-14/photos/evera.jpg",
+      "imageAlt": "Documents échangés lors d’une consultation.",
+      "imageCredit": "SHVETS production / Pexels",
+      "imageSource": "https://www.pexels.com/photo/doctor-handing-a-document-8413294/",
+      "imageLicense": "Pexels License — utilisation éditoriale et commerciale gratuite, recadrage autorisé ; https://www.pexels.com/license/",
+      "imageRights": {
+        "author": "SHVETS production",
+        "sourceUrl": "https://www.pexels.com/photo/doctor-handing-a-document-8413294/",
+        "originalUrl": "https://images.pexels.com/photos/8413294/pexels-photo-8413294.jpeg",
+        "licenseUrl": "https://www.pexels.com/license/",
+        "verifiedAt": "2026-10-14",
+        "modifications": "Recadrage 3:2, redimensionnement 1200 × 800, compression JPEG.",
+        "context": "Photographie d’illustration ; ne représente pas les participants, le traitement ou la maladie étudiés."
+      },
+      "html": "<article><img src=\"assets/editorial/2026-10-14/photos/evera.jpg\" alt=\"Documents échangés lors d’une consultation.\" width=\"1200\" height=\"800\" style=\"height:auto\"><p><small>Photo d’illustration · <a href=\"https://www.pexels.com/photo/doctor-handing-a-document-8413294/\">SHVETS production / Pexels</a> · <a href=\"https://www.pexels.com/license/\">Licence</a>.</small></p><p class=\"eyebrow\">OCTOBRE ROSE · 14 OCTOBRE 2026</p><h1>Cancer du sein avancé : le giredestrant peut-il retarder la progression après une hormonothérapie ?</h1><p><strong>Oui, dans un essai de phase III chez des patients ayant un cancer du sein avancé ER positif et HER2 négatif, déjà traité par un inhibiteur de CDK4/6 associé à une hormonothérapie. L’association giredestrant–évérolimus retarde la progression par rapport à une hormonothérapie standard associée à l’évérolimus. Cela ne démontre pas encore que les patients vivent plus longtemps, et ne permet pas d’annoncer un traitement disponible en France.</strong></p><h2>Une avancée récente, clairement datée</h2><p>evERA a été publié en ligne dans le New England Journal of Medicine le 30 septembre 2026, puis dans son numéro du 1er octobre. Les premiers résultats avaient été présentés à l’ESMO en 2025. Le progrès présenté ici est la publication détaillée d’un essai clinique, pas une découverte du 14 octobre.</p><h2>Pourquoi chercher une autre hormonothérapie ?</h2><p>Les cancers ER positifs peuvent utiliser les œstrogènes pour stimuler leur croissance. Lorsque la maladie progresse malgré un traitement, l’oncologue doit rechercher une autre stratégie. Le giredestrant agit sur le récepteur aux œstrogènes et favorise sa dégradation. Ce mécanisme biologique explique l’approche ; il ne suffit pas, à lui seul, à prouver un bénéfice pour les patients.</p><h2>Ce que compare réellement l’essai</h2><p>373 patients ont été randomisés entre giredestrant plus évérolimus et une hormonothérapie choisie par le médecin — exémestane, fulvestrant ou tamoxifène — plus évérolimus. Il ne s’agit donc ni d’une comparaison contre absence de traitement, ni d’une démonstration de supériorité sur toutes les options possibles après un inhibiteur de CDK4/6.</p><p>Dans la population globale, la survie médiane sans progression atteint 8,8 mois contre 5,5 mois : un écart de 3,3 mois entre les médianes. Une médiane décrit un groupe ; chaque patient ne gagne pas nécessairement trois mois. Dans le sous-groupe présentant une mutation ESR1, les médianes rapportées sont de 10 mois et 5,5 mois.</p><h2>Ce que le résultat ne prouve pas encore</h2><p>La survie sans progression mesure le temps avant aggravation de la maladie ou décès. Elle est différente de la survie globale. Les données de survie globale sont encore immatures ; on ne peut donc annoncer ni guérison ni prolongation de vie démontrée. L’essai est ouvert, financé par Roche, et concerne une situation thérapeutique précise. Ses résultats ne se transposent pas directement aux cancers du sein précoces.</p><h2>Un traitement oral reste un traitement à surveiller</h2><p>Prendre un médicament par la bouche ne le rend pas anodin. L’évérolimus peut notamment provoquer des lésions buccales, des infections, une hyperglycémie ou une inflammation pulmonaire. Ces risques connus justifient un suivi clinique et biologique. Les fréquences de l’EMA décrivent l’évérolimus, pas une estimation spécifique de tous les risques de l’association evERA.</p><h2>Quelles conséquences pratiques aujourd’hui ?</h2><p>Cette avancée peut nourrir la discussion avec l’oncologue lorsque la maladie progresse. Elle ne justifie aucun arrêt du traitement en cours. Le promoteur présentait encore le giredestrant comme expérimental le 1er octobre 2026. La vérification effectuée n’a pas établi d’autorisation française de cette association ; son accès ne doit pas être annoncé comme acquis. Au 14 octobre 2026, les sources vérifiées ne permettent pas d’annoncer un accès en prescription courante en France.</p><h2>Sources</h2><ul><li><a href=\"https://www.nejm.org/doi/full/10.1056/NEJMoa2602457\">NEJM — Mayer et collaborateurs, 30 septembre 2026, DOI 10.1056/NEJMoa2602457</a></li><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/42814929/\">Résumé primaire PubMed — PMID 42814929</a></li><li><a href=\"https://clinicaltrials.gov/study/NCT05306340\">Registre evERA — NCT05306340</a></li><li><a href=\"https://ascopost.com/news/october-2026/er-positive-her2-negative-advanced-breast-cancer-giredestrant-plus-everolimus/\">ASCO Post — compte rendu du 5 octobre 2026, pas une recommandation ASCO</a></li><li><a href=\"https://www.ema.europa.eu/en/medicines/human/EPAR/afinitor\">EMA — risques connus de l’évérolimus</a></li><li><a href=\"https://www.roche.com/media/releases/med-cor-2026-10-01\">Roche — statut expérimental, 1er octobre 2026</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-14T08:34:48+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de l’édition complète du 14 octobre, de l’article Octobre Rose et mise en ligne : « parfait validation et mise en ligne ». Textes approuvés mis en forme ; photographies sous licence Pexels conformément à la demande d’iconographie premium libre de droits. Statut expérimental et disponibilité non établie conservés après vérification du 14 octobre.",
+        "contentHash": "27bbf48bd9308ac4836a28446070a242a7ef15316967975878d93071ad12f129"
+      },
+      "standalone": true
     }
   ],
   "editions": [
@@ -2192,6 +2651,69 @@
           "icon": "MÉDICAMENTS"
         }
       ]
+    },
+    {
+      "id": "edition-2026-10-14",
+      "date": "2026-10-14",
+      "publishAt": "2026-10-14T08:34:48+02:00",
+      "complete": true,
+      "items": [
+        {
+          "contentId": "daily-might-20261014",
+          "slot": "À LA UNE",
+          "icon": "CANCERS FAMILIAUX"
+        },
+        {
+          "contentId": "daily-postpartum-20261014",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "SUIVI APRÈS ACCOUCHEMENT"
+        },
+        {
+          "contentId": "daily-diabete-detresse-20261014",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "DIABÈTE"
+        },
+        {
+          "contentId": "daily-angioedeme-20261014",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "MALADIES RARES"
+        },
+        {
+          "contentId": "daily-nez-20261014",
+          "slot": "FICHE DU JOUR",
+          "icon": "REPÈRE PRATIQUE"
+        },
+        {
+          "contentId": "daily-gluten-vf-20261014",
+          "slot": "VRAI OU FAUX",
+          "icon": "FAUX"
+        },
+        {
+          "contentId": "daily-hypertension-20261014",
+          "slot": "LE CHIFFRE DU JOUR",
+          "icon": "1,4 MILLIARD"
+        },
+        {
+          "contentId": "daily-monoxyde-20261014",
+          "slot": "DONNÉES",
+          "icon": "PRÉVENTION"
+        },
+        {
+          "contentId": "daily-paracetamol-20261014",
+          "slot": "DONNÉES",
+          "icon": "MÉDICAMENTS"
+        },
+        {
+          "contentId": "daily-hpv-20261014",
+          "slot": "DONNÉES",
+          "icon": "VACCINATION"
+        }
+      ],
+      "editorialConference": {
+        "veille": "- Publication nouvelle : MiGHT, JAMA Network Open, 13 octobre 2026 — essai randomisé sur l’accès aux tests génétiques de prédisposition au cancer.\n- Publication nouvelle : suivi après accouchement, JAMA Health Forum, 7 octobre 2026 — essai randomisé, critère principal négatif mais amélioration de plusieurs composantes du suivi.\n- Publication nouvelle : RAPIDe-3, Lancet, 8 octobre 2026 — traitement oral des crises d’angiœdème héréditaire ; maladie rare, résultats non extrapolables à une allergie ordinaire.\n- Recommandation récente : EASD, Diabetologia, 15 septembre 2026 — repérage et prise en charge de la détresse liée au diabète ; relais français par la SFD, page actualisée en octobre. Les projets français ne sont pas des recommandations déjà publiées.\n- Octobre Rose : evERA, NEJM, publication en ligne du 30 septembre 2026, numéro du 1er octobre — avancée récente, pas une découverte du 14 octobre.\nLes institutions françaises servent aux repères de sécurité et de pratique. Les quatre sujets principaux proviennent de publications ou de sociétés savantes. Les études précliniques et les résultats biologiques sans utilité clinique ne sont pas retenus.",
+        "corpusImpact": "- Oncogénétique : ACTUALISER-FUSIONNER la fiche cancer-oncogenetique-famille après validation distincte. L’article d’actualité sur MiGHT est nouveau et conserve son angle d’accès aux tests.\n- Suivi postpartum : CRÉER, candidat durable ; pas de fiche dédiée retrouvée dans le corpus contrôlé.\n- Détresse liée au diabète : CRÉER, candidat distinct des fiches d’organisation du traitement et de complications.\n- Angiœdème héréditaire : CRÉER éventuellement une fiche générale, après validation distincte ; pas une fiche promotionnelle consacrée au médicament.\n- evERA : pas de doublon exact retrouvé ; article Mag proposé. NE PAS CRÉER automatiquement une fiche de médicament.\nCe contrôle porte sur le corpus actif et la source éditoriale contrôlés, pas sur d’éventuels brouillons externes non accessibles.",
+        "validation": "Dr Romain BEDDOK — parfait validation et mise en ligne — 14 octobre 2026"
+      }
     }
   ]
 }
