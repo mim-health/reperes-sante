@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "editionId": "edition-2026-10-14",
   "editionDate": "2026-10-14",
-  "sourceFingerprint": "b64922b65d02ffbba60eed4a1d60c26fc969b6320c141ee85cddb80a7a18201f",
+  "sourceFingerprint": "f8bf59c8b22f7f2557902bf31302c6140a952fabd198560564c852446315e561",
   "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
@@ -65,6 +65,24 @@
       "id": "mag-daily-evera-20261014",
       "version": "27bbf48bd9308ac4836a28446070a242a7ef15316967975878d93071ad12f129",
       "url": "article-octobre-rose-giredestrant-evera-20261014.html",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "mag-radar-arn-cancer-20261014",
+      "version": "f6be4d9df6cfe3f2552d7db9ffbd1d8582fdc1579fa785c37280940d3adc27ef",
+      "url": "article-vaccins-arn-cancer-bnt113.html",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "mag-radar-avc-thrombectomie-20261014",
+      "version": "14bc8e0ff64cd1cc2bec44cb752975e533a814d274e690c4411757f3e79d484b",
+      "url": "article-avc-thrombectomie-perfusion.html",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "mag-radar-dossier-medical-20261014",
+      "version": "f7a80031bb7dbeb7144ac2caf348648b4bf5a1601b09c567c9d9ee6014298236",
+      "url": "article-dossier-medical-mots-rectification.html",
       "date": "2026-10-14"
     },
     {

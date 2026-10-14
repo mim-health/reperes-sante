@@ -1155,5 +1155,77 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "27bbf48bd9308ac4836a28446070a242a7ef15316967975878d93071ad12f129"
+  },
+  {
+    "id": "radar-arn-cancer-20261014",
+    "url": "article-vaccins-arn-cancer-bnt113.html",
+    "title": "Les vaccins à ARN messager peuvent-ils vraiment traiter un cancer ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Cancer",
+    "date": "2026-10-14",
+    "status": "PUBLISHED",
+    "excerpt": "Des vaccins thérapeutiques à ARN messager sont étudiés contre certains cancers. Le premier résultat d’AHEAD-MERIT ne montre pas de gain significatif sur la survie sans progression ; la survie globale reste à évaluer.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Cancer",
+      "vaccins",
+      "messager",
+      "peuvent-ils",
+      "vraiment",
+      "traiter",
+      "cancer"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "cancer-immunotherapie-comment-ca-marche",
+    "version": "f6be4d9df6cfe3f2552d7db9ffbd1d8582fdc1579fa785c37280940d3adc27ef"
+  },
+  {
+    "id": "radar-avc-thrombectomie-20261014",
+    "url": "article-avc-thrombectomie-perfusion.html",
+    "title": "AVC : pourquoi ne peut-on pas toujours retirer le caillot ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Cœur & circulation",
+    "date": "2026-10-14",
+    "status": "PUBLISHED",
+    "excerpt": "La thrombectomie a des indications établies, notamment pour certaines grosses artères. Une nouvelle analyse sur des artères de calibre moyen n’a pas identifié de profil de perfusion prédisant un bénéfice de cette intervention.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Cœur & circulation",
+      "pourquoi",
+      "peut-on",
+      "toujours",
+      "retirer",
+      "caillot"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "avc-signes-risque-apres-50",
+    "version": "14bc8e0ff64cd1cc2bec44cb752975e533a814d274e690c4411757f3e79d484b"
+  },
+  {
+    "id": "radar-dossier-medical-20261014",
+    "url": "article-dossier-medical-mots-rectification.html",
+    "title": "Une erreur ou des mots blessants dans mon dossier médical : que faire ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Parcours de soins",
+    "date": "2026-10-14",
+    "status": "PUBLISHED",
+    "excerpt": "On peut demander une explication et la rectification de données personnelles inexactes. Une enquête américaine associe des formulations jugées irrespectueuses à une confiance plus faible, sans démontrer de causalité ni mesurer la situation française.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Parcours de soins",
+      "erreur",
+      "blessants",
+      "dossier",
+      "médical"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "f7a80031bb7dbeb7144ac2caf348648b4bf5a1601b09c567c9d9ee6014298236"
   }
 ];
