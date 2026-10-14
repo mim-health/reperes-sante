@@ -726,15 +726,15 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-13",
     "status": "PUBLISHED",
     "excerpt": "Une nouvelle cohorte américaine associe l’ouverture de centres d’angioplastie à une meilleure survie dans les territoires auparavant mal desservis. Le bénéfice n’est pas retrouvé dans les zones déjà équipées.",
-    "image": "assets/editorial/2026-10-13/infarctus.svg",
-    "imageAlt": "Accès rapide aux soins spécialisés après un infarctus",
+    "image": "assets/editorial/2026-10-13/photos/infarctus.jpg",
+    "imageAlt": "Équipe soignante auprès d’une patiente à l’hôpital.",
     "keywords": [
       "Cœur & circulation",
       "infarctus"
     ],
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
-    "version": "f6c4f9932c8749cc06c5ce1771f07dc175a2b3550438907cb66527e5d19f83ae"
+    "version": "973aecfb7294d095428c6c65d6ce39f781c64150e05f324317e2a91df0d7f76d"
   },
   {
     "id": "daily-robot-20261013",
@@ -746,15 +746,15 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-13",
     "status": "PUBLISHED",
     "excerpt": "Une grande étude britannique ne retrouve pas de différence significative sur les reprises chirurgicales ou les complications pendant l’intervention. La technologie seule ne garantit pas un meilleur résultat.",
-    "image": "assets/editorial/2026-10-13/robot.svg",
-    "imageAlt": "Prothèse du genou et assistance robotique",
+    "image": "assets/editorial/2026-10-13/photos/robot.jpg",
+    "imageAlt": "Examen du genou pendant une séance de rééducation.",
     "keywords": [
       "Os & articulations",
       "robot"
     ],
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
-    "version": "cfcec9f1500d0969505c1fe1b5a23efd5957ecf98698b71fcacc6fd747bca752"
+    "version": "f3906172609ddb0837f952b8f982ea01592ade258d6b4cddea751720b7824ea4"
   },
   {
     "id": "daily-colorectal-20261013",
@@ -766,15 +766,15 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-13",
     "status": "PUBLISHED",
     "excerpt": "L’accompagnement et les rappels améliorent la réalisation de la coloscopie après un test de selles anormal. Le dépistage ne s’arrête pas au résultat du test.",
-    "image": "assets/editorial/2026-10-13/colorectal.svg",
-    "imageAlt": "Accompagnement du parcours après un test colorectal positif",
+    "image": "assets/editorial/2026-10-13/photos/colorectal.jpg",
+    "imageAlt": "Matériel d’analyse dans un laboratoire médical.",
     "keywords": [
       "Digestion & urinaire",
       "colorectal"
     ],
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
-    "version": "ff436da126f953d4fe0716437bddd2aa5560e90d42fa3b18acbf69f421e5a421"
+    "version": "b96e556cc63f3c42ca3dfe7e01f048be6f5ca568fa71a6567f92ec65bb73f0b7"
   },
   {
     "id": "daily-incertitudes-20261013",
@@ -786,15 +786,15 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-13",
     "status": "PUBLISHED",
     "excerpt": "Deux essais montrent que décrire clairement les incertitudes modifie des décisions hypothétiques de traitement. Bénéfices, risques et incertitudes doivent tous être compréhensibles pour décider.",
-    "image": "assets/editorial/2026-10-13/incertitudes.svg",
-    "imageAlt": "Discussion des bénéfices, des risques et des incertitudes",
+    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "imageAlt": "Échange entre médecin et patient autour d’un document.",
     "keywords": [
       "Cancer",
       "incertitudes"
     ],
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
-    "version": "2f3853e46328a02d76899848e7d46e7dc0e9a36bae55733526f153f7276b315b"
+    "version": "902d9759bdb6b794a94f4e77d37f3013816c9e6a2a462d279097357d90874749"
   },
   {
     "id": "daily-migraine-20261013",
@@ -806,15 +806,15 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-13",
     "status": "PUBLISHED",
     "excerpt": "Une migraine répétée ou invalidante mérite de discuter d’une prévention avec son médecin. Tenir un calendrier des céphalées aide à préparer cette discussion.",
-    "image": "assets/editorial/2026-10-13/migraine.svg",
-    "imageAlt": "Migraine et calendrier des céphalées",
+    "image": "assets/editorial/2026-10-13/photos/migraine.jpg",
+    "imageAlt": "Plaquettes de médicaments, photographie d’illustration.",
     "keywords": [
       "Santé au quotidien",
       "migraine"
     ],
     "medicalStatus": "VALIDATED",
     "referenceFicheId": "migraine-adulte",
-    "version": "4b634eef9e7bfb5e791157da50834d86dc7e505c01a56ea62002f4c2936bf51f"
+    "version": "c8f43c27cc9e9e005f68699ad1d4175216ae83f14850418a0065aa402e3f4db4"
   },
   {
     "id": "daily-cystite-20261013",
@@ -826,15 +826,15 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-13",
     "status": "PUBLISHED",
     "excerpt": "FAUX. L’hydratation peut accompagner la prise en charge, mais ne remplace pas l’évaluation ni un antibiotique lorsqu’il est indiqué.",
-    "image": "assets/editorial/2026-10-13/cystite.svg",
-    "imageAlt": "Hydratation et évaluation d’une cystite",
+    "image": "assets/editorial/2026-10-13/photos/cystite.jpg",
+    "imageAlt": "Verre d’eau éclairé par la lumière naturelle.",
     "keywords": [
       "Santé au quotidien",
       "cystite"
     ],
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
-    "version": "225026bcf649a699499634f4a7b80aac5f7c801a8324f3cac509269f04556b28"
+    "version": "c4e098fe079c0fff0adf6c9fb6d683cb406defb01343ed380a9c9e3d77f982bb"
   },
   {
     "id": "daily-fertilite-20261013",
@@ -846,15 +846,15 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-13",
     "status": "PUBLISHED",
     "excerpt": "L’estimation mondiale publiée par l’OMS en 2023 concerne une expérience au cours de la vie, pas la proportion de personnes actuellement infertiles.",
-    "image": "assets/editorial/2026-10-13/fertilite.svg",
-    "imageAlt": "Parcours de fertilité",
+    "image": "assets/editorial/2026-10-13/photos/fertilite.jpg",
+    "imageAlt": "Mains jointes, évoquant le soutien dans le couple.",
     "keywords": [
       "Femmes & grossesse",
       "fertilite"
     ],
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
-    "version": "772023421845e6fbd4f59a21f2caf8112e97909ba98b93ed786a6ff9068cca85"
+    "version": "5ee48b0138c76b0697411e4e5bbad31d368ac00df38ff408aeb8c4169fcbb641"
   },
   {
     "id": "daily-vaccination-20261013",
@@ -926,14 +926,14 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-13",
     "status": "PUBLISHED",
     "excerpt": "Le nouvel essai TOSYMA apporte un signal favorable, mais ne démontre pas une diminution statistiquement significative des cancers invasifs apparus dans les deux années suivant un dépistage négatif. Une meilleure détection ne suffit pas à démontrer un bénéfice clinique supplémentaire.",
-    "image": "assets/editorial/2026-10-13/tomosynthese.svg",
-    "imageAlt": "Illustration schématique de la mammographie 2D et de la tomosynthèse ; aucune image diagnostique réelle",
+    "image": "assets/editorial/2026-10-13/photos/tomosynthese.jpg",
+    "imageAlt": "Ruban rose sur fond rose, symbole de sensibilisation au cancer du sein.",
     "keywords": [
       "Cancer du sein",
       "tomosynthese"
     ],
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
-    "version": "71cdc1fbf1ca14b26b4489b733752c3954381af6018ac3edddac2efeefc48a92"
+    "version": "532d485a0dc7f289b7c71b182e35a2e530372344682bf2b3d61fcd0878af8981"
   }
 ];

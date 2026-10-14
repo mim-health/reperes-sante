@@ -2,44 +2,44 @@
   "schemaVersion": 1,
   "editionId": "edition-2026-10-13",
   "editionDate": "2026-10-13",
-  "sourceFingerprint": "245463cbc158fc9fca467853d1397f815558da09327423f2d9010b5889d41902",
-  "missingEdition": false,
+  "sourceFingerprint": "f85096796a3f43f491f8847f63b9f9bd6ae0a078b4333d1050b962708cff43a7",
+  "missingEdition": true,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
     {
       "id": "mag-daily-infarctus-20261013",
-      "version": "f6c4f9932c8749cc06c5ce1771f07dc175a2b3550438907cb66527e5d19f83ae",
+      "version": "973aecfb7294d095428c6c65d6ce39f781c64150e05f324317e2a91df0d7f76d",
       "url": "mag-infarctus-20261013.html",
       "date": "2026-10-13"
     },
     {
       "id": "mag-daily-robot-20261013",
-      "version": "cfcec9f1500d0969505c1fe1b5a23efd5957ecf98698b71fcacc6fd747bca752",
+      "version": "f3906172609ddb0837f952b8f982ea01592ade258d6b4cddea751720b7824ea4",
       "url": "mag-robot-20261013.html",
       "date": "2026-10-13"
     },
     {
       "id": "mag-daily-colorectal-20261013",
-      "version": "ff436da126f953d4fe0716437bddd2aa5560e90d42fa3b18acbf69f421e5a421",
+      "version": "b96e556cc63f3c42ca3dfe7e01f048be6f5ca568fa71a6567f92ec65bb73f0b7",
       "url": "mag-colorectal-20261013.html",
       "date": "2026-10-13"
     },
     {
       "id": "mag-daily-incertitudes-20261013",
-      "version": "2f3853e46328a02d76899848e7d46e7dc0e9a36bae55733526f153f7276b315b",
+      "version": "902d9759bdb6b794a94f4e77d37f3013816c9e6a2a462d279097357d90874749",
       "url": "mag-incertitudes-20261013.html",
       "date": "2026-10-13"
     },
     {
       "id": "mag-daily-cystite-20261013",
-      "version": "225026bcf649a699499634f4a7b80aac5f7c801a8324f3cac509269f04556b28",
+      "version": "c4e098fe079c0fff0adf6c9fb6d683cb406defb01343ed380a9c9e3d77f982bb",
       "url": "mag-cystite-20261013.html",
       "date": "2026-10-13"
     },
     {
       "id": "mag-daily-fertilite-20261013",
-      "version": "772023421845e6fbd4f59a21f2caf8112e97909ba98b93ed786a6ff9068cca85",
+      "version": "5ee48b0138c76b0697411e4e5bbad31d368ac00df38ff408aeb8c4169fcbb641",
       "url": "mag-fertilite-20261013.html",
       "date": "2026-10-13"
     },
@@ -63,7 +63,7 @@
     },
     {
       "id": "mag-daily-tomosynthese-20261013",
-      "version": "71cdc1fbf1ca14b26b4489b733752c3954381af6018ac3edddac2efeefc48a92",
+      "version": "532d485a0dc7f289b7c71b182e35a2e530372344682bf2b3d61fcd0878af8981",
       "url": "article-octobre-rose-tomosynthese-tosyma-20261013.html",
       "date": "2026-10-13"
     },
