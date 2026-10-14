@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-14",
+  "status": "VALIDATED_FOR_PUBLICATION",
+  "validator": "Dr Romain BEDDOK",
+  "validatedAt": "2026-10-14T09:17:52+02:00",
+  "evidence": "parfait ! validation et mise en ligne",
+  "sourceDraftSha256": "59888b6aa42fd2ee0f83c92d0963b3995209e11da0b7b06e9d913bba8f6359a2",
+  "sourceFile": "corpus-medical-revisions-2026-10-14.js",
+  "updatedIds": [
+    "activite-physique-sommeil-20260824",
+    "double-prise-medicament",
+    "rupture-medicament-que-faire",
+    "cancer-oncogenetique-famille",
+    "cancer-metastases-definition",
+    "audition-apres-60-ans",
+    "saignement-apres-menopause",
+    "confusion-aigue-personne-agee",
+    "enfant-parle-peu-quand-sinquieter",
+    "nycturie-levers-nocturnes-uriner"
+  ],
+  "newFiches": [],
+  "seoMetadata": [
+    {
+      "id": "activite-physique-sommeil-20260824",
+      "title": "Activité physique et sommeil : bénéfices et limites",
+      "description": "Bouger régulièrement peut améliorer le sommeil. Quels exercices choisir, à quel moment et quand rechercher une insomnie ou une apnée ?"
+    },
+    {
+      "id": "double-prise-medicament",
+      "title": "Médicament pris deux fois : que faire immédiatement ?",
+      "description": "Double prise accidentelle : qui appeler, quelles informations préparer et pourquoi la prochaine dose dépend du médicament et de votre situation."
+    },
+    {
+      "id": "rupture-medicament-que-faire",
+      "title": "Médicament en rupture : comment poursuivre son traitement ?",
+      "description": "Votre pharmacie n’a plus votre traitement : démarches, alternatives encadrées et précautions pour éviter une interruption ou une erreur de dose."
+    },
+    {
+      "id": "cancer-oncogenetique-famille",
+      "title": "Cancer familial : quand consulter en oncogénétique ?",
+      "description": "Quels antécédents préparer, qui tester en premier et comment comprendre un résultat positif, négatif ou incertain en oncogénétique ?"
+    },
+    {
+      "id": "cancer-metastases-definition",
+      "title": "Métastases : comprendre le diagnostic et la prise en charge",
+      "description": "Une métastase reste liée au cancer d’origine. Comprendre le bilan, les traitements possibles et les questions à poser à l’équipe médicale."
+    },
+    {
+      "id": "audition-apres-60-ans",
+      "title": "Audition après 60 ans : signes et parcours du bilan",
+      "description": "Difficultés dans le bruit, télévision plus forte : quand faire un bilan auditif, à quoi servent les tests et quels bénéfices attendre d’un appareil ?"
+    },
+    {
+      "id": "saignement-apres-menopause",
+      "title": "Saignement après la ménopause : quand consulter ?",
+      "description": "Quelques traces, pertes rosées ou saignement après un rapport : pourquoi consulter après la ménopause et comment se déroule le bilan."
+    },
+    {
+      "id": "confusion-aigue-personne-agee",
+      "title": "Confusion soudaine chez une personne âgée : que faire ?",
+      "description": "Désorientation, agitation ou ralentissement apparus en quelques heures : reconnaître une confusion aiguë et organiser une évaluation urgente."
+    },
+    {
+      "id": "enfant-parle-peu-quand-sinquieter",
+      "title": "Enfant qui parle peu : repères et bilan du langage",
+      "description": "Absence de mots, peu de phrases ou compréhension difficile : quels repères suivre, quand consulter et pourquoi vérifier l’audition ?"
+    },
+    {
+      "id": "nycturie-levers-nocturnes-uriner",
+      "title": "Uriner plusieurs fois la nuit : causes et démarches",
+      "description": "La nycturie ne vient pas toujours de la prostate. Calendrier sur trois jours, causes possibles, gestes utiles et situations qui doivent alerter."
+    }
+  ]
+}
