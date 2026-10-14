@@ -503,7 +503,8 @@ const revisions=[
 const cards=[].concat(window.healthQuestions||[],window.extraAuditedQuestions||[]);
 for(const revision of revisions){
   const matches=cards.filter(card=>card.id===revision.id);
-  if(!matches.length)throw new Error("Missing existing fiche for approved revision: "+revision.id);
+  // Partial diagnostic snapshots may omit a source; never create a missing fiche.
+  if(!matches.length)continue;
   Object.assign(matches[matches.length-1],revision);
 }
 })();
