@@ -40,6 +40,51 @@ jobs:
           print(json.dumps(result))
           with open('cloudflare-access.json','w') as f: json.dump(result,f)
           PY
+      - name: Test disposable Worker permissions and private source access
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import os,json,urllib.request,urllib.error,uuid
+          def call(url,token,method='GET',body=None,ctype=None):
+            h={'Authorization':'Bearer '+token,'User-Agent':'maca-p0-isolated-test'}
+            if ctype:h['Content-Type']=ctype
+            try:
+              with urllib.request.urlopen(urllib.request.Request(url,data=body,headers=h,method=method),timeout=30) as r:
+                raw=r.read()
+                try:d=json.loads(raw)
+                except ValueError:d={}
+                return r.status,d
+            except urllib.error.HTTPError as e:
+              return e.code,{}
+          result={}
+          status,d=call('https://api.cloudflare.com/client/v4/accounts',os.environ['CF_TOKEN'])
+          accounts=d.get('result',[])
+          if status!=200 or len(accounts)!=1:raise RuntimeError('Account discovery not unambiguous')
+          name='maca-p0-permission-'+os.environ['GITHUB_RUN_ID']
+          url='https://api.cloudflare.com/client/v4/accounts/'+accounts[0]['id']+'/workers/scripts/'+name
+          status,_=call(url,os.environ['CF_TOKEN'])
+          result['initial_status']=status
+          if status!=404:raise RuntimeError('Refusing to overwrite existing or inaccessible Worker')
+          boundary='p0'+uuid.uuid4().hex
+          metadata=json.dumps({'main_module':'probe.js','compatibility_date':'2026-09-22','bindings':[]})
+          code='export default {fetch(){return new Response("MACA P0 disposable permissions probe");}};'
+          body=(f'--{boundary}\r\nContent-Disposition: form-data; name="metadata"\r\nContent-Type: application/json\r\n\r\n{metadata}\r\n--{boundary}\r\nContent-Disposition: form-data; name="probe.js"; filename="probe.js"\r\nContent-Type: application/javascript+module\r\n\r\n{code}\r\n--{boundary}--\r\n').encode()
+          status,d=call(url,os.environ['CF_TOKEN'],'PUT',body,'multipart/form-data; boundary='+boundary)
+          result['create_status']=status
+          created=status==200 and d.get('success') is True
+          if created:
+            try:
+              result['read_back_status']=call(url,os.environ['CF_TOKEN'])[0]
+            finally:
+              result['delete_status']=call(url,os.environ['CF_TOKEN'],'DELETE')[0]
+              result['after_delete_status']=call(url,os.environ['CF_TOKEN'])[0]
+          result['private_repo_read_status']=call('https://api.github.com/repos/mim-health/maca-sante-private/contents/assistant-v2/cloudflare-worker-public.js?ref=bf58e59e87071e17ad3931619fbecfe22cbe43a9',os.environ['GH_TOKEN'])[0]
+          print(json.dumps(result))
+          with open('isolated-permissions.json','w') as f:json.dump(result,f)
+          if created and (result.get('delete_status')!=200 or result.get('after_delete_status')!=404):raise RuntimeError('Disposable cleanup requires attention')
+          PY
       - name: Read production readiness without deployment
         shell: bash
         run: |
@@ -57,3 +102,4 @@ jobs:
             access.json
             cloudflare-access.json
             readiness.json
+            isolated-permissions.json
