@@ -2417,6 +2417,137 @@
         "contentHash": "27bbf48bd9308ac4836a28446070a242a7ef15316967975878d93071ad12f129"
       },
       "standalone": true
+    },
+    {
+      "id": "radar-arn-cancer-20261014",
+      "title": "Les vaccins à ARN messager peuvent-ils vraiment traiter un cancer ?",
+      "answer": "Des vaccins thérapeutiques à ARN messager sont étudiés contre certains cancers. Le premier résultat d’AHEAD-MERIT ne montre pas de gain significatif sur la survie sans progression ; la survie globale reste à évaluer.",
+      "url": "article-vaccins-arn-cancer-bnt113.html",
+      "theme": "Cancer",
+      "ficheId": "cancer-immunotherapie-comment-ca-marche",
+      "sources": [
+        {
+          "label": "BioNTech — résultats préliminaires AHEAD-MERIT, 13 octobre 2026",
+          "url": "https://www.biontech.com/us/en/home/mediaroom/news/press-releases/2026/10/BioNTech-Provides-Update-on-Phase-2-3-Clinical-Trial-for-mRNA-Cancer-Immunotherapy-Candidate-BNT113-in-Metastatic-HPV16-positive-Head-and-Neck-Cancer.html"
+        },
+        {
+          "label": "Institut national du cancer — L’immunothérapie",
+          "url": "https://www.cancer.fr/personnes-malades/parcours-de-soins/principaux-traitements/medecine-de-precision/l-immunotherapie"
+        }
+      ],
+      "date": "2026-10-14",
+      "format": "article",
+      "category": "Décryptage",
+      "keywords": [
+        "Cancer",
+        "vaccins",
+        "messager",
+        "peuvent-ils",
+        "vraiment",
+        "traiter",
+        "cancer"
+      ],
+      "standalone": true,
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "capitalisationDecision": "ENRICHIR_PAR_ARTICLE_LIE",
+      "html": "<article><h1>Les vaccins à ARN messager peuvent-ils vraiment traiter un cancer ?</h1><p><strong>Des vaccins thérapeutiques à ARN messager sont étudiés contre certains cancers. Le premier résultat d’AHEAD-MERIT ne montre pas de gain significatif sur la survie sans progression ; la survie globale reste à évaluer.</strong></p><h2>Vacciner pour traiter : de quoi parle-t-on ?</h2><p>Un vaccin thérapeutique vise un cancer déjà présent. Son objectif est de diriger les défenses immunitaires contre les cellules tumorales. Il se distingue des vaccins préventifs, notamment ceux contre les papillomavirus : ces derniers servent à prévenir certaines infections et leurs conséquences, pas à traiter une tumeur existante.</p><p>L’ARN messager est une façon de transmettre aux cellules les instructions nécessaires à la production de protéines reconnaissables par le système immunitaire. Une réaction immunitaire observée ne suffit cependant pas à démontrer un bénéfice pour les patients.</p><h2>Ce qui a été annoncé le 13 octobre</h2><p>BioNTech rapporte les premiers résultats de l’essai AHEAD-MERIT, de phase II/III. Il compare BNT113 associé au pembrolizumab au pembrolizumab seul, en première ligne de certains cancers ORL récidivants non opérables ou métastatiques, HPV16 positifs et exprimant PD-L1.</p><p>L’association n’a pas amélioré significativement la survie sans progression, c’est-à-dire le temps avant aggravation du cancer ou décès. La survie globale, deuxième critère principal, continue d’être évaluée. Ce résultat ne prouve donc ni un bénéfice sur la durée de vie, ni l’échec définitif de cette approche.</p><h2>Pourquoi rester prudent ?</h2><p>Les résultats proviennent pour l’instant d’un communiqué du promoteur, sans publication détaillée permettant une évaluation indépendante complète. BNT113 reste expérimental. Les conclusions ne s’étendent pas à tous les vaccins à ARN messager, ni à tous les cancers.</p><h2>La lecture MACASANTÉ</h2><p>Une technologie prometteuse doit prouver son bénéfice dans une indication précise. Cette annonce ne justifie pas de modifier un traitement prescrit. Pour une personne concernée, les possibilités d’essai clinique se discutent avec l’équipe d’oncologie.</p><h2>Sources vérifiées le 14 octobre 2026</h2><ul><li><a href=\"https://www.biontech.com/us/en/home/mediaroom/news/press-releases/2026/10/BioNTech-Provides-Update-on-Phase-2-3-Clinical-Trial-for-mRNA-Cancer-Immunotherapy-Candidate-BNT113-in-Metastatic-HPV16-positive-Head-and-Neck-Cancer.html\">BioNTech — résultats préliminaires AHEAD-MERIT, 13 octobre 2026</a></li><li><a href=\"https://www.cancer.fr/personnes-malades/parcours-de-soins/principaux-traitements/medecine-de-precision/l-immunotherapie\">Institut national du cancer — L’immunothérapie</a></li></ul><p><small>Validation : Dr Romain BEDDOK, 14 octobre 2026. Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-14",
+        "evidence": "Demande explicite du 14 octobre 2026 de mettre à jour les trois nouveaux signaux du radar et d’ajouter au corpus les éléments utiles. Références originales contrôlées ; limites conservées et droit français de rectification documenté.",
+        "contentHash": "f6be4d9df6cfe3f2552d7db9ffbd1d8582fdc1579fa785c37280940d3adc27ef"
+      }
+    },
+    {
+      "id": "radar-avc-thrombectomie-20261014",
+      "title": "AVC : pourquoi ne peut-on pas toujours retirer le caillot ?",
+      "answer": "La thrombectomie a des indications établies, notamment pour certaines grosses artères. Une nouvelle analyse sur des artères de calibre moyen n’a pas identifié de profil de perfusion prédisant un bénéfice de cette intervention.",
+      "url": "article-avc-thrombectomie-perfusion.html",
+      "theme": "Cœur & circulation",
+      "ficheId": "avc-signes-risque-apres-50",
+      "sources": [
+        {
+          "label": "Pensato et al. — JAMA Network Open, 13 octobre 2026. doi:10.1001/jamanetworkopen.2026.38823",
+          "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855260"
+        },
+        {
+          "label": "HAS — AVC : prise en charge précoce, indications actualisées en 2025",
+          "url": "https://www.has-sante.fr/jcms/c_830203/accident-vasculaire-cerebral-prise-en-charge-precoce-alerte-phase-prehospitaliere-phase-hospitaliere-initiale-indications-de-la-thrombolyse"
+        },
+        {
+          "label": "Assurance Maladie — AVC : que faire ?",
+          "url": "https://www.ameli.fr/assure/sante/urgence/pathologies/avc"
+        }
+      ],
+      "date": "2026-10-14",
+      "format": "article",
+      "category": "Décryptage",
+      "keywords": [
+        "Cœur & circulation",
+        "pourquoi",
+        "peut-on",
+        "toujours",
+        "retirer",
+        "caillot"
+      ],
+      "standalone": true,
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "capitalisationDecision": "ENRICHIR_PAR_ARTICLE_LIE",
+      "html": "<article><h1>AVC : pourquoi ne peut-on pas toujours retirer le caillot ?</h1><p><strong>La thrombectomie a des indications établies, notamment pour certaines grosses artères. Une nouvelle analyse sur des artères de calibre moyen n’a pas identifié de profil de perfusion prédisant un bénéfice de cette intervention.</strong></p><h2>Retirer un caillot n’est pas possible dans tous les AVC</h2><p>Un AVC peut être dû à une artère obstruée ou à une hémorragie. La thrombectomie vise à retirer, par un dispositif introduit dans les vaisseaux, un caillot responsable d’un AVC ischémique. Elle ne traite pas un AVC hémorragique.</p><p>La décision relève d’une équipe neurovasculaire. Elle prend notamment en compte l’artère concernée, les symptômes, le délai et l’imagerie. La HAS rappelle que les traitements de revascularisation indiqués doivent être commencés le plus tôt possible.</p><h2>La question posée par la nouvelle étude</h2><p>Une analyse exploratoire publiée le 13 octobre a repris les données d’ESCAPE-MeVO, un essai randomisé sur les occlusions d’artères de calibre moyen. Elle porte sur 309 participants disposant d’une imagerie de perfusion interprétable, sur 530 inclus dans l’essai.</p><p>Les chercheurs ont examiné les différences entre le tissu très mal irrigué et le tissu déjà lésé, pour rechercher un profil associé à un meilleur résultat de la thrombectomie. Les volumes et ratios étudiés n’ont pas identifié de sous-groupe bénéficiant davantage de l’intervention sur le résultat fonctionnel à 90 jours.</p><h2>Ce que cela ne signifie pas</h2><p>C’est une analyse après l’essai, limitée à un sous-ensemble de participants. Elle ne démontre pas que toute thrombectomie est inutile et ne remet pas en cause ses indications établies pour certaines grosses artères. Elle ne permet pas non plus à un patient de décider lui-même d’accepter ou de refuser l’intervention.</p><h2>Le réflexe à garder</h2><p><strong>Visage soudainement asymétrique, faiblesse d’un bras ou trouble brutal de la parole : appeler immédiatement le 15 ou le 112, même si les signes disparaissent.</strong> La prise en charge urgente reste indispensable, qu’une thrombectomie soit indiquée ou non.</p><h2>Sources vérifiées le 14 octobre 2026</h2><ul><li><a href=\"https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855260\">Pensato et al. — JAMA Network Open, 13 octobre 2026. doi:10.1001/jamanetworkopen.2026.38823</a></li><li><a href=\"https://www.has-sante.fr/jcms/c_830203/accident-vasculaire-cerebral-prise-en-charge-precoce-alerte-phase-prehospitaliere-phase-hospitaliere-initiale-indications-de-la-thrombolyse\">HAS — AVC : prise en charge précoce, indications actualisées en 2025</a></li><li><a href=\"https://www.ameli.fr/assure/sante/urgence/pathologies/avc\">Assurance Maladie — AVC : que faire ?</a></li></ul><p><small>Validation : Dr Romain BEDDOK, 14 octobre 2026. Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-14",
+        "evidence": "Demande explicite du 14 octobre 2026 de mettre à jour les trois nouveaux signaux du radar et d’ajouter au corpus les éléments utiles. Références originales contrôlées ; limites conservées et droit français de rectification documenté.",
+        "contentHash": "14bc8e0ff64cd1cc2bec44cb752975e533a814d274e690c4411757f3e79d484b"
+      }
+    },
+    {
+      "id": "radar-dossier-medical-20261014",
+      "title": "Une erreur ou des mots blessants dans mon dossier médical : que faire ?",
+      "answer": "On peut demander une explication et la rectification de données personnelles inexactes. Une enquête américaine associe des formulations jugées irrespectueuses à une confiance plus faible, sans démontrer de causalité ni mesurer la situation française.",
+      "url": "article-dossier-medical-mots-rectification.html",
+      "theme": "Parcours de soins",
+      "ficheId": "",
+      "sources": [
+        {
+          "label": "Steele et al. — JAMA Network Open, 13 octobre 2026. doi:10.1001/jamanetworkopen.2026.38695",
+          "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855262"
+        },
+        {
+          "label": "CNIL — Le droit de rectification : corriger vos informations",
+          "url": "https://www.cnil.fr/fr/comprendre-mes-droits/le-droit-de-rectification-corriger-vos-informations"
+        },
+        {
+          "label": "CNIL — Référentiel de gestion des cabinets médicaux et paramédicaux, droits des personnes",
+          "url": "https://www.cnil.fr/sites/cnil/files/atoms/files/referentiel_-_cabinet.pdf"
+        }
+      ],
+      "date": "2026-10-14",
+      "format": "article",
+      "category": "Décryptage",
+      "keywords": [
+        "Parcours de soins",
+        "erreur",
+        "blessants",
+        "dossier",
+        "médical"
+      ],
+      "standalone": true,
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "capitalisationDecision": "CORPUS_MAG_SANS_FICHE_DISTINCTE",
+      "html": "<article><h1>Une erreur ou des mots blessants dans mon dossier médical : que faire ?</h1><p><strong>On peut demander une explication et la rectification de données personnelles inexactes. Une enquête américaine associe des formulations jugées irrespectueuses à une confiance plus faible, sans démontrer de causalité ni mesurer la situation française.</strong></p><h2>Ce que montre la nouvelle enquête</h2><p>Une enquête américaine publiée le 13 octobre a interrogé 500 adultes. Parmi les utilisateurs de portail médical, 17,1 % déclaraient avoir rencontré des mots jugés irrespectueux ou porteurs de jugement dans leur dossier ou celui d’un proche. Il s’agit d’une estimation pondérée ; ce pourcentage n’est pas celui de tous les dossiers médicaux.</p><p>Cette expérience déclarée était associée à une confiance moindre dans la rédaction des notes. L’étude est transversale et repose sur les réponses des participants : elle ne prouve pas que ces formulations causent une dégradation des soins. Les conséquences évoquées étaient anticipées par les répondants, pas mesurées comme des événements cliniques. Ces données ne permettent pas d’estimer la fréquence en France.</p><h2>Commencer par comprendre la note</h2><p>Une formulation technique peut être difficile à comprendre. Demander à l’auteur ce qu’elle signifie permet de distinguer une erreur factuelle, une hypothèse médicale et un désaccord. Si des mots vous blessent, vous pouvez le signaler et expliquer précisément pourquoi. Cette démarche facilite un dialogue sur le sens et le contexte de la note.</p><h2>Demander une rectification en France</h2><p>Le droit de rectification concerne les données personnelles inexactes ou incomplètes ; la CNIL le rappelle aussi pour les dossiers patients des cabinets médicaux. Adressez votre demande au professionnel ou à l’établissement qui détient le dossier, ou à son délégué à la protection des données. Indiquez le passage concerné, la correction demandée et les éléments utiles. Gardez une copie.</p><p>L’organisme doit répondre au plus tard sous un mois ; une prolongation, motivée dans ce premier mois, peut porter le délai à trois mois. En cas d’absence de réponse ou de réponse insatisfaisante, la CNIL peut être saisie.</p><h2>La limite à comprendre</h2><p>Une demande de rectification n’est pas une garantie d’effacement de toute appréciation médicale avec laquelle on est en désaccord. Elle doit être examinée selon la nature de l’information. Le dialogue avec l’équipe reste utile pour comprendre la note et clarifier les faits.</p><h2>Sources vérifiées le 14 octobre 2026</h2><ul><li><a href=\"https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855262\">Steele et al. — JAMA Network Open, 13 octobre 2026. doi:10.1001/jamanetworkopen.2026.38695</a></li><li><a href=\"https://www.cnil.fr/fr/comprendre-mes-droits/le-droit-de-rectification-corriger-vos-informations\">CNIL — Le droit de rectification : corriger vos informations</a></li><li><a href=\"https://www.cnil.fr/sites/cnil/files/atoms/files/referentiel_-_cabinet.pdf\">CNIL — Référentiel de gestion des cabinets médicaux et paramédicaux, droits des personnes</a></li></ul><p><small>Validation : Dr Romain BEDDOK, 14 octobre 2026. Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-14",
+        "evidence": "Demande explicite du 14 octobre 2026 de mettre à jour les trois nouveaux signaux du radar et d’ajouter au corpus les éléments utiles. Références originales contrôlées ; limites conservées et droit français de rectification documenté.",
+        "contentHash": "f7a80031bb7dbeb7144ac2caf348648b4bf5a1601b09c567c9d9ee6014298236"
+      }
     }
   ],
   "editions": [
