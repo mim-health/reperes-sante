@@ -1,0 +1,43 @@
+name: P0 isolated access and readiness
+on:
+  push:
+    branches: [test/p0-isolated-access-20261014]
+    paths: ['.github/workflows/p0-isolated-access.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  access:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Check credential availability without revealing values
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          AI_KEY: ${{ secrets.OPENAI_API_KEY }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import os,json
+          names={'CLOUDFLARE_API_TOKEN':'CF_TOKEN','CLOUDFLARE_ACCOUNT_ID':'CF_ACCOUNT','OPENAI_API_KEY':'AI_KEY'}
+          result={name:bool(os.environ.get(env)) for name,env in names.items()}
+          print(json.dumps(result))
+          with open('access.json','w') as f: json.dump(result,f)
+          PY
+      - name: Read production readiness without deployment
+        shell: bash
+        run: |
+          curl --fail-with-body --connect-timeout 15 --max-time 45 --silent --show-error 'https://purple-voice-a8e3.dr-beddok.workers.dev/?maca_public_ready=1' -o readiness.json
+          python3 - <<'PY'
+          import json
+          d=json.load(open('readiness.json'))
+          print(json.dumps(d,ensure_ascii=False))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: p0-access-readiness
+          path: |
+            access.json
+            readiness.json
