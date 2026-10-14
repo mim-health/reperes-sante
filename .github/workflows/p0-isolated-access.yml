@@ -25,6 +25,21 @@ jobs:
           print(json.dumps(result))
           with open('access.json','w') as f: json.dump(result,f)
           PY
+      - name: Verify Cloudflare account discovery read only
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import os,json,urllib.request,urllib.error
+          req=urllib.request.Request('https://api.cloudflare.com/client/v4/accounts',headers={'Authorization':'Bearer '+os.environ['CF_TOKEN']})
+          try:
+            with urllib.request.urlopen(req,timeout=30) as response: d=json.load(response)
+            result={'success':d.get('success'), 'account_count':len(d.get('result',[])), 'errors':[e.get('code') for e in d.get('errors',[])]}
+          except urllib.error.HTTPError as e:
+            result={'success':False,'http_status':e.code}
+          print(json.dumps(result))
+          with open('cloudflare-access.json','w') as f: json.dump(result,f)
+          PY
       - name: Read production readiness without deployment
         shell: bash
         run: |
@@ -40,4 +55,5 @@ jobs:
           name: p0-access-readiness
           path: |
             access.json
+            cloudflare-access.json
             readiness.json
