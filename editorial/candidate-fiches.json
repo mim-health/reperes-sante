@@ -12,5 +12,33 @@
     "url": "mag-robot-20261013.html",
     "existingFicheId": null,
     "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-might-20261014",
+    "title": "Cancers dans la famille : une meilleure information aide-t-elle à franchir le pas du test génétique ?",
+    "url": "mag-might-20261014.html",
+    "existingFicheId": "cancer-oncogenetique-famille",
+    "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-postpartum-20261014",
+    "title": "Après l’accouchement : un accompagnement aide, mais ne remplace pas un suivi complet",
+    "url": "mag-postpartum-20261014.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-diabete-detresse-20261014",
+    "title": "Diabète : quand la charge du traitement devient trop lourde, il faut aussi en parler",
+    "url": "mag-diabete-detresse-20261014.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-angioedeme-20261014",
+    "title": "Angiœdème héréditaire : une gélule pour soulager les crises, que montre l’essai ?",
+    "url": "mag-angioedeme-20261014.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
   }
 ]

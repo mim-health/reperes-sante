@@ -935,5 +935,225 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "532d485a0dc7f289b7c71b182e35a2e530372344682bf2b3d61fcd0878af8981"
+  },
+  {
+    "id": "daily-might-20261014",
+    "url": "mag-might-20261014.html",
+    "title": "Cancers dans la famille : une meilleure information aide-t-elle à franchir le pas du test génétique ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Oncogénétique",
+    "date": "2026-10-14",
+    "status": "PUBLISHED",
+    "excerpt": "Un test peut être indiqué sans être réalisé. L’essai américain MiGHT compare un accompagnement téléphonique, une information numérique et les soins habituels chez 793 adultes répondant déjà à des critères d’évaluation génétique.",
+    "image": "assets/editorial/2026-10-14/photos/might.jpg",
+    "imageAlt": "Échange entre professionnels et patiente dans une scène de consultation.",
+    "keywords": [
+      "Oncogénétique",
+      "might"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "cancer-oncogenetique-famille",
+    "version": "995d9a8a6f78446cbd66b08db58428b7fda6dbe743d46285daba75971cd77ae0"
+  },
+  {
+    "id": "daily-postpartum-20261014",
+    "url": "mag-postpartum-20261014.html",
+    "title": "Après l’accouchement : un accompagnement aide, mais ne remplace pas un suivi complet",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Suivi après accouchement",
+    "date": "2026-10-14",
+    "status": "PUBLISHED",
+    "excerpt": "Essai randomisé publié le 7 octobre : 9,4 % des participantes accompagnées ont reçu les six éléments de suivi attendus contre 7,9 % avec les soins habituels ; différence non significative. Certaines composantes du suivi et la transition vers les soins primaires sont améliorées.",
+    "image": "assets/editorial/2026-10-14/photos/postpartum.jpg",
+    "imageAlt": "Une mère tenant son bébé à la maison.",
+    "keywords": [
+      "Suivi après accouchement",
+      "postpartum"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "c587a46edf2a7c0266dd6a0163334892a5f6083a912ea8f420ad6b8a7126c05b"
+  },
+  {
+    "id": "daily-diabete-detresse-20261014",
+    "url": "mag-diabete-detresse-20261014.html",
+    "title": "Diabète : quand la charge du traitement devient trop lourde, il faut aussi en parler",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Diabète",
+    "date": "2026-10-14",
+    "status": "PUBLISHED",
+    "excerpt": "Les recommandations EASD du 15 septembre 2026 reconnaissent la détresse liée au diabète : lassitude, peur des glycémies et poids quotidien du traitement. Ce vécu mérite un entretien et une aide adaptée ; il ne signifie pas automatiquement dépression.",
+    "image": "assets/editorial/2026-10-14/photos/diabete-detresse.jpg",
+    "imageAlt": "Mesure de la glycémie avec un lecteur.",
+    "keywords": [
+      "Diabète",
+      "diabete-detresse"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "c7e19fc07adcbcd300180e6d3d83c53a65fd4899c2ccf749fd703ffbafb63b78"
+  },
+  {
+    "id": "daily-angioedeme-20261014",
+    "url": "mag-angioedeme-20261014.html",
+    "title": "Angiœdème héréditaire : une gélule pour soulager les crises, que montre l’essai ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Maladies rares",
+    "date": "2026-10-14",
+    "status": "PUBLISHED",
+    "excerpt": "RAPIDe-3, publié le 8 octobre, randomise 134 participants ; 88 entrent dans l’analyse principale comparant deux crises traitées. Le délai médian jusqu’au début du soulagement est de 1,28 heure avec le deucrictibant contre plus de 12 heures avec le placebo.",
+    "image": "assets/editorial/2026-10-14/photos/angioedeme.jpg",
+    "imageAlt": "Professionnelle de santé échangeant avec une patiente.",
+    "keywords": [
+      "Maladies rares",
+      "angioedeme"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "1155906768c007cbd05e737c55ce833fe9e2008246ba3233dd31222603ba3c92"
+  },
+  {
+    "id": "daily-nez-20261014",
+    "url": "mag-nez-20261014.html",
+    "title": "Je saigne du nez : que dois-je faire ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé au quotidien",
+    "date": "2026-10-14",
+    "status": "PUBLISHED",
+    "excerpt": "Retrouvez la fiche MACASANTÉ de référence sur les saignements de nez.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Santé au quotidien",
+      "nez"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "saignement-nez-adulte",
+    "version": "05e23eae63fa1d89477c78331af4c1bffd7f51f80f06abd4df696bba04455501"
+  },
+  {
+    "id": "daily-gluten-vf-20261014",
+    "url": "mag-gluten-vf-20261014.html",
+    "title": "Pour rechercher une maladie cœliaque, faut-il d’abord arrêter le gluten ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé digestive",
+    "date": "2026-10-14",
+    "status": "PUBLISHED",
+    "excerpt": "FAUX. Commencer un régime sans gluten avant le bilan peut fausser les résultats.",
+    "image": "assets/editorial/2026-10-14/photos/gluten.jpg",
+    "imageAlt": "Pain présenté sur une table.",
+    "keywords": [
+      "Santé digestive",
+      "gluten-vf"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "34740c7508fde1427a94c254a110dfbabed37e0ec3522010f3786c6dd8b003a7"
+  },
+  {
+    "id": "daily-hypertension-20261014",
+    "url": "mag-hypertension-20261014.html",
+    "title": "1,4 milliard d’adultes vivent avec une hypertension dans le monde",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé cardiovasculaire",
+    "date": "2026-10-14",
+    "status": "PUBLISHED",
+    "excerpt": "1,4 milliard : nombre estimé d’adultes de 30 à 79 ans vivant avec une hypertension dans le monde en 2024.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Santé cardiovasculaire",
+      "hypertension"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "09c9e9d4e5dc2a1376e7b90938c88f9c0cd3918053491060d22730d5ae661f53"
+  },
+  {
+    "id": "daily-monoxyde-20261014",
+    "url": "mag-monoxyde-20261014.html",
+    "title": "Chauffage : préserver la ventilation",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Prévention",
+    "date": "2026-10-14",
+    "status": "PUBLISHED",
+    "excerpt": "Aérer au moins dix minutes par jour et ne pas boucher les entrées d’air contribue à prévenir les intoxications au monoxyde de carbone.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Prévention",
+      "monoxyde"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "7cb59da1bf74d45a4e332d7dee89eaff958f8c2b31b889299c474150102ffc35"
+  },
+  {
+    "id": "daily-paracetamol-20261014",
+    "url": "mag-paracetamol-20261014.html",
+    "title": "Paracétamol : vérifier les médicaments pris ensemble",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Médicaments",
+    "date": "2026-10-14",
+    "status": "PUBLISHED",
+    "excerpt": "Vérifier si plusieurs spécialités contiennent du paracétamol pour éviter un cumul involontaire.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Médicaments",
+      "paracetamol"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "48579b058ea921031dbe85af1e0048c50d5083bd29f4aa36fc5fd5cb8c59adb6"
+  },
+  {
+    "id": "daily-hpv-20261014",
+    "url": "mag-hpv-20261014.html",
+    "title": "HPV : une vaccination pour les filles et les garçons",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Vaccination",
+    "date": "2026-10-14",
+    "status": "PUBLISHED",
+    "excerpt": "La vaccination HPV est recommandée aux filles et garçons de 11 à 14 ans révolus.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Vaccination",
+      "hpv"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "36d051d668bf5c1c57ce5384d91534e567d1bd20f9f8126d760993ecb5ed2ad1"
+  },
+  {
+    "id": "daily-evera-20261014",
+    "url": "article-octobre-rose-giredestrant-evera-20261014.html",
+    "title": "Cancer du sein avancé : le giredestrant peut-il retarder la progression après une hormonothérapie ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Cancer du sein",
+    "date": "2026-10-14",
+    "status": "PUBLISHED",
+    "excerpt": "Oui, dans un essai de phase III chez des patients ayant un cancer du sein avancé ER positif et HER2 négatif, déjà traité par un inhibiteur de CDK4/6 associé à une hormonothérapie. L’association giredestrant–évérolimus retarde la progression par rapport à une hormonothérapie standard associée à l’évérolimus. Cela ne démontre pas encore que les patients vivent plus longtemps, et ne permet pas d’annoncer un traitement disponible en France.",
+    "image": "assets/editorial/2026-10-14/photos/evera.jpg",
+    "imageAlt": "Documents échangés lors d’une consultation.",
+    "keywords": [
+      "Cancer du sein",
+      "evera"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "27bbf48bd9308ac4836a28446070a242a7ef15316967975878d93071ad12f129"
   }
 ];

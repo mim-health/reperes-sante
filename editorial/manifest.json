@@ -1,12 +1,72 @@
 {
   "schemaVersion": 1,
-  "editionId": "edition-2026-10-13",
-  "editionDate": "2026-10-13",
-  "sourceFingerprint": "f85096796a3f43f491f8847f63b9f9bd6ae0a078b4333d1050b962708cff43a7",
-  "missingEdition": true,
+  "editionId": "edition-2026-10-14",
+  "editionDate": "2026-10-14",
+  "sourceFingerprint": "b64922b65d02ffbba60eed4a1d60c26fc969b6320c141ee85cddb80a7a18201f",
+  "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-daily-might-20261014",
+      "version": "995d9a8a6f78446cbd66b08db58428b7fda6dbe743d46285daba75971cd77ae0",
+      "url": "mag-might-20261014.html",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "mag-daily-postpartum-20261014",
+      "version": "c587a46edf2a7c0266dd6a0163334892a5f6083a912ea8f420ad6b8a7126c05b",
+      "url": "mag-postpartum-20261014.html",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "mag-daily-diabete-detresse-20261014",
+      "version": "c7e19fc07adcbcd300180e6d3d83c53a65fd4899c2ccf749fd703ffbafb63b78",
+      "url": "mag-diabete-detresse-20261014.html",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "mag-daily-angioedeme-20261014",
+      "version": "1155906768c007cbd05e737c55ce833fe9e2008246ba3233dd31222603ba3c92",
+      "url": "mag-angioedeme-20261014.html",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "mag-daily-gluten-vf-20261014",
+      "version": "34740c7508fde1427a94c254a110dfbabed37e0ec3522010f3786c6dd8b003a7",
+      "url": "mag-gluten-vf-20261014.html",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "mag-daily-hypertension-20261014",
+      "version": "09c9e9d4e5dc2a1376e7b90938c88f9c0cd3918053491060d22730d5ae661f53",
+      "url": "mag-hypertension-20261014.html",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "mag-daily-monoxyde-20261014",
+      "version": "7cb59da1bf74d45a4e332d7dee89eaff958f8c2b31b889299c474150102ffc35",
+      "url": "mag-monoxyde-20261014.html",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "mag-daily-paracetamol-20261014",
+      "version": "48579b058ea921031dbe85af1e0048c50d5083bd29f4aa36fc5fd5cb8c59adb6",
+      "url": "mag-paracetamol-20261014.html",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "mag-daily-hpv-20261014",
+      "version": "36d051d668bf5c1c57ce5384d91534e567d1bd20f9f8126d760993ecb5ed2ad1",
+      "url": "mag-hpv-20261014.html",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "mag-daily-evera-20261014",
+      "version": "27bbf48bd9308ac4836a28446070a242a7ef15316967975878d93071ad12f129",
+      "url": "article-octobre-rose-giredestrant-evera-20261014.html",
+      "date": "2026-10-14"
+    },
     {
       "id": "mag-daily-infarctus-20261013",
       "version": "973aecfb7294d095428c6c65d6ce39f781c64150e05f324317e2a91df0d7f76d",

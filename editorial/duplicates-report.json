@@ -282,6 +282,19 @@
     },
     {
       "left": {
+        "id": "saignement-nez-adulte",
+        "title": "Je saigne du nez : que dois-je faire ?",
+        "type": "fiche"
+      },
+      "right": {
+        "id": "daily-nez-20261014",
+        "title": "Je saigne du nez : que dois-je faire ?",
+        "type": "Mag"
+      },
+      "score": 1
+    },
+    {
+      "left": {
         "id": "mal-gorge-adulte-antibiotiques",
         "title": "J’ai mal à la gorge : faut-il prendre des antibiotiques ?",
         "type": "fiche"
@@ -305,6 +318,19 @@
         "type": "Mag"
       },
       "score": 1
+    },
+    {
+      "left": {
+        "id": "saignement-nez-enfant",
+        "title": "Mon enfant saigne du nez : que faire ?",
+        "type": "fiche"
+      },
+      "right": {
+        "id": "daily-nez-20261014",
+        "title": "Je saigne du nez : que dois-je faire ?",
+        "type": "Mag"
+      },
+      "score": 0.5
     },
     {
       "left": {
@@ -480,6 +506,6 @@
     "manifestFiles": 139,
     "rawFiches": 403,
     "canonicalFiches": 377,
-    "magContents": 50
+    "magContents": 61
   }
 }
