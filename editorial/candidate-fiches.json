@@ -40,5 +40,26 @@
     "url": "mag-angioedeme-20261014.html",
     "existingFicheId": null,
     "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-sepsis-20261015",
+    "title": "Infection grave : peut-on mieux protéger les reins pendant une opération ?",
+    "url": "mag-sepsis-20261015.html",
+    "existingFicheId": "sepsis-reconnaitre-urgence",
+    "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-vih-20261015",
+    "title": "VIH chez les adolescents : des injections espacées peuvent-elles remplacer les comprimés ?",
+    "url": "mag-vih-20261015.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-octobre-rose-cognition-20261015",
+    "title": "Après un cancer du sein, l’exercice améliore-t-il vraiment la mémoire et la concentration ?",
+    "url": "mag-octobre-rose-cognition-20261015.html",
+    "existingFicheId": "activite-physique-traitement-cancer",
+    "status": "HUMAN_REVIEW_REQUIRED"
   }
 ]

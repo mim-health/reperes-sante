@@ -399,6 +399,19 @@
     },
     {
       "left": {
+        "id": "rupture-medicament-que-faire",
+        "title": "Mon médicament est en rupture : que dois-je faire ?",
+        "type": "fiche"
+      },
+      "right": {
+        "id": "daily-rupture-20261015",
+        "title": "Mon médicament est en rupture : que dois-je faire ?",
+        "type": "Mag"
+      },
+      "score": 1
+    },
+    {
+      "left": {
         "id": "q-cortisol-stress-fatigue",
         "title": "Stress, fatigue : faut-il faire baisser son cortisol ?",
         "type": "fiche"
@@ -506,6 +519,6 @@
     "manifestFiles": 140,
     "rawFiches": 403,
     "canonicalFiches": 377,
-    "magContents": 64
+    "magContents": 77
   }
 }

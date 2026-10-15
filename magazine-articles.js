@@ -1227,5 +1227,233 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "f7a80031bb7dbeb7144ac2caf348648b4bf5a1601b09c567c9d9ee6014298236"
+  },
+  {
+    "id": "daily-parkinson-20261015",
+    "url": "mag-parkinson-20261015.html",
+    "title": "Parkinson : un complément qui augmente le NAD peut-il ralentir la maladie ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "PARKINSON",
+    "date": "2026-10-15",
+    "status": "PUBLISHED",
+    "excerpt": "L’essai NOPARK ne démontre pas de ralentissement de la maladie avec le nicotinamide riboside.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "PARKINSON"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "7bd3437da5ac57e828311e1b361ab660a4b0d36c1492d5dbfb7584f0e6152072"
+  },
+  {
+    "id": "daily-sepsis-20261015",
+    "url": "mag-sepsis-20261015.html",
+    "title": "Infection grave : peut-on mieux protéger les reins pendant une opération ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "SOINS INTENSIFS",
+    "date": "2026-10-15",
+    "status": "PUBLISHED",
+    "excerpt": "Un essai suggère moins d’atteintes rénales sous dobutamine ajoutée à la noradrénaline, avec davantage de tachycardies.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "SOINS INTENSIFS"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "sepsis-reconnaitre-urgence",
+    "version": "b7f389a0766a90d7606a8e2e29e6437439ed7c5ee1b6f2a6de7121bd870eb43f"
+  },
+  {
+    "id": "daily-vih-20261015",
+    "url": "mag-vih-20261015.html",
+    "title": "VIH chez les adolescents : des injections espacées peuvent-elles remplacer les comprimés ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "VIH",
+    "date": "2026-10-15",
+    "status": "PUBLISHED",
+    "excerpt": "L’essai LATA montre un contrôle virologique maintenu chez des adolescents déjà stabilisés, sous conditions.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "VIH"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "0b72c160ca2ecc7bb39c7322ddc3a745ff862428b515dd35b095e7808dc5a3d5"
+  },
+  {
+    "id": "daily-bronchiolite-20261015",
+    "url": "mag-bronchiolite-20261015.html",
+    "title": "Bronchiolite : pourquoi rester vigilant avant la hausse épidémique ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "BRONCHIOLITE",
+    "date": "2026-10-15",
+    "status": "PUBLISHED",
+    "excerpt": "Les indicateurs restent à leur niveau de base ; cela ne signifie pas qu’aucun nourrisson ne peut être malade.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "BRONCHIOLITE"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "bronchiolite-bebe-vaccin-grossesse-anticorps",
+    "version": "f782a73153ad44b5060bf34ec27bbf1b478ac9642ca102afda9399385910b24f"
+  },
+  {
+    "id": "daily-rupture-20261015",
+    "url": "mag-rupture-20261015.html",
+    "title": "Mon médicament est en rupture : que dois-je faire ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "MÉDICAMENTS",
+    "date": "2026-10-15",
+    "status": "PUBLISHED",
+    "excerpt": "Retrouvez la fiche validée MACASANTÉ consacrée aux ruptures de médicaments.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "MÉDICAMENTS"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "rupture-medicament-que-faire",
+    "version": "a51c4d30d8546f83f1e5f3c73ca92a7ba38136247eabdbdafee9b909b46f13ed"
+  },
+  {
+    "id": "daily-cataracte-20261015",
+    "url": "mag-cataracte-20261015.html",
+    "title": "Des gouttes peuvent-elles faire disparaître une cataracte ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "FAUX",
+    "date": "2026-10-15",
+    "status": "PUBLISHED",
+    "excerpt": "FAUX : le traitement qui retire la cataracte est chirurgical.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "FAUX"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "375ca5d4faf984941d3dbf73506d9f36c59ab7637166674ff64146a0a886ef17"
+  },
+  {
+    "id": "daily-brossage-20261015",
+    "url": "mag-brossage-20261015.html",
+    "title": "Deux minutes de brossage, deux fois par jour",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "2 MINUTES",
+    "date": "2026-10-15",
+    "status": "PUBLISHED",
+    "excerpt": "Deux minutes par brossage, matin et soir : un repère simple de prévention bucco-dentaire.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "2 MINUTES"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "aa63449cb94ada43be9bbc80ad9bb0c2e377bce3c1e81f459718df79b2513ac0"
+  },
+  {
+    "id": "daily-diarrhee-20261015",
+    "url": "mag-diarrhee-20261015.html",
+    "title": "Diarrhée chez une personne âgée : surveiller la déshydratation",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "SENIORS",
+    "date": "2026-10-15",
+    "status": "PUBLISHED",
+    "excerpt": "Une suspicion de déshydratation impose de contacter rapidement un médecin.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "SENIORS"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "15cf9452d2300de55b58cd3a100aefe319e5fa2ee959eb727e45c515072c7b56"
+  },
+  {
+    "id": "daily-toxoplasmose-20261015",
+    "url": "mag-toxoplasmose-20261015.html",
+    "title": "Grossesse et jardinage : comment limiter le risque de toxoplasmose ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "GROSSESSE",
+    "date": "2026-10-15",
+    "status": "PUBLISHED",
+    "excerpt": "En l’absence d’immunité, porter des gants puis se laver les mains après avoir jardiné.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "GROSSESSE"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "b90f1d580e5ff210e3896ef732e67ab922a40b48caba638b65ec59825a5a6c5e"
+  },
+  {
+    "id": "daily-melanome-20261015",
+    "url": "mag-melanome-20261015.html",
+    "title": "Un grain de beauté qui change doit être examiné",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "PEAU",
+    "date": "2026-10-15",
+    "status": "PUBLISHED",
+    "excerpt": "La règle ABCDE aide à repérer un changement, mais ne remplace pas le diagnostic médical.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "PEAU"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "abc7fdb55b089bf5032e35320ec99cd91cd855ae90e47dd9bf4c9bd159da781f"
+  },
+  {
+    "id": "radar-paris-sportifs-20261015",
+    "url": "article-paris-sportifs-sante-mentale.html",
+    "title": "Les paris sportifs peuvent-ils rendre anxieux ou dépressif ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Santé mentale",
+    "date": "2026-10-15",
+    "status": "PUBLISHED",
+    "excerpt": "Une étude américaine associe la légalisation des paris sportifs en ligne à davantage de soins pour anxiété et dépression. Elle ne prouve pas que chaque consultation supplémentaire est causée par le jeu.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Santé mentale"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "d3e7c44aa26462981aac70a2cf41cbc6607139a746fae2e38661fa2cdfb6335b"
+  },
+  {
+    "id": "radar-culture-cerveau-20261015",
+    "url": "article-culture-sante-cerebrale.html",
+    "title": "Aller au concert ou au musée peut-il protéger notre cerveau ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Seniors",
+    "date": "2026-10-15",
+    "status": "PUBLISHED",
+    "excerpt": "Une cohorte associe les sorties culturelles à moins de diagnostics hospitaliers de démence. Elle ne démontre pas qu’aller au concert ou au musée prévient Alzheimer.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Seniors"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "musicotherapie-bienfaits-sante",
+    "version": "2f8deb79170352c7001f858377cd01cd17b17ccbd899d6c6c1504eb13799ab3e"
   }
 ];
