@@ -2548,6 +2548,372 @@
         "evidence": "Demande explicite du 14 octobre 2026 de mettre à jour les trois nouveaux signaux du radar et d’ajouter au corpus les éléments utiles. Références originales contrôlées ; limites conservées et droit français de rectification documenté.",
         "contentHash": "f7a80031bb7dbeb7144ac2caf348648b4bf5a1601b09c567c9d9ee6014298236"
       }
+    },
+    {
+      "id": "daily-parkinson-20261015",
+      "date": "2026-10-15",
+      "title": "Parkinson : un complément qui augmente le NAD peut-il ralentir la maladie ?",
+      "answer": "L’essai NOPARK ne démontre pas de ralentissement de la maladie avec le nicotinamide riboside.",
+      "url": "mag-parkinson-20261015.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "PARKINSON",
+      "keywords": [
+        "PARKINSON"
+      ],
+      "sources": [
+        {
+          "label": "JAMA — NOPARK, 8 octobre 2026, DOI 10.1001/jama.2026.18828",
+          "url": "https://jamanetwork.com/journals/jama/fullarticle/2855023"
+        },
+        {
+          "label": "PubMed PMID 42848371",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42848371/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "html": "<article><p class=\"eyebrow\">À LA UNE · 15 OCTOBRE 2026</p><h1>Parkinson : un complément qui augmente le NAD peut-il ralentir la maladie ?</h1><p><strong>L’essai NOPARK ne démontre pas de ralentissement de la maladie avec le nicotinamide riboside.</strong></p><p>Un essai randomisé de phase 3 publié dans JAMA le 8 octobre 2026 a comparé le nicotinamide riboside 500 mg deux fois par jour au placebo pendant 52 semaines chez 410 personnes présentant une maladie de Parkinson débutante, en complément des traitements habituels. Le score global a évolué moins favorablement avec le complément : différence ajustée de 2,72 points sur 236 (IC 95 % : 0,47 à 4,98), sous le seuil de 5,2 points considéré comme cliniquement important. Les événements indésirables graves n’étaient pas plus fréquents. Ce résultat ne justifie pas de prendre ce complément pour ralentir Parkinson ; il ne concerne pas le traitement d’une carence et ne justifie pas de modifier un traitement prescrit. Un effet biologique sur le NAD n’équivaut pas à un bénéfice clinique.</p><h2>Sources</h2><ul><li><a href=\"https://jamanetwork.com/journals/jama/fullarticle/2855023\">JAMA — NOPARK, 8 octobre 2026, DOI 10.1001/jama.2026.18828</a></li><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/42848371/\">PubMed PMID 42848371</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-15T09:00:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite du Dr Romain BEDDOK, 15 octobre 2026 : « Parfait mise en ligne validation » puis « Il faut tout mettre en ligne selon le chemin habituel, magazine. »",
+        "contentHash": "3834e9366a9dcc49f30c2283de3c20bd5a94e009899ce95fbe44035baa62358e"
+      }
+    },
+    {
+      "id": "daily-sepsis-20261015",
+      "date": "2026-10-15",
+      "title": "Infection grave : peut-on mieux protéger les reins pendant une opération ?",
+      "answer": "Un essai suggère moins d’atteintes rénales sous dobutamine ajoutée à la noradrénaline, avec davantage de tachycardies.",
+      "url": "mag-sepsis-20261015.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "SOINS INTENSIFS",
+      "keywords": [
+        "SOINS INTENSIFS"
+      ],
+      "sources": [
+        {
+          "label": "JAMA, 14 octobre 2026, DOI 10.1001/jama.2026.21322",
+          "url": "https://jamanetwork.com/journals/jama/fullarticle/2855463"
+        }
+      ],
+      "ficheId": "sepsis-reconnaitre-urgence",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": true,
+      "html": "<article><p class=\"eyebrow\">À LIRE EN 3 MIN · 15 OCTOBRE 2026</p><h1>Infection grave : peut-on mieux protéger les reins pendant une opération ?</h1><p><strong>Un essai suggère moins d’atteintes rénales sous dobutamine ajoutée à la noradrénaline, avec davantage de tachycardies.</strong></p><p>Dans un essai randomisé ouvert publié le 14 octobre 2026, 584 adultes en choc septique opérés pour contrôler le foyer infectieux ont reçu soit de la noradrénaline seule, soit de la noradrénaline associée à la dobutamine. L’apparition ou l’aggravation d’une atteinte rénale à sept jours concernait 22,8 % contre 34,7 % des patients : réduction absolue de 11,9 points. Les accélérations cardiaques étaient plus fréquentes (41,0 % contre 29,9 %). Aucun bénéfice significatif sur la mortalité n’a été démontré. L’étude ouverte, réalisée dans 39 hôpitaux chinois, ne permet pas de généraliser ce protocole à toutes les infections graves. Un résultat favorable sur un organe ne prouve pas une amélioration de la survie.</p><p><a href=\"fiche.html?id=sepsis-reconnaitre-urgence\">Consulter la fiche MACASANTÉ associée →</a></p><h2>Sources</h2><ul><li><a href=\"https://jamanetwork.com/journals/jama/fullarticle/2855463\">JAMA, 14 octobre 2026, DOI 10.1001/jama.2026.21322</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-15T09:00:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite du Dr Romain BEDDOK, 15 octobre 2026 : « Parfait mise en ligne validation » puis « Il faut tout mettre en ligne selon le chemin habituel, magazine. »",
+        "contentHash": "b3a0d735f41673e29550c672decffd2fe24f3ffb451d2a5aa902261efe0fd6f1"
+      }
+    },
+    {
+      "id": "daily-vih-20261015",
+      "date": "2026-10-15",
+      "title": "VIH chez les adolescents : des injections espacées peuvent-elles remplacer les comprimés ?",
+      "answer": "L’essai LATA montre un contrôle virologique maintenu chez des adolescents déjà stabilisés, sous conditions.",
+      "url": "mag-vih-20261015.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "VIH",
+      "keywords": [
+        "VIH"
+      ],
+      "sources": [
+        {
+          "label": "Lancet — LATA, PMID 42753775",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42753775/"
+        },
+        {
+          "label": "EMA — Vocabria",
+          "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/vocabria"
+        },
+        {
+          "label": "EMA — Rekambys",
+          "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/rekambys"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": true,
+      "html": "<article><p class=\"eyebrow\">À LIRE EN 3 MIN · 15 OCTOBRE 2026</p><h1>VIH chez les adolescents : des injections espacées peuvent-elles remplacer les comprimés ?</h1><p><strong>L’essai LATA montre un contrôle virologique maintenu chez des adolescents déjà stabilisés, sous conditions.</strong></p><p>L’essai LATA publié dans The Lancet le 10 octobre 2026 a étudié 476 adolescents de 12 à moins de 20 ans dont la charge virale était contrôlée. Le cabotégravir/rilpivirine injectable a été comparé à un traitement oral quotidien. À 96 semaines, le risque estimé de rebond virologique confirmé était de 0,9 % contre 6,4 %, soit 5,5 points de moins. Les injections permettent d’éviter la prise quotidienne mais nécessitent le respect des rendez-vous ; résistances, interactions, antécédents d’échec, hypersensibilité et réactions locales doivent être évalués. L’essai concernait surtout des infections acquises à la naissance en Afrique subsaharienne. Il ne s’agit pas d’une guérison. Une autorisation européenne existe sous conditions pour certains adolescents ; disponibilité et remboursement en France sont à vérifier individuellement.</p><h2>Sources</h2><ul><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/42753775/\">Lancet — LATA, PMID 42753775</a></li><li><a href=\"https://www.ema.europa.eu/en/medicines/human/EPAR/vocabria\">EMA — Vocabria</a></li><li><a href=\"https://www.ema.europa.eu/en/medicines/human/EPAR/rekambys\">EMA — Rekambys</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-15T09:00:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite du Dr Romain BEDDOK, 15 octobre 2026 : « Parfait mise en ligne validation » puis « Il faut tout mettre en ligne selon le chemin habituel, magazine. »",
+        "contentHash": "9494aac871df593f9d127d35725d96d6813b2703284a98a559d3563545c88936"
+      }
+    },
+    {
+      "id": "daily-bronchiolite-20261015",
+      "date": "2026-10-15",
+      "title": "Bronchiolite : pourquoi rester vigilant avant la hausse épidémique ?",
+      "answer": "Les indicateurs restent à leur niveau de base ; cela ne signifie pas qu’aucun nourrisson ne peut être malade.",
+      "url": "mag-bronchiolite-20261015.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "BRONCHIOLITE",
+      "keywords": [
+        "BRONCHIOLITE"
+      ],
+      "sources": [
+        {
+          "label": "Santé publique France — bulletin respiratoire du 14 octobre 2026",
+          "url": "https://www.santepubliquefrance.fr/infections-respiratoires-aigues/grippe/bulletin-national/infections-respiratoires-aigues-grippe-bronchiolite-covid-19-bulletin-du-14-octobre-2026"
+        }
+      ],
+      "ficheId": "bronchiolite-bebe-vaccin-grossesse-anticorps",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "html": "<article><p class=\"eyebrow\">À LIRE EN 3 MIN · 15 OCTOBRE 2026</p><h1>Bronchiolite : pourquoi rester vigilant avant la hausse épidémique ?</h1><p><strong>Les indicateurs restent à leur niveau de base ; cela ne signifie pas qu’aucun nourrisson ne peut être malade.</strong></p><p>Le bulletin national de Santé publique France du 14 octobre 2026 rapporte des indicateurs de bronchiolite au niveau de base. Il ne s’agit pas d’une alerte épidémique. D’autres virus, notamment rhinovirus et entérovirus, peuvent aussi provoquer une bronchiolite. Une difficulté respiratoire ou une alimentation nettement diminuée chez un nourrisson justifie un avis médical, même hors période épidémique. La surveillance nationale décrit une tendance collective et ne prédit pas le risque d’un enfant donné.</p><p><a href=\"fiche.html?id=bronchiolite-bebe-vaccin-grossesse-anticorps\">Consulter la fiche MACASANTÉ associée →</a></p><h2>Sources</h2><ul><li><a href=\"https://www.santepubliquefrance.fr/infections-respiratoires-aigues/grippe/bulletin-national/infections-respiratoires-aigues-grippe-bronchiolite-covid-19-bulletin-du-14-octobre-2026\">Santé publique France — bulletin respiratoire du 14 octobre 2026</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-15T09:00:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite du Dr Romain BEDDOK, 15 octobre 2026 : « Parfait mise en ligne validation » puis « Il faut tout mettre en ligne selon le chemin habituel, magazine. »",
+        "contentHash": "c88c51135c11ea97118368f00b308c4b1edff67b4cba94638893a97af24605f1"
+      }
+    },
+    {
+      "id": "daily-rupture-20261015",
+      "date": "2026-10-15",
+      "title": "Mon médicament est en rupture : que dois-je faire ?",
+      "answer": "Retrouvez la fiche validée MACASANTÉ consacrée aux ruptures de médicaments.",
+      "url": "mag-rupture-20261015.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "MÉDICAMENTS",
+      "keywords": [
+        "MÉDICAMENTS"
+      ],
+      "sources": [
+        {
+          "label": "MACASANTÉ — fiche validée",
+          "url": "https://macasante.fr/fiche.html?id=rupture-medicament-que-faire"
+        }
+      ],
+      "ficheId": "rupture-medicament-que-faire",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "html": "<article><p class=\"eyebrow\">FICHE DU JOUR · 15 OCTOBRE 2026</p><h1>Mon médicament est en rupture : que dois-je faire ?</h1><p><strong>Retrouvez la fiche validée MACASANTÉ consacrée aux ruptures de médicaments.</strong></p><p>Consultez la fiche existante pour savoir comment contacter votre pharmacien, anticiper la dernière dose et trouver une solution avec les professionnels. Ne réduisez pas les doses et ne remplacez pas un médicament sans avis médical.</p><p><a href=\"fiche.html?id=rupture-medicament-que-faire\">Consulter la fiche MACASANTÉ associée →</a></p><h2>Sources</h2><ul><li><a href=\"https://macasante.fr/fiche.html?id=rupture-medicament-que-faire\">MACASANTÉ — fiche validée</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-15T09:00:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite du Dr Romain BEDDOK, 15 octobre 2026 : « Parfait mise en ligne validation » puis « Il faut tout mettre en ligne selon le chemin habituel, magazine. »",
+        "contentHash": "e0418c96a7d6b1846fd0ba8cf1d0e6fb98a2e5ec7b856c387d2bbebf9e2797a3"
+      },
+      "assistantPolicy": "REFERENCE_FICHE_ONLY"
+    },
+    {
+      "id": "daily-cataracte-20261015",
+      "date": "2026-10-15",
+      "title": "Des gouttes peuvent-elles faire disparaître une cataracte ?",
+      "answer": "FAUX : le traitement qui retire la cataracte est chirurgical.",
+      "url": "mag-cataracte-20261015.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "FAUX",
+      "keywords": [
+        "FAUX"
+      ],
+      "sources": [
+        {
+          "label": "Assurance Maladie — traitement de la cataracte",
+          "url": "https://www.ameli.fr/assure/sante/themes/cataracte/traitement"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "html": "<article><p class=\"eyebrow\">VRAI OU FAUX · 15 OCTOBRE 2026</p><h1>Des gouttes peuvent-elles faire disparaître une cataracte ?</h1><p><strong>FAUX : le traitement qui retire la cataracte est chirurgical.</strong></p><p>Il n’existe pas de collyre validé qui fasse disparaître une cataracte. Une intervention se discute en fonction de la gêne et de la situation individuelle ; toute cataracte n’impose pas une chirurgie immédiate.</p><h2>Sources</h2><ul><li><a href=\"https://www.ameli.fr/assure/sante/themes/cataracte/traitement\">Assurance Maladie — traitement de la cataracte</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-15T09:00:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite du Dr Romain BEDDOK, 15 octobre 2026 : « Parfait mise en ligne validation » puis « Il faut tout mettre en ligne selon le chemin habituel, magazine. »",
+        "contentHash": "ef0e317fcfa842707ad17540f88aeac292165206871ea7acba8707363cccd547"
+      }
+    },
+    {
+      "id": "daily-brossage-20261015",
+      "date": "2026-10-15",
+      "title": "Deux minutes de brossage, deux fois par jour",
+      "answer": "Deux minutes par brossage, matin et soir : un repère simple de prévention bucco-dentaire.",
+      "url": "mag-brossage-20261015.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "2 MINUTES",
+      "keywords": [
+        "2 MINUTES"
+      ],
+      "sources": [
+        {
+          "label": "UFSBD — fluor et prévention",
+          "url": "https://www.ufsbd.fr/espace-public/nos-prises-de-parole-nos-convictions/nos-engagements/le-fluor/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "html": "<article><p class=\"eyebrow\">LE CHIFFRE DU JOUR · 15 OCTOBRE 2026</p><h1>Deux minutes de brossage, deux fois par jour</h1><p><strong>Deux minutes par brossage, matin et soir : un repère simple de prévention bucco-dentaire.</strong></p><p>Brossez les dents pendant deux minutes, deux fois par jour, avec un dentifrice fluoré adapté à l’âge et au risque carieux. Ce chiffre est une recommandation pratique, pas une statistique issue d’une nouvelle étude.</p><h2>Sources</h2><ul><li><a href=\"https://www.ufsbd.fr/espace-public/nos-prises-de-parole-nos-convictions/nos-engagements/le-fluor/\">UFSBD — fluor et prévention</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-15T09:00:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite du Dr Romain BEDDOK, 15 octobre 2026 : « Parfait mise en ligne validation » puis « Il faut tout mettre en ligne selon le chemin habituel, magazine. »",
+        "contentHash": "bead1d45b8a4b558184b7c63b119de77135b4b0cb568191ae4d1aaf87f5c0075"
+      }
+    },
+    {
+      "id": "daily-diarrhee-20261015",
+      "date": "2026-10-15",
+      "title": "Diarrhée chez une personne âgée : surveiller la déshydratation",
+      "answer": "Une suspicion de déshydratation impose de contacter rapidement un médecin.",
+      "url": "mag-diarrhee-20261015.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "SENIORS",
+      "keywords": [
+        "SENIORS"
+      ],
+      "sources": [
+        {
+          "label": "Assurance Maladie — gastro-entérite adulte",
+          "url": "https://www.ameli.fr/assure/sante/themes/gastro-enterite-adulte/bons-reflexes-que-faire"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "html": "<article><p class=\"eyebrow\">DONNÉES · 15 OCTOBRE 2026</p><h1>Diarrhée chez une personne âgée : surveiller la déshydratation</h1><p><strong>Une suspicion de déshydratation impose de contacter rapidement un médecin.</strong></p><p>Chez une personne âgée, diarrhée et pertes hydriques peuvent entraîner rapidement une déshydratation. En cas de signes évocateurs, demander rapidement un avis médical.</p><h2>Sources</h2><ul><li><a href=\"https://www.ameli.fr/assure/sante/themes/gastro-enterite-adulte/bons-reflexes-que-faire\">Assurance Maladie — gastro-entérite adulte</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-15T09:00:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite du Dr Romain BEDDOK, 15 octobre 2026 : « Parfait mise en ligne validation » puis « Il faut tout mettre en ligne selon le chemin habituel, magazine. »",
+        "contentHash": "ea20598136b2854c3b648ad3d9bc0461067fad8847adc9fe33a36016dd8255c2"
+      }
+    },
+    {
+      "id": "daily-toxoplasmose-20261015",
+      "date": "2026-10-15",
+      "title": "Grossesse et jardinage : comment limiter le risque de toxoplasmose ?",
+      "answer": "En l’absence d’immunité, porter des gants puis se laver les mains après avoir jardiné.",
+      "url": "mag-toxoplasmose-20261015.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "GROSSESSE",
+      "keywords": [
+        "GROSSESSE"
+      ],
+      "sources": [
+        {
+          "label": "Assurance Maladie — prévention de la toxoplasmose",
+          "url": "https://www.ameli.fr/assure/sante/themes/toxoplasmose/prevention"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "html": "<article><p class=\"eyebrow\">DONNÉES · 15 OCTOBRE 2026</p><h1>Grossesse et jardinage : comment limiter le risque de toxoplasmose ?</h1><p><strong>En l’absence d’immunité, porter des gants puis se laver les mains après avoir jardiné.</strong></p><p>La terre peut exposer au parasite responsable de la toxoplasmose. Pendant une grossesse sans immunité, utiliser des gants pour jardiner et se laver les mains ensuite, même si des gants ont été portés.</p><h2>Sources</h2><ul><li><a href=\"https://www.ameli.fr/assure/sante/themes/toxoplasmose/prevention\">Assurance Maladie — prévention de la toxoplasmose</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-15T09:00:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite du Dr Romain BEDDOK, 15 octobre 2026 : « Parfait mise en ligne validation » puis « Il faut tout mettre en ligne selon le chemin habituel, magazine. »",
+        "contentHash": "f82c0844132e37c7f2906c2040d78de850a54eb5be888b0f93b4afe8dd977c99"
+      }
+    },
+    {
+      "id": "daily-melanome-20261015",
+      "date": "2026-10-15",
+      "title": "Un grain de beauté qui change doit être examiné",
+      "answer": "La règle ABCDE aide à repérer un changement, mais ne remplace pas le diagnostic médical.",
+      "url": "mag-melanome-20261015.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "PEAU",
+      "keywords": [
+        "PEAU"
+      ],
+      "sources": [
+        {
+          "label": "Société française de dermatologie — méthode ABCDE",
+          "url": "https://dermato-info.fr/les-conseils-et-tutos-peau/les-methodes-dauto-examen/la-methode-abcde"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "html": "<article><p class=\"eyebrow\">DONNÉES · 15 OCTOBRE 2026</p><h1>Un grain de beauté qui change doit être examiné</h1><p><strong>La règle ABCDE aide à repérer un changement, mais ne remplace pas le diagnostic médical.</strong></p><p>Une modification de la forme, de la couleur ou de la taille d’un grain de beauté justifie un examen médical. L’auto-examen peut alerter ; seul un professionnel peut évaluer la lésion.</p><h2>Sources</h2><ul><li><a href=\"https://dermato-info.fr/les-conseils-et-tutos-peau/les-methodes-dauto-examen/la-methode-abcde\">Société française de dermatologie — méthode ABCDE</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-15T09:00:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite du Dr Romain BEDDOK, 15 octobre 2026 : « Parfait mise en ligne validation » puis « Il faut tout mettre en ligne selon le chemin habituel, magazine. »",
+        "contentHash": "baf9fa2dac539458ab6cf14e7248fe4d165aff7dffee8576249707e9acb3ce9a"
+      }
+    },
+    {
+      "id": "daily-octobre-rose-cognition-20261015",
+      "date": "2026-10-15",
+      "title": "Après un cancer du sein, l’exercice améliore-t-il vraiment la mémoire et la concentration ?",
+      "answer": "L’activité physique est utile après un cancer du sein, mais l’essai I Can! ne démontre pas d’amélioration de ses deux critères cognitifs principaux.",
+      "url": "mag-octobre-rose-cognition-20261015.html",
+      "format": "article",
+      "category": "Octobre Rose",
+      "theme": "OCTOBRE ROSE",
+      "keywords": [
+        "OCTOBRE ROSE"
+      ],
+      "sources": [
+        {
+          "label": "Hartman et coll. — JNCI, 30 septembre 2026, DOI 10.1093/jnci/djag295",
+          "url": "https://academic.oup.com/jnci/advance-article/doi/10.1093/jnci/djag295/8845540"
+        },
+        {
+          "label": "PubMed PMID 42810736",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42810736/"
+        },
+        {
+          "label": "ClinicalTrials.gov NCT04049695",
+          "url": "https://clinicaltrials.gov/study/NCT04049695"
+        },
+        {
+          "label": "National Cancer Institute — memory problems",
+          "url": "https://www.cancer.gov/about-cancer/treatment/side-effects/memory"
+        },
+        {
+          "label": "HAS — activité physique après cancer",
+          "url": "https://www.has-sante.fr/jcms/p_3577228/en/cancer-sein-colorectal-prostate-l-activite-physique-pour-votre-sante"
+        },
+        {
+          "label": "ACSM — recommandations exercice après cancer, PMID 31626055",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31626055/"
+        }
+      ],
+      "ficheId": "activite-physique-traitement-cancer",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": true,
+      "html": "<article><img src=\"https://images.pexels.com/photos/7266743/pexels-photo-7266743.jpeg\" alt=\"Deux femmes marchent dans un parc arboré\" style=\"width:100%;height:auto\"><p><small>Photo d’illustration : <a href=\"https://www.pexels.com/photo/fit-sportswomen-walking-in-sunny-autumn-park-7266743/\">Sarah Chai / Pexels</a> · <a href=\"https://www.pexels.com/license/\">Licence Pexels</a>. Ne représente pas les participantes à l’essai.</small></p><p class=\"eyebrow\">OCTOBRE ROSE · 15 OCTOBRE 2026</p><h1>Après un cancer du sein, l’exercice améliore-t-il vraiment la mémoire et la concentration ?</h1><p><strong>L’activité physique est utile après un cancer du sein, mais l’essai I Can! ne démontre pas d’amélioration de ses deux critères cognitifs principaux.</strong></p><h2>Ce que montre l’essai I Can!</h2><p>Dans JNCI, un essai publié en ligne le 30 septembre 2026 a réparti 253 femmes d’au moins 40 ans, traitées pour un cancer du sein de stade I à III, rapportant des difficultés cognitives et ayant terminé les traitements actifs depuis au moins six mois. Le programme d’exercice accompagné visait 150 minutes par semaine pendant un an et était comparé à un accompagnement général de santé.</p><p>À six mois, les différences ajustées étaient de 0,07 point pour les capacités cognitives ressenties et de 0,17 point pour la vitesse de traitement de l’information : aucune différence statistiquement significative. Les critères principaux ne différaient pas davantage à douze mois. Certains résultats secondaires favorables sur l’attention et la mémoire nécessitent confirmation, notamment en raison des comparaisons multiples.</p><h2>Pourquoi ces difficultés surviennent-elles ?</h2><p>Les difficultés à retrouver ses mots, à se concentrer ou à gérer plusieurs tâches peuvent affecter la vie quotidienne. Différents traitements, la fatigue, le sommeil, l’anxiété, la dépression et certains médicaments peuvent contribuer à ces troubles. Les attribuer automatiquement à la chimiothérapie risque de négliger des facteurs accessibles à une prise en charge.</p><h2>Pourquoi continuer à bouger ?</h2><p>L’absence de bénéfice démontré sur les critères cognitifs principaux n’annule pas les autres bénéfices possibles de l’activité physique adaptée après cancer, notamment pour la condition physique, la fatigue et la qualité de vie. Les 150 minutes par semaine étaient un objectif de l’essai, pas une prescription universelle. Les capacités, douleurs et limitations de chacune doivent être prises en compte.</p><h2>Qu’en faire concrètement ?</h2><p>Signaler ces difficultés à l’équipe soignante et noter leur retentissement peut aider à rechercher des facteurs associés. Agenda, rappels, pauses et organisation des tâches peuvent faciliter le quotidien. Le protocole I Can! n’est pas un nouveau traitement validé des troubles cognitifs. Aucune autorisation de médicament n’est en jeu. Ne pas interrompre une hormonothérapie sans avis médical.</p><h2>Limites et risques</h2><p>Essai sur une population sélectionnée, groupe témoin bénéficiant aussi d’un accompagnement, résultats secondaires exploratoires. Une fracture pendant une randonnée et des événements musculosquelettiques rappellent la nécessité d’adapter l’effort.</p><p><a href=\"fiche.html?id=activite-physique-traitement-cancer\">Consulter la fiche MACASANTÉ associée →</a></p><h2>Sources</h2><ul><li><a href=\"https://academic.oup.com/jnci/advance-article/doi/10.1093/jnci/djag295/8845540\">Hartman et coll. — JNCI, 30 septembre 2026, DOI 10.1093/jnci/djag295</a></li><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/42810736/\">PubMed PMID 42810736</a></li><li><a href=\"https://clinicaltrials.gov/study/NCT04049695\">ClinicalTrials.gov NCT04049695</a></li><li><a href=\"https://www.cancer.gov/about-cancer/treatment/side-effects/memory\">National Cancer Institute — memory problems</a></li><li><a href=\"https://www.has-sante.fr/jcms/p_3577228/en/cancer-sein-colorectal-prostate-l-activite-physique-pour-votre-sante\">HAS — activité physique après cancer</a></li><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/31626055/\">ACSM — recommandations exercice après cancer, PMID 31626055</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-15T09:00:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite du Dr Romain BEDDOK, 15 octobre 2026 : « Parfait mise en ligne validation » puis « Il faut tout mettre en ligne selon le chemin habituel, magazine. »",
+        "contentHash": "75a8151892e0ee1ba6623246dd7785e2dae7fd2752d5f641d8ca502aa31c1dd2"
+      },
+      "imageLicense": "Pexels License — https://www.pexels.com/license/",
+      "imageCredit": "Sarah Chai / Pexels",
+      "imageSource": "https://www.pexels.com/photo/fit-sportswomen-walking-in-sunny-autumn-park-7266743/"
     }
   ],
   "editions": [
@@ -2844,6 +3210,69 @@
         "veille": "- Publication nouvelle : MiGHT, JAMA Network Open, 13 octobre 2026 — essai randomisé sur l’accès aux tests génétiques de prédisposition au cancer.\n- Publication nouvelle : suivi après accouchement, JAMA Health Forum, 7 octobre 2026 — essai randomisé, critère principal négatif mais amélioration de plusieurs composantes du suivi.\n- Publication nouvelle : RAPIDe-3, Lancet, 8 octobre 2026 — traitement oral des crises d’angiœdème héréditaire ; maladie rare, résultats non extrapolables à une allergie ordinaire.\n- Recommandation récente : EASD, Diabetologia, 15 septembre 2026 — repérage et prise en charge de la détresse liée au diabète ; relais français par la SFD, page actualisée en octobre. Les projets français ne sont pas des recommandations déjà publiées.\n- Octobre Rose : evERA, NEJM, publication en ligne du 30 septembre 2026, numéro du 1er octobre — avancée récente, pas une découverte du 14 octobre.\nLes institutions françaises servent aux repères de sécurité et de pratique. Les quatre sujets principaux proviennent de publications ou de sociétés savantes. Les études précliniques et les résultats biologiques sans utilité clinique ne sont pas retenus.",
         "corpusImpact": "- Oncogénétique : ACTUALISER-FUSIONNER la fiche cancer-oncogenetique-famille après validation distincte. L’article d’actualité sur MiGHT est nouveau et conserve son angle d’accès aux tests.\n- Suivi postpartum : CRÉER, candidat durable ; pas de fiche dédiée retrouvée dans le corpus contrôlé.\n- Détresse liée au diabète : CRÉER, candidat distinct des fiches d’organisation du traitement et de complications.\n- Angiœdème héréditaire : CRÉER éventuellement une fiche générale, après validation distincte ; pas une fiche promotionnelle consacrée au médicament.\n- evERA : pas de doublon exact retrouvé ; article Mag proposé. NE PAS CRÉER automatiquement une fiche de médicament.\nCe contrôle porte sur le corpus actif et la source éditoriale contrôlés, pas sur d’éventuels brouillons externes non accessibles.",
         "validation": "Dr Romain BEDDOK — parfait validation et mise en ligne — 14 octobre 2026"
+      }
+    },
+    {
+      "id": "edition-2026-10-15",
+      "date": "2026-10-15",
+      "publishAt": "2026-10-15T09:00:00+02:00",
+      "complete": true,
+      "items": [
+        {
+          "contentId": "daily-parkinson-20261015",
+          "slot": "À LA UNE",
+          "icon": "PARKINSON"
+        },
+        {
+          "contentId": "daily-sepsis-20261015",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "SOINS INTENSIFS"
+        },
+        {
+          "contentId": "daily-vih-20261015",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "VIH"
+        },
+        {
+          "contentId": "daily-bronchiolite-20261015",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "BRONCHIOLITE"
+        },
+        {
+          "contentId": "daily-rupture-20261015",
+          "slot": "FICHE DU JOUR",
+          "icon": "MÉDICAMENTS"
+        },
+        {
+          "contentId": "daily-cataracte-20261015",
+          "slot": "VRAI OU FAUX",
+          "icon": "FAUX"
+        },
+        {
+          "contentId": "daily-brossage-20261015",
+          "slot": "LE CHIFFRE DU JOUR",
+          "icon": "2 MINUTES"
+        },
+        {
+          "contentId": "daily-diarrhee-20261015",
+          "slot": "DONNÉES",
+          "icon": "SENIORS"
+        },
+        {
+          "contentId": "daily-toxoplasmose-20261015",
+          "slot": "DONNÉES",
+          "icon": "GROSSESSE"
+        },
+        {
+          "contentId": "daily-melanome-20261015",
+          "slot": "DONNÉES",
+          "icon": "PEAU"
+        }
+      ],
+      "editorialConference": {
+        "veille": "JAMA : NOPARK et protection rénale en choc septique ; Lancet : essai LATA sur VIH adolescent ; Santé publique France : surveillance bronchiolite du 14 octobre ; JNCI : essai I Can! du 30 septembre (Octobre Rose).",
+        "corpusImpact": "Parkinson : NE PAS CRÉER ; sepsis : ACTUALISER-FUSIONNER ; VIH : CRÉER candidat soumis à validation distincte ; bronchiolite : ACTUALISER-FUSIONNER ; Octobre Rose : ACTUALISER-FUSIONNER, aucune fiche créée.",
+        "validation": "Validation médicale explicite du Dr Romain BEDDOK, 15 octobre 2026 : « Parfait mise en ligne validation » puis « Il faut tout mettre en ligne selon le chemin habituel, magazine. »"
       }
     }
   ]
