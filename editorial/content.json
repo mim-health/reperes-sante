@@ -2580,7 +2580,13 @@
         "validatedAt": "2026-10-15T09:00:00+02:00",
         "validator": "Dr Romain BEDDOK",
         "evidence": "Validation médicale explicite du Dr Romain BEDDOK, 15 octobre 2026 : « Parfait mise en ligne validation » puis « Il faut tout mettre en ligne selon le chemin habituel, magazine. »",
-        "contentHash": "3834e9366a9dcc49f30c2283de3c20bd5a94e009899ce95fbe44035baa62358e"
+        "contentHash": "7bd3437da5ac57e828311e1b361ab660a4b0d36c1492d5dbfb7584f0e6152072",
+        "technicalHashRepair": {
+          "previousHash": "3834e9366a9dcc49f30c2283de3c20bd5a94e009899ce95fbe44035baa62358e",
+          "sourceCommit": "bb8e4d76e201fc1764dfeb1a38907c8f3816d58f",
+          "reason": "Empreinte recalculée avec scripts/mag-editorial.js ; texte et validation médicale inchangés depuis le commit de publication approuvée.",
+          "repairedAt": "2026-10-15"
+        }
       }
     },
     {
@@ -2610,7 +2616,13 @@
         "validatedAt": "2026-10-15T09:00:00+02:00",
         "validator": "Dr Romain BEDDOK",
         "evidence": "Validation médicale explicite du Dr Romain BEDDOK, 15 octobre 2026 : « Parfait mise en ligne validation » puis « Il faut tout mettre en ligne selon le chemin habituel, magazine. »",
-        "contentHash": "b3a0d735f41673e29550c672decffd2fe24f3ffb451d2a5aa902261efe0fd6f1"
+        "contentHash": "b7f389a0766a90d7606a8e2e29e6437439ed7c5ee1b6f2a6de7121bd870eb43f",
+        "technicalHashRepair": {
+          "previousHash": "b3a0d735f41673e29550c672decffd2fe24f3ffb451d2a5aa902261efe0fd6f1",
+          "sourceCommit": "bb8e4d76e201fc1764dfeb1a38907c8f3816d58f",
+          "reason": "Empreinte recalculée avec scripts/mag-editorial.js ; texte et validation médicale inchangés depuis le commit de publication approuvée.",
+          "repairedAt": "2026-10-15"
+        }
       }
     },
     {
@@ -2648,7 +2660,13 @@
         "validatedAt": "2026-10-15T09:00:00+02:00",
         "validator": "Dr Romain BEDDOK",
         "evidence": "Validation médicale explicite du Dr Romain BEDDOK, 15 octobre 2026 : « Parfait mise en ligne validation » puis « Il faut tout mettre en ligne selon le chemin habituel, magazine. »",
-        "contentHash": "9494aac871df593f9d127d35725d96d6813b2703284a98a559d3563545c88936"
+        "contentHash": "0b72c160ca2ecc7bb39c7322ddc3a745ff862428b515dd35b095e7808dc5a3d5",
+        "technicalHashRepair": {
+          "previousHash": "9494aac871df593f9d127d35725d96d6813b2703284a98a559d3563545c88936",
+          "sourceCommit": "bb8e4d76e201fc1764dfeb1a38907c8f3816d58f",
+          "reason": "Empreinte recalculée avec scripts/mag-editorial.js ; texte et validation médicale inchangés depuis le commit de publication approuvée.",
+          "repairedAt": "2026-10-15"
+        }
       }
     },
     {
@@ -2678,7 +2696,13 @@
         "validatedAt": "2026-10-15T09:00:00+02:00",
         "validator": "Dr Romain BEDDOK",
         "evidence": "Validation médicale explicite du Dr Romain BEDDOK, 15 octobre 2026 : « Parfait mise en ligne validation » puis « Il faut tout mettre en ligne selon le chemin habituel, magazine. »",
-        "contentHash": "c88c51135c11ea97118368f00b308c4b1edff67b4cba94638893a97af24605f1"
+        "contentHash": "f782a73153ad44b5060bf34ec27bbf1b478ac9642ca102afda9399385910b24f",
+        "technicalHashRepair": {
+          "previousHash": "c88c51135c11ea97118368f00b308c4b1edff67b4cba94638893a97af24605f1",
+          "sourceCommit": "bb8e4d76e201fc1764dfeb1a38907c8f3816d58f",
+          "reason": "Empreinte recalculée avec scripts/mag-editorial.js ; texte et validation médicale inchangés depuis le commit de publication approuvée.",
+          "repairedAt": "2026-10-15"
+        }
       }
     },
     {
@@ -2708,7 +2732,13 @@
         "validatedAt": "2026-10-15T09:00:00+02:00",
         "validator": "Dr Romain BEDDOK",
         "evidence": "Validation médicale explicite du Dr Romain BEDDOK, 15 octobre 2026 : « Parfait mise en ligne validation » puis « Il faut tout mettre en ligne selon le chemin habituel, magazine. »",
-        "contentHash": "e0418c96a7d6b1846fd0ba8cf1d0e6fb98a2e5ec7b856c387d2bbebf9e2797a3"
+        "contentHash": "a51c4d30d8546f83f1e5f3c73ca92a7ba38136247eabdbdafee9b909b46f13ed",
+        "technicalHashRepair": {
+          "previousHash": "e0418c96a7d6b1846fd0ba8cf1d0e6fb98a2e5ec7b856c387d2bbebf9e2797a3",
+          "sourceCommit": "bb8e4d76e201fc1764dfeb1a38907c8f3816d58f",
+          "reason": "Empreinte recalculée avec scripts/mag-editorial.js ; texte et validation médicale inchangés depuis le commit de publication approuvée.",
+          "repairedAt": "2026-10-15"
+        }
       },
       "assistantPolicy": "REFERENCE_FICHE_ONLY"
     },
@@ -2739,7 +2769,13 @@
         "validatedAt": "2026-10-15T09:00:00+02:00",
         "validator": "Dr Romain BEDDOK",
         "evidence": "Validation médicale explicite du Dr Romain BEDDOK, 15 octobre 2026 : « Parfait mise en ligne validation » puis « Il faut tout mettre en ligne selon le chemin habituel, magazine. »",
-        "contentHash": "ef0e317fcfa842707ad17540f88aeac292165206871ea7acba8707363cccd547"
+        "contentHash": "375ca5d4faf984941d3dbf73506d9f36c59ab7637166674ff64146a0a886ef17",
+        "technicalHashRepair": {
+          "previousHash": "ef0e317fcfa842707ad17540f88aeac292165206871ea7acba8707363cccd547",
+          "sourceCommit": "bb8e4d76e201fc1764dfeb1a38907c8f3816d58f",
+          "reason": "Empreinte recalculée avec scripts/mag-editorial.js ; texte et validation médicale inchangés depuis le commit de publication approuvée.",
+          "repairedAt": "2026-10-15"
+        }
       }
     },
     {
@@ -2769,7 +2805,13 @@
         "validatedAt": "2026-10-15T09:00:00+02:00",
         "validator": "Dr Romain BEDDOK",
         "evidence": "Validation médicale explicite du Dr Romain BEDDOK, 15 octobre 2026 : « Parfait mise en ligne validation » puis « Il faut tout mettre en ligne selon le chemin habituel, magazine. »",
-        "contentHash": "bead1d45b8a4b558184b7c63b119de77135b4b0cb568191ae4d1aaf87f5c0075"
+        "contentHash": "aa63449cb94ada43be9bbc80ad9bb0c2e377bce3c1e81f459718df79b2513ac0",
+        "technicalHashRepair": {
+          "previousHash": "bead1d45b8a4b558184b7c63b119de77135b4b0cb568191ae4d1aaf87f5c0075",
+          "sourceCommit": "bb8e4d76e201fc1764dfeb1a38907c8f3816d58f",
+          "reason": "Empreinte recalculée avec scripts/mag-editorial.js ; texte et validation médicale inchangés depuis le commit de publication approuvée.",
+          "repairedAt": "2026-10-15"
+        }
       }
     },
     {
@@ -2799,7 +2841,13 @@
         "validatedAt": "2026-10-15T09:00:00+02:00",
         "validator": "Dr Romain BEDDOK",
         "evidence": "Validation médicale explicite du Dr Romain BEDDOK, 15 octobre 2026 : « Parfait mise en ligne validation » puis « Il faut tout mettre en ligne selon le chemin habituel, magazine. »",
-        "contentHash": "ea20598136b2854c3b648ad3d9bc0461067fad8847adc9fe33a36016dd8255c2"
+        "contentHash": "15cf9452d2300de55b58cd3a100aefe319e5fa2ee959eb727e45c515072c7b56",
+        "technicalHashRepair": {
+          "previousHash": "ea20598136b2854c3b648ad3d9bc0461067fad8847adc9fe33a36016dd8255c2",
+          "sourceCommit": "bb8e4d76e201fc1764dfeb1a38907c8f3816d58f",
+          "reason": "Empreinte recalculée avec scripts/mag-editorial.js ; texte et validation médicale inchangés depuis le commit de publication approuvée.",
+          "repairedAt": "2026-10-15"
+        }
       }
     },
     {
@@ -2829,7 +2877,13 @@
         "validatedAt": "2026-10-15T09:00:00+02:00",
         "validator": "Dr Romain BEDDOK",
         "evidence": "Validation médicale explicite du Dr Romain BEDDOK, 15 octobre 2026 : « Parfait mise en ligne validation » puis « Il faut tout mettre en ligne selon le chemin habituel, magazine. »",
-        "contentHash": "f82c0844132e37c7f2906c2040d78de850a54eb5be888b0f93b4afe8dd977c99"
+        "contentHash": "b90f1d580e5ff210e3896ef732e67ab922a40b48caba638b65ec59825a5a6c5e",
+        "technicalHashRepair": {
+          "previousHash": "f82c0844132e37c7f2906c2040d78de850a54eb5be888b0f93b4afe8dd977c99",
+          "sourceCommit": "bb8e4d76e201fc1764dfeb1a38907c8f3816d58f",
+          "reason": "Empreinte recalculée avec scripts/mag-editorial.js ; texte et validation médicale inchangés depuis le commit de publication approuvée.",
+          "repairedAt": "2026-10-15"
+        }
       }
     },
     {
@@ -2859,7 +2913,13 @@
         "validatedAt": "2026-10-15T09:00:00+02:00",
         "validator": "Dr Romain BEDDOK",
         "evidence": "Validation médicale explicite du Dr Romain BEDDOK, 15 octobre 2026 : « Parfait mise en ligne validation » puis « Il faut tout mettre en ligne selon le chemin habituel, magazine. »",
-        "contentHash": "baf9fa2dac539458ab6cf14e7248fe4d165aff7dffee8576249707e9acb3ce9a"
+        "contentHash": "abc7fdb55b089bf5032e35320ec99cd91cd855ae90e47dd9bf4c9bd159da781f",
+        "technicalHashRepair": {
+          "previousHash": "baf9fa2dac539458ab6cf14e7248fe4d165aff7dffee8576249707e9acb3ce9a",
+          "sourceCommit": "bb8e4d76e201fc1764dfeb1a38907c8f3816d58f",
+          "reason": "Empreinte recalculée avec scripts/mag-editorial.js ; texte et validation médicale inchangés depuis le commit de publication approuvée.",
+          "repairedAt": "2026-10-15"
+        }
       }
     },
     {
@@ -2909,11 +2969,87 @@
         "validatedAt": "2026-10-15T09:00:00+02:00",
         "validator": "Dr Romain BEDDOK",
         "evidence": "Validation médicale explicite du Dr Romain BEDDOK, 15 octobre 2026 : « Parfait mise en ligne validation » puis « Il faut tout mettre en ligne selon le chemin habituel, magazine. »",
-        "contentHash": "75a8151892e0ee1ba6623246dd7785e2dae7fd2752d5f641d8ca502aa31c1dd2"
+        "contentHash": "d8cb40dde146663052d6921c7caf73fe2083645a77519775f64134a8532ad40b",
+        "technicalHashRepair": {
+          "previousHash": "75a8151892e0ee1ba6623246dd7785e2dae7fd2752d5f641d8ca502aa31c1dd2",
+          "sourceCommit": "bb8e4d76e201fc1764dfeb1a38907c8f3816d58f",
+          "reason": "Empreinte recalculée avec scripts/mag-editorial.js ; texte et validation médicale inchangés depuis le commit de publication approuvée.",
+          "repairedAt": "2026-10-15"
+        }
       },
       "imageLicense": "Pexels License — https://www.pexels.com/license/",
       "imageCredit": "Sarah Chai / Pexels",
       "imageSource": "https://www.pexels.com/photo/fit-sportswomen-walking-in-sunny-autumn-park-7266743/"
+    },
+    {
+      "id": "radar-paris-sportifs-20261015",
+      "title": "Les paris sportifs peuvent-ils rendre anxieux ou dépressif ?",
+      "url": "article-paris-sportifs-sante-mentale.html",
+      "answer": "Une étude américaine associe la légalisation des paris sportifs en ligne à davantage de soins pour anxiété et dépression. Elle ne prouve pas que chaque consultation supplémentaire est causée par le jeu.",
+      "theme": "Santé mentale",
+      "ficheId": "",
+      "sources": [
+        {
+          "label": "Westermeyer et al. — JAMA Psychiatry, 14 octobre 2026. doi:10.1001/jamapsychiatry.2026.3175",
+          "url": "https://jamanetwork.com/journals/jamapsychiatry/article-abstract/2854925"
+        },
+        {
+          "label": "Joueurs Info Service — Qu’est-ce que le jeu problématique ?",
+          "url": "https://www.joueurs-info-service.fr/Tout-savoir-sur-le-jeu/Le-jeu-problematique/Qu-est-ce-que-le-jeu-problematique"
+        },
+        {
+          "label": "Joueurs Info Service — nouveaux horaires depuis le 1er octobre 2026",
+          "url": "https://www.joueurs-info-service.fr/Actualites/Joueurs-info-service-change-ses-horaires"
+        }
+      ],
+      "date": "2026-10-15",
+      "format": "article",
+      "category": "Décryptage",
+      "keywords": [
+        "Santé mentale"
+      ],
+      "standalone": true,
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "html": "<article><h1>Les paris sportifs peuvent-ils rendre anxieux ou dépressif ?</h1><p><strong>Une étude américaine associe la légalisation des paris sportifs en ligne à davantage de soins pour anxiété et dépression. Elle ne prouve pas que chaque consultation supplémentaire est causée par le jeu.</strong></p><h2>Ce que la nouvelle étude observe</h2><p>Les chercheurs ont comparé l’évolution des soins avant et après la légalisation des paris sportifs en ligne dans différents États américains. Ils ont analysé près de 62 millions d’années-personnes d’assurance entre 2016 et 2023, et non 62 millions de personnes distinctes.</p><p>La probabilité d’une consultation ambulatoire avec un diagnostic d’anxiété augmentait de 0,67 point de pourcentage chez les hommes et de 1,15 point chez les femmes. Les prescriptions d’antidépresseurs et d’anxiolytiques augmentaient aussi. Les résultats étaient plus robustes chez les hommes.</p><h2>Ce que cela ne démontre pas</h2><p>Cette analyse quasi expérimentale porte sur le recours aux soins d’adultes assurés par leur employeur. Elle ne mesure pas directement les pratiques de jeu de chacun. Elle ne permet ni d’attribuer toutes les consultations supplémentaires aux paris, ni de transposer les chiffres à la France.</p><h2>Quand le jeu devient-il préoccupant ?</h2><p>Penser constamment aux mises, chercher à regagner ses pertes, délaisser sa famille ou son travail et ne plus réussir à s’arrêter sont des signaux d’alerte. Les difficultés financières et l’isolement peuvent aggraver la souffrance. Il est possible de demander de l’aide avant une situation de crise.</p><h2>À qui en parler en France ?</h2><p>Votre médecin ou une équipe d’addictologie peut vous accompagner. Joueurs Info Service répond au <strong>09 74 75 13 13, tous les jours de 8 h à 23 h</strong> : appel anonyme et non surtaxé. Son chat est ouvert de 12 h à 19 h. Ces horaires ont changé le 1er octobre 2026.</p><h2>Sources</h2><ul><li><a href=\"https://jamanetwork.com/journals/jamapsychiatry/article-abstract/2854925\">Westermeyer et al. — JAMA Psychiatry, 14 octobre 2026. doi:10.1001/jamapsychiatry.2026.3175</a></li><li><a href=\"https://www.joueurs-info-service.fr/Tout-savoir-sur-le-jeu/Le-jeu-problematique/Qu-est-ce-que-le-jeu-problematique\">Joueurs Info Service — Qu’est-ce que le jeu problématique ?</a></li><li><a href=\"https://www.joueurs-info-service.fr/Actualites/Joueurs-info-service-change-ses-horaires\">Joueurs Info Service — nouveaux horaires depuis le 1er octobre 2026</a></li></ul><p><small>Sources vérifiées et validation médicale : 15 octobre 2026, Dr Romain BEDDOK. Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-15",
+        "evidence": "Validation explicite du radar du 15 octobre 2026 : publication du décryptage paris sportifs/santé mentale et du décryptage sorties culturelles/santé cérébrale relié à la musicothérapie ; ANB033 conservé en surveillance. Publications originales contrôlées et limites scientifiques conservées.",
+        "contentHash": "d3e7c44aa26462981aac70a2cf41cbc6607139a746fae2e38661fa2cdfb6335b"
+      }
+    },
+    {
+      "id": "radar-culture-cerveau-20261015",
+      "title": "Aller au concert ou au musée peut-il protéger notre cerveau ?",
+      "url": "article-culture-sante-cerebrale.html",
+      "answer": "Une cohorte associe les sorties culturelles à moins de diagnostics hospitaliers de démence. Elle ne démontre pas qu’aller au concert ou au musée prévient Alzheimer.",
+      "theme": "Seniors",
+      "ficheId": "musicotherapie-bienfaits-sante",
+      "sources": [
+        {
+          "label": "Qin, Steptoe et Fancourt — JAMA Network Open, 14 octobre 2026. doi:10.1001/jamanetworkopen.2026.39041",
+          "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855279"
+        }
+      ],
+      "date": "2026-10-15",
+      "format": "article",
+      "category": "Décryptage",
+      "keywords": [
+        "Seniors"
+      ],
+      "standalone": true,
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "html": "<article><h1>Aller au concert ou au musée peut-il protéger notre cerveau ?</h1><p><strong>Une cohorte associe les sorties culturelles à moins de diagnostics hospitaliers de démence. Elle ne démontre pas qu’aller au concert ou au musée prévient Alzheimer.</strong></p><h2>Ce que montre l’étude</h2><p>Les chercheurs ont suivi 8 274 adultes de 50 ans et plus en Angleterre. La fréquentation régulière de lieux culturels était associée à un risque instantané de démence enregistrée dans les données hospitalières inférieur : hazard ratio ajusté de 0,71, avec un intervalle de confiance de 0,56 à 0,89.</p><h2>Une limite importante</h2><p>Cette association n’était plus significative dans une analyse tenant compte du décès comme risque concurrent. Elle ne prouve donc pas une réduction de la probabilité cumulée de démence. Les différences de santé, de ressources et de mode de vie peuvent intervenir malgré les ajustements. Les habitudes culturelles n’étaient mesurées qu’au départ.</p><h2>Et la musicothérapie ?</h2><p>Une sortie culturelle est un loisir. La musicothérapie est une démarche de soin structurée, adaptée par un professionnel formé. Les deux ne doivent pas être confondues. Notre fiche dédiée explique ce que les interventions musicales peuvent apporter et leurs limites.</p><h2>À retenir</h2><p>Profitons des activités qui nous plaisent, sans leur attribuer une efficacité préventive démontrée contre Alzheimer.</p><h2>Sources</h2><ul><li><a href=\"https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855279\">Qin, Steptoe et Fancourt — JAMA Network Open, 14 octobre 2026. doi:10.1001/jamanetworkopen.2026.39041</a></li></ul><p><small>Sources vérifiées et validation médicale : 15 octobre 2026, Dr Romain BEDDOK. Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-15",
+        "evidence": "Validation explicite du radar du 15 octobre 2026 : publication du décryptage paris sportifs/santé mentale et du décryptage sorties culturelles/santé cérébrale relié à la musicothérapie ; ANB033 conservé en surveillance. Publications originales contrôlées et limites scientifiques conservées.",
+        "contentHash": "2f8deb79170352c7001f858377cd01cd17b17ccbd899d6c6c1504eb13799ab3e"
+      }
     }
   ],
   "editions": [
