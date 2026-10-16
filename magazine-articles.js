@@ -1455,5 +1455,195 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": "musicotherapie-bienfaits-sante",
     "version": "2f8deb79170352c7001f858377cd01cd17b17ccbd899d6c6c1504eb13799ab3e"
+  },
+  {
+    "id": "daily-cremes-20261016",
+    "url": "mag-cremes-20261016.html",
+    "title": "Crèmes vendues en ligne : peut-on y trouver des médicaments absents de l’étiquette ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "SÉCURITÉ",
+    "date": "2026-10-16",
+    "status": "PUBLISHED",
+    "excerpt": "Une analyse de 18 produits ciblés a identifié du clobétasol non déclaré dans six d’entre eux.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "SÉCURITÉ"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "7d24e63722050f0a9372569cf5a14f454b60bd8f8d478ca61fb5866b10ee90d2"
+  },
+  {
+    "id": "daily-rectum-20261016",
+    "url": "mag-rectum-20261016.html",
+    "title": "Cancer du rectum : préserver l’organe peut-il améliorer la vie quotidienne ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "CANCER",
+    "date": "2026-10-16",
+    "status": "PUBLISHED",
+    "excerpt": "Une analyse observationnelle associe la surveillance sans chirurgie immédiate à une meilleure qualité de vie chez des patients sélectionnés.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "CANCER"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "f86ed798d1453695bd94eed2b721546650f20d7b9815b8661dcfa9d4e6799b07"
+  },
+  {
+    "id": "daily-icfep-20261016",
+    "url": "mag-icfep-20261016.html",
+    "title": "Insuffisance cardiaque : pourquoi un cœur qui se contracte bien peut-il quand même nécessiter un traitement de fond ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "CARDIOLOGIE",
+    "date": "2026-10-16",
+    "status": "PUBLISHED",
+    "excerpt": "Une fraction d’éjection préservée n’exclut pas une insuffisance cardiaque.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "CARDIOLOGIE"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "insuffisance-cardiaque-medicaments-quotidien",
+    "version": "cdbe4cb5a3894c7ee20f8fc2d9290f75816081f9ca79c86fee29b7045cb0c0b8"
+  },
+  {
+    "id": "daily-chikungunya-20261016",
+    "url": "mag-chikungunya-20261016.html",
+    "title": "Chikungunya : la transmission locale n’a pas disparu avec l’arrivée de l’automne",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "MOUSTIQUES",
+    "date": "2026-10-16",
+    "status": "PUBLISHED",
+    "excerpt": "Le bulletin du 14 octobre recense 22 épisodes de transmission locale, totalisant 162 cas cumulés.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "MOUSTIQUES"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "moustique-tigre-maladies-france-20260824",
+    "version": "2329835ee348769e340c1d9cf6ce1aea585d435bc553c12239086fc4032d6a33"
+  },
+  {
+    "id": "daily-dos-travail-20261016",
+    "url": "mag-dos-travail-20261016.html",
+    "title": "Mal au dos au travail : que faire pour éviter que ça s’installe ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "PRÉVENTION",
+    "date": "2026-10-16",
+    "status": "PUBLISHED",
+    "excerpt": "Retrouvez la fiche MACASANTÉ validée consacrée au mal de dos au travail.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "PRÉVENTION"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "mal-dos-travail-prevenir-installation",
+    "version": "e5986cd5e7f0fad7d07400ff13db950559605e9b85dd44558096c260b506adda"
+  },
+  {
+    "id": "daily-demence-20261016",
+    "url": "mag-demence-20261016.html",
+    "title": "La démence est-elle une conséquence normale du vieillissement ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "FAUX",
+    "date": "2026-10-16",
+    "status": "PUBLISHED",
+    "excerpt": "FAUX. L’âge augmente le risque, mais la démence n’est pas une étape inévitable.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "FAUX"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "316f9c0990a3120e6a51fc85d39b47916da4dfb89de22d367fc49732db6ec230"
+  },
+  {
+    "id": "daily-fruits-legumes-20261016",
+    "url": "mag-fruits-legumes-20261016.html",
+    "title": "Fruits et légumes : que signifient cinq portions par jour ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "5 PORTIONS",
+    "date": "2026-10-16",
+    "status": "PUBLISHED",
+    "excerpt": "Au moins cinq portions de fruits et légumes par jour chez l’adulte, et non cinq fruits en plus des légumes.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "5 PORTIONS"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "77496d0653d38e0b8f3f3e4c742f48dfc77ef5f8c4a008eed8b093fabe999922"
+  },
+  {
+    "id": "daily-lentilles-20261016",
+    "url": "mag-lentilles-20261016.html",
+    "title": "Lentilles de contact : ne jamais utiliser l’eau du robinet",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "YEUX",
+    "date": "2026-10-16",
+    "status": "PUBLISHED",
+    "excerpt": "L’eau du robinet ou minérale ne doit pas servir à rincer ni à conserver les lentilles.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "YEUX"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "9d690d052d90432c3cfd10ae2713116ddc34cc56195b1afd3cb0ff89819d5cc4"
+  },
+  {
+    "id": "daily-inhalateur-20261016",
+    "url": "mag-inhalateur-20261016.html",
+    "title": "Asthme : vérifier la technique de son inhalateur",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "ASTHME",
+    "date": "2026-10-16",
+    "status": "PUBLISHED",
+    "excerpt": "Chaque type d’inhalateur demande des gestes adaptés.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "ASTHME"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "1bd853bebe0a3e205bc8db5c32353d70089735315619699f2038cc009019bcd9"
+  },
+  {
+    "id": "daily-cerumen-20261016",
+    "url": "mag-cerumen-20261016.html",
+    "title": "Bouchon de cérumen : éviter les objets dans le conduit",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "OREILLES",
+    "date": "2026-10-16",
+    "status": "PUBLISHED",
+    "excerpt": "Ne pas chercher à extraire un bouchon avec un coton-tige ou un objet introduit dans le conduit.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "OREILLES"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "5707b631f1d35b30edf5952fb6d2ff6354662a6b586fb5729f53341639895081"
   }
 ];

@@ -464,6 +464,19 @@
     },
     {
       "left": {
+        "id": "mal-dos-travail-prevenir-installation",
+        "title": "Mal au dos au travail : que faire pour éviter que ça s’installe ?",
+        "type": "fiche"
+      },
+      "right": {
+        "id": "daily-dos-travail-20261016",
+        "title": "Mal au dos au travail : que faire pour éviter que ça s’installe ?",
+        "type": "Mag"
+      },
+      "score": 1
+    },
+    {
+      "left": {
         "id": "produits-enrichis-proteines-besoins",
         "title": "Produits hyperprotéinés : font-ils maigrir et sont-ils vraiment meilleurs pour la santé ?",
         "type": "fiche"
@@ -519,6 +532,6 @@
     "manifestFiles": 140,
     "rawFiches": 403,
     "canonicalFiches": 377,
-    "magContents": 77
+    "magContents": 88
   }
 }

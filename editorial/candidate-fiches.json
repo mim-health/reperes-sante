@@ -61,5 +61,19 @@
     "url": "mag-octobre-rose-cognition-20261015.html",
     "existingFicheId": "activite-physique-traitement-cancer",
     "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-cremes-20261016",
+    "title": "Crèmes vendues en ligne : peut-on y trouver des médicaments absents de l’étiquette ?",
+    "url": "mag-cremes-20261016.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-rectum-20261016",
+    "title": "Cancer du rectum : préserver l’organe peut-il améliorer la vie quotidienne ?",
+    "url": "mag-rectum-20261016.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
   }
 ]

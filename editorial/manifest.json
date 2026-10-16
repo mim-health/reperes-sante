@@ -1,12 +1,66 @@
 {
   "schemaVersion": 1,
-  "editionId": "edition-2026-10-15",
-  "editionDate": "2026-10-15",
-  "sourceFingerprint": "82ce7f8716b22dfa8e2c4d7fc332e390d146fc16c05dc884002094163524199a",
-  "missingEdition": true,
+  "editionId": "edition-2026-10-16",
+  "editionDate": "2026-10-16",
+  "sourceFingerprint": "42e8603529ff9e91c4b40c5b929da8404db32fcf892c1c2996e2aee030a6c52b",
+  "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-daily-cremes-20261016",
+      "version": "7d24e63722050f0a9372569cf5a14f454b60bd8f8d478ca61fb5866b10ee90d2",
+      "url": "mag-cremes-20261016.html",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "mag-daily-rectum-20261016",
+      "version": "f86ed798d1453695bd94eed2b721546650f20d7b9815b8661dcfa9d4e6799b07",
+      "url": "mag-rectum-20261016.html",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "mag-daily-icfep-20261016",
+      "version": "cdbe4cb5a3894c7ee20f8fc2d9290f75816081f9ca79c86fee29b7045cb0c0b8",
+      "url": "mag-icfep-20261016.html",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "mag-daily-chikungunya-20261016",
+      "version": "2329835ee348769e340c1d9cf6ce1aea585d435bc553c12239086fc4032d6a33",
+      "url": "mag-chikungunya-20261016.html",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "mag-daily-demence-20261016",
+      "version": "316f9c0990a3120e6a51fc85d39b47916da4dfb89de22d367fc49732db6ec230",
+      "url": "mag-demence-20261016.html",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "mag-daily-fruits-legumes-20261016",
+      "version": "77496d0653d38e0b8f3f3e4c742f48dfc77ef5f8c4a008eed8b093fabe999922",
+      "url": "mag-fruits-legumes-20261016.html",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "mag-daily-lentilles-20261016",
+      "version": "9d690d052d90432c3cfd10ae2713116ddc34cc56195b1afd3cb0ff89819d5cc4",
+      "url": "mag-lentilles-20261016.html",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "mag-daily-inhalateur-20261016",
+      "version": "1bd853bebe0a3e205bc8db5c32353d70089735315619699f2038cc009019bcd9",
+      "url": "mag-inhalateur-20261016.html",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "mag-daily-cerumen-20261016",
+      "version": "5707b631f1d35b30edf5952fb6d2ff6354662a6b586fb5729f53341639895081",
+      "url": "mag-cerumen-20261016.html",
+      "date": "2026-10-16"
+    },
     {
       "id": "mag-daily-parkinson-20261015",
       "version": "7bd3437da5ac57e828311e1b361ab660a4b0d36c1492d5dbfb7584f0e6152072",
