@@ -3050,6 +3050,360 @@
         "evidence": "Validation explicite du radar du 15 octobre 2026 : publication du décryptage paris sportifs/santé mentale et du décryptage sorties culturelles/santé cérébrale relié à la musicothérapie ; ANB033 conservé en surveillance. Publications originales contrôlées et limites scientifiques conservées.",
         "contentHash": "2f8deb79170352c7001f858377cd01cd17b17ccbd899d6c6c1504eb13799ab3e"
       }
+    },
+    {
+      "id": "daily-cremes-20261016",
+      "date": "2026-10-16",
+      "title": "Crèmes vendues en ligne : peut-on y trouver des médicaments absents de l’étiquette ?",
+      "answer": "Une analyse de 18 produits ciblés a identifié du clobétasol non déclaré dans six d’entre eux.",
+      "url": "mag-cremes-20261016.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "SÉCURITÉ",
+      "keywords": [
+        "SÉCURITÉ"
+      ],
+      "sources": [
+        {
+          "label": "JAMA Network Open — Abilov et coll., 8 octobre 2026",
+          "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2854974"
+        },
+        {
+          "label": "Société française de dermatologie — dermocorticoïdes",
+          "url": "https://dermato-info.fr/les-conseils-et-tutos-peau/les-tutos-pour-bien-suivre-son-traitement/les-dermocorticoides"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": true,
+      "html": "<article><p class=\"eyebrow\">À LA UNE · 16 OCTOBRE 2026</p><h1>Crèmes vendues en ligne : peut-on y trouver des médicaments absents de l’étiquette ?</h1><p><strong>Une analyse de 18 produits ciblés a identifié du clobétasol non déclaré dans six d’entre eux.</strong></p><p>Une étude analytique publiée le 8 octobre 2026 dans JAMA Network Open a analysé 18 produits cutanés sélectionnés, vendus sur des plateformes américaines. Six contenaient du clobétasol, un dermocorticoïde très puissant, non déclaré ; certains contenaient également un antifongique non mentionné. Ces résultats n’estiment pas la fréquence du phénomène sur le marché français, car les produits ont été présélectionnés. Les dermocorticoïdes prescrits restent des traitements utiles : le danger ici est l’exposition cachée et non encadrée. En cas de doute, apporter la crème, son emballage et le lien du vendeur à un pharmacien ou un médecin.</p><h2>Sources</h2><ul><li><a href=\"https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2854974\">JAMA Network Open — Abilov et coll., 8 octobre 2026</a></li><li><a href=\"https://dermato-info.fr/les-conseils-et-tutos-peau/les-tutos-pour-bien-suivre-son-traitement/les-dermocorticoides\">Société française de dermatologie — dermocorticoïdes</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-16T09:36:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation de mise en ligne explicites du Dr Romain BEDDOK le 16 octobre 2026 : « Ok validation et mise en ligne ».",
+        "contentHash": "7d24e63722050f0a9372569cf5a14f454b60bd8f8d478ca61fb5866b10ee90d2"
+      }
+    },
+    {
+      "id": "daily-rectum-20261016",
+      "date": "2026-10-16",
+      "title": "Cancer du rectum : préserver l’organe peut-il améliorer la vie quotidienne ?",
+      "answer": "Une analyse observationnelle associe la surveillance sans chirurgie immédiate à une meilleure qualité de vie chez des patients sélectionnés.",
+      "url": "mag-rectum-20261016.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "CANCER",
+      "keywords": [
+        "CANCER"
+      ],
+      "sources": [
+        {
+          "label": "JAMA Network Open, 15 octobre 2026, DOI 10.1001/jamanetworkopen.2026.39063",
+          "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855353"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": true,
+      "html": "<article><p class=\"eyebrow\">À LIRE EN 3 MIN · 16 OCTOBRE 2026</p><h1>Cancer du rectum : préserver l’organe peut-il améliorer la vie quotidienne ?</h1><p><strong>Une analyse observationnelle associe la surveillance sans chirurgie immédiate à une meilleure qualité de vie chez des patients sélectionnés.</strong></p><p>L’analyse publiée le 15 octobre 2026 porte sur 385 patients de deux essais allemands : 56 sous surveillance après réponse clinique complète et 329 opérés. La différence ajustée de santé globale était de 9,2 points sur 100 en faveur de la surveillance. Les groupes n’étaient pas randomisés pour cette comparaison, leurs profils différaient et seulement 48 % des questionnaires étaient disponibles à cinq ans. Cela ne prouve ni une survie équivalente ni que l’on peut renoncer au traitement. La préservation d’organe se discute en équipe spécialisée avec une surveillance stricte et une possibilité de chirurgie de rattrapage.</p><h2>Sources</h2><ul><li><a href=\"https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855353\">JAMA Network Open, 15 octobre 2026, DOI 10.1001/jamanetworkopen.2026.39063</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-16T09:36:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation de mise en ligne explicites du Dr Romain BEDDOK le 16 octobre 2026 : « Ok validation et mise en ligne ».",
+        "contentHash": "f86ed798d1453695bd94eed2b721546650f20d7b9815b8661dcfa9d4e6799b07"
+      }
+    },
+    {
+      "id": "daily-icfep-20261016",
+      "date": "2026-10-16",
+      "title": "Insuffisance cardiaque : pourquoi un cœur qui se contracte bien peut-il quand même nécessiter un traitement de fond ?",
+      "answer": "Une fraction d’éjection préservée n’exclut pas une insuffisance cardiaque.",
+      "url": "mag-icfep-20261016.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "CARDIOLOGIE",
+      "keywords": [
+        "CARDIOLOGIE"
+      ],
+      "sources": [
+        {
+          "label": "ESC — recommandations insuffisance cardiaque 2026",
+          "url": "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/heart-failure"
+        },
+        {
+          "label": "SFC / Cardio-online — 7 octobre 2026",
+          "url": "https://www.cardio-online.fr/ressources-scientifiques/recommandations-cardio-vasculaires/2026/insuffisance-cardiaque-a-fraction-d-ejection-preservee-les-messages-cles-des-recommandations-esc-2026"
+        }
+      ],
+      "ficheId": "insuffisance-cardiaque-medicaments-quotidien",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "html": "<article><p class=\"eyebrow\">À LIRE EN 3 MIN · 16 OCTOBRE 2026</p><h1>Insuffisance cardiaque : pourquoi un cœur qui se contracte bien peut-il quand même nécessiter un traitement de fond ?</h1><p><strong>Une fraction d’éjection préservée n’exclut pas une insuffisance cardiaque.</strong></p><p>Les recommandations européennes ESC d’août 2026, décryptées par la Société française de cardiologie le 7 octobre, soulignent la personnalisation de la prise en charge de l’insuffisance cardiaque à fraction d’éjection préservée. Le diagnostic ne repose pas sur la fraction d’éjection seule. Les traitements sont adaptés à la congestion, aux comorbidités, à la fonction rénale, à la tension et à la tolérance. Il ne s’agit pas d’un nouvel essai du 16 octobre, ni d’une ordonnance applicable à tous. Ne pas modifier seul ses médicaments.</p><p><a href=\"fiche.html?id=insuffisance-cardiaque-medicaments-quotidien\">Lire la fiche MACASANTÉ associée →</a></p><h2>Sources</h2><ul><li><a href=\"https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/heart-failure\">ESC — recommandations insuffisance cardiaque 2026</a></li><li><a href=\"https://www.cardio-online.fr/ressources-scientifiques/recommandations-cardio-vasculaires/2026/insuffisance-cardiaque-a-fraction-d-ejection-preservee-les-messages-cles-des-recommandations-esc-2026\">SFC / Cardio-online — 7 octobre 2026</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-16T09:36:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation de mise en ligne explicites du Dr Romain BEDDOK le 16 octobre 2026 : « Ok validation et mise en ligne ».",
+        "contentHash": "cdbe4cb5a3894c7ee20f8fc2d9290f75816081f9ca79c86fee29b7045cb0c0b8"
+      }
+    },
+    {
+      "id": "daily-chikungunya-20261016",
+      "date": "2026-10-16",
+      "title": "Chikungunya : la transmission locale n’a pas disparu avec l’arrivée de l’automne",
+      "answer": "Le bulletin du 14 octobre recense 22 épisodes de transmission locale, totalisant 162 cas cumulés.",
+      "url": "mag-chikungunya-20261016.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "MOUSTIQUES",
+      "keywords": [
+        "MOUSTIQUES"
+      ],
+      "sources": [
+        {
+          "label": "Santé publique France — bulletin arboviroses du 14 octobre 2026",
+          "url": "https://www.santepubliquefrance.fr/sites/default/files/2026-10/bullnat_arboviroses_20261014.pdf"
+        }
+      ],
+      "ficheId": "moustique-tigre-maladies-france-20260824",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "html": "<article><p class=\"eyebrow\">À LIRE EN 3 MIN · 16 OCTOBRE 2026</p><h1>Chikungunya : la transmission locale n’a pas disparu avec l’arrivée de l’automne</h1><p><strong>Le bulletin du 14 octobre recense 22 épisodes de transmission locale, totalisant 162 cas cumulés.</strong></p><p>Les données de Santé publique France arrêtées au 12 octobre 2026 signalent 22 épisodes de transmission autochtone de chikungunya, soit deux de plus qu’au précédent point, pour 162 cas cumulés. Autochtone signifie une contamination locale sans voyage explicatif. Ces cas ne sont pas 162 nouveaux cas hebdomadaires. Les données restent consolidables et le risque varie selon les territoires. Protéger des piqûres et suivre les recommandations locales sans confondre une piqûre avec un diagnostic. West Nile est un autre virus, principalement transmis par des moustiques Culex.</p><p><a href=\"fiche.html?id=moustique-tigre-maladies-france-20260824\">Lire la fiche MACASANTÉ associée →</a></p><h2>Sources</h2><ul><li><a href=\"https://www.santepubliquefrance.fr/sites/default/files/2026-10/bullnat_arboviroses_20261014.pdf\">Santé publique France — bulletin arboviroses du 14 octobre 2026</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-16T09:36:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation de mise en ligne explicites du Dr Romain BEDDOK le 16 octobre 2026 : « Ok validation et mise en ligne ».",
+        "contentHash": "2329835ee348769e340c1d9cf6ce1aea585d435bc553c12239086fc4032d6a33"
+      }
+    },
+    {
+      "id": "daily-dos-travail-20261016",
+      "date": "2026-10-16",
+      "title": "Mal au dos au travail : que faire pour éviter que ça s’installe ?",
+      "answer": "Retrouvez la fiche MACASANTÉ validée consacrée au mal de dos au travail.",
+      "url": "mag-dos-travail-20261016.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "PRÉVENTION",
+      "keywords": [
+        "PRÉVENTION"
+      ],
+      "sources": [
+        {
+          "label": "MACASANTÉ — fiche validée",
+          "url": "https://macasante.fr/fiche.html?id=mal-dos-travail-prevenir-installation"
+        }
+      ],
+      "ficheId": "mal-dos-travail-prevenir-installation",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "html": "<article><p class=\"eyebrow\">FICHE DU JOUR · 16 OCTOBRE 2026</p><h1>Mal au dos au travail : que faire pour éviter que ça s’installe ?</h1><p><strong>Retrouvez la fiche MACASANTÉ validée consacrée au mal de dos au travail.</strong></p><p>Varier les positions, conserver une activité adaptée et agir sur les contraintes réelles du poste. Une faiblesse nouvelle d’une jambe ou des troubles sphinctériens nécessitent une évaluation rapide.</p><p><a href=\"fiche.html?id=mal-dos-travail-prevenir-installation\">Lire la fiche MACASANTÉ associée →</a></p><h2>Sources</h2><ul><li><a href=\"https://macasante.fr/fiche.html?id=mal-dos-travail-prevenir-installation\">MACASANTÉ — fiche validée</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-16T09:36:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation de mise en ligne explicites du Dr Romain BEDDOK le 16 octobre 2026 : « Ok validation et mise en ligne ».",
+        "contentHash": "e5986cd5e7f0fad7d07400ff13db950559605e9b85dd44558096c260b506adda"
+      },
+      "assistantPolicy": "REFERENCE_FICHE_ONLY"
+    },
+    {
+      "id": "daily-demence-20261016",
+      "date": "2026-10-16",
+      "title": "La démence est-elle une conséquence normale du vieillissement ?",
+      "answer": "FAUX. L’âge augmente le risque, mais la démence n’est pas une étape inévitable.",
+      "url": "mag-demence-20261016.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "FAUX",
+      "keywords": [
+        "FAUX"
+      ],
+      "sources": [
+        {
+          "label": "OMS — démence",
+          "url": "https://www.who.int/fr/news-room/fact-sheets/detail/dementia"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "html": "<article><p class=\"eyebrow\">VRAI OU FAUX · 16 OCTOBRE 2026</p><h1>La démence est-elle une conséquence normale du vieillissement ?</h1><p><strong>FAUX. L’âge augmente le risque, mais la démence n’est pas une étape inévitable.</strong></p><p>Des difficultés de mémoire ou de raisonnement qui perturbent l’autonomie méritent une évaluation et ne doivent pas être banalisées au motif de l’âge.</p><h2>Sources</h2><ul><li><a href=\"https://www.who.int/fr/news-room/fact-sheets/detail/dementia\">OMS — démence</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-16T09:36:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation de mise en ligne explicites du Dr Romain BEDDOK le 16 octobre 2026 : « Ok validation et mise en ligne ».",
+        "contentHash": "316f9c0990a3120e6a51fc85d39b47916da4dfb89de22d367fc49732db6ec230"
+      }
+    },
+    {
+      "id": "daily-fruits-legumes-20261016",
+      "date": "2026-10-16",
+      "title": "Fruits et légumes : que signifient cinq portions par jour ?",
+      "answer": "Au moins cinq portions de fruits et légumes par jour chez l’adulte, et non cinq fruits en plus des légumes.",
+      "url": "mag-fruits-legumes-20261016.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "5 PORTIONS",
+      "keywords": [
+        "5 PORTIONS"
+      ],
+      "sources": [
+        {
+          "label": "Manger Bouger — fruits et légumes",
+          "url": "https://www.mangerbouger.fr/l-essentiel/les-recommandations-sur-l-alimentation-l-activite-physique-et-la-sedentarite/augmenter/augmenter-les-fruits-et-legumes"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "html": "<article><p class=\"eyebrow\">LE CHIFFRE DU JOUR · 16 OCTOBRE 2026</p><h1>Fruits et légumes : que signifient cinq portions par jour ?</h1><p><strong>Au moins cinq portions de fruits et légumes par jour chez l’adulte, et non cinq fruits en plus des légumes.</strong></p><p>Une portion représente environ 80 à 100 grammes. Frais, surgelés ou en conserve peuvent contribuer à ce repère nutritionnel. Le jus ne remplace pas une portion. Ce chiffre n’est pas une nouvelle étude.</p><h2>Sources</h2><ul><li><a href=\"https://www.mangerbouger.fr/l-essentiel/les-recommandations-sur-l-alimentation-l-activite-physique-et-la-sedentarite/augmenter/augmenter-les-fruits-et-legumes\">Manger Bouger — fruits et légumes</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-16T09:36:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation de mise en ligne explicites du Dr Romain BEDDOK le 16 octobre 2026 : « Ok validation et mise en ligne ».",
+        "contentHash": "77496d0653d38e0b8f3f3e4c742f48dfc77ef5f8c4a008eed8b093fabe999922"
+      }
+    },
+    {
+      "id": "daily-lentilles-20261016",
+      "date": "2026-10-16",
+      "title": "Lentilles de contact : ne jamais utiliser l’eau du robinet",
+      "answer": "L’eau du robinet ou minérale ne doit pas servir à rincer ni à conserver les lentilles.",
+      "url": "mag-lentilles-20261016.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "YEUX",
+      "keywords": [
+        "YEUX"
+      ],
+      "sources": [
+        {
+          "label": "Assurance Maladie — lentilles",
+          "url": "https://www.ameli.fr/assure/sante/bons-gestes/quotidien/mettre-garder-lentilles-contact"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "html": "<article><p class=\"eyebrow\">DONNÉES · 16 OCTOBRE 2026</p><h1>Lentilles de contact : ne jamais utiliser l’eau du robinet</h1><p><strong>L’eau du robinet ou minérale ne doit pas servir à rincer ni à conserver les lentilles.</strong></p><p>Respecter les solutions adaptées et les consignes d’entretien pour réduire les infections oculaires.</p><h2>Sources</h2><ul><li><a href=\"https://www.ameli.fr/assure/sante/bons-gestes/quotidien/mettre-garder-lentilles-contact\">Assurance Maladie — lentilles</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-16T09:36:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation de mise en ligne explicites du Dr Romain BEDDOK le 16 octobre 2026 : « Ok validation et mise en ligne ».",
+        "contentHash": "9d690d052d90432c3cfd10ae2713116ddc34cc56195b1afd3cb0ff89819d5cc4"
+      }
+    },
+    {
+      "id": "daily-inhalateur-20261016",
+      "date": "2026-10-16",
+      "title": "Asthme : vérifier la technique de son inhalateur",
+      "answer": "Chaque type d’inhalateur demande des gestes adaptés.",
+      "url": "mag-inhalateur-20261016.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "ASTHME",
+      "keywords": [
+        "ASTHME"
+      ],
+      "sources": [
+        {
+          "label": "Assurance Maladie — inhalateur",
+          "url": "https://www.ameli.fr/assure/sante/themes/asthme-adulte/asthme-traitement/utiliser-inhalateur"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "html": "<article><p class=\"eyebrow\">DONNÉES · 16 OCTOBRE 2026</p><h1>Asthme : vérifier la technique de son inhalateur</h1><p><strong>Chaque type d’inhalateur demande des gestes adaptés.</strong></p><p>Demander au pharmacien ou au médecin de vérifier la technique et de montrer les gestes correspondant au dispositif.</p><h2>Sources</h2><ul><li><a href=\"https://www.ameli.fr/assure/sante/themes/asthme-adulte/asthme-traitement/utiliser-inhalateur\">Assurance Maladie — inhalateur</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-16T09:36:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation de mise en ligne explicites du Dr Romain BEDDOK le 16 octobre 2026 : « Ok validation et mise en ligne ».",
+        "contentHash": "1bd853bebe0a3e205bc8db5c32353d70089735315619699f2038cc009019bcd9"
+      }
+    },
+    {
+      "id": "daily-cerumen-20261016",
+      "date": "2026-10-16",
+      "title": "Bouchon de cérumen : éviter les objets dans le conduit",
+      "answer": "Ne pas chercher à extraire un bouchon avec un coton-tige ou un objet introduit dans le conduit.",
+      "url": "mag-cerumen-20261016.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "OREILLES",
+      "keywords": [
+        "OREILLES"
+      ],
+      "sources": [
+        {
+          "label": "Assurance Maladie — bouchon de cérumen",
+          "url": "https://www.ameli.fr/assure/sante/themes/bouchon-cerumen/bons-gestes-quand-consulter"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "html": "<article><p class=\"eyebrow\">DONNÉES · 16 OCTOBRE 2026</p><h1>Bouchon de cérumen : éviter les objets dans le conduit</h1><p><strong>Ne pas chercher à extraire un bouchon avec un coton-tige ou un objet introduit dans le conduit.</strong></p><p>En cas de gêne persistante, demander un avis médical et éviter les manœuvres traumatiques.</p><h2>Sources</h2><ul><li><a href=\"https://www.ameli.fr/assure/sante/themes/bouchon-cerumen/bons-gestes-quand-consulter\">Assurance Maladie — bouchon de cérumen</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-16T09:36:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation de mise en ligne explicites du Dr Romain BEDDOK le 16 octobre 2026 : « Ok validation et mise en ligne ».",
+        "contentHash": "5707b631f1d35b30edf5952fb6d2ff6354662a6b586fb5729f53341639895081"
+      }
+    },
+    {
+      "id": "daily-rose-laser-20261016",
+      "date": "2026-10-16",
+      "title": "Après un cancer du sein, le laser vaginal soulage-t-il mieux les douleurs et la sécheresse ?",
+      "answer": "Le suivi à douze mois de l’essai LIGHT ne démontre pas de bénéfice supplémentaire du laser CO₂ par rapport à une simulation, avec des soins non hormonaux dans les deux groupes.",
+      "url": "mag-rose-laser-20261016.html",
+      "format": "article",
+      "category": "Octobre Rose",
+      "theme": "CANCER DU SEIN",
+      "keywords": [
+        "CANCER DU SEIN"
+      ],
+      "sources": [
+        {
+          "label": "JAMA Network Open — Anglès-Acedo et coll., 15 octobre 2026, DOI 10.1001/jamanetworkopen.2026.38937",
+          "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855354"
+        },
+        {
+          "label": "Essai LIGHT — NCT04619485",
+          "url": "https://clinicaltrials.gov/study/NCT04619485"
+        },
+        {
+          "label": "INCa — sexualité et cancer du sein",
+          "url": "https://www.cancer.fr/personnes-malades/les-cancers/sein/la-qualite-de-vie/les-soins-de-support/sexualite"
+        },
+        {
+          "label": "INCa — guide hormonothérapies 2025, p. 74–76",
+          "url": "https://www.cancer.fr/content/download/42131/file/RecoHormonotherapie_CancerSein_2025.pdf?version=6"
+        }
+      ],
+      "ficheId": "cancer-traitements-sexualite",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "html": "<article><img src=\"https://images.pexels.com/photos/7088494/pexels-photo-7088494.jpeg\" alt=\"Une femme échange avec un professionnel de santé lors d’une consultation\" style=\"width:100%;height:auto\"><p><small>Photo d’illustration : <a href=\"https://www.pexels.com/photo/people-woman-sitting-doctor-7088494/\">MART PRODUCTION / Pexels</a> · <a href=\"https://www.pexels.com/license/\">Licence Pexels</a>. Ne représente pas les participantes à l’essai.</small></p><p class=\"eyebrow\">OCTOBRE ROSE · 16 OCTOBRE 2026</p><h1>Après un cancer du sein, le laser vaginal soulage-t-il mieux les douleurs et la sécheresse ?</h1><p><strong>Le suivi à douze mois de l’essai LIGHT ne démontre pas de bénéfice supplémentaire du laser CO₂ par rapport à une simulation, avec des soins non hormonaux dans les deux groupes.</strong></p><h2>Une nouvelle analyse, pas un nouvel essai</h2><p>L’analyse secondaire publiée le 15 octobre 2026 dans JAMA Network Open concerne 84 femmes traitées par inhibiteur de l’aromatase, avec syndrome génito-urinaire et rapports douloureux. Elles ont reçu cinq séances mensuelles de laser CO₂ ou de simulation, avec hydratants et vibrateur dans les deux groupes. Soixante-sept femmes étaient suivies à douze mois. Sur le score de fonction sexuelle de 2 à 36, la différence d’évolution était de −0,69 point (IC 95 % : −3,58 à +2,20), sans avantage démontré. Aucun effet indésirable grave n’a été observé, ce qui n’exclut pas des risques rares. L’essai était monocentrique, de faible effectif, avec pertes de suivi.</p><h2>Pourquoi ces symptômes surviennent-ils ?</h2><p>Les traitements hormonaux du cancer du sein peuvent diminuer l’action des œstrogènes. Sécheresse, brûlures, douleurs lors des rapports et gêne urinaire peuvent affecter la qualité de vie. Fatigue, anxiété, image corporelle et relation à l’autre jouent également un rôle. Les objectifs de confort et d’intimité sont personnels et n’impliquent aucune obligation de rapports.</p><h2>Que proposent les recommandations ?</h2><p>Le guide INCa de 2025 recommande de rechercher ces symptômes en consultation. Hydratants vaginaux réguliers et lubrifiants au moment des rapports sont proposés en première intention. Si les symptômes persistent, les options sont à discuter avec l’équipe soignante. Après un cancer hormonodépendant, un œstrogène local ne relève pas de l’automédication : une décision individualisée après évaluation du rapport bénéfice-risque est nécessaire. Une consultation de sexologie peut aider.</p><h2>Laser : bénéfice clinique ou promesse biologique ?</h2><p>Le guide INCa réserve l’éventuelle utilisation du laser à des essais randomisés contrôlés après information sur les risques, dont brûlures et douleurs. Une amélioration ressentie dans les deux groupes ne démontre pas l’efficacité propre du laser. Un mécanisme supposé de renouvellement tissulaire n’équivaut pas à un bénéfice clinique. Ce suivi n’est ni une nouvelle autorisation ni une preuve d’efficacité justifiant un usage systématique.</p><h2>Conséquences pratiques</h2><p>Décrire en consultation la sécheresse, les douleurs, la gêne urinaire, leur durée et leur retentissement ; discuter des soins déjà essayés, des alternatives et des objectifs personnels. Ne pas interrompre une hormonothérapie sans avis du prescripteur. Il existe des solutions de soins de support, même si le laser n’a pas démontré de bénéfice supplémentaire dans cet essai.</p><h2>Limites</h2><p>Effectif limité, un seul centre, suivi incomplet et puissance insuffisante pour exclure certains effets modestes ou événements rares. La publication du 15 octobre correspond à un suivi d’un essai antérieur, non à un nouveau recrutement.</p><p><a href=\"fiche.html?id=cancer-traitements-sexualite\">Lire la fiche MACASANTÉ associée →</a></p><h2>Sources</h2><ul><li><a href=\"https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855354\">JAMA Network Open — Anglès-Acedo et coll., 15 octobre 2026, DOI 10.1001/jamanetworkopen.2026.38937</a></li><li><a href=\"https://clinicaltrials.gov/study/NCT04619485\">Essai LIGHT — NCT04619485</a></li><li><a href=\"https://www.cancer.fr/personnes-malades/les-cancers/sein/la-qualite-de-vie/les-soins-de-support/sexualite\">INCa — sexualité et cancer du sein</a></li><li><a href=\"https://www.cancer.fr/content/download/42131/file/RecoHormonotherapie_CancerSein_2025.pdf?version=6\">INCa — guide hormonothérapies 2025, p. 74–76</a></li></ul><p><small>Information générale sous contrôle médical, ne remplaçant pas une consultation.</small></p></article>",
+      "validation": {
+        "validatedAt": "2026-10-16T09:36:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation de mise en ligne explicites du Dr Romain BEDDOK le 16 octobre 2026 : « Ok validation et mise en ligne ».",
+        "contentHash": "62cdb896660e4b0d8dd311394680daa769d76e126c790e519954479c38aaa9a3"
+      },
+      "imageLicense": "Pexels License — https://www.pexels.com/license/",
+      "imageCredit": "MART PRODUCTION / Pexels",
+      "imageSource": "https://www.pexels.com/photo/people-woman-sitting-doctor-7088494/"
     }
   ],
   "editions": [
@@ -3409,6 +3763,69 @@
         "veille": "JAMA : NOPARK et protection rénale en choc septique ; Lancet : essai LATA sur VIH adolescent ; Santé publique France : surveillance bronchiolite du 14 octobre ; JNCI : essai I Can! du 30 septembre (Octobre Rose).",
         "corpusImpact": "Parkinson : NE PAS CRÉER ; sepsis : ACTUALISER-FUSIONNER ; VIH : CRÉER candidat soumis à validation distincte ; bronchiolite : ACTUALISER-FUSIONNER ; Octobre Rose : ACTUALISER-FUSIONNER, aucune fiche créée.",
         "validation": "Validation médicale explicite du Dr Romain BEDDOK, 15 octobre 2026 : « Parfait mise en ligne validation » puis « Il faut tout mettre en ligne selon le chemin habituel, magazine. »"
+      }
+    },
+    {
+      "id": "edition-2026-10-16",
+      "date": "2026-10-16",
+      "publishAt": "2026-10-16T09:36:00+02:00",
+      "complete": true,
+      "items": [
+        {
+          "contentId": "daily-cremes-20261016",
+          "slot": "À LA UNE",
+          "icon": "SÉCURITÉ"
+        },
+        {
+          "contentId": "daily-rectum-20261016",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "CANCER"
+        },
+        {
+          "contentId": "daily-icfep-20261016",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "CARDIOLOGIE"
+        },
+        {
+          "contentId": "daily-chikungunya-20261016",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "MOUSTIQUES"
+        },
+        {
+          "contentId": "daily-dos-travail-20261016",
+          "slot": "FICHE DU JOUR",
+          "icon": "PRÉVENTION"
+        },
+        {
+          "contentId": "daily-demence-20261016",
+          "slot": "VRAI OU FAUX",
+          "icon": "FAUX"
+        },
+        {
+          "contentId": "daily-fruits-legumes-20261016",
+          "slot": "LE CHIFFRE DU JOUR",
+          "icon": "5 PORTIONS"
+        },
+        {
+          "contentId": "daily-lentilles-20261016",
+          "slot": "DONNÉES",
+          "icon": "YEUX"
+        },
+        {
+          "contentId": "daily-inhalateur-20261016",
+          "slot": "DONNÉES",
+          "icon": "ASTHME"
+        },
+        {
+          "contentId": "daily-cerumen-20261016",
+          "slot": "DONNÉES",
+          "icon": "OREILLES"
+        }
+      ],
+      "editorialConference": {
+        "veille": "JAMA Network Open : analyse de crèmes vendues en ligne (8 octobre), préservation du rectum et qualité de vie (15 octobre), suivi LIGHT du cancer du sein (15 octobre). ESC/SFC : recommandations d’insuffisance cardiaque et éclairage français du 7 octobre. Santé publique France : bulletin chikungunya du 14 octobre.",
+        "corpusImpact": "Crèmes en ligne : CRÉER candidat ; préservation rectum : CRÉER candidat ; insuffisance cardiaque : ACTUALISER-FUSIONNER ; chikungunya : ACTUALISER-FUSIONNER ; laser après cancer du sein : ACTUALISER-FUSIONNER. Aucune fiche nouvelle créée automatiquement.",
+        "validation": "Validation médicale et autorisation de mise en ligne explicites du Dr Romain BEDDOK le 16 octobre 2026 : « Ok validation et mise en ligne »."
       }
     }
   ]
