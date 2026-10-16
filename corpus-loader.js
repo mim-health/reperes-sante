@@ -120,7 +120,7 @@
     return files.slice();
   }
 
-  function loadFullCorpus() { return load('corpus-production.js?v=8cfc14e98ea38eae')
+  function loadFullCorpus() { return load('corpus-production.js?v=f676a62620d59fca')
     .then(() => replayMentalHealthV2OnAuditedCorpus())
     .then(() => {
       assertBundleSentinels();
@@ -140,7 +140,7 @@
       console.error('[MACA corpus]', error);
       throw error;
     }); }
-  const FICHE_DATA_REVISION = '8cfc14e98ea38eae';
+  const FICHE_DATA_REVISION = 'f676a62620d59fca';
   const ficheId = new URLSearchParams(location.search).get('id');
   const isFiche = !!document.querySelector('#seo-fiche') && !!ficheId;
   async function loadFiche() {
