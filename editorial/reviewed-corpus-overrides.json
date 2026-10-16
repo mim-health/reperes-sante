@@ -17,7 +17,7 @@
   "transpiration-excessive-hyperhidrose": [
     "qa-data-september-2026.js:2e67bc33266e6c77efda188790bec8efb046587f243f497bd562f0478979f9fe",
     "backlog-audited-lot-k.js:3c9fe1fcaa23b105464440c087ff5c1567c0c0097590faa39598c908c19cbbb1",
-    "backlog-audited-lot-l.js:0fe0863fdf953435ceadb9e3377ed9b1ff34ea823be8d5978a12f62082194952"
+    "backlog-audited-lot-l.js:3945942a06eeebe792d76216d6d463ae3545fc324347ff4e2e2f3e3f19d21fae"
   ],
   "rupture-medicament-que-faire": [
     "qa-data-september-2026.js:4f5e8d9fbeb1c414683ac31f9f679f7bb3f99ea08137cd57c2170d12b5551d52",
@@ -86,6 +86,6 @@
   ],
   "ado-sommeil-endormissement": [
     "backlog-audited-ados-v1.js:b95f5608e7fa601311d20f25bfb3ea271cea931e7898b4a003b676d84cc7090d",
-    "migration-ado-v2-lot1-2026-09-07.js:801da408a5f652dc48e93a215057a122291a37bed3c5ff88d70f210692f8a70f"
+    "migration-ado-v2-lot1-2026-09-07.js:27d1be4fd3e98ab178d1dce35895ef24f0787d9a72b38e2e046434b9afacde18"
   ]
 }
