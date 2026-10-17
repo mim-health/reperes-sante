@@ -12,4 +12,5 @@ window.MACA_CORPUS_MANIFEST = Object.freeze([
 'backlog-audited-medecine-generale-2026-10-10.js?v=20261010-1'
 ,'backlog-audited-sfe-2026-10-11.js?v=20261011-1','corpus-medical-revisions-2026-10-14.js?v=20261014-validated1','backlog-audited-ados-corps-sexualite-2026-10-16.js?v=20261016-validated1'
 ,'backlog-audited-frequence-rapports-2026-10-17.js?v=20261017-validated1'
+,'corpus-sein-revisions-2026-10-17.js?v=20261017-audit1'
 ]);
