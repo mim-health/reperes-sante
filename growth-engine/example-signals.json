@@ -1,0 +1,4 @@
+[
+ {"id":"demo-1","question":"Exemple de question publique","source":"public-community","coverage":"match","demand":80,"freshness":90,"corpusFit":95,"seoPotential":75,"socialPotential":70,"competitionEase":55},
+ {"id":"demo-2","question":"Exemple de lacune éditoriale","source":"search-demand","coverage":"gap","demand":85,"freshness":70,"corpusFit":20,"seoPotential":80,"socialPotential":60,"competitionEase":65}
+]
