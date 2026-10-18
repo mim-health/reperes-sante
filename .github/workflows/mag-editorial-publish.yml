@@ -3,6 +3,12 @@ on:
   push:
     branches: [feat/v0-magazine]
     paths:
+      - 'index.html'
+      - 'maca-home-assistant.css'
+      - 'maca-home-assistant.js'
+      - 'assets/home/**'
+      - 'credits-photos.html'
+      - 'scripts/test-home-assistant.js'
       - 'editorial/content.json'
       - 'editorial/catchup.json'
       - 'editorial/reviewed-corpus-overrides.json'
@@ -46,6 +52,7 @@ jobs:
           node-version: '20'
       - name: Validate and prepare complete edition
         run: |
+          node scripts/test-home-assistant.js
           node scripts/test-assistant-pilot.js
           node scripts/test-content-duplicates.js
           node scripts/audit-content-duplicates.js

@@ -4,6 +4,11 @@
  */
 (function () {
   'use strict';
+  // The Assistant-first homepage uses the remote closed corpus, not local fiche search.
+  if(document.body && document.body.classList && document.body.classList.contains('maca-home-assistant')){
+    window.MACA_CORPUS_READY=Promise.resolve();
+    return;
+  }
   const manifest = window.MACA_CORPUS_MANIFEST;
   if (!Array.isArray(manifest)) {
     console.error('[MACA corpus] manifest missing');

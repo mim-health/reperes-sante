@@ -4,13 +4,13 @@ class El{
  constructor(){this.dataset={};this.attrs={};this.hidden=false;this.disabled=false;this.value='';this.textContent='';this.innerHTML='';this.events={};this.classList={add(){},remove(){},contains(){return true;}};}
  setAttribute(k,v){this.attrs[k]=v;} addEventListener(k,f){this.events[k]=f;} focus(){} append(){} appendChild(){} querySelector(s){return this.nodes[s];}querySelectorAll(){return this.buttons||[];}closest(){return this;}
 }
-async function run(){
+async function run(inline=false){
  const panel=new El(),head=new El(),body=new El(),feedback=new El();feedback.buttons=[new El(),new El()];feedback.buttons[0].dataset.vote='useful';feedback.buttons[1].dataset.vote='not_useful';
  panel.nodes=Object.fromEntries(['.maca-v2-close','textarea','.maca-v2-send','.maca-v2-result','.maca-v2-status','.maca-v2-answer','.maca-v2-scope','.maca-v2-sources','.maca-v2-export','.maca-v2-vote-status'].map(k=>[k,new El()]));panel.nodes['.maca-v2-feedback']=feedback;
  const sourceLink=new El();sourceLink.dataset.sourceType='magazine';panel.nodes['.maca-v2-sources'].buttons=[sourceLink];
- const storage=new Map();const requests=[],s={console,Date,Set,Blob,URL,AbortController,setTimeout(fn,ms){if(ms<1000)queueMicrotask(fn);return 1;},clearTimeout(){},document:{body,head,getElementById(){return null;},querySelector(){return null;},addEventListener(){},createElement(tag){return tag==='section'?panel:new El();}},fetch:async(u,o)=>{if(!o||o.method==='GET')return {ok:true,json:async()=>({service:'maca-assistant-v2',public_ready:true})};requests.push(o);return s.reply();}};s.sessionStorage={getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)};s.window=s;s.globalThis=s;vm.createContext(s);
+ const storage=new Map();const requests=[],s={console,Date,Set,Blob,URL,AbortController,setTimeout(fn,ms){if(ms<1000)queueMicrotask(fn);return 1;},clearTimeout(){},document:{body,head,getElementById(id){return inline&&id==='home-assistant-results'?body:null;},querySelector(){return null;},addEventListener(){},createElement(tag){return tag==='section'?panel:new El();}},fetch:async(u,o)=>{if(!o||o.method==='GET')return {ok:true,json:async()=>({service:'maca-assistant-v2',public_ready:true})};requests.push(o);return s.reply();}};s.sessionStorage={getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)};s.window=s;s.globalThis=s;vm.createContext(s);
  for(const p of ['maca-assistant-metrics.js','maca-assistant-v2-unified.js'])vm.runInContext(fs.readFileSync(p,'utf8'),s,{filename:p});await new Promise(r=>setImmediate(r));
- const api=s.MACA_ASSISTANT_V2,m=s.MACA_ASSISTANT_METRICS;assert(api);
+ const api=s.MACA_ASSISTANT_V2,m=s.MACA_ASSISTANT_METRICS;assert(api);if(inline)assert.equal(panel.attrs.role,'region');else assert.equal(panel.attrs.role,'dialog');
  let resolve;s.reply=()=>new Promise(r=>resolve=r);const first=api.ask('Une question synthétique');await api.ask('double envoi');assert.equal(requests.length,1,'pending request must block duplicate send');
  const version='f'.repeat(64);resolve({ok:true,json:async()=>({status:'answer',answer:'Texte documenté',scope_note:'Portée',cards_used:[{id:'mag-test',title:'Titre — Le Mag · 11/10/2026',url:'https://macasante.fr/article-test.html'},{id:'fiche-test',title:'<script>texte</script>'}],meta:{artifact_version:version}})});await first;
  assert.equal(panel.nodes['.maca-v2-answer'].textContent,'Texte documenté');assert(panel.nodes['.maca-v2-sources'].innerHTML.includes('Actualité — Le Mag'));assert(panel.nodes['.maca-v2-sources'].innerHTML.includes('fiche.html?id=fiche-test'));assert(!panel.nodes['.maca-v2-sources'].innerHTML.includes('<script>'));
@@ -28,4 +28,4 @@ async function run(){
  const summary=require('./summarize-assistant-pilot').summarize([{schemaVersion:1,mode:'local-manual-export',events:[{event:'question_sent',question:'secret'},{event:'answer',durationMs:5000},{event:'feedback',value:'useful'}]}]);assert.equal(summary.counts.useful,1);assert.equal(summary.medianDurationMs,5000);assert(!JSON.stringify(summary).includes('secret'));
  console.log(JSON.stringify({ok:true,duplicateSend:true,sourceLinks:true,feedback:true,errorRecovery:6,longInput:true,timeoutSignal:true,anonymousWhitelist:true,boundedMemory:true}));
 }
-run().catch(e=>{console.error(e);process.exitCode=1;});
+run().then(()=>run(true)).catch(e=>{console.error(e);process.exitCode=1;});
