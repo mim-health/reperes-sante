@@ -243,32 +243,6 @@
     },
     {
       "left": {
-        "id": "boule-dans-le-sein",
-        "title": "J’ai senti une boule dans mon sein : est-ce forcément un cancer ?",
-        "type": "fiche"
-      },
-      "right": {
-        "id": "sein-boule-changement-quand-consulter",
-        "title": "J’ai senti une boule ou remarqué un changement dans mon sein : est-ce forcément un cancer ?",
-        "type": "fiche"
-      },
-      "score": 0.75
-    },
-    {
-      "left": {
-        "id": "boule-dans-le-sein",
-        "title": "J’ai senti une boule dans mon sein : est-ce forcément un cancer ?",
-        "type": "fiche"
-      },
-      "right": {
-        "id": "boule-sein-que-faire",
-        "title": "J’ai senti une boule dans mon sein : que dois-je faire ?",
-        "type": "fiche"
-      },
-      "score": 0.5
-    },
-    {
-      "left": {
         "id": "saignement-nez-adulte",
         "title": "Je saigne du nez : que dois-je faire ?",
         "type": "fiche"
@@ -529,9 +503,9 @@
     }
   ],
   "counts": {
-    "manifestFiles": 141,
-    "rawFiches": 410,
-    "canonicalFiches": 384,
+    "manifestFiles": 143,
+    "rawFiches": 417,
+    "canonicalFiches": 391,
     "magContents": 88
   }
 }
