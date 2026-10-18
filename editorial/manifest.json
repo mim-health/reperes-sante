@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "editionId": "edition-2026-10-18",
   "editionDate": "2026-10-18",
-  "sourceFingerprint": "cf225d5c184dee290bc12b6f2dadd7f4a3fad0df99274c5d10ac2abd193e1839",
+  "sourceFingerprint": "a2cd1a7fdbf9bac443fc871092db22ce833245f156fd517e5436b32752428d18",
   "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
@@ -53,6 +53,18 @@
       "id": "mag-daily-abces-dentaire-20261018",
       "version": "0f0e52aaf8df340904eaf7c8584e39dc609ab7f2275563d2076d74436d7d9f5f",
       "url": "mag-abces-dentaire-20261018.html",
+      "date": "2026-10-18"
+    },
+    {
+      "id": "mag-radar-sein-her2-tucatinib-entretien-20261018",
+      "version": "f0fb3e70bf373b82547da73ab42a297faa7f499e9aeb9a905c6db928d0d77652",
+      "url": "article-sein-her2-tucatinib-entretien.html",
+      "date": "2026-10-18"
+    },
+    {
+      "id": "mag-radar-achondroplasie-navepegritide-avis-europeen-20261018",
+      "version": "98e92c8471e75b549f2255438bb21772c9a90e36e92ee93a0dea54fa54ed5af5",
+      "url": "article-achondroplasie-navepegritide-avis-europeen.html",
       "date": "2026-10-18"
     },
     {

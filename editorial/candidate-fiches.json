@@ -89,5 +89,12 @@
     "url": "mag-consultation-anesthesie-20261018.html",
     "existingFicheId": null,
     "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "radar-achondroplasie-navepegritide-avis-europeen-20261018",
+    "title": "Achondroplasie : que sait-on du traitement hebdomadaire recommandé en Europe ?",
+    "url": "article-achondroplasie-navepegritide-avis-europeen.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
   }
 ]

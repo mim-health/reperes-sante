@@ -1835,5 +1835,45 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "0f0e52aaf8df340904eaf7c8584e39dc609ab7f2275563d2076d74436d7d9f5f"
+  },
+  {
+    "id": "radar-sein-her2-tucatinib-entretien-20261018",
+    "url": "article-sein-her2-tucatinib-entretien.html",
+    "title": "Cancer du sein HER2 positif : que change le nouvel avis européen sur le tucatinib ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Cancer",
+    "date": "2026-10-18",
+    "status": "PUBLISHED",
+    "excerpt": "L’ajout du tucatinib à un traitement d’entretien retarde la progression dans un essai randomisé. Le nouvel avis européen ne signifie pas encore que cette association est autorisée et accessible en France dans cette indication.",
+    "image": "assets/editorial/2026-10-13/photos/tomosynthese.jpg",
+    "imageAlt": "Ruban rose sur fond rose, symbole de sensibilisation au cancer du sein.",
+    "keywords": [
+      "Cancer",
+      "sein her2 tucatinib entretien"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "cancer-therapies-ciblees-biomarqueurs",
+    "version": "f0fb3e70bf373b82547da73ab42a297faa7f499e9aeb9a905c6db928d0d77652"
+  },
+  {
+    "id": "radar-achondroplasie-navepegritide-avis-europeen-20261018",
+    "url": "article-achondroplasie-navepegritide-avis-europeen.html",
+    "title": "Achondroplasie : que sait-on du traitement hebdomadaire recommandé en Europe ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Enfants & parents",
+    "date": "2026-10-18",
+    "status": "PUBLISHED",
+    "excerpt": "Le navepegritide améliore la vitesse de croissance dans un essai chez 84 enfants. L’avis européen favorable constitue une étape réglementaire ; ses effets sur la taille adulte et les complications à long terme restent à préciser.",
+    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "imageAlt": "Échange entre médecin et patient autour d’un document.",
+    "keywords": [
+      "Enfants & parents",
+      "achondroplasie navepegritide avis europeen"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "98e92c8471e75b549f2255438bb21772c9a90e36e92ee93a0dea54fa54ed5af5"
   }
 ];
