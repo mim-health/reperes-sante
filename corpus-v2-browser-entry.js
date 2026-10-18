@@ -4,6 +4,10 @@
   function load(src){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=src;s.async=false;s.onload=resolve;s.onerror=()=>reject(new Error('Unable to load UI script: '+src));document.body.appendChild(s);});}
   function exposeCanonical(){if(typeof window.MACA_BUILD_CANONICAL_CORPUS!=='function')throw new Error('MACA canonicalizer missing');let canonical=window.MACA_BUILD_CANONICAL_CORPUS();if(!Array.isArray(canonical)||!canonical.length)throw new Error('MACA canonical corpus empty');if(typeof window.MACA_ADD_MULTI_SECTIONS==='function')canonical=window.MACA_ADD_MULTI_SECTIONS(canonical);window.MACA_CANONICAL_CORPUS=canonical.slice();window.healthQuestions=canonical.slice();window.extraAuditedQuestions=[];window.MACA_UI_CORPUS_V2=true;}
   const page=document.body.classList.contains('library-page')?'library':'home';
+  if(document.body.classList.contains('maca-home-assistant')){
+    load('maca-assistant-metrics.js?v=20261011-repair1').then(()=>load('maca-assistant-v2-unified.js?v=20261018-home1')).catch(err=>{console.error('[MACA home Assistant]',err);window.dispatchEvent(new Event('maca:assistant-unavailable'));});
+    return;
+  }
   // The remote Assistant does not depend on the local fiche corpus.
   load('maca-assistant-metrics.js?v=20261011-repair1').then(()=>load('maca-assistant-v2-unified.js?v=20261011-repair1')).catch(err=>console.error('[MACA Assistant entry]',err));
   if(page==='home'){load('maca-home-actions.js?v=20260906-1').catch(err=>console.error('[MACA home actions]',err));}

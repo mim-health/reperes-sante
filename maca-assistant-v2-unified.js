@@ -6,7 +6,7 @@ const READY_URL=ENDPOINT+'?maca_public_ready=1';
 const supported=document.body.classList.contains('library-page')||document.body.classList.contains('maca-magazine-v1');
 if(!supported||document.getElementById('maca-v2-launcher'))return;
 async function publicReady(){try{const r=await fetch(READY_URL,{method:'GET',cache:'no-store'});const d=await r.json();return r.ok&&d&&d.service==='maca-assistant-v2'&&d.public_ready===true}catch{return false}}
-publicReady().then(ready=>{if(ready)activate();});
+publicReady().then(ready=>{if(ready)activate();else if(typeof window.dispatchEvent==='function')window.dispatchEvent(new Event('maca:assistant-unavailable'));});
 const metrics=()=>window.MACA_ASSISTANT_METRICS;
 const record=(name,fields)=>metrics()?.record(name,fields);
 function activate(){
@@ -22,14 +22,15 @@ const duplicateLibraryLink=document.querySelector('.magazine-library-link');if(d
 const launcher=document.createElement('button');launcher.id='maca-v2-launcher';launcher.className='maca-v2-launcher';launcher.type='button';launcher.textContent='Poser une question';launcher.setAttribute('aria-expanded','false');
 const panel=document.createElement('section');panel.className='maca-v2-panel';panel.id='maca-v2-panel';panel.setAttribute('role','dialog');panel.setAttribute('aria-label','Assistant MACA');panel.dataset.open='false';
 panel.innerHTML=`<header class="maca-v2-head"><div><strong>Assistant MACA</strong><div style="font-size:11px;color:#687873;margin-top:2px">Réponses issues des fiches et du Mag validés</div></div><button class="maca-v2-close" aria-label="Fermer">×</button></header><div class="maca-v2-body"><p class="maca-v2-note">Posez votre question avec vos mots. MACA recherche dans son corpus fermé et s’abstient lorsque l’information disponible n’est pas suffisante. Information générale, sans diagnostic ni conseil médical individualisé.</p><div class="maca-v2-form"><textarea maxlength="600" aria-label="Votre question" placeholder="Ex. : Le magnésium aide-t-il vraiment à dormir ?"></textarea><button class="maca-v2-send">Interroger</button></div><div class="maca-v2-result" hidden><div class="maca-v2-status" role="status" aria-live="polite"></div><div class="maca-v2-answer"></div><div class="maca-v2-scope"></div><div class="maca-v2-sources"></div><div class="maca-v2-feedback" hidden>Cette réponse est-elle utile ? <button type="button" data-vote="useful">Utile</button><button type="button" data-vote="not_useful">Pas utile</button><span class="maca-v2-vote-status" role="status"></span></div></div><p class="maca-v2-pilot-note">Les mesures de ce test restent dans cet onglet jusqu’à sa fermeture, sans texte de question ni identité. Vous pouvez les télécharger pour les transmettre volontairement au responsable du test.</p><button class="maca-v2-export" type="button">Télécharger les mesures du test</button></div>`;
-document.body.append(panel,launcher);
+const inlineHost=document.getElementById('home-assistant-results');
+if(inlineHost){inlineHost.appendChild(panel);panel.setAttribute('role','region');}else document.body.append(panel,launcher);
 const close=panel.querySelector('.maca-v2-close'),textarea=panel.querySelector('textarea'),send=panel.querySelector('.maca-v2-send'),result=panel.querySelector('.maca-v2-result'),status=panel.querySelector('.maca-v2-status'),answer=panel.querySelector('.maca-v2-answer'),scope=panel.querySelector('.maca-v2-scope'),sources=panel.querySelector('.maca-v2-sources');
 const feedback=panel.querySelector('.maca-v2-feedback');
 let lastVersion='',busy=false;
 panel.querySelector('.maca-v2-export').onclick=()=>metrics()?.download();
 feedback.querySelectorAll('button').forEach(b=>b.onclick=()=>{record('feedback',{value:b.dataset.vote,corpusVersion:lastVersion});feedback.querySelectorAll('button').forEach(x=>x.disabled=true);panel.querySelector('.maca-v2-vote-status').textContent='Merci, retour enregistré dans cet onglet.';});
 
-function open(q){if(panel.dataset.open!=='true')record('open');panel.dataset.open='true';launcher.setAttribute('aria-expanded','true');document.body.classList.add('maca-v2-open');if(q)textarea.value=q;setTimeout(()=>textarea.focus(),30)}
+function open(q){if(panel.dataset.open!=='true')record('open');panel.dataset.open='true';launcher.setAttribute('aria-expanded','true');if(!inlineHost)document.body.classList.add('maca-v2-open');if(q)textarea.value=q;if(!inlineHost)setTimeout(()=>textarea.focus(),30)}
 function shut(){panel.dataset.open='false';launcher.setAttribute('aria-expanded','false');document.body.classList.remove('maca-v2-open')}
 launcher.onclick=()=>panel.dataset.open==='true'?shut():open();close.onclick=shut;document.addEventListener('keydown',e=>{if(e.key==='Escape')shut()});
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));}
@@ -76,5 +77,6 @@ send.onclick=()=>ask();textarea.addEventListener('keydown',e=>{if(e.key==='Enter
 const oldSearch=document.querySelector('.search-box');if(oldSearch)oldSearch.setAttribute('aria-hidden','true');
 const guide=document.querySelector('.search-guide');if(guide){const entry=document.createElement('div');entry.className='maca-v2-entry';entry.innerHTML='<div class="maca-v2-entry-copy"><strong>Posez votre question à l’Assistant MACA</strong><span>Une seule entrée pour rechercher dans les fiches validées et obtenir une réponse claire, sourcée et limitée au corpus MACA.</span></div><button type="button" class="maca-v2-entry-button">Ouvrir l’Assistant</button>';guide.replaceWith(entry);entry.querySelector('button').addEventListener('click',()=>open())}
 window.MACA_ASSISTANT_V2={ask,open};
+if(typeof window.dispatchEvent==='function')window.dispatchEvent(new Event('maca:assistant-ready'));
 }
 })();

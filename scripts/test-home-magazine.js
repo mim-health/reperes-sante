@@ -2,8 +2,8 @@
 const fs=require('fs'),vm=require('vm'),assert=require('assert');
 const read=p=>fs.readFileSync(p,'utf8');
 const home=read('index.html'),css=read('maca-home-cover-pistache.css'),entry=read('corpus-v2-browser-entry.js');
-const main=home.split('<main>')[1].split('</main>')[0];
-const positions=['class="intro"','class="maca-video-feature"','class="search-hub"','class="magazine-layout"'].map(x=>main.indexOf(x));
+const main=home.split('<main id="home-main">')[1].split('</main>')[0];
+const positions=['class="home-hero"','id="home-assistant-results"','class="home-daily-section"','class="home-themes-section"','class="home-video-section"'].map(x=>main.indexOf(x));
 assert(positions.every((x,i)=>x>=0&&(!i||x>positions[i-1])));
 assert(!home.includes('maca-home-video-order-fix')&&!/order\s*:/.test(css));
 assert(!entry.includes('maca-daily-editorial-data.js')&&!entry.includes('maca-daily-editorial.js'));
@@ -17,4 +17,4 @@ assert(home.includes('href="magazine.html"'));
 const h={hidden:false};
 const runtime={window:{addEventListener:()=>{},MACA_DAILY_EDITORIAL:{date:'07/10/2026',articles:[{id:'missing',category:'À LA UNE',articleUrl:'daily.html?id=missing'}]},MACA_MAGAZINE_ARTICLES:[]},document:{querySelector:q=>q==='#comprendre'?h:null,querySelectorAll:()=>[],addEventListener:()=>{},createElement:()=>({}),head:{appendChild:()=>{}}},console};
 vm.runInNewContext(read('maca-daily-editorial.js'),runtime);assert(h.hidden);
-console.log('PASS: native order, no CSS order or repair script, single editorial load, archive links, headline completeness gate and sitemap.');
+console.log('PASS: Assistant-first native order, daily feature, theme navigation, archive links, headline completeness gate and sitemap.');
