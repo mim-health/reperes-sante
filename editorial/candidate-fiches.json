@@ -75,5 +75,19 @@
     "url": "mag-rectum-20261016.html",
     "existingFicheId": null,
     "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-vrs-adulte-20261018",
+    "title": "VRS chez l’adulte : que montre le grand essai sur les hospitalisations ?",
+    "url": "mag-vrs-adulte-20261018.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-consultation-anesthesie-20261018",
+    "title": "Avant une opération : pourquoi la consultation d’anesthésie n’est pas une formalité",
+    "url": "mag-consultation-anesthesie-20261018.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
   }
 ]

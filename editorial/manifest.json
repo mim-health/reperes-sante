@@ -1,12 +1,60 @@
 {
   "schemaVersion": 1,
-  "editionId": "edition-2026-10-16",
-  "editionDate": "2026-10-16",
-  "sourceFingerprint": "42e8603529ff9e91c4b40c5b929da8404db32fcf892c1c2996e2aee030a6c52b",
-  "missingEdition": true,
+  "editionId": "edition-2026-10-18",
+  "editionDate": "2026-10-18",
+  "sourceFingerprint": "cf225d5c184dee290bc12b6f2dadd7f4a3fad0df99274c5d10ac2abd193e1839",
+  "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-daily-inegalites-cardio-20261018",
+      "version": "82259095260e8a0d7b54a485f0353d6a7f69fe75646300944aa86d935d545746",
+      "url": "mag-inegalites-cardio-20261018.html",
+      "date": "2026-10-18"
+    },
+    {
+      "id": "mag-daily-consultation-anesthesie-20261018",
+      "version": "9cd3019b3136d4474b1ff7b33015299fcdc3ea1ccef350530637c60f4ece09c7",
+      "url": "mag-consultation-anesthesie-20261018.html",
+      "date": "2026-10-18"
+    },
+    {
+      "id": "mag-daily-bilan-prevention-kine-20261018",
+      "version": "507b7f6548f16c10eeeb2d4d13e0faac012142009ca9afbbfce5a21843ff47e0",
+      "url": "mag-bilan-prevention-kine-20261018.html",
+      "date": "2026-10-18"
+    },
+    {
+      "id": "mag-daily-coupure-alcool-20261018",
+      "version": "cfb9ec89cabd5329c24ac6a1c95ce015d3c1a108dabe5eab18deb02155fd1dd7",
+      "url": "mag-coupure-alcool-20261018.html",
+      "date": "2026-10-18"
+    },
+    {
+      "id": "mag-daily-miel-nourrisson-20261018",
+      "version": "3c1d000ed372dc0c0f6839d314ce83a9cb56a362e400b4d6c4ec8e1e6b2786ab",
+      "url": "mag-miel-nourrisson-20261018.html",
+      "date": "2026-10-18"
+    },
+    {
+      "id": "mag-daily-migraine-20261018",
+      "version": "13bc0c429e5e43b57fdf6aae5b27e7e4c69ab3a1a00a2cfa76051abe76985782",
+      "url": "mag-migraine-20261018.html",
+      "date": "2026-10-18"
+    },
+    {
+      "id": "mag-daily-audition-brutale-20261018",
+      "version": "d72eeed5f73a498a4210906d44c6a951c2b164c9bdcf1b5fa47ec46bebd212d4",
+      "url": "mag-audition-brutale-20261018.html",
+      "date": "2026-10-18"
+    },
+    {
+      "id": "mag-daily-abces-dentaire-20261018",
+      "version": "0f0e52aaf8df340904eaf7c8584e39dc609ab7f2275563d2076d74436d7d9f5f",
+      "url": "mag-abces-dentaire-20261018.html",
+      "date": "2026-10-18"
+    },
     {
       "id": "mag-daily-cremes-20261016",
       "version": "7d24e63722050f0a9372569cf5a14f454b60bd8f8d478ca61fb5866b10ee90d2",

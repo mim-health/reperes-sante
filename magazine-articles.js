@@ -1645,5 +1645,195 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "5707b631f1d35b30edf5952fb6d2ff6354662a6b586fb5729f53341639895081"
+  },
+  {
+    "id": "daily-inegalites-cardio-20261018",
+    "url": "mag-inegalites-cardio-20261018.html",
+    "title": "Cœur : la baisse des accidents profite-t-elle à tout le monde ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "CŒUR",
+    "date": "2026-10-18",
+    "status": "PUBLISHED",
+    "excerpt": "Une étude danoise montre des progrès dans tous les groupes de revenus, mais des écarts persistants.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "CŒUR"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "82259095260e8a0d7b54a485f0353d6a7f69fe75646300944aa86d935d545746"
+  },
+  {
+    "id": "daily-vrs-adulte-20261018",
+    "url": "mag-vrs-adulte-20261018.html",
+    "title": "VRS chez l’adulte : que montre le grand essai sur les hospitalisations ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "VRS",
+    "date": "2026-10-18",
+    "status": "PUBLISHED",
+    "excerpt": "Un grand essai montre une réduction des hospitalisations liées au VRS, avec un faible écart absolu.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "VRS"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "6929310db0773e1d6a44fb1e3e605b92526f20f0fb2e8668753a20bbb51f10d2"
+  },
+  {
+    "id": "daily-consultation-anesthesie-20261018",
+    "url": "mag-consultation-anesthesie-20261018.html",
+    "title": "Avant une opération : pourquoi la consultation d’anesthésie n’est pas une formalité",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "ANESTHÉSIE",
+    "date": "2026-10-18",
+    "status": "PUBLISHED",
+    "excerpt": "Préparer ses ordonnances, ses antécédents et ses questions aide à organiser une anesthésie adaptée.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "ANESTHÉSIE"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "9cd3019b3136d4474b1ff7b33015299fcdc3ea1ccef350530637c60f4ece09c7"
+  },
+  {
+    "id": "daily-bilan-prevention-kine-20261018",
+    "url": "mag-bilan-prevention-kine-20261018.html",
+    "title": "Mon bilan prévention : aussi chez le kinésithérapeute",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "PRÉVENTION",
+    "date": "2026-10-18",
+    "status": "PUBLISHED",
+    "excerpt": "Depuis le 1er octobre 2026, les kinésithérapeutes peuvent proposer ce rendez-vous aux âges concernés.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "PRÉVENTION"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "507b7f6548f16c10eeeb2d4d13e0faac012142009ca9afbbfce5a21843ff47e0"
+  },
+  {
+    "id": "daily-crampes-20261018",
+    "url": "mag-crampes-20261018.html",
+    "title": "Crampes musculaires : causes et solutions",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "QUOTIDIEN",
+    "date": "2026-10-18",
+    "status": "PUBLISHED",
+    "excerpt": "Une crampe la nuit : les gestes utiles et les situations qui méritent un avis.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "QUOTIDIEN"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "crampes-musculaires-causes",
+    "version": "7f4aad1018dfa5c04c7f21608b43f73a2a7c31ad8f22319cf6bb2fc7cf65957c"
+  },
+  {
+    "id": "daily-coupure-alcool-20261018",
+    "url": "mag-coupure-alcool-20261018.html",
+    "title": "Faut-il mettre de l’alcool sur une coupure ? — Faux",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "FAUX",
+    "date": "2026-10-18",
+    "status": "PUBLISHED",
+    "excerpt": "Une petite plaie doit d’abord être nettoyée à l’eau et au savon.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "FAUX"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "cfb9ec89cabd5329c24ac6a1c95ce015d3c1a108dabe5eab18deb02155fd1dd7"
+  },
+  {
+    "id": "daily-miel-nourrisson-20261018",
+    "url": "mag-miel-nourrisson-20261018.html",
+    "title": "12 mois : pas de miel avant cet âge",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "12 MOIS",
+    "date": "2026-10-18",
+    "status": "PUBLISHED",
+    "excerpt": "Pas de miel avant un an, même sur une tétine.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "12 MOIS"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "3c1d000ed372dc0c0f6839d314ce83a9cb56a362e400b4d6c4ec8e1e6b2786ab"
+  },
+  {
+    "id": "daily-migraine-20261018",
+    "url": "mag-migraine-20261018.html",
+    "title": "Migraine ",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "MIGRAINE",
+    "date": "2026-10-18",
+    "status": "PUBLISHED",
+    "excerpt": "les recommandations AAN/AHS 2026 proposent de discuter un traitement préventif dès quatre jours migraineux par mois, ou si le retentissement est important. Ce repère ne déclenche pas automatiquement une prescription.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "MIGRAINE"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "13bc0c429e5e43b57fdf6aae5b27e7e4c69ab3a1a00a2cfa76051abe76985782"
+  },
+  {
+    "id": "daily-audition-brutale-20261018",
+    "url": "mag-audition-brutale-20261018.html",
+    "title": "Audition ",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "AUDITION",
+    "date": "2026-10-18",
+    "status": "PUBLISHED",
+    "excerpt": "une baisse brutale, même d’une seule oreille, nécessite une consultation urgente ; ne pas présumer qu’il s’agit simplement de cérumen.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "AUDITION"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "d72eeed5f73a498a4210906d44c6a951c2b164c9bdcf1b5fa47ec46bebd212d4"
+  },
+  {
+    "id": "daily-abces-dentaire-20261018",
+    "url": "mag-abces-dentaire-20261018.html",
+    "title": "Abcès dentaire ",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "DENTS",
+    "date": "2026-10-18",
+    "status": "PUBLISHED",
+    "excerpt": "fièvre et visage gonflé imposent une consultation urgente.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "DENTS"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "0f0e52aaf8df340904eaf7c8584e39dc609ab7f2275563d2076d74436d7d9f5f"
   }
 ];

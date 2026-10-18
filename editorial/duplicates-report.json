@@ -425,6 +425,19 @@
     },
     {
       "left": {
+        "id": "crampes-musculaires-causes",
+        "title": "Crampes musculaires : causes et solutions",
+        "type": "fiche"
+      },
+      "right": {
+        "id": "daily-crampes-20261018",
+        "title": "Crampes musculaires : causes et solutions",
+        "type": "Mag"
+      },
+      "score": 1
+    },
+    {
+      "left": {
         "id": "survodutide-obesite-donnees-20260901",
         "title": "Survodutide : que sait-on de ce nouveau traitement de l’obésité ?",
         "type": "fiche"
@@ -506,6 +519,6 @@
     "manifestFiles": 143,
     "rawFiches": 417,
     "canonicalFiches": 391,
-    "magContents": 88
+    "magContents": 99
   }
 }
