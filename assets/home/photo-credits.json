@@ -97,5 +97,16 @@
     "verifiedOn": "2026-10-18",
     "sha256": "380bd48f1b4b3eeead6a1857ab5746b382807c5e5a1454f2747f842f990e3ce4",
     "use": "Illustration de rubrique ; aucune pathologie attribuée aux personnes représentées."
+  },
+  {
+    "file": "assets/home/heart.webp",
+    "source": "https://www.pexels.com/photo/a-person-checking-the-blood-pressure-of-the-patient-5327862/",
+    "download": "https://images.pexels.com/photos/5327862/pexels-photo-5327862.jpeg?auto=compress&cs=tinysrgb&w=1000",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "credit": "Thirdman / Pexels",
+    "verifiedOn": "2026-10-18",
+    "sha256": "52fca838827f7d69f50766c27fd0f01eeebcb7d74fae2d83170b373703cf53d7",
+    "use": "Photo d’illustration de la mesure de pression artérielle."
   }
 ]
