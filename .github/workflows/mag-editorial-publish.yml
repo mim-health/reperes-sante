@@ -3,6 +3,10 @@ on:
   push:
     branches: [feat/v0-magazine]
     paths:
+      - 'maca-site-shell.css'
+      - 'maca-site-shell.js'
+      - 'scripts/site-shell.js'
+      - 'scripts/test-site-shell.js'
       - 'index.html'
       - 'maca-home-assistant.css'
       - 'maca-home-assistant.js'
@@ -52,6 +56,7 @@ jobs:
           node-version: '20'
       - name: Validate and prepare complete edition
         run: |
+          node scripts/test-site-shell.js
           node scripts/test-home-assistant.js
           node scripts/test-assistant-pilot.js
           node scripts/test-content-duplicates.js
