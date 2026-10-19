@@ -2,11 +2,23 @@
   "schemaVersion": 1,
   "editionId": "edition-2026-10-18",
   "editionDate": "2026-10-18",
-  "sourceFingerprint": "a2cd1a7fdbf9bac443fc871092db22ce833245f156fd517e5436b32752428d18",
+  "sourceFingerprint": "d3e7d86f3a1fd79f5b7cc6214071f720be4cadb85300b7d9fbf458ffc4834f4f",
   "missingEdition": true,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-radar-antibiotiques-intestin-irritable-bamse-20261019",
+      "version": "9ef6f44c1b2913c9267b6d45737d4ab2825ffb630c72157ec7ce61f1c094ca59",
+      "url": "article-antibiotiques-intestin-irritable-bamse.html",
+      "date": "2026-10-19"
+    },
+    {
+      "id": "mag-radar-crohn-avant-diagnostic-biomarqueurs-20261019",
+      "version": "7a4b742d63e8cce94d7b0cf52865d1ce8d9b66484c70ee770eeac98623418a64",
+      "url": "article-crohn-avant-diagnostic-biomarqueurs.html",
+      "date": "2026-10-19"
+    },
     {
       "id": "mag-daily-inegalites-cardio-20261018",
       "version": "82259095260e8a0d7b54a485f0353d6a7f69fe75646300944aa86d935d545746",

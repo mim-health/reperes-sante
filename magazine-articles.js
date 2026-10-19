@@ -1875,5 +1875,49 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "98e92c8471e75b549f2255438bb21772c9a90e36e92ee93a0dea54fa54ed5af5"
+  },
+  {
+    "id": "radar-antibiotiques-intestin-irritable-bamse-20261019",
+    "url": "article-antibiotiques-intestin-irritable-bamse.html",
+    "title": "Antibiotiques et intestin irritable : que montre la nouvelle étude ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Digestion",
+    "date": "2026-10-19",
+    "status": "PUBLISHED",
+    "excerpt": "Des prescriptions répétées sont associées à un intestin irritable à 24 ans dans une cohorte suédoise. Cela ne prouve pas que les antibiotiques en sont la cause et ne justifie pas de renoncer à un traitement nécessaire.",
+    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "imageAlt": "Échange entre médecin et patient autour d’un document.",
+    "keywords": [
+      "antibiotiques intestin irritable bamse",
+      "digestion",
+      "recherche",
+      "UEG Week 2026"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "syndrome-intestin-irritable-que-faire",
+    "version": "9ef6f44c1b2913c9267b6d45737d4ab2825ffb630c72157ec7ce61f1c094ca59"
+  },
+  {
+    "id": "radar-crohn-avant-diagnostic-biomarqueurs-20261019",
+    "url": "article-crohn-avant-diagnostic-biomarqueurs.html",
+    "title": "Maladie de Crohn : des indices dans le sang dix ans avant le diagnostic ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Digestion",
+    "date": "2026-10-19",
+    "status": "PUBLISHED",
+    "excerpt": "Des signatures d’anticorps ont été repérées dans des prélèvements anciens. Cette piste de recherche ne constitue pas un test de dépistage validé chez les personnes sans symptômes.",
+    "image": "https://images.pexels.com/photos/4248219/pexels-photo-4248219.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Tubes de prélèvement sanguin.",
+    "keywords": [
+      "crohn avant diagnostic biomarqueurs",
+      "digestion",
+      "recherche",
+      "UEG Week 2026"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "mici-alimentation-poussee",
+    "version": "7a4b742d63e8cce94d7b0cf52865d1ce8d9b66484c70ee770eeac98623418a64"
   }
 ];
