@@ -3977,6 +3977,89 @@
         "evidence": "Validation explicite des deux décryptages du radar du 19 octobre : « Bah oui, créer un antibiotique et intestin irritable, maladie de Crohn, avant, symptômes, ce serait pas mal. Merci. » Publication selon le circuit Le Mag autorisé dans cette conversation.",
         "contentHash": "7a4b742d63e8cce94d7b0cf52865d1ce8d9b66484c70ee770eeac98623418a64"
       }
+    },
+    {
+      "id": "tdah-mortalite-meta-analyse-20261020",
+      "date": "2026-10-20",
+      "title": "TDAH et mortalité : comprendre les résultats sans prédire son avenir",
+      "answer": "Une synthèse d’études retrouve une mortalité plus élevée chez les personnes avec un TDAH. Ces données de population ne prédisent pas l’avenir d’une personne et ne prouvent pas un effet protecteur des médicaments.",
+      "url": "article-tdah-mortalite-meta-analyse.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Santé mentale",
+      "keywords": [
+        "TDAH et mortalité : comprendre les résultats sans prédire son avenir",
+        "recherche",
+        "JAMA Network Open"
+      ],
+      "ficheId": "sante-mentale-tdah-criteres-traitement",
+      "standalone": true,
+      "candidateFiche": false,
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "sources": [
+        {
+          "label": "Corrigan et coll. — revue systématique et méta-analyse, JAMA Network Open, 19 octobre 2026 ; DOI 10.1001/jamanetworkopen.2026.39448",
+          "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855472"
+        },
+        {
+          "label": "HAS — diagnostic et interventions thérapeutiques du TDAH chez les enfants et adolescents, 2024",
+          "url": "https://www.has-sante.fr/upload/docs/application/pdf/2024-09/tdah_enfant_recommandations_mel.pdf"
+        }
+      ],
+      "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+      "imageAlt": "Échange entre médecin et patient autour d’un document.",
+      "imageCredit": "cottonbro studio / Pexels",
+      "imageSource": "https://www.pexels.com/photo/hands-of-doctor-and-patient-on-table-7578798/",
+      "imageLicense": "Pexels License — utilisation éditoriale et commerciale gratuite, recadrage autorisé ; https://www.pexels.com/license/",
+      "html": "<article><img src=\"assets/editorial/2026-10-13/photos/incertitudes.jpg\" alt=\"Échange entre médecin et patient autour d’un document.\"><p><small>cottonbro studio / Pexels — photographie d’illustration, sans lien avec les participants.</small></p><h1>TDAH et mortalité : comprendre les résultats sans prédire son avenir</h1><p class=\"lead\">Une synthèse d’études retrouve une mortalité plus élevée chez les personnes avec un TDAH. Ces données de population ne prédisent pas l’avenir d’une personne et ne prouvent pas un effet protecteur des médicaments.</p><h2>Ce que montre la synthèse</h2><p>Publiée le 19 octobre 2026, la méta-analyse rassemble 19 études et près de 16 millions de participants au total, témoins compris. Le rapport des risques instantanés de décès toutes causes est de 1,71 (IC95 % 1,31–2,24) pour le TDAH. Ce chiffre relatif ne donne ni une probabilité individuelle de décès ni un nombre d’années de vie perdues.</p><h2>Pourquoi rester prudent ?</h2><p>Les résultats varient fortement entre études (I² = 98 %). Les données sont observationnelles : les troubles associés et les différences de parcours peuvent intervenir. Chez les personnes avec un TDAH, le traitement médicamenteux est associé à un risque plus faible (HR 0,75 ; IC95 % 0,64–0,87), sans démonstration d’un effet causal.</p><h2>Le repère français</h2><p>Les recommandations HAS de 2024 concernent les enfants et adolescents. Elles proposent une psychoéducation et des interventions adaptées ; l’ajout d’un médicament dépend notamment de la sévérité et du retentissement. Cette recommandation pédiatrique ne doit pas être présentée comme une recommandation pour l’adulte.</p><h2>Ce que cela change en pratique</h2><p>Cette étude ne permet pas de décider seul de commencer ou d’arrêter un traitement. Le diagnostic, les difficultés quotidiennes et les troubles associés restent à discuter dans un suivi individualisé.</p><p><strong>Niveau de preuve :</strong> synthèse observationnelle, hétérogénéité importante ; causalité non établie.</p><h2>Sources</h2><ul><li><a href=\"https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855472\">Corrigan et coll. — revue systématique et méta-analyse, JAMA Network Open, 19 octobre 2026 ; DOI 10.1001/jamanetworkopen.2026.39448</a></li><li><a href=\"https://www.has-sante.fr/upload/docs/application/pdf/2024-09/tdah_enfant_recommandations_mel.pdf\">HAS — diagnostic et interventions thérapeutiques du TDAH chez les enfants et adolescents, 2024</a></li></ul><p><small>Vérifié le 20 octobre 2026. Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-20T11:16:08.039Z",
+        "evidence": "Validation explicite des trois décisions du radar du 20 octobre 2026 : « ok validation des 3 décisions » ; deux articles TDAH/TOC et enrichissement de la fiche lombalgie, publication autorisée dans cette conversation.",
+        "contentHash": "12ecfa83abdb9ead65b37efdceb20f0b9ab08bbf607ac71ef35a590d6dadec04"
+      }
+    },
+    {
+      "id": "toc-therapie-intensive-quatre-jours-20261020",
+      "date": "2026-10-20",
+      "title": "TOC : une thérapie intensive en quatre jours, avec quelles limites ?",
+      "answer": "Un essai trouve de meilleurs résultats avec le programme intensif de Bergen qu’avec une TCC en ligne sans thérapeute. Il ne démontre pas une guérison en quatre jours ni une supériorité sur toutes les TCC.",
+      "url": "article-toc-therapie-intensive-quatre-jours.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Santé mentale",
+      "keywords": [
+        "TOC : une thérapie intensive en quatre jours, avec quelles limites ?",
+        "recherche",
+        "JAMA Network Open"
+      ],
+      "standalone": true,
+      "candidateFiche": false,
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "sources": [
+        {
+          "label": "Jelinek et coll. — essai randomisé, JAMA Network Open, 19 octobre 2026 ; DOI 10.1001/jamanetworkopen.2026.39281",
+          "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855476"
+        },
+        {
+          "label": "Assurance Maladie — traitement du trouble obsessionnel compulsif, 2025",
+          "url": "https://www.ameli.fr/assure/sante/themes/toc/traitements"
+        }
+      ],
+      "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+      "imageAlt": "Échange entre médecin et patient autour d’un document.",
+      "imageCredit": "cottonbro studio / Pexels",
+      "imageSource": "https://www.pexels.com/photo/hands-of-doctor-and-patient-on-table-7578798/",
+      "imageLicense": "Pexels License — utilisation éditoriale et commerciale gratuite, recadrage autorisé ; https://www.pexels.com/license/",
+      "html": "<article><img src=\"assets/editorial/2026-10-13/photos/incertitudes.jpg\" alt=\"Échange entre médecin et patient autour d’un document.\"><p><small>cottonbro studio / Pexels — photographie d’illustration, sans lien avec les participants.</small></p><h1>TOC : une thérapie intensive en quatre jours, avec quelles limites ?</h1><p class=\"lead\">Un essai trouve de meilleurs résultats avec le programme intensif de Bergen qu’avec une TCC en ligne sans thérapeute. Il ne démontre pas une guérison en quatre jours ni une supériorité sur toutes les TCC.</p><h2>Ce qui a été comparé</h2><p>Un essai allemand mené dans un seul centre a réparti au hasard 119 adultes entre le programme Bergen en quatre jours, centré sur l’exposition avec prévention de la réponse, et une thérapie cognitivo-comportementale (TCC) en ligne non guidée. Le comparateur ne bénéficiait donc pas du même accompagnement thérapeutique.</p><h2>Des résultats à trois mois</h2><p>Parmi les participants évalués à trois mois, 35 sur 57 (61,4 %) répondaient au traitement intensif, contre 11 sur 44 (25,0 %) en ligne. La rémission, définie par un seuil de symptômes, concernait 24 sur 57 (42,1 %) contre 6 sur 44 (13,6 %). Elle ne signifie pas une guérison durable garantie.</p><h2>Ce que l’essai ne permet pas de conclure</h2><p>L’effectif reste modeste et le suivi présenté est court. Il manque une comparaison avec une TCC habituelle accompagnée par un thérapeute. La disponibilité de ce programme en France n’est pas établie par cet essai.</p><h2>Le traitement de référence reste personnalisé</h2><p>L’Assurance Maladie décrit la TCC, certains médicaments ou leur association selon la gravité. L’exposition avec prévention de la réponse consiste à affronter progressivement les situations redoutées en évitant les rituels, dans un cadre structuré avec un professionnel formé. Les objectifs et les exercices sont construits avec le patient. Un programme intensif ne se réduit donc pas à des exercices improvisés seul.</p><p><strong>Niveau de preuve :</strong> essai randomisé encourageant ; portée limitée par le centre unique, le comparateur et le recul disponible.</p><h2>Sources</h2><ul><li><a href=\"https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855476\">Jelinek et coll. — essai randomisé, JAMA Network Open, 19 octobre 2026 ; DOI 10.1001/jamanetworkopen.2026.39281</a></li><li><a href=\"https://www.ameli.fr/assure/sante/themes/toc/traitements\">Assurance Maladie — traitement du trouble obsessionnel compulsif, 2025</a></li></ul><p><small>Vérifié le 20 octobre 2026. Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-20T11:16:08.040Z",
+        "evidence": "Validation explicite des trois décisions du radar du 20 octobre 2026 : « ok validation des 3 décisions » ; deux articles TDAH/TOC et enrichissement de la fiche lombalgie, publication autorisée dans cette conversation.",
+        "contentHash": "cb96a5b65bbcf9365d1cbd356cd427494ce12e1cac01e81e96d02deb87964951"
+      }
     }
   ],
   "editions": [
