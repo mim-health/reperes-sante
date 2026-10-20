@@ -1919,5 +1919,47 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": "mici-alimentation-poussee",
     "version": "7a4b742d63e8cce94d7b0cf52865d1ce8d9b66484c70ee770eeac98623418a64"
+  },
+  {
+    "id": "tdah-mortalite-meta-analyse-20261020",
+    "url": "article-tdah-mortalite-meta-analyse.html",
+    "title": "TDAH et mortalité : comprendre les résultats sans prédire son avenir",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Santé mentale",
+    "date": "2026-10-20",
+    "status": "PUBLISHED",
+    "excerpt": "Une synthèse d’études retrouve une mortalité plus élevée chez les personnes avec un TDAH. Ces données de population ne prédisent pas l’avenir d’une personne et ne prouvent pas un effet protecteur des médicaments.",
+    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "imageAlt": "Échange entre médecin et patient autour d’un document.",
+    "keywords": [
+      "TDAH et mortalité : comprendre les résultats sans prédire son avenir",
+      "recherche",
+      "JAMA Network Open"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "sante-mentale-tdah-criteres-traitement",
+    "version": "12ecfa83abdb9ead65b37efdceb20f0b9ab08bbf607ac71ef35a590d6dadec04"
+  },
+  {
+    "id": "toc-therapie-intensive-quatre-jours-20261020",
+    "url": "article-toc-therapie-intensive-quatre-jours.html",
+    "title": "TOC : une thérapie intensive en quatre jours, avec quelles limites ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Santé mentale",
+    "date": "2026-10-20",
+    "status": "PUBLISHED",
+    "excerpt": "Un essai trouve de meilleurs résultats avec le programme intensif de Bergen qu’avec une TCC en ligne sans thérapeute. Il ne démontre pas une guérison en quatre jours ni une supériorité sur toutes les TCC.",
+    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "imageAlt": "Échange entre médecin et patient autour d’un document.",
+    "keywords": [
+      "TOC : une thérapie intensive en quatre jours, avec quelles limites ?",
+      "recherche",
+      "JAMA Network Open"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "cb96a5b65bbcf9365d1cbd356cd427494ce12e1cac01e81e96d02deb87964951"
   }
 ];

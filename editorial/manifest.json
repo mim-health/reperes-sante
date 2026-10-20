@@ -2,11 +2,23 @@
   "schemaVersion": 1,
   "editionId": "edition-2026-10-18",
   "editionDate": "2026-10-18",
-  "sourceFingerprint": "d3e7d86f3a1fd79f5b7cc6214071f720be4cadb85300b7d9fbf458ffc4834f4f",
+  "sourceFingerprint": "74ae48150eaf0e68148bfb34f0b7b0dc0d06199c4c2ecc52bb8ef754cbd55653",
   "missingEdition": true,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-tdah-mortalite-meta-analyse-20261020",
+      "version": "12ecfa83abdb9ead65b37efdceb20f0b9ab08bbf607ac71ef35a590d6dadec04",
+      "url": "article-tdah-mortalite-meta-analyse.html",
+      "date": "2026-10-20"
+    },
+    {
+      "id": "mag-toc-therapie-intensive-quatre-jours-20261020",
+      "version": "cb96a5b65bbcf9365d1cbd356cd427494ce12e1cac01e81e96d02deb87964951",
+      "url": "article-toc-therapie-intensive-quatre-jours.html",
+      "date": "2026-10-20"
+    },
     {
       "id": "mag-radar-antibiotiques-intestin-irritable-bamse-20261019",
       "version": "9ef6f44c1b2913c9267b6d45737d4ab2825ffb630c72157ec7ce61f1c094ca59",
