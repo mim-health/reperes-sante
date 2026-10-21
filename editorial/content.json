@@ -4060,6 +4060,136 @@
         "evidence": "Validation explicite des trois décisions du radar du 20 octobre 2026 : « ok validation des 3 décisions » ; deux articles TDAH/TOC et enrichissement de la fiche lombalgie, publication autorisée dans cette conversation.",
         "contentHash": "cb96a5b65bbcf9365d1cbd356cd427494ce12e1cac01e81e96d02deb87964951"
       }
+    },
+    {
+      "id": "oesophagite-eosinophiles-crossing-tezepelumab-20261021",
+      "date": "2026-10-21",
+      "title": "Œsophagite à éosinophiles : ce que montrent les résultats de CROSSING",
+      "answer": "Un essai de phase III apporte des résultats encourageants sur le tézépélumab. Ils sont présentés en congrès et communiqués par les industriels : ce traitement reste expérimental dans cette indication.",
+      "url": "article-oesophagite-eosinophiles-crossing-tezepelumab.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Digestion",
+      "keywords": [
+        "Œsophagite à éosinophiles : ce que montrent les résultats de CROSSING",
+        "radar scientifique octobre 2026"
+      ],
+      "ficheId": "dysphagie-aliments-bloques-oesophagite-eosinophiles",
+      "standalone": true,
+      "candidateFiche": false,
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "sources": [
+        {
+          "label": "AstraZeneca/Amgen — CROSSING, résultats présentés à UEG Week, communiqué du 20 octobre 2026",
+          "url": "https://www.astrazeneca.com/media-centre/press-releases/2026/tezspire-positive-results-from-phase-iii-crossing-trial-eosinophilic-esophagitis.html"
+        },
+        {
+          "label": "EMA — Tezspire : indications autorisées consultées le 21 octobre 2026",
+          "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/tezspire"
+        },
+        {
+          "label": "SNFGE — Recommandations françaises sur l’œsophagite à éosinophiles de l’adulte, mars 2024",
+          "url": "https://www.snfge.org/sites/www.snfge.org/files/medias/documents/Recommandations%20franc%CC%A7aises%20pour%20l%27OeE%20chez%20l%27adulte_SNFGE_Mars%202024%20%28texte%20long%29_1.pdf"
+        }
+      ],
+      "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+      "imageAlt": "Échange entre médecin et patient autour d’un document.",
+      "imageCredit": "cottonbro studio / Pexels",
+      "imageSource": "https://www.pexels.com/photo/hands-of-doctor-and-patient-on-table-7578798/",
+      "imageLicense": "Pexels License — utilisation éditoriale et commerciale gratuite, recadrage autorisé ; https://www.pexels.com/license/",
+      "html": "<article><img src=\"assets/editorial/2026-10-13/photos/incertitudes.jpg\" alt=\"Échange entre médecin et patient autour d’un document.\"><p><small>cottonbro studio / Pexels — photographie d’illustration, sans lien avec les participants.</small></p><h1>Œsophagite à éosinophiles : ce que montrent les résultats de CROSSING</h1><p class=\"lead\">Un essai de phase III apporte des résultats encourageants sur le tézépélumab. Ils sont présentés en congrès et communiqués par les industriels : ce traitement reste expérimental dans cette indication.</p><h2>Une maladie qui peut gêner les repas</h2><p>L’œsophagite à éosinophiles provoque une inflammation de l’œsophage et peut entraîner des difficultés à avaler ou des blocages. Une dysphagie répétée mérite un bilan ; elle ne permet pas de reconnaître seule cette maladie.</p><h2>Ce qui a été annoncé le 20 octobre</h2><p>CROSSING est un essai randomisé en double aveugle contre placebo, portant sur 368 patients de 12 à 80 ans. À 24 semaines, une rémission histologique était rapportée chez 64,8 % des patients sous 210 mg et 68,9 % sous 420 mg, contre 3,5 % sous placebo. Il s’agit d’un critère de biopsie, pas d’une guérison globale.</p><p>Les symptômes de difficulté à avaler se sont également améliorés. Les résultats rapportés à 52 semaines suggèrent un maintien du bénéfice. Les traitements de fond pouvaient être poursuivis à dose stable : l’essai ne compare pas directement la biothérapie à chaque traitement existant.</p><h2>Comment juger la portée du résultat ?</h2><p>La conception de phase III est solide, mais la source détaillée consultée est un communiqué industriel de congrès. Aucune publication intégrale évaluée par les pairs n’a été identifiée lors de cette vérification. Le communiqué mentionne notamment rhinopharyngites, céphalées et diarrhées ; le recul ne permet pas d’écarter tous les risques rares ou tardifs.</p><h2>Quel statut aujourd’hui ?</h2><p>Les indications européennes de Tezspire consultées ne comprennent pas cette œsophagite. Une autorisation dans une autre maladie ne vaut pas autorisation ici. Les résultats ne justifient donc aucun changement autonome du traitement prescrit.</p><h2>Synthèse</h2><table><thead><tr><th>Repère</th><th>À retenir</th></tr></thead><tbody><tr><td>Signal</td><td>Bénéfice histologique et symptomatique rapporté en essai randomisé.</td></tr><tr><td>Limite</td><td>Communication de congrès industrielle, sans publication intégrale identifiée.</td></tr><tr><td>Pratique</td><td>Bilan et traitements actuels avec le gastro-entérologue.</td></tr></tbody></table><h2>Sources</h2><ul><li><a href=\"https://www.astrazeneca.com/media-centre/press-releases/2026/tezspire-positive-results-from-phase-iii-crossing-trial-eosinophilic-esophagitis.html\">AstraZeneca/Amgen — CROSSING, résultats présentés à UEG Week, communiqué du 20 octobre 2026</a></li><li><a href=\"https://www.ema.europa.eu/en/medicines/human/EPAR/tezspire\">EMA — Tezspire : indications autorisées consultées le 21 octobre 2026</a></li><li><a href=\"https://www.snfge.org/sites/www.snfge.org/files/medias/documents/Recommandations%20franc%CC%A7aises%20pour%20l%27OeE%20chez%20l%27adulte_SNFGE_Mars%202024%20%28texte%20long%29_1.pdf\">SNFGE — Recommandations françaises sur l’œsophagite à éosinophiles de l’adulte, mars 2024</a></li></ul><p><small>Vérifié le 21 octobre 2026. Information générale, sans interprétation individuelle ni modification autonome de traitement.</small></p></article>",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-21T11:43:59.910Z",
+        "evidence": "Validation explicite du radar du 21 octobre 2026 et de ses trois décisions : « ok très bien validation creation ». Création des deux fiches durables et des trois décryptages associés, selon le circuit de publication déjà autorisé.",
+        "contentHash": "9df4b6eee7f0b40c11f977262a52a0d7b1709e0713b0235ffc7de7af71b4ef05"
+      }
+    },
+    {
+      "id": "depistage-col-uterus-inegalites-france-20261021",
+      "date": "2026-10-21",
+      "title": "Dépistage du col : comprendre les obstacles pour mieux accompagner",
+      "answer": "Une étude française retrouve des associations entre vulnérabilités sociales et dépistage insuffisant. Elle invite à adapter l’accompagnement, sans changer le calendrier français des tests.",
+      "url": "article-depistage-col-uterus-inegalites-france.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Santé des femmes",
+      "keywords": [
+        "Dépistage du col : comprendre les obstacles pour mieux accompagner",
+        "radar scientifique octobre 2026"
+      ],
+      "ficheId": "depistage-col-uterus-frottis-test-hpv-calendrier",
+      "standalone": true,
+      "candidateFiche": false,
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "sources": [
+        {
+          "label": "JAMA Network Open — Multiple Dimensions of Social Vulnerability and Cervical Cancer Screening Uptake, 20 octobre 2026 ; DOI 10.1001/jamanetworkopen.2026.39570",
+          "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855496"
+        },
+        {
+          "label": "Assurance Maladie — modalités du dépistage du col, professionnel de santé, 2026",
+          "url": "https://www.ameli.fr/medecin/sante-prevention/pathologies/cancers/cancer-du-col-de-l-uterus/depistage-organise-du-cancer-du-col-de-l-uterus"
+        },
+        {
+          "label": "INCa — Questions sur le dépistage du col, mise à jour juillet 2025 (avec HAS et Santé publique France)",
+          "url": "https://www.cancer.fr/toute-l-information-sur-les-cancers/se-faire-depister/les-depistages/depistage-du-cancer-du-col-de-l-uterus/vos-questions-sur-le-depistage"
+        }
+      ],
+      "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+      "imageAlt": "Échange entre médecin et patient autour d’un document.",
+      "imageCredit": "cottonbro studio / Pexels",
+      "imageSource": "https://www.pexels.com/photo/hands-of-doctor-and-patient-on-table-7578798/",
+      "imageLicense": "Pexels License — utilisation éditoriale et commerciale gratuite, recadrage autorisé ; https://www.pexels.com/license/",
+      "html": "<article><img src=\"assets/editorial/2026-10-13/photos/incertitudes.jpg\" alt=\"Échange entre médecin et patient autour d’un document.\"><p><small>cottonbro studio / Pexels — photographie d’illustration, sans lien avec les participants.</small></p><h1>Dépistage du col : comprendre les obstacles pour mieux accompagner</h1><p class=\"lead\">Une étude française retrouve des associations entre vulnérabilités sociales et dépistage insuffisant. Elle invite à adapter l’accompagnement, sans changer le calendrier français des tests.</p><h2>Ce qui a été étudié</h2><p>Publiée le 20 octobre dans JAMA Network Open, cette cohorte rétrospective porte sur 18 253 femmes d’au moins 25 ans ayant accouché dans une maternité de Seine-Saint-Denis entre 2019 et 2025. Selon le critère de l’étude, 56,1 % étaient à jour.</p><h2>Des obstacles qui se cumulent</h2><p>Le profil associant barrières migratoires ou linguistiques était lié à davantage de dépistage insuffisant : odds ratio ajusté 3,40 (IC95 % 3,16–3,66) par rapport au profil peu vulnérable. Des associations concernaient aussi les profils exposés aux violences. Un odds ratio ne donne ni une probabilité individuelle ni une multiplication équivalente du risque.</p><h2>Une nuance importante sur la mesure</h2><p>L’étude définissait l’insuffisance comme l’absence de prélèvement dans les trois dernières années, y compris l’absence de tout dépistage. Ce critère ne doit pas être utilisé pour remplacer le calendrier actuel fondé sur l’âge et le type de test. Un test HPV négatif peut permettre un intervalle de cinq ans.</p><h2>Ce que l’on peut en conclure</h2><p>L’étude montre des associations, sans démontrer une cause ni l’efficacité d’une intervention. Une seule maternité et une population de femmes enceintes ne représentent pas toutes les Françaises. Une information compréhensible et un accompagnement tenant compte du vécu sont des pistes à évaluer.</p><h2>Le repère pratique en France</h2><p>Entre 25 et 29 ans : cytologie selon le calendrier recommandé ; entre 30 et 65 ans : test HPV-HR, avec espacement à cinq ans si négatif. Un résultat anormal ou un antécédent particulier impose un suivi adapté. La fiche associée détaille les intervalles et les professionnels à contacter.</p><h2>Synthèse</h2><table><thead><tr><th>Repère</th><th>À retenir</th></tr></thead><tbody><tr><td>Preuve</td><td>Association observationnelle française ; généralisation limitée.</td></tr><tr><td>Calendrier</td><td>Les recommandations françaises restent la référence.</td></tr><tr><td>Message</td><td>Faciliter l’accès aux soins sans culpabiliser les femmes en retard.</td></tr></tbody></table><h2>Sources</h2><ul><li><a href=\"https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855496\">JAMA Network Open — Multiple Dimensions of Social Vulnerability and Cervical Cancer Screening Uptake, 20 octobre 2026 ; DOI 10.1001/jamanetworkopen.2026.39570</a></li><li><a href=\"https://www.ameli.fr/medecin/sante-prevention/pathologies/cancers/cancer-du-col-de-l-uterus/depistage-organise-du-cancer-du-col-de-l-uterus\">Assurance Maladie — modalités du dépistage du col, professionnel de santé, 2026</a></li><li><a href=\"https://www.cancer.fr/toute-l-information-sur-les-cancers/se-faire-depister/les-depistages/depistage-du-cancer-du-col-de-l-uterus/vos-questions-sur-le-depistage\">INCa — Questions sur le dépistage du col, mise à jour juillet 2025 (avec HAS et Santé publique France)</a></li></ul><p><small>Vérifié le 21 octobre 2026. Information générale, sans interprétation individuelle ni modification autonome de traitement.</small></p></article>",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-21T11:43:59.910Z",
+        "evidence": "Validation explicite du radar du 21 octobre 2026 et de ses trois décisions : « ok très bien validation creation ». Création des deux fiches durables et des trois décryptages associés, selon le circuit de publication déjà autorisé.",
+        "contentHash": "2162f244a08db92ba0ba8fcbf0275b32d5f8a0c5a3607cd9b92fbca0659e75d8"
+      }
+    },
+    {
+      "id": "prise-sang-resultat-anormal-anxiete-20261021",
+      "date": "2026-10-21",
+      "title": "Mon résultat de prise de sang est anormal : faut-il s’inquiéter ?",
+      "answer": "Une valeur signalée hors norme ne suffit pas à poser un diagnostic. Une nouvelle enquête nuance aussi l’idée que consulter immédiatement ses résultats augmente toujours l’anxiété.",
+      "url": "article-prise-sang-resultat-anormal-anxiete.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Santé au quotidien",
+      "keywords": [
+        "Mon résultat de prise de sang est anormal : faut-il s’inquiéter ?",
+        "radar scientifique octobre 2026"
+      ],
+      "standalone": true,
+      "candidateFiche": false,
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "sources": [
+        {
+          "label": "JAMA Network Open — Patient Anxiety About Immediately Released Laboratory Test Results, 20 octobre 2026 ; DOI 10.1001/jamanetworkopen.2026.40246",
+          "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855500"
+        },
+        {
+          "label": "Assurance Maladie — Comment lire les résultats d’une prise de sang ?, 2026",
+          "url": "https://www.ameli.fr/assure/sante/examen/analyse/lire-resultats-prise-sang"
+        }
+      ],
+      "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+      "imageAlt": "Échange entre médecin et patient autour d’un document.",
+      "imageCredit": "cottonbro studio / Pexels",
+      "imageSource": "https://www.pexels.com/photo/hands-of-doctor-and-patient-on-table-7578798/",
+      "imageLicense": "Pexels License — utilisation éditoriale et commerciale gratuite, recadrage autorisé ; https://www.pexels.com/license/",
+      "html": "<article><img src=\"assets/editorial/2026-10-13/photos/incertitudes.jpg\" alt=\"Échange entre médecin et patient autour d’un document.\"><p><small>cottonbro studio / Pexels — photographie d’illustration, sans lien avec les participants.</small></p><h1>Mon résultat de prise de sang est anormal : faut-il s’inquiéter ?</h1><p class=\"lead\">Une valeur signalée hors norme ne suffit pas à poser un diagnostic. Une nouvelle enquête nuance aussi l’idée que consulter immédiatement ses résultats augmente toujours l’anxiété.</p><h2>Une enquête sur l’expérience des patients</h2><p>L’étude américaine publiée le 20 octobre dans JAMA Network Open analyse 13 898 patients dont la consultation des résultats sur le portail était confirmée. Après lecture, 4,6 % rapportaient davantage d’inquiétude ; la majorité décrivait une diminution ou une stabilité. Parmi les répondants à la question sur l’avenir, 88,3 % souhaitaient consulter leurs prochains résultats immédiatement.</p><h2>Ce que ces chiffres ne prouvent pas</h2><p>Il s’agit d’une enquête observationnelle dans un seul centre, sans répartition aléatoire entre accès immédiat et différé. Les patients ayant répondu peuvent différer des autres. On ne peut donc pas conclure que l’accès immédiat réduit l’anxiété de tous. Certains résultats potentiellement liés à un cancer étaient associés à une augmentation de l’inquiétude.</p><h2>Que signifie une valeur en rouge ?</h2><p>Le signalement indique généralement un écart à l’intervalle de référence du laboratoire. Les repères dépendent notamment de la technique de dosage, de l’âge et du sexe. Une valeur hors intervalle n’est pas systématiquement une maladie ; elle n’est pas non plus automatiquement bénigne. L’importance de l’écart et les autres résultats doivent être replacés dans le contexte clinique.</p><h2>Comment préparer l’échange ?</h2><p>Gardez le compte rendu complet, avec les unités et les valeurs de référence. Notez vos questions et transmettez le résultat au professionnel qui a prescrit le bilan. L’objectif est d’obtenir une explication du résultat, de savoir si un contrôle est nécessaire et dans quel délai. Ne commencez pas un complément et ne modifiez pas un traitement sur un chiffre isolé.</p><p>En cas d’appel du laboratoire ou de consigne urgente sur le compte rendu, suivez cette consigne sans attendre une réponse de l’Assistant. Des symptômes aigus importants nécessitent une évaluation médicale, quel que soit l’affichage du bilan.</p><h2>Synthèse</h2><table><thead><tr><th>Repère</th><th>À retenir</th></tr></thead><tbody><tr><td>Étude</td><td>Enquête sur l’anxiété, sans preuve causale.</td></tr><tr><td>Valeur hors norme</td><td>Un élément à interpréter avec le contexte, pas un diagnostic seul.</td></tr><tr><td>Assistant</td><td>Information générale ; aucune interprétation personnalisée automatique du bilan.</td></tr></tbody></table><h2>Sources</h2><ul><li><a href=\"https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855500\">JAMA Network Open — Patient Anxiety About Immediately Released Laboratory Test Results, 20 octobre 2026 ; DOI 10.1001/jamanetworkopen.2026.40246</a></li><li><a href=\"https://www.ameli.fr/assure/sante/examen/analyse/lire-resultats-prise-sang\">Assurance Maladie — Comment lire les résultats d’une prise de sang ?, 2026</a></li></ul><p><small>Vérifié le 21 octobre 2026. Information générale, sans interprétation individuelle ni modification autonome de traitement.</small></p></article>",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-21T11:43:59.910Z",
+        "evidence": "Validation explicite du radar du 21 octobre 2026 et de ses trois décisions : « ok très bien validation creation ». Création des deux fiches durables et des trois décryptages associés, selon le circuit de publication déjà autorisé.",
+        "contentHash": "e80e68130c69eade693ca7c340878efd4a8802fd9004bf832da11580735710f3"
+      }
     }
   ],
   "editions": [
