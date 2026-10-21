@@ -2,11 +2,29 @@
   "schemaVersion": 1,
   "editionId": "edition-2026-10-18",
   "editionDate": "2026-10-18",
-  "sourceFingerprint": "74ae48150eaf0e68148bfb34f0b7b0dc0d06199c4c2ecc52bb8ef754cbd55653",
+  "sourceFingerprint": "ed0b2c7bdebee54f2af97fee760b7f9eaabdec04879c0909705774ac30cfafb8",
   "missingEdition": true,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-oesophagite-eosinophiles-crossing-tezepelumab-20261021",
+      "version": "9df4b6eee7f0b40c11f977262a52a0d7b1709e0713b0235ffc7de7af71b4ef05",
+      "url": "article-oesophagite-eosinophiles-crossing-tezepelumab.html",
+      "date": "2026-10-21"
+    },
+    {
+      "id": "mag-depistage-col-uterus-inegalites-france-20261021",
+      "version": "2162f244a08db92ba0ba8fcbf0275b32d5f8a0c5a3607cd9b92fbca0659e75d8",
+      "url": "article-depistage-col-uterus-inegalites-france.html",
+      "date": "2026-10-21"
+    },
+    {
+      "id": "mag-prise-sang-resultat-anormal-anxiete-20261021",
+      "version": "e80e68130c69eade693ca7c340878efd4a8802fd9004bf832da11580735710f3",
+      "url": "article-prise-sang-resultat-anormal-anxiete.html",
+      "date": "2026-10-21"
+    },
     {
       "id": "mag-tdah-mortalite-meta-analyse-20261020",
       "version": "12ecfa83abdb9ead65b37efdceb20f0b9ab08bbf607ac71ef35a590d6dadec04",

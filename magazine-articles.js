@@ -1961,5 +1961,65 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "cb96a5b65bbcf9365d1cbd356cd427494ce12e1cac01e81e96d02deb87964951"
+  },
+  {
+    "id": "oesophagite-eosinophiles-crossing-tezepelumab-20261021",
+    "url": "article-oesophagite-eosinophiles-crossing-tezepelumab.html",
+    "title": "Œsophagite à éosinophiles : ce que montrent les résultats de CROSSING",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Digestion",
+    "date": "2026-10-21",
+    "status": "PUBLISHED",
+    "excerpt": "Un essai de phase III apporte des résultats encourageants sur le tézépélumab. Ils sont présentés en congrès et communiqués par les industriels : ce traitement reste expérimental dans cette indication.",
+    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "imageAlt": "Échange entre médecin et patient autour d’un document.",
+    "keywords": [
+      "Œsophagite à éosinophiles : ce que montrent les résultats de CROSSING",
+      "radar scientifique octobre 2026"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "dysphagie-aliments-bloques-oesophagite-eosinophiles",
+    "version": "9df4b6eee7f0b40c11f977262a52a0d7b1709e0713b0235ffc7de7af71b4ef05"
+  },
+  {
+    "id": "depistage-col-uterus-inegalites-france-20261021",
+    "url": "article-depistage-col-uterus-inegalites-france.html",
+    "title": "Dépistage du col : comprendre les obstacles pour mieux accompagner",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Santé des femmes",
+    "date": "2026-10-21",
+    "status": "PUBLISHED",
+    "excerpt": "Une étude française retrouve des associations entre vulnérabilités sociales et dépistage insuffisant. Elle invite à adapter l’accompagnement, sans changer le calendrier français des tests.",
+    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "imageAlt": "Échange entre médecin et patient autour d’un document.",
+    "keywords": [
+      "Dépistage du col : comprendre les obstacles pour mieux accompagner",
+      "radar scientifique octobre 2026"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "depistage-col-uterus-frottis-test-hpv-calendrier",
+    "version": "2162f244a08db92ba0ba8fcbf0275b32d5f8a0c5a3607cd9b92fbca0659e75d8"
+  },
+  {
+    "id": "prise-sang-resultat-anormal-anxiete-20261021",
+    "url": "article-prise-sang-resultat-anormal-anxiete.html",
+    "title": "Mon résultat de prise de sang est anormal : faut-il s’inquiéter ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Santé au quotidien",
+    "date": "2026-10-21",
+    "status": "PUBLISHED",
+    "excerpt": "Une valeur signalée hors norme ne suffit pas à poser un diagnostic. Une nouvelle enquête nuance aussi l’idée que consulter immédiatement ses résultats augmente toujours l’anxiété.",
+    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "imageAlt": "Échange entre médecin et patient autour d’un document.",
+    "keywords": [
+      "Mon résultat de prise de sang est anormal : faut-il s’inquiéter ?",
+      "radar scientifique octobre 2026"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "e80e68130c69eade693ca7c340878efd4a8802fd9004bf832da11580735710f3"
   }
 ];
