@@ -1,0 +1,11 @@
+<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MACA Growth Engine V0 — Lab</title>
+<style>body{font:16px system-ui;max-width:980px;margin:40px auto;padding:0 18px;color:#263936}textarea{width:100%;min-height:220px;padding:12px}button{padding:12px 18px;border:0;border-radius:999px;background:#173c33;color:white;font-weight:700}pre{white-space:pre-wrap;background:#f7f3e8;padding:16px;border-radius:14px}</style>
+<h1>MACA Growth Engine V0 — Lab privé</h1>
+<p>Collez une question publique par ligne. Aucun auteur/pseudo ne doit être copié. Le lab teste les questions contre l’Assistant public MACA puis produit le Top 10.</p>
+<textarea id="q" placeholder="Mon enfant refuse les morceaux, est-ce normal ?&#10;Comment reprendre le sport après un cancer ?"></textarea>
+<p><button id="go">Tester dans MACA</button></p><pre id="out">En attente.</pre>
+<script src="./maca-growth-engine-v0.js"></script><script src="./maca-growth-assistant-adapter-v0.js"></script>
+<script>
+go.onclick=async()=>{go.disabled=true;out.textContent="Test en cours…";const items=q.value.split(/\n+/).map(x=>x.trim()).filter(Boolean).map(question=>({source:"manual-public",question,intent:25,macaFit:25,corpusFit:25,distributionFit:20}));const tested=await MACAGrowthAssistantAdapterV0.testBatch(items);const digest=MACAGrowthEngineV0.buildDigest(tested,10);out.textContent=JSON.stringify(digest,null,2);go.disabled=false};
+</script></html>

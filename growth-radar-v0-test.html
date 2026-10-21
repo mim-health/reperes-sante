@@ -1,0 +1,13 @@
+<!doctype html><meta charset="utf-8"><title>MACA Growth Radar V0 test</title>
+<script src="./maca-growth-engine-v0.js"></script><script src="./maca-growth-radar-v0.js"></script>
+<script>
+const raw=[
+ {title:"Maman inquiète. Rhume bébé",snippet:"Mon bébé est congestionné sans fièvre. Est-ce grave ? Iriez-vous voir un médecin ?",url:"https://www.reddit.com/r/ParentingFR/example"},
+ {title:"Diversification bébé",snippet:"Comment poser des limites à la famille tout en suivant les recommandations ?",url:"https://www.reddit.com/r/ParentingFR/example2"}
+];
+const imported=MACAGrowthRadarV0.importResults(raw,"reddit");
+const digest=MACAGrowthEngineV0.buildDigest(imported,10);
+if(imported.length!==2) throw new Error("Radar import failed");
+if(digest[0].growthScore<70) throw new Error("Auto scoring failed");
+document.body.innerHTML="<h1>MACA Growth Radar V0: tests OK</h1><pre>"+JSON.stringify(digest,null,2)+"</pre>";
+</script>

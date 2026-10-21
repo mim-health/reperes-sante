@@ -1,0 +1,62 @@
+name: MACA Growth Digest V0
+
+on:
+  push:
+    branches:
+      - feat/growth-engine-v0-20261002
+    paths:
+      - .github/workflows/growth-digest-v0.yml
+      - scripts/growth-digest-v0.js
+  workflow_dispatch:
+  schedule:
+    - cron: "15 5 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/growth-engine-v0-20261002
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch Search Console queries
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_SITE_URL: "sc-domain:macasante.fr"
+          GSC_DAYS: "28"
+          GSC_ROW_LIMIT: "1000"
+          GSC_OUTPUT: "growth-input.json"
+        run: node scripts/growth-search-console-fetch-v0.js
+
+      - name: Read aggregate and per-page Search Console traffic
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_SITE_URL: "sc-domain:macasante.fr"
+          GSC_DAYS: "28"
+        run: node scripts/growth-traffic-audit-20261009.js
+
+      - name: Build daily Growth Top 10
+        env:
+          GROWTH_INPUT_PATH: "growth-input.json"
+          GROWTH_LIMIT: "10"
+        run: node scripts/growth-digest-v0.js
+
+      - name: Show digest in run summary
+        run: cat growth-digest-latest.md | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload private digest artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: maca-growth-digest
+          path: |
+            growth-traffic-audit.json
+            growth-digest-latest.json
+            growth-digest-latest.md
+          retention-days: 14
