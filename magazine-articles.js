@@ -2063,5 +2063,214 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "5366ef6b8c67b1c26c5b730d1913d4c4ca175356404a9b052f9cee2ab8511d36"
+  },
+  {
+    "id": "daily-opioides-20261022",
+    "url": "article-daily-opioides-20261022.html",
+    "title": "Après les urgences, que faire des comprimés opioïdes qui restent ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "MÉDICAMENTS",
+    "date": "2026-10-22",
+    "status": "PUBLISHED",
+    "excerpt": "Résumé court. Dans une cohorte canadienne de patients sortis des urgences avec une prescription d’opioïdes pour une douleur aiguë, 84 % avaient encore des comprimés inutilisés deux semaines plus tard. Seuls 6,7 % les conservaient sous clé ; trois mois après, 61,9 % en détenaient toujours.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "MÉDICAMENTS"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "45ba809b32b6af8a4637d48c68890ef74ed6434c728e430bbf47fb2de0645bde"
+  },
+  {
+    "id": "daily-sjogren-20261022",
+    "url": "article-daily-sjogren-20261022.html",
+    "title": "Maladie de Sjögren : un premier traitement ciblé se rapproche-t-il ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "SJÖGREN",
+    "date": "2026-10-22",
+    "status": "PUBLISHED",
+    "excerpt": "Deux essais internationaux de phase 3 ont comparé le ianalumab sous-cutané mensuel à un placebo chez des patients ayant une maladie systémique active. À 48 semaines, la diminution du score d’activité était légèrement supérieure sous traitement : différence moyenne d’environ 1 à 1,3 point selon l’essai. Les effets indésirables globaux étaient comparables au placebo.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "SJÖGREN"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "8d80c7bcbe365f418fc6a73adaa2277019b2567f672223a62b6a63ba697465d9"
+  },
+  {
+    "id": "daily-denosumab-20261022",
+    "url": "article-daily-denosumab-20261022.html",
+    "title": "Dénosumab dans le cancer de la prostate métastatique : quand réévaluer le rapport bénéfice–risque ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "CANCER",
+    "date": "2026-10-22",
+    "status": "PUBLISHED",
+    "excerpt": "Dans une cohorte nationale coréenne de 3 307 hommes recevant du dénosumab à dose oncologique, l’incidence cumulée à trois ans de l’ostéonécrose de la mâchoire atteignait 9,8 %. Après treize mois, le risque augmentait nettement, tandis que la réduction supplémentaire des événements osseux devenait incertaine.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "CANCER"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "694a01120ecdb464116dd861210f64313b20084ec5d8ab6f3138149581b8e74b"
+  },
+  {
+    "id": "daily-oxymetrie-20261022",
+    "url": "article-daily-oxymetrie-20261022.html",
+    "title": "Nouveau-né : une saturation redevenue normale n’est peut-être pas toujours anodine",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "NOUVEAU-NÉ",
+    "date": "2026-10-22",
+    "status": "PUBLISHED",
+    "excerpt": "Une cohorte finlandaise de 16 599 nouveau-nés a étudié les mesures d’oxygène réalisées deux à six heures après la naissance. Parmi les enfants dont le résultat initialement indéterminé s’était normalisé, 13 % avaient une affection respiratoire, contre 1,3 % après un résultat immédiatement normal ; les septicémies précoces et hypoglycémies étaient également plus fréque",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "NOUVEAU-NÉ"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "4b2936a12962081ac08b6d6a2d5ac7c28c19a44e0374641d25710b59f3a71a45"
+  },
+  {
+    "id": "daily-double-prise-20261022",
+    "url": "article-daily-double-prise-20261022.html",
+    "title": "J’ai pris deux fois mon médicament : que faire ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "MÉDICAMENTS",
+    "date": "2026-10-22",
+    "status": "PUBLISHED",
+    "excerpt": "### « J’ai pris deux fois mon médicament : que faire ? »",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "MÉDICAMENTS"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "double-prise-medicament",
+    "version": "e0d1ad631421a9a146c32be6d1668ee92ebb63357b6fd28216b4910464432ca9"
+  },
+  {
+    "id": "daily-vaccin-grippe-20261022",
+    "url": "article-daily-vaccin-grippe-20261022.html",
+    "title": "Le vaccin antigrippal peut-il donner la grippe ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "FAUX",
+    "date": "2026-10-22",
+    "status": "PUBLISHED",
+    "excerpt": "### « Le vaccin antigrippal peut donner la grippe. »",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "FAUX"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "7940e5f14fd0ba718d9313ffe6851ccc16d03ec988c55aac164acbd85f567c37"
+  },
+  {
+    "id": "daily-chiffre-denosumab-20261022",
+    "url": "article-daily-chiffre-denosumab-20261022.html",
+    "title": "9,8 % : ostéonécrose de la mâchoire sous dénosumab oncologique",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "9,8 %",
+    "date": "2026-10-22",
+    "status": "PUBLISHED",
+    "excerpt": "C’est l’incidence cumulée à trois ans de l’ostéonécrose de la mâchoire dans la cohorte coréenne d’hommes traités par dénosumab à dose oncologique pour un cancer de la prostate métastatique. Ce chiffre ne concerne pas le traitement habituel de l’ostéoporose.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "9,8 %"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "5b9172540ae2e86ce29574a9398152d29ef85131391c4c261d45bb230ff33d4a"
+  },
+  {
+    "id": "daily-niche2-20261022",
+    "url": "article-daily-niche2-20261022.html",
+    "title": "NICHE-2 : immunothérapie avant chirurgie du côlon",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "CANCER",
+    "date": "2026-10-22",
+    "status": "PUBLISHED",
+    "excerpt": "NICHE-2 : immunothérapie avant chirurgie du côlon",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "CANCER"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "544556be0bbb685dc6e871b7d36fcb8ce1a904565b469f154aefda20e483de20"
+  },
+  {
+    "id": "daily-vih-hebdo-20261022",
+    "url": "article-daily-vih-hebdo-20261022.html",
+    "title": "VIH : traitement oral hebdomadaire",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "VIH",
+    "date": "2026-10-22",
+    "status": "PUBLISHED",
+    "excerpt": "1. Immunothérapie avant chirurgie du côlon. Dans NICHE-2, 111 patients ayant une tumeur localisée dMMR ont reçu quatre semaines de nivolumab–ipilimumab avant l’opération : la survie sans maladie à trois ans a atteint 100 %. Résultat spectaculaire, mais essai de phase 2 sans groupe comparateur.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "VIH"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "1059884e67f234a9a038bc95bd9a338f54e51052efd40d93bd2bc36546bc97af"
+  },
+  {
+    "id": "daily-teleexpertise-pediatrique-20261022",
+    "url": "article-daily-teleexpertise-pediatrique-20261022.html",
+    "title": "Téléexpertise après un traumatisme pédiatrique",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "ENFANT",
+    "date": "2026-10-22",
+    "status": "PUBLISHED",
+    "excerpt": "2. Traitement hebdomadaire du VIH. Chez des personnes déjà indétectables, l’association orale islatravir–lénacapavir prise une fois par semaine a maintenu la suppression virale chez 93,4 % des participants à 48 semaines, contre 92,4 % sous traitement quotidien. Ce schéma reste en cours d’évaluation et ne constitue pas encore une option disponible.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "ENFANT"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "2360118c961b83b7fc7546ade21a3c1b36279770efebc04ef1f1a5381984ff09"
+  },
+  {
+    "id": "octobre-rose-fast-forward-20261022",
+    "url": "article-octobre-rose-fast-forward-20261022.html",
+    "title": "Cancer du sein : cinq séances de radiothérapie peuvent-elles remplacer trois semaines de traitement ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "OCTOBRE ROSE",
+    "date": "2026-10-22",
+    "status": "PUBLISHED",
+    "excerpt": "Réponse courte. Oui, pour certaines patientes atteintes d’un cancer du sein localisé, cinq séances réalisées en une semaine peuvent offrir un contrôle tumoral à dix ans comparable à quinze séances sur trois semaines. Le choix reste individualisé par le radiothérapeute.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "OCTOBRE ROSE"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "82e82f4dc9f4d678905e70b1c8a5788aa5cc4f3f7481b898053614a8b7d3f73c"
   }
 ];

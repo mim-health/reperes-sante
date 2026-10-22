@@ -308,6 +308,19 @@
     },
     {
       "left": {
+        "id": "double-prise-medicament",
+        "title": "J’ai pris deux fois mon médicament par erreur : que faire ?",
+        "type": "fiche"
+      },
+      "right": {
+        "id": "daily-double-prise-20261022",
+        "title": "J’ai pris deux fois mon médicament : que faire ?",
+        "type": "Mag"
+      },
+      "score": 0.86
+    },
+    {
+      "left": {
         "id": "diversification-alimentaire",
         "title": "Diversification alimentaire : quand commencer et par quoi ?",
         "type": "fiche"
@@ -519,6 +532,6 @@
     "manifestFiles": 145,
     "rawFiches": 419,
     "canonicalFiches": 393,
-    "magContents": 110
+    "magContents": 121
   }
 }

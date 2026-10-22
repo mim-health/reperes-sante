@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "editionId": "edition-2026-10-18",
-  "editionDate": "2026-10-18",
-  "sourceFingerprint": "d925c0ad6844700058225deb28e6bdebdc4bbc080733b6f47f5feb72448211d3",
-  "missingEdition": true,
+  "editionId": "edition-2026-10-22",
+  "editionDate": "2026-10-22",
+  "sourceFingerprint": "40930553dcda05656fb7cdebb8647fbbe45054ac30c350da27ba96423f2c46a8",
+  "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
@@ -17,6 +17,72 @@
       "id": "mag-sep-fenebrutinib-poussees-handicap-20261022",
       "version": "5366ef6b8c67b1c26c5b730d1913d4c4ca175356404a9b052f9cee2ab8511d36",
       "url": "article-sep-fenebrutinib-poussees-handicap.html",
+      "date": "2026-10-22"
+    },
+    {
+      "id": "mag-daily-opioides-20261022",
+      "version": "45ba809b32b6af8a4637d48c68890ef74ed6434c728e430bbf47fb2de0645bde",
+      "url": "article-daily-opioides-20261022.html",
+      "date": "2026-10-22"
+    },
+    {
+      "id": "mag-daily-sjogren-20261022",
+      "version": "8d80c7bcbe365f418fc6a73adaa2277019b2567f672223a62b6a63ba697465d9",
+      "url": "article-daily-sjogren-20261022.html",
+      "date": "2026-10-22"
+    },
+    {
+      "id": "mag-daily-denosumab-20261022",
+      "version": "694a01120ecdb464116dd861210f64313b20084ec5d8ab6f3138149581b8e74b",
+      "url": "article-daily-denosumab-20261022.html",
+      "date": "2026-10-22"
+    },
+    {
+      "id": "mag-daily-oxymetrie-20261022",
+      "version": "4b2936a12962081ac08b6d6a2d5ac7c28c19a44e0374641d25710b59f3a71a45",
+      "url": "article-daily-oxymetrie-20261022.html",
+      "date": "2026-10-22"
+    },
+    {
+      "id": "mag-daily-double-prise-20261022",
+      "version": "e0d1ad631421a9a146c32be6d1668ee92ebb63357b6fd28216b4910464432ca9",
+      "url": "article-daily-double-prise-20261022.html",
+      "date": "2026-10-22"
+    },
+    {
+      "id": "mag-daily-vaccin-grippe-20261022",
+      "version": "7940e5f14fd0ba718d9313ffe6851ccc16d03ec988c55aac164acbd85f567c37",
+      "url": "article-daily-vaccin-grippe-20261022.html",
+      "date": "2026-10-22"
+    },
+    {
+      "id": "mag-daily-chiffre-denosumab-20261022",
+      "version": "5b9172540ae2e86ce29574a9398152d29ef85131391c4c261d45bb230ff33d4a",
+      "url": "article-daily-chiffre-denosumab-20261022.html",
+      "date": "2026-10-22"
+    },
+    {
+      "id": "mag-daily-niche2-20261022",
+      "version": "544556be0bbb685dc6e871b7d36fcb8ce1a904565b469f154aefda20e483de20",
+      "url": "article-daily-niche2-20261022.html",
+      "date": "2026-10-22"
+    },
+    {
+      "id": "mag-daily-vih-hebdo-20261022",
+      "version": "1059884e67f234a9a038bc95bd9a338f54e51052efd40d93bd2bc36546bc97af",
+      "url": "article-daily-vih-hebdo-20261022.html",
+      "date": "2026-10-22"
+    },
+    {
+      "id": "mag-daily-teleexpertise-pediatrique-20261022",
+      "version": "2360118c961b83b7fc7546ade21a3c1b36279770efebc04ef1f1a5381984ff09",
+      "url": "article-daily-teleexpertise-pediatrique-20261022.html",
+      "date": "2026-10-22"
+    },
+    {
+      "id": "mag-octobre-rose-fast-forward-20261022",
+      "version": "82e82f4dc9f4d678905e70b1c8a5788aa5cc4f3f7481b898053614a8b7d3f73c",
+      "url": "article-octobre-rose-fast-forward-20261022.html",
       "date": "2026-10-22"
     },
     {
