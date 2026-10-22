@@ -1,0 +1,48 @@
+name: Validate MICI and Cancer Lot 1
+on:
+  pull_request:
+    branches: [feat/v0-magazine]
+    paths:
+      - 'backlog-audited-mici-cancer-lot1-2026-10-22.js'
+      - 'corpus-manifest.js'
+      - '.github/workflows/validate-lot1-mici-cancer.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Validate JS, generate local canonical files and SEO pages
+        run: |
+          node --check backlog-audited-mici-cancer-lot1-2026-10-22.js
+          node scripts/audit-content-duplicates.js
+          node scripts/build-static-seo-fiches.js
+          node scripts/test-fiche-fast-load.js
+          node scripts/build-sitemap-from-corpus.js
+      - name: Assert six new cards, dedicated SEO pages and sitemap entries
+        run: |
+          node - <<'JS'
+          const fs=require('fs'), assert=require('assert/strict');
+          const ids=['mici-activite-physique','mici-fatigue-sous-traitement','mici-grossesse-suivi','mici-sexualite-fertilite','cancer-alimentation-pendant-traitements','cancer-droits-aides-demarches'];
+          const sitemap=fs.readFileSync('sitemap.xml','utf8');
+          for(const id of ids){
+            const raw=JSON.parse(fs.readFileSync('fiches-data/'+id+'.json','utf8'));
+            assert.equal(raw.fiche.id,id);assert.equal(raw.fiche.validationStatus,'VALIDATED');
+            assert(raw.fiche.answer?.length>40);assert(raw.fiche.detail?.length>1000);
+            assert(raw.fiche.watch?.length>20);assert(raw.fiche.sources?.length>=2);
+            const html=fs.readFileSync('fiches-seo/'+id+'.html','utf8');
+            assert(html.includes(id));assert(html.includes(raw.fiche.title));assert(sitemap.includes('fiches-seo/'+id+'.html'));
+          }
+          const count=fs.readdirSync('fiches-data').filter(x=>x.endsWith('.json')).length;
+          assert(count>=399,'expected at least 399 sheets, got '+count);
+          console.log(JSON.stringify({ok:true,validated:ids.length,canonicalCount:count}));
+          JS
+      - name: Assistant canonical non-regression
+        run: |
+          node scripts/build-assistant-v2-corpus.js
+          node scripts/test-assistant-v2-canonical.js
