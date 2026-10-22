@@ -2,11 +2,23 @@
   "schemaVersion": 1,
   "editionId": "edition-2026-10-18",
   "editionDate": "2026-10-18",
-  "sourceFingerprint": "ed0b2c7bdebee54f2af97fee760b7f9eaabdec04879c0909705774ac30cfafb8",
+  "sourceFingerprint": "d925c0ad6844700058225deb28e6bdebdc4bbc080733b6f47f5feb72448211d3",
   "missingEdition": true,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-cagrisema-menopause-perte-poids-20261022",
+      "version": "583f2465a4f35d29c1a72cfc29bb5add093da90681cc886e5492c0dee228c6d2",
+      "url": "article-cagrisema-menopause-perte-poids.html",
+      "date": "2026-10-22"
+    },
+    {
+      "id": "mag-sep-fenebrutinib-poussees-handicap-20261022",
+      "version": "5366ef6b8c67b1c26c5b730d1913d4c4ca175356404a9b052f9cee2ab8511d36",
+      "url": "article-sep-fenebrutinib-poussees-handicap.html",
+      "date": "2026-10-22"
+    },
     {
       "id": "mag-oesophagite-eosinophiles-crossing-tezepelumab-20261021",
       "version": "9df4b6eee7f0b40c11f977262a52a0d7b1709e0713b0235ffc7de7af71b4ef05",

@@ -2021,5 +2021,47 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "e80e68130c69eade693ca7c340878efd4a8802fd9004bf832da11580735710f3"
+  },
+  {
+    "id": "cagrisema-menopause-perte-poids-20261022",
+    "url": "article-cagrisema-menopause-perte-poids.html",
+    "title": "Ménopause et perte de poids : que montre la nouvelle analyse de CagriSema ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Santé des femmes",
+    "date": "2026-10-22",
+    "status": "PUBLISHED",
+    "excerpt": "Des analyses exploratoires d’un essai retrouvent une perte de poids importante chez des femmes avec obésité ou surpoids. Elles ne promettent pas le même résultat à chacune et ne démontrent pas une efficacité différente selon la ménopause.",
+    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "imageAlt": "Échange entre médecin et patient autour d’un document.",
+    "keywords": [
+      "Ménopause et perte de poids : que montre la nouvelle analyse de CagriSema ?",
+      "recherche",
+      "congrès octobre 2026"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "composition-corporelle-menopause-45-50",
+    "version": "583f2465a4f35d29c1a72cfc29bb5add093da90681cc886e5492c0dee228c6d2"
+  },
+  {
+    "id": "sep-fenebrutinib-poussees-handicap-20261022",
+    "url": "article-sep-fenebrutinib-poussees-handicap.html",
+    "title": "Sclérose en plaques : un nouveau traitement oral peut-il ralentir la maladie ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Santé au quotidien",
+    "date": "2026-10-22",
+    "status": "PUBLISHED",
+    "excerpt": "Le fénébrutinib expérimental apporte de nouvelles données de phase III. Pour les interpréter, il faut distinguer les poussées, les marqueurs IRM et la progression du handicap.",
+    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "imageAlt": "Échange entre médecin et patient autour d’un document.",
+    "keywords": [
+      "Sclérose en plaques : un nouveau traitement oral peut-il ralentir la maladie ?",
+      "recherche",
+      "congrès octobre 2026"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "5366ef6b8c67b1c26c5b730d1913d4c4ca175356404a9b052f9cee2ab8511d36"
   }
 ];
