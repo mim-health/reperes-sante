@@ -4190,6 +4190,97 @@
         "evidence": "Validation explicite du radar du 21 octobre 2026 et de ses trois décisions : « ok très bien validation creation ». Création des deux fiches durables et des trois décryptages associés, selon le circuit de publication déjà autorisé.",
         "contentHash": "e80e68130c69eade693ca7c340878efd4a8802fd9004bf832da11580735710f3"
       }
+    },
+    {
+      "id": "cagrisema-menopause-perte-poids-20261022",
+      "date": "2026-10-22",
+      "title": "Ménopause et perte de poids : que montre la nouvelle analyse de CagriSema ?",
+      "answer": "Des analyses exploratoires d’un essai retrouvent une perte de poids importante chez des femmes avec obésité ou surpoids. Elles ne promettent pas le même résultat à chacune et ne démontrent pas une efficacité différente selon la ménopause.",
+      "url": "article-cagrisema-menopause-perte-poids.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Santé des femmes",
+      "keywords": [
+        "Ménopause et perte de poids : que montre la nouvelle analyse de CagriSema ?",
+        "recherche",
+        "congrès octobre 2026"
+      ],
+      "ficheId": "composition-corporelle-menopause-45-50",
+      "standalone": true,
+      "candidateFiche": false,
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "sources": [
+        {
+          "label": "Novo Nordisk — analyses post hoc REDEFINE 1, congrès The Menopause Society, 20 octobre 2026",
+          "url": "https://www.novonordisk-us.com/media/press-releases/cagrisema-redefine1-weight-loss-women-menopause.html"
+        },
+        {
+          "label": "Garvey et coll. — REDEFINE 1, NEJM, 2025 ; DOI 10.1056/NEJMoa2502081",
+          "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2502081"
+        },
+        {
+          "label": "Assurance Maladie — périménopause et ménopause : mode de vie et traitement, 2026",
+          "url": "https://www.ameli.fr/assure/sante/themes/menopause/traitement"
+        }
+      ],
+      "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+      "imageAlt": "Échange entre médecin et patient autour d’un document.",
+      "imageCredit": "cottonbro studio / Pexels",
+      "imageSource": "https://www.pexels.com/photo/hands-of-doctor-and-patient-on-table-7578798/",
+      "imageLicense": "Pexels License — utilisation éditoriale et commerciale gratuite, recadrage autorisé ; https://www.pexels.com/license/",
+      "html": "<article><img src=\"assets/editorial/2026-10-13/photos/incertitudes.jpg\" alt=\"Échange entre médecin et patient autour d’un document.\"><p><small>cottonbro studio / Pexels — photographie d’illustration, sans lien avec les participants.</small></p><h1>Ménopause et perte de poids : que montre la nouvelle analyse de CagriSema ?</h1><p class=\"lead\">Des analyses exploratoires d’un essai retrouvent une perte de poids importante chez des femmes avec obésité ou surpoids. Elles ne promettent pas le même résultat à chacune et ne démontrent pas une efficacité différente selon la ménopause.</p><h2>Une nouvelle analyse d’un essai déjà connu</h2><p>CagriSema associe le cagrilintide et le sémaglutide. Le 20 octobre, le fabricant a communiqué deux analyses réalisées après l’essai REDEFINE 1. Dans l’analyse de 2 309 femmes, la perte moyenne estimée atteignait 25 % à 68 semaines, contre 3 % sous placebo, dans un scénario où toutes poursuivraient le traitement sans autre thérapie amaigrissante. Ce scénario diffère de l’usage réel.</p><h2>Que sait-on selon le stade de la ménopause ?</h2><p>Une analyse distincte de 1 902 femmes rapporte 26,7 % avant la ménopause, 24,8 % en périménopause et 23,1 % après. La classification reposait sur l’âge, les antécédents et les symptômes, sans confirmation biologique systématique. Les groupes n’étaient pas constitués au hasard selon ce statut : leurs différences numériques ne prouvent pas une différence de réponse au traitement.</p><h2>Quels effets indésirables ?</h2><p>Dans la publication de l’essai principal, les effets digestifs concernaient 79,6 % des participants sous l’association, contre 39,9 % sous placebo, notamment nausées, vomissements, diarrhée et constipation. La perte de poids doit être évaluée avec les risques et les arrêts de traitement, pas isolément.</p><h2>Le repère utile aujourd’hui</h2><p>CagriSema reste expérimental au moment de cette vérification. L’Assurance Maladie rappelle l’intérêt d’un accompagnement individualisé à la ménopause : alimentation adaptée, apports protéiques suffisants, activité physique et prise en charge des maladies associées. Une modification du ventre ou du poids ne suffit pas à indiquer un médicament. La fiche associée explique aussi pourquoi le poids seul ne décrit pas toute la composition corporelle.</p><p><strong>Niveau de preuve :</strong> essai principal randomisé publié ; nouvelles analyses post hoc exploratoires communiquées par le fabricant en congrès.</p><h2>Sources</h2><ul><li><a href=\"https://www.novonordisk-us.com/media/press-releases/cagrisema-redefine1-weight-loss-women-menopause.html\">Novo Nordisk — analyses post hoc REDEFINE 1, congrès The Menopause Society, 20 octobre 2026</a></li><li><a href=\"https://www.nejm.org/doi/full/10.1056/NEJMoa2502081\">Garvey et coll. — REDEFINE 1, NEJM, 2025 ; DOI 10.1056/NEJMoa2502081</a></li><li><a href=\"https://www.ameli.fr/assure/sante/themes/menopause/traitement\">Assurance Maladie — périménopause et ménopause : mode de vie et traitement, 2026</a></li></ul><p><small>Vérifié le 22 octobre 2026. Information générale, sans modification autonome d’un traitement.</small></p></article>",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-22T12:35:02.847Z",
+        "evidence": "Accord « ok parfait » en réponse au radar du 22 octobre 2026 et à ses trois décisions : deux décryptages CagriSema/ménopause et fénébrutinib/SEP, et enrichissement limité de la fiche de dépistage colorectal. Circuit de publication autorisé dans cette conversation.",
+        "contentHash": "583f2465a4f35d29c1a72cfc29bb5add093da90681cc886e5492c0dee228c6d2"
+      }
+    },
+    {
+      "id": "sep-fenebrutinib-poussees-handicap-20261022",
+      "date": "2026-10-22",
+      "title": "Sclérose en plaques : un nouveau traitement oral peut-il ralentir la maladie ?",
+      "answer": "Le fénébrutinib expérimental apporte de nouvelles données de phase III. Pour les interpréter, il faut distinguer les poussées, les marqueurs IRM et la progression du handicap.",
+      "url": "article-sep-fenebrutinib-poussees-handicap.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Santé au quotidien",
+      "keywords": [
+        "Sclérose en plaques : un nouveau traitement oral peut-il ralentir la maladie ?",
+        "recherche",
+        "congrès octobre 2026"
+      ],
+      "standalone": true,
+      "candidateFiche": false,
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "sources": [
+        {
+          "label": "Roche — données FENhance et FENtrepid annoncées à MSToronto2026, 21 octobre 2026",
+          "url": "https://www.roche.com/media/releases/med-cor-2026-10-21"
+        },
+        {
+          "label": "Roche — dossier fénébrutinib et données de sécurité, 30 septembre 2026",
+          "url": "https://www.roche.com/investors/updates/inv-update-2026-09-30"
+        },
+        {
+          "label": "Assurance Maladie — traitement de la sclérose en plaques, avril 2025",
+          "url": "https://www.ameli.fr/assure/sante/themes/sclerose-en-plaques/traitement"
+        }
+      ],
+      "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+      "imageAlt": "Échange entre médecin et patient autour d’un document.",
+      "imageCredit": "cottonbro studio / Pexels",
+      "imageSource": "https://www.pexels.com/photo/hands-of-doctor-and-patient-on-table-7578798/",
+      "imageLicense": "Pexels License — utilisation éditoriale et commerciale gratuite, recadrage autorisé ; https://www.pexels.com/license/",
+      "html": "<article><img src=\"assets/editorial/2026-10-13/photos/incertitudes.jpg\" alt=\"Échange entre médecin et patient autour d’un document.\"><p><small>cottonbro studio / Pexels — photographie d’illustration, sans lien avec les participants.</small></p><h1>Sclérose en plaques : un nouveau traitement oral peut-il ralentir la maladie ?</h1><p class=\"lead\">Le fénébrutinib expérimental apporte de nouvelles données de phase III. Pour les interpréter, il faut distinguer les poussées, les marqueurs IRM et la progression du handicap.</p><h2>Ce qui a été annoncé à Toronto</h2><p>Dans l’analyse regroupée de FENhance 1 et 2, consacrés aux formes rémittentes, Roche rapporte sur 96 semaines une réduction relative de 55 % du taux annualisé de poussées face au tériflunomide. La perte annuelle de volume cérébral était réduite de 23 %, et le risque de progression du handicap selon un critère composite confirmé à 12 semaines de 16 %. Ces pourcentages ne sont pas des probabilités individuelles.</p><h2>Les images et le handicap ne sont pas interchangeables</h2><p>D’autres analyses de FENhance et FENtrepid rapportent une réduction pouvant atteindre 30 % du volume de lésions à expansion lente. FENtrepid étudie les formes primitivement progressives avec l’ocrélizumab comme comparateur. Les populations et les comparaisons diffèrent : les résultats ne doivent pas être fusionnés en une promesse unique. Une amélioration d’un marqueur IRM ne démontre pas à elle seule une autonomie préservée à long terme.</p><h2>La sécurité fait partie du résultat</h2><p>Les données de sécurité communiquées précédemment mentionnent des élévations des enzymes hépatiques, plus fréquentes face à l’ocrélizumab dans FENtrepid. Une demande d’autorisation en cours d’examen ne vaut pas autorisation. Le fénébrutinib reste un traitement expérimental ; son intérêt dépendra de l’évaluation complète des bénéfices et des risques.</p><h2>Que retenir pour les patients ?</h2><p>La prise en charge actuelle associe suivi neurologique, traitements de fond, traitement des poussées, soins des symptômes et rééducation selon les besoins. Le choix dépend de la forme et de l’activité de la SEP, des risques et du projet de vie. Ces annonces ne justifient pas d’arrêter un traitement efficace ou d’attendre sans suivi un nouveau médicament.</p><p><strong>Niveau de preuve :</strong> essais de phase III avec comparateurs actifs ; analyses complémentaires rapportées en congrès par le promoteur, à confronter aux publications complètes et au recul clinique.</p><h2>Sources</h2><ul><li><a href=\"https://www.roche.com/media/releases/med-cor-2026-10-21\">Roche — données FENhance et FENtrepid annoncées à MSToronto2026, 21 octobre 2026</a></li><li><a href=\"https://www.roche.com/investors/updates/inv-update-2026-09-30\">Roche — dossier fénébrutinib et données de sécurité, 30 septembre 2026</a></li><li><a href=\"https://www.ameli.fr/assure/sante/themes/sclerose-en-plaques/traitement\">Assurance Maladie — traitement de la sclérose en plaques, avril 2025</a></li></ul><p><small>Vérifié le 22 octobre 2026. Information générale, sans modification autonome d’un traitement.</small></p></article>",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-22T12:35:02.847Z",
+        "evidence": "Accord « ok parfait » en réponse au radar du 22 octobre 2026 et à ses trois décisions : deux décryptages CagriSema/ménopause et fénébrutinib/SEP, et enrichissement limité de la fiche de dépistage colorectal. Circuit de publication autorisé dans cette conversation.",
+        "contentHash": "5366ef6b8c67b1c26c5b730d1913d4c4ca175356404a9b052f9cee2ab8511d36"
+      }
     }
   ],
   "editions": [
