@@ -4281,6 +4281,341 @@
         "evidence": "Accord « ok parfait » en réponse au radar du 22 octobre 2026 et à ses trois décisions : deux décryptages CagriSema/ménopause et fénébrutinib/SEP, et enrichissement limité de la fiche de dépistage colorectal. Circuit de publication autorisé dans cette conversation.",
         "contentHash": "5366ef6b8c67b1c26c5b730d1913d4c4ca175356404a9b052f9cee2ab8511d36"
       }
+    },
+    {
+      "id": "daily-opioides-20261022",
+      "date": "2026-10-22",
+      "title": "Après les urgences, que faire des comprimés opioïdes qui restent ?",
+      "answer": "Résumé court. Dans une cohorte canadienne de patients sortis des urgences avec une prescription d’opioïdes pour une douleur aiguë, 84 % avaient encore des comprimés inutilisés deux semaines plus tard. Seuls 6,7 % les conservaient sous clé ; trois mois après, 61,9 % en détenaient toujours.",
+      "html": "<article><div class=\"inside\"><h2>Après les urgences, que faire des comprimés opioïdes qui restent ?</h2>\n<p><strong>Résumé court.</strong> Dans une cohorte canadienne de patients sortis des urgences avec une prescription d’opioïdes pour une douleur aiguë, 84 % avaient encore des comprimés inutilisés deux semaines plus tard. Seuls 6,7 % les conservaient sous clé ; trois mois après, 61,9 % en détenaient toujours.</p>\n<p><strong>À retenir.</strong> Un opioïde restant n’est pas une « réserve antidouleur » anodine : il peut être pris sans réévaluation, utilisé par un proche ou ingéré accidentellement par un enfant.</p>\n<p><strong>Intérêt patient.</strong></p>\n<ul>\n<li>Ne pas partager le médicament.</li>\n<li>Le conserver temporairement dans un emplacement fermé et inaccessible.</li>\n<li>Ne pas le réutiliser pour une nouvelle douleur sans avis professionnel.</li>\n<li>En France, rapporter les unités inutilisées à la pharmacie ; l’ANSM donne notamment cette consigne pour le tramadol.</li>\n</ul>\n<p><strong>Limites.</strong> Étude observationnelle canadienne, avec suivi incomplet à trois mois. Elle décrit les comportements mais ne mesure pas directement le nombre d’intoxications évitées par une procédure de retour.</p>\n<p><strong>Angle MACA.</strong> « L’ordonnance est terminée : les comprimés aussi doivent quitter l’armoire à pharmacie. »</p></div></article>",
+      "url": "article-daily-opioides-20261022.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "MÉDICAMENTS",
+      "keywords": [
+        "MÉDICAMENTS"
+      ],
+      "sources": [
+        {
+          "label": "Publication primaire / source de référence",
+          "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855495"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-22T14:25:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation explicites de la conférence du 22 octobre 2026 et de l'article Octobre Rose. Correction FAST-Forward 4 087 participantes également approuvée.",
+        "contentHash": "45ba809b32b6af8a4637d48c68890ef74ed6434c728e430bbf47fb2de0645bde"
+      }
+    },
+    {
+      "id": "daily-sjogren-20261022",
+      "date": "2026-10-22",
+      "title": "Maladie de Sjögren : un premier traitement ciblé se rapproche-t-il ?",
+      "answer": "Deux essais internationaux de phase 3 ont comparé le ianalumab sous-cutané mensuel à un placebo chez des patients ayant une maladie systémique active. À 48 semaines, la diminution du score d’activité était légèrement supérieure sous traitement : différence moyenne d’environ 1 à 1,3 point selon l’essai. Les effets indésirables globaux étaient comparables au placebo.",
+      "html": "<article><div class=\"inside\"><h2>1. Maladie de Sjögren : un premier traitement ciblé se rapproche-t-il ?</h2>\n<p>Deux essais internationaux de phase 3 ont comparé le ianalumab sous-cutané mensuel à un placebo chez des patients ayant une maladie systémique active. À 48 semaines, la diminution du score d’activité était légèrement supérieure sous traitement : différence moyenne d’environ 1 à 1,3 point selon l’essai. Les effets indésirables globaux étaient comparables au placebo.</p>\n<p><strong>Lecture critique.</strong> Il s’agit d’un signal positif reproductible, mais l’écart moyen reste modeste et le score combine plusieurs manifestations. Le médicament est encore expérimental : ni prescription courante ni bénéfice individuel garanti.</p></div></article>",
+      "url": "article-daily-sjogren-20261022.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "SJÖGREN",
+      "keywords": [
+        "SJÖGREN"
+      ],
+      "sources": [
+        {
+          "label": "Publication primaire / source de référence",
+          "url": "https://euclinicaltrials.eu/ctis-public/view/2024-511069-12-00?lang=en"
+        },
+        {
+          "label": "Registre clinique complémentaire",
+          "url": "https://www.ctis.eu/trial/2024-511068-10-00"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-22T14:25:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation explicites de la conférence du 22 octobre 2026 et de l'article Octobre Rose. Correction FAST-Forward 4 087 participantes également approuvée.",
+        "contentHash": "8d80c7bcbe365f418fc6a73adaa2277019b2567f672223a62b6a63ba697465d9"
+      }
+    },
+    {
+      "id": "daily-denosumab-20261022",
+      "date": "2026-10-22",
+      "title": "Dénosumab dans le cancer de la prostate métastatique : quand réévaluer le rapport bénéfice–risque ?",
+      "answer": "Dans une cohorte nationale coréenne de 3 307 hommes recevant du dénosumab à dose oncologique, l’incidence cumulée à trois ans de l’ostéonécrose de la mâchoire atteignait 9,8 %. Après treize mois, le risque augmentait nettement, tandis que la réduction supplémentaire des événements osseux devenait incertaine.",
+      "html": "<article><div class=\"inside\"><h2>2. Dénosumab dans le cancer de la prostate métastatique : quand réévaluer le rapport bénéfice–risque ?</h2>\n<p>Dans une cohorte nationale coréenne de 3 307 hommes recevant du dénosumab à dose oncologique, l’incidence cumulée à trois ans de l’ostéonécrose de la mâchoire atteignait 9,8 %. Après treize mois, le risque augmentait nettement, tandis que la réduction supplémentaire des événements osseux devenait incertaine.</p>\n<p><strong>Conséquence pratique.</strong> Ce résultat justifie une réévaluation régulière, des soins dentaires préventifs et une coordination oncologue–dentiste. Il ne justifie pas un arrêt décidé seul. Ces chiffres ne doivent surtout pas être transposés aux doses utilisées contre l’ostéoporose.</p></div></article>",
+      "url": "article-daily-denosumab-20261022.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "CANCER",
+      "keywords": [
+        "CANCER"
+      ],
+      "sources": [
+        {
+          "label": "Publication primaire / source de référence",
+          "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855573"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-22T14:25:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation explicites de la conférence du 22 octobre 2026 et de l'article Octobre Rose. Correction FAST-Forward 4 087 participantes également approuvée.",
+        "contentHash": "694a01120ecdb464116dd861210f64313b20084ec5d8ab6f3138149581b8e74b"
+      }
+    },
+    {
+      "id": "daily-oxymetrie-20261022",
+      "date": "2026-10-22",
+      "title": "Nouveau-né : une saturation redevenue normale n’est peut-être pas toujours anodine",
+      "answer": "Une cohorte finlandaise de 16 599 nouveau-nés a étudié les mesures d’oxygène réalisées deux à six heures après la naissance. Parmi les enfants dont le résultat initialement indéterminé s’était normalisé, 13 % avaient une affection respiratoire, contre 1,3 % après un résultat immédiatement normal ; les septicémies précoces et hypoglycémies étaient également plus fréque",
+      "html": "<article><div class=\"inside\"><h2>3. Nouveau-né : une saturation redevenue normale n’est peut-être pas toujours anodine</h2>\n<p>Une cohorte finlandaise de 16 599 nouveau-nés a étudié les mesures d’oxygène réalisées deux à six heures après la naissance. Parmi les enfants dont le résultat initialement indéterminé s’était normalisé, 13 % avaient une affection respiratoire, contre 1,3 % après un résultat immédiatement normal ; les septicémies précoces et hypoglycémies étaient également plus fréquentes. Aucun excès de cardiopathie congénitale critique n’a cependant été observé.</p>\n<p><strong>Limite.</strong> Cohorte rétrospective monocentrique : ce signal ne permet pas encore de modifier seul les protocoles français. Il plaide pour une évaluation clinique ciblée plutôt que pour des examens systématiques.</p></div></article>",
+      "url": "article-daily-oxymetrie-20261022.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "NOUVEAU-NÉ",
+      "keywords": [
+        "NOUVEAU-NÉ"
+      ],
+      "sources": [
+        {
+          "label": "Publication primaire / source de référence",
+          "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855571"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-22T14:25:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation explicites de la conférence du 22 octobre 2026 et de l'article Octobre Rose. Correction FAST-Forward 4 087 participantes également approuvée.",
+        "contentHash": "4b2936a12962081ac08b6d6a2d5ac7c28c19a44e0374641d25710b59f3a71a45"
+      }
+    },
+    {
+      "id": "daily-double-prise-20261022",
+      "date": "2026-10-22",
+      "title": "J’ai pris deux fois mon médicament : que faire ?",
+      "answer": "### « J’ai pris deux fois mon médicament : que faire ? »",
+      "html": "<article><div class=\"inside\"><h2>4) Fiche du jour — Santé au quotidien</h2>\n<h2>« J’ai pris deux fois mon médicament : que faire ? »</h2>\n<p>Fiche existante, révisée et validée dans le lot documentaire du 14 octobre. Elle n’a pas été utilisée dans les rotations récentes.</p>\n<p><strong>Promesse homepage :</strong> ne pas improviser, vérifier le médicament et la dose, appeler rapidement un pharmacien, un médecin ou un centre antipoison, et reconnaître les situations imposant le 15 ou le 112.</p>\n<p>Aucune nouvelle fiche n’est créée pour ce bloc.</p></div></article>",
+      "url": "article-daily-double-prise-20261022.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "MÉDICAMENTS",
+      "keywords": [
+        "MÉDICAMENTS"
+      ],
+      "sources": [
+        {
+          "label": "Publication primaire / source de référence",
+          "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855495"
+        }
+      ],
+      "ficheId": "double-prise-medicament",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-22T14:25:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation explicites de la conférence du 22 octobre 2026 et de l'article Octobre Rose. Correction FAST-Forward 4 087 participantes également approuvée.",
+        "contentHash": "e0d1ad631421a9a146c32be6d1668ee92ebb63357b6fd28216b4910464432ca9"
+      }
+    },
+    {
+      "id": "daily-vaccin-grippe-20261022",
+      "date": "2026-10-22",
+      "title": "Le vaccin antigrippal peut-il donner la grippe ?",
+      "answer": "### « Le vaccin antigrippal peut donner la grippe. »",
+      "html": "<article><div class=\"inside\"><h2>5) Vrai / Faux</h2>\n<h2>« Le vaccin antigrippal peut donner la grippe. »</h2>\n<p><strong>FAUX.</strong> Les vaccins injectables utilisés contre la grippe contiennent des virus inactivés ou leurs composants : ils ne peuvent pas provoquer la grippe. Une réaction transitoire — douleur, fatigue ou fièvre légère — est possible. Une infection respiratoire peut aussi survenir avant que la protection ne soit installée ou être causée par un autre virus.</p></div></article>",
+      "url": "article-daily-vaccin-grippe-20261022.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "FAUX",
+      "keywords": [
+        "FAUX"
+      ],
+      "sources": [
+        {
+          "label": "Publication primaire / source de référence",
+          "url": "https://vaccination-info-service.fr/Les-maladies-et-leurs-vaccins/Grippe"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-22T14:25:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation explicites de la conférence du 22 octobre 2026 et de l'article Octobre Rose. Correction FAST-Forward 4 087 participantes également approuvée.",
+        "contentHash": "7940e5f14fd0ba718d9313ffe6851ccc16d03ec988c55aac164acbd85f567c37"
+      }
+    },
+    {
+      "id": "daily-chiffre-denosumab-20261022",
+      "date": "2026-10-22",
+      "title": "9,8 % : ostéonécrose de la mâchoire sous dénosumab oncologique",
+      "answer": "C’est l’incidence cumulée à trois ans de l’ostéonécrose de la mâchoire dans la cohorte coréenne d’hommes traités par dénosumab à dose oncologique pour un cancer de la prostate métastatique. Ce chiffre ne concerne pas le traitement habituel de l’ostéoporose.",
+      "html": "<article><div class=\"inside\"><h2>6) Chiffre du jour</h2>\n<h2>9,8 %</h2>\n<p>C’est l’incidence cumulée à trois ans de l’ostéonécrose de la mâchoire dans la cohorte coréenne d’hommes traités par dénosumab à dose oncologique pour un cancer de la prostate métastatique. Ce chiffre ne concerne pas le traitement habituel de l’ostéoporose.</p></div></article>",
+      "url": "article-daily-chiffre-denosumab-20261022.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "9,8 %",
+      "keywords": [
+        "9,8 %"
+      ],
+      "sources": [
+        {
+          "label": "Publication primaire / source de référence",
+          "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855573"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-22T14:25:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation explicites de la conférence du 22 octobre 2026 et de l'article Octobre Rose. Correction FAST-Forward 4 087 participantes également approuvée.",
+        "contentHash": "5b9172540ae2e86ce29574a9398152d29ef85131391c4c261d45bb230ff33d4a"
+      }
+    },
+    {
+      "id": "daily-niche2-20261022",
+      "date": "2026-10-22",
+      "title": "NICHE-2 : immunothérapie avant chirurgie du côlon",
+      "answer": "NICHE-2 : immunothérapie avant chirurgie du côlon",
+      "html": "<article><div class=\"inside\"><h2>7) Trois données à retenir</h2></div></article>",
+      "url": "article-daily-niche2-20261022.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "CANCER",
+      "keywords": [
+        "CANCER"
+      ],
+      "sources": [
+        {
+          "label": "Publication primaire / source de référence",
+          "url": "https://www.annalsofoncology.org/article/S0923-7534(24)03843-2/fulltext"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-22T14:25:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation explicites de la conférence du 22 octobre 2026 et de l'article Octobre Rose. Correction FAST-Forward 4 087 participantes également approuvée.",
+        "contentHash": "544556be0bbb685dc6e871b7d36fcb8ce1a904565b469f154aefda20e483de20"
+      }
+    },
+    {
+      "id": "daily-vih-hebdo-20261022",
+      "date": "2026-10-22",
+      "title": "VIH : traitement oral hebdomadaire",
+      "answer": "1. Immunothérapie avant chirurgie du côlon. Dans NICHE-2, 111 patients ayant une tumeur localisée dMMR ont reçu quatre semaines de nivolumab–ipilimumab avant l’opération : la survie sans maladie à trois ans a atteint 100 %. Résultat spectaculaire, mais essai de phase 2 sans groupe comparateur.",
+      "html": "<article><div class=\"inside\"><p>1. <strong>Immunothérapie avant chirurgie du côlon.</strong> Dans NICHE-2, 111 patients ayant une tumeur localisée dMMR ont reçu quatre semaines de nivolumab–ipilimumab avant l’opération : la survie sans maladie à trois ans a atteint 100 %. Résultat spectaculaire, mais essai de phase 2 sans groupe comparateur.</p></div></article>",
+      "url": "article-daily-vih-hebdo-20261022.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "VIH",
+      "keywords": [
+        "VIH"
+      ],
+      "sources": [
+        {
+          "label": "Publication primaire / source de référence",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42525925/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-22T14:25:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation explicites de la conférence du 22 octobre 2026 et de l'article Octobre Rose. Correction FAST-Forward 4 087 participantes également approuvée.",
+        "contentHash": "1059884e67f234a9a038bc95bd9a338f54e51052efd40d93bd2bc36546bc97af"
+      }
+    },
+    {
+      "id": "daily-teleexpertise-pediatrique-20261022",
+      "date": "2026-10-22",
+      "title": "Téléexpertise après un traumatisme pédiatrique",
+      "answer": "2. Traitement hebdomadaire du VIH. Chez des personnes déjà indétectables, l’association orale islatravir–lénacapavir prise une fois par semaine a maintenu la suppression virale chez 93,4 % des participants à 48 semaines, contre 92,4 % sous traitement quotidien. Ce schéma reste en cours d’évaluation et ne constitue pas encore une option disponible.",
+      "html": "<article><div class=\"inside\"><p>2. <strong>Traitement hebdomadaire du VIH.</strong> Chez des personnes déjà indétectables, l’association orale islatravir–lénacapavir prise une fois par semaine a maintenu la suppression virale chez 93,4 % des participants à 48 semaines, contre 92,4 % sous traitement quotidien. Ce schéma reste en cours d’évaluation et ne constitue pas encore une option disponible.</p></div></article>",
+      "url": "article-daily-teleexpertise-pediatrique-20261022.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "ENFANT",
+      "keywords": [
+        "ENFANT"
+      ],
+      "sources": [
+        {
+          "label": "Publication primaire / source de référence",
+          "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855575"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-22T14:25:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation explicites de la conférence du 22 octobre 2026 et de l'article Octobre Rose. Correction FAST-Forward 4 087 participantes également approuvée.",
+        "contentHash": "2360118c961b83b7fc7546ade21a3c1b36279770efebc04ef1f1a5381984ff09"
+      }
+    },
+    {
+      "id": "octobre-rose-fast-forward-20261022",
+      "date": "2026-10-22",
+      "title": "Cancer du sein : cinq séances de radiothérapie peuvent-elles remplacer trois semaines de traitement ?",
+      "answer": "Réponse courte. Oui, pour certaines patientes atteintes d’un cancer du sein localisé, cinq séances réalisées en une semaine peuvent offrir un contrôle tumoral à dix ans comparable à quinze séances sur trois semaines. Le choix reste individualisé par le radiothérapeute.",
+      "html": "<article><div class=\"inside\"><h2>Cancer du sein : cinq séances de radiothérapie peuvent-elles remplacer trois semaines de traitement ?</h2>\n<p><strong>Réponse courte.</strong> Oui, pour certaines patientes atteintes d’un cancer du sein localisé, cinq séances réalisées en une semaine peuvent offrir un contrôle tumoral à dix ans comparable à quinze séances sur trois semaines. Le choix reste individualisé par le radiothérapeute.</p>\n<h2>Ce que l’étude a comparé</h2>\n<p>FAST-Forward est un essai randomisé de phase 3 conduit dans 97 hôpitaux britanniques. L’analyse à dix ans a porté sur 4 087 participantes opérées d’un cancer invasif du sein non métastatique, après chirurgie conservatrice ou mastectomie.</p>\n<p>Trois schémas ont été comparés :</p>\n<ul>\n<li>40 Gy en 15 séances sur trois semaines ;</li>\n<li>27 Gy en cinq séances sur une semaine ;</li>\n<li>26 Gy en cinq séances sur une semaine.</li>\n</ul>\n<p>Le critère principal était la récidive dans le sein traité. La publication à dix ans est parue en mai 2026 dans <em>The Lancet Oncology</em>.</p>\n<h2>Ce que montrent les résultats</h2>\n<p>À dix ans, la récidive dans le sein traité est restée faible :</p>\n<ul>\n<li><strong>3,6 %</strong> avec 40 Gy en quinze séances ;</li>\n<li><strong>2,1 %</strong> avec 26 Gy en cinq séances.</li>\n</ul>\n<p>Les effets tardifs modérés ou marqués sur le sein ou la paroi thoracique concernaient :</p>\n<ul>\n<li><strong>13,1 %</strong> des participantes sous 40 Gy ;</li>\n<li><strong>14,4 %</strong> sous 26 Gy ;</li>\n<li><strong>19,3 %</strong> sous 27 Gy.</li>\n</ul>\n<p>Le schéma à 26 Gy confirme donc son efficacité et une tolérance tardive proche de celle du traitement sur trois semaines. En revanche, 27 Gy provoquait davantage d’effets tissulaires tardifs.</p>\n<h2>Pourquoi c’est important</h2>\n<p>Passer de quinze à cinq déplacements peut réduire :</p>\n<ul>\n<li>la fatigue logistique ;</li>\n<li>les transports sanitaires ;</li>\n<li>les difficultés professionnelles ou familiales ;</li>\n<li>les inégalités d’accès pour les patientes éloignées d’un centre.</li>\n</ul>\n<p>Ce n’est pas une radiothérapie « plus légère » : chaque séance délivre une dose plus forte, dans le cadre d’une planification dosimétrique précise.</p>\n<h2>Les limites</h2>\n<ul>\n<li>L’étude était ouverte : ni patientes ni soignants ne pouvaient ignorer le schéma reçu.</li>\n<li>Toutes les situations de cancer du sein n’étaient pas représentées de manière équivalente.</li>\n<li>Les données concernant certaines irradiations ganglionnaires sont rassurantes mais moins précises en raison du plus petit effectif.</li>\n<li>Une reconstruction, une anatomie complexe, l’irradiation des ganglions ou la nécessité d’un complément sur le lit tumoral peuvent modifier le choix.</li>\n<li>L’étude ne montre pas que toutes les patientes doivent recevoir cinq séances.</li>\n</ul>\n<h2>Est-ce disponible en France ?</h2>\n<p>Ce n’est pas une approche expérimentale. Une revue française de radiothérapie publiée en 2025 reconnaît la non-infériorité du schéma 26 Gy en cinq fractions pour l’irradiation du sein seul ; l’INCa a également relayé les résultats à dix ans. Son utilisation dépend cependant de l’indication, de l’organisation du centre et de la planification personnalisée.</p>\n<h2>Conséquences pratiques</h2>\n<p>Une patiente à qui une radiothérapie adjuvante est proposée peut demander :</p>\n<ul>\n<li>Suis-je éligible au schéma en cinq séances ?</li>\n<li>Le sein seul, la paroi ou les ganglions doivent-ils être irradiés ?</li>\n<li>Un complément de dose est-il nécessaire ?</li>\n<li>Quels sont les risques pour la peau, le sein, le poumon et le cœur dans mon cas ?</li>\n<li>La technique d’inspiration bloquée est-elle utile pour protéger le cœur ?</li>\n</ul>\n<p>La durée la plus courte n’est pas automatiquement la meilleure : c’est la conformité du schéma à la situation individuelle qui compte.</p></div></article>",
+      "url": "article-octobre-rose-fast-forward-20261022.html",
+      "format": "article",
+      "category": "Octobre Rose",
+      "theme": "OCTOBRE ROSE",
+      "keywords": [
+        "OCTOBRE ROSE"
+      ],
+      "sources": [
+        {
+          "label": "Publication primaire / source de référence",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42134381/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-22T14:25:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation explicites de la conférence du 22 octobre 2026 et de l'article Octobre Rose. Correction FAST-Forward 4 087 participantes également approuvée.",
+        "contentHash": "82e82f4dc9f4d678905e70b1c8a5788aa5cc4f3f7481b898053614a8b7d3f73c"
+      },
+      "standalone": true
     }
   ],
   "editions": [
@@ -4765,6 +5100,69 @@
       "editorialConference": {
         "validation": "Validation médicale et autorisation de publication explicites du Dr Romain BEDDOK le 18 octobre 2026 : « Parfait. Validation. Muse en ligne. »",
         "corpusImpact": "Candidats VRS et anesthésie ; enrichissements prévention et hormonothérapie à instruire séparément. Aucune fiche créée."
+      }
+    },
+    {
+      "id": "edition-2026-10-22",
+      "date": "2026-10-22",
+      "publishAt": "2026-10-22T12:00:00+02:00",
+      "complete": true,
+      "items": [
+        {
+          "contentId": "daily-opioides-20261022",
+          "slot": "À LA UNE",
+          "icon": "MÉDICAMENTS"
+        },
+        {
+          "contentId": "daily-sjogren-20261022",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "SJÖGREN"
+        },
+        {
+          "contentId": "daily-denosumab-20261022",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "CANCER"
+        },
+        {
+          "contentId": "daily-oxymetrie-20261022",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "NOUVEAU-NÉ"
+        },
+        {
+          "contentId": "daily-double-prise-20261022",
+          "slot": "FICHE DU JOUR",
+          "icon": "MÉDICAMENTS"
+        },
+        {
+          "contentId": "daily-vaccin-grippe-20261022",
+          "slot": "VRAI OU FAUX",
+          "icon": "FAUX"
+        },
+        {
+          "contentId": "daily-chiffre-denosumab-20261022",
+          "slot": "LE CHIFFRE DU JOUR",
+          "icon": "9,8 %"
+        },
+        {
+          "contentId": "daily-niche2-20261022",
+          "slot": "DONNÉES",
+          "icon": "CANCER"
+        },
+        {
+          "contentId": "daily-vih-hebdo-20261022",
+          "slot": "DONNÉES",
+          "icon": "VIH"
+        },
+        {
+          "contentId": "daily-teleexpertise-pediatrique-20261022",
+          "slot": "DONNÉES",
+          "icon": "ENFANT"
+        }
+      ],
+      "editorialConference": {
+        "validation": "Conférence intégrale et article Octobre Rose validés pour publication le 22 octobre 2026. FAST-Forward : effectif corrigé 4 087 participantes, correction approuvée.",
+        "veille": "Opioïdes non utilisés ; ianalumab Sjögren ; dénosumab oncologique ; oxymétrie néonatale ; dépistage colorectal postal ; NICHE-2 ; VIH hebdomadaire ; téléexpertise pédiatrique.",
+        "corpusImpact": "Décisions du texte validé conservées ; aucune nouvelle fiche médicale créée."
       }
     }
   ]
