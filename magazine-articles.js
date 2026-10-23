@@ -1159,27 +1159,24 @@ window.MACA_MAGAZINE_ARTICLES=[
   {
     "id": "radar-arn-cancer-20261014",
     "url": "article-vaccins-arn-cancer-bnt113.html",
-    "title": "Les vaccins à ARN messager peuvent-ils vraiment traiter un cancer ?",
+    "title": "Un vaccin à ARN messager peut-il empêcher un cancer de revenir ?",
     "format": "article",
     "category": "Décryptage",
     "theme": "Cancer",
     "date": "2026-10-14",
     "status": "PUBLISHED",
-    "excerpt": "Des vaccins thérapeutiques à ARN messager sont étudiés contre certains cancers. Le premier résultat d’AHEAD-MERIT ne montre pas de gain significatif sur la survie sans progression ; la survie globale reste à évaluer.",
+    "excerpt": "Un essai de phase III apporte un résultat encourageant après chirurgie de certains mélanomes. Il ne démontre pas encore une baisse de mortalité et ne concerne pas la prévention du cancer chez une personne en bonne santé.",
     "image": "",
     "imageAlt": "",
     "keywords": [
-      "Cancer",
-      "vaccins",
-      "messager",
-      "peuvent-ils",
-      "vraiment",
-      "traiter",
-      "cancer"
+      "vaccin ARN",
+      "mélanome",
+      "INTerpath-001",
+      "BNT113"
     ],
     "medicalStatus": "VALIDATED",
     "referenceFicheId": "cancer-immunotherapie-comment-ca-marche",
-    "version": "f6be4d9df6cfe3f2552d7db9ffbd1d8582fdc1579fa785c37280940d3adc27ef"
+    "version": "de98f59f44d4a0b9b3ebe4cd7b3c11276477fdab6636b9177b8a8117044efd69"
   },
   {
     "id": "radar-avc-thrombectomie-20261014",
@@ -2462,5 +2459,48 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "3b31e78656307234443c3adcb03b8c06daf900011c70963aee4f518dfb8ec164"
+  },
+  {
+    "id": "radar-ado-poids-emotions-20261023",
+    "url": "article-ado-surpoids-emotions.html",
+    "title": "Surpoids adolescent : quelle place pour les émotions dans l’accompagnement ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Ados",
+    "date": "2026-10-23",
+    "status": "PUBLISHED",
+    "excerpt": "Une étude suggère qu’un travail sur les émotions peut aider certains adolescents à maintenir les résultats d’un accompagnement familial. Elle ne transforme pas la gestion du stress en régime et ne concerne pas tous les adolescents qui mangent pour se réconforter.",
+    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "imageAlt": "Échange entre médecin et patient autour d’un document.",
+    "keywords": [
+      "alimentation émotionnelle",
+      "adolescent",
+      "surpoids",
+      "stress"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "ado-alimentation-emotionnelle-stress",
+    "version": "2612814b206b608effff11d1c0394a7c38a10245a654fa76c51cdf2ddc5ee82d"
+  },
+  {
+    "id": "radar-sein-chimiotherapie-ispy22-20261023",
+    "url": "article-cancer-sein-reduire-chimiotherapie-ispy22.html",
+    "title": "Cancer du sein : pourra-t-on éviter certains blocs de chimiothérapie ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Cancer",
+    "date": "2026-10-23",
+    "status": "PUBLISHED",
+    "excerpt": "Une étude explore une séquence de soins adaptée aux caractéristiques de la tumeur et à sa réponse. L’objectif est de limiter certains traitements supplémentaires chez des patientes sélectionnées, sans présenter cette approche comme un nouveau standard.",
+    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "imageAlt": "Échange entre médecin et patient autour d’un document.",
+    "keywords": [
+      "cancer du sein",
+      "I-SPY2.2",
+      "chimiothérapie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "cancer-sein-chimiotherapie-obligatoire",
+    "version": "64eb681a7673c24b4235ceb939bab2e65eec10a91f18e0113e6b117986083752"
   }
 ];

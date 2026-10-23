@@ -8342,3 +8342,60 @@ window.extraAuditedQuestions.push({
 });
 
 ;
+
+/* ===== MACA BUNDLE SOURCE: backlog-audited-alimentation-emotionnelle-2026-10-23.js ===== */
+window.extraAuditedQuestions = [...(window.extraAuditedQuestions || []),
+{
+  "id": "ado-alimentation-emotionnelle-stress",
+  "category": "Ados",
+  "title": "Mon ado mange quand il est stressé : comment l’aider sans le culpabiliser ?",
+  "keywords": "adolescent ado stress alimentation émotionnelle manger émotions perte contrôle honte boulimie hyperphagie parents",
+  "answer": "Manger pour se réconforter peut arriver et ne suffit pas à diagnostiquer un trouble alimentaire. Pour aider un adolescent, mieux vaut parler de ce qu’il ressent, préserver des repas réguliers et éviter les commentaires sur son corps ou les régimes improvisés. Des épisodes répétés avec perte de contrôle, honte, restriction ou comportements de compensation méritent un avis professionnel, quel que soit son poids.",
+  "detail": "Manger et ressentir des émotions peuvent aller ensemble. Stress scolaire, conflit ou tristesse peuvent modifier les envies de manger. On parle d’alimentation émotionnelle lorsque la nourriture sert notamment à apaiser une émotion. Ce terme décrit un comportement ; il ne constitue pas, à lui seul, une maladie. Une envie après une journée difficile peut aussi correspondre à une faim réelle, surtout si le déjeuner a été insuffisant. Les deux peuvent coexister.\n\nObserver sans enquêter. Le repère utile est le retentissement : est-ce occasionnel ou fréquent ? L’adolescent en souffre-t-il ? A-t-il l’impression de ne plus pouvoir s’arrêter ? Inutile de compter les emballages ou de demander un compte rendu de chaque prise alimentaire. Une conversation calme, hors des repas, permet d’aborder ce qu’il vit sans transformer la table en lieu de contrôle.\n\nCommencer par une question ouverte. On peut dire : « Tu sembles avoir eu une journée difficile. Tu veux m’en parler ? » L’objectif est de comprendre, pas d’obtenir un aveu. Éviter les remarques sur les quantités, le ventre ou le manque supposé de volonté. Les recommandations françaises placent la prévention de la stigmatisation et l’alliance avec la famille au centre de l’accompagnement. Des moqueries, à l’école ou ailleurs, doivent aussi être prises au sérieux.\n\nPréserver un cadre alimentaire rassurant. Proposer des repas réguliers, une alimentation suffisante et, lorsque c’est possible, des repas partagés. Ne pas imposer de sauter le repas suivant pour « compenser ». À cet âge, les besoins dépendent de la croissance et de l’activité. Un régime restrictif décidé en famille n’est pas une réponse adaptée à une inquiétude sur le poids. Une éventuelle prise en charge nutritionnelle se construit avec un professionnel.\n\nÉlargir les façons de traverser une émotion. Discuter, écouter de la musique ou pratiquer une activité appréciée peuvent offrir d’autres ressources. Ce sont des possibilités à choisir avec l’adolescent, pas des obligations pour l’empêcher de manger. S’il a faim, il doit pouvoir manger. Et si la souffrance revient souvent, proposer un soutien psychologique est plus utile que multiplier les astuces ou surveiller davantage.\n\nDistinguer alimentation émotionnelle et trouble des conduites alimentaires. Des crises répétées avec impression de perdre le contrôle, des prises alimentaires cachées accompagnées de souffrance, des vomissements provoqués ou des restrictions importantes nécessitent une évaluation. L’hyperphagie boulimique et la boulimie ne se diagnostiquent pas sur un goûter abondant. Le poids ne suffit pas à les repérer : une personne peut avoir besoin de soins sans être maigre ni présenter une variation spectaculaire.\n\nQui peut aider ? Le médecin traitant ou le pédiatre peut faire le point sur l’alimentation, la croissance, le sommeil, l’humeur et les difficultés scolaires ou familiales. Selon les besoins, il propose un accompagnement psychologique, nutritionnel ou spécialisé dans les troubles alimentaires. Les parents sont des partenaires des soins, tout en laissant à l’adolescent un espace pour parler en confiance. Les bilans biologiques ne sont pas systématiques : ils dépendent de l’évaluation.\n\nCe que dit la recherche. Un essai récent suggère l’intérêt d’intégrer le travail émotionnel à un programme familial structuré. Il ne démontre pas que quelques exercices suffisent à traiter une obésité. Pour la pratique quotidienne, les repères restent une évaluation globale, des objectifs individualisés et un accompagnement sans culpabilisation.\n\nQuestions fréquentes et idées reçues\n\n« Est-ce forcément un problème de poids ? » Non. La souffrance et les comportements alimentaires méritent une attention propre, indépendamment du chiffre sur la balance.\n\n« Faut-il supprimer tous les aliments qu’il aime ? » Une interdiction générale ne traite pas les émotions. Les changements se discutent avec l’adolescent et, si nécessaire, un professionnel.\n\n« Cela signifie-t-il que nous avons mal fait comme parents ? » Non. Les conduites alimentaires ont plusieurs déterminants ; désigner un responsable ne facilite pas les soins.\n\nSynthèse et niveau de preuve\n\nSituation — Message essentiel — Appui scientifique\n|---|---|---|\nEnvie occasionnelle de réconfort — Écouter et regarder le contexte ; aucun diagnostic automatique — Repères cliniques et accompagnement familial\nInquiétude sur le poids — Évaluation globale ; éviter stigmatisation et restriction improvisée — HAS, parcours pédiatrique actualisé en 2023\nPerte de contrôle ou compensation — Rechercher un trouble alimentaire, quel que soit le poids — HAS–FFAB, recommandations 2019\nTravail sur les émotions — Peut compléter un programme de soins ; ne suffit pas seul — Essai randomisé récent, données encore limitées\n\nLimite : il n’existe pas, dans les sources contrôlées, de recommandation française autonome prescrivant une méthode unique contre « l’alimentation émotionnelle » de tous les adolescents. Les propositions pratiques relèvent des principes d’accompagnement et ne constituent pas un protocole validé à elles seules.",
+  "watch": "Consulter si les épisodes se répètent, deviennent incontrôlables, s’accompagnent de honte, de restriction, de vomissements, d’une variation importante du poids ou d’un retrait social. Un malaise, une déshydratation ou une altération de l’état général justifient une évaluation rapide. Ne pas attendre une maigreur importante.",
+  "source": "HAS · HAS–FFAB · Assurance Maladie · JAMA Network Open",
+  "url": "https://www.has-sante.fr/jcms/p_3321295/fr/guide-du-parcours-de-soins-surpoids-et-obesite-chez-l-enfant-et-l-adolescent-e",
+  "sources": [
+    {
+      "label": "HAS. *Guide du parcours de soins : surpoids et obésité chez l’enfant et l’adolescent(e)*, actualisation 2023.",
+      "url": "https://www.has-sante.fr/jcms/p_3321295/fr/guide-du-parcours-de-soins-surpoids-et-obesite-chez-l-enfant-et-l-adolescent-e"
+    },
+    {
+      "label": "HAS–FFAB. *Boulimie et hyperphagie boulimique : repérage et éléments généraux de prise en charge*, 2019.",
+      "url": "https://www.has-sante.fr/jcms/c_2581436/fr"
+    },
+    {
+      "label": "Assurance Maladie. *Agir contre le surpoids et l’obésité de l’enfant et de l’adolescent(e)*, février 2026.",
+      "url": "https://www.ameli.fr/assure/sante/themes/surpoids-obesite-enfant-adolescent/preparer-agir"
+    },
+    {
+      "label": "Assurance Maladie. *Boulimie et hyperphagie boulimique : la vie au quotidien*.",
+      "url": "https://www.ameli.fr/assure/sante/themes/boulimie-et-hyperphagie-boulimique/boulimie-hyperphagie-boulimique-vie-au-quotidien"
+    },
+    {
+      "label": "Assurance Maladie. *Repérer les symptômes de boulimie et d’hyperphagie boulimique*.",
+      "url": "https://www.ameli.fr/assure/sante/themes/boulimie-et-hyperphagie-boulimique/boulimie-hyperphagie-boulimique-symptomes"
+    },
+    {
+      "label": "Société française d’endocrinologie. *Obésité de l’enfant et de l’adolescent* : principes diététiques et soutien familial.",
+      "url": "https://www.sfendocrino.org/item-253-obesite-de-lenfant-et-de-ladolescent/"
+    },
+    {
+      "label": "Boutelle KN et coll. *Emotion-Focused Behavioral Weight Loss Treatment for Adolescents*. JAMA Network Open, 22 octobre 2026. DOI : 10.1001/jamanetworkopen.2026.39867.",
+      "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855701"
+    }
+  ],
+  "verifiedAt": "2026-10-23",
+  "nextAuditAt": "2027-01-23",
+  "validationStatus": "VALIDATED",
+  "editorialStatus": "MEDICAL_VALIDATED",
+  "auditIntervalMonths": 3,
+  "validation": {
+    "validator": "Dr Romain BEDDOK",
+    "validatedAt": "2026-10-23",
+    "evidence": "Validation explicite des quatre textes préparés le 23 octobre 2026 : « parfait validation et mise en ligne ». Texte approuvé conservé."
+  }
+}
+];
+
+;

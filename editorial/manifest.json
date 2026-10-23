@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "editionId": "edition-2026-10-23",
   "editionDate": "2026-10-23",
-  "sourceFingerprint": "a5e604e771dbb6445cf79d113b058bc8a4d3eded61834bf4e2e0b599ce6e42ec",
+  "sourceFingerprint": "3b2a6904df032aeb15b6c1c6895e0ee8d804bee0e40b537cf73d11b8529bbbe6",
   "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
@@ -29,6 +29,18 @@
       "id": "mag-culture-moral-20261023",
       "version": "45f17e2e23940c15a2cc45f380ac2a6fbed253ea7f3c9f9b2e2f1b56708d799e",
       "url": "article-culture-moral-20261023.html",
+      "date": "2026-10-23"
+    },
+    {
+      "id": "mag-radar-ado-poids-emotions-20261023",
+      "version": "2612814b206b608effff11d1c0394a7c38a10245a654fa76c51cdf2ddc5ee82d",
+      "url": "article-ado-surpoids-emotions.html",
+      "date": "2026-10-23"
+    },
+    {
+      "id": "mag-radar-sein-chimiotherapie-ispy22-20261023",
+      "version": "64eb681a7673c24b4235ceb939bab2e65eec10a91f18e0113e6b117986083752",
+      "url": "article-cancer-sein-reduire-chimiotherapie-ispy22.html",
       "date": "2026-10-23"
     },
     {
@@ -393,7 +405,7 @@
     },
     {
       "id": "mag-radar-arn-cancer-20261014",
-      "version": "f6be4d9df6cfe3f2552d7db9ffbd1d8582fdc1579fa785c37280940d3adc27ef",
+      "version": "de98f59f44d4a0b9b3ebe4cd7b3c11276477fdab6636b9177b8a8117044efd69",
       "url": "article-vaccins-arn-cancer-bnt113.html",
       "date": "2026-10-14"
     },
