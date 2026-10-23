@@ -2,7 +2,9 @@ name: Build static SEO fiches
 
 on:
   push:
-    branches: [ "feat/v0-magazine", "feat/seo-static-fiches-final-20261002" ]
+    # Magazine SEO pages are generated within the atomic Mag deployment.
+    # A second automatic writer could cancel a pending Magazine deployment.
+    branches: [ "feat/seo-static-fiches-final-20261002" ]
   workflow_dispatch:
 
 permissions:
