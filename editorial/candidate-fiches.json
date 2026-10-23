@@ -96,5 +96,40 @@
     "url": "article-achondroplasie-navepegritide-avis-europeen.html",
     "existingFicheId": null,
     "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "sommeil-femmes-20261023",
+    "title": "À 45 ans, pourquoi dort-on moins bien qu’avant ?",
+    "url": "article-sommeil-femmes-20261023.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "poids-menopause-20261023",
+    "title": "Pourquoi prend-on du poids autour de la ménopause, même sans manger davantage ?",
+    "url": "article-poids-menopause-20261023.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "boissons-enfants-20261023",
+    "title": "Boissons sucrées : les remplacer par de l’eau aide-t-il les enfants ?",
+    "url": "article-boissons-enfants-20261023.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "culture-moral-20261023",
+    "title": "Musée, cinéma, théâtre : est-ce aussi bon pour le moral ?",
+    "url": "article-culture-moral-20261023.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "octobre-rose-suppression-ovarienne-20261023",
+    "title": "Cancer du sein : supprimer temporairement le fonctionnement des ovaires réduit-il les récidives ?",
+    "url": "article-octobre-rose-suppression-ovarienne-20261023.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
   }
 ]
