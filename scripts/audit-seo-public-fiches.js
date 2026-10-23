@@ -10,8 +10,8 @@ const canonical=Array.from(c.MACA_BUILD_CANONICAL_CORPUS()).map(x=>JSON.parse(JS
 const sitemap=read('sitemap.xml');
 const renderer=read('fiche-corpus-v2.js');
 const ids=['varices-contention-disparaitre','syndrome-premenstruel-que-faire','cancer-intelligence-artificielle-usages-reels','obesite-nouveaux-traitements-securite','troubles-erection-age-cardio','ipp-long-cours-omeprazole','sang-dans-urines-hematurie','fuites-urinaires-age','antihistaminique-tous-les-jours','fievre-adulte-quand-sinquieter'];
-const rows=ids.map(id=>{const q=canonical.find(x=>String(x.id)===id);const url=`https://macasante.fr/fiche.html?id=${id}`;return {id,inCanonical:!!q,title:q&&(q.title||q.question),category:q&&(q.publicCategory||q.category),inSitemap:sitemap.includes(`<loc>${url}</loc>`)};});
-const missingSitemap=canonical.filter(q=>!sitemap.includes(`<loc>https://macasante.fr/fiche.html?id=${q.id}</loc>`)).map(q=>q.id);
+const rows=ids.map(id=>{const q=canonical.find(x=>String(x.id)===id);const url=`https://macasante.fr/fiches-seo/${id}.html`;return {id,inCanonical:!!q,title:q&&(q.title||q.question),category:q&&(q.publicCategory||q.category),inSitemap:sitemap.includes(`<loc>${url}</loc>`)};});
+const missingSitemap=canonical.filter(q=>!sitemap.includes(`<loc>https://macasante.fr/fiches-seo/${q.id}.html</loc>`)).map(q=>q.id);
 const notFoundBody=(renderer.match(/function failNotFound\(\)\{([^}]*)\}/)||[])[1]||'';
 const temporaryBody=(renderer.match(/function failTemporary\(\)\{([^}]*)\}/)||[])[1]||'';
 const notFoundSetsNoindex=/noindex,follow/.test(notFoundBody);
