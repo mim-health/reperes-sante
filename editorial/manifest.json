@@ -1,12 +1,36 @@
 {
   "schemaVersion": 1,
-  "editionId": "edition-2026-10-22",
-  "editionDate": "2026-10-22",
-  "sourceFingerprint": "f4905f8721361d4909c151204b104a14a864fdcd257e23433dd6ee39b2d82734",
-  "missingEdition": true,
+  "editionId": "edition-2026-10-23",
+  "editionDate": "2026-10-23",
+  "sourceFingerprint": "a5e604e771dbb6445cf79d113b058bc8a4d3eded61834bf4e2e0b599ce6e42ec",
+  "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-sommeil-femmes-20261023",
+      "version": "909e32720abf31c4698dba54c5d9ac5b0c4e3398467a0d0f404acee5faab7505",
+      "url": "article-sommeil-femmes-20261023.html",
+      "date": "2026-10-23"
+    },
+    {
+      "id": "mag-poids-menopause-20261023",
+      "version": "cfde8398b191f9f8266b2ccbd2942adedce6049f779bacd3dd1e2ac605e3cef3",
+      "url": "article-poids-menopause-20261023.html",
+      "date": "2026-10-23"
+    },
+    {
+      "id": "mag-boissons-enfants-20261023",
+      "version": "3a13c0ef4de9f44649cc8126496b41d0fd782b14c1cd78a27592831150fa1ee6",
+      "url": "article-boissons-enfants-20261023.html",
+      "date": "2026-10-23"
+    },
+    {
+      "id": "mag-culture-moral-20261023",
+      "version": "45f17e2e23940c15a2cc45f380ac2a6fbed253ea7f3c9f9b2e2f1b56708d799e",
+      "url": "article-culture-moral-20261023.html",
+      "date": "2026-10-23"
+    },
     {
       "id": "mag-cagrisema-menopause-perte-poids-20261022",
       "version": "583f2465a4f35d29c1a72cfc29bb5add093da90681cc886e5492c0dee228c6d2",

@@ -7,6 +7,7 @@ SOURCE_COMMIT="$(git rev-parse HEAD)"
 INPUT_VERSION="$(node -p "require('./scripts/mag-editorial').hash(require('./scripts/mag-editorial').read())")"
 git config user.name 'github-actions[bot]'
 git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+git add corpus-production.js corpus-loader.js fiches-data fiches-seo
 git add index.html fiches.html fiche.html daily.html magazine.html maca-daily-editorial-data.js maca-editorial-history.js magazine-articles.js magazine-videos.js sitemap.xml editorial/manifest.json editorial/candidate-fiches.json editorial/duplicates-report.json
 node - <<'JS'
 const {execFileSync}=require('child_process');const {read}=require('./scripts/mag-editorial');

@@ -18,13 +18,14 @@ window.healthQuestions = [
   {id:'hta',category:'Prévention',title:'Hypertension : peut-on en avoir sans le savoir ?',keywords:'hypertension tension artérielle HTA dépistage',answer:'Oui. L’hypertension peut rester longtemps sans symptôme, d’où l’intérêt de la mesurer régulièrement. Une mesure isolée élevée ne suffit cependant pas à poser un diagnostic : plusieurs mesures dans de bonnes conditions sont généralement nécessaires.',watch:'Une valeur très élevée associée à douleur thoracique, essoufflement, déficit neurologique ou céphalée brutale doit faire consulter sans délai.',source:'Santé publique France · HAS',url:'https://www.santepubliquefrance.fr/hypertension-arterielle'},
   {id:'pas-jour',category:'Prévention',title:'Faut-il absolument faire 10 000 pas par jour ?',keywords:'pas marche activité physique 10000 7000 sport',answer:'Non. Les bénéfices de l’activité physique apparaissent bien avant 10 000 pas quotidiens. Une méta-analyse de 2025 retrouve déjà des bénéfices importants autour de 7 000 pas par jour. Le plus important est d’augmenter progressivement son niveau d’activité par rapport à son point de départ.',watch:'En cas de maladie cardiovasculaire connue ou de symptômes à l’effort, une reprise d’activité mérite d’être adaptée avec un professionnel.',source:'The Lancet Public Health · 2025',url:'https://doi.org/10.1016/S2468-2667(25)00164-1'},
   {id:'fibres',category:'Nutrition',title:'Fibres : en mangeons-nous assez ?',keywords:'fibres alimentation légumes fruits céréales transit',answer:'En France, les apports moyens restent inférieurs au repère de 30 g par jour chez l’adulte. Les légumes, fruits, légumineuses et produits céréaliers complets sont les principales sources alimentaires.',watch:'Augmenter les fibres progressivement et maintenir une hydratation suffisante peut limiter les inconforts digestifs.',source:'Anses',url:'https://www.anses.fr/fr/content/nutrition-et-cancers-quelles-recommandations'},
-  {id:'boissons-sucrees',category:'Nutrition',title:'Boissons sucrées chez l’enfant : pourquoi les limiter ?',keywords:'soda jus sucre enfant boisson sucrée nutrition',answer:'Les boissons sucrées apportent rapidement beaucoup de sucres et rassasient peu. Les recommandations françaises encouragent à privilégier l’eau et à limiter sodas, boissons aromatisées et consommations fréquentes de jus.',watch:'L’enjeu est surtout la répétition quotidienne et le remplacement de l’eau par des boissons sucrées.',source:'Anses',url:'https://www.anses.fr/fr/content/nutrition-des-enfants-des-personnes-agees-et-des-femmes-enceintes-ou-allaitantes-lanses'},
+  {id:'boissons-sucrees',category:'Nutrition',title:'Boissons sucrées chez l’enfant : quels risques et comment les limiter ?',keywords:'soda jus sucre enfant boisson sucrée nutrition sirop thé glacé boisson énergisante',answer:'L’eau est la boisson de référence chez l’enfant. Les sodas, sirops, thés glacés sucrés et boissons aux fruits consommés régulièrement apportent des sucres libres et favorisent les caries. Même sans sucres ajoutés, un jus ne remplace pas un fruit entier. Pour changer les habitudes, proposer de l’eau et diminuer progressivement les boissons sucrées, sans culpabiliser ni commenter le poids de l’enfant.',watch:'Limiter la fréquence des prises sucrées pour protéger les dents. Éviter les boissons énergisantes chez les enfants et adolescents en raison notamment de la caféine. Demander conseil en cas de caries répétées, de consommation très importante ou de difficulté alimentaire. Un programme scolaire ayant légèrement amélioré un indicateur de corpulence ne démontre pas qu’un simple remplacement de soda fait maigrir.',source:'Anses · OMS · AAP',url:'https://www.anses.fr/fr/content/nutrition-des-enfants-des-personnes-agees-et-des-femmes-enceintes-ou-allaitantes-lanses'},
   {id:'memoire',category:'Après 60 ans',title:'Mémoire : quels changements doivent faire parler à son médecin ?',keywords:'mémoire oubli vieillissement senior Alzheimer confusion',answer:'Des oublis occasionnels peuvent survenir avec l’âge. Ce qui mérite davantage d’attention est une évolution progressive qui gêne les activités habituelles : se perdre dans un lieu connu, difficultés répétées à gérer des tâches familières ou changement marqué de comportement.',watch:'Une confusion brutale n’évoque pas un simple vieillissement et doit être évaluée rapidement.',source:'Assurance Maladie · HAS',url:'https://www.ameli.fr/assure/sante/themes/maladie-alzheimer'},
   {id:'chutes',category:'Après 60 ans',title:'Chutes après 65 ans : comment réduire le risque ?',keywords:'chute senior personne âgée équilibre prévention médicaments',answer:'La prévention repose sur plusieurs leviers : activité physique adaptée, correction des troubles visuels, chaussage, environnement du domicile et réévaluation de certains médicaments. Une chute n’est pas toujours anodine, même sans fracture immédiate.',watch:'Une chute répétée, un malaise associé, une perte de connaissance ou une incapacité à se relever doit conduire à une évaluation médicale.',source:'HAS · Assurance Maladie',url:'https://www.has-sante.fr/'},
   {id:'tique',category:'Symptômes',title:'Piqûre de tique : que faut-il surveiller ?',keywords:'tique morsure lyme érythème migrant rougeur',answer:'Après une piqûre, la tique doit être retirée le plus rapidement possible avec un tire-tique, sans appliquer de produit avant le retrait. Une rougeur immédiatement autour du point de piqûre peut être banale. En revanche, une plaque rouge qui s’étend progressivement dans les jours ou semaines suivantes évoque un érythème migrant.',watch:'Consulter en cas de plaque qui s’étend, fièvre, douleurs inhabituelles ou symptômes neurologiques après une piqûre.',source:'Santé publique France · Assurance Maladie',url:'https://www.ameli.fr/assure/sante/themes/maladie-lyme'},
   {id:'brulure',category:'Symptômes',title:'Brûlure domestique : quel premier geste ?',keywords:'brûlure eau chaude feu peau accident',answer:'Pour une brûlure thermique récente, le premier geste est de refroidir la zone sous une eau tempérée pendant plusieurs minutes, sans glace ni corps gras. La gravité dépend de la profondeur, de l’étendue, de la localisation et de l’âge de la personne.',watch:'Une brûlure étendue, profonde, du visage, des mains, des organes génitaux ou chez un jeune enfant nécessite un avis médical rapide.',source:'Assurance Maladie',url:'https://www.ameli.fr/assure/sante/urgence/accidents-domestiques/brulures'},
   {id:'douleur-abdominale',category:'Symptômes',title:'Mal au ventre : quels signes doivent alerter ?',keywords:'douleur ventre abdominale appendicite vomissement',answer:'Une douleur abdominale peut avoir de nombreuses causes, souvent bénignes. Sa localisation, sa durée, son intensité et les symptômes associés permettent d’en apprécier l’importance.',watch:'Une douleur intense ou croissante, un ventre très dur, des vomissements persistants, du sang, un malaise ou une grossesse possible nécessitent une évaluation rapide.',source:'Assurance Maladie',url:'https://www.ameli.fr/assure/sante/themes/mal-ventre'},
-  {id:'maux-tete',category:'Symptômes',title:'Mal de tête : quand faut-il consulter rapidement ?',keywords:'céphalée migraine mal tête urgence neurologique',answer:'Les maux de tête sont fréquents et le plus souvent bénins. Un contexte habituel de migraine ou de céphalée de tension est différent d’un mal de tête nouveau, brutal ou associé à d’autres signes.',watch:'Un mal de tête brutal et maximal d’emblée, avec déficit neurologique, fièvre et raideur de nuque, trouble de conscience ou après un traumatisme important justifie une évaluation urgente.',source:'Assurance Maladie',url:'https://www.ameli.fr/assure/sante/themes/mal-tete'}
+  {id:'maux-tete',category:'Symptômes',title:'Mal de tête : quand faut-il consulter rapidement ?',keywords:'céphalée migraine mal tête urgence neurologique',answer:'Les maux de tête sont fréquents et le plus souvent bénins. Un contexte habituel de migraine ou de céphalée de tension est différent d’un mal de tête nouveau, brutal ou associé à d’autres signes.',watch:'Un mal de tête brutal et maximal d’emblée, avec déficit neurologique, fièvre et raideur de nuque, trouble de conscience ou après un traumatisme important justifie une évaluation urgente.',source:'Assurance Maladie',url:'https://www.ameli.fr/assure/sante/themes/mal-tete'},
+  {id:'menopause-sommeil-reveils',category:'Santé des femmes',title:'Ménopause et sommeil : pourquoi se réveille-t-on davantage la nuit ?',keywords:'ménopause périménopause insomnie sommeil réveils nocturnes sueurs nocturnes bouffées chaleur apnée TCC-I',answer:'Autour de la périménopause, les réveils nocturnes peuvent être plus fréquents. Bouffées de chaleur, sueurs nocturnes, stress et évolution du sommeil avec l’âge peuvent contribuer, mais tous les troubles du sommeil ne sont pas hormonaux. Des réveils persistants méritent une évaluation adaptée.',watch:'Conserver des horaires réguliers, limiter caféine tardive et alcool le soir, et discuter des bouffées de chaleur gênantes. En cas d’insomnie chronique, la thérapie cognitivo-comportementale de l’insomnie (TCC-I) est un traitement de référence. Consulter si somnolence diurne, ronflements ou pauses respiratoires, fatigue importante ou symptômes dépressifs ; ne pas tout attribuer à la ménopause.',source:'NICE NG23 · American College of Physicians',url:'https://www.nice.org.uk/guidance/ng23'}
 ];
 ;
 
@@ -8075,5 +8076,269 @@ window.extraAuditedQuestions=[...(window.extraAuditedQuestions||[]),
 {"id":"cancer-alimentation-pendant-traitements","category":"Cancer","title":"Cancer : comment s'alimenter pendant les traitements ?","keywords":"chimiothérapie, radiothérapie, immunothérapie, appétit, dénutrition, protéines, nausées, mucite, alimentation.","answer":"Pendant les traitements d'un cancer, le plus important est de manger suffisamment et de prévenir la perte de poids et de muscle. Il n'existe pas de régime miracle contre le cancer. Des repas plus petits et plus fréquents, adaptés aux symptômes, peuvent aider. Prévenez rapidement l'équipe soignante en cas de perte de poids involontaire, de difficultés à avaler ou d'apports très réduits : un accompagnement diététique est possible.","detail":"**Le premier objectif est de rester nourri.** Le cancer, l'inflammation, une intervention chirurgicale et les effets indésirables des traitements peuvent modifier l'appétit et la façon de manger. Une personne peut être dénutrie même si son poids de départ était élevé. La diminution des apports, une perte de poids involontaire, une fonte musculaire ou une fatigue inhabituelle doivent être signalées, sans attendre qu'une dénutrition sévère s'installe. L'équipe peut surveiller l'évolution du poids, les quantités réellement consommées et la force musculaire. Selon la situation, une consultation avec un diététicien, une adaptation des repas, des compléments nutritionnels oraux prescrits ou d'autres soutiens nutritionnels peuvent être nécessaires.\n\n**Éviter les interdits systématiques.** En l'absence de contre-indication particulière, une alimentation variée reste souhaitable. Aucun aliment ne guérit un cancer à lui seul, et supprimer tout sucre ne « prive » pas sélectivement la tumeur de carburant. Un régime très restrictif ou un jeûne entrepris pendant les traitements expose surtout à une diminution des apports et de la masse musculaire. Si l'envie de manger baisse, le conseil peut temporairement être différent des recommandations habituelles de prévention : choisir des aliments acceptés, répartir les prises et enrichir les repas peut devenir prioritaire. Les besoins varient selon la maladie, le traitement, le poids, l'activité et les autres pathologies.\n\n**Adapter les repas aux effets indésirables.** Pour les nausées, plusieurs petites prises, des aliments à température ambiante et l'évitement des odeurs qui déclenchent le malaise peuvent aider. Un antiémétique prescrit reste parfois indispensable. En cas de bouche douloureuse ou de mucite, privilégier des aliments souples, froids ou tièdes peut améliorer la tolérance ; les aliments irritants peuvent être temporairement évités. Une modification du goût est fréquente et conduit parfois à tester différentes textures ou assaisonnements. Une diarrhée importante impose de discuter de l'hydratation et de sa cause avec les soignants ; il ne faut pas appliquer un régime restrictif prolongé sans évaluation. En cas de constipation, les conseils sont individualisés, notamment si un risque d'occlusion existe.\n\n**Sécurité alimentaire et traitements.** Certaines chimiothérapies entraînent une immunodépression, mais tous les patients n'ont pas les mêmes restrictions. Les règles d'hygiène alimentaire — lavage des mains et des fruits et légumes, respect du froid, cuisson et conservation adaptées — restent fondamentales. L'équipe peut donner des précautions supplémentaires pendant une période de neutropénie selon la situation ; les régimes dits « stériles » ou neutropéniques stricts ne doivent pas être prescrits automatiquement à tout le monde. Les préparations à base de plantes, mégadoses vitaminiques et compléments alimentaires peuvent interagir avec des médicaments ou présenter des risques : demander conseil avant d'en prendre, même s'ils sont vendus comme naturels.\n\n**Demander de l'aide tôt.** La personne malade peut indiquer au médecin, à l'infirmier ou au diététicien ce qu'elle arrive réellement à manger, depuis combien de temps, et si elle a perdu du poids. Les proches peuvent faciliter les courses et les repas sans forcer ni culpabiliser. Le soutien nutritionnel fait partie des soins de support ; il accompagne le traitement du cancer, mais ne le remplace pas. L'objectif est de préserver autant que possible la santé, la force et la qualité de vie pendant une période parfois difficile.","watch":"Contactez rapidement l'équipe en cas de baisse majeure des apports, perte de poids rapide, impossibilité d'avaler les aliments ou boissons, vomissements persistants, diarrhée importante, signes de déshydratation, fièvre pendant une période à risque de neutropénie ou douleur buccale empêchant de boire. Incapacité à boire, malaise sévère ou altération brutale de l'état général justifient une évaluation urgente (15/112 selon la gravité).","source":"Référence scientifique 1 · Référence scientifique 2 · Référence scientifique 3","sources":[{"label":"Référence scientifique 1","url":"https://www.cancer.fr/catalogue-des-publications/cancer-votre-alimentation-pendant-les-traitements"},{"label":"Référence scientifique 2","url":"https://www.cancer.fr/professionnels-de-sante/prevention-et-depistages/prevention/alimentation/alimentation-pendant-et-apres-le-cancer"},{"label":"Référence scientifique 3","url":"https://www.cancer.gov/about-cancer/treatment/side-effects/appetite-loss/nutrition-hp-pdq"}],"verifiedAt":"22/10/2026","nextAuditAt":"22/04/2027","auditIntervalMonths":6,"validationStatus":"VALIDATED","evidenceStatus":"Validation explicite des six textes du lot 1 le 22/10/2026","publicCategory":"Cancer"},
 {"id":"cancer-droits-aides-demarches","category":"Cancer","title":"Cancer : quels droits et quelles aides demander ?","keywords":"ALD, CPAM, droits, arrêt de travail, indemnités journalières, assistante sociale, aide à domicile, RQTH, retour au travail, cancer.","answer":"Après un diagnostic de cancer, vous pouvez avoir droit à une prise en charge en affection de longue durée (ALD), à des indemnités pendant un arrêt de travail ou à des aides sociales selon votre situation. Ces droits ne sont pas tous automatiques. Demandez un point avec l'assistant de service social de l'hôpital ou de l'Assurance maladie pour identifier les démarches utiles, les justificatifs et les délais. La prise en charge « à 100 % » en ALD ne signifie pas que toutes les dépenses sont remboursées.","detail":"**Commencer par un bilan de situation.** La maladie peut bouleverser les revenus, la vie familiale, le logement ou les transports. Le statut professionnel, les ressources, l'âge, les contrats d'assurance et le régime d'Assurance maladie influencent les dispositifs accessibles. Plutôt que de chercher seul toutes les aides, il est utile de rencontrer tôt un assistant de service social : celui de l'hôpital, de la caisse d'Assurance maladie ou du service social de proximité. Il aide à faire le tri entre droits ouverts, aides sous conditions et démarches urgentes. Cette orientation ne présume pas que toutes les personnes atteintes d'un cancer auront droit aux mêmes prestations.\n\n**Comprendre l'ALD.** Lorsque les critères sont remplis, le médecin établit un protocole de soins pour demander la reconnaissance en affection de longue durée exonérante. Après accord, les soins liés à cette affection sont remboursés à 100 % de la base de remboursement de la Sécurité sociale dans les conditions prévues. Il ne s'agit pas nécessairement de 100 % des sommes payées : les dépassements d'honoraires, certains dispositifs, franchises, participations forfaitaires ou prestations non remboursables peuvent rester à charge. La complémentaire santé peut en couvrir une partie suivant le contrat. Le médecin distingue sur l'ordonnance les soins liés ou non à l'ALD.\n\n**Arrêt de travail et revenus.** Un arrêt de travail peut ouvrir droit à des indemnités journalières, sous conditions variables selon le statut et les droits de la personne. Des dispositions de maintien de salaire, de prévoyance et des aides exceptionnelles peuvent également exister. Il faut vérifier les documents à transmettre et les délais avec sa caisse, son employeur ou son organisme de protection sociale. Les travailleurs indépendants, agents publics, salariés et demandeurs d'emploi ne relèvent pas tous des mêmes règles. En cas de difficulté financière, le service social peut orienter vers des dispositifs adaptés, sans promettre d'aide systématique.\n\n**Travail et aménagements.** Pendant ou après le traitement, le médecin du travail peut aider à évaluer les possibilités d'aménagement, de reprise progressive ou de temps partiel thérapeutique, selon les règles applicables. Une visite de préreprise peut être utile avant le retour. L'employeur n'a pas à connaître tous les détails médicaux : le médecin du travail est tenu au secret médical. Selon les conséquences durables de la maladie, une reconnaissance de la qualité de travailleur handicapé (RQTH) ou d'autres prestations peuvent être discutées avec la MDPH ; un diagnostic de cancer n'ouvre pas automatiquement ces droits. Le dossier est personnalisé.\n\n**Aides pour la vie quotidienne.** Transport vers les soins, aide ménagère, garde d'enfant, accompagnement d'un proche, soutien psychologique et solutions de répit peuvent être nécessaires. La prise en charge dépend des critères propres à chaque dispositif ; les associations, collectivités, caisses, mutuelles et services sociaux peuvent proposer des solutions complémentaires. Il faut distinguer le transport médical prescrit et remboursable sous conditions des autres déplacements. Après les traitements, les besoins sociaux ne disparaissent pas forcément : fatigue persistante, séquelles, difficultés professionnelles ou assurances méritent d'être réévaluées.\n\n**Préparer un rendez-vous concret.** Rassemblez votre attestation de droits, justificatifs de revenus, éventuel arrêt de travail, informations de mutuelle et de prévoyance, et liste des dépenses nouvelles. Notez trois questions : quels droits puis-je demander maintenant, qui remplit chaque formulaire et à quelle date dois-je relancer ? Les démarches sont parfois longues ; faire un point régulièrement évite que des difficultés administratives aggravent la maladie. Les montants et critères réglementaires évoluent : il faut vérifier la règle au moment de la demande.","watch":"Contactez rapidement un service social si vous ne pouvez plus financer l'alimentation, le logement, les déplacements indispensables ou l'aide à domicile, si votre couverture maladie est interrompue ou si un dossier d'indemnisation reste bloqué. En cas de détresse psychique majeure ou de risque immédiat, sollicitez une aide médicale urgente. Ne transmettez pas de données médicales sensibles à un interlocuteur non habilité.","source":"Référence scientifique 1 · Référence scientifique 2 · Référence scientifique 3 · Référence scientifique 4","sources":[{"label":"Référence scientifique 1","url":"https://www.cancer.fr/catalogue-des-publications/demarches-sociales-et-cancer"},{"label":"Référence scientifique 2","url":"https://www.cancer.fr/personnes-malades/droits-et-demarches/vous-aider-a-vous-orienter"},{"label":"Référence scientifique 3","url":"https://www.ameli.fr/assure/droits-demarches/maladie-accident-hospitalisation/affection-longue-duree-ald/demande-prise-en-charge-en-ald"},{"label":"Référence scientifique 4","url":"https://www.ameli.fr/assure/droits-demarches/maladie-accident-hospitalisation/affection-longue-duree-ald/prise-en-charge-ald-exonerante"}],"verifiedAt":"22/10/2026","nextAuditAt":"22/04/2027","auditIntervalMonths":6,"validationStatus":"VALIDATED","evidenceStatus":"Validation explicite des six textes du lot 1 le 22/10/2026","publicCategory":"Cancer"}
 ];
+
+;
+
+/* ===== MACA BUNDLE SOURCE: backlog-audited-sante-mentale-lot2-2026-10-23.js ===== */
+/* MACASANTÉ — Santé mentale : lot 2 (10 fiches), présentation au médecin avant publication, 23/10/2026. */
+window.extraAuditedQuestions = window.extraAuditedQuestions || [];
+window.extraAuditedQuestions.push(
+{
+  "id": "sante-mentale-depression-post-partum",
+  "category": "Santé mentale",
+  "title": "Après l’accouchement, comment reconnaître une dépression du post-partum ?",
+  "keywords": "après l’accouchement, comment reconnaître une dépression du post-partum ?",
+  "answer": "Une fatigue après une naissance est fréquente. En revanche, une tristesse durable, une perte de plaisir, une culpabilité intense ou une anxiété envahissante avec retentissement peuvent évoquer une dépression du post-partum. Elle peut être soignée ; une consultation auprès d’une sage-femme, d’un médecin ou d’un professionnel de santé mentale est utile.",
+  "detail": "Le baby blues survient souvent dans les jours suivant la naissance et s’estompe généralement en moins de deux semaines. La dépression du post-partum dure davantage et affecte les activités, le bien-être ou les relations. Elle peut survenir au cours des mois qui suivent l’accouchement. Elle n’est pas la preuve qu’une mère n’aime pas son bébé. Certaines personnes ressentent surtout une irritabilité, des inquiétudes permanentes ou un sentiment d’être dépassées, sans parler spontanément de tristesse. Le manque de sommeil, les difficultés d’alimentation du bébé, la douleur, les antécédents psychiques ou l’isolement peuvent peser, mais aucun facteur unique ne permet de prédire la maladie. En consultation, le professionnel recherche l’intensité, la durée, les idées suicidaires et la sécurité du parent et de l’enfant. Une aide concrète de l’entourage, des interventions psychologiques structurées et parfois un médicament peuvent être proposés. En cas d’allaitement, la décision thérapeutique est individualisée : il ne faut pas arrêter seul un traitement prescrit. Un dépistage à l’aide d’un questionnaire peut aider à engager la discussion, mais il ne pose pas le diagnostic. Une amélioration est possible, parfois progressive, avec un accompagnement adapté. Demander de l’aide tôt protège le parent et favorise les liens avec l’enfant.",
+  "watch": "Idées suicidaires, confusion, hallucinations, convictions délirantes ou risque pour le bébé : évaluation urgente. Danger immédiat : 15 ou 112.",
+  "source": "NICE CG192 — Antenatal and postnatal mental health",
+  "url": "https://www.nice.org.uk/guidance/cg192",
+  "sources": [
+    {
+      "label": "NICE CG192 — Antenatal and postnatal mental health",
+      "url": "https://www.nice.org.uk/guidance/cg192"
+    }
+  ],
+  "verifiedAt": "2026-10-23",
+  "nextAuditAt": "2027-01-23",
+  "validationStatus": "VALIDATED",
+  "editorialStatus": "MEDICAL_VALIDATED",
+  "auditIntervalMonths": 3
+},
+{
+  "id": "sante-mentale-burnout-professionnel-reconnaitre",
+  "category": "Santé mentale",
+  "title": "Burn-out : comment savoir si le travail vous épuise ?",
+  "keywords": "burn-out : comment savoir si le travail vous épuise ?",
+  "answer": "Le burn-out correspond à un phénomène d’épuisement lié au contexte professionnel, avec épuisement, distance ou cynisme vis-à-vis du travail et sentiment d’efficacité diminuée. Il ne doit pas être confondu automatiquement avec une dépression. Une évaluation médicale et des actions sur l’environnement de travail sont essentielles.",
+  "detail": "Une fatigue qui ne disparaît pas après le week-end, des insomnies, une irritabilité croissante, un sentiment d’échec ou une appréhension persistante avant d’aller travailler peuvent être des signes d’alerte. Ils ne sont toutefois pas spécifiques : dépression, troubles anxieux, maladies physiques, consommation d’alcool ou difficultés personnelles peuvent produire des symptômes similaires. Le burn-out est décrit par l’OMS comme un phénomène professionnel, et non comme une maladie médicale indépendante. Le diagnostic des éventuels troubles associés est donc important. Un médecin évalue la souffrance, les risques, le sommeil et le fonctionnement quotidien ; la médecine du travail peut étudier les contraintes, les aménagements et les conditions de reprise. Se contenter d’apprendre à mieux respirer ne suffit pas lorsque la charge, les horaires ou les tensions restent inchangés. Selon les situations, un arrêt de travail, un accompagnement psychologique, une adaptation du poste et une réflexion sur l’organisation peuvent être nécessaires. Il faut éviter d’opposer responsabilité individuelle et facteurs collectifs. Décrire les situations précises qui épuisent, le temps de récupération et les changements depuis plusieurs mois aide à préparer une consultation. Une reprise doit tenir compte de la santé et des conditions concrètes de travail, pas seulement du souhait de retourner vite à son ancien rythme.",
+  "watch": "Effondrement majeur, pensées suicidaires, consommation dangereuse de substances ou symptômes physiques aigus : évaluation rapide, voire urgente.",
+  "source": "OMS — Burn-out, occupational phenomenon, ICD-11",
+  "url": "https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases",
+  "sources": [
+    {
+      "label": "OMS — Burn-out, occupational phenomenon, ICD-11",
+      "url": "https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases"
+    }
+  ],
+  "verifiedAt": "2026-10-23",
+  "nextAuditAt": "2027-01-23",
+  "validationStatus": "VALIDATED",
+  "editorialStatus": "MEDICAL_VALIDATED",
+  "auditIntervalMonths": 3
+},
+{
+  "id": "sante-mentale-refus-scolaire-anxieux",
+  "category": "Santé mentale",
+  "title": "Mon adolescent ne veut plus aller au collège : que faire ?",
+  "keywords": "mon adolescent ne veut plus aller au collège : que faire ?",
+  "answer": "Un adolescent qui n’arrive plus à aller en cours peut vivre une véritable détresse, et pas simplement manquer de motivation. Le refus scolaire anxieux nécessite de rechercher les causes, notamment anxiété, dépression, harcèlement ou difficultés d’apprentissage, puis de construire avec lui une stratégie de retour adaptée.",
+  "detail": "Les symptômes apparaissent parfois surtout le matin : douleurs abdominales, nausées, panique, pleurs, agitation ou impossibilité de quitter le domicile. L’anxiété peut diminuer dès que le départ est annulé, sans que la souffrance soit simulée. La difficulté peut être associée à une anxiété sociale, une peur de séparation, des violences à l’école, un harcèlement en ligne, une dépression, un trouble neurodéveloppemental ou plusieurs facteurs simultanément. La première réponse doit être de prendre la parole du jeune au sérieux et de vérifier sa sécurité. Un médecin évalue les manifestations physiques, le sommeil, l’humeur, le risque suicidaire et le besoin d’orientation spécialisée. La famille et l’établissement peuvent organiser, avec les soignants lorsque c’est pertinent et dans le respect de la confidentialité, un retour progressif, un adulte référent, des aménagements temporaires ou une réponse au harcèlement. Il ne faut ni imposer systématiquement un retour brutal ni considérer que des mois d’absence sans accompagnement résoudront le problème. Une thérapie adaptée au trouble identifié peut aider. Préserver un rythme de journée, éviter les reproches et maintenir des liens sociaux accessibles peut soutenir la récupération. Le plan doit être réévalué régulièrement avec le jeune : l’objectif est sa santé et la reprise d’une scolarité possible.",
+  "watch": "Idées suicidaires, automutilations, violence ou harcèlement actif sévère : consultation rapide et protection immédiate si nécessaire ; 15/112 en danger immédiat.",
+  "source": "NICE CG159 — Social anxiety disorder",
+  "url": "https://www.nice.org.uk/guidance/cg159",
+  "sources": [
+    {
+      "label": "NICE CG159 — Social anxiety disorder",
+      "url": "https://www.nice.org.uk/guidance/cg159"
+    }
+  ],
+  "verifiedAt": "2026-10-23",
+  "nextAuditAt": "2027-01-23",
+  "validationStatus": "VALIDATED",
+  "editorialStatus": "MEDICAL_VALIDATED",
+  "auditIntervalMonths": 3
+},
+{
+  "id": "sante-mentale-scarifications-adolescent",
+  "category": "Santé mentale",
+  "title": "Mon adolescent se scarifie : comment réagir ?",
+  "keywords": "mon adolescent se scarifie : comment réagir ?",
+  "answer": "Les scarifications demandent une réponse attentive, même si le jeune dit ne pas vouloir mourir. Elles peuvent traduire une détresse émotionnelle importante. Le premier réflexe est de soigner les blessures si besoin, d’écouter sans juger et de faire évaluer le risque suicidaire par un professionnel.",
+  "detail": "Découvrir des traces de blessures chez son enfant peut provoquer colère, peur ou incompréhension. Les reproches, menaces et humiliations risquent d’empêcher le jeune de demander de l’aide. Il vaut mieux commencer par une phrase simple : « Je vois que quelque chose est difficile en ce moment ; je voudrais comprendre et t’aider. » Les automutilations peuvent servir à diminuer temporairement une tension, exprimer une souffrance ou se punir. Elles ne sont pas automatiquement une tentative de suicide, mais elles doivent conduire à rechercher des idées suicidaires et d’autres risques. Un professionnel évalue la sécurité, les lésions, l’humeur, l’anxiété, d’éventuelles violences ou situations de harcèlement et l’environnement familial. L’accompagnement peut comprendre une intervention psychologique structurée, un plan de sécurité et des rendez-vous de suivi. Il ne suffit pas d’obtenir une promesse de ne plus recommencer. Poser calmement la question des idées suicidaires ne provoque pas leur apparition. Les proches peuvent participer à une réduction adaptée de l’accès aux moyens dangereux sans transformer la maison en lieu de surveillance punitive. Le respect de la confidentialité et l’implication des parents doivent être articulés avec l’âge du jeune et son besoin de sécurité. Éviter de diffuser des images des lésions ou des descriptions détaillées des gestes est également important.",
+  "watch": "Plaies graves, intoxication, intention suicidaire, plan de passage à l’acte ou sécurité impossible à garantir : urgence médicale 15/112. Le 3114 aide aussi les proches.",
+  "source": "NICE NG225 — Self-harm",
+  "url": "https://www.nice.org.uk/guidance/ng225",
+  "sources": [
+    {
+      "label": "NICE NG225 — Self-harm",
+      "url": "https://www.nice.org.uk/guidance/ng225"
+    }
+  ],
+  "verifiedAt": "2026-10-23",
+  "nextAuditAt": "2027-01-23",
+  "validationStatus": "VALIDATED",
+  "editorialStatus": "MEDICAL_VALIDATED",
+  "auditIntervalMonths": 3
+},
+{
+  "id": "sante-mentale-trouble-bipolaire-manie",
+  "category": "Santé mentale",
+  "title": "Trouble bipolaire : comment reconnaître une phase maniaque ?",
+  "keywords": "trouble bipolaire : comment reconnaître une phase maniaque ?",
+  "answer": "Un trouble bipolaire ne se définit pas par des changements d’humeur rapides au cours d’une même journée. Il implique des épisodes d’humeur anormalement élevée ou irritable, avec énergie et activité accrues, parfois associés à des épisodes dépressifs. La suspicion d’une phase maniaque justifie un avis médical rapide.",
+  "detail": "Lors d’une manie, la personne peut dormir très peu sans se sentir fatiguée, parler plus vite, avoir des idées qui s’enchaînent, multiplier les projets, prendre des risques inhabituels ou dépenser des sommes importantes. L’entourage observe parfois une rupture nette avec son comportement habituel. L’hypomanie est moins intense, mais peut également être importante pour identifier un trouble bipolaire. Un moment d’enthousiasme, une personnalité extravertie ou des émotions changeantes ne suffisent pas. L’évaluation porte sur la durée, le retentissement, les périodes antérieures et les éventuels épisodes dépressifs. Le médecin recherche aussi un rôle de substances, de médicaments et d’autres troubles physiques ou psychiques. Une prise en charge spécialisée associe fréquemment traitements médicamenteux, éducation sur la maladie, suivi psychologique et attention particulière à la régularité du sommeil. La stratégie thérapeutique n’est pas celle d’une dépression isolée : il ne faut pas modifier seul un traitement. Entre les épisodes, un plan de prévention des rechutes aide à reconnaître des signes précoces et à organiser les contacts utiles. L’entourage peut signaler les changements préoccupants sans humilier ni chercher à imposer un diagnostic à partir de quelques comportements. L’objectif est une vie aussi stable et autonome que possible.",
+  "watch": "Délire, agitation majeure, comportement dangereux, privation de sommeil prolongée ou idées suicidaires : évaluation urgente.",
+  "source": "NICE CG185 — Bipolar disorder",
+  "url": "https://www.nice.org.uk/guidance/cg185",
+  "sources": [
+    {
+      "label": "NICE CG185 — Bipolar disorder",
+      "url": "https://www.nice.org.uk/guidance/cg185"
+    }
+  ],
+  "verifiedAt": "2026-10-23",
+  "nextAuditAt": "2027-01-23",
+  "validationStatus": "VALIDATED",
+  "editorialStatus": "MEDICAL_VALIDATED",
+  "auditIntervalMonths": 3
+},
+{
+  "id": "sante-mentale-stress-post-traumatique",
+  "category": "Santé mentale",
+  "title": "Après un traumatisme, pourquoi les souvenirs reviennent-ils sans cesse ?",
+  "keywords": "après un traumatisme, pourquoi les souvenirs reviennent-ils sans cesse ?",
+  "answer": "Après une agression, un accident ou un autre événement traumatisant, des souvenirs intrusifs, cauchemars, évitements ou réactions de sursaut peuvent survenir. S’ils persistent et perturbent la vie, un trouble de stress post-traumatique peut être en cause. Des thérapies spécifiques peuvent aider.",
+  "detail": "Les premiers jours, des réactions émotionnelles et physiques intenses ne signifient pas nécessairement qu’un trouble durable va s’installer. Certaines personnes récupèrent progressivement, d’autres restent gênées par des reviviscences, des souvenirs envahissants, une hypervigilance ou une impression permanente de danger. D’autres encore éprouvent surtout un engourdissement émotionnel et évitent les lieux, conversations ou situations qui rappellent l’événement. Les violences répétées ou toujours en cours nécessitent en premier lieu des mesures de protection. L’évaluation cherche à comprendre les symptômes, leur durée, les conséquences sur le sommeil, les relations et le travail, ainsi que les troubles associés. Des thérapies psychologiques centrées sur le traumatisme, comme certaines TCC et l’EMDR dans des indications adaptées, sont recommandées. Elles ne consistent pas à forcer la personne à tout raconter dès le premier rendez-vous. Le soutien des proches passe par une écoute sans minimisation, le respect du rythme et des propositions pratiques. Des médicaments peuvent parfois être discutés pour des problèmes associés, mais ils ne remplacent pas automatiquement la prise en charge psychothérapeutique recommandée. Un débriefing psychologique imposé en une seule séance n’est pas recommandé pour prévenir systématiquement les troubles. L’évolution n’est pas linéaire : des périodes de progrès et de recrudescence des symptômes peuvent alterner.",
+  "watch": "Violences actuelles, risque suicidaire, désorientation sévère ou mise en danger : chercher une aide immédiate ; 15/112 si nécessaire.",
+  "source": "NICE NG116 — Post-traumatic stress disorder",
+  "url": "https://www.nice.org.uk/guidance/ng116",
+  "sources": [
+    {
+      "label": "NICE NG116 — Post-traumatic stress disorder",
+      "url": "https://www.nice.org.uk/guidance/ng116"
+    }
+  ],
+  "verifiedAt": "2026-10-23",
+  "nextAuditAt": "2027-01-23",
+  "validationStatus": "VALIDATED",
+  "editorialStatus": "MEDICAL_VALIDATED",
+  "auditIntervalMonths": 3
+},
+{
+  "id": "sante-mentale-deuil-quand-consulter",
+  "category": "Santé mentale",
+  "title": "Deuil : quand la douleur nécessite-t-elle de l’aide ?",
+  "keywords": "deuil : quand la douleur nécessite-t-elle de l’aide ?",
+  "answer": "Après un décès, tristesse, colère, manque, fatigue ou moments de soulagement peuvent se succéder. Il n’existe pas de calendrier universel du deuil. Une consultation est utile si la souffrance devient insupportable, si le fonctionnement reste profondément altéré ou si apparaissent des symptômes dépressifs ou des idées suicidaires.",
+  "detail": "Le deuil n’est pas en soi une maladie. Les émotions varient selon la relation, les circonstances du décès, les croyances et le soutien disponible. Certaines personnes pleurent beaucoup, d’autres ressentent d’abord un état d’engourdissement ; d’autres alternent entre chagrin intense et moments agréables. Ces variations sont possibles et ne prouvent pas qu’on aime moins la personne disparue. Il est fréquent que certains anniversaires ou lieux réveillent la douleur. Il faut éviter de demander à une personne endeuillée de « passer à autre chose » après un délai arbitraire. Lorsqu’une souffrance reste extrêmement intense, durable, envahissante et empêche de retrouver des activités essentielles, un deuil prolongé peut être envisagé après évaluation spécialisée ; il faut prendre garde à ne pas pathologiser trop vite un chagrin normal. Une dépression peut aussi survenir dans un contexte de deuil et nécessite une prise en charge spécifique. Le médecin cherche notamment une perte de plaisir généralisée, une dévalorisation persistante, l’état du sommeil, la nutrition et le risque suicidaire. Parler avec des proches de confiance, maintenir des routines adaptées et demander un soutien psychologique peuvent aider. Les groupes d’entraide sont utiles à certaines personnes, mais ne conviennent pas à toutes. La qualité de l’écoute compte davantage que les injonctions à être « fort ».",
+  "watch": "Idées suicidaires, incapacité à prendre soin de soi, usage dangereux de substances ou détresse extrême : consulter rapidement ; urgence 15/112 si danger immédiat.",
+  "source": "WHO ICD-11 — Prolonged grief disorder",
+  "url": "https://icd.who.int/browse/2025-01/mms/en",
+  "sources": [
+    {
+      "label": "WHO ICD-11 — Prolonged grief disorder",
+      "url": "https://icd.who.int/browse/2025-01/mms/en"
+    }
+  ],
+  "verifiedAt": "2026-10-23",
+  "nextAuditAt": "2027-01-23",
+  "validationStatus": "VALIDATED",
+  "editorialStatus": "MEDICAL_VALIDATED",
+  "auditIntervalMonths": 3
+},
+{
+  "id": "sante-mentale-phobies-specifiques",
+  "category": "Santé mentale",
+  "title": "Peur de l’avion, des aiguilles ou des animaux : comment traiter une phobie ?",
+  "keywords": "peur de l’avion, des aiguilles ou des animaux : comment traiter une phobie ?",
+  "answer": "Une peur devient une phobie spécifique quand elle est disproportionnée, persistante, difficile à maîtriser et conduit à éviter des situations importantes. L’exposition progressive dans une thérapie cognitivo-comportementale est l’approche de référence ; la prise en charge tient compte de la nature de la phobie.",
+  "detail": "Avoir peur d’un animal ou appréhender une injection ne constitue pas toujours un trouble. Une phobie peut cependant empêcher de voyager, de recevoir des soins ou de mener ses activités habituelles. Le corps réagit parfois rapidement par des palpitations, des tremblements ou une impression de panique. Dans certaines phobies liées au sang et aux injections, un malaise vagal est possible, ce qui mérite des précautions particulières. L’évitement procure un soulagement immédiat, mais peut renforcer la peur en empêchant de découvrir que la situation est gérable. Une évaluation clinique distingue la phobie d’un autre trouble anxieux, d’un antécédent traumatique ou d’un risque réel. La TCC avec exposition graduée aide à affronter progressivement la situation redoutée, avec un niveau de difficulté ajusté et des stratégies adaptées. L’exposition n’est pas une contrainte brutale et ne devrait pas être improvisée par des proches. Certains outils numériques ou mises en situation peuvent contribuer au travail thérapeutique selon les cas. Les médicaments ne constituent généralement pas une solution durable pour une phobie spécifique isolée. Pour la peur des aiguilles, le soignant peut prévoir un positionnement adapté, expliquer le geste et proposer une prise en charge spécifique du risque de malaise. L'objectif est de pouvoir faire ce qui compte, sans exiger l’absence complète d’émotion.",
+  "watch": "Une peur qui empêche un soin médical nécessaire ou entraîne des malaises répétés mérite une consultation et une stratégie adaptée avec les soignants.",
+  "source": "NHS — Phobias overview and treatment",
+  "url": "https://www.nhs.uk/mental-health/conditions/phobias/",
+  "sources": [
+    {
+      "label": "NHS — Phobias overview and treatment",
+      "url": "https://www.nhs.uk/mental-health/conditions/phobias/"
+    }
+  ],
+  "verifiedAt": "2026-10-23",
+  "nextAuditAt": "2027-01-23",
+  "validationStatus": "VALIDATED",
+  "editorialStatus": "MEDICAL_VALIDATED",
+  "auditIntervalMonths": 3
+},
+{
+  "id": "sante-mentale-benzodiazepines-dependance",
+  "category": "Santé mentale",
+  "title": "Somnifères et anxiolytiques : comment éviter la dépendance ?",
+  "keywords": "somnifères et anxiolytiques : comment éviter la dépendance ?",
+  "answer": "Les benzodiazépines peuvent soulager certains symptômes à court terme, mais leur usage prolongé expose notamment à une dépendance, des troubles de la vigilance et des chutes. Un traitement ne doit pas être arrêté brutalement lorsqu’il est pris régulièrement depuis longtemps : une diminution progressive et accompagnée est souvent nécessaire.",
+  "detail": "Des médicaments prescrits pour l’anxiété ou l’insomnie peuvent paraître indispensables après quelques semaines ou mois. Avec le temps, une tolérance à certains effets peut apparaître et l’arrêt provoquer une anxiété rebond, une insomnie, des tremblements ou d’autres symptômes de sevrage. Cela ne signifie pas que la personne est faible : la dépendance peut survenir même en respectant une prescription. Le risque augmente selon la dose, la durée, le produit et les autres substances consommées. Ces médicaments peuvent altérer la vigilance et la mémoire, augmenter les risques d’accident de la route et de chute, particulièrement chez les personnes âgées. L’association avec l’alcool, les opioïdes ou d’autres sédatifs peut être dangereuse. Une revue de traitement avec le prescripteur permet de préciser l’indication actuelle, les bénéfices, les effets indésirables et les possibilités de prise en charge de l’anxiété ou de l’insomnie. Lorsque l’arrêt est envisagé, la diminution se fait progressivement et de façon individualisée ; il n’existe pas de rythme identique pour tous. Les stratégies non médicamenteuses, notamment la TCC de l’insomnie lorsqu’elle est indiquée, peuvent faciliter le processus. Il faut informer le médecin de tous les médicaments utilisés, y compris ceux provenant de prescriptions antérieures.",
+  "watch": "Arrêt brutal après un usage prolongé, convulsions, confusion, surdosage ou association avec alcool/opioïdes : risque potentiellement grave ; demander un avis urgent si symptômes sévères.",
+  "source": "HAS — Arrêt des benzodiazépines et médicaments apparentés",
+  "url": "https://www.has-sante.fr/jcms/c_601509/fr/arret-des-benzodiazepines-et-medicaments-apparentes-demarche-du-medecin-traitant-en-ambulatoire",
+  "sources": [
+    {
+      "label": "HAS — Arrêt des benzodiazépines et médicaments apparentés",
+      "url": "https://www.has-sante.fr/jcms/c_601509/fr/arret-des-benzodiazepines-et-medicaments-apparentes-demarche-du-medecin-traitant-en-ambulatoire"
+    }
+  ],
+  "verifiedAt": "2026-10-23",
+  "nextAuditAt": "2027-01-23",
+  "validationStatus": "VALIDATED",
+  "editorialStatus": "MEDICAL_VALIDATED",
+  "auditIntervalMonths": 3
+},
+{
+  "id": "sante-mentale-solitude-isolement",
+  "category": "Santé mentale",
+  "title": "Je me sens seul : la solitude peut-elle affecter ma santé ?",
+  "keywords": "solitude isolement social personne seule se sentir seul jeunes adultes retraite veuvage santé mentale soutien amis liens sociaux dépression anxiété",
+  "answer": "On peut être entouré et se sentir seul, ou apprécier la solitude sans en souffrir. Quand le manque de relations satisfaisantes devient durable ou douloureux, il peut affecter le bien-être et s’associer à des problèmes de santé. La première étape consiste à identifier ce qui manque réellement — soutien, échanges, mobilité ou relations de confiance — puis à chercher des solutions adaptées, sans culpabiliser.",
+  "detail": "Un déménagement, une séparation, un deuil, une maladie chronique, la retraite ou le télétravail peuvent bouleverser les relations. Mais il faut distinguer deux réalités. La solitude est un ressenti : le décalage entre les relations que l’on souhaiterait avoir et celles que l’on vit. L’isolement social décrit davantage la rareté des contacts ou des soutiens disponibles. On peut aimer passer du temps seul et aller très bien ; à l’inverse, on peut avoir une famille, des collègues et de nombreux abonnés sur les réseaux et se sentir profondément seul.\n\nPourquoi est-ce une question de santé ? Les grandes études de population associent une solitude persistante et un isolement important à une moins bonne santé mentale, notamment davantage de symptômes dépressifs et anxieux, ainsi qu’à des risques physiques et de mortalité plus élevés. Toutefois, ces études sont principalement observationnelles : elles ne prouvent pas que la solitude est à elle seule la cause de chaque maladie. Une mauvaise santé peut aussi limiter les sorties et favoriser l’isolement. Le rapport 2025 de la Commission OMS sur les liens sociaux souligne précisément l’importance de considérer les connexions sociales comme une dimension de santé publique, et pas comme un simple confort.\n\nCertains moments de la vie exposent davantage : arrivée dans une nouvelle ville, entrée dans les études, parentalité avec peu de soutien, séparation, chômage, situation de handicap, maladie, difficultés financières ou perte de mobilité. La solitude concerne autant les jeunes adultes que les personnes âgées. Il faut éviter le cliché selon lequel seuls les seniors seraient touchés. Une personne très entourée peut également manquer de relations dans lesquelles elle se sent écoutée et comprise.\n\nComment reconnaître une situation qui mérite une aide ? Il n’existe pas de nombre « normal » d’amis ni de fréquence idéale de sorties. L'important est de savoir si la personne en souffre, si elle dispose de quelqu’un à appeler en cas de difficulté, et si elle abandonne peu à peu ses activités. Une tristesse persistante, une perte de plaisir, une anxiété qui empêche de sortir, une consommation croissante d'alcool ou un sommeil très perturbé doivent faire rechercher un problème associé. Chez les personnes âgées, une baisse de l’audition, des difficultés de déplacement, un veuvage ou des obstacles numériques peuvent rendre les contacts plus difficiles sans traduire un manque d’envie.\n\nQue peut-on faire concrètement ? Commencer modestement est souvent plus réaliste que se fixer l'objectif de « se faire dix amis ». On peut reprendre contact avec une personne appréciée, organiser une activité régulière, fréquenter un lieu de quartier, rejoindre une association ou participer à un groupe autour d’un intérêt partagé. Des rendez-vous récurrents, même courts, facilitent parfois la création de liens davantage qu'une succession de rencontres occasionnelles. Pour une personne limitée par la mobilité, le téléphone, la visioconférence, les visites et les dispositifs locaux d’accompagnement peuvent compléter les contacts en présentiel. Les relations numériques peuvent apporter un vrai soutien ; leur qualité et leur effet sur le bien-être comptent plus que le temps d’écran isolé.\n\nEt si l’on n’y arrive pas ? Quand la solitude est associée à une dépression, à une anxiété sociale ou à une expérience traumatique, répéter « il faut sortir » ne suffit pas. Une consultation médicale ou psychologique peut aider à identifier les obstacles et à choisir une stratégie adaptée. Les interventions sociales ne fonctionnent pas toutes de la même façon : leur efficacité dépend des besoins, de l’accessibilité et de la qualité de l’accompagnement. Il n’y a pas de recette universelle ni de raison de culpabiliser une personne isolée.\n\nPour aider un proche, mieux vaut proposer un geste précis et respectueux, comme un appel régulier ou une sortie accessible, plutôt que lui reprocher son manque d’initiative. Écouter ce qu’il souhaite est essentiel : certaines personnes veulent plus de compagnie, d'autres avant tout une relation plus profonde ou une aide matérielle pour retrouver une vie sociale. La priorité est de reconstruire des liens qui ont du sens pour la personne.",
+  "watch": "Isolement avec négligence de soi, détresse intense ou idées suicidaires : évaluation médicale rapide ; 3114 en France pour les pensées suicidaires.",
+  "source": "OMS — Commission sur les liens sociaux, rapport mondial 2025",
+  "url": "https://www.who.int/publications/i/item/9789240112360",
+  "sources": [
+    {
+      "label": "OMS — Commission sur les liens sociaux, rapport mondial 2025",
+      "url": "https://www.who.int/publications/i/item/9789240112360"
+    },
+    {
+      "label": "US Surgeon General — Our Epidemic of Loneliness and Isolation, 2023",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK595227/"
+    }
+  ],
+  "verifiedAt": "2026-10-23",
+  "nextAuditAt": "2027-01-23",
+  "validationStatus": "VALIDATED",
+  "editorialStatus": "MEDICAL_VALIDATED",
+  "auditIntervalMonths": 3
+}
+);
+
+;
+
+/* ===== MACA BUNDLE SOURCE: backlog-audited-retine-validated-2026-10-23.js ===== */
+/* Medical validation: Dr Romain BEDDOK, 2026-10-23. Only the validated retina card. */
+window.extraAuditedQuestions = window.extraAuditedQuestions || [];
+window.extraAuditedQuestions.push({
+  "id": "ophtalmo-mouches-volantes-eclairs-retine",
+  "title": "Mouches volantes et éclairs dans les yeux : quand faut-il consulter ?",
+  "keywords": "mouches volantes corps flottants éclairs flashs voile noir décollement rétine déchirure vitré urgence myopie",
+  "answer": "Quelques mouches volantes anciennes et stables sont souvent bénignes. En revanche, une apparition soudaine de nombreux points noirs, des éclairs lumineux ou surtout une ombre comme un rideau dans le champ visuel doivent faire rechercher rapidement une déchirure ou un décollement de rétine. Un voile ou une baisse de vision brutale justifient un examen ophtalmologique en urgence.",
+  "detail": "Voir de petites formes qui se déplacent quand on bouge les yeux est une expérience fréquente. Elles peuvent ressembler à des points, des fils, des moustiques ou des toiles d’araignée. Ce sont souvent des corps flottants, c’est-à-dire des ombres produites par des condensations dans le vitré, le gel qui remplit l’intérieur de l’œil. Ils sont particulièrement fréquents avec l’âge et chez les personnes myopes.\n\nPourquoi apparaissent-ils ? Avec les années, le vitré change de consistance et peut se décoller de la rétine : c’est le décollement postérieur du vitré. Le plus souvent, ce processus ne provoque pas de lésion grave. Mais en se séparant, le vitré peut parfois tirer sur la rétine et provoquer une déchirure. Du liquide peut alors passer sous la rétine et entraîner un décollement. Une rétine décollée peut perdre rapidement sa fonction, d’où l’importance d’un diagnostic précoce.\n\nLes éclairs lumineux, parfois perçus sur le côté de la vision et dans l’obscurité, peuvent témoigner d’une traction sur la rétine. Une « pluie » soudaine de points noirs peut signaler un saignement dans le vitré. Le signe particulièrement inquiétant est l’apparition d’une ombre fixe ou d’un rideau noir gagnant une partie du champ visuel, parfois accompagné d’une baisse de vision. Un décollement de rétine peut être indolore : l’absence de douleur et de rougeur ne rassure pas.\n\nQuand consulter ? Une apparition récente ou brutale de corps flottants ou d’éclairs mérite une évaluation ophtalmologique urgente, idéalement le jour même ou très rapidement selon les symptômes et l’accès local aux soins. La présence d’un voile, d’une baisse visuelle ou d’une forte augmentation des corps flottants justifie une prise en charge immédiate en urgence ophtalmologique. Il ne faut pas attendre que l’œil devienne rouge ou douloureux.\n\nQue fait l’ophtalmologiste ? Après avoir interrogé sur l’apparition des signes, il examine la rétine, habituellement après dilatation de la pupille. Cela permet de rechercher une déchirure, un saignement ou un décollement. Un examen complémentaire peut être nécessaire si la rétine n’est pas directement visible. Si le fond d’œil est rassurant, le médecin peut proposer une surveillance et expliquer quels nouveaux symptômes doivent alerter.\n\nQuels traitements ? Un décollement du vitré isolé ne nécessite souvent aucun traitement. Une déchirure rétinienne peut parfois être traitée rapidement par laser ou cryothérapie pour limiter le risque de décollement. Un décollement de rétine constitué requiert généralement une chirurgie. Le choix de la technique dépend de la localisation et de l’étendue de la lésion.\n\nLes personnes très myopes, ayant déjà subi une chirurgie oculaire, un traumatisme ou ayant des antécédents personnels ou familiaux de décollement sont davantage à risque. Pourtant, tout le monde peut être concerné. Le bon message est simple : les corps flottants sont courants, mais un changement soudain ne doit pas être banalisé.",
+  "watch": "Voile noir, ombre dans le champ visuel, baisse de vision brutale ou pluie de nouveaux corps flottants : urgences ophtalmologiques immédiatement. N'attendez pas une douleur, car le décollement de rétine est souvent indolore.",
+  "sources": [
+    {
+      "label": "National Eye Institute — Retinal detachment",
+      "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/retinal-detachment"
+    },
+    {
+      "label": "Assurance Maladie — Décollement de rétine",
+      "url": "https://www.ameli.fr/assure/sante/urgence/pathologies/decollement-retine"
+    }
+  ],
+  "category": "Santé au quotidien",
+  "source": "National Eye Institute — Retinal detachment",
+  "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/retinal-detachment",
+  "verifiedAt": "2026-10-23",
+  "nextAuditAt": "2027-01-23",
+  "validationStatus": "REVIEW_REQUIRED",
+  "editorialStatus": "REVIEW_REQUIRED",
+  "auditIntervalMonths": 3
+});
 
 ;

@@ -17,4 +17,5 @@ window.MACA_CORPUS_MANIFEST = Object.freeze([
 ,'corpus-radar-revisions-2026-10-22.js?v=20261022-validated1'
 ,'backlog-audited-mici-cancer-lot1-2026-10-22.js?v=20261022-lot1'
 ,'backlog-audited-sante-mentale-lot2-2026-10-23.js?v=20261023-validated1',
+'backlog-audited-retine-validated-2026-10-23.js?v=20261023-validated1',
 ]);

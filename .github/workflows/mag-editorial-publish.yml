@@ -3,6 +3,11 @@ on:
   push:
     branches: [feat/v0-magazine]
     paths:
+      - 'qa-data*.js'
+      - 'backlog-audited*.js'
+      - 'corpus-*.js'
+      - 'migration-*.js'
+      - 'scripts/verify-publication.js'
       - 'maca-site-shell.css'
       - 'maca-site-shell.js'
       - 'scripts/site-shell.js'
@@ -64,6 +69,14 @@ jobs:
           node scripts/mag-editorial.js --dry-run
           node scripts/test-mag-editorial.js
           node scripts/mag-editorial.js
+          node scripts/test-corpus-pipeline.js
+          node scripts/test-corpus-functional.js
+          node scripts/test-ui-adapter.js
+          node scripts/test-browser-entry.js
+          node scripts/build-corpus-production.js --publish
+          node scripts/test-corpus-bundle-equivalence.js
+          node scripts/build-static-seo-fiches.js
+          node scripts/test-fiche-fast-load.js
           node scripts/build-sitemap-from-corpus.js
           node scripts/test-home-magazine.js
           node scripts/test-magazine-videos.js
@@ -72,6 +85,8 @@ jobs:
           node scripts/test-ipp-retrieval.js
           node scripts/test-assistant-v2-grounding.js
           node scripts/test-assistant-v2-patient-language.js
+      - name: Check validated fiches before deployment
+        run: node scripts/verify-publication.js
       - name: Commit generated site without overwriting source
         run: bash scripts/publish-mag-generated.sh
       - name: Assemble site
@@ -85,7 +100,9 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
       - name: Verify public site
-        run: node scripts/verify-mag-public.js
+        run: |
+          node scripts/verify-mag-public.js
+          node scripts/verify-publication.js --public
       - name: Rebuild closed corpus from published source
         run: node scripts/build-assistant-v2-corpus.js
       - name: Restore previous embeddings

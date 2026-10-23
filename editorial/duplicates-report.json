@@ -516,6 +516,19 @@
     },
     {
       "left": {
+        "id": "ado-refus-scolaire-anxieux",
+        "title": "Mon adolescent ne veut plus aller au collège ou au lycée : quand faut-il s’inquiéter ?",
+        "type": "fiche"
+      },
+      "right": {
+        "id": "sante-mentale-refus-scolaire-anxieux",
+        "title": "Mon adolescent ne veut plus aller au collège : que faire ?",
+        "type": "fiche"
+      },
+      "score": 0.67
+    },
+    {
+      "left": {
         "id": "cannabis-sommeil-effets",
         "title": "Cannabis et sommeil : aide-t-il vraiment à mieux dormir ?",
         "type": "fiche"
@@ -529,9 +542,9 @@
     }
   ],
   "counts": {
-    "manifestFiles": 146,
-    "rawFiches": 425,
-    "canonicalFiches": 399,
-    "magContents": 126
+    "manifestFiles": 148,
+    "rawFiches": 437,
+    "canonicalFiches": 411,
+    "magContents": 132
   }
 }

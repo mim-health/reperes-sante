@@ -2272,5 +2272,195 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "82e82f4dc9f4d678905e70b1c8a5788aa5cc4f3f7481b898053614a8b7d3f73c"
+  },
+  {
+    "id": "sommeil-femmes-20261023",
+    "url": "article-sommeil-femmes-20261023.html",
+    "title": "À 45 ans, pourquoi dort-on moins bien qu’avant ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "SOMMEIL",
+    "date": "2026-10-23",
+    "status": "PUBLISHED",
+    "excerpt": "Une grande étude de montres connectées montre davantage de temps éveillé pendant la nuit au milieu de la vie, sans réduction majeure du temps total de sommeil.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "SOMMEIL"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "909e32720abf31c4698dba54c5d9ac5b0c4e3398467a0d0f404acee5faab7505"
+  },
+  {
+    "id": "poids-menopause-20261023",
+    "url": "article-poids-menopause-20261023.html",
+    "title": "Pourquoi prend-on du poids autour de la ménopause, même sans manger davantage ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "MÉNOPAUSE",
+    "date": "2026-10-23",
+    "status": "PUBLISHED",
+    "excerpt": "Les changements liés à l’âge et à la répartition des graisses comptent ; une grande cohorte associe certains modes alimentaires à une prise de poids plus limitée.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "MÉNOPAUSE"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "cfde8398b191f9f8266b2ccbd2942adedce6049f779bacd3dd1e2ac605e3cef3"
+  },
+  {
+    "id": "boissons-enfants-20261023",
+    "url": "article-boissons-enfants-20261023.html",
+    "title": "Boissons sucrées : les remplacer par de l’eau aide-t-il les enfants ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "ENFANT",
+    "date": "2026-10-23",
+    "status": "PUBLISHED",
+    "excerpt": "Un essai scolaire suggère qu’un programme collectif peut améliorer modestement un indicateur de poids, sans prouver que le remplacement des boissons suffit.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "ENFANT"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "3a13c0ef4de9f44649cc8126496b41d0fd782b14c1cd78a27592831150fa1ee6"
+  },
+  {
+    "id": "culture-moral-20261023",
+    "url": "article-culture-moral-20261023.html",
+    "title": "Musée, cinéma, théâtre : est-ce aussi bon pour le moral ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "BIEN-ÊTRE",
+    "date": "2026-10-23",
+    "status": "PUBLISHED",
+    "excerpt": "Chez les plus de 50 ans, les sorties culturelles fréquentes sont associées à moins de troubles psychiques nécessitant des soins hospitaliers, sans preuve de causalité.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "BIEN-ÊTRE"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "45f17e2e23940c15a2cc45f380ac2a6fbed253ea7f3c9f9b2e2f1b56708d799e"
+  },
+  {
+    "id": "fiche-menopause-20261023",
+    "url": "article-fiche-menopause-20261023.html",
+    "title": "Ménopause et sommeil : quand consulter ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "MÉNOPAUSE",
+    "date": "2026-10-23",
+    "status": "PUBLISHED",
+    "excerpt": "Les réveils nocturnes peuvent avoir plusieurs causes. Des bouffées de chaleur gênantes, des ronflements ou une somnolence diurne justifient une discussion médicale.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "MÉNOPAUSE"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "menopause-sommeil-reveils",
+    "version": "a5dd1a4116f88b217ae75b3b879f0acc3e0963b4be13441fe91d3fe88104d306"
+  },
+  {
+    "id": "vraifaux-menopause-20261023",
+    "url": "article-vraifaux-menopause-20261023.html",
+    "title": "Vrai ou faux : tous les réveils nocturnes à 45 ans sont dus aux hormones ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "FAUX",
+    "date": "2026-10-23",
+    "status": "PUBLISHED",
+    "excerpt": "Faux. Les sueurs nocturnes peuvent fragmenter le sommeil, mais le stress, l’insomnie chronique et l’apnée du sommeil sont aussi possibles. Il faut évaluer les symptômes, pas supposer leur origine.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "FAUX"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "menopause-sommeil-reveils",
+    "version": "4082eb9aabf859aad2efce567728aa179c06f0917325815b847a6379cffdbc2c"
+  },
+  {
+    "id": "chiffre-culture-20261023",
+    "url": "article-chiffre-culture-20261023.html",
+    "title": "8 274 adultes étudiés : les sorties culturelles protègent-elles le moral ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "8 274",
+    "date": "2026-10-23",
+    "status": "PUBLISHED",
+    "excerpt": "Une cohorte de 8 274 adultes de plus de 50 ans observe une association entre sorties culturelles et moins d’hospitalisations pour troubles psychiques. Cela ne démontre pas un effet causal.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "8 274"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "97050a56823a531ddad83d229cb7e2d4202d0067b8bff3cba7166b4f9df86e2a"
+  },
+  {
+    "id": "donnee-sommeil-20261023",
+    "url": "article-donnee-sommeil-20261023.html",
+    "title": "Le sommeil change parfois sans raccourcir",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "SOMMEIL",
+    "date": "2026-10-23",
+    "status": "PUBLISHED",
+    "excerpt": "Les données de montres connectées suggèrent davantage de réveils au milieu de la vie, mais pas nécessairement moins d’heures de sommeil au total.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "SOMMEIL"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "bd031f8f4ef82515eeec7c18b676913bc2a8c89a31e65abc4ee63e4a3fb3e4ee"
+  },
+  {
+    "id": "donnee-boissons-20261023",
+    "url": "article-donnee-boissons-20261023.html",
+    "title": "L’eau reste la boisson quotidienne de référence",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "ENFANT",
+    "date": "2026-10-23",
+    "status": "PUBLISHED",
+    "excerpt": "Réduire les boissons sucrées aide à limiter les sucres libres et protège les dents. Un programme scolaire ne prouve pas qu’un simple remplacement entraîne une perte de poids.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "ENFANT"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "boissons-sucrees",
+    "version": "b74e4eaaad8364b8c999e8c53da2caac92a2bd2e11809523a604699ad63d3a3b"
+  },
+  {
+    "id": "donnee-culture-20261023",
+    "url": "article-donnee-culture-20261023.html",
+    "title": "Les sorties culturelles : un lien intéressant, pas une ordonnance",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "BIEN-ÊTRE",
+    "date": "2026-10-23",
+    "status": "PUBLISHED",
+    "excerpt": "Les personnes qui fréquentent des activités culturelles présentent dans une cohorte moins de troubles psychiques hospitalisés ; la causalité reste incertaine.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "BIEN-ÊTRE"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "3b31e78656307234443c3adcb03b8c06daf900011c70963aee4f518dfb8ec164"
   }
 ];
