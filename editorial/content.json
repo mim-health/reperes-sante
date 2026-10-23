@@ -4766,6 +4766,192 @@
         "evidence": "Validation médicale explicite de la sélection éditoriale révisée du 23 octobre 2026 et autorisation de mise en ligne ; article Octobre Rose conservé dans cette validation.",
         "contentHash": "2debfee3258c603276a51a3213e1bb14353ae39c78c72309954c9073e6b7a902"
       }
+    },
+    {
+      "id": "fiche-menopause-20261023",
+      "date": "2026-10-23",
+      "title": "Ménopause et sommeil : quand consulter ?",
+      "answer": "Les réveils nocturnes peuvent avoir plusieurs causes. Des bouffées de chaleur gênantes, des ronflements ou une somnolence diurne justifient une discussion médicale.",
+      "html": "<article><div class=\"inside\"><h2>Ménopause et sommeil : quand consulter ?</h2><p>Les réveils nocturnes peuvent avoir plusieurs causes. Des bouffées de chaleur gênantes, des ronflements ou une somnolence diurne justifient une discussion médicale.</p><p><a href=\"https://www.nice.org.uk/guidance/ng23\">Source et références</a></p></div></article>",
+      "url": "article-fiche-menopause-20261023.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "MÉNOPAUSE",
+      "keywords": [
+        "MÉNOPAUSE"
+      ],
+      "sources": [
+        {
+          "label": "Source de référence",
+          "url": "https://www.nice.org.uk/guidance/ng23"
+        }
+      ],
+      "ficheId": "menopause-sommeil-reveils",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "assistantPolicy": "REFERENCE_FICHE_ONLY",
+      "validation": {
+        "validatedAt": "2026-10-23T09:22:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Compléments éditoriaux dérivés des sujets médicaux approuvés le 23 octobre, sans nouvelle allégation médicale.",
+        "contentHash": "a5dd1a4116f88b217ae75b3b879f0acc3e0963b4be13441fe91d3fe88104d3060000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": "vraifaux-menopause-20261023",
+      "date": "2026-10-23",
+      "title": "Vrai ou faux : tous les réveils nocturnes à 45 ans sont dus aux hormones ?",
+      "answer": "Faux. Les sueurs nocturnes peuvent fragmenter le sommeil, mais le stress, l’insomnie chronique et l’apnée du sommeil sont aussi possibles. Il faut évaluer les symptômes, pas supposer leur origine.",
+      "html": "<article><div class=\"inside\"><h2>Vrai ou faux : tous les réveils nocturnes à 45 ans sont dus aux hormones ?</h2><p>Faux. Les sueurs nocturnes peuvent fragmenter le sommeil, mais le stress, l’insomnie chronique et l’apnée du sommeil sont aussi possibles. Il faut évaluer les symptômes, pas supposer leur origine.</p><p><a href=\"https://www.nice.org.uk/guidance/ng23\">Source et références</a></p></div></article>",
+      "url": "article-vraifaux-menopause-20261023.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "FAUX",
+      "keywords": [
+        "FAUX"
+      ],
+      "sources": [
+        {
+          "label": "Source de référence",
+          "url": "https://www.nice.org.uk/guidance/ng23"
+        }
+      ],
+      "ficheId": "menopause-sommeil-reveils",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "assistantPolicy": "REFERENCE_FICHE_ONLY",
+      "validation": {
+        "validatedAt": "2026-10-23T09:22:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Compléments éditoriaux dérivés des sujets médicaux approuvés le 23 octobre, sans nouvelle allégation médicale.",
+        "contentHash": "4082eb9aabf859aad2efce567728aa179c06f0917325815b847a6379cffdbc2c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": "chiffre-culture-20261023",
+      "date": "2026-10-23",
+      "title": "8 274 adultes étudiés : les sorties culturelles protègent-elles le moral ?",
+      "answer": "Une cohorte de 8 274 adultes de plus de 50 ans observe une association entre sorties culturelles et moins d’hospitalisations pour troubles psychiques. Cela ne démontre pas un effet causal.",
+      "html": "<article><div class=\"inside\"><h2>8 274 adultes étudiés : les sorties culturelles protègent-elles le moral ?</h2><p>Une cohorte de 8 274 adultes de plus de 50 ans observe une association entre sorties culturelles et moins d’hospitalisations pour troubles psychiques. Cela ne démontre pas un effet causal.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/42873497/\">Source et références</a></p></div></article>",
+      "url": "article-chiffre-culture-20261023.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "8 274",
+      "keywords": [
+        "8 274"
+      ],
+      "sources": [
+        {
+          "label": "Source de référence",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42873497/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "assistantPolicy": "SOURCE_REVIEW_REQUIRED",
+      "validation": {
+        "validatedAt": "2026-10-23T09:22:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Compléments éditoriaux dérivés des sujets médicaux approuvés le 23 octobre, sans nouvelle allégation médicale.",
+        "contentHash": "97050a56823a531ddad83d229cb7e2d4202d0067b8bff3cba7166b4f9df86e2a0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": "donnee-sommeil-20261023",
+      "date": "2026-10-23",
+      "title": "Le sommeil change parfois sans raccourcir",
+      "answer": "Les données de montres connectées suggèrent davantage de réveils au milieu de la vie, mais pas nécessairement moins d’heures de sommeil au total.",
+      "html": "<article><div class=\"inside\"><h2>Le sommeil change parfois sans raccourcir</h2><p>Les données de montres connectées suggèrent davantage de réveils au milieu de la vie, mais pas nécessairement moins d’heures de sommeil au total.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/42518248/\">Source et références</a></p></div></article>",
+      "url": "article-donnee-sommeil-20261023.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "SOMMEIL",
+      "keywords": [
+        "SOMMEIL"
+      ],
+      "sources": [
+        {
+          "label": "Source de référence",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42518248/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "assistantPolicy": "SOURCE_REVIEW_REQUIRED",
+      "validation": {
+        "validatedAt": "2026-10-23T09:22:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Compléments éditoriaux dérivés des sujets médicaux approuvés le 23 octobre, sans nouvelle allégation médicale.",
+        "contentHash": "bd031f8f4ef82515eeec7c18b676913bc2a8c89a31e65abc4ee63e4a3fb3e4ee0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": "donnee-boissons-20261023",
+      "date": "2026-10-23",
+      "title": "L’eau reste la boisson quotidienne de référence",
+      "answer": "Réduire les boissons sucrées aide à limiter les sucres libres et protège les dents. Un programme scolaire ne prouve pas qu’un simple remplacement entraîne une perte de poids.",
+      "html": "<article><div class=\"inside\"><h2>L’eau reste la boisson quotidienne de référence</h2><p>Réduire les boissons sucrées aide à limiter les sucres libres et protège les dents. Un programme scolaire ne prouve pas qu’un simple remplacement entraîne une perte de poids.</p><p><a href=\"https://www.who.int/publications/i/item/9789241549028\">Source et références</a></p></div></article>",
+      "url": "article-donnee-boissons-20261023.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "ENFANT",
+      "keywords": [
+        "ENFANT"
+      ],
+      "sources": [
+        {
+          "label": "Source de référence",
+          "url": "https://www.who.int/publications/i/item/9789241549028"
+        }
+      ],
+      "ficheId": "boissons-sucrees",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "assistantPolicy": "REFERENCE_FICHE_ONLY",
+      "validation": {
+        "validatedAt": "2026-10-23T09:22:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Compléments éditoriaux dérivés des sujets médicaux approuvés le 23 octobre, sans nouvelle allégation médicale.",
+        "contentHash": "b74e4eaaad8364b8c999e8c53da2caac92a2bd2e11809523a604699ad63d3a3b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": "donnee-culture-20261023",
+      "date": "2026-10-23",
+      "title": "Les sorties culturelles : un lien intéressant, pas une ordonnance",
+      "answer": "Les personnes qui fréquentent des activités culturelles présentent dans une cohorte moins de troubles psychiques hospitalisés ; la causalité reste incertaine.",
+      "html": "<article><div class=\"inside\"><h2>Les sorties culturelles : un lien intéressant, pas une ordonnance</h2><p>Les personnes qui fréquentent des activités culturelles présentent dans une cohorte moins de troubles psychiques hospitalisés ; la causalité reste incertaine.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/42873497/\">Source et références</a></p></div></article>",
+      "url": "article-donnee-culture-20261023.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "BIEN-ÊTRE",
+      "keywords": [
+        "BIEN-ÊTRE"
+      ],
+      "sources": [
+        {
+          "label": "Source de référence",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42873497/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "assistantPolicy": "SOURCE_REVIEW_REQUIRED",
+      "validation": {
+        "validatedAt": "2026-10-23T09:22:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Compléments éditoriaux dérivés des sujets médicaux approuvés le 23 octobre, sans nouvelle allégation médicale.",
+        "contentHash": "3b31e78656307234443c3adcb03b8c06daf900011c70963aee4f518dfb8ec1640000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
     }
   ],
   "editions": [
@@ -5319,7 +5505,7 @@
       "id": "edition-2026-10-23",
       "date": "2026-10-23",
       "publishAt": "2026-10-23T09:22:00+02:00",
-      "complete": false,
+      "complete": true,
       "items": [
         {
           "contentId": "sommeil-femmes-20261023",
@@ -5340,12 +5526,42 @@
           "contentId": "culture-moral-20261023",
           "slot": "À LIRE EN 3 MIN",
           "icon": "BIEN-ÊTRE"
+        },
+        {
+          "contentId": "fiche-menopause-20261023",
+          "slot": "FICHE DU JOUR",
+          "icon": "MÉNOPAUSE"
+        },
+        {
+          "contentId": "vraifaux-menopause-20261023",
+          "slot": "VRAI OU FAUX",
+          "icon": "FAUX"
+        },
+        {
+          "contentId": "chiffre-culture-20261023",
+          "slot": "LE CHIFFRE DU JOUR",
+          "icon": "8 274"
+        },
+        {
+          "contentId": "donnee-sommeil-20261023",
+          "slot": "DONNÉES",
+          "icon": "SOMMEIL"
+        },
+        {
+          "contentId": "donnee-boissons-20261023",
+          "slot": "DONNÉES",
+          "icon": "ENFANT"
+        },
+        {
+          "contentId": "donnee-culture-20261023",
+          "slot": "DONNÉES",
+          "icon": "BIEN-ÊTRE"
         }
       ],
       "editorialConference": {
-        "validation": "Sélection principale et article Octobre Rose approuvés le 23 octobre ; édition incomplète en attente de finalisation des autres rubriques.",
+        "validation": "Conférence grand public approuvée et autorisée à la publication le 23 octobre 2026 ; rubriques secondaires complétées à partir des messages validés.",
         "veille": "Sommeil à la mi-vie ; nutrition et ménopause ; boissons sucrées chez l'enfant ; culture et santé mentale.",
-        "corpusImpact": "Candidats fiches proposés seulement ; aucune fiche canonique créée."
+        "corpusImpact": "Nouvelle fiche ménopause et sommeil ; fiche boissons sucrées enrichie sans doublon. Articles Mag et corpus suivis séparément."
       }
     }
   ]
