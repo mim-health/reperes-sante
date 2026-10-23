@@ -3,6 +3,10 @@ on:
   push:
     branches: [feat/v0-magazine]
     paths:
+      - '.github/workflows/build-static-seo-fiches.yml'
+      - 'scripts/build-corpus-production.js'
+      - 'scripts/build-static-seo-fiches.js'
+      - 'scripts/build-sitemap-from-corpus.js'
       - 'qa-data*.js'
       - 'backlog-audited*.js'
       - 'corpus-*.js'
