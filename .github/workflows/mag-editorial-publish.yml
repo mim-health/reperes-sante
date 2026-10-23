@@ -123,7 +123,9 @@ jobs:
           GITHUB_REF_NAME: feat/v0-magazine
         run: bash scripts/publish-assistant-v2.sh
       - name: Verify active index and Mag answer
-        run: node scripts/verify-mag-public.js --assistant
+        run: |
+          node scripts/verify-mag-public.js --assistant
+          node scripts/verify-publication.js --assistant-index
       - name: Persist execution report
         if: always()
         env:
