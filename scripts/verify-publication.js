@@ -25,8 +25,12 @@ async function main(){
     assert.equal(published.fingerprint,latest.version);
     for(const c of expected)assert(published.cards.some(x=>x.id===c.id),'Missing published Assistant card '+c.id);
     for(const id of forbidden)assert(!published.cards.some(x=>x.id===id),'Unvalidated published Assistant card '+id);
-    const ready=await (await fetch('https://purple-voice-a8e3.dr-beddok.workers.dev/?maca_public_ready=1')).json();
-    assert.equal(ready.artifact_version,latest.version,'Active Assistant index is stale');
+    // A readiness GET can hit a cold isolate with no loaded version. Exercise retrieval.
+    const response=await fetch('https://purple-voice-a8e3.dr-beddok.workers.dev/',{method:'POST',headers:{'Content-Type':'application/json',Origin:'https://macasante.fr'},body:JSON.stringify({question:'Mouches volantes et éclairs dans les yeux : quand faut-il consulter ?'}),signal:AbortSignal.timeout(90000)});
+    assert.equal(response.status,200,'Assistant HTTP '+response.status);
+    const ready=await response.json();
+    assert.equal(ready.meta?.artifact_version,latest.version,'Active Assistant index is stale');
+    assert(ready.selected_cards?.some(c=>c.id==='ophtalmo-mouches-volantes-eclairs-retine'),'Retina fiche not retrievable');
     console.log('PASS: all 11 cards in active immutable Assistant index '+latest.version);
   }
   if(process.argv.includes('--public')){
