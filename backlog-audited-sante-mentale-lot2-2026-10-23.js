@@ -19,8 +19,8 @@ window.extraAuditedQuestions.push(
   ],
   "verifiedAt": "2026-10-23",
   "nextAuditAt": "2027-01-23",
-  "validationStatus": "REVIEW_REQUIRED",
-  "editorialStatus": "REVIEW_REQUIRED",
+  "validationStatus": "VALIDATED",
+  "editorialStatus": "MEDICAL_VALIDATED",
   "auditIntervalMonths": 3
 },
 {
@@ -41,8 +41,8 @@ window.extraAuditedQuestions.push(
   ],
   "verifiedAt": "2026-10-23",
   "nextAuditAt": "2027-01-23",
-  "validationStatus": "REVIEW_REQUIRED",
-  "editorialStatus": "REVIEW_REQUIRED",
+  "validationStatus": "VALIDATED",
+  "editorialStatus": "MEDICAL_VALIDATED",
   "auditIntervalMonths": 3
 },
 {
@@ -63,8 +63,8 @@ window.extraAuditedQuestions.push(
   ],
   "verifiedAt": "2026-10-23",
   "nextAuditAt": "2027-01-23",
-  "validationStatus": "REVIEW_REQUIRED",
-  "editorialStatus": "REVIEW_REQUIRED",
+  "validationStatus": "VALIDATED",
+  "editorialStatus": "MEDICAL_VALIDATED",
   "auditIntervalMonths": 3
 },
 {
@@ -85,8 +85,8 @@ window.extraAuditedQuestions.push(
   ],
   "verifiedAt": "2026-10-23",
   "nextAuditAt": "2027-01-23",
-  "validationStatus": "REVIEW_REQUIRED",
-  "editorialStatus": "REVIEW_REQUIRED",
+  "validationStatus": "VALIDATED",
+  "editorialStatus": "MEDICAL_VALIDATED",
   "auditIntervalMonths": 3
 },
 {
@@ -107,8 +107,8 @@ window.extraAuditedQuestions.push(
   ],
   "verifiedAt": "2026-10-23",
   "nextAuditAt": "2027-01-23",
-  "validationStatus": "REVIEW_REQUIRED",
-  "editorialStatus": "REVIEW_REQUIRED",
+  "validationStatus": "VALIDATED",
+  "editorialStatus": "MEDICAL_VALIDATED",
   "auditIntervalMonths": 3
 },
 {
@@ -129,8 +129,8 @@ window.extraAuditedQuestions.push(
   ],
   "verifiedAt": "2026-10-23",
   "nextAuditAt": "2027-01-23",
-  "validationStatus": "REVIEW_REQUIRED",
-  "editorialStatus": "REVIEW_REQUIRED",
+  "validationStatus": "VALIDATED",
+  "editorialStatus": "MEDICAL_VALIDATED",
   "auditIntervalMonths": 3
 },
 {
@@ -151,8 +151,8 @@ window.extraAuditedQuestions.push(
   ],
   "verifiedAt": "2026-10-23",
   "nextAuditAt": "2027-01-23",
-  "validationStatus": "REVIEW_REQUIRED",
-  "editorialStatus": "REVIEW_REQUIRED",
+  "validationStatus": "VALIDATED",
+  "editorialStatus": "MEDICAL_VALIDATED",
   "auditIntervalMonths": 3
 },
 {
@@ -173,8 +173,8 @@ window.extraAuditedQuestions.push(
   ],
   "verifiedAt": "2026-10-23",
   "nextAuditAt": "2027-01-23",
-  "validationStatus": "REVIEW_REQUIRED",
-  "editorialStatus": "REVIEW_REQUIRED",
+  "validationStatus": "VALIDATED",
+  "editorialStatus": "MEDICAL_VALIDATED",
   "auditIntervalMonths": 3
 },
 {
@@ -195,24 +195,28 @@ window.extraAuditedQuestions.push(
   ],
   "verifiedAt": "2026-10-23",
   "nextAuditAt": "2027-01-23",
-  "validationStatus": "REVIEW_REQUIRED",
-  "editorialStatus": "REVIEW_REQUIRED",
+  "validationStatus": "VALIDATED",
+  "editorialStatus": "MEDICAL_VALIDATED",
   "auditIntervalMonths": 3
 },
 {
   "id": "sante-mentale-solitude-isolement",
   "category": "Santé mentale",
   "title": "Je me sens seul : la solitude peut-elle affecter ma santé ?",
-  "keywords": "je me sens seul : la solitude peut-elle affecter ma santé ?",
-  "answer": "La solitude est le sentiment de manquer de relations satisfaisantes ; l’isolement social décrit un réseau de contacts limité. On peut être seul sans en souffrir, ou se sentir isolé au milieu des autres. Lorsqu’elle est pénible et durable, la solitude mérite d’être prise au sérieux.",
-  "detail": "Un déménagement, un deuil, une séparation, une maladie chronique, le télétravail ou la retraite peuvent modifier les relations quotidiennes. Certaines personnes ont peu de contacts mais se sentent bien ; d’autres ont de nombreux échanges sans trouver de soutien émotionnel. La solitude persistante est associée à une détérioration du bien-être et, dans les études de population, à plusieurs risques pour la santé. Ces associations ne signifient pas que la solitude provoque à elle seule une maladie chez une personne donnée. L’évaluation utile est concrète : la personne se sent-elle soutenue, a-t-elle quelqu’un à appeler, a-t-elle renoncé à des activités importantes, et y a-t-il une dépression, un trouble anxieux, une perte auditive, des difficultés de mobilité ou une précarité qui aggravent la situation ? Il n’existe pas de solution unique. Pour certains, reprendre un contact régulier avec un proche est un premier pas ; pour d’autres, une activité associative, un groupe de pairs, une pratique culturelle ou une aide à la mobilité est plus appropriée. Des initiatives locales peuvent faciliter les liens mais ne remplacent pas un soin lorsqu’un trouble psychique est présent. Il est préférable de rechercher des relations de qualité plutôt que de compter mécaniquement le nombre de contacts. Demander de l’aide n’est pas un échec personnel.",
+  "keywords": "solitude isolement social personne seule se sentir seul jeunes adultes retraite veuvage santé mentale soutien amis liens sociaux dépression anxiété",
+  "answer": "On peut être entouré et se sentir seul, ou apprécier la solitude sans en souffrir. Quand le manque de relations satisfaisantes devient durable ou douloureux, il peut affecter le bien-être et s’associer à des problèmes de santé. La première étape consiste à identifier ce qui manque réellement — soutien, échanges, mobilité ou relations de confiance — puis à chercher des solutions adaptées, sans culpabiliser.",
+  "detail": "Un déménagement, une séparation, un deuil, une maladie chronique, la retraite ou le télétravail peuvent bouleverser les relations. Mais il faut distinguer deux réalités. La solitude est un ressenti : le décalage entre les relations que l’on souhaiterait avoir et celles que l’on vit. L’isolement social décrit davantage la rareté des contacts ou des soutiens disponibles. On peut aimer passer du temps seul et aller très bien ; à l’inverse, on peut avoir une famille, des collègues et de nombreux abonnés sur les réseaux et se sentir profondément seul.\n\nPourquoi est-ce une question de santé ? Les grandes études de population associent une solitude persistante et un isolement important à une moins bonne santé mentale, notamment davantage de symptômes dépressifs et anxieux, ainsi qu’à des risques physiques et de mortalité plus élevés. Toutefois, ces études sont principalement observationnelles : elles ne prouvent pas que la solitude est à elle seule la cause de chaque maladie. Une mauvaise santé peut aussi limiter les sorties et favoriser l’isolement. Le rapport 2025 de la Commission OMS sur les liens sociaux souligne précisément l’importance de considérer les connexions sociales comme une dimension de santé publique, et pas comme un simple confort.\n\nCertains moments de la vie exposent davantage : arrivée dans une nouvelle ville, entrée dans les études, parentalité avec peu de soutien, séparation, chômage, situation de handicap, maladie, difficultés financières ou perte de mobilité. La solitude concerne autant les jeunes adultes que les personnes âgées. Il faut éviter le cliché selon lequel seuls les seniors seraient touchés. Une personne très entourée peut également manquer de relations dans lesquelles elle se sent écoutée et comprise.\n\nComment reconnaître une situation qui mérite une aide ? Il n’existe pas de nombre « normal » d’amis ni de fréquence idéale de sorties. L'important est de savoir si la personne en souffre, si elle dispose de quelqu’un à appeler en cas de difficulté, et si elle abandonne peu à peu ses activités. Une tristesse persistante, une perte de plaisir, une anxiété qui empêche de sortir, une consommation croissante d'alcool ou un sommeil très perturbé doivent faire rechercher un problème associé. Chez les personnes âgées, une baisse de l’audition, des difficultés de déplacement, un veuvage ou des obstacles numériques peuvent rendre les contacts plus difficiles sans traduire un manque d’envie.\n\nQue peut-on faire concrètement ? Commencer modestement est souvent plus réaliste que se fixer l'objectif de « se faire dix amis ». On peut reprendre contact avec une personne appréciée, organiser une activité régulière, fréquenter un lieu de quartier, rejoindre une association ou participer à un groupe autour d’un intérêt partagé. Des rendez-vous récurrents, même courts, facilitent parfois la création de liens davantage qu'une succession de rencontres occasionnelles. Pour une personne limitée par la mobilité, le téléphone, la visioconférence, les visites et les dispositifs locaux d’accompagnement peuvent compléter les contacts en présentiel. Les relations numériques peuvent apporter un vrai soutien ; leur qualité et leur effet sur le bien-être comptent plus que le temps d’écran isolé.\n\nEt si l’on n’y arrive pas ? Quand la solitude est associée à une dépression, à une anxiété sociale ou à une expérience traumatique, répéter « il faut sortir » ne suffit pas. Une consultation médicale ou psychologique peut aider à identifier les obstacles et à choisir une stratégie adaptée. Les interventions sociales ne fonctionnent pas toutes de la même façon : leur efficacité dépend des besoins, de l’accessibilité et de la qualité de l’accompagnement. Il n’y a pas de recette universelle ni de raison de culpabiliser une personne isolée.\n\nPour aider un proche, mieux vaut proposer un geste précis et respectueux, comme un appel régulier ou une sortie accessible, plutôt que lui reprocher son manque d’initiative. Écouter ce qu’il souhaite est essentiel : certaines personnes veulent plus de compagnie, d'autres avant tout une relation plus profonde ou une aide matérielle pour retrouver une vie sociale. La priorité est de reconstruire des liens qui ont du sens pour la personne.",
   "watch": "Isolement avec négligence de soi, détresse intense ou idées suicidaires : évaluation médicale rapide ; 3114 en France pour les pensées suicidaires.",
-  "source": "OMS — Social isolation and loneliness",
-  "url": "https://www.who.int/health-topics/social-determinants-of-health",
+  "source": "OMS — Commission sur les liens sociaux, rapport mondial 2025",
+  "url": "https://www.who.int/publications/i/item/9789240112360",
   "sources": [
     {
-      "label": "OMS — Social isolation and loneliness",
-      "url": "https://www.who.int/health-topics/social-determinants-of-health"
+      "label": "OMS — Commission sur les liens sociaux, rapport mondial 2025",
+      "url": "https://www.who.int/publications/i/item/9789240112360"
+    },
+    {
+      "label": "US Surgeon General — Our Epidemic of Loneliness and Isolation, 2023",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK595227/"
     }
   ],
   "verifiedAt": "2026-10-23",
