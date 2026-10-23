@@ -221,8 +221,8 @@ window.extraAuditedQuestions.push(
   ],
   "verifiedAt": "2026-10-23",
   "nextAuditAt": "2027-01-23",
-  "validationStatus": "REVIEW_REQUIRED",
-  "editorialStatus": "REVIEW_REQUIRED",
+  "validationStatus": "VALIDATED",
+  "editorialStatus": "MEDICAL_VALIDATED",
   "auditIntervalMonths": 3
 }
 );
