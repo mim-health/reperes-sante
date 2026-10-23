@@ -4616,6 +4616,156 @@
         "contentHash": "82e82f4dc9f4d678905e70b1c8a5788aa5cc4f3f7481b898053614a8b7d3f73c"
       },
       "standalone": true
+    },
+    {
+      "id": "sommeil-femmes-20261023",
+      "date": "2026-10-23",
+      "title": "À 45 ans, pourquoi dort-on moins bien qu’avant ?",
+      "answer": "Une grande étude de montres connectées montre davantage de temps éveillé pendant la nuit au milieu de la vie, sans réduction majeure du temps total de sommeil.",
+      "html": "<article><div class=\"inside\"><h2>À 45 ans, pourquoi dort-on moins bien qu’avant ?</h2><p><strong>Réponse courte.</strong> Une grande étude de montres connectées montre davantage de temps éveillé pendant la nuit au milieu de la vie, sans réduction majeure du temps total de sommeil.</p><p>Une étude internationale a analysé près de 3,8 millions de nuits chez 192 500 utilisatrices de montres connectées âgées de 20 à 65 ans.</p><p>Par rapport aux 20–24 ans, les femmes de 50–54 ans passaient en moyenne cinq minutes de plus éveillées après l’endormissement ; cet écart atteignait neuf minutes à 55–59 ans et onze minutes à 60–64 ans. Le temps total de sommeil variait beaucoup moins.</p><p>Ces données suggèrent une fragmentation croissante du sommeil, mais ne démontrent pas que la ménopause en est la cause. Les montres ne remplacent pas un examen médical, et les participantes ne représentent pas toutes les femmes.</p><p>En pratique, des réveils répétés, des ronflements, une somnolence diurne ou des bouffées de chaleur gênantes méritent d’être abordés en consultation. Il n’est pas nécessaire de traiter une montre connectée plutôt que des symptômes.</p><p><strong>Source primaire :</strong> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42518248/\">Consulter la publication</a>.</p></div></article>",
+      "url": "article-sommeil-femmes-20261023.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "SOMMEIL",
+      "keywords": [
+        "SOMMEIL"
+      ],
+      "sources": [
+        {
+          "label": "Publication scientifique primaire",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42518248/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": true,
+      "validation": {
+        "validatedAt": "2026-10-23T09:22:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite de la sélection éditoriale révisée du 23 octobre 2026 et autorisation de mise en ligne ; article Octobre Rose conservé dans cette validation.",
+        "contentHash": "909e32720abf31c4698dba54c5d9ac5b0c4e3398467a0d0f404acee5faab7505"
+      }
+    },
+    {
+      "id": "poids-menopause-20261023",
+      "date": "2026-10-23",
+      "title": "Pourquoi prend-on du poids autour de la ménopause, même sans manger davantage ?",
+      "answer": "Les changements liés à l’âge et à la répartition des graisses comptent ; une grande cohorte associe certains modes alimentaires à une prise de poids plus limitée.",
+      "html": "<article><div class=\"inside\"><h2>Pourquoi prend-on du poids autour de la ménopause, même sans manger davantage ?</h2><p><strong>Réponse courte.</strong> Les changements liés à l’âge et à la répartition des graisses comptent ; une grande cohorte associe certains modes alimentaires à une prise de poids plus limitée.</p><p>La prise de poids au milieu de la vie n’est pas expliquée uniquement par les hormones. Le vieillissement, l’activité physique, le sommeil et la composition corporelle jouent également un rôle.</p><p>Dans une cohorte de 38 283 femmes suivies autour de la ménopause, les habitudes riches en légumes, fruits, céréales complètes, légumineuses et fruits à coque étaient associées à une prise de poids moindre. Les régimes plus riches en viandes transformées et aliments peu favorables étaient associés à davantage de prise de poids.</p><p>Il s’agit d’une étude observationnelle : elle ne démontre pas qu’un régime particulier empêche la prise de poids. Les poids et les consommations étaient déclarés par les participantes.</p><p>Le message pratique n’est pas de se lancer dans un régime extrême : privilégier une alimentation de qualité, conserver une activité physique régulière et discuter des symptômes gênants avec un professionnel.</p><p><strong>Source primaire :</strong> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42160056/\">Consulter la publication</a>.</p></div></article>",
+      "url": "article-poids-menopause-20261023.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "MÉNOPAUSE",
+      "keywords": [
+        "MÉNOPAUSE"
+      ],
+      "sources": [
+        {
+          "label": "Publication scientifique primaire",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42160056/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": true,
+      "validation": {
+        "validatedAt": "2026-10-23T09:22:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite de la sélection éditoriale révisée du 23 octobre 2026 et autorisation de mise en ligne ; article Octobre Rose conservé dans cette validation.",
+        "contentHash": "cfde8398b191f9f8266b2ccbd2942adedce6049f779bacd3dd1e2ac605e3cef3"
+      }
+    },
+    {
+      "id": "boissons-enfants-20261023",
+      "date": "2026-10-23",
+      "title": "Boissons sucrées : les remplacer par de l’eau aide-t-il les enfants ?",
+      "answer": "Un essai scolaire suggère qu’un programme collectif peut améliorer modestement un indicateur de poids, sans prouver que le remplacement des boissons suffit.",
+      "html": "<article><div class=\"inside\"><h2>Boissons sucrées : les remplacer par de l’eau aide-t-il les enfants ?</h2><p><strong>Réponse courte.</strong> Un essai scolaire suggère qu’un programme collectif peut améliorer modestement un indicateur de poids, sans prouver que le remplacement des boissons suffit.</p><p>Un essai randomisé par groupes a suivi 437 enfants âgés de 8 à 13 ans dans onze structures périscolaires aux États-Unis. L’intervention cherchait à réduire les boissons sucrées et à promouvoir l’eau.</p><p>Après douze mois, la différence entre les groupes sur l’évolution de l’indice de masse corporelle standardisé était modeste mais statistiquement significative. En revanche, les différences de consommation déclarée d’eau et de boissons sucrées n’étaient pas significatives.</p><p>On ne peut donc pas conclure que remplacer une boisson sucrée par de l’eau fait automatiquement maigrir. Le programme comportait plusieurs éléments comportementaux et les résultats peuvent dépendre du contexte.</p><p>À la maison, proposer l’eau comme boisson habituelle reste un conseil simple, sans culpabiliser les familles ni faire du poids le seul objectif.</p><p><strong>Source primaire :</strong> <a href=\"https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855120\">Consulter la publication</a>.</p></div></article>",
+      "url": "article-boissons-enfants-20261023.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "ENFANT",
+      "keywords": [
+        "ENFANT"
+      ],
+      "sources": [
+        {
+          "label": "Publication scientifique primaire",
+          "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855120"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": true,
+      "validation": {
+        "validatedAt": "2026-10-23T09:22:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite de la sélection éditoriale révisée du 23 octobre 2026 et autorisation de mise en ligne ; article Octobre Rose conservé dans cette validation.",
+        "contentHash": "3a13c0ef4de9f44649cc8126496b41d0fd782b14c1cd78a27592831150fa1ee6"
+      }
+    },
+    {
+      "id": "culture-moral-20261023",
+      "date": "2026-10-23",
+      "title": "Musée, cinéma, théâtre : est-ce aussi bon pour le moral ?",
+      "answer": "Chez les plus de 50 ans, les sorties culturelles fréquentes sont associées à moins de troubles psychiques nécessitant des soins hospitaliers, sans preuve de causalité.",
+      "html": "<article><div class=\"inside\"><h2>Musée, cinéma, théâtre : est-ce aussi bon pour le moral ?</h2><p><strong>Réponse courte.</strong> Chez les plus de 50 ans, les sorties culturelles fréquentes sont associées à moins de troubles psychiques nécessitant des soins hospitaliers, sans preuve de causalité.</p><p>Une cohorte britannique de 8 274 adultes âgés de 50 ans ou plus a étudié la fréquentation de spectacles et d’expositions et la survenue de troubles psychiques enregistrés à l’hôpital.</p><p>Les personnes participant fréquemment à des activités culturelles avaient un risque relatif plus faible de troubles psychiques hospitalisés, notamment de troubles de l’humeur et de démence, après ajustement sur plusieurs facteurs.</p><p>Ce résultat ne démontre pas que les sorties culturelles préviennent la dépression ou la démence : les personnes qui sortent régulièrement peuvent aussi avoir une meilleure santé, davantage de ressources ou un réseau social plus solide.</p><p>Le message n’est pas de prescrire le musée, mais de rappeler que les activités plaisantes, les liens sociaux et l’accès à la culture peuvent contribuer à une vie quotidienne plus riche.</p><p><strong>Source primaire :</strong> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42873497/\">Consulter la publication</a>.</p></div></article>",
+      "url": "article-culture-moral-20261023.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "BIEN-ÊTRE",
+      "keywords": [
+        "BIEN-ÊTRE"
+      ],
+      "sources": [
+        {
+          "label": "Publication scientifique primaire",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42873497/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": true,
+      "validation": {
+        "validatedAt": "2026-10-23T09:22:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite de la sélection éditoriale révisée du 23 octobre 2026 et autorisation de mise en ligne ; article Octobre Rose conservé dans cette validation.",
+        "contentHash": "45f17e2e23940c15a2cc45f380ac2a6fbed253ea7f3c9f9b2e2f1b56708d799e"
+      }
+    },
+    {
+      "id": "octobre-rose-suppression-ovarienne-20261023",
+      "date": "2026-10-23",
+      "title": "Cancer du sein : supprimer temporairement le fonctionnement des ovaires réduit-il les récidives ?",
+      "answer": "Oui, chez certaines femmes non ménopausées atteintes d’un cancer du sein précoce sensible aux hormones. Le bénéfice doit être mis en balance avec les effets indésirables et le projet parental.",
+      "html": "<article><div class=\"inside\"><h2>Cancer du sein : supprimer temporairement le fonctionnement des ovaires réduit-il les récidives ?</h2><p><strong>Réponse courte.</strong> Oui, chez certaines femmes non ménopausées atteintes d’un cancer du sein précoce sensible aux hormones. Le bénéfice doit être mis en balance avec les effets indésirables et le projet parental.</p><p>La plupart des cancers du sein sensibles aux hormones peuvent être stimulés par les œstrogènes. Chez une femme non ménopausée, réduire temporairement la production ovarienne d’œstrogènes peut compléter l’hormonothérapie après le traitement initial.</p><p>Une méta-analyse publiée en mai 2026 dans The Lancet a réuni les données de 18 851 femmes issues de 23 essais randomisés. L’analyse principale portait sur 15 075 femmes préménopausées présentant un cancer précoce à récepteurs œstrogéniques positifs ou inconnus.</p><p>La suppression ovarienne réduisait le risque de récidive de 18 % en proportion relative (RR 0,82). Dans les essais récents comparant tamoxifène seul et tamoxifène associé à la suppression ovarienne, le risque relatif était de 0,79. Chez les femmes de moins de 45 ans, l’effet sur les récidives et la mortalité par cancer du sein était plus marqué.</p><p>Le bénéfice dépend notamment de l’âge, du risque initial et du maintien de l’activité ovarienne après une éventuelle chimiothérapie. Une réduction relative ne correspond pas au même nombre de récidives évitées pour toutes les patientes.</p><p>La suppression ovarienne peut être obtenue par injections d’analogues de la GnRH ou, définitivement, par chirurgie. Elle peut provoquer bouffées de chaleur, sécheresse vaginale, troubles sexuels, fatigue et perte osseuse. La chirurgie est irréversible ; après arrêt des injections, la reprise de l’activité ovarienne ne garantit pas la fertilité.</p><p>Ce traitement est déjà disponible : il ne s’agit pas d’une approche expérimentale. La décision doit être discutée avec l’équipe d’oncologie en tenant compte du risque de récidive, de la tolérance, de la santé osseuse et d’un éventuel projet de grossesse.</p><p>Limites : les essais inclus ont été conduits à des époques différentes, avec des traitements associés variables ; le statut ménopausique après chimiothérapie n’était pas toujours confirmé. L’étude ne justifie pas une suppression ovarienne systématique chez toutes les patientes.</p><p><strong>Source primaire :</strong> <a href=\"https://pubmed.ncbi.nlm.nih.gov/42070572/\">Consulter la publication</a>.</p></div></article>",
+      "url": "article-octobre-rose-suppression-ovarienne-20261023.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "OCTOBRE ROSE",
+      "keywords": [
+        "OCTOBRE ROSE"
+      ],
+      "sources": [
+        {
+          "label": "Publication scientifique primaire",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42070572/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": true,
+      "validation": {
+        "validatedAt": "2026-10-23T09:22:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite de la sélection éditoriale révisée du 23 octobre 2026 et autorisation de mise en ligne ; article Octobre Rose conservé dans cette validation.",
+        "contentHash": "2debfee3258c603276a51a3213e1bb14353ae39c78c72309954c9073e6b7a902"
+      }
     }
   ],
   "editions": [
@@ -5163,6 +5313,39 @@
         "validation": "Conférence intégrale et article Octobre Rose validés pour publication le 22 octobre 2026. FAST-Forward : effectif corrigé 4 087 participantes, correction approuvée.",
         "veille": "Opioïdes non utilisés ; ianalumab Sjögren ; dénosumab oncologique ; oxymétrie néonatale ; dépistage colorectal postal ; NICHE-2 ; VIH hebdomadaire ; téléexpertise pédiatrique.",
         "corpusImpact": "Décisions du texte validé conservées ; aucune nouvelle fiche médicale créée."
+      }
+    },
+    {
+      "id": "edition-2026-10-23",
+      "date": "2026-10-23",
+      "publishAt": "2026-10-23T09:22:00+02:00",
+      "complete": false,
+      "items": [
+        {
+          "contentId": "sommeil-femmes-20261023",
+          "slot": "À LA UNE",
+          "icon": "SOMMEIL"
+        },
+        {
+          "contentId": "poids-menopause-20261023",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "MÉNOPAUSE"
+        },
+        {
+          "contentId": "boissons-enfants-20261023",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "ENFANTS"
+        },
+        {
+          "contentId": "culture-moral-20261023",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "BIEN-ÊTRE"
+        }
+      ],
+      "editorialConference": {
+        "validation": "Sélection principale et article Octobre Rose approuvés le 23 octobre ; édition incomplète en attente de finalisation des autres rubriques.",
+        "veille": "Sommeil à la mi-vie ; nutrition et ménopause ; boissons sucrées chez l'enfant ; culture et santé mentale.",
+        "corpusImpact": "Candidats fiches proposés seulement ; aucune fiche canonique créée."
       }
     }
   ]
