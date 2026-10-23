@@ -18,6 +18,17 @@ for(const c of expected){
 for(const id of forbidden){assert(!corpus.cards.some(c=>c.id===id),'Unvalidated Assistant card '+id);assert(!fs.existsSync('fiches-seo/'+id+'.html'),'Unvalidated page '+id);}
 async function get(p){const r=await fetch('https://macasante.fr/'+p+(p.includes('?')?'&':'?')+'publication_check='+Date.now(),{signal:AbortSignal.timeout(30000)});assert.equal(r.status,200,p+' HTTP '+r.status);return r.text();}
 async function main(){
+  if(process.argv.includes('--assistant-index')){
+    const base='https://raw.githubusercontent.com/mim-health/reperes-sante/feat/v0-magazine/assistant-v2/';
+    const latest=await (await fetch(base+'latest.json')).json();
+    const published=await (await fetch(base+'public-artifacts/'+latest.version+'/corpus.json')).json();
+    assert.equal(published.fingerprint,latest.version);
+    for(const c of expected)assert(published.cards.some(x=>x.id===c.id),'Missing published Assistant card '+c.id);
+    for(const id of forbidden)assert(!published.cards.some(x=>x.id===id),'Unvalidated published Assistant card '+id);
+    const ready=await (await fetch('https://purple-voice-a8e3.dr-beddok.workers.dev/?maca_public_ready=1')).json();
+    assert.equal(ready.artifact_version,latest.version,'Active Assistant index is stale');
+    console.log('PASS: all 11 cards in active immutable Assistant index '+latest.version);
+  }
   if(process.argv.includes('--public')){
     // Exact generated bundle parity also verifies the catalogue's complete data source.
     const remote=await get('corpus-production.js');
