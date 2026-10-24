@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-24T07:00:39+02:00",
+  "checkedAt": "2026-10-24T15:22:00+02:00",
   "timezone": "Europe/Paris",
-  "controlId": "mag-check-20261024T050039Z-570e5aa82e94",
-  "reason": "Daily catch-up of complete validated editions; no medical content changes"
+  "controlId": "mag-retry-20261024T1522-publication",
+  "reason": "Manual recovery: approved Oct 24 edition not visible on public site; rerun validated Mag publication pipeline without changing medical content"
 }
