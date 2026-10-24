@@ -5043,6 +5043,344 @@
         "evidence": "Validation explicite des quatre textes préparés le 23 octobre 2026 : « parfait validation et mise en ligne ». Texte approuvé conservé.",
         "contentHash": "64eb681a7673c24b4235ceb939bab2e65eec10a91f18e0113e6b117986083752"
       }
+    },
+    {
+      "id": "daily-calcium-coronaire-jeunes-20261024",
+      "date": "2026-10-24",
+      "title": "À 40 ans, des artères déjà calcifiées ne sont pas anodines",
+      "answer": "Une calcification coronaire importante chez un adulte jeune est associée à un risque cardiovasculaire plus élevé à long terme, sans justifier un scanner systématique.",
+      "html": "<article><div class=\"inside\"><h1>À 40 ans, des artères déjà calcifiées ne sont pas anodines</h1><p><strong>Réponse courte.</strong> Une calcification coronaire importante chez un adulte jeune est associée à un risque cardiovasculaire plus élevé à long terme, sans justifier un scanner systématique.</p><p>Une cohorte de 12 847 adultes âgés de 30 à 45 ans ayant bénéficié d’un scanner coronaire pour une indication clinique a évalué l’association entre calcium coronaire et mortalité cardiovasculaire à long terme.</p><p>Dans l’analyse, le risque cardiovasculaire modélisé à trente ans était de 4,5 % chez les personnes ayant un score très élevé pour leur âge, contre 1,5 % avec un score nul. La mortalité coronarienne modélisée était respectivement de 3,0 % et 0,6 %.</p><p>Pour le public, le message principal est de prendre au sérieux dès la trentaine les facteurs de risque modifiables : tabac, hypertension, dyslipidémie, diabète et sédentarité. Un score déjà réalisé doit être interprété dans le contexte clinique.</p><p>Limites : cohorte observationnelle sélectionnée, à majorité masculine ; aucune preuve qu’un dépistage par scanner de tous les jeunes adultes améliore leur santé.</p><p><strong>Source :</strong> <a href=\"https://jamanetwork.com/journals/jamacardiology\">JAMA Cardiology</a></p></div></article>",
+      "url": "article-daily-calcium-coronaire-jeunes-20261024.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "CŒUR",
+      "keywords": [
+        "CŒUR"
+      ],
+      "sources": [
+        {
+          "label": "JAMA Cardiology",
+          "url": "https://jamanetwork.com/journals/jamacardiology"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-24T08:37:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation explicites du 24 octobre 2026 : « Parfait validation, publication et mise en ligne avec images ».",
+        "contentHash": "1b5296b225add42708693c061b6664487267822e68984ee34326057a8d849fd30000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": "daily-testosterone-femmes-20261024",
+      "date": "2026-10-24",
+      "title": "Testostérone chez les femmes : une hormone pour retrouver énergie et jeunesse ?",
+      "answer": "Non : les preuves concernent surtout certains troubles du désir sexuel après la ménopause, et non une promesse générale de jeunesse ou de vitalité.",
+      "html": "<article><div class=\"inside\"><h1>Testostérone chez les femmes : une hormone pour retrouver énergie et jeunesse ?</h1><p><strong>Réponse courte.</strong> Non : les preuves concernent surtout certains troubles du désir sexuel après la ménopause, et non une promesse générale de jeunesse ou de vitalité.</p><p>Les prescriptions de testostérone chez les femmes ont augmenté aux États-Unis, alors que les preuves de bénéfice restent limitées selon l’indication.</p><p>Le trouble du désir sexuel hypoactif chez certaines femmes ménopausées est la situation pour laquelle les données sont les plus étayées, après évaluation médicale globale. La testostérone n’est pas un traitement validé du vieillissement, des difficultés de mémoire ou de la fatigue isolée.</p><p>Une baisse du désir peut être liée au sommeil, à la douleur, aux médicaments, à l’humeur, aux symptômes de ménopause ou au contexte relationnel. Une préparation hormonale ne doit pas être achetée ou utilisée sans bilan et suivi.</p><p>Limites : analyse de la littérature, non nouvel essai thérapeutique. Les modalités d’accès et d’autorisation diffèrent selon les pays.</p><p><strong>Source :</strong> <a href=\"https://pubmed.ncbi.nlm.nih.gov/31498871/\">Consensus international sur la testostérone chez les femmes</a></p></div></article>",
+      "url": "article-daily-testosterone-femmes-20261024.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "SANTÉ DES FEMMES",
+      "keywords": [
+        "SANTÉ DES FEMMES"
+      ],
+      "sources": [
+        {
+          "label": "Consensus international sur la testostérone chez les femmes",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31498871/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": true,
+      "validation": {
+        "validatedAt": "2026-10-24T08:37:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation explicites du 24 octobre 2026 : « Parfait validation, publication et mise en ligne avec images ».",
+        "contentHash": "a0825261ede0da2e605ad6f71535b741f28dbea5823b9f93107c1b06b17a4dec0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": "daily-vitesse-marche-sante-20261024",
+      "date": "2026-10-24",
+      "title": "Votre vitesse de marche peut-elle renseigner sur votre santé ?",
+      "answer": "Oui, une marche qui ralentit peut être un marqueur de fragilité ou de maladie ; marcher plus vite de force n’a pas démontré un bénéfice de survie.",
+      "html": "<article><div class=\"inside\"><h1>Votre vitesse de marche peut-elle renseigner sur votre santé ?</h1><p><strong>Réponse courte.</strong> Oui, une marche qui ralentit peut être un marqueur de fragilité ou de maladie ; marcher plus vite de force n’a pas démontré un bénéfice de survie.</p><p>Une cohorte de 4 067 personnes âgées en moyenne de 69 ans a comparé la vitesse de marche habituelle et les mesures par accéléromètre à la mortalité au cours d’un suivi médian de 11,8 ans.</p><p>Les deux mesures étaient associées au pronostic. Une diminution durable de la vitesse habituelle peut inciter à rechercher douleur, perte musculaire, problème neurologique, maladie cardiovasculaire ou autre cause.</p><p>L’intérêt patient est de signaler un changement récent de mobilité et de conserver une activité physique adaptée, sans se fixer une vitesse arbitraire.</p><p>Limites : étude observationnelle, population majoritairement masculine ; aucune démonstration qu’accélérer volontairement la marche allonge la vie.</p><p><strong>Source :</strong> <a href=\"https://www.bgs.org.uk/resources/introduction-to-frailty\">British Geriatrics Society — ressources sur la fragilité</a></p></div></article>",
+      "url": "article-daily-vitesse-marche-sante-20261024.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "APRÈS 60 ANS",
+      "keywords": [
+        "APRÈS 60 ANS"
+      ],
+      "sources": [
+        {
+          "label": "British Geriatrics Society — ressources sur la fragilité",
+          "url": "https://www.bgs.org.uk/resources/introduction-to-frailty"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-24T08:37:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation explicites du 24 octobre 2026 : « Parfait validation, publication et mise en ligne avec images ».",
+        "contentHash": "cc71fd19ee1da867815ca433b324f0da29c240395353710f2c532a193e86938c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": "daily-carence-fer-sans-anemie-20261024",
+      "date": "2026-10-24",
+      "title": "Peut-on manquer de fer sans être anémique ?",
+      "answer": "Oui. Une hémoglobine normale n’exclut pas une baisse des réserves de fer ; la ferritine doit être interprétée selon le contexte clinique.",
+      "html": "<article><div class=\"inside\"><h1>Peut-on manquer de fer sans être anémique ?</h1><p><strong>Réponse courte.</strong> Oui. Une hémoglobine normale n’exclut pas une baisse des réserves de fer ; la ferritine doit être interprétée selon le contexte clinique.</p><p>La ferritine renseigne sur les réserves de fer. Certaines recommandations proposent un seuil de 30 ng/mL pour repérer une carence chez l’adulte, mais l’interprétation dépend du contexte et de l’inflammation.</p><p>Des règles très abondantes, des pertes digestives ou des apports insuffisants peuvent contribuer à une carence. Fatigue, chute de cheveux ou difficultés de concentration ne suffisent pas à confirmer le diagnostic.</p><p>Le bon réflexe est de discuter d’une numération formule sanguine et d’un bilan martial adapté, puis d’identifier la cause plutôt que de prendre du fer systématiquement.</p><p>Limites : les seuils varient selon les sociétés savantes et les situations cliniques. Un dosage isolé ne remplace pas une évaluation médicale.</p><p><strong>Source :</strong> <a href=\"https://gut.bmj.com/content/70/11/2030\">British Society of Gastroenterology — iron deficiency anaemia</a></p></div></article>",
+      "url": "article-daily-carence-fer-sans-anemie-20261024.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "NUTRITION",
+      "keywords": [
+        "NUTRITION"
+      ],
+      "sources": [
+        {
+          "label": "British Society of Gastroenterology — iron deficiency anaemia",
+          "url": "https://gut.bmj.com/content/70/11/2030"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": true,
+      "validation": {
+        "validatedAt": "2026-10-24T08:37:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation explicites du 24 octobre 2026 : « Parfait validation, publication et mise en ligne avec images ».",
+        "contentHash": "2252dbc24f356bd886ca74e167e8ebfdc18b8440fa66ba17c8c2d772860534c10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": "daily-fiche-audition-60-20261024",
+      "date": "2026-10-24",
+      "title": "Audition après 60 ans : quand la faire tester ?",
+      "answer": "Demander souvent de répéter, augmenter le volume ou mal suivre les conversations dans le bruit justifie un contrôle auditif.",
+      "html": "<article><div class=\"inside\"><h1>Audition après 60 ans : quand la faire tester ?</h1><p><strong>Réponse courte.</strong> Demander souvent de répéter, augmenter le volume ou mal suivre les conversations dans le bruit justifie un contrôle auditif.</p><p>Cette rubrique remet en avant une fiche du corpus déjà validée ; elle ne crée pas de nouveau contenu médical.</p><p><strong>Source :</strong> <a href=\"https://www.who.int/publications/i/item/world-report-on-hearing\">OMS — World report on hearing</a></p></div></article>",
+      "url": "article-daily-fiche-audition-60-20261024.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "APRÈS 60 ANS",
+      "keywords": [
+        "APRÈS 60 ANS"
+      ],
+      "sources": [
+        {
+          "label": "OMS — World report on hearing",
+          "url": "https://www.who.int/publications/i/item/world-report-on-hearing"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-24T08:37:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation explicites du 24 octobre 2026 : « Parfait validation, publication et mise en ligne avec images ».",
+        "contentHash": "a1b28b4b52d27d5375c644dcbb4c919c2fbfb97aa060b96162870eee5cc97ddc0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "assistantPolicy": "REFERENCE_FICHE_ONLY"
+    },
+    {
+      "id": "daily-vraifaux-antibiotiques-rhume-20261024",
+      "date": "2026-10-24",
+      "title": "Vrai ou faux : les antibiotiques accélèrent la guérison d’un rhume ?",
+      "answer": "FAUX. Le rhume est viral et les antibiotiques n’en raccourcissent pas la durée. Leur utilisation inutile favorise l’antibiorésistance.",
+      "html": "<article><div class=\"inside\"><h1>Vrai ou faux : les antibiotiques accélèrent la guérison d’un rhume ?</h1><p><strong>Réponse courte.</strong> FAUX. Le rhume est viral et les antibiotiques n’en raccourcissent pas la durée. Leur utilisation inutile favorise l’antibiorésistance.</p><p>Une évaluation reste nécessaire si l’état général se dégrade, en cas de difficulté respiratoire ou de complication suspectée.</p><p><strong>Source :</strong> <a href=\"https://www.who.int/news-room/fact-sheets/detail/antibiotic-resistance\">OMS — Antibiotic resistance</a></p></div></article>",
+      "url": "article-daily-vraifaux-antibiotiques-rhume-20261024.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "FAUX",
+      "keywords": [
+        "FAUX"
+      ],
+      "sources": [
+        {
+          "label": "OMS — Antibiotic resistance",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/antibiotic-resistance"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-24T08:37:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation explicites du 24 octobre 2026 : « Parfait validation, publication et mise en ligne avec images ».",
+        "contentHash": "f46d070c73cb8bd144d0ae19a3902bf38cd2620634a6860e7bc7c82c70b68c840000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": "daily-chiffre-mois-sans-tabac-20261024",
+      "date": "2026-10-24",
+      "title": "Mois sans tabac : pourquoi viser trente jours ?",
+      "answer": "Trente jours sans tabac augmentent les chances d’arrêt durable ; ce chiffre de campagne doit être compris comme un encouragement, non comme une garantie individuelle.",
+      "html": "<article><div class=\"inside\"><h1>Mois sans tabac : pourquoi viser trente jours ?</h1><p><strong>Réponse courte.</strong> Trente jours sans tabac augmentent les chances d’arrêt durable ; ce chiffre de campagne doit être compris comme un encouragement, non comme une garantie individuelle.</p><p>L’accompagnement, les substituts nicotiniques et le soutien professionnel peuvent aider à gérer les envies et à poursuivre au-delà du premier mois.</p><p><strong>Source :</strong> <a href=\"https://www.tabac-info-service.fr/\">Tabac info service</a></p></div></article>",
+      "url": "article-daily-chiffre-mois-sans-tabac-20261024.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "TABAC",
+      "keywords": [
+        "TABAC"
+      ],
+      "sources": [
+        {
+          "label": "Tabac info service",
+          "url": "https://www.tabac-info-service.fr/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-24T08:37:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation explicites du 24 octobre 2026 : « Parfait validation, publication et mise en ligne avec images ».",
+        "contentHash": "0ecc6cd09a9000f423df1fd169016320318f0547987e60b17653fbbd6e1b0f1d0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": "daily-donnee-lait-cru-20261024",
+      "date": "2026-10-24",
+      "title": "Lait cru : une vigilance particulière chez les enfants et pendant la grossesse",
+      "answer": "Les produits non pasteurisés exposent à certaines infections alimentaires potentiellement graves chez les personnes vulnérables.",
+      "html": "<article><div class=\"inside\"><h1>Lait cru : une vigilance particulière chez les enfants et pendant la grossesse</h1><p><strong>Réponse courte.</strong> Les produits non pasteurisés exposent à certaines infections alimentaires potentiellement graves chez les personnes vulnérables.</p><p>La pasteurisation réduit les risques microbiologiques ; respecter les recommandations alimentaires selon l’âge et la grossesse.</p><p><strong>Source :</strong> <a href=\"https://www.cdc.gov/food-safety/foods/raw-milk.html\">CDC — Raw milk</a></p></div></article>",
+      "url": "article-daily-donnee-lait-cru-20261024.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "ALIMENTATION",
+      "keywords": [
+        "ALIMENTATION"
+      ],
+      "sources": [
+        {
+          "label": "CDC — Raw milk",
+          "url": "https://www.cdc.gov/food-safety/foods/raw-milk.html"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-24T08:37:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation explicites du 24 octobre 2026 : « Parfait validation, publication et mise en ligne avec images ».",
+        "contentHash": "6d5404c20359999aeefe31fa606af4146781b3b0304b4e0cdc75a2b74afb7cef0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": "daily-donnee-grossesse-chaleur-20261024",
+      "date": "2026-10-24",
+      "title": "Grossesse et fortes chaleurs : une exposition à limiter",
+      "answer": "Les épisodes de chaleur extrême sont associés dans les études populationnelles à davantage de complications, notamment de naissances prématurées.",
+      "html": "<article><div class=\"inside\"><h1>Grossesse et fortes chaleurs : une exposition à limiter</h1><p><strong>Réponse courte.</strong> Les épisodes de chaleur extrême sont associés dans les études populationnelles à davantage de complications, notamment de naissances prématurées.</p><p>Boire régulièrement, éviter les efforts aux heures chaudes et solliciter un avis médical en cas de symptômes préoccupants. Une association statistique ne prédit pas un risque individuel.</p><p><strong>Source :</strong> <a href=\"https://www.who.int/news-room/fact-sheets/detail/climate-change-and-health\">OMS — Climate change and health</a></p></div></article>",
+      "url": "article-daily-donnee-grossesse-chaleur-20261024.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "GROSSESSE",
+      "keywords": [
+        "GROSSESSE"
+      ],
+      "sources": [
+        {
+          "label": "OMS — Climate change and health",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/climate-change-and-health"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-24T08:37:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation explicites du 24 octobre 2026 : « Parfait validation, publication et mise en ligne avec images ».",
+        "contentHash": "71fd1b1cc21c64d68ce0afd500702a2796cd36b8b546e73615f860c2549eb5dd0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": "daily-donnee-virus-shamonda-20261024",
+      "date": "2026-10-24",
+      "title": "Virus Shamonda : que signifie un signal infectieux rare ?",
+      "answer": "Un signal rare chez une personne immunodéprimée ne constitue pas à lui seul la preuve d’une menace pour la population générale.",
+      "html": "<article><div class=\"inside\"><h1>Virus Shamonda : que signifie un signal infectieux rare ?</h1><p><strong>Réponse courte.</strong> Un signal rare chez une personne immunodéprimée ne constitue pas à lui seul la preuve d’une menace pour la population générale.</p><p>La surveillance virologique est utile ; l’absence de données robustes interdit toute généralisation ou alarme. Ce contenu ne doit pas être interprété comme une recommandation individuelle.</p><p><strong>Source :</strong> <a href=\"https://www.santepubliquefrance.fr/\">Santé publique France — surveillance</a></p></div></article>",
+      "url": "article-daily-donnee-virus-shamonda-20261024.html",
+      "format": "article",
+      "category": "Actualité santé",
+      "theme": "INFECTIOLOGIE",
+      "keywords": [
+        "INFECTIOLOGIE"
+      ],
+      "sources": [
+        {
+          "label": "Santé publique France — surveillance",
+          "url": "https://www.santepubliquefrance.fr/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-24T08:37:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation explicites du 24 octobre 2026 : « Parfait validation, publication et mise en ligne avec images ».",
+        "contentHash": "7c6b2c959e43c33922ba72d5330b254ccb34327cd5ba518adced3a3b9b1532490000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "assistantPolicy": "SOURCE_REVIEW_REQUIRED"
+    },
+    {
+      "id": "daily-octobre-rose-atezolizumab-20261024",
+      "date": "2026-10-24",
+      "title": "Cancer du sein triple négatif : ajouter l’atézolizumab avant l’opération améliore-t-il vraiment les résultats ?",
+      "answer": "L’essai NSABP B-59/GeparDouze a amélioré la réponse pathologique complète, sans démontrer un bénéfice statistiquement significatif de survie sans événement à quatre ans.",
+      "html": "<article><div class=\"inside\"><h1>Cancer du sein triple négatif : ajouter l’atézolizumab avant l’opération améliore-t-il vraiment les résultats ?</h1><p><strong>Réponse courte.</strong> L’essai NSABP B-59/GeparDouze a amélioré la réponse pathologique complète, sans démontrer un bénéfice statistiquement significatif de survie sans événement à quatre ans.</p><p>Dans le cancer du sein triple négatif, les traitements hormonaux et anti-HER2 classiques ne sont pas adaptés. L’immunothérapie cherche à mobiliser le système immunitaire contre la tumeur, mais toutes les molécules et tous les protocoles ne sont pas interchangeables.</p><p>L’essai international randomisé de phase III NSABP B-59/GeparDouze a inclus 1 550 personnes ayant un cancer triple négatif de stade II ou III. Toutes recevaient une chimiothérapie avant l’opération ; 773 recevaient en plus l’atézolizumab, et 777 un placebo. Le traitement étudié était poursuivi après chirurgie pour compléter un an.</p><p>La réponse pathologique complète était observée chez 63,3 % sous atézolizumab contre 57,0 % sous placebo : une différence absolue de 6,3 points. Une réponse pathologique complète signifie qu’aucun cancer invasif résiduel n’est retrouvé dans les tissus examinés après traitement ; ce n’est pas une garantie de guérison.</p><p>À quatre ans, la survie sans événement atteignait 85,2 % avec l’atézolizumab contre 81,9 % avec le placebo. Cette différence de 3,3 points n’atteignait pas le seuil statistique prévu ; aucun bénéfice clinique n’est donc établi pour l’ensemble de la population étudiée. La différence de survie globale à quatre ans était de 0,7 point, sans preuve de bénéfice.</p><p>Les effets indésirables immunitaires étaient plus fréquents avec l’atézolizumab : 27,6 % contre 11,4 %. Ils peuvent notamment concerner la thyroïde, le foie, l’intestin ou les poumons. Les effets indésirables sévères de toutes causes étaient fréquents dans les deux groupes, notamment du fait de la chimiothérapie.</p><p>Certaines analyses de sous-groupes sont exploratoires et ne permettent pas de définir un nouveau standard. Le suivi médian était de 46,9 mois. Le schéma étudié ne doit pas être confondu avec des protocoles de pembrolizumab disposant d’autres preuves et indications.</p><p>En pratique, une patiente ne doit pas modifier son traitement à partir de cette publication. Elle peut demander à son oncologue : quel bénéfice absolu est attendu, quels effets immunitaires surveiller et sur quels essais repose mon protocole ?</p><p>Conclusion : une meilleure disparition de la tumeur à l’opération ne garantit pas à elle seule moins de récidives ni une meilleure survie. L’atézolizumab périopératoire étudié ici n’est pas un nouveau standard de soins.</p><p><strong>Source :</strong> <a href=\"https://www.nature.com/nm/\">Nature Medicine — publication de l’essai</a></p></div></article>",
+      "url": "article-daily-octobre-rose-atezolizumab-20261024.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "OCTOBRE ROSE",
+      "keywords": [
+        "OCTOBRE ROSE"
+      ],
+      "sources": [
+        {
+          "label": "Nature Medicine — publication de l’essai",
+          "url": "https://www.nature.com/nm/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-24T08:37:00+02:00",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale et autorisation explicites du 24 octobre 2026 : « Parfait validation, publication et mise en ligne avec images ».",
+        "contentHash": "e7beddf9f7991174e7df0dd13fed887f5d4f5253f4fc114172c5b859368e45210000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "standalone": true,
+      "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+      "imageAlt": "Échange entre un professionnel de santé et une patiente autour d’un document médical — photographie d’illustration.",
+      "imageCredit": "cottonbro studio / Pexels",
+      "imageSource": "https://www.pexels.com/photo/hands-of-doctor-and-patient-on-table-7578798/",
+      "imageLicense": "Pexels License — utilisation éditoriale et commerciale gratuite, recadrage autorisé ; https://www.pexels.com/license/"
     }
   ],
   "editions": [
@@ -5653,6 +5991,69 @@
         "validation": "Conférence grand public approuvée et autorisée à la publication le 23 octobre 2026 ; rubriques secondaires complétées à partir des messages validés.",
         "veille": "Sommeil à la mi-vie ; nutrition et ménopause ; boissons sucrées chez l'enfant ; culture et santé mentale.",
         "corpusImpact": "Nouvelle fiche ménopause et sommeil ; fiche boissons sucrées enrichie sans doublon. Articles Mag et corpus suivis séparément."
+      }
+    },
+    {
+      "id": "edition-2026-10-24",
+      "date": "2026-10-24",
+      "publishAt": "2026-10-24T08:37:00+02:00",
+      "complete": true,
+      "items": [
+        {
+          "contentId": "daily-calcium-coronaire-jeunes-20261024",
+          "slot": "À LA UNE",
+          "icon": "CŒUR"
+        },
+        {
+          "contentId": "daily-testosterone-femmes-20261024",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "SANTÉ DES FEMMES"
+        },
+        {
+          "contentId": "daily-vitesse-marche-sante-20261024",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "APRÈS 60 ANS"
+        },
+        {
+          "contentId": "daily-carence-fer-sans-anemie-20261024",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "NUTRITION"
+        },
+        {
+          "contentId": "daily-fiche-audition-60-20261024",
+          "slot": "FICHE DU JOUR",
+          "icon": "APRÈS 60 ANS"
+        },
+        {
+          "contentId": "daily-vraifaux-antibiotiques-rhume-20261024",
+          "slot": "VRAI OU FAUX",
+          "icon": "FAUX"
+        },
+        {
+          "contentId": "daily-chiffre-mois-sans-tabac-20261024",
+          "slot": "LE CHIFFRE DU JOUR",
+          "icon": "TABAC"
+        },
+        {
+          "contentId": "daily-donnee-lait-cru-20261024",
+          "slot": "DONNÉES",
+          "icon": "ALIMENTATION"
+        },
+        {
+          "contentId": "daily-donnee-grossesse-chaleur-20261024",
+          "slot": "DONNÉES",
+          "icon": "GROSSESSE"
+        },
+        {
+          "contentId": "daily-donnee-virus-shamonda-20261024",
+          "slot": "DONNÉES",
+          "icon": "INFECTIOLOGIE"
+        }
+      ],
+      "editorialConference": {
+        "validation": "Conférence intégrale et article Octobre Rose validés et autorisés à publication le 24 octobre 2026.",
+        "veille": "Calcification coronaire chez les jeunes adultes ; testostérone chez les femmes ; vitesse de marche ; carence martiale ; surveillance et prévention.",
+        "corpusImpact": "Candidats fiches testostérone féminine et carence martiale à valider séparément ; pas de création automatique."
       }
     }
   ]
