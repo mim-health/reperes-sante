@@ -1,0 +1,40 @@
+name: SEO crawlable library index
+on:
+  pull_request:
+    branches: [feat/v0-magazine]
+    paths:
+      - 'scripts/build-static-seo-fiches.js'
+      - '.github/workflows/seo-html-maillage.yml'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Build crawlable fiche pages and static library navigation
+        run: |
+          node --check scripts/build-static-seo-fiches.js
+          node scripts/build-static-seo-fiches.js
+          node scripts/test-fiche-fast-load.js
+      - name: Check 399+ unique crawlable links and idempotence
+        run: |
+          node - <<'JS'
+          const fs=require('fs'),assert=require('assert/strict'),crypto=require('crypto');
+          const file='fiches.html',html=fs.readFileSync(file,'utf8');
+          const ids=fs.readdirSync('fiches-data').filter(x=>x.endsWith('.json')).map(x=>x.slice(0,-5));
+          const staticIndex=html.split('<!-- MACA_STATIC_FICHE_LINKS_START -->')[1]?.split('<!-- MACA_STATIC_FICHE_LINKS_END -->')[0];
+          assert(staticIndex,'static library missing');
+          const urls=[...staticIndex.matchAll(/href="fiches-seo\/([^"]+)\.html"/g)].map(m=>decodeURIComponent(m[1]));
+          assert.equal(urls.length,ids.length);assert.equal(new Set(urls).size,ids.length);
+          for(const id of ids)assert(urls.includes(id),'missing link '+id);
+          assert(ids.length>=399);
+          const before=crypto.createHash('sha256').update(html).digest('hex');
+          require('child_process').execFileSync('node',['scripts/build-static-seo-fiches.js']);
+          const after=crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
+          assert.equal(after,before,'non-idempotent index');
+          console.log(JSON.stringify({ok:true,linkedPages:ids.length,unique:true,idempotent:true}));
+          JS

@@ -52,4 +52,21 @@ for(const q of items){
   const html=`<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} — MACA Santé</title><meta name="description" content="${esc(desc)}"><meta property="og:type" content="article"><meta property="og:title" content="${esc(title)} — MACASANTÉ"><meta property="og:description" content="${esc(desc)}"><meta property="og:url" content="${canonical}"><meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large"><link rel="canonical" href="${canonical}"><link rel="stylesheet" href="../styles-v2.css?v=20260822-1"><link rel="stylesheet" href="../maca-mediterranean-theme.css?v=20260824-4"><link rel="stylesheet" href="../maca-fiche-v2.css?v=20261010-trust1"><script type="application/ld+json">${schema.replace(/</g,'\\u003c')}</script></head><body class="library-page maca-fiche-v2"><header class="site-header"><a class="brand" href="/"><img src="../logo-maca-officiel.svg?v=20260913-logo-officiel1" alt="Logo MACA Santé"><span class="brand-word">MACA Santé</span></a><nav><a href="/">Accueil</a><a href="../fiches.html">Toutes les fiches</a></nav></header><main><section class="section library-section standalone-library"><article class="maca-fv2-page"><a class="maca-fv2-back" href="../fiches.html">← Toutes les fiches MACA Santé</a><header class="maca-fv2-hero"><p class="eyebrow">${esc(q.category||'QUESTION SANTÉ')}</p><h1>${esc(q.headingTitle||title)}</h1>${validation}</header><div class="maca-fv2-main"><section class="maca-fv2-card maca-fv2-short"><div class="maca-fv2-kicker">Réponse courte</div>${paras(q.answer||'')}${sourceLink}</section>${q.detail?`<section class="maca-fv2-card maca-fv2-detail"><h2>Pour mieux comprendre</h2>${paras(q.detail)}</section>`:''}${q.watch?`<section class="maca-fv2-card maca-fv2-vigilance"><h2>${esc(q.watchTitle||'Point de vigilance')}</h2>${paras(q.watch)}</section>`:''}${relatedHtml}${sources?`<section id="sources-scientifiques" tabindex="-1" class="maca-fv2-card maca-fv2-sources"><h2>Sources scientifiques</h2><ul>${sources}</ul>${q.verifiedAt?`<p class="maca-fv2-verified">Vérifié le ${esc(q.verifiedAt)}</p>`:''}</section>`:''}</div></article></section></main><footer><p>MACA Santé — information générale en santé, ne remplace pas un avis médical.</p></footer></body></html>`;
   fs.writeFileSync(path.join(OUT,`${id}.html`),siteShell.enhance(html,`fiches-seo/${id}.html`));
 }
+// Add crawlable, accessible category navigation to the library even when JavaScript is disabled.
+// The runtime search/grid remains unchanged; the curated listing is generated from validated canonical cards.
+const LIBRARY=path.join(ROOT,'fiches.html');
+const START='<!-- MACA_STATIC_FICHE_LINKS_START -->';
+const END='<!-- MACA_STATIC_FICHE_LINKS_END -->';
+const grouped=new Map();
+for(const q of items){const cat=String(q.publicCategory||q.category||'Autres');if(!grouped.has(cat))grouped.set(cat,[]);grouped.get(cat).push(q);}
+const sections=[...grouped].sort((a,b)=>a[0].localeCompare(b[0],'fr')).map(([cat,cards])=>{
+  const links=cards.sort((a,b)=>String(a.title||'').localeCompare(String(b.title||''),'fr')).map(q=>'<li><a href="fiches-seo/'+encodeURIComponent(String(q.id))+'.html">'+esc(q.title||q.headingTitle||q.id)+'</a></li>').join('');
+  return '<details><summary>'+esc(cat)+' — '+cards.length+' fiches</summary><ul>'+links+'</ul></details>';
+}).join('');
+const listing=START+'<section id="fiches-html-index" class="section library-section" aria-label="Index alphabétique des fiches santé" style="max-width:1100px;margin:1.5rem auto;padding:1rem 1.5rem"><h2>Toutes les fiches santé par thème</h2><p>Consultez les fiches directement, même sans recherche interactive.</p>'+sections+'</section>'+END;
+let library=fs.readFileSync(LIBRARY,'utf8');
+if(library.includes(START)){const begin=library.indexOf(START),end=library.indexOf(END,begin);if(end<0)throw Error('Missing static index closing marker');library=library.slice(0,begin)+listing+library.slice(end+END.length);}
+else{const pos=library.indexOf('</main>');if(pos<0)throw Error('Library main landmark not found');library=library.slice(0,pos)+listing+library.slice(pos);}
+fs.writeFileSync(LIBRARY,library);
+
 console.log(`Generated ${items.length} static SEO fiche pages in fiches-seo/`);
