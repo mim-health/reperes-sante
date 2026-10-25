@@ -1,12 +1,132 @@
 {
   "schemaVersion": 1,
-  "editionId": "edition-2026-10-23",
-  "editionDate": "2026-10-23",
-  "sourceFingerprint": "3b2a6904df032aeb15b6c1c6895e0ee8d804bee0e40b537cf73d11b8529bbbe6",
-  "missingEdition": true,
+  "editionId": "edition-2026-10-25",
+  "editionDate": "2026-10-25",
+  "sourceFingerprint": "5c7584348305366c4eec14349332c1bc644683853176193c3b34e684e22dfe5b",
+  "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-daily-vrs-vaccin-nirsevimab-20261025",
+      "version": "4f546eab4429b8503b6a4ff51a3dbde8ab1a4729ff76519294cf309a5130a486",
+      "url": "article-daily-vrs-vaccin-nirsevimab-20261025.html",
+      "date": "2026-10-25"
+    },
+    {
+      "id": "mag-daily-don-rein-grossesse-20261025",
+      "version": "aa075f47939c71f2ae67241a8e81b0a828571139317df45f9f5eea7d4d6ae258",
+      "url": "article-daily-don-rein-grossesse-20261025.html",
+      "date": "2026-10-25"
+    },
+    {
+      "id": "mag-daily-remibrutinib-sep-20261025",
+      "version": "9fcca5973322d3d6d54ebb5caccf41093493a4392818dc83c6985e09fff92b8b",
+      "url": "article-daily-remibrutinib-sep-20261025.html",
+      "date": "2026-10-25"
+    },
+    {
+      "id": "mag-daily-test-alzheimer-asymptomatique-20261025",
+      "version": "e39dfc1025798b8a1dd45156bb828752679bf9dcbd9820099c4aac92cbaacbc3",
+      "url": "article-daily-test-alzheimer-asymptomatique-20261025.html",
+      "date": "2026-10-25"
+    },
+    {
+      "id": "mag-daily-fiche-double-prise-20261025",
+      "version": "bbcf4782a6577332587545f5976a4fc9afbb273355fb5a94ec014d44c2bc8e7d",
+      "url": "article-daily-fiche-double-prise-20261025.html",
+      "date": "2026-10-25"
+    },
+    {
+      "id": "mag-daily-vraifaux-froid-rhume-20261025",
+      "version": "6ca04c0845c580f10d4107acfcdc54c562090bf98849d2553e673b97a642f4be",
+      "url": "article-daily-vraifaux-froid-rhume-20261025.html",
+      "date": "2026-10-25"
+    },
+    {
+      "id": "mag-daily-chiffre-insuffisance-cardiaque-20261025",
+      "version": "fe39859693fd99a551ebee21f9f51df153e21db475b8d462a4ae4c15a19dccc1",
+      "url": "article-daily-chiffre-insuffisance-cardiaque-20261025.html",
+      "date": "2026-10-25"
+    },
+    {
+      "id": "mag-daily-donnee-vaccin-grossesse-20261025",
+      "version": "a3f110c034aada19002ec0877dc962605aad68491fd8eb6e7144b7cbe0fd789b",
+      "url": "article-daily-donnee-vaccin-grossesse-20261025.html",
+      "date": "2026-10-25"
+    },
+    {
+      "id": "mag-daily-donnee-cholera-20261025",
+      "version": "a56e24ddd10b7256ce49fd2379ba031719e5f5830eafa6a89eebe33600d46798",
+      "url": "article-daily-donnee-cholera-20261025.html",
+      "date": "2026-10-25"
+    },
+    {
+      "id": "mag-daily-donnee-sglt2-hematocrite-20261025",
+      "version": "de2036d0ab1f82d969351f06068dd67bc362488ec4b0bed30284ab0a38e4d7a3",
+      "url": "article-daily-donnee-sglt2-hematocrite-20261025.html",
+      "date": "2026-10-25"
+    },
+    {
+      "id": "mag-daily-octobre-rose-rezetecan-20261025",
+      "version": "1bff8ce657cf29dd2aae92b50315ecf4f675f08499949359faacb1c464fb3c83",
+      "url": "article-daily-octobre-rose-rezetecan-20261025.html",
+      "date": "2026-10-25"
+    },
+    {
+      "id": "mag-daily-calcium-coronaire-jeunes-20261024",
+      "version": "1b5296b225add42708693c061b6664487267822e68984ee34326057a8d849fd3",
+      "url": "article-daily-calcium-coronaire-jeunes-20261024.html",
+      "date": "2026-10-24"
+    },
+    {
+      "id": "mag-daily-testosterone-femmes-20261024",
+      "version": "a0825261ede0da2e605ad6f71535b741f28dbea5823b9f93107c1b06b17a4dec",
+      "url": "article-daily-testosterone-femmes-20261024.html",
+      "date": "2026-10-24"
+    },
+    {
+      "id": "mag-daily-vitesse-marche-sante-20261024",
+      "version": "cc71fd19ee1da867815ca433b324f0da29c240395353710f2c532a193e86938c",
+      "url": "article-daily-vitesse-marche-sante-20261024.html",
+      "date": "2026-10-24"
+    },
+    {
+      "id": "mag-daily-carence-fer-sans-anemie-20261024",
+      "version": "2252dbc24f356bd886ca74e167e8ebfdc18b8440fa66ba17c8c2d772860534c1",
+      "url": "article-daily-carence-fer-sans-anemie-20261024.html",
+      "date": "2026-10-24"
+    },
+    {
+      "id": "mag-daily-vraifaux-antibiotiques-rhume-20261024",
+      "version": "f46d070c73cb8bd144d0ae19a3902bf38cd2620634a6860e7bc7c82c70b68c84",
+      "url": "article-daily-vraifaux-antibiotiques-rhume-20261024.html",
+      "date": "2026-10-24"
+    },
+    {
+      "id": "mag-daily-chiffre-mois-sans-tabac-20261024",
+      "version": "0ecc6cd09a9000f423df1fd169016320318f0547987e60b17653fbbd6e1b0f1d",
+      "url": "article-daily-chiffre-mois-sans-tabac-20261024.html",
+      "date": "2026-10-24"
+    },
+    {
+      "id": "mag-daily-donnee-lait-cru-20261024",
+      "version": "6d5404c20359999aeefe31fa606af4146781b3b0304b4e0cdc75a2b74afb7cef",
+      "url": "article-daily-donnee-lait-cru-20261024.html",
+      "date": "2026-10-24"
+    },
+    {
+      "id": "mag-daily-donnee-grossesse-chaleur-20261024",
+      "version": "71fd1b1cc21c64d68ce0afd500702a2796cd36b8b546e73615f860c2549eb5dd",
+      "url": "article-daily-donnee-grossesse-chaleur-20261024.html",
+      "date": "2026-10-24"
+    },
+    {
+      "id": "mag-daily-octobre-rose-atezolizumab-20261024",
+      "version": "e7beddf9f7991174e7df0dd13fed887f5d4f5253f4fc114172c5b859368e4521",
+      "url": "article-daily-octobre-rose-atezolizumab-20261024.html",
+      "date": "2026-10-24"
+    },
     {
       "id": "mag-sommeil-femmes-20261023",
       "version": "909e32720abf31c4698dba54c5d9ac5b0c4e3398467a0d0f404acee5faab7505",

@@ -131,5 +131,33 @@
     "url": "article-octobre-rose-suppression-ovarienne-20261023.html",
     "existingFicheId": null,
     "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-testosterone-femmes-20261024",
+    "title": "Testostérone chez les femmes : une hormone pour retrouver énergie et jeunesse ?",
+    "url": "article-daily-testosterone-femmes-20261024.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-carence-fer-sans-anemie-20261024",
+    "title": "Peut-on manquer de fer sans être anémique ?",
+    "url": "article-daily-carence-fer-sans-anemie-20261024.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-vrs-vaccin-nirsevimab-20261025",
+    "title": "VRS : vaccination pendant la grossesse ou nirsévimab après la naissance ?",
+    "url": "article-daily-vrs-vaccin-nirsevimab-20261025.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-don-rein-grossesse-20261025",
+    "title": "Grossesse après un don de rein : quels risques ?",
+    "url": "article-daily-don-rein-grossesse-20261025.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
   }
 ]

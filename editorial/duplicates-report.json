@@ -217,6 +217,19 @@
     },
     {
       "left": {
+        "id": "audition-apres-60-ans",
+        "title": "Après 60 ans, faut-il faire tester son audition ?",
+        "type": "fiche"
+      },
+      "right": {
+        "id": "daily-fiche-audition-60-20261024",
+        "title": "Audition après 60 ans : quand la faire tester ?",
+        "type": "Mag"
+      },
+      "score": 1
+    },
+    {
+      "left": {
         "id": "dmla-depistage-apres-50-ans",
         "title": "Après 50 ans, faut-il faire dépister la DMLA ?",
         "type": "fiche"
@@ -545,6 +558,6 @@
     "manifestFiles": 149,
     "rawFiches": 438,
     "canonicalFiches": 412,
-    "magContents": 134
+    "magContents": 156
   }
 }

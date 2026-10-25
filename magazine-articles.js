@@ -2502,5 +2502,423 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": "cancer-sein-chimiotherapie-obligatoire",
     "version": "64eb681a7673c24b4235ceb939bab2e65eec10a91f18e0113e6b117986083752"
+  },
+  {
+    "id": "daily-calcium-coronaire-jeunes-20261024",
+    "url": "article-daily-calcium-coronaire-jeunes-20261024.html",
+    "title": "À 40 ans, des artères déjà calcifiées ne sont pas anodines",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "CŒUR",
+    "date": "2026-10-24",
+    "status": "PUBLISHED",
+    "excerpt": "Une calcification coronaire importante chez un adulte jeune est associée à un risque cardiovasculaire plus élevé à long terme, sans justifier un scanner systématique.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "CŒUR"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "1b5296b225add42708693c061b6664487267822e68984ee34326057a8d849fd3"
+  },
+  {
+    "id": "daily-testosterone-femmes-20261024",
+    "url": "article-daily-testosterone-femmes-20261024.html",
+    "title": "Testostérone chez les femmes : une hormone pour retrouver énergie et jeunesse ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "SANTÉ DES FEMMES",
+    "date": "2026-10-24",
+    "status": "PUBLISHED",
+    "excerpt": "Non : les preuves concernent surtout certains troubles du désir sexuel après la ménopause, et non une promesse générale de jeunesse ou de vitalité.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "SANTÉ DES FEMMES"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "a0825261ede0da2e605ad6f71535b741f28dbea5823b9f93107c1b06b17a4dec"
+  },
+  {
+    "id": "daily-vitesse-marche-sante-20261024",
+    "url": "article-daily-vitesse-marche-sante-20261024.html",
+    "title": "Votre vitesse de marche peut-elle renseigner sur votre santé ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "APRÈS 60 ANS",
+    "date": "2026-10-24",
+    "status": "PUBLISHED",
+    "excerpt": "Oui, une marche qui ralentit peut être un marqueur de fragilité ou de maladie ; marcher plus vite de force n’a pas démontré un bénéfice de survie.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "APRÈS 60 ANS"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "cc71fd19ee1da867815ca433b324f0da29c240395353710f2c532a193e86938c"
+  },
+  {
+    "id": "daily-carence-fer-sans-anemie-20261024",
+    "url": "article-daily-carence-fer-sans-anemie-20261024.html",
+    "title": "Peut-on manquer de fer sans être anémique ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "NUTRITION",
+    "date": "2026-10-24",
+    "status": "PUBLISHED",
+    "excerpt": "Oui. Une hémoglobine normale n’exclut pas une baisse des réserves de fer ; la ferritine doit être interprétée selon le contexte clinique.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "NUTRITION"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "2252dbc24f356bd886ca74e167e8ebfdc18b8440fa66ba17c8c2d772860534c1"
+  },
+  {
+    "id": "daily-fiche-audition-60-20261024",
+    "url": "article-daily-fiche-audition-60-20261024.html",
+    "title": "Audition après 60 ans : quand la faire tester ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "APRÈS 60 ANS",
+    "date": "2026-10-24",
+    "status": "PUBLISHED",
+    "excerpt": "Demander souvent de répéter, augmenter le volume ou mal suivre les conversations dans le bruit justifie un contrôle auditif.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "APRÈS 60 ANS"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "a1b28b4b52d27d5375c644dcbb4c919c2fbfb97aa060b96162870eee5cc97ddc"
+  },
+  {
+    "id": "daily-vraifaux-antibiotiques-rhume-20261024",
+    "url": "article-daily-vraifaux-antibiotiques-rhume-20261024.html",
+    "title": "Vrai ou faux : les antibiotiques accélèrent la guérison d’un rhume ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "FAUX",
+    "date": "2026-10-24",
+    "status": "PUBLISHED",
+    "excerpt": "FAUX. Le rhume est viral et les antibiotiques n’en raccourcissent pas la durée. Leur utilisation inutile favorise l’antibiorésistance.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "FAUX"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "f46d070c73cb8bd144d0ae19a3902bf38cd2620634a6860e7bc7c82c70b68c84"
+  },
+  {
+    "id": "daily-chiffre-mois-sans-tabac-20261024",
+    "url": "article-daily-chiffre-mois-sans-tabac-20261024.html",
+    "title": "Mois sans tabac : pourquoi viser trente jours ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "TABAC",
+    "date": "2026-10-24",
+    "status": "PUBLISHED",
+    "excerpt": "Trente jours sans tabac augmentent les chances d’arrêt durable ; ce chiffre de campagne doit être compris comme un encouragement, non comme une garantie individuelle.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "TABAC"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "0ecc6cd09a9000f423df1fd169016320318f0547987e60b17653fbbd6e1b0f1d"
+  },
+  {
+    "id": "daily-donnee-lait-cru-20261024",
+    "url": "article-daily-donnee-lait-cru-20261024.html",
+    "title": "Lait cru : une vigilance particulière chez les enfants et pendant la grossesse",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "ALIMENTATION",
+    "date": "2026-10-24",
+    "status": "PUBLISHED",
+    "excerpt": "Les produits non pasteurisés exposent à certaines infections alimentaires potentiellement graves chez les personnes vulnérables.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "ALIMENTATION"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "6d5404c20359999aeefe31fa606af4146781b3b0304b4e0cdc75a2b74afb7cef"
+  },
+  {
+    "id": "daily-donnee-grossesse-chaleur-20261024",
+    "url": "article-daily-donnee-grossesse-chaleur-20261024.html",
+    "title": "Grossesse et fortes chaleurs : une exposition à limiter",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "GROSSESSE",
+    "date": "2026-10-24",
+    "status": "PUBLISHED",
+    "excerpt": "Les épisodes de chaleur extrême sont associés dans les études populationnelles à davantage de complications, notamment de naissances prématurées.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "GROSSESSE"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "71fd1b1cc21c64d68ce0afd500702a2796cd36b8b546e73615f860c2549eb5dd"
+  },
+  {
+    "id": "daily-donnee-virus-shamonda-20261024",
+    "url": "article-daily-donnee-virus-shamonda-20261024.html",
+    "title": "Virus Shamonda : que signifie un signal infectieux rare ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "INFECTIOLOGIE",
+    "date": "2026-10-24",
+    "status": "PUBLISHED",
+    "excerpt": "Un signal rare chez une personne immunodéprimée ne constitue pas à lui seul la preuve d’une menace pour la population générale.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "INFECTIOLOGIE"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "7c6b2c959e43c33922ba72d5330b254ccb34327cd5ba518adced3a3b9b153249"
+  },
+  {
+    "id": "daily-octobre-rose-atezolizumab-20261024",
+    "url": "article-daily-octobre-rose-atezolizumab-20261024.html",
+    "title": "Cancer du sein triple négatif : ajouter l’atézolizumab avant l’opération améliore-t-il vraiment les résultats ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "OCTOBRE ROSE",
+    "date": "2026-10-24",
+    "status": "PUBLISHED",
+    "excerpt": "L’essai NSABP B-59/GeparDouze a amélioré la réponse pathologique complète, sans démontrer un bénéfice statistiquement significatif de survie sans événement à quatre ans.",
+    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "imageAlt": "Échange entre un professionnel de santé et une patiente autour d’un document médical — photographie d’illustration.",
+    "keywords": [
+      "OCTOBRE ROSE"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "e7beddf9f7991174e7df0dd13fed887f5d4f5253f4fc114172c5b859368e4521"
+  },
+  {
+    "id": "daily-vrs-vaccin-nirsevimab-20261025",
+    "url": "article-daily-vrs-vaccin-nirsevimab-20261025.html",
+    "title": "VRS : vaccination pendant la grossesse ou nirsévimab après la naissance ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "VRS",
+    "date": "2026-10-25",
+    "status": "PUBLISHED",
+    "excerpt": "Une cohorte américaine de 15 124 nourrissons nés à terme n’a pas détecté de différence significative entre les deux stratégies, sans prouver leur équivalence.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "VRS"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "4f546eab4429b8503b6a4ff51a3dbde8ab1a4729ff76519294cf309a5130a486"
+  },
+  {
+    "id": "daily-don-rein-grossesse-20261025",
+    "url": "article-daily-don-rein-grossesse-20261025.html",
+    "title": "Grossesse après un don de rein : quels risques ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "GROSSESSE",
+    "date": "2026-10-25",
+    "status": "PUBLISHED",
+    "excerpt": "Une grossesse reste possible après un don vivant de rein, avec un risque obstétrical nécessitant un suivi adapté.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "GROSSESSE"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "aa075f47939c71f2ae67241a8e81b0a828571139317df45f9f5eea7d4d6ae258"
+  },
+  {
+    "id": "daily-remibrutinib-sep-20261025",
+    "url": "article-daily-remibrutinib-sep-20261025.html",
+    "title": "Sclérose en plaques : que change le remibrutinib oral ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "NEUROLOGIE",
+    "date": "2026-10-25",
+    "status": "PUBLISHED",
+    "excerpt": "Deux essais de phase 3 ont rapporté une réduction des poussées par rapport au tériflunomide ; le traitement reste en évaluation.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "NEUROLOGIE"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "9fcca5973322d3d6d54ebb5caccf41093493a4392818dc83c6985e09fff92b8b"
+  },
+  {
+    "id": "daily-test-alzheimer-asymptomatique-20261025",
+    "url": "article-daily-test-alzheimer-asymptomatique-20261025.html",
+    "title": "Test sanguin Alzheimer sans symptôme : faut-il le faire ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "ALZHEIMER",
+    "date": "2026-10-25",
+    "status": "PUBLISHED",
+    "excerpt": "Les biomarqueurs sanguins peuvent aider dans un parcours diagnostique spécialisé, mais ne sont pas recommandés comme dépistage libre-service sans symptôme.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "ALZHEIMER"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "e39dfc1025798b8a1dd45156bb828752679bf9dcbd9820099c4aac92cbaacbc3"
+  },
+  {
+    "id": "daily-fiche-double-prise-20261025",
+    "url": "article-daily-fiche-double-prise-20261025.html",
+    "title": "Double prise de médicament : que faire ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "MÉDICAMENTS",
+    "date": "2026-10-25",
+    "status": "PUBLISHED",
+    "excerpt": "Une fiche validée du corpus rappelle les réflexes de sécurité en cas de double prise accidentelle.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "MÉDICAMENTS"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "bbcf4782a6577332587545f5976a4fc9afbb273355fb5a94ec014d44c2bc8e7d"
+  },
+  {
+    "id": "daily-vraifaux-froid-rhume-20261025",
+    "url": "article-daily-vraifaux-froid-rhume-20261025.html",
+    "title": "Le froid donne-t-il le rhume ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "À NUANCER",
+    "date": "2026-10-25",
+    "status": "PUBLISHED",
+    "excerpt": "À NUANCER : le rhume est dû à des virus, mais l’hiver peut favoriser leur transmission.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "À NUANCER"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "6ca04c0845c580f10d4107acfcdc54c562090bf98849d2553e673b97a642f4be"
+  },
+  {
+    "id": "daily-chiffre-insuffisance-cardiaque-20261025",
+    "url": "article-daily-chiffre-insuffisance-cardiaque-20261025.html",
+    "title": "56 millions de personnes vivent avec une insuffisance cardiaque",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "56 M",
+    "date": "2026-10-25",
+    "status": "PUBLISHED",
+    "excerpt": "Une estimation mondiale pour 2023 situe à environ 56 millions le nombre de personnes concernées.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "56 M"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "fe39859693fd99a551ebee21f9f51df153e21db475b8d462a4ae4c15a19dccc1"
+  },
+  {
+    "id": "daily-donnee-vaccin-grossesse-20261025",
+    "url": "article-daily-donnee-vaccin-grossesse-20261025.html",
+    "title": "Vaccination pendant la grossesse : une couverture encore insuffisante",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "GROSSESSE",
+    "date": "2026-10-25",
+    "status": "PUBLISHED",
+    "excerpt": "Les estimations françaises suggèrent une couverture vaccinale faible contre la grippe et la Covid-19 chez les femmes enceintes.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "GROSSESSE"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "a3f110c034aada19002ec0877dc962605aad68491fd8eb6e7144b7cbe0fd789b"
+  },
+  {
+    "id": "daily-donnee-cholera-20261025",
+    "url": "article-daily-donnee-cholera-20261025.html",
+    "title": "Choléra : les décès déclarés restent préoccupants",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "CHOLÉRA",
+    "date": "2026-10-25",
+    "status": "PUBLISHED",
+    "excerpt": "Les données de surveillance internationales signalent une aggravation du bilan des décès malgré des évolutions variables du nombre de cas.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "CHOLÉRA"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "a56e24ddd10b7256ce49fd2379ba031719e5f5830eafa6a89eebe33600d46798"
+  },
+  {
+    "id": "daily-donnee-sglt2-hematocrite-20261025",
+    "url": "article-daily-donnee-sglt2-hematocrite-20261025.html",
+    "title": "Inhibiteurs SGLT2 : pourquoi l’hématocrite augmente-t-il ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "DIABÈTE",
+    "date": "2026-10-25",
+    "status": "PUBLISHED",
+    "excerpt": "Une méta-analyse observe une augmentation de l’hémoglobine et de l’hématocrite sous inhibiteurs SGLT2.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "DIABÈTE"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "de2036d0ab1f82d969351f06068dd67bc362488ec4b0bed30284ab0a38e4d7a3"
+  },
+  {
+    "id": "daily-octobre-rose-rezetecan-20261025",
+    "url": "article-daily-octobre-rose-rezetecan-20261025.html",
+    "title": "Cancer du sein HER2-low avancé : le trastuzumab rezetecan fait-il mieux que la chimiothérapie ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "OCTOBRE ROSE",
+    "date": "2026-10-25",
+    "status": "PUBLISHED",
+    "excerpt": "Dans HORIZON-Breast06, la survie sans progression a été prolongée, mais la toxicité était plus importante et le bénéfice de survie globale reste à démontrer.",
+    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "imageAlt": "Échange autour d’un document médical, photographie d’illustration",
+    "keywords": [
+      "OCTOBRE ROSE"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "1bff8ce657cf29dd2aae92b50315ecf4f675f08499949359faacb1c464fb3c83"
   }
 ];

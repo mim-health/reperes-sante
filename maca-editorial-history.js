@@ -1371,5 +1371,260 @@ window.MACA_EDITORIAL_HISTORY=[
         "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855575"
       }
     ]
+  },
+  {
+    "date": "23/10/2026",
+    "editionId": "edition-2026-10-23",
+    "articles": [
+      {
+        "id": "sommeil-femmes-20261023",
+        "category": "À LA UNE",
+        "icon": "SOMMEIL",
+        "title": "À 45 ans, pourquoi dort-on moins bien qu’avant ?",
+        "excerpt": "Une grande étude de montres connectées montre davantage de temps éveillé pendant la nuit au milieu de la vie, sans réduction majeure du temps total de sommeil.",
+        "body": "À 45 ans, pourquoi dort-on moins bien qu’avant ?\n\n Réponse courte. Une grande étude de montres connectées montre davantage de temps éveillé pendant la nuit au milieu de la vie, sans réduction majeure du temps total de sommeil.\n\n Une étude internationale a analysé près de 3,8 millions de nuits chez 192 500 utilisatrices de montres connectées âgées de 20 à 65 ans.\n\n Par rapport aux 20–24 ans, les femmes de 50–54 ans passaient en moyenne cinq minutes de plus éveillées après l’endormissement ; cet écart atteignait neuf minutes à 55–59 ans et onze minutes à 60–64 ans. Le temps total de sommeil variait beaucoup moins.\n\n Ces données suggèrent une fragmentation croissante du sommeil, mais ne démontrent pas que la ménopause en est la cause. Les montres ne remplacent pas un examen médical, et les participantes ne représentent pas toutes les femmes.\n\n En pratique, des réveils répétés, des ronflements, une somnolence diurne ou des bouffées de chaleur gênantes méritent d’être abordés en consultation. Il n’est pas nécessaire de traiter une montre connectée plutôt que des symptômes.\n\n Source primaire : Consulter la publication .",
+        "articleUrl": "article-sommeil-femmes-20261023.html",
+        "source": "Publication scientifique primaire",
+        "sourceLabel": "Publication scientifique primaire",
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42518248/"
+      },
+      {
+        "id": "poids-menopause-20261023",
+        "category": "À LIRE EN 3 MIN",
+        "icon": "MÉNOPAUSE",
+        "title": "Pourquoi prend-on du poids autour de la ménopause, même sans manger davantage ?",
+        "excerpt": "Les changements liés à l’âge et à la répartition des graisses comptent ; une grande cohorte associe certains modes alimentaires à une prise de poids plus limitée.",
+        "body": "Pourquoi prend-on du poids autour de la ménopause, même sans manger davantage ?\n\n Réponse courte. Les changements liés à l’âge et à la répartition des graisses comptent ; une grande cohorte associe certains modes alimentaires à une prise de poids plus limitée.\n\n La prise de poids au milieu de la vie n’est pas expliquée uniquement par les hormones. Le vieillissement, l’activité physique, le sommeil et la composition corporelle jouent également un rôle.\n\n Dans une cohorte de 38 283 femmes suivies autour de la ménopause, les habitudes riches en légumes, fruits, céréales complètes, légumineuses et fruits à coque étaient associées à une prise de poids moindre. Les régimes plus riches en viandes transformées et aliments peu favorables étaient associés à davantage de prise de poids.\n\n Il s’agit d’une étude observationnelle : elle ne démontre pas qu’un régime particulier empêche la prise de poids. Les poids et les consommations étaient déclarés par les participantes.\n\n Le message pratique n’est pas de se lancer dans un régime extrême : privilégier une alimentation de qualité, conserver une activité physique régulière et discuter des symptômes gênants avec un professionnel.\n\n Source primaire : Consulter la publication .",
+        "articleUrl": "article-poids-menopause-20261023.html",
+        "source": "Publication scientifique primaire",
+        "sourceLabel": "Publication scientifique primaire",
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42160056/"
+      },
+      {
+        "id": "boissons-enfants-20261023",
+        "category": "À LIRE EN 3 MIN",
+        "icon": "ENFANTS",
+        "title": "Boissons sucrées : les remplacer par de l’eau aide-t-il les enfants ?",
+        "excerpt": "Un essai scolaire suggère qu’un programme collectif peut améliorer modestement un indicateur de poids, sans prouver que le remplacement des boissons suffit.",
+        "body": "Boissons sucrées : les remplacer par de l’eau aide-t-il les enfants ?\n\n Réponse courte. Un essai scolaire suggère qu’un programme collectif peut améliorer modestement un indicateur de poids, sans prouver que le remplacement des boissons suffit.\n\n Un essai randomisé par groupes a suivi 437 enfants âgés de 8 à 13 ans dans onze structures périscolaires aux États-Unis. L’intervention cherchait à réduire les boissons sucrées et à promouvoir l’eau.\n\n Après douze mois, la différence entre les groupes sur l’évolution de l’indice de masse corporelle standardisé était modeste mais statistiquement significative. En revanche, les différences de consommation déclarée d’eau et de boissons sucrées n’étaient pas significatives.\n\n On ne peut donc pas conclure que remplacer une boisson sucrée par de l’eau fait automatiquement maigrir. Le programme comportait plusieurs éléments comportementaux et les résultats peuvent dépendre du contexte.\n\n À la maison, proposer l’eau comme boisson habituelle reste un conseil simple, sans culpabiliser les familles ni faire du poids le seul objectif.\n\n Source primaire : Consulter la publication .",
+        "articleUrl": "article-boissons-enfants-20261023.html",
+        "source": "Publication scientifique primaire",
+        "sourceLabel": "Publication scientifique primaire",
+        "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855120"
+      },
+      {
+        "id": "culture-moral-20261023",
+        "category": "À LIRE EN 3 MIN",
+        "icon": "BIEN-ÊTRE",
+        "title": "Musée, cinéma, théâtre : est-ce aussi bon pour le moral ?",
+        "excerpt": "Chez les plus de 50 ans, les sorties culturelles fréquentes sont associées à moins de troubles psychiques nécessitant des soins hospitaliers, sans preuve de causalité.",
+        "body": "Musée, cinéma, théâtre : est-ce aussi bon pour le moral ?\n\n Réponse courte. Chez les plus de 50 ans, les sorties culturelles fréquentes sont associées à moins de troubles psychiques nécessitant des soins hospitaliers, sans preuve de causalité.\n\n Une cohorte britannique de 8 274 adultes âgés de 50 ans ou plus a étudié la fréquentation de spectacles et d’expositions et la survenue de troubles psychiques enregistrés à l’hôpital.\n\n Les personnes participant fréquemment à des activités culturelles avaient un risque relatif plus faible de troubles psychiques hospitalisés, notamment de troubles de l’humeur et de démence, après ajustement sur plusieurs facteurs.\n\n Ce résultat ne démontre pas que les sorties culturelles préviennent la dépression ou la démence : les personnes qui sortent régulièrement peuvent aussi avoir une meilleure santé, davantage de ressources ou un réseau social plus solide.\n\n Le message n’est pas de prescrire le musée, mais de rappeler que les activités plaisantes, les liens sociaux et l’accès à la culture peuvent contribuer à une vie quotidienne plus riche.\n\n Source primaire : Consulter la publication .",
+        "articleUrl": "article-culture-moral-20261023.html",
+        "source": "Publication scientifique primaire",
+        "sourceLabel": "Publication scientifique primaire",
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42873497/"
+      },
+      {
+        "id": "fiche-menopause-20261023",
+        "category": "FICHE DU JOUR",
+        "icon": "MÉNOPAUSE",
+        "title": "Ménopause et sommeil : quand consulter ?",
+        "excerpt": "Les réveils nocturnes peuvent avoir plusieurs causes. Des bouffées de chaleur gênantes, des ronflements ou une somnolence diurne justifient une discussion médicale.",
+        "body": "Ménopause et sommeil : quand consulter ?\n\n Les réveils nocturnes peuvent avoir plusieurs causes. Des bouffées de chaleur gênantes, des ronflements ou une somnolence diurne justifient une discussion médicale.\n\n Source et références",
+        "articleUrl": "article-fiche-menopause-20261023.html",
+        "corpusId": "menopause-sommeil-reveils",
+        "source": "Source de référence",
+        "sourceLabel": "Source de référence",
+        "sourceUrl": "https://www.nice.org.uk/guidance/ng23"
+      },
+      {
+        "id": "vraifaux-menopause-20261023",
+        "category": "VRAI OU FAUX",
+        "icon": "FAUX",
+        "title": "Vrai ou faux : tous les réveils nocturnes à 45 ans sont dus aux hormones ?",
+        "excerpt": "Faux. Les sueurs nocturnes peuvent fragmenter le sommeil, mais le stress, l’insomnie chronique et l’apnée du sommeil sont aussi possibles. Il faut évaluer les symptômes, pas supposer leur origine.",
+        "body": "Vrai ou faux : tous les réveils nocturnes à 45 ans sont dus aux hormones ?\n\n Faux. Les sueurs nocturnes peuvent fragmenter le sommeil, mais le stress, l’insomnie chronique et l’apnée du sommeil sont aussi possibles. Il faut évaluer les symptômes, pas supposer leur origine.\n\n Source et références",
+        "articleUrl": "article-vraifaux-menopause-20261023.html",
+        "corpusId": "menopause-sommeil-reveils",
+        "source": "Source de référence",
+        "sourceLabel": "Source de référence",
+        "sourceUrl": "https://www.nice.org.uk/guidance/ng23"
+      },
+      {
+        "id": "chiffre-culture-20261023",
+        "category": "LE CHIFFRE DU JOUR",
+        "icon": "8 274",
+        "title": "8 274 adultes étudiés : les sorties culturelles protègent-elles le moral ?",
+        "excerpt": "Une cohorte de 8 274 adultes de plus de 50 ans observe une association entre sorties culturelles et moins d’hospitalisations pour troubles psychiques. Cela ne démontre pas un effet causal.",
+        "body": "8 274 adultes étudiés : les sorties culturelles protègent-elles le moral ?\n\n Une cohorte de 8 274 adultes de plus de 50 ans observe une association entre sorties culturelles et moins d’hospitalisations pour troubles psychiques. Cela ne démontre pas un effet causal.\n\n Source et références",
+        "articleUrl": "article-chiffre-culture-20261023.html",
+        "source": "Source de référence",
+        "sourceLabel": "Source de référence",
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42873497/"
+      },
+      {
+        "id": "donnee-sommeil-20261023",
+        "category": "DONNÉES",
+        "icon": "SOMMEIL",
+        "title": "Le sommeil change parfois sans raccourcir",
+        "excerpt": "Les données de montres connectées suggèrent davantage de réveils au milieu de la vie, mais pas nécessairement moins d’heures de sommeil au total.",
+        "body": "Le sommeil change parfois sans raccourcir\n\n Les données de montres connectées suggèrent davantage de réveils au milieu de la vie, mais pas nécessairement moins d’heures de sommeil au total.\n\n Source et références",
+        "articleUrl": "article-donnee-sommeil-20261023.html",
+        "source": "Source de référence",
+        "sourceLabel": "Source de référence",
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42518248/"
+      },
+      {
+        "id": "donnee-boissons-20261023",
+        "category": "DONNÉES",
+        "icon": "ENFANT",
+        "title": "L’eau reste la boisson quotidienne de référence",
+        "excerpt": "Réduire les boissons sucrées aide à limiter les sucres libres et protège les dents. Un programme scolaire ne prouve pas qu’un simple remplacement entraîne une perte de poids.",
+        "body": "L’eau reste la boisson quotidienne de référence\n\n Réduire les boissons sucrées aide à limiter les sucres libres et protège les dents. Un programme scolaire ne prouve pas qu’un simple remplacement entraîne une perte de poids.\n\n Source et références",
+        "articleUrl": "article-donnee-boissons-20261023.html",
+        "corpusId": "boissons-sucrees",
+        "source": "Source de référence",
+        "sourceLabel": "Source de référence",
+        "sourceUrl": "https://www.who.int/publications/i/item/9789241549028"
+      },
+      {
+        "id": "donnee-culture-20261023",
+        "category": "DONNÉES",
+        "icon": "BIEN-ÊTRE",
+        "title": "Les sorties culturelles : un lien intéressant, pas une ordonnance",
+        "excerpt": "Les personnes qui fréquentent des activités culturelles présentent dans une cohorte moins de troubles psychiques hospitalisés ; la causalité reste incertaine.",
+        "body": "Les sorties culturelles : un lien intéressant, pas une ordonnance\n\n Les personnes qui fréquentent des activités culturelles présentent dans une cohorte moins de troubles psychiques hospitalisés ; la causalité reste incertaine.\n\n Source et références",
+        "articleUrl": "article-donnee-culture-20261023.html",
+        "source": "Source de référence",
+        "sourceLabel": "Source de référence",
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42873497/"
+      }
+    ]
+  },
+  {
+    "date": "24/10/2026",
+    "editionId": "edition-2026-10-24",
+    "articles": [
+      {
+        "id": "daily-calcium-coronaire-jeunes-20261024",
+        "category": "À LA UNE",
+        "icon": "CŒUR",
+        "title": "À 40 ans, des artères déjà calcifiées ne sont pas anodines",
+        "excerpt": "Une calcification coronaire importante chez un adulte jeune est associée à un risque cardiovasculaire plus élevé à long terme, sans justifier un scanner systématique.",
+        "body": "À 40 ans, des artères déjà calcifiées ne sont pas anodines\n\n Réponse courte. Une calcification coronaire importante chez un adulte jeune est associée à un risque cardiovasculaire plus élevé à long terme, sans justifier un scanner systématique.\n\n Une cohorte de 12 847 adultes âgés de 30 à 45 ans ayant bénéficié d’un scanner coronaire pour une indication clinique a évalué l’association entre calcium coronaire et mortalité cardiovasculaire à long terme.\n\n Dans l’analyse, le risque cardiovasculaire modélisé à trente ans était de 4,5 % chez les personnes ayant un score très élevé pour leur âge, contre 1,5 % avec un score nul. La mortalité coronarienne modélisée était respectivement de 3,0 % et 0,6 %.\n\n Pour le public, le message principal est de prendre au sérieux dès la trentaine les facteurs de risque modifiables : tabac, hypertension, dyslipidémie, diabète et sédentarité. Un score déjà réalisé doit être interprété dans le contexte clinique.\n\n Limites : cohorte observationnelle sélectionnée, à majorité masculine ; aucune preuve qu’un dépistage par scanner de tous les jeunes adultes améliore leur santé.\n\n Source : JAMA Cardiology",
+        "articleUrl": "article-daily-calcium-coronaire-jeunes-20261024.html",
+        "source": "JAMA Cardiology",
+        "sourceLabel": "JAMA Cardiology",
+        "sourceUrl": "https://jamanetwork.com/journals/jamacardiology"
+      },
+      {
+        "id": "daily-testosterone-femmes-20261024",
+        "category": "À LIRE EN 3 MIN",
+        "icon": "SANTÉ DES FEMMES",
+        "title": "Testostérone chez les femmes : une hormone pour retrouver énergie et jeunesse ?",
+        "excerpt": "Non : les preuves concernent surtout certains troubles du désir sexuel après la ménopause, et non une promesse générale de jeunesse ou de vitalité.",
+        "body": "Testostérone chez les femmes : une hormone pour retrouver énergie et jeunesse ?\n\n Réponse courte. Non : les preuves concernent surtout certains troubles du désir sexuel après la ménopause, et non une promesse générale de jeunesse ou de vitalité.\n\n Les prescriptions de testostérone chez les femmes ont augmenté aux États-Unis, alors que les preuves de bénéfice restent limitées selon l’indication.\n\n Le trouble du désir sexuel hypoactif chez certaines femmes ménopausées est la situation pour laquelle les données sont les plus étayées, après évaluation médicale globale. La testostérone n’est pas un traitement validé du vieillissement, des difficultés de mémoire ou de la fatigue isolée.\n\n Une baisse du désir peut être liée au sommeil, à la douleur, aux médicaments, à l’humeur, aux symptômes de ménopause ou au contexte relationnel. Une préparation hormonale ne doit pas être achetée ou utilisée sans bilan et suivi.\n\n Limites : analyse de la littérature, non nouvel essai thérapeutique. Les modalités d’accès et d’autorisation diffèrent selon les pays.\n\n Source : Consensus international sur la testostérone chez les femmes",
+        "articleUrl": "article-daily-testosterone-femmes-20261024.html",
+        "source": "Consensus international sur la testostérone chez les femmes",
+        "sourceLabel": "Consensus international sur la testostérone chez les femmes",
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/31498871/"
+      },
+      {
+        "id": "daily-vitesse-marche-sante-20261024",
+        "category": "À LIRE EN 3 MIN",
+        "icon": "APRÈS 60 ANS",
+        "title": "Votre vitesse de marche peut-elle renseigner sur votre santé ?",
+        "excerpt": "Oui, une marche qui ralentit peut être un marqueur de fragilité ou de maladie ; marcher plus vite de force n’a pas démontré un bénéfice de survie.",
+        "body": "Votre vitesse de marche peut-elle renseigner sur votre santé ?\n\n Réponse courte. Oui, une marche qui ralentit peut être un marqueur de fragilité ou de maladie ; marcher plus vite de force n’a pas démontré un bénéfice de survie.\n\n Une cohorte de 4 067 personnes âgées en moyenne de 69 ans a comparé la vitesse de marche habituelle et les mesures par accéléromètre à la mortalité au cours d’un suivi médian de 11,8 ans.\n\n Les deux mesures étaient associées au pronostic. Une diminution durable de la vitesse habituelle peut inciter à rechercher douleur, perte musculaire, problème neurologique, maladie cardiovasculaire ou autre cause.\n\n L’intérêt patient est de signaler un changement récent de mobilité et de conserver une activité physique adaptée, sans se fixer une vitesse arbitraire.\n\n Limites : étude observationnelle, population majoritairement masculine ; aucune démonstration qu’accélérer volontairement la marche allonge la vie.\n\n Source : British Geriatrics Society — ressources sur la fragilité",
+        "articleUrl": "article-daily-vitesse-marche-sante-20261024.html",
+        "source": "British Geriatrics Society — ressources sur la fragilité",
+        "sourceLabel": "British Geriatrics Society — ressources sur la fragilité",
+        "sourceUrl": "https://www.bgs.org.uk/resources/introduction-to-frailty"
+      },
+      {
+        "id": "daily-carence-fer-sans-anemie-20261024",
+        "category": "À LIRE EN 3 MIN",
+        "icon": "NUTRITION",
+        "title": "Peut-on manquer de fer sans être anémique ?",
+        "excerpt": "Oui. Une hémoglobine normale n’exclut pas une baisse des réserves de fer ; la ferritine doit être interprétée selon le contexte clinique.",
+        "body": "Peut-on manquer de fer sans être anémique ?\n\n Réponse courte. Oui. Une hémoglobine normale n’exclut pas une baisse des réserves de fer ; la ferritine doit être interprétée selon le contexte clinique.\n\n La ferritine renseigne sur les réserves de fer. Certaines recommandations proposent un seuil de 30 ng/mL pour repérer une carence chez l’adulte, mais l’interprétation dépend du contexte et de l’inflammation.\n\n Des règles très abondantes, des pertes digestives ou des apports insuffisants peuvent contribuer à une carence. Fatigue, chute de cheveux ou difficultés de concentration ne suffisent pas à confirmer le diagnostic.\n\n Le bon réflexe est de discuter d’une numération formule sanguine et d’un bilan martial adapté, puis d’identifier la cause plutôt que de prendre du fer systématiquement.\n\n Limites : les seuils varient selon les sociétés savantes et les situations cliniques. Un dosage isolé ne remplace pas une évaluation médicale.\n\n Source : British Society of Gastroenterology — iron deficiency anaemia",
+        "articleUrl": "article-daily-carence-fer-sans-anemie-20261024.html",
+        "source": "British Society of Gastroenterology — iron deficiency anaemia",
+        "sourceLabel": "British Society of Gastroenterology — iron deficiency anaemia",
+        "sourceUrl": "https://gut.bmj.com/content/70/11/2030"
+      },
+      {
+        "id": "daily-fiche-audition-60-20261024",
+        "category": "FICHE DU JOUR",
+        "icon": "APRÈS 60 ANS",
+        "title": "Audition après 60 ans : quand la faire tester ?",
+        "excerpt": "Demander souvent de répéter, augmenter le volume ou mal suivre les conversations dans le bruit justifie un contrôle auditif.",
+        "body": "Audition après 60 ans : quand la faire tester ?\n\n Réponse courte. Demander souvent de répéter, augmenter le volume ou mal suivre les conversations dans le bruit justifie un contrôle auditif.\n\n Cette rubrique remet en avant une fiche du corpus déjà validée ; elle ne crée pas de nouveau contenu médical.\n\n Source : OMS — World report on hearing",
+        "articleUrl": "article-daily-fiche-audition-60-20261024.html",
+        "source": "OMS — World report on hearing",
+        "sourceLabel": "OMS — World report on hearing",
+        "sourceUrl": "https://www.who.int/publications/i/item/world-report-on-hearing"
+      },
+      {
+        "id": "daily-vraifaux-antibiotiques-rhume-20261024",
+        "category": "VRAI OU FAUX",
+        "icon": "FAUX",
+        "title": "Vrai ou faux : les antibiotiques accélèrent la guérison d’un rhume ?",
+        "excerpt": "FAUX. Le rhume est viral et les antibiotiques n’en raccourcissent pas la durée. Leur utilisation inutile favorise l’antibiorésistance.",
+        "body": "Vrai ou faux : les antibiotiques accélèrent la guérison d’un rhume ?\n\n Réponse courte. FAUX. Le rhume est viral et les antibiotiques n’en raccourcissent pas la durée. Leur utilisation inutile favorise l’antibiorésistance.\n\n Une évaluation reste nécessaire si l’état général se dégrade, en cas de difficulté respiratoire ou de complication suspectée.\n\n Source : OMS — Antibiotic resistance",
+        "articleUrl": "article-daily-vraifaux-antibiotiques-rhume-20261024.html",
+        "source": "OMS — Antibiotic resistance",
+        "sourceLabel": "OMS — Antibiotic resistance",
+        "sourceUrl": "https://www.who.int/news-room/fact-sheets/detail/antibiotic-resistance"
+      },
+      {
+        "id": "daily-chiffre-mois-sans-tabac-20261024",
+        "category": "LE CHIFFRE DU JOUR",
+        "icon": "TABAC",
+        "title": "Mois sans tabac : pourquoi viser trente jours ?",
+        "excerpt": "Trente jours sans tabac augmentent les chances d’arrêt durable ; ce chiffre de campagne doit être compris comme un encouragement, non comme une garantie individuelle.",
+        "body": "Mois sans tabac : pourquoi viser trente jours ?\n\n Réponse courte. Trente jours sans tabac augmentent les chances d’arrêt durable ; ce chiffre de campagne doit être compris comme un encouragement, non comme une garantie individuelle.\n\n L’accompagnement, les substituts nicotiniques et le soutien professionnel peuvent aider à gérer les envies et à poursuivre au-delà du premier mois.\n\n Source : Tabac info service",
+        "articleUrl": "article-daily-chiffre-mois-sans-tabac-20261024.html",
+        "source": "Tabac info service",
+        "sourceLabel": "Tabac info service",
+        "sourceUrl": "https://www.tabac-info-service.fr/"
+      },
+      {
+        "id": "daily-donnee-lait-cru-20261024",
+        "category": "DONNÉES",
+        "icon": "ALIMENTATION",
+        "title": "Lait cru : une vigilance particulière chez les enfants et pendant la grossesse",
+        "excerpt": "Les produits non pasteurisés exposent à certaines infections alimentaires potentiellement graves chez les personnes vulnérables.",
+        "body": "Lait cru : une vigilance particulière chez les enfants et pendant la grossesse\n\n Réponse courte. Les produits non pasteurisés exposent à certaines infections alimentaires potentiellement graves chez les personnes vulnérables.\n\n La pasteurisation réduit les risques microbiologiques ; respecter les recommandations alimentaires selon l’âge et la grossesse.\n\n Source : CDC — Raw milk",
+        "articleUrl": "article-daily-donnee-lait-cru-20261024.html",
+        "source": "CDC — Raw milk",
+        "sourceLabel": "CDC — Raw milk",
+        "sourceUrl": "https://www.cdc.gov/food-safety/foods/raw-milk.html"
+      },
+      {
+        "id": "daily-donnee-grossesse-chaleur-20261024",
+        "category": "DONNÉES",
+        "icon": "GROSSESSE",
+        "title": "Grossesse et fortes chaleurs : une exposition à limiter",
+        "excerpt": "Les épisodes de chaleur extrême sont associés dans les études populationnelles à davantage de complications, notamment de naissances prématurées.",
+        "body": "Grossesse et fortes chaleurs : une exposition à limiter\n\n Réponse courte. Les épisodes de chaleur extrême sont associés dans les études populationnelles à davantage de complications, notamment de naissances prématurées.\n\n Boire régulièrement, éviter les efforts aux heures chaudes et solliciter un avis médical en cas de symptômes préoccupants. Une association statistique ne prédit pas un risque individuel.\n\n Source : OMS — Climate change and health",
+        "articleUrl": "article-daily-donnee-grossesse-chaleur-20261024.html",
+        "source": "OMS — Climate change and health",
+        "sourceLabel": "OMS — Climate change and health",
+        "sourceUrl": "https://www.who.int/news-room/fact-sheets/detail/climate-change-and-health"
+      },
+      {
+        "id": "daily-donnee-virus-shamonda-20261024",
+        "category": "DONNÉES",
+        "icon": "INFECTIOLOGIE",
+        "title": "Virus Shamonda : que signifie un signal infectieux rare ?",
+        "excerpt": "Un signal rare chez une personne immunodéprimée ne constitue pas à lui seul la preuve d’une menace pour la population générale.",
+        "body": "Virus Shamonda : que signifie un signal infectieux rare ?\n\n Réponse courte. Un signal rare chez une personne immunodéprimée ne constitue pas à lui seul la preuve d’une menace pour la population générale.\n\n La surveillance virologique est utile ; l’absence de données robustes interdit toute généralisation ou alarme. Ce contenu ne doit pas être interprété comme une recommandation individuelle.\n\n Source : Santé publique France — surveillance",
+        "articleUrl": "article-daily-donnee-virus-shamonda-20261024.html",
+        "source": "Santé publique France — surveillance",
+        "sourceLabel": "Santé publique France — surveillance",
+        "sourceUrl": "https://www.santepubliquefrance.fr/"
+      }
+    ]
   }
 ];
