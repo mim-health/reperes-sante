@@ -5717,6 +5717,342 @@
       "imageCredit": "cottonbro studio / Pexels",
       "imageSource": "https://www.pexels.com/photo/hands-of-doctor-and-patient-on-table-7578798/",
       "imageLicense": "Pexels License — https://www.pexels.com/license/"
+    },
+    {
+      "id": "daily-hypertension-sport-20261026",
+      "url": "article-daily-hypertension-sport-20261026.html",
+      "date": "2026-10-26",
+      "format": "article",
+      "category": "Actualité santé",
+      "title": "Hypertension : quel sport fait vraiment baisser la tension ?",
+      "answer": "Une méta-analyse de 284 essais randomisés (18 750 participants) confirme l’intérêt de l’activité physique pour diminuer la pression artérielle.",
+      "html": "<article><h1>Hypertension : quel sport fait vraiment baisser la tension ?</h1><p><strong>Réponse courte.</strong> Une méta-analyse de 284 essais randomisés (18 750 participants) confirme l’intérêt de l’activité physique pour diminuer la pression artérielle.</p><p>L’exercice aquatique était associé à une baisse moyenne de pression systolique de 10,28 mmHg par rapport au groupe comparateur. Le vélo et les exercices isométriques donnaient également des résultats intéressants.</p><p>Ces comparaisons reposent en partie sur des estimations indirectes et des populations différentes. Aucun sport ne doit être présenté comme universellement supérieur.</p><p>Choisir une activité régulière, accessible et adaptée à sa condition physique. L’exercice ne remplace pas automatiquement les médicaments prescrits.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/42887271/\">Source scientifique ou institutionnelle</a></p></article>",
+      "theme": "À LA UNE",
+      "keywords": [
+        "hypertension sport"
+      ],
+      "sources": [
+        {
+          "label": "Maturitas 2026 — PMID 42887271",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42887271/"
+        }
+      ],
+      "ficheId": "hta",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-26T12:00:00+01:00",
+        "evidence": "Validation explicite de la conférence du 26 octobre, remplacement de l’À la une et autorisation de mise en ligne sur feat/v0-magazine.",
+        "contentHash": "5712392be5ed7bbaec542e34f12f8f15700a5f23631e6b25b64a81ac87ac5019"
+      }
+    },
+    {
+      "id": "daily-lombalgie-opioides-20261026",
+      "url": "article-daily-lombalgie-opioides-20261026.html",
+      "date": "2026-10-26",
+      "format": "article",
+      "category": "Actualité santé",
+      "title": "Lombalgie aiguë : pourquoi éviter les opioïdes en première intention ?",
+      "answer": "Une grande cohorte américaine associe certaines prescriptions initiales à davantage de troubles liés aux opioïdes.",
+      "html": "<article><h1>Lombalgie aiguë : pourquoi éviter les opioïdes en première intention ?</h1><p><strong>Réponse courte.</strong> Une grande cohorte américaine associe certaines prescriptions initiales à davantage de troubles liés aux opioïdes.</p><p>Une étude observationnelle américaine d’environ 399 500 adultes a évalué les risques liés aux traitements initiaux d’une lombalgie aiguë.</p><p>Les opioïdes à dose élevée étaient associés au risque le plus défavorable. Les prises en charge non médicamenteuses étaient associées à un risque moindre, sans démonstration causale.</p><p>En l’absence de signe d’alarme, rester actif selon ses capacités et privilégier les traitements non opioïdes est généralement recommandé.</p><p><a href=\"https://jamanetwork.com/journals/jamanetworkopen\">Source scientifique ou institutionnelle</a></p></article>",
+      "theme": "À LIRE EN 3 MIN",
+      "keywords": [
+        "lombalgie opioides"
+      ],
+      "sources": [
+        {
+          "label": "Référence scientifique ou institutionnelle",
+          "url": "https://jamanetwork.com/journals/jamanetworkopen"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-26T12:00:00+01:00",
+        "evidence": "Validation explicite de la conférence du 26 octobre, remplacement de l’À la une et autorisation de mise en ligne sur feat/v0-magazine.",
+        "contentHash": "e964fbb453177f9280dbed6ffa96ecb50262f177e8fa07d63bb35ee0a5150808"
+      }
+    },
+    {
+      "id": "daily-ia-consultation-20261026",
+      "url": "article-daily-ia-consultation-20261026.html",
+      "date": "2026-10-26",
+      "format": "article",
+      "category": "Actualité santé",
+      "title": "Une IA peut-elle préparer une consultation médicale sans remplacer le médecin ?",
+      "answer": "Une étude prospective suggère une aide à la préparation, sans démontrer une autonomie diagnostique.",
+      "html": "<article><h1>Une IA peut-elle préparer une consultation médicale sans remplacer le médecin ?</h1><p><strong>Réponse courte.</strong> Une étude prospective suggère une aide à la préparation, sans démontrer une autonomie diagnostique.</p><p>Quatre-vingt-dix-huit patients ont terminé un entretien avec un agent conversationnel et une consultation médicale réelle.</p><p>Chaque entretien était supervisé en direct par un médecin ; une hallucination a été repérée et des informations ajoutées par un superviseur.</p><p>Une IA peut aider à organiser symptômes et questions, mais cette étude ne démontre ni sa sécurité sans supervision ni une équivalence avec un médecin.</p><p><a href=\"https://www.thelancet.com/\">Source scientifique ou institutionnelle</a></p></article>",
+      "theme": "À LIRE EN 3 MIN",
+      "keywords": [
+        "ia consultation"
+      ],
+      "sources": [
+        {
+          "label": "Référence scientifique ou institutionnelle",
+          "url": "https://www.thelancet.com/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-26T12:00:00+01:00",
+        "evidence": "Validation explicite de la conférence du 26 octobre, remplacement de l’À la une et autorisation de mise en ligne sur feat/v0-magazine.",
+        "contentHash": "3b3ce781abdef6433340c052e2d5b980a3a1687bc13bbba87c717a356d9137ae"
+      }
+    },
+    {
+      "id": "daily-ecrans-enfants-20261026",
+      "url": "article-daily-ecrans-enfants-20261026.html",
+      "date": "2026-10-26",
+      "format": "article",
+      "category": "Actualité santé",
+      "title": "Écrans chez l’enfant : pourquoi la durée ne suffit-elle pas ?",
+      "answer": "Le sommeil, les contenus, la sédentarité et les interactions familiales sont essentiels pour évaluer les usages.",
+      "html": "<article><h1>Écrans chez l’enfant : pourquoi la durée ne suffit-elle pas ?</h1><p><strong>Réponse courte.</strong> Le sommeil, les contenus, la sédentarité et les interactions familiales sont essentiels pour évaluer les usages.</p><p>Le dossier de Santé publique France rapporte environ 1 h 30 d’écran quotidien chez les 3–5 ans et 2 h 30 chez les 9–11 ans.</p><p>L’heure d’utilisation, le contenu et les activités remplacées comptent autant que le nombre de minutes.</p><p>Préserver les interactions, l’activité physique, les repas et le coucher reste prioritaire.</p><p><a href=\"https://www.santepubliquefrance.fr/\">Source scientifique ou institutionnelle</a></p></article>",
+      "theme": "À LIRE EN 3 MIN",
+      "keywords": [
+        "ecrans enfants"
+      ],
+      "sources": [
+        {
+          "label": "Référence scientifique ou institutionnelle",
+          "url": "https://www.santepubliquefrance.fr/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-26T12:00:00+01:00",
+        "evidence": "Validation explicite de la conférence du 26 octobre, remplacement de l’À la une et autorisation de mise en ligne sur feat/v0-magazine.",
+        "contentHash": "ecb18b6008fb02c1962509b7236e3df0095a45458da0962ed163a5d2b8d634b6"
+      }
+    },
+    {
+      "id": "daily-rotation-saignement-menopause-20261026",
+      "url": "article-daily-rotation-saignement-menopause-20261026.html",
+      "date": "2026-10-26",
+      "format": "article",
+      "category": "Actualité santé",
+      "title": "Saignements après la ménopause : quand consulter ?",
+      "answer": "Tout saignement vaginal après la ménopause nécessite un avis médical, même s’il est discret.",
+      "html": "<article><h1>Saignements après la ménopause : quand consulter ?</h1><p><strong>Réponse courte.</strong> Tout saignement vaginal après la ménopause nécessite un avis médical, même s’il est discret.</p><p>Cette fiche déjà validée est remise en avant en rotation ; il ne s’agit pas d’une nouvelle fiche. Une hémorragie importante ou un malaise justifie une évaluation urgente.</p><p><a href=\"https://www.ameli.fr/\">Source scientifique ou institutionnelle</a></p></article>",
+      "theme": "FICHE DU JOUR",
+      "keywords": [
+        "rotation saignement menopause"
+      ],
+      "sources": [
+        {
+          "label": "Référence scientifique ou institutionnelle",
+          "url": "https://www.ameli.fr/"
+        }
+      ],
+      "ficheId": "saignement-apres-menopause",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-26T12:00:00+01:00",
+        "evidence": "Validation explicite de la conférence du 26 octobre, remplacement de l’À la une et autorisation de mise en ligne sur feat/v0-magazine.",
+        "contentHash": "fdfe582cc688eee0bb8148655b9b1d5d796a10c996b6ded7b3be4fc7b7abd8df"
+      }
+    },
+    {
+      "id": "daily-statines-apres-70-20261026",
+      "url": "article-daily-statines-apres-70-20261026.html",
+      "date": "2026-10-26",
+      "format": "article",
+      "category": "Actualité santé",
+      "title": "Commencer une statine après 70 ans ne sert plus à rien : vrai ou faux ?",
+      "answer": "FAUX, à nuancer : l’essai STAREE montre moins d’événements cardiovasculaires, mais pas de gain démontré de survie sans démence ni incapacité.",
+      "html": "<article><h1>Commencer une statine après 70 ans ne sert plus à rien : vrai ou faux ?</h1><p><strong>Réponse courte.</strong> FAUX, à nuancer : l’essai STAREE montre moins d’événements cardiovasculaires, mais pas de gain démontré de survie sans démence ni incapacité.</p><p>Chez les adultes âgés, la décision dépend du risque cardiovasculaire, des traitements déjà pris, des effets indésirables possibles et des préférences du patient.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/\">Source scientifique ou institutionnelle</a></p></article>",
+      "theme": "VRAI OU FAUX",
+      "keywords": [
+        "statines apres 70"
+      ],
+      "sources": [
+        {
+          "label": "Référence scientifique ou institutionnelle",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-26T12:00:00+01:00",
+        "evidence": "Validation explicite de la conférence du 26 octobre, remplacement de l’À la une et autorisation de mise en ligne sur feat/v0-magazine.",
+        "contentHash": "950b79942065c92e3d2c8aff8e70597d3388264e9441385c475144ab765237a2"
+      }
+    },
+    {
+      "id": "daily-vectoriels-24-20261026",
+      "url": "article-daily-vectoriels-24-20261026.html",
+      "date": "2026-10-26",
+      "format": "article",
+      "category": "Actualité santé",
+      "title": "24 épisodes de transmission vectorielle autochtone en France hexagonale",
+      "answer": "Au 5 octobre 2026, 24 épisodes de transmission locale d’infections vectorielles avaient été identifiés.",
+      "html": "<article><h1>24 épisodes de transmission vectorielle autochtone en France hexagonale</h1><p><strong>Réponse courte.</strong> Au 5 octobre 2026, 24 épisodes de transmission locale d’infections vectorielles avaient été identifiés.</p><p>Il s’agit d’épisodes de transmission et non du nombre de personnes infectées ; le risque n’est pas uniforme sur tout le territoire.</p><p><a href=\"https://www.santepubliquefrance.fr/\">Source scientifique ou institutionnelle</a></p></article>",
+      "theme": "LE CHIFFRE DU JOUR",
+      "keywords": [
+        "vectoriels 24"
+      ],
+      "sources": [
+        {
+          "label": "Référence scientifique ou institutionnelle",
+          "url": "https://www.santepubliquefrance.fr/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-26T12:00:00+01:00",
+        "evidence": "Validation explicite de la conférence du 26 octobre, remplacement de l’À la une et autorisation de mise en ligne sur feat/v0-magazine.",
+        "contentHash": "9fb098cdb4ed1b54ee2a0a227916ca0e075062d704842a0248a3371323f96f9b"
+      }
+    },
+    {
+      "id": "daily-freestyle-libre-alerte-20261026",
+      "url": "article-daily-freestyle-libre-alerte-20261026.html",
+      "date": "2026-10-26",
+      "format": "article",
+      "category": "Actualité santé",
+      "title": "FreeStyle Libre : alerte sur certaines mises à jour",
+      "answer": "Certaines mises à jour peuvent provoquer une perte persistante du signal.",
+      "html": "<article><h1>FreeStyle Libre : alerte sur certaines mises à jour</h1><p><strong>Réponse courte.</strong> Certaines mises à jour peuvent provoquer une perte persistante du signal.</p><p>Les utilisateurs concernés doivent suivre les consignes officielles de l’ANSM et les notifications de leur application.</p><p><a href=\"https://ansm.sante.fr/\">Source scientifique ou institutionnelle</a></p></article>",
+      "theme": "DONNÉES",
+      "keywords": [
+        "freestyle libre alerte"
+      ],
+      "sources": [
+        {
+          "label": "Référence scientifique ou institutionnelle",
+          "url": "https://ansm.sante.fr/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-26T12:00:00+01:00",
+        "evidence": "Validation explicite de la conférence du 26 octobre, remplacement de l’À la une et autorisation de mise en ligne sur feat/v0-magazine.",
+        "contentHash": "a472a560d97ec9b84d3adb7801ce0aa428c50fd6f681ae7df929e09659ec48d4"
+      }
+    },
+    {
+      "id": "daily-quetiapine-approvisionnement-20261026",
+      "url": "article-daily-quetiapine-approvisionnement-20261026.html",
+      "date": "2026-10-26",
+      "format": "article",
+      "category": "Actualité santé",
+      "title": "Quétiapine LP 50 mg : tensions d’approvisionnement",
+      "answer": "Les tensions d’approvisionnement persistent et les substitutions doivent être encadrées.",
+      "html": "<article><h1>Quétiapine LP 50 mg : tensions d’approvisionnement</h1><p><strong>Réponse courte.</strong> Les tensions d’approvisionnement persistent et les substitutions doivent être encadrées.</p><p>Ne pas modifier seul les doses ni substituer une forme à libération immédiate à une forme prolongée.</p><p><a href=\"https://ansm.sante.fr/\">Source scientifique ou institutionnelle</a></p></article>",
+      "theme": "DONNÉES",
+      "keywords": [
+        "quetiapine approvisionnement"
+      ],
+      "sources": [
+        {
+          "label": "Référence scientifique ou institutionnelle",
+          "url": "https://ansm.sante.fr/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-26T12:00:00+01:00",
+        "evidence": "Validation explicite de la conférence du 26 octobre, remplacement de l’À la une et autorisation de mise en ligne sur feat/v0-magazine.",
+        "contentHash": "64197d0811d2ad6360304d4ac38646df6b821da9463ce8614bde328714a87352"
+      }
+    },
+    {
+      "id": "daily-tabac-arret-20261026",
+      "url": "article-daily-tabac-arret-20261026.html",
+      "date": "2026-10-26",
+      "format": "article",
+      "category": "Actualité santé",
+      "title": "Arrêt du tabac : plus d’un fumeur sur deux souhaite arrêter",
+      "answer": "Les dispositifs d’accompagnement aident à concrétiser un projet d’arrêt.",
+      "html": "<article><h1>Arrêt du tabac : plus d’un fumeur sur deux souhaite arrêter</h1><p><strong>Réponse courte.</strong> Les dispositifs d’accompagnement aident à concrétiser un projet d’arrêt.</p><p>Le soutien d’un professionnel, les substituts nicotiniques adaptés et Tabac info service peuvent aider.</p><p><a href=\"https://www.tabac-info-service.fr/\">Source scientifique ou institutionnelle</a></p></article>",
+      "theme": "DONNÉES",
+      "keywords": [
+        "tabac arret"
+      ],
+      "sources": [
+        {
+          "label": "Référence scientifique ou institutionnelle",
+          "url": "https://www.tabac-info-service.fr/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-26T12:00:00+01:00",
+        "evidence": "Validation explicite de la conférence du 26 octobre, remplacement de l’À la une et autorisation de mise en ligne sur feat/v0-magazine.",
+        "contentHash": "6b8532a7fd972c2c3ba839a8f6b428e26bf05fc20a717e383079f7e36c456542"
+      }
+    },
+    {
+      "id": "daily-octobre-rose-optima-20261026",
+      "url": "article-daily-octobre-rose-optima-20261026.html",
+      "date": "2026-10-26",
+      "format": "article",
+      "category": "Décryptage",
+      "title": "Un test génomique peut-il permettre d’éviter une chimiothérapie après un cancer du sein ?",
+      "answer": "L’essai OPTIMA montre qu’une stratégie guidée par Prosigna peut éviter une chimiothérapie chez certaines personnes ayant un cancer du sein précoce ER+/HER2−.",
+      "html": "<article><h1>Un test génomique peut-il permettre d’éviter une chimiothérapie après un cancer du sein ?</h1><p><strong>Réponse courte.</strong> L’essai OPTIMA montre qu’une stratégie guidée par Prosigna peut éviter une chimiothérapie chez certaines personnes ayant un cancer du sein précoce ER+/HER2−.</p><p>Après chirurgie, une chimiothérapie est parfois proposée pour diminuer le risque de récidive. Le test Prosigna analyse l’expression de 50 gènes tumoraux et produit un score de risque de récidive (ROR). Ce n’est pas un test héréditaire BRCA.</p><p>L’essai randomisé de phase III OPTIMA a inclus 4 429 personnes de 40 ans ou plus avec un cancer du sein précoce ER positif, HER2 négatif, à haut risque clinique. Le groupe standard recevait chimiothérapie puis hormonothérapie. Dans le groupe guidé par le test, un score ROR supérieur à 60 conduisait à une chimiothérapie et un score inférieur ou égal à 60 à une hormonothérapie seule.</p><p>Environ 68 % des tumeurs du groupe guidé par le test avaient un score bas et permettaient d’éviter la chimiothérapie. Dans l’analyse per-protocole présentée à l’ASCO 2026, la survie à cinq ans sans événement invasif du cancer du sein était de 91,8 % dans le groupe standard et de 90,3 % dans le groupe guidé par le test. Chez les personnes avec un score bas, elle était de 94,8 % avec chimiothérapie et hormonothérapie contre 93,6 % avec hormonothérapie seule.</p><p>Les seuils de non-infériorité prédéfinis étaient respectés. Cela ne démontre pas que la chimiothérapie est inutile pour toutes les patientes : la sélection clinique et biologique est essentielle.</p><p>Éviter une chimiothérapie peut réduire la fatigue, les nausées, la chute des cheveux, les infections et certaines toxicités tardives. Mais la chirurgie, l’hormonothérapie, la radiothérapie si indiquée et le suivi restent nécessaires.</p><p>Limites : suivi médian de quatre ans encore court pour les récidives tardives, données initialement présentées en congrès, et résultats propres à cette population et à ce test. Ne pas extrapoler aux cancers HER2 positifs ou triple négatifs.</p><p>En France, la pertinence, l’accès et le financement d’un test génomique doivent être discutés avec l’équipe d’oncologie et en réunion de concertation pluridisciplinaire.</p><p>Questions utiles à poser : mon cancer correspond-il aux critères d’OPTIMA ? Quel bénéfice absolu attendre de la chimiothérapie ? Un test génomique est-il adapté et accessible dans mon cas ?</p><p><a href=\"https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.500\">Source scientifique ou institutionnelle</a></p></article>",
+      "theme": "OCTOBRE ROSE",
+      "keywords": [
+        "octobre rose optima"
+      ],
+      "sources": [
+        {
+          "label": "ASCO 2026 — OPTIMA",
+          "url": "https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.500"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-26T12:00:00+01:00",
+        "evidence": "Validation explicite de la conférence du 26 octobre, remplacement de l’À la une et autorisation de mise en ligne sur feat/v0-magazine.",
+        "contentHash": "b4f55c31d85cfe7635baf19cb19dda3e41433b2f803208ea31aa07f9ee20ea57"
+      },
+      "standalone": true,
+      "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+      "imageAlt": "Échange médical autour d’un document, image d’illustration",
+      "imageCredit": "cottonbro studio / Pexels",
+      "imageSource": "https://www.pexels.com/photo/hands-of-doctor-and-patient-on-table-7578798/",
+      "imageLicense": "Pexels License — https://www.pexels.com/license/"
     }
   ],
   "editions": [
@@ -6453,6 +6789,69 @@
         "validation": "Validation explicite et autorisation de publication du 25 octobre 2026.",
         "veille": "VRS, don rénal et grossesse, sclérose en plaques, tests Alzheimer, Octobre Rose.",
         "corpusImpact": "Priorité candidate fiche VRS ; autres propositions à validation distincte."
+      }
+    },
+    {
+      "id": "edition-2026-10-26",
+      "date": "2026-10-26",
+      "publishAt": "2026-10-26T12:00:00+01:00",
+      "complete": true,
+      "items": [
+        {
+          "contentId": "daily-hypertension-sport-20261026",
+          "slot": "À LA UNE",
+          "icon": "❤️"
+        },
+        {
+          "contentId": "daily-lombalgie-opioides-20261026",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-ia-consultation-20261026",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-ecrans-enfants-20261026",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-rotation-saignement-menopause-20261026",
+          "slot": "FICHE DU JOUR",
+          "icon": "🩺"
+        },
+        {
+          "contentId": "daily-statines-apres-70-20261026",
+          "slot": "VRAI OU FAUX",
+          "icon": "✓"
+        },
+        {
+          "contentId": "daily-vectoriels-24-20261026",
+          "slot": "LE CHIFFRE DU JOUR",
+          "icon": "24"
+        },
+        {
+          "contentId": "daily-freestyle-libre-alerte-20261026",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-quetiapine-approvisionnement-20261026",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-tabac-arret-20261026",
+          "slot": "DONNÉES",
+          "icon": "•"
+        }
+      ],
+      "editorialConference": {
+        "validation": "Dr Romain BEDDOK, validation explicite et autorisation de mise en ligne le 26 octobre 2026.",
+        "veille": "Hypertension et exercice ; lombalgie et opioïdes ; IA préparatoire ; écrans et enfants ; essai OPTIMA.",
+        "corpusImpact": "Fiche HTA existante enrichie ; aucune nouvelle fiche créée."
       }
     }
   ]
