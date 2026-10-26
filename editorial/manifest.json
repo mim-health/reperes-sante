@@ -3,7 +3,7 @@
   "editionId": "edition-2026-10-25",
   "editionDate": "2026-10-25",
   "sourceFingerprint": "5c7584348305366c4eec14349332c1bc644683853176193c3b34e684e22dfe5b",
-  "missingEdition": false,
+  "missingEdition": true,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
