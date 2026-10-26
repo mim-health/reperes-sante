@@ -2920,5 +2920,214 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "1bff8ce657cf29dd2aae92b50315ecf4f675f08499949359faacb1c464fb3c83"
+  },
+  {
+    "id": "daily-hypertension-sport-20261026",
+    "url": "article-daily-hypertension-sport-20261026.html",
+    "title": "Hypertension : quel sport fait vraiment baisser la tension ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "À LA UNE",
+    "date": "2026-10-26",
+    "status": "PUBLISHED",
+    "excerpt": "Une méta-analyse de 284 essais randomisés (18 750 participants) confirme l’intérêt de l’activité physique pour diminuer la pression artérielle.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "hypertension sport"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "hta",
+    "version": "5712392be5ed7bbaec542e34f12f8f15700a5f23631e6b25b64a81ac87ac5019"
+  },
+  {
+    "id": "daily-lombalgie-opioides-20261026",
+    "url": "article-daily-lombalgie-opioides-20261026.html",
+    "title": "Lombalgie aiguë : pourquoi éviter les opioïdes en première intention ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "À LIRE EN 3 MIN",
+    "date": "2026-10-26",
+    "status": "PUBLISHED",
+    "excerpt": "Une grande cohorte américaine associe certaines prescriptions initiales à davantage de troubles liés aux opioïdes.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "lombalgie opioides"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "e964fbb453177f9280dbed6ffa96ecb50262f177e8fa07d63bb35ee0a5150808"
+  },
+  {
+    "id": "daily-ia-consultation-20261026",
+    "url": "article-daily-ia-consultation-20261026.html",
+    "title": "Une IA peut-elle préparer une consultation médicale sans remplacer le médecin ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "À LIRE EN 3 MIN",
+    "date": "2026-10-26",
+    "status": "PUBLISHED",
+    "excerpt": "Une étude prospective suggère une aide à la préparation, sans démontrer une autonomie diagnostique.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "ia consultation"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "3b3ce781abdef6433340c052e2d5b980a3a1687bc13bbba87c717a356d9137ae"
+  },
+  {
+    "id": "daily-ecrans-enfants-20261026",
+    "url": "article-daily-ecrans-enfants-20261026.html",
+    "title": "Écrans chez l’enfant : pourquoi la durée ne suffit-elle pas ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "À LIRE EN 3 MIN",
+    "date": "2026-10-26",
+    "status": "PUBLISHED",
+    "excerpt": "Le sommeil, les contenus, la sédentarité et les interactions familiales sont essentiels pour évaluer les usages.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "ecrans enfants"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "ecb18b6008fb02c1962509b7236e3df0095a45458da0962ed163a5d2b8d634b6"
+  },
+  {
+    "id": "daily-rotation-saignement-menopause-20261026",
+    "url": "article-daily-rotation-saignement-menopause-20261026.html",
+    "title": "Saignements après la ménopause : quand consulter ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "FICHE DU JOUR",
+    "date": "2026-10-26",
+    "status": "PUBLISHED",
+    "excerpt": "Tout saignement vaginal après la ménopause nécessite un avis médical, même s’il est discret.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "rotation saignement menopause"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "saignement-apres-menopause",
+    "version": "fdfe582cc688eee0bb8148655b9b1d5d796a10c996b6ded7b3be4fc7b7abd8df"
+  },
+  {
+    "id": "daily-statines-apres-70-20261026",
+    "url": "article-daily-statines-apres-70-20261026.html",
+    "title": "Commencer une statine après 70 ans ne sert plus à rien : vrai ou faux ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "VRAI OU FAUX",
+    "date": "2026-10-26",
+    "status": "PUBLISHED",
+    "excerpt": "FAUX, à nuancer : l’essai STAREE montre moins d’événements cardiovasculaires, mais pas de gain démontré de survie sans démence ni incapacité.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "statines apres 70"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "950b79942065c92e3d2c8aff8e70597d3388264e9441385c475144ab765237a2"
+  },
+  {
+    "id": "daily-vectoriels-24-20261026",
+    "url": "article-daily-vectoriels-24-20261026.html",
+    "title": "24 épisodes de transmission vectorielle autochtone en France hexagonale",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "LE CHIFFRE DU JOUR",
+    "date": "2026-10-26",
+    "status": "PUBLISHED",
+    "excerpt": "Au 5 octobre 2026, 24 épisodes de transmission locale d’infections vectorielles avaient été identifiés.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "vectoriels 24"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "9fb098cdb4ed1b54ee2a0a227916ca0e075062d704842a0248a3371323f96f9b"
+  },
+  {
+    "id": "daily-freestyle-libre-alerte-20261026",
+    "url": "article-daily-freestyle-libre-alerte-20261026.html",
+    "title": "FreeStyle Libre : alerte sur certaines mises à jour",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "DONNÉES",
+    "date": "2026-10-26",
+    "status": "PUBLISHED",
+    "excerpt": "Certaines mises à jour peuvent provoquer une perte persistante du signal.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "freestyle libre alerte"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "a472a560d97ec9b84d3adb7801ce0aa428c50fd6f681ae7df929e09659ec48d4"
+  },
+  {
+    "id": "daily-quetiapine-approvisionnement-20261026",
+    "url": "article-daily-quetiapine-approvisionnement-20261026.html",
+    "title": "Quétiapine LP 50 mg : tensions d’approvisionnement",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "DONNÉES",
+    "date": "2026-10-26",
+    "status": "PUBLISHED",
+    "excerpt": "Les tensions d’approvisionnement persistent et les substitutions doivent être encadrées.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "quetiapine approvisionnement"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "64197d0811d2ad6360304d4ac38646df6b821da9463ce8614bde328714a87352"
+  },
+  {
+    "id": "daily-tabac-arret-20261026",
+    "url": "article-daily-tabac-arret-20261026.html",
+    "title": "Arrêt du tabac : plus d’un fumeur sur deux souhaite arrêter",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "DONNÉES",
+    "date": "2026-10-26",
+    "status": "PUBLISHED",
+    "excerpt": "Les dispositifs d’accompagnement aident à concrétiser un projet d’arrêt.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "tabac arret"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "6b8532a7fd972c2c3ba839a8f6b428e26bf05fc20a717e383079f7e36c456542"
+  },
+  {
+    "id": "daily-octobre-rose-optima-20261026",
+    "url": "article-daily-octobre-rose-optima-20261026.html",
+    "title": "Un test génomique peut-il permettre d’éviter une chimiothérapie après un cancer du sein ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "OCTOBRE ROSE",
+    "date": "2026-10-26",
+    "status": "PUBLISHED",
+    "excerpt": "L’essai OPTIMA montre qu’une stratégie guidée par Prosigna peut éviter une chimiothérapie chez certaines personnes ayant un cancer du sein précoce ER+/HER2−.",
+    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "imageAlt": "Échange médical autour d’un document, image d’illustration",
+    "keywords": [
+      "octobre rose optima"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "b4f55c31d85cfe7635baf19cb19dda3e41433b2f803208ea31aa07f9ee20ea57"
   }
 ];

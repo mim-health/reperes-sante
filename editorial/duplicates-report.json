@@ -529,6 +529,19 @@
     },
     {
       "left": {
+        "id": "saignement-apres-menopause",
+        "title": "J’ai des saignements après la ménopause : est-ce normal ?",
+        "type": "fiche"
+      },
+      "right": {
+        "id": "daily-rotation-saignement-menopause-20261026",
+        "title": "Saignements après la ménopause : quand consulter ?",
+        "type": "Mag"
+      },
+      "score": 0.6
+    },
+    {
+      "left": {
         "id": "ado-refus-scolaire-anxieux",
         "title": "Mon adolescent ne veut plus aller au collège ou au lycée : quand faut-il s’inquiéter ?",
         "type": "fiche"
@@ -558,6 +571,6 @@
     "manifestFiles": 149,
     "rawFiches": 438,
     "canonicalFiches": 412,
-    "magContents": 156
+    "magContents": 167
   }
 }
