@@ -21,4 +21,5 @@ window.MACA_CORPUS_MANIFEST = Object.freeze([
 'backlog-audited-alimentation-emotionnelle-2026-10-23.js?v=20261023-validated1',
 'corpus-ophtalmologie-validee-2026-10-27.js?v=20261027-validated1',
 'backlog-audited-os-articulations-2026-10-27.js?v=20261027-validated1',
+  'backlog-audited-ado-scarifications-2026-10-27.js?v=20261027-valid1',
 ]);
