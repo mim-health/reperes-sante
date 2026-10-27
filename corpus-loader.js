@@ -125,11 +125,11 @@
     return files.slice();
   }
 
-  function loadFullCorpus() { return load('corpus-production.js?v=d184e875bc72c137')
+  function loadFullCorpus() { return load('corpus-production.js?v=467ad3a1112d8a55')
     .then(() => replayMentalHealthV2OnAuditedCorpus())
     .then(() => {
       assertBundleSentinels();
-      return load('corpus-ophtalmologie-validee-2026-10-27.js?v=20261027-validated1').then(() => ready('bundle'));
+      return ready('bundle');
     })
     .catch((bundleError) => {
       console.warn('[MACA corpus] bundle unavailable or stale, fallback sequential', bundleError);
@@ -145,7 +145,7 @@
       console.error('[MACA corpus]', error);
       throw error;
     }); }
-  const FICHE_DATA_REVISION = 'd184e875bc72c137';
+  const FICHE_DATA_REVISION = '467ad3a1112d8a55';
   const ficheId = new URLSearchParams(location.search).get('id');
   const isFiche = !!document.querySelector('#seo-fiche') && !!ficheId;
   async function loadFiche() {
@@ -158,7 +158,7 @@
       if(!payload.fiche || String(payload.fiche.id)!==ficheId || !Array.isArray(payload.related))throw new Error('Invalid fiche payload');
       window.healthQuestions=[...payload.related,payload.fiche];
       window.extraAuditedQuestions=[];
-      return load('corpus-ophtalmologie-validee-2026-10-27.js?v=20261027-validated1').then(() => ready('individual-fiche'));
+      return ready('individual-fiche');
     } finally { clearTimeout(timer); }
   }
   window.MACA_CORPUS_READY=isFiche
