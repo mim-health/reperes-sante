@@ -2,68 +2,68 @@
   "schemaVersion": 1,
   "editionId": "edition-2026-10-27",
   "editionDate": "2026-10-27",
-  "sourceFingerprint": "daf8cddf5ce3ec30bd517f9bf6141bfa547270204f427b4b4a75feb14ab2a264",
+  "sourceFingerprint": "7c8b1c934008191e83f5bcebc23312d3a024ccaddebd8d0382cac59f7ef0ae94",
   "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
     {
       "id": "mag-daily-marche-20261027",
-      "version": "eb295b7febed8ab3330e8779d79f5dc54d3d619aca7dd090f136a001a8131d75",
+      "version": "3f4f152e05ff2c0c047bf6a8b3782e24b7a7b946b7b778ca226415645dd8d7a3",
       "url": "article-daily-marche-20261027.html",
       "date": "2026-10-27"
     },
     {
       "id": "mag-daily-typhoide-20261027",
-      "version": "149fa314539325f71996c1c0f5f900015a5a9d35bb26820b1ce0ce31c90e1d35",
+      "version": "0057ddf79b65f4d3c92969f82bd8010d4e3f62ec7cdad4d977fa7d0e958d7c14",
       "url": "article-daily-typhoide-20261027.html",
       "date": "2026-10-27"
     },
     {
       "id": "mag-daily-psilocybine-20261027",
-      "version": "68800ed72f3529eafebe959e51f9e8b699c6102e2e6448d7d3bb6714a12031a9",
+      "version": "6b7377d519de88549c935c6ada85154080882a85205d78d3ec686635d7050844",
       "url": "article-daily-psilocybine-20261027.html",
       "date": "2026-10-27"
     },
     {
       "id": "mag-daily-grippe-20261027",
-      "version": "2673adb25a1b65d183ad4e4b52facf446b04b727c150d978162505fc381e39f7",
+      "version": "86e2bc3c393bb06f4b4315bfb1f8b451b66dc42bc122b56081e6469321ae14aa",
       "url": "article-daily-grippe-20261027.html",
       "date": "2026-10-27"
     },
     {
       "id": "mag-daily-constipation-20261027",
-      "version": "aeacf2b3b833def48d29c6cefc54a96844131307fd25013cb28be8f68a8e2959",
+      "version": "51610ffbf81b84025f81e742c9b83fa5159aa1c49502a2302e4dad2bc78eadf5",
       "url": "article-daily-constipation-20261027.html",
       "date": "2026-10-27"
     },
     {
       "id": "mag-daily-pilule-20261027",
-      "version": "dd47e6cb62006af876c663254aaaf76fce23feba0a9662863f1a31c188d82f87",
+      "version": "ca47a2295a09c78257721215fe4ddf300afcbe51f423ff368df8d4cdc779b121",
       "url": "article-daily-pilule-20261027.html",
       "date": "2026-10-27"
     },
     {
       "id": "mag-daily-chaleur-20261027",
-      "version": "ae32ce5b7896f165656265ed26265c5554392f0c71d46816eb511a3b8a843875",
+      "version": "85901ea47894030d4f295adc8a956f19f5fe01d097e7910e08ea13d9627d6b2e",
       "url": "article-daily-chaleur-20261027.html",
       "date": "2026-10-27"
     },
     {
       "id": "mag-daily-mayotte-20261027",
-      "version": "9e7ff06f576b6395d22b86008002aad5a23b9adc1bbe7f5db5bada138a68f11b",
+      "version": "7da2b03314d6d91e3271fb22e2c6c386bddbcd6be2a14d76a71f0bf98babe99d",
       "url": "article-daily-mayotte-20261027.html",
       "date": "2026-10-27"
     },
     {
       "id": "mag-daily-mollet-20261027",
-      "version": "522b1ae9a4d8fe374754fed1507baa80964eba762c528547cb3aeb6bec8d11b2",
+      "version": "43683b782d83f169a3a8066d287ebc38286b41fc9c7154ffae9133ba851c9636",
       "url": "article-daily-mollet-20261027.html",
       "date": "2026-10-27"
     },
     {
       "id": "mag-daily-readaptation-20261027",
-      "version": "db97238106ca0a941a501fee6f2651ef44187c6210455e62f125b1819f3e74db",
+      "version": "42d78cea3bec96bffe5147e4b5dfb755be9f5aa501a85365d65abd6989848a08",
       "url": "article-daily-readaptation-20261027.html",
       "date": "2026-10-27"
     },
