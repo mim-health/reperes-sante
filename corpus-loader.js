@@ -129,7 +129,7 @@
     .then(() => replayMentalHealthV2OnAuditedCorpus())
     .then(() => {
       assertBundleSentinels();
-      return load('backlog-audited-os-articulations-2026-10-27.js?v=20261027-validated1').then(() => ready('bundle'));
+      return load('backlog-audited-os-articulations-2026-10-27.js?v=20261027-validated1').then(() => load('backlog-audited-ado-scarifications-2026-10-27.js?v=20261027-valid1')).then(() => ready('bundle'));
     })
     .catch((bundleError) => {
       console.warn('[MACA corpus] bundle unavailable or stale, fallback sequential', bundleError);
@@ -158,7 +158,7 @@
       if(!payload.fiche || String(payload.fiche.id)!==ficheId || !Array.isArray(payload.related))throw new Error('Invalid fiche payload');
       window.healthQuestions=[...payload.related,payload.fiche];
       window.extraAuditedQuestions=[];
-      return load('backlog-audited-os-articulations-2026-10-27.js?v=20261027-validated1').then(() => ready('individual-fiche'));
+      return load('backlog-audited-os-articulations-2026-10-27.js?v=20261027-validated1').then(() => load('backlog-audited-ado-scarifications-2026-10-27.js?v=20261027-valid1')).then(() => ready('individual-fiche'));
     } finally { clearTimeout(timer); }
   }
   window.MACA_CORPUS_READY=isFiche
