@@ -6053,6 +6053,306 @@
       "imageCredit": "cottonbro studio / Pexels",
       "imageSource": "https://www.pexels.com/photo/hands-of-doctor-and-patient-on-table-7578798/",
       "imageLicense": "Pexels License — https://www.pexels.com/license/"
+    },
+    {
+      "id": "daily-marche-20261027",
+      "url": "article-daily-marche-20261027.html",
+      "date": "2026-10-27",
+      "format": "article",
+      "category": "Actualité santé",
+      "title": "Marche rapide : faut-il accélérer le pas pour vivre plus longtemps ?",
+      "answer": "La vitesse de marche est associée à la santé dans des études observationnelles, mais marcher plus vite ne garantit pas une vie plus longue.",
+      "html": "<article><h1>Marche rapide : faut-il accélérer le pas pour vivre plus longtemps ?</h1><p><strong>Réponse courte.</strong> La vitesse de marche est associée à la santé dans des études observationnelles, mais marcher plus vite ne garantit pas une vie plus longue.</p><p>Ces informations sont générales et ne remplacent pas une consultation adaptée à la situation individuelle.</p><p><a href=\"https://doi.org/10.1001/jamanetworkopen.2026.40122\">Référence</a></p></article>",
+      "theme": "À LA UNE",
+      "keywords": [
+        "marche"
+      ],
+      "sources": [
+        {
+          "label": "Référence",
+          "url": "https://doi.org/10.1001/jamanetworkopen.2026.40122"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-27T13:24:00+01:00",
+        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine.",
+        "contentHash": "eb295b7febed8ab3330e8779d79f5dc54d3d619aca7dd090f136a001a8131d75"
+      }
+    },
+    {
+      "id": "daily-typhoide-20261027",
+      "url": "article-daily-typhoide-20261027.html",
+      "date": "2026-10-27",
+      "format": "article",
+      "category": "Actualité santé",
+      "title": "Fièvre typhoïde après un voyage : pourquoi l’antibiogramme est indispensable",
+      "answer": "Une étude américaine rapporte des résistances fréquentes à certains antibiotiques. Avant le voyage, prévention et vaccination adaptée ; en cas de fièvre au retour, consultation rapide.",
+      "html": "<article><h1>Fièvre typhoïde après un voyage : pourquoi l’antibiogramme est indispensable</h1><p><strong>Réponse courte.</strong> Une étude américaine rapporte des résistances fréquentes à certains antibiotiques. Avant le voyage, prévention et vaccination adaptée ; en cas de fièvre au retour, consultation rapide.</p><p>Ces informations sont générales et ne remplacent pas une consultation adaptée à la situation individuelle.</p><p><a href=\"https://doi.org/10.1001/jamanetworkopen.2026.40971\">Référence</a></p></article>",
+      "theme": "À LIRE EN 3 MIN",
+      "keywords": [
+        "typhoide"
+      ],
+      "sources": [
+        {
+          "label": "Référence",
+          "url": "https://doi.org/10.1001/jamanetworkopen.2026.40971"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": true,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-27T13:24:00+01:00",
+        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine.",
+        "contentHash": "149fa314539325f71996c1c0f5f900015a5a9d35bb26820b1ce0ce31c90e1d35"
+      }
+    },
+    {
+      "id": "daily-psilocybine-20261027",
+      "url": "article-daily-psilocybine-20261027.html",
+      "date": "2026-10-27",
+      "format": "article",
+      "category": "Actualité santé",
+      "title": "Psilocybine : les médias promettent-ils davantage que les essais cliniques ?",
+      "answer": "Les recherches sont prometteuses dans certaines indications, mais les essais sont souvent de petite taille. Ne pas confondre résultats préliminaires et traitement établi.",
+      "html": "<article><h1>Psilocybine : les médias promettent-ils davantage que les essais cliniques ?</h1><p><strong>Réponse courte.</strong> Les recherches sont prometteuses dans certaines indications, mais les essais sont souvent de petite taille. Ne pas confondre résultats préliminaires et traitement établi.</p><p>Ces informations sont générales et ne remplacent pas une consultation adaptée à la situation individuelle.</p><p><a href=\"https://doi.org/10.1001/jamanetworkopen.2026.38843\">Référence</a></p></article>",
+      "theme": "À LIRE EN 3 MIN",
+      "keywords": [
+        "psilocybine"
+      ],
+      "sources": [
+        {
+          "label": "Référence",
+          "url": "https://doi.org/10.1001/jamanetworkopen.2026.38843"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": true,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-27T13:24:00+01:00",
+        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine.",
+        "contentHash": "68800ed72f3529eafebe959e51f9e8b699c6102e2e6448d7d3bb6714a12031a9"
+      }
+    },
+    {
+      "id": "daily-grippe-20261027",
+      "url": "article-daily-grippe-20261027.html",
+      "date": "2026-10-27",
+      "format": "article",
+      "category": "Actualité santé",
+      "title": "Grippe 2026–2027 : pourquoi faut-il se revacciner cette année ?",
+      "answer": "La composition des vaccins est adaptée à l’évolution des virus. Une vaccination annuelle reste recommandée, particulièrement chez les personnes à risque.",
+      "html": "<article><h1>Grippe 2026–2027 : pourquoi faut-il se revacciner cette année ?</h1><p><strong>Réponse courte.</strong> La composition des vaccins est adaptée à l’évolution des virus. Une vaccination annuelle reste recommandée, particulièrement chez les personnes à risque.</p><p>Ces informations sont générales et ne remplacent pas une consultation adaptée à la situation individuelle.</p><p><a href=\"https://www.who.int/europe\">Référence</a></p></article>",
+      "theme": "À LIRE EN 3 MIN",
+      "keywords": [
+        "grippe"
+      ],
+      "sources": [
+        {
+          "label": "Référence",
+          "url": "https://www.who.int/europe"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-27T13:24:00+01:00",
+        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine.",
+        "contentHash": "2673adb25a1b65d183ad4e4b52facf446b04b727c150d978162505fc381e39f7"
+      }
+    },
+    {
+      "id": "daily-constipation-20261027",
+      "url": "article-daily-constipation-20261027.html",
+      "date": "2026-10-27",
+      "format": "article",
+      "category": "Santé au quotidien",
+      "title": "Constipation de l’adulte : les gestes utiles",
+      "answer": "Fibres progressivement, activité physique et hydratation adaptée peuvent aider. Consulter en cas de signes d’alerte.",
+      "html": "<article><h1>Constipation de l’adulte : les gestes utiles</h1><p><strong>Réponse courte.</strong> Fibres progressivement, activité physique et hydratation adaptée peuvent aider. Consulter en cas de signes d’alerte.</p><p>Ces informations sont générales et ne remplacent pas une consultation adaptée à la situation individuelle.</p><p><a href=\"https://www.ameli.fr/assure/sante/themes/constipation-adulte\">Référence</a></p></article>",
+      "theme": "FICHE DU JOUR",
+      "keywords": [
+        "constipation"
+      ],
+      "sources": [
+        {
+          "label": "Référence",
+          "url": "https://www.ameli.fr/assure/sante/themes/constipation-adulte"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-27T13:24:00+01:00",
+        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine.",
+        "contentHash": "aeacf2b3b833def48d29c6cefc54a96844131307fd25013cb28be8f68a8e2959"
+      }
+    },
+    {
+      "id": "daily-pilule-20261027",
+      "url": "article-daily-pilule-20261027.html",
+      "date": "2026-10-27",
+      "format": "article",
+      "category": "Actualité santé",
+      "title": "Tous les antibiotiques rendent-ils la pilule inefficace ?",
+      "answer": "FAUX, à nuancer. La rifampicine et la rifabutine constituent des exceptions ; vomissements et diarrhées importantes peuvent aussi réduire l’absorption.",
+      "html": "<article><h1>Tous les antibiotiques rendent-ils la pilule inefficace ?</h1><p><strong>Réponse courte.</strong> FAUX, à nuancer. La rifampicine et la rifabutine constituent des exceptions ; vomissements et diarrhées importantes peuvent aussi réduire l’absorption.</p><p>Ces informations sont générales et ne remplacent pas une consultation adaptée à la situation individuelle.</p><p><a href=\"https://www.nhs.uk/contraception/combined-pill/taking-the-combined-pill-with-other-medicines/\">Référence</a></p></article>",
+      "theme": "VRAI OU FAUX",
+      "keywords": [
+        "pilule"
+      ],
+      "sources": [
+        {
+          "label": "Référence",
+          "url": "https://www.nhs.uk/contraception/combined-pill/taking-the-combined-pill-with-other-medicines/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-27T13:24:00+01:00",
+        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine.",
+        "contentHash": "dd47e6cb62006af876c663254aaaf76fce23feba0a9662863f1a31c188d82f87"
+      }
+    },
+    {
+      "id": "daily-chaleur-20261027",
+      "url": "article-daily-chaleur-20261027.html",
+      "date": "2026-10-27",
+      "format": "article",
+      "category": "Actualité santé",
+      "title": "Chaleur : 52 décès supplémentaires par million d’habitants",
+      "answer": "Estimation moyenne européenne de l’augmentation annuelle des décès liés à la chaleur en 2015–2024 par rapport à 1991–2000 ; variations importantes selon les pays.",
+      "html": "<article><h1>Chaleur : 52 décès supplémentaires par million d’habitants</h1><p><strong>Réponse courte.</strong> Estimation moyenne européenne de l’augmentation annuelle des décès liés à la chaleur en 2015–2024 par rapport à 1991–2000 ; variations importantes selon les pays.</p><p>Ces informations sont générales et ne remplacent pas une consultation adaptée à la situation individuelle.</p><p><a href=\"https://www.thelancet.com/\">Référence</a></p></article>",
+      "theme": "LE CHIFFRE DU JOUR",
+      "keywords": [
+        "chaleur"
+      ],
+      "sources": [
+        {
+          "label": "Référence",
+          "url": "https://www.thelancet.com/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-27T13:24:00+01:00",
+        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine.",
+        "contentHash": "ae32ce5b7896f165656265ed26265c5554392f0c71d46816eb511a3b8a843875"
+      }
+    },
+    {
+      "id": "daily-mayotte-20261027",
+      "url": "article-daily-mayotte-20261027.html",
+      "date": "2026-10-27",
+      "format": "article",
+      "category": "Actualité santé",
+      "title": "Grippe à Mayotte : vigilance épidémique",
+      "answer": "La surveillance sanitaire rapporte une circulation active de la grippe à Mayotte.",
+      "html": "<article><h1>Grippe à Mayotte : vigilance épidémique</h1><p><strong>Réponse courte.</strong> La surveillance sanitaire rapporte une circulation active de la grippe à Mayotte.</p><p>Ces informations sont générales et ne remplacent pas une consultation adaptée à la situation individuelle.</p><p><a href=\"https://www.santepubliquefrance.fr/\">Référence</a></p></article>",
+      "theme": "DONNÉES",
+      "keywords": [
+        "mayotte"
+      ],
+      "sources": [
+        {
+          "label": "Référence",
+          "url": "https://www.santepubliquefrance.fr/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-27T13:24:00+01:00",
+        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine.",
+        "contentHash": "9e7ff06f576b6395d22b86008002aad5a23b9adc1bbe7f5db5bada138a68f11b"
+      }
+    },
+    {
+      "id": "daily-mollet-20261027",
+      "url": "article-daily-mollet-20261027.html",
+      "date": "2026-10-27",
+      "format": "article",
+      "category": "Actualité santé",
+      "title": "Tour de mollet et chutes : un marqueur associé",
+      "answer": "Une étude observationnelle associe la diminution du tour de mollet à une augmentation des chutes ; elle ne démontre pas un lien causal.",
+      "html": "<article><h1>Tour de mollet et chutes : un marqueur associé</h1><p><strong>Réponse courte.</strong> Une étude observationnelle associe la diminution du tour de mollet à une augmentation des chutes ; elle ne démontre pas un lien causal.</p><p>Ces informations sont générales et ne remplacent pas une consultation adaptée à la situation individuelle.</p><p><a href=\"https://jamanetwork.com/\">Référence</a></p></article>",
+      "theme": "DONNÉES",
+      "keywords": [
+        "mollet"
+      ],
+      "sources": [
+        {
+          "label": "Référence",
+          "url": "https://jamanetwork.com/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-27T13:24:00+01:00",
+        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine.",
+        "contentHash": "522b1ae9a4d8fe374754fed1507baa80964eba762c528547cb3aeb6bec8d11b2"
+      }
+    },
+    {
+      "id": "daily-readaptation-20261027",
+      "url": "article-daily-readaptation-20261027.html",
+      "date": "2026-10-27",
+      "format": "article",
+      "category": "Actualité santé",
+      "title": "Réadaptation cardiaque : un soin sous-utilisé",
+      "answer": "Les recommandations européennes rappellent les bénéfices de la réadaptation cardiaque pour les capacités physiques et la qualité de vie.",
+      "html": "<article><h1>Réadaptation cardiaque : un soin sous-utilisé</h1><p><strong>Réponse courte.</strong> Les recommandations européennes rappellent les bénéfices de la réadaptation cardiaque pour les capacités physiques et la qualité de vie.</p><p>Ces informations sont générales et ne remplacent pas une consultation adaptée à la situation individuelle.</p><p><a href=\"https://www.escardio.org/\">Référence</a></p></article>",
+      "theme": "DONNÉES",
+      "keywords": [
+        "readaptation"
+      ],
+      "sources": [
+        {
+          "label": "Référence",
+          "url": "https://www.escardio.org/"
+        }
+      ],
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-27T13:24:00+01:00",
+        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine.",
+        "contentHash": "db97238106ca0a941a501fee6f2651ef44187c6210455e62f125b1819f3e74db"
+      }
     }
   ],
   "editions": [
@@ -6852,6 +7152,69 @@
         "validation": "Dr Romain BEDDOK, validation explicite et autorisation de mise en ligne le 26 octobre 2026.",
         "veille": "Hypertension et exercice ; lombalgie et opioïdes ; IA préparatoire ; écrans et enfants ; essai OPTIMA.",
         "corpusImpact": "Fiche HTA existante enrichie ; aucune nouvelle fiche créée."
+      }
+    },
+    {
+      "id": "edition-2026-10-27",
+      "date": "2026-10-27",
+      "publishAt": "2026-10-27T13:24:00+01:00",
+      "complete": true,
+      "items": [
+        {
+          "contentId": "daily-marche-20261027",
+          "slot": "À LA UNE",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-typhoide-20261027",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-psilocybine-20261027",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-grippe-20261027",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-constipation-20261027",
+          "slot": "FICHE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-pilule-20261027",
+          "slot": "VRAI OU FAUX",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-chaleur-20261027",
+          "slot": "LE CHIFFRE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-mayotte-20261027",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-mollet-20261027",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-readaptation-20261027",
+          "slot": "DONNÉES",
+          "icon": "•"
+        }
+      ],
+      "editorialConference": {
+        "validation": "Validation explicite du 27 octobre 2026.",
+        "veille": "Marche rapide, typhoïde, psilocybine, grippe.",
+        "corpusImpact": "Marche et grippe : actualiser-fusionner ; typhoïde et psilocybine : candidats fiches."
       }
     }
   ]
