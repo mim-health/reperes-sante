@@ -159,5 +159,19 @@
     "url": "article-daily-don-rein-grossesse-20261025.html",
     "existingFicheId": null,
     "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-typhoide-20261027",
+    "title": "Fièvre typhoïde après un voyage : pourquoi l’antibiogramme est indispensable",
+    "url": "article-daily-typhoide-20261027.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-psilocybine-20261027",
+    "title": "Psilocybine : les médias promettent-ils davantage que les essais cliniques ?",
+    "url": "article-daily-psilocybine-20261027.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
   }
 ]

@@ -1,12 +1,90 @@
 {
   "schemaVersion": 1,
-  "editionId": "edition-2026-10-26",
-  "editionDate": "2026-10-26",
-  "sourceFingerprint": "ccad8e3600695d414a0e1394556569340076eba77f1b61f29f98cb719685a545",
-  "missingEdition": true,
+  "editionId": "edition-2026-10-27",
+  "editionDate": "2026-10-27",
+  "sourceFingerprint": "daf8cddf5ce3ec30bd517f9bf6141bfa547270204f427b4b4a75feb14ab2a264",
+  "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-daily-marche-20261027",
+      "version": "eb295b7febed8ab3330e8779d79f5dc54d3d619aca7dd090f136a001a8131d75",
+      "url": "article-daily-marche-20261027.html",
+      "date": "2026-10-27"
+    },
+    {
+      "id": "mag-daily-typhoide-20261027",
+      "version": "149fa314539325f71996c1c0f5f900015a5a9d35bb26820b1ce0ce31c90e1d35",
+      "url": "article-daily-typhoide-20261027.html",
+      "date": "2026-10-27"
+    },
+    {
+      "id": "mag-daily-psilocybine-20261027",
+      "version": "68800ed72f3529eafebe959e51f9e8b699c6102e2e6448d7d3bb6714a12031a9",
+      "url": "article-daily-psilocybine-20261027.html",
+      "date": "2026-10-27"
+    },
+    {
+      "id": "mag-daily-grippe-20261027",
+      "version": "2673adb25a1b65d183ad4e4b52facf446b04b727c150d978162505fc381e39f7",
+      "url": "article-daily-grippe-20261027.html",
+      "date": "2026-10-27"
+    },
+    {
+      "id": "mag-daily-constipation-20261027",
+      "version": "aeacf2b3b833def48d29c6cefc54a96844131307fd25013cb28be8f68a8e2959",
+      "url": "article-daily-constipation-20261027.html",
+      "date": "2026-10-27"
+    },
+    {
+      "id": "mag-daily-pilule-20261027",
+      "version": "dd47e6cb62006af876c663254aaaf76fce23feba0a9662863f1a31c188d82f87",
+      "url": "article-daily-pilule-20261027.html",
+      "date": "2026-10-27"
+    },
+    {
+      "id": "mag-daily-chaleur-20261027",
+      "version": "ae32ce5b7896f165656265ed26265c5554392f0c71d46816eb511a3b8a843875",
+      "url": "article-daily-chaleur-20261027.html",
+      "date": "2026-10-27"
+    },
+    {
+      "id": "mag-daily-mayotte-20261027",
+      "version": "9e7ff06f576b6395d22b86008002aad5a23b9adc1bbe7f5db5bada138a68f11b",
+      "url": "article-daily-mayotte-20261027.html",
+      "date": "2026-10-27"
+    },
+    {
+      "id": "mag-daily-mollet-20261027",
+      "version": "522b1ae9a4d8fe374754fed1507baa80964eba762c528547cb3aeb6bec8d11b2",
+      "url": "article-daily-mollet-20261027.html",
+      "date": "2026-10-27"
+    },
+    {
+      "id": "mag-daily-readaptation-20261027",
+      "version": "db97238106ca0a941a501fee6f2651ef44187c6210455e62f125b1819f3e74db",
+      "url": "article-daily-readaptation-20261027.html",
+      "date": "2026-10-27"
+    },
+    {
+      "id": "mag-radar-moio-immunotherapie-20261027",
+      "version": "daf3ab512e354b58a0dc9a4e59782658943553da792e2e25e8088b02ee1be18b",
+      "url": "article-immunotherapie-espacer-moio.html",
+      "date": "2026-10-27"
+    },
+    {
+      "id": "mag-radar-endometre-keynote-c93-20261027",
+      "version": "e0bbbd2c1564e808563238211f2c34b8ce281dcaca3789bc7635606d02c8f488",
+      "url": "article-endometre-immunotherapie-keynote-c93.html",
+      "date": "2026-10-27"
+    },
+    {
+      "id": "mag-radar-endometre-trofuse-005-20261027",
+      "version": "fae58f7e51da1bcdbd48916d112e630395061f0996d27c036f538b0504c1e855",
+      "url": "article-endometre-trofuse-005.html",
+      "date": "2026-10-27"
+    },
     {
       "id": "mag-daily-hypertension-sport-20261026",
       "version": "5712392be5ed7bbaec542e34f12f8f15700a5f23631e6b25b64a81ac87ac5019",
@@ -777,7 +855,7 @@
     },
     {
       "id": "mag-daily-anticoagulants-20261011",
-      "version": "6f105c5644ae36f247e72150103cca63c1290b27d7e6d849cf6414095c058070",
+      "version": "dfaacf02268c2b53b1c272cb837dd79bbc924b57a8af7f6383e2cdf17c45cbfe",
       "url": "mag-daily-anticoagulants-20261011.html",
       "date": "2026-10-11"
     },

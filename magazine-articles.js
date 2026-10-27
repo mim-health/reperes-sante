@@ -360,16 +360,19 @@ window.MACA_MAGAZINE_ARTICLES=[
     "theme": "Cœur & circulation",
     "date": "2026-10-11",
     "status": "PUBLISHED",
-    "excerpt": "Chez des résidents dépendants ayant une fibrillation atriale, une étude observationnelle associe les anticoagulants à moins d’AVC ischémiques, mais davantage de saignements majeurs. La décision reste individualisée.",
-    "image": "",
-    "imageAlt": "",
+    "excerpt": "Chez une personne âgée vivant en institution, un anticoagulant peut protéger contre un AVC tout en augmentant le risque de saignement. Deux études récentes éclairent cette balance, sans fournir une réponse identique pour tous les résidents.",
+    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "imageAlt": "Échange entre médecin et patient autour d’un document.",
     "keywords": [
-      "CARDIOLOGIE",
-      "Anticoagulants en institution : un bénéfice et un risque à mettre en balance"
+      "anticoagulants",
+      "institution",
+      "EHPAD",
+      "fibrillation atriale",
+      "arrêt"
     ],
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
-    "version": "6f105c5644ae36f247e72150103cca63c1290b27d7e6d849cf6414095c058070"
+    "version": "dfaacf02268c2b53b1c272cb837dd79bbc924b57a8af7f6383e2cdf17c45cbfe"
   },
   {
     "id": "daily-schizophrenie-20261011",
@@ -3129,5 +3132,261 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "b4f55c31d85cfe7635baf19cb19dda3e41433b2f803208ea31aa07f9ee20ea57"
+  },
+  {
+    "id": "daily-marche-20261027",
+    "url": "article-daily-marche-20261027.html",
+    "title": "Marche rapide : faut-il accélérer le pas pour vivre plus longtemps ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "À LA UNE",
+    "date": "2026-10-27",
+    "status": "PUBLISHED",
+    "excerpt": "La vitesse de marche est associée à la santé dans des études observationnelles, mais marcher plus vite ne garantit pas une vie plus longue.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "marche"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "eb295b7febed8ab3330e8779d79f5dc54d3d619aca7dd090f136a001a8131d75"
+  },
+  {
+    "id": "daily-typhoide-20261027",
+    "url": "article-daily-typhoide-20261027.html",
+    "title": "Fièvre typhoïde après un voyage : pourquoi l’antibiogramme est indispensable",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "À LIRE EN 3 MIN",
+    "date": "2026-10-27",
+    "status": "PUBLISHED",
+    "excerpt": "Une étude américaine rapporte des résistances fréquentes à certains antibiotiques. Avant le voyage, prévention et vaccination adaptée ; en cas de fièvre au retour, consultation rapide.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "typhoide"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "149fa314539325f71996c1c0f5f900015a5a9d35bb26820b1ce0ce31c90e1d35"
+  },
+  {
+    "id": "daily-psilocybine-20261027",
+    "url": "article-daily-psilocybine-20261027.html",
+    "title": "Psilocybine : les médias promettent-ils davantage que les essais cliniques ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "À LIRE EN 3 MIN",
+    "date": "2026-10-27",
+    "status": "PUBLISHED",
+    "excerpt": "Les recherches sont prometteuses dans certaines indications, mais les essais sont souvent de petite taille. Ne pas confondre résultats préliminaires et traitement établi.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "psilocybine"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "68800ed72f3529eafebe959e51f9e8b699c6102e2e6448d7d3bb6714a12031a9"
+  },
+  {
+    "id": "daily-grippe-20261027",
+    "url": "article-daily-grippe-20261027.html",
+    "title": "Grippe 2026–2027 : pourquoi faut-il se revacciner cette année ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "À LIRE EN 3 MIN",
+    "date": "2026-10-27",
+    "status": "PUBLISHED",
+    "excerpt": "La composition des vaccins est adaptée à l’évolution des virus. Une vaccination annuelle reste recommandée, particulièrement chez les personnes à risque.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "grippe"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "2673adb25a1b65d183ad4e4b52facf446b04b727c150d978162505fc381e39f7"
+  },
+  {
+    "id": "daily-constipation-20261027",
+    "url": "article-daily-constipation-20261027.html",
+    "title": "Constipation de l’adulte : les gestes utiles",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "FICHE DU JOUR",
+    "date": "2026-10-27",
+    "status": "PUBLISHED",
+    "excerpt": "Fibres progressivement, activité physique et hydratation adaptée peuvent aider. Consulter en cas de signes d’alerte.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "constipation"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "aeacf2b3b833def48d29c6cefc54a96844131307fd25013cb28be8f68a8e2959"
+  },
+  {
+    "id": "daily-pilule-20261027",
+    "url": "article-daily-pilule-20261027.html",
+    "title": "Tous les antibiotiques rendent-ils la pilule inefficace ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "VRAI OU FAUX",
+    "date": "2026-10-27",
+    "status": "PUBLISHED",
+    "excerpt": "FAUX, à nuancer. La rifampicine et la rifabutine constituent des exceptions ; vomissements et diarrhées importantes peuvent aussi réduire l’absorption.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "pilule"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "dd47e6cb62006af876c663254aaaf76fce23feba0a9662863f1a31c188d82f87"
+  },
+  {
+    "id": "daily-chaleur-20261027",
+    "url": "article-daily-chaleur-20261027.html",
+    "title": "Chaleur : 52 décès supplémentaires par million d’habitants",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "LE CHIFFRE DU JOUR",
+    "date": "2026-10-27",
+    "status": "PUBLISHED",
+    "excerpt": "Estimation moyenne européenne de l’augmentation annuelle des décès liés à la chaleur en 2015–2024 par rapport à 1991–2000 ; variations importantes selon les pays.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "chaleur"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "ae32ce5b7896f165656265ed26265c5554392f0c71d46816eb511a3b8a843875"
+  },
+  {
+    "id": "daily-mayotte-20261027",
+    "url": "article-daily-mayotte-20261027.html",
+    "title": "Grippe à Mayotte : vigilance épidémique",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "DONNÉES",
+    "date": "2026-10-27",
+    "status": "PUBLISHED",
+    "excerpt": "La surveillance sanitaire rapporte une circulation active de la grippe à Mayotte.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "mayotte"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "9e7ff06f576b6395d22b86008002aad5a23b9adc1bbe7f5db5bada138a68f11b"
+  },
+  {
+    "id": "daily-mollet-20261027",
+    "url": "article-daily-mollet-20261027.html",
+    "title": "Tour de mollet et chutes : un marqueur associé",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "DONNÉES",
+    "date": "2026-10-27",
+    "status": "PUBLISHED",
+    "excerpt": "Une étude observationnelle associe la diminution du tour de mollet à une augmentation des chutes ; elle ne démontre pas un lien causal.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "mollet"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "522b1ae9a4d8fe374754fed1507baa80964eba762c528547cb3aeb6bec8d11b2"
+  },
+  {
+    "id": "daily-readaptation-20261027",
+    "url": "article-daily-readaptation-20261027.html",
+    "title": "Réadaptation cardiaque : un soin sous-utilisé",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "DONNÉES",
+    "date": "2026-10-27",
+    "status": "PUBLISHED",
+    "excerpt": "Les recommandations européennes rappellent les bénéfices de la réadaptation cardiaque pour les capacités physiques et la qualité de vie.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "readaptation"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "db97238106ca0a941a501fee6f2651ef44187c6210455e62f125b1819f3e74db"
+  },
+  {
+    "id": "radar-moio-immunotherapie-20261027",
+    "url": "article-immunotherapie-espacer-moio.html",
+    "title": "Cancer : peut-on espacer les immunothérapies lorsque le traitement fonctionne ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Cancer",
+    "date": "2026-10-27",
+    "status": "PUBLISHED",
+    "excerpt": "Moins de déplacements à l’hôpital, davantage de temps pour soi : espacer un traitement efficace serait un progrès. Encore faut-il vérifier que son bénéfice est préservé. Les premiers résultats français de MOIO invitent à la prudence.",
+    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "imageAlt": "Échange entre médecin et patient autour d’un document.",
+    "keywords": [
+      "immunothérapie",
+      "espacement",
+      "MOIO",
+      "douze semaines"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "cancer-immunotherapie-comment-ca-marche",
+    "version": "daf3ab512e354b58a0dc9a4e59782658943553da792e2e25e8088b02ee1be18b"
+  },
+  {
+    "id": "radar-endometre-keynote-c93-20261027",
+    "url": "article-endometre-immunotherapie-keynote-c93.html",
+    "title": "Cancer de l’endomètre : peut-on parfois éviter une chimiothérapie initiale ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Cancer",
+    "date": "2026-10-27",
+    "status": "PUBLISHED",
+    "excerpt": "Une immunothérapie seule améliore le temps sans progression dans un essai récent portant sur certaines tumeurs avancées ou récidivantes. Ce résultat ouvre une discussion sur l’allègement des traitements, sans s’appliquer à tous les cancers de l’utérus.",
+    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "imageAlt": "Échange entre médecin et patient autour d’un document.",
+    "keywords": [
+      "endomètre",
+      "dMMR",
+      "KEYNOTE-C93",
+      "pembrolizumab"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "e0bbbd2c1564e808563238211f2c34b8ce281dcaca3789bc7635606d02c8f488"
+  },
+  {
+    "id": "radar-endometre-trofuse-005-20261027",
+    "url": "article-endometre-trofuse-005.html",
+    "title": "Cancer de l’endomètre avancé : quelles nouvelles options après les premiers traitements ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Cancer",
+    "date": "2026-10-27",
+    "status": "PUBLISHED",
+    "excerpt": "Lorsqu’un cancer progresse malgré une chimiothérapie et une immunothérapie, la recherche vise à proposer d’autres options. TroFuse-005 rapporte un gain de survie avec un médicament expérimental, au prix de davantage d’effets indésirables importants.",
+    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "imageAlt": "Échange entre médecin et patient autour d’un document.",
+    "keywords": [
+      "endomètre",
+      "TroFuse-005",
+      "sacituzumab tirumotecan",
+      "après immunothérapie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "fae58f7e51da1bcdbd48916d112e630395061f0996d27c036f538b0504c1e855"
   }
 ];

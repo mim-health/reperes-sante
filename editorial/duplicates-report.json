@@ -230,19 +230,6 @@
     },
     {
       "left": {
-        "id": "dmla-depistage-apres-50-ans",
-        "title": "Après 50 ans, faut-il faire dépister la DMLA ?",
-        "type": "fiche"
-      },
-      "right": {
-        "id": "glaucome-depistage-apres-40",
-        "title": "Après 40 ans, faut-il faire dépister le glaucome ?",
-        "type": "fiche"
-      },
-      "score": 0.67
-    },
-    {
-      "left": {
         "id": "nycturie-prostate",
         "title": "Je me lève plusieurs fois la nuit pour uriner : est-ce la prostate ?",
         "type": "fiche"
@@ -568,9 +555,9 @@
     }
   ],
   "counts": {
-    "manifestFiles": 149,
-    "rawFiches": 439,
-    "canonicalFiches": 413,
-    "magContents": 167
+    "manifestFiles": 150,
+    "rawFiches": 440,
+    "canonicalFiches": 414,
+    "magContents": 180
   }
 }
