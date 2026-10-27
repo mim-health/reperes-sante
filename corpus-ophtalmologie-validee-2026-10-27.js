@@ -4,7 +4,7 @@ const cards=[
   {
     "id": "glaucome-depistage-apres-40",
     "title": "Glaucome : peut-on perdre la vue sans s’en rendre compte ?",
-    "keywords": "glaucome pression intraoculaire angle ouvert angle fermé dépistage nerf optique champ visuel OCT collyre",
+    "keywords": "glaucome pression intraoculaire angle ouvert angle fermé dépistage nerf optique champ visuel OCT collyre dépistage glaucome après 40 ans",
     "urls": [
       [
         "NICE — Glaucoma NG81",
