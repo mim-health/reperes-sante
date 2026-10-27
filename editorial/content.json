@@ -6074,7 +6074,7 @@
       "category": "Actualité santé",
       "title": "Marche rapide : faut-il accélérer le pas pour vivre plus longtemps ?",
       "answer": "La vitesse de marche est associée à la santé dans des études observationnelles, mais marcher plus vite ne garantit pas une vie plus longue.",
-      "html": "<article><h1>Marche rapide : faut-il accélérer le pas pour vivre plus longtemps ?</h1><p><strong>Réponse courte.</strong> La vitesse de marche est associée à la santé dans des études observationnelles, mais marcher plus vite ne garantit pas une vie plus longue.</p><p>Ces informations sont générales et ne remplacent pas une consultation adaptée à la situation individuelle.</p><p><a href=\"https://doi.org/10.1001/jamanetworkopen.2026.40122\">Référence</a></p></article>",
+      "html": "<article><h1>Marche rapide : faut-il accélérer le pas pour vivre plus longtemps ?</h1><p><strong>Réponse courte.</strong> La vitesse de marche est associée à la santé dans des études observationnelles, mais marcher plus vite ne garantit pas une vie plus longue.</p><h2>Comprendre</h2><p>La vitesse de marche et la cadence ne sont pas la même mesure : la première est une distance par unité de temps, la seconde un nombre de pas par minute.</p><h2>Ce que l'on sait</h2><p>Les études observationnelles associent souvent une marche plus rapide à un meilleur état de santé et à une mortalité moindre. Elles ne prouvent pas que forcer son allure prolonge la vie : l'âge, les maladies et la condition physique jouent aussi un rôle.</p><h2>En pratique</h2><p>Pour bouger davantage, alterner marche confortable et périodes un peu plus soutenues peut être utile. Une intensité modérée permet encore de parler, même si la respiration s'accélère. Augmenter progressivement et adapter l'effort à ses capacités.</p><h2>Limites et précautions</h2><p>Marcher lentement reste bénéfique. Une baisse récente et inexpliquée de la capacité à marcher mérite un avis médical. Il n'existe pas de vitesse universelle garantissant la longévité.</p><h2>Source</h2><p><a href=\"https://doi.org/10.1001/jamanetworkopen.2026.40122\">Consulter la référence</a></p></article>",
       "theme": "À LA UNE",
       "keywords": [
         "marche"
@@ -6092,8 +6092,8 @@
       "validation": {
         "validator": "Dr Romain BEDDOK",
         "validatedAt": "2026-10-27T13:24:00+01:00",
-        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine.",
-        "contentHash": "eb295b7febed8ab3330e8779d79f5dc54d3d619aca7dd090f136a001a8131d75"
+        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine. Correction des textes abrégés demandée explicitement le 27 octobre 2026.",
+        "contentHash": "3f4f152e05ff2c0c047bf6a8b3782e24b7a7b946b7b778ca226415645dd8d7a3"
       }
     },
     {
@@ -6104,7 +6104,7 @@
       "category": "Actualité santé",
       "title": "Fièvre typhoïde après un voyage : pourquoi l’antibiogramme est indispensable",
       "answer": "Une étude américaine rapporte des résistances fréquentes à certains antibiotiques. Avant le voyage, prévention et vaccination adaptée ; en cas de fièvre au retour, consultation rapide.",
-      "html": "<article><h1>Fièvre typhoïde après un voyage : pourquoi l’antibiogramme est indispensable</h1><p><strong>Réponse courte.</strong> Une étude américaine rapporte des résistances fréquentes à certains antibiotiques. Avant le voyage, prévention et vaccination adaptée ; en cas de fièvre au retour, consultation rapide.</p><p>Ces informations sont générales et ne remplacent pas une consultation adaptée à la situation individuelle.</p><p><a href=\"https://doi.org/10.1001/jamanetworkopen.2026.40971\">Référence</a></p></article>",
+      "html": "<article><h1>Fièvre typhoïde après un voyage : pourquoi l’antibiogramme est indispensable</h1><p><strong>Réponse courte.</strong> Une étude américaine rapporte des résistances fréquentes à certains antibiotiques. Avant le voyage, prévention et vaccination adaptée ; en cas de fièvre au retour, consultation rapide.</p><h2>Comprendre</h2><p>La fièvre typhoïde est une infection bactérienne transmise notamment par l'eau ou les aliments contaminés. Elle peut provoquer une fièvre prolongée et des troubles digestifs, particulièrement après un voyage dans une région d'endémie.</p><h2>Ce que l'on sait</h2><p>Une étude américaine de cas diagnostiqués entre 2016 et 2020 rapporte une fréquence élevée de résistance ou de sensibilité diminuée à la ciprofloxacine. Des résistances à la ceftriaxone ont également été observées.</p><h2>En pratique</h2><p>Avant un voyage, se renseigner sur la vaccination et les précautions alimentaires. Une fièvre au retour doit conduire à consulter en précisant les destinations visitées. Le choix de l'antibiotique dépend du contexte et, lorsque possible, des résultats microbiologiques.</p><h2>Limites et précautions</h2><p>Ces résultats américains anciens ne décrivent pas toutes les résistances dans chaque pays en 2026. Éviter l'automédication antibiotique.</p><h2>Source</h2><p><a href=\"https://doi.org/10.1001/jamanetworkopen.2026.40971\">Consulter la référence</a></p></article>",
       "theme": "À LIRE EN 3 MIN",
       "keywords": [
         "typhoide"
@@ -6122,8 +6122,8 @@
       "validation": {
         "validator": "Dr Romain BEDDOK",
         "validatedAt": "2026-10-27T13:24:00+01:00",
-        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine.",
-        "contentHash": "149fa314539325f71996c1c0f5f900015a5a9d35bb26820b1ce0ce31c90e1d35"
+        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine. Correction des textes abrégés demandée explicitement le 27 octobre 2026.",
+        "contentHash": "0057ddf79b65f4d3c92969f82bd8010d4e3f62ec7cdad4d977fa7d0e958d7c14"
       }
     },
     {
@@ -6134,7 +6134,7 @@
       "category": "Actualité santé",
       "title": "Psilocybine : les médias promettent-ils davantage que les essais cliniques ?",
       "answer": "Les recherches sont prometteuses dans certaines indications, mais les essais sont souvent de petite taille. Ne pas confondre résultats préliminaires et traitement établi.",
-      "html": "<article><h1>Psilocybine : les médias promettent-ils davantage que les essais cliniques ?</h1><p><strong>Réponse courte.</strong> Les recherches sont prometteuses dans certaines indications, mais les essais sont souvent de petite taille. Ne pas confondre résultats préliminaires et traitement établi.</p><p>Ces informations sont générales et ne remplacent pas une consultation adaptée à la situation individuelle.</p><p><a href=\"https://doi.org/10.1001/jamanetworkopen.2026.38843\">Référence</a></p></article>",
+      "html": "<article><h1>Psilocybine : les médias promettent-ils davantage que les essais cliniques ?</h1><p><strong>Réponse courte.</strong> Les recherches sont prometteuses dans certaines indications, mais les essais sont souvent de petite taille. Ne pas confondre résultats préliminaires et traitement établi.</p><h2>Comprendre</h2><p>La psilocybine est étudiée dans des protocoles cliniques encadrés, notamment en psychiatrie. Les participants y sont sélectionnés, préparés et suivis par des équipes spécialisées.</p><h2>Ce que l'on sait</h2><p>Une revue systématique publiée en octobre 2026 a comparé 70 essais cliniques à 172 articles de presse. Une grande partie des essais avaient de petits effectifs et peu de recul sur la sécurité, tandis que les présentations médiatiques étaient fréquemment positives.</p><h2>En pratique</h2><p>Ces données ne démontrent ni l'inefficacité de la psilocybine ni son efficacité comme traitement standard. Les bénéfices durables, les comparateurs, les risques et la sélection des patients nécessitent des études robustes.</p><h2>Limites et précautions</h2><p>Une consommation non supervisée n'est pas équivalente à un protocole de recherche. Ne jamais interrompre un traitement prescrit en se fondant sur des annonces médiatiques.</p><h2>Source</h2><p><a href=\"https://doi.org/10.1001/jamanetworkopen.2026.38843\">Consulter la référence</a></p></article>",
       "theme": "À LIRE EN 3 MIN",
       "keywords": [
         "psilocybine"
@@ -6152,8 +6152,8 @@
       "validation": {
         "validator": "Dr Romain BEDDOK",
         "validatedAt": "2026-10-27T13:24:00+01:00",
-        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine.",
-        "contentHash": "68800ed72f3529eafebe959e51f9e8b699c6102e2e6448d7d3bb6714a12031a9"
+        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine. Correction des textes abrégés demandée explicitement le 27 octobre 2026.",
+        "contentHash": "6b7377d519de88549c935c6ada85154080882a85205d78d3ec686635d7050844"
       }
     },
     {
@@ -6164,7 +6164,7 @@
       "category": "Actualité santé",
       "title": "Grippe 2026–2027 : pourquoi faut-il se revacciner cette année ?",
       "answer": "La composition des vaccins est adaptée à l’évolution des virus. Une vaccination annuelle reste recommandée, particulièrement chez les personnes à risque.",
-      "html": "<article><h1>Grippe 2026–2027 : pourquoi faut-il se revacciner cette année ?</h1><p><strong>Réponse courte.</strong> La composition des vaccins est adaptée à l’évolution des virus. Une vaccination annuelle reste recommandée, particulièrement chez les personnes à risque.</p><p>Ces informations sont générales et ne remplacent pas une consultation adaptée à la situation individuelle.</p><p><a href=\"https://www.who.int/europe\">Référence</a></p></article>",
+      "html": "<article><h1>Grippe 2026–2027 : pourquoi faut-il se revacciner cette année ?</h1><p><strong>Réponse courte.</strong> La composition des vaccins est adaptée à l’évolution des virus. Une vaccination annuelle reste recommandée, particulièrement chez les personnes à risque.</p><h2>Comprendre</h2><p>Les virus grippaux évoluent et la composition des vaccins est révisée régulièrement pour correspondre aux souches attendues. La protection peut aussi diminuer avec le temps.</p><h2>Ce que l'on sait</h2><p>La vaccination annuelle vise particulièrement les personnes âgées, les femmes enceintes, les personnes atteintes de certaines maladies chroniques et les autres groupes définis par les recommandations françaises.</p><h2>En pratique</h2><p>Le vaccin ne prévient pas toutes les infections, mais contribue à réduire les complications et les formes graves. Aération, hygiène des mains et précautions lorsqu'on est malade restent complémentaires.</p><h2>Limites et précautions</h2><p>L'efficacité varie selon les saisons et les personnes. Les indications pratiques doivent être vérifiées dans le calendrier vaccinal français en vigueur.</p><h2>Source</h2><p><a href=\"https://www.who.int/europe\">Consulter la référence</a></p></article>",
       "theme": "À LIRE EN 3 MIN",
       "keywords": [
         "grippe"
@@ -6182,8 +6182,8 @@
       "validation": {
         "validator": "Dr Romain BEDDOK",
         "validatedAt": "2026-10-27T13:24:00+01:00",
-        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine.",
-        "contentHash": "2673adb25a1b65d183ad4e4b52facf446b04b727c150d978162505fc381e39f7"
+        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine. Correction des textes abrégés demandée explicitement le 27 octobre 2026.",
+        "contentHash": "86e2bc3c393bb06f4b4315bfb1f8b451b66dc42bc122b56081e6469321ae14aa"
       }
     },
     {
@@ -6194,7 +6194,7 @@
       "category": "Actualité santé",
       "title": "Constipation de l’adulte : les gestes utiles",
       "answer": "Fibres progressivement, activité physique et hydratation adaptée peuvent aider. Consulter en cas de signes d’alerte.",
-      "html": "<article><h1>Constipation de l’adulte : les gestes utiles</h1><p><strong>Réponse courte.</strong> Fibres progressivement, activité physique et hydratation adaptée peuvent aider. Consulter en cas de signes d’alerte.</p><p>Ces informations sont générales et ne remplacent pas une consultation adaptée à la situation individuelle.</p><p><a href=\"https://www.ameli.fr/assure/sante/themes/constipation-adulte\">Référence</a></p></article>",
+      "html": "<article><h1>Constipation de l’adulte : les gestes utiles</h1><p><strong>Réponse courte.</strong> Fibres progressivement, activité physique et hydratation adaptée peuvent aider. Consulter en cas de signes d’alerte.</p><h2>Comprendre</h2><p>La constipation peut se manifester par des selles difficiles à évacuer, moins fréquentes ou dures. Augmenter progressivement les fibres, conserver une activité physique et boire selon ses besoins peuvent aider.</p><h2>Ce que l'on sait</h2><p>Il est utile de respecter l'envie d'aller aux toilettes et de prendre le temps nécessaire. Une augmentation brutale des fibres peut provoquer des ballonnements.</p><h2>En pratique</h2><p>Si les mesures simples ne suffisent pas, un professionnel peut conseiller un laxatif adapté. Certains médicaments favorisent la constipation : leur revue peut être utile.</p><h2>Limites et précautions</h2><p>Douleur abdominale importante, vomissements, arrêt des gaz, saignement ou altération de l'état général justifient un avis rapide. Une modification persistante du transit doit être évaluée.</p><h2>Source</h2><p><a href=\"https://www.ameli.fr/assure/sante/themes/constipation-adulte\">Consulter la référence</a></p></article>",
       "theme": "FICHE DU JOUR",
       "keywords": [
         "constipation"
@@ -6212,8 +6212,8 @@
       "validation": {
         "validator": "Dr Romain BEDDOK",
         "validatedAt": "2026-10-27T13:24:00+01:00",
-        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine.",
-        "contentHash": "aeacf2b3b833def48d29c6cefc54a96844131307fd25013cb28be8f68a8e2959"
+        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine. Correction des textes abrégés demandée explicitement le 27 octobre 2026.",
+        "contentHash": "51610ffbf81b84025f81e742c9b83fa5159aa1c49502a2302e4dad2bc78eadf5"
       }
     },
     {
@@ -6224,7 +6224,7 @@
       "category": "Actualité santé",
       "title": "Tous les antibiotiques rendent-ils la pilule inefficace ?",
       "answer": "FAUX, à nuancer. La rifampicine et la rifabutine constituent des exceptions ; vomissements et diarrhées importantes peuvent aussi réduire l’absorption.",
-      "html": "<article><h1>Tous les antibiotiques rendent-ils la pilule inefficace ?</h1><p><strong>Réponse courte.</strong> FAUX, à nuancer. La rifampicine et la rifabutine constituent des exceptions ; vomissements et diarrhées importantes peuvent aussi réduire l’absorption.</p><p>Ces informations sont générales et ne remplacent pas une consultation adaptée à la situation individuelle.</p><p><a href=\"https://www.nhs.uk/contraception/combined-pill/taking-the-combined-pill-with-other-medicines/\">Référence</a></p></article>",
+      "html": "<article><h1>Tous les antibiotiques rendent-ils la pilule inefficace ?</h1><p><strong>Réponse courte.</strong> FAUX, à nuancer. La rifampicine et la rifabutine constituent des exceptions ; vomissements et diarrhées importantes peuvent aussi réduire l’absorption.</p><h2>Comprendre</h2><p>La plupart des antibiotiques courants ne diminuent pas directement l'efficacité de la pilule contraceptive. La rifampicine et la rifabutine sont des exceptions importantes, car elles accélèrent l'élimination de certaines hormones.</p><h2>Ce que l'on sait</h2><p>Des vomissements ou une diarrhée sévère peuvent également empêcher l'absorption d'une pilule, indépendamment d'une interaction médicamenteuse.</p><h2>En pratique</h2><p>En cas de traitement antibiotique, vérifier le nom du médicament et les précautions avec le pharmacien. Suivre la notice de la contraception et demander conseil sur une méthode complémentaire si nécessaire.</p><h2>Limites et précautions</h2><p>Ne pas arrêter ou modifier sa contraception de sa propre initiative.</p><h2>Source</h2><p><a href=\"https://www.nhs.uk/contraception/combined-pill/taking-the-combined-pill-with-other-medicines/\">Consulter la référence</a></p></article>",
       "theme": "VRAI OU FAUX",
       "keywords": [
         "pilule"
@@ -6242,8 +6242,8 @@
       "validation": {
         "validator": "Dr Romain BEDDOK",
         "validatedAt": "2026-10-27T13:24:00+01:00",
-        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine.",
-        "contentHash": "dd47e6cb62006af876c663254aaaf76fce23feba0a9662863f1a31c188d82f87"
+        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine. Correction des textes abrégés demandée explicitement le 27 octobre 2026.",
+        "contentHash": "ca47a2295a09c78257721215fe4ddf300afcbe51f423ff368df8d4cdc779b121"
       }
     },
     {
@@ -6254,7 +6254,7 @@
       "category": "Actualité santé",
       "title": "Chaleur : 52 décès supplémentaires par million d’habitants",
       "answer": "Estimation moyenne européenne de l’augmentation annuelle des décès liés à la chaleur en 2015–2024 par rapport à 1991–2000 ; variations importantes selon les pays.",
-      "html": "<article><h1>Chaleur : 52 décès supplémentaires par million d’habitants</h1><p><strong>Réponse courte.</strong> Estimation moyenne européenne de l’augmentation annuelle des décès liés à la chaleur en 2015–2024 par rapport à 1991–2000 ; variations importantes selon les pays.</p><p>Ces informations sont générales et ne remplacent pas une consultation adaptée à la situation individuelle.</p><p><a href=\"https://www.thelancet.com/\">Référence</a></p></article>",
+      "html": "<article><h1>Chaleur : 52 décès supplémentaires par million d’habitants</h1><p><strong>Réponse courte.</strong> Estimation moyenne européenne de l’augmentation annuelle des décès liés à la chaleur en 2015–2024 par rapport à 1991–2000 ; variations importantes selon les pays.</p><h2>Comprendre</h2><p>Le chiffre de 52 décès supplémentaires liés à la chaleur par million d'habitants et par an correspond à une estimation moyenne européenne comparant 2015–2024 à 1991–2000.</p><h2>Ce que l'on sait</h2><p>Il ne représente pas un risque individuel : l'exposition, le climat local, l'âge, le logement et l'état de santé modifient fortement le risque.</p><h2>En pratique</h2><p>Les personnes âgées, isolées, atteintes de maladies chroniques et les très jeunes enfants sont particulièrement vulnérables. Certains traitements peuvent également augmenter la sensibilité à la chaleur.</p><h2>Limites et précautions</h2><p>En période de fortes chaleurs, rechercher la fraîcheur, adapter l'activité, boire selon les recommandations médicales et prendre des nouvelles des personnes fragiles. Une confusion ou un malaise nécessite une aide urgente.</p><h2>Source</h2><p><a href=\"https://www.thelancet.com/\">Consulter la référence</a></p></article>",
       "theme": "LE CHIFFRE DU JOUR",
       "keywords": [
         "chaleur"
@@ -6272,8 +6272,8 @@
       "validation": {
         "validator": "Dr Romain BEDDOK",
         "validatedAt": "2026-10-27T13:24:00+01:00",
-        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine.",
-        "contentHash": "ae32ce5b7896f165656265ed26265c5554392f0c71d46816eb511a3b8a843875"
+        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine. Correction des textes abrégés demandée explicitement le 27 octobre 2026.",
+        "contentHash": "85901ea47894030d4f295adc8a956f19f5fe01d097e7910e08ea13d9627d6b2e"
       }
     },
     {
@@ -6284,7 +6284,7 @@
       "category": "Actualité santé",
       "title": "Grippe à Mayotte : vigilance épidémique",
       "answer": "La surveillance sanitaire rapporte une circulation active de la grippe à Mayotte.",
-      "html": "<article><h1>Grippe à Mayotte : vigilance épidémique</h1><p><strong>Réponse courte.</strong> La surveillance sanitaire rapporte une circulation active de la grippe à Mayotte.</p><p>Ces informations sont générales et ne remplacent pas une consultation adaptée à la situation individuelle.</p><p><a href=\"https://www.santepubliquefrance.fr/\">Référence</a></p></article>",
+      "html": "<article><h1>Grippe à Mayotte : vigilance épidémique</h1><p><strong>Réponse courte.</strong> La surveillance sanitaire rapporte une circulation active de la grippe à Mayotte.</p><h2>Comprendre</h2><p>La surveillance sanitaire a signalé une circulation importante de la grippe à Mayotte en octobre 2026. Une phase épidémique traduit une hausse des indicateurs, pas un diagnostic automatique pour toute fièvre.</p><h2>Ce que l'on sait</h2><p>Limiter les contacts en cas de symptômes respiratoires, aérer et appliquer les gestes d'hygiène protège notamment les personnes fragiles.</p><h2>En pratique</h2><p>Les personnes à risque doivent consulter en cas d'aggravation ou de symptômes préoccupants. Les indicateurs évoluent d'une semaine à l'autre.</p><h2>Limites et précautions</h2><p>La situation locale à Mayotte ne doit pas être extrapolée à toute la France.</p><h2>Source</h2><p><a href=\"https://www.santepubliquefrance.fr/\">Consulter la référence</a></p></article>",
       "theme": "DONNÉES",
       "keywords": [
         "mayotte"
@@ -6302,8 +6302,8 @@
       "validation": {
         "validator": "Dr Romain BEDDOK",
         "validatedAt": "2026-10-27T13:24:00+01:00",
-        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine.",
-        "contentHash": "9e7ff06f576b6395d22b86008002aad5a23b9adc1bbe7f5db5bada138a68f11b"
+        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine. Correction des textes abrégés demandée explicitement le 27 octobre 2026.",
+        "contentHash": "7da2b03314d6d91e3271fb22e2c6c386bddbcd6be2a14d76a71f0bf98babe99d"
       }
     },
     {
@@ -6314,7 +6314,7 @@
       "category": "Actualité santé",
       "title": "Tour de mollet et chutes : un marqueur associé",
       "answer": "Une étude observationnelle associe la diminution du tour de mollet à une augmentation des chutes ; elle ne démontre pas un lien causal.",
-      "html": "<article><h1>Tour de mollet et chutes : un marqueur associé</h1><p><strong>Réponse courte.</strong> Une étude observationnelle associe la diminution du tour de mollet à une augmentation des chutes ; elle ne démontre pas un lien causal.</p><p>Ces informations sont générales et ne remplacent pas une consultation adaptée à la situation individuelle.</p><p><a href=\"https://jamanetwork.com/\">Référence</a></p></article>",
+      "html": "<article><h1>Tour de mollet et chutes : un marqueur associé</h1><p><strong>Réponse courte.</strong> Une étude observationnelle associe la diminution du tour de mollet à une augmentation des chutes ; elle ne démontre pas un lien causal.</p><h2>Comprendre</h2><p>Le tour de mollet peut refléter une partie de l'état musculaire chez certaines personnes âgées, sans constituer à lui seul un diagnostic de fragilité.</p><h2>Ce que l'on sait</h2><p>Une étude observationnelle a associé une diminution du tour de mollet à une fréquence plus élevée de chutes. Cela ne prouve pas que cette diminution provoque directement les chutes.</p><h2>En pratique</h2><p>Une faiblesse récente, des chutes répétées ou une perte de poids involontaire justifient une évaluation globale : équilibre, nutrition, vision, médicaments et activité physique.</p><h2>Limites et précautions</h2><p>Les exercices adaptés de force et d'équilibre peuvent être discutés avec un professionnel, en fonction des capacités.</p><h2>Source</h2><p><a href=\"https://jamanetwork.com/\">Consulter la référence</a></p></article>",
       "theme": "DONNÉES",
       "keywords": [
         "mollet"
@@ -6332,8 +6332,8 @@
       "validation": {
         "validator": "Dr Romain BEDDOK",
         "validatedAt": "2026-10-27T13:24:00+01:00",
-        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine.",
-        "contentHash": "522b1ae9a4d8fe374754fed1507baa80964eba762c528547cb3aeb6bec8d11b2"
+        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine. Correction des textes abrégés demandée explicitement le 27 octobre 2026.",
+        "contentHash": "43683b782d83f169a3a8066d287ebc38286b41fc9c7154ffae9133ba851c9636"
       }
     },
     {
@@ -6344,7 +6344,7 @@
       "category": "Actualité santé",
       "title": "Réadaptation cardiaque : un soin sous-utilisé",
       "answer": "Les recommandations européennes rappellent les bénéfices de la réadaptation cardiaque pour les capacités physiques et la qualité de vie.",
-      "html": "<article><h1>Réadaptation cardiaque : un soin sous-utilisé</h1><p><strong>Réponse courte.</strong> Les recommandations européennes rappellent les bénéfices de la réadaptation cardiaque pour les capacités physiques et la qualité de vie.</p><p>Ces informations sont générales et ne remplacent pas une consultation adaptée à la situation individuelle.</p><p><a href=\"https://www.escardio.org/\">Référence</a></p></article>",
+      "html": "<article><h1>Réadaptation cardiaque : un soin sous-utilisé</h1><p><strong>Réponse courte.</strong> Les recommandations européennes rappellent les bénéfices de la réadaptation cardiaque pour les capacités physiques et la qualité de vie.</p><h2>Comprendre</h2><p>La réadaptation cardiaque associe généralement exercice supervisé, éducation thérapeutique et accompagnement des facteurs de risque après certains événements ou maladies cardiaques.</p><h2>Ce que l'on sait</h2><p>Elle peut améliorer les capacités physiques, la qualité de vie et la confiance dans l'effort. Les programmes sont adaptés au diagnostic et aux capacités individuelles.</p><h2>En pratique</h2><p>Malgré ses bénéfices, elle reste sous-utilisée, notamment en raison de difficultés d'accès ou d'information.</p><h2>Limites et précautions</h2><p>Après un événement cardiaque, demander à son cardiologue si une réadaptation est indiquée peut aider à organiser la récupération.</p><h2>Source</h2><p><a href=\"https://www.escardio.org/\">Consulter la référence</a></p></article>",
       "theme": "DONNÉES",
       "keywords": [
         "readaptation"
@@ -6362,8 +6362,8 @@
       "validation": {
         "validator": "Dr Romain BEDDOK",
         "validatedAt": "2026-10-27T13:24:00+01:00",
-        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine.",
-        "contentHash": "db97238106ca0a941a501fee6f2651ef44187c6210455e62f125b1819f3e74db"
+        "evidence": "Validation explicite de la conférence du 27 octobre 2026, avec marche rapide en À la une et autorisation de mise en ligne sur feat/v0-magazine. Correction des textes abrégés demandée explicitement le 27 octobre 2026.",
+        "contentHash": "42d78cea3bec96bffe5147e4b5dfb755be9f5aa501a85365d65abd6989848a08"
       }
     },
     {
