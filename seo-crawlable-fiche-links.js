@@ -18,6 +18,7 @@
       const h3=card.querySelector('h3');
       const id=String(card.dataset.qid||'').trim();
       if(!h3||!id||h3.querySelector('a.maca-seo-fiche-link'))return;
+      if(h3.querySelector('a[href]')){const existing=h3.querySelector('a[href]');existing.classList.add('maca-seo-fiche-link');return;}
 
       const link=document.createElement('a');
       link.className='maca-seo-fiche-link';
@@ -30,13 +31,9 @@
   ensureStyle();
   decorateCards();
 
-  /* Keep the existing modal on an ordinary click. Modified clicks retain native link behaviour. */
+  // Native links must navigate even when legacy card handlers are still installed.
   grid.addEventListener('click',event=>{
-    const link=event.target.closest('a.maca-seo-fiche-link');
-    if(!link)return;
-    const ordinaryPrimaryClick=event.button===0&&!event.metaKey&&!event.ctrlKey&&!event.shiftKey&&!event.altKey;
-    if(ordinaryPrimaryClick)event.preventDefault();
-    else event.stopPropagation();
+    if(event.target.closest('a.maca-seo-fiche-link'))event.stopPropagation();
   },true);
 
   const observer=new MutationObserver(decorateCards);
