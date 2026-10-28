@@ -6913,6 +6913,57 @@
         "evidence": "Validation médicale explicite et autorisation de mise en ligne de l’édition MACA du 28 octobre 2026 dans la conversation « MACA — Éditorial ».",
         "contentHash": "658b70006f6ec54e20213c7920fcad6c795277aba877d6e80b67fb66be9eae7c"
       }
+    },
+    {
+      "id": "mag-antibiotiques-probiotiques-20261028",
+      "date": "2026-10-28",
+      "title": "Antibiotiques et probiotiques : faut-il vraiment en prendre pour protéger son intestin ?",
+      "answer": "Non, pas systématiquement. Certaines souches peuvent réduire le risque de diarrhée sous antibiotiques, mais aucun complément ne répare automatiquement le microbiote.",
+      "html": "<article><img class=\"hero\" src=\"assets/editorial/2026-10-28/antibiotiques-probiotiques.svg\" alt=\"Illustration de capsules, micro-organismes et intestin stylisé sur fond sauge\"><div class=\"inside\"><p class=\"eyebrow\">LE MAG · DÉCRYPTAGE · 28 OCTOBRE 2026</p><h1>Antibiotiques et probiotiques : faut-il vraiment en prendre pour protéger son intestin ?</h1><p class=\"lead\">Après des antibiotiques, beaucoup de patients se demandent s'il faut « refaire la flore ». Les données scientifiques sont plus nuancées que la publicité.</p><h2>La réponse courte</h2><p><strong>Non, prendre un probiotique après chaque antibiotique n'est pas nécessaire.</strong> Certaines souches, à des doses et dans des situations précises, peuvent réduire le risque de diarrhée associée aux antibiotiques. Aucun complément ne « remet à neuf » systématiquement le microbiote.</p><h2>Pourquoi l'intestin réagit-il aux antibiotiques ?</h2><p>Un antibiotique agit contre certaines bactéries responsables d'une infection, mais peut modifier également le microbiote intestinal. Chez certaines personnes, cela provoque des selles molles, une diarrhée ou une gêne abdominale. La composition du microbiote évolue ensuite, souvent progressivement, avec une récupération variable selon l'antibiotique, le patient et la durée du traitement. Une perturbation n'implique pas automatiquement qu'un complément alimentaire soit indispensable.</p><h2>Un probiotique n'est pas l'autre</h2><p>Le terme « probiotique » regroupe des micro-organismes vivants différents. Leur effet potentiel dépend de la souche, de la dose et de l'objectif. Un yaourt, un mélange vendu en pharmacie et une levure étudiée dans un essai clinique ne sont pas interchangeables. L'idée commerciale de « réparer la flore » ne correspond pas à un bénéfice clinique universellement démontré.</p><h2>Que disent les études ?</h2><p>Une méta-analyse publiée en 2025 réunissant 15 essais randomisés et 7 427 adultes estime que certains probiotiques réduisent le risque relatif de diarrhée associée aux antibiotiques d'environ 40 % (risque relatif 0,60 ; intervalle de confiance à 95 % : 0,43 à 0,82). Il s'agit d'une réduction relative, pas de 40 points de pourcentage, et les études regroupent des souches et des situations hétérogènes. Ce résultat ne signifie donc pas que tous les produits fonctionnent.</p><p>La revue Cochrane actualisée en septembre 2025 suggère aussi un bénéfice préventif possible contre certaines diarrhées à <em>Clostridioides difficile</em>. L'effet absolu reste limité dans les populations étudiées et la qualité des preuves varie. Plusieurs recommandations de pratique n'encouragent pas la prescription systématique de probiotiques.</p><p>Chez l'enfant, des recommandations européennes et françaises discutent certaines souches, notamment <em>Saccharomyces boulardii</em> CNCM I-745 et <em>Lacticaseibacillus rhamnosus</em> GG, pour prévenir les diarrhées sous antibiotiques. Cela ne permet pas d'extrapoler à toutes les marques, tous les âges et toutes les situations.</p><h2>À qui faut-il faire particulièrement attention ?</h2><p>Les probiotiques contenant des micro-organismes vivants ne sont pas anodins chez tous les patients. Une immunodépression importante, un cathéter veineux central, une maladie grave ou une hospitalisation complexe exigent une discussion médicale préalable. Une diarrhée marquée, du sang dans les selles, une fièvre, de fortes douleurs abdominales ou des signes de déshydratation doivent conduire à consulter. Une infection à <em>C. difficile</em> peut survenir pendant ou après des antibiotiques : un complément ne remplace pas son diagnostic.</p><h2>Que faire concrètement ?</h2><p>Le premier réflexe est de prendre un antibiotique seulement lorsqu'il est indiqué et de respecter la prescription. Boire suffisamment et adapter l'alimentation à la tolérance digestive sont utiles. Si vous avez déjà présenté une diarrhée gênante avec un antibiotique ou avez un terrain particulier, demandez au médecin ou au pharmacien si un probiotique précis a un intérêt. Évitez de choisir au hasard un produit uniquement pour sa promesse de « rééquilibrage ».</p><h2>À retenir</h2><p><strong>Parfois utiles, pas automatiques :</strong> les probiotiques peuvent aider pour certaines diarrhées associées aux antibiotiques, mais leur intérêt dépend de la souche et du contexte. Ils ne remplacent ni un usage raisonné des antibiotiques ni une consultation devant des symptômes d'alerte.</p><div class=\"sources\"><h2>Sources</h2><ol><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/40191517/\">Méta-analyse 2025, 15 essais randomisés, 7 427 adultes — PubMed</a></li><li><a href=\"https://www.cochrane.org/fr/evidence/CD006095_use-probiotics-prevent-clostridium-difficile-diarrhea-associated-antibiotic-use\">Cochrane, revue CD006095 actualisée en 2025</a></li><li><a href=\"https://www.gfhgnp.org/\">GFHGNP — recommandations françaises de gastroentérologie pédiatrique</a></li><li><a href=\"https://presse.inserm.fr/canal-detox/\">Inserm — Canal Détox, microbiote</a></li></ol></div></div></article>",
+      "url": "article-mag-antibiotiques-probiotiques-20261028.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Microbiote et traitements",
+      "keywords": [
+        "antibiotiques",
+        "probiotiques",
+        "microbiote",
+        "diarrhée"
+      ],
+      "sources": [
+        {
+          "label": "Méta-analyse 2025, PMID 40191517",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40191517/"
+        },
+        {
+          "label": "Cochrane CD006095",
+          "url": "https://www.cochrane.org/fr/evidence/CD006095_use-probiotics-prevent-clostridium-difficile-diarrhea-associated-antibiotic-use"
+        },
+        {
+          "label": "GFHGNP",
+          "url": "https://www.gfhgnp.org/"
+        },
+        {
+          "label": "Inserm",
+          "url": "https://presse.inserm.fr/canal-detox/"
+        }
+      ],
+      "image": "assets/editorial/2026-10-28/antibiotiques-probiotiques.svg",
+      "imageAlt": "Capsules, micro-organismes et intestin stylisé, illustration originale MACASANTÉ",
+      "imageCredit": "MACASANTÉ — illustration originale",
+      "imageSource": "MACASANTÉ — création graphique éditoriale",
+      "imageLicense": "Création originale MACASANTÉ",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "standalone": true,
+      "candidateFiche": false,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-28",
+        "evidence": "Accord explicite de l'éditeur en conversation du 28/10/2026 pour la poursuite, la finalisation et la publication de l'article et de l'illustration.",
+        "contentHash": "c6a13fa8146a501487eac006196d6231a246de681dc13fc1a46abf337a2147bb"
+      }
     }
   ],
   "editions": [
