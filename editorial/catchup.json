@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-27T15:15:00+01:00",
+  "checkedAt": "2026-10-28T07:03:52+01:00",
   "timezone": "Europe/Paris",
-  "controlId": "manual-p0-issue68-20261027-republish-ophtalmologie-contributors",
-  "reason": "Manual P0 republish after verified validation: ophthalmology corpus and complementary contributors; no medical content changes"
+  "controlId": "mag-check-2026-10-28T06:03:52.213Z-570e5aa82e94",
+  "reason": "Daily catch-up of complete validated editions; no medical content changes"
 }
