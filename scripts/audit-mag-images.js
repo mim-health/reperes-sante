@@ -5,7 +5,7 @@ const src=JSON.parse(fs.readFileSync(path.join(root,'editorial/content.json'),'u
 const report={total:src.contents.length,withImage:0,local:0,external:0,withoutImage:0,warnings:[],errors:[]};
 const isWeb=v=>/^https:\/\//i.test(v);
 for(const c of src.contents){
- if(!c.image){report.withoutImage++;continue;}
+ if(!c.image){report.withoutImage++;if(c.date>='2026-10-29'&&c.format==='article'&&c.medicalStatus==='VALIDATED'&&['PUBLISHED','SCHEDULED'].includes(c.publicationStatus))report.errors.push({id:c.id,message:'New validated article lacks mandatory photograph'});continue;}
  report.withImage++;
  const strict=c.medicalStatus==='VALIDATED'&&['PUBLISHED','SCHEDULED'].includes(c.publicationStatus);
  const newArticle=c.date>='2026-10-29'&&c.format==='article'&&strict;
@@ -41,6 +41,8 @@ report.reusedVisuals=[...byImage.entries()].filter(([image,items])=>items.length
  .map(([image,items])=>({image,count:items.length,items}))
  .sort((a,b)=>b.count-a.count);
 report.reuseWarnings=report.reusedVisuals.filter(x=>new Set(x.items.map(item=>item.theme)).size>1);
+for(const group of report.reuseWarnings){const newer=group.items.filter(x=>src.contents.some(c=>c.id===x.id&&c.date>='2026-10-29'&&c.format==='article'&&c.medicalStatus==='VALIDATED'&&['PUBLISHED','SCHEDULED'].includes(c.publicationStatus)));for(const item of newer)report.errors.push({id:item.id,message:'Photograph reused across unrelated editorial subjects'});}
+
 console.log('MAG VISUAL REUSE REVIEW '+JSON.stringify(report.reuseWarnings,null,2));
 
 console.log('MAG IMAGE AUDIT '+JSON.stringify(report,null,2));
