@@ -20,5 +20,21 @@ for(const c of src.contents){
   (c.date<'2026-10-29'?report.warnings:report.errors).push(item);
  }
 }
+
+// Detect repeated generic photography across unrelated editorial topics.
+// These are editorial review findings, not proof of invalid image rights.
+const byImage=new Map();
+for(const item of src.contents){
+ if(!item.image)continue;
+ const group=byImage.get(item.image)||[];
+ group.push({id:item.id,title:item.title,theme:item.theme||''});
+ byImage.set(item.image,group);
+}
+report.reusedVisuals=[...byImage.entries()].filter(([image,items])=>items.length>=2)
+ .map(([image,items])=>({image,count:items.length,items}))
+ .sort((a,b)=>b.count-a.count);
+report.reuseWarnings=report.reusedVisuals.filter(x=>new Set(x.items.map(item=>item.theme)).size>1);
+console.log('MAG VISUAL REUSE REVIEW '+JSON.stringify(report.reuseWarnings,null,2));
+
 console.log('MAG IMAGE AUDIT '+JSON.stringify(report,null,2));
 assert.equal(report.errors.length,0,'Validated Mag image failures: '+report.errors.length);
