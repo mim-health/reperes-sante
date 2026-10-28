@@ -15,7 +15,7 @@ for(const c of src.contents){
   report.local++;
   if(/^(\/|\.\.)/.test(c.image)||c.image.includes('..')||!fs.existsSync(path.join(root,c.image)))add('Missing or unsafe local image: '+c.image);
  }
- if(strict&&/<img\\b/i.test(c.html||'')&&!String(c.html).includes(c.image)){
+ if(strict&&/<img\\b/i.test(c.html||'')&&!String(c.html).replaceAll('&amp;','&').includes(c.image)){
   const item={id:c.id,message:'Article hero image differs from editorial image field'};
   (c.date<'2026-10-29'?report.warnings:report.errors).push(item);
  }
