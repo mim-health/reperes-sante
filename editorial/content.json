@@ -6524,6 +6524,395 @@
         "evidence": "Validation explicite des quatre textes du document MACASANTE_Quatre_textes_Radar_2026-10-27.md : « ok validation et mise ne lig,ne ». Trois nouveaux décryptages et actualisation de l’article anticoagulants à URL constante. Texte approuvé conservé, hors notes internes.",
         "contentHash": "fae58f7e51da1bcdbd48916d112e630395061f0996d27c036f538b0504c1e855"
       }
+    },
+    {
+      "id": "daily-avc-thrombectomie-20261028",
+      "date": "2026-10-28",
+      "title": "AVC apparemment léger : faut-il parfois retirer le caillot ?",
+      "answer": "Un AVC peu spectaculaire peut cacher l’occlusion d’une grosse artère. Un essai randomisé suggère un bénéfice de la thrombectomie chez certains patients sélectionnés par imagerie.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 2026-10-28 · Neurologie</p><h1>AVC apparemment léger : faut-il parfois retirer le caillot ?</h1><p class=\"lead\"><strong>Réponse courte.</strong> Un AVC peu spectaculaire peut cacher l’occlusion d’une grosse artère. Un essai randomisé suggère un bénéfice de la thrombectomie chez certains patients sélectionnés par imagerie.</p><h2>Un essai qui change la discussion</h2><p>L’essai MILD-MT a réparti 300 patients présentant des signes initialement peu sévères, mais une occlusion artérielle et une zone cérébrale menacée. À 90 jours, 69,4 % des patients traités par thrombectomie et soins médicaux avaient une autonomie excellente, contre 50,0 % sous soins médicaux seuls, soit 19,4 points de différence absolue.</p><h2>Qui est concerné ?</h2><p>Uniquement des patients répondant à des critères d’imagerie et de délai précis, évalués en filière neurovasculaire. Un score clinique peu élevé ne permet pas de décider seul de l’indication.</p><h2>Quels risques ?</h2><p>Des complications graves liées à la procédure ont été observées chez 13,2 % des patients traités par thrombectomie. Trois hémorragies intracrâniennes symptomatiques ont été observées dans chaque groupe. L’essai était ouvert et conduit en Chine : une confirmation et une intégration aux recommandations sont nécessaires.</p><h2>En pratique</h2><p>Devant une faiblesse d’un membre, un trouble de la parole ou de la vision, appeler immédiatement le 15, même si les symptômes paraissent modestes ou régressent.</p><h2>Sources et limites</h2><ul><li><a href=\"https://doi.org/10.1056/NEJMoa2609149\">Liu et al., NEJM, MILD-MT, 23 octobre 2026, DOI 10.1056/NEJMoa2609149</a></li></ul><p><small>Information générale ; ne remplace pas une consultation. Sources et limites à interpréter selon la situation clinique.</small></p></article>",
+      "url": "article-daily-avc-thrombectomie-20261028.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Neurologie",
+      "keywords": [
+        "Neurologie"
+      ],
+      "sources": [
+        {
+          "label": "Liu et al., NEJM, MILD-MT, 23 octobre 2026, DOI 10.1056/NEJMoa2609149",
+          "url": "https://doi.org/10.1056/NEJMoa2609149"
+        }
+      ],
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
+      "imageCredit": "Pexels — photographie d’illustration",
+      "imageSource": "https://www.pexels.com/",
+      "imageLicense": "Pexels License — free to use",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-28",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite et autorisation de mise en ligne de l’édition MACA du 28 octobre 2026 dans la conversation « MACA — Éditorial ».",
+        "contentHash": "7ef2f658fde9ea3e867af1bd9329a00691eee4c8b748ebd705b6fdc5688b63e7"
+      }
+    },
+    {
+      "id": "daily-capteur-diabete-20261028",
+      "date": "2026-10-28",
+      "title": "Diabète sans insuline : un capteur de glucose peut-il aider ?",
+      "answer": "Dans un essai randomisé de 283 adultes, la mesure continue du glucose a amélioré l’HbA1c à 26 semaines, sans démontrer que tous les patients doivent être équipés.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 2026-10-28 · Diabète</p><h1>Diabète sans insuline : un capteur de glucose peut-il aider ?</h1><p class=\"lead\"><strong>Réponse courte.</strong> Dans un essai randomisé de 283 adultes, la mesure continue du glucose a amélioré l’HbA1c à 26 semaines, sans démontrer que tous les patients doivent être équipés.</p><h2>Ce que montre CONNECT</h2><p>Après 26 semaines, l’HbA1c est passée de 8,8 à 7,2 % dans le groupe capteur et de 8,7 à 8,0 % dans le groupe témoin, avec une différence ajustée de 0,9 point. Le temps dans la cible glycémique a augmenté de 21 points.</p><h2>Ce que le patient peut en tirer</h2><p>Le capteur peut aider à visualiser l’impact des repas, du sommeil et de l’activité physique, en complément d’un accompagnement éducatif et thérapeutique.</p><h2>Les limites</h2><p>L’essai a duré six mois, avec un effectif modéré et un financement industriel. Il ne règle pas les questions d’indication, de coût, de remboursement ou d’efficacité au long cours en France.</p><h2>Sources et limites</h2><ul><li><a href=\"https://doi.org/10.1056/NEJMoa2608571\">Oser et al., NEJM, CONNECT, 14 octobre 2026</a></li></ul><p><small>Information générale ; ne remplace pas une consultation. Sources et limites à interpréter selon la situation clinique.</small></p></article>",
+      "url": "article-daily-capteur-diabete-20261028.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Diabète",
+      "keywords": [
+        "Diabète"
+      ],
+      "sources": [
+        {
+          "label": "Oser et al., NEJM, CONNECT, 14 octobre 2026",
+          "url": "https://doi.org/10.1056/NEJMoa2608571"
+        }
+      ],
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
+      "imageCredit": "Pexels — photographie d’illustration",
+      "imageSource": "https://www.pexels.com/",
+      "imageLicense": "Pexels License — free to use",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": true,
+      "validation": {
+        "validatedAt": "2026-10-28",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite et autorisation de mise en ligne de l’édition MACA du 28 octobre 2026 dans la conversation « MACA — Éditorial ».",
+        "contentHash": "24dbd4f4009aa81249c40d1b4093579fb47272732ef16bad763ed8af681d83a5"
+      }
+    },
+    {
+      "id": "daily-demence-suivi-20261028",
+      "date": "2026-10-28",
+      "title": "Démence : pourquoi maintenir des consultations régulières ?",
+      "answer": "Une grande étude observationnelle associe les consultations préventives à une meilleure mise en route des traitements symptomatiques, sans démontrer une amélioration causale de la qualité de vie.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 2026-10-28 · Gériatrie</p><h1>Démence : pourquoi maintenir des consultations régulières ?</h1><p class=\"lead\"><strong>Réponse courte.</strong> Une grande étude observationnelle associe les consultations préventives à une meilleure mise en route des traitements symptomatiques, sans démontrer une amélioration causale de la qualité de vie.</p><h2>Une association, pas une preuve</h2><p>Dans une cohorte de 799 268 bénéficiaires américains de Medicare, une nouvelle prescription était retrouvée chez 9,8 % sans consultation annuelle préalable, contre 14,1 % après au moins trois consultations.</p><h2>Le vrai enjeu du suivi</h2><p>Au-delà des médicaments, une consultation permet de réévaluer cognition, autonomie, chutes, sommeil, traitements, charge de l’aidant et soutien à domicile.</p><h2>Prudence</h2><p>Les patients régulièrement suivis peuvent différer des autres. Plus de prescriptions ne signifie pas automatiquement meilleur pronostic ou meilleure qualité de vie.</p><h2>Sources et limites</h2><ul><li><a href=\"https://doi.org/10.1001/jamanetworkopen.2026.40804\">Milani et al., JAMA Network Open, 27 octobre 2026</a></li></ul><p><small>Information générale ; ne remplace pas une consultation. Sources et limites à interpréter selon la situation clinique.</small></p></article>",
+      "url": "article-daily-demence-suivi-20261028.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Gériatrie",
+      "keywords": [
+        "Gériatrie"
+      ],
+      "sources": [
+        {
+          "label": "Milani et al., JAMA Network Open, 27 octobre 2026",
+          "url": "https://doi.org/10.1001/jamanetworkopen.2026.40804"
+        }
+      ],
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
+      "imageCredit": "Pexels — photographie d’illustration",
+      "imageSource": "https://www.pexels.com/",
+      "imageLicense": "Pexels License — free to use",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-28",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite et autorisation de mise en ligne de l’édition MACA du 28 octobre 2026 dans la conversation « MACA — Éditorial ».",
+        "contentHash": "81e4421b34d9fb4d5265728556154f6e13c272a16b0392888abfb83d48853755"
+      }
+    },
+    {
+      "id": "daily-steroides-coeur-20261028",
+      "date": "2026-10-28",
+      "title": "Stéroïdes anabolisants : le cœur récupère-t-il après l’arrêt ?",
+      "answer": "Une étude longitudinale suggère une récupération partielle de la fonction cardiaque après arrêt complet, mais pas une absence de séquelles.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 2026-10-28 · Cardiologie</p><h1>Stéroïdes anabolisants : le cœur récupère-t-il après l’arrêt ?</h1><p class=\"lead\"><strong>Réponse courte.</strong> Une étude longitudinale suggère une récupération partielle de la fonction cardiaque après arrêt complet, mais pas une absence de séquelles.</p><h2>Des changements mesurés</h2><p>Chez 15 anciens utilisateurs ayant arrêté, la masse ventriculaire gauche moyenne est passée de 112 à 91 g/m² et la fraction d’éjection de 48 à 54 %. Les 35 utilisateurs poursuivant leur consommation présentaient des anomalies persistantes.</p><h2>Ce qu’il faut comprendre</h2><p>L’hypertrophie et les troubles de contraction associés aux stéroïdes ne sont pas forcément définitifs, mais l’amélioration ne garantit pas la disparition de tous les risques cardiaques.</p><h2>Les limites</h2><p>Petits effectifs, étude non randomisée, possibles autres substances et biais de sélection. Une consultation médicale est indiquée en cas de symptômes, d’exposition prolongée ou d’anomalies cardiovasculaires.</p><h2>Sources et limites</h2><ul><li><a href=\"https://doi.org/10.1093/ehjci/jeag238\">Abdullah et al., European Heart Journal – Cardiovascular Imaging, 12 octobre 2026</a></li></ul><p><small>Information générale ; ne remplace pas une consultation. Sources et limites à interpréter selon la situation clinique.</small></p></article>",
+      "url": "article-daily-steroides-coeur-20261028.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Cardiologie",
+      "keywords": [
+        "Cardiologie"
+      ],
+      "sources": [
+        {
+          "label": "Abdullah et al., European Heart Journal – Cardiovascular Imaging, 12 octobre 2026",
+          "url": "https://doi.org/10.1093/ehjci/jeag238"
+        }
+      ],
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
+      "imageCredit": "Pexels — photographie d’illustration",
+      "imageSource": "https://www.pexels.com/",
+      "imageLicense": "Pexels License — free to use",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": true,
+      "validation": {
+        "validatedAt": "2026-10-28",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite et autorisation de mise en ligne de l’édition MACA du 28 octobre 2026 dans la conversation « MACA — Éditorial ».",
+        "contentHash": "1a97ed4a91396541f6935e4c537f3e986935b5f228e24e3001fbf9803d39ee08"
+      }
+    },
+    {
+      "id": "daily-brulure-rotation-20261028",
+      "date": "2026-10-28",
+      "title": "Brûlure domestique : quels premiers gestes ?",
+      "answer": "Refroidir rapidement sous une eau tempérée, retirer les objets serrés et reconnaître les situations nécessitant une évaluation urgente.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 2026-10-28 · Premiers secours</p><h1>Brûlure domestique : quels premiers gestes ?</h1><p class=\"lead\"><strong>Réponse courte.</strong> Refroidir rapidement sous une eau tempérée, retirer les objets serrés et reconnaître les situations nécessitant une évaluation urgente.</p><h2>À faire</h2><p>Refroidir la zone sous l’eau courante tempérée pendant environ 20 minutes si possible, sans retarder les secours pour une brûlure grave.</p><h2>À éviter</h2><p>Ne pas appliquer de glace, de beurre ou de produit gras. Ne pas percer les cloques.</p><h2>Quand consulter ?</h2><p>Consulter rapidement pour une brûlure profonde, étendue, du visage, des mains, des parties génitales, ou chez une personne fragile ; appeler le 15 si gravité. Cette carte renvoie à la fiche validée du corpus et n’en crée pas de nouvelle.</p><h2>Sources et limites</h2><ul><li><a href=\"https://www.nhs.uk/conditions/burns-and-scalds/\">NHS — Burns and scalds</a></li></ul><p><small>Information générale ; ne remplace pas une consultation. Sources et limites à interpréter selon la situation clinique.</small></p></article>",
+      "url": "article-daily-brulure-rotation-20261028.html",
+      "format": "article",
+      "category": "Santé au quotidien",
+      "theme": "Premiers secours",
+      "keywords": [
+        "Premiers secours"
+      ],
+      "sources": [
+        {
+          "label": "NHS — Burns and scalds",
+          "url": "https://www.nhs.uk/conditions/burns-and-scalds/"
+        }
+      ],
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
+      "imageCredit": "Pexels — photographie d’illustration",
+      "imageSource": "https://www.pexels.com/",
+      "imageLicense": "Pexels License — free to use",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-28",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite et autorisation de mise en ligne de l’édition MACA du 28 octobre 2026 dans la conversation « MACA — Éditorial ».",
+        "contentHash": "e2e508f2aab35a05733118af9617cc064b61867be02aa1d50e5961ae35428ad9"
+      }
+    },
+    {
+      "id": "daily-jeun-prises-sang-20261028",
+      "date": "2026-10-28",
+      "title": "Prise de sang : faut-il toujours être à jeun ?",
+      "answer": "FAUX. Le jeûne dépend des analyses prescrites et des consignes du laboratoire.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 2026-10-28 · Biologie</p><h1>Prise de sang : faut-il toujours être à jeun ?</h1><p class=\"lead\"><strong>Réponse courte.</strong> FAUX. Le jeûne dépend des analyses prescrites et des consignes du laboratoire.</p><h2>Pourquoi ?</h2><p>Une NFS ou une HbA1c ne nécessitent généralement pas de jeûne, alors que certains dosages demandent des conditions précises.</p><h2>Le bon réflexe</h2><p>Vérifier l’ordonnance et les instructions du laboratoire. Lorsque le jeûne est demandé, l’eau est généralement autorisée.</p><h2>Sources et limites</h2><ul><li><a href=\"https://www.ameli.fr/assure/sante/examen/analyse/preparer-prise-sang\">Assurance Maladie — analyses sanguines</a></li></ul><p><small>Information générale ; ne remplace pas une consultation. Sources et limites à interpréter selon la situation clinique.</small></p></article>",
+      "url": "article-daily-jeun-prises-sang-20261028.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Biologie",
+      "keywords": [
+        "Biologie"
+      ],
+      "sources": [
+        {
+          "label": "Assurance Maladie — analyses sanguines",
+          "url": "https://www.ameli.fr/assure/sante/examen/analyse/preparer-prise-sang"
+        }
+      ],
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
+      "imageCredit": "Pexels — photographie d’illustration",
+      "imageSource": "https://www.pexels.com/",
+      "imageLicense": "Pexels License — free to use",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-28",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite et autorisation de mise en ligne de l’édition MACA du 28 octobre 2026 dans la conversation « MACA — Éditorial ».",
+        "contentHash": "b372a3f63362b4c34eb12f0c239885eefe594fa49dbf2dfa6f7fb1f3e5a2ed39"
+      }
+    },
+    {
+      "id": "daily-activite-150-20261028",
+      "date": "2026-10-28",
+      "title": "150 à 300 minutes : l’objectif d’activité physique hebdomadaire",
+      "answer": "L’OMS recommande aux adultes 150 à 300 minutes d’activité aérobie modérée par semaine, à adapter aux capacités.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 2026-10-28 · Prévention</p><h1>150 à 300 minutes : l’objectif d’activité physique hebdomadaire</h1><p class=\"lead\"><strong>Réponse courte.</strong> L’OMS recommande aux adultes 150 à 300 minutes d’activité aérobie modérée par semaine, à adapter aux capacités.</p><h2>Comment atteindre ce repère ?</h2><p>Marche active, vélo, natation, danse ou déplacements actifs peuvent être fractionnés dans la semaine.</p><h2>Sans culpabilisation</h2><p>Même en dessous du seuil, toute activité est préférable à l’inactivité. La progression doit être adaptée aux limitations et maladies éventuelles.</p><h2>Sources et limites</h2><ul><li><a href=\"https://www.who.int/news-room/fact-sheets/detail/physical-activity\">OMS — Physical activity</a></li></ul><p><small>Information générale ; ne remplace pas une consultation. Sources et limites à interpréter selon la situation clinique.</small></p></article>",
+      "url": "article-daily-activite-150-20261028.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Prévention",
+      "keywords": [
+        "Prévention"
+      ],
+      "sources": [
+        {
+          "label": "OMS — Physical activity",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/physical-activity"
+        }
+      ],
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
+      "imageCredit": "Pexels — photographie d’illustration",
+      "imageSource": "https://www.pexels.com/",
+      "imageLicense": "Pexels License — free to use",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-28",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite et autorisation de mise en ligne de l’édition MACA du 28 octobre 2026 dans la conversation « MACA — Éditorial ».",
+        "contentHash": "a57d3b093ab2f7bbd1b697a8dd6fd3bf88f70dc626e22383eeff791d1451cbe9"
+      }
+    },
+    {
+      "id": "daily-infirmiere-insuline-20261028",
+      "date": "2026-10-28",
+      "title": "Débuter l’insuline : un accompagnement infirmier dédié",
+      "answer": "La HAS soutient une consultation infirmière spécifique pour accompagner les personnes ayant un diabète de type 2 nouvellement traité par insuline.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 2026-10-28 · Diabète</p><h1>Débuter l’insuline : un accompagnement infirmier dédié</h1><p class=\"lead\"><strong>Réponse courte.</strong> La HAS soutient une consultation infirmière spécifique pour accompagner les personnes ayant un diabète de type 2 nouvellement traité par insuline.</p><h2>Pourquoi ?</h2><p>L’apprentissage des injections, la prévention des hypoglycémies et la compréhension de l’autosurveillance sont essentiels.</p><h2>Statut</h2><p>Il s’agit d’un avis relatif à l’organisation des soins, pas d’une nouvelle indication thérapeutique.</p><h2>Sources et limites</h2><ul><li><a href=\"https://www.has-sante.fr/\">HAS — portail des avis et recommandations</a></li></ul><p><small>Information générale ; ne remplace pas une consultation. Sources et limites à interpréter selon la situation clinique.</small></p></article>",
+      "url": "article-daily-infirmiere-insuline-20261028.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Diabète",
+      "keywords": [
+        "Diabète"
+      ],
+      "sources": [
+        {
+          "label": "HAS — portail des avis et recommandations",
+          "url": "https://www.has-sante.fr/"
+        }
+      ],
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
+      "imageCredit": "Pexels — photographie d’illustration",
+      "imageSource": "https://www.pexels.com/",
+      "imageLicense": "Pexels License — free to use",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-28",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite et autorisation de mise en ligne de l’édition MACA du 28 octobre 2026 dans la conversation « MACA — Éditorial ».",
+        "contentHash": "9883648808ad6494aa06c45321fccb0a154c65b1f115e03d181573b170cd08c8"
+      }
+    },
+    {
+      "id": "daily-respiratoires-s42-20261028",
+      "date": "2026-10-28",
+      "title": "Virus respiratoires : que disent les indicateurs de la semaine 42 ?",
+      "answer": "Les indicateurs nationaux de grippe, Covid-19 et bronchiolite étaient globalement au niveau de base, avec une progression des recours pour bronchiolite.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 2026-10-28 · Infectiologie</p><h1>Virus respiratoires : que disent les indicateurs de la semaine 42 ?</h1><p class=\"lead\"><strong>Réponse courte.</strong> Les indicateurs nationaux de grippe, Covid-19 et bronchiolite étaient globalement au niveau de base, avec une progression des recours pour bronchiolite.</p><h2>À interpréter</h2><p>Les indicateurs évoluent selon les régions et les semaines. Les mesures de prévention restent pertinentes, particulièrement autour des nourrissons et personnes fragiles.</p><h2>Sources et limites</h2><ul><li><a href=\"https://www.santepubliquefrance.fr/\">Santé publique France — surveillance des infections respiratoires aiguës</a></li></ul><p><small>Information générale ; ne remplace pas une consultation. Sources et limites à interpréter selon la situation clinique.</small></p></article>",
+      "url": "article-daily-respiratoires-s42-20261028.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Infectiologie",
+      "keywords": [
+        "Infectiologie"
+      ],
+      "sources": [
+        {
+          "label": "Santé publique France — surveillance des infections respiratoires aiguës",
+          "url": "https://www.santepubliquefrance.fr/"
+        }
+      ],
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
+      "imageCredit": "Pexels — photographie d’illustration",
+      "imageSource": "https://www.pexels.com/",
+      "imageLicense": "Pexels License — free to use",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-28",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite et autorisation de mise en ligne de l’édition MACA du 28 octobre 2026 dans la conversation « MACA — Éditorial ».",
+        "contentHash": "0f258a5f6a6451b5ffc136317eac48821bd2a7d2a112a96f25de946f67e6ad9a"
+      }
+    },
+    {
+      "id": "daily-telephone-ecole-20261028",
+      "date": "2026-10-28",
+      "title": "Interdire les téléphones à l’école suffit-il à améliorer le bien-être ?",
+      "answer": "Une étude observationnelle islandaise ne retrouve pas d’amélioration significative de plusieurs indicateurs de santé mentale après interdiction scolaire.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 2026-10-28 · Santé mentale</p><h1>Interdire les téléphones à l’école suffit-il à améliorer le bien-être ?</h1><p class=\"lead\"><strong>Réponse courte.</strong> Une étude observationnelle islandaise ne retrouve pas d’amélioration significative de plusieurs indicateurs de santé mentale après interdiction scolaire.</p><h2>Ce que l’étude ne prouve pas</h2><p>L’absence d’association mesurée ne signifie pas que toute règle scolaire est inutile. Les usages hors école, le contexte familial et l’accompagnement restent importants.</p><h2>Prudence</h2><p>Ne pas confondre une association populationnelle avec une preuve d’efficacité ou d’inefficacité pour chaque élève.</p><h2>Sources et limites</h2><ul><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/?term=school+phone+ban+mental+health+Iceland+2026\">PubMed — recherches sur les interdictions de téléphones scolaires et santé mentale</a></li></ul><p><small>Information générale ; ne remplace pas une consultation. Sources et limites à interpréter selon la situation clinique.</small></p></article>",
+      "url": "article-daily-telephone-ecole-20261028.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Santé mentale",
+      "keywords": [
+        "Santé mentale"
+      ],
+      "sources": [
+        {
+          "label": "PubMed — recherches sur les interdictions de téléphones scolaires et santé mentale",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=school+phone+ban+mental+health+Iceland+2026"
+        }
+      ],
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
+      "imageCredit": "Pexels — photographie d’illustration",
+      "imageSource": "https://www.pexels.com/",
+      "imageLicense": "Pexels License — free to use",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-28",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite et autorisation de mise en ligne de l’édition MACA du 28 octobre 2026 dans la conversation « MACA — Éditorial ».",
+        "contentHash": "4ae547717402e0097097614bbf17a37d7a4e3d92380dc7efa3327521d007808b"
+      }
+    },
+    {
+      "id": "octobre-rose-talent-20261028",
+      "date": "2026-10-28",
+      "title": "Cancer du sein HER2-low : une tumeur qui rétrécit signifie-t-elle que le traitement a réussi ?",
+      "answer": "Pas nécessairement. L’étude TALENT montre que la réduction visible d’une tumeur sous trastuzumab déruxtécan ne garantit ni sa disparition à l’analyse des tissus ni une diminution démontrée des récidives.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 2026-10-28 · Cancer du sein</p><h1>Cancer du sein HER2-low : une tumeur qui rétrécit signifie-t-elle que le traitement a réussi ?</h1><p class=\"lead\"><strong>Réponse courte.</strong> Pas nécessairement. L’étude TALENT montre que la réduction visible d’une tumeur sous trastuzumab déruxtécan ne garantit ni sa disparition à l’analyse des tissus ni une diminution démontrée des récidives.</p><h2>Pourquoi cette question est importante</h2><p>Avant une chirurgie du cancer du sein, certains traitements sont administrés pour réduire la tumeur, évaluer sa sensibilité et améliorer la stratégie de soins. L’imagerie permet de suivre les dimensions de la lésion. Mais elle ne peut pas toujours dire si des cellules cancéreuses invasives subsistent. C’est pourquoi les chercheurs distinguent la réponse radiologique, la réponse pathologique complète et les critères de bénéfice clinique à long terme, comme les récidives et la survie.</p><h2>Qu’est-ce que HER2-low ?</h2><p>HER2 est une protéine présente à la surface de certaines cellules mammaires. L’expression dite HER2-low désigne une quantité faible, évaluée par immunohistochimie et, selon le score, par hybridation. Ce n’est pas la même situation que les cancers HER2-positifs classiques. Le statut des récepteurs hormonaux, le stade et les traitements antérieurs comptent aussi dans la décision thérapeutique. Les catégories biologiques ne doivent pas être assimilées automatiquement à une indication de traitement.</p><h2>Quel médicament a été étudié ?</h2><p>Le trastuzumab déruxtécan, appelé T-DXd, est un anticorps conjugué : un anticorps dirigé contre HER2 transporte une substance cytotoxique. Son efficacité dans certaines situations de cancer du sein avancé ne signifie pas qu’il soit automatiquement bénéfique au stade précoce, avant une opération. Chaque contexte exige ses propres essais, avec des critères pertinents pour les patientes.</p><h2>Qui a participé à TALENT ?</h2><p>L’étude de phase II TALENT, présentée au congrès ESMO le 23 octobre 2026, a inclus 132 patientes présentant un cancer du sein de stade II ou III, positif aux récepteurs hormonaux et HER2-low. Quarante-cinq ont reçu du T-DXd seul, vingt-neuf du T-DXd associé à l’anastrozole et cinquante-huit du T-DXd suivi d’une chimiothérapie par docétaxel et cyclophosphamide. Le troisième groupe a été ajouté secondairement. Ces groupes n’étaient pas destinés à une comparaison randomisée définitive entre stratégies.</p><h2>La tumeur a-t-elle diminué ?</h2><p>Une réponse objective à l’imagerie a été rapportée chez 62 % des patientes sous T-DXd seul, 66 % sous T-DXd et anastrozole et 72 % sous T-DXd suivi de chimiothérapie. Ces chiffres montrent une activité antitumorale mesurable. Ils ne doivent pas être lus comme des pourcentages de guérison : une lésion peut diminuer tout en laissant persister une maladie microscopique ou macroscopique.</p><h2>Que révèle l’analyse après l’opération ?</h2><p>La réponse pathologique complète, c’est-à-dire l’absence de cancer invasif résiduel dans le sein et les ganglions examinés, était observée chez 7 %, 3 % et 9 % des patientes respectivement dans les trois groupes. En nombres approximatifs, cela représente trois patientes sur quarante-cinq, une sur vingt-neuf et cinq sur cinquante-huit. Les réponses complètes ou presque complètes regroupées étaient de 16 %, 17 % et 17 %. La différence entre la fréquence des réponses à l’imagerie et celle des réponses pathologiques est le message central de l’étude.</p><h2>L’hormonothérapie associée apporte-t-elle un avantage ?</h2><p>L’ajout d’anastrozole n’a pas montré d’amélioration évidente de la réponse pathologique complète. Cependant, les effectifs sont petits, les groupes ne sont pas comparables comme dans un essai randomisé de supériorité et les estimations sont imprécises. Il serait donc incorrect de conclure que l’anastrozole est inutile dans la prise en charge des cancers hormonosensibles en général : cette étude répond à une question bien plus étroite.</p><h2>Quels effets indésirables surveiller ?</h2><p>Nausées et fatigue étaient fréquentes. Trois cas de pneumopathie interstitielle médicamenteuse de grade 2 ont été signalés. Dix patientes ont interrompu au moins un traitement en raison d’un effet indésirable, et un décès a été rapporté dans le groupe T-DXd seul. Ces événements doivent être interprétés dans le contexte de l’étude ; ils rappellent qu’une stratégie préopératoire doit démontrer un bénéfice suffisant pour justifier ses risques. Sous T-DXd, toux nouvelle, essoufflement ou fièvre doivent être signalés rapidement à l’équipe d’oncologie.</p><h2>Quelles sont les limites scientifiques ?</h2><p>TALENT est une étude exploratoire de phase II, avec un effectif total modeste, sans groupe témoin contemporain robuste et avec un bras ajouté en cours de programme. Les résultats ont été présentés en congrès ; ils ne remplacent pas une publication complète évaluée par les pairs. Les données de récidive, de survie globale et de qualité de vie ne sont pas suffisamment matures pour affirmer un bénéfice durable. Une réponse pathologique complète est un indicateur important dans plusieurs sous-types, mais sa valeur pronostique et sa pertinence comme critère de substitution varient selon la biologie tumorale.</p><h2>Que faut-il retenir pour une patiente en France ?</h2><p>Cette stratégie néoadjuvante chez les patientes HR positives/HER2-low reste expérimentale. Elle ne doit pas être confondue avec les indications approuvées du trastuzumab déruxtécan dans d’autres contextes. Une patiente ne doit pas interrompre ni remplacer son traitement sur la base de ces données. Le choix thérapeutique repose sur une réunion de concertation pluridisciplinaire, les recommandations en vigueur, le stade, les marqueurs tumoraux, les traitements déjà reçus et les préférences éclairées de la patiente.</p><h2>En résumé</h2><p>TALENT apporte un signal biologique intéressant, mais pas une démonstration de guérison supplémentaire. Le fait de voir une tumeur rétrécir est encourageant sans être une preuve qu’elle a disparu. L’étude illustre pourquoi une innovation doit être évaluée sur des critères cliniquement utiles, avec des comparateurs adaptés et un recul suffisant, avant de modifier les soins courants.</p><h2>Sources et limites</h2><ul><li><a href=\"https://www.esmo.org/\">ESMO 2026 — TALENT, résumé LBA23, présenté le 23 octobre 2026</a></li><li><a href=\"https://www.ema.europa.eu/en/medicines/human/EPAR/enhertu\">EMA — Enhertu, indications européennes et sécurité</a></li></ul><p><small>Information générale ; ne remplace pas une consultation. Sources et limites à interpréter selon la situation clinique.</small></p></article>",
+      "url": "article-octobre-rose-talent-20261028.html",
+      "format": "article",
+      "category": "Octobre Rose",
+      "theme": "Cancer du sein",
+      "keywords": [
+        "Cancer du sein"
+      ],
+      "sources": [
+        {
+          "label": "ESMO 2026 — TALENT, résumé LBA23, présenté le 23 octobre 2026",
+          "url": "https://www.esmo.org/"
+        },
+        {
+          "label": "EMA — Enhertu, indications européennes et sécurité",
+          "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/enhertu"
+        }
+      ],
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
+      "imageCredit": "Pexels — photographie d’illustration",
+      "imageSource": "https://www.pexels.com/",
+      "imageLicense": "Pexels License — free to use",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-28",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite et autorisation de mise en ligne de l’édition MACA du 28 octobre 2026 dans la conversation « MACA — Éditorial ».",
+        "contentHash": "658b70006f6ec54e20213c7920fcad6c795277aba877d6e80b67fb66be9eae7c"
+      }
     }
   ],
   "editions": [
@@ -7386,6 +7775,69 @@
         "validation": "Validation explicite du 27 octobre 2026.",
         "veille": "Marche rapide, typhoïde, psilocybine, grippe.",
         "corpusImpact": "Marche et grippe : actualiser-fusionner ; typhoïde et psilocybine : candidats fiches."
+      }
+    },
+    {
+      "id": "edition-2026-10-28",
+      "date": "2026-10-28",
+      "publishAt": "2026-10-28T08:25:00+01:00",
+      "complete": true,
+      "items": [
+        {
+          "contentId": "daily-avc-thrombectomie-20261028",
+          "slot": "À LA UNE",
+          "icon": "🧠"
+        },
+        {
+          "contentId": "daily-capteur-diabete-20261028",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-demence-suivi-20261028",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-steroides-coeur-20261028",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-brulure-rotation-20261028",
+          "slot": "FICHE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-jeun-prises-sang-20261028",
+          "slot": "VRAI OU FAUX",
+          "icon": "✓"
+        },
+        {
+          "contentId": "daily-activite-150-20261028",
+          "slot": "LE CHIFFRE DU JOUR",
+          "icon": "150"
+        },
+        {
+          "contentId": "daily-infirmiere-insuline-20261028",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-respiratoires-s42-20261028",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-telephone-ecole-20261028",
+          "slot": "DONNÉES",
+          "icon": "•"
+        }
+      ],
+      "editorialConference": {
+        "validation": "Validation médicale explicite et autorisation de publication du Dr Romain BEDDOK le 28 octobre 2026.",
+        "veille": "MILD-MT, CONNECT, suivi démence, stéroïdes anabolisants, HAS, SPF, étude téléphones à l’école.",
+        "corpusImpact": "AVC et démence : actualiser-fusionner ; capteur et stéroïdes : candidats fiches uniquement. Article Octobre Rose TALENT publié séparément."
       }
     }
   ]
