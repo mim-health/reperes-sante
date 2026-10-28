@@ -21,7 +21,14 @@ function assemble(x,now=new Date()){check(x);const byId=new Map(x.contents.map(c
  return {current,history:due.slice(0,-1).map(legacyEdition),daily:legacyEdition(current),published,byId,missingEdition:current.date!==localDate(now)};
 }
 function page(c){const siteShell=require('./site-shell');const withdrawn=c.publicationStatus==='RETRACTED'||c.medicalStatus==='WITHDRAWN';return siteShell.enhance(`<!doctype html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(c.title)} — MACASANTÉ</title><meta name="description" content="${esc(c.answer)}"><meta name="robots" content="${withdrawn?'noindex,follow':'index,follow'}"><link rel="canonical" href="https://macasante.fr/${c.url}"><link rel="stylesheet" href="styles-v2.css"><link rel="stylesheet" href="maca-mediterranean-theme.css"><style>main{max-width:850px;margin:auto;padding:36px 24px 72px}main img{max-width:100%;border-radius:20px}main p,main li{line-height:1.7}main a{color:inherit}main h1{font-size:clamp(30px,5vw,48px)}.mag-source-date{font-size:13px;color:#526856}</style></head><body><header class="site-header"><a class="brand" href="/"><img src="logo-maca-officiel.svg" alt="MACASANTÉ"></a><nav><a href="magazine.html">Le Mag</a> · <a href="fiches.html">Fiches santé</a></nav></header><main><p class="mag-source-date">Le Mag · ${displayDate(c.date)}</p>${withdrawn?'<h1>Contenu retiré</h1><p>Ce contenu n’est plus publié ni utilisable comme source par l’Assistant.</p>':c.html}${!withdrawn&&c.ficheId?`<p><a href="fiche.html?id=${encodeURIComponent(c.ficheId)}">Retrouver la fiche MACASANTÉ de référence →</a></p>`:''}<p><a href="magazine.html">← Toutes les archives du Mag</a></p></main></body></html>\n`,c.url);}
+const magazineArtOverrides=Object.freeze({
+ 'daily-avc-thrombectomie-20261028':'assets/editorial/2026-10-28/avc-thrombectomie.svg',
+ 'daily-capteur-diabete-20261028':'assets/editorial/2026-10-28/diabete-capteur.svg',
+ 'daily-demence-suivi-20261028':'assets/editorial/2026-10-28/demence-suivi.svg',
+ 'daily-steroides-coeur-20261028':'assets/editorial/2026-10-28/steroides-coeur.svg'
+});
 function visibleArtwork(c,all){
+ if(magazineArtOverrides[c.id])return magazineArtOverrides[c.id];
  if(!c.image)return '';
  // A stock photo reused across unrelated medical articles harms comprehension.
  // Preserve original editorial metadata and validated hash; suppress only display.
