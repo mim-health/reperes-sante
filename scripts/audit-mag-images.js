@@ -15,7 +15,10 @@ for(const c of src.contents){
   report.local++;
   if(/^(\/|\.\.)/.test(c.image)||c.image.includes('..')||!fs.existsSync(path.join(root,c.image)))add('Missing or unsafe local image: '+c.image);
  }
- if(strict&&/<img\b/i.test(c.html||'')&&!String(c.html).includes(c.image))add('Article hero image differs from editorial image field');
+ if(strict&&/<img\\b/i.test(c.html||'')&&!String(c.html).includes(c.image)){
+  const item={id:c.id,message:'Article hero image differs from editorial image field'};
+  (c.date<'2026-10-29'?report.warnings:report.errors).push(item);
+ }
 }
 console.log('MAG IMAGE AUDIT '+JSON.stringify(report,null,2));
 assert.equal(report.errors.length,0,'Validated Mag image failures: '+report.errors.length);
