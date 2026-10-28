@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "editionId": "edition-2026-10-28",
   "editionDate": "2026-10-28",
-  "sourceFingerprint": "b45d2dc7b36301d9553e1a30dc3b7d58802a0ffbf0ce73f5cdc11994eb547e27",
+  "sourceFingerprint": "883eec6a4db6efafbfe5d2bf8d374b3bb43c197ff445565923364cc66bc5c7c8",
   "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
@@ -71,6 +71,12 @@
       "id": "mag-mag-antibiotiques-probiotiques-20261028",
       "version": "c6a13fa8146a501487eac006196d6231a246de681dc13fc1a46abf337a2147bb",
       "url": "article-mag-antibiotiques-probiotiques-20261028.html",
+      "date": "2026-10-28"
+    },
+    {
+      "id": "mag-mag-sommeil-adolescent-20261028",
+      "version": "0f5b4b10b387766a48fdd0bf84e39a04be9c6466b5bd98ca983f9b1cf57f8c3a",
+      "url": "article-mag-sommeil-adolescent-20261028.html",
       "date": "2026-10-28"
     },
     {

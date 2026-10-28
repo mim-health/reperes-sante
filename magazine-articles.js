@@ -3600,5 +3600,28 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "c6a13fa8146a501487eac006196d6231a246de681dc13fc1a46abf337a2147bb"
+  },
+  {
+    "id": "mag-sommeil-adolescent-20261028",
+    "url": "article-mag-sommeil-adolescent-20261028.html",
+    "title": "Pourquoi votre ado n’arrive-t-il pas à dormir à 22 h ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Sommeil adolescent",
+    "date": "2026-10-28",
+    "status": "PUBLISHED",
+    "excerpt": "À la puberté, l’horloge biologique se décale souvent vers des heures plus tardives. Les adolescents ont pourtant besoin de 8 à 10 heures de sommeil ; les écrans peuvent aggraver ce décalage sans en être l’unique cause.",
+    "image": "https://images.pexels.com/photos/10387709/pexels-photo-10387709.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Adolescent allongé dans son lit avec un téléphone",
+    "keywords": [
+      "adolescent",
+      "sommeil",
+      "puberté",
+      "rythme circadien",
+      "écrans"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "0f5b4b10b387766a48fdd0bf84e39a04be9c6466b5bd98ca983f9b1cf57f8c3a"
   }
 ];
