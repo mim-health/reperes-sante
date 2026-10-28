@@ -48,7 +48,7 @@ window.MACA_EDITORIAL_HISTORY=[
         "source": "JAMA — essai randomisé, 5 octobre 2026, doi:10.1001/jama.2026.17192 · Assurance Maladie — accompagnement et sevrage tabagique · Assurance Maladie — prise en charge du sevrage tabagique",
         "sourceLabel": "JAMA — essai randomisé, 5 octobre 2026, doi:10.1001/jama.2026.17192",
         "sourceUrl": "https://jamanetwork.com/journals/jama/article-abstract/2854847",
-        "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "image": "",
         "imageAlt": "Entretien de prévention.",
         "imageCredit": "Photo d’illustration : Pexels",
         "imageSource": "https://www.pexels.com/",
@@ -65,7 +65,7 @@ window.MACA_EDITORIAL_HISTORY=[
         "source": "HAS — information patient : recherche et traitement de Helicobacter pylori · HAS — traitement guidé, mise à jour du 13 mai 2025 · HAS — traitement probabiliste · BMJ — actualisation clinique, 8 octobre 2026 (texte intégral non consulté)",
         "sourceLabel": "HAS — information patient : recherche et traitement de Helicobacter pylori",
         "sourceUrl": "https://www.has-sante.fr/jcms/c_2911396/fr/la-recherche-et-le-traitement-de-helicobacter-pylori/",
-        "image": "https://images.pexels.com/photos/4226119/pexels-photo-4226119.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "image": "",
         "imageAlt": "Consultation médicale digestive.",
         "imageCredit": "Photo d’illustration : Pexels",
         "imageSource": "https://www.pexels.com/",
@@ -83,7 +83,7 @@ window.MACA_EDITORIAL_HISTORY=[
         "source": "Fiche MACASANTÉ validée",
         "sourceLabel": "Fiche MACASANTÉ validée",
         "sourceUrl": "fiche.html?id=brulure-domestique-premiers-gestes",
-        "image": "https://images.pexels.com/photos/4226119/pexels-photo-4226119.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "image": "",
         "imageAlt": "Soins médicaux.",
         "imageCredit": "Photo d’illustration : Pexels",
         "imageSource": "https://www.pexels.com/",
@@ -191,7 +191,7 @@ window.MACA_EDITORIAL_HISTORY=[
         "source": "NHS-Galleri · NEJM, septembre 2026 · NHS-Galleri — résultats complets, 23 septembre 2026",
         "sourceLabel": "NHS-Galleri · NEJM, septembre 2026",
         "sourceUrl": "https://www.nejm.org/doi/full/10.1056/NEJMoa2505723",
-        "image": "https://images.pexels.com/photos/4248219/pexels-photo-4248219.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "image": "",
         "imageAlt": "Tubes de prélèvement sanguin.",
         "imageCredit": "Photographie d’illustration : Pexels",
         "imageSource": "https://www.pexels.com/photo/4248219/",
@@ -242,7 +242,7 @@ window.MACA_EDITORIAL_HISTORY=[
         "source": "ESC · 8 octobre 2026",
         "sourceLabel": "ESC · 8 octobre 2026",
         "sourceUrl": "https://www.escardio.org/news/press/press-releases/report-shows-how-we-must-protect-people-living-with-heart-disease-in-heatwaves/",
-        "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "image": "",
         "imageAlt": "Échange avec un professionnel de santé.",
         "imageCredit": "Photographie d’illustration : Pexels",
         "imageSource": "https://www.pexels.com/photo/4386466/",
@@ -260,7 +260,7 @@ window.MACA_EDITORIAL_HISTORY=[
         "source": "Fiche MACASANTÉ validée",
         "sourceLabel": "Fiche MACASANTÉ validée",
         "sourceUrl": "fiche.html?id=entorse-cheville-fracture",
-        "image": "https://images.pexels.com/photos/4226119/pexels-photo-4226119.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "image": "",
         "imageAlt": "Examen médical.",
         "imageCredit": "Photographie d’illustration : Pexels",
         "imageSource": "https://www.pexels.com/photo/4226119/",
@@ -328,7 +328,7 @@ window.MACA_EDITORIAL_HISTORY=[
         "source": "Chen Q, Singer D, Yang CT, Pritchard KT, Kim DH, Lin KJ. Anticoagulation Outcomes in Nursing Home Residents With Atrial Fibrillation and ADL Disability. JAMA Netw Open. 2026;9(10):e2637533. Publié le 5 octobre. DOI : 10.1001/jamanetworkopen.2026.37533. · Kapoor A, Chen Z, Patel J, et coll. Stroke and Bleeding Risk in Long-Term Care Residents With Atrial Fibrillation Who Discontinue Anticoagulation. JAMA Netw Open. 2026;9(10):e2640964. Publié le 26 octobre. DOI : 10.1001/jamanetworkopen.2026.40964. · Van Gelder IC, Rienstra M, Bunting KV, et coll. 2024 ESC Guidelines for the management of atrial fibrillation developed in collaboration with EACTS. Eur Heart J. 2024;45:3314–3414. DOI : 10.1093/eurheartj/ehae176.",
         "sourceLabel": "Chen Q, Singer D, Yang CT, Pritchard KT, Kim DH, Lin KJ. Anticoagulation Outcomes in Nursing Home Residents With Atrial Fibrillation and ADL Disability. JAMA Netw Open. 2026;9(10):e2637533. Publié le 5 octobre. DOI : 10.1001/jamanetworkopen.2026.37533.",
         "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2854830",
-        "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+        "image": "",
         "imageAlt": "Échange entre médecin et patient autour d’un document.",
         "imageCredit": "cottonbro studio / Pexels",
         "imageSource": "https://www.pexels.com/photo/hands-of-doctor-and-patient-on-table-7578798/",
@@ -596,7 +596,7 @@ window.MACA_EDITORIAL_HISTORY=[
         "source": "JAMA Internal Medicine — deux essais randomisés, 12 octobre 2026, doi:10.1001/jamainternmed.2026.4969",
         "sourceLabel": "JAMA Internal Medicine — deux essais randomisés, 12 octobre 2026, doi:10.1001/jamainternmed.2026.4969",
         "sourceUrl": "https://jamanetwork.com/journals/jamainternalmedicine/article-abstract/2854917",
-        "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+        "image": "",
         "imageAlt": "Échange entre médecin et patient autour d’un document.",
         "imageCredit": "cottonbro studio / Pexels",
         "imageSource": "https://www.pexels.com/photo/hands-of-doctor-and-patient-on-table-7578798/",
@@ -791,7 +791,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "corpusId": "saignement-nez-adulte",
         "source": "MACASANTÉ — fiche existante validée",
         "sourceLabel": "MACASANTÉ — fiche existante validée",
-        "sourceUrl": "https://macasante.fr/fiche.html?id=saignement-nez-adulte"
+        "sourceUrl": "https://macasante.fr/fiche.html?id=saignement-nez-adulte",
+        "image": ""
       },
       {
         "id": "daily-gluten-vf-20261014",
@@ -820,7 +821,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-hypertension-20261014.html",
         "source": "OMS — hypertension, rapport du 23 septembre 2025",
         "sourceLabel": "OMS — hypertension, rapport du 23 septembre 2025",
-        "sourceUrl": "https://www.who.int/fr/news-room/fact-sheets/detail/hypertension"
+        "sourceUrl": "https://www.who.int/fr/news-room/fact-sheets/detail/hypertension",
+        "image": ""
       },
       {
         "id": "daily-monoxyde-20261014",
@@ -832,7 +834,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-monoxyde-20261014.html",
         "source": "Santé publique France — prévention du monoxyde de carbone",
         "sourceLabel": "Santé publique France — prévention du monoxyde de carbone",
-        "sourceUrl": "https://www.santepubliquefrance.fr/monoxyde-de-carbone/comment-reduire-le-risque-dintoxication-au-monoxyde-de-carbone"
+        "sourceUrl": "https://www.santepubliquefrance.fr/monoxyde-de-carbone/comment-reduire-le-risque-dintoxication-au-monoxyde-de-carbone",
+        "image": ""
       },
       {
         "id": "daily-paracetamol-20261014",
@@ -844,7 +847,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-paracetamol-20261014.html",
         "source": "Assurance Maladie — utiliser les antalgiques",
         "sourceLabel": "Assurance Maladie — utiliser les antalgiques",
-        "sourceUrl": "https://www.ameli.fr/assure/sante/medicaments/utiliser-recycler-medicaments/utiliser-antalgiques"
+        "sourceUrl": "https://www.ameli.fr/assure/sante/medicaments/utiliser-recycler-medicaments/utiliser-antalgiques",
+        "image": ""
       },
       {
         "id": "daily-hpv-20261014",
@@ -856,7 +860,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-hpv-20261014.html",
         "source": "Assurance Maladie — vaccination HPV",
         "sourceLabel": "Assurance Maladie — vaccination HPV",
-        "sourceUrl": "https://www.ameli.fr/assure/actualites/infections-papillomavirus-humains-se-vacciner-jeune-pour-une-protection-optimale"
+        "sourceUrl": "https://www.ameli.fr/assure/actualites/infections-papillomavirus-humains-se-vacciner-jeune-pour-une-protection-optimale",
+        "image": ""
       }
     ]
   },
@@ -874,7 +879,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-parkinson-20261015.html",
         "source": "JAMA — NOPARK, 8 octobre 2026, DOI 10.1001/jama.2026.18828 · PubMed PMID 42848371",
         "sourceLabel": "JAMA — NOPARK, 8 octobre 2026, DOI 10.1001/jama.2026.18828",
-        "sourceUrl": "https://jamanetwork.com/journals/jama/fullarticle/2855023"
+        "sourceUrl": "https://jamanetwork.com/journals/jama/fullarticle/2855023",
+        "image": ""
       },
       {
         "id": "daily-sepsis-20261015",
@@ -887,7 +893,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "corpusId": "sepsis-reconnaitre-urgence",
         "source": "JAMA, 14 octobre 2026, DOI 10.1001/jama.2026.21322",
         "sourceLabel": "JAMA, 14 octobre 2026, DOI 10.1001/jama.2026.21322",
-        "sourceUrl": "https://jamanetwork.com/journals/jama/fullarticle/2855463"
+        "sourceUrl": "https://jamanetwork.com/journals/jama/fullarticle/2855463",
+        "image": ""
       },
       {
         "id": "daily-vih-20261015",
@@ -899,7 +906,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-vih-20261015.html",
         "source": "Lancet — LATA, PMID 42753775 · EMA — Vocabria · EMA — Rekambys",
         "sourceLabel": "Lancet — LATA, PMID 42753775",
-        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42753775/"
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42753775/",
+        "image": ""
       },
       {
         "id": "daily-bronchiolite-20261015",
@@ -912,7 +920,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "corpusId": "bronchiolite-bebe-vaccin-grossesse-anticorps",
         "source": "Santé publique France — bulletin respiratoire du 14 octobre 2026",
         "sourceLabel": "Santé publique France — bulletin respiratoire du 14 octobre 2026",
-        "sourceUrl": "https://www.santepubliquefrance.fr/infections-respiratoires-aigues/grippe/bulletin-national/infections-respiratoires-aigues-grippe-bronchiolite-covid-19-bulletin-du-14-octobre-2026"
+        "sourceUrl": "https://www.santepubliquefrance.fr/infections-respiratoires-aigues/grippe/bulletin-national/infections-respiratoires-aigues-grippe-bronchiolite-covid-19-bulletin-du-14-octobre-2026",
+        "image": ""
       },
       {
         "id": "daily-rupture-20261015",
@@ -925,7 +934,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "corpusId": "rupture-medicament-que-faire",
         "source": "MACASANTÉ — fiche validée",
         "sourceLabel": "MACASANTÉ — fiche validée",
-        "sourceUrl": "https://macasante.fr/fiche.html?id=rupture-medicament-que-faire"
+        "sourceUrl": "https://macasante.fr/fiche.html?id=rupture-medicament-que-faire",
+        "image": ""
       },
       {
         "id": "daily-cataracte-20261015",
@@ -937,7 +947,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-cataracte-20261015.html",
         "source": "Assurance Maladie — traitement de la cataracte",
         "sourceLabel": "Assurance Maladie — traitement de la cataracte",
-        "sourceUrl": "https://www.ameli.fr/assure/sante/themes/cataracte/traitement"
+        "sourceUrl": "https://www.ameli.fr/assure/sante/themes/cataracte/traitement",
+        "image": ""
       },
       {
         "id": "daily-brossage-20261015",
@@ -949,7 +960,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-brossage-20261015.html",
         "source": "UFSBD — fluor et prévention",
         "sourceLabel": "UFSBD — fluor et prévention",
-        "sourceUrl": "https://www.ufsbd.fr/espace-public/nos-prises-de-parole-nos-convictions/nos-engagements/le-fluor/"
+        "sourceUrl": "https://www.ufsbd.fr/espace-public/nos-prises-de-parole-nos-convictions/nos-engagements/le-fluor/",
+        "image": ""
       },
       {
         "id": "daily-diarrhee-20261015",
@@ -961,7 +973,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-diarrhee-20261015.html",
         "source": "Assurance Maladie — gastro-entérite adulte",
         "sourceLabel": "Assurance Maladie — gastro-entérite adulte",
-        "sourceUrl": "https://www.ameli.fr/assure/sante/themes/gastro-enterite-adulte/bons-reflexes-que-faire"
+        "sourceUrl": "https://www.ameli.fr/assure/sante/themes/gastro-enterite-adulte/bons-reflexes-que-faire",
+        "image": ""
       },
       {
         "id": "daily-toxoplasmose-20261015",
@@ -973,7 +986,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-toxoplasmose-20261015.html",
         "source": "Assurance Maladie — prévention de la toxoplasmose",
         "sourceLabel": "Assurance Maladie — prévention de la toxoplasmose",
-        "sourceUrl": "https://www.ameli.fr/assure/sante/themes/toxoplasmose/prevention"
+        "sourceUrl": "https://www.ameli.fr/assure/sante/themes/toxoplasmose/prevention",
+        "image": ""
       },
       {
         "id": "daily-melanome-20261015",
@@ -985,7 +999,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-melanome-20261015.html",
         "source": "Société française de dermatologie — méthode ABCDE",
         "sourceLabel": "Société française de dermatologie — méthode ABCDE",
-        "sourceUrl": "https://dermato-info.fr/les-conseils-et-tutos-peau/les-methodes-dauto-examen/la-methode-abcde"
+        "sourceUrl": "https://dermato-info.fr/les-conseils-et-tutos-peau/les-methodes-dauto-examen/la-methode-abcde",
+        "image": ""
       }
     ]
   },
@@ -1003,7 +1018,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-cremes-20261016.html",
         "source": "JAMA Network Open — Abilov et coll., 8 octobre 2026 · Société française de dermatologie — dermocorticoïdes",
         "sourceLabel": "JAMA Network Open — Abilov et coll., 8 octobre 2026",
-        "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2854974"
+        "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2854974",
+        "image": ""
       },
       {
         "id": "daily-rectum-20261016",
@@ -1015,7 +1031,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-rectum-20261016.html",
         "source": "JAMA Network Open, 15 octobre 2026, DOI 10.1001/jamanetworkopen.2026.39063",
         "sourceLabel": "JAMA Network Open, 15 octobre 2026, DOI 10.1001/jamanetworkopen.2026.39063",
-        "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855353"
+        "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855353",
+        "image": ""
       },
       {
         "id": "daily-icfep-20261016",
@@ -1028,7 +1045,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "corpusId": "insuffisance-cardiaque-medicaments-quotidien",
         "source": "ESC — recommandations insuffisance cardiaque 2026 · SFC / Cardio-online — 7 octobre 2026",
         "sourceLabel": "ESC — recommandations insuffisance cardiaque 2026",
-        "sourceUrl": "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/heart-failure"
+        "sourceUrl": "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/heart-failure",
+        "image": ""
       },
       {
         "id": "daily-chikungunya-20261016",
@@ -1041,7 +1059,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "corpusId": "moustique-tigre-maladies-france-20260824",
         "source": "Santé publique France — bulletin arboviroses du 14 octobre 2026",
         "sourceLabel": "Santé publique France — bulletin arboviroses du 14 octobre 2026",
-        "sourceUrl": "https://www.santepubliquefrance.fr/sites/default/files/2026-10/bullnat_arboviroses_20261014.pdf"
+        "sourceUrl": "https://www.santepubliquefrance.fr/sites/default/files/2026-10/bullnat_arboviroses_20261014.pdf",
+        "image": ""
       },
       {
         "id": "daily-dos-travail-20261016",
@@ -1054,7 +1073,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "corpusId": "mal-dos-travail-prevenir-installation",
         "source": "MACASANTÉ — fiche validée",
         "sourceLabel": "MACASANTÉ — fiche validée",
-        "sourceUrl": "https://macasante.fr/fiche.html?id=mal-dos-travail-prevenir-installation"
+        "sourceUrl": "https://macasante.fr/fiche.html?id=mal-dos-travail-prevenir-installation",
+        "image": ""
       },
       {
         "id": "daily-demence-20261016",
@@ -1066,7 +1086,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-demence-20261016.html",
         "source": "OMS — démence",
         "sourceLabel": "OMS — démence",
-        "sourceUrl": "https://www.who.int/fr/news-room/fact-sheets/detail/dementia"
+        "sourceUrl": "https://www.who.int/fr/news-room/fact-sheets/detail/dementia",
+        "image": ""
       },
       {
         "id": "daily-fruits-legumes-20261016",
@@ -1078,7 +1099,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-fruits-legumes-20261016.html",
         "source": "Manger Bouger — fruits et légumes",
         "sourceLabel": "Manger Bouger — fruits et légumes",
-        "sourceUrl": "https://www.mangerbouger.fr/l-essentiel/les-recommandations-sur-l-alimentation-l-activite-physique-et-la-sedentarite/augmenter/augmenter-les-fruits-et-legumes"
+        "sourceUrl": "https://www.mangerbouger.fr/l-essentiel/les-recommandations-sur-l-alimentation-l-activite-physique-et-la-sedentarite/augmenter/augmenter-les-fruits-et-legumes",
+        "image": ""
       },
       {
         "id": "daily-lentilles-20261016",
@@ -1090,7 +1112,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-lentilles-20261016.html",
         "source": "Assurance Maladie — lentilles",
         "sourceLabel": "Assurance Maladie — lentilles",
-        "sourceUrl": "https://www.ameli.fr/assure/sante/bons-gestes/quotidien/mettre-garder-lentilles-contact"
+        "sourceUrl": "https://www.ameli.fr/assure/sante/bons-gestes/quotidien/mettre-garder-lentilles-contact",
+        "image": ""
       },
       {
         "id": "daily-inhalateur-20261016",
@@ -1102,7 +1125,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-inhalateur-20261016.html",
         "source": "Assurance Maladie — inhalateur",
         "sourceLabel": "Assurance Maladie — inhalateur",
-        "sourceUrl": "https://www.ameli.fr/assure/sante/themes/asthme-adulte/asthme-traitement/utiliser-inhalateur"
+        "sourceUrl": "https://www.ameli.fr/assure/sante/themes/asthme-adulte/asthme-traitement/utiliser-inhalateur",
+        "image": ""
       },
       {
         "id": "daily-cerumen-20261016",
@@ -1114,7 +1138,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-cerumen-20261016.html",
         "source": "Assurance Maladie — bouchon de cérumen",
         "sourceLabel": "Assurance Maladie — bouchon de cérumen",
-        "sourceUrl": "https://www.ameli.fr/assure/sante/themes/bouchon-cerumen/bons-gestes-quand-consulter"
+        "sourceUrl": "https://www.ameli.fr/assure/sante/themes/bouchon-cerumen/bons-gestes-quand-consulter",
+        "image": ""
       }
     ]
   },
@@ -1132,7 +1157,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-inegalites-cardio-20261018.html",
         "source": "Article intégral · DOI",
         "sourceLabel": "Article intégral",
-        "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855352"
+        "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855352",
+        "image": ""
       },
       {
         "id": "daily-vrs-adulte-20261018",
@@ -1144,7 +1170,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-vrs-adulte-20261018.html",
         "source": "DOI · PubMed 42666095 · résumé original et dates, portail des auteurs · HAS, ABRYSVO, avis 2026",
         "sourceLabel": "DOI",
-        "sourceUrl": "https://doi.org/10.1056/EVIDoa2600272"
+        "sourceUrl": "https://doi.org/10.1056/EVIDoa2600272",
+        "image": ""
       },
       {
         "id": "daily-consultation-anesthesie-20261018",
@@ -1156,7 +1183,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-consultation-anesthesie-20261018.html",
         "source": "SFAR, « Consultation d’anesthésie : élément clé de la réussite de l’intervention », 8 octobre 2026",
         "sourceLabel": "SFAR, « Consultation d’anesthésie : élément clé de la réussite de l’intervention », 8 octobre 2026",
-        "sourceUrl": "https://sfar.org/consultation-danesthesie-element-cle-de-la-reussite-de-lintervention/"
+        "sourceUrl": "https://sfar.org/consultation-danesthesie-element-cle-de-la-reussite-de-lintervention/",
+        "image": ""
       },
       {
         "id": "daily-bilan-prevention-kine-20261018",
@@ -1168,7 +1196,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-bilan-prevention-kine-20261018.html",
         "source": "Assurance Maladie, annonce du 1er octobre 2026 · déroulement et modalités, 30 septembre 2026",
         "sourceLabel": "Assurance Maladie, annonce du 1er octobre 2026",
-        "sourceUrl": "https://www.ameli.fr/masseur-kinesitherapeute/actualites/le-masseur-kinesitherapeute-peut-desormais-proposer-mon-bilan-prevention-ses-patients"
+        "sourceUrl": "https://www.ameli.fr/masseur-kinesitherapeute/actualites/le-masseur-kinesitherapeute-peut-desormais-proposer-mon-bilan-prevention-ses-patients",
+        "image": ""
       },
       {
         "id": "daily-crampes-20261018",
@@ -1181,7 +1210,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "corpusId": "crampes-musculaires-causes",
         "source": "Lire la fiche : Crampes musculaires",
         "sourceLabel": "Lire la fiche : Crampes musculaires",
-        "sourceUrl": "https://macasante.fr/fiche.html?id=crampes-musculaires-causes"
+        "sourceUrl": "https://macasante.fr/fiche.html?id=crampes-musculaires-causes",
+        "image": ""
       },
       {
         "id": "daily-coupure-alcool-20261018",
@@ -1193,7 +1223,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-coupure-alcool-20261018.html",
         "source": "Assurance Maladie, coupure cutanée",
         "sourceLabel": "Assurance Maladie, coupure cutanée",
-        "sourceUrl": "https://www.ameli.fr/assure/sante/urgence/accidents-domestiques/coupure-cutanee"
+        "sourceUrl": "https://www.ameli.fr/assure/sante/urgence/accidents-domestiques/coupure-cutanee",
+        "image": ""
       },
       {
         "id": "daily-miel-nourrisson-20261018",
@@ -1205,7 +1236,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-miel-nourrisson-20261018.html",
         "source": "Anses, fiche alimentation des nourrissons",
         "sourceLabel": "Anses, fiche alimentation des nourrissons",
-        "sourceUrl": "https://www.anses.fr/system/files/ANSES-Ft-AlimNourrissons.pdf"
+        "sourceUrl": "https://www.anses.fr/system/files/ANSES-Ft-AlimNourrissons.pdf",
+        "image": ""
       },
       {
         "id": "daily-migraine-20261018",
@@ -1217,7 +1249,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-migraine-20261018.html",
         "source": "AAN, publication du 31 août 2026",
         "sourceLabel": "AAN, publication du 31 août 2026",
-        "sourceUrl": "https://www.aan.com/PressRoom/Home/PressRelease/5361"
+        "sourceUrl": "https://www.aan.com/PressRoom/Home/PressRelease/5361",
+        "image": ""
       },
       {
         "id": "daily-audition-brutale-20261018",
@@ -1229,7 +1262,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-audition-brutale-20261018.html",
         "source": "Assurance Maladie, surdité soudaine",
         "sourceLabel": "Assurance Maladie, surdité soudaine",
-        "sourceUrl": "https://www.ameli.fr/assure/sante/urgence/pathologies/surdite-soudaine-que-faire"
+        "sourceUrl": "https://www.ameli.fr/assure/sante/urgence/pathologies/surdite-soudaine-que-faire",
+        "image": ""
       },
       {
         "id": "daily-abces-dentaire-20261018",
@@ -1241,7 +1275,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "mag-abces-dentaire-20261018.html",
         "source": "Assurance Maladie, quand consulter",
         "sourceLabel": "Assurance Maladie, quand consulter",
-        "sourceUrl": "https://www.ameli.fr/assure/sante/themes/abces-dentaire/soulager-douleur-consulter"
+        "sourceUrl": "https://www.ameli.fr/assure/sante/themes/abces-dentaire/soulager-douleur-consulter",
+        "image": ""
       }
     ]
   },
@@ -1259,7 +1294,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-opioides-20261022.html",
         "source": "Publication primaire / source de référence",
         "sourceLabel": "Publication primaire / source de référence",
-        "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855495"
+        "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855495",
+        "image": ""
       },
       {
         "id": "daily-sjogren-20261022",
@@ -1271,7 +1307,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-sjogren-20261022.html",
         "source": "Publication primaire / source de référence · Registre clinique complémentaire",
         "sourceLabel": "Publication primaire / source de référence",
-        "sourceUrl": "https://euclinicaltrials.eu/ctis-public/view/2024-511069-12-00?lang=en"
+        "sourceUrl": "https://euclinicaltrials.eu/ctis-public/view/2024-511069-12-00?lang=en",
+        "image": ""
       },
       {
         "id": "daily-denosumab-20261022",
@@ -1283,7 +1320,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-denosumab-20261022.html",
         "source": "Publication primaire / source de référence",
         "sourceLabel": "Publication primaire / source de référence",
-        "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855573"
+        "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855573",
+        "image": ""
       },
       {
         "id": "daily-oxymetrie-20261022",
@@ -1295,7 +1333,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-oxymetrie-20261022.html",
         "source": "Publication primaire / source de référence",
         "sourceLabel": "Publication primaire / source de référence",
-        "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855571"
+        "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855571",
+        "image": ""
       },
       {
         "id": "daily-double-prise-20261022",
@@ -1308,7 +1347,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "corpusId": "double-prise-medicament",
         "source": "Publication primaire / source de référence",
         "sourceLabel": "Publication primaire / source de référence",
-        "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855495"
+        "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855495",
+        "image": ""
       },
       {
         "id": "daily-vaccin-grippe-20261022",
@@ -1320,7 +1360,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-vaccin-grippe-20261022.html",
         "source": "Publication primaire / source de référence",
         "sourceLabel": "Publication primaire / source de référence",
-        "sourceUrl": "https://vaccination-info-service.fr/Les-maladies-et-leurs-vaccins/Grippe"
+        "sourceUrl": "https://vaccination-info-service.fr/Les-maladies-et-leurs-vaccins/Grippe",
+        "image": ""
       },
       {
         "id": "daily-chiffre-denosumab-20261022",
@@ -1332,7 +1373,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-chiffre-denosumab-20261022.html",
         "source": "Publication primaire / source de référence",
         "sourceLabel": "Publication primaire / source de référence",
-        "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855573"
+        "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855573",
+        "image": ""
       },
       {
         "id": "daily-niche2-20261022",
@@ -1344,7 +1386,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-niche2-20261022.html",
         "source": "Publication primaire / source de référence",
         "sourceLabel": "Publication primaire / source de référence",
-        "sourceUrl": "https://www.annalsofoncology.org/article/S0923-7534(24)03843-2/fulltext"
+        "sourceUrl": "https://www.annalsofoncology.org/article/S0923-7534(24)03843-2/fulltext",
+        "image": ""
       },
       {
         "id": "daily-vih-hebdo-20261022",
@@ -1356,7 +1399,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-vih-hebdo-20261022.html",
         "source": "Publication primaire / source de référence",
         "sourceLabel": "Publication primaire / source de référence",
-        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42525925/"
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42525925/",
+        "image": ""
       },
       {
         "id": "daily-teleexpertise-pediatrique-20261022",
@@ -1368,7 +1412,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-teleexpertise-pediatrique-20261022.html",
         "source": "Publication primaire / source de référence",
         "sourceLabel": "Publication primaire / source de référence",
-        "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855575"
+        "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855575",
+        "image": ""
       }
     ]
   },
@@ -1386,7 +1431,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-sommeil-femmes-20261023.html",
         "source": "Publication scientifique primaire",
         "sourceLabel": "Publication scientifique primaire",
-        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42518248/"
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42518248/",
+        "image": ""
       },
       {
         "id": "poids-menopause-20261023",
@@ -1398,7 +1444,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-poids-menopause-20261023.html",
         "source": "Publication scientifique primaire",
         "sourceLabel": "Publication scientifique primaire",
-        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42160056/"
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42160056/",
+        "image": ""
       },
       {
         "id": "boissons-enfants-20261023",
@@ -1410,7 +1457,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-boissons-enfants-20261023.html",
         "source": "Publication scientifique primaire",
         "sourceLabel": "Publication scientifique primaire",
-        "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855120"
+        "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855120",
+        "image": ""
       },
       {
         "id": "culture-moral-20261023",
@@ -1422,7 +1470,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-culture-moral-20261023.html",
         "source": "Publication scientifique primaire",
         "sourceLabel": "Publication scientifique primaire",
-        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42873497/"
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42873497/",
+        "image": ""
       },
       {
         "id": "fiche-menopause-20261023",
@@ -1435,7 +1484,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "corpusId": "menopause-sommeil-reveils",
         "source": "Source de référence",
         "sourceLabel": "Source de référence",
-        "sourceUrl": "https://www.nice.org.uk/guidance/ng23"
+        "sourceUrl": "https://www.nice.org.uk/guidance/ng23",
+        "image": ""
       },
       {
         "id": "vraifaux-menopause-20261023",
@@ -1448,7 +1498,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "corpusId": "menopause-sommeil-reveils",
         "source": "Source de référence",
         "sourceLabel": "Source de référence",
-        "sourceUrl": "https://www.nice.org.uk/guidance/ng23"
+        "sourceUrl": "https://www.nice.org.uk/guidance/ng23",
+        "image": ""
       },
       {
         "id": "chiffre-culture-20261023",
@@ -1460,7 +1511,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-chiffre-culture-20261023.html",
         "source": "Source de référence",
         "sourceLabel": "Source de référence",
-        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42873497/"
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42873497/",
+        "image": ""
       },
       {
         "id": "donnee-sommeil-20261023",
@@ -1472,7 +1524,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-donnee-sommeil-20261023.html",
         "source": "Source de référence",
         "sourceLabel": "Source de référence",
-        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42518248/"
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42518248/",
+        "image": ""
       },
       {
         "id": "donnee-boissons-20261023",
@@ -1485,7 +1538,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "corpusId": "boissons-sucrees",
         "source": "Source de référence",
         "sourceLabel": "Source de référence",
-        "sourceUrl": "https://www.who.int/publications/i/item/9789241549028"
+        "sourceUrl": "https://www.who.int/publications/i/item/9789241549028",
+        "image": ""
       },
       {
         "id": "donnee-culture-20261023",
@@ -1497,7 +1551,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-donnee-culture-20261023.html",
         "source": "Source de référence",
         "sourceLabel": "Source de référence",
-        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42873497/"
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42873497/",
+        "image": ""
       }
     ]
   },
@@ -1515,7 +1570,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-calcium-coronaire-jeunes-20261024.html",
         "source": "JAMA Cardiology",
         "sourceLabel": "JAMA Cardiology",
-        "sourceUrl": "https://jamanetwork.com/journals/jamacardiology"
+        "sourceUrl": "https://jamanetwork.com/journals/jamacardiology",
+        "image": ""
       },
       {
         "id": "daily-testosterone-femmes-20261024",
@@ -1527,7 +1583,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-testosterone-femmes-20261024.html",
         "source": "Consensus international sur la testostérone chez les femmes",
         "sourceLabel": "Consensus international sur la testostérone chez les femmes",
-        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/31498871/"
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/31498871/",
+        "image": ""
       },
       {
         "id": "daily-vitesse-marche-sante-20261024",
@@ -1539,7 +1596,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-vitesse-marche-sante-20261024.html",
         "source": "British Geriatrics Society — ressources sur la fragilité",
         "sourceLabel": "British Geriatrics Society — ressources sur la fragilité",
-        "sourceUrl": "https://www.bgs.org.uk/resources/introduction-to-frailty"
+        "sourceUrl": "https://www.bgs.org.uk/resources/introduction-to-frailty",
+        "image": ""
       },
       {
         "id": "daily-carence-fer-sans-anemie-20261024",
@@ -1551,7 +1609,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-carence-fer-sans-anemie-20261024.html",
         "source": "British Society of Gastroenterology — iron deficiency anaemia",
         "sourceLabel": "British Society of Gastroenterology — iron deficiency anaemia",
-        "sourceUrl": "https://gut.bmj.com/content/70/11/2030"
+        "sourceUrl": "https://gut.bmj.com/content/70/11/2030",
+        "image": ""
       },
       {
         "id": "daily-fiche-audition-60-20261024",
@@ -1563,7 +1622,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-fiche-audition-60-20261024.html",
         "source": "OMS — World report on hearing",
         "sourceLabel": "OMS — World report on hearing",
-        "sourceUrl": "https://www.who.int/publications/i/item/world-report-on-hearing"
+        "sourceUrl": "https://www.who.int/publications/i/item/world-report-on-hearing",
+        "image": ""
       },
       {
         "id": "daily-vraifaux-antibiotiques-rhume-20261024",
@@ -1575,7 +1635,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-vraifaux-antibiotiques-rhume-20261024.html",
         "source": "OMS — Antibiotic resistance",
         "sourceLabel": "OMS — Antibiotic resistance",
-        "sourceUrl": "https://www.who.int/news-room/fact-sheets/detail/antibiotic-resistance"
+        "sourceUrl": "https://www.who.int/news-room/fact-sheets/detail/antibiotic-resistance",
+        "image": ""
       },
       {
         "id": "daily-chiffre-mois-sans-tabac-20261024",
@@ -1587,7 +1648,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-chiffre-mois-sans-tabac-20261024.html",
         "source": "Tabac info service",
         "sourceLabel": "Tabac info service",
-        "sourceUrl": "https://www.tabac-info-service.fr/"
+        "sourceUrl": "https://www.tabac-info-service.fr/",
+        "image": ""
       },
       {
         "id": "daily-donnee-lait-cru-20261024",
@@ -1599,7 +1661,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-donnee-lait-cru-20261024.html",
         "source": "CDC — Raw milk",
         "sourceLabel": "CDC — Raw milk",
-        "sourceUrl": "https://www.cdc.gov/food-safety/foods/raw-milk.html"
+        "sourceUrl": "https://www.cdc.gov/food-safety/foods/raw-milk.html",
+        "image": ""
       },
       {
         "id": "daily-donnee-grossesse-chaleur-20261024",
@@ -1611,7 +1674,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-donnee-grossesse-chaleur-20261024.html",
         "source": "OMS — Climate change and health",
         "sourceLabel": "OMS — Climate change and health",
-        "sourceUrl": "https://www.who.int/news-room/fact-sheets/detail/climate-change-and-health"
+        "sourceUrl": "https://www.who.int/news-room/fact-sheets/detail/climate-change-and-health",
+        "image": ""
       },
       {
         "id": "daily-donnee-virus-shamonda-20261024",
@@ -1623,7 +1687,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-donnee-virus-shamonda-20261024.html",
         "source": "Santé publique France — surveillance",
         "sourceLabel": "Santé publique France — surveillance",
-        "sourceUrl": "https://www.santepubliquefrance.fr/"
+        "sourceUrl": "https://www.santepubliquefrance.fr/",
+        "image": ""
       }
     ]
   },
@@ -1641,7 +1706,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-vrs-vaccin-nirsevimab-20261025.html",
         "source": "Référence scientifique ou institutionnelle",
         "sourceLabel": "Référence scientifique ou institutionnelle",
-        "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855505"
+        "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855505",
+        "image": ""
       },
       {
         "id": "daily-don-rein-grossesse-20261025",
@@ -1653,7 +1719,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-don-rein-grossesse-20261025.html",
         "source": "Référence scientifique ou institutionnelle",
         "sourceLabel": "Référence scientifique ou institutionnelle",
-        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/"
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/",
+        "image": ""
       },
       {
         "id": "daily-remibrutinib-sep-20261025",
@@ -1665,7 +1732,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-remibrutinib-sep-20261025.html",
         "source": "Référence scientifique ou institutionnelle",
         "sourceLabel": "Référence scientifique ou institutionnelle",
-        "sourceUrl": "https://www.thelancet.com/"
+        "sourceUrl": "https://www.thelancet.com/",
+        "image": ""
       },
       {
         "id": "daily-test-alzheimer-asymptomatique-20261025",
@@ -1677,7 +1745,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-test-alzheimer-asymptomatique-20261025.html",
         "source": "Référence scientifique ou institutionnelle",
         "sourceLabel": "Référence scientifique ou institutionnelle",
-        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/"
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/",
+        "image": ""
       },
       {
         "id": "daily-fiche-double-prise-20261025",
@@ -1689,7 +1758,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-fiche-double-prise-20261025.html",
         "source": "Référence scientifique ou institutionnelle",
         "sourceLabel": "Référence scientifique ou institutionnelle",
-        "sourceUrl": "https://www.ameli.fr/"
+        "sourceUrl": "https://www.ameli.fr/",
+        "image": ""
       },
       {
         "id": "daily-vraifaux-froid-rhume-20261025",
@@ -1701,7 +1771,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-vraifaux-froid-rhume-20261025.html",
         "source": "Référence scientifique ou institutionnelle",
         "sourceLabel": "Référence scientifique ou institutionnelle",
-        "sourceUrl": "https://www.ameli.fr/"
+        "sourceUrl": "https://www.ameli.fr/",
+        "image": ""
       },
       {
         "id": "daily-chiffre-insuffisance-cardiaque-20261025",
@@ -1713,7 +1784,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-chiffre-insuffisance-cardiaque-20261025.html",
         "source": "Référence scientifique ou institutionnelle",
         "sourceLabel": "Référence scientifique ou institutionnelle",
-        "sourceUrl": "https://www.who.int/"
+        "sourceUrl": "https://www.who.int/",
+        "image": ""
       },
       {
         "id": "daily-donnee-vaccin-grossesse-20261025",
@@ -1725,7 +1797,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-donnee-vaccin-grossesse-20261025.html",
         "source": "Référence scientifique ou institutionnelle",
         "sourceLabel": "Référence scientifique ou institutionnelle",
-        "sourceUrl": "https://www.santepubliquefrance.fr/"
+        "sourceUrl": "https://www.santepubliquefrance.fr/",
+        "image": ""
       },
       {
         "id": "daily-donnee-cholera-20261025",
@@ -1737,7 +1810,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-donnee-cholera-20261025.html",
         "source": "Référence scientifique ou institutionnelle",
         "sourceLabel": "Référence scientifique ou institutionnelle",
-        "sourceUrl": "https://www.who.int/"
+        "sourceUrl": "https://www.who.int/",
+        "image": ""
       },
       {
         "id": "daily-donnee-sglt2-hematocrite-20261025",
@@ -1749,7 +1823,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-donnee-sglt2-hematocrite-20261025.html",
         "source": "Référence scientifique ou institutionnelle",
         "sourceLabel": "Référence scientifique ou institutionnelle",
-        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/"
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/",
+        "image": ""
       }
     ]
   },
@@ -1768,7 +1843,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "corpusId": "hta",
         "source": "Maturitas 2026 — PMID 42887271",
         "sourceLabel": "Maturitas 2026 — PMID 42887271",
-        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42887271/"
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42887271/",
+        "image": ""
       },
       {
         "id": "daily-lombalgie-opioides-20261026",
@@ -1780,7 +1856,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-lombalgie-opioides-20261026.html",
         "source": "Référence scientifique ou institutionnelle",
         "sourceLabel": "Référence scientifique ou institutionnelle",
-        "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen"
+        "sourceUrl": "https://jamanetwork.com/journals/jamanetworkopen",
+        "image": ""
       },
       {
         "id": "daily-ia-consultation-20261026",
@@ -1792,7 +1869,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-ia-consultation-20261026.html",
         "source": "Référence scientifique ou institutionnelle",
         "sourceLabel": "Référence scientifique ou institutionnelle",
-        "sourceUrl": "https://www.thelancet.com/"
+        "sourceUrl": "https://www.thelancet.com/",
+        "image": ""
       },
       {
         "id": "daily-ecrans-enfants-20261026",
@@ -1804,7 +1882,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-ecrans-enfants-20261026.html",
         "source": "Référence scientifique ou institutionnelle",
         "sourceLabel": "Référence scientifique ou institutionnelle",
-        "sourceUrl": "https://www.santepubliquefrance.fr/"
+        "sourceUrl": "https://www.santepubliquefrance.fr/",
+        "image": ""
       },
       {
         "id": "daily-rotation-saignement-menopause-20261026",
@@ -1817,7 +1896,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "corpusId": "saignement-apres-menopause",
         "source": "Référence scientifique ou institutionnelle",
         "sourceLabel": "Référence scientifique ou institutionnelle",
-        "sourceUrl": "https://www.ameli.fr/"
+        "sourceUrl": "https://www.ameli.fr/",
+        "image": ""
       },
       {
         "id": "daily-statines-apres-70-20261026",
@@ -1829,7 +1909,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-statines-apres-70-20261026.html",
         "source": "Référence scientifique ou institutionnelle",
         "sourceLabel": "Référence scientifique ou institutionnelle",
-        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/"
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/",
+        "image": ""
       },
       {
         "id": "daily-vectoriels-24-20261026",
@@ -1841,7 +1922,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-vectoriels-24-20261026.html",
         "source": "Référence scientifique ou institutionnelle",
         "sourceLabel": "Référence scientifique ou institutionnelle",
-        "sourceUrl": "https://www.santepubliquefrance.fr/"
+        "sourceUrl": "https://www.santepubliquefrance.fr/",
+        "image": ""
       },
       {
         "id": "daily-freestyle-libre-alerte-20261026",
@@ -1853,7 +1935,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-freestyle-libre-alerte-20261026.html",
         "source": "Référence scientifique ou institutionnelle",
         "sourceLabel": "Référence scientifique ou institutionnelle",
-        "sourceUrl": "https://ansm.sante.fr/"
+        "sourceUrl": "https://ansm.sante.fr/",
+        "image": ""
       },
       {
         "id": "daily-quetiapine-approvisionnement-20261026",
@@ -1865,7 +1948,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-quetiapine-approvisionnement-20261026.html",
         "source": "Référence scientifique ou institutionnelle",
         "sourceLabel": "Référence scientifique ou institutionnelle",
-        "sourceUrl": "https://ansm.sante.fr/"
+        "sourceUrl": "https://ansm.sante.fr/",
+        "image": ""
       },
       {
         "id": "daily-tabac-arret-20261026",
@@ -1877,7 +1961,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-tabac-arret-20261026.html",
         "source": "Référence scientifique ou institutionnelle",
         "sourceLabel": "Référence scientifique ou institutionnelle",
-        "sourceUrl": "https://www.tabac-info-service.fr/"
+        "sourceUrl": "https://www.tabac-info-service.fr/",
+        "image": ""
       }
     ]
   },
@@ -1895,7 +1980,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-marche-20261027.html",
         "source": "Référence",
         "sourceLabel": "Référence",
-        "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.40122"
+        "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.40122",
+        "image": ""
       },
       {
         "id": "daily-typhoide-20261027",
@@ -1907,7 +1993,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-typhoide-20261027.html",
         "source": "Référence",
         "sourceLabel": "Référence",
-        "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.40971"
+        "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.40971",
+        "image": ""
       },
       {
         "id": "daily-psilocybine-20261027",
@@ -1919,7 +2006,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-psilocybine-20261027.html",
         "source": "Référence",
         "sourceLabel": "Référence",
-        "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.38843"
+        "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.38843",
+        "image": ""
       },
       {
         "id": "daily-grippe-20261027",
@@ -1931,7 +2019,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-grippe-20261027.html",
         "source": "Référence",
         "sourceLabel": "Référence",
-        "sourceUrl": "https://www.who.int/europe"
+        "sourceUrl": "https://www.who.int/europe",
+        "image": ""
       },
       {
         "id": "daily-constipation-20261027",
@@ -1943,7 +2032,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-constipation-20261027.html",
         "source": "Référence",
         "sourceLabel": "Référence",
-        "sourceUrl": "https://www.ameli.fr/assure/sante/themes/constipation-adulte"
+        "sourceUrl": "https://www.ameli.fr/assure/sante/themes/constipation-adulte",
+        "image": ""
       },
       {
         "id": "daily-pilule-20261027",
@@ -1955,7 +2045,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-pilule-20261027.html",
         "source": "Référence",
         "sourceLabel": "Référence",
-        "sourceUrl": "https://www.nhs.uk/contraception/combined-pill/taking-the-combined-pill-with-other-medicines/"
+        "sourceUrl": "https://www.nhs.uk/contraception/combined-pill/taking-the-combined-pill-with-other-medicines/",
+        "image": ""
       },
       {
         "id": "daily-chaleur-20261027",
@@ -1967,7 +2058,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-chaleur-20261027.html",
         "source": "Référence",
         "sourceLabel": "Référence",
-        "sourceUrl": "https://www.thelancet.com/"
+        "sourceUrl": "https://www.thelancet.com/",
+        "image": ""
       },
       {
         "id": "daily-mayotte-20261027",
@@ -1979,7 +2071,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-mayotte-20261027.html",
         "source": "Référence",
         "sourceLabel": "Référence",
-        "sourceUrl": "https://www.santepubliquefrance.fr/"
+        "sourceUrl": "https://www.santepubliquefrance.fr/",
+        "image": ""
       },
       {
         "id": "daily-mollet-20261027",
@@ -1991,7 +2084,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-mollet-20261027.html",
         "source": "Référence",
         "sourceLabel": "Référence",
-        "sourceUrl": "https://jamanetwork.com/"
+        "sourceUrl": "https://jamanetwork.com/",
+        "image": ""
       },
       {
         "id": "daily-readaptation-20261027",
@@ -2003,7 +2097,8 @@ window.MACA_EDITORIAL_HISTORY=[
         "articleUrl": "article-daily-readaptation-20261027.html",
         "source": "Référence",
         "sourceLabel": "Référence",
-        "sourceUrl": "https://www.escardio.org/"
+        "sourceUrl": "https://www.escardio.org/",
+        "image": ""
       }
     ]
   }

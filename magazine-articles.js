@@ -49,7 +49,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-10",
     "status": "PUBLISHED",
     "excerpt": "Oui, dans un essai américain, des récompenses liées à un arrêt vérifié ont augmenté les chances de sevrage à six mois. Elles complétaient une aide médicale. En France, l’accompagnement et les traitements du manque restent les repères concrets pour préparer son arrêt.",
-    "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "image": "",
     "imageAlt": "Entretien de prévention.",
     "keywords": [
       "Prévention"
@@ -68,7 +68,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-10",
     "status": "PUBLISHED",
     "excerpt": "Chez l’adulte, une infection confirmée conduit généralement à proposer un traitement d’éradication, même si les symptômes sont discrets. Il faut d’abord établir le diagnostic, choisir un traitement adapté et vérifier ensuite que la bactérie a bien disparu.",
-    "image": "https://images.pexels.com/photos/4226119/pexels-photo-4226119.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "image": "",
     "imageAlt": "Consultation médicale digestive.",
     "keywords": [
       "Digestion"
@@ -87,7 +87,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-10",
     "status": "PUBLISHED",
     "excerpt": "Les premiers gestes utiles et les signes d'alerte après une brûlure domestique.",
-    "image": "https://images.pexels.com/photos/4226119/pexels-photo-4226119.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "image": "",
     "imageAlt": "Soins médicaux.",
     "keywords": [
       "SANTÉ AU QUOTIDIEN",
@@ -206,7 +206,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-11",
     "status": "PUBLISHED",
     "excerpt": "Le grand essai NHS-Galleri n’a pas atteint son objectif principal : réduire les diagnostics de cancers aux stades III et IV réunis. Le signal favorable sur le stade IV seul reste à confirmer.",
-    "image": "https://images.pexels.com/photos/4248219/pexels-photo-4248219.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "image": "",
     "imageAlt": "Tubes de prélèvement sanguin.",
     "keywords": [
       "Dépistage"
@@ -263,7 +263,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-11",
     "status": "PUBLISHED",
     "excerpt": "Préparer les épisodes de chaleur avec son équipe soignante, adapter les activités et connaître les signes d’alerte : les conseils de la Société européenne de cardiologie.",
-    "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "image": "",
     "imageAlt": "Échange avec un professionnel de santé.",
     "keywords": [
       "Cœur"
@@ -282,7 +282,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-11",
     "status": "PUBLISHED",
     "excerpt": "Les signes d’alerte et les repères pour savoir quand faire examiner une cheville après un traumatisme.",
-    "image": "https://images.pexels.com/photos/4226119/pexels-photo-4226119.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "image": "",
     "imageAlt": "Examen médical.",
     "keywords": [
       "CHEVILLE",
@@ -361,7 +361,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-11",
     "status": "PUBLISHED",
     "excerpt": "Chez une personne âgée vivant en institution, un anticoagulant peut protéger contre un AVC tout en augmentant le risque de saignement. Deux études récentes éclairent cette balance, sans fournir une réponse identique pour tous les résidents.",
-    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "image": "",
     "imageAlt": "Échange entre médecin et patient autour d’un document.",
     "keywords": [
       "anticoagulants",
@@ -789,7 +789,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-13",
     "status": "PUBLISHED",
     "excerpt": "Deux essais montrent que décrire clairement les incertitudes modifie des décisions hypothétiques de traitement. Bénéfices, risques et incertitudes doivent tous être compréhensibles pour décider.",
-    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "image": "",
     "imageAlt": "Échange entre médecin et patient autour d’un document.",
     "keywords": [
       "Cancer",
@@ -929,7 +929,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-13",
     "status": "PUBLISHED",
     "excerpt": "Le nouvel essai TOSYMA apporte un signal favorable, mais ne démontre pas une diminution statistiquement significative des cancers invasifs apparus dans les deux années suivant un dépistage négatif. Une meilleure détection ne suffit pas à démontrer un bénéfice clinique supplémentaire.",
-    "image": "assets/editorial/2026-10-13/photos/tomosynthese.jpg",
+    "image": "",
     "imageAlt": "Ruban rose sur fond rose, symbole de sensibilisation au cancer du sein.",
     "keywords": [
       "Cancer du sein",
@@ -1846,7 +1846,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-18",
     "status": "PUBLISHED",
     "excerpt": "L’ajout du tucatinib à un traitement d’entretien retarde la progression dans un essai randomisé. Le nouvel avis européen ne signifie pas encore que cette association est autorisée et accessible en France dans cette indication.",
-    "image": "assets/editorial/2026-10-13/photos/tomosynthese.jpg",
+    "image": "",
     "imageAlt": "Ruban rose sur fond rose, symbole de sensibilisation au cancer du sein.",
     "keywords": [
       "Cancer",
@@ -1866,7 +1866,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-18",
     "status": "PUBLISHED",
     "excerpt": "Le navepegritide améliore la vitesse de croissance dans un essai chez 84 enfants. L’avis européen favorable constitue une étape réglementaire ; ses effets sur la taille adulte et les complications à long terme restent à préciser.",
-    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "image": "",
     "imageAlt": "Échange entre médecin et patient autour d’un document.",
     "keywords": [
       "Enfants & parents",
@@ -1886,7 +1886,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-19",
     "status": "PUBLISHED",
     "excerpt": "Des prescriptions répétées sont associées à un intestin irritable à 24 ans dans une cohorte suédoise. Cela ne prouve pas que les antibiotiques en sont la cause et ne justifie pas de renoncer à un traitement nécessaire.",
-    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "image": "",
     "imageAlt": "Échange entre médecin et patient autour d’un document.",
     "keywords": [
       "antibiotiques intestin irritable bamse",
@@ -1908,7 +1908,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-19",
     "status": "PUBLISHED",
     "excerpt": "Des signatures d’anticorps ont été repérées dans des prélèvements anciens. Cette piste de recherche ne constitue pas un test de dépistage validé chez les personnes sans symptômes.",
-    "image": "https://images.pexels.com/photos/4248219/pexels-photo-4248219.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "image": "",
     "imageAlt": "Tubes de prélèvement sanguin.",
     "keywords": [
       "crohn avant diagnostic biomarqueurs",
@@ -1930,7 +1930,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-20",
     "status": "PUBLISHED",
     "excerpt": "Une synthèse d’études retrouve une mortalité plus élevée chez les personnes avec un TDAH. Ces données de population ne prédisent pas l’avenir d’une personne et ne prouvent pas un effet protecteur des médicaments.",
-    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "image": "",
     "imageAlt": "Échange entre médecin et patient autour d’un document.",
     "keywords": [
       "TDAH et mortalité : comprendre les résultats sans prédire son avenir",
@@ -1951,7 +1951,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-20",
     "status": "PUBLISHED",
     "excerpt": "Un essai trouve de meilleurs résultats avec le programme intensif de Bergen qu’avec une TCC en ligne sans thérapeute. Il ne démontre pas une guérison en quatre jours ni une supériorité sur toutes les TCC.",
-    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "image": "",
     "imageAlt": "Échange entre médecin et patient autour d’un document.",
     "keywords": [
       "TOC : une thérapie intensive en quatre jours, avec quelles limites ?",
@@ -1972,7 +1972,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-21",
     "status": "PUBLISHED",
     "excerpt": "Un essai de phase III apporte des résultats encourageants sur le tézépélumab. Ils sont présentés en congrès et communiqués par les industriels : ce traitement reste expérimental dans cette indication.",
-    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "image": "",
     "imageAlt": "Échange entre médecin et patient autour d’un document.",
     "keywords": [
       "Œsophagite à éosinophiles : ce que montrent les résultats de CROSSING",
@@ -1992,7 +1992,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-21",
     "status": "PUBLISHED",
     "excerpt": "Une étude française retrouve des associations entre vulnérabilités sociales et dépistage insuffisant. Elle invite à adapter l’accompagnement, sans changer le calendrier français des tests.",
-    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "image": "",
     "imageAlt": "Échange entre médecin et patient autour d’un document.",
     "keywords": [
       "Dépistage du col : comprendre les obstacles pour mieux accompagner",
@@ -2012,7 +2012,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-21",
     "status": "PUBLISHED",
     "excerpt": "Une valeur signalée hors norme ne suffit pas à poser un diagnostic. Une nouvelle enquête nuance aussi l’idée que consulter immédiatement ses résultats augmente toujours l’anxiété.",
-    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "image": "",
     "imageAlt": "Échange entre médecin et patient autour d’un document.",
     "keywords": [
       "Mon résultat de prise de sang est anormal : faut-il s’inquiéter ?",
@@ -2032,7 +2032,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-22",
     "status": "PUBLISHED",
     "excerpt": "Des analyses exploratoires d’un essai retrouvent une perte de poids importante chez des femmes avec obésité ou surpoids. Elles ne promettent pas le même résultat à chacune et ne démontrent pas une efficacité différente selon la ménopause.",
-    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "image": "",
     "imageAlt": "Échange entre médecin et patient autour d’un document.",
     "keywords": [
       "Ménopause et perte de poids : que montre la nouvelle analyse de CagriSema ?",
@@ -2053,7 +2053,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-22",
     "status": "PUBLISHED",
     "excerpt": "Le fénébrutinib expérimental apporte de nouvelles données de phase III. Pour les interpréter, il faut distinguer les poussées, les marqueurs IRM et la progression du handicap.",
-    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "image": "",
     "imageAlt": "Échange entre médecin et patient autour d’un document.",
     "keywords": [
       "Sclérose en plaques : un nouveau traitement oral peut-il ralentir la maladie ?",
@@ -2473,7 +2473,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-23",
     "status": "PUBLISHED",
     "excerpt": "Une étude suggère qu’un travail sur les émotions peut aider certains adolescents à maintenir les résultats d’un accompagnement familial. Elle ne transforme pas la gestion du stress en régime et ne concerne pas tous les adolescents qui mangent pour se réconforter.",
-    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "image": "",
     "imageAlt": "Échange entre médecin et patient autour d’un document.",
     "keywords": [
       "alimentation émotionnelle",
@@ -2495,7 +2495,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-23",
     "status": "PUBLISHED",
     "excerpt": "Une étude explore une séquence de soins adaptée aux caractéristiques de la tumeur et à sa réponse. L’objectif est de limiter certains traitements supplémentaires chez des patientes sélectionnées, sans présenter cette approche comme un nouveau standard.",
-    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "image": "",
     "imageAlt": "Échange entre médecin et patient autour d’un document.",
     "keywords": [
       "cancer du sein",
@@ -2706,7 +2706,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-24",
     "status": "PUBLISHED",
     "excerpt": "L’essai NSABP B-59/GeparDouze a amélioré la réponse pathologique complète, sans démontrer un bénéfice statistiquement significatif de survie sans événement à quatre ans.",
-    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "image": "",
     "imageAlt": "Échange entre un professionnel de santé et une patiente autour d’un document médical — photographie d’illustration.",
     "keywords": [
       "OCTOBRE ROSE"
@@ -2915,7 +2915,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-25",
     "status": "PUBLISHED",
     "excerpt": "Dans HORIZON-Breast06, la survie sans progression a été prolongée, mais la toxicité était plus importante et le bénéfice de survie globale reste à démontrer.",
-    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "image": "",
     "imageAlt": "Échange autour d’un document médical, photographie d’illustration",
     "keywords": [
       "OCTOBRE ROSE"
@@ -3124,7 +3124,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-26",
     "status": "PUBLISHED",
     "excerpt": "L’essai OPTIMA montre qu’une stratégie guidée par Prosigna peut éviter une chimiothérapie chez certaines personnes ayant un cancer du sein précoce ER+/HER2−.",
-    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "image": "",
     "imageAlt": "Échange médical autour d’un document, image d’illustration",
     "keywords": [
       "octobre rose optima"
@@ -3333,7 +3333,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-27",
     "status": "PUBLISHED",
     "excerpt": "Moins de déplacements à l’hôpital, davantage de temps pour soi : espacer un traitement efficace serait un progrès. Encore faut-il vérifier que son bénéfice est préservé. Les premiers résultats français de MOIO invitent à la prudence.",
-    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "image": "",
     "imageAlt": "Échange entre médecin et patient autour d’un document.",
     "keywords": [
       "immunothérapie",
@@ -3355,7 +3355,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-27",
     "status": "PUBLISHED",
     "excerpt": "Une immunothérapie seule améliore le temps sans progression dans un essai récent portant sur certaines tumeurs avancées ou récidivantes. Ce résultat ouvre une discussion sur l’allègement des traitements, sans s’appliquer à tous les cancers de l’utérus.",
-    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "image": "",
     "imageAlt": "Échange entre médecin et patient autour d’un document.",
     "keywords": [
       "endomètre",
@@ -3377,7 +3377,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-27",
     "status": "PUBLISHED",
     "excerpt": "Lorsqu’un cancer progresse malgré une chimiothérapie et une immunothérapie, la recherche vise à proposer d’autres options. TroFuse-005 rapporte un gain de survie avec un médicament expérimental, au prix de davantage d’effets indésirables importants.",
-    "image": "assets/editorial/2026-10-13/photos/incertitudes.jpg",
+    "image": "",
     "imageAlt": "Échange entre médecin et patient autour d’un document.",
     "keywords": [
       "endomètre",
@@ -3399,7 +3399,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-28",
     "status": "PUBLISHED",
     "excerpt": "Un AVC peu spectaculaire peut cacher l’occlusion d’une grosse artère. Un essai randomisé suggère un bénéfice de la thrombectomie chez certains patients sélectionnés par imagerie.",
-    "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "image": "",
     "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
     "keywords": [
       "Neurologie"
@@ -3418,7 +3418,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-28",
     "status": "PUBLISHED",
     "excerpt": "Dans un essai randomisé de 283 adultes, la mesure continue du glucose a amélioré l’HbA1c à 26 semaines, sans démontrer que tous les patients doivent être équipés.",
-    "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "image": "",
     "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
     "keywords": [
       "Diabète"
@@ -3437,7 +3437,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-28",
     "status": "PUBLISHED",
     "excerpt": "Une grande étude observationnelle associe les consultations préventives à une meilleure mise en route des traitements symptomatiques, sans démontrer une amélioration causale de la qualité de vie.",
-    "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "image": "",
     "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
     "keywords": [
       "Gériatrie"
@@ -3456,7 +3456,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-28",
     "status": "PUBLISHED",
     "excerpt": "Une étude longitudinale suggère une récupération partielle de la fonction cardiaque après arrêt complet, mais pas une absence de séquelles.",
-    "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "image": "",
     "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
     "keywords": [
       "Cardiologie"
@@ -3475,7 +3475,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-28",
     "status": "PUBLISHED",
     "excerpt": "Refroidir rapidement sous une eau tempérée, retirer les objets serrés et reconnaître les situations nécessitant une évaluation urgente.",
-    "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "image": "",
     "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
     "keywords": [
       "Premiers secours"
@@ -3494,7 +3494,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-28",
     "status": "PUBLISHED",
     "excerpt": "FAUX. Le jeûne dépend des analyses prescrites et des consignes du laboratoire.",
-    "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "image": "",
     "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
     "keywords": [
       "Biologie"
@@ -3513,7 +3513,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-28",
     "status": "PUBLISHED",
     "excerpt": "L’OMS recommande aux adultes 150 à 300 minutes d’activité aérobie modérée par semaine, à adapter aux capacités.",
-    "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "image": "",
     "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
     "keywords": [
       "Prévention"
@@ -3532,7 +3532,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-28",
     "status": "PUBLISHED",
     "excerpt": "La HAS soutient une consultation infirmière spécifique pour accompagner les personnes ayant un diabète de type 2 nouvellement traité par insuline.",
-    "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "image": "",
     "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
     "keywords": [
       "Diabète"
@@ -3551,7 +3551,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-28",
     "status": "PUBLISHED",
     "excerpt": "Les indicateurs nationaux de grippe, Covid-19 et bronchiolite étaient globalement au niveau de base, avec une progression des recours pour bronchiolite.",
-    "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "image": "",
     "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
     "keywords": [
       "Infectiologie"
@@ -3570,7 +3570,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-28",
     "status": "PUBLISHED",
     "excerpt": "Une étude observationnelle islandaise ne retrouve pas d’amélioration significative de plusieurs indicateurs de santé mentale après interdiction scolaire.",
-    "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "image": "",
     "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
     "keywords": [
       "Santé mentale"
