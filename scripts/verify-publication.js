@@ -9,6 +9,12 @@ vm.runInContext(read('corpus-ophtalmologie-validee-2026-10-27.js'),ctx);
 const ophthalmology=ctx.window.extraAuditedQuestions.filter(c=>['glaucome-depistage-apres-40','ophtalmo-mouches-volantes-eclairs-retine','chirurgie-myopie-laser-lunettes'].includes(c.id));
 assert.equal(ophthalmology.length,3);
 for(const c of ophthalmology){const old=expected.findIndex(x=>x.id===c.id);if(old>=0)expected.splice(old,1);expected.push(c);}
+const priorityIds=[
+  'osteoporose-osteodensitometrie-apres-50-ans',
+  'polyarthrite-rhumatoide-premiers-signes',
+  'goutte-crise-articulation-rouge-douloureuse',
+  'ado-scarifications-pourquoi'
+];
 const forbidden=['ophtalmo-chirurgie-myopie-laser','ophtalmo-glaucome-depistage'];
 const corpus=JSON.parse(read('assistant-v2/corpus.json'));
 for(const c of expected){
@@ -19,6 +25,18 @@ for(const c of expected){
   assert(!/noindex/i.test(html),'Noindex '+c.id);
   assert(read('sitemap.xml').includes('https://macasante.fr/'+p),'Sitemap '+c.id);
   assert(read('corpus-production.js').includes(c.id),'Catalogue '+c.id);
+}
+for(const id of priorityIds){
+  const payload=JSON.parse(read('fiches-data/'+id+'.json')).fiche;
+  const active=corpus.cards.find(c=>c.id===id);
+  assert(active,'Missing priority Assistant card '+id);
+  assert.equal(active.content.answer,payload.answer,'Stale priority Assistant answer '+id);
+  assert.equal(active.content.detail,payload.detail,'Stale priority Assistant detail '+id);
+  const p='fiches-seo/'+id+'.html',html=read(p);
+  assert(html.includes('https://macasante.fr/'+p),'Priority canonical '+id);
+  assert(!/noindex/i.test(html),'Priority noindex '+id);
+  assert(read('sitemap.xml').includes('https://macasante.fr/'+p),'Priority sitemap '+id);
+  assert(read('corpus-production.js').includes(id),'Priority catalogue '+id);
 }
 for(const id of forbidden){assert(!corpus.cards.some(c=>c.id===id),'Unvalidated Assistant card '+id);assert(!fs.existsSync('fiches-seo/'+id+'.html'),'Unvalidated page '+id);}
 async function get(p){const r=await fetch('https://macasante.fr/'+p+(p.includes('?')?'&':'?')+'publication_check='+Date.now(),{signal:AbortSignal.timeout(30000)});assert.equal(r.status,200,p+' HTTP '+r.status);return r.text();}
@@ -31,6 +49,7 @@ async function main(){
     assert.equal(latest.version,corpus.fingerprint,'Published index differs from current build');
     for(const c of ophthalmology){const active=published.cards.find(x=>x.id===c.id);assert.equal(active?.content.answer,c.answer);assert.equal(active?.content.detail,c.detail);}
     for(const c of expected)assert(published.cards.some(x=>x.id===c.id),'Missing published Assistant card '+c.id);
+    for(const id of priorityIds){const source=corpus.cards.find(x=>x.id===id),active=published.cards.find(x=>x.id===id);assert(active,'Missing published priority card '+id);assert.equal(active.content.answer,source.content.answer,'Stale published priority answer '+id);assert.equal(active.content.detail,source.content.detail,'Stale published priority detail '+id);}
     for(const id of forbidden)assert(!published.cards.some(x=>x.id===id),'Unvalidated published Assistant card '+id);
     // A readiness GET can hit a cold isolate with no loaded version. Exercise retrieval.
     const response=await fetch('https://purple-voice-a8e3.dr-beddok.workers.dev/',{method:'POST',headers:{'Content-Type':'application/json',Origin:'https://macasante.fr'},body:JSON.stringify({question:'Mouches volantes et éclairs dans les yeux : quand faut-il consulter ?'}),signal:AbortSignal.timeout(90000)});
@@ -39,6 +58,7 @@ async function main(){
     assert.equal(ready.meta?.artifact_version,latest.version,'Active Assistant index is stale');
     assert(ready.selected_cards?.some(c=>c.id==='ophtalmo-mouches-volantes-eclairs-retine'),'Retina fiche not retrievable');
     for(const c of ophthalmology){const r=await fetch('https://purple-voice-a8e3.dr-beddok.workers.dev/',{method:'POST',headers:{'Content-Type':'application/json',Origin:'https://macasante.fr'},body:JSON.stringify({question:c.title}),signal:AbortSignal.timeout(90000)});assert.equal(r.status,200);const d=await r.json();assert.equal(d.meta?.artifact_version,latest.version);assert(d.selected_cards?.some(x=>x.id===c.id),'Fiche not retrieved '+c.id);console.log('LIVE ASSISTANT PASS '+c.id);}
+    for(const id of priorityIds){const source=corpus.cards.find(x=>x.id===id);const r=await fetch('https://purple-voice-a8e3.dr-beddok.workers.dev/',{method:'POST',headers:{'Content-Type':'application/json',Origin:'https://macasante.fr'},body:JSON.stringify({question:JSON.parse(read('fiches-data/'+id+'.json')).fiche.title}),signal:AbortSignal.timeout(90000)});assert.equal(r.status,200,'Priority Assistant HTTP '+id);const d=await r.json();assert.equal(d.meta?.artifact_version,latest.version);assert(d.selected_cards?.some(x=>x.id===id),'Priority fiche not retrieved '+id);console.log('LIVE PRIORITY ASSISTANT PASS '+id);}
     console.log('PASS: all validated cards in active immutable Assistant index '+latest.version);
   }
   if(process.argv.includes('--public')){
@@ -48,6 +68,7 @@ async function main(){
     const history=await get('notre-histoire.html');for(const token of ['Des regards complémentaires','Dr Philippe Bibas','Ève Piorowicz','psychologue clinicienne'])assert(history.includes(token),'Missing contributor '+token);
     const sitemap=await get('sitemap.xml'),catalogue=await get('fiches.html');assert(catalogue.includes('corpus-loader.js'));
     for(const c of expected){const p='fiches-seo/'+c.id+'.html',html=await get(p);assert.equal(html,read(p),'Stale page '+c.id);assert(sitemap.includes('https://macasante.fr/'+p));console.log('PUBLIC PASS https://macasante.fr/'+p);}
+    for(const id of priorityIds){const p='fiches-seo/'+id+'.html',html=await get(p);assert.equal(html,read(p),'Stale priority page '+id);assert(sitemap.includes('https://macasante.fr/'+p),'Missing public priority sitemap '+id);console.log('PUBLIC PRIORITY PASS '+id);}
     for(const id of forbidden)assert(!remote.includes('"id": "'+id+'"'),'Unvalidated public card '+id);
   }
   console.log('PASS: '+expected.length+' validated fiches, exact ophthalmology versions, catalogue, sitemap and Assistant.');
