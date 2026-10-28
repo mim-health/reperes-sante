@@ -6964,6 +6964,54 @@
         "evidence": "Accord explicite de l'éditeur en conversation du 28/10/2026 pour la poursuite, la finalisation et la publication de l'article et de l'illustration.",
         "contentHash": "c6a13fa8146a501487eac006196d6231a246de681dc13fc1a46abf337a2147bb"
       }
+    },
+    {
+      "id": "mag-sommeil-adolescent-20261028",
+      "date": "2026-10-28",
+      "title": "Pourquoi votre ado n’arrive-t-il pas à dormir à 22 h ?",
+      "answer": "À la puberté, l’horloge biologique se décale souvent vers des heures plus tardives. Les adolescents ont pourtant besoin de 8 à 10 heures de sommeil ; les écrans peuvent aggraver ce décalage sans en être l’unique cause.",
+      "html": "<article><img class=\"hero\" src=\"https://images.pexels.com/photos/10387709/pexels-photo-10387709.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200\" alt=\"Adolescent allongé dans son lit avec un téléphone, photographie de Ron Lach\"><div class=\"inside\"><p class=\"eyebrow\">LE MAG · DÉCRYPTAGE · 28 OCTOBRE 2026</p><h1>Pourquoi votre ado n’arrive-t-il pas à dormir à 22 h ?</h1><p class=\"lead\">À la puberté, l’horloge biologique décale naturellement l’endormissement. Les écrans n’expliquent pas tout.</p><h2>Une horloge qui se décale vraiment</h2><p>« Il est 22 heures, va dormir ! » Et l'adolescent répond qu'il n'a pas sommeil. Ce décalage ne relève pas nécessairement d'une opposition aux parents. À la puberté, les rythmes veille–sommeil évoluent. L'endormissement spontané tend à être plus tardif : ce retard de phase physiologique correspond notamment à une évolution du fonctionnement circadien et des signaux de sommeil. Les préférences individuelles demeurent variables. Le problème survient lorsque l'heure de lever scolaire reste matinale, alors que le sommeil commence tard.</p><h2>Le besoin de sommeil reste important</h2><p>L'American Academy of Sleep Medicine recommande entre huit et dix heures de sommeil quotidien chez les 13–18 ans. Dormir 6 heures plusieurs nuits de suite ne revient pas à être « habitué » à dormir peu. La dette de sommeil peut favoriser somnolence, troubles de l'attention, irritabilité et difficultés d'apprentissage ; des associations existent également avec certains risques pour la santé mentale, sans permettre d'attribuer chaque difficulté à une seule cause.</p><h2>Le téléphone n'explique pas tout</h2><p>Les réseaux sociaux, les jeux, les messages tardifs ou le visionnage de vidéos peuvent repousser le coucher, maintenir l'éveil et exposer à la lumière lumineuse le soir. Mais incriminer uniquement le smartphone occulte le décalage physiologique, les devoirs, les activités tardives, le stress et certains troubles du sommeil. Un adolescent qui n'arrive pas à dormir ne doit pas être systématiquement considéré comme indiscipliné.</p><h2>Le piège de la grasse matinée</h2><p>Une nuit courte pendant la semaine peut donner envie de récupérer le samedi. Cette récupération peut être utile après une dette de sommeil, mais un décalage important et répété du lever le week-end peut aussi maintenir le retard de l'horloge interne. La régularité des horaires de lever est un repère utile ; elle doit être recherchée avec réalisme et sans sacrifier les heures de sommeil nécessaires.</p><h2>Qu'est-ce qui aide vraiment ?</h2><p>Une exposition régulière à la lumière naturelle le matin, une activité physique en journée, une diminution des excitants en fin de journée et une routine apaisante peuvent soutenir un rythme plus stable. Ameli recommande une pause d'écrans idéalement une à deux heures avant le coucher et de garder les téléphones hors de la chambre la nuit. Si le coucher est très tardif, mieux vaut souvent avancer progressivement les horaires plutôt que d'imposer brusquement une heure irréaliste. Discuter des contraintes de l'adolescent et de ses horaires scolaires peut aider à construire des changements durables.</p><h2>Quand demander un avis ?</h2><p>Une somnolence diurne importante, des endormissements involontaires, des ronflements avec pauses respiratoires, une anxiété marquée, un trouble de l'humeur, une insomnie persistante ou des difficultés scolaires liées au sommeil justifient une évaluation médicale. Il faut distinguer un rythme tardif habituel d'un trouble du sommeil ou d'une souffrance psychique. La mélatonine et les autres produits ne doivent pas être présentés comme une solution automatique ou être utilisés sans avis adapté.</p><h2>À retenir</h2><p>Le décalage de l'horloge biologique à l'adolescence est réel. L'objectif n'est pas de culpabiliser, mais de protéger les 8 à 10 heures de sommeil nécessaires et d'identifier ce qui empêche réellement le jeune de les obtenir.</p><div class=\"sources\"><h2>Sources</h2><ul><li><a href=\"https://www.ameli.fr/assure/sante/themes/adolescents-sommeil/sommeil-de-l-adolescent-quelles-particularites\">Assurance Maladie — Sommeil de l’adolescent, 15 janvier 2026</a></li><li><a href=\"https://www.ameli.fr/assure/sante/themes/adolescents-sommeil/comment-mieux-dormir-l-adolescence\">Assurance Maladie — Comment mieux dormir à l’adolescence, 2025</a></li><li><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC4877308/\">AASM — Recommended Amount of Sleep for Pediatric Populations, 2016</a></li></ul></div></div></article>",
+      "url": "article-mag-sommeil-adolescent-20261028.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Sommeil adolescent",
+      "keywords": [
+        "adolescent",
+        "sommeil",
+        "puberté",
+        "rythme circadien",
+        "écrans"
+      ],
+      "sources": [
+        {
+          "label": "Assurance Maladie — Sommeil de l’adolescent, 15 janvier 2026",
+          "url": "https://www.ameli.fr/assure/sante/themes/adolescents-sommeil/sommeil-de-l-adolescent-quelles-particularites"
+        },
+        {
+          "label": "Assurance Maladie — Comment mieux dormir à l’adolescence, 2025",
+          "url": "https://www.ameli.fr/assure/sante/themes/adolescents-sommeil/comment-mieux-dormir-l-adolescence"
+        },
+        {
+          "label": "AASM — Recommended Amount of Sleep for Pediatric Populations, 2016",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4877308/"
+        }
+      ],
+      "image": "https://images.pexels.com/photos/10387709/pexels-photo-10387709.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Adolescent allongé dans son lit avec un téléphone",
+      "imageCredit": "Ron Lach / Pexels",
+      "imageSource": "https://www.pexels.com/photo/teenage-boy-laying-in-bed-using-smart-phone-10387709/",
+      "imageLicense": "Pexels License — free to use",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "standalone": true,
+      "candidateFiche": false,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-10-28",
+        "evidence": "Demande explicite de publication de l'article Sommeil adolescent dans Le Mag le 28 octobre 2026.",
+        "contentHash": "0f5b4b10b387766a48fdd0bf84e39a04be9c6466b5bd98ca983f9b1cf57f8c3a"
+      }
     }
   ],
   "editions": [
