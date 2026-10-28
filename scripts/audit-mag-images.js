@@ -45,5 +45,18 @@ for(const group of report.reuseWarnings){const newer=group.items.filter(x=>src.c
 
 console.log('MAG VISUAL REUSE REVIEW '+JSON.stringify(report.reuseWarnings,null,2));
 
+
+// Every complete edition must retain its historical entries and their original image references.
+// This checks continuity in the persistent source rather than the rotating homepage.
+const byId=new Map(src.contents.map(c=>[c.id,c]));
+for(const edition of src.editions.filter(e=>e.complete)){
+ for(const item of edition.items){
+  const c=byId.get(item.contentId);
+  if(!c)report.errors.push({id:item.contentId,message:'Historical edition references missing content '+edition.id});
+  else if(c.format==='article'&&c.medicalStatus==='VALIDATED'&&c.publicationStatus==='PUBLISHED'&&c.date>='2026-10-29'&&!c.image)
+   report.errors.push({id:c.id,message:'Historical published article lost its photograph'});
+ }
+}
+
 console.log('MAG IMAGE AUDIT '+JSON.stringify(report,null,2));
 assert.equal(report.errors.length,0,'Validated Mag image failures: '+report.errors.length);
