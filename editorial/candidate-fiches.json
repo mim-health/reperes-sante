@@ -173,5 +173,19 @@
     "url": "article-daily-psilocybine-20261027.html",
     "existingFicheId": null,
     "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-capteur-diabete-20261028",
+    "title": "Diabète sans insuline : un capteur de glucose peut-il aider ?",
+    "url": "article-daily-capteur-diabete-20261028.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-steroides-coeur-20261028",
+    "title": "Stéroïdes anabolisants : le cœur récupère-t-il après l’arrêt ?",
+    "url": "article-daily-steroides-coeur-20261028.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
   }
 ]

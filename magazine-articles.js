@@ -3388,5 +3388,195 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "fae58f7e51da1bcdbd48916d112e630395061f0996d27c036f538b0504c1e855"
+  },
+  {
+    "id": "daily-avc-thrombectomie-20261028",
+    "url": "article-daily-avc-thrombectomie-20261028.html",
+    "title": "AVC apparemment léger : faut-il parfois retirer le caillot ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Neurologie",
+    "date": "2026-10-28",
+    "status": "PUBLISHED",
+    "excerpt": "Un AVC peu spectaculaire peut cacher l’occlusion d’une grosse artère. Un essai randomisé suggère un bénéfice de la thrombectomie chez certains patients sélectionnés par imagerie.",
+    "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
+    "keywords": [
+      "Neurologie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "7ef2f658fde9ea3e867af1bd9329a00691eee4c8b748ebd705b6fdc5688b63e7"
+  },
+  {
+    "id": "daily-capteur-diabete-20261028",
+    "url": "article-daily-capteur-diabete-20261028.html",
+    "title": "Diabète sans insuline : un capteur de glucose peut-il aider ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Diabète",
+    "date": "2026-10-28",
+    "status": "PUBLISHED",
+    "excerpt": "Dans un essai randomisé de 283 adultes, la mesure continue du glucose a amélioré l’HbA1c à 26 semaines, sans démontrer que tous les patients doivent être équipés.",
+    "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
+    "keywords": [
+      "Diabète"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "24dbd4f4009aa81249c40d1b4093579fb47272732ef16bad763ed8af681d83a5"
+  },
+  {
+    "id": "daily-demence-suivi-20261028",
+    "url": "article-daily-demence-suivi-20261028.html",
+    "title": "Démence : pourquoi maintenir des consultations régulières ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Gériatrie",
+    "date": "2026-10-28",
+    "status": "PUBLISHED",
+    "excerpt": "Une grande étude observationnelle associe les consultations préventives à une meilleure mise en route des traitements symptomatiques, sans démontrer une amélioration causale de la qualité de vie.",
+    "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
+    "keywords": [
+      "Gériatrie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "81e4421b34d9fb4d5265728556154f6e13c272a16b0392888abfb83d48853755"
+  },
+  {
+    "id": "daily-steroides-coeur-20261028",
+    "url": "article-daily-steroides-coeur-20261028.html",
+    "title": "Stéroïdes anabolisants : le cœur récupère-t-il après l’arrêt ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Cardiologie",
+    "date": "2026-10-28",
+    "status": "PUBLISHED",
+    "excerpt": "Une étude longitudinale suggère une récupération partielle de la fonction cardiaque après arrêt complet, mais pas une absence de séquelles.",
+    "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
+    "keywords": [
+      "Cardiologie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "1a97ed4a91396541f6935e4c537f3e986935b5f228e24e3001fbf9803d39ee08"
+  },
+  {
+    "id": "daily-brulure-rotation-20261028",
+    "url": "article-daily-brulure-rotation-20261028.html",
+    "title": "Brûlure domestique : quels premiers gestes ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Premiers secours",
+    "date": "2026-10-28",
+    "status": "PUBLISHED",
+    "excerpt": "Refroidir rapidement sous une eau tempérée, retirer les objets serrés et reconnaître les situations nécessitant une évaluation urgente.",
+    "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
+    "keywords": [
+      "Premiers secours"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "e2e508f2aab35a05733118af9617cc064b61867be02aa1d50e5961ae35428ad9"
+  },
+  {
+    "id": "daily-jeun-prises-sang-20261028",
+    "url": "article-daily-jeun-prises-sang-20261028.html",
+    "title": "Prise de sang : faut-il toujours être à jeun ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Biologie",
+    "date": "2026-10-28",
+    "status": "PUBLISHED",
+    "excerpt": "FAUX. Le jeûne dépend des analyses prescrites et des consignes du laboratoire.",
+    "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
+    "keywords": [
+      "Biologie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "b372a3f63362b4c34eb12f0c239885eefe594fa49dbf2dfa6f7fb1f3e5a2ed39"
+  },
+  {
+    "id": "daily-activite-150-20261028",
+    "url": "article-daily-activite-150-20261028.html",
+    "title": "150 à 300 minutes : l’objectif d’activité physique hebdomadaire",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Prévention",
+    "date": "2026-10-28",
+    "status": "PUBLISHED",
+    "excerpt": "L’OMS recommande aux adultes 150 à 300 minutes d’activité aérobie modérée par semaine, à adapter aux capacités.",
+    "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
+    "keywords": [
+      "Prévention"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "a57d3b093ab2f7bbd1b697a8dd6fd3bf88f70dc626e22383eeff791d1451cbe9"
+  },
+  {
+    "id": "daily-infirmiere-insuline-20261028",
+    "url": "article-daily-infirmiere-insuline-20261028.html",
+    "title": "Débuter l’insuline : un accompagnement infirmier dédié",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Diabète",
+    "date": "2026-10-28",
+    "status": "PUBLISHED",
+    "excerpt": "La HAS soutient une consultation infirmière spécifique pour accompagner les personnes ayant un diabète de type 2 nouvellement traité par insuline.",
+    "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
+    "keywords": [
+      "Diabète"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "9883648808ad6494aa06c45321fccb0a154c65b1f115e03d181573b170cd08c8"
+  },
+  {
+    "id": "daily-respiratoires-s42-20261028",
+    "url": "article-daily-respiratoires-s42-20261028.html",
+    "title": "Virus respiratoires : que disent les indicateurs de la semaine 42 ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Infectiologie",
+    "date": "2026-10-28",
+    "status": "PUBLISHED",
+    "excerpt": "Les indicateurs nationaux de grippe, Covid-19 et bronchiolite étaient globalement au niveau de base, avec une progression des recours pour bronchiolite.",
+    "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
+    "keywords": [
+      "Infectiologie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "0f258a5f6a6451b5ffc136317eac48821bd2a7d2a112a96f25de946f67e6ad9a"
+  },
+  {
+    "id": "daily-telephone-ecole-20261028",
+    "url": "article-daily-telephone-ecole-20261028.html",
+    "title": "Interdire les téléphones à l’école suffit-il à améliorer le bien-être ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Santé mentale",
+    "date": "2026-10-28",
+    "status": "PUBLISHED",
+    "excerpt": "Une étude observationnelle islandaise ne retrouve pas d’amélioration significative de plusieurs indicateurs de santé mentale après interdiction scolaire.",
+    "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
+    "keywords": [
+      "Santé mentale"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "4ae547717402e0097097614bbf17a37d7a4e3d92380dc7efa3327521d007808b"
   }
 ];

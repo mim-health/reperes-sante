@@ -1,12 +1,72 @@
 {
   "schemaVersion": 1,
-  "editionId": "edition-2026-10-27",
-  "editionDate": "2026-10-27",
-  "sourceFingerprint": "7c8b1c934008191e83f5bcebc23312d3a024ccaddebd8d0382cac59f7ef0ae94",
+  "editionId": "edition-2026-10-28",
+  "editionDate": "2026-10-28",
+  "sourceFingerprint": "7fe2097747834a6819fd1c740f425036f0e4617969559f18c327c505ea915cce",
   "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-daily-avc-thrombectomie-20261028",
+      "version": "7ef2f658fde9ea3e867af1bd9329a00691eee4c8b748ebd705b6fdc5688b63e7",
+      "url": "article-daily-avc-thrombectomie-20261028.html",
+      "date": "2026-10-28"
+    },
+    {
+      "id": "mag-daily-capteur-diabete-20261028",
+      "version": "24dbd4f4009aa81249c40d1b4093579fb47272732ef16bad763ed8af681d83a5",
+      "url": "article-daily-capteur-diabete-20261028.html",
+      "date": "2026-10-28"
+    },
+    {
+      "id": "mag-daily-demence-suivi-20261028",
+      "version": "81e4421b34d9fb4d5265728556154f6e13c272a16b0392888abfb83d48853755",
+      "url": "article-daily-demence-suivi-20261028.html",
+      "date": "2026-10-28"
+    },
+    {
+      "id": "mag-daily-steroides-coeur-20261028",
+      "version": "1a97ed4a91396541f6935e4c537f3e986935b5f228e24e3001fbf9803d39ee08",
+      "url": "article-daily-steroides-coeur-20261028.html",
+      "date": "2026-10-28"
+    },
+    {
+      "id": "mag-daily-brulure-rotation-20261028",
+      "version": "e2e508f2aab35a05733118af9617cc064b61867be02aa1d50e5961ae35428ad9",
+      "url": "article-daily-brulure-rotation-20261028.html",
+      "date": "2026-10-28"
+    },
+    {
+      "id": "mag-daily-jeun-prises-sang-20261028",
+      "version": "b372a3f63362b4c34eb12f0c239885eefe594fa49dbf2dfa6f7fb1f3e5a2ed39",
+      "url": "article-daily-jeun-prises-sang-20261028.html",
+      "date": "2026-10-28"
+    },
+    {
+      "id": "mag-daily-activite-150-20261028",
+      "version": "a57d3b093ab2f7bbd1b697a8dd6fd3bf88f70dc626e22383eeff791d1451cbe9",
+      "url": "article-daily-activite-150-20261028.html",
+      "date": "2026-10-28"
+    },
+    {
+      "id": "mag-daily-infirmiere-insuline-20261028",
+      "version": "9883648808ad6494aa06c45321fccb0a154c65b1f115e03d181573b170cd08c8",
+      "url": "article-daily-infirmiere-insuline-20261028.html",
+      "date": "2026-10-28"
+    },
+    {
+      "id": "mag-daily-respiratoires-s42-20261028",
+      "version": "0f258a5f6a6451b5ffc136317eac48821bd2a7d2a112a96f25de946f67e6ad9a",
+      "url": "article-daily-respiratoires-s42-20261028.html",
+      "date": "2026-10-28"
+    },
+    {
+      "id": "mag-daily-telephone-ecole-20261028",
+      "version": "4ae547717402e0097097614bbf17a37d7a4e3d92380dc7efa3327521d007808b",
+      "url": "article-daily-telephone-ecole-20261028.html",
+      "date": "2026-10-28"
+    },
     {
       "id": "mag-daily-marche-20261027",
       "version": "3f4f152e05ff2c0c047bf6a8b3782e24b7a7b946b7b778ca226415645dd8d7a3",
