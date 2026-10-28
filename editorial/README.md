@@ -49,3 +49,7 @@ Le workflow conserve un rapport d’exécution, un résumé GitHub et les manife
 Les 51 formulations originales ne sont pas présentes dans le dépôt : `docs/editorial/question-map-51-suivi-2026-10-09.md` le constate. Ne pas inventer ce jeu de test ni annoncer l’avoir rejoué. Les requêtes des tests ne sont ni conservées dans les journaux ni associées à des données personnelles.
 
 Les publications vidéo vérifiées alimentent la même source persistante. Un manifeste média validé sans auteur/date de validation médicale précise reste visible, mais exclu de l’IA. Les champs validatedBy, validatedAt et validationEvidence permettent une reprise documentée de cette validation.
+
+## Ajout de fiches : chemin de publication unique
+
+Ajouter les sources validées au manifeste, puis reconstruire le bundle et les payloads avec `node scripts/build-corpus-production.js --publish` et `node scripts/build-static-seo-fiches.js`. Ne pas ajouter de chargements de lots dans `corpus-loader.js` : ils sont déjà intégrés aux artefacts générés, cassent le chargement individuel et peuvent bloquer toute la publication. Exécuter `node scripts/test-fiche-fast-load.js` avant le push. Un test en échec doit être réparé ; ne pas le contourner pour publier.
