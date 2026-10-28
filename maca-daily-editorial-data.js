@@ -13,11 +13,11 @@ window.MACA_DAILY_EDITORIAL={
       "source": "Liu et al., NEJM, MILD-MT, 23 octobre 2026, DOI 10.1056/NEJMoa2609149",
       "sourceLabel": "Liu et al., NEJM, MILD-MT, 23 octobre 2026, DOI 10.1056/NEJMoa2609149",
       "sourceUrl": "https://doi.org/10.1056/NEJMoa2609149",
-      "image": "assets/editorial/2026-10-28/avc-thrombectomie.svg",
-      "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
-      "imageCredit": "Pexels — photographie d’illustration",
-      "imageSource": "https://www.pexels.com/",
-      "imageLicense": "Pexels License — free to use"
+      "image": "https://images.pexels.com/photos/4226264/pexels-photo-4226264.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Radiologue examinant des images IRM cérébrales",
+      "imageCredit": "Anna Shvets / Pexels",
+      "imageSource": "https://www.pexels.com/photo/close-up-shot-of-mri-results-4226264/",
+      "imageLicense": "Pexels License"
     },
     {
       "id": "daily-capteur-diabete-20261028",
@@ -30,11 +30,11 @@ window.MACA_DAILY_EDITORIAL={
       "source": "Oser et al., NEJM, CONNECT, 14 octobre 2026",
       "sourceLabel": "Oser et al., NEJM, CONNECT, 14 octobre 2026",
       "sourceUrl": "https://doi.org/10.1056/NEJMoa2608571",
-      "image": "assets/editorial/2026-10-28/diabete-capteur.svg",
-      "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
-      "imageCredit": "Pexels — photographie d’illustration",
-      "imageSource": "https://www.pexels.com/",
-      "imageLicense": "Pexels License — free to use"
+      "image": "https://images.pexels.com/photos/17947693/pexels-photo-17947693.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Femme portant un capteur de mesure continue du glucose sur le bras",
+      "imageCredit": "Nutrisense Inc / Pexels",
+      "imageSource": "https://www.pexels.com/photo/woman-with-diabetes-wearing-a-cgm-device-on-her-arm-17947693/",
+      "imageLicense": "Pexels License"
     },
     {
       "id": "daily-demence-suivi-20261028",
@@ -47,11 +47,11 @@ window.MACA_DAILY_EDITORIAL={
       "source": "Milani et al., JAMA Network Open, 27 octobre 2026",
       "sourceLabel": "Milani et al., JAMA Network Open, 27 octobre 2026",
       "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.40804",
-      "image": "assets/editorial/2026-10-28/demence-suivi.svg",
-      "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
-      "imageCredit": "Pexels — photographie d’illustration",
-      "imageSource": "https://www.pexels.com/",
-      "imageLicense": "Pexels License — free to use"
+      "image": "https://images.pexels.com/photos/39192354/pexels-photo-39192354.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Personne âgée en consultation avec une médecin",
+      "imageCredit": "Vitaly Gariev / Pexels",
+      "imageSource": "https://www.pexels.com/photo/doctor-and-patient-consultation-in-modern-office-39192354/",
+      "imageLicense": "Pexels License"
     },
     {
       "id": "daily-steroides-coeur-20261028",
@@ -64,11 +64,11 @@ window.MACA_DAILY_EDITORIAL={
       "source": "Abdullah et al., European Heart Journal – Cardiovascular Imaging, 12 octobre 2026",
       "sourceLabel": "Abdullah et al., European Heart Journal – Cardiovascular Imaging, 12 octobre 2026",
       "sourceUrl": "https://doi.org/10.1093/ehjci/jeag238",
-      "image": "assets/editorial/2026-10-28/steroides-coeur.svg",
-      "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
-      "imageCredit": "Pexels — photographie d’illustration",
-      "imageSource": "https://www.pexels.com/",
-      "imageLicense": "Pexels License — free to use"
+      "image": "https://images.pexels.com/photos/34043563/pexels-photo-34043563.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Homme pratiquant la musculation avec des haltères",
+      "imageCredit": "Zeal Creative Studios / Pexels",
+      "imageSource": "https://www.pexels.com/photo/man-lifting-dumbbells-in-gym-workout-34043563/",
+      "imageLicense": "Pexels License"
     },
     {
       "id": "daily-brulure-rotation-20261028",

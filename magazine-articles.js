@@ -3399,8 +3399,8 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-28",
     "status": "PUBLISHED",
     "excerpt": "Un AVC peu spectaculaire peut cacher l’occlusion d’une grosse artère. Un essai randomisé suggère un bénéfice de la thrombectomie chez certains patients sélectionnés par imagerie.",
-    "image": "assets/editorial/2026-10-28/avc-thrombectomie.svg",
-    "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
+    "image": "https://images.pexels.com/photos/4226264/pexels-photo-4226264.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Radiologue examinant des images IRM cérébrales",
     "keywords": [
       "Neurologie"
     ],
@@ -3418,8 +3418,8 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-28",
     "status": "PUBLISHED",
     "excerpt": "Dans un essai randomisé de 283 adultes, la mesure continue du glucose a amélioré l’HbA1c à 26 semaines, sans démontrer que tous les patients doivent être équipés.",
-    "image": "assets/editorial/2026-10-28/diabete-capteur.svg",
-    "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
+    "image": "https://images.pexels.com/photos/17947693/pexels-photo-17947693.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Femme portant un capteur de mesure continue du glucose sur le bras",
     "keywords": [
       "Diabète"
     ],
@@ -3437,8 +3437,8 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-28",
     "status": "PUBLISHED",
     "excerpt": "Une grande étude observationnelle associe les consultations préventives à une meilleure mise en route des traitements symptomatiques, sans démontrer une amélioration causale de la qualité de vie.",
-    "image": "assets/editorial/2026-10-28/demence-suivi.svg",
-    "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
+    "image": "https://images.pexels.com/photos/39192354/pexels-photo-39192354.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Personne âgée en consultation avec une médecin",
     "keywords": [
       "Gériatrie"
     ],
@@ -3456,8 +3456,8 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-28",
     "status": "PUBLISHED",
     "excerpt": "Une étude longitudinale suggère une récupération partielle de la fonction cardiaque après arrêt complet, mais pas une absence de séquelles.",
-    "image": "assets/editorial/2026-10-28/steroides-coeur.svg",
-    "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
+    "image": "https://images.pexels.com/photos/34043563/pexels-photo-34043563.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Homme pratiquant la musculation avec des haltères",
     "keywords": [
       "Cardiologie"
     ],
