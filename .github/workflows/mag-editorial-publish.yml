@@ -34,6 +34,7 @@ on:
       - 'scripts/test-content-duplicates.js'
       - 'scripts/mag-editorial.js'
       - 'scripts/test-mag-editorial.js'
+      - 'scripts/audit-mag-images.js'
       - 'scripts/publish-mag-generated.sh'
       - 'scripts/verify-mag-public.js'
       - 'corpus-v2-browser-entry.js'
@@ -76,6 +77,7 @@ jobs:
           node scripts/audit-content-duplicates.js
           node scripts/mag-editorial.js --dry-run
           node scripts/test-mag-editorial.js
+          node scripts/audit-mag-images.js
           node scripts/mag-editorial.js
           node scripts/test-corpus-pipeline.js
           node scripts/test-corpus-functional.js
