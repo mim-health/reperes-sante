@@ -8,6 +8,13 @@ for(const c of src.contents){
  if(!c.image){report.withoutImage++;continue;}
  report.withImage++;
  const strict=c.medicalStatus==='VALIDATED'&&['PUBLISHED','SCHEDULED'].includes(c.publicationStatus);
+ const newArticle=c.date>='2026-10-29'&&c.format==='article'&&strict;
+ if(newArticle){
+   if(!c.image)report.errors.push({id:c.id,message:'New Mag article requires a rights-cleared photograph'});
+   else if(/\.svg(?:[?#]|$)/i.test(c.image)||/generated|ai.generated|illustration originale/i.test((c.imageLicense||'')+' '+(c.imageCredit||'')))report.errors.push({id:c.id,message:'Illustration is not an approved photograph'});
+   if(!c.imageSource||!c.imageLicense||!c.imageCredit)report.errors.push({id:c.id,message:'Photo provenance or licence missing'});
+ }
+
  const add=(message)=>{(strict?report.errors:report.warnings).push({id:c.id,message});};
  if(!c.imageAlt||!c.imageCredit||!c.imageSource||!c.imageLicense)add('Missing image alt, credit, source or license');
  if(isWeb(c.image)){report.external++;if(!/^https:\/\//.test(c.image))add('Insecure remote image');}
