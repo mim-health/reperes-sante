@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "editionId": "edition-2026-10-28",
   "editionDate": "2026-10-28",
-  "sourceFingerprint": "7fe2097747834a6819fd1c740f425036f0e4617969559f18c327c505ea915cce",
+  "sourceFingerprint": "b45d2dc7b36301d9553e1a30dc3b7d58802a0ffbf0ce73f5cdc11994eb547e27",
   "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
@@ -65,6 +65,12 @@
       "id": "mag-daily-telephone-ecole-20261028",
       "version": "4ae547717402e0097097614bbf17a37d7a4e3d92380dc7efa3327521d007808b",
       "url": "article-daily-telephone-ecole-20261028.html",
+      "date": "2026-10-28"
+    },
+    {
+      "id": "mag-mag-antibiotiques-probiotiques-20261028",
+      "version": "c6a13fa8146a501487eac006196d6231a246de681dc13fc1a46abf337a2147bb",
+      "url": "article-mag-antibiotiques-probiotiques-20261028.html",
       "date": "2026-10-28"
     },
     {

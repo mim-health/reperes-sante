@@ -3578,5 +3578,27 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "4ae547717402e0097097614bbf17a37d7a4e3d92380dc7efa3327521d007808b"
+  },
+  {
+    "id": "mag-antibiotiques-probiotiques-20261028",
+    "url": "article-mag-antibiotiques-probiotiques-20261028.html",
+    "title": "Antibiotiques et probiotiques : faut-il vraiment en prendre pour protéger son intestin ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Microbiote et traitements",
+    "date": "2026-10-28",
+    "status": "PUBLISHED",
+    "excerpt": "Non, pas systématiquement. Certaines souches peuvent réduire le risque de diarrhée sous antibiotiques, mais aucun complément ne répare automatiquement le microbiote.",
+    "image": "assets/editorial/2026-10-28/antibiotiques-probiotiques.svg",
+    "imageAlt": "Capsules, micro-organismes et intestin stylisé, illustration originale MACASANTÉ",
+    "keywords": [
+      "antibiotiques",
+      "probiotiques",
+      "microbiote",
+      "diarrhée"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "c6a13fa8146a501487eac006196d6231a246de681dc13fc1a46abf337a2147bb"
   }
 ];
