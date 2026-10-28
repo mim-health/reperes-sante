@@ -3399,7 +3399,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-28",
     "status": "PUBLISHED",
     "excerpt": "Un AVC peu spectaculaire peut cacher l’occlusion d’une grosse artère. Un essai randomisé suggère un bénéfice de la thrombectomie chez certains patients sélectionnés par imagerie.",
-    "image": "",
+    "image": "assets/editorial/2026-10-28/avc-thrombectomie.svg",
     "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
     "keywords": [
       "Neurologie"
@@ -3418,7 +3418,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-28",
     "status": "PUBLISHED",
     "excerpt": "Dans un essai randomisé de 283 adultes, la mesure continue du glucose a amélioré l’HbA1c à 26 semaines, sans démontrer que tous les patients doivent être équipés.",
-    "image": "",
+    "image": "assets/editorial/2026-10-28/diabete-capteur.svg",
     "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
     "keywords": [
       "Diabète"
@@ -3437,7 +3437,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-28",
     "status": "PUBLISHED",
     "excerpt": "Une grande étude observationnelle associe les consultations préventives à une meilleure mise en route des traitements symptomatiques, sans démontrer une amélioration causale de la qualité de vie.",
-    "image": "",
+    "image": "assets/editorial/2026-10-28/demence-suivi.svg",
     "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
     "keywords": [
       "Gériatrie"
@@ -3456,7 +3456,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-28",
     "status": "PUBLISHED",
     "excerpt": "Une étude longitudinale suggère une récupération partielle de la fonction cardiaque après arrêt complet, mais pas une absence de séquelles.",
-    "image": "",
+    "image": "assets/editorial/2026-10-28/steroides-coeur.svg",
     "imageAlt": "Professionnel de santé en consultation, photographie d’illustration.",
     "keywords": [
       "Cardiologie"
