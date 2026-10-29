@@ -7012,6 +7012,399 @@
         "evidence": "Demande explicite de publication de l'article Sommeil adolescent dans Le Mag le 28 octobre 2026.",
         "contentHash": "0f5b4b10b387766a48fdd0bf84e39a04be9c6466b5bd98ca983f9b1cf57f8c3a"
       }
+    },
+    {
+      "id": "daily-fiv-insemination-20261029",
+      "date": "2026-10-29",
+      "title": "Infertilité inexpliquée : insémination ou FIV en premier ?",
+      "answer": "Un essai randomisé suggère que la FIV donne plus rapidement accès à une naissance, mais que les chances cumulées deviennent comparables si une FIV reste possible après les inséminations.",
+      "html": "<article><img class=\"hero\" src=\"https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200\" alt=\"Consultation médicale, illustration\"><p class=\"photo-credit\">Illustration : Pexels, licence Pexels.</p><p class=\"eyebrow\">LE MAG · 29 OCTOBRE 2026 · Fertilité</p><h1>Infertilité inexpliquée : insémination ou FIV en premier ?</h1><p class=\"lead\">Un essai randomisé suggère que la FIV donne plus rapidement accès à une naissance, mais que les chances cumulées deviennent comparables si une FIV reste possible après les inséminations.</p><h2>Que compare l’étude ?</h2><p>L’essai FIIX a randomisé 737 couples ayant une infertilité inexpliquée. La stratégie initiale comparait jusqu’à quatre cycles d’insémination intra-utérine avec stimulation ovarienne à un cycle complet de fécondation in vitro.</p><h2>Les résultats en chiffres</h2><p>À sept mois, une naissance vivante était obtenue chez 31 % des couples du groupe insémination contre 55 % du groupe FIV, soit 24 points de différence absolue. À vingt mois, lorsque le recours secondaire à la FIV était possible, les taux cumulés étaient de 70 % et 71 %.</p><h2>Ce que cela signifie pour les couples</h2><p>La FIV peut raccourcir le délai d’accès à une naissance. L’insémination initiale peut rester une option selon l’âge, la durée de l’infertilité, la réserve ovarienne, la pénibilité et les préférences du couple.</p><h2>Limites et sécurité</h2><p>L’analyse principale portait sur 585 couples ; les parcours comparés étaient différents. Des événements indésirables graves ont été rapportés chez six couples dans le groupe insémination et quatorze dans le groupe FIV. Ces résultats ne prescrivent pas une stratégie identique pour tous.</p><h2>Sources</h2><ul><li><a href=\"https://doi.org/10.1056/NEJMoa2602728\">Prentice et al., NEJM, FIIX, 27 octobre 2026</a></li></ul><p><small>Information générale. Ne remplace pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-fiv-insemination-20261029.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Fertilité",
+      "keywords": [
+        "Fertilité"
+      ],
+      "sources": [
+        {
+          "label": "Prentice et al., NEJM, FIIX, 27 octobre 2026",
+          "url": "https://doi.org/10.1056/NEJMoa2602728"
+        }
+      ],
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Consultation médicale, photographie d’illustration",
+      "imageCredit": "Pexels",
+      "imageSource": "https://www.pexels.com/",
+      "imageLicense": "Pexels License — free to use",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": true,
+      "validation": {
+        "validatedAt": "2026-10-29",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite et autorisation de publication dans la conversation MACA — Éditorial du 29 octobre 2026.",
+        "contentHash": "5ad60c52e4a49dd263e79dd7dbed7e855ecf83ffc32ba28414056a70231e9975"
+      }
+    },
+    {
+      "id": "daily-achille-injections-20261029",
+      "date": "2026-10-29",
+      "title": "Tendinopathie d’Achille : les injections de grand volume sont-elles utiles ?",
+      "answer": "Un essai contrôlé ne montre pas de bénéfice durable à douze mois des injections de grand volume par rapport à une injection simulée.",
+      "html": "<article><img class=\"hero\" src=\"https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200\" alt=\"Consultation médicale, illustration\"><p class=\"photo-credit\">Illustration : Pexels, licence Pexels.</p><p class=\"eyebrow\">LE MAG · 29 OCTOBRE 2026 · Rhumatologie</p><h1>Tendinopathie d’Achille : les injections de grand volume sont-elles utiles ?</h1><p class=\"lead\">Un essai contrôlé ne montre pas de bénéfice durable à douze mois des injections de grand volume par rapport à une injection simulée.</p><h2>Comment l’essai a-t-il été mené ?</h2><p>192 adultes présentant une tendinopathie de la portion moyenne du tendon d’Achille ont été répartis entre injection simulée, injection de grand volume seule ou associée à un corticoïde. Tous recevaient un programme d’exercices et d’éducation.</p><h2>Quels résultats ?</h2><p>À douze mois, aucune amélioration nette de la douleur ou de la fonction n’a été démontrée par rapport à l’injection simulée. Le corticoïde apportait un bénéfice transitoire à six semaines, sans avantage durable.</p><h2>Conséquence pratique</h2><p>L’exercice progressif et la gestion de la charge restent au cœur du traitement. Il ne faut pas confondre soulagement temporaire et guérison durable.</p><h2>Limites</h2><p>Essai monocentrique de taille modérée ; ne concerne pas la rupture aiguë du tendon.</p><h2>Sources</h2><ul><li><a href=\"https://doi.org/10.1136/bmj-2026-100807\">Malliaras et al., BMJ, 28 octobre 2026</a></li></ul><p><small>Information générale. Ne remplace pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-achille-injections-20261029.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Rhumatologie",
+      "keywords": [
+        "Rhumatologie"
+      ],
+      "sources": [
+        {
+          "label": "Malliaras et al., BMJ, 28 octobre 2026",
+          "url": "https://doi.org/10.1136/bmj-2026-100807"
+        }
+      ],
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Consultation médicale, photographie d’illustration",
+      "imageCredit": "Pexels",
+      "imageSource": "https://www.pexels.com/",
+      "imageLicense": "Pexels License — free to use",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": true,
+      "validation": {
+        "validatedAt": "2026-10-29",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite et autorisation de publication dans la conversation MACA — Éditorial du 29 octobre 2026.",
+        "contentHash": "ff11cc043378f5e83cf699eb56c31d632cff3ec09789a1f886e6352b82c9c0f8"
+      }
+    },
+    {
+      "id": "daily-rougeole-ontario-20261029",
+      "date": "2026-10-29",
+      "title": "Rougeole : pourquoi une épidémie peut-elle repartir ?",
+      "answer": "Une épidémie canadienne de 2 377 cas illustre le risque de flambées dans les populations insuffisamment vaccinées.",
+      "html": "<article><img class=\"hero\" src=\"https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200\" alt=\"Consultation médicale, illustration\"><p class=\"photo-credit\">Illustration : Pexels, licence Pexels.</p><p class=\"eyebrow\">LE MAG · 29 OCTOBRE 2026 · Vaccination</p><h1>Rougeole : pourquoi une épidémie peut-elle repartir ?</h1><p class=\"lead\">Une épidémie canadienne de 2 377 cas illustre le risque de flambées dans les populations insuffisamment vaccinées.</p><h2>Ce qu’a observé l’étude</h2><p>En Ontario, 2 377 cas ont été recensés sur 49 semaines. Parmi les personnes atteintes, 89,2 % n’étaient pas vaccinées et 73 % avaient 19 ans ou moins.</p><h2>Pourquoi est-ce préoccupant ?</h2><p>166 personnes ont été hospitalisées, 13 admises en réanimation. Des infections pendant la grossesse et des cas congénitaux ont été signalés, ainsi qu’un décès de nourrisson.</p><h2>Leçon de santé publique</h2><p>Une couverture vaccinale moyenne élevée peut masquer des poches de sous-vaccination. Vérifier son statut vaccinal, notamment avant un voyage ou une exposition, est important.</p><h2>Limites</h2><p>Étude descriptive canadienne ; elle ne mesure pas directement l’efficacité d’une nouvelle politique vaccinale.</p><h2>Sources</h2><ul><li><a href=\"https://doi.org/10.1136/bmj-2026-101123\">Gournis et al., BMJ, 28 octobre 2026</a></li></ul><p><small>Information générale. Ne remplace pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-rougeole-ontario-20261029.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Vaccination",
+      "keywords": [
+        "Vaccination"
+      ],
+      "sources": [
+        {
+          "label": "Gournis et al., BMJ, 28 octobre 2026",
+          "url": "https://doi.org/10.1136/bmj-2026-101123"
+        }
+      ],
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Consultation médicale, photographie d’illustration",
+      "imageCredit": "Pexels",
+      "imageSource": "https://www.pexels.com/",
+      "imageLicense": "Pexels License — free to use",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": true,
+      "validation": {
+        "validatedAt": "2026-10-29",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite et autorisation de publication dans la conversation MACA — Éditorial du 29 octobre 2026.",
+        "contentHash": "24962524ffcef9ec3e8179641ba2f17c3ecccd14e174452db9e3930dd62da882"
+      }
+    },
+    {
+      "id": "daily-rein-video-decision-20261029",
+      "date": "2026-10-29",
+      "title": "Maladie rénale avancée : une vidéo aide-t-elle à choisir ses soins ?",
+      "answer": "Dans un essai randomisé, une aide vidéo a augmenté la documentation des préférences de soins, sans prouver un bénéfice sur la survie ou la qualité de vie.",
+      "html": "<article><img class=\"hero\" src=\"https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200\" alt=\"Consultation médicale, illustration\"><p class=\"photo-credit\">Illustration : Pexels, licence Pexels.</p><p class=\"eyebrow\">LE MAG · 29 OCTOBRE 2026 · Néphrologie</p><h1>Maladie rénale avancée : une vidéo aide-t-elle à choisir ses soins ?</h1><p class=\"lead\">Dans un essai randomisé, une aide vidéo a augmenté la documentation des préférences de soins, sans prouver un bénéfice sur la survie ou la qualité de vie.</p><h2>Une décision complexe</h2><p>453 personnes d’au moins 65 ans ayant une maladie rénale avancée ont participé à l’essai VIDEO-KD. L’intervention présentait hémodialyse, dialyse péritonéale et traitement conservateur.</p><h2>Un résultat mesurable</h2><p>Après douze mois, une discussion anticipée était documentée chez 56,6 % du groupe vidéo contre 40,0 % des patients recevant les soins habituels, soit 16,6 points de différence absolue.</p><h2>Ce qu’il faut retenir</h2><p>Informer en amont peut aider à exprimer des préférences, mais le critère mesuré était administratif et clinique indirect : l’étude ne prouve pas que les soins reçus correspondaient mieux aux souhaits exprimés.</p><h2>Prudence</h2><p>Le contexte américain et la sélection des participants limitent la généralisation.</p><h2>Sources</h2><ul><li><a href=\"https://doi.org/10.1001/jamainternmed.2026.5989\">Volandes et al., JAMA Internal Medicine, 22 octobre 2026</a></li></ul><p><small>Information générale. Ne remplace pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-rein-video-decision-20261029.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Néphrologie",
+      "keywords": [
+        "Néphrologie"
+      ],
+      "sources": [
+        {
+          "label": "Volandes et al., JAMA Internal Medicine, 22 octobre 2026",
+          "url": "https://doi.org/10.1001/jamainternmed.2026.5989"
+        }
+      ],
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Consultation médicale, photographie d’illustration",
+      "imageCredit": "Pexels",
+      "imageSource": "https://www.pexels.com/",
+      "imageLicense": "Pexels License — free to use",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-29",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite et autorisation de publication dans la conversation MACA — Éditorial du 29 octobre 2026.",
+        "contentHash": "d46010340e215dfc37f27c6763424247b0364ef6e5600abb7c0a2d275eaa630e"
+      }
+    },
+    {
+      "id": "daily-epistaxis-rotation-20261029",
+      "date": "2026-10-29",
+      "title": "Je saigne du nez : quels gestes immédiats ?",
+      "answer": "Se pencher légèrement en avant et comprimer la partie molle du nez sans relâcher pendant dix minutes.",
+      "html": "<article><img class=\"hero\" src=\"https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200\" alt=\"Consultation médicale, illustration\"><p class=\"photo-credit\">Illustration : Pexels, licence Pexels.</p><p class=\"eyebrow\">LE MAG · 29 OCTOBRE 2026 · Premiers secours</p><h1>Je saigne du nez : quels gestes immédiats ?</h1><p class=\"lead\">Se pencher légèrement en avant et comprimer la partie molle du nez sans relâcher pendant dix minutes.</p><h2>Que faire ?</h2><p>Rester assis, tête légèrement penchée en avant, et comprimer fermement les ailes du nez. Ne pas pencher la tête en arrière.</p><h2>Quand consulter ?</h2><p>Un saignement abondant, prolongé, survenant après un traumatisme ou accompagné de malaise nécessite un avis rapide. Ce bloc est une rotation d’une fiche existante et non une nouvelle fiche.</p><h2>Sources</h2><ul><li><a href=\"https://www.nhs.uk/conditions/nosebleed/\">NHS — Nosebleed</a></li></ul><p><small>Information générale. Ne remplace pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-epistaxis-rotation-20261029.html",
+      "format": "article",
+      "category": "Santé au quotidien",
+      "theme": "Premiers secours",
+      "keywords": [
+        "Premiers secours"
+      ],
+      "sources": [
+        {
+          "label": "NHS — Nosebleed",
+          "url": "https://www.nhs.uk/conditions/nosebleed/"
+        }
+      ],
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Consultation médicale, photographie d’illustration",
+      "imageCredit": "Pexels",
+      "imageSource": "https://www.pexels.com/",
+      "imageLicense": "Pexels License — free to use",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-29",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite et autorisation de publication dans la conversation MACA — Éditorial du 29 octobre 2026.",
+        "contentHash": "e1931d22cb237054d2b314f6f6fbb7de75eab43853689fe62913ad66f910a690"
+      }
+    },
+    {
+      "id": "daily-sucre-roux-20261029",
+      "date": "2026-10-29",
+      "title": "Le sucre roux est-il beaucoup plus sain que le sucre blanc ?",
+      "answer": "FAUX : les deux restent essentiellement des sucres, avec des différences nutritionnelles trop faibles pour représenter un avantage sanitaire significatif.",
+      "html": "<article><img class=\"hero\" src=\"https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200\" alt=\"Consultation médicale, illustration\"><p class=\"photo-credit\">Illustration : Pexels, licence Pexels.</p><p class=\"eyebrow\">LE MAG · 29 OCTOBRE 2026 · Nutrition</p><h1>Le sucre roux est-il beaucoup plus sain que le sucre blanc ?</h1><p class=\"lead\">FAUX : les deux restent essentiellement des sucres, avec des différences nutritionnelles trop faibles pour représenter un avantage sanitaire significatif.</p><h2>Une différence surtout de goût</h2><p>Le sucre roux conserve certains composés donnant couleur et saveur, mais son apport en sucres et en calories est proche de celui du sucre blanc.</p><h2>Le bon repère</h2><p>Limiter la consommation totale de sucres libres importe davantage que choisir une couleur.</p><h2>Sources</h2><ul><li><a href=\"https://ciqual.anses.fr/\">Anses — Ciqual, table de composition des aliments</a></li></ul><p><small>Information générale. Ne remplace pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-sucre-roux-20261029.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Nutrition",
+      "keywords": [
+        "Nutrition"
+      ],
+      "sources": [
+        {
+          "label": "Anses — Ciqual, table de composition des aliments",
+          "url": "https://ciqual.anses.fr/"
+        }
+      ],
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Consultation médicale, photographie d’illustration",
+      "imageCredit": "Pexels",
+      "imageSource": "https://www.pexels.com/",
+      "imageLicense": "Pexels License — free to use",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-29",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite et autorisation de publication dans la conversation MACA — Éditorial du 29 octobre 2026.",
+        "contentHash": "56bc1f74d0e581df3fe43eff45b225e48929a8e3749d1de96961fd98bd79368c"
+      }
+    },
+    {
+      "id": "daily-noyades-1511-20261029",
+      "date": "2026-10-29",
+      "title": "1 511 noyades recensées pendant l’été 2026",
+      "answer": "Santé publique France a recensé 1 511 noyades entre mai et août 2026, dont 441 mortelles.",
+      "html": "<article><img class=\"hero\" src=\"https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200\" alt=\"Consultation médicale, illustration\"><p class=\"photo-credit\">Illustration : Pexels, licence Pexels.</p><p class=\"eyebrow\">LE MAG · 29 OCTOBRE 2026 · Prévention</p><h1>1 511 noyades recensées pendant l’été 2026</h1><p class=\"lead\">Santé publique France a recensé 1 511 noyades entre mai et août 2026, dont 441 mortelles.</p><h2>Pourquoi ce chiffre compte</h2><p>Les enfants et les personnes âgées sont particulièrement vulnérables. Une surveillance active et continue des jeunes enfants près de l’eau reste indispensable.</p><h2>Limites</h2><p>Ces chiffres concernent la période et le système de surveillance français indiqués ; ils ne sont pas une estimation annuelle.</p><h2>Sources</h2><ul><li><a href=\"https://www.santepubliquefrance.fr/\">Santé publique France — surveillance des noyades</a></li></ul><p><small>Information générale. Ne remplace pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-noyades-1511-20261029.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Prévention",
+      "keywords": [
+        "Prévention"
+      ],
+      "sources": [
+        {
+          "label": "Santé publique France — surveillance des noyades",
+          "url": "https://www.santepubliquefrance.fr/"
+        }
+      ],
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Consultation médicale, photographie d’illustration",
+      "imageCredit": "Pexels",
+      "imageSource": "https://www.pexels.com/",
+      "imageLicense": "Pexels License — free to use",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-29",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite et autorisation de publication dans la conversation MACA — Éditorial du 29 octobre 2026.",
+        "contentHash": "bea23de69fa9d2209adb4740cc004aef8a97ecb66ed3acb0aeb873fc4449c5d7"
+      }
+    },
+    {
+      "id": "daily-tuberculose-injectables-20261029",
+      "date": "2026-10-29",
+      "title": "Tuberculose : vers des traitements injectables à action prolongée ?",
+      "answer": "L’OMS a défini des profils cibles pour de futurs traitements, sans annoncer de médicament déjà disponible.",
+      "html": "<article><img class=\"hero\" src=\"https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200\" alt=\"Consultation médicale, illustration\"><p class=\"photo-credit\">Illustration : Pexels, licence Pexels.</p><p class=\"eyebrow\">LE MAG · 29 OCTOBRE 2026 · Infectiologie</p><h1>Tuberculose : vers des traitements injectables à action prolongée ?</h1><p class=\"lead\">L’OMS a défini des profils cibles pour de futurs traitements, sans annoncer de médicament déjà disponible.</p><h2>À retenir</h2><p>Les objectifs portent sur l’efficacité, la tolérance et la simplicité des traitements ; ils orientent la recherche plutôt que la prescription actuelle.</p><h2>Sources</h2><ul><li><a href=\"https://www.who.int/teams/global-tuberculosis-programme\">OMS — tuberculose, recherche et développement</a></li></ul><p><small>Information générale. Ne remplace pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-tuberculose-injectables-20261029.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Infectiologie",
+      "keywords": [
+        "Infectiologie"
+      ],
+      "sources": [
+        {
+          "label": "OMS — tuberculose, recherche et développement",
+          "url": "https://www.who.int/teams/global-tuberculosis-programme"
+        }
+      ],
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Consultation médicale, photographie d’illustration",
+      "imageCredit": "Pexels",
+      "imageSource": "https://www.pexels.com/",
+      "imageLicense": "Pexels License — free to use",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-29",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite et autorisation de publication dans la conversation MACA — Éditorial du 29 octobre 2026.",
+        "contentHash": "0603588e08b3a32a168ee645af2c478254ba50dd7a6c2219ff3036b0c95777e7"
+      }
+    },
+    {
+      "id": "daily-lancet-climat-20261029",
+      "date": "2026-10-29",
+      "title": "Climat et santé : de nouveaux indicateurs préoccupants",
+      "answer": "Le Lancet Countdown 2026 décrit une accélération de plusieurs conséquences sanitaires du changement climatique.",
+      "html": "<article><img class=\"hero\" src=\"https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200\" alt=\"Consultation médicale, illustration\"><p class=\"photo-credit\">Illustration : Pexels, licence Pexels.</p><p class=\"eyebrow\">LE MAG · 29 OCTOBRE 2026 · Environnement</p><h1>Climat et santé : de nouveaux indicateurs préoccupants</h1><p class=\"lead\">Le Lancet Countdown 2026 décrit une accélération de plusieurs conséquences sanitaires du changement climatique.</p><h2>À retenir</h2><p>Les expositions à la chaleur et d’autres risques environnementaux affectent déjà la santé. Les indicateurs agrégés doivent être interprétés selon les régions et les populations.</p><h2>Sources</h2><ul><li><a href=\"https://www.lancetcountdown.org/\">Lancet Countdown on health and climate change</a></li></ul><p><small>Information générale. Ne remplace pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-lancet-climat-20261029.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Environnement",
+      "keywords": [
+        "Environnement"
+      ],
+      "sources": [
+        {
+          "label": "Lancet Countdown on health and climate change",
+          "url": "https://www.lancetcountdown.org/"
+        }
+      ],
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Consultation médicale, photographie d’illustration",
+      "imageCredit": "Pexels",
+      "imageSource": "https://www.pexels.com/",
+      "imageLicense": "Pexels License — free to use",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-29",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite et autorisation de publication dans la conversation MACA — Éditorial du 29 octobre 2026.",
+        "contentHash": "37e16522cdf1d3e372fe9e019a70a6a26869bedccedff6b1c869955a0dfc42cc"
+      }
+    },
+    {
+      "id": "daily-grippe-chroniques-20261029",
+      "date": "2026-10-29",
+      "title": "Grippe : invitation vaccinale pour les patients chroniques",
+      "answer": "L’Assurance Maladie a adressé une invitation vaccinale à plusieurs millions de personnes atteintes de maladies chroniques.",
+      "html": "<article><img class=\"hero\" src=\"https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200\" alt=\"Consultation médicale, illustration\"><p class=\"photo-credit\">Illustration : Pexels, licence Pexels.</p><p class=\"eyebrow\">LE MAG · 29 OCTOBRE 2026 · Prévention</p><h1>Grippe : invitation vaccinale pour les patients chroniques</h1><p class=\"lead\">L’Assurance Maladie a adressé une invitation vaccinale à plusieurs millions de personnes atteintes de maladies chroniques.</p><h2>À retenir</h2><p>L’invitation rappelle l’intérêt de la prévention chez les personnes à risque, sans remplacer la vérification individuelle des indications.</p><h2>Sources</h2><ul><li><a href=\"https://www.ameli.fr/assure/sante/themes/grippe/vaccination-grippe\">Assurance Maladie — vaccination antigrippale</a></li></ul><p><small>Information générale. Ne remplace pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-grippe-chroniques-20261029.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Prévention",
+      "keywords": [
+        "Prévention"
+      ],
+      "sources": [
+        {
+          "label": "Assurance Maladie — vaccination antigrippale",
+          "url": "https://www.ameli.fr/assure/sante/themes/grippe/vaccination-grippe"
+        }
+      ],
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Consultation médicale, photographie d’illustration",
+      "imageCredit": "Pexels",
+      "imageSource": "https://www.pexels.com/",
+      "imageLicense": "Pexels License — free to use",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-29",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite et autorisation de publication dans la conversation MACA — Éditorial du 29 octobre 2026.",
+        "contentHash": "64a5e113853354269c470f3ffb685982043d78deef5d5c1eba6d45dce2840a5e"
+      }
+    },
+    {
+      "id": "octobre-rose-fourlight-20261029",
+      "date": "2026-10-29",
+      "title": "Cancer du sein métastatique : un inhibiteur ciblant CDK4 peut-il retarder la progression après un premier traitement ?",
+      "answer": "L’essai de phase II FourLight-1 suggère un allongement de la survie sans progression avec atirmociclib associé au fulvestrant, mais le médicament demeure expérimental et aucun bénéfice de survie globale n’est établi.",
+      "html": "<article><img class=\"hero\" src=\"https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200\" alt=\"Consultation médicale, illustration\"><p class=\"photo-credit\">Illustration : Pexels, licence Pexels.</p><p class=\"eyebrow\">LE MAG · 29 OCTOBRE 2026 · Cancer du sein</p><h1>Cancer du sein métastatique : un inhibiteur ciblant CDK4 peut-il retarder la progression après un premier traitement ?</h1><p class=\"lead\">L’essai de phase II FourLight-1 suggère un allongement de la survie sans progression avec atirmociclib associé au fulvestrant, mais le médicament demeure expérimental et aucun bénéfice de survie globale n’est établi.</p><h2>Pourquoi une nouvelle molécule est-elle étudiée ?</h2><p>Les inhibiteurs de CDK4/6 associés à l’hormonothérapie ont amélioré le contrôle des cancers du sein avancés exprimant les récepteurs hormonaux. Cependant, des résistances apparaissent et la maladie peut progresser. L’atirmociclib est développé comme inhibiteur particulièrement sélectif de CDK4, afin de conserver une activité antitumorale après exposition à une première molécule de la classe. Cette sélectivité est une propriété pharmacologique et ne prouve pas, à elle seule, un bénéfice clinique supérieur.</p><h2>À quelles patientes s’adresse la recherche ?</h2><p>FourLight-1 est un essai international, randomisé, ouvert et de phase II. Il a inclus 263 patientes, d’âge médian 57 ans, atteintes d’un cancer du sein avancé ou métastatique positif aux récepteurs hormonaux et HER2 négatif. Leur maladie avait progressé après un inhibiteur de CDK4/6 administré en situation adjuvante ou en première ligne métastatique. Ces critères sont essentiels : les résultats ne s’appliquent pas aux cancers du sein précoces non traités ni à toutes les formes biologiques.</p><h2>Quels traitements ont été comparés ?</h2><p>126 patientes ont reçu atirmociclib 300 mg deux fois par jour associé au fulvestrant. Les 137 autres ont reçu le traitement choisi par l’investigateur avant la randomisation : fulvestrant seul ou évérolimus avec exémestane. Le groupe comparateur réunissait donc plusieurs stratégies, ce qui rend l’interprétation plus complexe qu’une comparaison avec un traitement unique.</p><h2>Le résultat principal : combien de temps la maladie est-elle restée contrôlée ?</h2><p>La médiane de survie sans progression était de 9,4 mois avec atirmociclib–fulvestrant contre 6,6 mois avec le comparateur. La différence entre ces deux médianes est de 2,8 mois. Le rapport de risques de progression ou de décès était de 0,60. Une médiane décrit le moment où la moitié des participantes ont présenté une progression ou sont décédées ; elle ne prédit pas la durée de contrôle de la maladie pour une patiente donnée.</p><h2>Que montrent les résultats à douze mois ?</h2><p>À douze mois, 44,8 % des patientes du groupe atirmociclib étaient encore sans progression, contre 22,5 % dans le groupe comparateur : différence absolue de 22,3 points. Ce résultat est encourageant mais dépend du suivi, de la méthode d’évaluation et des caractéristiques des groupes. Il ne doit pas être présenté comme une réduction absolue de la mortalité.</p><h2>Les tumeurs ont-elles davantage régressé ?</h2><p>Chez les patientes présentant une maladie mesurable, une réponse tumorale objective a été observée chez 19,3 % sous atirmociclib contre 11,3 % avec le comparateur. La différence absolue était de huit points, mais cette comparaison secondaire n’atteignait pas le seuil statistique conventionnel. Le bénéfice clinique, défini par une réponse ou une stabilisation prolongée, était rapporté chez 61,9 % contre 46,0 %. Une diminution de taille ou une stabilisation n’équivaut pas à une guérison.</p><h2>A-t-on prouvé que les patientes vivent plus longtemps ?</h2><p>Non. Les données de survie globale étaient immatures lors de l’analyse. La survie sans progression est un critère important pour mesurer le contrôle tumoral, mais elle ne démontre pas automatiquement une prolongation de la vie, une amélioration de la qualité de vie ou une diminution des symptômes. Les décisions de traitement doivent intégrer ces différents objectifs et les préférences des patientes.</p><h2>Quels sont les risques ?</h2><p>Dans le groupe atirmociclib, une neutropénie était rapportée chez 47,2 % des patientes, dont 21,6 % de grade 3 ; une diminution des globules blancs chez 33,6 %, une diarrhée chez 28 %, et de la fatigue, des nausées ou des éruptions cutanées chez une proportion notable. Les événements de grade 3 ou 4 concernaient 37,6 % du groupe atirmociclib contre 24,3 % du groupe comparateur. Le traitement a été arrêté pour toxicité chez 6,4 %. Un décès par pneumopathie a été considéré comme lié au traitement par l’investigateur. Le profil de tolérance doit donc être évalué avec autant de rigueur que l’efficacité.</p><h2>Pourquoi faut-il rester prudent ?</h2><p>L’étude ne comprenait que 263 patientes, dans un essai de phase II non aveugle. Le critère principal reposait sur l’évaluation des investigateurs. Le comparateur était hétérogène, et certains facteurs pronostiques initiaux n’étaient pas parfaitement équilibrés. Les données concernant les patientes plus âgées étaient limitées. Il manque encore un recul suffisant sur la survie globale, les symptômes et la qualité de vie. Un essai de confirmation de phase III est nécessaire avant de modifier les standards.</p><h2>Est-ce un traitement disponible en France ?</h2><p>Non dans cette indication : l’atirmociclib demeure un médicament expérimental, sans autorisation de mise sur le marché pour cette stratégie. Les résultats de FourLight-1 ne doivent pas conduire une patiente à arrêter, remplacer ou réclamer un traitement non disponible. Après progression sous un inhibiteur de CDK4/6, les options dépendent notamment des mutations tumorales, des traitements reçus, des sites de progression, des symptômes, de l’état général et de l’accès à des essais cliniques. La discussion se fait avec l’équipe d’oncologie.</p><h2>À retenir</h2><p>FourLight-1 apporte un signal prometteur : le cancer est resté contrôlé plus longtemps chez certaines patientes sous atirmociclib–fulvestrant. Ce résultat ne signifie ni guérison ni survie prolongée démontrée. L’innovation doit encore confirmer sa valeur dans des études plus larges et documenter ses risques, son impact sur la qualité de vie et sa place parmi les traitements existants.</p><h2>Sources</h2><ul><li><a href=\"https://doi.org/10.1016/j.annonc.2026.10.1282\">Giordano et al., Annals of Oncology, FourLight-1, 24 octobre 2026</a></li><li><a href=\"https://www.cancer.gov/research/participate/clinical-trials/intervention/atirmociclib\">NCI — Atirmociclib clinical trials</a></li><li><a href=\"https://clinicaltrials.gov/study/NCT06760637\">FourLight-3, phase III</a></li></ul><p><small>Information générale. Ne remplace pas une consultation médicale.</small></p></article>",
+      "url": "article-octobre-rose-fourlight-20261029.html",
+      "format": "article",
+      "category": "Octobre Rose",
+      "theme": "Cancer du sein",
+      "keywords": [
+        "Cancer du sein"
+      ],
+      "sources": [
+        {
+          "label": "Giordano et al., Annals of Oncology, FourLight-1, 24 octobre 2026",
+          "url": "https://doi.org/10.1016/j.annonc.2026.10.1282"
+        },
+        {
+          "label": "NCI — Atirmociclib clinical trials",
+          "url": "https://www.cancer.gov/research/participate/clinical-trials/intervention/atirmociclib"
+        },
+        {
+          "label": "FourLight-3, phase III",
+          "url": "https://clinicaltrials.gov/study/NCT06760637"
+        }
+      ],
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageAlt": "Consultation médicale, photographie d’illustration",
+      "imageCredit": "Pexels",
+      "imageSource": "https://www.pexels.com/",
+      "imageLicense": "Pexels License — free to use",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-10-29",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite et autorisation de publication dans la conversation MACA — Éditorial du 29 octobre 2026.",
+        "contentHash": "8040a42b593db7c16ff905ce0a6d186bf9f9b730166e953110c41a249688e4f8"
+      }
     }
   ],
   "editions": [
@@ -7937,6 +8330,69 @@
         "validation": "Validation médicale explicite et autorisation de publication du Dr Romain BEDDOK le 28 octobre 2026.",
         "veille": "MILD-MT, CONNECT, suivi démence, stéroïdes anabolisants, HAS, SPF, étude téléphones à l’école.",
         "corpusImpact": "AVC et démence : actualiser-fusionner ; capteur et stéroïdes : candidats fiches uniquement. Article Octobre Rose TALENT publié séparément."
+      }
+    },
+    {
+      "id": "edition-2026-10-29",
+      "date": "2026-10-29",
+      "publishAt": "2026-10-29T12:35:00+01:00",
+      "complete": true,
+      "items": [
+        {
+          "contentId": "daily-fiv-insemination-20261029",
+          "slot": "À LA UNE",
+          "icon": "🧬"
+        },
+        {
+          "contentId": "daily-achille-injections-20261029",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-rougeole-ontario-20261029",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-rein-video-decision-20261029",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-epistaxis-rotation-20261029",
+          "slot": "FICHE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-sucre-roux-20261029",
+          "slot": "VRAI OU FAUX",
+          "icon": "✓"
+        },
+        {
+          "contentId": "daily-noyades-1511-20261029",
+          "slot": "LE CHIFFRE DU JOUR",
+          "icon": "1511"
+        },
+        {
+          "contentId": "daily-tuberculose-injectables-20261029",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-lancet-climat-20261029",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-grippe-chroniques-20261029",
+          "slot": "DONNÉES",
+          "icon": "•"
+        }
+      ],
+      "editorialConference": {
+        "validation": "Validation explicite et autorisation de publication par Dr Romain BEDDOK le 29 octobre 2026.",
+        "veille": "FIIX, tendinopathie d’Achille, rougeole Ontario, VIDEO-KD, tuberculose, climat, vaccination grippe.",
+        "corpusImpact": "FIIX, Achille et rougeole : candidats fiches distincts, sans création automatique. VIDEO-KD : ne pas créer. Article Octobre Rose FourLight-1 publié comme Mag autonome."
       }
     }
   ]
