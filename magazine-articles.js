@@ -3623,5 +3623,195 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "0f5b4b10b387766a48fdd0bf84e39a04be9c6466b5bd98ca983f9b1cf57f8c3a"
+  },
+  {
+    "id": "daily-fiv-insemination-20261029",
+    "url": "article-daily-fiv-insemination-20261029.html",
+    "title": "Infertilité inexpliquée : insémination ou FIV en premier ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Fertilité",
+    "date": "2026-10-29",
+    "status": "PUBLISHED",
+    "excerpt": "Un essai randomisé suggère que la FIV donne plus rapidement accès à une naissance, mais que les chances cumulées deviennent comparables si une FIV reste possible après les inséminations.",
+    "image": "https://images.pexels.com/photos/4315840/pexels-photo-4315840.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Photographie d'illustration pour Fertilité",
+    "keywords": [
+      "Fertilité"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "0b385ba92bca217bc3c327f7b650a8e35b08db9e8c903ff2c652aee56e35f7ce"
+  },
+  {
+    "id": "daily-achille-injections-20261029",
+    "url": "article-daily-achille-injections-20261029.html",
+    "title": "Tendinopathie d’Achille : les injections de grand volume sont-elles utiles ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Rhumatologie",
+    "date": "2026-10-29",
+    "status": "PUBLISHED",
+    "excerpt": "Un essai contrôlé ne montre pas de bénéfice durable à douze mois des injections de grand volume par rapport à une injection simulée.",
+    "image": "https://images.pexels.com/photos/31234755/pexels-photo-31234755.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Photographie d'illustration pour Rhumatologie",
+    "keywords": [
+      "Rhumatologie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "3e4d5e6936e032dbf8e416987c8d17acd1f825f423c5c5ae549977568539964c"
+  },
+  {
+    "id": "daily-rougeole-ontario-20261029",
+    "url": "article-daily-rougeole-ontario-20261029.html",
+    "title": "Rougeole : pourquoi une épidémie peut-elle repartir ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Vaccination",
+    "date": "2026-10-29",
+    "status": "PUBLISHED",
+    "excerpt": "Une épidémie canadienne de 2 377 cas illustre le risque de flambées dans les populations insuffisamment vaccinées.",
+    "image": "https://images.pexels.com/photos/5234476/pexels-photo-5234476.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Photographie d'illustration pour Vaccination",
+    "keywords": [
+      "Vaccination"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "e43dd19bdc43ea50ecc2a3a6b08fa480e5409f4b39c84eadaf7ddc89d6ff9f0e"
+  },
+  {
+    "id": "daily-rein-video-decision-20261029",
+    "url": "article-daily-rein-video-decision-20261029.html",
+    "title": "Maladie rénale avancée : une vidéo aide-t-elle à choisir ses soins ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Néphrologie",
+    "date": "2026-10-29",
+    "status": "PUBLISHED",
+    "excerpt": "Dans un essai randomisé, une aide vidéo a augmenté la documentation des préférences de soins, sans prouver un bénéfice sur la survie ou la qualité de vie.",
+    "image": "https://images.pexels.com/photos/39192354/pexels-photo-39192354.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Photographie d'illustration pour Néphrologie",
+    "keywords": [
+      "Néphrologie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "a3a355ef419888511ccdfa5d19e800669ab809abb7a91d399477049527bd19a0"
+  },
+  {
+    "id": "daily-epistaxis-rotation-20261029",
+    "url": "article-daily-epistaxis-rotation-20261029.html",
+    "title": "Je saigne du nez : quels gestes immédiats ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Premiers secours",
+    "date": "2026-10-29",
+    "status": "PUBLISHED",
+    "excerpt": "Se pencher légèrement en avant et comprimer la partie molle du nez sans relâcher pendant dix minutes.",
+    "image": "https://images.pexels.com/photos/7089387/pexels-photo-7089387.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Photographie d'illustration pour Premiers secours",
+    "keywords": [
+      "Premiers secours"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "0c5b2018761a5dd986436f20ae8d0d645fd3169c1949b80a9e3e6d1d56281bd2"
+  },
+  {
+    "id": "daily-sucre-roux-20261029",
+    "url": "article-daily-sucre-roux-20261029.html",
+    "title": "Le sucre roux est-il beaucoup plus sain que le sucre blanc ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Nutrition",
+    "date": "2026-10-29",
+    "status": "PUBLISHED",
+    "excerpt": "FAUX : les deux restent essentiellement des sucres, avec des différences nutritionnelles trop faibles pour représenter un avantage sanitaire significatif.",
+    "image": "https://images.pexels.com/photos/7653121/pexels-photo-7653121.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Photographie d'illustration pour Nutrition",
+    "keywords": [
+      "Nutrition"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "360ae9e720d4c5a052f034f936516a9bfdbdc3fe4ec588a0c00f6441085e466c"
+  },
+  {
+    "id": "daily-noyades-1511-20261029",
+    "url": "article-daily-noyades-1511-20261029.html",
+    "title": "1 511 noyades recensées pendant l’été 2026",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Prévention",
+    "date": "2026-10-29",
+    "status": "PUBLISHED",
+    "excerpt": "Santé publique France a recensé 1 511 noyades entre mai et août 2026, dont 441 mortelles.",
+    "image": "https://images.pexels.com/photos/29638691/pexels-photo-29638691.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Photographie d'illustration pour Prévention",
+    "keywords": [
+      "Prévention"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "e96f1ca8a53312d943ed1f047d73709313f750053e3aa7212327882a058e5b2f"
+  },
+  {
+    "id": "daily-tuberculose-injectables-20261029",
+    "url": "article-daily-tuberculose-injectables-20261029.html",
+    "title": "Tuberculose : vers des traitements injectables à action prolongée ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Infectiologie",
+    "date": "2026-10-29",
+    "status": "PUBLISHED",
+    "excerpt": "L’OMS a défini des profils cibles pour de futurs traitements, sans annoncer de médicament déjà disponible.",
+    "image": "https://images.pexels.com/photos/4225925/pexels-photo-4225925.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Photographie d'illustration pour Infectiologie",
+    "keywords": [
+      "Infectiologie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "9404dcf6b5451cdab7d2bd8125103be16412a09a2d93cdbe28a7658a49903c76"
+  },
+  {
+    "id": "daily-lancet-climat-20261029",
+    "url": "article-daily-lancet-climat-20261029.html",
+    "title": "Climat et santé : de nouveaux indicateurs préoccupants",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Environnement",
+    "date": "2026-10-29",
+    "status": "PUBLISHED",
+    "excerpt": "Le Lancet Countdown 2026 décrit une accélération de plusieurs conséquences sanitaires du changement climatique.",
+    "image": "https://images.pexels.com/photos/5214997/pexels-photo-5214997.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Photographie d'illustration pour Environnement",
+    "keywords": [
+      "Environnement"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "bc32ef4f98f50a983e725659bdce33884a2aebce148835dcf6d89a92eb79d89a"
+  },
+  {
+    "id": "daily-grippe-chroniques-20261029",
+    "url": "article-daily-grippe-chroniques-20261029.html",
+    "title": "Grippe : invitation vaccinale pour les patients chroniques",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Prévention",
+    "date": "2026-10-29",
+    "status": "PUBLISHED",
+    "excerpt": "L’Assurance Maladie a adressé une invitation vaccinale à plusieurs millions de personnes atteintes de maladies chroniques.",
+    "image": "https://images.pexels.com/photos/6448539/pexels-photo-6448539.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Photographie d'illustration pour Prévention",
+    "keywords": [
+      "Prévention"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "9b60c7e652a77538a4be20e1f1c0dbb22f28dde806364f83c695b71ffc3feeb5"
   }
 ];

@@ -187,5 +187,26 @@
     "url": "article-daily-steroides-coeur-20261028.html",
     "existingFicheId": null,
     "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-fiv-insemination-20261029",
+    "title": "Infertilité inexpliquée : insémination ou FIV en premier ?",
+    "url": "article-daily-fiv-insemination-20261029.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-achille-injections-20261029",
+    "title": "Tendinopathie d’Achille : les injections de grand volume sont-elles utiles ?",
+    "url": "article-daily-achille-injections-20261029.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-rougeole-ontario-20261029",
+    "title": "Rougeole : pourquoi une épidémie peut-elle repartir ?",
+    "url": "article-daily-rougeole-ontario-20261029.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
   }
 ]

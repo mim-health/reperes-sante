@@ -1,12 +1,72 @@
 {
   "schemaVersion": 1,
-  "editionId": "edition-2026-10-28",
-  "editionDate": "2026-10-28",
-  "sourceFingerprint": "883eec6a4db6efafbfe5d2bf8d374b3bb43c197ff445565923364cc66bc5c7c8",
+  "editionId": "edition-2026-10-29",
+  "editionDate": "2026-10-29",
+  "sourceFingerprint": "f2b6706a5adf7bb9328810612f6acd179177d9558c1b135affe50c7d3721dee3",
   "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-daily-fiv-insemination-20261029",
+      "version": "0b385ba92bca217bc3c327f7b650a8e35b08db9e8c903ff2c652aee56e35f7ce",
+      "url": "article-daily-fiv-insemination-20261029.html",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "mag-daily-achille-injections-20261029",
+      "version": "3e4d5e6936e032dbf8e416987c8d17acd1f825f423c5c5ae549977568539964c",
+      "url": "article-daily-achille-injections-20261029.html",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "mag-daily-rougeole-ontario-20261029",
+      "version": "e43dd19bdc43ea50ecc2a3a6b08fa480e5409f4b39c84eadaf7ddc89d6ff9f0e",
+      "url": "article-daily-rougeole-ontario-20261029.html",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "mag-daily-rein-video-decision-20261029",
+      "version": "a3a355ef419888511ccdfa5d19e800669ab809abb7a91d399477049527bd19a0",
+      "url": "article-daily-rein-video-decision-20261029.html",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "mag-daily-epistaxis-rotation-20261029",
+      "version": "0c5b2018761a5dd986436f20ae8d0d645fd3169c1949b80a9e3e6d1d56281bd2",
+      "url": "article-daily-epistaxis-rotation-20261029.html",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "mag-daily-sucre-roux-20261029",
+      "version": "360ae9e720d4c5a052f034f936516a9bfdbdc3fe4ec588a0c00f6441085e466c",
+      "url": "article-daily-sucre-roux-20261029.html",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "mag-daily-noyades-1511-20261029",
+      "version": "e96f1ca8a53312d943ed1f047d73709313f750053e3aa7212327882a058e5b2f",
+      "url": "article-daily-noyades-1511-20261029.html",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "mag-daily-tuberculose-injectables-20261029",
+      "version": "9404dcf6b5451cdab7d2bd8125103be16412a09a2d93cdbe28a7658a49903c76",
+      "url": "article-daily-tuberculose-injectables-20261029.html",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "mag-daily-lancet-climat-20261029",
+      "version": "bc32ef4f98f50a983e725659bdce33884a2aebce148835dcf6d89a92eb79d89a",
+      "url": "article-daily-lancet-climat-20261029.html",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "mag-daily-grippe-chroniques-20261029",
+      "version": "9b60c7e652a77538a4be20e1f1c0dbb22f28dde806364f83c695b71ffc3feeb5",
+      "url": "article-daily-grippe-chroniques-20261029.html",
+      "date": "2026-10-29"
+    },
     {
       "id": "mag-daily-avc-thrombectomie-20261028",
       "version": "7ef2f658fde9ea3e867af1bd9329a00691eee4c8b748ebd705b6fdc5688b63e7",
