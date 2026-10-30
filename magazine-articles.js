@@ -3308,7 +3308,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     ],
     "medicalStatus": "VALIDATED",
     "referenceFicheId": "difficulte-lever-chaise-20261030",
-    "version": "9da6465f11d2aabdc7ac36640d06689948d7ac4c7a8e7427711369fbb03afda4"
+    "version": "5b23a2ea5bdbd905f19816f3d0f0ab8f91cef9af8f1770a309f99935cdabf5ef"
   },
   {
     "id": "daily-readaptation-20261027",
@@ -4034,7 +4034,7 @@ window.MACA_MAGAZINE_ARTICLES=[
     ],
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
-    "version": "5682ab0ac702fe9c39115350a0b2df47bc431ada420aee98307eb5fbc9beaac9"
+    "version": "1e4b323423f933e1e6434995baee517f61ef7aa987c3e0508a373805b66f80ee"
   },
   {
     "id": "decryptage-vessie-volga-20261030",
@@ -4059,6 +4059,6 @@ window.MACA_MAGAZINE_ARTICLES=[
     ],
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
-    "version": "69af74adeb07bea1486c172da48b2d608a94c34d2547cf0e9f79c5a4f3ca356a"
+    "version": "ae3603edc808af4adc6709bd9cb60a294fd6f736d69184b6b9a60cf47b4553b7"
   }
 ];

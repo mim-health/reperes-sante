@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "editionId": "edition-2026-10-30",
   "editionDate": "2026-10-30",
-  "sourceFingerprint": "13bbcdb9cf3b3288886ba9e32e6fbbfcd1bb27442282f6fcca3036b249ab943b",
+  "sourceFingerprint": "96c15ae98c6d691dfc273a49b601eaa9ee279f85eb3b732819a9f1cec117635e",
   "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
@@ -69,13 +69,13 @@
     },
     {
       "id": "mag-decryptage-poumon-dellphi305-20261030",
-      "version": "5682ab0ac702fe9c39115350a0b2df47bc431ada420aee98307eb5fbc9beaac9",
+      "version": "1e4b323423f933e1e6434995baee517f61ef7aa987c3e0508a373805b66f80ee",
       "url": "article-cancer-poumon-dellphi305.html",
       "date": "2026-10-30"
     },
     {
       "id": "mag-decryptage-vessie-volga-20261030",
-      "version": "69af74adeb07bea1486c172da48b2d608a94c34d2547cf0e9f79c5a4f3ca356a",
+      "version": "ae3603edc808af4adc6709bd9cb60a294fd6f736d69184b6b9a60cf47b4553b7",
       "url": "article-cancer-vessie-volga.html",
       "date": "2026-10-30"
     },
@@ -261,7 +261,7 @@
     },
     {
       "id": "mag-daily-mollet-20261027",
-      "version": "9da6465f11d2aabdc7ac36640d06689948d7ac4c7a8e7427711369fbb03afda4",
+      "version": "5b23a2ea5bdbd905f19816f3d0f0ab8f91cef9af8f1770a309f99935cdabf5ef",
       "url": "article-daily-mollet-20261027.html",
       "date": "2026-10-27"
     },
