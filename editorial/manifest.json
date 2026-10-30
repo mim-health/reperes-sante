@@ -1,12 +1,84 @@
 {
   "schemaVersion": 1,
-  "editionId": "edition-2026-10-29",
-  "editionDate": "2026-10-29",
-  "sourceFingerprint": "f2b6706a5adf7bb9328810612f6acd179177d9558c1b135affe50c7d3721dee3",
+  "editionId": "edition-2026-10-30",
+  "editionDate": "2026-10-30",
+  "sourceFingerprint": "13bbcdb9cf3b3288886ba9e32e6fbbfcd1bb27442282f6fcca3036b249ab943b",
   "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-daily-pacemaker-branche-gauche-20261030",
+      "version": "dd639c6ce4ade45c4fffb7f22eefdc8eaec966535c0780929dd0dd003c965d13",
+      "url": "article-daily-pacemaker-branche-gauche-20261030.html",
+      "date": "2026-10-30"
+    },
+    {
+      "id": "mag-daily-deucrictibant-angioedeme-20261030",
+      "version": "61181e0408e553e9557ae39bb2e0f2a03420c86d76f1cfb6fa0d397bcfc3d69b",
+      "url": "article-daily-deucrictibant-angioedeme-20261030.html",
+      "date": "2026-10-30"
+    },
+    {
+      "id": "mag-daily-desinformation-cancer-20261030",
+      "version": "26c148009dffff6557ae2c0b85515bb1b6bfe1fd4c3346cc7842a769ab54d60a",
+      "url": "article-daily-desinformation-cancer-20261030.html",
+      "date": "2026-10-30"
+    },
+    {
+      "id": "mag-daily-sage-vaccins-20261030",
+      "version": "ac778992410140e8f5d5f9157e6f160dcb70577e235913058aa3685cb3cba236",
+      "url": "article-daily-sage-vaccins-20261030.html",
+      "date": "2026-10-30"
+    },
+    {
+      "id": "mag-daily-brulures-urinaires-rotation-20261030",
+      "version": "6f600dfd038330dbac46d87e1b40cafb42c52d1a629ffdd41cbd3f6d066d07c3",
+      "url": "article-daily-brulures-urinaires-rotation-20261030.html",
+      "date": "2026-10-30"
+    },
+    {
+      "id": "mag-daily-hypertension-masquee-20261030",
+      "version": "579d22b0366a2bb546146331788f95edcaac534a9d8389bddadc557ca051cd51",
+      "url": "article-daily-hypertension-masquee-20261030.html",
+      "date": "2026-10-30"
+    },
+    {
+      "id": "mag-daily-grippe-urgences-20261030",
+      "version": "8b3925363b46bed51bb693fd0cd91b06fb7185f90dd0b43e0bcc40aa1d86c55d",
+      "url": "article-daily-grippe-urgences-20261030.html",
+      "date": "2026-10-30"
+    },
+    {
+      "id": "mag-daily-bronchiolite-s43-20261030",
+      "version": "d0eab5060275d6a9ddc7863088b8fc387041b1c675e788d2c59aca37d642a7a4",
+      "url": "article-daily-bronchiolite-s43-20261030.html",
+      "date": "2026-10-30"
+    },
+    {
+      "id": "mag-daily-froid-insuffisance-cardiaque-20261030",
+      "version": "89b141118a719085b227fa31cf720d70a2f419bf3a1ca66faadbd6e509480e8f",
+      "url": "article-daily-froid-insuffisance-cardiaque-20261030.html",
+      "date": "2026-10-30"
+    },
+    {
+      "id": "mag-daily-chutes-outil-20261030",
+      "version": "e6a6d9d7d4a21390f37dacf208fc397cb9dfdff8cd8f5bfbe3b77c4c3cd87983",
+      "url": "article-daily-chutes-outil-20261030.html",
+      "date": "2026-10-30"
+    },
+    {
+      "id": "mag-decryptage-poumon-dellphi305-20261030",
+      "version": "5682ab0ac702fe9c39115350a0b2df47bc431ada420aee98307eb5fbc9beaac9",
+      "url": "article-cancer-poumon-dellphi305.html",
+      "date": "2026-10-30"
+    },
+    {
+      "id": "mag-decryptage-vessie-volga-20261030",
+      "version": "69af74adeb07bea1486c172da48b2d608a94c34d2547cf0e9f79c5a4f3ca356a",
+      "url": "article-cancer-vessie-volga.html",
+      "date": "2026-10-30"
+    },
     {
       "id": "mag-daily-fiv-insemination-20261029",
       "version": "0b385ba92bca217bc3c327f7b650a8e35b08db9e8c903ff2c652aee56e35f7ce",
@@ -189,7 +261,7 @@
     },
     {
       "id": "mag-daily-mollet-20261027",
-      "version": "43683b782d83f169a3a8066d287ebc38286b41fc9c7154ffae9133ba851c9636",
+      "version": "9da6465f11d2aabdc7ac36640d06689948d7ac4c7a8e7427711369fbb03afda4",
       "url": "article-daily-mollet-20261027.html",
       "date": "2026-10-27"
     },

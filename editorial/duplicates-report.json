@@ -552,12 +552,25 @@
         "type": "Mag"
       },
       "score": 0.83
+    },
+    {
+      "left": {
+        "id": "daily-grippe-20261011",
+        "title": "Passages aux urgences pour syndrome grippal en 2025–2026",
+        "type": "Mag"
+      },
+      "right": {
+        "id": "daily-grippe-urgences-20261030",
+        "title": "115 000 passages aux urgences pour syndrome grippal",
+        "type": "Mag"
+      },
+      "score": 0.5
     }
   ],
   "counts": {
-    "manifestFiles": 152,
-    "rawFiches": 444,
-    "canonicalFiches": 418,
-    "magContents": 204
+    "manifestFiles": 153,
+    "rawFiches": 445,
+    "canonicalFiches": 419,
+    "magContents": 217
   }
 }

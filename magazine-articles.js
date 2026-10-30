@@ -3288,21 +3288,27 @@ window.MACA_MAGAZINE_ARTICLES=[
   {
     "id": "daily-mollet-20261027",
     "url": "article-daily-mollet-20261027.html",
-    "title": "Tour de mollet et chutes : un marqueur associé",
+    "title": "Des mollets qui diminuent avec l’âge : un signal à prendre au sérieux ?",
     "format": "article",
-    "category": "Actualité santé",
-    "theme": "DONNÉES",
+    "category": "Décryptage",
+    "theme": "Seniors",
     "date": "2026-10-27",
     "status": "PUBLISHED",
-    "excerpt": "Une étude observationnelle associe la diminution du tour de mollet à une augmentation des chutes ; elle ne démontre pas un lien causal.",
-    "image": "",
-    "imageAlt": "",
+    "excerpt": "Une diminution du tour de mollet au fil du temps a été associée à davantage de chutes dans une étude menée chez des personnes âgées. C’est une piste de repérage, pas un test capable de prédire à lui seul une chute. [1]",
+    "image": "https://images.pexels.com/photos/8795584/pexels-photo-8795584.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Femme âgée pratiquant la marche avec des bâtons dans un parc. Photo d’illustration.",
     "keywords": [
-      "mollet"
+      "tour de mollet",
+      "circonférence du mollet",
+      "fonte musculaire",
+      "chutes",
+      "sarcopénie",
+      "fragilité",
+      "personnes âgées"
     ],
     "medicalStatus": "VALIDATED",
-    "referenceFicheId": null,
-    "version": "43683b782d83f169a3a8066d287ebc38286b41fc9c7154ffae9133ba851c9636"
+    "referenceFicheId": "difficulte-lever-chaise-20261030",
+    "version": "9da6465f11d2aabdc7ac36640d06689948d7ac4c7a8e7427711369fbb03afda4"
   },
   {
     "id": "daily-readaptation-20261027",
@@ -3813,5 +3819,246 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "9b60c7e652a77538a4be20e1f1c0dbb22f28dde806364f83c695b71ffc3feeb5"
+  },
+  {
+    "id": "daily-pacemaker-branche-gauche-20261030",
+    "url": "article-daily-pacemaker-branche-gauche-20261030.html",
+    "title": "Pacemaker : stimuler le cœur plus naturellement réduit-il l’insuffisance cardiaque ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Cardiologie",
+    "date": "2026-10-30",
+    "status": "PUBLISHED",
+    "excerpt": "Chez certains patients devant être stimulés très fréquemment, un essai randomisé montre moins d’événements cardiaques avec la stimulation de la région de la branche gauche.",
+    "image": "https://images.pexels.com/photos/9408869/pexels-photo-9408869.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Moniteur d’électrocardiogramme. Photo d’illustration, sans représentation du dispositif étudié.",
+    "keywords": [
+      "Cardiologie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "dd639c6ce4ade45c4fffb7f22eefdc8eaec966535c0780929dd0dd003c965d13"
+  },
+  {
+    "id": "daily-deucrictibant-angioedeme-20261030",
+    "url": "article-daily-deucrictibant-angioedeme-20261030.html",
+    "title": "Angiœdème héréditaire : un comprimé pourrait-il traiter les crises ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Maladies rares",
+    "date": "2026-10-30",
+    "status": "PUBLISHED",
+    "excerpt": "Un essai de phase III suggère un soulagement plus rapide avec le deucrictibant oral qu’avec un placebo, sans comparaison directe aux traitements actifs disponibles.",
+    "image": "assets/editorial/2026-10-14/photos/angioedeme.jpg",
+    "imageAlt": "Professionnelle de santé échangeant avec une patiente.",
+    "keywords": [
+      "Maladies rares"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "61181e0408e553e9557ae39bb2e0f2a03420c86d76f1cfb6fa0d397bcfc3d69b"
+  },
+  {
+    "id": "daily-desinformation-cancer-20261030",
+    "url": "article-daily-desinformation-cancer-20261030.html",
+    "title": "Cancer : un avertissement sur les réseaux sociaux peut-il limiter les fausses informations ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Information santé",
+    "date": "2026-10-30",
+    "status": "PUBLISHED",
+    "excerpt": "Un essai sur une plateforme simulée suggère que les avertissements contextuels encouragent les signalements de fausses promesses thérapeutiques.",
+    "image": "https://images.pexels.com/photos/6209632/pexels-photo-6209632.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Femme consultant son téléphone à domicile. Photo d’illustration, sans lien avec les personnes étudiées.",
+    "keywords": [
+      "Information santé"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "26c148009dffff6557ae2c0b85515bb1b6bfe1fd4c3346cc7842a769ab54d60a"
+  },
+  {
+    "id": "daily-sage-vaccins-20261030",
+    "url": "article-daily-sage-vaccins-20261030.html",
+    "title": "Vaccins : quelles nouvelles orientations du groupe SAGE de l’OMS ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Vaccination",
+    "date": "2026-10-30",
+    "status": "PUBLISHED",
+    "excerpt": "Les experts de l’OMS ont actualisé des orientations mondiales sur HPV, fièvre jaune, diphtérie et mpox ; elles ne modifient pas automatiquement le calendrier français.",
+    "image": "https://images.pexels.com/photos/8413212/pexels-photo-8413212.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Administration d’un vaccin dans le bras. Photo d’illustration.",
+    "keywords": [
+      "Vaccination"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "ac778992410140e8f5d5f9157e6f160dcb70577e235913058aa3685cb3cba236"
+  },
+  {
+    "id": "daily-brulures-urinaires-rotation-20261030",
+    "url": "article-daily-brulures-urinaires-rotation-20261030.html",
+    "title": "Brûlures urinaires chez l’adulte : quand faut-il consulter ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé au quotidien",
+    "date": "2026-10-30",
+    "status": "PUBLISHED",
+    "excerpt": "Une brûlure en urinant peut évoquer une cystite, mais la fièvre, une douleur lombaire, la grossesse ou une situation de fragilité imposent une évaluation adaptée.",
+    "image": "assets/editorial/2026-10-13/photos/cystite.jpg",
+    "imageAlt": "Verre d’eau éclairé par la lumière naturelle.",
+    "keywords": [
+      "Santé au quotidien"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "cystite-femme",
+    "version": "6f600dfd038330dbac46d87e1b40cafb42c52d1a629ffdd41cbd3f6d066d07c3"
+  },
+  {
+    "id": "daily-hypertension-masquee-20261030",
+    "url": "article-daily-hypertension-masquee-20261030.html",
+    "title": "Une tension normale chez le médecin exclut-elle l’hypertension ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Prévention",
+    "date": "2026-10-30",
+    "status": "PUBLISHED",
+    "excerpt": "FAUX : une hypertension masquée peut se manifester par des chiffres normaux au cabinet et élevés en dehors.",
+    "image": "https://images.pexels.com/photos/8670518/pexels-photo-8670518.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Mesure de la pression artérielle à domicile. Photo d’illustration.",
+    "keywords": [
+      "Prévention"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "579d22b0366a2bb546146331788f95edcaac534a9d8389bddadc557ca051cd51"
+  },
+  {
+    "id": "daily-grippe-urgences-20261030",
+    "url": "article-daily-grippe-urgences-20261030.html",
+    "title": "115 000 passages aux urgences pour syndrome grippal",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Infectiologie",
+    "date": "2026-10-30",
+    "status": "PUBLISHED",
+    "excerpt": "Environ 115 000 passages aux urgences pour syndrome grippal ont été recensés en France pendant la saison 2025–2026.",
+    "image": "https://images.pexels.com/photos/36595248/pexels-photo-36595248.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Couloir d’un établissement de soins. Photo d’illustration, sans lien avec les établissements étudiés.",
+    "keywords": [
+      "Infectiologie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "8b3925363b46bed51bb693fd0cd91b06fb7185f90dd0b43e0bcc40aa1d86c55d"
+  },
+  {
+    "id": "daily-bronchiolite-s43-20261030",
+    "url": "article-daily-bronchiolite-s43-20261030.html",
+    "title": "Bronchiolite : deux territoires en pré-épidémie",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Pédiatrie",
+    "date": "2026-10-30",
+    "status": "PUBLISHED",
+    "excerpt": "La surveillance de la semaine 43 signale une progression de la bronchiolite et une phase pré-épidémique en Île-de-France et en Martinique.",
+    "image": "https://images.pexels.com/photos/3341189/pexels-photo-3341189.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Portrait d’un nourrisson. Photo d’illustration, ne représentant pas un enfant malade.",
+    "keywords": [
+      "Pédiatrie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "d0eab5060275d6a9ddc7863088b8fc387041b1c675e788d2c59aca37d642a7a4"
+  },
+  {
+    "id": "daily-froid-insuffisance-cardiaque-20261030",
+    "url": "article-daily-froid-insuffisance-cardiaque-20261030.html",
+    "title": "Froid : davantage d’hospitalisations pour insuffisance cardiaque ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Cardiologie",
+    "date": "2026-10-30",
+    "status": "PUBLISHED",
+    "excerpt": "Une grande étude observationnelle américaine associe les périodes froides à davantage d’hospitalisations pour insuffisance cardiaque.",
+    "image": "https://images.pexels.com/photos/7243361/pexels-photo-7243361.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Homme âgé portant un manteau par temps froid. Photo d’illustration.",
+    "keywords": [
+      "Cardiologie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "89b141118a719085b227fa31cf720d70a2f419bf3a1ca66faadbd6e509480e8f"
+  },
+  {
+    "id": "daily-chutes-outil-20261030",
+    "url": "article-daily-chutes-outil-20261030.html",
+    "title": "Chutes des personnes âgées : l’informatique peut-elle aider ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Gériatrie",
+    "date": "2026-10-30",
+    "status": "PUBLISHED",
+    "excerpt": "Un essai en grappes portant sur 11 945 personnes âgées suggère qu’une aide informatique intégrée au dossier peut réduire modestement les chutes enregistrées.",
+    "image": "https://images.pexels.com/photos/12085616/pexels-photo-12085616.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Groupe de personnes âgées participant à une activité physique sur chaise. Photo d’illustration.",
+    "keywords": [
+      "Gériatrie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "e6a6d9d7d4a21390f37dacf208fc397cb9dfdff8cd8f5bfbe3b77c4c3cd87983"
+  },
+  {
+    "id": "decryptage-poumon-dellphi305-20261030",
+    "url": "article-cancer-poumon-dellphi305.html",
+    "title": "Cancer du poumon à petites cellules : une nouvelle association améliore-t-elle la survie ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Cancer du poumon",
+    "date": "2026-10-30",
+    "status": "PUBLISHED",
+    "excerpt": "Oui, dans un essai récent, ajouter le tarlatamab au durvalumab en traitement d’entretien a amélioré la survie de patients atteints d’un cancer du poumon à petites cellules au stade étendu. Ce résultat concerne une situation précise, après une première chimio-immunothérapie. [1, 4]",
+    "image": "https://images.pexels.com/photos/4225923/pexels-photo-4225923.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Professionnel de santé examinant une radiographie thoracique. Photo d’illustration, sans lien avec les participants à l’essai.",
+    "keywords": [
+      "cancer du poumon à petites cellules",
+      "CPPC",
+      "stade étendu",
+      "tarlatamab",
+      "durvalumab",
+      "DeLLphi-305",
+      "entretien",
+      "survie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "5682ab0ac702fe9c39115350a0b2df47bc431ada420aee98307eb5fbc9beaac9"
+  },
+  {
+    "id": "decryptage-vessie-volga-20261030",
+    "url": "article-cancer-vessie-volga.html",
+    "title": "Cancer de la vessie : quel bénéfice d’un nouveau traitement autour de l’opération ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Cancer de la vessie",
+    "date": "2026-10-30",
+    "status": "PUBLISHED",
+    "excerpt": "L’essai VOLGA montre un bénéfice de l’association durvalumab–enfortumab védotine autour de l’ablation de la vessie chez certains patients atteints d’un cancer infiltrant le muscle, ne pouvant pas recevoir le cisplatine ou le refusant. Le traitement étudié complète l’opération ; il ne la remplace pas. [1]",
+    "image": "https://images.pexels.com/photos/8413217/pexels-photo-8413217.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Consultation médicale d’un homme âgé. Photo d’illustration, sans indication sur la santé de la personne représentée.",
+    "keywords": [
+      "cancer de la vessie",
+      "TVIM",
+      "VOLGA",
+      "durvalumab",
+      "enfortumab védotine",
+      "cisplatine",
+      "cystectomie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "69af74adeb07bea1486c172da48b2d608a94c34d2547cf0e9f79c5a4f3ca356a"
   }
 ];

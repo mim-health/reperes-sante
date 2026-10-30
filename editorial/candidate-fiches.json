@@ -208,5 +208,12 @@
     "url": "article-daily-rougeole-ontario-20261029.html",
     "existingFicheId": null,
     "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-pacemaker-branche-gauche-20261030",
+    "title": "Pacemaker : stimuler le cœur plus naturellement réduit-il l’insuffisance cardiaque ?",
+    "url": "article-daily-pacemaker-branche-gauche-20261030.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
   }
 ]
