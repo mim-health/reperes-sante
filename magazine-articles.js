@@ -4060,5 +4060,242 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "ae3603edc808af4adc6709bd9cb60a294fd6f736d69184b6b9a60cf47b4553b7"
+  },
+  {
+    "id": "daily-mira2-regles-abondantes-20261031",
+    "url": "article-daily-mira2-regles-abondantes-20261031.html",
+    "title": "Règles très abondantes : un stérilet hormonal peut-il éviter une hystérectomie ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Gynécologie",
+    "date": "2026-10-31",
+    "status": "PUBLISHED",
+    "excerpt": "Dans l’essai MIRA2, ajouter un dispositif intra-utérin au lévonorgestrel après une ablation de l’endomètre a été associé à moins d’hystérectomies à deux ans.",
+    "image": "https://images.pexels.com/photos/3958579/pexels-photo-3958579.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Personne posant les mains sur son abdomen. Photo d’illustration, sans lien avec les participants aux études.",
+    "keywords": [
+      "Gynécologie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "5aa67ac66d06b9b224b0e8c6b85cf278ef5a41564484acb2e0c629eb2c01f69e"
+  },
+  {
+    "id": "daily-menopause-traitements-20261031",
+    "url": "article-daily-menopause-traitements-20261031.html",
+    "title": "Ménopause : quels traitements soulagent les bouffées de chaleur et les troubles du sommeil ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Ménopause",
+    "date": "2026-10-31",
+    "status": "PUBLISHED",
+    "excerpt": "Les recommandations récentes rappellent l’intérêt d’une prise en charge personnalisée, hormonale ou non hormonale, selon les symptômes et les risques.",
+    "image": "https://images.pexels.com/photos/5264739/pexels-photo-5264739.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Portrait d’une femme adulte. Photo d’illustration, sans lien avec les participants aux études.",
+    "keywords": [
+      "Ménopause"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "8f8b11461128af10cc2e1f7d6411dcc11dbbec91fcc24755254922ff44425258"
+  },
+  {
+    "id": "daily-retatrutide-apnee-20261031",
+    "url": "article-daily-retatrutide-apnee-20261031.html",
+    "title": "Apnée du sommeil et surpoids : un nouveau traitement peut-il réduire les pauses respiratoires ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Sommeil",
+    "date": "2026-10-31",
+    "status": "PUBLISHED",
+    "excerpt": "Des essais de phase III évaluent le rétatrutide dans l’apnée obstructive du sommeil associée au surpoids ou à l’obésité. Le médicament reste expérimental.",
+    "image": "https://images.pexels.com/photos/7641403/pexels-photo-7641403.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Homme endormi dans un lit. Photo d’illustration, sans lien avec les participants aux études.",
+    "keywords": [
+      "Sommeil"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "5bcd1ceda9d5e06b3ed59421d2c4e41b18d39cbe6f2536e43ce6778e38a26676"
+  },
+  {
+    "id": "daily-vih-grossesse-barbade-20261031",
+    "url": "article-daily-vih-grossesse-barbade-20261031.html",
+    "title": "VIH et grossesse : peut-on empêcher la transmission du virus au bébé ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Grossesse",
+    "date": "2026-10-31",
+    "status": "PUBLISHED",
+    "excerpt": "L’OMS a certifié l’élimination de la transmission mère-enfant du VIH comme problème de santé publique à la Barbade, résultat d’un dépistage et de traitements efficaces.",
+    "image": "https://images.pexels.com/photos/7089329/pexels-photo-7089329.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Consultation de suivi de grossesse. Photo d’illustration, sans lien avec les participants aux études.",
+    "keywords": [
+      "Grossesse"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "5739be9ee64f0431bfef8c333b7d8d55a2a4d6ebd9ba98f3262d7f2db20fa2b8"
+  },
+  {
+    "id": "daily-complements-medicaments-rotation-20261031",
+    "url": "article-daily-complements-medicaments-rotation-20261031.html",
+    "title": "Compléments alimentaires : quelles précautions avec ses médicaments ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé au quotidien",
+    "date": "2026-10-31",
+    "status": "PUBLISHED",
+    "excerpt": "Les plantes et compléments peuvent modifier l’efficacité ou la tolérance de certains médicaments ; il est important de signaler toutes ses prises au médecin ou au pharmacien.",
+    "image": "https://images.pexels.com/photos/7551634/pexels-photo-7551634.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Médicaments et pilulier sur une table. Photo d’illustration, sans lien avec les participants aux études.",
+    "keywords": [
+      "Santé au quotidien"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "96cc245d17d1771895ab88b8145ba881ca90cbfb84b7fc42a1ed36148803d554"
+  },
+  {
+    "id": "daily-substituts-nicotiniques-20261031",
+    "url": "article-daily-substituts-nicotiniques-20261031.html",
+    "title": "Les substituts nicotiniques remplacent-ils simplement une dépendance par une autre ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Tabac",
+    "date": "2026-10-31",
+    "status": "PUBLISHED",
+    "excerpt": "FAUX : ils apportent de la nicotine sans combustion et augmentent les chances d’arrêt durable du tabac.",
+    "image": "https://images.pexels.com/photos/2027042/pexels-photo-2027042.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Cendrier et mégots, illustration de l’arrêt du tabac. Photo d’illustration, sans lien avec les participants aux études.",
+    "keywords": [
+      "Tabac"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "10e3d76b255d84107dd0d2959d418fbd0b6fb28e12f457be722862166c1221fd"
+  },
+  {
+    "id": "daily-mpox-427-20261031",
+    "url": "article-daily-mpox-427-20261031.html",
+    "title": "427 cas de mpox déclarés en France en 2026",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Infectiologie",
+    "date": "2026-10-31",
+    "status": "PUBLISHED",
+    "excerpt": "Du 1er janvier au 30 septembre 2026, 427 cas de mpox ont été signalés à Santé publique France, dont 18 sans confirmation biologique.",
+    "image": "https://images.pexels.com/photos/8460346/pexels-photo-8460346.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Travail de laboratoire ; cette photographie ne représente pas un test spécifique de la mpox. Photo d’illustration, sans lien avec les participants aux études.",
+    "keywords": [
+      "Infectiologie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "9627410104f97f4bae2c0bfcaa4a3d85aa93eb5f5ccdb1e04cb20300ede03e36"
+  },
+  {
+    "id": "daily-mois-sans-tabac-20261031",
+    "url": "article-daily-mois-sans-tabac-20261031.html",
+    "title": "Mois sans tabac commence le 1er novembre",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Prévention",
+    "date": "2026-10-31",
+    "status": "PUBLISHED",
+    "excerpt": "Le défi collectif de novembre peut aider à préparer l’arrêt du tabac grâce au soutien, aux conseils et aux traitements de substitution.",
+    "image": "https://images.pexels.com/photos/28747780/pexels-photo-28747780.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Mégots dans un cendrier, illustration de la prévention du tabagisme. Photo d’illustration, sans lien avec les participants aux études.",
+    "keywords": [
+      "Prévention"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "97ba143ca5edef3aead766746c88ef433f759f18b2e28ec77bc0216e65662f82"
+  },
+  {
+    "id": "daily-vih-statine-20261031",
+    "url": "article-daily-vih-statine-20261031.html",
+    "title": "VIH et prévention cardiovasculaire : nouvelles orientations américaines",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Prévention cardiovasculaire",
+    "date": "2026-10-31",
+    "status": "PUBLISHED",
+    "excerpt": "Les recommandations américaines élargissent l’utilisation des statines chez les adultes vivant avec le VIH de 40 à 75 ans.",
+    "image": "https://images.pexels.com/photos/9902277/pexels-photo-9902277.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Comprimés et conditionnements pharmaceutiques. Photo d’illustration, sans lien avec les participants aux études.",
+    "keywords": [
+      "Prévention cardiovasculaire"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "b6aba75eea7ddecf388827b89255ec669185812ab97509ef53e7f20c23ee995c"
+  },
+  {
+    "id": "daily-rappel-aflibercept-20261031",
+    "url": "article-daily-rappel-aflibercept-20261031.html",
+    "title": "Aflibercept : rappel de deux lots de seringues préremplies",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Ophtalmologie",
+    "date": "2026-10-31",
+    "status": "PUBLISHED",
+    "excerpt": "Les lots Afiveg 2461572 et Mynzepli 2393229 font l’objet d’un rappel lié à la collerette de la seringue.",
+    "image": "https://images.pexels.com/photos/6749757/pexels-photo-6749757.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Examen ophtalmologique ; aucun des dispositifs rappelés n’est représenté. Photo d’illustration, sans lien avec les participants aux études.",
+    "keywords": [
+      "Ophtalmologie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "aefac8c3d59c5a40b1c88d1da8246e38f99adbc12fc2dd0206a0a1194af23795"
+  },
+  {
+    "id": "octobre-rose-brca-mastectomie-20261031",
+    "url": "article-octobre-rose-brca-mastectomie-20261031.html",
+    "title": "BRCA1 ou BRCA2 : la mastectomie préventive améliore-t-elle la survie ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Cancer du sein",
+    "date": "2026-10-31",
+    "status": "PUBLISHED",
+    "excerpt": "Une méta-analyse récente associe la mastectomie préventive à une mortalité plus faible chez les femmes porteuses de BRCA1 ou BRCA2, mais les preuves sont observationnelles et de très faible certitude.",
+    "image": "https://images.pexels.com/photos/7723610/pexels-photo-7723610.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Rubans roses symbolisant la sensibilisation au cancer du sein. Photo d’illustration, sans lien avec les participants aux études.",
+    "keywords": [
+      "Cancer du sein"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "9d7d92f41cc8667d65cb00f3b83fe74149eb4b23c45f369736cdcfe83b176461"
+  },
+  {
+    "id": "decryptage-flowpromote-plaques-20261101",
+    "url": "article-cholesterol-plaques-atherome-flowpromote.html",
+    "title": "Peut-on vraiment faire diminuer les plaques de cholestérol dans ses artères ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Cœur & circulation",
+    "date": "2026-11-01",
+    "status": "PUBLISHED",
+    "excerpt": "Certaines plaques peuvent régresser partiellement sous traitement. Une nouvelle étude au scanner le confirme, mais une plaque plus petite ne signifie ni artère redevenue normale ni disparition du risque cardiovasculaire.",
+    "image": "https://images.pexels.com/photos/9228384/pexels-photo-9228384.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Main tenant un modèle anatomique de cœur. Photographie d’illustration, sans représentation des résultats de l’étude.",
+    "keywords": [
+      "athérome",
+      "plaques",
+      "cholestérol",
+      "LDL",
+      "statine",
+      "rosuvastatine",
+      "atorvastatine",
+      "ézétimibe",
+      "FLOWPROMOTE",
+      "régression"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "atherome-cest-quoi",
+    "version": "29fc1894b088165a771b3f44e609784648a6f8770ab1e7de7586395561e523a7"
   }
 ];
