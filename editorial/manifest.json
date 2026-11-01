@@ -1,12 +1,84 @@
 {
   "schemaVersion": 1,
-  "editionId": "edition-2026-10-30",
-  "editionDate": "2026-10-30",
-  "sourceFingerprint": "96c15ae98c6d691dfc273a49b601eaa9ee279f85eb3b732819a9f1cec117635e",
-  "missingEdition": false,
+  "editionId": "edition-2026-10-31",
+  "editionDate": "2026-10-31",
+  "sourceFingerprint": "a88771fea9776c66eaa0b265bda22235150e172a9efd2902be8d66fb5e0235c6",
+  "missingEdition": true,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-decryptage-flowpromote-plaques-20261101",
+      "version": "29fc1894b088165a771b3f44e609784648a6f8770ab1e7de7586395561e523a7",
+      "url": "article-cholesterol-plaques-atherome-flowpromote.html",
+      "date": "2026-11-01"
+    },
+    {
+      "id": "mag-daily-mira2-regles-abondantes-20261031",
+      "version": "5aa67ac66d06b9b224b0e8c6b85cf278ef5a41564484acb2e0c629eb2c01f69e",
+      "url": "article-daily-mira2-regles-abondantes-20261031.html",
+      "date": "2026-10-31"
+    },
+    {
+      "id": "mag-daily-menopause-traitements-20261031",
+      "version": "8f8b11461128af10cc2e1f7d6411dcc11dbbec91fcc24755254922ff44425258",
+      "url": "article-daily-menopause-traitements-20261031.html",
+      "date": "2026-10-31"
+    },
+    {
+      "id": "mag-daily-retatrutide-apnee-20261031",
+      "version": "5bcd1ceda9d5e06b3ed59421d2c4e41b18d39cbe6f2536e43ce6778e38a26676",
+      "url": "article-daily-retatrutide-apnee-20261031.html",
+      "date": "2026-10-31"
+    },
+    {
+      "id": "mag-daily-vih-grossesse-barbade-20261031",
+      "version": "5739be9ee64f0431bfef8c333b7d8d55a2a4d6ebd9ba98f3262d7f2db20fa2b8",
+      "url": "article-daily-vih-grossesse-barbade-20261031.html",
+      "date": "2026-10-31"
+    },
+    {
+      "id": "mag-daily-complements-medicaments-rotation-20261031",
+      "version": "96cc245d17d1771895ab88b8145ba881ca90cbfb84b7fc42a1ed36148803d554",
+      "url": "article-daily-complements-medicaments-rotation-20261031.html",
+      "date": "2026-10-31"
+    },
+    {
+      "id": "mag-daily-substituts-nicotiniques-20261031",
+      "version": "10e3d76b255d84107dd0d2959d418fbd0b6fb28e12f457be722862166c1221fd",
+      "url": "article-daily-substituts-nicotiniques-20261031.html",
+      "date": "2026-10-31"
+    },
+    {
+      "id": "mag-daily-mpox-427-20261031",
+      "version": "9627410104f97f4bae2c0bfcaa4a3d85aa93eb5f5ccdb1e04cb20300ede03e36",
+      "url": "article-daily-mpox-427-20261031.html",
+      "date": "2026-10-31"
+    },
+    {
+      "id": "mag-daily-mois-sans-tabac-20261031",
+      "version": "97ba143ca5edef3aead766746c88ef433f759f18b2e28ec77bc0216e65662f82",
+      "url": "article-daily-mois-sans-tabac-20261031.html",
+      "date": "2026-10-31"
+    },
+    {
+      "id": "mag-daily-vih-statine-20261031",
+      "version": "b6aba75eea7ddecf388827b89255ec669185812ab97509ef53e7f20c23ee995c",
+      "url": "article-daily-vih-statine-20261031.html",
+      "date": "2026-10-31"
+    },
+    {
+      "id": "mag-daily-rappel-aflibercept-20261031",
+      "version": "aefac8c3d59c5a40b1c88d1da8246e38f99adbc12fc2dd0206a0a1194af23795",
+      "url": "article-daily-rappel-aflibercept-20261031.html",
+      "date": "2026-10-31"
+    },
+    {
+      "id": "mag-octobre-rose-brca-mastectomie-20261031",
+      "version": "9d7d92f41cc8667d65cb00f3b83fe74149eb4b23c45f369736cdcfe83b176461",
+      "url": "article-octobre-rose-brca-mastectomie-20261031.html",
+      "date": "2026-10-31"
+    },
     {
       "id": "mag-daily-pacemaker-branche-gauche-20261030",
       "version": "dd639c6ce4ade45c4fffb7f22eefdc8eaec966535c0780929dd0dd003c965d13",
