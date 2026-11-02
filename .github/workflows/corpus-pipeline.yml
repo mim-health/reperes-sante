@@ -5,7 +5,7 @@ on:
     branches: [feat/v0-magazine]
   pull_request:
     branches: [feat/v0-magazine]
-    paths: ['index.html','fiches.html','fiche.html','fiche-corpus-v2.js','home-category-routing.js','source-ui.js','sitemap.xml','sitemap-corpus-extra.xml','corpus-*.js','scripts/generate-sitemap.js','scripts/test-corpus-*.js','scripts/test-fiche-seo.js','scripts/test-home-category-routing.js','scripts/test-ui-adapter.js','scripts/test-browser-entry.js','qa-data*.js','backlog-audited*.js','maca-extra-five.js','maca-daily-archive.js','structured-backlog-compat.js','.github/workflows/corpus-pipeline.yml']
+    paths: ['index.html','fiches.html','fiche.html','fiche-corpus-v2.js','home-category-routing.js','source-ui.js','sitemap.xml','sitemap-corpus-extra.xml','corpus-*.js','scripts/generate-sitemap.js','scripts/audit-magazine-seo.js','magazine.html','magazine-articles.js','magazine-videos.js','article-*.html','video-*.html','scripts/test-corpus-*.js','scripts/test-fiche-seo.js','scripts/test-home-category-routing.js','scripts/test-ui-adapter.js','scripts/test-browser-entry.js','qa-data*.js','backlog-audited*.js','maca-extra-five.js','maca-daily-archive.js','structured-backlog-compat.js','.github/workflows/corpus-pipeline.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -31,7 +31,7 @@ jobs:
         run: node scripts/test-home-category-routing.js
       - name: Individual fiche SEO regression
         run: node scripts/test-fiche-seo.js
-      - name: Sitemap equals canonical corpus
+      - name: Magazine SEO audit (blocking)\n        run: node scripts/audit-magazine-seo.js --check\n      - name: Sitemap equals canonical corpus
         env:
           SITEMAP_DATE: '2026-08-25'
         run: node scripts/generate-sitemap.js --check
