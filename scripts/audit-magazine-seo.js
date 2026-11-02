@@ -12,7 +12,7 @@ const archive=read('magazine.html');
 const sitemap=read('sitemap.xml');
 const urls=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(x=>x[1].replace(/&amp;/g,'&'));
 const seen=new Set();
-function attr(html,tag,key){const match=html.match(/href=["']([^"']+)["']/i);return match?.[1]||''}
+function attr(html,tag,key){const tagText=html.match(new RegExp('<'+tag+'\\b[^>]*>','i'))?.[0]||html;return tagText.match(new RegExp('\\b'+key+'=["\\x27]([^"\\x27]+)["\\x27]','i'))?.[1]||''}
 function canonical(html){const match=[...html.matchAll(/<link\b[^>]*>/gi)].find(x=>/rel=["']canonical["']/i.test(x[0]));return match?attr(match[0],'link','href'):''}
 for(const x of published){
  const url=x.url,absolute=BASE+url;
@@ -31,6 +31,19 @@ for(const x of published){
 }
 const duplicates=urls.filter((x,i)=>urls.indexOf(x)!==i);
 for(const u of new Set(duplicates))warn(u,'duplicate_sitemap_url','Duplicate loc');
+// Internal links to local HTML: check only explicit local HTML targets.
+// Remote domains, fragments and query-only references are not local files.
+for(const x of published){
+ if(!fs.existsSync(x.url))continue;
+ const html=read(x.url);
+ for(const m of html.matchAll(/<a\\b[^>]*\\bhref=["']([^"']+)["']/gi)){
+  const href=m[1].replace(/&amp;/g,'&');
+  if(/^(?:https?:|mailto:|tel:|#|\/\/)/i.test(href))continue;
+  const target=href.split(/[?#]/)[0].replace(/^\.\//,'').replace(/^\//,'');
+  if(!target||!target.endsWith('.html')||target.includes('..'))continue;
+  if(!fs.existsSync(target))warn(x.url,'broken_internal_link',target);
+ }
+}
 const counts={published:published.length,archiveLinks:published.length-problems.filter(x=>x.code==='orphan_archive').length,sitemapEntries:urls.length,issues:problems.length};
 const report={generatedAt:new Date().toISOString(),scope:'repository-static',counts,problems,limitations:['No Google Search Console export is available to this script','HTTP production responses and Google crawling status are not inferred from repository files']};
 fs.mkdirSync('seo-reports',{recursive:true});
