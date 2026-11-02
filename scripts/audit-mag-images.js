@@ -41,7 +41,16 @@ report.reusedVisuals=[...byImage.entries()].filter(([image,items])=>items.length
  .map(([image,items])=>({image,count:items.length,items}))
  .sort((a,b)=>b.count-a.count);
 report.reuseWarnings=report.reusedVisuals.filter(x=>new Set(x.items.map(item=>item.theme)).size>1);
-for(const group of report.reuseWarnings){const newer=group.items.filter(x=>src.contents.some(c=>c.id===x.id&&c.date>='2026-10-29'&&c.format==='article'&&c.medicalStatus==='VALIDATED'&&['PUBLISHED','SCHEDULED'].includes(c.publicationStatus)));for(const item of newer)report.errors.push({id:item.id,message:'Photograph reused across unrelated editorial subjects'});}
+// A new validated Mag article must have its own image, even when the themes are similar.
+// Historical articles remain unchanged and historical reuse is reported for review only.
+for(const group of report.reusedVisuals){
+ for(const item of group.items){
+  const content=src.contents.find(c=>c.id===item.id);
+  if(content&&content.date>='2026-10-29'&&content.format==='article'&&content.medicalStatus==='VALIDATED'&&['PUBLISHED','SCHEDULED'].includes(content.publicationStatus)){
+   report.errors.push({id:item.id,message:'New validated article must use a photograph not assigned to any other article'});
+  }
+ }
+}
 
 console.log('MAG VISUAL REUSE REVIEW '+JSON.stringify(report.reuseWarnings,null,2));
 
