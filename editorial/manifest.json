@@ -1,12 +1,66 @@
 {
   "schemaVersion": 1,
-  "editionId": "edition-2026-10-31",
-  "editionDate": "2026-10-31",
-  "sourceFingerprint": "a88771fea9776c66eaa0b265bda22235150e172a9efd2902be8d66fb5e0235c6",
-  "missingEdition": true,
+  "editionId": "edition-2026-11-02",
+  "editionDate": "2026-11-02",
+  "sourceFingerprint": "ec7c9b7bf7f0d2902c256a0061f1a9e675e9d04cabc861073b852ce5fb5ed8f2",
+  "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-daily-masld-fibrose-20261102",
+      "version": "1644b7598a15c9eb1f32583612815ccae48ddd337cccaf576289e4e352ccb8e9",
+      "url": "article-daily-masld-fibrose-20261102.html",
+      "date": "2026-11-02"
+    },
+    {
+      "id": "mag-daily-narcolepsie-orexine-20261102",
+      "version": "73679bd72a5a0e19abdc6f71115e411a43622a0892021fe30bbcd30a7578dd6c",
+      "url": "article-daily-narcolepsie-orexine-20261102.html",
+      "date": "2026-11-02"
+    },
+    {
+      "id": "mag-daily-migraine-grossesse-20261102",
+      "version": "ab592620b4eab40303e3b99d1492e320b9f39c1c38423a12d8f2a5fee37ad6de",
+      "url": "article-daily-migraine-grossesse-20261102.html",
+      "date": "2026-11-02"
+    },
+    {
+      "id": "mag-daily-bpco-tozorakimab-20261102",
+      "version": "1aaa54d1cd1cc6d4e4c7917a07a359bf1462030916bee009b9c2ce0814457974",
+      "url": "article-daily-bpco-tozorakimab-20261102.html",
+      "date": "2026-11-02"
+    },
+    {
+      "id": "mag-daily-cranberry-cystite-20261102",
+      "version": "c744756cd77352b99a5f4b9076e5cc0ae00c9625caa0c653484e6b1eb28ea584",
+      "url": "article-daily-cranberry-cystite-20261102.html",
+      "date": "2026-11-02"
+    },
+    {
+      "id": "mag-daily-colorectal-383-20261102",
+      "version": "aa7584cb061babf4d4f960dbfc493622f9999c4e85ba6321ef1ca99803fd867f",
+      "url": "article-daily-colorectal-383-20261102.html",
+      "date": "2026-11-02"
+    },
+    {
+      "id": "mag-daily-pharmacovigilance-20261102",
+      "version": "cae57e0cc99d3f111a370548b2a936e4f828a55d24d29919ef0439adc0c58835",
+      "url": "article-daily-pharmacovigilance-20261102.html",
+      "date": "2026-11-02"
+    },
+    {
+      "id": "mag-daily-virus-respiratoires-20261102",
+      "version": "7aee7c5be6ed1be0cfe9241b7586fd139f96e7875da5e2cea457fa6d0d13b70a",
+      "url": "article-daily-virus-respiratoires-20261102.html",
+      "date": "2026-11-02"
+    },
+    {
+      "id": "mag-daily-icraki-reanimation-20261102",
+      "version": "1b572f3052407b4b52b9d78a449b1be785e197c7b956490525e4ebdfeb8c801a",
+      "url": "article-daily-icraki-reanimation-20261102.html",
+      "date": "2026-11-02"
+    },
     {
       "id": "mag-decryptage-flowpromote-plaques-20261101",
       "version": "29fc1894b088165a771b3f44e609784648a6f8770ab1e7de7586395561e523a7",
@@ -81,13 +135,13 @@
     },
     {
       "id": "mag-daily-pacemaker-branche-gauche-20261030",
-      "version": "dd639c6ce4ade45c4fffb7f22eefdc8eaec966535c0780929dd0dd003c965d13",
+      "version": "1a1b61cd6c421209ee9f7acca225b34c3ae0078a652b1bc4408a8be728fb6231",
       "url": "article-daily-pacemaker-branche-gauche-20261030.html",
       "date": "2026-10-30"
     },
     {
       "id": "mag-daily-deucrictibant-angioedeme-20261030",
-      "version": "61181e0408e553e9557ae39bb2e0f2a03420c86d76f1cfb6fa0d397bcfc3d69b",
+      "version": "1b855400a3b60118822be1ed5a1c0b3b9df3ec2a0c1aaa5fbb1e68baeb8a1364",
       "url": "article-daily-deucrictibant-angioedeme-20261030.html",
       "date": "2026-10-30"
     },
@@ -105,7 +159,7 @@
     },
     {
       "id": "mag-daily-brulures-urinaires-rotation-20261030",
-      "version": "6f600dfd038330dbac46d87e1b40cafb42c52d1a629ffdd41cbd3f6d066d07c3",
+      "version": "9a9e07552fb3580b6d0c32ba9f24cfa99ba8943429cc021655f7889adde8368e",
       "url": "article-daily-brulures-urinaires-rotation-20261030.html",
       "date": "2026-10-30"
     },

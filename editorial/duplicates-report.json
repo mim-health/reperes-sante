@@ -425,6 +425,19 @@
     },
     {
       "left": {
+        "id": "palpitations-quand-consulter",
+        "title": "Palpitations : quand faut-il consulter ?",
+        "type": "fiche"
+      },
+      "right": {
+        "id": "daily-palpitations-rotation-20261102",
+        "title": "Palpitations : quand faut-il consulter ?",
+        "type": "Mag"
+      },
+      "score": 1
+    },
+    {
+      "left": {
         "id": "vertiges-causes",
         "title": "Vertiges : les causes fréquentes et les signes d’alerte",
         "type": "fiche"
@@ -571,6 +584,6 @@
     "manifestFiles": 154,
     "rawFiches": 445,
     "canonicalFiches": 419,
-    "magContents": 229
+    "magContents": 239
   }
 }

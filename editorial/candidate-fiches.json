@@ -222,5 +222,12 @@
     "url": "article-daily-mira2-regles-abondantes-20261031.html",
     "existingFicheId": null,
     "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-masld-fibrose-20261102",
+    "title": "Foie gras métabolique : peut-on repérer la fibrose sans biopsie ?",
+    "url": "article-daily-masld-fibrose-20261102.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
   }
 ]

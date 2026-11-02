@@ -3830,14 +3830,14 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-30",
     "status": "PUBLISHED",
     "excerpt": "Chez certains patients devant être stimulés très fréquemment, un essai randomisé montre moins d’événements cardiaques avec la stimulation de la région de la branche gauche.",
-    "image": "https://images.pexels.com/photos/9408869/pexels-photo-9408869.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    "imageAlt": "Moniteur d’électrocardiogramme. Photo d’illustration, sans représentation du dispositif étudié.",
+    "image": "https://images.pexels.com/photos/7108349/pexels-photo-7108349.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Examen cardiaque avec électrodes, illustration.",
     "keywords": [
       "Cardiologie"
     ],
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
-    "version": "dd639c6ce4ade45c4fffb7f22eefdc8eaec966535c0780929dd0dd003c965d13"
+    "version": "1a1b61cd6c421209ee9f7acca225b34c3ae0078a652b1bc4408a8be728fb6231"
   },
   {
     "id": "daily-deucrictibant-angioedeme-20261030",
@@ -3849,14 +3849,14 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-30",
     "status": "PUBLISHED",
     "excerpt": "Un essai de phase III suggère un soulagement plus rapide avec le deucrictibant oral qu’avec un placebo, sans comparaison directe aux traitements actifs disponibles.",
-    "image": "assets/editorial/2026-10-14/photos/angioedeme.jpg",
-    "imageAlt": "Professionnelle de santé échangeant avec une patiente.",
+    "image": "https://images.pexels.com/photos/5407237/pexels-photo-5407237.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Matériel médical et médicaments, illustration.",
     "keywords": [
       "Maladies rares"
     ],
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
-    "version": "61181e0408e553e9557ae39bb2e0f2a03420c86d76f1cfb6fa0d397bcfc3d69b"
+    "version": "1b855400a3b60118822be1ed5a1c0b3b9df3ec2a0c1aaa5fbb1e68baeb8a1364"
   },
   {
     "id": "daily-desinformation-cancer-20261030",
@@ -3906,14 +3906,14 @@ window.MACA_MAGAZINE_ARTICLES=[
     "date": "2026-10-30",
     "status": "PUBLISHED",
     "excerpt": "Une brûlure en urinant peut évoquer une cystite, mais la fièvre, une douleur lombaire, la grossesse ou une situation de fragilité imposent une évaluation adaptée.",
-    "image": "assets/editorial/2026-10-13/photos/cystite.jpg",
-    "imageAlt": "Verre d’eau éclairé par la lumière naturelle.",
+    "image": "https://images.pexels.com/photos/5407215/pexels-photo-5407215.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Médecin travaillant à son cabinet, illustration.",
     "keywords": [
       "Santé au quotidien"
     ],
     "medicalStatus": "VALIDATED",
     "referenceFicheId": "cystite-femme",
-    "version": "6f600dfd038330dbac46d87e1b40cafb42c52d1a629ffdd41cbd3f6d066d07c3"
+    "version": "9a9e07552fb3580b6d0c32ba9f24cfa99ba8943429cc021655f7889adde8368e"
   },
   {
     "id": "daily-hypertension-masquee-20261030",
@@ -4297,5 +4297,195 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": "atherome-cest-quoi",
     "version": "29fc1894b088165a771b3f44e609784648a6f8770ab1e7de7586395561e523a7"
+  },
+  {
+    "id": "daily-masld-fibrose-20261102",
+    "url": "article-daily-masld-fibrose-20261102.html",
+    "title": "Foie gras métabolique : peut-on repérer la fibrose sans biopsie ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Foie",
+    "date": "2026-11-02",
+    "status": "PUBLISHED",
+    "excerpt": "La fibrose avancée peut souvent être repérée grâce à une combinaison de tests sanguins et d'élastographie, sans biopsie systématique.",
+    "image": "https://images.pexels.com/photos/7108427/pexels-photo-7108427.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Professionnel analysant une échographie, illustration.",
+    "keywords": [
+      "Foie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "1644b7598a15c9eb1f32583612815ccae48ddd337cccaf576289e4e352ccb8e9"
+  },
+  {
+    "id": "daily-narcolepsie-orexine-20261102",
+    "url": "article-daily-narcolepsie-orexine-20261102.html",
+    "title": "Narcolepsie : un nouveau traitement peut-il agir sur le système de l'éveil ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Sommeil",
+    "date": "2026-11-02",
+    "status": "PUBLISHED",
+    "excerpt": "Deux essais de phase III montrent des améliorations importantes de la vigilance et de la cataplexie avec l'oveporexton dans la narcolepsie de type 1.",
+    "image": "https://images.pexels.com/photos/3747424/pexels-photo-3747424.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Femme assoupie sur son bureau, illustration.",
+    "keywords": [
+      "Sommeil"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "73679bd72a5a0e19abdc6f71115e411a43622a0892021fe30bbcd30a7578dd6c"
+  },
+  {
+    "id": "daily-migraine-grossesse-20261102",
+    "url": "article-daily-migraine-grossesse-20261102.html",
+    "title": "Migraine et grossesse : tous les traitements préventifs sont-ils sans risque ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Grossesse",
+    "date": "2026-11-02",
+    "status": "PUBLISHED",
+    "excerpt": "Une étude américaine observe une association entre anticorps anti-CGRP en début de grossesse et fausse couche, sans démontrer de causalité.",
+    "image": "https://images.pexels.com/photos/7298401/pexels-photo-7298401.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Femme souffrant de céphalées, ne représentant pas spécifiquement une grossesse.",
+    "keywords": [
+      "Grossesse"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "ab592620b4eab40303e3b99d1492e320b9f39c1c38423a12d8f2a5fee37ad6de"
+  },
+  {
+    "id": "daily-bpco-tozorakimab-20261102",
+    "url": "article-daily-bpco-tozorakimab-20261102.html",
+    "title": "BPCO : un nouveau traitement peut-il éviter certaines aggravations respiratoires ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Pneumologie",
+    "date": "2026-11-02",
+    "status": "PUBLISHED",
+    "excerpt": "Deux essais de phase III montrent environ 30 % d'exacerbations modérées ou sévères en moins avec le tozorakimab ajouté au traitement inhalé.",
+    "image": "https://images.pexels.com/photos/30428329/pexels-photo-30428329.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Homme utilisant un inhalateur, illustration.",
+    "keywords": [
+      "Pneumologie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "1aaa54d1cd1cc6d4e4c7917a07a359bf1462030916bee009b9c2ce0814457974"
+  },
+  {
+    "id": "daily-palpitations-rotation-20261102",
+    "url": "article-daily-palpitations-rotation-20261102.html",
+    "title": "Palpitations : quand faut-il consulter ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé au quotidien",
+    "date": "2026-11-02",
+    "status": "PUBLISHED",
+    "excerpt": "Des palpitations répétées méritent un avis médical ; douleur thoracique, malaise ou essoufflement important imposent une évaluation urgente.",
+    "image": "https://images.pexels.com/photos/9408869/pexels-photo-9408869.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Moniteur d'électrocardiogramme, illustration.",
+    "keywords": [
+      "Santé au quotidien"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "palpitations",
+    "version": "801bf1ae187f231de0776e5f708c0d4f05c7b669043ef855763e70d14c0a3565"
+  },
+  {
+    "id": "daily-cranberry-cystite-20261102",
+    "url": "article-daily-cranberry-cystite-20261102.html",
+    "title": "Le jus de cranberry soigne-t-il une cystite ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Vrai ou faux",
+    "date": "2026-11-02",
+    "status": "PUBLISHED",
+    "excerpt": "FAUX. La cranberry ne traite pas une cystite déclarée ; son éventuel intérêt concerne la prévention de certaines récidives.",
+    "image": "https://images.pexels.com/photos/6064814/pexels-photo-6064814.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Canneberges dans un bol, illustration.",
+    "keywords": [
+      "Vrai ou faux"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "c744756cd77352b99a5f4b9076e5cc0ae00c9625caa0c653484e6b1eb28ea584"
+  },
+  {
+    "id": "daily-colorectal-383-20261102",
+    "url": "article-daily-colorectal-383-20261102.html",
+    "title": "Cancer colorectal : 38,3 cas pour 100 000 habitants",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Chiffre du jour",
+    "date": "2026-11-02",
+    "status": "PUBLISHED",
+    "excerpt": "Un chiffre américain de 2023 ne permet pas à lui seul de conclure à une tendance durable ni de l'extrapoler à la France.",
+    "image": "https://images.pexels.com/photos/16679950/pexels-photo-16679950.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Médecin pratiquant un geste endoscopique, sans prétention de représenter une coloscopie.",
+    "keywords": [
+      "Chiffre du jour"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "aa7584cb061babf4d4f960dbfc493622f9999c4e85ba6321ef1ca99803fd867f"
+  },
+  {
+    "id": "daily-pharmacovigilance-20261102",
+    "url": "article-daily-pharmacovigilance-20261102.html",
+    "title": "Pourquoi signaler un effet indésirable médicamenteux ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Données",
+    "date": "2026-11-02",
+    "status": "PUBLISHED",
+    "excerpt": "La semaine internationale MedSafetyWeek rappelle l'intérêt des signalements pour détecter des risques rares.",
+    "image": "https://images.pexels.com/photos/4492093/pexels-photo-4492093.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Professionnelle tenant des médicaments, illustration.",
+    "keywords": [
+      "Données"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "cae57e0cc99d3f111a370548b2a936e4f828a55d24d29919ef0439adc0c58835"
+  },
+  {
+    "id": "daily-virus-respiratoires-20261102",
+    "url": "article-daily-virus-respiratoires-20261102.html",
+    "title": "Virus respiratoires : point européen",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Données",
+    "date": "2026-11-02",
+    "status": "PUBLISHED",
+    "excerpt": "Fin octobre, grippe et VRS circulaient encore à bas niveau dans l'Union européenne, avec une remontée du SARS-CoV-2 dans plusieurs pays.",
+    "image": "https://images.pexels.com/photos/6285303/pexels-photo-6285303.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Personne enrhumée tenant un mouchoir, illustration.",
+    "keywords": [
+      "Données"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "7aee7c5be6ed1be0cfe9241b7586fd139f96e7875da5e2cea457fa6d0d13b70a"
+  },
+  {
+    "id": "daily-icraki-reanimation-20261102",
+    "url": "article-daily-icraki-reanimation-20261102.html",
+    "title": "Réanimation : quelle technique de dialyse initiale ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Données",
+    "date": "2026-11-02",
+    "status": "PUBLISHED",
+    "excerpt": "L'essai français ICRAKI examine les modalités d'épuration extrarénale chez des patients présentant une insuffisance rénale aiguë critique.",
+    "image": "https://images.pexels.com/photos/33764117/pexels-photo-33764117.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": "Professionnel utilisant un équipement médical hospitalier, illustration.",
+    "keywords": [
+      "Données"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "1b572f3052407b4b52b9d78a449b1be785e197c7b956490525e4ebdfeb8c801a"
   }
 ];
