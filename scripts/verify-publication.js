@@ -39,7 +39,24 @@ for(const id of priorityIds){
   assert(read('corpus-production.js').includes(id),'Priority catalogue '+id);
 }
 for(const id of forbidden){assert(!corpus.cards.some(c=>c.id===id),'Unvalidated Assistant card '+id);assert(!fs.existsSync('fiches-seo/'+id+'.html'),'Unvalidated page '+id);}
-async function get(p){const r=await fetch('https://macasante.fr/'+p+(p.includes('?')?'&':'?')+'publication_check='+Date.now(),{signal:AbortSignal.timeout(30000)});assert.equal(r.status,200,p+' HTTP '+r.status);return r.text();}
+// Retry only transient edge/server failures. Never mask stale content or a real 404.
+async function get(p){
+ const transient=new Set([429,502,503,504]);
+ for(let attempt=0;attempt<4;attempt++){
+  try{
+   const url='https://macasante.fr/'+p+(p.includes('?')?'&':'?')+'publication_check='+Date.now()+'-'+attempt;
+   const r=await fetch(url,{signal:AbortSignal.timeout(30000),headers:{'Cache-Control':'no-cache'}});
+   if(r.status===200)return r.text();
+   if(!transient.has(r.status)||attempt===3)assert.equal(r.status,200,p+' HTTP '+r.status+' (attempt '+(attempt+1)+'/4)');
+   console.warn('PUBLIC TRANSIENT HTTP '+r.status+' '+p+'; retry '+(attempt+1)+'/4');
+  }catch(err){
+   if(attempt===3||!(err.name==='TimeoutError'||err.name==='TypeError'))throw err;
+   console.warn('PUBLIC TRANSIENT FETCH '+p+'; retry '+(attempt+1)+'/4: '+err.message);
+  }
+  await new Promise(resolve=>setTimeout(resolve,1000*(attempt+1)));
+ }
+ throw Error('Unreachable public verification: '+p);
+}
 async function main(){
   if(process.argv.includes('--assistant-index')){
     const base='https://raw.githubusercontent.com/mim-health/reperes-sante/feat/v0-magazine/assistant-v2/';
