@@ -12,7 +12,7 @@ const archive=read('magazine.html');
 const sitemap=read('sitemap.xml');
 const urls=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(x=>x[1].replace(/&amp;/g,'&'));
 const seen=new Set();
-function attr(html,tag,key){const match=html.match(new RegExp('<'+tag+'\\b[^>]*\\b'+key+'=["\\']([^"\\']+)["\\'][^>]*>','i'));return match?.[1]||''}
+function attr(html,tag,key){const match=html.match(new RegExp("<"+tag+"\\\\b[^>]*\\\\b"+key+"=[\\\"']([^\\\"']+)[\\\"'][^>]*>","i"));return match?.[1]||''}
 function canonical(html){const match=[...html.matchAll(/<link\b[^>]*>/gi)].find(x=>/rel=["']canonical["']/i.test(x[0]));return match?attr(match[0],'link','href'):''}
 for(const x of published){
  const url=x.url,absolute=BASE+url;
@@ -22,7 +22,7 @@ for(const x of published){
  const html=read(url);
  if(!urls.includes(absolute))warn(url,'missing_sitemap','Published URL absent from sitemap');
  // Require an actual archive anchor, not only a script or data attribute.
- if(!new RegExp('<a\\b[^>]*href=["\\'](?:\\./|/)?'+url.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'["\\']','i').test(archive))warn(url,'orphan_archive','No HTML archive anchor');
+ if(!archive.includes('href="'+url+'"')&&!archive.includes("href='"+url+"'"))warn(url,'orphan_archive','No HTML archive anchor');
  const c=canonical(html);if(c!==absolute)warn(url,'bad_canonical',c||'Missing canonical');
  if(/<meta\b[^>]*name=["']robots["'][^>]*content=["'][^"']*noindex/i.test(html))warn(url,'noindex','Robots meta excludes index');
  if(!/<a\b[^>]*href=["'](?:\.\/|\/)?magazine\.html(?:#[^"']*)?["']/i.test(html))warn(url,'no_mag_return','Missing HTML return to Mag');
