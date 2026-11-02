@@ -20,6 +20,14 @@ Avant validation et mise en ligne, vérifier et renseigner `image`, `imageAlt`, 
 
 **Contrôle bloquant :** pour tout article validé à partir du 29 octobre 2026 et publié ou programmé, `node scripts/audit-mag-images.js` refuse une image déjà attribuée à un autre article. Les anciennes éditions et leurs visuels restent inchangés ; les reprises antérieures sont auditées séparément sans suppression rétroactive. Ne pas contourner ce contrôle pour publier.
 
+## Maillage interne obligatoire — découverte durable des articles
+
+Chaque nouvel article validé du Mag doit être accessible par des liens HTML permanents depuis `magazine.html` (archives et édition correspondante), et figurer dans `sitemap.xml` avec son URL canonique. Ne jamais limiter sa découverte à la seule Une rotative, à une publication sociale ou à la recherche interne.
+
+Lorsque le sujet correspond réellement à une fiche médicale existante, renseigner `ficheId` vers la fiche canonique validée pour bénéficier des liens réciproques déjà produits par le site. Ajouter uniquement des liens éditoriaux utiles et pertinents ; ne pas créer de fausses relations thématiques, de doublons de fiches ou de liens vers des contenus retirés/non validés. Préserver les identifiants et les URL des éditions passées.
+
+Avant d'annoncer une publication : vérifier la présence de l'URL dans les archives et le sitemap, le lien retour de l'article vers Le Mag et, si `ficheId` est renseigné, les deux directions du lien fiche ↔ article. Exécuter `node scripts/test-home-magazine.js` et `node scripts/verify-mag-public.js` ; une réussite locale ne prouve pas à elle seule une indexation Google. Suivre séparément les statuts Search Console « détectée, actuellement non indexée » et « explorée, actuellement non indexée ».
+
 ## Rattrapage à 07 h Europe/Paris
 
 GitHub ignore `schedule` dans les branches autres que la branche par défaut (`main` ici). Pour respecter l’interdiction de travailler sur main, une tâche ChatGPT quotidienne met à jour **uniquement** `editorial/catchup.json` sur `feat/v0-magazine` via GitHub ; ce push déclenche le même pipeline. Elle contrôle les exécutions et signale une édition manquante ou un échec. Elle ne crée ni ne valide de texte médical. Les offsets des éditions sont explicites ; la tâche utilise Europe/Paris, y compris le changement d’heure. `workflow_dispatch` sert aussi à la relance manuelle si le workflow est disponible dans l’interface GitHub ; un nouveau tick est toujours possible.
