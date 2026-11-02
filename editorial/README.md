@@ -12,6 +12,14 @@ La source persistante est `editorial/content.json`. L’automatisation construit
 
 La date de validation ne doit pas être confondue avec la date de veille ou de publication. La programmation à heure quelconque dépend d’un déclenchement du pipeline à cette heure : le contrôle de rattrapage configuré à 07 h ne constitue pas un ordonnanceur à la minute. Un contenu programmé peut attendre le prochain contrôle si aucun push n’a lieu.
 
+## Règle iconographique obligatoire — un nouvel article, une nouvelle photographie
+
+Pour **chaque nouvel article du Mag**, choisir une **photographie originale pour cet article dans le corpus MACASANTÉ**, pertinente pour la question abordée. Une même photographie (même URL ou même fichier local) ne peut pas être attribuée à deux articles distincts, même si les thèmes sont proches. Ne jamais réutiliser une photographie ancienne comme image par défaut ou de substitution.
+
+Avant validation et mise en ligne, vérifier et renseigner `image`, `imageAlt`, `imageSource` (lien de provenance précis, pas seulement la page d’accueil du fournisseur), `imageLicense` et `imageCredit`. La photo placée dans le HTML de l’article doit être celle déclarée dans `image`. Contrôler les droits d’utilisation et la pertinence de l’image, sans présenter une photo d’illustration comme un document clinique ou une photographie des participants à une étude.
+
+**Contrôle bloquant :** pour tout article validé à partir du 29 octobre 2026 et publié ou programmé, `node scripts/audit-mag-images.js` refuse une image déjà attribuée à un autre article. Les anciennes éditions et leurs visuels restent inchangés ; les reprises antérieures sont auditées séparément sans suppression rétroactive. Ne pas contourner ce contrôle pour publier.
+
 ## Rattrapage à 07 h Europe/Paris
 
 GitHub ignore `schedule` dans les branches autres que la branche par défaut (`main` ici). Pour respecter l’interdiction de travailler sur main, une tâche ChatGPT quotidienne met à jour **uniquement** `editorial/catchup.json` sur `feat/v0-magazine` via GitHub ; ce push déclenche le même pipeline. Elle contrôle les exécutions et signale une édition manquante ou un échec. Elle ne crée ni ne valide de texte médical. Les offsets des éditions sont explicites ; la tâche utilise Europe/Paris, y compris le changement d’heure. `workflow_dispatch` sert aussi à la relance manuelle si le workflow est disponible dans l’interface GitHub ; un nouveau tick est toujours possible.
