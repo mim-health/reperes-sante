@@ -91,6 +91,6 @@ async function main() {
   fs.mkdirSync('seo-reports', { recursive: true });
   fs.writeFileSync('seo-reports/production-latest.json', JSON.stringify(report, null, 2) + '\n');
   console.log('Rapport : seo-reports/production-latest.json — ' + rows.length + ' contrôlées, ' + errors.length + ' signalées');
-  if (errors.some(r => r.issues.includes('request_error') || r.issues.some(x => x.startsWith('http_')))) process.exitCode = 1;
+  if (errors.some(r => r.issues.includes('request_error') || r.issues.some(x => x.startsWith('http_'))) || (args.includes('--check') && errors.length)) process.exitCode = 1;
 }
 main().catch(err => { console.error(err); process.exitCode = 1; });
