@@ -16,6 +16,7 @@ const staticUrls=[
  ['https://macasante.fr/notre-histoire.html',today,'monthly','0.6'],
  ['https://macasante.fr/',today,'daily','1.0'],
  ['https://macasante.fr/fiches.html',today,'daily','0.9'],
+ ['https://macasante.fr/annuaire-fiches.html',today,'monthly','0.7'],
  ['https://macasante.fr/mentions-legales.html','2026-08-21','yearly','0.2'],
  ['https://macasante.fr/confidentialite.html','2026-08-21','yearly','0.2'],
  ['https://macasante.fr/contact.html','2026-08-21','yearly','0.3']
