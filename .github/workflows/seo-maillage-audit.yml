@@ -4,6 +4,8 @@ on:
     branches: [feat/v0-magazine]
     paths:
       - '.github/workflows/seo-maillage-audit.yml'
+      - 'annuaire-fiches.html'
+      - 'fiches.html'
   workflow_dispatch:
 permissions:
   contents: read
