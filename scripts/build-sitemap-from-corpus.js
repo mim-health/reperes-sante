@@ -17,6 +17,8 @@ const staticUrls=[
  ['https://macasante.fr/',today,'daily','1.0'],
  ['https://macasante.fr/fiches.html',today,'daily','0.9'],
  ['https://macasante.fr/annuaire-fiches.html',today,'monthly','0.7'],
+ ...require('./theme-taxonomy').THEMES.map(t=>['https://macasante.fr/themes/'+t.slug+'.html',today,'monthly','0.7']),
+ ['https://macasante.fr/themes/index.html',today,'monthly','0.8'],
  ['https://macasante.fr/mentions-legales.html','2026-08-21','yearly','0.2'],
  ['https://macasante.fr/confidentialite.html','2026-08-21','yearly','0.2'],
  ['https://macasante.fr/contact.html','2026-08-21','yearly','0.3']
