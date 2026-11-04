@@ -48,6 +48,6 @@ function links(html,base){
  const report={date:new Date().toISOString(),site:BASE,sitemapCount:urls.length,pagesFetched:checked,failed,byType,unlinked:rows.filter(x=>!x.directInternalLinks),missingTargets:[...missing].map(([url,sources])=>({url,sources:[...sources].slice(0,5)})),rows};
  fs.mkdirSync('seo-reports',{recursive:true});
  fs.writeFileSync('seo-reports/maillage-latest.json',JSON.stringify(report,null,2)+'\n');
- console.log('P2 LINK AUDIT '+JSON.stringify({sitemapCount:urls.length,pagesFetched:checked,failed:failed.length,byType,missingTargets:report.missingTargets.length},null,2));
+ console.log('P2 LINK AUDIT '+JSON.stringify({sitemapCount:urls.length,pagesFetched:checked,failed:failed.length,byType,missingTargets:report.missingTargets},null,2));
  if(failed.length)process.exitCode=1;
 })().catch(e=>{console.error(e);process.exitCode=1;});
