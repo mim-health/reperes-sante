@@ -1,0 +1,26 @@
+name: MACA P2 SEO Maillage Audit
+on:
+  push:
+    branches: [feat/v0-magazine]
+    paths:
+      - '.github/workflows/seo-maillage-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Audit public internal links (observational)
+        run: node scripts/audit-seo-maillage.js
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: maca-p2-maillage-report
+          path: seo-reports/maillage-latest.json
+          if-no-files-found: warn
