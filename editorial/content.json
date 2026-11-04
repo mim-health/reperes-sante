@@ -8862,6 +8862,356 @@
         "evidence": "Validation médicale et autorisation explicite de mise en ligne le 2 novembre 2026; conférence révisée.",
         "contentHash": "1b572f3052407b4b52b9d78a449b1be785e197c7b956490525e4ebdfeb8c801a"
       }
+    },
+    {
+      "id": "daily-sommeil-perte-poids-20261104",
+      "date": "2026-11-04",
+      "title": "Se coucher plus tôt aide-t-il à perdre du poids ?",
+      "answer": "Une analyse exploratoire suggère une association entre un coucher plus précoce et une perte de poids, sans démontrer qu'avancer l'heure du coucher fait maigrir.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · À LA UNE · 4 NOVEMBRE 2026</p><h1>Se coucher plus tôt aide-t-il à perdre du poids ?</h1><p class=\"lead\">Une analyse exploratoire suggère une association entre un coucher plus précoce et une perte de poids, sans démontrer qu'avancer l'heure du coucher fait maigrir.</p><h2>Ce qu'ont étudié les chercheurs</h2><p>Un essai randomisé a suivi 196 adultes présentant un prédiabète et dormant habituellement peu. Les participants ont reçu des conseils d'hygiène de vie, avec ou sans programme visant à allonger leur sommeil, pendant huit semaines.</p><h2>Quels résultats ?</h2><p>L'intervention sur le sommeil n'a pas entraîné de différence significative entre les groupes sur le poids ou le critère glycémique principal. Une analyse exploratoire a observé qu'une heure de coucher plus précoce était associée à environ 0,6 kg de perte pondérale supplémentaire. Cette association ne prouve pas une relation de cause à effet.</p><h2>Que faire en pratique ?</h2><p>Maintenir des horaires de sommeil réguliers et dormir suffisamment peut aider la santé générale. Pour perdre du poids, l'alimentation, l'activité physique et la prise en charge personnalisée restent essentielles. On ne peut pas promettre une perte de poids en se couchant simplement plus tôt.</p><h2>Source</h2><p><a href=\"https://doi.org/10.1097/NNR.0000000000000957\">Malone et al., Nursing Research, 2026, essai randomisé et analyse exploratoire</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-sommeil-perte-poids-20261104.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Sommeil",
+      "keywords": [
+        "Sommeil"
+      ],
+      "sources": [
+        {
+          "label": "Malone et al., Nursing Research, 2026, essai randomisé et analyse exploratoire",
+          "url": "https://doi.org/10.1097/NNR.0000000000000957"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-04",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite de la conférence éditoriale du 4 novembre 2026 et autorisation de mise en ligne dans la conversation de pilotage.",
+        "contentHash": "997eeece085c65345eb0693f2dfde02be90df4d1b81eb79df912eeacf2a2870b"
+      }
+    },
+    {
+      "id": "daily-metformine-diabete-gestationnel-20261104",
+      "date": "2026-11-04",
+      "title": "Diabète gestationnel : la metformine change-t-elle la prise en charge ?",
+      "answer": "Une publication récente relance la discussion sur la place de la metformine pendant la grossesse, sans remplacer les recommandations individualisées.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · À LIRE EN 3 MIN · 4 NOVEMBRE 2026</p><h1>Diabète gestationnel : la metformine change-t-elle la prise en charge ?</h1><p class=\"lead\">Une publication récente relance la discussion sur la place de la metformine pendant la grossesse, sans remplacer les recommandations individualisées.</p><h2>Pourquoi cette question ?</h2><p>Le diabète gestationnel nécessite une surveillance de la glycémie et un accompagnement nutritionnel. Lorsque les objectifs ne sont pas atteints, un traitement médicamenteux peut être discuté.</p><h2>Ce qu'il faut comprendre</h2><p>La metformine traverse le placenta. Les résultats d'essais et d'analyses secondaires doivent être distingués des recommandations cliniques, qui tiennent compte des bénéfices maternels et des incertitudes concernant l'enfant à long terme.</p><h2>En pratique</h2><p>Le choix d'un traitement dépend du profil de la grossesse et de l'équipe qui la suit. Ne commencez ni n'arrêtez la metformine sans avis médical.</p><h2>Source</h2><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/?term=EMERGE+metformin+gestational+diabetes\">EMERGE, recherche sur metformine et diabète gestationnel</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-metformine-diabete-gestationnel-20261104.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Grossesse",
+      "keywords": [
+        "Grossesse"
+      ],
+      "sources": [
+        {
+          "label": "EMERGE, recherche sur metformine et diabète gestationnel",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=EMERGE+metformin+gestational+diabetes"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-04",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite de la conférence éditoriale du 4 novembre 2026 et autorisation de mise en ligne dans la conversation de pilotage.",
+        "contentHash": "53d649d9d38098cde4b2918f72c9d237d9ec7a6ee65f885e5eddb6e5929842fa"
+      }
+    },
+    {
+      "id": "daily-sms-statines-20261104",
+      "date": "2026-11-04",
+      "title": "Un SMS peut-il aider à mieux prendre ses statines ?",
+      "answer": "Des rappels numériques ont été étudiés pour améliorer l'observance des traitements hypolipémiants, avec des bénéfices mesurés mais limités.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · À LIRE EN 3 MIN · 4 NOVEMBRE 2026</p><h1>Un SMS peut-il aider à mieux prendre ses statines ?</h1><p class=\"lead\">Des rappels numériques ont été étudiés pour améliorer l'observance des traitements hypolipémiants, avec des bénéfices mesurés mais limités.</p><h2>Le problème</h2><p>Un médicament prescrit ne protège que s'il est effectivement pris. Oublis, inquiétudes et difficultés pratiques peuvent interrompre un traitement préventif.</p><h2>Ce que suggère l'étude</h2><p>Dans un grand essai portant sur plus de 20 000 personnes, une intervention par SMS a augmenté modestement le renouvellement rapide des prescriptions : environ 14,4 % contre 12,0 % dans le groupe de comparaison.</p><h2>Ce qu'il ne faut pas conclure</h2><p>Une amélioration des renouvellements à court terme ne prouve pas, à elle seule, une réduction des infarctus ou des AVC. En cas d'effet indésirable ou de doute, le dialogue avec le médecin reste essentiel.</p><h2>Source</h2><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/?term=statin+text+message+randomized+2026\">JAMA, essai sur rappels SMS et statines</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-sms-statines-20261104.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Cardiovasculaire",
+      "keywords": [
+        "Cardiovasculaire"
+      ],
+      "sources": [
+        {
+          "label": "JAMA, essai sur rappels SMS et statines",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=statin+text+message+randomized+2026"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-04",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite de la conférence éditoriale du 4 novembre 2026 et autorisation de mise en ligne dans la conversation de pilotage.",
+        "contentHash": "88860e6638f5b1c736959821bd277c23bd73afbf74f9caafb58b2dd11008e9b6"
+      }
+    },
+    {
+      "id": "daily-biofeedback-migraine-20261104",
+      "date": "2026-11-04",
+      "title": "Migraine : une application peut-elle vraiment réduire les crises ?",
+      "answer": "Un essai randomisé suggère qu'un dispositif de biofeedback connecté peut diminuer modestement le nombre de jours de migraine.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · À LIRE EN 3 MIN · 4 NOVEMBRE 2026</p><h1>Migraine : une application peut-elle vraiment réduire les crises ?</h1><p class=\"lead\">Un essai randomisé suggère qu'un dispositif de biofeedback connecté peut diminuer modestement le nombre de jours de migraine.</p><h2>Une piste complémentaire</h2><p>La migraine est une maladie neurologique pouvant entraîner douleurs, nausées et hypersensibilité au bruit ou à la lumière. Lorsque les crises se répètent, elles peuvent perturber fortement la vie quotidienne et professionnelle. Des traitements de crise et, selon la fréquence et le retentissement, des traitements préventifs sont disponibles. Certaines personnes souhaitent aussi disposer de techniques non médicamenteuses complémentaires.</p><h2>Qu'est-ce que le biofeedback ?</h2><p>Le biofeedback consiste à visualiser des réactions physiologiques habituellement peu perceptibles, comme la variabilité du rythme cardiaque, la température cutanée ou l'activité musculaire. À l'aide de capteurs et d'exercices guidés, les utilisateurs apprennent progressivement des techniques de relaxation et de régulation physiologique. L'objectif n'est pas de traiter immédiatement une crise, mais de réduire éventuellement leur fréquence.</p><h2>Comment s'est déroulée l'étude ?</h2><p>L'essai multicentrique randomisé a inclus 279 adultes souffrant de migraine épisodique, dont environ 92 % de femmes. Pendant douze semaines, 140 participants ont été invités à utiliser quotidiennement une application de biofeedback associée à des capteurs ; 139 autres ont constitué un groupe placé sur liste d'attente. Les participants présentaient initialement environ cinq jours de migraine par mois.</p><h2>Quels résultats ont été observés ?</h2><p>Les chercheurs ont rapporté une réduction moyenne d'environ 0,9 jour de migraine par mois dans le groupe biofeedback, tandis que le groupe témoin ne présentait pas de changement significatif. La différence entre les groupes était statistiquement significative. Une amélioration de certains scores de qualité de vie a également été observée. Environ 44 % des utilisateurs du dispositif ont atteint une diminution d'au moins 30 % des jours de migraine, contre 30 % dans le groupe témoin. En revanche, la proportion de personnes atteignant une réduction d'au moins 50 % n'était pas significativement différente.</p><h2>Un résultat encourageant, mais modeste</h2><p>Éviter approximativement une journée de migraine par mois peut avoir un intérêt réel pour certaines personnes, notamment si les crises sont invalidantes. Cependant, la moyenne ne prédit pas la réponse individuelle : certains patients peuvent bénéficier davantage de la méthode, d'autres peu ou pas. Il serait trompeur de présenter cette application comme une solution miracle.</p><h2>Les limites à connaître</h2><p>Les participants savaient s'ils utilisaient le dispositif, et le groupe témoin était placé sur liste d'attente plutôt que d'utiliser une application placebo comparable. Les attentes peuvent donc influencer les symptômes rapportés. La durée de l'évaluation principale était courte, et les résultats ne démontrent pas un bénéfice durable. Enfin, le dispositif testé comportait des capteurs spécifiques : ces données ne peuvent pas être extrapolées à toutes les applications de relaxation. Des liens financiers entre certains chercheurs et le développeur du dispositif ont été signalés.</p><h2>Faut-il arrêter ses médicaments ?</h2><p>Non. Cet essai ne comparait pas l'application à un traitement préventif reconnu et ne démontre aucune équivalence thérapeutique. Le biofeedback peut éventuellement être discuté comme complément d'une prise en charge globale. En cas de migraines fréquentes, invalidantes, ou de modification inhabituelle des symptômes, une évaluation médicale est importante. Les traitements de crise et de prévention ne doivent pas être modifiés sur la seule base de cette étude.</p><h2>À retenir</h2><p>Le biofeedback connecté est une piste non médicamenteuse intéressante, avec un effet moyen modeste sur la fréquence des migraines dans cet essai. Il ne remplace pas les soins validés. Des études indépendantes, comparées à un contrôle actif et menées sur une durée plus longue, aideront à préciser sa place.</p><h2>Source</h2><p><a href=\"https://doi.org/10.1177/03331024261480724\">Poole et al., Cephalalgia, 2026, essai randomisé</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-biofeedback-migraine-20261104.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Neurologie",
+      "keywords": [
+        "Neurologie"
+      ],
+      "sources": [
+        {
+          "label": "Poole et al., Cephalalgia, 2026, essai randomisé",
+          "url": "https://doi.org/10.1177/03331024261480724"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-04",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite de la conférence éditoriale du 4 novembre 2026 et autorisation de mise en ligne dans la conversation de pilotage.",
+        "contentHash": "3a31960ac4063570d37791a3fb30cd9244642a9ccba6a17a0599de34cb8a19f1"
+      }
+    },
+    {
+      "id": "daily-entorse-cheville-rotation-20261104",
+      "date": "2026-11-04",
+      "title": "Cheville tordue : entorse ou fracture ?",
+      "answer": "Une cheville douloureuse après une torsion mérite une évaluation adaptée, notamment si l'appui est impossible ou si certains points osseux sont douloureux.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · FICHE DU JOUR · 4 NOVEMBRE 2026</p><h1>Cheville tordue : entorse ou fracture ?</h1><p class=\"lead\">Une cheville douloureuse après une torsion mérite une évaluation adaptée, notamment si l'appui est impossible ou si certains points osseux sont douloureux.</p><h2>Quand consulter ?</h2><p>L'incapacité à faire quatre pas, une douleur osseuse localisée, une déformation ou des signes neurovasculaires nécessitent un avis médical. Les règles d'Ottawa aident les professionnels à décider d'une radiographie.</p><h2>Premiers gestes</h2><p>Protéger la cheville, adapter l'appui et limiter les efforts douloureux. Le traitement dépend du diagnostic.</p><h2>Source</h2><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/?term=Ottawa+ankle+rules\">Règles d'Ottawa, synthèse clinique</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-entorse-cheville-rotation-20261104.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Traumatologie",
+      "keywords": [
+        "Traumatologie"
+      ],
+      "sources": [
+        {
+          "label": "Règles d'Ottawa, synthèse clinique",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Ottawa+ankle+rules"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-04",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite de la conférence éditoriale du 4 novembre 2026 et autorisation de mise en ligne dans la conversation de pilotage.",
+        "contentHash": "2169d09994d33fdea1dd830e021f6072d97b1a6ca881490a94144d07dde8ea2d"
+      }
+    },
+    {
+      "id": "daily-ecraser-comprimes-20261104",
+      "date": "2026-11-04",
+      "title": "Vrai ou faux : peut-on écraser tous les comprimés ?",
+      "answer": "Faux. Certains comprimés ne doivent jamais être écrasés, notamment les formes à libération prolongée ou gastro-résistantes.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · VRAI OU FAUX · 4 NOVEMBRE 2026</p><h1>Vrai ou faux : peut-on écraser tous les comprimés ?</h1><p class=\"lead\">Faux. Certains comprimés ne doivent jamais être écrasés, notamment les formes à libération prolongée ou gastro-résistantes.</p><h2>Pourquoi ?</h2><p>Écraser un comprimé peut modifier la vitesse de libération du médicament, son efficacité ou sa tolérance.</p><h2>Le bon réflexe</h2><p>Demander au pharmacien ou au prescripteur une forme adaptée avant de modifier l'administration.</p><h2>Source</h2><p><a href=\"https://ansm.sante.fr/\">ANSM, bon usage des médicaments</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-ecraser-comprimes-20261104.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Médicaments",
+      "keywords": [
+        "Médicaments"
+      ],
+      "sources": [
+        {
+          "label": "ANSM, bon usage des médicaments",
+          "url": "https://ansm.sante.fr/"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-04",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite de la conférence éditoriale du 4 novembre 2026 et autorisation de mise en ligne dans la conversation de pilotage.",
+        "contentHash": "ffddc134f9430793751de1835dfb4966d7805ebc335048353f27f20a63bcf5a3"
+      }
+    },
+    {
+      "id": "daily-morbidite-maternelle-chiffre-20261104",
+      "date": "2026-11-04",
+      "title": "Le chiffre du jour : +40,5 %",
+      "answer": "Une analyse américaine rapporte une augmentation de 40,5 % de la morbidité maternelle sévère entre 2015 et 2022.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · LE CHIFFRE DU JOUR · 4 NOVEMBRE 2026</p><h1>Le chiffre du jour : +40,5 %</h1><p class=\"lead\">Une analyse américaine rapporte une augmentation de 40,5 % de la morbidité maternelle sévère entre 2015 et 2022.</p><h2>Comment l'interpréter ?</h2><p>Il s'agit d'une évolution observée aux États-Unis, dans une population et avec des méthodes de surveillance spécifiques. Elle ne décrit pas directement la situation française.</p><h2>Pourquoi surveiller ?</h2><p>La qualité du suivi prénatal et postnatal et la prévention des complications restent essentielles.</p><h2>Source</h2><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/?term=severe+maternal+morbidity+2015+2022+40.5\">PubMed, morbidité maternelle sévère aux États-Unis</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-morbidite-maternelle-chiffre-20261104.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Grossesse",
+      "keywords": [
+        "Grossesse"
+      ],
+      "sources": [
+        {
+          "label": "PubMed, morbidité maternelle sévère aux États-Unis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=severe+maternal+morbidity+2015+2022+40.5"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-04",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite de la conférence éditoriale du 4 novembre 2026 et autorisation de mise en ligne dans la conversation de pilotage.",
+        "contentHash": "ac27744f9dc41cadacc43993be5429b52bdff90d53445a3f15cbb5e057e94093"
+      }
+    },
+    {
+      "id": "daily-autorisations-pediatriques-20261104",
+      "date": "2026-11-04",
+      "title": "Médicaments pédiatriques : des essais parfois limités",
+      "answer": "Certaines autorisations accélérées reposent sur de petits effectifs, d'où l'importance du suivi après commercialisation.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · DONNÉES · 4 NOVEMBRE 2026</p><h1>Médicaments pédiatriques : des essais parfois limités</h1><p class=\"lead\">Certaines autorisations accélérées reposent sur de petits effectifs, d'où l'importance du suivi après commercialisation.</p><h2>Ce qu'il faut retenir</h2><p>Un faible effectif n'invalide pas automatiquement une étude, mais augmente l'incertitude sur les effets rares et à long terme.</p><h2>Source</h2><p><a href=\"https://www.fda.gov/drugs/nda-and-bla-approvals/accelerated-approval-program\">FDA, accelerated approval</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-autorisations-pediatriques-20261104.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Pédiatrie",
+      "keywords": [
+        "Pédiatrie"
+      ],
+      "sources": [
+        {
+          "label": "FDA, accelerated approval",
+          "url": "https://www.fda.gov/drugs/nda-and-bla-approvals/accelerated-approval-program"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-04",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite de la conférence éditoriale du 4 novembre 2026 et autorisation de mise en ligne dans la conversation de pilotage.",
+        "contentHash": "e655bea006d3797c2536e1ee000460bc4aa04a77d976a086b406ed3f67610b1a"
+      }
+    },
+    {
+      "id": "daily-epicerie-mobile-20261104",
+      "date": "2026-11-04",
+      "title": "Alimentation : une épicerie mobile suffit-elle à changer les habitudes ?",
+      "answer": "L'accès aux aliments ne garantit pas, à lui seul, une amélioration mesurable de la qualité alimentaire.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · DONNÉES · 4 NOVEMBRE 2026</p><h1>Alimentation : une épicerie mobile suffit-elle à changer les habitudes ?</h1><p class=\"lead\">L'accès aux aliments ne garantit pas, à lui seul, une amélioration mesurable de la qualité alimentaire.</p><h2>Ce que cela rappelle</h2><p>Les habitudes dépendent aussi du prix, du temps, de l'environnement familial et des possibilités de préparation. Une intervention isolée peut être insuffisante.</p><h2>Source</h2><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/?term=mobile+grocery+store+randomized+diet+quality\">PubMed, essais sur épiceries mobiles et alimentation</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-epicerie-mobile-20261104.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Nutrition",
+      "keywords": [
+        "Nutrition"
+      ],
+      "sources": [
+        {
+          "label": "PubMed, essais sur épiceries mobiles et alimentation",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=mobile+grocery+store+randomized+diet+quality"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-04",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite de la conférence éditoriale du 4 novembre 2026 et autorisation de mise en ligne dans la conversation de pilotage.",
+        "contentHash": "4f983ecaf5aa9d4d1a08206cc82d4a222c62369d97fae9d36aa632809ca4f777"
+      }
+    },
+    {
+      "id": "daily-preparation-hiver-20261104",
+      "date": "2026-11-04",
+      "title": "Hiver : anticiper la pression sur le système de soins",
+      "answer": "La préparation hivernale vise à renforcer la coordination des soins face aux infections respiratoires et aux tensions hospitalières.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · DONNÉES · 4 NOVEMBRE 2026</p><h1>Hiver : anticiper la pression sur le système de soins</h1><p class=\"lead\">La préparation hivernale vise à renforcer la coordination des soins face aux infections respiratoires et aux tensions hospitalières.</p><h2>Pourquoi maintenant ?</h2><p>L'anticipation des périodes de circulation virale permet d'organiser prévention, parcours et capacités de prise en charge.</p><h2>Pour le public</h2><p>Vaccinations recommandées, gestes de prévention et recours adapté aux soins restent les messages prioritaires.</p><h2>Source</h2><p><a href=\"https://sante.gouv.fr/\">Ministère de la Santé, préparation hivernale</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-preparation-hiver-20261104.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Prévention",
+      "keywords": [
+        "Prévention"
+      ],
+      "sources": [
+        {
+          "label": "Ministère de la Santé, préparation hivernale",
+          "url": "https://sante.gouv.fr/"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-04",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite de la conférence éditoriale du 4 novembre 2026 et autorisation de mise en ligne dans la conversation de pilotage.",
+        "contentHash": "f5443a343963e72bef41844a452097e2a504f415c877b59e8f0f414011cbe6ef"
+      }
     }
   ],
   "editions": [
@@ -10039,6 +10389,69 @@
         "validation": "Validation explicite et autorisation de publication le 2 novembre 2026; remplacement des sujets IA et VIH par migraine-grossesse et BPCO.",
         "veille": "LITMUS, oreporexton NEJM, anti-CGRP JAMA Neurology, tozorakimab NEJM, ECDC, MedSafetyWeek.",
         "corpusImpact": "MASLD candidat fiche; narcolepsie actualité; migraine et BPCO actualiser-fusionner après vérification; aucune fiche nouvelle publiée."
+      }
+    },
+    {
+      "id": "edition-2026-11-04",
+      "date": "2026-11-04",
+      "publishAt": "2026-11-04T08:00:00+01:00",
+      "complete": true,
+      "items": [
+        {
+          "contentId": "daily-sommeil-perte-poids-20261104",
+          "slot": "À LA UNE",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-metformine-diabete-gestationnel-20261104",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-sms-statines-20261104",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-biofeedback-migraine-20261104",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-entorse-cheville-rotation-20261104",
+          "slot": "FICHE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-ecraser-comprimes-20261104",
+          "slot": "VRAI OU FAUX",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-morbidite-maternelle-chiffre-20261104",
+          "slot": "LE CHIFFRE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-autorisations-pediatriques-20261104",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-epicerie-mobile-20261104",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-preparation-hiver-20261104",
+          "slot": "DONNÉES",
+          "icon": "•"
+        }
+      ],
+      "editorialConference": {
+        "validation": "Validation médicale explicite et autorisation de publication du 4 novembre 2026, confirmées dans le fil de pilotage.",
+        "veille": "Sommeil et poids, metformine et diabète gestationnel, SMS et statines, biofeedback migraine, comprimés écrasés, morbidité maternelle.",
+        "corpusImpact": "Publication sans nouvelle photographie selon instruction expresse ; articles sourcés ; aucune nouvelle fiche canonique créée."
       }
     }
   ]
