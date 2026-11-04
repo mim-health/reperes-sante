@@ -1,0 +1,32 @@
+name: MACA SEO Production Audit
+on:
+  push:
+    branches: [feat/v0-magazine]
+    paths:
+      - '.github/workflows/seo-production-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit-production:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Audit complete public sitemap (read only)
+        run: node scripts/audit-production-seo.js
+      - name: Publish summary
+        if: always()
+        run: |
+          if [ -f seo-reports/production-latest.json ]; then
+            node -e "const r=require('./seo-reports/production-latest.json'); console.log(JSON.stringify({checked:r.checked,flagged:r.flagged,sitemapUrls:r.sitemapUrls},null,2))"
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: maca-seo-production-audit
+          path: seo-reports/production-latest.json
+          if-no-files-found: warn
