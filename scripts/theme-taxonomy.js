@@ -18,7 +18,8 @@ const broad=new Set(['quotidien','fiche du jour','a la une','a lire en 3 min','d
 function classify(item){
  const id=norm(item.category||item.primaryCategory||item.theme);
  const alt=norm(item.theme||'');
- const text=norm([item.title,item.keywords?.join(' ')].filter(Boolean).join(' '));
+ const kw=Array.isArray(item.keywords)?item.keywords.join(' '):String(item.keywords||'');
+ const text=norm([item.title,kw].filter(Boolean).join(' '));
  // Prefer specific metadata from the primary category, then the Mag theme.
  for(const field of [id,alt]){
   if(!field||broad.has(field))continue;
