@@ -8820,3 +8820,170 @@ window.extraAuditedQuestions.push({
 ];for(const patch of patches){let found=false;for(const group of [window.healthQuestions||[],window.extraAuditedQuestions||[]])for(const card of group)if(card.id===patch.id){Object.assign(card,patch);found=true;}if(!found)throw new Error("Missing source card: "+patch.id);}})();
 
 ;
+
+/* ===== MACA BUNDLE SOURCE: backlog-audited-epaule-lot1-2026-11-04.js ===== */
+/* MACASANTÉ — Lot 5 fiches épaule ; validation médicale explicite 04/11/2026. */
+window.extraAuditedQuestions=(window.extraAuditedQuestions||[]).concat([
+  {
+    "id": "douleur-epaule-origines-20261104",
+    "category": "Os & articulations",
+    "title": "J’ai mal à l’épaule : comment savoir d’où vient la douleur ?",
+    "keywords": "épaule douleur diagnostic tendinopathie coiffe capsulite arthrose cervicale radiographie échographie IRM mobilité force",
+    "answer": "Une douleur d’épaule peut venir des tendons, de la capsule articulaire, de l’articulation elle-même ou parfois du cou. Sa localisation ne suffit pas à poser le diagnostic. Le médecin distingue surtout une épaule douloureuse mais mobile, une épaule véritablement enraidie et une perte de force. Dans la majorité des douleurs non traumatiques sans signe d’alerte, il n’est pas nécessaire de réaliser une IRM immédiatement. La prise en charge associe activité adaptée, traitement antalgique si nécessaire et parfois rééducation.",
+    "detail": "Pourquoi l’épaule peut-elle faire mal ?\n\nL’épaule est une articulation très mobile. Ses mouvements dépendent des muscles et des tendons de la coiffe des rotateurs, de la capsule articulaire, des surfaces osseuses et des structures voisines. Ces tissus peuvent provoquer des douleurs très ressemblantes. Le diagnostic ne se déduit donc pas simplement de l’endroit où la personne montre qu’elle a mal.\n\nLes principales causes\n\nUne tendinopathie de la coiffe des rotateurs peut rendre douloureux le fait de lever le bras, de porter un objet ou de dormir sur le côté. La douleur siège fréquemment sur la face externe de l’épaule et peut descendre dans le haut du bras. Cela ne prouve pas qu’un tendon est déchiré.\n\nLa capsulite rétractile, ou « épaule gelée », entraîne un enraidissement progressif : la personne ne peut plus tourner normalement le bras ou mettre sa main derrière le dos. La mobilité reste limitée même lorsqu’un examinateur tente doucement de mobiliser l’épaule. Une arthrose de l’articulation gléno-humérale peut provoquer un tableau voisin, ce qui justifie parfois des radiographies.\n\nAprès une chute ou une traction brutale, une fracture, une luxation ou une rupture tendineuse peuvent être envisagées selon l’examen. Certaines douleurs ressenties à l’épaule viennent en réalité des vertèbres cervicales ou des nerfs : elles s’accompagnent parfois de fourmillements, d’une douleur allant vers la main ou d’une faiblesse neurologique.\n\nComment le médecin fait-il la différence ?\n\nL’interrogatoire précise le début des douleurs, l’existence d’un traumatisme, le sommeil, le travail, les activités sportives et les gestes devenus difficiles. L’examen compare les deux côtés, mesure la mobilité active et passive, teste la force et recherche d’éventuels signes cervicalo-neurologiques. Une épaule très raide n’oriente pas vers les mêmes causes qu’une épaule souple mais douloureuse lors d’un effort.\n\nFaut-il une échographie ou une IRM ?\n\nPas automatiquement. En l’absence de signe d’alerte, une période de prise en charge clinique peut être adaptée. Si les symptômes persistent, notamment après plusieurs semaines, des radiographies sont souvent utiles pour rechercher une arthrose, une calcification ou une anomalie osseuse. L’échographie explore les tendons de la coiffe et peut détecter une rupture. L’IRM est plutôt réservée aux problèmes complexes, aux lésions à caractériser ou à la préparation d’une décision chirurgicale. Un compte rendu montrant une tendinopathie ou une rupture n’explique pas forcément, à lui seul, toute la douleur : des anomalies existent aussi chez des personnes asymptomatiques.\n\nQue faire en attendant ?\n\nIl est souvent préférable de conserver les gestes quotidiens supportables plutôt que d’immobiliser complètement le bras. On peut limiter provisoirement les charges lourdes au-dessus de la tête, adapter le poste de travail et reprendre progressivement les mouvements. Des antalgiques peuvent être proposés après prise en compte des maladies associées, des traitements et des contre-indications. La kinésithérapie est utile dans de nombreuses affections, mais les exercices doivent correspondre au diagnostic et à la tolérance. Une infiltration n’est ni obligatoire ni une réparation du tendon. La chirurgie n’est pas le traitement habituel d’une simple douleur d’épaule sans lésion nécessitant une intervention.\n\nQuand demander un nouvel avis ?\n\nSi la douleur persiste, perturbe les nuits ou empêche les activités courantes malgré les mesures initiales, une réévaluation permet de rechercher une raideur, une lésion ou un diagnostic différent. L’objectif est de retrouver une épaule fonctionnelle en évitant les examens et les gestes inutiles.\n\nÀ retenir\n\nUne douleur d’épaule n’est pas forcément une tendinite. L’examen clinique et l’évolution orientent le choix des examens. Le plus souvent, les mouvements adaptés et une rééducation progressive sont préférables à une immobilisation prolongée.",
+    "watchTitle": "Quand consulter rapidement ?",
+    "watch": "Après un traumatisme, une incapacité à lever le bras, une déformation, une perte de force majeure ou des troubles de la sensibilité imposent un avis rapide. Une articulation très chaude et douloureuse associée à une fièvre nécessite une évaluation urgente. Une douleur d’épaule avec oppression thoracique, essoufflement ou sueurs peut évoquer une urgence cardiovasculaire : appeler le 15 ou le 112.",
+    "source": "HAS · PubMed · JOSPT",
+    "sources": [
+      {
+        "label": "HAS — Épaule douloureuse non traumatique et coiffe des rotateurs",
+        "url": "https://www.has-sante.fr/jcms/p_3459565/fr/"
+      },
+      {
+        "label": "Desmeules et al. — Recommandations de pratique clinique JOSPT 2025, PMID 40165544",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40165544/"
+      },
+      {
+        "label": "Hopewell et al. — Essai GRASP, Lancet 2021, PMID 34265255",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34265255/"
+      }
+    ],
+    "verifiedAt": "04/11/2026",
+    "nextAuditAt": "04/02/2027",
+    "auditIntervalMonths": 3,
+    "validationStatus": "VALIDATED",
+    "evidenceStatus": "VALIDÉ — Dr Romain BEDDOK, accord explicite 04/11/2026, 500 mots minimum",
+    "medicalValidator": "Dr Romain BEDDOK",
+    "wordCount": 699
+  },
+  {
+    "id": "tendinopathie-coiffe-exercices-20261104",
+    "category": "Os & articulations",
+    "title": "Tendinopathie de la coiffe des rotateurs : faut-il se reposer ou faire des exercices ?",
+    "keywords": "coiffe des rotateurs tendinopathie tendinite exercice rééducation épaule kinésithérapie repos infiltration GRASP",
+    "answer": "En cas de tendinopathie de la coiffe des rotateurs, le repos complet prolongé n’est généralement pas conseillé. Le traitement repose principalement sur des conseils clairs, une adaptation des mouvements douloureux et une reprise progressive d’exercices adaptés. Une légère douleur pendant un exercice ne signifie pas toujours qu’il abîme le tendon, mais une aggravation durable doit faire réduire la charge. Les infiltrations cortisonées peuvent soulager à court terme ; elles ne réparent pas le tendon et leur bénéfice durable n’est pas établi.",
+    "detail": "Qu’est-ce que la coiffe des rotateurs ?\n\nLa coiffe regroupe quatre muscles et leurs tendons qui participent à la mobilité et à la stabilité de l’épaule. Une tendinopathie peut rendre douloureux le fait de lever le bras, d’attraper un objet en hauteur, de pratiquer un sport ou de dormir sur le côté atteint. Le tendon du supra-épineux est souvent impliqué, mais plusieurs structures peuvent contribuer à la douleur. Une tendinopathie n’est pas synonyme de rupture : des douleurs existent avec un tendon continu, tandis que certaines ruptures dégénératives sont asymptomatiques.\n\nPourquoi ne pas arrêter tous les mouvements ?\n\nIl peut être utile de réduire momentanément une activité qui déclenche une douleur importante, surtout lors d’une poussée. En revanche, une immobilisation longue risque de diminuer la force, la tolérance à l’effort et la confiance dans le bras. L’objectif est de trouver une quantité d’activité supportable. On peut continuer les gestes simples, modifier certaines tâches professionnelles et limiter provisoirement les mouvements répétés au-dessus de la tête ou les charges excessives. L’intensité des exercices sera ensuite augmentée progressivement.\n\nPeut-on faire des exercices malgré un peu de douleur ?\n\nUne douleur légère et tolérable pendant un exercice n’indique pas nécessairement une aggravation de la lésion. Mais une douleur importante pendant l’effort, qui persiste de nombreuses heures ou une nette détérioration de la fonction le lendemain, peuvent signaler une progression trop rapide. Le kinésithérapeute adapte les exercices à la capacité de la personne et à ses objectifs. Il faut notamment tenir compte de l’âge, des maladies associées, de l’état de mobilité et de l’activité professionnelle ou sportive.\n\nQuels types d’exercices ?\n\nLa rééducation recherche la conservation ou la récupération des mouvements, le renforcement progressif des muscles de la coiffe et de l’omoplate, puis le retour aux gestes utiles : s’habiller, porter des courses, jardiner, travailler ou pratiquer un sport. Les exercices peuvent débuter sans charge importante avant de progresser vers des résistances plus élevées. Il n’existe pas une méthode miracle convenant à toutes les personnes. La compréhension des objectifs, la régularité et le choix d’une charge adaptée comptent beaucoup.\n\nQue dit l’essai GRASP ?\n\nL’essai randomisé GRASP, publié dans The Lancet en 2021, a inclus 708 adultes présentant une affection de la coiffe des rotateurs. Il comparait notamment un programme d’exercices progressifs encadrés à une séance de conseils et d’exercices personnalisés donnés par un kinésithérapeute, avec ou sans infiltration de corticoïdes. À douze mois, le programme comportant davantage de séances n’a pas montré de supériorité significative sur les conseils de bonne pratique. Cela ne démontre pas que les exercices sont inutiles : une séance de qualité avec des exercices expliqués peut déjà constituer une prise en charge active.\n\nLes infiltrations aident-elles ?\n\nUne infiltration cortisonée peut parfois diminuer la douleur à court terme, par exemple lorsque celle-ci gêne fortement le sommeil ou la participation à la rééducation. Dans GRASP, elle n’a pas procuré de bénéfice durable à douze mois. Une injection ne répare pas un tendon. Il n’est donc pas raisonnable d’enchaîner les infiltrations sans réévaluation de l’efficacité, des risques et du diagnostic.\n\nQuand envisager une imagerie ?\n\nL’examen clinique reste central. Des radiographies peuvent identifier une calcification ou une arthrose. Si la douleur persiste malgré le traitement initial, l’échographie peut explorer les tendons ; l’IRM peut être utile avant certaines décisions thérapeutiques ou lorsque le diagnostic reste incertain. Une anomalie visible à l’imagerie ne signifie pas nécessairement qu’une opération est indiquée.\n\nÀ retenir\n\nLa plupart des tendinopathies de la coiffe sont prises en charge sans chirurgie. On réduit les mouvements trop irritants sans arrêter toute activité, puis on renforce progressivement l’épaule. Les conseils adaptés et le suivi fonctionnel importent davantage qu’un exercice prétendument universel.",
+    "watchTitle": "Quand consulter rapidement ?",
+    "watch": "Consulter si la douleur persiste plusieurs semaines, perturbe le sommeil ou réduit les activités quotidiennes. Après une chute, une perte brutale de force ou une incapacité nouvelle à lever le bras doit faire rechercher une rupture traumatique ou une autre lésion. Une déformation, de la fièvre ou une épaule chaude nécessitent un examen rapide.",
+    "source": "HAS · PubMed · JOSPT",
+    "sources": [
+      {
+        "label": "HAS — Tendinopathies de la coiffe",
+        "url": "https://www.has-sante.fr/jcms/p_3459565/fr/"
+      },
+      {
+        "label": "Desmeules et al. — JOSPT 2025, PMID 40165544",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40165544/"
+      },
+      {
+        "label": "Hopewell et al. — GRASP, Lancet 2021, PMID 34265255",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34265255/"
+      }
+    ],
+    "verifiedAt": "04/11/2026",
+    "nextAuditAt": "04/02/2027",
+    "auditIntervalMonths": 3,
+    "validationStatus": "VALIDATED",
+    "evidenceStatus": "VALIDÉ — Dr Romain BEDDOK, accord explicite 04/11/2026, 500 mots minimum",
+    "medicalValidator": "Dr Romain BEDDOK",
+    "wordCount": 717
+  },
+  {
+    "id": "capsulite-retractile-epaule-20261104",
+    "category": "Os & articulations",
+    "title": "Capsulite rétractile : pourquoi mon épaule se bloque-t-elle ?",
+    "keywords": "capsulite rétractile épaule gelée raideur rotation externe diabète thyroïde infiltration kinésithérapie UK FROST",
+    "answer": "La capsulite rétractile, ou « épaule gelée », provoque des douleurs puis une diminution progressive des mouvements de l’épaule. La mobilité est limitée même lorsqu’une autre personne tente doucement de mobiliser le bras : c’est une différence importante avec certaines douleurs tendineuses. L’évolution dure souvent plusieurs mois, parfois davantage. Le traitement dépend de la phase et associe contrôle de la douleur, exercices adaptés, et parfois infiltration intra-articulaire. Forcer une épaule très douloureuse n’accélère pas nécessairement la guérison.",
+    "detail": "Qu’est-ce qu’une capsulite ?\n\nLa capsule articulaire est l’enveloppe fibreuse qui entoure l’articulation entre la tête de l’humérus et l’omoplate. Dans la capsulite rétractile, elle devient inflammatoire, s’épaissit et perd de sa souplesse. L’épaule devient douloureuse puis progressivement plus raide. Il peut être difficile d’enfiler une veste, d’atteindre une étagère ou de mettre la main derrière le dos. Un signe caractéristique est la limitation de la mobilité passive : même lorsque le médecin déplace doucement le bras, il ne peut pas retrouver toute l’amplitude, particulièrement en rotation externe.\n\nPourquoi cela arrive-t-il ?\n\nDans beaucoup de cas, aucune cause précise n’est retrouvée. La capsulite survient plus volontiers entre 40 et 60 ans, mais ce n’est pas exclusif. Elle est plus fréquente chez les personnes vivant avec un diabète ou une maladie thyroïdienne. Elle peut également survenir après un traumatisme, une opération ou une immobilisation prolongée. Une capsulite n’implique pas automatiquement qu’une maladie endocrinienne est présente : l’intérêt d’un bilan dépend des antécédents, de l’examen et des autres symptômes.\n\nComment évolue l’épaule gelée ?\n\nOn décrit souvent une phase initiale dominée par la douleur, parfois importante la nuit, puis une période où l’enraidissement devient le principal problème. Enfin, les mouvements peuvent se récupérer progressivement. Ces phases ne se succèdent pas toujours de manière régulière. Certains patients s’améliorent en quelques mois, d’autres présentent une gêne plus durable ou conservent une limitation partielle. Promettre une récupération complète en un délai précis ne serait pas réaliste.\n\nComment établir le diagnostic ?\n\nLe médecin recherche une diminution de la rotation externe et des autres amplitudes, en comparant les mouvements actifs et passifs. Les radiographies sont souvent utilisées pour exclure une arthrose gléno-humérale ou une autre cause osseuse de raideur. Une IRM n’est pas systématique si le tableau est caractéristique. L’échographie ou l’IRM peuvent être discutées si le tableau est atypique ou si une lésion associée est suspectée. Une tendinopathie peut d’ailleurs coexister avec la capsulite : tous les symptômes ne proviennent pas nécessairement d’une seule structure.\n\nQue peut-on faire contre la douleur ?\n\nLa stratégie varie selon le moment de la maladie. Lorsqu’une épaule est très douloureuse, le soulagement de la douleur est une priorité. Des antalgiques peuvent être proposés selon les contre-indications. Une infiltration de corticoïdes à l’intérieur de l’articulation peut améliorer la douleur et la fonction à court terme chez certains patients. Les résultats ne sont toutefois pas systématiquement durables. La rééducation doit être progressive et respectueuse des symptômes ; des mobilisations trop agressives pendant la phase douloureuse peuvent être mal tolérées.\n\nFaut-il opérer ?\n\nUne intervention n’est pas proposée d’emblée. Lorsque la capsulite persiste malgré un traitement adapté et provoque un handicap majeur, un spécialiste peut discuter une distension capsulaire, une mobilisation sous anesthésie ou une libération arthroscopique de la capsule. L’essai randomisé UK FROST, publié dans The Lancet en 2020 et portant sur 503 adultes, a comparé différentes stratégies spécialisées. À un an, aucune intervention invasive n’a montré une supériorité clinique suffisamment importante pour être préférée systématiquement à une prise en charge structurée. Les bénéfices, coûts et risques doivent être discutés individuellement.\n\nQuand reconsulter ?\n\nUne consultation est utile si le sommeil est fortement perturbé, si la raideur continue à s’aggraver ou si les gestes essentiels deviennent difficiles. Le diagnostic doit aussi être réévalué si la douleur apparaît brutalement, si la mobilité se dégrade après un traumatisme ou si des signes inhabituels apparaissent.\n\nÀ retenir\n\nLa capsulite est une cause d’épaule douloureuse et réellement enraidie. La récupération peut être lente, mais une amélioration est habituelle. Le traitement vise un retour progressif aux mouvements, sans chercher à forcer l’articulation à tout prix.",
+    "watchTitle": "Quand consulter rapidement ?",
+    "watch": "Une épaule rouge ou chaude, une fièvre, un traumatisme récent avec incapacité à bouger le bras ou une douleur brutale particulièrement intense doivent faire rechercher un autre diagnostic, notamment une infection ou une lésion traumatique. Un avis médical rapide est alors nécessaire.",
+    "source": "HAS · PubMed · JOSPT",
+    "sources": [
+      {
+        "label": "Rangan et al. — UK FROST, Lancet 2020, PMID 33010843",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33010843/"
+      },
+      {
+        "label": "Carette et al. — Infiltration et physiothérapie, Arthritis Rheum 2003, PMID 12632439",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/12632439/"
+      },
+      {
+        "label": "HAS — Épaule douloureuse non traumatique",
+        "url": "https://www.has-sante.fr/jcms/p_3459565/fr/"
+      }
+    ],
+    "verifiedAt": "04/11/2026",
+    "nextAuditAt": "04/02/2027",
+    "auditIntervalMonths": 3,
+    "validationStatus": "VALIDATED",
+    "evidenceStatus": "VALIDÉ — Dr Romain BEDDOK, accord explicite 04/11/2026, 500 mots minimum",
+    "medicalValidator": "Dr Romain BEDDOK",
+    "wordCount": 695
+  },
+  {
+    "id": "rupture-coiffe-operation-20261104",
+    "category": "Os & articulations",
+    "title": "Rupture de la coiffe des rotateurs : faut-il toujours se faire opérer ?",
+    "keywords": "rupture coiffe rotateurs supra épineux tendon traumatique dégénérative chirurgie échographie IRM kinésithérapie réparation",
+    "answer": "Non. Une rupture de la coiffe des rotateurs ne nécessite pas automatiquement une opération. Certaines ruptures dégénératives provoquent peu de symptômes et peuvent être prises en charge par des exercices et une adaptation des activités. En revanche, une rupture survenue après un traumatisme avec perte importante de force, surtout chez une personne active, nécessite un avis spécialisé rapide. La décision dépend du type de rupture, des symptômes, de la fonction, de l’état des tendons et des attentes du patient, et non du seul compte rendu d’IRM.",
+    "detail": "À quoi servent les tendons de la coiffe ?\n\nQuatre muscles et leurs tendons entourent l’articulation de l’épaule. Ils permettent plusieurs mouvements et aident à maintenir la tête de l’humérus dans une position stable. Une rupture correspond à une interruption partielle ou totale de fibres tendineuses. Le supra-épineux est souvent touché. La lésion peut être partielle ou transfixiante, c’est-à-dire traverser toute l’épaisseur du tendon, et parfois atteindre plusieurs tendons.\n\nRupture traumatique ou dégénérative : pourquoi est-ce important ?\n\nLes ruptures dégénératives se constituent progressivement avec le vieillissement et les modifications de la structure du tendon. Elles peuvent apparaître sans accident précis et être peu symptomatiques. Les ruptures traumatiques surviennent après un événement identifiable, comme une chute ou une traction brutale. Cette distinction est importante : une lésion fraîche sur un tendon auparavant sain peut relever d’un avis chirurgical rapide, tandis qu’une rupture ancienne et bien tolérée peut souvent bénéficier initialement d’une prise en charge fonctionnelle. Une chute peut aussi révéler une rupture dégénérative déjà présente.\n\nQuels signes peuvent faire suspecter une rupture ?\n\nUne douleur lors de l’élévation du bras, des douleurs nocturnes et une diminution de la force sont possibles. Certains patients peinent à porter un objet ou à effectuer des gestes professionnels. Dans une rupture importante, le bras peut être difficile à lever activement alors que le médecin parvient à le mobiliser passivement. Mais la douleur n’est pas proportionnelle à la taille de la rupture : une petite lésion peut être très douloureuse et une rupture étendue parfois peu gênante. L’examen clinique et le contexte demeurent donc indispensables.\n\nQuels examens pratiquer ?\n\nLes radiographies peuvent montrer une arthrose, une anomalie osseuse ou des modifications de position de la tête humérale. L’échographie, si elle est réalisée par un opérateur expérimenté, peut détecter de nombreuses ruptures. L’IRM est particulièrement utile lorsqu’une intervention est envisagée pour apprécier la taille de la lésion, une éventuelle rétraction tendineuse et l’état des muscles. Dans certaines situations complexes, d’autres examens peuvent être discutés. Il n’existe pas d’indication à opérer simplement parce qu’une anomalie est visible à l’imagerie.\n\nLe traitement sans chirurgie est-il possible ?\n\nOui, notamment devant une rupture dégénérative, ancienne ou peu symptomatique. L’adaptation des activités, la prise en charge antalgique et une kinésithérapie ciblée peuvent améliorer la mobilité, la force des muscles encore fonctionnels et la capacité à utiliser le bras. Ce traitement ne ressoude pas anatomiquement le tendon rompu. Il peut pourtant permettre une nette amélioration des symptômes et de la vie quotidienne. Un suivi est nécessaire pour réévaluer l’efficacité de cette stratégie et adapter le projet de soins.\n\nQuand envisager la réparation chirurgicale ?\n\nLes recommandations françaises distinguent les lésions traumatiques des lésions dégénératives. Une rupture traumatique récente sur un tendon auparavant sain, notamment avec déficit fonctionnel marqué, justifie une orientation chirurgicale sans délai. Pour les ruptures dégénératives, la chirurgie peut être discutée si douleur et handicap persistent malgré une prise en charge bien conduite pendant plusieurs mois, généralement au moins six mois selon les recommandations. L’âge, les besoins professionnels, la taille de la rupture, la rétraction du tendon et la qualité musculaire interviennent dans la décision. Certaines ruptures anciennes peuvent être difficiles à réparer.\n\nQue nous apprennent les études ?\n\nUn essai randomisé norvégien comparant chirurgie et physiothérapie dans certaines ruptures petites ou moyennes a publié des résultats à quinze ans en 2024. Les résultats moyens de la réparation étaient meilleurs sur plusieurs mesures de douleur et de fonction. Cela interdit de prétendre que chirurgie et exercices sont toujours équivalents. Mais cette étude ne signifie pas non plus que chaque rupture doit être opérée : ses résultats doivent être replacés dans le contexte de la lésion et des priorités du patient.\n\nAprès une opération\n\nLa réparation tendineuse est souvent réalisée sous arthroscopie. Une période de protection du bras est suivie d’une rééducation progressive. Le retour aux activités peut prendre plusieurs mois. Raideur, infection, nouvelle rupture ou persistance de douleur font partie des risques à discuter. La décision est donc partagée après une information claire sur les bénéfices possibles et leurs limites.\n\nÀ retenir\n\nUne rupture de coiffe ne conduit pas toujours au bloc opératoire. Le contexte traumatique, la perte de force et le retentissement fonctionnel guident la décision. Une rupture après traumatisme avec incapacité à lever le bras doit être examinée rapidement.",
+    "watchTitle": "Quand consulter rapidement ?",
+    "watch": "Après une chute ou un effort violent, une incapacité nouvelle à lever le bras, une perte de force majeure, une déformation ou des troubles neurologiques justifient une évaluation rapide. Une articulation chaude associée à de la fièvre impose de rechercher une infection.",
+    "source": "HAS · PubMed · JOSPT",
+    "sources": [
+      {
+        "label": "HAS — Prise en charge des tendinopathies rompues de la coiffe, recommandations 2026",
+        "url": "https://www.has-sante.fr/jcms/p_3459565/fr/"
+      },
+      {
+        "label": "Moosmayer et al. — Résultats à 15 ans chirurgie versus physiothérapie, JBJS 2024, PMID 39197154",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39197154/"
+      },
+      {
+        "label": "Desmeules et al. — Recommandations coiffe JOSPT 2025, PMID 40165544",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40165544/"
+      }
+    ],
+    "verifiedAt": "04/11/2026",
+    "nextAuditAt": "04/02/2027",
+    "auditIntervalMonths": 3,
+    "validationStatus": "VALIDATED",
+    "evidenceStatus": "VALIDÉ — Dr Romain BEDDOK, accord explicite 04/11/2026, 500 mots minimum",
+    "medicalValidator": "Dr Romain BEDDOK",
+    "wordCount": 811
+  },
+  {
+    "id": "calcification-epaule-traitement-20261104",
+    "category": "Os & articulations",
+    "title": "Calcification de l’épaule : faut-il la faire disparaître ?",
+    "keywords": "épaule calcification tendinopathie calcifiante hydroxyapatite coiffe rotateurs barbotage lavage échoguidé ondes choc",
+    "answer": "Une calcification de l’épaule est un dépôt de cristaux de calcium dans un tendon de la coiffe des rotateurs. Elle peut entraîner une douleur parfois très forte, mais peut aussi être découverte sans symptôme. Elle ne doit pas systématiquement être retirée. La prise en charge dépend surtout de la gêne et de l’évolution : adaptation des efforts, traitement antalgique, récupération des mouvements et parfois geste spécialisé. Un essai randomisé contrôlé contre intervention simulée n’a pas démontré de bénéfice significatif du lavage échoguidé dans les conditions étudiées.",
+    "detail": "Qu’est-ce qu’une calcification tendineuse ?\n\nLa tendinopathie calcifiante est liée à des dépôts de cristaux de phosphate de calcium, principalement d’hydroxyapatite, dans un tendon. Le supra-épineux est souvent concerné. Ces dépôts ne sont pas simplement dus à la consommation de lait ou de produits riches en calcium. Il n’y a donc pas de raison de supprimer les apports alimentaires en calcium pour traiter cette affection. Une calcification n’est ni une arthrose, qui touche l’articulation, ni forcément une rupture du tendon.\n\nPourquoi certaines calcifications provoquent-elles des douleurs très importantes ?\n\nL’évolution des dépôts comprend des phases de formation, de stabilité et parfois de résorption. Pendant certaines phases de résorption, une réaction inflammatoire peut provoquer une douleur brutale et intense, parfois sans choc ni faux mouvement. Lever le bras, s’habiller ou dormir peut devenir difficile. À l’inverse, une calcification peut rester silencieuse et n’être découverte qu’au cours d’une radiographie réalisée pour une autre raison. La taille visible n’est pas toujours proportionnelle à la douleur. Une tendinopathie non calcifiante ou une capsulite peuvent aussi coexister ; il faut donc vérifier que le dépôt explique effectivement les symptômes.\n\nComment confirme-t-on le diagnostic ?\n\nLe médecin interroge la personne sur la durée des douleurs, l’apparition d’une crise récente, la mobilité et l’existence d’un traumatisme. Les radiographies montrent souvent bien les dépôts et permettent également de rechercher une autre anomalie osseuse ou articulaire. L’échographie peut préciser la localisation des calcifications et examiner l’état des tendons. L’IRM n’est pas nécessaire de manière systématique lorsque la calcification est bien visible et que le tableau est typique. Elle peut être discutée si un autre diagnostic reste possible.\n\nQuels sont les premiers traitements ?\n\nLa prise en charge commence généralement par une adaptation temporaire des activités les plus douloureuses, sans immobiliser longtemps le bras. Les antalgiques peuvent être utilisés selon les contre-indications. Un anti-inflammatoire non stéroïdien peut parfois être proposé pour une courte période, en tenant compte des risques digestifs, rénaux et cardiovasculaires. Lorsque la douleur diminue, des mouvements et exercices adaptés visent à récupérer la mobilité puis la force. Une infiltration cortisonée peut être envisagée pour soulager une composante inflammatoire chez certains patients ; elle ne garantit toutefois pas la disparition du dépôt.\n\nLe lavage échoguidé est-il vraiment efficace ?\n\nLe lavage, également appelé barbotage, consiste à introduire une aiguille dans la calcification sous contrôle échographique afin d’en aspirer ou d’en évacuer une partie. Cette technique est parfois proposée lorsque les symptômes persistent. Toutefois, un essai randomisé publié dans le BMJ en 2023 a inclus 220 adultes présentant une tendinopathie calcifiante chronique. Il comparait le lavage accompagné d’une injection de corticoïdes à des procédures simulées avec ou sans corticoïdes. Sur le critère principal, aucun bénéfice significatif par rapport au traitement simulé n’a été démontré à quatre mois, ni de bénéfice supérieur à vingt-quatre mois dans les conditions de l’étude. Il serait donc erroné de présenter le lavage comme une solution certaine ou systématiquement nécessaire.\n\nQue penser des ondes de choc et de la chirurgie ?\n\nLes ondes de choc extracorporelles sont parfois proposées pour des symptômes persistants. Les résultats dépendent des protocoles, des calcifications et des critères mesurés ; ils ne justifient pas un recours systématique. La chirurgie est plutôt réservée à certaines situations très invalidantes malgré une prise en charge conservatrice prolongée. Elle ne se décide pas uniquement parce qu’un dépôt est visible à l’imagerie. Il faut aussi expliquer les risques et les alternatives.\n\nEt si la calcification reste visible ?\n\nUne amélioration de la douleur et de la fonction est possible sans disparition complète et immédiate de l’image. Le résultat recherché est de retrouver une vie quotidienne normale, non de rendre la radiographie parfaite à tout prix. Si les douleurs persistent, une réévaluation du diagnostic et des autres causes d’épaule douloureuse reste importante.\n\nÀ retenir\n\nUne calcification tendineuse peut être douloureuse, mais elle n’est pas forcément grave et peut régresser spontanément. La prise en charge est avant tout guidée par les symptômes. Les gestes invasifs ne sont pas obligatoires et leurs bénéfices doivent être discutés à la lumière des essais contrôlés.",
+    "watchTitle": "Quand consulter rapidement ?",
+    "watch": "Une douleur particulièrement intense avec fièvre, rougeur ou chaleur de l’articulation nécessite un examen urgent pour éliminer une infection. Après un traumatisme, une incapacité à bouger le bras ou une perte de force majeure impose également une évaluation rapide.",
+    "source": "HAS · PubMed · JOSPT",
+    "sources": [
+      {
+        "label": "Moosmayer et al. — Lavage échoguidé versus intervention simulée, BMJ 2023, PMID 37821122",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37821122/"
+      },
+      {
+        "label": "Desmeules et al. — Recommandations de pratique clinique coiffe, PMID 40165544",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40165544/"
+      },
+      {
+        "label": "HAS — Épaule douloureuse et coiffe des rotateurs",
+        "url": "https://www.has-sante.fr/jcms/p_3459565/fr/"
+      }
+    ],
+    "verifiedAt": "04/11/2026",
+    "nextAuditAt": "04/02/2027",
+    "auditIntervalMonths": 3,
+    "validationStatus": "VALIDATED",
+    "evidenceStatus": "VALIDÉ — Dr Romain BEDDOK, accord explicite 04/11/2026, 500 mots minimum",
+    "medicalValidator": "Dr Romain BEDDOK",
+    "wordCount": 773
+  }
+]);
+
+;
