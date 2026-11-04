@@ -5,6 +5,8 @@ on:
     paths:
       - '.github/workflows/seo-maillage-audit.yml'
       - 'annuaire-fiches.html'
+      - 'themes/**'
+      - 'scripts/build-theme-hubs.js'
       - 'scripts/audit-seo-maillage.js'
       - 'fiches.html'
   workflow_dispatch:
