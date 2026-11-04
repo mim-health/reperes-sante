@@ -32,7 +32,10 @@ function audit(data, baseline = {}) {
     ['Mag', data.editorial.contents, c => c.title, c => require('./mag-editorial').plain(c.html)]
   ]) {
     for (const [key, rows] of repeated(items, c => c.id)) errors.push(name + ' duplicate ID: ' + key);
-    for (const [, rows] of repeated(items, c => normalize(getTitle(c)))) errors.push(name + ' duplicate normalized title: ' + rows.map(c => c.id).join(', '));
+    for (const [, rows] of repeated(items, c => normalize(getTitle(c)))) {
+      if (name === 'Mag' && require('./approved-title-recurrences').approvedRepetition(rows)) continue;
+      errors.push(name + ' duplicate normalized title: ' + rows.map(c => c.id).join(', '));
+    }
     for (const [, rows] of repeated(items, c => { const body = normalize(getBody(c)); return body.length >= 200 ? body : ''; })) errors.push(name + ' duplicate full text: ' + rows.map(c => c.id).join(', '));
   }
   for (const [url] of repeated(data.editorial.contents, c => c.url)) errors.push('Mag duplicate URL: ' + url);
