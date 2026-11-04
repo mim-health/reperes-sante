@@ -4,6 +4,7 @@ on:
     branches: [feat/v0-magazine]
     paths:
       - '.github/workflows/seo-production-audit.yml'
+      - 'annuaire-fiches.html'
       - 'mentions-legales.html'
       - 'confidentialite.html'
       - 'contact.html'
