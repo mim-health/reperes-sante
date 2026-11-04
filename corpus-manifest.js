@@ -24,4 +24,5 @@ window.MACA_CORPUS_MANIFEST = Object.freeze([
   'backlog-audited-ado-scarifications-2026-10-27.js?v=20261027-valid1',
   'backlog-audited-lever-chaise-2026-10-30.js?v=20261030-validated1',
 'corpus-radar-revisions-2026-11-01.js?v=20261101-1',
+'backlog-audited-epaule-lot1-2026-11-04.js?v=20261104-approved1',
 ]);
