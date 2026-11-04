@@ -568,6 +568,19 @@
     },
     {
       "left": {
+        "id": "daily-entorse-20261011",
+        "title": "Cheville tordue : entorse ou fracture ?",
+        "type": "Mag"
+      },
+      "right": {
+        "id": "daily-entorse-cheville-rotation-20261104",
+        "title": "Cheville tordue : entorse ou fracture ?",
+        "type": "Mag"
+      },
+      "score": 1
+    },
+    {
+      "left": {
         "id": "daily-grippe-20261011",
         "title": "Passages aux urgences pour syndrome grippal en 2025–2026",
         "type": "Mag"
@@ -584,6 +597,6 @@
     "manifestFiles": 154,
     "rawFiches": 445,
     "canonicalFiches": 419,
-    "magContents": 239
+    "magContents": 249
   }
 }

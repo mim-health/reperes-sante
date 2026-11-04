@@ -1,12 +1,72 @@
 {
   "schemaVersion": 1,
-  "editionId": "edition-2026-11-02",
-  "editionDate": "2026-11-02",
-  "sourceFingerprint": "ec7c9b7bf7f0d2902c256a0061f1a9e675e9d04cabc861073b852ce5fb5ed8f2",
+  "editionId": "edition-2026-11-04",
+  "editionDate": "2026-11-04",
+  "sourceFingerprint": "abdb58cc7522330198a2578fa631de5dcfaf2281c683070dbd98b03a025e1a2e",
   "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-daily-sommeil-perte-poids-20261104",
+      "version": "997eeece085c65345eb0693f2dfde02be90df4d1b81eb79df912eeacf2a2870b",
+      "url": "article-daily-sommeil-perte-poids-20261104.html",
+      "date": "2026-11-04"
+    },
+    {
+      "id": "mag-daily-metformine-diabete-gestationnel-20261104",
+      "version": "53d649d9d38098cde4b2918f72c9d237d9ec7a6ee65f885e5eddb6e5929842fa",
+      "url": "article-daily-metformine-diabete-gestationnel-20261104.html",
+      "date": "2026-11-04"
+    },
+    {
+      "id": "mag-daily-sms-statines-20261104",
+      "version": "88860e6638f5b1c736959821bd277c23bd73afbf74f9caafb58b2dd11008e9b6",
+      "url": "article-daily-sms-statines-20261104.html",
+      "date": "2026-11-04"
+    },
+    {
+      "id": "mag-daily-biofeedback-migraine-20261104",
+      "version": "3a31960ac4063570d37791a3fb30cd9244642a9ccba6a17a0599de34cb8a19f1",
+      "url": "article-daily-biofeedback-migraine-20261104.html",
+      "date": "2026-11-04"
+    },
+    {
+      "id": "mag-daily-entorse-cheville-rotation-20261104",
+      "version": "2169d09994d33fdea1dd830e021f6072d97b1a6ca881490a94144d07dde8ea2d",
+      "url": "article-daily-entorse-cheville-rotation-20261104.html",
+      "date": "2026-11-04"
+    },
+    {
+      "id": "mag-daily-ecraser-comprimes-20261104",
+      "version": "ffddc134f9430793751de1835dfb4966d7805ebc335048353f27f20a63bcf5a3",
+      "url": "article-daily-ecraser-comprimes-20261104.html",
+      "date": "2026-11-04"
+    },
+    {
+      "id": "mag-daily-morbidite-maternelle-chiffre-20261104",
+      "version": "ac27744f9dc41cadacc43993be5429b52bdff90d53445a3f15cbb5e057e94093",
+      "url": "article-daily-morbidite-maternelle-chiffre-20261104.html",
+      "date": "2026-11-04"
+    },
+    {
+      "id": "mag-daily-autorisations-pediatriques-20261104",
+      "version": "e655bea006d3797c2536e1ee000460bc4aa04a77d976a086b406ed3f67610b1a",
+      "url": "article-daily-autorisations-pediatriques-20261104.html",
+      "date": "2026-11-04"
+    },
+    {
+      "id": "mag-daily-epicerie-mobile-20261104",
+      "version": "4f983ecaf5aa9d4d1a08206cc82d4a222c62369d97fae9d36aa632809ca4f777",
+      "url": "article-daily-epicerie-mobile-20261104.html",
+      "date": "2026-11-04"
+    },
+    {
+      "id": "mag-daily-preparation-hiver-20261104",
+      "version": "f5443a343963e72bef41844a452097e2a504f415c877b59e8f0f414011cbe6ef",
+      "url": "article-daily-preparation-hiver-20261104.html",
+      "date": "2026-11-04"
+    },
     {
       "id": "mag-daily-masld-fibrose-20261102",
       "version": "1644b7598a15c9eb1f32583612815ccae48ddd337cccaf576289e4e352ccb8e9",

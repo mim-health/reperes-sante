@@ -4487,5 +4487,195 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "1b572f3052407b4b52b9d78a449b1be785e197c7b956490525e4ebdfeb8c801a"
+  },
+  {
+    "id": "daily-sommeil-perte-poids-20261104",
+    "url": "article-daily-sommeil-perte-poids-20261104.html",
+    "title": "Se coucher plus tôt aide-t-il à perdre du poids ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Sommeil",
+    "date": "2026-11-04",
+    "status": "PUBLISHED",
+    "excerpt": "Une analyse exploratoire suggère une association entre un coucher plus précoce et une perte de poids, sans démontrer qu'avancer l'heure du coucher fait maigrir.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Sommeil"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "997eeece085c65345eb0693f2dfde02be90df4d1b81eb79df912eeacf2a2870b"
+  },
+  {
+    "id": "daily-metformine-diabete-gestationnel-20261104",
+    "url": "article-daily-metformine-diabete-gestationnel-20261104.html",
+    "title": "Diabète gestationnel : la metformine change-t-elle la prise en charge ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Grossesse",
+    "date": "2026-11-04",
+    "status": "PUBLISHED",
+    "excerpt": "Une publication récente relance la discussion sur la place de la metformine pendant la grossesse, sans remplacer les recommandations individualisées.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Grossesse"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "53d649d9d38098cde4b2918f72c9d237d9ec7a6ee65f885e5eddb6e5929842fa"
+  },
+  {
+    "id": "daily-sms-statines-20261104",
+    "url": "article-daily-sms-statines-20261104.html",
+    "title": "Un SMS peut-il aider à mieux prendre ses statines ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Cardiovasculaire",
+    "date": "2026-11-04",
+    "status": "PUBLISHED",
+    "excerpt": "Des rappels numériques ont été étudiés pour améliorer l'observance des traitements hypolipémiants, avec des bénéfices mesurés mais limités.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Cardiovasculaire"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "88860e6638f5b1c736959821bd277c23bd73afbf74f9caafb58b2dd11008e9b6"
+  },
+  {
+    "id": "daily-biofeedback-migraine-20261104",
+    "url": "article-daily-biofeedback-migraine-20261104.html",
+    "title": "Migraine : une application peut-elle vraiment réduire les crises ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Neurologie",
+    "date": "2026-11-04",
+    "status": "PUBLISHED",
+    "excerpt": "Un essai randomisé suggère qu'un dispositif de biofeedback connecté peut diminuer modestement le nombre de jours de migraine.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Neurologie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "3a31960ac4063570d37791a3fb30cd9244642a9ccba6a17a0599de34cb8a19f1"
+  },
+  {
+    "id": "daily-entorse-cheville-rotation-20261104",
+    "url": "article-daily-entorse-cheville-rotation-20261104.html",
+    "title": "Cheville tordue : entorse ou fracture ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Traumatologie",
+    "date": "2026-11-04",
+    "status": "PUBLISHED",
+    "excerpt": "Une cheville douloureuse après une torsion mérite une évaluation adaptée, notamment si l'appui est impossible ou si certains points osseux sont douloureux.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Traumatologie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "2169d09994d33fdea1dd830e021f6072d97b1a6ca881490a94144d07dde8ea2d"
+  },
+  {
+    "id": "daily-ecraser-comprimes-20261104",
+    "url": "article-daily-ecraser-comprimes-20261104.html",
+    "title": "Vrai ou faux : peut-on écraser tous les comprimés ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Médicaments",
+    "date": "2026-11-04",
+    "status": "PUBLISHED",
+    "excerpt": "Faux. Certains comprimés ne doivent jamais être écrasés, notamment les formes à libération prolongée ou gastro-résistantes.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Médicaments"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "ffddc134f9430793751de1835dfb4966d7805ebc335048353f27f20a63bcf5a3"
+  },
+  {
+    "id": "daily-morbidite-maternelle-chiffre-20261104",
+    "url": "article-daily-morbidite-maternelle-chiffre-20261104.html",
+    "title": "Le chiffre du jour : +40,5 %",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Grossesse",
+    "date": "2026-11-04",
+    "status": "PUBLISHED",
+    "excerpt": "Une analyse américaine rapporte une augmentation de 40,5 % de la morbidité maternelle sévère entre 2015 et 2022.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Grossesse"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "ac27744f9dc41cadacc43993be5429b52bdff90d53445a3f15cbb5e057e94093"
+  },
+  {
+    "id": "daily-autorisations-pediatriques-20261104",
+    "url": "article-daily-autorisations-pediatriques-20261104.html",
+    "title": "Médicaments pédiatriques : des essais parfois limités",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Pédiatrie",
+    "date": "2026-11-04",
+    "status": "PUBLISHED",
+    "excerpt": "Certaines autorisations accélérées reposent sur de petits effectifs, d'où l'importance du suivi après commercialisation.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Pédiatrie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "e655bea006d3797c2536e1ee000460bc4aa04a77d976a086b406ed3f67610b1a"
+  },
+  {
+    "id": "daily-epicerie-mobile-20261104",
+    "url": "article-daily-epicerie-mobile-20261104.html",
+    "title": "Alimentation : une épicerie mobile suffit-elle à changer les habitudes ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Nutrition",
+    "date": "2026-11-04",
+    "status": "PUBLISHED",
+    "excerpt": "L'accès aux aliments ne garantit pas, à lui seul, une amélioration mesurable de la qualité alimentaire.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Nutrition"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "4f983ecaf5aa9d4d1a08206cc82d4a222c62369d97fae9d36aa632809ca4f777"
+  },
+  {
+    "id": "daily-preparation-hiver-20261104",
+    "url": "article-daily-preparation-hiver-20261104.html",
+    "title": "Hiver : anticiper la pression sur le système de soins",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Prévention",
+    "date": "2026-11-04",
+    "status": "PUBLISHED",
+    "excerpt": "La préparation hivernale vise à renforcer la coordination des soins face aux infections respiratoires et aux tensions hospitalières.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "Prévention"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "f5443a343963e72bef41844a452097e2a504f415c877b59e8f0f414011cbe6ef"
   }
 ];
