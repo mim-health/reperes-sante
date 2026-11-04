@@ -32,6 +32,8 @@ on:
       - 'editorial-sfe-2026-10-11.json'
       - 'scripts/audit-content-duplicates.js'
       - 'scripts/audit-mag-images.js'
+      - 'scripts/theme-taxonomy.js'
+      - 'scripts/build-theme-hubs.js'
       - 'scripts/approved-title-recurrences.js'
       - 'scripts/test-content-duplicates.js'
       - 'scripts/mag-editorial.js'
@@ -90,6 +92,7 @@ jobs:
           node scripts/test-corpus-bundle-equivalence.js
           node scripts/build-static-seo-fiches.js
           node scripts/test-fiche-fast-load.js
+          node scripts/build-theme-hubs.js
           node scripts/build-sitemap-from-corpus.js
           node scripts/test-home-magazine.js
           node scripts/test-magazine-videos.js
