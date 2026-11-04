@@ -6,6 +6,8 @@ on:
       - '.github/workflows/seo-production-audit.yml'
       - 'annuaire-fiches.html'
       - 'backlog-audited-epaule-lot1-2026-11-04.js'
+      - 'backlog-audited-os-articulations-lot2-2026-11-04.js'
+      - 'corpus-os-articulations-enrichissement-2026-11-04.js'
       - 'themes/**'
       - 'scripts/build-theme-hubs.js'
       - 'mentions-legales.html'
