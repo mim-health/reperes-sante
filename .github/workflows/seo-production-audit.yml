@@ -5,6 +5,7 @@ on:
     paths:
       - '.github/workflows/seo-production-audit.yml'
       - 'annuaire-fiches.html'
+      - 'backlog-audited-epaule-lot1-2026-11-04.js'
       - 'themes/**'
       - 'scripts/build-theme-hubs.js'
       - 'mentions-legales.html'
