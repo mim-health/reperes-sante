@@ -31,6 +31,8 @@ on:
       - 'editorial/reviewed-corpus-overrides.json'
       - 'editorial-sfe-2026-10-11.json'
       - 'scripts/audit-content-duplicates.js'
+      - 'scripts/audit-mag-images.js'
+      - 'scripts/approved-title-recurrences.js'
       - 'scripts/test-content-duplicates.js'
       - 'scripts/mag-editorial.js'
       - 'scripts/test-mag-editorial.js'
