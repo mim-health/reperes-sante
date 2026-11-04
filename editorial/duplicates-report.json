@@ -594,9 +594,9 @@
     }
   ],
   "counts": {
-    "manifestFiles": 155,
-    "rawFiches": 450,
-    "canonicalFiches": 424,
+    "manifestFiles": 157,
+    "rawFiches": 453,
+    "canonicalFiches": 427,
     "magContents": 249
   }
 }
