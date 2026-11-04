@@ -5,7 +5,11 @@ const src=JSON.parse(fs.readFileSync(path.join(root,'editorial/content.json'),'u
 const report={total:src.contents.length,withImage:0,local:0,external:0,withoutImage:0,warnings:[],errors:[]};
 const isWeb=v=>/^https:\/\//i.test(v);
 for(const c of src.contents){
- if(!c.image){report.withoutImage++;// An article without a photograph is allowed; rights checks apply to supplied images.continue;}
+ if(!c.image){
+  // An article without a photograph is allowed; rights checks apply to supplied images.
+  report.withoutImage++;
+  continue;
+ }
  report.withImage++;
  const strict=c.medicalStatus==='VALIDATED'&&['PUBLISHED','SCHEDULED'].includes(c.publicationStatus);
  const newArticle=c.date>='2026-10-29'&&c.format==='article'&&strict;
