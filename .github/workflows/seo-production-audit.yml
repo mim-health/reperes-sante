@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: '22'
       - name: Audit complete public sitemap (read only)
-        run: node scripts/audit-production-seo.js
+        run: node scripts/audit-production-seo.js --check
       - name: Publish summary
         if: always()
         run: |
