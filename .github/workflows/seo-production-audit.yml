@@ -5,6 +5,8 @@ on:
     paths:
       - '.github/workflows/seo-production-audit.yml'
       - 'annuaire-fiches.html'
+      - 'themes/**'
+      - 'scripts/build-theme-hubs.js'
       - 'mentions-legales.html'
       - 'confidentialite.html'
       - 'contact.html'
