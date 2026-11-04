@@ -4,6 +4,9 @@ on:
     branches: [feat/v0-magazine]
     paths:
       - '.github/workflows/seo-production-audit.yml'
+      - 'mentions-legales.html'
+      - 'confidentialite.html'
+      - 'contact.html'
   workflow_dispatch:
 permissions:
   contents: read
