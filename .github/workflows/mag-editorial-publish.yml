@@ -51,6 +51,7 @@ on:
       - 'ipp-retrieval-policy.js'
       - 'search-v2-corpus-fallback.js'
       - 'scripts/test-ipp-retrieval.js'
+      - 'search-v2-retrouvabilite-pilot-fix.js'
       - '.github/workflows/mag-editorial-publish.yml'
   workflow_dispatch:
 permissions:
