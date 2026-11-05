@@ -9212,6 +9212,360 @@
         "evidence": "Validation médicale explicite de la conférence éditoriale du 4 novembre 2026 et autorisation de mise en ligne dans la conversation de pilotage.",
         "contentHash": "f5443a343963e72bef41844a452097e2a504f415c877b59e8f0f414011cbe6ef"
       }
+    },
+    {
+      "id": "daily-proteus-20261105",
+      "date": "2026-11-05",
+      "title": "Cancer de la prostate : un traitement avant et après la chirurgie peut-il limiter les récidives ?",
+      "answer": " Cancer de la prostate : un traitement avant et après la chirurgie peut-il limiter les récidives ? Chez certains hommes atteints d'un cancer de la prostate localisé à haut risque, l'opération ne suffit pas touj",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 5 NOVEMBRE 2026</p><h1>Cancer de la prostate : un traitement avant et après la chirurgie peut-il limiter les récidives ?</h1><p>Chez certains hommes atteints d'un cancer de la prostate localisé à haut risque, l'opération ne suffit pas toujours à empêcher une récidive. L'étude PROTEUS explore une stratégie associant une hormonothérapie renforcée à la chirurgie.</p><h2>Pourquoi cette étude ?</h2><p>La prostatectomie radicale peut traiter un cancer localisé. Toutefois, lorsque le risque de récidive est élevé, des cellules tumorales peuvent persister. Des traitements avant ou après l'opération sont donc évalués pour réduire ce risque.</p><h2>Que faut-il comprendre des résultats ?</h2><p>Les résultats présentés en 2026 suggèrent une amélioration de la survie sans événement dans la population étudiée avec une intensification hormonale périopératoire. Ce critère rassemble plusieurs événements, comme la progression ou la récidive. Il ne doit pas être confondu avec une preuve d'allongement de la survie globale.</p><h2>Quelles limites ?</h2><p>Les traitements hormonaux peuvent entraîner fatigue, bouffées de chaleur, troubles sexuels, effets métaboliques et autres événements indésirables. Le bénéfice et la tolérance doivent être appréciés ensemble. Ces résultats ne signifient pas que tous les patients opérés doivent recevoir une hormonothérapie renforcée.</p><h2>Que faire en pratique ?</h2><p>Un homme concerné peut demander à son équipe ce qui définit son niveau de risque, quels traitements sont validés dans sa situation et quels effets secondaires sont attendus. La décision repose sur une discussion spécialisée et pluridisciplinaire.</p><p><strong>À retenir :</strong> PROTEUS ouvre une piste thérapeutique pour certains cancers à haut risque, sans justifier une intensification systématique.</p><h2>Sources</h2><p><a href=\"https://clinicaltrials.gov/search?term=PROTEUS%20apalutamide%20prostate\">Référence 1</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-proteus-20261105.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Prévention",
+      "keywords": [
+        "proteus"
+      ],
+      "sources": [
+        {
+          "label": "Référence 1",
+          "url": "https://clinicaltrials.gov/search?term=PROTEUS%20apalutamide%20prostate"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-05",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de la conférence éditoriale du 5 novembre et demande de mise en ligne dans le fil de pilotage.",
+        "contentHash": "ba2465c73391075a4916cb4f1b1c140821a4010e436fbd441e3992c590a4f613"
+      }
+    },
+    {
+      "id": "daily-harcelement-20261105",
+      "date": "2026-11-05",
+      "title": "Harcèlement scolaire : quels signes doivent alerter ?",
+      "answer": " Harcèlement scolaire : quels signes doivent alerter ? Un enfant qui ne veut plus aller à l'école n'est pas forcément victime de harcèlement. Mais des changements persistants doivent conduire à lui parler et à ",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 5 NOVEMBRE 2026</p><h1>Harcèlement scolaire : quels signes doivent alerter ?</h1><p>Un enfant qui ne veut plus aller à l'école n'est pas forcément victime de harcèlement. Mais des changements persistants doivent conduire à lui parler et à chercher de l'aide.</p><h2>Reconnaître une situation de harcèlement</h2><p>Le harcèlement se caractérise par des violences répétées, verbales, psychologiques ou physiques, avec un déséquilibre de pouvoir. Il peut aussi se poursuivre en ligne. Isolement, maux de ventre, troubles du sommeil, baisse des résultats, anxiété ou affaires détériorées peuvent constituer des signaux, sans être spécifiques.</p><h2>Comment réagir ?</h2><p>Écouter sans minimiser ni culpabiliser. Noter les faits, conserver les messages en cas de cyberharcèlement et contacter rapidement l'établissement. Éviter de demander à l'enfant de régler seul la situation. En France, le 3018 accompagne les victimes de harcèlement et de violences numériques.</p><h2>Quand consulter ?</h2><p>Si l'enfant présente une souffrance psychologique, un refus scolaire, une anxiété importante ou des idées suicidaires, une évaluation médicale est nécessaire. En cas de danger immédiat, appeler les secours.</p><p><strong>À retenir :</strong> croire la parole de l'enfant, documenter et mobiliser les adultes responsables.</p><h2>Sources</h2><p><a href=\"https://www.education.gouv.fr/non-au-harcelement\">Référence 1</a></p><p><a href=\"https://3018.fr/\">Référence 2</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-harcelement-20261105.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Santé mentale",
+      "keywords": [
+        "harcelement"
+      ],
+      "sources": [
+        {
+          "label": "Référence 1",
+          "url": "https://www.education.gouv.fr/non-au-harcelement"
+        },
+        {
+          "label": "Référence 2",
+          "url": "https://3018.fr/"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-05",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de la conférence éditoriale du 5 novembre et demande de mise en ligne dans le fil de pilotage.",
+        "contentHash": "2696e8eb9152eddddce6440285a64fee0951eeb5bc9037d343e6063c900249dd"
+      }
+    },
+    {
+      "id": "daily-adolescents-20261105",
+      "date": "2026-11-05",
+      "title": "Adolescents : comment retrouver le plaisir de bouger ?",
+      "answer": " Adolescents : comment retrouver le plaisir de bouger ? Entre les cours, les devoirs et les écrans, l'activité physique peut reculer à l'adolescence. Pourtant, bouger contribue à la santé du cœur, des os, au so",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 5 NOVEMBRE 2026</p><h1>Adolescents : comment retrouver le plaisir de bouger ?</h1><p>Entre les cours, les devoirs et les écrans, l'activité physique peut reculer à l'adolescence. Pourtant, bouger contribue à la santé du cœur, des os, au sommeil et au bien-être.</p><h2>Quel objectif ?</h2><p>L'Organisation mondiale de la santé recommande en moyenne au moins 60 minutes par jour d'activité physique d'intensité modérée à soutenue chez les 5-17 ans, sur l'ensemble de la semaine. L'objectif n'implique pas nécessairement une pratique sportive organisée.</p><h2>Quelles activités comptent ?</h2><p>Marche rapide, vélo, jeux, danse, sports collectifs et déplacements actifs sont utiles. L'important est de proposer des occasions régulières de bouger et de tenir compte des goûts, des capacités et des contraintes de chaque adolescent.</p><h2>Comment aider sans culpabiliser ?</h2><p>Proposer une activité avec des amis, favoriser les trajets à pied et laisser l'adolescent choisir sont souvent plus efficaces qu'une injonction. Commencer modestement est bénéfique, même si la recommandation n'est pas immédiatement atteinte.</p><p><strong>À retenir :</strong> toute activité compte ; la régularité et le plaisir favorisent la durée.</p><h2>Sources</h2><p><a href=\"https://www.who.int/news-room/fact-sheets/detail/physical-activity\">Référence 1</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-adolescents-20261105.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Adolescents",
+      "keywords": [
+        "adolescents"
+      ],
+      "sources": [
+        {
+          "label": "Référence 1",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/physical-activity"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-05",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de la conférence éditoriale du 5 novembre et demande de mise en ligne dans le fil de pilotage.",
+        "contentHash": "9b8a298c325359b72cab965d160d4d0715d6d78fbcd19e452c4d7a66e4adb3cc"
+      }
+    },
+    {
+      "id": "daily-enzarad-20261105",
+      "date": "2026-11-05",
+      "title": "Cancer de la prostate : un traitement hormonal plus puissant est-il toujours meilleur ?",
+      "answer": " Cancer de la prostate : un traitement hormonal plus puissant est-il toujours meilleur ? Dans les cancers de la prostate à haut risque traités par radiothérapie, ajouter un médicament plus puissant ne garantit ",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 5 NOVEMBRE 2026</p><h1>Cancer de la prostate : un traitement hormonal plus puissant est-il toujours meilleur ?</h1><p>Dans les cancers de la prostate à haut risque traités par radiothérapie, ajouter un médicament plus puissant ne garantit pas un meilleur résultat. L'essai ENZARAD en fournit une illustration.</p><h2>Quel était l'objectif ?</h2><p>Les chercheurs ont comparé une stratégie comportant de l'enzalutamide à un traitement hormonal conventionnel, chez des hommes recevant également une radiothérapie et une suppression androgénique prolongée.</p><h2>Qu'a montré l'essai ?</h2><p>La survie sans métastases à huit ans était de 74 % dans le groupe enzalutamide contre 72 % dans le groupe comparateur. La différence n'était pas statistiquement significative. Autrement dit, cet essai ne démontre pas que l'intensification systématique améliore le critère principal étudié.</p><h2>Pourquoi est-ce important ?</h2><p>Un traitement peut augmenter les contraintes ou les effets indésirables sans bénéfice démontré pour tous. Le résultat ne remet pas en cause d'autres stratégies d'intensification dont le bénéfice a été établi dans des populations différentes.</p><h2>En pratique</h2><p>La stratégie doit être individualisée selon le stade, les facteurs de risque, les autres maladies et les préférences du patient. Les résultats d'ENZARAD ne doivent pas être confondus avec ceux de PROTEUS, qui porte sur une autre situation et une autre stratégie.</p><p><strong>À retenir :</strong> plus de traitement n'est pas toujours synonyme de meilleurs résultats.</p><h2>Sources</h2><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/?term=ENZARAD%20enzalutamide\">Référence 1</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-enzarad-20261105.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Prévention",
+      "keywords": [
+        "enzarad"
+      ],
+      "sources": [
+        {
+          "label": "Référence 1",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=ENZARAD%20enzalutamide"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-05",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de la conférence éditoriale du 5 novembre et demande de mise en ligne dans le fil de pilotage.",
+        "contentHash": "a6465284382915963bdd3ae5f803142f1feb4c5c0bfde95b77120275c22f9777"
+      }
+    },
+    {
+      "id": "daily-crampes-20261105",
+      "date": "2026-11-05",
+      "title": "Crampes musculaires : causes et solutions",
+      "answer": "Les crampes sont des contractions involontaires et douloureuses, souvent bénignes. Étirement doux, hydratation adaptée et recherche d’une cause en cas de répétition peuvent aider.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 5 NOVEMBRE 2026</p><h1>Crampes musculaires : causes et solutions</h1><p class=\"lead\">Les crampes sont des contractions involontaires et douloureuses, souvent bénignes. Étirement doux, hydratation adaptée et recherche d’une cause en cas de répétition peuvent aider.</p><h2>Ce qu’il faut retenir</h2><p>Les crampes sont des contractions involontaires et douloureuses, souvent bénignes. Étirement doux, hydratation adaptée et recherche d’une cause en cas de répétition peuvent aider.</p><p>Ces informations générales ne remplacent pas un avis médical personnalisé.</p><h2>Sources</h2><p><a href=\"https://www.ameli.fr/assure/sante/themes/crampe-musculaire/\">Référence 1</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-crampes-20261105.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Prévention",
+      "keywords": [
+        "crampes"
+      ],
+      "sources": [
+        {
+          "label": "Référence 1",
+          "url": "https://www.ameli.fr/assure/sante/themes/crampe-musculaire/"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "crampes-musculaires-causes",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-05",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de la conférence éditoriale du 5 novembre et demande de mise en ligne dans le fil de pilotage.",
+        "contentHash": "79c1e97bf54e1589afba926e46e990dbe61f05f89893c058fe974c5bc801d5a3"
+      }
+    },
+    {
+      "id": "daily-sport-60-20261105",
+      "date": "2026-11-05",
+      "title": "Vrai ou faux : 60 minutes de sport doivent être faites d’un seul coup ?",
+      "answer": "Faux. L’activité physique des adolescents peut se répartir au fil de la journée, notamment par la marche, le vélo, les jeux et la danse.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 5 NOVEMBRE 2026</p><h1>Vrai ou faux : 60 minutes de sport doivent être faites d’un seul coup ?</h1><p class=\"lead\">Faux. L’activité physique des adolescents peut se répartir au fil de la journée, notamment par la marche, le vélo, les jeux et la danse.</p><h2>Ce qu’il faut retenir</h2><p>Faux. L’activité physique des adolescents peut se répartir au fil de la journée, notamment par la marche, le vélo, les jeux et la danse.</p><p>Ces informations générales ne remplacent pas un avis médical personnalisé.</p><h2>Sources</h2><p><a href=\"https://www.who.int/news-room/fact-sheets/detail/physical-activity\">Référence 1</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-sport-60-20261105.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Prévention",
+      "keywords": [
+        "sport-60"
+      ],
+      "sources": [
+        {
+          "label": "Référence 1",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/physical-activity"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-05",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de la conférence éditoriale du 5 novembre et demande de mise en ligne dans le fil de pilotage.",
+        "contentHash": "2b9608e259f56eb48690b2ee4ddd745bf6b70dbed18cc33625a55391727bc892"
+      }
+    },
+    {
+      "id": "daily-chiffre-60-20261105",
+      "date": "2026-11-05",
+      "title": "60 minutes : le repère quotidien pour les adolescents",
+      "answer": "L’OMS recommande aux 5–17 ans une moyenne de 60 minutes par jour d’activité physique modérée à intense sur la semaine.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 5 NOVEMBRE 2026</p><h1>60 minutes : le repère quotidien pour les adolescents</h1><p class=\"lead\">L’OMS recommande aux 5–17 ans une moyenne de 60 minutes par jour d’activité physique modérée à intense sur la semaine.</p><h2>Ce qu’il faut retenir</h2><p>L’OMS recommande aux 5–17 ans une moyenne de 60 minutes par jour d’activité physique modérée à intense sur la semaine.</p><p>Ces informations générales ne remplacent pas un avis médical personnalisé.</p><h2>Sources</h2><p><a href=\"https://www.who.int/news-room/fact-sheets/detail/physical-activity\">Référence 1</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-chiffre-60-20261105.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Prévention",
+      "keywords": [
+        "chiffre-60"
+      ],
+      "sources": [
+        {
+          "label": "Référence 1",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/physical-activity"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-05",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de la conférence éditoriale du 5 novembre et demande de mise en ligne dans le fil de pilotage.",
+        "contentHash": "accf88933f7c6fc329a969817b0423576f0033c6fcac4e98bf89f1ddab13e39d"
+      }
+    },
+    {
+      "id": "daily-3018-20261105",
+      "date": "2026-11-05",
+      "title": "Harcèlement scolaire : le 3018 pour demander de l’aide",
+      "answer": "Le 3018 est un numéro gratuit d’accompagnement pour les victimes de harcèlement et de violences numériques et leurs proches.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 5 NOVEMBRE 2026</p><h1>Harcèlement scolaire : le 3018 pour demander de l’aide</h1><p class=\"lead\">Le 3018 est un numéro gratuit d’accompagnement pour les victimes de harcèlement et de violences numériques et leurs proches.</p><h2>Ce qu’il faut retenir</h2><p>Le 3018 est un numéro gratuit d’accompagnement pour les victimes de harcèlement et de violences numériques et leurs proches.</p><p>Ces informations générales ne remplacent pas un avis médical personnalisé.</p><h2>Sources</h2><p><a href=\"https://3018.fr/\">Référence 1</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-3018-20261105.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Prévention",
+      "keywords": [
+        "3018"
+      ],
+      "sources": [
+        {
+          "label": "Référence 1",
+          "url": "https://3018.fr/"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-05",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de la conférence éditoriale du 5 novembre et demande de mise en ligne dans le fil de pilotage.",
+        "contentHash": "62b7cb60765bd796d40d6c708007745021389a955b767f64808414706e122635"
+      }
+    },
+    {
+      "id": "daily-ecouter-20261105",
+      "date": "2026-11-05",
+      "title": "Harcèlement : écouter et conserver les preuves",
+      "answer": "En cas de soupçon de harcèlement, écouter sans minimiser, conserver les messages et alerter l’établissement scolaire sont des démarches utiles.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 5 NOVEMBRE 2026</p><h1>Harcèlement : écouter et conserver les preuves</h1><p class=\"lead\">En cas de soupçon de harcèlement, écouter sans minimiser, conserver les messages et alerter l’établissement scolaire sont des démarches utiles.</p><h2>Ce qu’il faut retenir</h2><p>En cas de soupçon de harcèlement, écouter sans minimiser, conserver les messages et alerter l’établissement scolaire sont des démarches utiles.</p><p>Ces informations générales ne remplacent pas un avis médical personnalisé.</p><h2>Sources</h2><p><a href=\"https://www.education.gouv.fr/non-au-harcelement\">Référence 1</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-ecouter-20261105.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Prévention",
+      "keywords": [
+        "ecouter"
+      ],
+      "sources": [
+        {
+          "label": "Référence 1",
+          "url": "https://www.education.gouv.fr/non-au-harcelement"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-05",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de la conférence éditoriale du 5 novembre et demande de mise en ligne dans le fil de pilotage.",
+        "contentHash": "051705cb00f6f860794e04cf8b3f01115a8d55e1e7368518810f3879d569084f"
+      }
+    },
+    {
+      "id": "daily-bouger-20261105",
+      "date": "2026-11-05",
+      "title": "Bouger : les déplacements actifs comptent aussi",
+      "answer": "Aller à pied ou à vélo, jouer ou danser participent à l’activité physique recommandée pour les adolescents.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 5 NOVEMBRE 2026</p><h1>Bouger : les déplacements actifs comptent aussi</h1><p class=\"lead\">Aller à pied ou à vélo, jouer ou danser participent à l’activité physique recommandée pour les adolescents.</p><h2>Ce qu’il faut retenir</h2><p>Aller à pied ou à vélo, jouer ou danser participent à l’activité physique recommandée pour les adolescents.</p><p>Ces informations générales ne remplacent pas un avis médical personnalisé.</p><h2>Sources</h2><p><a href=\"https://www.who.int/news-room/fact-sheets/detail/physical-activity\">Référence 1</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-bouger-20261105.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Prévention",
+      "keywords": [
+        "bouger"
+      ],
+      "sources": [
+        {
+          "label": "Référence 1",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/physical-activity"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-05",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite de la conférence éditoriale du 5 novembre et demande de mise en ligne dans le fil de pilotage.",
+        "contentHash": "6cc77fca0f81df4990f49fb9be61d0f58908c134f0692ee6ca27fa74dea1030a"
+      }
     }
   ],
   "editions": [
@@ -10452,6 +10806,69 @@
         "validation": "Validation médicale explicite et autorisation de publication du 4 novembre 2026, confirmées dans le fil de pilotage.",
         "veille": "Sommeil et poids, metformine et diabète gestationnel, SMS et statines, biofeedback migraine, comprimés écrasés, morbidité maternelle.",
         "corpusImpact": "Publication sans nouvelle photographie selon instruction expresse ; articles sourcés ; aucune nouvelle fiche canonique créée."
+      }
+    },
+    {
+      "id": "edition-2026-11-05",
+      "date": "2026-11-05",
+      "publishAt": "2026-11-05T08:00:00+01:00",
+      "complete": true,
+      "items": [
+        {
+          "contentId": "daily-proteus-20261105",
+          "slot": "À LA UNE",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-harcelement-20261105",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-adolescents-20261105",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-enzarad-20261105",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-crampes-20261105",
+          "slot": "FICHE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-sport-60-20261105",
+          "slot": "VRAI OU FAUX",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-chiffre-60-20261105",
+          "slot": "LE CHIFFRE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-3018-20261105",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-ecouter-20261105",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-bouger-20261105",
+          "slot": "DONNÉES",
+          "icon": "•"
+        }
+      ],
+      "editorialConference": {
+        "validation": "Conférence validée le 5 novembre 2026 ; autorisation de mise en ligne.",
+        "veille": "PROTEUS, ENZARAD, harcèlement scolaire, activité physique des adolescents.",
+        "corpusImpact": "Sans nouvelle illustration selon instruction expresse."
       }
     }
   ]
