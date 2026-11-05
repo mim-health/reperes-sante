@@ -19,7 +19,7 @@ function check(x){const ids=new Set(),urls=new Set();for(const c of x.contents){
      const article=byContentId.get(item.contentId);
      if(!article)continue; // Existing edition reference validation reports missing ids.
      const body=plain(article.html).replace(/^LE MAG[^\n]*\n?/i,'').replace(/Sources[\s\S]*$/i,'').trim();
-     const wordCount=(body.match(/[\\p{L}\\p{N}]+(?:[’'-][\\p{L}\\p{N}]+)*/gu)||[]).length;
+     const wordCount=(body.match(/[\p{L}\p{N}]+(?:[’'-][\p{L}\p{N}]+)*/gu)||[]).length;
      if(wordCount<400)throw Error('Article principal trop court ('+wordCount+'/400 mots) : '+article.id+' ['+ed.date+' / '+item.slot+']');
    }
  }
