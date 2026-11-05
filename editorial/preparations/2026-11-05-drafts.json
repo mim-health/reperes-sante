@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-05",
+  "status": "PREPARED_NOT_PUBLISHED",
+  "edition": {
+    "headline": "PROTEUS — cancer de la prostate",
+    "threeMinutes": [
+      "Harcèlement scolaire : reconnaître les signes et agir",
+      "Activité physique des adolescents : comment les aider à bouger ?",
+      "ENZARAD : intensifier l'hormonothérapie améliore-t-il les résultats ?"
+    ],
+    "fiche": "Crampes musculaires : causes et solutions"
+  },
+  "publicationRequirements": [
+    "Vérifier les sources originales et chiffres de PROTEUS et ENZARAD",
+    "Finaliser les 10 blocs de l'édition",
+    "Calculer les empreintes SHA-256 de validation",
+    "Intégrer editorial/content.json et contrôler GitHub Actions"
+  ],
+  "imagePolicy": "Aucune nouvelle illustration obligatoire; ne pas bloquer la publication sur ce motif.",
+  "texts": [
+    {
+      "slot": "À LA UNE",
+      "title": "Cancer de la prostate : un traitement avant et après la chirurgie peut-il limiter les récidives ?",
+      "html": "<h1>Cancer de la prostate : un traitement avant et après la chirurgie peut-il limiter les récidives ?</h1><p>Chez certains hommes atteints d'un cancer de la prostate localisé à haut risque, l'opération ne suffit pas toujours à empêcher une récidive. L'étude PROTEUS explore une stratégie associant une hormonothérapie renforcée à la chirurgie.</p><h2>Pourquoi cette étude ?</h2><p>La prostatectomie radicale peut traiter un cancer localisé. Toutefois, lorsque le risque de récidive est élevé, des cellules tumorales peuvent persister. Des traitements avant ou après l'opération sont donc évalués pour réduire ce risque.</p><h2>Que faut-il comprendre des résultats ?</h2><p>Les résultats présentés en 2026 suggèrent une amélioration de la survie sans événement dans la population étudiée avec une intensification hormonale périopératoire. Ce critère rassemble plusieurs événements, comme la progression ou la récidive. Il ne doit pas être confondu avec une preuve d'allongement de la survie globale.</p><h2>Quelles limites ?</h2><p>Les traitements hormonaux peuvent entraîner fatigue, bouffées de chaleur, troubles sexuels, effets métaboliques et autres événements indésirables. Le bénéfice et la tolérance doivent être appréciés ensemble. Ces résultats ne signifient pas que tous les patients opérés doivent recevoir une hormonothérapie renforcée.</p><h2>Que faire en pratique ?</h2><p>Un homme concerné peut demander à son équipe ce qui définit son niveau de risque, quels traitements sont validés dans sa situation et quels effets secondaires sont attendus. La décision repose sur une discussion spécialisée et pluridisciplinaire.</p><p><strong>À retenir :</strong> PROTEUS ouvre une piste thérapeutique pour certains cancers à haut risque, sans justifier une intensification systématique.</p>",
+      "sources": [
+        "https://clinicaltrials.gov/search?term=PROTEUS%20apalutamide%20prostate"
+      ]
+    },
+    {
+      "slot": "À LIRE EN 3 MIN",
+      "title": "Harcèlement scolaire : quels signes doivent alerter ?",
+      "html": "<h1>Harcèlement scolaire : quels signes doivent alerter ?</h1><p>Un enfant qui ne veut plus aller à l'école n'est pas forcément victime de harcèlement. Mais des changements persistants doivent conduire à lui parler et à chercher de l'aide.</p><h2>Reconnaître une situation de harcèlement</h2><p>Le harcèlement se caractérise par des violences répétées, verbales, psychologiques ou physiques, avec un déséquilibre de pouvoir. Il peut aussi se poursuivre en ligne. Isolement, maux de ventre, troubles du sommeil, baisse des résultats, anxiété ou affaires détériorées peuvent constituer des signaux, sans être spécifiques.</p><h2>Comment réagir ?</h2><p>Écouter sans minimiser ni culpabiliser. Noter les faits, conserver les messages en cas de cyberharcèlement et contacter rapidement l'établissement. Éviter de demander à l'enfant de régler seul la situation. En France, le 3018 accompagne les victimes de harcèlement et de violences numériques.</p><h2>Quand consulter ?</h2><p>Si l'enfant présente une souffrance psychologique, un refus scolaire, une anxiété importante ou des idées suicidaires, une évaluation médicale est nécessaire. En cas de danger immédiat, appeler les secours.</p><p><strong>À retenir :</strong> croire la parole de l'enfant, documenter et mobiliser les adultes responsables.</p>",
+      "sources": [
+        "https://www.education.gouv.fr/non-au-harcelement",
+        "https://3018.fr/"
+      ]
+    },
+    {
+      "slot": "À LIRE EN 3 MIN",
+      "title": "Adolescents : comment retrouver le plaisir de bouger ?",
+      "html": "<h1>Adolescents : comment retrouver le plaisir de bouger ?</h1><p>Entre les cours, les devoirs et les écrans, l'activité physique peut reculer à l'adolescence. Pourtant, bouger contribue à la santé du cœur, des os, au sommeil et au bien-être.</p><h2>Quel objectif ?</h2><p>L'Organisation mondiale de la santé recommande en moyenne au moins 60 minutes par jour d'activité physique d'intensité modérée à soutenue chez les 5-17 ans, sur l'ensemble de la semaine. L'objectif n'implique pas nécessairement une pratique sportive organisée.</p><h2>Quelles activités comptent ?</h2><p>Marche rapide, vélo, jeux, danse, sports collectifs et déplacements actifs sont utiles. L'important est de proposer des occasions régulières de bouger et de tenir compte des goûts, des capacités et des contraintes de chaque adolescent.</p><h2>Comment aider sans culpabiliser ?</h2><p>Proposer une activité avec des amis, favoriser les trajets à pied et laisser l'adolescent choisir sont souvent plus efficaces qu'une injonction. Commencer modestement est bénéfique, même si la recommandation n'est pas immédiatement atteinte.</p><p><strong>À retenir :</strong> toute activité compte ; la régularité et le plaisir favorisent la durée.</p>",
+      "sources": [
+        "https://www.who.int/news-room/fact-sheets/detail/physical-activity"
+      ]
+    },
+    {
+      "slot": "À LIRE EN 3 MIN",
+      "title": "Cancer de la prostate : un traitement hormonal plus puissant est-il toujours meilleur ?",
+      "html": "<h1>Cancer de la prostate : un traitement hormonal plus puissant est-il toujours meilleur ?</h1><p>Dans les cancers de la prostate à haut risque traités par radiothérapie, ajouter un médicament plus puissant ne garantit pas un meilleur résultat. L'essai ENZARAD en fournit une illustration.</p><h2>Quel était l'objectif ?</h2><p>Les chercheurs ont comparé une stratégie comportant de l'enzalutamide à un traitement hormonal conventionnel, chez des hommes recevant également une radiothérapie et une suppression androgénique prolongée.</p><h2>Qu'a montré l'essai ?</h2><p>La survie sans métastases à huit ans était de 74 % dans le groupe enzalutamide contre 72 % dans le groupe comparateur. La différence n'était pas statistiquement significative. Autrement dit, cet essai ne démontre pas que l'intensification systématique améliore le critère principal étudié.</p><h2>Pourquoi est-ce important ?</h2><p>Un traitement peut augmenter les contraintes ou les effets indésirables sans bénéfice démontré pour tous. Le résultat ne remet pas en cause d'autres stratégies d'intensification dont le bénéfice a été établi dans des populations différentes.</p><h2>En pratique</h2><p>La stratégie doit être individualisée selon le stade, les facteurs de risque, les autres maladies et les préférences du patient. Les résultats d'ENZARAD ne doivent pas être confondus avec ceux de PROTEUS, qui porte sur une autre situation et une autre stratégie.</p><p><strong>À retenir :</strong> plus de traitement n'est pas toujours synonyme de meilleurs résultats.</p>",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=ENZARAD%20enzalutamide"
+      ]
+    }
+  ]
+}
