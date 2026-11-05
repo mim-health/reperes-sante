@@ -10,6 +10,19 @@ function indexable(c){return eligible(c)&&!c.assistantPolicy&&(c.format!=='video
 function read(root=ROOT){const x=JSON.parse(fs.readFileSync(path.join(root,'editorial/content.json'),'utf8'));if(x.schemaVersion!==1||!Array.isArray(x.contents)||!Array.isArray(x.editions))throw Error('Invalid editorial source');return x;}
 function check(x){const ids=new Set(),urls=new Set();for(const c of x.contents){if(!/^[a-z0-9][a-z0-9-]*$/i.test(c.id)||ids.has(c.id))throw Error('Invalid/duplicate id '+c.id);ids.add(c.id);if(!/^[a-z0-9][a-z0-9-]*\.html$/.test(c.url)||urls.has(c.url))throw Error('Invalid/duplicate URL '+c.url);urls.add(c.url);if(!c.title||!/^\d{4}-\d{2}-\d{2}$/.test(c.date))throw Error('Missing title/date '+c.id);if(c.medicalStatus==='VALIDATED'&&c.validation?.contentHash!==digest(c))throw Error('New medical validation required: '+c.id);if(c.medicalStatus==='VALIDATED'&&(!c.validation?.evidence||!c.validation?.validatedAt))throw Error('Missing validation provenance '+c.id);if(c.image&&c.medicalStatus==='VALIDATED'&&(!c.imageAlt||!c.imageCredit||!c.imageSource||!c.imageLicense))throw Error('Missing image rights '+c.id);if(c.medicalStatus==='VALIDATED'&&(!c.sources?.length||!c.html))throw Error('Missing full content or sources '+c.id);}
  const norm=v=>String(v||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();const titles=new Map(),bodies=new Set();for(const c of x.contents){const title=norm(c.title),body=norm(plain(c.html));const prior=titles.get(title);if(prior&&!require('./approved-title-recurrences').approvedRepetition([prior,c]))throw Error('Duplicate normalized title '+c.id);if(!prior)titles.set(title,c);if(body.length>=200&&bodies.has(body))throw Error('Duplicate full text '+c.id);if(body.length>=200)bodies.add(body);}
+ // From 2026-11-05 onward, substantive headline/3-minute articles must meet the editorial floor.
+ // Historical editions are deliberately grandfathered in to preserve their provenance.
+ const cutoff='2026-11-05',longSlots=new Set(['À LA UNE','À LIRE EN 3 MIN']);
+ const byContentId=new Map(x.contents.map(c=>[c.id,c]));
+ for(const ed of x.editions){if(ed.date<cutoff)continue;
+   for(const item of ed.items){if(!longSlots.has(item.slot))continue;
+     const article=byContentId.get(item.contentId);
+     if(!article)continue; // Existing edition reference validation reports missing ids.
+     const body=plain(article.html).replace(/^LE MAG[^\n]*\n?/i,'').replace(/Sources[\s\S]*$/i,'').trim();
+     const wordCount=(body.match(/[\\p{L}\\p{N}]+(?:[’'-][\\p{L}\\p{N}]+)*/gu)||[]).length;
+     if(wordCount<400)throw Error('Article principal trop court ('+wordCount+'/400 mots) : '+article.id+' ['+ed.date+' / '+item.slot+']');
+   }
+ }
  const editionIds=new Set();for(const e of x.editions){if(editionIds.has(e.id)||!e.date||!Array.isArray(e.items)||!e.items.every(i=>ids.has(i.contentId)))throw Error('Invalid edition '+e.id);editionIds.add(e.id);if(new Set(e.items.map(i=>i.contentId)).size!==e.items.length)throw Error('Repeated edition item '+e.id);if(!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(Z|[+-]\d{2}:\d{2})$/.test(e.publishAt)||!Number.isFinite(Date.parse(e.publishAt)))throw Error('Explicit timezone required '+e.id);}
 }
 function localDate(now){return new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Paris',year:'numeric',month:'2-digit',day:'2-digit'}).format(now);}
