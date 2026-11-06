@@ -4677,5 +4677,366 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "f5443a343963e72bef41844a452097e2a504f415c877b59e8f0f414011cbe6ef"
+  },
+  {
+    "id": "daily-proteus-20261105",
+    "url": "article-daily-proteus-20261105.html",
+    "title": "Cancer de la prostate : un traitement avant et après la chirurgie peut-il limiter les récidives ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Prévention",
+    "date": "2026-11-05",
+    "status": "PUBLISHED",
+    "excerpt": " Cancer de la prostate : un traitement avant et après la chirurgie peut-il limiter les récidives ? Chez certains hommes atteints d'un cancer de la prostate localisé à haut risque, l'opération ne suffit pas touj",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "proteus"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "f1fcee45acff14b50f9774bfad55646cb88373fc745f3ba2eea4487715d28364"
+  },
+  {
+    "id": "daily-harcelement-20261105",
+    "url": "article-daily-harcelement-20261105.html",
+    "title": "Harcèlement scolaire : quels signes doivent alerter ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Santé mentale",
+    "date": "2026-11-05",
+    "status": "PUBLISHED",
+    "excerpt": " Harcèlement scolaire : quels signes doivent alerter ? Un enfant qui ne veut plus aller à l'école n'est pas forcément victime de harcèlement. Mais des changements persistants doivent conduire à lui parler et à ",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "harcelement"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "f10878b1cc05086ff6866084d9a8d74a5d8a3c9b9e2313f91dcd217b4960a1f6"
+  },
+  {
+    "id": "daily-adolescents-20261105",
+    "url": "article-daily-adolescents-20261105.html",
+    "title": "Adolescents : comment retrouver le plaisir de bouger ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Adolescents",
+    "date": "2026-11-05",
+    "status": "PUBLISHED",
+    "excerpt": " Adolescents : comment retrouver le plaisir de bouger ? Entre les cours, les devoirs et les écrans, l'activité physique peut reculer à l'adolescence. Pourtant, bouger contribue à la santé du cœur, des os, au so",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "adolescents"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "35d14c208cf16798705493efff79ad4b24e576d858943e03e850480f44f2ad03"
+  },
+  {
+    "id": "daily-enzarad-20261105",
+    "url": "article-daily-enzarad-20261105.html",
+    "title": "Cancer de la prostate : un traitement hormonal plus puissant est-il toujours meilleur ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Prévention",
+    "date": "2026-11-05",
+    "status": "PUBLISHED",
+    "excerpt": " Cancer de la prostate : un traitement hormonal plus puissant est-il toujours meilleur ? Dans les cancers de la prostate à haut risque traités par radiothérapie, ajouter un médicament plus puissant ne garantit ",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "enzarad"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "b33c2d60a7f5c46d2df76dd3cffed638855321ea156ce9e5a6a617d5158d01f4"
+  },
+  {
+    "id": "daily-sport-60-20261105",
+    "url": "article-daily-sport-60-20261105.html",
+    "title": "Vrai ou faux : 60 minutes de sport doivent être faites d’un seul coup ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Prévention",
+    "date": "2026-11-05",
+    "status": "PUBLISHED",
+    "excerpt": "Faux. L’activité physique des adolescents peut se répartir au fil de la journée, notamment par la marche, le vélo, les jeux et la danse.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "sport-60"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "2b9608e259f56eb48690b2ee4ddd745bf6b70dbed18cc33625a55391727bc892"
+  },
+  {
+    "id": "daily-chiffre-60-20261105",
+    "url": "article-daily-chiffre-60-20261105.html",
+    "title": "60 minutes : le repère quotidien pour les adolescents",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Prévention",
+    "date": "2026-11-05",
+    "status": "PUBLISHED",
+    "excerpt": "L’OMS recommande aux 5–17 ans une moyenne de 60 minutes par jour d’activité physique modérée à intense sur la semaine.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "chiffre-60"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "accf88933f7c6fc329a969817b0423576f0033c6fcac4e98bf89f1ddab13e39d"
+  },
+  {
+    "id": "daily-3018-20261105",
+    "url": "article-daily-3018-20261105.html",
+    "title": "Harcèlement scolaire : le 3018 pour demander de l’aide",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Prévention",
+    "date": "2026-11-05",
+    "status": "PUBLISHED",
+    "excerpt": "Le 3018 est un numéro gratuit d’accompagnement pour les victimes de harcèlement et de violences numériques et leurs proches.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "3018"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "62b7cb60765bd796d40d6c708007745021389a955b767f64808414706e122635"
+  },
+  {
+    "id": "daily-ecouter-20261105",
+    "url": "article-daily-ecouter-20261105.html",
+    "title": "Harcèlement : écouter et conserver les preuves",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Prévention",
+    "date": "2026-11-05",
+    "status": "PUBLISHED",
+    "excerpt": "En cas de soupçon de harcèlement, écouter sans minimiser, conserver les messages et alerter l’établissement scolaire sont des démarches utiles.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "ecouter"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "051705cb00f6f860794e04cf8b3f01115a8d55e1e7368518810f3879d569084f"
+  },
+  {
+    "id": "daily-bouger-20261105",
+    "url": "article-daily-bouger-20261105.html",
+    "title": "Bouger : les déplacements actifs comptent aussi",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Prévention",
+    "date": "2026-11-05",
+    "status": "PUBLISHED",
+    "excerpt": "Aller à pied ou à vélo, jouer ou danser participent à l’activité physique recommandée pour les adolescents.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "bouger"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "6cc77fca0f81df4990f49fb9be61d0f58908c134f0692ee6ca27fa74dea1030a"
+  },
+  {
+    "id": "daily-plozasiran-20261106",
+    "url": "article-daily-plozasiran-20261106.html",
+    "title": "Triglycérides très élevés : un nouveau traitement peut-il prévenir les pancréatites ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Santé",
+    "date": "2026-11-06",
+    "status": "PUBLISHED",
+    "excerpt": "Un traitement ciblant l’APOC3 a réduit les triglycérides et les pancréatites dans des essais randomisés, mais son utilisation reste limitée à certaines indications.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "plozasiran"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "9b4bb38bb24dce84122b9b1e5c1871a626dde3f377d6b348495141da386269fa"
+  },
+  {
+    "id": "daily-vitamine-k-20261106",
+    "url": "article-daily-vitamine-k-20261106.html",
+    "title": "Vitamine K à la naissance : pourquoi l’injection protège-t-elle les nouveau-nés ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Santé",
+    "date": "2026-11-06",
+    "status": "PUBLISHED",
+    "excerpt": "Une grande étude observationnelle renforce les données en faveur de la prévention des hémorragies du nourrisson par la vitamine K à la naissance.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "vitamine-k"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "361bdaa711293ac6cc0170efc32afdfeb4dc765690aceb49c10896dccec7555d"
+  },
+  {
+    "id": "daily-cholesterol-grossesse-20261106",
+    "url": "article-daily-cholesterol-grossesse-20261106.html",
+    "title": "Hypercholestérolémie familiale : faut-il surveiller davantage la grossesse ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Santé",
+    "date": "2026-11-06",
+    "status": "PUBLISHED",
+    "excerpt": "Une étude suggère un sur-risque de prééclampsie chez les femmes ayant une hypercholestérolémie familiale, sans démontrer de lien causal.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "cholesterol-grossesse"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "f9155beda1d3ed8cd5c2c50bcfac425a05327b05c91ce8a276900e37093a5cc8"
+  },
+  {
+    "id": "daily-vih-depistage-20261106",
+    "url": "article-daily-vih-depistage-20261106.html",
+    "title": "VIH en France : pourquoi diagnostique-t-on encore trop tard ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Santé",
+    "date": "2026-11-06",
+    "status": "PUBLISHED",
+    "excerpt": "Le dépistage du VIH progresse en France, mais une part importante des diagnostics intervient encore tardivement.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "vih-depistage"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "d161d40b166adbcfaab232f85b37edf2033d05df81f0cf4c1011a20a6d453aa2"
+  },
+  {
+    "id": "daily-dos-travail-20261106",
+    "url": "article-daily-dos-travail-20261106.html",
+    "title": "Mal au dos au travail : comment prévenir les douleurs ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Santé",
+    "date": "2026-11-06",
+    "status": "PUBLISHED",
+    "excerpt": "Changer régulièrement de position et maintenir une activité adaptée aide à limiter les douleurs de dos.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "dos-travail"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "mal-dos-travail-prevenir-installation",
+    "version": "3fd06bae75e5afef7fa68387c4cb81c76231612bde19438cb23b156cd6d941f1"
+  },
+  {
+    "id": "daily-crachats-20261106",
+    "url": "article-daily-crachats-20261106.html",
+    "title": "Vrai ou faux : des crachats verts nécessitent des antibiotiques ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Santé",
+    "date": "2026-11-06",
+    "status": "PUBLISHED",
+    "excerpt": "Faux. La couleur des crachats ne suffit pas à démontrer une infection bactérienne.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "crachats"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "b29aa7869ced04e28b4592d64573bc9597dd73034d07fb2c4350a589bae8b7db"
+  },
+  {
+    "id": "daily-atherosclerose-20261106",
+    "url": "article-daily-atherosclerose-20261106.html",
+    "title": "57,1 % : athérosclérose détectée dans une cohorte d’imagerie",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Santé",
+    "date": "2026-11-06",
+    "status": "PUBLISHED",
+    "excerpt": "Une cohorte de recherche a détecté des signes d’athérosclérose chez 57,1 % des participants ; ce résultat ne justifie pas un dépistage systématique.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "atherosclerose"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "61a2554eb0ac47bc3d1379870d3800185f5d4d695bbc7d0704f5cda524964db3"
+  },
+  {
+    "id": "daily-coroscanner-20261106",
+    "url": "article-daily-coroscanner-20261106.html",
+    "title": "Douleur thoracique : le coroscanner systématique n’est pas toujours utile",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Santé",
+    "date": "2026-11-06",
+    "status": "PUBLISHED",
+    "excerpt": "Dans un essai chez des patients à risque intermédiaire, une stratégie de coroscanner ambulatoire n’a pas amélioré le critère clinique principal.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "coroscanner"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "13fe1181c0ef220c34956378155292f2c2ed5f69c19eb19d44e1366bab73c66a"
+  },
+  {
+    "id": "daily-epaule-vaccin-20261106",
+    "url": "article-daily-epaule-vaccin-20261106.html",
+    "title": "Douleur d’épaule après vaccination : un événement rare",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Santé",
+    "date": "2026-11-06",
+    "status": "PUBLISHED",
+    "excerpt": "Les atteintes de l’épaule liées à une injection restent rares ; la technique d’injection et l’évaluation des symptômes comptent.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "epaule-vaccin"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "18bc0a37636e41cf461968f34b52fe23e750db613071cf36c63bc67f11cad315"
+  },
+  {
+    "id": "daily-virus-hiver-20261106",
+    "url": "article-daily-virus-hiver-20261106.html",
+    "title": "Virus respiratoires : une surveillance régionale nécessaire",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Santé",
+    "date": "2026-11-06",
+    "status": "PUBLISHED",
+    "excerpt": "Les indicateurs des infections respiratoires varient selon les régions et les semaines ; les bulletins officiels permettent de suivre les tendances.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "virus-hiver"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "d15acb04beb82ac1dc7241fd02ed17bb33fda030803ba69a576c078a5eab3cc0"
   }
 ];

@@ -1,12 +1,126 @@
 {
   "schemaVersion": 1,
-  "editionId": "edition-2026-11-04",
-  "editionDate": "2026-11-04",
-  "sourceFingerprint": "abdb58cc7522330198a2578fa631de5dcfaf2281c683070dbd98b03a025e1a2e",
+  "editionId": "edition-2026-11-06",
+  "editionDate": "2026-11-06",
+  "sourceFingerprint": "2535da12c4128b1f368e5f4f54db618840d374231c4caa260a8f566ab6de4b72",
   "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-daily-plozasiran-20261106",
+      "version": "9b4bb38bb24dce84122b9b1e5c1871a626dde3f377d6b348495141da386269fa",
+      "url": "article-daily-plozasiran-20261106.html",
+      "date": "2026-11-06"
+    },
+    {
+      "id": "mag-daily-vitamine-k-20261106",
+      "version": "361bdaa711293ac6cc0170efc32afdfeb4dc765690aceb49c10896dccec7555d",
+      "url": "article-daily-vitamine-k-20261106.html",
+      "date": "2026-11-06"
+    },
+    {
+      "id": "mag-daily-cholesterol-grossesse-20261106",
+      "version": "f9155beda1d3ed8cd5c2c50bcfac425a05327b05c91ce8a276900e37093a5cc8",
+      "url": "article-daily-cholesterol-grossesse-20261106.html",
+      "date": "2026-11-06"
+    },
+    {
+      "id": "mag-daily-vih-depistage-20261106",
+      "version": "d161d40b166adbcfaab232f85b37edf2033d05df81f0cf4c1011a20a6d453aa2",
+      "url": "article-daily-vih-depistage-20261106.html",
+      "date": "2026-11-06"
+    },
+    {
+      "id": "mag-daily-dos-travail-20261106",
+      "version": "3fd06bae75e5afef7fa68387c4cb81c76231612bde19438cb23b156cd6d941f1",
+      "url": "article-daily-dos-travail-20261106.html",
+      "date": "2026-11-06"
+    },
+    {
+      "id": "mag-daily-crachats-20261106",
+      "version": "b29aa7869ced04e28b4592d64573bc9597dd73034d07fb2c4350a589bae8b7db",
+      "url": "article-daily-crachats-20261106.html",
+      "date": "2026-11-06"
+    },
+    {
+      "id": "mag-daily-atherosclerose-20261106",
+      "version": "61a2554eb0ac47bc3d1379870d3800185f5d4d695bbc7d0704f5cda524964db3",
+      "url": "article-daily-atherosclerose-20261106.html",
+      "date": "2026-11-06"
+    },
+    {
+      "id": "mag-daily-coroscanner-20261106",
+      "version": "13fe1181c0ef220c34956378155292f2c2ed5f69c19eb19d44e1366bab73c66a",
+      "url": "article-daily-coroscanner-20261106.html",
+      "date": "2026-11-06"
+    },
+    {
+      "id": "mag-daily-epaule-vaccin-20261106",
+      "version": "18bc0a37636e41cf461968f34b52fe23e750db613071cf36c63bc67f11cad315",
+      "url": "article-daily-epaule-vaccin-20261106.html",
+      "date": "2026-11-06"
+    },
+    {
+      "id": "mag-daily-virus-hiver-20261106",
+      "version": "d15acb04beb82ac1dc7241fd02ed17bb33fda030803ba69a576c078a5eab3cc0",
+      "url": "article-daily-virus-hiver-20261106.html",
+      "date": "2026-11-06"
+    },
+    {
+      "id": "mag-daily-proteus-20261105",
+      "version": "f1fcee45acff14b50f9774bfad55646cb88373fc745f3ba2eea4487715d28364",
+      "url": "article-daily-proteus-20261105.html",
+      "date": "2026-11-05"
+    },
+    {
+      "id": "mag-daily-harcelement-20261105",
+      "version": "f10878b1cc05086ff6866084d9a8d74a5d8a3c9b9e2313f91dcd217b4960a1f6",
+      "url": "article-daily-harcelement-20261105.html",
+      "date": "2026-11-05"
+    },
+    {
+      "id": "mag-daily-adolescents-20261105",
+      "version": "35d14c208cf16798705493efff79ad4b24e576d858943e03e850480f44f2ad03",
+      "url": "article-daily-adolescents-20261105.html",
+      "date": "2026-11-05"
+    },
+    {
+      "id": "mag-daily-enzarad-20261105",
+      "version": "b33c2d60a7f5c46d2df76dd3cffed638855321ea156ce9e5a6a617d5158d01f4",
+      "url": "article-daily-enzarad-20261105.html",
+      "date": "2026-11-05"
+    },
+    {
+      "id": "mag-daily-sport-60-20261105",
+      "version": "2b9608e259f56eb48690b2ee4ddd745bf6b70dbed18cc33625a55391727bc892",
+      "url": "article-daily-sport-60-20261105.html",
+      "date": "2026-11-05"
+    },
+    {
+      "id": "mag-daily-chiffre-60-20261105",
+      "version": "accf88933f7c6fc329a969817b0423576f0033c6fcac4e98bf89f1ddab13e39d",
+      "url": "article-daily-chiffre-60-20261105.html",
+      "date": "2026-11-05"
+    },
+    {
+      "id": "mag-daily-3018-20261105",
+      "version": "62b7cb60765bd796d40d6c708007745021389a955b767f64808414706e122635",
+      "url": "article-daily-3018-20261105.html",
+      "date": "2026-11-05"
+    },
+    {
+      "id": "mag-daily-ecouter-20261105",
+      "version": "051705cb00f6f860794e04cf8b3f01115a8d55e1e7368518810f3879d569084f",
+      "url": "article-daily-ecouter-20261105.html",
+      "date": "2026-11-05"
+    },
+    {
+      "id": "mag-daily-bouger-20261105",
+      "version": "6cc77fca0f81df4990f49fb9be61d0f58908c134f0692ee6ca27fa74dea1030a",
+      "url": "article-daily-bouger-20261105.html",
+      "date": "2026-11-05"
+    },
     {
       "id": "mag-daily-sommeil-perte-poids-20261104",
       "version": "997eeece085c65345eb0693f2dfde02be90df4d1b81eb79df912eeacf2a2870b",

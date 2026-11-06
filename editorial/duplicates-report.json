@@ -412,6 +412,19 @@
     },
     {
       "left": {
+        "id": "harcelement-scolaire-signes-que-faire",
+        "title": "Harcèlement scolaire : quels signes doivent alerter et que faire ?",
+        "type": "fiche"
+      },
+      "right": {
+        "id": "daily-harcelement-20261105",
+        "title": "Harcèlement scolaire : quels signes doivent alerter ?",
+        "type": "Mag"
+      },
+      "score": 0.83
+    },
+    {
+      "left": {
         "id": "syndrome-premenstruel-que-faire",
         "title": "Syndrome prémenstruel : que peut-on vraiment faire ?",
         "type": "fiche"
@@ -597,6 +610,6 @@
     "manifestFiles": 157,
     "rawFiches": 453,
     "canonicalFiches": 427,
-    "magContents": 249
+    "magContents": 268
   }
 }
