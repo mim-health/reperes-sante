@@ -1,6 +1,16 @@
 'use strict';
 const assert=require('assert/strict'),fs=require('fs'),os=require('os'),path=require('path');
 const m=require('./mag-editorial'),source=m.read(),copy=x=>JSON.parse(JSON.stringify(x));
+// Regression: rotating a fiche must reuse its validated canonical entry; do not republish clones.
+const live=m.read(),nov5=live.editions.find(e=>e.date==='2026-11-05'),nov6=live.editions.find(e=>e.date==='2026-11-06');
+assert(nov5&&nov6&&nov5.complete&&nov6.complete,'Both November editions must exist and be complete');
+assert.equal(nov5.items.find(i=>i.slot==='FICHE DU JOUR')?.contentId,'daily-crampes-20261018');
+assert(!live.contents.some(c=>c.id==='daily-crampes-20261105'),'Rotated cramps content must not be duplicated');
+assert.doesNotThrow(()=>m.check(live),'Current editorial source must be valid');
+const short=copy(live),target=short.contents.find(c=>c.id==='daily-proteus-20261105');
+assert(target);target.html='<article><h1>'+target.title+'</h1><p>Résumé trop court.</p></article>';
+target.validation.contentHash=m.digest(target);
+assert.throws(()=>m.check(short),/Article principal trop court/,'New long-form floor must reject short validated content');
 // These historical scenarios use a fixed 10–11 October fixture, independent of later editions.
 source.editions=source.editions.filter(e=>e.date<='2026-10-11');
 source.contents=source.contents.filter(c=>c.date<='2026-10-11');
