@@ -9358,41 +9358,6 @@
       }
     },
     {
-      "id": "daily-crampes-20261105",
-      "date": "2026-11-05",
-      "title": "Crampes musculaires : causes et solutions",
-      "answer": "Les crampes sont des contractions involontaires et douloureuses, souvent bénignes. Étirement doux, hydratation adaptée et recherche d’une cause en cas de répétition peuvent aider.",
-      "html": "<article><p class=\"eyebrow\">LE MAG · 5 NOVEMBRE 2026</p><h1>Crampes musculaires : causes et solutions</h1><p class=\"lead\">Les crampes sont des contractions involontaires et douloureuses, souvent bénignes. Étirement doux, hydratation adaptée et recherche d’une cause en cas de répétition peuvent aider.</p><h2>Ce qu’il faut retenir</h2><p>Les crampes sont des contractions involontaires et douloureuses, souvent bénignes. Étirement doux, hydratation adaptée et recherche d’une cause en cas de répétition peuvent aider.</p><p>Ces informations générales ne remplacent pas un avis médical personnalisé.</p><h2>Sources</h2><p><a href=\"https://www.ameli.fr/assure/sante/themes/crampe-musculaire/\">Référence 1</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
-      "url": "article-daily-crampes-20261105.html",
-      "format": "article",
-      "category": "Décryptage",
-      "theme": "Prévention",
-      "keywords": [
-        "crampes"
-      ],
-      "sources": [
-        {
-          "label": "Référence 1",
-          "url": "https://www.ameli.fr/assure/sante/themes/crampe-musculaire/"
-        }
-      ],
-      "image": "",
-      "imageAlt": "",
-      "imageCredit": "",
-      "imageSource": "",
-      "imageLicense": "",
-      "ficheId": "crampes-musculaires-causes",
-      "medicalStatus": "VALIDATED",
-      "publicationStatus": "PUBLISHED",
-      "candidateFiche": false,
-      "validation": {
-        "validatedAt": "2026-11-05",
-        "validator": "Dr Romain BEDDOK",
-        "evidence": "Validation explicite de la conférence éditoriale du 5 novembre et demande de mise en ligne dans le fil de pilotage.",
-        "contentHash": "79c1e97bf54e1589afba926e46e990dbe61f05f89893c058fe974c5bc801d5a3"
-      }
-    },
-    {
       "id": "daily-sport-60-20261105",
       "date": "2026-11-05",
       "title": "Vrai ou faux : 60 minutes de sport doivent être faites d’un seul coup ?",
@@ -11201,7 +11166,7 @@
           "icon": "•"
         },
         {
-          "contentId": "daily-crampes-20261105",
+          "contentId": "daily-crampes-20261018",
           "slot": "FICHE DU JOUR",
           "icon": "•"
         },
