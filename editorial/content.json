@@ -9566,6 +9566,372 @@
         "evidence": "Validation explicite de la conférence éditoriale du 5 novembre et demande de mise en ligne dans le fil de pilotage.",
         "contentHash": "6cc77fca0f81df4990f49fb9be61d0f58908c134f0692ee6ca27fa74dea1030a"
       }
+    },
+    {
+      "id": "daily-plozasiran-20261106",
+      "date": "2026-11-06",
+      "title": "Triglycérides très élevés : un nouveau traitement peut-il prévenir les pancréatites ?",
+      "answer": "Un traitement ciblant l’APOC3 a réduit les triglycérides et les pancréatites dans des essais randomisés, mais son utilisation reste limitée à certaines indications.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 6 NOVEMBRE 2026</p><h1>Triglycérides très élevés : un nouveau traitement peut-il prévenir les pancréatites ?</h1><p class=\"lead\">Un traitement ciblant l’APOC3 a réduit les triglycérides et les pancréatites dans des essais randomisés, mais son utilisation reste limitée à certaines indications.</p><h2>Contexte</h2><p>Les triglycérides sont des graisses circulant dans le sang. Lorsqu’ils atteignent des niveaux très élevés, ils peuvent provoquer une pancréatite aiguë, inflammation du pancréas qui nécessite parfois une hospitalisation. Réduire ce risque constitue donc un objectif bien plus concret que simplement améliorer un chiffre sur une prise de sang.</p><h2>Ce que montre la recherche</h2><p>La prise en charge habituelle repose sur la recherche d’une cause, la réduction ou la suppression de l’alcool, une alimentation adaptée, le traitement d’un diabète éventuel et, selon les situations, des médicaments hypolipémiants. Malgré ces mesures, certaines personnes conservent des taux extrêmement élevés. C’est à cette population que s’intéressent les nouvelles stratégies ciblant la protéine APOC3.</p><h2>Ce qu’il faut comprendre</h2><p>Le plozasiran est un traitement qui diminue la production d’APOC3, une protéine impliquée dans le métabolisme des triglycérides. Les essais SHASTA-3 et SHASTA-4, publiés dans une grande revue médicale internationale en novembre 2026, ont évalué son efficacité chez des adultes présentant une hypertriglycéridémie sévère. Les participants ont reçu le traitement ou un placebo, avec des injections espacées de trois mois.</p><h2>Quelles limites ?</h2><p>Les résultats rapportent une baisse importante des triglycérides, de l’ordre de 79 à 81 % selon les analyses. Mais l’information la plus intéressante concerne les pancréatites aiguës : leur fréquence a également diminué, avec environ un événement pour 100 patients-années dans le groupe traité contre cinq dans le groupe comparateur. Cette mesure tient compte du nombre de personnes et de leur durée de suivi ; elle ne signifie pas qu’un patient sur cent sera forcément hospitalisé.</p><h2>Conséquences pratiques</h2><p>Il faut cependant éviter une conclusion trop large. Les patients inclus étaient sélectionnés, le suivi était relativement court et les pancréatites restaient peu nombreuses en valeur absolue. La tolérance à long terme, les interactions avec les autres traitements et le maintien du bénéfice devront être documentés. Un essai financé par le fabricant doit également être interprété avec une attention particulière à sa méthodologie.</p><h2>À retenir</h2><p>Autre point essentiel : la disponibilité réglementaire varie selon les indications et les pays. Une autorisation européenne concernant une maladie rare du métabolisme des triglycérides ne signifie pas que tous les patients ayant un bilan lipidique élevé peuvent recevoir ce traitement. Il ne faut donc ni interrompre un médicament habituel ni réclamer cette molécule sans avis spécialisé.</p><h2>Questions fréquentes</h2><p>Pour les patients, la bonne question est d’abord de savoir si les triglycérides sont simplement augmentés ou s’ils atteignent un niveau exposant réellement à une pancréatite. Le médecin peut rechercher une cause secondaire, vérifier les antécédents de pancréatite et adapter la prévention. En cas de douleur abdominale intense et persistante, une évaluation urgente est nécessaire.</p><h2>Pour les patients</h2><p>À retenir : cette avancée est intéressante parce qu’elle associe un effet biologique majeur à une diminution d’événements cliniques. Elle ne transforme pas pour autant un traitement spécialisé en solution universelle contre le cholestérol ou les triglycérides.</p><h2>Sources</h2><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/42981569/\">Source 1</a></p><p><a href=\"https://www.ema.europa.eu/\">Source 2</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-plozasiran-20261106.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Santé",
+      "keywords": [
+        "plozasiran"
+      ],
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42981569/"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://www.ema.europa.eu/"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-06",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite et autorisation de publication de la conférence éditoriale du 6 novembre 2026.",
+        "contentHash": "9b4bb38bb24dce84122b9b1e5c1871a626dde3f377d6b348495141da386269fa"
+      }
+    },
+    {
+      "id": "daily-vitamine-k-20261106",
+      "date": "2026-11-06",
+      "title": "Vitamine K à la naissance : pourquoi l’injection protège-t-elle les nouveau-nés ?",
+      "answer": "Une grande étude observationnelle renforce les données en faveur de la prévention des hémorragies du nourrisson par la vitamine K à la naissance.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 6 NOVEMBRE 2026</p><h1>Vitamine K à la naissance : pourquoi l’injection protège-t-elle les nouveau-nés ?</h1><p class=\"lead\">Une grande étude observationnelle renforce les données en faveur de la prévention des hémorragies du nourrisson par la vitamine K à la naissance.</p><h2>Contexte</h2><p>À la naissance, les réserves de vitamine K sont naturellement faibles. Or cette vitamine est indispensable à la fabrication de plusieurs facteurs de coagulation. Sans prévention, certains nourrissons peuvent présenter des saignements graves, parfois internes, même lorsqu’ils paraissaient jusque-là en bonne santé.</p><h2>Ce que montre la recherche</h2><p>La prophylaxie par vitamine K est pratiquée depuis longtemps. L’actualité scientifique ne consiste donc pas en la découverte d’un nouveau médicament, mais dans la publication de données supplémentaires permettant de mieux mesurer les conséquences d’un refus ou d’une absence d’administration. Cette distinction est importante : une étude récente peut renforcer une recommandation déjà établie.</p><h2>Ce qu’il faut comprendre</h2><p>Une vaste étude américaine publiée dans le JAMA a examiné les dossiers de plusieurs millions de nouveau-nés. Les chercheurs ont comparé la fréquence des hémorragies selon la présence ou l’absence d’une injection intramusculaire de vitamine K. Les événements hémorragiques, notamment intracrâniens, étaient plus fréquents dans le groupe sans injection. Ces résultats vont dans le même sens que les connaissances accumulées depuis plusieurs décennies.</p><h2>Quelles limites ?</h2><p>Pourquoi une hémorragie peut-elle survenir après le retour à domicile ? Parce que le manque de vitamine K ne se manifeste pas nécessairement immédiatement. Certains saignements apparaissent dans les premières semaines ou les premiers mois. Une hémorragie intracrânienne peut laisser des séquelles neurologiques importantes. L’absence de symptômes à la maternité ne garantit donc pas l’absence de risque.</p><h2>Conséquences pratiques</h2><p>Il faut néanmoins interpréter correctement les chiffres. Une étude fondée sur les dossiers médicaux et les codes diagnostiques peut comporter des erreurs de classification. Les familles qui refusent l’injection peuvent aussi différer des autres sur certains facteurs non mesurés. Cette méthode ne prouve pas à elle seule la causalité, même si la cohérence biologique et les autres données disponibles renforcent l’intérêt de la prévention.</p><h2>À retenir</h2><p>Les parents peuvent se demander pourquoi l’alimentation ne suffit pas. Les apports initiaux en vitamine K sont limités, particulièrement au début de la vie. Le lait maternel ne permet pas, à lui seul, de garantir une prévention équivalente. Les modalités de prophylaxie peuvent varier selon les pays et les recommandations locales : il faut suivre le protocole de la maternité plutôt que transposer directement un schéma étranger.</p><h2>Questions fréquentes</h2><p>Les inquiétudes concernant une injection chez un nouveau-né méritent une réponse claire, sans culpabilisation. Les professionnels peuvent expliquer son objectif, les risques qu’elle prévient et les alternatives éventuelles prévues dans leur pays. Le choix ne doit pas reposer sur des témoignages isolés circulant sur les réseaux sociaux.</p><h2>Pour les patients</h2><p>En pratique, avant la naissance, les futurs parents peuvent poser leurs questions à la sage-femme, au pédiatre ou à l’équipe de maternité. Si la prophylaxie n’a pas été administrée, il faut contacter rapidement un professionnel pour discuter de la conduite à tenir. Des saignements inexpliqués, une somnolence anormale ou des signes neurologiques imposent une évaluation urgente.</p><h2>Le point essentiel</h2><p>À retenir : la vitamine K néonatale n’est pas un soin de confort. Elle vise à prévenir une complication rare mais potentiellement très grave, et les nouvelles données confortent cette prévention.</p><h2>Sources</h2><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/?term=vitamin+K+newborn+2026+JAMA+bleeding\">Source 1</a></p><p><a href=\"https://www.who.int/\">Source 2</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-vitamine-k-20261106.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Santé",
+      "keywords": [
+        "vitamine-k"
+      ],
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=vitamin+K+newborn+2026+JAMA+bleeding"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://www.who.int/"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-06",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite et autorisation de publication de la conférence éditoriale du 6 novembre 2026.",
+        "contentHash": "361bdaa711293ac6cc0170efc32afdfeb4dc765690aceb49c10896dccec7555d"
+      }
+    },
+    {
+      "id": "daily-cholesterol-grossesse-20261106",
+      "date": "2026-11-06",
+      "title": "Hypercholestérolémie familiale : faut-il surveiller davantage la grossesse ?",
+      "answer": "Une étude suggère un sur-risque de prééclampsie chez les femmes ayant une hypercholestérolémie familiale, sans démontrer de lien causal.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 6 NOVEMBRE 2026</p><h1>Hypercholestérolémie familiale : faut-il surveiller davantage la grossesse ?</h1><p class=\"lead\">Une étude suggère un sur-risque de prééclampsie chez les femmes ayant une hypercholestérolémie familiale, sans démontrer de lien causal.</p><h2>Contexte</h2><p>L’hypercholestérolémie familiale est une maladie génétique qui entraîne des concentrations élevées de cholestérol LDL dès l’enfance. Elle augmente le risque cardiovasculaire au cours de la vie, mais son impact sur la grossesse reste moins connu du grand public. Une étude récente apporte un signal intéressant, à interpréter avec prudence.</p><h2>Ce que montre la recherche</h2><p>La prééclampsie est une complication de grossesse associant notamment une hypertension artérielle à des signes d’atteinte d’organes, selon les critères médicaux. Elle nécessite une surveillance obstétricale et peut parfois conduire à une prise en charge urgente. Son apparition dépend de nombreux facteurs : antécédents, âge, hypertension préexistante, diabète, grossesse multiple et caractéristiques individuelles.</p><h2>Ce qu’il faut comprendre</h2><p>Dans une étude européenne comparant des femmes atteintes d’hypercholestérolémie familiale à des femmes témoins, la prééclampsie a été rapportée chez environ 11 % des premières contre 7 % des secondes. La différence absolue est donc de quatre points. Ce résultat mérite l’attention, mais ne signifie pas que la maladie génétique provoque directement la complication.</p><h2>Quelles limites ?</h2><p>La différence entre risque relatif et risque absolu est essentielle. Dire qu’un risque augmente peut paraître inquiétant ; pourtant, la plupart des femmes concernées dans cette étude n’ont pas présenté de prééclampsie. De plus, les autres paramètres reproductifs examinés ne montraient pas tous des différences importantes. Le message n’est donc pas que la grossesse serait dangereuse pour toutes les femmes ayant cette maladie.</p><h2>Conséquences pratiques</h2><p>Plusieurs limites réduisent la portée des conclusions. L’étude reposait sur des informations recueillies rétrospectivement, avec des risques de biais de mémoire. Les participantes étaient majoritairement issues d’une population européenne relativement homogène. Les chercheurs ne pouvaient pas contrôler parfaitement tous les facteurs susceptibles d’expliquer une partie de l’association observée.</p><h2>À retenir</h2><p>Pour une femme qui envisage une grossesse, l’enjeu principal est de préparer le suivi avec les professionnels concernés. Un bilan cardiovasculaire et une revue des traitements sont utiles, car certains médicaments hypolipémiants nécessitent une adaptation avant ou pendant la grossesse. Il ne faut jamais arrêter ou reprendre un traitement de sa propre initiative : la décision dépend du risque individuel et des recommandations en vigueur.</p><h2>Questions fréquentes</h2><p>Pendant la grossesse, les consultations habituelles permettent notamment de surveiller la pression artérielle et les signes de prééclampsie. Une céphalée inhabituelle et intense, des troubles visuels, des douleurs abdominales importantes ou un essoufflement doivent conduire à une évaluation rapide. Ces symptômes ne sont pas spécifiques, mais peuvent signaler une complication nécessitant une prise en charge.</p><h2>Pour les patients</h2><p>Cette publication ne justifie pas à elle seule un nouveau dépistage universel ou une prescription systématique supplémentaire. Elle rappelle plutôt l’intérêt d’une coordination entre médecine générale, cardiologie ou lipidologie et obstétrique lorsque le contexte le nécessite.</p><h2>Le point essentiel</h2><p>À retenir : l’hypercholestérolémie familiale mérite d’être mentionnée lors de la préparation d’une grossesse. Le signal de prééclampsie est utile pour la vigilance clinique, mais reste une association observationnelle à confirmer.</p><h2>Sources</h2><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/?term=familial+hypercholesterolemia+preeclampsia+2026\">Source 1</a></p><p><a href=\"https://www.escardio.org/\">Source 2</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-cholesterol-grossesse-20261106.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Santé",
+      "keywords": [
+        "cholesterol-grossesse"
+      ],
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=familial+hypercholesterolemia+preeclampsia+2026"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://www.escardio.org/"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-06",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite et autorisation de publication de la conférence éditoriale du 6 novembre 2026.",
+        "contentHash": "f9155beda1d3ed8cd5c2c50bcfac425a05327b05c91ce8a276900e37093a5cc8"
+      }
+    },
+    {
+      "id": "daily-vih-depistage-20261106",
+      "date": "2026-11-06",
+      "title": "VIH en France : pourquoi diagnostique-t-on encore trop tard ?",
+      "answer": "Le dépistage du VIH progresse en France, mais une part importante des diagnostics intervient encore tardivement.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 6 NOVEMBRE 2026</p><h1>VIH en France : pourquoi diagnostique-t-on encore trop tard ?</h1><p class=\"lead\">Le dépistage du VIH progresse en France, mais une part importante des diagnostics intervient encore tardivement.</p><h2>Contexte</h2><p>Le VIH se traite aujourd’hui efficacement lorsqu’il est diagnostiqué et pris en charge. Pourtant, certaines personnes découvrent encore leur infection plusieurs années après la contamination. Ce retard peut avoir des conséquences sur leur santé et prolonger une période durant laquelle elles ignorent leur statut.</p><h2>Ce que montre la recherche</h2><p>Les données françaises rendues publiques à l’automne 2026 montrent une activité de dépistage importante. Environ neuf millions de sérologies auraient été réalisées en 2025, en progression par rapport à l’année précédente. Cette hausse reflète notamment la diversification des possibilités d’accès au test, dont les dispositifs sans ordonnance dans les laboratoires.</p><h2>Ce qu’il faut comprendre</h2><p>Un chiffre mérite toutefois une attention particulière : près de quatre découvertes de séropositivité sur dix restent considérées comme tardives. Cela signifie que le virus a parfois eu le temps d’affaiblir le système immunitaire avant que le diagnostic soit posé. Il ne faut pas confondre cette proportion avec le pourcentage de personnes infectées dans la population générale.</p><h2>Quelles limites ?</h2><p>Autre distinction importante : le nombre de nouveaux diagnostics n’est pas identique au nombre de nouvelles contaminations. Une personne diagnostiquée en 2025 peut avoir été infectée plusieurs années auparavant. À l’inverse, une augmentation du dépistage peut faire apparaître davantage de diagnostics sans que la circulation du virus ait nécessairement augmenté. Les estimations d’incidence tentent de corriger cette difficulté, mais comportent elles aussi une incertitude.</p><h2>Conséquences pratiques</h2><p>Pourquoi certains diagnostics sont-ils tardifs ? Les raisons sont multiples : faible perception du risque, crainte du jugement, difficultés d’accès aux soins, méconnaissance des possibilités de test ou symptômes peu spécifiques. Le VIH peut rester longtemps silencieux. Attendre des signes cliniques n’est donc pas une stratégie fiable de dépistage.</p><h2>À retenir</h2><p>En France, il existe des possibilités de dépistage sans ordonnance, notamment dans les laboratoires participants selon les dispositifs en vigueur. Les centres gratuits d’information, de dépistage et de diagnostic peuvent également accompagner les personnes qui souhaitent faire le point sur leur santé sexuelle. Les modalités précises doivent être vérifiées localement.</p><h2>Questions fréquentes</h2><p>La prévention ne repose pas sur une seule mesure. Les préservatifs, la prophylaxie préexposition ou PrEP pour les personnes concernées, le dépistage régulier selon les expositions et le traitement antirétroviral constituent des outils complémentaires. Une personne vivant avec le VIH et présentant une charge virale durablement indétectable sous traitement ne transmet pas le virus par voie sexuelle : c’est le principe indétectable égale intransmissible.</p><h2>Pour les patients</h2><p>Après une exposition récente potentiellement à risque, il ne faut pas attendre un dépistage de routine. Un traitement post-exposition peut être indiqué en urgence, dans un délai court, après évaluation médicale. Les symptômes ou l’absence de symptômes ne permettent pas de trancher.</p><h2>Le point essentiel</h2><p>À retenir : multiplier les tests est une bonne nouvelle, mais l’objectif est aussi de diagnostiquer plus tôt. Le dépistage est une démarche de prévention ordinaire, sans jugement et adaptée à la situation de chacun.</p><h2>Sources</h2><p><a href=\"https://www.santepubliquefrance.fr/\">Source 1</a></p><p><a href=\"https://www.ameli.fr/assure/sante/themes/vih\">Source 2</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-vih-depistage-20261106.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Santé",
+      "keywords": [
+        "vih-depistage"
+      ],
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.santepubliquefrance.fr/"
+        },
+        {
+          "label": "Source 2",
+          "url": "https://www.ameli.fr/assure/sante/themes/vih"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-06",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite et autorisation de publication de la conférence éditoriale du 6 novembre 2026.",
+        "contentHash": "d161d40b166adbcfaab232f85b37edf2033d05df81f0cf4c1011a20a6d453aa2"
+      }
+    },
+    {
+      "id": "daily-dos-travail-20261106",
+      "date": "2026-11-06",
+      "title": "Mal au dos au travail : comment prévenir les douleurs ?",
+      "answer": "Changer régulièrement de position et maintenir une activité adaptée aide à limiter les douleurs de dos.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 6 NOVEMBRE 2026</p><h1>Mal au dos au travail : comment prévenir les douleurs ?</h1><p class=\"lead\">Changer régulièrement de position et maintenir une activité adaptée aide à limiter les douleurs de dos.</p><h2>Ce qu’il faut savoir</h2><p>Changer régulièrement de position et maintenir une activité adaptée aide à limiter les douleurs de dos.</p><h2>En pratique</h2><p>Le contexte personnel doit guider les décisions ; cette information générale ne remplace pas un avis médical.</p><h2>Sources</h2><p><a href=\"https://www.ameli.fr/assure/sante/themes/lombalgie-aigue\">Source 1</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-dos-travail-20261106.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Santé",
+      "keywords": [
+        "dos-travail"
+      ],
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.ameli.fr/assure/sante/themes/lombalgie-aigue"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "mal-dos-travail-prevenir-installation",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-06",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite et autorisation de publication de la conférence éditoriale du 6 novembre 2026.",
+        "contentHash": "3fd06bae75e5afef7fa68387c4cb81c76231612bde19438cb23b156cd6d941f1"
+      }
+    },
+    {
+      "id": "daily-crachats-20261106",
+      "date": "2026-11-06",
+      "title": "Vrai ou faux : des crachats verts nécessitent des antibiotiques ?",
+      "answer": "Faux. La couleur des crachats ne suffit pas à démontrer une infection bactérienne.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 6 NOVEMBRE 2026</p><h1>Vrai ou faux : des crachats verts nécessitent des antibiotiques ?</h1><p class=\"lead\">Faux. La couleur des crachats ne suffit pas à démontrer une infection bactérienne.</p><h2>Ce qu’il faut savoir</h2><p>Faux. La couleur des crachats ne suffit pas à démontrer une infection bactérienne.</p><h2>En pratique</h2><p>Le contexte personnel doit guider les décisions ; cette information générale ne remplace pas un avis médical.</p><h2>Sources</h2><p><a href=\"https://www.ameli.fr/assure/sante/themes/bronchite-aigue\">Source 1</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-crachats-20261106.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Santé",
+      "keywords": [
+        "crachats"
+      ],
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.ameli.fr/assure/sante/themes/bronchite-aigue"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-06",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite et autorisation de publication de la conférence éditoriale du 6 novembre 2026.",
+        "contentHash": "b29aa7869ced04e28b4592d64573bc9597dd73034d07fb2c4350a589bae8b7db"
+      }
+    },
+    {
+      "id": "daily-atherosclerose-20261106",
+      "date": "2026-11-06",
+      "title": "57,1 % : athérosclérose détectée dans une cohorte d’imagerie",
+      "answer": "Une cohorte de recherche a détecté des signes d’athérosclérose chez 57,1 % des participants ; ce résultat ne justifie pas un dépistage systématique.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 6 NOVEMBRE 2026</p><h1>57,1 % : athérosclérose détectée dans une cohorte d’imagerie</h1><p class=\"lead\">Une cohorte de recherche a détecté des signes d’athérosclérose chez 57,1 % des participants ; ce résultat ne justifie pas un dépistage systématique.</p><h2>Ce qu’il faut savoir</h2><p>Une cohorte de recherche a détecté des signes d’athérosclérose chez 57,1 % des participants ; ce résultat ne justifie pas un dépistage systématique.</p><h2>En pratique</h2><p>Le contexte personnel doit guider les décisions ; cette information générale ne remplace pas un avis médical.</p><h2>Sources</h2><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/?term=REACT+atherosclerosis+2026\">Source 1</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-atherosclerose-20261106.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Santé",
+      "keywords": [
+        "atherosclerose"
+      ],
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=REACT+atherosclerosis+2026"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-06",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite et autorisation de publication de la conférence éditoriale du 6 novembre 2026.",
+        "contentHash": "61a2554eb0ac47bc3d1379870d3800185f5d4d695bbc7d0704f5cda524964db3"
+      }
+    },
+    {
+      "id": "daily-coroscanner-20261106",
+      "date": "2026-11-06",
+      "title": "Douleur thoracique : le coroscanner systématique n’est pas toujours utile",
+      "answer": "Dans un essai chez des patients à risque intermédiaire, une stratégie de coroscanner ambulatoire n’a pas amélioré le critère clinique principal.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 6 NOVEMBRE 2026</p><h1>Douleur thoracique : le coroscanner systématique n’est pas toujours utile</h1><p class=\"lead\">Dans un essai chez des patients à risque intermédiaire, une stratégie de coroscanner ambulatoire n’a pas amélioré le critère clinique principal.</p><h2>Ce qu’il faut savoir</h2><p>Dans un essai chez des patients à risque intermédiaire, une stratégie de coroscanner ambulatoire n’a pas amélioré le critère clinique principal.</p><h2>En pratique</h2><p>Le contexte personnel doit guider les décisions ; cette information générale ne remplace pas un avis médical.</p><h2>Sources</h2><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/?term=coronary+CT+2026+randomized+chest+pain\">Source 1</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-coroscanner-20261106.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Santé",
+      "keywords": [
+        "coroscanner"
+      ],
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=coronary+CT+2026+randomized+chest+pain"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-06",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite et autorisation de publication de la conférence éditoriale du 6 novembre 2026.",
+        "contentHash": "13fe1181c0ef220c34956378155292f2c2ed5f69c19eb19d44e1366bab73c66a"
+      }
+    },
+    {
+      "id": "daily-epaule-vaccin-20261106",
+      "date": "2026-11-06",
+      "title": "Douleur d’épaule après vaccination : un événement rare",
+      "answer": "Les atteintes de l’épaule liées à une injection restent rares ; la technique d’injection et l’évaluation des symptômes comptent.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 6 NOVEMBRE 2026</p><h1>Douleur d’épaule après vaccination : un événement rare</h1><p class=\"lead\">Les atteintes de l’épaule liées à une injection restent rares ; la technique d’injection et l’évaluation des symptômes comptent.</p><h2>Ce qu’il faut savoir</h2><p>Les atteintes de l’épaule liées à une injection restent rares ; la technique d’injection et l’évaluation des symptômes comptent.</p><h2>En pratique</h2><p>Le contexte personnel doit guider les décisions ; cette information générale ne remplace pas un avis médical.</p><h2>Sources</h2><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/?term=shoulder+injury+vaccination+2026\">Source 1</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-epaule-vaccin-20261106.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Santé",
+      "keywords": [
+        "epaule-vaccin"
+      ],
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=shoulder+injury+vaccination+2026"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-06",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite et autorisation de publication de la conférence éditoriale du 6 novembre 2026.",
+        "contentHash": "18bc0a37636e41cf461968f34b52fe23e750db613071cf36c63bc67f11cad315"
+      }
+    },
+    {
+      "id": "daily-virus-hiver-20261106",
+      "date": "2026-11-06",
+      "title": "Virus respiratoires : une surveillance régionale nécessaire",
+      "answer": "Les indicateurs des infections respiratoires varient selon les régions et les semaines ; les bulletins officiels permettent de suivre les tendances.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 6 NOVEMBRE 2026</p><h1>Virus respiratoires : une surveillance régionale nécessaire</h1><p class=\"lead\">Les indicateurs des infections respiratoires varient selon les régions et les semaines ; les bulletins officiels permettent de suivre les tendances.</p><h2>Ce qu’il faut savoir</h2><p>Les indicateurs des infections respiratoires varient selon les régions et les semaines ; les bulletins officiels permettent de suivre les tendances.</p><h2>En pratique</h2><p>Le contexte personnel doit guider les décisions ; cette information générale ne remplace pas un avis médical.</p><h2>Sources</h2><p><a href=\"https://www.santepubliquefrance.fr/\">Source 1</a></p><p><small>Information générale ne remplaçant pas une consultation médicale.</small></p></article>",
+      "url": "article-daily-virus-hiver-20261106.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Santé",
+      "keywords": [
+        "virus-hiver"
+      ],
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.santepubliquefrance.fr/"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-06",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation médicale explicite et autorisation de publication de la conférence éditoriale du 6 novembre 2026.",
+        "contentHash": "d15acb04beb82ac1dc7241fd02ed17bb33fda030803ba69a576c078a5eab3cc0"
+      }
     }
   ],
   "editions": [
@@ -10869,6 +11235,69 @@
         "validation": "Conférence validée le 5 novembre 2026 ; autorisation de mise en ligne.",
         "veille": "PROTEUS, ENZARAD, harcèlement scolaire, activité physique des adolescents.",
         "corpusImpact": "Sans nouvelle illustration selon instruction expresse."
+      }
+    },
+    {
+      "id": "edition-2026-11-06",
+      "date": "2026-11-06",
+      "publishAt": "2026-11-06T08:00:00+01:00",
+      "complete": true,
+      "items": [
+        {
+          "contentId": "daily-plozasiran-20261106",
+          "slot": "À LA UNE",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-vitamine-k-20261106",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-cholesterol-grossesse-20261106",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-vih-depistage-20261106",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-dos-travail-20261106",
+          "slot": "FICHE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-crachats-20261106",
+          "slot": "VRAI OU FAUX",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-atherosclerose-20261106",
+          "slot": "LE CHIFFRE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-coroscanner-20261106",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-epaule-vaccin-20261106",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-virus-hiver-20261106",
+          "slot": "DONNÉES",
+          "icon": "•"
+        }
+      ],
+      "editorialConference": {
+        "validation": "Validation explicite et autorisation de mise en ligne le 6 novembre 2026.",
+        "veille": "Essais thérapeutiques, JAMA, sociétés savantes et veille française.",
+        "corpusImpact": "10 contenus ; quatre articles développés ; aucune illustration nouvelle."
       }
     }
   ]
