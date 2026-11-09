@@ -75,7 +75,7 @@ Le script `full-compare.cjs` exécute réellement V2 et V3 sur le même export e
 
 ## E — Validation et décision de pilotage
 
-Tests exécutés avec succès : grounding V2 (11 vérifications mécaniques et 11 flux), registre patient (7 positifs / 4 négatifs), canonique (139 régressions sur 662 documents), IPP (8 requêtes, 47 régressions navigateur, 5 garde-fous), V3 (100 annotations contrôlées, 15 détections urgentes, 15 flux Worker urgents sans API, contre-exemples et validation des entrées), recherche locale 100 cas. Les simulations d'intégration vérifient le contrat technique ; elles ne testent pas le comportement réel du modèle.
+Tests exécutés avec succès : grounding V2 (11 vérifications mécaniques et 11 flux), registre patient (7 positifs / 4 négatifs), canonique (139 régressions sur 662 documents), IPP (8 requêtes, 47 régressions navigateur, 5 garde-fous), V3 (100 annotations contrôlées, 15 détections urgentes, 15 flux Worker urgents sans API, contre-exemples et validation des entrées), recherche locale 100 cas. La totalité des 11 flux existants de grounding a aussi été réexécutée contre le Worker V3 via `grounding-regression.cjs` : succès. Les simulations d'intégration vérifient le contrat technique ; elles ne testent pas le comportement réel du modèle.
 
 Risques : annotations et règles médicales à revoir ; négations complexes, historique ancien ou implicite, expressions hors lexique, population enfant/adulte, calibrage du seuil, ambiguïtés lexicales, coût/latence réelle du grounding, absence de jeu indépendant. L'absence de persistance locale n'établit pas à elle seule la conformité complète du traitement externe : revue des paramètres de conservation et du traitement des requêtes nécessaire avant intégration. `store:false` est conservé sur les réponses du modèle ; pas de journal médical ajouté.
 
@@ -83,4 +83,4 @@ Risques : annotations et règles médicales à revoir ; négations complexes, hi
 
 ## Traçabilité
 
-Premier commit : `f7d609c8cdd410a265c0b242740a44f34e67817a`. Comparaison GitHub confirmée : 16 fichiers ajoutés, aucun fichier existant modifié. Exécution isolée du comparatif réel : [run 42636065434](https://github.com/mim-health/reperes-sante/actions/runs/42636065434). Les résultats de génération restent en cours tant que ce run ne fournit pas son artefact final.
+Commit complémentaire de mesure indépendante : `59fb9c425c4e60c8070198f14bbb26828e6e917b`. Premier commit : `f7d609c8cdd410a265c0b242740a44f34e67817a`. Comparaison GitHub confirmée : 16 fichiers ajoutés, aucun fichier existant modifié. Exécution isolée du comparatif réel : [run 42636065434](https://github.com/mim-health/reperes-sante/actions/runs/42636065434). Les résultats de génération restent en cours tant que ce run ne fournit pas son artefact final.
