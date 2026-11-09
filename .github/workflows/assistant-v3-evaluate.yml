@@ -26,10 +26,11 @@ jobs:
           node assistant-v3/evaluation/local-evaluate.cjs
           node assistant-v3/evaluation/grounding-regression.cjs
           node assistant-v3/evaluation/test-citation-refs.cjs
-      - name: Paired citation-reference and scope-gate validation (100 synthetic questions)
+          node assistant-v3/evaluation/test-compact-output.cjs
+      - name: Paired compact-output validation (100 synthetic questions)
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: node assistant-v3/evaluation/citation-refs-compare.cjs
+        run: node assistant-v3/evaluation/compact-output-compare.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
