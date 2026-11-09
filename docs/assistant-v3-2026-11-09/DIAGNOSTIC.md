@@ -110,3 +110,8 @@ Optimisations expérimentales ajoutées après ce banc :
 - Mesures par appel de génération, embedding et vérification dans `meta.timings`, uniquement des durées et noms d'étape, aucun texte utilisateur enregistré.
 
 Tests V3 et fidélité réexécutés : succès. **Gain de latence après modification non encore mesuré**, aucune promesse chiffrée ni déploiement. La revue des deux cas personnels reste bloquante.
+
+
+## Résultat final du test de vitesse — candidat rejeté
+
+Le comparatif apparié de 100 questions est terminé : voir `LATENCE_AVANT_APRES.md` et `assistant-v3/evaluation/latency-summary.json`. Sur 75 questions documentaires, médiane 5,92 → 6,44 s, p95 13,69 → 16,41 s ; aucune accélération démontrée. 98 → 97 passes mécaniques, avec une nouvelle abstention T003. Consigne de réponse courte et compression retirées du Worker expérimental ; mesures et corpus immuable conservés. Tests locaux de fidélité, contexte, urgence, limites d'entrée et réutilisation du corpus réussis après retrait. Aucun déploiement. Les sections précédentes décrivent l'historique des candidats, pas une décision de mise en production.

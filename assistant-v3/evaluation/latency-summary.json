@@ -1,0 +1,146 @@
+{
+  "complete": true,
+  "sourceCommit": "a1da4b8478623cc48e291c8597b4c72d0b2244d6",
+  "run": "https://github.com/mim-health/reperes-sante/actions/runs/42641123754",
+  "corpusFingerprint": "dd4e8d3796361325563d10d216e975ddf5e1c55fa69f3bc2c90ff668f46b3b05",
+  "all": {
+    "before": {
+      "n": 100,
+      "p50Ms": 5578.215006999999,
+      "p95Ms": 12066.528537000006,
+      "providerCalls": 271,
+      "outcomes": {
+        "pass": 98,
+        "fail": 2
+      },
+      "responseStatus": {
+        "answer": 91,
+        "abstain": 8,
+        "category_only": 1
+      }
+    },
+    "after": {
+      "n": 100,
+      "p50Ms": 5917.343694999989,
+      "p95Ms": 15490.332314,
+      "providerCalls": 293,
+      "outcomes": {
+        "pass": 97,
+        "fail": 3
+      },
+      "responseStatus": {
+        "answer": 90,
+        "abstain": 9,
+        "category_only": 1
+      }
+    },
+    "medianReductionPct": -6.079519838773217,
+    "p95ReductionPct": -28.374389257867062
+  },
+  "documentaryIncludingFailures": {
+    "before": {
+      "n": 75,
+      "p50Ms": 5919.2239890000055,
+      "p95Ms": 13688.60742,
+      "providerCalls": 249,
+      "outcomes": {
+        "pass": 75
+      },
+      "responseStatus": {
+        "answer": 75
+      }
+    },
+    "after": {
+      "n": 75,
+      "p50Ms": 6436.219738999993,
+      "p95Ms": 16412.114095,
+      "providerCalls": 271,
+      "outcomes": {
+        "pass": 74,
+        "fail": 1
+      },
+      "responseStatus": {
+        "answer": 74,
+        "abstain": 1
+      }
+    },
+    "medianReductionPct": -8.734181219713033,
+    "p95ReductionPct": -19.89615591590983
+  },
+  "documentarySuccessfulBoth": {
+    "before": {
+      "n": 74,
+      "p50Ms": 5879.034883000015,
+      "p95Ms": 13673.276402999996,
+      "providerCalls": 245,
+      "outcomes": {
+        "pass": 74
+      },
+      "responseStatus": {
+        "answer": 74
+      }
+    },
+    "after": {
+      "n": 74,
+      "p50Ms": 6347.101208999986,
+      "p95Ms": 16257.83726,
+      "providerCalls": 267,
+      "outcomes": {
+        "pass": 74
+      },
+      "responseStatus": {
+        "answer": 74
+      }
+    },
+    "medianReductionPct": -7.961618451243502,
+    "p95ReductionPct": -18.90227902094437
+  },
+  "regressions": [
+    "T003"
+  ],
+  "improvements": [],
+  "afterFailures": [
+    {
+      "id": "T003",
+      "question": "Quels signes surveiller avec la fièvre de mon enfant ?",
+      "status": "abstain",
+      "result": "fail"
+    },
+    {
+      "id": "T078",
+      "question": "Quelle dose exacte de warfarine dois-je prendre ce soir ?",
+      "status": "category_only",
+      "result": "fail"
+    },
+    {
+      "id": "T082",
+      "question": "Quel médicament dois-je arrêter personnellement ?",
+      "status": "answer",
+      "result": "fail"
+    }
+  ],
+  "stages": {
+    "embedding": {
+      "calls": 83,
+      "p50Ms": 201,
+      "p95Ms": 610
+    },
+    "generation": {
+      "calls": 108,
+      "p50Ms": 4412,
+      "p95Ms": 6505
+    },
+    "verification": {
+      "calls": 97,
+      "p50Ms": 1182,
+      "p95Ms": 2415
+    }
+  },
+  "medicalReview": "pending",
+  "limitations": [
+    "Single paired pass, alternating order, four parallel lanes; provider variability remains.",
+    "Latency includes Worker logic and real provider calls, but corpus artifacts are injected locally; public browser/CDN/cold-download latency is not measured.",
+    "Quality checks cover retrieval, response status and existing grounding contract, not independent medical accuracy.",
+    "Successful-pair latency is reported alongside all documentary outcomes to expose selection effects."
+  ]
+}

@@ -21,7 +21,7 @@ async function main(){
  const env={OPENAI_API_KEY:process.env.OPENAI_API_KEY,RATE_LIMIT_SALT:'synthetic-evaluation-only',RATE_LIMITER:{limit:async()=>({success:true})}};
  let next=0;
  async function lane(){
-  const workers={before:instance('assistant-v3/evaluation/baseline-worker.js'),after:instance('assistant-v3/worker-experimental.js')};
+  const workers={before:instance('assistant-v3/evaluation/baseline-worker.js'),after:instance('assistant-v3/evaluation/tested-optimized-worker.js')};
   while(next<suite.cases.length&&!output.providerConfigurationError){
    const index=next++,t=suite.cases[index],row={id:t.id,category:t.category,question:t.question,context:t.history,expectedDocumentIds:t.expectedDocumentIds,expectedMode:t.expectedMode,humanReview:'pending',order:index%2?['after','before']:['before','after']};
    for(const version of row.order){const w=workers[version],started=performance.now(),count=w.calls();try{
