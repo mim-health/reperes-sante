@@ -1,0 +1,127 @@
+{
+  "complete": true,
+  "sourceCommit": "2d1b6645e2e07e169bae30f04d01968b08bbc2ac",
+  "run": "https://github.com/mim-health/reperes-sante/actions/runs/42647212116",
+  "corpusFingerprint": "dd4e8d3796361325563d10d216e975ddf5e1c55fa69f3bc2c90ff668f46b3b05",
+  "all": {
+    "before": {
+      "n": 100,
+      "p50Ms": 5364.173137999998,
+      "p95Ms": 13359.778411,
+      "providerCalls": 279,
+      "outcomes": {
+        "pass": 97,
+        "fail": 3
+      },
+      "responseStatus": {
+        "answer": 90,
+        "abstain": 9,
+        "category_only": 1
+      }
+    },
+    "after": {
+      "n": 100,
+      "p50Ms": 4315.5064999999995,
+      "p95Ms": 6358.202851000009,
+      "providerCalls": 243,
+      "outcomes": {
+        "pass": 100
+      },
+      "responseStatus": {
+        "answer": 90,
+        "abstain": 10
+      }
+    },
+    "medianReductionPct": 19.549455452345597,
+    "p95ReductionPct": 52.40787193173148
+  },
+  "documentaryIncludingFailures": {
+    "before": {
+      "n": 75,
+      "p50Ms": 5717.8852659999975,
+      "p95Ms": 15585.102115999995,
+      "providerCalls": 257,
+      "outcomes": {
+        "pass": 74,
+        "fail": 1
+      },
+      "responseStatus": {
+        "answer": 74,
+        "abstain": 1
+      }
+    },
+    "after": {
+      "n": 75,
+      "p50Ms": 4619.737411000009,
+      "p95Ms": 7636.782198000001,
+      "providerCalls": 232,
+      "outcomes": {
+        "pass": 75
+      },
+      "responseStatus": {
+        "answer": 75
+      }
+    },
+    "medianReductionPct": 19.205489510778662,
+    "p95ReductionPct": 50.99947282244677
+  },
+  "documentarySuccessfulBoth": {
+    "before": {
+      "n": 74,
+      "p50Ms": 5711.010299000001,
+      "p95Ms": 13847.115038999997,
+      "providerCalls": 253,
+      "outcomes": {
+        "pass": 74
+      },
+      "responseStatus": {
+        "answer": 74
+      }
+    },
+    "after": {
+      "n": 74,
+      "p50Ms": 4605.416295000003,
+      "p95Ms": 7636.782198000001,
+      "providerCalls": 229,
+      "outcomes": {
+        "pass": 74
+      },
+      "responseStatus": {
+        "answer": 74
+      }
+    },
+    "medianReductionPct": 19.35899159897485,
+    "p95ReductionPct": 44.849290437096634
+  },
+  "regressions": [],
+  "improvements": [
+    "T003",
+    "T078",
+    "T082"
+  ],
+  "afterFailures": [],
+  "stages": {
+    "embedding": {
+      "calls": 80,
+      "p50Ms": 173,
+      "p95Ms": 362
+    },
+    "generation": {
+      "calls": 84,
+      "p50Ms": 3261,
+      "p95Ms": 4403
+    },
+    "verification": {
+      "calls": 78,
+      "p50Ms": 1030,
+      "p95Ms": 1484
+    }
+  },
+  "medicalReview": "pending",
+  "limitations": [
+    "Single paired pass, alternating order, four parallel lanes; provider variability remains.",
+    "Latency includes Worker logic and real provider calls, but corpus artifacts are injected locally; public browser/CDN/cold-download latency is not measured.",
+    "Quality checks cover retrieval, response status and existing grounding contract, not independent medical accuracy.",
+    "Successful-pair latency is reported alongside all documentary outcomes to expose selection effects."
+  ]
+}

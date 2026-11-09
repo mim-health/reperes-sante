@@ -115,3 +115,10 @@ Tests V3 et fidélité réexécutés : succès. **Gain de latence après modific
 ## Résultat final du test de vitesse — candidat rejeté
 
 Le comparatif apparié de 100 questions est terminé : voir `LATENCE_AVANT_APRES.md` et `assistant-v3/evaluation/latency-summary.json`. Sur 75 questions documentaires, médiane 5,92 → 6,44 s, p95 13,69 → 16,41 s ; aucune accélération démontrée. 98 → 97 passes mécaniques, avec une nouvelle abstention T003. Consigne de réponse courte et compression retirées du Worker expérimental ; mesures et corpus immuable conservés. Tests locaux de fidélité, contexte, urgence, limites d'entrée et réutilisation du corpus réussis après retrait. Aucun déploiement. Les sections précédentes décrivent l'historique des candidats, pas une décision de mise en production.
+
+
+## Candidat accéléré par références de citations — 09/11
+
+Après rejet de la brièveté/compression, un candidat distinct évite au modèle de recopier les preuves : références courtes, réinsertion exacte côté serveur, contrôles mécaniques et vérificateur sémantique conservés. Voir `LATENCE_REFERENCES_CITATIONS.md`.
+
+Validation finale réelle 42647212116 : 100/100 passes mécaniques, 75/75 documentaires, 15/15 urgences, 10/10 limites, aucune régression dans ce jeu. Sur 74 réponses documentaires réussies des deux côtés : médiane 5,71 → 4,61 s (−19,4 %), p95 13,85 → 7,64 s (−44,8 %). Résultats du banc, pas de mesure publique. Candidat dans `worker-citation-refs.js`, sans remplacement du Worker public ni déploiement. Revue médicale des réponses et validation explicite encore requises. Ticket ouvert.
