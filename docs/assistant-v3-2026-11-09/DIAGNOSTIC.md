@@ -122,3 +122,8 @@ Le comparatif apparié de 100 questions est terminé : voir `LATENCE_AVANT_APRES
 Après rejet de la brièveté/compression, un candidat distinct évite au modèle de recopier les preuves : références courtes, réinsertion exacte côté serveur, contrôles mécaniques et vérificateur sémantique conservés. Voir `LATENCE_REFERENCES_CITATIONS.md`.
 
 Validation finale réelle 42647212116 : 100/100 passes mécaniques, 75/75 documentaires, 15/15 urgences, 10/10 limites, aucune régression dans ce jeu. Sur 74 réponses documentaires réussies des deux côtés : médiane 5,71 → 4,61 s (−19,4 %), p95 13,85 → 7,64 s (−44,8 %). Résultats du banc, pas de mesure publique. Candidat dans `worker-citation-refs.js`, sans remplacement du Worker public ni déploiement. Revue médicale des réponses et validation explicite encore requises. Ticket ouvert.
+
+
+## Accélération supplémentaire — sortie technique compacte
+
+Candidat séparé `worker-compact-output.js` : suppression de champs techniques redondants de la sortie modèle, reconstruction côté serveur, contrôles médicaux/documentaires conservés. Run 42658186389 terminé : 100/100 passes mécaniques de chaque côté. Sur 75 réponses documentaires réussies des deux côtés, médiane 4,82 → 4,19 s (−13,0 %), p95 10,40 → 9,44 s (−9,3 %). **P95 global moins favorable : 7,81 → 8,88 s (+13,7 %).** Accélération non uniforme, cas avec reprises encore à 8–10 s. Voir `LATENCE_SORTIE_COMPACTE.md`. Pas de déploiement ; revue médicale et analyse des réponses lentes encore nécessaires. Ne pas cumuler naïvement les pourcentages des essais successifs.

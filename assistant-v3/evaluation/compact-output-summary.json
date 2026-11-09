@@ -1,0 +1,119 @@
+{
+  "complete": true,
+  "sourceCommit": "5410a37bd731c08525105b895f48a0a89ba190ca",
+  "run": "https://github.com/mim-health/reperes-sante/actions/runs/42658186389",
+  "corpusFingerprint": "dd4e8d3796361325563d10d216e975ddf5e1c55fa69f3bc2c90ff668f46b3b05",
+  "all": {
+    "before": {
+      "n": 100,
+      "p50Ms": 4389.24977699999,
+      "p95Ms": 7812.213845,
+      "providerCalls": 251,
+      "outcomes": {
+        "pass": 100
+      },
+      "responseStatus": {
+        "answer": 90,
+        "abstain": 10
+      }
+    },
+    "after": {
+      "n": 100,
+      "p50Ms": 4056.753502000007,
+      "p95Ms": 8883.647168000001,
+      "providerCalls": 250,
+      "outcomes": {
+        "pass": 100
+      },
+      "responseStatus": {
+        "answer": 90,
+        "abstain": 10
+      }
+    },
+    "medianReductionPct": 7.575241599197414,
+    "p95ReductionPct": -13.714848879690411
+  },
+  "documentaryIncludingFailures": {
+    "before": {
+      "n": 75,
+      "p50Ms": 4821.014842999997,
+      "p95Ms": 10402.07718600001,
+      "providerCalls": 240,
+      "outcomes": {
+        "pass": 75
+      },
+      "responseStatus": {
+        "answer": 75
+      }
+    },
+    "after": {
+      "n": 75,
+      "p50Ms": 4192.572005000009,
+      "p95Ms": 9438.89521799999,
+      "providerCalls": 239,
+      "outcomes": {
+        "pass": 75
+      },
+      "responseStatus": {
+        "answer": 75
+      }
+    },
+    "medianReductionPct": 13.035488553047559,
+    "p95ReductionPct": 9.259515679198671
+  },
+  "documentarySuccessfulBoth": {
+    "before": {
+      "n": 75,
+      "p50Ms": 4821.014842999997,
+      "p95Ms": 10402.07718600001,
+      "providerCalls": 240,
+      "outcomes": {
+        "pass": 75
+      },
+      "responseStatus": {
+        "answer": 75
+      }
+    },
+    "after": {
+      "n": 75,
+      "p50Ms": 4192.572005000009,
+      "p95Ms": 9438.89521799999,
+      "providerCalls": 239,
+      "outcomes": {
+        "pass": 75
+      },
+      "responseStatus": {
+        "answer": 75
+      }
+    },
+    "medianReductionPct": 13.035488553047559,
+    "p95ReductionPct": 9.259515679198671
+  },
+  "regressions": [],
+  "improvements": [],
+  "afterFailures": [],
+  "stages": {
+    "embedding": {
+      "calls": 80,
+      "p50Ms": 215,
+      "p95Ms": 384
+    },
+    "generation": {
+      "calls": 87,
+      "p50Ms": 2885,
+      "p95Ms": 3871
+    },
+    "verification": {
+      "calls": 82,
+      "p50Ms": 997,
+      "p95Ms": 1775
+    }
+  },
+  "medicalReview": "pending",
+  "limitations": [
+    "Single paired pass, alternating order, four parallel lanes; provider variability remains.",
+    "Latency includes Worker logic and real provider calls, but corpus artifacts are injected locally; public browser/CDN/cold-download latency is not measured.",
+    "Quality checks cover retrieval, response status and existing grounding contract, not independent medical accuracy.",
+    "Successful-pair latency is reported alongside all documentary outcomes to expose selection effects."
+  ]
+}
