@@ -26,7 +26,7 @@ jobs:
           node assistant-v3/evaluation/local-evaluate.cjs
           node assistant-v3/evaluation/grounding-regression.cjs
           node assistant-v3/evaluation/test-citation-refs.cjs
-      - name: Paired citation-reference candidate evaluation (100 synthetic questions)
+      - name: Paired citation-reference and scope-gate validation (100 synthetic questions)
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: node assistant-v3/evaluation/citation-refs-compare.cjs

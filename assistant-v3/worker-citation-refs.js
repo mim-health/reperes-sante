@@ -143,6 +143,15 @@ function dot(a,b){let s=0;for(let i=0;i<a.length;i++)s+=a[i]*b[i];return s;}
 function norm(a){return Math.sqrt(dot(a,a));}
 function cosine(a,b){const d=norm(a)*norm(b);return d?dot(a,b)/d:0;}
 function rank(vectors,q){return vectors.map(x=>({id:x.id,similarity:cosine(q,x.vector)})).sort((a,b)=>b.similarity-a.similarity).slice(0,TOP_K);}
+function outOfScopeAction(question){
+  const q=globalThis.MACA_V3_RETRIEVAL.normalize(question);
+  const personal=/\b(?:dois je|je dois|pour moi|personnellement|me prescrire|mon ordonnance)\b/.test(q);
+  if(/^quelle (?:dose|posologie)\b/.test(q)&&personal)return 'personal_dose';
+  if(/^quels? medicaments?\b/.test(q)&&personal&&/\b(?:arreter|prendre|choisir|commencer|supprimer|changer)\b/.test(q))return 'personal_medication_choice';
+  if(/^(?:ecris|redige|fais|etablis|prescris)\b.{0,50}\b(?:ordonnance|prescription)\b/.test(q))return 'prescription';
+  if(/^(?:interprete|analyse|decrypte)\b.{0,20}\b(?:mon|ma|mes)\b.{0,40}\b(?:genome|adn|sequencage|donnees genetiques)\b/.test(q))return 'personal_genetic_interpretation';
+  return null;
+}
 function cardExcerpts(card){
   const out=[],seen=new Set();
   for(const field of ['answer','detail','usefulInfo','watch'])for(const quote of String(card.content?.[field]||'').split(/\n\s*\n/).map(s=>s.trim()).filter(Boolean)){
@@ -265,6 +274,8 @@ export default {
       const text=['neurological','medication-error'].includes(safety.ruleId)?source.answer:source.watch;
       return response(origin,allowed,200,{status:'answer',answer:text,cards_used:[{id:source.id,title:source.title,url:source.url}],scope_note:'Orientation de sécurité documentaire. Règles expérimentales en attente de revue médicale.',meta:{worker_revision:WORKER_REVISION,safety_rule:safety.ruleId,medical_review:'pending',grounding:'exact_corpus_quote'}});
     }
+    const scopeRule=outOfScopeAction(context.retrievalQuestion);
+    if(scopeRule)return response(origin,allowed,200,{status:'abstain',answer:'',category:null,cards_used:[],selected_cards:[],scope_note:GENERAL_SCOPE_NOTE,meta:{worker_revision:WORKER_REVISION,scope_rule:scopeRule,grounding:'not_applicable'}});
     if(!apiKey)return response(origin,allowed,503,{error:'service_not_configured'});
     try{
       const runtime=Object.assign(Object.create(env),{requestDeadline:Date.now()+40000,timings:[]});
