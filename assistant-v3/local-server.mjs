@@ -1,0 +1,10 @@
+// Local-only prototype. No request body, medical history or API key is logged.
+import http from 'node:http';
+import fs from 'node:fs';
+import worker from './worker-experimental.js';
+const origin='http://127.0.0.1:8789',realFetch=globalThis.fetch;
+const latest=JSON.parse(fs.readFileSync(new URL('../assistant-v2/latest.json',import.meta.url)));
+globalThis.fetch=async(url,opt)=>{if(String(url).startsWith('https://raw.githubusercontent.com/mim-health/reperes-sante/a168b21b6a6a6b6125147c45469bf09eca142270/assistant-v2/')){const name=String(url).split('/').at(-1).split('?')[0];if(name==='latest.json')return Response.json(latest);if(['corpus.json','embeddings.index.json'].includes(name))return new Response(fs.readFileSync(new URL('../assistant-v2/public-artifacts/'+latest.version+'/'+name,import.meta.url)));throw Error('Unknown artifact');}return realFetch(url,opt);};
+const hits=new Map();
+const env={OPENAI_API_KEY:process.env.OPENAI_API_KEY||'',RATE_LIMIT_SALT:'local-only',ALLOWED_ORIGIN:origin,RATE_LIMITER:{limit:async({key})=>{const now=Date.now(),a=(hits.get(key)||[]).filter(t=>now-t<60000);a.push(now);hits.set(key,a);return {success:a.length<=10};}}};
+http.createServer(async(req,res)=>{try{if(req.method==='GET'&&req.url==='/'){res.writeHead(200,{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store'});res.end(fs.readFileSync(new URL('./preview.html',import.meta.url)));return;}if(req.url!=='/ask'){res.writeHead(404);res.end();return;}const chunks=[];let length=0;for await(const chunk of req){length+=chunk.length;if(length>8192){res.writeHead(413);res.end();return;}chunks.push(chunk);}const answer=await worker.fetch(new Request(origin+'/ask',{method:req.method,headers:{...req.headers,Origin:origin},body:req.method==='POST'?Buffer.concat(chunks):undefined}),env);res.writeHead(answer.status,Object.fromEntries(answer.headers));res.end(await answer.text());}catch{res.writeHead(500);res.end('{"error":"local_error"}');}}).listen(8789,'127.0.0.1',()=>console.log('Prototype: '+origin+' — no deployment'));

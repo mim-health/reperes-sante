@@ -1,0 +1,35 @@
+name: Assistant V3 isolated evaluation (no deployment)
+on:
+  push:
+    branches: [feat/assistant-v3-retrieval-conversation]
+    paths: ['.github/workflows/assistant-v3-evaluate.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify prototype and frozen annotations
+        run: |
+          node scripts/build-assistant-v2-corpus.js
+          node scripts/test-assistant-v2-grounding.js
+          node scripts/test-assistant-v2-patient-language.js
+          node scripts/test-assistant-v2-canonical.js
+          node scripts/test-ipp-retrieval.js
+          node assistant-v3/evaluation/test-v3.cjs
+          node assistant-v3/evaluation/local-evaluate.cjs
+      - name: Real V2 and V3 on same frozen corpus (synthetic questions)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: node assistant-v3/evaluation/full-compare.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: assistant-v3-evaluation
+          path: assistant-v3/evaluation/*results.json
