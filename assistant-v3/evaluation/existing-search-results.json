@@ -1,0 +1,1882 @@
+{
+  "mode": "independent-existing-search-cases-lexical-component-only",
+  "total": 139,
+  "pass": 115,
+  "fail": 11,
+  "notComparable": 13,
+  "rows": [
+    {
+      "question": "mal au ventre",
+      "expectedIds": [
+        "douleur-abdominale"
+      ],
+      "retrievedIds": [
+        "douleur-abdominale",
+        "ado-ventre-gargouille",
+        "ado-refus-scolaire-anxieux",
+        "composition-corporelle-menopause-45-50",
+        "ballonnements-ventre-gonfle"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "j ai une douleur abdominale",
+      "expectedIds": [
+        "douleur-abdominale"
+      ],
+      "retrievedIds": [
+        "douleur-abdominale",
+        "tour-de-taille-risque-cardiovasculaire",
+        "vomissements-enfant",
+        "composition-corporelle-menopause-45-50",
+        "mag-daily-constipation-20261027"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "reflux gastrique",
+      "expectedIds": [
+        "reflux-adulte"
+      ],
+      "retrievedIds": [
+        "ipp-long-cours-omeprazole",
+        "alcool-transit-digestion",
+        "regurgitations-nourrisson",
+        "reflux-adulte",
+        "rgo-adulte"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "j ai des remontees acides",
+      "expectedIds": [
+        "reflux-adulte",
+        "douleur-abdominale"
+      ],
+      "retrievedIds": [
+        "reflux-adulte",
+        "rgo-adulte",
+        "alcool-transit-digestion",
+        "aliments-augmentent-ldl-cholesterol",
+        "ipp-long-cours-omeprazole"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "brulures d estomac",
+      "expectedIds": [
+        "reflux-adulte",
+        "douleur-abdominale"
+      ],
+      "retrievedIds": [
+        "reflux-adulte",
+        "rgo-adulte",
+        "alcool-transit-digestion",
+        "arreter-omeprazole-pantoprazole-ipp",
+        "ipp-long-cours-omeprazole"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "mon bebe a des regurgitations",
+      "expectedIds": [],
+      "retrievedIds": [
+        "regurgitations-nourrisson",
+        "vomissements-enfant",
+        "rgo-adulte",
+        "pleurs-nourrisson",
+        "reflux-adulte"
+      ],
+      "result": "not_comparable"
+    },
+    {
+      "question": "crampes nocturnes",
+      "expectedIds": [
+        "crampes-musculaires-causes"
+      ],
+      "retrievedIds": [
+        "crampes-musculaires-causes",
+        "creatine-sport-reins-securite-20260905",
+        "magnesium-sante",
+        "menopause-sommeil-reveils",
+        "maca-hydratation-sport"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "crampe au mollet",
+      "expectedIds": [
+        "crampes-musculaires-causes"
+      ],
+      "retrievedIds": [
+        "crampes-musculaires-causes",
+        "mag-daily-mollet-20261027",
+        "jambe-gonflee-adulte",
+        "tendon-achille-repos-sport",
+        "douleur-talon-matin"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "crampe au mollet et mollet gonfle",
+      "expectedIds": [
+        "jambe-gonflee-adulte"
+      ],
+      "retrievedIds": [
+        "crampes-musculaires-causes",
+        "jambe-gonflee-adulte",
+        "ballonnements-ventre-gonfle",
+        "mag-daily-mollet-20261027",
+        "mag-daily-abces-dentaire-20261018"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "perte de cheveux",
+      "expectedIds": [
+        "alopecie-causes-pelade-traitement"
+      ],
+      "retrievedIds": [
+        "glp1-chute-cheveux",
+        "anti-chute-cheveux-cuir-chevelu-sensible",
+        "alopecie-causes-pelade-traitement",
+        "poux-enfant-traitement",
+        "poux-enfant"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "je perds mes cheveux",
+      "expectedIds": [
+        "alopecie-causes-pelade-traitement"
+      ],
+      "retrievedIds": [
+        "glp1-chute-cheveux",
+        "alopecie-causes-pelade-traitement",
+        "perte-poids-involontaire",
+        "sarcopenie-perte-force-age",
+        "anti-chute-cheveux-cuir-chevelu-sensible"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "mon enfant saigne du nez",
+      "expectedIds": [
+        "saignement-nez-enfant"
+      ],
+      "retrievedIds": [
+        "saignement-nez-enfant",
+        "saignement-nez-adulte",
+        "mag-daily-epistaxis-rotation-20261029",
+        "rhume-nez-bouche-enfant",
+        "difficulte-respiratoire-enfant"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "saignement de nez",
+      "expectedIds": [
+        "saignement-nez-adulte"
+      ],
+      "retrievedIds": [
+        "saignement-nez-adulte",
+        "saignement-nez-enfant",
+        "mag-daily-epistaxis-rotation-20261029",
+        "rhume-nez-bouche-enfant",
+        "difficulte-respiratoire-enfant"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "eczema",
+      "expectedIds": [
+        "eczema-que-faire"
+      ],
+      "retrievedIds": [
+        "mag-daily-eczema-20261013",
+        "eczema-que-faire",
+        "prurit-generalise-causes",
+        "rash-enfant",
+        "diversification-alimentaire-bebe"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "plaques rouges qui demangent",
+      "expectedIds": [
+        "eczema-que-faire"
+      ],
+      "retrievedIds": [
+        "rash-enfant",
+        "psoriasis-traitements-efficaces",
+        "eczema-que-faire",
+        "mag-daily-remibrutinib-sep-20261025",
+        "mag-decryptage-flowpromote-plaques-20261101"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "mon enfant a les yeux rouges",
+      "expectedIds": [
+        "oeil-rouge-enfant"
+      ],
+      "retrievedIds": [
+        "oeil-rouge-adulte",
+        "convulsion-febrile-enfant",
+        "enfant-voit-mal-signes-depistage",
+        "deshydratation-enfant",
+        "frequence-controle-vue"
+      ],
+      "result": "fail"
+    },
+    {
+      "question": "les yeux me piquent",
+      "expectedIds": [],
+      "retrievedIds": [
+        "yeux-secs-larmes-artificielles",
+        "larmoiement-yeux",
+        "enfant-voit-mal-signes-depistage",
+        "mouches-volantes-quand-consulter",
+        "convulsion-febrile-enfant"
+      ],
+      "result": "not_comparable"
+    },
+    {
+      "question": "yeux rouges",
+      "expectedIds": [
+        "oeil-rouge-adulte"
+      ],
+      "retrievedIds": [
+        "oeil-rouge-adulte",
+        "eczema-que-faire",
+        "sang-dans-les-selles",
+        "yeux-secs-larmes-artificielles",
+        "larmoiement-yeux"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "mal au genou",
+      "expectedIds": [
+        "douleur-genou-escaliers"
+      ],
+      "retrievedIds": [
+        "douleur-genou-escaliers",
+        "collagene-douleurs-articulaires",
+        "mag-daily-robot-20261013",
+        "arthrose-faut-il-bouger",
+        "douleur-talon-matin"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "douleur derriere la rotule",
+      "expectedIds": [
+        "douleur-genou-escaliers"
+      ],
+      "retrievedIds": [
+        "douleur-genou-escaliers",
+        "douleur-oreille-enfant",
+        "reflux-adulte",
+        "rgo-adulte",
+        "douleur-epaule-origines-20261104"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "genou rouge et tres gonfle",
+      "expectedIds": [],
+      "retrievedIds": [
+        "douleur-genou-escaliers",
+        "arthrose-faut-il-bouger",
+        "goutte-crise-articulation-rouge-douloureuse",
+        "collagene-douleurs-articulaires",
+        "mag-daily-robot-20261013"
+      ],
+      "result": "not_comparable"
+    },
+    {
+      "question": "acouphenes",
+      "expectedIds": [
+        "acouphenes-adulte"
+      ],
+      "retrievedIds": [
+        "acouphenes-adulte",
+        "q-acouphenes-frequence",
+        "baisse-audition-brutale",
+        "toux-enfant",
+        "asthme-controle-quotidien"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "bourdonnements",
+      "expectedIds": [
+        "acouphenes-adulte"
+      ],
+      "retrievedIds": [
+        "q-acouphenes-frequence",
+        "acouphenes-adulte"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "acouphenes et vertiges",
+      "expectedIds": [
+        "acouphenes-adulte",
+        "vertiges-causes"
+      ],
+      "retrievedIds": [
+        "acouphenes-adulte",
+        "q-acouphenes-frequence",
+        "baisse-audition-brutale",
+        "vertiges-causes",
+        "toux-enfant"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "vertiges",
+      "expectedIds": [
+        "vertiges-causes"
+      ],
+      "retrievedIds": [
+        "vertiges-causes",
+        "sante-mentale-crise-angoisse",
+        "vertiges-adulte",
+        "maca-hydratation-sport",
+        "sante-mentale-anxiete-stress"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "j ai la tete qui tourne",
+      "expectedIds": [
+        "vertiges-causes"
+      ],
+      "retrievedIds": [
+        "hypotension-orthostatique-lever",
+        "vertiges-adulte",
+        "vertiges-causes",
+        "enfant-voit-mal-signes-depistage",
+        "maux-tete"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "vertiges quand consulter",
+      "expectedIds": [
+        "vertiges-adulte"
+      ],
+      "retrievedIds": [
+        "vertiges-adulte",
+        "vertiges-causes",
+        "sante-mentale-crise-angoisse",
+        "maca-hydratation-sport",
+        "sante-mentale-anxiete-stress"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "malaise",
+      "expectedIds": [],
+      "retrievedIds": [
+        "palpitations",
+        "douleur-thoracique-coeur",
+        "vertiges-adulte",
+        "douleur-abdominale",
+        "hypotension-orthostatique-lever"
+      ],
+      "result": "not_comparable"
+    },
+    {
+      "question": "mal en bas du dos",
+      "expectedIds": [
+        "lombalgie-adulte"
+      ],
+      "retrievedIds": [
+        "lombalgie-adulte",
+        "mag-daily-dos-travail-20261106",
+        "mal-dos-travail-prevenir-installation",
+        "travail-ecran-douleurs-fatigue-visuelle-sedentarite",
+        "douleur-thoracique-coeur"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "tour de rein",
+      "expectedIds": [
+        "lombalgie-adulte"
+      ],
+      "retrievedIds": [
+        "lombalgie-adulte",
+        "tour-de-taille-risque-cardiovasculaire",
+        "mag-daily-don-rein-grossesse-20261025",
+        "couchage-bebe-securite-min",
+        "composition-corporelle-menopause-45-50"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "douleur d epaule",
+      "expectedIds": [],
+      "retrievedIds": [
+        "mag-daily-epaule-vaccin-20261106",
+        "douleur-epaule-lever-bras",
+        "douleur-epaule-origines-20261104",
+        "tendinopathie-long-biceps-epaule-20261104",
+        "capsulite-retractile-epaule-20261104"
+      ],
+      "result": "not_comparable"
+    },
+    {
+      "question": "je dors mal",
+      "expectedIds": [
+        "insomnie-adulte"
+      ],
+      "retrievedIds": [
+        "insomnie-adulte",
+        "activite-physique-sommeil-20260824",
+        "maux-tete",
+        "ado-boissons-energisantes",
+        "mag-daily-dos-travail-20261106"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "difficulte a m endormir",
+      "expectedIds": [
+        "insomnie-adulte"
+      ],
+      "retrievedIds": [
+        "ado-sommeil-endormissement",
+        "sommeil-bebe",
+        "ado-fatigue",
+        "activite-physique-sommeil-20260824",
+        "mag-daily-cannabis-sommeil-20261010"
+      ],
+      "result": "fail"
+    },
+    {
+      "question": "je dors mal et je ronfle",
+      "expectedIds": [],
+      "retrievedIds": [
+        "insomnie-adulte",
+        "activite-physique-sommeil-20260824",
+        "douleur-genou-escaliers",
+        "ballonnements-ventre-gonfle",
+        "entorse-cheville-fracture"
+      ],
+      "result": "not_comparable"
+    },
+    {
+      "question": "rapport non protege",
+      "expectedIds": [
+        "rapport-non-protege-ist"
+      ],
+      "retrievedIds": [
+        "rapport-non-protege-ist",
+        "contraception-urgence",
+        "oubli-pilule",
+        "mag-urolithine-a-20261012",
+        "mag-daily-vitamine-k-20261106"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "rapport non protege pilule du lendemain",
+      "expectedIds": [
+        "contraception-urgence",
+        "rapport-non-protege-ist"
+      ],
+      "retrievedIds": [
+        "contraception-urgence",
+        "oubli-pilule",
+        "rapport-non-protege-ist",
+        "mag-daily-pilule-20261027",
+        "contraception-apres-40-ans"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "pilule du lendemain",
+      "expectedIds": [
+        "contraception-urgence"
+      ],
+      "retrievedIds": [
+        "contraception-urgence",
+        "mag-daily-pilule-20261027",
+        "contraception-apres-40-ans",
+        "oubli-pilule",
+        "desogestrel-meningiome-risque"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "toux qui dure",
+      "expectedIds": [
+        "toux-prolongee-adulte"
+      ],
+      "retrievedIds": [
+        "toux-prolongee-adulte",
+        "toux-seche-que-faire",
+        "toux-enfant",
+        "asthme-controle-quotidien",
+        "difficulte-respiratoire-enfant"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "toux seche",
+      "expectedIds": [
+        "toux-seche-que-faire"
+      ],
+      "retrievedIds": [
+        "toux-seche-que-faire",
+        "bouche-seche-xerostomie",
+        "toux-prolongee-adulte",
+        "toux-enfant",
+        "eczema-que-faire"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "mon enfant tousse",
+      "expectedIds": [
+        "toux-enfant"
+      ],
+      "retrievedIds": [
+        "toux-enfant",
+        "fuites-urinaires-age",
+        "depistage-cancer-poumon-scanner-faible-dose",
+        "ibuprofene-enfant",
+        "asthme-enfant-arret-traitement-fond-20260901"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "essoufflement",
+      "expectedIds": [
+        "essoufflement-adulte"
+      ],
+      "retrievedIds": [
+        "essoufflement-adulte",
+        "insuffisance-cardiaque-signes-aggravation",
+        "essoufflement-causes-signes-alerte",
+        "asthme-controle-quotidien",
+        "insuffisance-cardiaque-surveillance-poids"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "souffle court",
+      "expectedIds": [
+        "essoufflement-adulte"
+      ],
+      "retrievedIds": [
+        "essoufflement-adulte",
+        "essoufflement-causes-signes-alerte",
+        "ejaculation-prematuree-traitements",
+        "mag-daily-opioides-20261022",
+        "difficulte-respiratoire-enfant"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "palpitations",
+      "expectedIds": [
+        "palpitations-adulte"
+      ],
+      "retrievedIds": [
+        "palpitations-quand-consulter",
+        "palpitations-adulte",
+        "palpitations",
+        "thon-intoxication-histamine-scombrotoxisme",
+        "sante-mentale-anxiete-stress"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "coeur qui s emballe",
+      "expectedIds": [
+        "palpitations-adulte"
+      ],
+      "retrievedIds": [
+        "palpitations-adulte",
+        "douleur-thoracique-coeur",
+        "mag-daily-inegalites-cardio-20261018",
+        "cafe-coeur-cafeine",
+        "mag-daily-diabete-20261011"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "palpitations quand consulter",
+      "expectedIds": [
+        "palpitations-quand-consulter"
+      ],
+      "retrievedIds": [
+        "palpitations-quand-consulter",
+        "palpitations-adulte",
+        "palpitations",
+        "chute-personne-agee-2026-08-27",
+        "thon-intoxication-histamine-scombrotoxisme"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "cystite",
+      "expectedIds": [
+        "cystite-femme"
+      ],
+      "retrievedIds": [
+        "mag-daily-cystite-20261013",
+        "mag-daily-cranberry-cystite-20261102",
+        "cystite-femme",
+        "mag-daily-brulures-urinaires-rotation-20261030"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "brulures en urinant",
+      "expectedIds": [
+        "cystite-femme"
+      ],
+      "retrievedIds": [
+        "mag-daily-brulures-urinaires-rotation-20261030",
+        "cystite-femme",
+        "sang-urines-hematurie",
+        "reflux-adulte",
+        "rgo-adulte"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "pertes vaginales",
+      "expectedIds": [],
+      "retrievedIds": [
+        "pertes-vaginales-2026-08-27",
+        "douleur-rapports-dyspareunie",
+        "saignement-apres-menopause",
+        "deshydratation-enfant",
+        "saignement-apres-rapport"
+      ],
+      "result": "not_comparable"
+    },
+    {
+      "question": "mal de tete",
+      "expectedIds": [
+        "maux-tete",
+        "migraine-que-faire"
+      ],
+      "retrievedIds": [
+        "maux-tete",
+        "enfant-voit-mal-signes-depistage",
+        "vertiges-adulte",
+        "migraine-que-faire",
+        "vertiges-causes"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "migraine",
+      "expectedIds": [
+        "migraine-que-faire"
+      ],
+      "retrievedIds": [
+        "mag-daily-migraine-20261018",
+        "migraine-adulte",
+        "mag-daily-biofeedback-migraine-20261104",
+        "migraine-que-faire",
+        "mag-daily-migraine-grossesse-20261102"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "migraine avec aura",
+      "expectedIds": [
+        "migraine-que-faire"
+      ],
+      "retrievedIds": [
+        "migraine-que-faire",
+        "mag-daily-migraine-20261018",
+        "migraine-adulte",
+        "mag-daily-biofeedback-migraine-20261104",
+        "mag-daily-migraine-grossesse-20261102"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "migraine traitement de fond",
+      "expectedIds": [
+        "migraine-adulte"
+      ],
+      "retrievedIds": [
+        "migraine-adulte",
+        "mag-daily-migraine-20261018",
+        "asthme-enfant-arret-traitement-fond-20260901",
+        "mag-daily-eczema-20261013",
+        "migraine-que-faire"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "grain de beaute qui change",
+      "expectedIds": [
+        "grain-beaute-change-melanome"
+      ],
+      "retrievedIds": [
+        "grain-beaute-change-melanome",
+        "mag-daily-melanome-20261015",
+        "mag-daily-remibrutinib-sep-20261025",
+        "marche-30-minutes",
+        "mag-daily-metformine-diabete-gestationnel-20261104"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "grain de beaute bicolore",
+      "expectedIds": [
+        "grain-beaute-change-melanome"
+      ],
+      "retrievedIds": [
+        "grain-beaute-change-melanome",
+        "mag-daily-melanome-20261015"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "taches brunes diffuses",
+      "expectedIds": [],
+      "retrievedIds": [
+        "taches-brunes-peau",
+        "cancer-intelligence-artificielle-usages-reels",
+        "mag-urolithine-a-20261012",
+        "reseaux-sociaux-effets-jeunes",
+        "fievre-adulte-quand-sinquieter"
+      ],
+      "result": "not_comparable"
+    },
+    {
+      "question": "jambes lourdes",
+      "expectedIds": [
+        "jambes-lourdes-varices"
+      ],
+      "retrievedIds": [
+        "jambes-lourdes-varices",
+        "jambes-sans-repos",
+        "insuffisance-cardiaque-signes-aggravation",
+        "aomi-sans-douleur",
+        "lipoedeme-reconnaitre-traitement"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "varices",
+      "expectedIds": [
+        "jambes-lourdes-varices"
+      ],
+      "retrievedIds": [
+        "varices-echo-doppler-utilite",
+        "varices-que-signifie",
+        "jambes-lourdes-varices",
+        "varices-contention-disparaitre",
+        "varices-traitements-modernes"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "une jambe gonflee",
+      "expectedIds": [
+        "jambe-gonflee-adulte"
+      ],
+      "retrievedIds": [
+        "jambe-gonflee-adulte",
+        "crampes-musculaires-causes",
+        "doigts-raides-matin",
+        "sciatique-faut-il-irm",
+        "goutte-crise-articulation-rouge-douloureuse"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "phlebite",
+      "expectedIds": [
+        "jambe-gonflee-adulte"
+      ],
+      "retrievedIds": [
+        "jambe-gonflee-adulte",
+        "voyage-thrombose"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "mon enfant a de la fievre",
+      "expectedIds": [
+        "fievre-enfant"
+      ],
+      "retrievedIds": [
+        "convulsion-febrile-enfant",
+        "fievre-enfant",
+        "ibuprofene-enfant",
+        "boiterie-enfant",
+        "mal-gorge-enfant"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "fievre adulte",
+      "expectedIds": [
+        "fievre-adulte-quand-sinquieter"
+      ],
+      "retrievedIds": [
+        "fievre-adulte-quand-sinquieter",
+        "mag-daily-brulures-urinaires-rotation-20261030",
+        "diarrhee-adulte",
+        "toux-prolongee-adulte",
+        "douleur-epaule-lever-bras"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "mon enfant est fatigue depuis la rentree",
+      "expectedIds": [
+        "fatigue-enfant-rentree"
+      ],
+      "retrievedIds": [
+        "fatigue-enfant-rentree",
+        "asthme-enfant-arret-traitement-fond-20260901",
+        "difficulte-respiratoire-enfant",
+        "burnout-parental-epuisement",
+        "ado-sommeil-endormissement"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "fatigue",
+      "expectedIds": [],
+      "retrievedIds": [
+        "ado-sommeil-endormissement",
+        "fatigue-enfant-rentree",
+        "mici-fatigue-sous-traitement",
+        "sante-mentale-burnout-professionnel-reconnaitre",
+        "ado-fatigue"
+      ],
+      "result": "not_comparable"
+    },
+    {
+      "question": "je tousse du sang",
+      "expectedIds": [],
+      "retrievedIds": [
+        "fuites-urinaires-age",
+        "toux-enfant",
+        "depistage-cancer-poumon-scanner-faible-dose",
+        "sang-dans-les-selles",
+        "sang-dans-urines-hematurie"
+      ],
+      "result": "not_comparable"
+    },
+    {
+      "question": "hemoptysie",
+      "expectedIds": [],
+      "retrievedIds": [],
+      "result": "not_comparable"
+    },
+    {
+      "question": "la langue me pique",
+      "expectedIds": [],
+      "retrievedIds": [
+        "bouche-seche-xerostomie",
+        "piqure-guepe-abeille-que-faire",
+        "west-nile-france-20260825",
+        "enfant-parle-peu-quand-sinquieter",
+        "thon-intoxication-histamine-scombrotoxisme"
+      ],
+      "result": "not_comparable"
+    },
+    {
+      "question": "demangeaisons de la nuque",
+      "expectedIds": [],
+      "retrievedIds": [
+        "prurit-generalise-causes",
+        "maux-tete",
+        "thon-intoxication-histamine-scombrotoxisme",
+        "eczema-que-faire",
+        "hemorroides-que-faire"
+      ],
+      "result": "not_comparable"
+    },
+    {
+      "question": "morsure de tique que faire",
+      "expectedIds": [
+        "maca-tique-conduite"
+      ],
+      "retrievedIds": [
+        "maca-tique-conduite",
+        "tique",
+        "morsure-chien-chat-que-faire"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "piqure de tique",
+      "expectedIds": [
+        "tique"
+      ],
+      "retrievedIds": [
+        "tique",
+        "maca-tique-conduite",
+        "piqure-guepe-abeille-que-faire",
+        "virus-west-nile-symptomes-prevention",
+        "mag-daily-chikungunya-20261016"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "mon enfant a des poux",
+      "expectedIds": [
+        "poux-enfant-traitement"
+      ],
+      "retrievedIds": [
+        "poux-enfant",
+        "poux-enfant-traitement",
+        "ibuprofene-enfant",
+        "asthme-enfant-arret-traitement-fond-20260901",
+        "ingestion-produit-toxique-enfant"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "diversification bebe",
+      "expectedIds": [
+        "diversification-alimentaire"
+      ],
+      "retrievedIds": [
+        "diversification-alimentaire",
+        "diversification-alimentaire-bebe",
+        "pleurs-nourrisson",
+        "couchage-bebe-securite-min",
+        "bebe-tete-moins"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "bouffees de chaleur menopause",
+      "expectedIds": [
+        "maca-menopause-bouffees"
+      ],
+      "retrievedIds": [
+        "maca-menopause-bouffees",
+        "mag-daily-menopause-traitements-20261031",
+        "menopause-sommeil-reveils",
+        "menopause",
+        "traitement-hormonal-menopause-risques-20260904"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "perimenopause",
+      "expectedIds": [
+        "perimenopause-signes-quand-consulter"
+      ],
+      "retrievedIds": [
+        "perimenopause-signes-quand-consulter",
+        "menopause-sommeil-reveils",
+        "regles-abondantes-saignements",
+        "contraception-apres-40-ans",
+        "composition-corporelle-menopause-45-50"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "menopause",
+      "expectedIds": [
+        "menopause"
+      ],
+      "retrievedIds": [
+        "saignement-apres-menopause",
+        "mag-daily-rotation-saignement-menopause-20261026",
+        "menopause-iatrogene-risque-cardiovasculaire",
+        "mag-daily-menopause-traitements-20261031",
+        "composition-corporelle-menopause-45-50"
+      ],
+      "result": "fail"
+    },
+    {
+      "question": "mon ventre me fait mal",
+      "expectedIds": [
+        "douleur-abdominale"
+      ],
+      "retrievedIds": [
+        "douleur-abdominale",
+        "ado-ventre-gargouille",
+        "ado-refus-scolaire-anxieux",
+        "regles-douloureuses-dysmenorrhee",
+        "microbiote-probiotiques-limites-20260828"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "mal d estomac",
+      "expectedIds": [
+        "douleur-abdominale"
+      ],
+      "retrievedIds": [
+        "mag-daily-hpylori-20261010",
+        "reflux-adulte",
+        "rgo-adulte",
+        "alcool-transit-digestion",
+        "ipp-long-cours-omeprazole"
+      ],
+      "result": "fail"
+    },
+    {
+      "question": "rgo",
+      "expectedIds": [
+        "reflux-adulte"
+      ],
+      "retrievedIds": [
+        "reflux-adulte",
+        "regurgitations-nourrisson",
+        "rgo-adulte",
+        "ipp-long-cours-omeprazole"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "pyrosis",
+      "expectedIds": [
+        "reflux-adulte"
+      ],
+      "retrievedIds": [
+        "reflux-adulte",
+        "rgo-adulte"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "acide qui remonte",
+      "expectedIds": [
+        "reflux-adulte"
+      ],
+      "retrievedIds": [
+        "reflux-adulte",
+        "rgo-adulte",
+        "arreter-omeprazole-pantoprazole-ipp",
+        "ipp-long-cours-omeprazole",
+        "goutte-alimentation"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "crampes la nuit",
+      "expectedIds": [
+        "crampes-musculaires-causes"
+      ],
+      "retrievedIds": [
+        "crampes-musculaires-causes",
+        "creatine-sport-reins-securite-20260905",
+        "magnesium-sante",
+        "maca-hydratation-sport",
+        "nycturie-levers-nocturnes-uriner"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "muscle qui se contracte",
+      "expectedIds": [
+        "crampes-musculaires-causes"
+      ],
+      "retrievedIds": [
+        "crampes-musculaires-causes",
+        "mag-daily-icfep-20261016",
+        "sarcopenie-perte-force-age",
+        "transaminases-elevees",
+        "mag-decryptage-vessie-volga-20261030"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "alopecie",
+      "expectedIds": [
+        "alopecie-causes-pelade-traitement"
+      ],
+      "retrievedIds": [
+        "alopecie-causes-pelade-traitement",
+        "anti-chute-cheveux-cuir-chevelu-sensible",
+        "glp1-chute-cheveux"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "pelade",
+      "expectedIds": [
+        "alopecie-causes-pelade-traitement"
+      ],
+      "retrievedIds": [
+        "alopecie-causes-pelade-traitement"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "epistaxis enfant",
+      "expectedIds": [
+        "saignement-nez-enfant"
+      ],
+      "retrievedIds": [
+        "saignement-nez-enfant",
+        "saignement-nez-adulte",
+        "ibuprofene-enfant",
+        "asthme-enfant-arret-traitement-fond-20260901",
+        "ingestion-produit-toxique-enfant"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "dermatite atopique",
+      "expectedIds": [
+        "eczema-que-faire"
+      ],
+      "retrievedIds": [
+        "eczema-que-faire",
+        "mag-daily-eczema-20261013"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "peau seche qui gratte",
+      "expectedIds": [
+        "eczema-que-faire"
+      ],
+      "retrievedIds": [
+        "prurit-generalise-causes",
+        "eczema-que-faire",
+        "bouche-seche-xerostomie",
+        "toux-seche-que-faire",
+        "deshydratation-enfant"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "conjonctivite enfant",
+      "expectedIds": [
+        "oeil-rouge-enfant"
+      ],
+      "retrievedIds": [
+        "oeil-rouge-enfant",
+        "oeil-rouge-adulte",
+        "larmoiement-yeux",
+        "ibuprofene-enfant",
+        "asthme-enfant-arret-traitement-fond-20260901"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "paupiere collee enfant",
+      "expectedIds": [
+        "oeil-rouge-enfant"
+      ],
+      "retrievedIds": [
+        "oeil-rouge-enfant",
+        "larmoiement-yeux",
+        "ibuprofene-enfant",
+        "asthme-enfant-arret-traitement-fond-20260901",
+        "ingestion-produit-toxique-enfant"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "douleur genou escaliers",
+      "expectedIds": [
+        "douleur-genou-escaliers"
+      ],
+      "retrievedIds": [
+        "douleur-genou-escaliers",
+        "collagene-douleurs-articulaires",
+        "arthrose-faut-il-bouger",
+        "douleur-hanche-tendinopathie-gluteale-20261104",
+        "mag-daily-robot-20261013"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "oreilles qui sifflent",
+      "expectedIds": [
+        "acouphenes-adulte"
+      ],
+      "retrievedIds": [
+        "q-acouphenes-frequence",
+        "mag-daily-cerumen-20261016",
+        "audition-apres-60-ans"
+      ],
+      "result": "fail"
+    },
+    {
+      "question": "bruit dans l oreille",
+      "expectedIds": [
+        "acouphenes-adulte"
+      ],
+      "retrievedIds": [
+        "acouphenes-adulte",
+        "audition-apres-60-ans",
+        "baisse-audition-brutale",
+        "douleur-oreille-enfant",
+        "vertiges-causes"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "tout tourne",
+      "expectedIds": [
+        "vertiges-causes"
+      ],
+      "retrievedIds": [
+        "hypotension-orthostatique-lever",
+        "vertiges-adulte",
+        "vertiges-causes",
+        "enfant-voit-mal-signes-depistage"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "lumbago",
+      "expectedIds": [
+        "lombalgie-adulte"
+      ],
+      "retrievedIds": [
+        "lombalgie-adulte",
+        "mal-dos-travail-prevenir-installation"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "dos bloque",
+      "expectedIds": [
+        "lombalgie-adulte"
+      ],
+      "retrievedIds": [
+        "capsulite-retractile-epaule-20261104",
+        "mag-daily-dos-travail-20261106",
+        "mal-dos-travail-prevenir-installation",
+        "lombalgie-adulte",
+        "sciatique-faut-il-irm"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "insomnie",
+      "expectedIds": [
+        "insomnie-adulte"
+      ],
+      "retrievedIds": [
+        "insomnie-adulte",
+        "menopause-sommeil-reveils",
+        "cannabis-sommeil-effets",
+        "mag-daily-cannabis-sommeil-20261010",
+        "sommeil-apres-60-ans"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "je me reveille la nuit",
+      "expectedIds": [
+        "insomnie-adulte"
+      ],
+      "retrievedIds": [
+        "alzheimer-deambulation-nuit",
+        "menopause-sommeil-reveils",
+        "nycturie-prostate",
+        "nycturie-levers-nocturnes-uriner",
+        "ado-sommeil-endormissement"
+      ],
+      "result": "fail"
+    },
+    {
+      "question": "preservatif craque",
+      "expectedIds": [
+        "rapport-non-protege-ist"
+      ],
+      "retrievedIds": [
+        "oubli-pilule",
+        "contraception-urgence",
+        "ado-premiere-fois-pression-retard"
+      ],
+      "result": "fail"
+    },
+    {
+      "question": "risque ist apres un rapport",
+      "expectedIds": [
+        "rapport-non-protege-ist"
+      ],
+      "retrievedIds": [
+        "rapport-non-protege-ist",
+        "contraception-urgence",
+        "saignement-apres-rapport",
+        "mag-daily-denosumab-20261022",
+        "sexualite-apres-infarctus-maladie-cardiaque"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "toux persistante",
+      "expectedIds": [
+        "toux-prolongee-adulte"
+      ],
+      "retrievedIds": [
+        "toux-seche-que-faire",
+        "toux-prolongee-adulte",
+        "toux-enfant",
+        "asthme-controle-quotidien",
+        "depistage-cancer-poumon-scanner-faible-dose"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "toux chronique",
+      "expectedIds": [
+        "toux-prolongee-adulte"
+      ],
+      "retrievedIds": [
+        "toux-prolongee-adulte",
+        "asthme-controle-quotidien",
+        "mag-daily-bpco-tozorakimab-20261102",
+        "toux-seche-que-faire",
+        "toux-enfant"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "dyspnee",
+      "expectedIds": [
+        "essoufflement-adulte"
+      ],
+      "retrievedIds": [
+        "essoufflement-adulte",
+        "essoufflement-causes-signes-alerte",
+        "insuffisance-cardiaque-signes-aggravation",
+        "insuffisance-cardiaque-voyage-avion",
+        "insuffisance-cardiaque-activite-physique"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "vite essouffle",
+      "expectedIds": [
+        "essoufflement-adulte"
+      ],
+      "retrievedIds": [
+        "essoufflement-adulte",
+        "difficulte-respiratoire-enfant",
+        "insuffisance-cardiaque-activite-physique",
+        "ejaculation-prematuree-traitements",
+        "palpitations-adulte"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "extrasystoles",
+      "expectedIds": [
+        "palpitations-adulte"
+      ],
+      "retrievedIds": [
+        "palpitations-adulte",
+        "palpitations-quand-consulter"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "coeur qui saute",
+      "expectedIds": [
+        "palpitations-adulte"
+      ],
+      "retrievedIds": [
+        "palpitations-adulte",
+        "ado-saute-repas-perte-poids-tca",
+        "douleur-thoracique-coeur",
+        "mag-daily-inegalites-cardio-20261018",
+        "cafe-coeur-cafeine"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "infection urinaire",
+      "expectedIds": [
+        "cystite-femme"
+      ],
+      "retrievedIds": [
+        "cystite-femme",
+        "sang-dans-urines-hematurie",
+        "uriner-souvent-journee-pollakiurie-polyurie",
+        "dyspareunie-douleur-rapports-causes",
+        "douleur-abdominale"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "envie frequente d uriner",
+      "expectedIds": [
+        "cystite-femme"
+      ],
+      "retrievedIds": [
+        "nycturie-prostate",
+        "sang-dans-urines-hematurie",
+        "uriner-souvent-journee-pollakiurie-polyurie",
+        "nycturie-levers-nocturnes-uriner",
+        "fuites-urinaires-age"
+      ],
+      "result": "fail"
+    },
+    {
+      "question": "cephalee",
+      "expectedIds": [
+        "maux-tete",
+        "migraine-que-faire"
+      ],
+      "retrievedIds": [
+        "maux-tete",
+        "migraine-adulte",
+        "migraine-que-faire",
+        "vomissements-enfant",
+        "mag-daily-cholesterol-grossesse-20261106"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "crise de migraine",
+      "expectedIds": [
+        "migraine-que-faire"
+      ],
+      "retrievedIds": [
+        "migraine-adulte",
+        "migraine-que-faire",
+        "mag-daily-biofeedback-migraine-20261104",
+        "mag-daily-migraine-grossesse-20261102",
+        "mag-daily-migraine-20261018"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "naevus qui change",
+      "expectedIds": [
+        "grain-beaute-change-melanome"
+      ],
+      "retrievedIds": [
+        "grain-beaute-change-melanome",
+        "mag-daily-melanome-20261015",
+        "mag-daily-remibrutinib-sep-20261025",
+        "marche-30-minutes",
+        "mag-daily-metformine-diabete-gestationnel-20261104"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "veines apparentes",
+      "expectedIds": [
+        "jambes-lourdes-varices"
+      ],
+      "retrievedIds": [
+        "varices-traitements-modernes",
+        "varices-que-signifie",
+        "varices-echo-doppler-utilite",
+        "voyage-thrombose",
+        "cancer-oncogenetique-famille"
+      ],
+      "result": "fail"
+    },
+    {
+      "question": "tvp",
+      "expectedIds": [
+        "jambe-gonflee-adulte"
+      ],
+      "retrievedIds": [],
+      "result": "fail"
+    },
+    {
+      "question": "temperature chez l enfant",
+      "expectedIds": [
+        "fievre-enfant"
+      ],
+      "retrievedIds": [
+        "fievre-enfant",
+        "fievre-adulte-quand-sinquieter",
+        "etat-general-nourrisson",
+        "ibuprofene-enfant",
+        "boissons-sucrees"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "mon ado est epuise depuis la reprise des cours",
+      "expectedIds": [
+        "fatigue-enfant-rentree"
+      ],
+      "retrievedIds": [
+        "ado-sommeil-endormissement",
+        "ado-fatigue",
+        "fatigue-enfant-rentree",
+        "sante-mentale-burnout-professionnel-reconnaitre",
+        "ado-refus-scolaire-anxieux"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "retirer une tique",
+      "expectedIds": [
+        "maca-tique-conduite"
+      ],
+      "retrievedIds": [
+        "maca-tique-conduite",
+        "tique",
+        "mag-radar-avc-thrombectomie-20261014",
+        "mag-daily-avc-thrombectomie-20261028",
+        "mag-daily-brulure-rotation-20261028"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "erytheme migrant",
+      "expectedIds": [
+        "tique"
+      ],
+      "retrievedIds": [
+        "tique",
+        "maca-tique-conduite"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "poux enfant",
+      "expectedIds": [
+        "poux-enfant-traitement"
+      ],
+      "retrievedIds": [
+        "poux-enfant",
+        "poux-enfant-traitement",
+        "ibuprofene-enfant",
+        "asthme-enfant-arret-traitement-fond-20260901",
+        "ingestion-produit-toxique-enfant"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "quand commencer la diversification bebe",
+      "expectedIds": [
+        "diversification-alimentaire"
+      ],
+      "retrievedIds": [
+        "diversification-alimentaire",
+        "diversification-alimentaire-bebe",
+        "pleurs-nourrisson",
+        "couchage-bebe-securite-min",
+        "bebe-tete-moins"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "symptomes menopause",
+      "expectedIds": [
+        "menopause"
+      ],
+      "retrievedIds": [
+        "mag-daily-menopause-traitements-20261031",
+        "menopause",
+        "maca-menopause-bouffees",
+        "traitement-hormonal-menopause-risques-20260904",
+        "secheresse-vaginale-menopause"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "cistite",
+      "expectedIds": [
+        "cystite-femme"
+      ],
+      "retrievedIds": [
+        "mag-daily-cystite-20261013",
+        "mag-daily-cranberry-cystite-20261102",
+        "cystite-femme",
+        "mag-daily-brulures-urinaires-rotation-20261030"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "migrane",
+      "expectedIds": [
+        "migraine-que-faire"
+      ],
+      "retrievedIds": [],
+      "result": "fail"
+    },
+    {
+      "question": "Alzheimer",
+      "expectedIds": [
+        "alzheimer-traitements-reconnus",
+        "activite-physique-alzheimer-risque-demence",
+        "alzheimer-refus-soins-repas",
+        "alzheimer-conduite-automobile",
+        "alzheimer-entree-etablissement"
+      ],
+      "retrievedIds": [
+        "mag-daily-test-alzheimer-asymptomatique-20261025",
+        "prise-sang-diagnostic-alzheimer",
+        "alzheimer-conduite-automobile",
+        "alzheimer-entree-etablissement",
+        "alzheimer-traitements-reconnus"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "maladie d Alzheimer",
+      "expectedIds": [
+        "alzheimer-traitements-reconnus",
+        "activite-physique-alzheimer-risque-demence",
+        "alzheimer-refus-soins-repas",
+        "alzheimer-conduite-automobile",
+        "alzheimer-entree-etablissement"
+      ],
+      "retrievedIds": [
+        "prise-sang-diagnostic-alzheimer",
+        "alzheimer-traitements-reconnus",
+        "activite-physique-alzheimer-risque-demence",
+        "alzheimer-refus-soins-repas",
+        "alzheimer-conduite-automobile"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "traitement Alzheimer",
+      "expectedIds": [
+        "alzheimer-traitements-reconnus"
+      ],
+      "retrievedIds": [
+        "alzheimer-traitements-reconnus",
+        "confusion-aigue-personne-agee",
+        "alzheimer-aidants-droits-repit",
+        "alzheimer-rester-seul-domicile",
+        "mag-daily-test-alzheimer-asymptomatique-20261025"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "quels medicaments pour Alzheimer",
+      "expectedIds": [
+        "alzheimer-traitements-reconnus"
+      ],
+      "retrievedIds": [
+        "alzheimer-traitements-reconnus",
+        "memoire",
+        "alzheimer-aidants-droits-repit",
+        "musicotherapie-bienfaits-sante",
+        "alzheimer-rester-seul-domicile"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "Alzheimer conduite automobile",
+      "expectedIds": [
+        "alzheimer-conduite-automobile"
+      ],
+      "retrievedIds": [
+        "alzheimer-conduite-automobile",
+        "alzheimer-apres-diagnostic",
+        "mag-daily-test-alzheimer-asymptomatique-20261025",
+        "prise-sang-diagnostic-alzheimer",
+        "alzheimer-entree-etablissement"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "peut on conduire avec Alzheimer",
+      "expectedIds": [
+        "alzheimer-conduite-automobile"
+      ],
+      "retrievedIds": [
+        "alzheimer-conduite-automobile",
+        "alzheimer-deambulation-nuit",
+        "alzheimer-refus-soins-repas",
+        "mag-daily-test-alzheimer-asymptomatique-20261025",
+        "prise-sang-diagnostic-alzheimer"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "Alzheimer EHPAD",
+      "expectedIds": [
+        "alzheimer-entree-etablissement"
+      ],
+      "retrievedIds": [
+        "alzheimer-entree-etablissement",
+        "mag-daily-anticoagulants-20261011",
+        "mag-daily-test-alzheimer-asymptomatique-20261025",
+        "prise-sang-diagnostic-alzheimer",
+        "alzheimer-conduite-automobile"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "Alzheimer entree en etablissement",
+      "expectedIds": [
+        "alzheimer-entree-etablissement"
+      ],
+      "retrievedIds": [
+        "alzheimer-entree-etablissement",
+        "alzheimer-aidants-droits-repit",
+        "musicotherapie-bienfaits-sante",
+        "mag-daily-ecouter-20261105",
+        "mag-daily-test-alzheimer-asymptomatique-20261025"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "Alzheimer activite physique",
+      "expectedIds": [
+        "activite-physique-alzheimer-risque-demence"
+      ],
+      "retrievedIds": [
+        "activite-physique-alzheimer-risque-demence",
+        "prevenir-declin-cognitif-vieillissant",
+        "alzheimer-traitements-reconnus",
+        "alzheimer-deambulation-nuit",
+        "alzheimer-conduite-automobile"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "prevenir Alzheimer en bougeant",
+      "expectedIds": [
+        "activite-physique-alzheimer-risque-demence"
+      ],
+      "retrievedIds": [
+        "activite-physique-alzheimer-risque-demence",
+        "prevenir-declin-cognitif-vieillissant",
+        "alzheimer-apres-diagnostic",
+        "audition-apres-60-ans",
+        "mag-daily-test-alzheimer-asymptomatique-20261025"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "Alzheimer refus de toilette",
+      "expectedIds": [
+        "alzheimer-refus-soins-repas"
+      ],
+      "retrievedIds": [
+        "alzheimer-refus-soins-repas",
+        "alzheimer-agitation-agressivite",
+        "alzheimer-aidants-droits-repit",
+        "personne-agee-agitee-agressive-causes",
+        "ado-refus-scolaire-anxieux"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "Alzheimer refuse de manger",
+      "expectedIds": [
+        "alzheimer-refus-soins-repas"
+      ],
+      "retrievedIds": [
+        "alzheimer-refus-soins-repas",
+        "alzheimer-rester-seul-domicile",
+        "alzheimer-entree-etablissement",
+        "bebe-tete-moins",
+        "mag-daily-test-alzheimer-asymptomatique-20261025"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "nycturie",
+      "expectedIds": [
+        "nycturie-levers-nocturnes-uriner"
+      ],
+      "retrievedIds": [
+        "nycturie-levers-nocturnes-uriner",
+        "nycturie-prostate"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "se lever la nuit pour uriner",
+      "expectedIds": [
+        "nycturie-levers-nocturnes-uriner"
+      ],
+      "retrievedIds": [
+        "nycturie-prostate",
+        "nycturie-levers-nocturnes-uriner",
+        "sang-dans-urines-hematurie",
+        "uriner-souvent-journee-pollakiurie-polyurie",
+        "sang-urines-hematurie"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "uriner plusieurs fois la nuit",
+      "expectedIds": [
+        "nycturie-levers-nocturnes-uriner"
+      ],
+      "retrievedIds": [
+        "nycturie-prostate",
+        "nycturie-levers-nocturnes-uriner",
+        "sang-dans-urines-hematurie",
+        "uriner-souvent-journee-pollakiurie-polyurie",
+        "fuites-urinaires-age"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "sciatique IRM",
+      "expectedIds": [
+        "sciatique-irm-quand"
+      ],
+      "retrievedIds": [
+        "sciatique-irm-quand",
+        "sciatique-faut-il-irm",
+        "cervicalgie-faut-il-imagerie",
+        "douleur-epaule-origines-20261104",
+        "mag-octobre-rose-brca-mastectomie-20261031"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "faut-il une IRM pour une sciatique",
+      "expectedIds": [
+        "sciatique-irm-quand"
+      ],
+      "retrievedIds": [
+        "sciatique-irm-quand",
+        "sciatique-faut-il-irm",
+        "cervicalgie-faut-il-imagerie",
+        "douleur-epaule-origines-20261104",
+        "mag-octobre-rose-brca-mastectomie-20261031"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "saignement apres menopause",
+      "expectedIds": [
+        "saignement-apres-menopause"
+      ],
+      "retrievedIds": [
+        "saignement-apres-menopause",
+        "mag-daily-rotation-saignement-menopause-20261026",
+        "menopause",
+        "secheresse-vaginale-menopause",
+        "depistage-col-uterus-frottis-test-hpv-calendrier"
+      ],
+      "result": "pass"
+    },
+    {
+      "question": "pertes de sang apres la menopause",
+      "expectedIds": [
+        "saignement-apres-menopause"
+      ],
+      "retrievedIds": [
+        "saignement-apres-menopause",
+        "secheresse-vaginale-menopause",
+        "douleur-rapports-dyspareunie",
+        "saignement-apres-rapport",
+        "diarrhee-adulte"
+      ],
+      "result": "pass"
+    }
+  ]
+}
