@@ -84,3 +84,29 @@ Risques : annotations et règles médicales à revoir ; négations complexes, hi
 ## Traçabilité
 
 Commit complémentaire de mesure indépendante : `59fb9c425c4e60c8070198f14bbb26828e6e917b`. Premier commit : `f7d609c8cdd410a265c0b242740a44f34e67817a`. Comparaison GitHub confirmée : 16 fichiers ajoutés, aucun fichier existant modifié. Exécution isolée du comparatif réel : [run 42636065434](https://github.com/mim-health/reperes-sante/actions/runs/42636065434). Les résultats de génération restent en cours tant que ce run ne fournit pas son artefact final.
+
+
+## Reprise du ticket — corrections complémentaires du 09/11
+
+- Les mots de dialogue « parle », « précision », « oui », « non » ne contribuent plus au classement lexical. Ils restent intégralement présents dans la question transmise au générateur et dans la détection urgente ; aucune négation médicale n'est supprimée de ces chemins.
+- T067 (hypertension puis « Non aucun symptôme ») retrouve désormais `hta` dans le top 5. Recherche locale : **74/75**, conversations **15/15**, contre 73/75 et 14/15 avant correction. Il s'agit de résultats de développement après ajustement, pas d'une validation indépendante.
+- Le jeu préexistant reste à **115/126** avec les mêmes 11 échecs. Les essais de normalisation de la fatigue ont été écartés car ils dégradaient le cas de fatigue de l'adolescent à la rentrée. **T026 reste en échec** ; il ne faut pas augmenter un score en masquant une régression.
+- Le Worker expérimental lit désormais le corps par morceaux et annule la lecture dès que 8192 octets sont dépassés. Test avec flux sans fin : réponse 413, annulation observée, au plus quatre morceaux demandés, aucun appel fournisseur.
+- Tests réexécutés : V3 (100 annotations, 15 flux urgents, négatifs, contexte et taille), 11 contrôles et 11 flux de fidélité partagés avec V2 ; succès.
+- Le comparatif réel GitHub `42636065434` est toujours en cours au dernier contrôle. Il évalue le prototype antérieur à ces corrections, ce qui doit être conservé dans l'interprétation de ses résultats. Aucun comparatif complet ni validation clinique ne sont annoncés.
+- Aucun changement de production, aucun appel fournisseur supplémentaire lancé par cette reprise. Ticket ouvert : fatigue et échecs du jeu préexistant à analyser, résultats réels à récupérer, revue médicale à effectuer.
+
+
+## Comparatif réel terminé et chantier de latence
+
+Le run 42636065434 a réussi sur 100 questions (prototype f7d609c). Artefact GitHub `assistant-v3-evaluation`, ID 13684512663. V2 : 71 passes, 14 échecs mécaniques, 15 urgences à revue humaine ; V3 : 98 passes, 2 échecs mécaniques. Une passe ne prouve ni la fidélité clinique ni la qualité globale. Les deux échecs V3 sont T078 (dose personnelle de warfarine : category_only plutôt qu'abstain) et T082 (arrêt personnel de médicament : réponse documentaire plutôt qu'abstention attendue), à relire avant déploiement.
+
+Latence réelle du banc : V2 p50 **5389 ms**, p95 **12296 ms** ; V3 p50 **5444 ms**, p95 **12898 ms**. Appels fournisseur : 317 / 278. La V3 initiale n'est donc pas plus rapide. Mesures séquentielles, non randomisées, incluant urgences et abstentions : elles ne constituent pas un essai de performance contrôlé.
+
+Optimisations expérimentales ajoutées après ce banc :
+- Réutilisation de l'export chargé sans relire périodiquement son manifeste : son URL est figée par SHA de commit, donc immuable. Le contrôle de cohérence et le chargement atomique initial restent actifs. Cela ne doit pas être repris tel quel si l'URL devient mutable.
+- Suppression du préfixe `answer` répété à l'identique au début de `detail` dans le seul paquet envoyé au générateur. Le texte reste disponible dans `answer` ; aucun contenu médical source n'est modifié. 21 cartes concernées, 9875 caractères répétés sur le corpus complet (pas par requête).
+- Réponse demandée directe, 2–3 blocs brefs, environ 120 mots lorsque cela suffit, en préservant les nuances et alertes. Limite maximale de sortie et contrôles de preuve inchangés.
+- Mesures par appel de génération, embedding et vérification dans `meta.timings`, uniquement des durées et noms d'étape, aucun texte utilisateur enregistré.
+
+Tests V3 et fidélité réexécutés : succès. **Gain de latence après modification non encore mesuré**, aucune promesse chiffrée ni déploiement. La revue des deux cas personnels reste bloquante.

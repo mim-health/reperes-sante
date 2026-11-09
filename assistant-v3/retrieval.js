@@ -2,7 +2,7 @@
 (function(root){
 'use strict';
 const normalize=value=>String(value||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/œ/g,'oe').replace(/[^a-z0-9]+/g,' ').trim();
-const STOP=new Set('je j ai le la les de des du un une et ou est ce que qui en au aux dans pour par avec sans mon ma mes me se il elle on nous vous tu ca plus depuis quand faut faire peut sont comme alors tout tres'.split(' '));
+const STOP=new Set('je j ai le la les de des du un une et ou est ce que qui en au aux dans pour par avec sans mon ma mes me se il elle on nous vous tu ca plus depuis quand faut faire peut sont comme alors tout tres parle precision non oui'.split(' '));
 const tokens=s=>normalize(s).split(/\s+/).filter(t=>t.length>1&&!STOP.has(t));
 // Retrieval vocabulary only, not medical assertions or diagnostic rules. Requires review.
 const GROUPS=[['crevee','creve','fatigue','epuise'],['pipi','uriner','urines'],['bide','ventre'],['kilos','poids'],['tape','palpitations'],['sifflements','acouphenes'],['destomac','estomac'],['hipertension','hypertension'],['sciatik','sciatique'],['acouphenne','acouphenes'],['constipassion','constipation'],['melatonnine','melatonine'],['osteoporosse','osteoporose']];
