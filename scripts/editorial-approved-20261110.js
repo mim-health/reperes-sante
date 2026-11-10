@@ -31,7 +31,7 @@ const items=specs.map(([key])=>{
 const bundle={requestId:'medical-approval-20261110-four-complete-articles',items,editions:[]};
 const record=p.prepare(bundle,{root});
 const approval={action:'Je valide et publie',fullText:true,snapshotHash:record.snapshotHash,
- validator:'Dr Romain Beddok',validatedAt:new Date().toISOString(),
+ validator:'Dr Romain Beddok',validatedAt:new Date().toISOString().replace(/\\.\\d{3}Z$/,'Z'),
  evidence:'Validation médicale explicite par le Dr Romain Beddok des quatre versions intégrales présentées dans la conversation du 10 novembre 2026, avec autorisation de publication sur MACASANTÉ.'};
 const result=p.publish(bundle,approval,{root});
 console.log('Four medically approved articles registered:',result.targets.map(x=>x.url));
