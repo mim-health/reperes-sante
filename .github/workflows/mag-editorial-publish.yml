@@ -78,6 +78,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+      - name: Register four medically approved complete articles from 10 November
+        run: node scripts/editorial-approved-20261110.js
       - name: Validate and prepare approved sources
         env:
           PUBLICATION_BASE_SHA: ${{ github.event.before }}
