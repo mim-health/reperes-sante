@@ -29,7 +29,7 @@ async function main(){const action=process.argv[2];
   const active=targets();p.syncAssistant(active,JSON.parse(fs.readFileSync('assistant-v2/corpus.json','utf8')));
   const latest=JSON.parse(fs.readFileSync('assistant-v2/latest.json'));const previous='assistant-v2/public-artifacts/'+latest.version+'/embeddings.index.json';if(fs.existsSync(previous))fs.copyFileSync(previous,'assistant-v2/embeddings.index.json');
   node('scripts/build-assistant-v2-embeddings.js');run('bash',['scripts/publish-assistant-v2.sh']);run(process.execPath,['scripts/verify-mag-public.js','--assistant']);run(process.execPath,['scripts/verify-publication.js','--assistant-index']);state('PUBLISHED');
- }else if(action==='report')state(process.argv[3]);else throw Error('prepare | verify | assistant | report STATE');
+ }else if(action==='report')state(process.argv[3],process.env.ERROR_CAUSE?new Error(process.env.ERROR_CAUSE):undefined);else throw Error('prepare | verify | assistant | report STATE');
 }
 module.exports={plan,sourceVersion};
 if(require.main===module)main().catch(e=>{state(process.argv[2]==='assistant'?'ASSISTANT_SYNC_PENDING':'PUBLICATION_FAILED',e);console.error(e.message);process.exitCode=1;});

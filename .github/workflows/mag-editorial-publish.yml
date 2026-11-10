@@ -91,7 +91,7 @@ jobs:
       - name: Assemble public site without private preparation files
         run: |
           mkdir -p _site
-          rsync -a --exclude='.git' --exclude='.github' --exclude='media-publishing' --exclude='scripts' --exclude='_site' --exclude='.maca-lab' --exclude='editorial/drafts' --exclude='editorial/publication-requests' --exclude='editorial/fiches.json' --exclude='publication-report.json' --exclude='publication-plan.json' --exclude='assistant-v2/corpus.json' --exclude='assistant-v2/corpus.report.json' ./ _site/
+          rsync -a --exclude='.git' --exclude='.github' --exclude='media-publishing' --exclude='scripts' --exclude='_site' --exclude='.maca-lab' --exclude='editorial/drafts' --exclude='editorial/publication-requests' --exclude='editorial/fiches.json' --exclude='publication-report.json' --exclude='publication-plan.json' --exclude='assistant-v2/public-artifacts' --exclude='assistant-v2/corpus.json' --exclude='assistant-v2/corpus.report.json' ./ _site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
@@ -135,6 +135,9 @@ jobs:
         run: node scripts/editorial-pipeline.js verify
       - name: Record a distinct deployment or verification failure
         if: failure()
+        env:
+          PUBLICATION_STEP: ${{ steps.deployment.outcome == 'success' && 'public verification' || 'GitHub Pages deployment' }}
+          ERROR_CAUSE: GitHub Pages deployment or its public verification did not complete successfully; inspect the failed action in this run.
         run: node scripts/editorial-pipeline.js report PUBLICATION_FAILED
       - uses: actions/upload-artifact@v4
         if: always()
