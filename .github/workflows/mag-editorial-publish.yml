@@ -69,6 +69,7 @@ jobs:
     outputs:
       commit: ${{ steps.commit.outputs.sha }}
       fingerprint: ${{ steps.commit.outputs.fingerprint }}
+      site_artifact: ${{ steps.package.outputs.name }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -92,13 +93,16 @@ jobs:
         run: |
           mkdir -p _site
           rsync -a --exclude='.git' --exclude='.github' --exclude='media-publishing' --exclude='scripts' --exclude='_site' --exclude='.maca-lab' --exclude='editorial/drafts' --exclude='editorial/publication-requests' --exclude='editorial/fiches.json' --exclude='publication-report.json' --exclude='publication-plan.json' --exclude='assistant-v2/public-artifacts' --exclude='assistant-v2/corpus.json' --exclude='assistant-v2/corpus.report.json' ./ _site/
+      - id: package
+        run: echo "name=github-pages-${GITHUB_RUN_ATTEMPT}" >> "$GITHUB_OUTPUT"
       - uses: actions/upload-pages-artifact@v3
         with:
+          name: ${{ steps.package.outputs.name }}
           path: _site
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: editorial-stage-a
+          name: editorial-stage-a-${{ github.run_attempt }}
           path: |
             publication-report.json
             publication-plan.json
@@ -131,6 +135,8 @@ jobs:
           test "$ACTUAL" = "$EXPECTED" || { echo 'Source changed; this obsolete build must not deploy'; exit 1; }
       - id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: ${{ needs.prepare.outputs.site_artifact }}
       - name: Verify exact public versions, archives, sitemap and historical fiches
         run: node scripts/editorial-pipeline.js verify
       - name: Record a distinct deployment or verification failure
@@ -142,7 +148,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: editorial-stage-b
+          name: editorial-stage-b-${{ github.run_attempt }}
           path: publication-report.json
   assistant:
     name: C — Synchronisation IA indépendante du déploiement
@@ -169,5 +175,5 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: editorial-stage-c
+          name: editorial-stage-c-${{ github.run_attempt }}
           path: publication-report.json
