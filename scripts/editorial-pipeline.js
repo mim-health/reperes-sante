@@ -16,7 +16,7 @@ function plan(){
 async function main(){const action=process.argv[2];
  if(action==='prepare'){
   const decision=plan();fs.writeFileSync('publication-plan.json',JSON.stringify(decision,null,2)+'\n');state('PUBLISHING');
-  p.buildFiches();node('scripts/test-editorial-publish.js');node('scripts/test-content-duplicates.js');node('scripts/audit-content-duplicates.js');node('scripts/mag-editorial.js');node('scripts/test-mag-editorial.js');node('scripts/audit-mag-images.js');
+  p.buildFiches();node('scripts/test-editorial-publish.js');run(process.execPath,['scripts/test-editorial-publish.js','--edition']);node('scripts/test-content-duplicates.js');node('scripts/audit-content-duplicates.js');node('scripts/mag-editorial.js');node('scripts/test-mag-editorial.js');node('scripts/audit-mag-images.js');
   if(decision.mode!=='MAGAZINE_INCREMENTAL')for(const f of ['scripts/test-site-shell.js','scripts/test-home-assistant.js','scripts/test-assistant-pilot.js','scripts/test-corpus-pipeline.js','scripts/test-corpus-functional.js','scripts/test-ui-adapter.js','scripts/test-browser-entry.js'])node(f);
   if(decision.mode!=='MAGAZINE_INCREMENTAL'){run(process.execPath,['scripts/build-corpus-production.js','--publish']);node('scripts/test-corpus-bundle-equivalence.js');node('scripts/build-static-seo-fiches.js');node('scripts/test-fiche-fast-load.js');}
   for(const f of ['scripts/build-theme-hubs.js','scripts/build-sitemap-from-corpus.js','scripts/test-theme-hubs.js','scripts/test-home-magazine.js','scripts/test-magazine-videos.js'])node(f);

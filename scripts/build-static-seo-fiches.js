@@ -29,6 +29,7 @@ ctx.healthQuestions=originalHealth;
 vm.runInContext(read('corpus-canonicalizer.js'),ctx,{filename:'corpus-canonicalizer.js'});
 for(const file of ['source-registry.js','source-registry-magnesium.js']) vm.runInContext(read(file),ctx,{filename:file});
 const items=Array.from(ctx.MACA_BUILD_CANONICAL_CORPUS()).map(x=>JSON.parse(JSON.stringify(x)));
+require('./editorial-publish').validateCanonicalFiches(items);
 fs.rmSync(DATA,{recursive:true,force:true});fs.mkdirSync(DATA,{recursive:true});
 fs.rmSync(OUT,{recursive:true,force:true});fs.mkdirSync(OUT,{recursive:true});
 for(const q of items){

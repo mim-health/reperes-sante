@@ -60,12 +60,13 @@ function publish(bundle,approval,{root=ROOT}={}){
   // All schema, approval and conflict checks finish before either canonical source is changed.
   const files={'editorial/content.json':next,'editorial/fiches.json':nextFiches};const old=new Map(Object.keys(files).map(p=>[p,fs.existsSync(path.join(root,p))?fs.readFileSync(path.join(root,p)):null]));
   try{for(const [p,x]of Object.entries(files))write(root,p,x);
-   record=transition(record,'VALIDATED_PENDING_PUBLICATION',{approval,targets:record.snapshot.items.map(i=>({kind:i.kind,id:i.body.id,assistantPolicy:i.body.assistantPolicy||null,ficheId:i.body.ficheId||null,url:adapters[i.kind].url(i.body),version:adapters[i.kind].version(i.body)}))});
+   record=transition(record,'VALIDATED_PENDING_PUBLICATION',{approval,targets:record.snapshot.items.map(i=>({kind:i.kind,id:i.body.id,assistantPolicy:i.body.assistantPolicy||null,ficheId:i.body.ficheId||null,textHash:i.kind==='fiche'?hash(['title','answer','detail','usefulInfo','watch'].map(k=>String(i.body[k]||'').trim().replace(/\r\n/g,'\n'))):null,url:adapters[i.kind].url(i.body),version:adapters[i.kind].version(i.body)}))});
    write(root,'editorial/publication-requests/'+bundle.requestId+'.json',record);
   }catch(e){for(const [p,data]of old)if(data)fs.writeFileSync(path.join(root,p),data);else fs.rmSync(path.join(root,p),{force:true});throw e;}
   return record;
  }finally{fs.rmdirSync(lock);}
 }
+function validateCanonicalFiches(cards,root=ROOT){for(const approved of read(root,'editorial/fiches.json',{contents:[]}).contents){const c=cards.find(c=>c.id===approved.id);if(!c)throw Error('Missing approved fiche '+approved.id);for(const key of ['title','answer','detail','usefulInfo','watch','sources'])if(hash(c[key]||'')!==hash(approved[key]||''))throw Error('Canonical transformation changed approved '+key+': '+approved.id);}return true;}
 function buildFiches(root=ROOT){
  const x=read(root,'editorial/fiches.json',{contents:[]});for(const c of x.contents){adapters.fiche.check(c);const {validation,medicalStatus,publicationStatus,...body}=c;if(medicalStatus!=='VALIDATED'||publicationStatus!=='PUBLISHED'||validation?.contentHash!==hash(body))fail('FICHE_APPROVAL_CHANGED','prepare',c.id,'Restore the approved fiche or obtain new medical validation.');}
  const code='/* Generated from exact medically approved fiche snapshots. */\n(function(){const cards='+JSON.stringify(x.contents.map(c=>({...c,validationStatus:'VALIDATED',verifiedAt:c.validation.validatedAt})))+';for(const c of cards){for(const key of ["healthQuestions","extraAuditedQuestions"])if(Array.isArray(window[key]))window[key]=window[key].filter(old=>old.id!==c.id);window.extraAuditedQuestions=(window.extraAuditedQuestions||[]).concat(c);}})();\n';
@@ -76,7 +77,7 @@ async function verify(targets,{origin='https://macasante.fr',fetcher=fetch}={}){
  for(const t of targets){const url=origin+'/'+t.url,r=await fetcher(url,{signal:AbortSignal.timeout(20000)});if(!r.ok)throw Error('Public URL HTTP '+r.status+': '+url);const html=await r.text();if(!html.includes(t.version))throw Error('Public page is stale: '+url);if(!s.includes('<loc>'+url+'</loc>'))throw Error('Missing sitemap URL '+url);if(t.kind==='magazine'&&!a.includes('href="'+t.url+'"'))throw Error('Missing archive link '+url);}
  return {verified:true,urls:targets.map(t=>origin+'/'+t.url)};
 }
-function syncAssistant(targets,corpus){for(const t of targets){if(t.assistantPolicy){if(t.assistantPolicy==='REFERENCE_FICHE_ONLY'&&!corpus.cards.some(c=>c.id===t.ficheId))throw Error('Missing referenced fiche '+t.ficheId);continue;}const id=t.kind==='magazine'?'mag-'+t.id:t.id,c=corpus.cards.find(c=>c.id===id);if(!c)throw Error('Assistant missing '+id);if((t.kind==='magazine'?c.metadata?.version:c.metadata?.publicationVersion)!==t.version)throw Error('Assistant stale '+id);}return {synced:true};}
+function syncAssistant(targets,corpus){for(const t of targets){if(t.assistantPolicy){if(t.assistantPolicy==='REFERENCE_FICHE_ONLY'&&!corpus.cards.some(c=>c.id===t.ficheId))throw Error('Missing referenced fiche '+t.ficheId);continue;}const id=t.kind==='magazine'?'mag-'+t.id:t.id,c=corpus.cards.find(c=>c.id===id);if(!c)throw Error('Assistant missing '+id);if((t.kind==='magazine'?c.metadata?.version:c.metadata?.publicationVersion)!==t.version)throw Error('Assistant stale '+id);if(t.kind==='fiche'&&t.textHash&&hash([c.title,...['answer','detail','usefulInfo','watch'].map(k=>c.content[k]||'')].map(s=>String(s).trim().replace(/\r\n/g,'\n')))!==t.textHash)throw Error('Assistant text differs from approved fiche '+id);}return {synced:true};}
 function exec(cmd,args=[]){cp.execFileSync(cmd,args,{cwd:ROOT,stdio:'inherit'});}
 function commitAndPush(record,push){
  const branch=cp.execFileSync('git',['branch','--show-current'],{cwd:ROOT,encoding:'utf8'}).trim();if(branch!=='feat/v0-magazine')fail('WRONG_PUBLICATION_BRANCH','commit',branch,'Publication source must be committed on feat/v0-magazine; test fixtures stay isolated.');
@@ -86,7 +87,7 @@ function commitAndPush(record,push){
  if(changed)cp.execFileSync('git',['commit','-m','editorial: publish approved snapshot '+record.snapshot.requestId],{cwd:ROOT,stdio:'inherit'});
  if(push)cp.execFileSync('git',['push','origin','HEAD:refs/heads/feat/v0-magazine'],{cwd:ROOT,stdio:'inherit'});
 }
-module.exports={prepare,validate,publish,verify,syncAssistant,hash,stable,adapters,transition,buildFiches,PublicationError};
+module.exports={prepare,validate,publish,verify,syncAssistant,hash,stable,adapters,transition,buildFiches,validateCanonicalFiches,PublicationError};
 if(require.main===module){(async()=>{const [action,file,approvalFile]=process.argv.slice(2);
  if(action==='prepare')console.log(JSON.stringify(prepare(JSON.parse(fs.readFileSync(file))),null,2));
  else if(action==='publish'){const record=publish(JSON.parse(fs.readFileSync(file)),JSON.parse(fs.readFileSync(approvalFile)));if(process.argv.includes('--commit')||process.argv.includes('--push'))commitAndPush(record,process.argv.includes('--push'));console.log(JSON.stringify(record,null,2));}
