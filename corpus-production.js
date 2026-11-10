@@ -9148,3 +9148,9 @@ window.extraAuditedQuestions=(window.extraAuditedQuestions||[]).concat([
 for(const patch of patches){let found=false;for(const group of [window.healthQuestions||[],window.extraAuditedQuestions||[]])for(const card of group)if(card.id===patch.id){Object.assign(card,patch);found=true;}if(!found)throw new Error('Cannot enrich missing canonical fiche: '+patch.id);}})();
 
 ;
+
+/* ===== MACA BUNDLE SOURCE: editorial-fiches-validated.js ===== */
+/* Generated from exact medically approved fiche snapshots. */
+(function(){const cards=[];for(const c of cards){for(const key of ["healthQuestions","extraAuditedQuestions"])if(Array.isArray(window[key]))window[key]=window[key].filter(old=>old.id!==c.id);window.extraAuditedQuestions=(window.extraAuditedQuestions||[]).concat(c);}})();
+
+;
