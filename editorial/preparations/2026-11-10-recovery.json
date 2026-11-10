@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-10",
+  "status": "EDITORIAL_SELECTION_APPROVED_FULL_TEXT_REQUIRED",
+  "publicationAuthorized": true,
+  "approvalScope": "Sélection éditoriale et rubriques approuvées en conversation; les textes intégraux des quatre articles n'ont pas été présentés pour validation médicale.",
+  "headline": "Pourquoi se réveille-t-on toujours à 3 ou 4 heures du matin ?",
+  "threeMinutes": [
+    "Pourquoi est-on fatigué même après huit heures de sommeil ?",
+    "Pourquoi a-t-on parfois la tête qui tourne en se levant ?",
+    "Pourquoi a-t-on le ventre gonflé après les repas ?"
+  ],
+  "otherSlots": [
+    {
+      "slot": "FICHE DU JOUR",
+      "title": "Aliments bloqués ou difficulté à avaler : quand consulter ?",
+      "approval": "approved"
+    },
+    {
+      "slot": "VRAI OU FAUX",
+      "title": "Un verre de jus 100 % pur jus équivaut-il à un fruit ?",
+      "answer": "FAUX : moins de fibres et moins rassasiant qu'un fruit entier",
+      "approval": "approved"
+    },
+    {
+      "slot": "LE CHIFFRE DU JOUR",
+      "title": "860 prescriptions d'antibiotiques pour 1 000 habitants",
+      "approval": "approved; verify source and period before publication"
+    },
+    {
+      "slot": "DONNÉES",
+      "title": "Arrêt cardiaque : davantage de gestes de réanimation par les témoins",
+      "approval": "approved; verify figures and source"
+    },
+    {
+      "slot": "DONNÉES",
+      "title": "Défavorisation sociale et santé respiratoire",
+      "approval": "approved; observational study, verify original source"
+    },
+    {
+      "slot": "DONNÉES",
+      "title": "Couverture vaccinale contre la grippe chez les 65 ans et plus",
+      "approval": "approved; verify 2025-26 figures"
+    }
+  ],
+  "duplicateCautions": [
+    "Yaourts hyperprotéinés : déjà traités",
+    "Mal de dos : marcher ou se reposer : déjà traité",
+    "Réveils nocturnes en ménopause : recoupement partiel, angle 3-4h à distinguer",
+    "Contrôler également les fiches médicales"
+  ],
+  "publicationRequirements": [
+    "Rédiger quatre textes intégraux d'au moins 400 mots avec références exactes",
+    "Récupérer ou présenter pour validation les versions médicales intégrales; ne pas extrapoler la validation des titres",
+    "Vérifier fiches et Magazine contre doublons",
+    "Enregistrer les dix rubriques dans editorial/content.json avec hash calculé sur versions effectivement approuvées",
+    "Exécuter pipeline A/B/C et vérifier URL publiques et index IA"
+  ],
+  "source": "Décisions de la conférence du 10 novembre 2026; dossier de récupération non publiable",
+  "notes": "Ce fichier est une préparation éditoriale, non une édition complete ni une preuve de publication."
+}
