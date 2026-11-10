@@ -31,6 +31,8 @@ permissions:
 
 jobs:
   build-test-publish:
+    # Production corpus is synchronized only after the Mag public verification (stage C).
+    if: github.ref != 'refs/heads/feat/v0-magazine'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout exact source commit

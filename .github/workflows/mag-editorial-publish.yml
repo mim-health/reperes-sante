@@ -1,8 +1,13 @@
 name: Mag validated editorial publication
 on:
   push:
-    branches: [feat/v0-magazine]
+    branches: [feat/v0-magazine, fix/editorial-auto-publish-20261110]
     paths:
+      - 'scripts/editorial-*.js'
+      - 'scripts/test-editorial-publish.js'
+      - 'editorial/fiches.json'
+      - 'editorial/publication-requests/**'
+      - '*.js'
       - '.github/workflows/build-static-seo-fiches.yml'
       - 'scripts/build-corpus-production.js'
       - 'scripts/build-static-seo-fiches.js'
@@ -40,7 +45,6 @@ on:
       - 'scripts/mag-editorial.js'
       - 'scripts/test-mag-editorial.js'
       - 'scripts/audit-mag-images.js'
-      - 'editorial/drafts/**'
       - 'scripts/publish-mag-generated.sh'
       - 'scripts/verify-mag-public.js'
       - 'corpus-v2-browser-entry.js'
@@ -58,110 +62,109 @@ permissions:
   contents: write
   pages: write
   id-token: write
-concurrency:
-  group: pages-site-publication
-  cancel-in-progress: false
 jobs:
-  publish:
+  prepare:
+    name: A — Validation et préparation
     runs-on: ubuntu-latest
+    outputs:
+      commit: ${{ steps.commit.outputs.sha }}
+      fingerprint: ${{ steps.commit.outputs.fingerprint }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Validate and prepare approved sources
+        env:
+          PUBLICATION_BASE_SHA: ${{ github.event.before }}
+        run: node scripts/editorial-pipeline.js prepare
+      - name: Commit generated outputs safely
+        if: github.ref == 'refs/heads/feat/v0-magazine'
+        run: bash scripts/publish-mag-generated.sh
+      - id: commit
+        run: |
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          echo "fingerprint=$(node -p "require('./scripts/editorial-pipeline').sourceVersion()")" >> "$GITHUB_OUTPUT"
+      - name: Assemble public site without private preparation files
+        run: |
+          mkdir -p _site
+          rsync -a --exclude='.git' --exclude='.github' --exclude='media-publishing' --exclude='scripts' --exclude='_site' --exclude='.maca-lab' --exclude='editorial/drafts' --exclude='editorial/publication-requests' --exclude='editorial/fiches.json' --exclude='publication-report.json' --exclude='publication-plan.json' --exclude='assistant-v2/corpus.json' --exclude='assistant-v2/corpus.report.json' ./ _site/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: editorial-stage-a
+          path: |
+            publication-report.json
+            publication-plan.json
+            editorial/manifest.json
+  deploy:
+    name: B — Publication et vérification publique
+    if: github.ref == 'refs/heads/feat/v0-magazine'
+    needs: prepare
+    runs-on: ubuntu-latest
+    concurrency:
+      group: pages-site-publication
+      cancel-in-progress: false
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: feat/v0-magazine
+          ref: ${{ needs.prepare.outputs.commit }}
           fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Validate and prepare complete edition
+      - name: Refuse superseded medical sources before deploy
+        env:
+          EXPECTED: ${{ needs.prepare.outputs.fingerprint }}
         run: |
-          node scripts/test-site-shell.js
-          node scripts/test-home-assistant.js
-          node scripts/test-assistant-pilot.js
-          node scripts/test-content-duplicates.js
-          node scripts/audit-content-duplicates.js
-          node scripts/mag-editorial.js --dry-run
-          node scripts/test-mag-editorial.js
-          node scripts/audit-mag-images.js # historical mismatches logged, new inconsistencies fail
-          node scripts/mag-editorial.js
-          node scripts/test-corpus-pipeline.js
-          node scripts/test-corpus-functional.js
-          node scripts/test-ui-adapter.js
-          node scripts/test-browser-entry.js
-          node scripts/build-corpus-production.js --publish
-          node scripts/test-corpus-bundle-equivalence.js
-          node scripts/build-static-seo-fiches.js
-          node scripts/test-fiche-fast-load.js
-          node scripts/build-theme-hubs.js
-          node scripts/build-sitemap-from-corpus.js
-          node scripts/test-theme-hubs.js
-          node scripts/test-home-magazine.js
-          node scripts/test-magazine-videos.js
-          node scripts/build-assistant-v2-corpus.js
-          node scripts/test-assistant-v2-canonical.js
-          node scripts/test-ipp-retrieval.js
-          node scripts/test-assistant-v2-grounding.js
-          node scripts/test-assistant-v2-patient-language.js
-      - name: Check validated fiches before deployment
-        run: node scripts/verify-publication.js
-      - name: Commit generated site without overwriting source
-        run: bash scripts/publish-mag-generated.sh
-      - name: Assemble site
-        run: |
-          mkdir -p _site
-          rsync -a --exclude='.git' --exclude='.github' --exclude='media-publishing' --exclude='scripts' --exclude='_site' --exclude='assistant-v2/corpus.json' --exclude='assistant-v2/corpus.report.json' ./ _site/
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
-      - name: Deploy coherent homepage and archive
-        id: deployment
+          git fetch origin feat/v0-magazine
+          ACTUAL=$(node -p "require('./scripts/editorial-pipeline').sourceVersion('origin/feat/v0-magazine')")
+          test "$ACTUAL" = "$EXPECTED" || { echo 'Source changed; this obsolete build must not deploy'; exit 1; }
+      - id: deployment
         uses: actions/deploy-pages@v4
-      - name: Verify public site
-        run: |
-          node scripts/verify-mag-public.js
-          node scripts/verify-publication.js --public
-      - name: Rebuild closed corpus from published source
-        run: node scripts/build-assistant-v2-corpus.js
-      - name: Restore previous embeddings
-        run: |
-          node - <<'JS'
-          const fs=require('fs'),latest=JSON.parse(fs.readFileSync('assistant-v2/latest.json','utf8'));
-          const previous='assistant-v2/public-artifacts/'+latest.version+'/embeddings.index.json';
-          if(fs.existsSync(previous))fs.copyFileSync(previous,'assistant-v2/embeddings.index.json');
-          JS
-      - name: Build incremental embeddings
+      - name: Verify exact public versions, archives, sitemap and historical fiches
+        run: node scripts/editorial-pipeline.js verify
+      - name: Record a distinct deployment or verification failure
+        if: failure()
+        run: node scripts/editorial-pipeline.js report PUBLICATION_FAILED
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: editorial-stage-b
+          path: publication-report.json
+  assistant:
+    name: C — Synchronisation IA indépendante du déploiement
+    needs: [prepare, deploy]
+    runs-on: ubuntu-latest
+    concurrency:
+      group: assistant-index-publication
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.prepare.outputs.commit }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Validate corpus, reuse unchanged vectors, publish and verify active index
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           MACA_EMBEDDING_MODEL: text-embedding-3-small
           MACA_EMBEDDING_DIMENSIONS: '512'
-        run: node scripts/build-assistant-v2-embeddings.js
-      - name: Publish versioned Assistant artifacts
-        env:
           GITHUB_REF_NAME: feat/v0-magazine
-        run: bash scripts/publish-assistant-v2.sh
-      - name: Verify active index and Mag answer
-        run: |
-          node scripts/verify-mag-public.js --assistant
-          node scripts/verify-publication.js --assistant-index
-      - name: Persist execution report
-        if: always()
-        env:
-          RESULT: ${{ job.status }}
-          SITE_OUTCOME: ${{ steps.deployment.outcome }}
-        run: |
-          node - <<'JS'
-          const fs=require('fs');const report={sourceCommit:process.env.GITHUB_SHA,runUrl:'https://github.com/'+process.env.GITHUB_REPOSITORY+'/actions/runs/'+process.env.GITHUB_RUN_ID,result:process.env.RESULT,siteDeployment:process.env.SITE_OUTCOME,finishedAt:new Date().toISOString()};
-          fs.writeFileSync('mag-execution-report.json',JSON.stringify(report,null,2)+'\n');
-          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,'```json\n'+JSON.stringify(report,null,2)+'\n```\n');
-          JS
+        run: node scripts/editorial-pipeline.js assistant
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: mag-execution-report
-          path: |
-            mag-execution-report.json
-            editorial/manifest.json
-            editorial/candidate-fiches.json
-            editorial/duplicates-report.json
+          name: editorial-stage-c
+          path: publication-report.json

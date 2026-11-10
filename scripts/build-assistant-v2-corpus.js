@@ -168,6 +168,7 @@ function build() {
       sources,
       url,
       metadata: {
+        ...(card.validation?.contentHash ? {publicationVersion:card.validation.contentHash} : {}),
         validationStatus: cleanString(card.validationStatus),
         editorialStatus: cleanString(card.editorialStatus),
         evidenceStatus: cleanString(card.evidenceStatus),

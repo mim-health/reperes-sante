@@ -16,7 +16,9 @@ const priorityIds=[
   'ado-scarifications-pourquoi'
 ];
 const forbidden=['ophtalmo-chirurgie-myopie-laser','ophtalmo-glaucome-depistage'];
-const corpus=JSON.parse(read('assistant-v2/corpus.json'));
+const siteOnly=process.argv.includes('--site-only');
+const corpus=siteOnly?{cards:fs.readdirSync('fiches-data').filter(f=>f.endsWith('.json')).map(f=>{const c=JSON.parse(read('fiches-data/'+f)).fiche;return {id:c.id,content:{answer:c.answer,detail:c.detail}};})}:JSON.parse(read('assistant-v2/corpus.json'));
+assert(!(siteOnly&&process.argv.includes('--assistant-index')),'Site-only cannot validate the Assistant');
 for(const c of expected){
   assert(corpus.cards.some(x=>x.id===c.id),'Missing Assistant card '+c.id);
   const p='fiches-seo/'+c.id+'.html',html=read(p);

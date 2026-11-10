@@ -27,4 +27,5 @@ window.MACA_CORPUS_MANIFEST = Object.freeze([
 'backlog-audited-epaule-lot1-2026-11-04.js?v=20261104-approved1',
 'backlog-audited-os-articulations-lot2-2026-11-04.js?v=20261104-approved2',
 'corpus-os-articulations-enrichissement-2026-11-04.js?v=20261104-approved2',
+'editorial-fiches-validated.js?v=20261110-p0'
 ]);
