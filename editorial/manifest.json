@@ -2,11 +2,35 @@
   "schemaVersion": 1,
   "editionId": "edition-2026-11-06",
   "editionDate": "2026-11-06",
-  "sourceFingerprint": "2535da12c4128b1f368e5f4f54db618840d374231c4caa260a8f566ab6de4b72",
+  "sourceFingerprint": "dab9ee1a9e04a207b1a8bffa0333036c8c55e624ad87126aa3b347a7564244e5",
   "missingEdition": true,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-daily-reveils-3-4-heures-20261110",
+      "version": "f9e8b0878baa1f70425f05d41f77da8340b5b4df0232db873c71d82f36ccbe6f",
+      "url": "article-daily-reveils-3-4-heures-20261110.html",
+      "date": "2026-11-10"
+    },
+    {
+      "id": "mag-daily-fatigue-malgre-huit-heures-20261110",
+      "version": "264742ef42f1cd6ad43c9b3b191273306c9079ab2380232ba92139d168d3e870",
+      "url": "article-daily-fatigue-malgre-huit-heures-20261110.html",
+      "date": "2026-11-10"
+    },
+    {
+      "id": "mag-daily-tete-tourne-au-lever-20261110",
+      "version": "da80906e88e08e1a0fa4dfd6b2f733376b91812d1c76eeca9506c6898fa61d2a",
+      "url": "article-daily-tete-tourne-au-lever-20261110.html",
+      "date": "2026-11-10"
+    },
+    {
+      "id": "mag-daily-ventre-gonfle-apres-repas-20261110",
+      "version": "c07fe2c84b395617beaba5a525b0731d4741375f124c3c178ff875d08bbc060d",
+      "url": "article-daily-ventre-gonfle-apres-repas-20261110.html",
+      "date": "2026-11-10"
+    },
     {
       "id": "mag-daily-plozasiran-20261106",
       "version": "9b4bb38bb24dce84122b9b1e5c1871a626dde3f377d6b348495141da386269fa",

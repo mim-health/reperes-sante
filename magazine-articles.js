@@ -5038,5 +5038,93 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "d15acb04beb82ac1dc7241fd02ed17bb33fda030803ba69a576c078a5eab3cc0"
+  },
+  {
+    "id": "daily-reveils-3-4-heures-20261110",
+    "url": "article-daily-reveils-3-4-heures-20261110.html",
+    "title": "Pourquoi se réveille-t-on toujours à 3 ou 4 heures du matin ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Santé",
+    "date": "2026-11-10",
+    "status": "PUBLISHED",
+    "excerpt": "Se réveiller au milieu de la nuit est fréquent. Le sommeil n’est pas un état uniforme : il alterne des cycles comportant du sommeil léger, profond et paradoxal. De brefs éveils peuvent survenir entre ces cycles sans que l’on s’en souvienne. Lorsque l’on regarde l’heure, que l’on s’inquiète ou que l’on peine à se rendormir, l’épisode devient beaucoup plus marquant. Se réveiller vers 3 ou 4 heures n’indique donc pas, à lui seul, une maladie ni un dérèglement hormonal précis.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "reveils",
+      "3",
+      "4",
+      "heures"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "f9e8b0878baa1f70425f05d41f77da8340b5b4df0232db873c71d82f36ccbe6f"
+  },
+  {
+    "id": "daily-fatigue-malgre-huit-heures-20261110",
+    "url": "article-daily-fatigue-malgre-huit-heures-20261110.html",
+    "title": "Pourquoi est-on fatigué même après huit heures de sommeil ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Santé",
+    "date": "2026-11-10",
+    "status": "PUBLISHED",
+    "excerpt": "Huit heures de sommeil ne garantissent pas automatiquement une journée en pleine forme. La durée compte, mais aussi la qualité, la régularité et l’adéquation du sommeil aux besoins individuels. Certains adultes ont besoin d’un peu plus de huit heures, d’autres un peu moins. Une nuit passée au lit pendant huit heures peut également contenir de nombreux éveils ou un sommeil peu réparateur. Il faut donc distinguer le temps passé au lit du temps réellement dormi.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "fatigue",
+      "malgre",
+      "huit",
+      "heures"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "264742ef42f1cd6ad43c9b3b191273306c9079ab2380232ba92139d168d3e870"
+  },
+  {
+    "id": "daily-tete-tourne-au-lever-20261110",
+    "url": "article-daily-tete-tourne-au-lever-20261110.html",
+    "title": "Pourquoi a-t-on parfois la tête qui tourne en se levant ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Santé",
+    "date": "2026-11-10",
+    "status": "PUBLISHED",
+    "excerpt": "Il arrive de ressentir un voile noir, une sensation de faiblesse ou un bref étourdissement lorsque l’on passe rapidement de la position allongée ou assise à la position debout. Ce phénomène est souvent lié à une adaptation transitoire de la circulation sanguine. Sous l’effet de la gravité, une partie du sang s’accumule momentanément dans les jambes. L’organisme doit alors ajuster la fréquence cardiaque et le tonus des vaisseaux pour maintenir un apport sanguin suffisant au cerveau.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "tete",
+      "tourne",
+      "au",
+      "lever"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "da80906e88e08e1a0fa4dfd6b2f733376b91812d1c76eeca9506c6898fa61d2a"
+  },
+  {
+    "id": "daily-ventre-gonfle-apres-repas-20261110",
+    "url": "article-daily-ventre-gonfle-apres-repas-20261110.html",
+    "title": "Pourquoi a-t-on le ventre gonflé après les repas ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Santé",
+    "date": "2026-11-10",
+    "status": "PUBLISHED",
+    "excerpt": "Un ventre qui gonfle après le déjeuner ou le dîner est un motif de consultation fréquent. La sensation de ballonnement peut correspondre à une impression de tension abdominale, parfois accompagnée d’une augmentation visible du tour de taille. Elle n’est pas toujours liée à une quantité excessive de gaz. La sensibilité intestinale, la vitesse du transit et la façon dont les muscles de l’abdomen réagissent après les repas jouent également un rôle.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "ventre",
+      "gonfle",
+      "apres",
+      "repas"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "c07fe2c84b395617beaba5a525b0731d4741375f124c3c178ff875d08bbc060d"
   }
 ];
