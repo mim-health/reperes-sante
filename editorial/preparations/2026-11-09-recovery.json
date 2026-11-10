@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-09",
+  "status": "PARTIAL_RECOVERY_REQUIRES_EXACT_CONFERENCE",
+  "publicationAuthorized": "not established for a complete edition",
+  "knownEditorialDecisions": [
+    {
+      "title": "Cancer du sein hormonodépendant chez la femme âgée : hormonothérapie ou chirurgie ?",
+      "type": "fiche candidate",
+      "status": "topic selected for creation; full text not recovered"
+    },
+    {
+      "title": "Hyperactivité vésicale : les anticholinergiques augmentent-ils le risque de démence ?",
+      "type": "fiche candidate",
+      "status": "topic selected for creation; full text not recovered"
+    },
+    {
+      "title": "Statines après 75 ans",
+      "type": "fiche existing",
+      "action": "verify and improve, not duplicate"
+    },
+    {
+      "title": "Prise de sang pour révéler une maladie",
+      "type": "fiche existing",
+      "action": "verify and improve, not duplicate"
+    },
+    {
+      "title": "Infection urinaire après la ménopause",
+      "type": "fiche existing",
+      "action": "verify and improve, not duplicate"
+    },
+    {
+      "title": "Vertige en se levant",
+      "type": "fiche candidate",
+      "action": "verify before creation; overlaps Nov 10 Mag angle"
+    },
+    {
+      "title": "Faut-il traiter l'ostéoporose sans fracture ?",
+      "type": "fiche candidate",
+      "action": "verify before creation"
+    },
+    {
+      "title": "Fatigue avec prise de sang normale",
+      "type": "fiche candidate",
+      "action": "verify before creation; distinct from Nov 10 fatigue despite sleep"
+    }
+  ],
+  "notes": "Ces décisions concernent le corpus de fiches et ne constituent pas une édition Mag de dix rubriques approuvée. Ne pas fabriquer les articles ni leurs validations. Vérifier la conférence du 9 novembre et les versions intégrales avant publication."
+}
