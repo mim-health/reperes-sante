@@ -17,6 +17,7 @@ const sources={
  'tete-tourne-au-lever':[['NHS — Low blood pressure','https://www.nhs.uk/conditions/low-blood-pressure-hypotension/'],['Merck Manual — Orthostatic Hypotension','https://www.merckmanuals.com/professional/cardiovascular-disorders/symptoms-of-cardiovascular-disorders/orthostatic-hypotension']],
  'ventre-gonfle-apres-repas':[['NHS — Bloating','https://www.nhs.uk/symptoms/bloating/'],['NIDDK — Gas in the Digestive Tract','https://www.niddk.nih.gov/health-information/digestive-diseases/gas-digestive-tract']]
 };
+if(fs.existsSync(root+'/editorial/publication-requests/medical-approval-20261110-four-complete-articles.json')){console.log('Previously approved request already registered');process.exit(0);}
 const items=specs.map(([key])=>{
  const html=fs.readFileSync(root+'/editorial/drafts/2026-11-10-'+key+'.html','utf8');
  const title=html.match(/<h1>([^<]+)<\/h1>/)?.[1];
