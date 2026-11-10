@@ -16,7 +16,7 @@ B: deploy the immutable site artifact; reject superseded medical sources immedia
 
 C: after successful B, reconstruct the closed corpus, check new IDs and versions, restore previous vectors, reuse the existing incremental embedding builder, publish an immutable index and exercise the public Assistant. Failure produces `ASSISTANT_SYNC_PENDING` with `siteStatus: PUBLISHED`; it never rolls the site back. The previous auto-publish workflow is disabled on the production branch to prevent a competing pre-deployment corpus publication.
 
-Execution states and failure stage/cause/remedy are persisted in per-job `publication-report.json` artifacts (`editorial-stage-a/b/c`). These are execution evidence; approved request history describes intake. `DRAFT` describes editorial preparation; `READY_FOR_VALIDATION`, `VALIDATED_PENDING_PUBLICATION`, `PUBLISHING`, `PUBLISHED`, `PUBLICATION_FAILED` and `ASSISTANT_SYNC_PENDING` are distinct. Do not read a pending source-intent record as proof that a completed run failed. Recover actual run reports through GitHub.
+Execution states and failure stage/cause/remedy are persisted in per-job `publication-report.json` artifacts (`editorial-stage-a/b/c-<tentative>`). These are execution evidence; approved request history describes intake. `DRAFT` describes editorial preparation; `READY_FOR_VALIDATION`, `VALIDATED_PENDING_PUBLICATION`, `PUBLISHING`, `PUBLISHED`, `PUBLICATION_FAILED` and `ASSISTANT_SYNC_PENDING` are distinct. Do not read a pending source-intent record as proof that a completed run failed. Recover actual run reports through GitHub.
 
 Unchanged sources can be retried without a new medical approval. A medical version change requires a new snapshot and explicit approval. AI-only failures should rerun job C through Actions rather than redeploying a successful site. GitHub is not an automatic scientific reviewer: complete precise references and the doctor's validation remain mandatory; metadata checks do not establish medical validity.
 
@@ -29,3 +29,6 @@ Unchanged sources can be retried without a new medical approval. A medical versi
 ## Catch-up — 9 and 10 November 2026
 
 At diagnosis the persistent source ends on 6 November. No integral approved editions for 9/10 were recovered from repository drafts, personal-context retrieval or the targeted file search. The four 10 November titles are known, not sufficient to reconstruct their approved articles. No fake edition or invented approval is inserted. Complete texts, references, approved rubrics and approval evidence are necessary to use the intake path. Missing material must be reported as a content-input blocker, not as a GitHub deployment failure.
+
+
+Bilan de mise en place et limites : `P0_73_BILAN_2026-11-10.md`.
