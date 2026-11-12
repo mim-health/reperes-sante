@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-12",
+  "status": "EDITORIAL_CONFERENCE_APPROVED_FULL_ARTICLE_TEXT_PENDING",
+  "publicationAuthorized": true,
+  "approvalScope": "Validation explicite de la conférence et autorisation de mise en ligne le 12 novembre 2026; les quatre articles longs n'ont pas encore été présentés intégralement pour validation médicale.",
+  "headline": {
+    "slot": "À LA UNE",
+    "title": "Après une fracture d’ostéoporose, quel traitement protège le mieux d’une nouvelle fracture ?",
+    "summary": "Cohorte australienne de 15 099 adultes, fractures à 3 ans 12,7% vs 14,4% chez les femmes et 16,0% vs 19,0% chez les hommes sous dénosumab vs bisphosphonates; étude observationnelle, vigilance au rebond à l'arrêt."
+  },
+  "threeMinutes": [
+    {
+      "title": "Accidents de l’enfant : inspecter le domicile et accompagner les parents peut-il vraiment prévenir les blessures ?",
+      "summary": "Essai randomisé communautaire, 360 foyers, blessures 11,8% vs 19,1%; suivi quatre mois, déclarations parentales."
+    },
+    {
+      "title": "Triglycérides : bloquer ANGPTL4 ouvre-t-il une nouvelle voie thérapeutique ?",
+      "summary": "MAR001 phase 2b, réduction des triglycérides ~39 à 45 points vs placebo, traitement expérimental, bénéfice clinique non démontré."
+    },
+    {
+      "title": "Trisomie 21 : pourquoi autant de décès restent-ils potentiellement évitables ?",
+      "summary": "Cohorte anglaise, décès évitables 47% vs 22%, vigilance épilepsie, pneumonie, limites de transposition."
+    }
+  ],
+  "otherSlots": [
+    {
+      "slot": "FICHE DU JOUR",
+      "title": "Syndrome de l’intestin irritable : que faire ?",
+      "ficheId": "syndrome-intestin-irritable-que-faire"
+    },
+    {
+      "slot": "VRAI OU FAUX",
+      "title": "Tout le monde doit boire exactement deux litres d’eau par jour",
+      "verdict": "À NUANCER"
+    },
+    {
+      "slot": "LE CHIFFRE DU JOUR",
+      "title": "1 511 noyades entre le 1er mai et le 31 août 2026, dont 441 mortelles"
+    },
+    {
+      "slot": "DONNÉES",
+      "title": "Comparaison de deux vaccins Covid-19 à ARNm chez les vétérans âgés"
+    },
+    {
+      "slot": "DONNÉES",
+      "title": "Angor typique et risque coronaire malgré imagerie"
+    },
+    {
+      "slot": "DONNÉES",
+      "title": "Soins palliatifs pédiatriques : 100 000 enfants et jeunes potentiellement concernés"
+    }
+  ],
+  "ficheCandidates": [
+    "Traitement après fracture de fragilité",
+    "Prévention des accidents domestiques de l’enfant",
+    "Suivi somatique de l’adulte avec trisomie 21"
+  ],
+  "medicalPublicationRules": [
+    "Rédiger les quatre articles intégraux d'au moins 400 mots avec sources exactes",
+    "Soumettre les quatre versions intégrales à validation médicale avant signature SHA-256",
+    "Ne pas valider automatiquement les trois fiches candidates",
+    "Créer l'édition complète de dix rubriques dans editorial/content.json puis contrôler déploiement et IA"
+  ],
+  "approvalEvidence": "Parfait validation et mise en ligne — message explicite du Dr Romain Beddok du 12 novembre 2026."
+}
