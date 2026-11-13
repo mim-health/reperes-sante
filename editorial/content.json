@@ -9897,6 +9897,166 @@
         "evidence": "Validation médicale explicite et autorisation de publication de la conférence éditoriale du 6 novembre 2026.",
         "contentHash": "d15acb04beb82ac1dc7241fd02ed17bb33fda030803ba69a576c078a5eab3cc0"
       }
+    },
+    {
+      "id": "daily-reveils-3-4-heures-20261110",
+      "date": "2026-11-10",
+      "title": "Pourquoi se réveille-t-on toujours à 3 ou 4 heures du matin ?",
+      "answer": "Se réveiller au milieu de la nuit est fréquent. Le sommeil n’est pas un état uniforme : il alterne des cycles comportant du sommeil léger, profond et paradoxal. De brefs éveils peuvent survenir entre ces cycles sans que l’on s’en souvienne. Lorsque l’on regarde l’heure, que l’on s’inquiète ou que l’on peine à se rendormir, l’épisode devient beaucoup plus marquant. Se réveiller vers 3 ou 4 heures n’indique donc pas, à lui seul, une maladie ni un dérèglement hormonal précis.",
+      "html": "<h1>Pourquoi se réveille-t-on toujours à 3 ou 4 heures du matin ?</h1>\n<p>Se réveiller au milieu de la nuit est fréquent. Le sommeil n’est pas un état uniforme : il alterne des cycles comportant du sommeil léger, profond et paradoxal. De brefs éveils peuvent survenir entre ces cycles sans que l’on s’en souvienne. Lorsque l’on regarde l’heure, que l’on s’inquiète ou que l’on peine à se rendormir, l’épisode devient beaucoup plus marquant. Se réveiller vers 3 ou 4 heures n’indique donc pas, à lui seul, une maladie ni un dérèglement hormonal précis.</p>\n<p>Pourquoi cette heure revient-elle souvent ? La seconde partie de nuit comporte davantage de sommeil paradoxal et moins de sommeil profond. Le sommeil peut alors être plus sensible aux bruits, à la lumière, à la température ou aux préoccupations. L’heure du coucher compte aussi : une personne qui s’endort tôt peut avoir déjà dormi plusieurs cycles à 3 heures du matin. L’impression de se réveiller « toujours à la même heure » peut être renforcée par l’habitude de consulter son réveil.</p>\n<p>Le stress et les ruminations jouent un rôle important. Après un premier réveil, la pensée « je ne vais pas réussir à dormir demain » augmente la vigilance et entretient parfois l’insomnie. L’alcool peut favoriser l’endormissement, mais fragmenter le sommeil dans la deuxième partie de nuit. La caféine consommée tardivement, la nicotine, certains médicaments, les horaires irréguliers ou les siestes prolongées peuvent également perturber les nuits.</p>\n<p>D’autres causes doivent être recherchées selon le contexte. Les ronflements importants, les pauses respiratoires rapportées, les réveils en suffocation et la somnolence diurne font évoquer une apnée du sommeil. Une envie répétée d’uriner, des douleurs, un reflux, des bouffées de chaleur ou des jambes sans repos peuvent aussi provoquer des réveils. Une humeur dépressive peut s’accompagner d’un réveil matinal précoce, sans que ce signe soit spécifique.</p>\n<p>Que faire concrètement ? Conserver une heure de lever assez régulière, s’exposer à la lumière du jour et pratiquer une activité physique adaptée aident à stabiliser les rythmes. Éviter de regarder systématiquement l’heure limite la focalisation sur le réveil. Réduire les boissons caféinées en fin de journée et l’alcool le soir est souvent utile. Si l’éveil se prolonge, quitter temporairement le lit pour une activité calme, dans une lumière tamisée, peut éviter d’associer le lit à une lutte pour dormir.</p>\n<p>Il n’existe pas de solution universelle. Les compléments et somnifères ne doivent pas être considérés comme une réponse automatique. En cas d’insomnie chronique, la thérapie cognitivo-comportementale de l’insomnie est un traitement de référence. Une consultation est indiquée si les troubles se répètent, entraînent une fatigue importante, affectent la vie quotidienne ou s’accompagnent de symptômes respiratoires nocturnes. Le médecin recherche alors la cause plutôt que de traiter seulement l’heure du réveil.</p>\n<p>À retenir : se réveiller à 3 ou 4 heures est le plus souvent lié à l’organisation normale du sommeil, à l’environnement ou à des facteurs de maintien de l’éveil. Ce n’est pas un diagnostic. C’est surtout la répétition des réveils, la difficulté à se rendormir et leurs conséquences dans la journée qui justifient une évaluation.</p>\n<h2>Sources</h2>\n<ul><li><a href=\"https://www.nhs.uk/conditions/insomnia/\">NHS — Insomnia</a></li><li><a href=\"https://www.nhlbi.nih.gov/health/insomnia\">NHLBI — Insomnia</a></li></ul>",
+      "url": "article-daily-reveils-3-4-heures-20261110.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Santé",
+      "keywords": [
+        "reveils",
+        "3",
+        "4",
+        "heures"
+      ],
+      "sources": [
+        {
+          "label": "NHS — Insomnia",
+          "url": "https://www.nhs.uk/conditions/insomnia/"
+        },
+        {
+          "label": "NHLBI — Insomnia",
+          "url": "https://www.nhlbi.nih.gov/health/insomnia"
+        }
+      ],
+      "image": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "standalone": true,
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain Beddok",
+        "validatedAt": "2026-11-10T16:30:42Z",
+        "evidence": "Je valide médicalement les versions intégrales des quatre articles du 10 novembre présentées ci-dessus et j'autorise leur publication sur MACASANTÉ. Lance la mise en ligne et vérifie les URL publiques et la synchronisation IA. — Dr Romain BEDDOK, conversation éditoriale du 10 novembre 2026.",
+        "contentHash": "f9e8b0878baa1f70425f05d41f77da8340b5b4df0232db873c71d82f36ccbe6f",
+        "snapshotHash": "c354ad27df39a992249d363112532059afb31281f211120889be39b2857818a3"
+      }
+    },
+    {
+      "id": "daily-fatigue-malgre-huit-heures-20261110",
+      "date": "2026-11-10",
+      "title": "Pourquoi est-on fatigué même après huit heures de sommeil ?",
+      "answer": "Huit heures de sommeil ne garantissent pas automatiquement une journée en pleine forme. La durée compte, mais aussi la qualité, la régularité et l’adéquation du sommeil aux besoins individuels. Certains adultes ont besoin d’un peu plus de huit heures, d’autres un peu moins. Une nuit passée au lit pendant huit heures peut également contenir de nombreux éveils ou un sommeil peu réparateur. Il faut donc distinguer le temps passé au lit du temps réellement dormi.",
+      "html": "<h1>Pourquoi est-on fatigué même après huit heures de sommeil ?</h1>\n<p>Huit heures de sommeil ne garantissent pas automatiquement une journée en pleine forme. La durée compte, mais aussi la qualité, la régularité et l’adéquation du sommeil aux besoins individuels. Certains adultes ont besoin d’un peu plus de huit heures, d’autres un peu moins. Une nuit passée au lit pendant huit heures peut également contenir de nombreux éveils ou un sommeil peu réparateur. Il faut donc distinguer le temps passé au lit du temps réellement dormi.</p>\n<p>Le premier élément à examiner est le rythme. Des horaires très différents entre la semaine et le week-end, des couchers tardifs ou un travail en horaires décalés peuvent désynchroniser l’horloge biologique. Même avec une durée théorique suffisante, on peut se réveiller au mauvais moment de son cycle veille-sommeil. L’exposition à la lumière le matin, la régularité du lever et la réduction des écrans lumineux tard le soir peuvent aider.</p>\n<p>La fragmentation du sommeil est une autre piste. Des ronflements associés à des pauses respiratoires, des réveils avec sensation d’étouffement, des maux de tête matinaux ou une somnolence diurne importante évoquent notamment un syndrome d’apnées obstructives du sommeil. Les mouvements périodiques des jambes, des douleurs, une toux nocturne, un reflux ou des réveils pour uriner peuvent également perturber la récupération, parfois sans souvenir précis au matin.</p>\n<p>La fatigue ne vient toutefois pas toujours du sommeil. Une période de stress, une anxiété, une dépression, une charge de travail importante ou un manque d’activité physique peuvent entraîner un épuisement. Selon les symptômes, le médecin peut aussi rechercher une anémie, une anomalie thyroïdienne, un trouble métabolique, une infection ou un effet indésirable médicamenteux. Il ne faut pas conclure d’emblée à une carence et multiplier les compléments sans indication.</p>\n<p>Une question utile est de savoir ce que l’on ressent exactement. La somnolence correspond à une tendance à s’endormir involontairement, par exemple devant la télévision ou au volant. La fatigue est davantage une sensation de manque d’énergie ou de difficulté à fournir un effort. Les deux peuvent coexister, mais n’orientent pas vers les mêmes causes. La somnolence au volant impose de ne pas conduire tant que le risque n’a pas été évalué.</p>\n<p>Pour avancer, noter pendant une à deux semaines les horaires de coucher et de lever, les éveils, les siestes, les consommations de caféine et le niveau de forme peut aider à objectiver le problème. Une activité physique régulière, des horaires stables et une exposition matinale à la lumière constituent des mesures simples. Il est préférable de ne pas prolonger indéfiniment le temps au lit dans l’espoir de récupérer.</p>\n<p>Il faut consulter si la fatigue persiste, s’aggrave ou gêne le travail, les études ou les activités habituelles. Une consultation plus rapide est nécessaire en présence d’essoufflement inhabituel, de douleur thoracique, de malaise, d’amaigrissement inexpliqué ou de somnolence dangereuse. À retenir : huit heures sont un repère, pas une garantie. Le bon diagnostic dépend du sommeil réel, du rythme de vie et de l’état de santé général.</p>\n<h2>Sources</h2>\n<ul><li><a href=\"https://www.cdc.gov/sleep/about/index.html\">CDC — About Sleep</a></li><li><a href=\"https://www.nhs.uk/symptoms/tiredness-and-fatigue/\">NHS — Tiredness and fatigue</a></li></ul>",
+      "url": "article-daily-fatigue-malgre-huit-heures-20261110.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Santé",
+      "keywords": [
+        "fatigue",
+        "malgre",
+        "huit",
+        "heures"
+      ],
+      "sources": [
+        {
+          "label": "CDC — About Sleep",
+          "url": "https://www.cdc.gov/sleep/about/index.html"
+        },
+        {
+          "label": "NHS — Tiredness and fatigue",
+          "url": "https://www.nhs.uk/symptoms/tiredness-and-fatigue/"
+        }
+      ],
+      "image": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "standalone": true,
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain Beddok",
+        "validatedAt": "2026-11-10T16:30:42Z",
+        "evidence": "Je valide médicalement les versions intégrales des quatre articles du 10 novembre présentées ci-dessus et j'autorise leur publication sur MACASANTÉ. Lance la mise en ligne et vérifie les URL publiques et la synchronisation IA. — Dr Romain BEDDOK, conversation éditoriale du 10 novembre 2026.",
+        "contentHash": "264742ef42f1cd6ad43c9b3b191273306c9079ab2380232ba92139d168d3e870",
+        "snapshotHash": "c354ad27df39a992249d363112532059afb31281f211120889be39b2857818a3"
+      }
+    },
+    {
+      "id": "daily-tete-tourne-au-lever-20261110",
+      "date": "2026-11-10",
+      "title": "Pourquoi a-t-on parfois la tête qui tourne en se levant ?",
+      "answer": "Il arrive de ressentir un voile noir, une sensation de faiblesse ou un bref étourdissement lorsque l’on passe rapidement de la position allongée ou assise à la position debout. Ce phénomène est souvent lié à une adaptation transitoire de la circulation sanguine. Sous l’effet de la gravité, une partie du sang s’accumule momentanément dans les jambes. L’organisme doit alors ajuster la fréquence cardiaque et le tonus des vaisseaux pour maintenir un apport sanguin suffisant au cerveau.",
+      "html": "<h1>Pourquoi a-t-on parfois la tête qui tourne en se levant ?</h1>\n<p>Il arrive de ressentir un voile noir, une sensation de faiblesse ou un bref étourdissement lorsque l’on passe rapidement de la position allongée ou assise à la position debout. Ce phénomène est souvent lié à une adaptation transitoire de la circulation sanguine. Sous l’effet de la gravité, une partie du sang s’accumule momentanément dans les jambes. L’organisme doit alors ajuster la fréquence cardiaque et le tonus des vaisseaux pour maintenir un apport sanguin suffisant au cerveau.</p>\n<p>Lorsque cette compensation est trop lente ou insuffisante, la pression artérielle peut chuter : on parle d’hypotension orthostatique. Les symptômes apparaissent généralement peu après le lever et s’améliorent en se rasseyant ou en s’allongeant. Une sensation de tête légère n’est cependant pas synonyme de vertige rotatoire. Si la pièce semble tourner, notamment lors de certains mouvements de tête, une cause vestibulaire peut être envisagée.</p>\n<p>Plusieurs situations favorisent les malaises au lever. La déshydratation, une chaleur importante, une diarrhée, des vomissements ou un repos prolongé au lit peuvent réduire le volume circulant ou altérer les mécanismes d’adaptation. Certains médicaments, notamment antihypertenseurs, diurétiques et traitements agissant sur le système nerveux, peuvent y contribuer. Les personnes âgées sont plus exposées, mais les jeunes peuvent également présenter des symptômes, en particulier après une station debout prolongée.</p>\n<p>Le médecin commence par préciser les circonstances : symptômes uniquement au lever, durée, fréquence, éventuelle perte de connaissance, palpitations, douleurs ou traitements pris. La mesure de la pression artérielle et du pouls en position couchée puis debout peut être informative. Une baisse d’au moins 20 mmHg de la pression systolique ou 10 mmHg de la diastolique dans les trois minutes suivant le passage debout correspond à un critère usuel d’hypotension orthostatique, à interpréter dans le contexte clinique.</p>\n<p>En attendant un avis si nécessaire, il est raisonnable de se lever progressivement : s’asseoir quelques instants au bord du lit, mobiliser les jambes puis se mettre debout en prenant appui. Une hydratation adaptée peut aider lorsqu’il existe un manque d’apport hydrique, sauf restriction médicale. Il ne faut pas arrêter ou modifier seul un traitement antihypertenseur. Si les épisodes sont répétés, un bilan permet de rechercher une cause corrigible.</p>\n<p>Certains signes imposent une évaluation urgente : perte de connaissance, douleur thoracique, essoufflement, palpitations soutenues, déficit neurologique, trouble de la parole ou chute avec traumatisme. Une sensation persistante de vertige associée à une difficulté à marcher ou à des signes neurologiques ne doit pas être attribuée automatiquement à une baisse de tension.</p>\n<p>À retenir : un étourdissement bref au lever est souvent bénin, mais sa répétition mérite une recherche de cause. Le terme « tête qui tourne » recouvre plusieurs symptômes différents. Préciser s’il s’agit d’un voile noir, d’une impression de malaise ou d’une véritable rotation aide à orienter l’examen et à choisir les investigations utiles.</p>\n<h2>Sources</h2>\n<ul><li><a href=\"https://www.nhs.uk/conditions/low-blood-pressure-hypotension/\">NHS — Low blood pressure (hypotension)</a></li><li><a href=\"https://www.merckmanuals.com/professional/cardiovascular-disorders/symptoms-of-cardiovascular-disorders/orthostatic-hypotension\">Merck Manual — Orthostatic Hypotension</a></li></ul>",
+      "url": "article-daily-tete-tourne-au-lever-20261110.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Santé",
+      "keywords": [
+        "tete",
+        "tourne",
+        "au",
+        "lever"
+      ],
+      "sources": [
+        {
+          "label": "NHS — Low blood pressure",
+          "url": "https://www.nhs.uk/conditions/low-blood-pressure-hypotension/"
+        },
+        {
+          "label": "Merck Manual — Orthostatic Hypotension",
+          "url": "https://www.merckmanuals.com/professional/cardiovascular-disorders/symptoms-of-cardiovascular-disorders/orthostatic-hypotension"
+        }
+      ],
+      "image": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "standalone": true,
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain Beddok",
+        "validatedAt": "2026-11-10T16:30:42Z",
+        "evidence": "Je valide médicalement les versions intégrales des quatre articles du 10 novembre présentées ci-dessus et j'autorise leur publication sur MACASANTÉ. Lance la mise en ligne et vérifie les URL publiques et la synchronisation IA. — Dr Romain BEDDOK, conversation éditoriale du 10 novembre 2026.",
+        "contentHash": "da80906e88e08e1a0fa4dfd6b2f733376b91812d1c76eeca9506c6898fa61d2a",
+        "snapshotHash": "c354ad27df39a992249d363112532059afb31281f211120889be39b2857818a3"
+      }
+    },
+    {
+      "id": "daily-ventre-gonfle-apres-repas-20261110",
+      "date": "2026-11-10",
+      "title": "Pourquoi a-t-on le ventre gonflé après les repas ?",
+      "answer": "Un ventre qui gonfle après le déjeuner ou le dîner est un motif de consultation fréquent. La sensation de ballonnement peut correspondre à une impression de tension abdominale, parfois accompagnée d’une augmentation visible du tour de taille. Elle n’est pas toujours liée à une quantité excessive de gaz. La sensibilité intestinale, la vitesse du transit et la façon dont les muscles de l’abdomen réagissent après les repas jouent également un rôle.",
+      "html": "<h1>Pourquoi a-t-on le ventre gonflé après les repas ?</h1>\n<p>Un ventre qui gonfle après le déjeuner ou le dîner est un motif de consultation fréquent. La sensation de ballonnement peut correspondre à une impression de tension abdominale, parfois accompagnée d’une augmentation visible du tour de taille. Elle n’est pas toujours liée à une quantité excessive de gaz. La sensibilité intestinale, la vitesse du transit et la façon dont les muscles de l’abdomen réagissent après les repas jouent également un rôle.</p>\n<p>Pendant la digestion, les aliments progressent dans l’estomac puis l’intestin. Certaines substances sont fermentées par les bactéries du côlon, produisant des gaz. Les légumineuses, certains légumes, les boissons gazeuses et certains glucides fermentescibles peuvent accentuer les symptômes chez les personnes sensibles. Manger rapidement, parler en mangeant ou mâcher fréquemment du chewing-gum favorise aussi l’ingestion d’air.</p>\n<p>Les ballonnements peuvent être liés à une constipation : lorsque les selles progressent lentement, une sensation de pesanteur et de distension apparaît parfois après les repas. Chez d’autres personnes, ils s’intègrent dans un syndrome de l’intestin irritable, surtout s’ils s’accompagnent de douleurs abdominales et de modifications de la fréquence ou de la consistance des selles. Il s’agit d’un diagnostic clinique qui nécessite de vérifier l’absence de signes d’alerte.</p>\n<p>Les intolérances alimentaires doivent être envisagées avec nuance. Une malabsorption du lactose peut entraîner gaz, douleurs et diarrhée après certains produits laitiers. Les aliments riches en glucides fermentescibles, souvent appelés FODMAP, peuvent majorer les symptômes chez certaines personnes. Mais supprimer de nombreux aliments sans méthode peut appauvrir l’alimentation et rendre difficile l’identification du véritable facteur déclenchant.</p>\n<p>Que faire au quotidien ? Commencer par observer les circonstances : quels repas provoquent les symptômes, à quel délai, avec quelles douleurs et quel transit ? Prendre le temps de manger, fractionner les portions si elles sont très copieuses, limiter les boissons gazeuses et pratiquer une marche après le repas peuvent être utiles. En cas de constipation, l’hydratation et un apport progressif en fibres sont à adapter à la tolérance.</p>\n<p>Si les troubles persistent, le médecin pourra rechercher une constipation, un syndrome de l’intestin irritable, une maladie cœliaque ou une autre cause digestive selon les symptômes. Un régime pauvre en FODMAP peut parfois être proposé pour une durée limitée, idéalement avec un professionnel formé, suivi d’une réintroduction structurée. Il ne doit pas devenir une exclusion alimentaire permanente improvisée.</p>\n<p>Certains signes justifient une consultation rapide : perte de poids involontaire, sang dans les selles, vomissements persistants, douleurs importantes, fièvre, anémie connue ou apparition récente de symptômes progressifs. Un abdomen très distendu avec douleur intense et impossibilité d’émettre gaz ou selles peut nécessiter une prise en charge urgente.</p>\n<p>À retenir : les ballonnements après les repas sont souvent fonctionnels et multifactoriels. Ils ne prouvent ni une allergie alimentaire ni une maladie grave. L’évolution des symptômes, les signes associés et leur retentissement permettent de décider si des adaptations simples suffisent ou si une évaluation médicale est nécessaire.</p>\n<h2>Sources</h2>\n<ul><li><a href=\"https://www.nhs.uk/symptoms/bloating/\">NHS — Bloating</a></li><li><a href=\"https://www.niddk.nih.gov/health-information/digestive-diseases/gas-digestive-tract\">NIDDK — Gas in the Digestive Tract</a></li></ul>",
+      "url": "article-daily-ventre-gonfle-apres-repas-20261110.html",
+      "format": "article",
+      "category": "Décryptage",
+      "theme": "Santé",
+      "keywords": [
+        "ventre",
+        "gonfle",
+        "apres",
+        "repas"
+      ],
+      "sources": [
+        {
+          "label": "NHS — Bloating",
+          "url": "https://www.nhs.uk/symptoms/bloating/"
+        },
+        {
+          "label": "NIDDK — Gas in the Digestive Tract",
+          "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/gas-digestive-tract"
+        }
+      ],
+      "image": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "standalone": true,
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain Beddok",
+        "validatedAt": "2026-11-10T16:30:42Z",
+        "evidence": "Je valide médicalement les versions intégrales des quatre articles du 10 novembre présentées ci-dessus et j'autorise leur publication sur MACASANTÉ. Lance la mise en ligne et vérifie les URL publiques et la synchronisation IA. — Dr Romain BEDDOK, conversation éditoriale du 10 novembre 2026.",
+        "contentHash": "c07fe2c84b395617beaba5a525b0731d4741375f124c3c178ff875d08bbc060d",
+        "snapshotHash": "c354ad27df39a992249d363112532059afb31281f211120889be39b2857818a3"
+      }
     }
   ],
   "editions": [

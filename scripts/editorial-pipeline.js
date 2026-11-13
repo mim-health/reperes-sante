@@ -15,6 +15,8 @@ function plan(){
 }
 async function main(){const action=process.argv[2];
  if(action==='prepare'){
+  const unsaved=cp.execFileSync('git',['status','--porcelain','--','editorial/content.json','editorial/fiches.json','editorial/publication-requests'],{cwd:ROOT,encoding:'utf8'}).trim();
+  if(unsaved){const error=new Error('Approved editorial inputs must be committed before preparation; save content.json, fiches.json and the approval request atomically before triggering this workflow.');error.stage='uncommitted editorial intake';throw error;}
   const decision=plan();fs.writeFileSync('publication-plan.json',JSON.stringify(decision,null,2)+'\n');state('PUBLISHING');
   p.buildFiches();node('scripts/test-editorial-publish.js');run(process.execPath,['scripts/test-editorial-publish.js','--edition']);node('scripts/test-content-duplicates.js');node('scripts/audit-content-duplicates.js');node('scripts/mag-editorial.js');node('scripts/test-mag-editorial.js');node('scripts/audit-mag-images.js');
   if(decision.mode!=='MAGAZINE_INCREMENTAL')for(const f of ['scripts/test-site-shell.js','scripts/test-home-assistant.js','scripts/test-assistant-pilot.js','scripts/test-corpus-pipeline.js','scripts/test-corpus-functional.js','scripts/test-ui-adapter.js','scripts/test-browser-entry.js'])node(f);
