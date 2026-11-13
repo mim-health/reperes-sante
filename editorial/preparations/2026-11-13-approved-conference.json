@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-13",
+  "status": "PUBLICATION_AUTHORIZED_EXACT_APPROVED_TEXT_UNAVAILABLE",
+  "publicationAuthorized": true,
+  "validator": "Dr Romain BEDDOK",
+  "approvalDate": "2026-11-13",
+  "approvalEvidence": "Je valide médicalement les contenus intégraux déjà approuvés de la conférence unique du 13 novembre 2026 et j'autorise leur publication immédiate sur MACASANTÉ, avec l'iconographie de l'À la une. Je demande la conservation de tout le corpus existant, la vérification des URL publiques et la synchronisation de l'assistant IA. Aucune nouvelle confirmation n'est nécessaire pour les versions déjà validées et inchangées.",
+  "approvalScope": "Autorisation conservée pour les versions intégrales déjà approuvées et inchangées. Le ticket de transmission est un résumé, pas une validation de textes réécrits.",
+  "production": {
+    "repository": "mim-health/reperes-sante",
+    "branch": "feat/v0-magazine",
+    "observedHead": "9bfc2f01486794b083f1c49b242efe7d63fa52bb",
+    "contentCount": 272,
+    "editionCount": 22,
+    "lastCompleteEdition": "2026-11-06"
+  },
+  "items": [
+    {
+      "slot": "À LA UNE",
+      "title": "Ménopause : changer son alimentation peut-il vraiment réduire les symptômes ?"
+    },
+    {
+      "slot": "À LIRE EN 3 MIN",
+      "title": "Hypertension : plusieurs médicaments dans un seul comprimé, est-ce plus efficace ?"
+    },
+    {
+      "slot": "À LIRE EN 3 MIN",
+      "title": "Maladie cœliaque : le régime sans gluten peut-il compliquer la relation à l'alimentation ?"
+    },
+    {
+      "slot": "À LIRE EN 3 MIN",
+      "title": "Lipoprotéine(a) : pourquoi faire baisser un facteur de risque ne protège-t-il pas toujours le cœur ?"
+    },
+    {
+      "slot": "FICHE DU JOUR",
+      "title": "Je saigne du nez : que dois-je faire ?",
+      "instruction": "Réutiliser la fiche canonique, sans modifier son contenu; identifiant à vérifier."
+    },
+    {
+      "slot": "VRAI OU FAUX",
+      "title": "Le vaccin contre la grippe peut donner la grippe."
+    },
+    {
+      "slot": "LE CHIFFRE DU JOUR",
+      "title": "222 cas autochtones de West Nile en France métropolitaine au 9 novembre 2026"
+    },
+    {
+      "slot": "DONNÉES",
+      "title": "Cancer du poumon : délai avant chirurgie et survie"
+    },
+    {
+      "slot": "DONNÉES",
+      "title": "Prématurité et antibiotiques : stratégie guidée par biomarqueurs"
+    },
+    {
+      "slot": "DONNÉES",
+      "title": "Virus respiratoires : bulletin officiel du 12 novembre 2026"
+    }
+  ],
+  "retrieval": {
+    "outcome": "Les recherches de conversation restituent des sujets/résumés et des éléments d'autorisation, sans corps intégral exact exploitable. L'infographie retrouvée est une synthèse, pas les textes intégraux.",
+    "missing": "Corps intégraux exacts approuvés des quatre articles et textes exacts des autres rubriques; provenance/licence/crédit de la photographie de Une et affectation exacte de la fiche canonique.",
+    "constraint": "Ne pas reconstruire ces textes depuis les titres ou le ticket; ne pas fabriquer de hash de validation ni de date/heure d'approbation."
+  },
+  "sourceChecks": [
+    {
+      "topic": "Ménopause",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42790873/",
+      "finding": "Référence retrouvée : Am J Clin Nutr. 2026 Nov;124(5):101539; publication électronique 25 septembre 2026."
+    },
+    {
+      "topic": "Hypertension",
+      "url": "https://jamanetwork.com/journals/jama/fullarticle/2856398",
+      "finding": "Résumé JAMA : 1706 inclus, 1574 analysés; différence systolique -10,1 mmHg à 18 mois; intervention multicomposante."
+    },
+    {
+      "topic": "Lp(a) HORIZON",
+      "url": "https://mediacenteratypon.nejmgroup-production.org/NEJMoa2610159.pdf",
+      "finding": "Publication intégrale retrouvée : 8350 randomisés, 8322 analysés; critère principal HR 1,02 (IC95% 0,90–1,15), p=0,76. Effectifs du résumé à réconcilier avec le texte exact approuvé; ne pas modifier silencieusement une version validée."
+    },
+    {
+      "topic": "West Nile",
+      "url": "https://inpes.santepubliquefrance.fr/maladies-a-transmission-vectorielle/chikungunya/bulletin-national/chikungunya-dengue-zika-et-29",
+      "finding": "Bulletin SPF du 12 novembre : 222 cas autochtones au 9 novembre."
+    },
+    {
+      "topic": "Virus respiratoires",
+      "url": "https://www.santepubliquefrance.fr/index.php/infections-respiratoires-aigues/grippe/bulletin-national/infections-respiratoires-aigues-grippe-bronchiolite-covid-19-bulletin-du-12-novembre-2026",
+      "finding": "Bulletin SPF : Martinique en épidémie, Île-de-France en pré-épidémie de bronchiolite; niveaux nationaux majoritairement de base."
+    }
+  ],
+  "execution": {
+    "sourceContentModified": false,
+    "workflowDispatched": false,
+    "newPublicUrlsVerified": false,
+    "assistantSyncTriggered": false,
+    "issue73MustRemainOpen": true
+  },
+  "nextRequiredInput": "Transférer les versions intégrales exactes depuis la conférence éditoriale. Aucune nouvelle approbation pour ces versions inchangées."
+}
