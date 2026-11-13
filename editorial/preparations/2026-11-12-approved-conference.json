@@ -1,8 +1,8 @@
 {
   "date": "2026-11-12",
-  "status": "EDITORIAL_CONFERENCE_APPROVED_FULL_ARTICLE_TEXT_PENDING",
+  "status": "MEDICAL_VALIDATION_ACQUIRED_EXACT_TEXT_TRANSFER_BLOCKED",
   "publicationAuthorized": true,
-  "approvalScope": "Validation explicite de la conférence et autorisation de mise en ligne le 12 novembre 2026; les quatre articles longs n'ont pas encore été présentés intégralement pour validation médicale.",
+  "approvalScope": "La validation médicale et l'autorisation de publication sont acquises pour les quatre textes intégraux approuvés et inchangés du 12 novembre. Le dépôt contient actuellement les résumés, pas les quatre versions intégrales correspondantes. Aucune nouvelle validation n'est requise pour ces versions inchangées.",
   "headline": {
     "slot": "À LA UNE",
     "title": "Après une fracture d’ostéoporose, quel traitement protège le mieux d’une nouvelle fracture ?",
@@ -56,10 +56,25 @@
     "Suivi somatique de l’adulte avec trisomie 21"
   ],
   "medicalPublicationRules": [
-    "Rédiger les quatre articles intégraux d'au moins 400 mots avec sources exactes",
-    "Soumettre les quatre versions intégrales à validation médicale avant signature SHA-256",
+    "Importer à l'identique les quatre textes intégraux déjà approuvés, avec leurs sources exactes",
+    "Apparier les versions importées avec la validation existante avant calcul des empreintes ; ne pas attribuer cette validation à une reconstruction",
     "Ne pas valider automatiquement les trois fiches candidates",
-    "Créer l'édition complète de dix rubriques dans editorial/content.json puis contrôler déploiement et IA"
+    "Créer l'édition complète uniquement si les dix rubriques exactes sont disponibles et autorisées ; contrôler ensuite déploiement et IA"
   ],
-  "approvalEvidence": "Parfait validation et mise en ligne — message explicite du Dr Romain Beddok du 12 novembre 2026."
+  "approvalEvidence": "Parfait validation et mise en ligne — message explicite du Dr Romain Beddok du 12 novembre 2026.",
+  "medicalApproval": {
+    "status": "ACQUIRED",
+    "validator": "Dr Romain BEDDOK",
+    "evidence": "Je valide médicalement les versions intégrales des quatre articles du 12 novembre 2026 présentées ci-dessus et j'autorise leur publication dans l'édition MACASANTÉ du 12 novembre. Lance le déploiement et vérifie les URL publiques et la synchronisation IA.",
+    "originalValidatedAt": null,
+    "recordedAt": "2026-11-13T14:43:55.634Z",
+    "note": "Heure originale de validation non retrouvée ; recordedAt date l'enregistrement de ce constat, pas la validation initiale."
+  },
+  "transfer": {
+    "state": "BLOCKED_MISSING_EXACT_TEXT",
+    "fullTextsPersisted": false,
+    "approvedContentHash": null,
+    "deploymentTriggered": false,
+    "requiredInput": "Les quatre textes intégraux exacts déjà validés, avec leurs références. Un résumé, un titre ou un ticket de transfert ne remplace pas ces textes."
+  }
 }
