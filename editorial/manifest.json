@@ -2,11 +2,17 @@
   "schemaVersion": 1,
   "editionId": "edition-2026-11-06",
   "editionDate": "2026-11-06",
-  "sourceFingerprint": "c18951cad871ba41a401f44c8fecd6fa33cd526c0609c2f198af2a72b56678ba",
+  "sourceFingerprint": "1634b006df846e83a8378306d2a3909060870b034cda587e08c7cde687cb8be8",
   "missingEdition": true,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-daily-menopause-alimentation-20261113",
+      "version": "9ff3c8e1d807ab916bcac9b3054d12e9e1c7048f23a0baf2e0db92db8ffce2bc",
+      "url": "article-daily-menopause-alimentation-20261113.html",
+      "date": "2026-11-13"
+    },
     {
       "id": "mag-daily-reveils-3-4-heures-20261110",
       "version": "f9e8b0878baa1f70425f05d41f77da8340b5b4df0232db873c71d82f36ccbe6f",

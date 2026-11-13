@@ -5126,5 +5126,29 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "c07fe2c84b395617beaba5a525b0731d4741375f124c3c178ff875d08bbc060d"
+  },
+  {
+    "id": "daily-menopause-alimentation-20261113",
+    "url": "article-daily-menopause-alimentation-20261113.html",
+    "title": "Ménopause : changer son alimentation peut-il vraiment améliorer les symptômes ?",
+    "format": "article",
+    "category": "Décryptage",
+    "theme": "Santé de la femme",
+    "date": "2026-11-13",
+    "status": "PUBLISHED",
+    "excerpt": "Une alimentation équilibrée peut aider à limiter la prise de poids, protéger les os et améliorer la santé cardiovasculaire après la ménopause. Certains aliments pourraient également contribuer à atténuer les bouffées de chaleur, mais les preuves restent limitées. Aucun régime alimentaire ne remplace un traitement médical lorsque les symptômes deviennent importants.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "ménopause",
+      "alimentation",
+      "bouffées de chaleur",
+      "soja",
+      "calcium",
+      "vitamine D"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "9ff3c8e1d807ab916bcac9b3054d12e9e1c7048f23a0baf2e0db92db8ffce2bc"
   }
 ];
