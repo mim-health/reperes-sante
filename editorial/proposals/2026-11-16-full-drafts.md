@@ -135,3 +135,12 @@ Conserver des horaires de sommeil réguliers, éviter les repas sautés, repére
 - **PSA : référence scientifique retrouvée.** Hoffman et al., CA Cancer J Clin 2026, DOI 10.3322/caac.70112. Recommandation ACS biennale 50–69 ans confirmée. Position française à documenter.
 - **Ne pas considérer les références audition et migraine comme validées sans contre-vérification indépendante :** les DOI et résultats mentionnés dans le journal précédent doivent être réouverts sur les pages des éditeurs avant publication.
 - **Restent :** chiffres des trois brèves, images avec licence et provenance, statut réglementaire, audit anti-doublons, validation médicale explicite des textes complets, génération des hash, contrôles techniques et publication.
+
+## Audit anti-doublons du corpus persistant — constat vérifié
+- **BLOCAGE ÉDITORIAL IMPORTANT :** l'article `daily-migraine-20261013`, déjà VALIDATED/PUBLISHED, porte exactement le titre « Migraine : quand faut-il envisager un traitement de fond ? ». Le nouvel article de la même thématique ne doit pas être créé comme nouvelle URL ; envisager une mise à jour de l'article existant avec nouvelle validation, ou substituer une véritable nouvelle actualité dans l'édition.
+- Audition : `daily-fiche-audition-60-20261024` (« Audition après 60 ans : quand la faire tester ? ») existe, mais l'essai sur appareillage unilatéral/bilatéral est distinct ; prévoir maillage sans duplication.
+- PSA : pas d'article sur le dosage PSA retrouvé dans `editorial/content.json`, mais cette recherche ne garantit pas l'absence de fiche canonique dans le corpus des fiches.
+- Double prise : `daily-double-prise-20261022` et `daily-fiche-double-prise-20261025` existent déjà ; la rubrique du jour doit référencer la fiche canonique et non créer un troisième contenu identique.
+- Tirzépatide : aucun titre tirzépatide trouvé dans ce fichier, mais vérifier le corpus complet.
+- Références externes confirmées le 16 novembre : JAMA SURMOUNT-ADOLESCENTS DOI 10.1001/jama.2026.23420 ; JAMA Otolaryngol audioprothèses DOI 10.1001/jamaoto.2026.2401 ; CA Cancer J Clin PSA DOI 10.3322/caac.70112.
+- **Règle durable recommandée :** contrôle anti-doublon préalable sur titres normalisés + synonymes, et interdiction de marquer une version VALIDATED sur la seule validation des titres. L'autorisation de publication de principe ne remplace pas l'approbation du texte intégral exact.
