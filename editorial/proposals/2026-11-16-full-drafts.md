@@ -17,7 +17,7 @@ L'obésité de l'adolescent est une maladie chronique complexe. Elle peut s'acco
 L'essai a inclus seulement 160 participants et son suivi a duré 72 semaines. Il ne permet pas de connaître précisément les conséquences de plusieurs années de traitement, l'évolution après son arrêt, ni tous les effets possibles sur la croissance et le développement pubertaire. Les troubles digestifs ont été fréquents et certains participants ont arrêté le traitement pour effets indésirables. Les résultats ne doivent pas être extrapolés à un adolescent en simple surpoids.
 
 ### Peut-on le prescrire à un adolescent en France ?
-L'autorisation de mise sur le marché et les indications doivent être vérifiées à la date de prescription. Les résultats d'un essai ne valent pas autorisation réglementaire. Toute prise en charge de l'obésité pédiatrique doit rester individualisée et coordonnée avec une équipe formée, en intégrant nutrition, activité physique, sommeil et santé mentale.
+Selon l'EMA (information produit mise à jour en septembre 2026), Mounjaro est autorisé à partir de 10 ans dans le diabète de type 2, mais son indication de contrôle du poids reste réservée aux adultes. Les résultats de cet essai ne constituent pas une autorisation pour traiter l'obésité des adolescents. Toute prise en charge de l'obésité pédiatrique doit rester individualisée et coordonnée avec une équipe formée, en intégrant nutrition, activité physique, sommeil et santé mentale.
 
 **À retenir :** un résultat prometteur, mais pas un traitement à généraliser sans recul et sans cadre réglementaire adapté.
 
@@ -114,7 +114,7 @@ Conserver des horaires de sommeil réguliers, éviter les repas sautés, repére
 ### Trois données à retenir
 1. **Prématurité :** environ un bébé sur dix naît avant 37 semaines de grossesse dans le monde. Source : OMS, statistiques de prématurité.
 2. **Virus respiratoires :** en semaine 45 de 2026, les indicateurs de circulation des infections respiratoires progressent en ville en France, sans épidémie nationale généralisée à l'hôpital. Source : Santé publique France, bulletin hebdomadaire semaine 45, à vérifier.
-3. **Rougeole :** 116 cas déclarés en France entre le 1er janvier et le 31 octobre 2026, dont 43 hospitalisations et deux admissions en réanimation, chiffres à confirmer dans le bulletin de Santé publique France avant publication.
+3. **Rougeole :** 116 cas déclarés en France entre le 1er janvier et le 31 octobre 2026, dont 43 hospitalisations et deux admissions en réanimation, chiffres confirmés par Santé publique France, bulletin du 12 novembre 2026 : https://www.santepubliquefrance.fr/rougeole/bulletin-national/rougeole-en-france-du-1er-janvier-au-31-octobre-2026 .
 
 ## Contrôles bloquants avant production
 - Vérifier toutes les sources exactes, en particulier l'essai d'appareillage auditif et la synthèse migraine, puis ajouter leurs liens primaires.
@@ -144,3 +144,9 @@ Conserver des horaires de sommeil réguliers, éviter les repas sautés, repére
 - Tirzépatide : aucun titre tirzépatide trouvé dans ce fichier, mais vérifier le corpus complet.
 - Références externes confirmées le 16 novembre : JAMA SURMOUNT-ADOLESCENTS DOI 10.1001/jama.2026.23420 ; JAMA Otolaryngol audioprothèses DOI 10.1001/jamaoto.2026.2401 ; CA Cancer J Clin PSA DOI 10.3322/caac.70112.
 - **Règle durable recommandée :** contrôle anti-doublon préalable sur titres normalisés + synonymes, et interdiction de marquer une version VALIDATED sur la seule validation des titres. L'autorisation de publication de principe ne remplace pas l'approbation du texte intégral exact.
+
+## Contrôles du 16 novembre, fin d'après-midi
+- EMA : Mounjaro indiqué dès 10 ans pour le diabète de type 2, mais indication de gestion du poids réservée aux adultes. Source : https://www.ema.europa.eu/en/medicines/human/EPAR/mounjaro . Formulation rectifiée dans l'article.
+- Santé publique France : 116 cas de rougeole, 43 hospitalisations, 2 passages en réanimation, bulletin du 12 novembre 2026 : https://www.santepubliquefrance.fr/rougeole/bulletin-national/rougeole-en-france-du-1er-janvier-au-31-octobre-2026 .
+- Ne pas publier de nouveau doublon « Migraine : quand faut-il envisager un traitement de fond ? » ; réutiliser le contenu canonique daily-migraine-20261013 ou demander une modification substantielle spécifique.
+- Les visuels avec provenance/licence, la vérification des données respiratoires, l'intégration structurée et les tests restent des conditions non satisfaites ; la validation conditionnelle ne doit pas être convertie en validation inconditionnelle.
