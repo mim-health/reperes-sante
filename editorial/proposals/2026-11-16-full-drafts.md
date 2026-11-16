@@ -21,7 +21,7 @@ L'autorisation de mise sur le marché et les indications doivent être vérifié
 
 **À retenir :** un résultat prometteur, mais pas un traitement à généraliser sans recul et sans cadre réglementaire adapté.
 
-**Sources à vérifier avant publication :** JAMA, essai SURMOUNT-ADOLESCENTS, novembre 2026 ; EMA, information produit Mounjaro, https://www.ema.europa.eu/en/medicines/human/EPAR/mounjaro .
+**Essai primaire vérifié :** Kelly AS et al. *Tirzepatide in Adolescents With Obesity: The SURMOUNT-ADOLESCENTS Randomized Clinical Trial*. JAMA. Publié en ligne le 15 novembre 2026. DOI : https://doi.org/10.1001/jama.2026.23420 . 160 adolescents randomisés (109 tirzépatide, 51 placebo), 72 semaines, variation de l'IMC −18,5 % contre +0,5 %, différence −19,0 points (IC 95 % −23,9 à −14,1). Troubles digestifs fréquents ; statut d'AMM pédiatrique à confirmer sur https://www.ema.europa.eu/en/medicines/human/EPAR/mounjaro .
 
 ---
 
@@ -46,7 +46,7 @@ Ne pas conclure immédiatement à un cancer. Le médecin tient compte de l'âge,
 
 **À retenir :** le PSA peut être utile, mais son intérêt dépend du risque individuel et de ce que l'on fera du résultat.
 
-**Sources :** American Cancer Society, communiqué et recommandation du 12 novembre 2026 : https://pressroom.cancer.org/prostate-cancer-screening-guideline-update-2026 ; consulter également les positions françaises HAS/INCa à jour avant publication.
+**Sources vérifiées :** Hoffman RM, Wolf AMD, Etzioni RD et al. *American Cancer Society guideline for the early detection of prostate cancer, 2026*. CA Cancer J Clin. 2026; e70112. DOI : https://doi.org/10.3322/caac.70112 . Communiqué ACS du 12 novembre 2026 : https://pressroom.cancer.org/prostate-cancer-screening-guideline-update-2026 . La recommandation américaine biennale 50–69 ans est confirmée ; les positions françaises HAS/INCa restent à vérifier avant publication.
 
 ---
 
@@ -129,3 +129,9 @@ Conserver des horaires de sommeil réguliers, éviter les repas sautés, repére
 - **Migraine : LEVÉ.** Source BMJ datée du 7 octobre 2026 vérifiée ; article de synthèse et non essai clinique.
 - **PSA : SOURCE SECONDAIRE CONFIRMÉE.** ACS : recommandations annoncées le 12 novembre 2026, dépistage biennal 50–69 ans au risque moyen ; il reste à vérifier le texte scientifique intégral de CA: A Cancer Journal for Clinicians et le positionnement français.
 - **Reste bloquant :** vérification de l'essai SURMOUNT-ADOLESCENTS et de son statut réglementaire, des trois chiffres de brèves, contrôle de la fiche canonique, quatre photos uniques avec droits et provenance, audit corpus, puis validation explicite des textes intégraux avant passage en VALIDATED/PUBLISHED.
+
+## Journal de vérification complémentaire
+- **Essai tirzépatide : LEVÉ pour les données scientifiques.** JAMA DOI 10.1001/jama.2026.23420, étude publiée le 15 novembre 2026, chiffres et effets indésirables recoupés sur l'article primaire. Statut réglementaire européen pédiatrique à contrôler séparément.
+- **PSA : référence scientifique retrouvée.** Hoffman et al., CA Cancer J Clin 2026, DOI 10.3322/caac.70112. Recommandation ACS biennale 50–69 ans confirmée. Position française à documenter.
+- **Ne pas considérer les références audition et migraine comme validées sans contre-vérification indépendante :** les DOI et résultats mentionnés dans le journal précédent doivent être réouverts sur les pages des éditeurs avant publication.
+- **Restent :** chiffres des trois brèves, images avec licence et provenance, statut réglementaire, audit anti-doublons, validation médicale explicite des textes complets, génération des hash, contrôles techniques et publication.
