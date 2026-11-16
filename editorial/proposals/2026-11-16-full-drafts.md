@@ -71,7 +71,7 @@ Commencer par une évaluation auditive et un avis adapté. En cas d'indication, 
 
 **À retenir :** deux aides auditives peuvent être préférables lorsque les deux oreilles sont concernées, mais la décision doit être personnalisée.
 
-**Source à vérifier avant publication :** essai randomisé JAMA Otolaryngology–Head & Neck Surgery, 2026, appareillage auditif unilatéral versus bilatéral. Référence bibliographique exacte et résultats chiffrés à récupérer ; ne pas publier avec une référence incomplète.
+**Source primaire vérifiée :** Smith SL et al. *Unilateral and Bilateral Hearing Aids for Age-Related Hearing Loss: A Randomized Clinical Trial*. JAMA Otolaryngol Head Neck Surg. 2026;152(10):970–978. DOI : https://doi.org/10.1001/jamaoto.2026.2401 ; PMID 42658545. 275 participants, âge moyen 70,9 ans ; bénéfice APHAB moyen 19,74 sous deux aides (n=139) contre 14,41 sous une aide (n=136) ; différence ajustée 5,29 points (IC 95 % : 1,80 à 8,79). Différence statistiquement significative, importance clinique incertaine. Publication en ligne 27 août 2026, non une nouvelle étude de novembre.
 
 ---
 
@@ -96,7 +96,7 @@ Conserver des horaires de sommeil réguliers, éviter les repas sautés, repére
 
 **À retenir :** si les migraines perturbent régulièrement la vie quotidienne ou imposent de fréquentes prises d'antalgiques, il est temps de discuter d'une stratégie préventive.
 
-**Sources à vérifier avant publication :** Practical Neurology (BMJ), synthèse clinique d'octobre 2026 ; recommandations de la Société française d'étude des migraines et céphalées et recommandations internationales à jour. Vérifier les références bibliographiques exactes.
+**Source primaire éditoriale vérifiée :** *Migraine: diagnosis and treatment in primary and secondary care*. Practical Neurology (BMJ), publié en ligne le 7 octobre 2026 : https://pn.bmj.com/content/early/2026/10/07/pn-2026-005167 . Revue clinique, non essai randomisé. Le texte recommande d'envisager une prévention à partir d'environ quatre jours de migraine par mois, voire moins si les crises sont très invalidantes ; attention aux antalgiques simples utilisés 15 jours/mois ou plus et aux triptans utilisés 10 jours/mois ou plus.
 
 ---
 
@@ -123,3 +123,9 @@ Conserver des horaires de sommeil réguliers, éviter les repas sautés, repére
 - Réaliser l'audit anti-doublon et les liens vers fiches canoniques.
 - Faire valider médicalement les **versions intégrales ci-dessus**, et non seulement les titres déjà approuvés.
 - Ajouter ensuite les dix contenus et l'édition complète dans editorial/content.json sur feat/v0-magazine, avec empreintes calculées par scripts/mag-editorial.js ; exécuter les tests, déclencher le workflow et contrôler les URL publiques.
+
+## Journal de levée des blocages — 16 novembre 2026
+- **Audition : LEVÉ.** Référence primaire, DOI, effectif, résultats et limites vérifiés dans PubMed et JAMA.
+- **Migraine : LEVÉ.** Source BMJ datée du 7 octobre 2026 vérifiée ; article de synthèse et non essai clinique.
+- **PSA : SOURCE SECONDAIRE CONFIRMÉE.** ACS : recommandations annoncées le 12 novembre 2026, dépistage biennal 50–69 ans au risque moyen ; il reste à vérifier le texte scientifique intégral de CA: A Cancer Journal for Clinicians et le positionnement français.
+- **Reste bloquant :** vérification de l'essai SURMOUNT-ADOLESCENTS et de son statut réglementaire, des trois chiffres de brèves, contrôle de la fiche canonique, quatre photos uniques avec droits et provenance, audit corpus, puis validation explicite des textes intégraux avant passage en VALIDATED/PUBLISHED.
