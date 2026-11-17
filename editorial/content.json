@@ -10133,14 +10133,14 @@
       "imageSource": "",
       "imageLicense": "",
       "ficheId": "",
-      "medicalStatus": "DRAFT",
-      "publicationStatus": "SCHEDULED",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
       "candidateFiche": false,
       "validation": {
         "validatedAt": "2026-11-17",
         "validator": "Dr Romain BEDDOK",
-        "evidence": "Validation explicite des sujets le 17 novembre 2026 ; mise en production demandée ; version intégrale à vérifier avant activation.",
-        "contentHash": ""
+        "evidence": "Validation médicale explicite et autorisation de publication immédiate le 17 novembre 2026 dans le fil MACA — Éditorial.",
+        "contentHash": "0cdb73972c39ac2bc8001a21fffcf333835cdd672e3f423832d44c2a2c31ae2f"
       }
     },
     {
@@ -10168,14 +10168,14 @@
       "imageSource": "",
       "imageLicense": "",
       "ficheId": "",
-      "medicalStatus": "DRAFT",
-      "publicationStatus": "SCHEDULED",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
       "candidateFiche": false,
       "validation": {
         "validatedAt": "2026-11-17",
         "validator": "Dr Romain BEDDOK",
-        "evidence": "Validation explicite des sujets le 17 novembre 2026 ; mise en production demandée ; version intégrale à vérifier avant activation.",
-        "contentHash": ""
+        "evidence": "Validation médicale explicite et autorisation de publication immédiate le 17 novembre 2026 dans le fil MACA — Éditorial.",
+        "contentHash": "e5c69d283c8ccc42309f524875d8a8126f07da78178bfbd2767643caf351a80a"
       }
     },
     {
@@ -10203,14 +10203,14 @@
       "imageSource": "",
       "imageLicense": "",
       "ficheId": "",
-      "medicalStatus": "DRAFT",
-      "publicationStatus": "SCHEDULED",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
       "candidateFiche": false,
       "validation": {
         "validatedAt": "2026-11-17",
         "validator": "Dr Romain BEDDOK",
-        "evidence": "Validation explicite des sujets le 17 novembre 2026 ; mise en production demandée ; version intégrale à vérifier avant activation.",
-        "contentHash": ""
+        "evidence": "Validation médicale explicite et autorisation de publication immédiate le 17 novembre 2026 dans le fil MACA — Éditorial.",
+        "contentHash": "e079e0f0d56bdecb95b0cac8ee478068dab63794658cdd8ba63a77f4f222f54e"
       }
     },
     {
@@ -10238,14 +10238,14 @@
       "imageSource": "",
       "imageLicense": "",
       "ficheId": "",
-      "medicalStatus": "DRAFT",
-      "publicationStatus": "SCHEDULED",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
       "candidateFiche": false,
       "validation": {
         "validatedAt": "2026-11-17",
         "validator": "Dr Romain BEDDOK",
-        "evidence": "Validation explicite des sujets le 17 novembre 2026 ; mise en production demandée ; version intégrale à vérifier avant activation.",
-        "contentHash": ""
+        "evidence": "Validation médicale explicite et autorisation de publication immédiate le 17 novembre 2026 dans le fil MACA — Éditorial.",
+        "contentHash": "0ea1a5760fbd7f220595192c1eb19dc7311dae28cdde38069e906bfaf0060546"
       }
     },
     {
@@ -10273,14 +10273,14 @@
       "imageSource": "",
       "imageLicense": "",
       "ficheId": "palpitations",
-      "medicalStatus": "DRAFT",
-      "publicationStatus": "SCHEDULED",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
       "candidateFiche": false,
       "validation": {
         "validatedAt": "2026-11-17",
         "validator": "Dr Romain BEDDOK",
-        "evidence": "Validation explicite des sujets le 17 novembre 2026 ; mise en production demandée ; version intégrale à vérifier avant activation.",
-        "contentHash": ""
+        "evidence": "Validation médicale explicite et autorisation de publication immédiate le 17 novembre 2026 dans le fil MACA — Éditorial.",
+        "contentHash": "6d45c5d583daac06b6effdb9ee7be2dbddf606c1df15eaa93a86674993b1e86b"
       }
     },
     {
@@ -10308,14 +10308,14 @@
       "imageSource": "",
       "imageLicense": "",
       "ficheId": "",
-      "medicalStatus": "DRAFT",
-      "publicationStatus": "SCHEDULED",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
       "candidateFiche": false,
       "validation": {
         "validatedAt": "2026-11-17",
         "validator": "Dr Romain BEDDOK",
-        "evidence": "Validation explicite des sujets le 17 novembre 2026 ; mise en production demandée ; version intégrale à vérifier avant activation.",
-        "contentHash": ""
+        "evidence": "Validation médicale explicite et autorisation de publication immédiate le 17 novembre 2026 dans le fil MACA — Éditorial.",
+        "contentHash": "c1a90b143501a9485c81d3aa0f60d30fa5110d323711ac50cec9db6d3353e449"
       }
     },
     {
@@ -10343,14 +10343,14 @@
       "imageSource": "",
       "imageLicense": "",
       "ficheId": "",
-      "medicalStatus": "DRAFT",
-      "publicationStatus": "SCHEDULED",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
       "candidateFiche": false,
       "validation": {
         "validatedAt": "2026-11-17",
         "validator": "Dr Romain BEDDOK",
-        "evidence": "Validation explicite des sujets le 17 novembre 2026 ; mise en production demandée ; version intégrale à vérifier avant activation.",
-        "contentHash": ""
+        "evidence": "Validation médicale explicite et autorisation de publication immédiate le 17 novembre 2026 dans le fil MACA — Éditorial.",
+        "contentHash": "c55326cfc7650a25975ba1821fa3c9ba35fc582691f30a3d7b0546335b64ab26"
       }
     },
     {
@@ -10378,14 +10378,14 @@
       "imageSource": "",
       "imageLicense": "",
       "ficheId": "",
-      "medicalStatus": "DRAFT",
-      "publicationStatus": "SCHEDULED",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
       "candidateFiche": false,
       "validation": {
         "validatedAt": "2026-11-17",
         "validator": "Dr Romain BEDDOK",
-        "evidence": "Validation explicite des sujets le 17 novembre 2026 ; mise en production demandée ; version intégrale à vérifier avant activation.",
-        "contentHash": ""
+        "evidence": "Validation médicale explicite et autorisation de publication immédiate le 17 novembre 2026 dans le fil MACA — Éditorial.",
+        "contentHash": "f3fd86a905ce7014fe0ca94ed495d96ecaf1528455128e760d3a21b7e9c963a7"
       }
     },
     {
@@ -10413,14 +10413,14 @@
       "imageSource": "",
       "imageLicense": "",
       "ficheId": "",
-      "medicalStatus": "DRAFT",
-      "publicationStatus": "SCHEDULED",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
       "candidateFiche": false,
       "validation": {
         "validatedAt": "2026-11-17",
         "validator": "Dr Romain BEDDOK",
-        "evidence": "Validation explicite des sujets le 17 novembre 2026 ; mise en production demandée ; version intégrale à vérifier avant activation.",
-        "contentHash": ""
+        "evidence": "Validation médicale explicite et autorisation de publication immédiate le 17 novembre 2026 dans le fil MACA — Éditorial.",
+        "contentHash": "e81b50c099d07e92a5531db9626a55faf3cdf06cf03184e63cb176ddd593154f"
       }
     },
     {
@@ -10448,14 +10448,14 @@
       "imageSource": "",
       "imageLicense": "",
       "ficheId": "",
-      "medicalStatus": "DRAFT",
-      "publicationStatus": "SCHEDULED",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
       "candidateFiche": false,
       "validation": {
         "validatedAt": "2026-11-17",
         "validator": "Dr Romain BEDDOK",
-        "evidence": "Validation explicite des sujets le 17 novembre 2026 ; mise en production demandée ; version intégrale à vérifier avant activation.",
-        "contentHash": ""
+        "evidence": "Validation médicale explicite et autorisation de publication immédiate le 17 novembre 2026 dans le fil MACA — Éditorial.",
+        "contentHash": "74c2d375e8ec49023335a1266e5942caeed042db2c9099647794ae5a84f85337"
       }
     }
   ],
@@ -11829,7 +11829,7 @@
       "id": "edition-2026-11-17",
       "date": "2026-11-17",
       "publishAt": "2026-11-17T13:24:00+01:00",
-      "complete": false,
+      "complete": true,
       "items": [
         {
           "contentId": "daily-cbd-comportement-20261117",
