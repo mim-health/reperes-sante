@@ -10107,6 +10107,356 @@
         "contentHash": "9ff3c8e1d807ab916bcac9b3054d12e9e1c7048f23a0baf2e0db92db8ffce2bc",
         "snapshotHash": "277adeb79eedbc72db9db8fafb6b75f3e4b5271a11e91f5158fca20af3bb5b60"
       }
+    },
+    {
+      "id": "daily-cbd-comportement-20261117",
+      "date": "2026-11-17",
+      "title": "Cannabidiol et troubles du comportement chez l’enfant : un essai ne montre pas de bénéfice",
+      "answer": "Un essai randomisé n’a pas montré d’amélioration significative des troubles sévères du comportement chez des jeunes présentant une déficience intellectuelle.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 17 NOVEMBRE 2026</p><h1>Cannabidiol et troubles du comportement chez l’enfant : un essai ne montre pas de bénéfice</h1><p class=\"lead\">Un essai randomisé n’a pas montré d’amélioration significative des troubles sévères du comportement chez des jeunes présentant une déficience intellectuelle.</p><h2>Ce que l’on sait</h2><p>Un essai randomisé australien a comparé pendant huit semaines du cannabidiol purifié à un placebo chez 131 jeunes de 6 à 18 ans ayant une déficience intellectuelle et des troubles sévères du comportement.</p><h2>Ce que cela change</h2><p>La différence moyenne sur le score d’irritabilité était de 2,4 points, sans supériorité statistiquement démontrée. Des événements indésirables ont été rapportés chez 63,1 % des participants sous cannabidiol et 60,6 % sous placebo.</p><h2>En pratique</h2><p>Cet essai négatif invite à ne pas présenter le cannabidiol comme un traitement démontré de ces troubles. Il ne remet pas en cause ses indications spécifiques dans certaines épilepsies.</p><h2>Limites et précautions</h2><p>Limites : effectif modéré, durée de huit semaines et évaluations principalement rapportées par les parents.</p><h2>Sources</h2><ul><li><a href=\"https://jamanetwork.com/journals/jamapediatrics/\">https://jamanetwork.com/journals/jamapediatrics/</a></li></ul></article>",
+      "url": "article-daily-cbd-comportement-20261117.html",
+      "format": "article",
+      "category": "À LA UNE",
+      "theme": "Santé",
+      "keywords": [
+        "cbd-comportement"
+      ],
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://jamanetwork.com/journals/jamapediatrics/"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "DRAFT",
+      "publicationStatus": "SCHEDULED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-17",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite des sujets le 17 novembre 2026 ; mise en production demandée ; version intégrale à vérifier avant activation.",
+        "contentHash": ""
+      }
+    },
+    {
+      "id": "daily-musculation-depression-20261117",
+      "date": "2026-11-17",
+      "title": "Renforcement musculaire et dépression : quelle efficacité réelle ?",
+      "answer": "Une méta-analyse suggère un effet modeste sur les symptômes dépressifs, sans remplacer les traitements indiqués.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 17 NOVEMBRE 2026</p><h1>Renforcement musculaire et dépression : quelle efficacité réelle ?</h1><p class=\"lead\">Une méta-analyse suggère un effet modeste sur les symptômes dépressifs, sans remplacer les traitements indiqués.</p><h2>Ce que l’on sait</h2><p>Une méta-analyse de 80 essais randomisés réunissant 6 123 personnes rapporte un effet global faible du renforcement musculaire sur les symptômes dépressifs.</p><h2>Ce que cela change</h2><p>L’amélioration semble plus marquée par rapport à l’absence d’intervention que par rapport à une intervention active. L’exercice peut aussi améliorer la condition physique, l’autonomie et la qualité de vie.</p><h2>En pratique</h2><p>La musculation est une mesure complémentaire et non un substitut à la psychothérapie ou aux traitements médicamenteux lorsqu’ils sont indiqués.</p><h2>Limites et précautions</h2><p>Limites : hétérogénéité des programmes, biais de publication possibles et seulement six essais menés spécifiquement chez des personnes atteintes de dépression clinique.</p><h2>Sources</h2><ul><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/?term=resistance+training+depressive+symptoms+meta-analysis+2026\">https://pubmed.ncbi.nlm.nih.gov/?term=resistance+training+depressive+symptoms+meta-analysis+2026</a></li></ul></article>",
+      "url": "article-daily-musculation-depression-20261117.html",
+      "format": "article",
+      "category": "À LIRE EN 3 MIN",
+      "theme": "Santé",
+      "keywords": [
+        "musculation-depression"
+      ],
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=resistance+training+depressive+symptoms+meta-analysis+2026"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "DRAFT",
+      "publicationStatus": "SCHEDULED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-17",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite des sujets le 17 novembre 2026 ; mise en production demandée ; version intégrale à vérifier avant activation.",
+        "contentHash": ""
+      }
+    },
+    {
+      "id": "daily-grippe-isolement-20261117",
+      "date": "2026-11-17",
+      "title": "Symptômes grippaux : rester chez soi limite-t-il la transmission ?",
+      "answer": "Une réanalyse d’un essai universitaire soutient l’intérêt de limiter les contacts lorsqu’on présente un syndrome grippal, avec un niveau de preuve modéré.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 17 NOVEMBRE 2026</p><h1>Symptômes grippaux : rester chez soi limite-t-il la transmission ?</h1><p class=\"lead\">Une réanalyse d’un essai universitaire soutient l’intérêt de limiter les contacts lorsqu’on présente un syndrome grippal, avec un niveau de preuve modéré.</p><h2>Ce que l’on sait</h2><p>Une nouvelle analyse de l’essai eX-FLU, réalisé auprès de 579 étudiants sur dix semaines, a étudié l’intérêt d’un isolement volontaire de trois jours lors de symptômes grippaux.</p><h2>Ce que cela change</h2><p>Les résultats vont dans le sens d’une réduction des transmissions. Ils confortent le conseil pratique de limiter les contacts, particulièrement avec les personnes fragiles, lorsqu’on est malade.</p><h2>En pratique</h2><p>Cette mesure complète la vaccination, l’aération et les autres gestes de prévention ; elle ne les remplace pas.</p><h2>Limites et précautions</h2><p>Limites : données recueillies en 2013 dans un seul campus, comportements et symptômes en partie autodéclarés et analyse secondaire.</p><h2>Sources</h2><ul><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/?term=eX-FLU+isolation+trial\">https://pubmed.ncbi.nlm.nih.gov/?term=eX-FLU+isolation+trial</a></li></ul></article>",
+      "url": "article-daily-grippe-isolement-20261117.html",
+      "format": "article",
+      "category": "À LIRE EN 3 MIN",
+      "theme": "Santé",
+      "keywords": [
+        "grippe-isolement"
+      ],
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=eX-FLU+isolation+trial"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "DRAFT",
+      "publicationStatus": "SCHEDULED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-17",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite des sujets le 17 novembre 2026 ; mise en production demandée ; version intégrale à vérifier avant activation.",
+        "contentHash": ""
+      }
+    },
+    {
+      "id": "daily-col-uterus-depistage-20261117",
+      "date": "2026-11-17",
+      "title": "Cancer du col de l’utérus : pourquoi le dépistage reste-t-il insuffisant dans le monde ?",
+      "answer": "Selon l’OMS, trois femmes de 30 à 49 ans sur cinq n’ont jamais été dépistées dans le monde.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 17 NOVEMBRE 2026</p><h1>Cancer du col de l’utérus : pourquoi le dépistage reste-t-il insuffisant dans le monde ?</h1><p class=\"lead\">Selon l’OMS, trois femmes de 30 à 49 ans sur cinq n’ont jamais été dépistées dans le monde.</p><h2>Ce que l’on sait</h2><p>Le cancer du col de l’utérus peut être largement prévenu grâce à la vaccination contre les papillomavirus humains (HPV), au dépistage et au traitement des lésions précancéreuses.</p><h2>Ce que cela change</h2><p>L’OMS estime que trois femmes sur cinq âgées de 30 à 49 ans n’ont jamais bénéficié d’un dépistage. Les inégalités d’accès sont majeures entre pays.</p><h2>En pratique</h2><p>En France, il faut suivre les invitations et le calendrier national de dépistage, indépendamment de la vaccination HPV.</p><h2>Limites et précautions</h2><p>Limites : ces estimations mondiales ne décrivent pas directement la couverture française et ne modifient pas les recommandations nationales.</p><h2>Sources</h2><ul><li><a href=\"https://www.who.int/health-topics/cervical-cancer\">https://www.who.int/health-topics/cervical-cancer</a></li></ul></article>",
+      "url": "article-daily-col-uterus-depistage-20261117.html",
+      "format": "article",
+      "category": "À LIRE EN 3 MIN",
+      "theme": "Santé",
+      "keywords": [
+        "col-uterus-depistage"
+      ],
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.who.int/health-topics/cervical-cancer"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "DRAFT",
+      "publicationStatus": "SCHEDULED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-17",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite des sujets le 17 novembre 2026 ; mise en production demandée ; version intégrale à vérifier avant activation.",
+        "contentHash": ""
+      }
+    },
+    {
+      "id": "daily-palpitations-rotation-20261117",
+      "date": "2026-11-17",
+      "title": "Palpitations : quand faut-il consulter ?",
+      "answer": "Les palpitations sont souvent bénignes, mais douleur thoracique, malaise, essoufflement ou perte de connaissance imposent une évaluation urgente.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 17 NOVEMBRE 2026</p><h1>Palpitations : quand faut-il consulter ?</h1><p class=\"lead\">Les palpitations sont souvent bénignes, mais douleur thoracique, malaise, essoufflement ou perte de connaissance imposent une évaluation urgente.</p><h2>Ce que l’on sait</h2><p>Les palpitations correspondent à une perception inhabituelle des battements cardiaques : rapides, forts ou irréguliers.</p><h2>Ce que cela change</h2><p>En cas de douleur thoracique, malaise, perte de connaissance ou difficulté respiratoire, appeler les secours. En dehors de l’urgence, consulter si les épisodes se répètent, durent ou surviennent avec d’autres symptômes.</p><h2>En pratique</h2><p>Cette rubrique renvoie à la fiche canonique déjà validée sur MACASANTÉ ; aucune nouvelle fiche n’est créée.</p><h2>Sources</h2><ul><li><a href=\"https://www.ameli.fr/assure/sante/themes/palpitations\">https://www.ameli.fr/assure/sante/themes/palpitations</a></li></ul></article>",
+      "url": "article-daily-palpitations-rotation-20261117.html",
+      "format": "article",
+      "category": "FICHE DU JOUR",
+      "theme": "Santé",
+      "keywords": [
+        "palpitations-rotation"
+      ],
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.ameli.fr/assure/sante/themes/palpitations"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "palpitations",
+      "medicalStatus": "DRAFT",
+      "publicationStatus": "SCHEDULED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-17",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite des sujets le 17 novembre 2026 ; mise en production demandée ; version intégrale à vérifier avant activation.",
+        "contentHash": ""
+      }
+    },
+    {
+      "id": "daily-huit-verres-eau-20261117",
+      "date": "2026-11-17",
+      "title": "Faut-il boire exactement huit verres d’eau chaque jour ?",
+      "answer": "À NUANCER : les besoins en eau varient selon l’âge, l’alimentation, l’activité, la chaleur et l’état de santé.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 17 NOVEMBRE 2026</p><h1>Faut-il boire exactement huit verres d’eau chaque jour ?</h1><p class=\"lead\">À NUANCER : les besoins en eau varient selon l’âge, l’alimentation, l’activité, la chaleur et l’état de santé.</p><h2>Ce que l’on sait</h2><p>Il n’existe pas une quantité fixe de huit verres adaptée à tout le monde. Les aliments contribuent eux aussi à l’hydratation.</p><h2>Ce que cela change</h2><p>Chez l’adulte, on conseille généralement de boire régulièrement, souvent autour de 1,5 à 2 litres de boissons par jour selon les circonstances.</p><h2>En pratique</h2><p>Certaines maladies cardiaques ou rénales imposent des recommandations individuelles ; demander conseil à son médecin.</p><h2>Sources</h2><ul><li><a href=\"https://www.anses.fr/\">https://www.anses.fr/</a></li></ul></article>",
+      "url": "article-daily-huit-verres-eau-20261117.html",
+      "format": "article",
+      "category": "VRAI OU FAUX",
+      "theme": "Santé",
+      "keywords": [
+        "huit-verres-eau"
+      ],
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.anses.fr/"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "DRAFT",
+      "publicationStatus": "SCHEDULED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-17",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite des sujets le 17 novembre 2026 ; mise en production demandée ; version intégrale à vérifier avant activation.",
+        "contentHash": ""
+      }
+    },
+    {
+      "id": "daily-amr-chiffre-20261117",
+      "date": "2026-11-17",
+      "title": "Antibiorésistance : une infection bactérienne confirmée sur six",
+      "answer": "Dans les données mondiales de 2023, environ une infection bactérienne confirmée en laboratoire sur six était résistante aux antibiotiques étudiés.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 17 NOVEMBRE 2026</p><h1>Antibiorésistance : une infection bactérienne confirmée sur six</h1><p class=\"lead\">Dans les données mondiales de 2023, environ une infection bactérienne confirmée en laboratoire sur six était résistante aux antibiotiques étudiés.</p><h2>Ce que l’on sait</h2><p>L’Organisation mondiale de la santé rapporte qu’en 2023 environ une infection bactérienne confirmée en laboratoire sur six, parmi les infections courantes surveillées, était résistante aux antibiotiques étudiés.</p><h2>Ce que cela change</h2><p>Cette proportion globale dépend des germes, des médicaments, des régions et des capacités de surveillance. Elle ne prédit pas le risque d’échec d’un traitement donné en France.</p><h2>En pratique</h2><p>Pour préserver l’efficacité des antibiotiques, il faut éviter leur usage contre les infections virales et suivre la prescription médicale.</p><h2>Sources</h2><ul><li><a href=\"https://www.who.int/news/item/13-10-2025-who-warns-of-widespread-resistance-to-common-antibiotics-worldwide/\">https://www.who.int/news/item/13-10-2025-who-warns-of-widespread-resistance-to-common-antibiotics-worldwide/</a></li></ul></article>",
+      "url": "article-daily-amr-chiffre-20261117.html",
+      "format": "article",
+      "category": "LE CHIFFRE DU JOUR",
+      "theme": "Santé",
+      "keywords": [
+        "amr-chiffre"
+      ],
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.who.int/news/item/13-10-2025-who-warns-of-widespread-resistance-to-common-antibiotics-worldwide/"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "DRAFT",
+      "publicationStatus": "SCHEDULED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-17",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite des sujets le 17 novembre 2026 ; mise en production demandée ; version intégrale à vérifier avant activation.",
+        "contentHash": ""
+      }
+    },
+    {
+      "id": "daily-ptau217-alzheimer-20261117",
+      "date": "2026-11-17",
+      "title": "Alzheimer : un biomarqueur sanguin aide à estimer un risque, pas à dépister tout le monde",
+      "answer": "Des études de cohorte associent le p-tau217 sanguin au risque futur de trouble cognitif, sans justifier un dépistage généralisé.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 17 NOVEMBRE 2026</p><h1>Alzheimer : un biomarqueur sanguin aide à estimer un risque, pas à dépister tout le monde</h1><p class=\"lead\">Des études de cohorte associent le p-tau217 sanguin au risque futur de trouble cognitif, sans justifier un dépistage généralisé.</p><h2>Ce que l’on sait</h2><p>Chez des personnes sans trouble cognitif initial, un taux sanguin élevé de p-tau217 a été associé à un risque plus élevé de trouble cognitif léger à dix ans.</p><h2>Ce que cela change</h2><p>Ces résultats sont observationnels. Ils ne signifient pas qu’un test positif prédit individuellement une maladie d’Alzheimer, ni qu’un dépistage des personnes asymptomatiques soit recommandé.</p><h2>Sources</h2><ul><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/?term=p-tau217+cognitive+impairment+2026\">https://pubmed.ncbi.nlm.nih.gov/?term=p-tau217+cognitive+impairment+2026</a></li></ul></article>",
+      "url": "article-daily-ptau217-alzheimer-20261117.html",
+      "format": "article",
+      "category": "DONNÉES",
+      "theme": "Santé",
+      "keywords": [
+        "ptau217-alzheimer"
+      ],
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=p-tau217+cognitive+impairment+2026"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "DRAFT",
+      "publicationStatus": "SCHEDULED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-17",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite des sujets le 17 novembre 2026 ; mise en production demandée ; version intégrale à vérifier avant activation.",
+        "contentHash": ""
+      }
+    },
+    {
+      "id": "daily-pneumocoque-vpc21-20261117",
+      "date": "2026-11-17",
+      "title": "Pneumocoque : les recommandations vaccinales évoluent chez l’adulte",
+      "answer": "En France, le vaccin conjugué VPC21 figure dans les recommandations pour les adultes à risque et les personnes de 65 ans ou plus.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 17 NOVEMBRE 2026</p><h1>Pneumocoque : les recommandations vaccinales évoluent chez l’adulte</h1><p class=\"lead\">En France, le vaccin conjugué VPC21 figure dans les recommandations pour les adultes à risque et les personnes de 65 ans ou plus.</p><h2>Ce que l’on sait</h2><p>Le vaccin pneumococcique aide à prévenir des infections invasives potentiellement graves, notamment chez les personnes âgées et les patients présentant certaines maladies chroniques.</p><h2>Ce que cela change</h2><p>Le choix du vaccin et le schéma dépendent des antécédents vaccinaux et des recommandations françaises en vigueur. Demander une vérification personnalisée lors d’une consultation.</p><h2>Sources</h2><ul><li><a href=\"https://vaccination-info-service.fr/\">https://vaccination-info-service.fr/</a></li></ul></article>",
+      "url": "article-daily-pneumocoque-vpc21-20261117.html",
+      "format": "article",
+      "category": "DONNÉES",
+      "theme": "Santé",
+      "keywords": [
+        "pneumocoque-vpc21"
+      ],
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://vaccination-info-service.fr/"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "DRAFT",
+      "publicationStatus": "SCHEDULED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-17",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite des sujets le 17 novembre 2026 ; mise en production demandée ; version intégrale à vérifier avant activation.",
+        "contentHash": ""
+      }
+    },
+    {
+      "id": "daily-trachome-erythree-20261117",
+      "date": "2026-11-17",
+      "title": "Trachome : l’Érythrée franchit un cap de santé publique",
+      "answer": "L’OMS a validé l’élimination du trachome comme problème de santé publique en Érythrée.",
+      "html": "<article><p class=\"eyebrow\">LE MAG · 17 NOVEMBRE 2026</p><h1>Trachome : l’Érythrée franchit un cap de santé publique</h1><p class=\"lead\">L’OMS a validé l’élimination du trachome comme problème de santé publique en Érythrée.</p><h2>Ce que l’on sait</h2><p>Le trachome est une infection oculaire pouvant entraîner une cécité évitable. Sa réduction repose sur des mesures coordonnées de santé publique, de prévention et de prise en charge.</p><h2>Ce que cela change</h2><p>L’élimination comme problème de santé publique ne signifie pas disparition totale de la bactérie ni fin de toute surveillance.</p><h2>Sources</h2><ul><li><a href=\"https://www.who.int/\">https://www.who.int/</a></li></ul></article>",
+      "url": "article-daily-trachome-erythree-20261117.html",
+      "format": "article",
+      "category": "DONNÉES",
+      "theme": "Santé",
+      "keywords": [
+        "trachome-erythree"
+      ],
+      "sources": [
+        {
+          "label": "Source 1",
+          "url": "https://www.who.int/"
+        }
+      ],
+      "image": "",
+      "imageAlt": "",
+      "imageCredit": "",
+      "imageSource": "",
+      "imageLicense": "",
+      "ficheId": "",
+      "medicalStatus": "DRAFT",
+      "publicationStatus": "SCHEDULED",
+      "candidateFiche": false,
+      "validation": {
+        "validatedAt": "2026-11-17",
+        "validator": "Dr Romain BEDDOK",
+        "evidence": "Validation explicite des sujets le 17 novembre 2026 ; mise en production demandée ; version intégrale à vérifier avant activation.",
+        "contentHash": ""
+      }
     }
   ],
   "editions": [
@@ -11473,6 +11823,69 @@
         "validation": "Validation explicite et autorisation de mise en ligne le 6 novembre 2026.",
         "veille": "Essais thérapeutiques, JAMA, sociétés savantes et veille française.",
         "corpusImpact": "10 contenus ; quatre articles développés ; aucune illustration nouvelle."
+      }
+    },
+    {
+      "id": "edition-2026-11-17",
+      "date": "2026-11-17",
+      "publishAt": "2026-11-17T13:24:00+01:00",
+      "complete": false,
+      "items": [
+        {
+          "contentId": "daily-cbd-comportement-20261117",
+          "slot": "À LA UNE",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-musculation-depression-20261117",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-grippe-isolement-20261117",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-col-uterus-depistage-20261117",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-palpitations-rotation-20261117",
+          "slot": "FICHE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-huit-verres-eau-20261117",
+          "slot": "VRAI OU FAUX",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-amr-chiffre-20261117",
+          "slot": "LE CHIFFRE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-ptau217-alzheimer-20261117",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-pneumocoque-vpc21-20261117",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-trachome-erythree-20261117",
+          "slot": "DONNÉES",
+          "icon": "•"
+        }
+      ],
+      "editorialConference": {
+        "validation": "Validation médicale explicite des sujets et autorisation de publication le 17 novembre 2026.",
+        "veille": "JAMA Pediatrics cannabidiol ; exercice et dépression ; eX-FLU ; OMS cancer du col ; prévention.",
+        "corpusImpact": "Dix textes préparés ; image omise à la demande du validateur ; contrôle anti-doublons et empreintes requis avant publication."
       }
     }
   ]
