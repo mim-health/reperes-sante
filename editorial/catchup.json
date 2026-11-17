@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-17T14:38:00+01:00",
+  "checkedAt": "2026-11-17T14:45:00+01:00",
   "timezone": "Europe/Paris",
-  "controlId": "retry-after-stale-source-guard-20261117",
-  "reason": "Retry approved edition after prior workflow B refused superseded source; preserve source fingerprint safety and approved content"
+  "controlId": "publish-approved-edition-2026-11-17-latest-source",
+  "reason": "Explicit user request: launch immediate publication of validated Nov 17 edition using latest medically validated sources and updated workflow"
 }
