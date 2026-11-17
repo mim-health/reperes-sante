@@ -1,12 +1,72 @@
 {
   "schemaVersion": 1,
-  "editionId": "edition-2026-11-06",
-  "editionDate": "2026-11-06",
-  "sourceFingerprint": "1634b006df846e83a8378306d2a3909060870b034cda587e08c7cde687cb8be8",
-  "missingEdition": true,
+  "editionId": "edition-2026-11-17",
+  "editionDate": "2026-11-17",
+  "sourceFingerprint": "2246fb6d16a82b26f8ff74fc0ee35b978aa70d41af496cf0f34ab7faf49e55d8",
+  "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-daily-cbd-comportement-20261117",
+      "version": "0cdb73972c39ac2bc8001a21fffcf333835cdd672e3f423832d44c2a2c31ae2f",
+      "url": "article-daily-cbd-comportement-20261117.html",
+      "date": "2026-11-17"
+    },
+    {
+      "id": "mag-daily-musculation-depression-20261117",
+      "version": "e5c69d283c8ccc42309f524875d8a8126f07da78178bfbd2767643caf351a80a",
+      "url": "article-daily-musculation-depression-20261117.html",
+      "date": "2026-11-17"
+    },
+    {
+      "id": "mag-daily-grippe-isolement-20261117",
+      "version": "e079e0f0d56bdecb95b0cac8ee478068dab63794658cdd8ba63a77f4f222f54e",
+      "url": "article-daily-grippe-isolement-20261117.html",
+      "date": "2026-11-17"
+    },
+    {
+      "id": "mag-daily-col-uterus-depistage-20261117",
+      "version": "0ea1a5760fbd7f220595192c1eb19dc7311dae28cdde38069e906bfaf0060546",
+      "url": "article-daily-col-uterus-depistage-20261117.html",
+      "date": "2026-11-17"
+    },
+    {
+      "id": "mag-daily-palpitations-rotation-20261117",
+      "version": "6d45c5d583daac06b6effdb9ee7be2dbddf606c1df15eaa93a86674993b1e86b",
+      "url": "article-daily-palpitations-rotation-20261117.html",
+      "date": "2026-11-17"
+    },
+    {
+      "id": "mag-daily-huit-verres-eau-20261117",
+      "version": "c1a90b143501a9485c81d3aa0f60d30fa5110d323711ac50cec9db6d3353e449",
+      "url": "article-daily-huit-verres-eau-20261117.html",
+      "date": "2026-11-17"
+    },
+    {
+      "id": "mag-daily-amr-chiffre-20261117",
+      "version": "c55326cfc7650a25975ba1821fa3c9ba35fc582691f30a3d7b0546335b64ab26",
+      "url": "article-daily-amr-chiffre-20261117.html",
+      "date": "2026-11-17"
+    },
+    {
+      "id": "mag-daily-ptau217-alzheimer-20261117",
+      "version": "f3fd86a905ce7014fe0ca94ed495d96ecaf1528455128e760d3a21b7e9c963a7",
+      "url": "article-daily-ptau217-alzheimer-20261117.html",
+      "date": "2026-11-17"
+    },
+    {
+      "id": "mag-daily-pneumocoque-vpc21-20261117",
+      "version": "e81b50c099d07e92a5531db9626a55faf3cdf06cf03184e63cb176ddd593154f",
+      "url": "article-daily-pneumocoque-vpc21-20261117.html",
+      "date": "2026-11-17"
+    },
+    {
+      "id": "mag-daily-trachome-erythree-20261117",
+      "version": "74c2d375e8ec49023335a1266e5942caeed042db2c9099647794ae5a84f85337",
+      "url": "article-daily-trachome-erythree-20261117.html",
+      "date": "2026-11-17"
+    },
     {
       "id": "mag-daily-menopause-alimentation-20261113",
       "version": "9ff3c8e1d807ab916bcac9b3054d12e9e1c7048f23a0baf2e0db92db8ffce2bc",

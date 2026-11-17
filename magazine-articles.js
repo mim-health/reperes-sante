@@ -5150,5 +5150,195 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "9ff3c8e1d807ab916bcac9b3054d12e9e1c7048f23a0baf2e0db92db8ffce2bc"
+  },
+  {
+    "id": "daily-cbd-comportement-20261117",
+    "url": "article-daily-cbd-comportement-20261117.html",
+    "title": "Cannabidiol et troubles du comportement chez l’enfant : un essai ne montre pas de bénéfice",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-17",
+    "status": "PUBLISHED",
+    "excerpt": "Un essai randomisé n’a pas montré d’amélioration significative des troubles sévères du comportement chez des jeunes présentant une déficience intellectuelle.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "cbd-comportement"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "0cdb73972c39ac2bc8001a21fffcf333835cdd672e3f423832d44c2a2c31ae2f"
+  },
+  {
+    "id": "daily-musculation-depression-20261117",
+    "url": "article-daily-musculation-depression-20261117.html",
+    "title": "Renforcement musculaire et dépression : quelle efficacité réelle ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-17",
+    "status": "PUBLISHED",
+    "excerpt": "Une méta-analyse suggère un effet modeste sur les symptômes dépressifs, sans remplacer les traitements indiqués.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "musculation-depression"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "e5c69d283c8ccc42309f524875d8a8126f07da78178bfbd2767643caf351a80a"
+  },
+  {
+    "id": "daily-grippe-isolement-20261117",
+    "url": "article-daily-grippe-isolement-20261117.html",
+    "title": "Symptômes grippaux : rester chez soi limite-t-il la transmission ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-17",
+    "status": "PUBLISHED",
+    "excerpt": "Une réanalyse d’un essai universitaire soutient l’intérêt de limiter les contacts lorsqu’on présente un syndrome grippal, avec un niveau de preuve modéré.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "grippe-isolement"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "e079e0f0d56bdecb95b0cac8ee478068dab63794658cdd8ba63a77f4f222f54e"
+  },
+  {
+    "id": "daily-col-uterus-depistage-20261117",
+    "url": "article-daily-col-uterus-depistage-20261117.html",
+    "title": "Cancer du col de l’utérus : pourquoi le dépistage reste-t-il insuffisant dans le monde ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-17",
+    "status": "PUBLISHED",
+    "excerpt": "Selon l’OMS, trois femmes de 30 à 49 ans sur cinq n’ont jamais été dépistées dans le monde.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "col-uterus-depistage"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "0ea1a5760fbd7f220595192c1eb19dc7311dae28cdde38069e906bfaf0060546"
+  },
+  {
+    "id": "daily-palpitations-rotation-20261117",
+    "url": "article-daily-palpitations-rotation-20261117.html",
+    "title": "Palpitations : quand faut-il consulter ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-17",
+    "status": "PUBLISHED",
+    "excerpt": "Les palpitations sont souvent bénignes, mais douleur thoracique, malaise, essoufflement ou perte de connaissance imposent une évaluation urgente.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "palpitations-rotation"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "palpitations",
+    "version": "6d45c5d583daac06b6effdb9ee7be2dbddf606c1df15eaa93a86674993b1e86b"
+  },
+  {
+    "id": "daily-huit-verres-eau-20261117",
+    "url": "article-daily-huit-verres-eau-20261117.html",
+    "title": "Faut-il boire exactement huit verres d’eau chaque jour ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-17",
+    "status": "PUBLISHED",
+    "excerpt": "À NUANCER : les besoins en eau varient selon l’âge, l’alimentation, l’activité, la chaleur et l’état de santé.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "huit-verres-eau"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "c1a90b143501a9485c81d3aa0f60d30fa5110d323711ac50cec9db6d3353e449"
+  },
+  {
+    "id": "daily-amr-chiffre-20261117",
+    "url": "article-daily-amr-chiffre-20261117.html",
+    "title": "Antibiorésistance : une infection bactérienne confirmée sur six",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-17",
+    "status": "PUBLISHED",
+    "excerpt": "Dans les données mondiales de 2023, environ une infection bactérienne confirmée en laboratoire sur six était résistante aux antibiotiques étudiés.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "amr-chiffre"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "c55326cfc7650a25975ba1821fa3c9ba35fc582691f30a3d7b0546335b64ab26"
+  },
+  {
+    "id": "daily-ptau217-alzheimer-20261117",
+    "url": "article-daily-ptau217-alzheimer-20261117.html",
+    "title": "Alzheimer : un biomarqueur sanguin aide à estimer un risque, pas à dépister tout le monde",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-17",
+    "status": "PUBLISHED",
+    "excerpt": "Des études de cohorte associent le p-tau217 sanguin au risque futur de trouble cognitif, sans justifier un dépistage généralisé.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "ptau217-alzheimer"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "f3fd86a905ce7014fe0ca94ed495d96ecaf1528455128e760d3a21b7e9c963a7"
+  },
+  {
+    "id": "daily-pneumocoque-vpc21-20261117",
+    "url": "article-daily-pneumocoque-vpc21-20261117.html",
+    "title": "Pneumocoque : les recommandations vaccinales évoluent chez l’adulte",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-17",
+    "status": "PUBLISHED",
+    "excerpt": "En France, le vaccin conjugué VPC21 figure dans les recommandations pour les adultes à risque et les personnes de 65 ans ou plus.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "pneumocoque-vpc21"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "e81b50c099d07e92a5531db9626a55faf3cdf06cf03184e63cb176ddd593154f"
+  },
+  {
+    "id": "daily-trachome-erythree-20261117",
+    "url": "article-daily-trachome-erythree-20261117.html",
+    "title": "Trachome : l’Érythrée franchit un cap de santé publique",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-17",
+    "status": "PUBLISHED",
+    "excerpt": "L’OMS a validé l’élimination du trachome comme problème de santé publique en Érythrée.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "trachome-erythree"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "74c2d375e8ec49023335a1266e5942caeed042db2c9099647794ae5a84f85337"
   }
 ];
