@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-28T08:02:02.390Z",
+  "checkedAt": "2026-11-17T13:40:00+01:00",
   "timezone": "Europe/Paris",
-  "controlId": "p0-68-actions-source-verification-1793174522391",
-  "reason": "Verify publication after user switched Pages Source to GitHub Actions; no medical content changes"
+  "controlId": "manual-publish-20261117-edition-retry",
+  "reason": "User-authorized immediate publication retry for validated Nov 17 edition after image preflight fix; no medical content changes"
 }
