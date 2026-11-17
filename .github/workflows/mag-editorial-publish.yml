@@ -111,6 +111,8 @@ jobs:
     name: B — Publication et vérification publique
     if: github.ref == 'refs/heads/feat/v0-magazine'
     needs: prepare
+    outputs:
+      published_commit: ${{ steps.latest.outputs.commit }}
     runs-on: ubuntu-latest
     concurrency:
       group: pages-site-publication
@@ -126,17 +128,47 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Refuse superseded medical sources before deploy
+      - name: Rebuild from the latest medically validated sources when superseded
+        id: latest
         env:
           EXPECTED: ${{ needs.prepare.outputs.fingerprint }}
         run: |
           git fetch origin feat/v0-magazine
           ACTUAL=$(node -p "require('./scripts/editorial-pipeline').sourceVersion('origin/feat/v0-magazine')")
-          test "$ACTUAL" = "$EXPECTED" || { echo 'Source changed; this obsolete build must not deploy'; exit 1; }
+          if [ "$ACTUAL" = "$EXPECTED" ]; then
+            echo "rebuild=false" >> "$GITHUB_OUTPUT"
+            echo "artifact=${{ needs.prepare.outputs.site_artifact }}" >> "$GITHUB_OUTPUT"
+            echo "commit=${{ needs.prepare.outputs.commit }}" >> "$GITHUB_OUTPUT"
+          else
+            echo 'Newer medical sources detected; rebuilding from latest validated source instead of deploying obsolete output'
+            git checkout --detach origin/feat/v0-magazine
+            node scripts/editorial-pipeline.js prepare
+            bash scripts/publish-mag-generated.sh
+            echo "rebuild=true" >> "$GITHUB_OUTPUT"
+            echo "artifact=github-pages-latest-${{ github.run_id }}-${{ github.run_attempt }}" >> "$GITHUB_OUTPUT"
+            echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Package rebuilt public site
+        if: steps.latest.outputs.rebuild == 'true'
+        run: |
+          mkdir -p _site
+          rsync -a --exclude='.git' --exclude='.github' --exclude='media-publishing' --exclude='scripts' --exclude='_site' --exclude='.maca-lab' --exclude='editorial/drafts' --exclude='editorial/publication-requests' --exclude='editorial/fiches.json' --exclude='publication-report.json' --exclude='publication-plan.json' --exclude='assistant-v2/public-artifacts' --exclude='assistant-v2/corpus.json' --exclude='assistant-v2/corpus.report.json' ./ _site/
+      - name: Upload rebuilt Pages artifact
+        if: steps.latest.outputs.rebuild == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          name: ${{ steps.latest.outputs.artifact }}
+          path: _site
+      - name: Confirm rebuilt sources are still current
+        run: |
+          git fetch origin feat/v0-magazine
+          ACTUAL=$(node -p "require('./scripts/editorial-pipeline').sourceVersion('origin/feat/v0-magazine')")
+          LOCAL=$(node -p "require('./scripts/editorial-pipeline').sourceVersion()")
+          test "$ACTUAL" = "$LOCAL" || { echo 'Medical sources changed again during rebuild; newer push will rebuild, never deploy stale content'; exit 1; }
       - id: deployment
         uses: actions/deploy-pages@v4
         with:
-          artifact_name: ${{ needs.prepare.outputs.site_artifact }}
+          artifact_name: ${{ steps.latest.outputs.artifact }}
       - name: Verify exact public versions, archives, sitemap and historical fiches
         run: node scripts/editorial-pipeline.js verify
       - name: Record a distinct deployment or verification failure
@@ -160,7 +192,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ needs.prepare.outputs.commit }}
+          ref: ${{ needs.deploy.outputs.published_commit }}
           fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
