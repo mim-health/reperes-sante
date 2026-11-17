@@ -141,6 +141,11 @@ jobs:
             echo "commit=${{ needs.prepare.outputs.commit }}" >> "$GITHUB_OUTPUT"
           else
             echo 'Newer medical sources detected; rebuilding from latest validated source instead of deploying obsolete output'
+            # This job checked out the prepared commit, which can contain generated
+            # files. Reset only this disposable runner before switching to the
+            # newest canonical source; never overwrite repository medical sources.
+            git reset --hard HEAD
+            git clean -fd
             git checkout --detach origin/feat/v0-magazine
             node scripts/editorial-pipeline.js prepare
             bash scripts/publish-mag-generated.sh
