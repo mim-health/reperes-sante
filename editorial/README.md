@@ -73,3 +73,7 @@ Les publications vidéo vérifiées alimentent la même source persistante. Un m
 ## Ajout de fiches : chemin de publication unique
 
 Ajouter les sources validées au manifeste, puis reconstruire le bundle et les payloads avec `node scripts/build-corpus-production.js --publish` et `node scripts/build-static-seo-fiches.js`. Ne pas ajouter de chargements de lots dans `corpus-loader.js` : ils sont déjà intégrés aux artefacts générés, cassent le chargement individuel et peuvent bloquer toute la publication. Exécuter `node scripts/test-fiche-fast-load.js` avant le push. Un test en échec doit être réparé ; ne pas le contourner pour publier.
+
+## Production du média et diffusion
+
+Le [programme de production et de diffusion](PRODUCTION.md) complète ce circuit : éditorial finalisé → validation → publication vérifiée → préparation des relais sociaux → diffusion et suivi. Chaque édition doit fournir un sujet à relayer et un support prêt à publier. Le site ne dépend pas de la disponibilité d’une vidéo ou d’un compte social.

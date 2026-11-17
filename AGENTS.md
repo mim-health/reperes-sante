@@ -24,3 +24,7 @@ Treat this as authorization to execute publication of the **version as actually 
 This is an operational contract for the agent processing the conversation, not a global ChatGPT message webhook. A phrase cannot publish missing texts or connect an unrelated conversation automatically.
 
 Keep draft packages, test fixtures and approval intent out of the assembled public site. Preserve SHA-256 approval records, immutable Git history, sources, duplicate checks and image rights. Supplied imagery must pass its rights/uniqueness checks; an approved article without imagery is allowed by the existing audit.
+
+## Programme de production et de diffusion
+
+Appliquer [editorial/PRODUCTION.md](editorial/PRODUCTION.md) : une édition finalisée et validée doit être publiée, vérifiée puis accompagnée d’un relais social préparé. La notoriété de MACASANTÉ et sa présence sur les réseaux font partie du travail de production. Distinguer les supports prêts à publier des diffusions réellement effectuées. Ne pas annoncer un envoi ou une publication sociale sans preuve.
