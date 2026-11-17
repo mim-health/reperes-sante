@@ -14,7 +14,7 @@ Construire un média santé identifiable : publier régulièrement des contenus 
 
 ## Présence éditoriale et sociale
 - Appuyer la présence sur les comptes existants : Instagram, TikTok, YouTube et Facebook selon les accès et les formats disponibles.
-- Préparer au moins un relais pour chaque édition publiée ; choisir les plateformes pertinentes sans fabriquer une publication par article sur chaque réseau.
+- Rendez-vous quotidien : préparer un vrai/faux issu du corpus ou des éditions récentes, avec réponse explicative, source visible et signature MACASANTÉ. Viser une diffusion chaque jour sur les réseaux autorisés ; consigner la diffusion effective.\n- Ajouter deux publications complémentaires ; la périodicité de ces deux publications reste à préciser par le responsable éditorial. Ne pas interpréter cette décision comme trois publications quotidiennes tant que ce point n’est pas fixé.\n- Choisir les plateformes pertinentes sans fabriquer une publication par article sur chaque réseau.
 - Installer des rendez-vous reconnaissables à partir des rubriques existantes : question santé et réponse courte, décryptage d’une actualité, vrai/faux. Réutiliser une même identité visuelle et une formulation cohérente.
 - Adapter le contenu au support : carrousel, visuel, courte vidéo ou texte avec lien. La production d’une vidéo n’est pas une condition de publication.
 - Conserver la signature « MACASANTÉ — Comprendre pour mieux agir » et identifier clairement le rôle médical du Dr Romain BEDDOK quand il signe ou présente un contenu.
