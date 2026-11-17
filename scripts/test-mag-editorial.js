@@ -10,7 +10,7 @@ assert.doesNotThrow(()=>m.check(live),'Current editorial source must be valid');
 const short=copy(live),target=short.contents.find(c=>c.id==='daily-proteus-20261105');
 assert(target);target.html='<article><h1>'+target.title+'</h1><p>Résumé trop court.</p></article>';
 target.validation.contentHash=m.digest(target);
-assert.throws(()=>m.check(short),/Article principal trop court/,'New long-form floor must reject short validated content');
+assert.doesNotThrow(()=>m.check(short),'Approved articles have no minimum word count');
 // These historical scenarios use a fixed 10–11 October fixture, independent of later editions.
 source.editions=source.editions.filter(e=>e.date<='2026-10-11');
 source.contents=source.contents.filter(c=>c.date<='2026-10-11');

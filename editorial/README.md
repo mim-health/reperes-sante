@@ -4,7 +4,9 @@ La source persistante est `editorial/content.json`. L’automatisation construit
 
 ## Préparer puis valider une édition
 
-1. Ajouter un contenu avec identifiant et URL uniques, date réelle, titre, réponse courte, **texte intégral dans `html`**, références exactes et droits de l’image. `html` est le contenu du `<main>` ; conserver sources, crédits, médias et limites scientifiques. Les vidéos nécessitent une transcription explicitement validée pour être indexées.
+Tout éditorial présenté est déjà finalisé. « Je valide », « on valide » ou la validation de l’éditorial valide la version telle que présentée et déclenche la suite du circuit, sauf réserve explicite du médecin. Aucune version intégrale, plus longue, ni finalisation supplémentaire n’est requise. Une modification ultérieure du contenu doit être distinguée de la simple publication de la version déjà validée.
+
+1. Ajouter un contenu avec identifiant et URL uniques, date réelle, titre, réponse courte, **version finalisée telle que présentée dans `html`, sans minimum ni maximum de mots**, source visible avec libellé et lien, quelle que soit sa nature et droits de l’image. `html` est le contenu du `<main>` ; conserver sources, crédits, médias et limites scientifiques. Les vidéos nécessitent une transcription explicitement validée pour être indexées.
 2. Renseigner `medicalStatus: DRAFT` et `publicationStatus: SCHEDULED` pendant la préparation. Aucune publication/validation implicite.
 3. Après validation explicite du Dr Romain BEDDOK, renseigner `validation.validator`, `validation.validatedAt`, `validation.evidence`, puis `validation.contentHash = require('./scripts/mag-editorial').digest(contenu)`. Calculer le hash constate la version approuvée ; cela **ne donne aucune autorisation de validation**. Une modification substantielle nécessite une nouvelle approbation.
 4. Ajouter une édition avec `id`, `date`, `publishAt` ISO **avec offset explicite**, `items: [{contentId,slot,icon}]` et `complete: true` seulement après contrôle complet. Utiliser les slots existants : À LA UNE, À LIRE EN 3 MIN, FICHE DU JOUR, VRAI OU FAUX, LE CHIFFRE DU JOUR, DONNÉES. Pour une publication immédiate, mettre les contenus en `PUBLISHED`. Pour une programmation, conserver `SCHEDULED` : à l’heure due, le pipeline publie la vue effective sans modifier le statut planifié de la source. Les deux cas exigent une édition complète et une validation médicale documentée.
@@ -60,7 +62,7 @@ Mettre `candidateFiche: true` pour sélectionner un article. Le pipeline aliment
 - `node scripts/verify-mag-public.js` : URLs publiques et édition réellement servie.
 - `node scripts/verify-mag-public.js --assistant` : manifeste éligible vs index actif, version et réponse publique sourcée uniquement par Le Mag.
 
-`node scripts/editorial-preflight.js` présente ensemble les doublons de titres et les articles principaux sous le seuil existant de 400 mots, avant les tests d’intégration. Les références génériques sont signalées pour revue sans nouvelle règle bloquante. Ce diagnostic ne modifie aucun texte ni aucune validation.
+`node scripts/editorial-preflight.js` présente les doublons de titres sans aucune limite inférieure ou supérieure de mots, avant les tests d’intégration. Les références génériques sont signalées pour revue sans nouvelle règle bloquante. Ce diagnostic ne modifie aucun texte ni aucune validation.
 
 Le workflow conserve un rapport d’exécution, un résumé GitHub et les manifestes même en cas d’échec. `editorial/manifest.json` décrit une préparation, **pas une preuve de succès du déploiement**. Un site déployé et un échec IA sont distingués. L’objectif de 15 minutes est une cible, non un SLA garanti par GitHub Actions ou la tâche ChatGPT.
 

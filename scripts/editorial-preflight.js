@@ -10,16 +10,6 @@ function diagnose(source) {
   for (const [, rows] of repeated(source.contents, c => normalize(c.title))) {
     if (!approvedRepetition(rows)) errors.push('Duplicate normalized titles: ' + rows.map(c => c.id).join(', '));
   }
-  const byId = new Map(source.contents.map(c => [c.id, c]));
-  for (const edition of source.editions.filter(e => e.date >= '2026-11-05')) {
-    for (const item of edition.items.filter(i => ['À LA UNE', 'À LIRE EN 3 MIN'].includes(i.slot))) {
-      const article = byId.get(item.contentId);
-      if (!article) continue;
-      const body = mag.plain(article.html).replace(/^LE MAG[^\n]*\n?/i, '').replace(/Sources[\s\S]*$/i, '').trim();
-      const count = (body.match(/[\p{L}\p{N}]+(?:[’'-][\p{L}\p{N}]+)*/gu) || []).length;
-      if (count < 400) errors.push(`Article principal trop court (${count}/400 mots) : ${article.id} [${edition.date} / ${item.slot}]`);
-    }
-  }
   for (const c of source.contents.filter(c => c.medicalStatus === 'VALIDATED' && c.date >= '2026-11-17')) {
     for (const s of c.sources || []) {
       try {
