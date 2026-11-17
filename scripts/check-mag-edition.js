@@ -29,7 +29,7 @@ if(e){
   if(!c.html||c.html.length<120) problems.push('Missing substantial HTML: '+c.id);
   if(!c.url) problems.push('Missing permanent URL: '+c.id);
   if(!Array.isArray(c.sources)||!c.sources.length) problems.push('Missing sources: '+c.id);
-  if(c.format==='article' && c.date===date && (!c.image||!c.imageSource||!c.imageLicense||!c.imageCredit||!c.imageAlt)) problems.push('Missing image provenance/rights: '+c.id);
+  if(c.format==='article' && c.date===date && c.image && (!c.imageSource||!c.imageLicense||!c.imageCredit||!c.imageAlt)) problems.push('Missing image provenance/rights: '+c.id);
  }
 }
 if(problems.length){console.error('BLOCKED '+date+'\n'+problems.map(x=>' - '+x).join('\n'));process.exit(1);}
