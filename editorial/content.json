@@ -10457,6 +10457,233 @@
         "evidence": "Validation médicale explicite et autorisation de publication immédiate le 17 novembre 2026 dans le fil MACA — Éditorial.",
         "contentHash": "74c2d375e8ec49023335a1266e5942caeed042db2c9099647794ae5a84f85337"
       }
+    },
+    {
+      "id": "daily-perturbateurs-endocriniens-rapport-20261118",
+      "title": "Perturbateurs endocriniens : que change le nouveau rapport mondial ?",
+      "answer": "Le rapport OMS–PNUE publié le 17 novembre rassemble plus de dix années de recherches supplémentaires. Il conclut que l’exposition peut commencer avant la naissance et que les données reliant certains perturbateurs endocriniens à des atteintes reproductives, neurologiques, thyroïdiennes, métaboliques ou cardiovasculaires se sont renforcées.",
+      "html": "<article><h1>Perturbateurs endocriniens : que change le nouveau rapport mondial ?</h1><p><strong>Résumé court.</strong> Le rapport OMS–PNUE publié le 17 novembre rassemble plus de dix années de recherches supplémentaires. Il conclut que l’exposition peut commencer avant la naissance et que les données reliant certains perturbateurs endocriniens à des atteintes reproductives, neurologiques, thyroïdiennes, métaboliques ou cardiovasculaires se sont renforcées.</p><p><strong>Ce qu’il faut retenir.</strong> Les perturbateurs endocriniens ne constituent pas une substance unique. Ils comprennent notamment certains bisphénols, phtalates, pesticides ou polluants persistants. Ils peuvent intervenir à de faibles doses et pendant des périodes sensibles du développement. L’exposition réelle porte souvent sur des mélanges alors que l’évaluation réglementaire reste largement substance par substance.</p><p><strong>Intérêt patient.</strong> Le message utile n’est pas de rechercher une impossible exposition zéro ni de jeter tous les objets du domicile. Il est de réduire les expositions évitables : ne pas chauffer les aliments dans des contenants plastiques inadaptés, respecter les usages des produits ménagers et cosmétiques, aérer et privilégier les matériaux clairement documentés, notamment pendant la grossesse et l’enfance.</p><p><strong>Limites.</strong> Le rapport synthétise des preuves de niveaux différents. Une association épidémiologique n’établit pas automatiquement qu’un produit particulier a provoqué une maladie chez une personne. La présence d’une famille chimique dans un produit ne signifie pas non plus, à elle seule, que son usage expose à un risque mesurable.</p><p><strong>Sources.</strong> Rapport scientifique OMS–PNUE 2026 et synthèse opérationnelle associée, publiés les 16 et 17 novembre 2026. <a href=\"https://www.who.int/singapore/news/detail-global/17-11-2026-evidence-mounts-that-exposure-to-hormone-disrupting-chemicals-starts-before-birth--unep-who-report?utm_source=chatgpt.com\">who.int</a></p></article>",
+      "date": "2026-11-18",
+      "url": "article-daily-perturbateurs-endocriniens-rapport-20261118.html",
+      "format": "article",
+      "theme": "Santé au quotidien",
+      "sources": [
+        {
+          "label": "who.int",
+          "url": "https://www.who.int/singapore/news/detail-global/17-11-2026-evidence-mounts-that-exposure-to-hormone-disrupting-chemicals-starts-before-birth--unep-who-report?utm_source=chatgpt.com"
+        }
+      ],
+      "candidateFiche": true,
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-18T07:40:21Z",
+        "evidence": "Autorisation explicite de publication immédiate dans le ticket P0 du 18 novembre 2026, puis transmission du fichier « Texte collé.txt » avec le message « voici le contenu validé ». Validation acquise ; aucune nouvelle validation ni réécriture nécessaire.",
+        "contentHash": "028e670aa773b32756beb84f29a683027c3bb0c69d2d55258a820a53dfcef6fd",
+        "snapshotHash": "543172d0cf301a50521e67878fb3230cebcdba0ba1106fc0ed67532430d57644"
+      }
+    },
+    {
+      "id": "daily-iec-sartan-operation-20261118",
+      "title": "Faut-il prendre son IEC ou son sartan le matin d’une opération ?",
+      "answer": "Un essai randomisé en double aveugle a inclus 2 012 patients âgés en moyenne de 68,8 ans devant subir une chirurgie non cardiaque. L’hypotension périopératoire concernait 31,2 % des patients ayant suspendu leur IEC ou leur sartan le matin de l’intervention, contre 45,5 % de ceux l’ayant pris normalement : différence absolue de 14,4 points.",
+      "html": "<article><h1>Faut-il prendre son IEC ou son sartan le matin d’une opération ?</h1><p>Un essai randomisé en double aveugle a inclus 2 012 patients âgés en moyenne de 68,8 ans devant subir une chirurgie non cardiaque. L’hypotension périopératoire concernait 31,2 % des patients ayant suspendu leur IEC ou leur sartan le matin de l’intervention, contre 45,5 % de ceux l’ayant pris normalement : différence absolue de 14,4 points.</p><p>Les besoins en vasopresseurs ont également diminué, sans différence significative concernant les complications ou la mortalité à 30 jours.</p><p><strong>À retenir :</strong> résultat solide, mais il ne justifie jamais d’interrompre soi-même un traitement. La consigne dépend du médicament, de l’indication, de la chirurgie et de l’équipe d’anesthésie. <a href=\"https://pubmed.ncbi.nlm.nih.gov/43014822/?utm_source=chatgpt.com\">pubmed.ncbi.nlm.nih.gov</a></p></article>",
+      "date": "2026-11-18",
+      "url": "article-daily-iec-sartan-operation-20261118.html",
+      "format": "article",
+      "theme": "Santé au quotidien",
+      "sources": [
+        {
+          "label": "pubmed.ncbi.nlm.nih.gov",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43014822/?utm_source=chatgpt.com"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-18T07:40:21Z",
+        "evidence": "Autorisation explicite de publication immédiate dans le ticket P0 du 18 novembre 2026, puis transmission du fichier « Texte collé.txt » avec le message « voici le contenu validé ». Validation acquise ; aucune nouvelle validation ni réécriture nécessaire.",
+        "contentHash": "c26a8e8ddc1ceb41e4300d3c30c8654a56310da4fb889772380c1917a4eb0a91",
+        "snapshotHash": "543172d0cf301a50521e67878fb3230cebcdba0ba1106fc0ed67532430d57644"
+      }
+    },
+    {
+      "id": "daily-bproad-tension-diabete-cognition-20261118",
+      "title": "Faire baisser davantage la tension protège-t-il aussi la mémoire en cas de diabète ?",
+      "answer": "L’analyse cognitive préspécifiée de l’essai BPROAD porte sur 12 434 adultes de 50 ans ou plus ayant un diabète de type 2. Les objectifs comparés étaient une pression systolique inférieure à 120 mmHg ou inférieure à 140 mmHg.",
+      "html": "<article><h1>Faire baisser davantage la tension protège-t-il aussi la mémoire en cas de diabète ?</h1><p>L’analyse cognitive préspécifiée de l’essai BPROAD porte sur 12 434 adultes de 50 ans ou plus ayant un diabète de type 2. Les objectifs comparés étaient une pression systolique inférieure à 120 mmHg ou inférieure à 140 mmHg.</p><p>Après 3,8 ans, démence ou trouble cognitif léger sont survenus chez 747 participants du groupe intensif et 783 du groupe standard : différence non significative. Une sous-étude IRM retrouve toutefois une moindre progression des lésions de la substance blanche.</p><p><strong>À retenir :</strong> effet favorable sur un marqueur cérébral, mais bénéfice cognitif clinique non démontré dans la durée étudiée. La cible tensionnelle reste individuelle et ne doit pas être modifiée sans avis médical. <a href=\"https://www.bmj.com/content/bmj/395/bmj-2026-101209.full.pdf?utm_source=chatgpt.com\">bmj.com</a></p></article>",
+      "date": "2026-11-18",
+      "url": "article-daily-bproad-tension-diabete-cognition-20261118.html",
+      "format": "article",
+      "theme": "Santé au quotidien",
+      "sources": [
+        {
+          "label": "bmj.com",
+          "url": "https://www.bmj.com/content/bmj/395/bmj-2026-101209.full.pdf?utm_source=chatgpt.com"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-18T07:40:21Z",
+        "evidence": "Autorisation explicite de publication immédiate dans le ticket P0 du 18 novembre 2026, puis transmission du fichier « Texte collé.txt » avec le message « voici le contenu validé ». Validation acquise ; aucune nouvelle validation ni réécriture nécessaire.",
+        "contentHash": "70bbd28d45898b96b412a866657bad6bbff98a56a544dfe58f186db81a830011",
+        "snapshotHash": "543172d0cf301a50521e67878fb3230cebcdba0ba1106fc0ed67532430d57644"
+      }
+    },
+    {
+      "id": "daily-intomob-mobilite-hopital-20261118",
+      "title": "À l’hôpital, des affiches et des conseils suffisent-ils à préserver la mobilité des personnes âgées ?",
+      "answer": "Dans l’essai randomisé INTOMOB, 383 patients hospitalisés, âgés en médiane de 75 ans, ont reçu soit les soins habituels, soit une intervention associant vidéos et brochures, formation des professionnels et affichage dans les services.",
+      "html": "<article><h1>À l’hôpital, des affiches et des conseils suffisent-ils à préserver la mobilité des personnes âgées ?</h1><p>Dans l’essai randomisé INTOMOB, 383 patients hospitalisés, âgés en médiane de 75 ans, ont reçu soit les soins habituels, soit une intervention associant vidéos et brochures, formation des professionnels et affichage dans les services.</p><p>À 30 jours, la différence sur l’espace de mobilité était de seulement 0,67 point, avec un intervalle de confiance compatible avec l’absence de bénéfice. Aucun effet cohérent n’a été retrouvé sur l’autonomie, les chutes, les réhospitalisations ou la qualité de vie.</p><p><strong>À retenir :</strong> l’absence de bénéfice ne signifie pas que la mobilisation est inutile. Elle indique qu’une intervention légère, sans ressources humaines supplémentaires ni programme individualisé intensif, paraît insuffisante. <a href=\"https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2856742?utm_source=chatgpt.com\">JAMA Network</a></p></article>",
+      "date": "2026-11-18",
+      "url": "article-daily-intomob-mobilite-hopital-20261118.html",
+      "format": "article",
+      "theme": "Santé au quotidien",
+      "sources": [
+        {
+          "label": "JAMA Network",
+          "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2856742?utm_source=chatgpt.com"
+        }
+      ],
+      "candidateFiche": true,
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-18T07:40:21Z",
+        "evidence": "Autorisation explicite de publication immédiate dans le ticket P0 du 18 novembre 2026, puis transmission du fichier « Texte collé.txt » avec le message « voici le contenu validé ». Validation acquise ; aucune nouvelle validation ni réécriture nécessaire.",
+        "contentHash": "84d75b3328fb28a1eb19e824367e750dfd14103bc05c119613fdc5bb4395b4b3",
+        "snapshotHash": "543172d0cf301a50521e67878fb3230cebcdba0ba1106fc0ed67532430d57644"
+      }
+    },
+    {
+      "id": "daily-oeufs-cholesterol-20261118",
+      "title": "« Manger des œufs fait forcément monter dangereusement le cholestérol »",
+      "answer": "L’œuf contient du cholestérol alimentaire, mais son effet dépend de l’ensemble du régime, notamment des graisses saturées, ainsi que du terrain métabolique individuel. Pour la plupart des personnes en bonne santé, un œuf peut s’intégrer à une alimentation équilibrée. L’attention doit porter sur le profil alimentaire global plutôt que sur un aliment isolé ; un conseil individualisé reste pertinent en cas d’hypercholestérolémie importante ou de maladie cardiovasculaire. American Heart Association",
+      "html": "<article><h1>« Manger des œufs fait forcément monter dangereusement le cholestérol »</h1><p><strong>Verdict : À NUANCER.</strong></p><p>L’œuf contient du cholestérol alimentaire, mais son effet dépend de l’ensemble du régime, notamment des graisses saturées, ainsi que du terrain métabolique individuel. Pour la plupart des personnes en bonne santé, un œuf peut s’intégrer à une alimentation équilibrée. L’attention doit porter sur le profil alimentaire global plutôt que sur un aliment isolé ; un conseil individualisé reste pertinent en cas d’hypercholestérolémie importante ou de maladie cardiovasculaire. <a href=\"https://professional.heart.org/en/science-news/dietary-cholesterol-and-cardiovascular-risk/top-things-to-know?utm_source=chatgpt.com\">American Heart Association</a></p></article>",
+      "date": "2026-11-18",
+      "url": "article-daily-oeufs-cholesterol-20261118.html",
+      "format": "article",
+      "theme": "Santé au quotidien",
+      "sources": [
+        {
+          "label": "American Heart Association",
+          "url": "https://professional.heart.org/en/science-news/dietary-cholesterol-and-cardiovascular-risk/top-things-to-know?utm_source=chatgpt.com"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-18T07:40:21Z",
+        "evidence": "Autorisation explicite de publication immédiate dans le ticket P0 du 18 novembre 2026, puis transmission du fichier « Texte collé.txt » avec le message « voici le contenu validé ». Validation acquise ; aucune nouvelle validation ni réécriture nécessaire.",
+        "contentHash": "533aa7b64b976883c93b9e116c3cf9ee9912e76e15248fbf4a9b9c936b737018",
+        "snapshotHash": "543172d0cf301a50521e67878fb3230cebcdba0ba1106fc0ed67532430d57644"
+      }
+    },
+    {
+      "id": "daily-obesite-une-personne-sur-sept-20261118",
+      "title": "1 personne sur 7",
+      "answer": "Plus d’un milliard de personnes vivent aujourd’hui avec une obésité, soit environ une personne sur sept dans le monde, selon l’OMS. Depuis 1990, sa prévalence a plus que doublé chez les adultes et quadruplé chez les adolescents.",
+      "html": "<article><h1>1 personne sur 7</h1><p>Plus d’un milliard de personnes vivent aujourd’hui avec une obésité, soit environ <strong>une personne sur sept dans le monde</strong>, selon l’OMS. Depuis 1990, sa prévalence a plus que doublé chez les adultes et quadruplé chez les adolescents.</p><p>Ce chiffre décrit une maladie chronique multifactorielle et ne doit pas être utilisé pour culpabiliser les personnes concernées. Il ne devient pas automatiquement une nouvelle fiche. <a href=\"https://www.who.int/news/item/17-11-2026-leaders-commit-to-accelerate-action-on-obesity-prevention-and-control?utm_source=chatgpt.com\">who.int</a></p></article>",
+      "date": "2026-11-18",
+      "url": "article-daily-obesite-une-personne-sur-sept-20261118.html",
+      "format": "article",
+      "theme": "Santé au quotidien",
+      "sources": [
+        {
+          "label": "who.int",
+          "url": "https://www.who.int/news/item/17-11-2026-leaders-commit-to-accelerate-action-on-obesity-prevention-and-control?utm_source=chatgpt.com"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-18T07:40:21Z",
+        "evidence": "Autorisation explicite de publication immédiate dans le ticket P0 du 18 novembre 2026, puis transmission du fichier « Texte collé.txt » avec le message « voici le contenu validé ». Validation acquise ; aucune nouvelle validation ni réécriture nécessaire.",
+        "contentHash": "87e0de574a251abb1cc37c3cd4fd7d3d8020aa6bbb2851f809540d415bd34a5a",
+        "snapshotHash": "543172d0cf301a50521e67878fb3230cebcdba0ba1106fc0ed67532430d57644"
+      }
+    },
+    {
+      "id": "daily-trottinettes-traumatisme-cranien-20261118",
+      "title": "Trottinettes électriques",
+      "answer": "Trottinettes électriques : parmi 64 patients interrogés après un traumatisme crânien, 54 ont rapporté au moins un symptôme pendant la récupération. Lorsque le scanner initial était anormal, la durée médiane des symptômes atteignait 11 mois, contre 1,3 mois avec un scanner normal. Étude monocentrique et faible taux de réponse : signal utile, mais estimation probablement imprécise. jamanetwork.com",
+      "html": "<article><h1>Trottinettes électriques</h1><p><strong>Trottinettes électriques :</strong> parmi 64 patients interrogés après un traumatisme crânien, 54 ont rapporté au moins un symptôme pendant la récupération. Lorsque le scanner initial était anormal, la durée médiane des symptômes atteignait 11 mois, contre 1,3 mois avec un scanner normal. Étude monocentrique et faible taux de réponse : signal utile, mais estimation probablement imprécise. <a href=\"https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2856757?utm_source=chatgpt.com\">jamanetwork.com</a></p></article>",
+      "date": "2026-11-18",
+      "url": "article-daily-trottinettes-traumatisme-cranien-20261118.html",
+      "format": "article",
+      "theme": "Santé au quotidien",
+      "sources": [
+        {
+          "label": "jamanetwork.com",
+          "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2856757?utm_source=chatgpt.com"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-18T07:40:21Z",
+        "evidence": "Autorisation explicite de publication immédiate dans le ticket P0 du 18 novembre 2026, puis transmission du fichier « Texte collé.txt » avec le message « voici le contenu validé ». Validation acquise ; aucune nouvelle validation ni réécriture nécessaire.",
+        "contentHash": "d98ba12bb905b4b978ca943db64004a472f93421fa700a3d622751edee6c308a",
+        "snapshotHash": "543172d0cf301a50521e67878fb3230cebcdba0ba1106fc0ed67532430d57644"
+      }
+    },
+    {
+      "id": "daily-ia-comptes-rendus-sortie-20261118",
+      "title": "IA et comptes rendus de sortie",
+      "answer": "IA et comptes rendus de sortie : 89,7 % des résumés générés par un modèle ont été acceptés avec aucune ou seulement de petites corrections, contre 67,1 % des résumés habituels. Des hallucinations restaient présentes dans 6 % des productions de l’IA : la relecture clinique demeure indispensable. jamanetwork.com",
+      "html": "<article><h1>IA et comptes rendus de sortie</h1><p><strong>IA et comptes rendus de sortie :</strong> 89,7 % des résumés générés par un modèle ont été acceptés avec aucune ou seulement de petites corrections, contre 67,1 % des résumés habituels. Des hallucinations restaient présentes dans 6 % des productions de l’IA : la relecture clinique demeure indispensable. <a href=\"https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2856756?utm_source=chatgpt.com\">jamanetwork.com</a></p></article>",
+      "date": "2026-11-18",
+      "url": "article-daily-ia-comptes-rendus-sortie-20261118.html",
+      "format": "article",
+      "theme": "Santé au quotidien",
+      "sources": [
+        {
+          "label": "jamanetwork.com",
+          "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2856756?utm_source=chatgpt.com"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-18T07:40:21Z",
+        "evidence": "Autorisation explicite de publication immédiate dans le ticket P0 du 18 novembre 2026, puis transmission du fichier « Texte collé.txt » avec le message « voici le contenu validé ». Validation acquise ; aucune nouvelle validation ni réécriture nécessaire.",
+        "contentHash": "f0432647002e639b18f38c61832db0b6e4acbfc107621d63f1980cc61a6217a9",
+        "snapshotHash": "543172d0cf301a50521e67878fb3230cebcdba0ba1106fc0ed67532430d57644"
+      }
+    },
+    {
+      "id": "daily-grossesse-inegalites-suivi-20261118",
+      "title": "Suivi de grossesse",
+      "answer": "Suivi de grossesse : une cohorte australienne de 1,72 million de naissances retrouve des risques plus élevés de mortinatalité et de mortalité infantile chez certaines mères migrantes non anglophones, quel que soit le moment de la première consultation prénatale. L’étude souligne des inégalités complexes sans démontrer qu’une seule mesure les corrigerait. jamanetwork.com",
+      "html": "<article><h1>Suivi de grossesse</h1><p><strong>Suivi de grossesse :</strong> une cohorte australienne de 1,72 million de naissances retrouve des risques plus élevés de mortinatalité et de mortalité infantile chez certaines mères migrantes non anglophones, quel que soit le moment de la première consultation prénatale. L’étude souligne des inégalités complexes sans démontrer qu’une seule mesure les corrigerait. <a href=\"https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2856755?utm_source=chatgpt.com\">jamanetwork.com</a></p></article>",
+      "date": "2026-11-18",
+      "url": "article-daily-grossesse-inegalites-suivi-20261118.html",
+      "format": "article",
+      "theme": "Santé au quotidien",
+      "sources": [
+        {
+          "label": "jamanetwork.com",
+          "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2856755?utm_source=chatgpt.com"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-18T07:40:21Z",
+        "evidence": "Autorisation explicite de publication immédiate dans le ticket P0 du 18 novembre 2026, puis transmission du fichier « Texte collé.txt » avec le message « voici le contenu validé ». Validation acquise ; aucune nouvelle validation ni réécriture nécessaire.",
+        "contentHash": "a4e4a45f784a2a798f1d17235b9316e7699a82bd555e3fc58c163b591fe073fa",
+        "snapshotHash": "543172d0cf301a50521e67878fb3230cebcdba0ba1106fc0ed67532430d57644"
+      }
     }
   ],
   "editions": [
@@ -11887,6 +12114,64 @@
         "veille": "JAMA Pediatrics cannabidiol ; exercice et dépression ; eX-FLU ; OMS cancer du col ; prévention.",
         "corpusImpact": "Dix textes préparés ; image omise à la demande du validateur ; contrôle anti-doublons et empreintes requis avant publication."
       }
+    },
+    {
+      "id": "edition-2026-11-18",
+      "date": "2026-11-18",
+      "publishAt": "2026-11-18T08:40:04+01:00",
+      "complete": true,
+      "items": [
+        {
+          "contentId": "daily-perturbateurs-endocriniens-rapport-20261118",
+          "slot": "À LA UNE",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-iec-sartan-operation-20261118",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-bproad-tension-diabete-cognition-20261118",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-intomob-mobilite-hopital-20261118",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-brulures-urinaires-rotation-20261030",
+          "slot": "FICHE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-oeufs-cholesterol-20261118",
+          "slot": "VRAI OU FAUX",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-obesite-une-personne-sur-sept-20261118",
+          "slot": "LE CHIFFRE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-trottinettes-traumatisme-cranien-20261118",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-ia-comptes-rendus-sortie-20261118",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-grossesse-inegalites-suivi-20261118",
+          "slot": "DONNÉES",
+          "icon": "•"
+        }
+      ]
     }
   ]
 }
