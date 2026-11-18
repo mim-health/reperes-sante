@@ -1,18 +1,16 @@
-/* MACA-UX-01 — pastille médicale ronde, discrète, sans modification des fiches. */
+/* MACA-UX-01 — sceau circulaire validé. Affichage conditionné par validation existante. */
 body.maca-fiche-v2 .maca-fv2-hero:has(.maca-medical-stamp){padding-right:140px}
 body.maca-fiche-v2 .maca-fv2-validation.maca-medical-stamp{
  position:absolute;top:25px;right:28px;z-index:2;display:flex;align-items:center;justify-content:center;
- width:91px;height:91px;min-height:0;box-sizing:border-box;margin:0;padding:9px;
- border:2px double #d7e6d7;border-radius:50%;background:#33483f;color:#f9f8ef;
- font-family:Arial,Helvetica,sans-serif;font-size:9px;font-weight:800;letter-spacing:.035em;
- line-height:1.23;text-align:center;text-decoration:none;text-transform:uppercase;
- transform:rotate(-8deg);box-shadow:inset 0 0 0 3px rgba(255,255,255,.16),0 2px 6px rgba(38,58,52,.15);
- text-shadow:.25px 0 rgba(255,255,255,.22);opacity:1;
+ width:91px;height:91px;min-height:0;box-sizing:border-box;margin:0;padding:0;
+ border:0;border-radius:50%;background:#075337;color:#fff9e8;
+ text-decoration:none;transform:rotate(-8deg);opacity:1;
+ box-shadow:0 2px 6px rgba(38,58,52,.13);
 }
-body.maca-fiche-v2 .maca-medical-stamp-text{display:block}
-body.maca-fiche-v2 .maca-medical-stamp:hover{opacity:1;text-decoration:none}
+body.maca-fiche-v2 .maca-medical-stamp-art{display:block;width:100%;height:100%;overflow:visible}
+body.maca-fiche-v2 .maca-medical-stamp:hover{filter:brightness(1.07);text-decoration:none}
 body.maca-fiche-v2 .maca-medical-stamp:focus-visible{outline:3px solid #cf6238;outline-offset:4px}
 @media(max-width:560px){
  body.maca-fiche-v2 .maca-fv2-hero:has(.maca-medical-stamp){padding-right:20px;padding-top:107px}
- body.maca-fiche-v2 .maca-fv2-validation.maca-medical-stamp{top:13px;right:17px;width:77px;height:77px;font-size:7.6px;padding:7px}
+ body.maca-fiche-v2 .maca-fv2-validation.maca-medical-stamp{top:13px;right:17px;width:77px;height:77px}
 }
