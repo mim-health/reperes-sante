@@ -229,5 +229,19 @@
     "url": "article-daily-masld-fibrose-20261102.html",
     "existingFicheId": null,
     "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-perturbateurs-endocriniens-rapport-20261118",
+    "title": "Perturbateurs endocriniens : que change le nouveau rapport mondial ?",
+    "url": "article-daily-perturbateurs-endocriniens-rapport-20261118.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "daily-intomob-mobilite-hopital-20261118",
+    "title": "À l’hôpital, des affiches et des conseils suffisent-ils à préserver la mobilité des personnes âgées ?",
+    "url": "article-daily-intomob-mobilite-hopital-20261118.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
   }
 ]

@@ -1,12 +1,66 @@
 {
   "schemaVersion": 1,
-  "editionId": "edition-2026-11-17",
-  "editionDate": "2026-11-17",
-  "sourceFingerprint": "2246fb6d16a82b26f8ff74fc0ee35b978aa70d41af496cf0f34ab7faf49e55d8",
-  "missingEdition": true,
+  "editionId": "edition-2026-11-18",
+  "editionDate": "2026-11-18",
+  "sourceFingerprint": "da68a90e11c9af638a20cc4dc8eac4770c1b7ac928e8382fc47843d46b3fa67b",
+  "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-daily-perturbateurs-endocriniens-rapport-20261118",
+      "version": "028e670aa773b32756beb84f29a683027c3bb0c69d2d55258a820a53dfcef6fd",
+      "url": "article-daily-perturbateurs-endocriniens-rapport-20261118.html",
+      "date": "2026-11-18"
+    },
+    {
+      "id": "mag-daily-iec-sartan-operation-20261118",
+      "version": "c26a8e8ddc1ceb41e4300d3c30c8654a56310da4fb889772380c1917a4eb0a91",
+      "url": "article-daily-iec-sartan-operation-20261118.html",
+      "date": "2026-11-18"
+    },
+    {
+      "id": "mag-daily-bproad-tension-diabete-cognition-20261118",
+      "version": "70bbd28d45898b96b412a866657bad6bbff98a56a544dfe58f186db81a830011",
+      "url": "article-daily-bproad-tension-diabete-cognition-20261118.html",
+      "date": "2026-11-18"
+    },
+    {
+      "id": "mag-daily-intomob-mobilite-hopital-20261118",
+      "version": "84d75b3328fb28a1eb19e824367e750dfd14103bc05c119613fdc5bb4395b4b3",
+      "url": "article-daily-intomob-mobilite-hopital-20261118.html",
+      "date": "2026-11-18"
+    },
+    {
+      "id": "mag-daily-oeufs-cholesterol-20261118",
+      "version": "533aa7b64b976883c93b9e116c3cf9ee9912e76e15248fbf4a9b9c936b737018",
+      "url": "article-daily-oeufs-cholesterol-20261118.html",
+      "date": "2026-11-18"
+    },
+    {
+      "id": "mag-daily-obesite-une-personne-sur-sept-20261118",
+      "version": "87e0de574a251abb1cc37c3cd4fd7d3d8020aa6bbb2851f809540d415bd34a5a",
+      "url": "article-daily-obesite-une-personne-sur-sept-20261118.html",
+      "date": "2026-11-18"
+    },
+    {
+      "id": "mag-daily-trottinettes-traumatisme-cranien-20261118",
+      "version": "d98ba12bb905b4b978ca943db64004a472f93421fa700a3d622751edee6c308a",
+      "url": "article-daily-trottinettes-traumatisme-cranien-20261118.html",
+      "date": "2026-11-18"
+    },
+    {
+      "id": "mag-daily-ia-comptes-rendus-sortie-20261118",
+      "version": "f0432647002e639b18f38c61832db0b6e4acbfc107621d63f1980cc61a6217a9",
+      "url": "article-daily-ia-comptes-rendus-sortie-20261118.html",
+      "date": "2026-11-18"
+    },
+    {
+      "id": "mag-daily-grossesse-inegalites-suivi-20261118",
+      "version": "a4e4a45f784a2a798f1d17235b9316e7699a82bd555e3fc58c163b591fe073fa",
+      "url": "article-daily-grossesse-inegalites-suivi-20261118.html",
+      "date": "2026-11-18"
+    },
     {
       "id": "mag-daily-cbd-comportement-20261117",
       "version": "0cdb73972c39ac2bc8001a21fffcf333835cdd672e3f423832d44c2a2c31ae2f",

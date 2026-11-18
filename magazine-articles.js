@@ -5340,5 +5340,190 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "74c2d375e8ec49023335a1266e5942caeed042db2c9099647794ae5a84f85337"
+  },
+  {
+    "id": "daily-perturbateurs-endocriniens-rapport-20261118",
+    "url": "article-daily-perturbateurs-endocriniens-rapport-20261118.html",
+    "title": "Perturbateurs endocriniens : que change le nouveau rapport mondial ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé au quotidien",
+    "date": "2026-11-18",
+    "status": "PUBLISHED",
+    "excerpt": "Le rapport OMS–PNUE publié le 17 novembre rassemble plus de dix années de recherches supplémentaires. Il conclut que l’exposition peut commencer avant la naissance et que les données reliant certains perturbateurs endocriniens à des atteintes reproductives, neurologiques, thyroïdiennes, métaboliques ou cardiovasculaires se sont renforcées.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "perturbateurs endocriniens",
+      "OMS",
+      "PNUE"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "028e670aa773b32756beb84f29a683027c3bb0c69d2d55258a820a53dfcef6fd"
+  },
+  {
+    "id": "daily-iec-sartan-operation-20261118",
+    "url": "article-daily-iec-sartan-operation-20261118.html",
+    "title": "Faut-il prendre son IEC ou son sartan le matin d’une opération ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé au quotidien",
+    "date": "2026-11-18",
+    "status": "PUBLISHED",
+    "excerpt": "Un essai randomisé en double aveugle a inclus 2 012 patients âgés en moyenne de 68,8 ans devant subir une chirurgie non cardiaque. L’hypotension périopératoire concernait 31,2 % des patients ayant suspendu leur IEC ou leur sartan le matin de l’intervention, contre 45,5 % de ceux l’ayant pris normalement : différence absolue de 14,4 points.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "IEC",
+      "sartan",
+      "chirurgie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "c26a8e8ddc1ceb41e4300d3c30c8654a56310da4fb889772380c1917a4eb0a91"
+  },
+  {
+    "id": "daily-bproad-tension-diabete-cognition-20261118",
+    "url": "article-daily-bproad-tension-diabete-cognition-20261118.html",
+    "title": "Faire baisser davantage la tension protège-t-il aussi la mémoire en cas de diabète ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé au quotidien",
+    "date": "2026-11-18",
+    "status": "PUBLISHED",
+    "excerpt": "L’analyse cognitive préspécifiée de l’essai BPROAD porte sur 12 434 adultes de 50 ans ou plus ayant un diabète de type 2. Les objectifs comparés étaient une pression systolique inférieure à 120 mmHg ou inférieure à 140 mmHg.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "diabète",
+      "tension",
+      "mémoire"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "70bbd28d45898b96b412a866657bad6bbff98a56a544dfe58f186db81a830011"
+  },
+  {
+    "id": "daily-intomob-mobilite-hopital-20261118",
+    "url": "article-daily-intomob-mobilite-hopital-20261118.html",
+    "title": "À l’hôpital, des affiches et des conseils suffisent-ils à préserver la mobilité des personnes âgées ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé au quotidien",
+    "date": "2026-11-18",
+    "status": "PUBLISHED",
+    "excerpt": "Dans l’essai randomisé INTOMOB, 383 patients hospitalisés, âgés en médiane de 75 ans, ont reçu soit les soins habituels, soit une intervention associant vidéos et brochures, formation des professionnels et affichage dans les services.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "mobilité",
+      "hospitalisation",
+      "personnes âgées"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "84d75b3328fb28a1eb19e824367e750dfd14103bc05c119613fdc5bb4395b4b3"
+  },
+  {
+    "id": "daily-oeufs-cholesterol-20261118",
+    "url": "article-daily-oeufs-cholesterol-20261118.html",
+    "title": "« Manger des œufs fait forcément monter dangereusement le cholestérol »",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé au quotidien",
+    "date": "2026-11-18",
+    "status": "PUBLISHED",
+    "excerpt": "L’œuf contient du cholestérol alimentaire, mais son effet dépend de l’ensemble du régime, notamment des graisses saturées, ainsi que du terrain métabolique individuel. Pour la plupart des personnes en bonne santé, un œuf peut s’intégrer à une alimentation équilibrée. L’attention doit porter sur le profil alimentaire global plutôt que sur un aliment isolé ; un conseil individualisé reste pertinent en cas d’hypercholestérolémie importante ou de maladie cardiovasculaire. American Heart Association",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "œufs",
+      "cholestérol",
+      "alimentation"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "533aa7b64b976883c93b9e116c3cf9ee9912e76e15248fbf4a9b9c936b737018"
+  },
+  {
+    "id": "daily-obesite-une-personne-sur-sept-20261118",
+    "url": "article-daily-obesite-une-personne-sur-sept-20261118.html",
+    "title": "1 personne sur 7",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé au quotidien",
+    "date": "2026-11-18",
+    "status": "PUBLISHED",
+    "excerpt": "Plus d’un milliard de personnes vivent aujourd’hui avec une obésité, soit environ une personne sur sept dans le monde, selon l’OMS. Depuis 1990, sa prévalence a plus que doublé chez les adultes et quadruplé chez les adolescents.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "obésité",
+      "OMS"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "87e0de574a251abb1cc37c3cd4fd7d3d8020aa6bbb2851f809540d415bd34a5a"
+  },
+  {
+    "id": "daily-trottinettes-traumatisme-cranien-20261118",
+    "url": "article-daily-trottinettes-traumatisme-cranien-20261118.html",
+    "title": "Trottinettes électriques",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé au quotidien",
+    "date": "2026-11-18",
+    "status": "PUBLISHED",
+    "excerpt": "Trottinettes électriques : parmi 64 patients interrogés après un traumatisme crânien, 54 ont rapporté au moins un symptôme pendant la récupération. Lorsque le scanner initial était anormal, la durée médiane des symptômes atteignait 11 mois, contre 1,3 mois avec un scanner normal. Étude monocentrique et faible taux de réponse : signal utile, mais estimation probablement imprécise. jamanetwork.com",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "trottinettes électriques",
+      "traumatisme crânien"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "d98ba12bb905b4b978ca943db64004a472f93421fa700a3d622751edee6c308a"
+  },
+  {
+    "id": "daily-ia-comptes-rendus-sortie-20261118",
+    "url": "article-daily-ia-comptes-rendus-sortie-20261118.html",
+    "title": "IA et comptes rendus de sortie",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé au quotidien",
+    "date": "2026-11-18",
+    "status": "PUBLISHED",
+    "excerpt": "IA et comptes rendus de sortie : 89,7 % des résumés générés par un modèle ont été acceptés avec aucune ou seulement de petites corrections, contre 67,1 % des résumés habituels. Des hallucinations restaient présentes dans 6 % des productions de l’IA : la relecture clinique demeure indispensable. jamanetwork.com",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "IA",
+      "comptes rendus de sortie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "f0432647002e639b18f38c61832db0b6e4acbfc107621d63f1980cc61a6217a9"
+  },
+  {
+    "id": "daily-grossesse-inegalites-suivi-20261118",
+    "url": "article-daily-grossesse-inegalites-suivi-20261118.html",
+    "title": "Suivi de grossesse",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé au quotidien",
+    "date": "2026-11-18",
+    "status": "PUBLISHED",
+    "excerpt": "Suivi de grossesse : une cohorte australienne de 1,72 million de naissances retrouve des risques plus élevés de mortinatalité et de mortalité infantile chez certaines mères migrantes non anglophones, quel que soit le moment de la première consultation prénatale. L’étude souligne des inégalités complexes sans démontrer qu’une seule mesure les corrigerait. jamanetwork.com",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "grossesse",
+      "suivi prénatal"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "a4e4a45f784a2a798f1d17235b9316e7699a82bd555e3fc58c163b591fe073fa"
   }
 ];
