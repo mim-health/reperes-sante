@@ -81,7 +81,7 @@
   function renderFiche(q,canonical,items){
     document.body.classList.add('maca-fiche-v2');
     document.querySelectorAll('.site-header .brand img, footer .brand img').forEach(img=>{img.src=OFFICIAL_LOGO;});
-    const pilot=/br[uû]lures? urinaires?|vertiges? (en se levant|au lever|orthostatique)/i.test(norm(q.title||q.question||''));
+    const pilot=String(q.id||'')==='brulures-urinaires-adulte' || /brulures? urinaires?|vertiges?|tete qui tourne quand (je|on) (me |se )?leve|hypotension orthostatique/i.test(norm(q.title||q.question||'')) && !/vertiges? :? les causes frequentes/i.test(norm(q.title||q.question||''));
     const detail=q.detail?(pilot?`<details class="maca-fv2-card maca-fv2-detail maca-ux-details" open><summary>Comprendre</summary><div class="maca-ux-content">${paragraphs(q.detail)}</div></details>`:`<section class="maca-fv2-card maca-fv2-detail"><h2>Pour mieux comprendre</h2>${paragraphs(q.detail)}</section>`):'';
     const vigilance=q.watch?(pilot?`<details class="maca-fv2-card maca-fv2-vigilance maca-ux-details" open><summary>Que faire ? — ${esc(q.watchTitle||'Points de vigilance')}</summary><div class="maca-ux-content">${paragraphs(q.watch)}</div></details>`:`<section class="maca-fv2-card maca-fv2-vigilance"><h2>${esc(q.watchTitle||'Point de vigilance')}</h2>${paragraphs(q.watch)}</section>`):'';
     const verified=q.verifiedAt?`<div class="maca-fv2-sidecard"><strong>Contenu vérifié</strong><p>Vérifié le ${esc(q.verifiedAt)}.</p></div>`:'';
