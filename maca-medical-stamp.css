@@ -1,0 +1,16 @@
+/* MACA-UX-01 — sceau circulaire validé. Affichage conditionné par validation existante. */
+body.maca-fiche-v2 .maca-fv2-hero:has(.maca-medical-stamp){padding-right:140px}
+body.maca-fiche-v2 .maca-fv2-validation.maca-medical-stamp{
+ position:absolute;top:25px;right:28px;z-index:2;display:flex;align-items:center;justify-content:center;
+ width:91px;height:91px;min-height:0;box-sizing:border-box;margin:0;padding:0;
+ border:0;border-radius:50%;background:#075337;color:#fff9e8;
+ text-decoration:none;transform:rotate(-8deg);opacity:1;
+ box-shadow:0 2px 6px rgba(38,58,52,.13);
+}
+body.maca-fiche-v2 .maca-medical-stamp-art{display:block;width:100%;height:100%;overflow:visible}
+body.maca-fiche-v2 .maca-medical-stamp:hover{filter:brightness(1.07);text-decoration:none}
+body.maca-fiche-v2 .maca-medical-stamp:focus-visible{outline:3px solid #cf6238;outline-offset:4px}
+@media(max-width:560px){
+ body.maca-fiche-v2 .maca-fv2-hero:has(.maca-medical-stamp){padding-right:20px;padding-top:107px}
+ body.maca-fiche-v2 .maca-fv2-validation.maca-medical-stamp{top:13px;right:17px;width:77px;height:77px}
+}
