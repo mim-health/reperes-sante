@@ -10482,7 +10482,12 @@
         "evidence": "Autorisation explicite de publication immédiate dans le ticket P0 du 18 novembre 2026, puis transmission du fichier « Texte collé.txt » avec le message « voici le contenu validé ». Validation acquise ; aucune nouvelle validation ni réécriture nécessaire.",
         "contentHash": "028e670aa773b32756beb84f29a683027c3bb0c69d2d55258a820a53dfcef6fd",
         "snapshotHash": "543172d0cf301a50521e67878fb3230cebcdba0ba1106fc0ed67532430d57644"
-      }
+      },
+      "keywords": [
+        "perturbateurs endocriniens",
+        "OMS",
+        "PNUE"
+      ]
     },
     {
       "id": "daily-iec-sartan-operation-20261118",
@@ -10507,7 +10512,12 @@
         "evidence": "Autorisation explicite de publication immédiate dans le ticket P0 du 18 novembre 2026, puis transmission du fichier « Texte collé.txt » avec le message « voici le contenu validé ». Validation acquise ; aucune nouvelle validation ni réécriture nécessaire.",
         "contentHash": "c26a8e8ddc1ceb41e4300d3c30c8654a56310da4fb889772380c1917a4eb0a91",
         "snapshotHash": "543172d0cf301a50521e67878fb3230cebcdba0ba1106fc0ed67532430d57644"
-      }
+      },
+      "keywords": [
+        "IEC",
+        "sartan",
+        "chirurgie"
+      ]
     },
     {
       "id": "daily-bproad-tension-diabete-cognition-20261118",
@@ -10532,7 +10542,12 @@
         "evidence": "Autorisation explicite de publication immédiate dans le ticket P0 du 18 novembre 2026, puis transmission du fichier « Texte collé.txt » avec le message « voici le contenu validé ». Validation acquise ; aucune nouvelle validation ni réécriture nécessaire.",
         "contentHash": "70bbd28d45898b96b412a866657bad6bbff98a56a544dfe58f186db81a830011",
         "snapshotHash": "543172d0cf301a50521e67878fb3230cebcdba0ba1106fc0ed67532430d57644"
-      }
+      },
+      "keywords": [
+        "diabète",
+        "tension",
+        "mémoire"
+      ]
     },
     {
       "id": "daily-intomob-mobilite-hopital-20261118",
@@ -10558,7 +10573,12 @@
         "evidence": "Autorisation explicite de publication immédiate dans le ticket P0 du 18 novembre 2026, puis transmission du fichier « Texte collé.txt » avec le message « voici le contenu validé ». Validation acquise ; aucune nouvelle validation ni réécriture nécessaire.",
         "contentHash": "84d75b3328fb28a1eb19e824367e750dfd14103bc05c119613fdc5bb4395b4b3",
         "snapshotHash": "543172d0cf301a50521e67878fb3230cebcdba0ba1106fc0ed67532430d57644"
-      }
+      },
+      "keywords": [
+        "mobilité",
+        "hospitalisation",
+        "personnes âgées"
+      ]
     },
     {
       "id": "daily-oeufs-cholesterol-20261118",
@@ -10583,7 +10603,12 @@
         "evidence": "Autorisation explicite de publication immédiate dans le ticket P0 du 18 novembre 2026, puis transmission du fichier « Texte collé.txt » avec le message « voici le contenu validé ». Validation acquise ; aucune nouvelle validation ni réécriture nécessaire.",
         "contentHash": "533aa7b64b976883c93b9e116c3cf9ee9912e76e15248fbf4a9b9c936b737018",
         "snapshotHash": "543172d0cf301a50521e67878fb3230cebcdba0ba1106fc0ed67532430d57644"
-      }
+      },
+      "keywords": [
+        "œufs",
+        "cholestérol",
+        "alimentation"
+      ]
     },
     {
       "id": "daily-obesite-une-personne-sur-sept-20261118",
@@ -10608,7 +10633,11 @@
         "evidence": "Autorisation explicite de publication immédiate dans le ticket P0 du 18 novembre 2026, puis transmission du fichier « Texte collé.txt » avec le message « voici le contenu validé ». Validation acquise ; aucune nouvelle validation ni réécriture nécessaire.",
         "contentHash": "87e0de574a251abb1cc37c3cd4fd7d3d8020aa6bbb2851f809540d415bd34a5a",
         "snapshotHash": "543172d0cf301a50521e67878fb3230cebcdba0ba1106fc0ed67532430d57644"
-      }
+      },
+      "keywords": [
+        "obésité",
+        "OMS"
+      ]
     },
     {
       "id": "daily-trottinettes-traumatisme-cranien-20261118",
@@ -10633,7 +10662,11 @@
         "evidence": "Autorisation explicite de publication immédiate dans le ticket P0 du 18 novembre 2026, puis transmission du fichier « Texte collé.txt » avec le message « voici le contenu validé ». Validation acquise ; aucune nouvelle validation ni réécriture nécessaire.",
         "contentHash": "d98ba12bb905b4b978ca943db64004a472f93421fa700a3d622751edee6c308a",
         "snapshotHash": "543172d0cf301a50521e67878fb3230cebcdba0ba1106fc0ed67532430d57644"
-      }
+      },
+      "keywords": [
+        "trottinettes électriques",
+        "traumatisme crânien"
+      ]
     },
     {
       "id": "daily-ia-comptes-rendus-sortie-20261118",
@@ -10658,7 +10691,11 @@
         "evidence": "Autorisation explicite de publication immédiate dans le ticket P0 du 18 novembre 2026, puis transmission du fichier « Texte collé.txt » avec le message « voici le contenu validé ». Validation acquise ; aucune nouvelle validation ni réécriture nécessaire.",
         "contentHash": "f0432647002e639b18f38c61832db0b6e4acbfc107621d63f1980cc61a6217a9",
         "snapshotHash": "543172d0cf301a50521e67878fb3230cebcdba0ba1106fc0ed67532430d57644"
-      }
+      },
+      "keywords": [
+        "IA",
+        "comptes rendus de sortie"
+      ]
     },
     {
       "id": "daily-grossesse-inegalites-suivi-20261118",
@@ -10683,7 +10720,11 @@
         "evidence": "Autorisation explicite de publication immédiate dans le ticket P0 du 18 novembre 2026, puis transmission du fichier « Texte collé.txt » avec le message « voici le contenu validé ». Validation acquise ; aucune nouvelle validation ni réécriture nécessaire.",
         "contentHash": "a4e4a45f784a2a798f1d17235b9316e7699a82bd555e3fc58c163b591fe073fa",
         "snapshotHash": "543172d0cf301a50521e67878fb3230cebcdba0ba1106fc0ed67532430d57644"
-      }
+      },
+      "keywords": [
+        "grossesse",
+        "suivi prénatal"
+      ]
     }
   ],
   "editions": [
