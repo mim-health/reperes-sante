@@ -1,0 +1,11 @@
+/* MACA-UX-01: two-fiche pilot; scoped and reversible. */
+body.maca-fiche-v2 .maca-ux-pilot .maca-fv2-grid{margin-top:14px}
+body.maca-fiche-v2 .maca-ux-pilot .maca-fv2-hero{padding-bottom:25px}
+body.maca-fiche-v2 .maca-ux-pilot .maca-fv2-short{border:2px solid #b6cfb8;box-shadow:0 12px 28px #33483f12}
+body.maca-fiche-v2 .maca-ux-details{padding:0;overflow:hidden}
+body.maca-fiche-v2 .maca-ux-details summary{display:list-item;cursor:pointer;padding:23px 30px;font-family:'Newsreader',Georgia,serif;font-size:27px;font-weight:700;color:#33483f;line-height:1.25}
+body.maca-fiche-v2 .maca-ux-details summary:focus-visible{outline:3px solid #cf6238;outline-offset:-5px}
+body.maca-fiche-v2 .maca-ux-details .maca-ux-content{padding:0 30px 24px}
+body.maca-fiche-v2 .maca-ux-details .maca-ux-content p{margin:0 0 14px;line-height:1.7}
+body.maca-fiche-v2 .maca-ux-details .maca-ux-content p:last-child{margin-bottom:0}
+@media(max-width:560px){body.maca-fiche-v2 .maca-ux-details summary{padding:20px;font-size:23px}body.maca-fiche-v2 .maca-ux-details .maca-ux-content{padding:0 20px 20px}body.maca-fiche-v2 .maca-ux-pilot .maca-fv2-hero{padding-bottom:20px}}
