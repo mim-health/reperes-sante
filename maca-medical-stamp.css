@@ -1,15 +1,18 @@
-/* MACA-UX-01 — tampon médical uniquement, aucune autre modification de mise en page. */
+/* MACA-UX-01 — pastille médicale ronde, discrète, sans modification des fiches. */
+body.maca-fiche-v2 .maca-fv2-hero:has(.maca-medical-stamp){padding-right:140px}
 body.maca-fiche-v2 .maca-fv2-validation.maca-medical-stamp{
-  display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;
-  width:174px;min-height:65px;margin:19px 0 4px;padding:8px 14px;
-  border:3px double #476b60;border-radius:9px;background:transparent;color:#476b60;
-  font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:900;
-  letter-spacing:.105em;line-height:1.23;text-align:center;text-decoration:none;
-  text-transform:uppercase;transform:rotate(-7deg);transform-origin:center;
-  box-shadow:inset 0 0 0 2px rgba(71,107,96,.12),1px 1px 0 rgba(71,107,96,.13);
-  text-shadow:.4px 0 rgba(71,107,96,.45);opacity:.93;
+ position:absolute;top:25px;right:28px;z-index:2;display:flex;align-items:center;justify-content:center;
+ width:91px;height:91px;min-height:0;box-sizing:border-box;margin:0;padding:9px;
+ border:2px double #547365;border-radius:50%;background:rgba(255,253,248,.72);color:#476b60;
+ font-family:Arial,Helvetica,sans-serif;font-size:9px;font-weight:800;letter-spacing:.035em;
+ line-height:1.23;text-align:center;text-decoration:none;text-transform:uppercase;
+ transform:rotate(-8deg);box-shadow:inset 0 0 0 3px rgba(71,107,96,.10);
+ text-shadow:.25px 0 rgba(71,107,96,.28);opacity:.9;
 }
-body.maca-fiche-v2 .maca-medical-stamp-text{display:block;position:relative}
+body.maca-fiche-v2 .maca-medical-stamp-text{display:block}
 body.maca-fiche-v2 .maca-medical-stamp:hover{opacity:1;text-decoration:none}
-body.maca-fiche-v2 .maca-medical-stamp:focus-visible{outline:3px solid #cf6238;outline-offset:5px}
-@media(prefers-reduced-motion:reduce){body.maca-fiche-v2 .maca-medical-stamp{transition:none}}
+body.maca-fiche-v2 .maca-medical-stamp:focus-visible{outline:3px solid #cf6238;outline-offset:4px}
+@media(max-width:560px){
+ body.maca-fiche-v2 .maca-fv2-hero:has(.maca-medical-stamp){padding-right:20px;padding-top:107px}
+ body.maca-fiche-v2 .maca-fv2-validation.maca-medical-stamp{top:13px;right:17px;width:77px;height:77px;font-size:7.6px;padding:7px}
+}
