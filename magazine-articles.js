@@ -5525,5 +5525,168 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "a4e4a45f784a2a798f1d17235b9316e7699a82bd555e3fc58c163b591fe073fa"
+  },
+  {
+    "id": "daily-tirzepatide-adolescents-20261119",
+    "url": "article-daily-tirzepatide-adolescents-20261119.html",
+    "title": "Obésité chez l’adolescent : la tirzépatide change-t-elle la donne ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-19",
+    "status": "PUBLISHED",
+    "excerpt": "L’IMC a diminué de 18,5 % sous tirzépatide, contre une augmentation de 0,5 % sous placebo dans un essai de 160 adolescents.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "tirzepatide",
+      "adolescents"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "1476e31d2df5eec4a12562a5c190c4cb8ea6a1d7fcca9c9d9831f91746029dba"
+  },
+  {
+    "id": "daily-diabete-type1-oms-20261119",
+    "url": "article-daily-diabete-type1-oms-20261119.html",
+    "title": "Diabète de type 1 chez l’adulte : que changent les recommandations de l’OMS ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-19",
+    "status": "PUBLISHED",
+    "excerpt": "L’OMS insiste sur l’insulinothérapie adaptée, la surveillance glycémique et l’accès continu aux soins.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "diabete",
+      "type1",
+      "oms"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "842e34b721fe7f13ce4fae0d400ea29f0279dcebb78a763f4d31ed79d3381537"
+  },
+  {
+    "id": "daily-inflammation-infarctus-zeus-20261119",
+    "url": "article-daily-inflammation-infarctus-zeus-20261119.html",
+    "title": "Inflammation et infarctus : pourquoi bloquer l’inflammation ne suffit-il pas toujours à protéger le cœur ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-19",
+    "status": "PUBLISHED",
+    "excerpt": "Le ziltivékimab n’a pas diminué les événements cardiovasculaires dans l’essai ZEUS malgré son effet sur l’interleukine-6.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "inflammation",
+      "infarctus",
+      "zeus"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "bbc44411275bd0a3bada1e55891f8750ed5467fd78b30d0757171258575fb90a"
+  },
+  {
+    "id": "daily-antibiotiques-rhume-grippe-20261119",
+    "url": "article-daily-antibiotiques-rhume-grippe-20261119.html",
+    "title": "Un antibiotique accélère forcément la guérison d’un rhume ou d’une grippe : vrai ou faux ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-19",
+    "status": "PUBLISHED",
+    "excerpt": "FAUX. Les antibiotiques n’agissent pas sur les virus responsables du rhume et de la grippe.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "antibiotiques",
+      "rhume",
+      "grippe"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "96ad119c78853cdf3eb0a899689b6b8cba2ca48841b694edfe58e790c324b2ea"
+  },
+  {
+    "id": "daily-grippe-urgences-54-20261119",
+    "url": "article-daily-grippe-urgences-54-20261119.html",
+    "title": "Grippe : +54 % de passages aux urgences en une semaine",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-19",
+    "status": "PUBLISHED",
+    "excerpt": "Les passages aux urgences pour grippe ou syndrome grippal ont augmenté de 54 % du 9 au 15 novembre 2026.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "grippe",
+      "urgences",
+      "54"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "7129f8ce4c59b869b661b900f7545a2a1a150ba225e3bd95c1ecd15b40d7aa32"
+  },
+  {
+    "id": "daily-covid-urgences-20261119",
+    "url": "article-daily-covid-urgences-20261119.html",
+    "title": "Covid-19 : les passages aux urgences progressent",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-19",
+    "status": "PUBLISHED",
+    "excerpt": "Les passages aux urgences pour Covid-19 ont progressé de 37 % en une semaine.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "covid",
+      "urgences"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "c730c6531dedadfc90fdc33f17c31d67b5c5a05f2b6ba8a3dffa6de08b863f68"
+  },
+  {
+    "id": "daily-denutrition-20261119",
+    "url": "article-daily-denutrition-20261119.html",
+    "title": "Dénutrition : reconnaître les signes d’alerte",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-19",
+    "status": "PUBLISHED",
+    "excerpt": "Environ deux millions de personnes seraient concernées en France.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "denutrition"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "60fb495ed0ce5030271a97a5fb3df185397f11f763dc7e2217a93f76a67d4d23"
+  },
+  {
+    "id": "daily-readaptation-cardiaque-20261119",
+    "url": "article-daily-readaptation-cardiaque-20261119.html",
+    "title": "Réadaptation cardiaque : ne pas exclure les personnes âgées",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-19",
+    "status": "PUBLISHED",
+    "excerpt": "L’âge avancé et la fragilité ne doivent pas, à eux seuls, exclure une réadaptation cardiaque adaptée.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "readaptation",
+      "cardiaque"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "14f120043794c5b226ca56611186553ae05c6a98d954dff14c9af307b10a2147"
   }
 ];
