@@ -10725,6 +10725,237 @@
         "grossesse",
         "suivi prénatal"
       ]
+    },
+    {
+      "id": "daily-tirzepatide-adolescents-20261119",
+      "title": "Obésité chez l’adolescent : la tirzépatide change-t-elle la donne ?",
+      "answer": "L’IMC a diminué de 18,5 % sous tirzépatide, contre une augmentation de 0,5 % sous placebo dans un essai de 160 adolescents.",
+      "html": "<article><h1>Obésité chez l’adolescent : la tirzépatide change-t-elle la donne ?</h1><p><strong>L’IMC a diminué de 18,5 % sous tirzépatide, contre une augmentation de 0,5 % sous placebo dans un essai de 160 adolescents.</strong></p><p>Dans l’essai SURMOUNT-ADOLESCENTS, 160 jeunes de 12 à 17 ans présentant une obésité, ou un surpoids avec complication, ont reçu pendant 72 semaines de la tirzépatide ou un placebo, avec accompagnement sur le mode de vie. Une baisse d’au moins 5 % de l’IMC concernait 79,6 % des adolescents traités, contre 28,5 % sous placebo. Les effets indésirables les plus fréquents étaient digestifs. L’obésité sévère de l’adolescent est une maladie chronique qui peut nécessiter bien davantage qu’un simple conseil alimentaire. Limites : seulement 160 participants, suivi de 72 semaines, persistance du bénéfice après l’arrêt incertaine. La tirzépatide n’est pas autorisée dans l’Union européenne pour la gestion du poids avant 18 ans.</p><h2>Sources</h2><ul><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/?term=SURMOUNT-ADOLESCENTS\">JAMA — SURMOUNT-ADOLESCENTS</a></li><li><a href=\"https://www.ema.europa.eu/en/medicines/human/EPAR/mounjaro\">EMA — Mounjaro</a></li></ul></article>",
+      "date": "2026-11-19",
+      "url": "article-daily-tirzepatide-adolescents-20261119.html",
+      "format": "article",
+      "theme": "Santé",
+      "keywords": [
+        "tirzepatide",
+        "adolescents"
+      ],
+      "sources": [
+        {
+          "label": "JAMA — SURMOUNT-ADOLESCENTS",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=SURMOUNT-ADOLESCENTS"
+        },
+        {
+          "label": "EMA — Mounjaro",
+          "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/mounjaro"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-19T12:06:00+01:00",
+        "evidence": "Validation explicite et instruction de publication immédiate le 19 novembre 2026. Buscopan retiré sans remplacement.",
+        "contentHash": "1476e31d2df5eec4a12562a5c190c4cb8ea6a1d7fcca9c9d9831f91746029dba"
+      }
+    },
+    {
+      "id": "daily-diabete-type1-oms-20261119",
+      "title": "Diabète de type 1 chez l’adulte : que changent les recommandations de l’OMS ?",
+      "answer": "L’OMS insiste sur l’insulinothérapie adaptée, la surveillance glycémique et l’accès continu aux soins.",
+      "html": "<article><h1>Diabète de type 1 chez l’adulte : que changent les recommandations de l’OMS ?</h1><p><strong>L’OMS insiste sur l’insulinothérapie adaptée, la surveillance glycémique et l’accès continu aux soins.</strong></p><p>L’OMS recommande une insulinothérapie intensifiée, généralement plusieurs injections quotidiennes ajustées à la glycémie, ainsi qu’une surveillance régulière. Les analogues de l’insuline peuvent être utilisés, mais l’insuline humaine reste une option efficace et souvent moins coûteuse. L’objectif principal est mondial : garantir la continuité de l’insuline et de l’autosurveillance, y compris dans les zones à faibles ressources ou en situation d’urgence. Les recommandations ne remplacent pas les protocoles français ni la personnalisation du traitement.</p><h2>Sources</h2><ul><li><a href=\"https://www.who.int/publications\">OMS — diabète de type 1</a></li></ul></article>",
+      "date": "2026-11-19",
+      "url": "article-daily-diabete-type1-oms-20261119.html",
+      "format": "article",
+      "theme": "Santé",
+      "keywords": [
+        "diabete",
+        "type1",
+        "oms"
+      ],
+      "sources": [
+        {
+          "label": "OMS — diabète de type 1",
+          "url": "https://www.who.int/publications"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-19T12:06:00+01:00",
+        "evidence": "Validation explicite et instruction de publication immédiate le 19 novembre 2026. Buscopan retiré sans remplacement.",
+        "contentHash": "842e34b721fe7f13ce4fae0d400ea29f0279dcebb78a763f4d31ed79d3381537"
+      }
+    },
+    {
+      "id": "daily-inflammation-infarctus-zeus-20261119",
+      "title": "Inflammation et infarctus : pourquoi bloquer l’inflammation ne suffit-il pas toujours à protéger le cœur ?",
+      "answer": "Le ziltivékimab n’a pas diminué les événements cardiovasculaires dans l’essai ZEUS malgré son effet sur l’interleukine-6.",
+      "html": "<article><h1>Inflammation et infarctus : pourquoi bloquer l’inflammation ne suffit-il pas toujours à protéger le cœur ?</h1><p><strong>Le ziltivékimab n’a pas diminué les événements cardiovasculaires dans l’essai ZEUS malgré son effet sur l’interleukine-6.</strong></p><p>Dans l’essai ZEUS, des patients ayant une maladie cardiovasculaire, une maladie rénale chronique et une inflammation persistante ont reçu du ziltivékimab ou un placebo. Malgré son action biologique sur l’interleukine-6, le traitement n’a pas diminué les événements cardiovasculaires. Les infections graves ont concerné 20,4 % du groupe traité et 17,9 % du groupe placebo. Ce résultat rappelle qu’améliorer un marqueur biologique ne garantit pas un bénéfice clinique. Le ziltivékimab reste expérimental dans cette indication.</p><h2>Sources</h2><ul><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/?term=ZEUS+ziltivekimab\">Essai ZEUS</a></li></ul></article>",
+      "date": "2026-11-19",
+      "url": "article-daily-inflammation-infarctus-zeus-20261119.html",
+      "format": "article",
+      "theme": "Santé",
+      "keywords": [
+        "inflammation",
+        "infarctus",
+        "zeus"
+      ],
+      "sources": [
+        {
+          "label": "Essai ZEUS",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=ZEUS+ziltivekimab"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-19T12:06:00+01:00",
+        "evidence": "Validation explicite et instruction de publication immédiate le 19 novembre 2026. Buscopan retiré sans remplacement.",
+        "contentHash": "bbc44411275bd0a3bada1e55891f8750ed5467fd78b30d0757171258575fb90a"
+      }
+    },
+    {
+      "id": "daily-antibiotiques-rhume-grippe-20261119",
+      "title": "Un antibiotique accélère forcément la guérison d’un rhume ou d’une grippe : vrai ou faux ?",
+      "answer": "FAUX. Les antibiotiques n’agissent pas sur les virus responsables du rhume et de la grippe.",
+      "html": "<article><h1>Un antibiotique accélère forcément la guérison d’un rhume ou d’une grippe : vrai ou faux ?</h1><p><strong>FAUX. Les antibiotiques n’agissent pas sur les virus responsables du rhume et de la grippe.</strong></p><p>Le rhume et la grippe sont des infections virales. Les antibiotiques n’agissent pas sur les virus et exposent inutilement aux effets indésirables ainsi qu’à l’antibiorésistance. Ils peuvent devenir nécessaires uniquement lorsqu’une infection bactérienne est diagnostiquée ou fortement suspectée.</p><h2>Sources</h2><ul><li><a href=\"https://www.ameli.fr/assure\">Assurance Maladie</a></li></ul></article>",
+      "date": "2026-11-19",
+      "url": "article-daily-antibiotiques-rhume-grippe-20261119.html",
+      "format": "article",
+      "theme": "Santé",
+      "keywords": [
+        "antibiotiques",
+        "rhume",
+        "grippe"
+      ],
+      "sources": [
+        {
+          "label": "Assurance Maladie",
+          "url": "https://www.ameli.fr/assure"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-19T12:06:00+01:00",
+        "evidence": "Validation explicite et instruction de publication immédiate le 19 novembre 2026. Buscopan retiré sans remplacement.",
+        "contentHash": "96ad119c78853cdf3eb0a899689b6b8cba2ca48841b694edfe58e790c324b2ea"
+      }
+    },
+    {
+      "id": "daily-grippe-urgences-54-20261119",
+      "title": "Grippe : +54 % de passages aux urgences en une semaine",
+      "answer": "Les passages aux urgences pour grippe ou syndrome grippal ont augmenté de 54 % du 9 au 15 novembre 2026.",
+      "html": "<article><h1>Grippe : +54 % de passages aux urgences en une semaine</h1><p><strong>Les passages aux urgences pour grippe ou syndrome grippal ont augmenté de 54 % du 9 au 15 novembre 2026.</strong></p><p>C’est l’augmentation hebdomadaire des passages aux urgences pour grippe ou syndrome grippal en France durant la semaine du 9 au 15 novembre, soit 696 passages supplémentaires. Ce chiffre traduit une circulation précoce en hausse, mais les indicateurs restaient encore au niveau de base à l’échelle nationale. L’Île-de-France et les Hauts-de-France étaient déjà en phase pré-épidémique.</p><h2>Sources</h2><ul><li><a href=\"https://www.santepubliquefrance.fr/\">Santé publique France</a></li></ul></article>",
+      "date": "2026-11-19",
+      "url": "article-daily-grippe-urgences-54-20261119.html",
+      "format": "article",
+      "theme": "Santé",
+      "keywords": [
+        "grippe",
+        "urgences",
+        "54"
+      ],
+      "sources": [
+        {
+          "label": "Santé publique France",
+          "url": "https://www.santepubliquefrance.fr/"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-19T12:06:00+01:00",
+        "evidence": "Validation explicite et instruction de publication immédiate le 19 novembre 2026. Buscopan retiré sans remplacement.",
+        "contentHash": "7129f8ce4c59b869b661b900f7545a2a1a150ba225e3bd95c1ecd15b40d7aa32"
+      }
+    },
+    {
+      "id": "daily-covid-urgences-20261119",
+      "title": "Covid-19 : les passages aux urgences progressent",
+      "answer": "Les passages aux urgences pour Covid-19 ont progressé de 37 % en une semaine.",
+      "html": "<article><h1>Covid-19 : les passages aux urgences progressent</h1><p><strong>Les passages aux urgences pour Covid-19 ont progressé de 37 % en une semaine.</strong></p><p>Les passages aux urgences pour Covid-19 ont progressé de 37 % en une semaine, mais l’impact global sur les soins et les décès demeure faible à ce stade.</p><h2>Sources</h2><ul><li><a href=\"https://www.santepubliquefrance.fr/\">Santé publique France</a></li></ul></article>",
+      "date": "2026-11-19",
+      "url": "article-daily-covid-urgences-20261119.html",
+      "format": "article",
+      "theme": "Santé",
+      "keywords": [
+        "covid",
+        "urgences"
+      ],
+      "sources": [
+        {
+          "label": "Santé publique France",
+          "url": "https://www.santepubliquefrance.fr/"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-19T12:06:00+01:00",
+        "evidence": "Validation explicite et instruction de publication immédiate le 19 novembre 2026. Buscopan retiré sans remplacement.",
+        "contentHash": "c730c6531dedadfc90fdc33f17c31d67b5c5a05f2b6ba8a3dffa6de08b863f68"
+      }
+    },
+    {
+      "id": "daily-denutrition-20261119",
+      "title": "Dénutrition : reconnaître les signes d’alerte",
+      "answer": "Environ deux millions de personnes seraient concernées en France.",
+      "html": "<article><h1>Dénutrition : reconnaître les signes d’alerte</h1><p><strong>Environ deux millions de personnes seraient concernées en France.</strong></p><p>Une perte de poids involontaire, des vêtements devenus trop larges ou une diminution inhabituelle des apports doivent conduire à en parler à un professionnel de santé.</p><h2>Sources</h2><ul><li><a href=\"https://www.ameli.fr/assure\">Assurance Maladie</a></li></ul></article>",
+      "date": "2026-11-19",
+      "url": "article-daily-denutrition-20261119.html",
+      "format": "article",
+      "theme": "Santé",
+      "keywords": [
+        "denutrition"
+      ],
+      "sources": [
+        {
+          "label": "Assurance Maladie",
+          "url": "https://www.ameli.fr/assure"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-19T12:06:00+01:00",
+        "evidence": "Validation explicite et instruction de publication immédiate le 19 novembre 2026. Buscopan retiré sans remplacement.",
+        "contentHash": "60fb495ed0ce5030271a97a5fb3df185397f11f763dc7e2217a93f76a67d4d23"
+      }
+    },
+    {
+      "id": "daily-readaptation-cardiaque-20261119",
+      "title": "Réadaptation cardiaque : ne pas exclure les personnes âgées",
+      "answer": "L’âge avancé et la fragilité ne doivent pas, à eux seuls, exclure une réadaptation cardiaque adaptée.",
+      "html": "<article><h1>Réadaptation cardiaque : ne pas exclure les personnes âgées</h1><p><strong>L’âge avancé et la fragilité ne doivent pas, à eux seuls, exclure une réadaptation cardiaque adaptée.</strong></p><p>L’âge avancé, la fragilité ou les maladies associées ne doivent pas, à eux seuls, exclure un patient d’un programme adapté. La Société européenne de cardiologie propose des ressources destinées aux patients et à leurs proches.</p><h2>Sources</h2><ul><li><a href=\"https://www.escardio.org/Guidelines\">ESC</a></li></ul></article>",
+      "date": "2026-11-19",
+      "url": "article-daily-readaptation-cardiaque-20261119.html",
+      "format": "article",
+      "theme": "Santé",
+      "keywords": [
+        "readaptation",
+        "cardiaque"
+      ],
+      "sources": [
+        {
+          "label": "ESC",
+          "url": "https://www.escardio.org/Guidelines"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-19T12:06:00+01:00",
+        "evidence": "Validation explicite et instruction de publication immédiate le 19 novembre 2026. Buscopan retiré sans remplacement.",
+        "contentHash": "14f120043794c5b226ca56611186553ae05c6a98d954dff14c9af307b10a2147"
+      }
     }
   ],
   "editions": [
@@ -12209,6 +12440,59 @@
         },
         {
           "contentId": "daily-grossesse-inegalites-suivi-20261118",
+          "slot": "DONNÉES",
+          "icon": "•"
+        }
+      ]
+    },
+    {
+      "id": "edition-2026-11-19",
+      "date": "2026-11-19",
+      "publishAt": "2026-11-19T12:06:00+01:00",
+      "complete": true,
+      "items": [
+        {
+          "contentId": "daily-tirzepatide-adolescents-20261119",
+          "slot": "À LA UNE",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-diabete-type1-oms-20261119",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-inflammation-infarctus-zeus-20261119",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-paracetamol-20261014",
+          "slot": "FICHE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-antibiotiques-rhume-grippe-20261119",
+          "slot": "VRAI OU FAUX",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-grippe-urgences-54-20261119",
+          "slot": "LE CHIFFRE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-covid-urgences-20261119",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-denutrition-20261119",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-readaptation-cardiaque-20261119",
           "slot": "DONNÉES",
           "icon": "•"
         }
