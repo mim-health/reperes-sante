@@ -10956,6 +10956,266 @@
         "evidence": "Validation explicite et instruction de publication immédiate le 19 novembre 2026. Buscopan retiré sans remplacement.",
         "contentHash": "14f120043794c5b226ca56611186553ae05c6a98d954dff14c9af307b10a2147"
       }
+    },
+    {
+      "id": "daily-stream-statines-20261120",
+      "title": "Après 70 ans, peut-on arrêter ses statines sans danger ?",
+      "answer": "Un essai randomisé suggère que l’arrêt peut être discuté chez certains patients sans maladie cardiovasculaire connue, mais ne démontre pas l’absence de risque.",
+      "html": "<article><h1>Après 70 ans, peut-on arrêter ses statines sans danger ?</h1><p><strong>Un essai randomisé suggère que l’arrêt peut être discuté chez certains patients sans maladie cardiovasculaire connue, mais ne démontre pas l’absence de risque.</strong></p><h2>Ce qu’il faut retenir</h2><p>Dans l’essai STREAM, 1 880 personnes âgées d’au moins 70 ans, présentant plusieurs maladies chroniques et prenant une statine en prévention primaire, ont été suivies pendant environ deux ans. Les événements cardiovasculaires ou décès concernaient 12,7 % du groupe ayant arrêté et 9,2 % du groupe poursuivant le traitement.</p><p>L’analyse principale a conclu à une non-infériorité de l’arrêt selon le critère statistique choisi. Cela ne démontre pas que l’arrêt est sans risque pour chaque patient.</p><h2>Intérêt pour les patients</h2><p>La question est concrète pour les personnes âgées polymédiquées : faut-il poursuivre indéfiniment un traitement préventif ?</p><h2>Limites</h2><p>Essai ouvert, suivi d’environ deux ans, résultats non transposables aux personnes ayant déjà présenté un infarctus ou un AVC. Ne pas interrompre son traitement sur la seule base de cet article.</p><h2>Sources</h2><ul><li><a href=\"https://www.nejm.org/doi/full/10.1056/NEJMoa2606634\">NEJM — Essai STREAM, 7 novembre 2026</a></li></ul></article>",
+      "date": "2026-11-20",
+      "url": "article-daily-stream-statines-20261120.html",
+      "format": "article",
+      "theme": "Santé",
+      "keywords": [
+        "statines",
+        "personnes âgées",
+        "prévention cardiovasculaire"
+      ],
+      "sources": [
+        {
+          "label": "NEJM — Essai STREAM, 7 novembre 2026",
+          "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2606634"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-20T09:43:00+01:00",
+        "evidence": "Validation médicale explicite de la conférence du 20 novembre 2026 et autorisation de publication immédiate dans le fil MACA — Éditorial.",
+        "contentHash": "1759fa8212fa85e7b2a5f73af6318049fcd792b50909736c849eca1c976c3805"
+      }
+    },
+    {
+      "id": "daily-comeback-mobilite-20261120",
+      "title": "Pour retrouver de la mobilité, un accompagnement humain est-il plus efficace que des SMS ?",
+      "answer": "Un essai australien de 512 adultes montre un bénéfice modeste du coaching téléphonique par un kinésithérapeute.",
+      "html": "<article><h1>Pour retrouver de la mobilité, un accompagnement humain est-il plus efficace que des SMS ?</h1><p><strong>Un essai australien de 512 adultes montre un bénéfice modeste du coaching téléphonique par un kinésithérapeute.</strong></p><p>Dans l’essai ComeBACK, 512 adultes ayant des difficultés à marcher ont été étudiés. Des appels réguliers avec un kinésithérapeute ont permis d’augmenter modestement l’activité physique : différence moyenne de 931 pas par jour à six mois par rapport au groupe témoin.</p><p>Le coaching téléphonique toutes les deux semaines a été plus efficace que de simples messages de motivation. Les SMS seuls n’ont pas montré d’amélioration statistiquement significative.</p><h2>Limites</h2><p>Participants capables de sortir sans aide humaine, effet modeste ; bénéfice à long terme et prévention des chutes non établis.</p><h2>Sources</h2><ul><li><a href=\"https://doi.org/10.1136/bmj-2026-101157\">BMJ — Essai ComeBACK, 19 novembre 2026</a></li></ul></article>",
+      "date": "2026-11-20",
+      "url": "article-daily-comeback-mobilite-20261120.html",
+      "format": "article",
+      "theme": "Santé",
+      "keywords": [
+        "mobilité",
+        "kinésithérapie",
+        "activité physique"
+      ],
+      "sources": [
+        {
+          "label": "BMJ — Essai ComeBACK, 19 novembre 2026",
+          "url": "https://doi.org/10.1136/bmj-2026-101157"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-20T09:43:00+01:00",
+        "evidence": "Validation médicale explicite de la conférence du 20 novembre 2026 et autorisation de publication immédiate dans le fil MACA — Éditorial.",
+        "contentHash": "7893bcdde98579bd820e3378698cbf2a94e9a7c2ede28850761a06480f5911d3"
+      }
+    },
+    {
+      "id": "daily-orforglipron-apnee-20261120",
+      "title": "Apnée du sommeil : un comprimé pourrait-il réduire les pauses respiratoires ?",
+      "answer": "Deux essais de phase 3 montrent une réduction des apnées et hypopnées sous orforglipron chez des adultes en surpoids ou obèses.",
+      "html": "<article><h1>Apnée du sommeil : un comprimé pourrait-il réduire les pauses respiratoires ?</h1><p><strong>Deux essais de phase 3 montrent une réduction des apnées et hypopnées sous orforglipron chez des adultes en surpoids ou obèses.</strong></p><p>Deux essais de phase 3 ont inclus 712 participants au total, avec ou sans traitement par pression positive continue (PPC). Dans le groupe sans PPC, l’indice d’apnées-hypopnées a diminué de 17,8 événements par heure sous orforglipron, contre 4,5 sous placebo.</p><p>Le traitement a amélioré l’indice à 52 semaines.</p><h2>Limites</h2><p>Effets digestifs fréquents, recul limité et absence de preuve que le traitement remplace la PPC chez tous les patients. Il ne constitue pas une alternative disponible en routine pour cette indication.</p><h2>Sources</h2><ul><li><a href=\"https://jamanetwork.com/journals/jama/fullarticle/2856406\">JAMA — ATTAIN-OSA, 9 novembre 2026</a></li></ul></article>",
+      "date": "2026-11-20",
+      "url": "article-daily-orforglipron-apnee-20261120.html",
+      "format": "article",
+      "theme": "Santé",
+      "keywords": [
+        "apnée du sommeil",
+        "orforglipron",
+        "PPC"
+      ],
+      "sources": [
+        {
+          "label": "JAMA — ATTAIN-OSA, 9 novembre 2026",
+          "url": "https://jamanetwork.com/journals/jama/fullarticle/2856406"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-20T09:43:00+01:00",
+        "evidence": "Validation médicale explicite de la conférence du 20 novembre 2026 et autorisation de publication immédiate dans le fil MACA — Éditorial.",
+        "contentHash": "85edcc94590c821093f8ebb2f9a7801b9e03340f634ed8059a426a15a2f3147e"
+      }
+    },
+    {
+      "id": "daily-scanner-poumon-20261120",
+      "title": "Cancer du poumon : le scanner de dépistage permet-il de détecter plus tôt les formes agressives ?",
+      "answer": "Une cohorte américaine suggère une détection plus précoce de certains cancers du poumon, sans démontrer à elle seule un bénéfice causal sur la survie.",
+      "html": "<article><h1>Cancer du poumon : le scanner de dépistage permet-il de détecter plus tôt les formes agressives ?</h1><p><strong>Une cohorte américaine suggère une détection plus précoce de certains cancers du poumon, sans démontrer à elle seule un bénéfice causal sur la survie.</strong></p><p>Une étude rétrospective américaine a porté sur 17 099 personnes. Les formes métastatiques de cancer bronchique à petites cellules au diagnostic étaient moins fréquentes parmi les patients dépistés par scanner à faible dose.</p><p>La survie globale à trois ans était de 28 % chez les personnes dépistées contre 10,8 % chez les non-dépistées.</p><h2>Limites</h2><p>Étude observationnelle exposée à des biais de sélection et d’avance au diagnostic. Elle ne justifie pas un scanner systématique chez toute la population et ne démontre pas à elle seule une amélioration causale de la survie.</p><h2>Sources</h2><ul><li><a href=\"https://doi.org/10.1001/jamaoncol.2026.4667\">JAMA Oncology — 19 novembre 2026</a></li></ul></article>",
+      "date": "2026-11-20",
+      "url": "article-daily-scanner-poumon-20261120.html",
+      "format": "article",
+      "theme": "Santé",
+      "keywords": [
+        "cancer du poumon",
+        "scanner",
+        "dépistage"
+      ],
+      "sources": [
+        {
+          "label": "JAMA Oncology — 19 novembre 2026",
+          "url": "https://doi.org/10.1001/jamaoncol.2026.4667"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-20T09:43:00+01:00",
+        "evidence": "Validation médicale explicite de la conférence du 20 novembre 2026 et autorisation de publication immédiate dans le fil MACA — Éditorial.",
+        "contentHash": "cb168475a77ec1d9e5ba605e6f9d3ecc4ce06351da34707b4e810cd7927b559d"
+      }
+    },
+    {
+      "id": "daily-vitamine-d-fractures-20261120",
+      "title": "Prendre de la vitamine D évite toutes les fractures après 60 ans : vrai ou faux ?",
+      "answer": "FAUX. La supplémentation systématique ne prévient pas toutes les fractures chez les adultes sans carence ou indication particulière.",
+      "html": "<article><h1>Prendre de la vitamine D évite toutes les fractures après 60 ans : vrai ou faux ?</h1><p><strong>FAUX. La supplémentation systématique ne prévient pas toutes les fractures chez les adultes sans carence ou indication particulière.</strong></p><p><strong>Verdict : FAUX.</strong></p><p>La vitamine D est indispensable à la santé osseuse, mais sa supplémentation systématique ne prévient pas toutes les fractures chez les adultes sans carence ou indication particulière. Son intérêt dépend notamment des apports, des facteurs de risque et du contexte médical.</p><h2>Sources</h2><ul><li><a href=\"https://www.nejm.org/doi/full/10.1056/NEJMoa2202106\">NEJM — Vitamin D Supplements and Prevention of Fractures</a></li></ul></article>",
+      "date": "2026-11-20",
+      "url": "article-daily-vitamine-d-fractures-20261120.html",
+      "format": "article",
+      "theme": "Santé",
+      "keywords": [
+        "vitamine D",
+        "fractures",
+        "prévention"
+      ],
+      "sources": [
+        {
+          "label": "NEJM — Vitamin D Supplements and Prevention of Fractures",
+          "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2202106"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-20T09:43:00+01:00",
+        "evidence": "Validation médicale explicite de la conférence du 20 novembre 2026 et autorisation de publication immédiate dans le fil MACA — Éditorial.",
+        "contentHash": "ff53618ff9041aa495036af4cce5deb8bd760119bc910df9231849d768e51a1c"
+      }
+    },
+    {
+      "id": "daily-klebsiella-resistance-20261120",
+      "title": "Antibiorésistance : +72 % d’infections sanguines résistantes",
+      "answer": "Entre 2019 et 2025, les infections sanguines à Klebsiella pneumoniae résistantes aux carbapénèmes auraient augmenté de 72 % dans l’Union européenne.",
+      "html": "<article><h1>Antibiorésistance : +72 % d’infections sanguines résistantes</h1><p><strong>Entre 2019 et 2025, les infections sanguines à Klebsiella pneumoniae résistantes aux carbapénèmes auraient augmenté de 72 % dans l’Union européenne.</strong></p><p><strong>+72 %</strong> : c’est l’augmentation estimée entre 2019 et 2025 des infections sanguines à <em>Klebsiella pneumoniae</em> résistantes aux carbapénèmes dans l’Union européenne.</p><p>Ce chiffre ne signifie pas que 72 % des infections sont résistantes : il mesure l’évolution du taux d’infections concernées.</p><h2>Sources</h2><ul><li><a href=\"https://www.who.int/europe/news/item/18-11-2026-resistance-to-key-antibiotics-is-the-norm-for-2-common-hospital-bacteria-in-nearly-half-of-reporting-countries-in-the-who-european-region\">OMS Europe — Surveillance de l’antibiorésistance, 18 novembre 2026</a></li></ul></article>",
+      "date": "2026-11-20",
+      "url": "article-daily-klebsiella-resistance-20261120.html",
+      "format": "article",
+      "theme": "Santé",
+      "keywords": [
+        "antibiorésistance",
+        "Klebsiella",
+        "carbapénèmes"
+      ],
+      "sources": [
+        {
+          "label": "OMS Europe — Surveillance de l’antibiorésistance, 18 novembre 2026",
+          "url": "https://www.who.int/europe/news/item/18-11-2026-resistance-to-key-antibiotics-is-the-norm-for-2-common-hospital-bacteria-in-nearly-half-of-reporting-countries-in-the-who-european-region"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-20T09:43:00+01:00",
+        "evidence": "Validation médicale explicite de la conférence du 20 novembre 2026 et autorisation de publication immédiate dans le fil MACA — Éditorial.",
+        "contentHash": "212ce80ead82d901e897d5418af1095c8cc96f5a4faa45c77adfbae59dcd7973"
+      }
+    },
+    {
+      "id": "daily-hpv-communication-20261120",
+      "title": "Vaccination HPV : mieux communiquer avec les parents",
+      "answer": "Une étude récente examine la communication médicale et les rappels adressés aux parents pour améliorer la vaccination HPV des 10–12 ans.",
+      "html": "<article><h1>Vaccination HPV : mieux communiquer avec les parents</h1><p><strong>Une étude récente examine la communication médicale et les rappels adressés aux parents pour améliorer la vaccination HPV des 10–12 ans.</strong></p><p>Une étude publiée dans JAMA Network Open le 13 novembre examine l’effet de la communication des médecins et des rappels adressés aux parents sur la vaccination des 10–12 ans. L’intérêt est de comprendre comment améliorer l’adhésion vaccinale, sans confondre stratégie de communication et efficacité biologique du vaccin.</p><h2>Sources</h2><ul><li><a href=\"https://jamanetwork.com/searchresults?q=HPV%20vaccination%20communication%20November%202026\">JAMA Network Open — recherches HPV</a></li></ul></article>",
+      "date": "2026-11-20",
+      "url": "article-daily-hpv-communication-20261120.html",
+      "format": "article",
+      "theme": "Santé",
+      "keywords": [
+        "HPV",
+        "vaccination",
+        "parents"
+      ],
+      "sources": [
+        {
+          "label": "JAMA Network Open — recherches HPV",
+          "url": "https://jamanetwork.com/searchresults?q=HPV%20vaccination%20communication%20November%202026"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-20T09:43:00+01:00",
+        "evidence": "Validation médicale explicite de la conférence du 20 novembre 2026 et autorisation de publication immédiate dans le fil MACA — Éditorial.",
+        "contentHash": "c611dd4a17f94d94b1dd1aac496ab0e3bbceaa9b28e912eb9f605034c0077400"
+      }
+    },
+    {
+      "id": "daily-giredestrant-perspective-20261120",
+      "title": "Cancer du sein : un nouvel avis scientifique sur le giredestrant",
+      "answer": "Une analyse de perspective discute une hormonothérapie innovante sans constituer une nouvelle preuve d’efficacité clinique.",
+      "html": "<article><h1>Cancer du sein : un nouvel avis scientifique sur le giredestrant</h1><p><strong>Une analyse de perspective discute une hormonothérapie innovante sans constituer une nouvelle preuve d’efficacité clinique.</strong></p><p>Un avis scientifique publié le 19 novembre dans JAMA Oncology discute l’intérêt potentiel du giredestrant, une hormonothérapie innovante. Il s’agit d’une analyse de perspective, et non d’une nouvelle preuve d’efficacité clinique publiée ce jour-là.</p><h2>Sources</h2><ul><li><a href=\"https://jamanetwork.com/searchresults?q=giredestrant\">JAMA Oncology — recherches giredestrant</a></li></ul></article>",
+      "date": "2026-11-20",
+      "url": "article-daily-giredestrant-perspective-20261120.html",
+      "format": "article",
+      "theme": "Santé",
+      "keywords": [
+        "cancer du sein",
+        "giredestrant"
+      ],
+      "sources": [
+        {
+          "label": "JAMA Oncology — recherches giredestrant",
+          "url": "https://jamanetwork.com/searchresults?q=giredestrant"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-20T09:43:00+01:00",
+        "evidence": "Validation médicale explicite de la conférence du 20 novembre 2026 et autorisation de publication immédiate dans le fil MACA — Éditorial.",
+        "contentHash": "3545fff11b1703ed148d6d0bb7630c093e40f4ec7b87c55713f7e5e4a1558f39"
+      }
+    },
+    {
+      "id": "daily-laboratoires-antibioresistance-20261120",
+      "title": "Antibiorésistance : les capacités de surveillance restent insuffisantes",
+      "answer": "173 pays disposent d’un plan national, mais seulement 36 % répondraient aux critères de laboratoire national de référence.",
+      "html": "<article><h1>Antibiorésistance : les capacités de surveillance restent insuffisantes</h1><p><strong>173 pays disposent d’un plan national, mais seulement 36 % répondraient aux critères de laboratoire national de référence.</strong></p><p>173 pays déclarent disposer d’un plan national de lutte contre l’antibiorésistance, mais seulement 36 % disposent d’un laboratoire national de référence répondant aux critères de surveillance décrits par l’OMS.</p><h2>Sources</h2><ul><li><a href=\"https://www.who.int/health-topics/antimicrobial-resistance\">OMS — Antimicrobial resistance</a></li></ul></article>",
+      "date": "2026-11-20",
+      "url": "article-daily-laboratoires-antibioresistance-20261120.html",
+      "format": "article",
+      "theme": "Santé",
+      "keywords": [
+        "antibiorésistance",
+        "surveillance",
+        "laboratoires"
+      ],
+      "sources": [
+        {
+          "label": "OMS — Antimicrobial resistance",
+          "url": "https://www.who.int/health-topics/antimicrobial-resistance"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-20T09:43:00+01:00",
+        "evidence": "Validation médicale explicite de la conférence du 20 novembre 2026 et autorisation de publication immédiate dans le fil MACA — Éditorial.",
+        "contentHash": "6241fb17a9f2036fa3117daeec0791fcec9786f592912ba09334c15e0bc258d3"
+      }
     }
   ],
   "editions": [
@@ -12493,6 +12753,64 @@
         },
         {
           "contentId": "daily-readaptation-cardiaque-20261119",
+          "slot": "DONNÉES",
+          "icon": "•"
+        }
+      ]
+    },
+    {
+      "id": "edition-2026-11-20",
+      "date": "2026-11-20",
+      "publishAt": "2026-11-20T09:43:00+01:00",
+      "complete": true,
+      "items": [
+        {
+          "contentId": "daily-stream-statines-20261120",
+          "slot": "À LA UNE",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-comeback-mobilite-20261120",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-orforglipron-apnee-20261120",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-scanner-poumon-20261120",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-osteoporose-20261012",
+          "slot": "FICHE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-vitamine-d-fractures-20261120",
+          "slot": "VRAI OU FAUX",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-klebsiella-resistance-20261120",
+          "slot": "LE CHIFFRE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-hpv-communication-20261120",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-giredestrant-perspective-20261120",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-laboratoires-antibioresistance-20261120",
           "slot": "DONNÉES",
           "icon": "•"
         }
