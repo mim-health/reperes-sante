@@ -620,6 +620,19 @@
     },
     {
       "left": {
+        "id": "daily-retatrutide-apnee-20261031",
+        "title": "Apnée du sommeil et surpoids : un nouveau traitement peut-il réduire les pauses respiratoires ?",
+        "type": "Mag"
+      },
+      "right": {
+        "id": "daily-orforglipron-apnee-20261120",
+        "title": "Apnée du sommeil : un comprimé pourrait-il réduire les pauses respiratoires ?",
+        "type": "Mag"
+      },
+      "score": 0.5
+    },
+    {
+      "left": {
         "id": "daily-palpitations-rotation-20261102",
         "title": "Palpitations : quand faut-il consulter ?",
         "type": "Mag"
@@ -636,6 +649,6 @@
     "manifestFiles": 158,
     "rawFiches": 453,
     "canonicalFiches": 427,
-    "magContents": 300
+    "magContents": 309
   }
 }

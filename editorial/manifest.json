@@ -1,12 +1,66 @@
 {
   "schemaVersion": 1,
-  "editionId": "edition-2026-11-19",
-  "editionDate": "2026-11-19",
-  "sourceFingerprint": "2bf3c28ac9b47c8dee8e7da4681cb5f39e6f3ab58bca37c29cb3c50864282647",
+  "editionId": "edition-2026-11-20",
+  "editionDate": "2026-11-20",
+  "sourceFingerprint": "370fdf1c58ebaa8de39f372721fb37d35fda8991768e9f68a8e3074dc11da683",
   "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-daily-stream-statines-20261120",
+      "version": "1759fa8212fa85e7b2a5f73af6318049fcd792b50909736c849eca1c976c3805",
+      "url": "article-daily-stream-statines-20261120.html",
+      "date": "2026-11-20"
+    },
+    {
+      "id": "mag-daily-comeback-mobilite-20261120",
+      "version": "7893bcdde98579bd820e3378698cbf2a94e9a7c2ede28850761a06480f5911d3",
+      "url": "article-daily-comeback-mobilite-20261120.html",
+      "date": "2026-11-20"
+    },
+    {
+      "id": "mag-daily-orforglipron-apnee-20261120",
+      "version": "85edcc94590c821093f8ebb2f9a7801b9e03340f634ed8059a426a15a2f3147e",
+      "url": "article-daily-orforglipron-apnee-20261120.html",
+      "date": "2026-11-20"
+    },
+    {
+      "id": "mag-daily-scanner-poumon-20261120",
+      "version": "cb168475a77ec1d9e5ba605e6f9d3ecc4ce06351da34707b4e810cd7927b559d",
+      "url": "article-daily-scanner-poumon-20261120.html",
+      "date": "2026-11-20"
+    },
+    {
+      "id": "mag-daily-vitamine-d-fractures-20261120",
+      "version": "ff53618ff9041aa495036af4cce5deb8bd760119bc910df9231849d768e51a1c",
+      "url": "article-daily-vitamine-d-fractures-20261120.html",
+      "date": "2026-11-20"
+    },
+    {
+      "id": "mag-daily-klebsiella-resistance-20261120",
+      "version": "212ce80ead82d901e897d5418af1095c8cc96f5a4faa45c77adfbae59dcd7973",
+      "url": "article-daily-klebsiella-resistance-20261120.html",
+      "date": "2026-11-20"
+    },
+    {
+      "id": "mag-daily-hpv-communication-20261120",
+      "version": "c611dd4a17f94d94b1dd1aac496ab0e3bbceaa9b28e912eb9f605034c0077400",
+      "url": "article-daily-hpv-communication-20261120.html",
+      "date": "2026-11-20"
+    },
+    {
+      "id": "mag-daily-giredestrant-perspective-20261120",
+      "version": "3545fff11b1703ed148d6d0bb7630c093e40f4ec7b87c55713f7e5e4a1558f39",
+      "url": "article-daily-giredestrant-perspective-20261120.html",
+      "date": "2026-11-20"
+    },
+    {
+      "id": "mag-daily-laboratoires-antibioresistance-20261120",
+      "version": "6241fb17a9f2036fa3117daeec0791fcec9786f592912ba09334c15e0bc258d3",
+      "url": "article-daily-laboratoires-antibioresistance-20261120.html",
+      "date": "2026-11-20"
+    },
     {
       "id": "mag-daily-tirzepatide-adolescents-20261119",
       "version": "1476e31d2df5eec4a12562a5c190c4cb8ea6a1d7fcca9c9d9831f91746029dba",

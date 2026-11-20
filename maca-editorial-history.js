@@ -3936,5 +3936,137 @@ window.MACA_EDITORIAL_HISTORY=[
         "imageAlt": ""
       }
     ]
+  },
+  {
+    "date": "19/11/2026",
+    "editionId": "edition-2026-11-19",
+    "articles": [
+      {
+        "id": "daily-tirzepatide-adolescents-20261119",
+        "category": "À LA UNE",
+        "icon": "•",
+        "title": "Obésité chez l’adolescent : la tirzépatide change-t-elle la donne ?",
+        "excerpt": "L’IMC a diminué de 18,5 % sous tirzépatide, contre une augmentation de 0,5 % sous placebo dans un essai de 160 adolescents.",
+        "body": "Obésité chez l’adolescent : la tirzépatide change-t-elle la donne ?\n\n L’IMC a diminué de 18,5 % sous tirzépatide, contre une augmentation de 0,5 % sous placebo dans un essai de 160 adolescents. \n\n Dans l’essai SURMOUNT-ADOLESCENTS, 160 jeunes de 12 à 17 ans présentant une obésité, ou un surpoids avec complication, ont reçu pendant 72 semaines de la tirzépatide ou un placebo, avec accompagnement sur le mode de vie. Une baisse d’au moins 5 % de l’IMC concernait 79,6 % des adolescents traités, contre 28,5 % sous placebo. Les effets indésirables les plus fréquents étaient digestifs. L’obésité sévère de l’adolescent est une maladie chronique qui peut nécessiter bien davantage qu’un simple conseil alimentaire. Limites : seulement 160 participants, suivi de 72 semaines, persistance du bénéfice après l’arrêt incertaine. La tirzépatide n’est pas autorisée dans l’Union européenne pour la gestion du poids avant 18 ans.\n\n Sources\n\n JAMA — SURMOUNT-ADOLESCENTS \n\n EMA — Mounjaro",
+        "articleUrl": "article-daily-tirzepatide-adolescents-20261119.html",
+        "source": "JAMA — SURMOUNT-ADOLESCENTS · EMA — Mounjaro",
+        "sourceLabel": "JAMA — SURMOUNT-ADOLESCENTS",
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/?term=SURMOUNT-ADOLESCENTS",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-diabete-type1-oms-20261119",
+        "category": "À LIRE EN 3 MIN",
+        "icon": "•",
+        "title": "Diabète de type 1 chez l’adulte : que changent les recommandations de l’OMS ?",
+        "excerpt": "L’OMS insiste sur l’insulinothérapie adaptée, la surveillance glycémique et l’accès continu aux soins.",
+        "body": "Diabète de type 1 chez l’adulte : que changent les recommandations de l’OMS ?\n\n L’OMS insiste sur l’insulinothérapie adaptée, la surveillance glycémique et l’accès continu aux soins. \n\n L’OMS recommande une insulinothérapie intensifiée, généralement plusieurs injections quotidiennes ajustées à la glycémie, ainsi qu’une surveillance régulière. Les analogues de l’insuline peuvent être utilisés, mais l’insuline humaine reste une option efficace et souvent moins coûteuse. L’objectif principal est mondial : garantir la continuité de l’insuline et de l’autosurveillance, y compris dans les zones à faibles ressources ou en situation d’urgence. Les recommandations ne remplacent pas les protocoles français ni la personnalisation du traitement.\n\n Sources\n\n OMS — diabète de type 1",
+        "articleUrl": "article-daily-diabete-type1-oms-20261119.html",
+        "source": "OMS — diabète de type 1",
+        "sourceLabel": "OMS — diabète de type 1",
+        "sourceUrl": "https://www.who.int/publications",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-inflammation-infarctus-zeus-20261119",
+        "category": "À LIRE EN 3 MIN",
+        "icon": "•",
+        "title": "Inflammation et infarctus : pourquoi bloquer l’inflammation ne suffit-il pas toujours à protéger le cœur ?",
+        "excerpt": "Le ziltivékimab n’a pas diminué les événements cardiovasculaires dans l’essai ZEUS malgré son effet sur l’interleukine-6.",
+        "body": "Inflammation et infarctus : pourquoi bloquer l’inflammation ne suffit-il pas toujours à protéger le cœur ?\n\n Le ziltivékimab n’a pas diminué les événements cardiovasculaires dans l’essai ZEUS malgré son effet sur l’interleukine-6. \n\n Dans l’essai ZEUS, des patients ayant une maladie cardiovasculaire, une maladie rénale chronique et une inflammation persistante ont reçu du ziltivékimab ou un placebo. Malgré son action biologique sur l’interleukine-6, le traitement n’a pas diminué les événements cardiovasculaires. Les infections graves ont concerné 20,4 % du groupe traité et 17,9 % du groupe placebo. Ce résultat rappelle qu’améliorer un marqueur biologique ne garantit pas un bénéfice clinique. Le ziltivékimab reste expérimental dans cette indication.\n\n Sources\n\n Essai ZEUS",
+        "articleUrl": "article-daily-inflammation-infarctus-zeus-20261119.html",
+        "source": "Essai ZEUS",
+        "sourceLabel": "Essai ZEUS",
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/?term=ZEUS+ziltivekimab",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-paracetamol-20261014",
+        "category": "FICHE DU JOUR",
+        "icon": "•",
+        "title": "Paracétamol : vérifier les médicaments pris ensemble",
+        "excerpt": "Vérifier si plusieurs spécialités contiennent du paracétamol pour éviter un cumul involontaire.",
+        "body": "DONNÉES · 14 OCTOBRE 2026\n\n Paracétamol : vérifier les médicaments pris ensemble\n\n Vérifier si plusieurs spécialités contiennent du paracétamol pour éviter un cumul involontaire. \n\n Sources\n\n Assurance Maladie — utiliser les antalgiques \n\n Information générale sous contrôle médical, ne remplaçant pas une consultation.",
+        "articleUrl": "mag-paracetamol-20261014.html",
+        "source": "Assurance Maladie — utiliser les antalgiques",
+        "sourceLabel": "Assurance Maladie — utiliser les antalgiques",
+        "sourceUrl": "https://www.ameli.fr/assure/sante/medicaments/utiliser-recycler-medicaments/utiliser-antalgiques",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-antibiotiques-rhume-grippe-20261119",
+        "category": "VRAI OU FAUX",
+        "icon": "•",
+        "title": "Un antibiotique accélère forcément la guérison d’un rhume ou d’une grippe : vrai ou faux ?",
+        "excerpt": "FAUX. Les antibiotiques n’agissent pas sur les virus responsables du rhume et de la grippe.",
+        "body": "Un antibiotique accélère forcément la guérison d’un rhume ou d’une grippe : vrai ou faux ?\n\n FAUX. Les antibiotiques n’agissent pas sur les virus responsables du rhume et de la grippe. \n\n Le rhume et la grippe sont des infections virales. Les antibiotiques n’agissent pas sur les virus et exposent inutilement aux effets indésirables ainsi qu’à l’antibiorésistance. Ils peuvent devenir nécessaires uniquement lorsqu’une infection bactérienne est diagnostiquée ou fortement suspectée.\n\n Sources\n\n Assurance Maladie",
+        "articleUrl": "article-daily-antibiotiques-rhume-grippe-20261119.html",
+        "source": "Assurance Maladie",
+        "sourceLabel": "Assurance Maladie",
+        "sourceUrl": "https://www.ameli.fr/assure",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-grippe-urgences-54-20261119",
+        "category": "LE CHIFFRE DU JOUR",
+        "icon": "•",
+        "title": "Grippe : +54 % de passages aux urgences en une semaine",
+        "excerpt": "Les passages aux urgences pour grippe ou syndrome grippal ont augmenté de 54 % du 9 au 15 novembre 2026.",
+        "body": "Grippe : +54 % de passages aux urgences en une semaine\n\n Les passages aux urgences pour grippe ou syndrome grippal ont augmenté de 54 % du 9 au 15 novembre 2026. \n\n C’est l’augmentation hebdomadaire des passages aux urgences pour grippe ou syndrome grippal en France durant la semaine du 9 au 15 novembre, soit 696 passages supplémentaires. Ce chiffre traduit une circulation précoce en hausse, mais les indicateurs restaient encore au niveau de base à l’échelle nationale. L’Île-de-France et les Hauts-de-France étaient déjà en phase pré-épidémique.\n\n Sources\n\n Santé publique France",
+        "articleUrl": "article-daily-grippe-urgences-54-20261119.html",
+        "source": "Santé publique France",
+        "sourceLabel": "Santé publique France",
+        "sourceUrl": "https://www.santepubliquefrance.fr/",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-covid-urgences-20261119",
+        "category": "DONNÉES",
+        "icon": "•",
+        "title": "Covid-19 : les passages aux urgences progressent",
+        "excerpt": "Les passages aux urgences pour Covid-19 ont progressé de 37 % en une semaine.",
+        "body": "Covid-19 : les passages aux urgences progressent\n\n Les passages aux urgences pour Covid-19 ont progressé de 37 % en une semaine. \n\n Les passages aux urgences pour Covid-19 ont progressé de 37 % en une semaine, mais l’impact global sur les soins et les décès demeure faible à ce stade.\n\n Sources\n\n Santé publique France",
+        "articleUrl": "article-daily-covid-urgences-20261119.html",
+        "source": "Santé publique France",
+        "sourceLabel": "Santé publique France",
+        "sourceUrl": "https://www.santepubliquefrance.fr/",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-denutrition-20261119",
+        "category": "DONNÉES",
+        "icon": "•",
+        "title": "Dénutrition : reconnaître les signes d’alerte",
+        "excerpt": "Environ deux millions de personnes seraient concernées en France.",
+        "body": "Dénutrition : reconnaître les signes d’alerte\n\n Environ deux millions de personnes seraient concernées en France. \n\n Une perte de poids involontaire, des vêtements devenus trop larges ou une diminution inhabituelle des apports doivent conduire à en parler à un professionnel de santé.\n\n Sources\n\n Assurance Maladie",
+        "articleUrl": "article-daily-denutrition-20261119.html",
+        "source": "Assurance Maladie",
+        "sourceLabel": "Assurance Maladie",
+        "sourceUrl": "https://www.ameli.fr/assure",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-readaptation-cardiaque-20261119",
+        "category": "DONNÉES",
+        "icon": "•",
+        "title": "Réadaptation cardiaque : ne pas exclure les personnes âgées",
+        "excerpt": "L’âge avancé et la fragilité ne doivent pas, à eux seuls, exclure une réadaptation cardiaque adaptée.",
+        "body": "Réadaptation cardiaque : ne pas exclure les personnes âgées\n\n L’âge avancé et la fragilité ne doivent pas, à eux seuls, exclure une réadaptation cardiaque adaptée. \n\n L’âge avancé, la fragilité ou les maladies associées ne doivent pas, à eux seuls, exclure un patient d’un programme adapté. La Société européenne de cardiologie propose des ressources destinées aux patients et à leurs proches.\n\n Sources\n\n ESC",
+        "articleUrl": "article-daily-readaptation-cardiaque-20261119.html",
+        "source": "ESC",
+        "sourceLabel": "ESC",
+        "sourceUrl": "https://www.escardio.org/Guidelines",
+        "image": "",
+        "imageAlt": ""
+      }
+    ]
   }
 ];

@@ -5688,5 +5688,193 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "14f120043794c5b226ca56611186553ae05c6a98d954dff14c9af307b10a2147"
+  },
+  {
+    "id": "daily-stream-statines-20261120",
+    "url": "article-daily-stream-statines-20261120.html",
+    "title": "Après 70 ans, peut-on arrêter ses statines sans danger ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-20",
+    "status": "PUBLISHED",
+    "excerpt": "Un essai randomisé suggère que l’arrêt peut être discuté chez certains patients sans maladie cardiovasculaire connue, mais ne démontre pas l’absence de risque.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "statines",
+      "personnes âgées",
+      "prévention cardiovasculaire"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "1759fa8212fa85e7b2a5f73af6318049fcd792b50909736c849eca1c976c3805"
+  },
+  {
+    "id": "daily-comeback-mobilite-20261120",
+    "url": "article-daily-comeback-mobilite-20261120.html",
+    "title": "Pour retrouver de la mobilité, un accompagnement humain est-il plus efficace que des SMS ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-20",
+    "status": "PUBLISHED",
+    "excerpt": "Un essai australien de 512 adultes montre un bénéfice modeste du coaching téléphonique par un kinésithérapeute.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "mobilité",
+      "kinésithérapie",
+      "activité physique"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "7893bcdde98579bd820e3378698cbf2a94e9a7c2ede28850761a06480f5911d3"
+  },
+  {
+    "id": "daily-orforglipron-apnee-20261120",
+    "url": "article-daily-orforglipron-apnee-20261120.html",
+    "title": "Apnée du sommeil : un comprimé pourrait-il réduire les pauses respiratoires ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-20",
+    "status": "PUBLISHED",
+    "excerpt": "Deux essais de phase 3 montrent une réduction des apnées et hypopnées sous orforglipron chez des adultes en surpoids ou obèses.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "apnée du sommeil",
+      "orforglipron",
+      "PPC"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "85edcc94590c821093f8ebb2f9a7801b9e03340f634ed8059a426a15a2f3147e"
+  },
+  {
+    "id": "daily-scanner-poumon-20261120",
+    "url": "article-daily-scanner-poumon-20261120.html",
+    "title": "Cancer du poumon : le scanner de dépistage permet-il de détecter plus tôt les formes agressives ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-20",
+    "status": "PUBLISHED",
+    "excerpt": "Une cohorte américaine suggère une détection plus précoce de certains cancers du poumon, sans démontrer à elle seule un bénéfice causal sur la survie.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "cancer du poumon",
+      "scanner",
+      "dépistage"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "cb168475a77ec1d9e5ba605e6f9d3ecc4ce06351da34707b4e810cd7927b559d"
+  },
+  {
+    "id": "daily-vitamine-d-fractures-20261120",
+    "url": "article-daily-vitamine-d-fractures-20261120.html",
+    "title": "Prendre de la vitamine D évite toutes les fractures après 60 ans : vrai ou faux ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-20",
+    "status": "PUBLISHED",
+    "excerpt": "FAUX. La supplémentation systématique ne prévient pas toutes les fractures chez les adultes sans carence ou indication particulière.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "vitamine D",
+      "fractures",
+      "prévention"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "ff53618ff9041aa495036af4cce5deb8bd760119bc910df9231849d768e51a1c"
+  },
+  {
+    "id": "daily-klebsiella-resistance-20261120",
+    "url": "article-daily-klebsiella-resistance-20261120.html",
+    "title": "Antibiorésistance : +72 % d’infections sanguines résistantes",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-20",
+    "status": "PUBLISHED",
+    "excerpt": "Entre 2019 et 2025, les infections sanguines à Klebsiella pneumoniae résistantes aux carbapénèmes auraient augmenté de 72 % dans l’Union européenne.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "antibiorésistance",
+      "Klebsiella",
+      "carbapénèmes"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "212ce80ead82d901e897d5418af1095c8cc96f5a4faa45c77adfbae59dcd7973"
+  },
+  {
+    "id": "daily-hpv-communication-20261120",
+    "url": "article-daily-hpv-communication-20261120.html",
+    "title": "Vaccination HPV : mieux communiquer avec les parents",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-20",
+    "status": "PUBLISHED",
+    "excerpt": "Une étude récente examine la communication médicale et les rappels adressés aux parents pour améliorer la vaccination HPV des 10–12 ans.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "HPV",
+      "vaccination",
+      "parents"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "c611dd4a17f94d94b1dd1aac496ab0e3bbceaa9b28e912eb9f605034c0077400"
+  },
+  {
+    "id": "daily-giredestrant-perspective-20261120",
+    "url": "article-daily-giredestrant-perspective-20261120.html",
+    "title": "Cancer du sein : un nouvel avis scientifique sur le giredestrant",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-20",
+    "status": "PUBLISHED",
+    "excerpt": "Une analyse de perspective discute une hormonothérapie innovante sans constituer une nouvelle preuve d’efficacité clinique.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "cancer du sein",
+      "giredestrant"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "3545fff11b1703ed148d6d0bb7630c093e40f4ec7b87c55713f7e5e4a1558f39"
+  },
+  {
+    "id": "daily-laboratoires-antibioresistance-20261120",
+    "url": "article-daily-laboratoires-antibioresistance-20261120.html",
+    "title": "Antibiorésistance : les capacités de surveillance restent insuffisantes",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-20",
+    "status": "PUBLISHED",
+    "excerpt": "173 pays disposent d’un plan national, mais seulement 36 % répondraient aux critères de laboratoire national de référence.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "antibiorésistance",
+      "surveillance",
+      "laboratoires"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "6241fb17a9f2036fa3117daeec0791fcec9786f592912ba09334c15e0bc258d3"
   }
 ];
