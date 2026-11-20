@@ -5876,5 +5876,28 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "6241fb17a9f2036fa3117daeec0791fcec9786f592912ba09334c15e0bc258d3"
+  },
+  {
+    "id": "omeprazole-long-cours-risques-20261120",
+    "url": "mag-omeprazole-long-cours-risques-20261120.html",
+    "title": "Oméprazole au long cours : quels sont les vrais risques ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé au quotidien",
+    "date": "2026-11-20",
+    "status": "PUBLISHED",
+    "excerpt": "L'oméprazole est un médicament efficace pour réduire l'acidité de l'estomac. Il peut être pris pendant plusieurs années lorsque cela est médicalement justifié. Mais son utilisation prolongée n'est pas toujours nécessaire. Certains effets indésirables sont reconnus, tandis que d'autres risques, notamment l'insuffisance rénale chronique, restent discutés. Le bon réflexe : faire régulièrement le point avec son médecin, sans arrêter seul son traitement.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "oméprazole",
+      "IPP",
+      "reflux",
+      "insuffisance rénale",
+      "traitement prolongé"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "4673e64d53290b2b3a4897ab2164466fda1fe0789f7855f1391604437df4b943"
   }
 ];

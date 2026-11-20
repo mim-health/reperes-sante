@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "editionId": "edition-2026-11-20",
   "editionDate": "2026-11-20",
-  "sourceFingerprint": "370fdf1c58ebaa8de39f372721fb37d35fda8991768e9f68a8e3074dc11da683",
+  "sourceFingerprint": "23837d4cf1f5a72764833a70b51721efc32edf96944759353330ef69b32480d5",
   "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
@@ -59,6 +59,12 @@
       "id": "mag-daily-laboratoires-antibioresistance-20261120",
       "version": "6241fb17a9f2036fa3117daeec0791fcec9786f592912ba09334c15e0bc258d3",
       "url": "article-daily-laboratoires-antibioresistance-20261120.html",
+      "date": "2026-11-20"
+    },
+    {
+      "id": "mag-omeprazole-long-cours-risques-20261120",
+      "version": "4673e64d53290b2b3a4897ab2164466fda1fe0789f7855f1391604437df4b943",
+      "url": "mag-omeprazole-long-cours-risques-20261120.html",
       "date": "2026-11-20"
     },
     {

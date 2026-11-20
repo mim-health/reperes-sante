@@ -243,5 +243,12 @@
     "url": "article-daily-intomob-mobilite-hopital-20261118.html",
     "existingFicheId": null,
     "status": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "id": "omeprazole-long-cours-risques-20261120",
+    "title": "Oméprazole au long cours : quels sont les vrais risques ?",
+    "url": "mag-omeprazole-long-cours-risques-20261120.html",
+    "existingFicheId": null,
+    "status": "HUMAN_REVIEW_REQUIRED"
   }
 ]
