@@ -594,6 +594,19 @@
     },
     {
       "left": {
+        "id": "aspirine-protection-coeur-risques",
+        "title": "Prendre de l’aspirine tous les jours protège-t-il le cœur ?",
+        "type": "fiche"
+      },
+      "right": {
+        "id": "daily-aspirine-coeur-20261124",
+        "title": "Prendre de l'aspirine tous les jours protège-t-il le cœur ?",
+        "type": "Mag"
+      },
+      "score": 1
+    },
+    {
+      "left": {
         "id": "daily-entorse-20261011",
         "title": "Cheville tordue : entorse ou fracture ?",
         "type": "Mag"
@@ -646,9 +659,9 @@
     }
   ],
   "counts": {
-    "manifestFiles": 158,
-    "rawFiches": 453,
-    "canonicalFiches": 427,
+    "manifestFiles": 159,
+    "rawFiches": 454,
+    "canonicalFiches": 428,
     "magContents": 319
   }
 }
