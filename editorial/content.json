@@ -11266,6 +11266,222 @@
         "evidence": "Texte intégral fourni par le médecin ; validation médicale explicite « validé medicalement ok », suivie de l’autorisation de publication « oui ».",
         "contentHash": "4673e64d53290b2b3a4897ab2164466fda1fe0789f7855f1391604437df4b943"
       }
+    },
+    {
+      "id": "daily-anticoagulants-choc-tete-20261124",
+      "title": "Anticoagulants : faut-il s'inquiéter après un choc à la tête ?",
+      "answer": "Un traumatisme crânien sous anticoagulant nécessite une évaluation médicale rapide. Une nouvelle étude apporte néanmoins des résultats plutôt rassurants concernant les anticoagulants oraux directs.",
+      "html": "<article><h1>Anticoagulants : faut-il s'inquiéter après un choc à la tête ?</h1><p><strong>Réponse courte :</strong> Un traumatisme crânien sous anticoagulant nécessite une évaluation médicale rapide. Une nouvelle étude apporte néanmoins des résultats plutôt rassurants concernant les anticoagulants oraux directs.</p><p>Une étude publiée le 23 novembre 2026 a analysé 11 401 passages aux urgences après un traumatisme crânien ayant conduit à un scanner, dont 565 sous anticoagulants oraux directs.</p><p>Après ajustement statistique, les chercheurs n'ont pas retrouvé d'augmentation significative des hémorragies intracrâniennes, des interventions neurochirurgicales ou de la mortalité à 28 jours.</p><p><strong>Quelles sont les limites ?</strong></p><p>Il s'agit d'une étude observationnelle. Elle ne permet pas d'exclure une augmentation cliniquement importante du risque ni de modifier, à elle seule, les recommandations actuelles.</p><p><strong>En pratique :</strong> après un choc à la tête sous anticoagulant, demandez rapidement un avis médical, même en l'absence de symptômes immédiats. N'interrompez pas votre traitement de votre propre initiative.</p><p>Source : Bloom et al., JAMA Network Open, 23 novembre 2026. <a href=\"https://doi.org/10.1001/jamanetworkopen.2026.45624\">https://doi.org/10.1001/jamanetworkopen.2026.45624</a></p></article>",
+      "date": "2026-11-24",
+      "url": "article-daily-anticoagulants-choc-tete-20261124.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "Bloom et al., JAMA Network Open, 23 novembre 2026.",
+          "url": "https://doi.org/10.1001/jamanetworkopen.2026.45624"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-24T14:14:24+01:00",
+        "evidence": "Je valide médicalement l'intégralité des textes présentés pour l'édition MACASANTÉ du 24 novembre 2026 et autorise leur publication immédiate en l'état, sans réécriture ni nouvelle validation.",
+        "contentHash": "b5508780ff1be5c9aab0e7a72e9262ae622e2f601405579f96d8aa913cc1f47c"
+      }
+    },
+    {
+      "id": "daily-pied-diabetique-inforatio-20261124",
+      "title": "Diabète : une nouvelle technique pour mieux cicatriser les plaies du pied ?",
+      "answer": "Une technique réalisée par des professionnels spécialisés pourrait améliorer la cicatrisation de certaines plaies chroniques du pied diabétique.",
+      "html": "<article><h1>Diabète : une nouvelle technique pour mieux cicatriser les plaies du pied ?</h1><p><strong>Réponse courte :</strong> Une technique réalisée par des professionnels spécialisés pourrait améliorer la cicatrisation de certaines plaies chroniques du pied diabétique.</p><p>Un essai randomisé danois portant sur 100 patients a évalué une technique appelée <em>inforatio</em>, en complément des soins habituels.</p><p><strong>Proportion de plaies cicatrisées à 20 semaines :</strong></p><ul><li>Nouvelle technique : 49 %.</li><li>Soins habituels seuls : 27,5 %.</li></ul><p>Ces résultats sont encourageants, mais concernent des plaies sélectionnées, non infectées. Des études complémentaires restent nécessaires avant une généralisation.</p><p><strong>En pratique :</strong> inspecter quotidiennement ses pieds lorsqu'on est diabétique et consulter rapidement devant toute plaie, même indolore, demeure essentiel.</p><p>Source : Moeini et al., JAMA Network Open, novembre 2026. <a href=\"https://doi.org/10.1001/jamanetworkopen.2026.42733\">https://doi.org/10.1001/jamanetworkopen.2026.42733</a></p></article>",
+      "date": "2026-11-24",
+      "url": "article-daily-pied-diabetique-inforatio-20261124.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "Moeini et al., JAMA Network Open, novembre 2026.",
+          "url": "https://doi.org/10.1001/jamanetworkopen.2026.42733"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-24T14:14:24+01:00",
+        "evidence": "Je valide médicalement l'intégralité des textes présentés pour l'édition MACASANTÉ du 24 novembre 2026 et autorise leur publication immédiate en l'état, sans réécriture ni nouvelle validation.",
+        "contentHash": "1662e391ecc29585a14e75307fa8305c6062e250a0db9d806317b92da5579735"
+      }
+    },
+    {
+      "id": "daily-cancer-supplementation-poids-20261124",
+      "title": "Cancer : peut-on mieux prévenir la perte de poids pendant les traitements ?",
+      "answer": "Un accompagnement nutritionnel précoce pourrait limiter la perte de poids chez certains patients traités pour un cancer.",
+      "html": "<article><h1>Cancer : peut-on mieux prévenir la perte de poids pendant les traitements ?</h1><p><strong>Réponse courte :</strong> Un accompagnement nutritionnel précoce pourrait limiter la perte de poids chez certains patients traités pour un cancer.</p><p>Un essai randomisé portant sur 216 patients analysés, traités par radiochimiothérapie pour un cancer du nasopharynx, a comparé une supplémentation nutritionnelle orale précoce à la prise en charge habituelle.</p><p><strong>Patients ayant perdu plus de 5 % de leur poids :</strong></p><ul><li>Supplémentation précoce : 65,4 %.</li><li>Prise en charge habituelle : 80,7 %.</li></ul><p>L'étude montre l'intérêt potentiel d'une prise en charge nutritionnelle dès le début du traitement. Elle ne démontre toutefois pas un bénéfice sur la survie et ne peut pas être extrapolée à tous les cancers.</p><p><strong>En pratique :</strong> ne pas attendre une perte de poids importante pour en parler à son équipe soignante.</p><p>Source : Su et al., JAMA Oncology, 12 novembre 2026. <a href=\"https://doi.org/10.1001/jamaoncol.2026.4535\">https://doi.org/10.1001/jamaoncol.2026.4535</a></p></article>",
+      "date": "2026-11-24",
+      "url": "article-daily-cancer-supplementation-poids-20261124.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "Su et al., JAMA Oncology, 12 novembre 2026.",
+          "url": "https://doi.org/10.1001/jamaoncol.2026.4535"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-24T14:14:24+01:00",
+        "evidence": "Je valide médicalement l'intégralité des textes présentés pour l'édition MACASANTÉ du 24 novembre 2026 et autorise leur publication immédiate en l'état, sans réécriture ni nouvelle validation.",
+        "contentHash": "e15a07de04ab7788ca3f7aff97fe52ba45c72649937623c33045cfe1feb6ace7"
+      }
+    },
+    {
+      "id": "daily-douleurs-chroniques-meditation-20261124",
+      "title": "Douleurs chroniques : la méditation peut-elle compléter les traitements antidouleur ?",
+      "answer": "Certaines approches psychologiques associant méditation et gestion des émotions peuvent compléter la prise en charge des douleurs chroniques.",
+      "html": "<article><h1>Douleurs chroniques : la méditation peut-elle compléter les traitements antidouleur ?</h1><p><strong>Réponse courte :</strong> Certaines approches psychologiques associant méditation et gestion des émotions peuvent compléter la prise en charge des douleurs chroniques.</p><p>Une analyse publiée le 23 novembre a étudié 185 anciens militaires américains recevant des opioïdes au long cours.</p><p>Les participants ayant bénéficié d'un programme structuré de pleine conscience ont moins fréquemment consulté aux urgences entre le neuvième et le douzième mois : 51 passages contre 65 dans le groupe bénéficiant d'une psychothérapie de soutien.</p><p>Aucune différence significative n'a été retrouvée pendant les premiers mois du suivi.</p><p><strong>En pratique :</strong> ces techniques constituent un complément possible aux traitements médicaux, mais ne justifient pas leur arrêt sans accompagnement.</p><p>Source : Stecher et Garland, JAMA Network Open, 23 novembre 2026. <a href=\"https://doi.org/10.1001/jamanetworkopen.2026.44883\">https://doi.org/10.1001/jamanetworkopen.2026.44883</a></p></article>",
+      "date": "2026-11-24",
+      "url": "article-daily-douleurs-chroniques-meditation-20261124.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "Stecher et Garland, JAMA Network Open, 23 novembre 2026.",
+          "url": "https://doi.org/10.1001/jamanetworkopen.2026.44883"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-24T14:14:24+01:00",
+        "evidence": "Je valide médicalement l'intégralité des textes présentés pour l'édition MACASANTÉ du 24 novembre 2026 et autorise leur publication immédiate en l'état, sans réécriture ni nouvelle validation.",
+        "contentHash": "7f1b2035269a504cb348f908c9779b68398f9e95d1d5481a84e19cd5e3f829f7"
+      }
+    },
+    {
+      "id": "daily-aspirine-coeur-20261124",
+      "title": "Prendre de l'aspirine tous les jours protège-t-il le cœur ?",
+      "answer": "PAS TOUJOURS !",
+      "html": "<article><h1>Prendre de l'aspirine tous les jours protège-t-il le cœur ?</h1><p><strong>PAS TOUJOURS !</strong></p><ul><li>Après un infarctus, l'aspirine peut réduire le risque de récidive.</li><li>Sans antécédent cardiovasculaire, le risque de saignement peut dépasser le bénéfice.</li></ul><p><strong>Ne commencez ni n'arrêtez votre traitement sans avis médical.</strong></p><p>Source : USPSTF — Recommandations sur l'aspirine en prévention cardiovasculaire primaire, 2022. <a href=\"https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/aspirin-to-prevent-cardiovascular-disease-preventive-medication\">https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/aspirin-to-prevent-cardiovascular-disease-preventive-medication</a></p></article>",
+      "date": "2026-11-24",
+      "url": "article-daily-aspirine-coeur-20261124.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "USPSTF — Recommandations sur l'aspirine en prévention cardiovasculaire primaire, 2022.",
+          "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/aspirin-to-prevent-cardiovascular-disease-preventive-medication"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-24T14:14:24+01:00",
+        "evidence": "Je valide médicalement l'intégralité des textes présentés pour l'édition MACASANTÉ du 24 novembre 2026 et autorise leur publication immédiate en l'état, sans réécriture ni nouvelle validation.",
+        "contentHash": "a878a73c6d40e43b9caa11eee16aab8678c414130a88a0f8acc8713514a76fb7"
+      }
+    },
+    {
+      "id": "daily-tabagisme-passif-chiffre-20261124",
+      "title": "1,6 million",
+      "answer": "C'est le nombre de non-fumeurs qui décèdent chaque année dans le monde, du fait de leur exposition au tabagisme passif, selon les estimations de l'OMS.",
+      "html": "<article><h1>1,6 million</h1><p>C'est le nombre de non-fumeurs qui décèdent chaque année dans le monde, du fait de leur exposition au tabagisme passif, selon les estimations de l'OMS.</p><p>Protéger son entourage du tabac, notamment les enfants, reste une mesure essentielle de prévention.</p><p>Source : OMS — Tabac et nicotine, 26 juin 2026. <a href=\"https://www.who.int/news-room/fact-sheets/detail/tobacco\">https://www.who.int/news-room/fact-sheets/detail/tobacco</a></p></article>",
+      "date": "2026-11-24",
+      "url": "article-daily-tabagisme-passif-chiffre-20261124.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "OMS — Tabac et nicotine, 26 juin 2026.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/tobacco"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-24T14:14:24+01:00",
+        "evidence": "Je valide médicalement l'intégralité des textes présentés pour l'édition MACASANTÉ du 24 novembre 2026 et autorise leur publication immédiate en l'état, sans réécriture ni nouvelle validation.",
+        "contentHash": "8a679ac7515b1cc0d8f2d867719069c37af120a792244e3f821222851fd6afbf"
+      }
+    },
+    {
+      "id": "daily-anorexie-boulimie-fardeau-20261124",
+      "title": "Troubles du comportement alimentaire",
+      "answer": "Une publication du 20 novembre alerte sur l'augmentation du fardeau mondial de l'anorexie et de la boulimie. Le repérage précoce reste essentiel.",
+      "html": "<article><h1>Troubles du comportement alimentaire</h1><p>Une publication du 20 novembre alerte sur l'augmentation du fardeau mondial de l'anorexie et de la boulimie. Le repérage précoce reste essentiel.</p><p>Source : JAMA, 20 novembre 2026. <a href=\"https://doi.org/10.1001/jama.2026.24052\">https://doi.org/10.1001/jama.2026.24052</a></p></article>",
+      "date": "2026-11-24",
+      "url": "article-daily-anorexie-boulimie-fardeau-20261124.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "JAMA, 20 novembre 2026.",
+          "url": "https://doi.org/10.1001/jama.2026.24052"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-24T14:14:24+01:00",
+        "evidence": "Je valide médicalement l'intégralité des textes présentés pour l'édition MACASANTÉ du 24 novembre 2026 et autorise leur publication immédiate en l'état, sans réécriture ni nouvelle validation.",
+        "contentHash": "71f97def1f0d66c69f0488cf3457e3147d8ff74633ae78365199a1f5d8a24bd3"
+      }
+    },
+    {
+      "id": "daily-acces-soins-dentaires-20261124",
+      "title": "Santé bucco-dentaire",
+      "answer": "Une étude anglaise s'intéresse à l'effet des incitations financières sur l'accès aux soins dentaires des patients éloignés du système de soins. Les inégalités d'accès restent un enjeu de santé publique.",
+      "html": "<article><h1>Santé bucco-dentaire</h1><p>Une étude anglaise s'intéresse à l'effet des incitations financières sur l'accès aux soins dentaires des patients éloignés du système de soins. Les inégalités d'accès restent un enjeu de santé publique.</p><p>Source : JAMA Network Open, novembre 2026. <a href=\"https://doi.org/10.1001/jamanetworkopen.2026.42642\">https://doi.org/10.1001/jamanetworkopen.2026.42642</a></p></article>",
+      "date": "2026-11-24",
+      "url": "article-daily-acces-soins-dentaires-20261124.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "JAMA Network Open, novembre 2026.",
+          "url": "https://doi.org/10.1001/jamanetworkopen.2026.42642"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-24T14:14:24+01:00",
+        "evidence": "Je valide médicalement l'intégralité des textes présentés pour l'édition MACASANTÉ du 24 novembre 2026 et autorise leur publication immédiate en l'état, sans réécriture ni nouvelle validation.",
+        "contentHash": "4ac666451dbdce84a39a2af84566143586cf9f60773884223de41118dcb4c261"
+      }
+    },
+    {
+      "id": "daily-sla-stress-cellulaire-20261124",
+      "title": "Sclérose latérale amyotrophique (maladie de Charcot)",
+      "answer": "Un nouvel essai randomisé évalue un traitement expérimental ciblant certains mécanismes du stress cellulaire. Cette recherche ne constitue pas en elle-même la preuve d'un nouveau traitement efficace et disponible.",
+      "html": "<article><h1>Sclérose latérale amyotrophique (maladie de Charcot)</h1><p>Un nouvel essai randomisé évalue un traitement expérimental ciblant certains mécanismes du stress cellulaire. Cette recherche ne constitue pas en elle-même la preuve d'un nouveau traitement efficace et disponible.</p><p>Source : JAMA Network Open, 23 novembre 2026. <a href=\"https://doi.org/10.1001/jamanetworkopen.2026.45545\">https://doi.org/10.1001/jamanetworkopen.2026.45545</a></p></article>",
+      "date": "2026-11-24",
+      "url": "article-daily-sla-stress-cellulaire-20261124.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "JAMA Network Open, 23 novembre 2026.",
+          "url": "https://doi.org/10.1001/jamanetworkopen.2026.45545"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-24T14:14:24+01:00",
+        "evidence": "Je valide médicalement l'intégralité des textes présentés pour l'édition MACASANTÉ du 24 novembre 2026 et autorise leur publication immédiate en l'état, sans réécriture ni nouvelle validation.",
+        "contentHash": "91fc684e307aebad3b24ec6aa22ff915f410fd55ccbe8b62dab8c189232761e7"
+      }
     }
   ],
   "editions": [
@@ -12867,6 +13083,64 @@
         {
           "contentId": "omeprazole-long-cours-risques-20261120",
           "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        }
+      ]
+    },
+    {
+      "id": "edition-2026-11-24",
+      "date": "2026-11-24",
+      "publishAt": "2026-11-24T14:14:24+01:00",
+      "complete": true,
+      "items": [
+        {
+          "contentId": "daily-anticoagulants-choc-tete-20261124",
+          "slot": "À LA UNE",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-pied-diabetique-inforatio-20261124",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-cancer-supplementation-poids-20261124",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-douleurs-chroniques-meditation-20261124",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-fiche-audition-60-20261024",
+          "slot": "FICHE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-aspirine-coeur-20261124",
+          "slot": "VRAI OU FAUX",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-tabagisme-passif-chiffre-20261124",
+          "slot": "LE CHIFFRE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-anorexie-boulimie-fardeau-20261124",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-acces-soins-dentaires-20261124",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-sla-stress-cellulaire-20261124",
+          "slot": "DONNÉES",
           "icon": "•"
         }
       ]
