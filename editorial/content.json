@@ -11289,7 +11289,12 @@
         "validatedAt": "2026-11-24T14:14:24+01:00",
         "evidence": "Je valide médicalement l'intégralité des textes présentés pour l'édition MACASANTÉ du 24 novembre 2026 et autorise leur publication immédiate en l'état, sans réécriture ni nouvelle validation.",
         "contentHash": "b5508780ff1be5c9aab0e7a72e9262ae622e2f601405579f96d8aa913cc1f47c"
-      }
+      },
+      "keywords": [
+        "anticoagulants oraux directs",
+        "traumatisme crânien",
+        "scanner"
+      ]
     },
     {
       "id": "daily-pied-diabetique-inforatio-20261124",
@@ -11313,7 +11318,13 @@
         "validatedAt": "2026-11-24T14:14:24+01:00",
         "evidence": "Je valide médicalement l'intégralité des textes présentés pour l'édition MACASANTÉ du 24 novembre 2026 et autorise leur publication immédiate en l'état, sans réécriture ni nouvelle validation.",
         "contentHash": "1662e391ecc29585a14e75307fa8305c6062e250a0db9d806317b92da5579735"
-      }
+      },
+      "keywords": [
+        "pied diabétique",
+        "plaie",
+        "cicatrisation",
+        "inforatio"
+      ]
     },
     {
       "id": "daily-cancer-supplementation-poids-20261124",
@@ -11337,7 +11348,13 @@
         "validatedAt": "2026-11-24T14:14:24+01:00",
         "evidence": "Je valide médicalement l'intégralité des textes présentés pour l'édition MACASANTÉ du 24 novembre 2026 et autorise leur publication immédiate en l'état, sans réécriture ni nouvelle validation.",
         "contentHash": "e15a07de04ab7788ca3f7aff97fe52ba45c72649937623c33045cfe1feb6ace7"
-      }
+      },
+      "keywords": [
+        "cancer du nasopharynx",
+        "radiochimiothérapie",
+        "nutrition",
+        "perte de poids"
+      ]
     },
     {
       "id": "daily-douleurs-chroniques-meditation-20261124",
@@ -11361,7 +11378,12 @@
         "validatedAt": "2026-11-24T14:14:24+01:00",
         "evidence": "Je valide médicalement l'intégralité des textes présentés pour l'édition MACASANTÉ du 24 novembre 2026 et autorise leur publication immédiate en l'état, sans réécriture ni nouvelle validation.",
         "contentHash": "7f1b2035269a504cb348f908c9779b68398f9e95d1d5481a84e19cd5e3f829f7"
-      }
+      },
+      "keywords": [
+        "douleur chronique",
+        "pleine conscience",
+        "opioïdes"
+      ]
     },
     {
       "id": "daily-aspirine-coeur-20261124",
@@ -11385,7 +11407,13 @@
         "validatedAt": "2026-11-24T14:14:24+01:00",
         "evidence": "Je valide médicalement l'intégralité des textes présentés pour l'édition MACASANTÉ du 24 novembre 2026 et autorise leur publication immédiate en l'état, sans réécriture ni nouvelle validation.",
         "contentHash": "a878a73c6d40e43b9caa11eee16aab8678c414130a88a0f8acc8713514a76fb7"
-      }
+      },
+      "keywords": [
+        "aspirine",
+        "infarctus",
+        "prévention cardiovasculaire",
+        "saignement"
+      ]
     },
     {
       "id": "daily-tabagisme-passif-chiffre-20261124",
@@ -11409,7 +11437,12 @@
         "validatedAt": "2026-11-24T14:14:24+01:00",
         "evidence": "Je valide médicalement l'intégralité des textes présentés pour l'édition MACASANTÉ du 24 novembre 2026 et autorise leur publication immédiate en l'état, sans réécriture ni nouvelle validation.",
         "contentHash": "8a679ac7515b1cc0d8f2d867719069c37af120a792244e3f821222851fd6afbf"
-      }
+      },
+      "keywords": [
+        "tabagisme passif",
+        "tabac",
+        "OMS"
+      ]
     },
     {
       "id": "daily-anorexie-boulimie-fardeau-20261124",
@@ -11433,7 +11466,12 @@
         "validatedAt": "2026-11-24T14:14:24+01:00",
         "evidence": "Je valide médicalement l'intégralité des textes présentés pour l'édition MACASANTÉ du 24 novembre 2026 et autorise leur publication immédiate en l'état, sans réécriture ni nouvelle validation.",
         "contentHash": "71f97def1f0d66c69f0488cf3457e3147d8ff74633ae78365199a1f5d8a24bd3"
-      }
+      },
+      "keywords": [
+        "anorexie",
+        "boulimie",
+        "troubles du comportement alimentaire"
+      ]
     },
     {
       "id": "daily-acces-soins-dentaires-20261124",
@@ -11457,7 +11495,12 @@
         "validatedAt": "2026-11-24T14:14:24+01:00",
         "evidence": "Je valide médicalement l'intégralité des textes présentés pour l'édition MACASANTÉ du 24 novembre 2026 et autorise leur publication immédiate en l'état, sans réécriture ni nouvelle validation.",
         "contentHash": "4ac666451dbdce84a39a2af84566143586cf9f60773884223de41118dcb4c261"
-      }
+      },
+      "keywords": [
+        "soins dentaires",
+        "accès aux soins",
+        "inégalités"
+      ]
     },
     {
       "id": "daily-sla-stress-cellulaire-20261124",
@@ -11481,7 +11524,12 @@
         "validatedAt": "2026-11-24T14:14:24+01:00",
         "evidence": "Je valide médicalement l'intégralité des textes présentés pour l'édition MACASANTÉ du 24 novembre 2026 et autorise leur publication immédiate en l'état, sans réécriture ni nouvelle validation.",
         "contentHash": "91fc684e307aebad3b24ec6aa22ff915f410fd55ccbe8b62dab8c189232761e7"
-      }
+      },
+      "keywords": [
+        "sclérose latérale amyotrophique",
+        "maladie de Charcot",
+        "stress cellulaire"
+      ]
     }
   ],
   "editions": [
