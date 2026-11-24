@@ -39,5 +39,11 @@ window.extraAuditedQuestions.push({
   "url": "https://doi.org/10.1001/jama.2018.20578",
   "relatedIds": [],
   "verifiedAt": "2026-11-24",
-  "seoUrl": "fiches-seo/aspirine-protection-coeur-risques.html"
+  "seoUrl": "fiches-seo/aspirine-protection-coeur-risques.html",
+  "validationStatus": "VALIDATED",
+  "editorialStatus": "PUBLISHED",
+  "nextAuditAt": "2027-02-24",
+  "auditIntervalMonths": 3,
+  "validatedBy": "Dr Romain BEDDOK",
+  "validationEvidence": "Okay, fiche validée à ajouter sur Maca Santé selon la branche habituelle magazine."
 });
