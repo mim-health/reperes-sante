@@ -5899,5 +5899,197 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "4673e64d53290b2b3a4897ab2164466fda1fe0789f7855f1391604437df4b943"
+  },
+  {
+    "id": "daily-anticoagulants-choc-tete-20261124",
+    "url": "article-daily-anticoagulants-choc-tete-20261124.html",
+    "title": "Anticoagulants : faut-il s'inquiéter après un choc à la tête ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-24",
+    "status": "PUBLISHED",
+    "excerpt": "Un traumatisme crânien sous anticoagulant nécessite une évaluation médicale rapide. Une nouvelle étude apporte néanmoins des résultats plutôt rassurants concernant les anticoagulants oraux directs.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "anticoagulants oraux directs",
+      "traumatisme crânien",
+      "scanner"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "b5508780ff1be5c9aab0e7a72e9262ae622e2f601405579f96d8aa913cc1f47c"
+  },
+  {
+    "id": "daily-pied-diabetique-inforatio-20261124",
+    "url": "article-daily-pied-diabetique-inforatio-20261124.html",
+    "title": "Diabète : une nouvelle technique pour mieux cicatriser les plaies du pied ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-24",
+    "status": "PUBLISHED",
+    "excerpt": "Une technique réalisée par des professionnels spécialisés pourrait améliorer la cicatrisation de certaines plaies chroniques du pied diabétique.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "pied diabétique",
+      "plaie",
+      "cicatrisation",
+      "inforatio"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "1662e391ecc29585a14e75307fa8305c6062e250a0db9d806317b92da5579735"
+  },
+  {
+    "id": "daily-cancer-supplementation-poids-20261124",
+    "url": "article-daily-cancer-supplementation-poids-20261124.html",
+    "title": "Cancer : peut-on mieux prévenir la perte de poids pendant les traitements ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-24",
+    "status": "PUBLISHED",
+    "excerpt": "Un accompagnement nutritionnel précoce pourrait limiter la perte de poids chez certains patients traités pour un cancer.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "cancer du nasopharynx",
+      "radiochimiothérapie",
+      "nutrition",
+      "perte de poids"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "e15a07de04ab7788ca3f7aff97fe52ba45c72649937623c33045cfe1feb6ace7"
+  },
+  {
+    "id": "daily-douleurs-chroniques-meditation-20261124",
+    "url": "article-daily-douleurs-chroniques-meditation-20261124.html",
+    "title": "Douleurs chroniques : la méditation peut-elle compléter les traitements antidouleur ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-24",
+    "status": "PUBLISHED",
+    "excerpt": "Certaines approches psychologiques associant méditation et gestion des émotions peuvent compléter la prise en charge des douleurs chroniques.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "douleur chronique",
+      "pleine conscience",
+      "opioïdes"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "7f1b2035269a504cb348f908c9779b68398f9e95d1d5481a84e19cd5e3f829f7"
+  },
+  {
+    "id": "daily-aspirine-coeur-20261124",
+    "url": "article-daily-aspirine-coeur-20261124.html",
+    "title": "Prendre de l'aspirine tous les jours protège-t-il le cœur ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-24",
+    "status": "PUBLISHED",
+    "excerpt": "PAS TOUJOURS !",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "aspirine",
+      "infarctus",
+      "prévention cardiovasculaire",
+      "saignement"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "a878a73c6d40e43b9caa11eee16aab8678c414130a88a0f8acc8713514a76fb7"
+  },
+  {
+    "id": "daily-tabagisme-passif-chiffre-20261124",
+    "url": "article-daily-tabagisme-passif-chiffre-20261124.html",
+    "title": "1,6 million",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-24",
+    "status": "PUBLISHED",
+    "excerpt": "C'est le nombre de non-fumeurs qui décèdent chaque année dans le monde, du fait de leur exposition au tabagisme passif, selon les estimations de l'OMS.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "tabagisme passif",
+      "tabac",
+      "OMS"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "8a679ac7515b1cc0d8f2d867719069c37af120a792244e3f821222851fd6afbf"
+  },
+  {
+    "id": "daily-anorexie-boulimie-fardeau-20261124",
+    "url": "article-daily-anorexie-boulimie-fardeau-20261124.html",
+    "title": "Troubles du comportement alimentaire",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-24",
+    "status": "PUBLISHED",
+    "excerpt": "Une publication du 20 novembre alerte sur l'augmentation du fardeau mondial de l'anorexie et de la boulimie. Le repérage précoce reste essentiel.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "anorexie",
+      "boulimie",
+      "troubles du comportement alimentaire"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "71f97def1f0d66c69f0488cf3457e3147d8ff74633ae78365199a1f5d8a24bd3"
+  },
+  {
+    "id": "daily-acces-soins-dentaires-20261124",
+    "url": "article-daily-acces-soins-dentaires-20261124.html",
+    "title": "Santé bucco-dentaire",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-24",
+    "status": "PUBLISHED",
+    "excerpt": "Une étude anglaise s'intéresse à l'effet des incitations financières sur l'accès aux soins dentaires des patients éloignés du système de soins. Les inégalités d'accès restent un enjeu de santé publique.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "soins dentaires",
+      "accès aux soins",
+      "inégalités"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "4ac666451dbdce84a39a2af84566143586cf9f60773884223de41118dcb4c261"
+  },
+  {
+    "id": "daily-sla-stress-cellulaire-20261124",
+    "url": "article-daily-sla-stress-cellulaire-20261124.html",
+    "title": "Sclérose latérale amyotrophique (maladie de Charcot)",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-24",
+    "status": "PUBLISHED",
+    "excerpt": "Un nouvel essai randomisé évalue un traitement expérimental ciblant certains mécanismes du stress cellulaire. Cette recherche ne constitue pas en elle-même la preuve d'un nouveau traitement efficace et disponible.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "sclérose latérale amyotrophique",
+      "maladie de Charcot",
+      "stress cellulaire"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "91fc684e307aebad3b24ec6aa22ff915f410fd55ccbe8b62dab8c189232761e7"
   }
 ];

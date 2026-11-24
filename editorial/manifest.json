@@ -1,12 +1,66 @@
 {
   "schemaVersion": 1,
-  "editionId": "edition-2026-11-20",
-  "editionDate": "2026-11-20",
-  "sourceFingerprint": "23837d4cf1f5a72764833a70b51721efc32edf96944759353330ef69b32480d5",
+  "editionId": "edition-2026-11-24",
+  "editionDate": "2026-11-24",
+  "sourceFingerprint": "5a0afb0366ae01c2e2b61a28e01433377ece9e75c8a5e45e3d5ecf51ce6849d1",
   "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-daily-anticoagulants-choc-tete-20261124",
+      "version": "b5508780ff1be5c9aab0e7a72e9262ae622e2f601405579f96d8aa913cc1f47c",
+      "url": "article-daily-anticoagulants-choc-tete-20261124.html",
+      "date": "2026-11-24"
+    },
+    {
+      "id": "mag-daily-pied-diabetique-inforatio-20261124",
+      "version": "1662e391ecc29585a14e75307fa8305c6062e250a0db9d806317b92da5579735",
+      "url": "article-daily-pied-diabetique-inforatio-20261124.html",
+      "date": "2026-11-24"
+    },
+    {
+      "id": "mag-daily-cancer-supplementation-poids-20261124",
+      "version": "e15a07de04ab7788ca3f7aff97fe52ba45c72649937623c33045cfe1feb6ace7",
+      "url": "article-daily-cancer-supplementation-poids-20261124.html",
+      "date": "2026-11-24"
+    },
+    {
+      "id": "mag-daily-douleurs-chroniques-meditation-20261124",
+      "version": "7f1b2035269a504cb348f908c9779b68398f9e95d1d5481a84e19cd5e3f829f7",
+      "url": "article-daily-douleurs-chroniques-meditation-20261124.html",
+      "date": "2026-11-24"
+    },
+    {
+      "id": "mag-daily-aspirine-coeur-20261124",
+      "version": "a878a73c6d40e43b9caa11eee16aab8678c414130a88a0f8acc8713514a76fb7",
+      "url": "article-daily-aspirine-coeur-20261124.html",
+      "date": "2026-11-24"
+    },
+    {
+      "id": "mag-daily-tabagisme-passif-chiffre-20261124",
+      "version": "8a679ac7515b1cc0d8f2d867719069c37af120a792244e3f821222851fd6afbf",
+      "url": "article-daily-tabagisme-passif-chiffre-20261124.html",
+      "date": "2026-11-24"
+    },
+    {
+      "id": "mag-daily-anorexie-boulimie-fardeau-20261124",
+      "version": "71f97def1f0d66c69f0488cf3457e3147d8ff74633ae78365199a1f5d8a24bd3",
+      "url": "article-daily-anorexie-boulimie-fardeau-20261124.html",
+      "date": "2026-11-24"
+    },
+    {
+      "id": "mag-daily-acces-soins-dentaires-20261124",
+      "version": "4ac666451dbdce84a39a2af84566143586cf9f60773884223de41118dcb4c261",
+      "url": "article-daily-acces-soins-dentaires-20261124.html",
+      "date": "2026-11-24"
+    },
+    {
+      "id": "mag-daily-sla-stress-cellulaire-20261124",
+      "version": "91fc684e307aebad3b24ec6aa22ff915f410fd55ccbe8b62dab8c189232761e7",
+      "url": "article-daily-sla-stress-cellulaire-20261124.html",
+      "date": "2026-11-24"
+    },
     {
       "id": "mag-daily-stream-statines-20261120",
       "version": "1759fa8212fa85e7b2a5f73af6318049fcd792b50909736c849eca1c976c3805",
