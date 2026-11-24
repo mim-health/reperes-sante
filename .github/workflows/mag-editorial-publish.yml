@@ -32,6 +32,7 @@ on:
       - 'credits-photos.html'
       - 'scripts/test-home-assistant.js'
       - 'editorial/content.json'
+      - 'editorial/editions/*.json'
       - 'editorial/catchup.json'
       - 'editorial/reviewed-corpus-overrides.json'
       - 'editorial-sfe-2026-10-11.json'
@@ -73,7 +74,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: feat/v0-magazine
+          ref: ${{ github.ref }}
           fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
@@ -92,7 +93,7 @@ jobs:
       - name: Assemble public site without private preparation files
         run: |
           mkdir -p _site
-          rsync -a --exclude='.git' --exclude='.github' --exclude='media-publishing' --exclude='scripts' --exclude='_site' --exclude='.maca-lab' --exclude='editorial/drafts' --exclude='editorial/publication-requests' --exclude='editorial/fiches.json' --exclude='publication-report.json' --exclude='publication-plan.json' --exclude='assistant-v2/public-artifacts' --exclude='assistant-v2/corpus.json' --exclude='assistant-v2/corpus.report.json' ./ _site/
+          rsync -a --exclude='.git' --exclude='.github' --exclude='media-publishing' --exclude='scripts' --exclude='_site' --exclude='.maca-lab' --exclude='editorial/drafts' --exclude='editorial/editions' --exclude='editorial/publication-requests' --exclude='editorial/fiches.json' --exclude='publication-report.json' --exclude='publication-plan.json' --exclude='assistant-v2/public-artifacts' --exclude='assistant-v2/corpus.json' --exclude='assistant-v2/corpus.report.json' ./ _site/
       - id: package
         run: echo "name=github-pages-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}" >> "$GITHUB_OUTPUT"
       - uses: actions/upload-pages-artifact@v3

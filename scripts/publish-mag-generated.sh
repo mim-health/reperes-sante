@@ -1,10 +1,15 @@
 #!/usr/bin/env bash
 set -euo pipefail
-# Only generated outputs are committed; the canonical editorial source remains unchanged.
+# Commit the validated edition import together with its generated outputs.
 BRANCH_NAME="${GITHUB_REF_NAME:-feat/v0-magazine}"
 [ "$BRANCH_NAME" = 'feat/v0-magazine' ] || { echo 'Publication restricted to magazine branch'; exit 1; }
 SOURCE_COMMIT="$(git rev-parse HEAD)"
 INPUT_VERSION="$(node -p "require('./scripts/editorial-pipeline').sourceVersion()")"
+IMPORT_CHANGED=false
+if ! git diff --quiet -- editorial/content.json; then
+ IMPORT_CHANGED=true
+ git add -- editorial/content.json
+fi
 git config user.name 'github-actions[bot]'
 git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
 git add editorial-fiches-validated.js
@@ -21,6 +26,7 @@ for attempt in 1 2 3; do
  git fetch origin "+refs/heads/$BRANCH_NAME:refs/remotes/origin/$BRANCH_NAME"
  REMOTE_HEAD="$(git rev-parse "origin/$BRANCH_NAME")"
  if [ "$REMOTE_HEAD" != "$SOURCE_COMMIT" ]; then
+  [ "$IMPORT_CHANGED" = false ] || { echo 'Branch advanced during edition import; retry from the new head'; exit 1; }
   REMOTE_INPUT="$(node -p "require('./scripts/editorial-pipeline').sourceVersion(process.argv[1])" "$REMOTE_HEAD")"
   [ "$REMOTE_INPUT" = "$INPUT_VERSION" ] || { echo 'Editorial source changed: refusing stale publication'; exit 1; }
   # Replay generated output only; conflicts abort rather than overwrite concurrent work.

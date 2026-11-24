@@ -77,3 +77,11 @@ Ajouter les sources validées au manifeste, puis reconstruire le bundle et les p
 ## Production du média et diffusion
 
 Le [programme de production et de diffusion](PRODUCTION.md) complète ce circuit : éditorial finalisé → validation → publication vérifiée → préparation des relais sociaux → diffusion et suivi. Chaque édition doit fournir un sujet à relayer et un support prêt à publier. Le site ne dépend pas de la disponibilité d’une vidéo ou d’un compte social.
+
+## Import quotidien depuis un fichier par édition
+
+Déposer `editorial/editions/AAAA-MM-JJ.json` sur `feat/v0-magazine`. Le JSON contient `snapshot`, `snapshotHash` et `approval`. Utiliser le format de la demande existante (`editorial-publish.prepare`) avec `requestId: edition-AAAA-MM-JJ`, neuf items `{kind: "magazine", body}` et une seule édition complète dans `snapshot.editions`. La rotation de la fiche du jour référence son identifiant existant dans les slots. Les nouveaux textes comportent leurs sources et leurs mots-clés.
+
+Le SHA-256 du snapshot est calculé à la préparation du texte présenté. L’approbation médicale documentée reprend ce hash, le nom du médecin, l’action, la date avec fuseau et la preuve. Le workflow contrôle cette correspondance, calcule chaque empreinte de contenu et fusionne le lot avant la construction. Il commite ensemble le registre et les sorties après les tests. En cas d’avancement concurrent de la branche pendant un import, relancer depuis son nouvel état.
+
+Un fichier déjà importé est enregistré par son empreinte dans le registre. Pour corriger ou retirer un article, suivre la procédure du registre décrite plus haut. Pour annuler une édition importée, retirer le fichier de la file d’import, mettre `complete: false` sur l’édition et retirer les articles concernés dans le registre dans le même commit, conformément à la procédure de retrait, afin que leurs URL permanentes servent une page `noindex`. Le test d’import se lance avec `node scripts/test-editorial-import-editions.js`.
