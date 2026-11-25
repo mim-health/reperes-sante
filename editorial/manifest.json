@@ -2,11 +2,17 @@
   "schemaVersion": 1,
   "editionId": "edition-2026-11-24",
   "editionDate": "2026-11-24",
-  "sourceFingerprint": "5a0afb0366ae01c2e2b61a28e01433377ece9e75c8a5e45e3d5ecf51ce6849d1",
-  "missingEdition": false,
+  "sourceFingerprint": "ecdd6da45e327f60f75ae0134f3c75eef87f60c2479d782bc339f9f93ba4e158",
+  "missingEdition": true,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-daily-cholesterol-symptomes-20261125",
+      "version": "c59d07c7263bcce8439b8fed3c69e1475056ce9898d4c2e6882b670dcfa20744",
+      "url": "article-daily-cholesterol-symptomes-20261125.html",
+      "date": "2026-11-25"
+    },
     {
       "id": "mag-daily-anticoagulants-choc-tete-20261124",
       "version": "b5508780ff1be5c9aab0e7a72e9262ae622e2f601405579f96d8aa913cc1f47c",

@@ -6091,5 +6091,26 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "91fc684e307aebad3b24ec6aa22ff915f410fd55ccbe8b62dab8c189232761e7"
+  },
+  {
+    "id": "daily-cholesterol-symptomes-20261125",
+    "url": "article-daily-cholesterol-symptomes-20261125.html",
+    "title": "Si j'ai trop de cholestérol, je vais forcément le sentir.",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-25",
+    "status": "PUBLISHED",
+    "excerpt": "FAUX ! Un excès de cholestérol passe généralement inaperçu.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "cholestérol",
+      "athérosclérose",
+      "bilan lipidique"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "c59d07c7263bcce8439b8fed3c69e1475056ce9898d4c2e6882b670dcfa20744"
   }
 ];
