@@ -39,6 +39,8 @@
       const q=plainNorm(query);
       // Preserve the established short-query routing after addition of broader shoulder fiches.
       // Specific queries about capsulitis, rupture or calcification keep normal search routing.
+      // Restore the existing acceptance-case route after an approved title revision.
+      if(q==='arthrose faut il moins bouger')return {id:'arthrose-faut-il-bouger',intentKey:'arthrose-activity-existing'};
       if(q==='douleur epaule')return {id:'douleur-epaule-lever-bras',intentKey:'shoulder-pain-general'};
       if(/\b(bronchiolite|beyfortus|abrysvo|nirsevimab|enflonsia|clesrovimab)\b/.test(q) || (/\bvrs\b/.test(q)&&/\b(bebe|nourrisson|grossesse|vaccin|vaccination|anticorps|prevention|proteger)\b/.test(q))) return {id:BRONCHIOLITIS_ID,intentKey:'bronchiolitis-rsv-prevention'};
       if(/\b(obesite|wegovy|mounjaro|semaglutide|tirzepatide|glp 1|glp1)\b/.test(q) || (/\b(traitement|traitements|medicament|medicaments)\b/.test(q)&&/\b(maigrir|obesite)\b/.test(q))) return {id:OBESITY_ID,intentKey:'obesity-treatment'};
