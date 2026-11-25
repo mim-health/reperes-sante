@@ -1188,6 +1188,80 @@
         "contentHash": "d74696c207fba5d7e01496ad5f8e95d002a0ba172988950bfa60e1be8fc18771",
         "snapshotHash": "344687906a8dd9d52d248f471b08d2c98d8f177c1a10eab9fe61d010dc52fb84"
       }
+    },
+    {
+      "id": "poux-enfant",
+      "category": "Enfants & parents",
+      "title": "Mon enfant a des poux : comment s'en débarrasser efficacement ?",
+      "keywords": "poux enfant lentes pédiculose diméticone peigne fin shampooing huiles essentielles école",
+      "answer": "Les poux de tête sont fréquents chez les enfants et ne sont pas liés à un manque d'hygiène. Leur traitement repose sur l'identification d'une infestation active, l'utilisation d'un produit adapté et la vérification de son efficacité dans les jours suivants.",
+      "detail": "Qu'est-ce qu'un pou ?\n\nLe pou de tête est un petit insecte parasite qui vit sur le cuir chevelu et se nourrit de sang.\n\nLa femelle pond des œufs, appelés lentes, qui adhèrent aux cheveux.\n\nAprès leur éclosion, les jeunes poux poursuivent leur développement sur le cuir chevelu.\n\nComment les poux se transmettent-ils ?\n\nLa transmission survient principalement lors de contacts directs entre les cheveux de deux personnes.\n\nLes poux ne sautent pas et ne volent pas.\n\nLe partage de certains accessoires, notamment les brosses ou les bonnets, peut également favoriser leur transmission, mais joue un rôle moins important que les contacts directs.\n\nComment savoir si mon enfant a réellement des poux ?\n\nDes démangeaisons du cuir chevelu, notamment derrière les oreilles et au niveau de la nuque, peuvent attirer l'attention.\n\nCependant, certains enfants infestés ne présentent pas de démangeaisons.\n\nLa mise en évidence d'un pou vivant, notamment à l'aide d'un peigne fin, constitue le meilleur argument en faveur d'une infestation active.\n\nLa présence de lentes anciennes ne signifie pas nécessairement que des poux sont encore présents.\n\nQuels traitements utiliser ?\n\nLes produits contenant de la diméticone agissent principalement par un mécanisme physique sur les poux.\n\nIls constituent une option couramment utilisée en France.\n\nLe choix du produit doit tenir compte de l'âge de l'enfant, de ses éventuelles allergies et des contre-indications.\n\nIl est important de respecter précisément les modalités d'application et, lorsque la notice le prévoit, de renouveler le traitement au délai recommandé.\n\nFaut-il traiter toute la famille ?\n\nIl est préférable d'examiner les personnes vivant dans le même foyer et de traiter celles présentant une infestation active.\n\nUn traitement préventif systématique de toutes les personnes n'est généralement pas justifié.\n\nFaut-il désinfecter toute la maison ?\n\nNon. Une désinfection massive du logement ou l'utilisation de sprays insecticides dans toutes les pièces n'est pas nécessaire.\n\nConcentrez-vous sur les objets récemment en contact avec les cheveux de la personne infestée.\n\nMon enfant peut-il aller à l'école ?\n\nLes poux ne justifient généralement pas une exclusion scolaire prolongée. Il convient de commencer rapidement le traitement et d'informer l'entourage concerné.\n\nLes huiles essentielles sont-elles efficaces ?\n\nLeur efficacité n'est pas suffisamment établie pour les recommander comme traitement de référence. Certaines peuvent entraîner des effets indésirables, particulièrement chez les jeunes enfants.",
+      "watch": "Quand consulter ? En cas d'échec répété d'un traitement correctement réalisé, de lésions infectées du cuir chevelu ou de doute diagnostique, demandez conseil à un professionnel de santé.",
+      "sources": [
+        {
+          "label": "AAP — Head Lice, Clinical Report, 2022",
+          "url": "https://doi.org/10.1542/peds.2022-059282"
+        },
+        {
+          "label": "CDC — Treatment of Head Lice",
+          "url": "https://www.cdc.gov/lice/treatment/index.html"
+        },
+        {
+          "label": "CDC — Clinical Care of Head Lice",
+          "url": "https://www.cdc.gov/lice/hcp/clinical-care/index.html"
+        },
+        {
+          "label": "Société Française de Dermatologie — Poux",
+          "url": "https://dermato-info.fr/sites/default/files/files/2026-03/LR%20Poux.pdf"
+        },
+        {
+          "label": "Burgess et al. — Dimeticone lotion, randomized controlled trial, BMJ",
+          "url": "https://doi.org/10.1136/bmj.38497.506481.8F"
+        }
+      ],
+      "readingTime": "4 min",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-25T13:36:00+01:00",
+        "evidence": "Je valide médicalement les versions enrichies du lot 5, avec toutes les références scientifiques complémentaires : Fatigue de l'enfant ; Diversification alimentaire ; Poux de tête ; Réseaux sociaux et TDAH ; Mpox ; Moustique tigre et dengue ; Vaccination HPV ; Trousse de pharmacie en voyage ; Alcool et vieillissement ; Alcool et santé cardiovasculaire. J'autorise leur publication immédiate selon le pipeline MACASANTÉ, sans duplication, avec synchronisation de l'assistant IA et vérification effective en production.",
+        "contentHash": "0c93e698e200364b5994bed678b122b58a9d207928a313dc3acaf2291e42babf",
+        "snapshotHash": "551f2504c3363aa73adee804618cc1b841bba3363fe62798b79aadd4d74e1c61"
+      }
+    },
+    {
+      "id": "reseaux-sociaux-tdah-attention-ados-20260902",
+      "category": "Ados",
+      "title": "Les réseaux sociaux peuvent-ils provoquer un TDAH chez les adolescents ?",
+      "keywords": "réseaux sociaux adolescent TDAH attention concentration smartphone usage problématique hyperactivité",
+      "answer": "L'utilisation intensive ou problématique des réseaux sociaux est associée, dans certaines études, à davantage de difficultés attentionnelles et d'impulsivité chez les adolescents. Cependant, les données actuelles ne permettent pas d'affirmer que les réseaux sociaux provoquent directement un trouble du déficit de l'attention avec ou sans hyperactivité, ou TDAH.",
+      "detail": "Qu'est-ce que le TDAH ?\n\nLe TDAH est un trouble du neurodéveloppement caractérisé par des difficultés persistantes d'attention et/ou des manifestations d'hyperactivité et d'impulsivité.\n\nIl apparaît pendant l'enfance et peut persister à l'adolescence puis à l'âge adulte.\n\nSon origine est multifactorielle, avec une contribution génétique importante.\n\nPourquoi les réseaux sociaux peuvent-ils perturber l'attention ?\n\nLes notifications, les contenus courts et les changements rapides de sujet peuvent multiplier les interruptions.\n\nL'adolescent peut avoir davantage de difficultés à maintenir son attention sur une activité longue ou demandant un effort soutenu.\n\nUne utilisation tardive des réseaux sociaux peut également réduire la durée du sommeil, ce qui peut accentuer les difficultés de concentration.\n\nQue montrent les études récentes ?\n\nUne revue systématique publiée en février 2026 dans Research in Developmental Disabilities examine les relations entre réseaux sociaux, inattention et impulsivité chez les adolescents.\n\nElle souligne notamment les limites méthodologiques des études disponibles et la nécessité de travaux permettant de mieux distinguer les mécanismes de causalité.\n\nUne relation dans les deux sens est-elle possible ?\n\nOui. Un adolescent présentant déjà des difficultés attentionnelles ou une impulsivité importante peut être davantage attiré par certaines formes de stimulation numérique.\n\nInversement, certaines habitudes numériques peuvent accentuer ses difficultés de concentration ou perturber son sommeil.\n\nIl est donc important de ne pas confondre une association observée avec une cause démontrée.\n\nQuels signes doivent faire rechercher un TDAH ?\n\nDes difficultés anciennes et persistantes d'organisation, des oublis fréquents, une impulsivité importante ou une incapacité à maintenir l'attention dans plusieurs contextes peuvent justifier une évaluation.\n\nLe diagnostic repose sur une analyse clinique approfondie, tenant compte notamment de l'histoire du développement et du retentissement scolaire, familial et social.\n\nLe temps passé sur un écran ne constitue pas un critère diagnostique.\n\nComment accompagner son adolescent ?\n\nIl peut être utile de désactiver certaines notifications, de prévoir des périodes de travail sans téléphone et de préserver les horaires de sommeil.\n\nLes règles doivent idéalement être discutées avec l'adolescent et adaptées à ses besoins.\n\nL'objectif n'est pas nécessairement de supprimer tout usage numérique, mais de maintenir un équilibre entre les différentes activités quotidiennes.",
+      "watch": "Quand consulter ? Des difficultés scolaires persistantes, un isolement, une perte de contrôle sur les usages numériques ou une altération importante du sommeil et de l'humeur justifient un avis médical.",
+      "sources": [
+        {
+          "label": "Research in Developmental Disabilities — The relationship between social media use and adolescent inattention and impulsivity, 2026",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0891422226000326"
+        },
+        {
+          "label": "Ra et al. — Association of Digital Media Use With Subsequent Symptoms of ADHD Among Adolescents, JAMA 2018",
+          "url": "https://doi.org/10.1001/jama.2018.8931"
+        },
+        {
+          "label": "HAS — TDAH chez l'enfant et l'adolescent, 2024",
+          "url": "https://www.has-sante.fr/jcms/p_3302482/fr/trouble-du-neurodeveloppement/tdah-diagnostic-et-interventions-therapeutiques-aupres-des-enfants-et-adolescents"
+        }
+      ],
+      "readingTime": "4 min",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-25T13:36:00+01:00",
+        "evidence": "Je valide médicalement les versions enrichies du lot 5, avec toutes les références scientifiques complémentaires : Fatigue de l'enfant ; Diversification alimentaire ; Poux de tête ; Réseaux sociaux et TDAH ; Mpox ; Moustique tigre et dengue ; Vaccination HPV ; Trousse de pharmacie en voyage ; Alcool et vieillissement ; Alcool et santé cardiovasculaire. J'autorise leur publication immédiate selon le pipeline MACASANTÉ, sans duplication, avec synchronisation de l'assistant IA et vérification effective en production.",
+        "contentHash": "a58bf1c75347959030ba052aabe52ecca3a1e9a879381b3408e96332eaccd63f",
+        "snapshotHash": "551f2504c3363aa73adee804618cc1b841bba3363fe62798b79aadd4d74e1c61"
+      }
     }
   ]
 }
