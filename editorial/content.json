@@ -11530,6 +11530,36 @@
         "maladie de Charcot",
         "stress cellulaire"
       ]
+    },
+    {
+      "id": "daily-cholesterol-symptomes-20261125",
+      "title": "Si j'ai trop de cholestérol, je vais forcément le sentir.",
+      "answer": "FAUX ! Un excès de cholestérol passe généralement inaperçu.",
+      "html": "<article><h1>Si j'ai trop de cholestérol, je vais forcément le sentir.</h1><p><strong>FAUX !</strong></p><p>Un excès de cholestérol passe généralement inaperçu.</p><p>Même sans aucun symptôme, il peut favoriser le développement de l'athérosclérose.</p><p><strong>Une prise de sang permet de le détecter.</strong></p><p>Source : <a href=\"https://www.ameli.fr/assure/sante/themes/trop-cholesterol-triglycerides-dans-sang-dyslipidemie/diagnostic-surveillance\">Assurance Maladie — Cholestérol et triglycérides : diagnostic et surveillance, 8 janvier 2026</a>.</p></article>",
+      "date": "2026-11-25",
+      "url": "article-daily-cholesterol-symptomes-20261125.html",
+      "format": "article",
+      "theme": "Santé",
+      "keywords": [
+        "cholestérol",
+        "athérosclérose",
+        "bilan lipidique"
+      ],
+      "sources": [
+        {
+          "label": "Assurance Maladie, 8 janvier 2026",
+          "url": "https://www.ameli.fr/assure/sante/themes/trop-cholesterol-triglycerides-dans-sang-dyslipidemie/diagnostic-surveillance"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "standalone": true,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-25T00:00:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition MACASANTÉ du 25 novembre 2026 et autorise sa publication immédiate en l'état, sans réécriture ni nouvelle validation.",
+        "contentHash": "c59d07c7263bcce8439b8fed3c69e1475056ce9898d4c2e6882b670dcfa20744"
+      }
     }
   ],
   "editions": [
