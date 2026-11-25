@@ -5,14 +5,16 @@
 (function(){
   function parseFrDate(value){
     const m=String(value||'').match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
-    return m?new Date(Date.UTC(+m[3],+m[2]-1,+m[1])):null;
+    if(m)return new Date(Date.UTC(+m[3],+m[2]-1,+m[1]));
+    const iso=String(value||'').match(/^(\d{4})-(\d{2})-(\d{2})(?:T|$)/);
+    return iso?new Date(Date.UTC(+iso[1],+iso[2]-1,+iso[3])):null;
   }
   function formatFrDate(date){
     return String(date.getUTCDate()).padStart(2,'0')+'/'+String(date.getUTCMonth()+1).padStart(2,'0')+'/'+date.getUTCFullYear();
   }
   function plusThreeMonths(value){
     const d=parseFrDate(value); if(!d)return null;
-    d.setUTCMonth(d.getUTCMonth()+3); return formatFrDate(d);
+    const day=d.getUTCDate(); d.setUTCDate(1); d.setUTCMonth(d.getUTCMonth()+3); d.setUTCDate(Math.min(day,new Date(Date.UTC(d.getUTCFullYear(),d.getUTCMonth()+1,0)).getUTCDate())); return formatFrDate(d);
   }
   function complete(item){
     if(!item||!item.verifiedAt)return item;

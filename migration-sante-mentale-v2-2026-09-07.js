@@ -128,6 +128,8 @@ Le message important est donc de ne pas attendre l’effondrement complet pour d
 let updated=0;
 (window.healthQuestions||[]).forEach(q=>{
   if(!q || !q.title || !Object.prototype.hasOwnProperty.call(details,q.title)) return;
+  // A later explicit medical approval must never be overwritten by a legacy migration.
+  if(q.medicalStatus==='VALIDATED' && q.validation?.contentHash) return;
   q.detail=details[q.title];
   q.readingTime='3–5 min';
   q.v2Editorial='MACA_V2_2026-09-07';
