@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "editionId": "edition-2026-11-24",
-  "editionDate": "2026-11-24",
-  "sourceFingerprint": "ecdd6da45e327f60f75ae0134f3c75eef87f60c2479d782bc339f9f93ba4e158",
-  "missingEdition": true,
+  "editionId": "edition-2026-11-25",
+  "editionDate": "2026-11-25",
+  "sourceFingerprint": "1e723eb3b211cb2e1ea60597857be0517f873d2ef39196d2c05930919020ed5b",
+  "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
@@ -11,6 +11,54 @@
       "id": "mag-daily-cholesterol-symptomes-20261125",
       "version": "c59d07c7263bcce8439b8fed3c69e1475056ce9898d4c2e6882b670dcfa20744",
       "url": "article-daily-cholesterol-symptomes-20261125.html",
+      "date": "2026-11-25"
+    },
+    {
+      "id": "mag-daily-zona-douleurs-20261125",
+      "version": "83ead49981ad8ea7677ccb0e54d14bad42a6215f4c4e8ea05dd352819a23bc3b",
+      "url": "article-daily-zona-douleurs-20261125.html",
+      "date": "2026-11-25"
+    },
+    {
+      "id": "mag-daily-diabete-os-20261125",
+      "version": "dcd9cad5c04dc19ba3894db74f10e7f4433a14d96f740d70a2ec88244bef7052",
+      "url": "article-daily-diabete-os-20261125.html",
+      "date": "2026-11-25"
+    },
+    {
+      "id": "mag-daily-prix-fruits-legumes-20261125",
+      "version": "c693b9310c1c61f78599294ec7fc6433cff009552df3833d6ffe7d8081908517",
+      "url": "article-daily-prix-fruits-legumes-20261125.html",
+      "date": "2026-11-25"
+    },
+    {
+      "id": "mag-daily-tabac-recompense-20261125",
+      "version": "a74364922f3292c3099be75121963decd59ea1aa2ed764173b4c39992b2ad1d3",
+      "url": "article-daily-tabac-recompense-20261125.html",
+      "date": "2026-11-25"
+    },
+    {
+      "id": "mag-daily-hta-chiffre-20261125",
+      "version": "a768607fc9654ad65ef9797bb1e546b9ac939c237b6b6cc6d4bf243095cde244",
+      "url": "article-daily-hta-chiffre-20261125.html",
+      "date": "2026-11-25"
+    },
+    {
+      "id": "mag-daily-cardiomyopathie-20261125",
+      "version": "a2468e0a32e2a697dd0c4965db0e6a7602ef45ab024a93fceedf276291a11d26",
+      "url": "article-daily-cardiomyopathie-20261125.html",
+      "date": "2026-11-25"
+    },
+    {
+      "id": "mag-daily-sepsis-ambulance-20261125",
+      "version": "3ffcf22ec80c87503762faaa50c16cc17db6d94423d14631554cca5053b68726",
+      "url": "article-daily-sepsis-ambulance-20261125.html",
+      "date": "2026-11-25"
+    },
+    {
+      "id": "mag-daily-amylose-ia-20261125",
+      "version": "19acf2eba5aefe6e2147456a31642432a07d1c69894704bd7d878f24ae56c8b3",
+      "url": "article-daily-amylose-ia-20261125.html",
       "date": "2026-11-25"
     },
     {

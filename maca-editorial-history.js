@@ -4231,5 +4231,151 @@ window.MACA_EDITORIAL_HISTORY=[
         "imageAlt": ""
       }
     ]
+  },
+  {
+    "date": "24/11/2026",
+    "editionId": "edition-2026-11-24",
+    "articles": [
+      {
+        "id": "daily-anticoagulants-choc-tete-20261124",
+        "category": "À LA UNE",
+        "icon": "•",
+        "title": "Anticoagulants : faut-il s'inquiéter après un choc à la tête ?",
+        "excerpt": "Un traumatisme crânien sous anticoagulant nécessite une évaluation médicale rapide. Une nouvelle étude apporte néanmoins des résultats plutôt rassurants concernant les anticoagulants oraux directs.",
+        "body": "Anticoagulants : faut-il s'inquiéter après un choc à la tête ?\n\n Réponse courte : Un traumatisme crânien sous anticoagulant nécessite une évaluation médicale rapide. Une nouvelle étude apporte néanmoins des résultats plutôt rassurants concernant les anticoagulants oraux directs.\n\n Une étude publiée le 23 novembre 2026 a analysé 11 401 passages aux urgences après un traumatisme crânien ayant conduit à un scanner, dont 565 sous anticoagulants oraux directs.\n\n Après ajustement statistique, les chercheurs n'ont pas retrouvé d'augmentation significative des hémorragies intracrâniennes, des interventions neurochirurgicales ou de la mortalité à 28 jours.\n\n Quelles sont les limites ? \n\n Il s'agit d'une étude observationnelle. Elle ne permet pas d'exclure une augmentation cliniquement importante du risque ni de modifier, à elle seule, les recommandations actuelles.\n\n En pratique : après un choc à la tête sous anticoagulant, demandez rapidement un avis médical, même en l'absence de symptômes immédiats. N'interrompez pas votre traitement de votre propre initiative.\n\n Source : Bloom et al., JAMA Network Open, 23 novembre 2026. https://doi.org/10.1001/jamanetworkopen.2026.45624",
+        "articleUrl": "article-daily-anticoagulants-choc-tete-20261124.html",
+        "source": "Bloom et al., JAMA Network Open, 23 novembre 2026.",
+        "sourceLabel": "Bloom et al., JAMA Network Open, 23 novembre 2026.",
+        "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.45624",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-pied-diabetique-inforatio-20261124",
+        "category": "À LIRE EN 3 MIN",
+        "icon": "•",
+        "title": "Diabète : une nouvelle technique pour mieux cicatriser les plaies du pied ?",
+        "excerpt": "Une technique réalisée par des professionnels spécialisés pourrait améliorer la cicatrisation de certaines plaies chroniques du pied diabétique.",
+        "body": "Diabète : une nouvelle technique pour mieux cicatriser les plaies du pied ?\n\n Réponse courte : Une technique réalisée par des professionnels spécialisés pourrait améliorer la cicatrisation de certaines plaies chroniques du pied diabétique.\n\n Un essai randomisé danois portant sur 100 patients a évalué une technique appelée inforatio , en complément des soins habituels.\n\n Proportion de plaies cicatrisées à 20 semaines : \n\n Nouvelle technique : 49 %.\n\n Soins habituels seuls : 27,5 %.\n\n Ces résultats sont encourageants, mais concernent des plaies sélectionnées, non infectées. Des études complémentaires restent nécessaires avant une généralisation.\n\n En pratique : inspecter quotidiennement ses pieds lorsqu'on est diabétique et consulter rapidement devant toute plaie, même indolore, demeure essentiel.\n\n Source : Moeini et al., JAMA Network Open, novembre 2026. https://doi.org/10.1001/jamanetworkopen.2026.42733",
+        "articleUrl": "article-daily-pied-diabetique-inforatio-20261124.html",
+        "source": "Moeini et al., JAMA Network Open, novembre 2026.",
+        "sourceLabel": "Moeini et al., JAMA Network Open, novembre 2026.",
+        "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.42733",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-cancer-supplementation-poids-20261124",
+        "category": "À LIRE EN 3 MIN",
+        "icon": "•",
+        "title": "Cancer : peut-on mieux prévenir la perte de poids pendant les traitements ?",
+        "excerpt": "Un accompagnement nutritionnel précoce pourrait limiter la perte de poids chez certains patients traités pour un cancer.",
+        "body": "Cancer : peut-on mieux prévenir la perte de poids pendant les traitements ?\n\n Réponse courte : Un accompagnement nutritionnel précoce pourrait limiter la perte de poids chez certains patients traités pour un cancer.\n\n Un essai randomisé portant sur 216 patients analysés, traités par radiochimiothérapie pour un cancer du nasopharynx, a comparé une supplémentation nutritionnelle orale précoce à la prise en charge habituelle.\n\n Patients ayant perdu plus de 5 % de leur poids : \n\n Supplémentation précoce : 65,4 %.\n\n Prise en charge habituelle : 80,7 %.\n\n L'étude montre l'intérêt potentiel d'une prise en charge nutritionnelle dès le début du traitement. Elle ne démontre toutefois pas un bénéfice sur la survie et ne peut pas être extrapolée à tous les cancers.\n\n En pratique : ne pas attendre une perte de poids importante pour en parler à son équipe soignante.\n\n Source : Su et al., JAMA Oncology, 12 novembre 2026. https://doi.org/10.1001/jamaoncol.2026.4535",
+        "articleUrl": "article-daily-cancer-supplementation-poids-20261124.html",
+        "source": "Su et al., JAMA Oncology, 12 novembre 2026.",
+        "sourceLabel": "Su et al., JAMA Oncology, 12 novembre 2026.",
+        "sourceUrl": "https://doi.org/10.1001/jamaoncol.2026.4535",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-douleurs-chroniques-meditation-20261124",
+        "category": "À LIRE EN 3 MIN",
+        "icon": "•",
+        "title": "Douleurs chroniques : la méditation peut-elle compléter les traitements antidouleur ?",
+        "excerpt": "Certaines approches psychologiques associant méditation et gestion des émotions peuvent compléter la prise en charge des douleurs chroniques.",
+        "body": "Douleurs chroniques : la méditation peut-elle compléter les traitements antidouleur ?\n\n Réponse courte : Certaines approches psychologiques associant méditation et gestion des émotions peuvent compléter la prise en charge des douleurs chroniques.\n\n Une analyse publiée le 23 novembre a étudié 185 anciens militaires américains recevant des opioïdes au long cours.\n\n Les participants ayant bénéficié d'un programme structuré de pleine conscience ont moins fréquemment consulté aux urgences entre le neuvième et le douzième mois : 51 passages contre 65 dans le groupe bénéficiant d'une psychothérapie de soutien.\n\n Aucune différence significative n'a été retrouvée pendant les premiers mois du suivi.\n\n En pratique : ces techniques constituent un complément possible aux traitements médicaux, mais ne justifient pas leur arrêt sans accompagnement.\n\n Source : Stecher et Garland, JAMA Network Open, 23 novembre 2026. https://doi.org/10.1001/jamanetworkopen.2026.44883",
+        "articleUrl": "article-daily-douleurs-chroniques-meditation-20261124.html",
+        "source": "Stecher et Garland, JAMA Network Open, 23 novembre 2026.",
+        "sourceLabel": "Stecher et Garland, JAMA Network Open, 23 novembre 2026.",
+        "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.44883",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-fiche-audition-60-20261024",
+        "category": "FICHE DU JOUR",
+        "icon": "•",
+        "title": "Audition après 60 ans : quand la faire tester ?",
+        "excerpt": "Demander souvent de répéter, augmenter le volume ou mal suivre les conversations dans le bruit justifie un contrôle auditif.",
+        "body": "Audition après 60 ans : quand la faire tester ?\n\n Réponse courte. Demander souvent de répéter, augmenter le volume ou mal suivre les conversations dans le bruit justifie un contrôle auditif.\n\n Cette rubrique remet en avant une fiche du corpus déjà validée ; elle ne crée pas de nouveau contenu médical.\n\n Source : OMS — World report on hearing",
+        "articleUrl": "article-daily-fiche-audition-60-20261024.html",
+        "source": "OMS — World report on hearing",
+        "sourceLabel": "OMS — World report on hearing",
+        "sourceUrl": "https://www.who.int/publications/i/item/world-report-on-hearing",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-aspirine-coeur-20261124",
+        "category": "VRAI OU FAUX",
+        "icon": "•",
+        "title": "Prendre de l'aspirine tous les jours protège-t-il le cœur ?",
+        "excerpt": "PAS TOUJOURS !",
+        "body": "Prendre de l'aspirine tous les jours protège-t-il le cœur ?\n\n PAS TOUJOURS ! \n\n Après un infarctus, l'aspirine peut réduire le risque de récidive.\n\n Sans antécédent cardiovasculaire, le risque de saignement peut dépasser le bénéfice.\n\n Ne commencez ni n'arrêtez votre traitement sans avis médical. \n\n Source : USPSTF — Recommandations sur l'aspirine en prévention cardiovasculaire primaire, 2022. https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/aspirin-to-prevent-cardiovascular-disease-preventive-medication",
+        "articleUrl": "article-daily-aspirine-coeur-20261124.html",
+        "source": "USPSTF — Recommandations sur l'aspirine en prévention cardiovasculaire primaire, 2022.",
+        "sourceLabel": "USPSTF — Recommandations sur l'aspirine en prévention cardiovasculaire primaire, 2022.",
+        "sourceUrl": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/aspirin-to-prevent-cardiovascular-disease-preventive-medication",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-tabagisme-passif-chiffre-20261124",
+        "category": "LE CHIFFRE DU JOUR",
+        "icon": "•",
+        "title": "1,6 million",
+        "excerpt": "C'est le nombre de non-fumeurs qui décèdent chaque année dans le monde, du fait de leur exposition au tabagisme passif, selon les estimations de l'OMS.",
+        "body": "1,6 million\n\n C'est le nombre de non-fumeurs qui décèdent chaque année dans le monde, du fait de leur exposition au tabagisme passif, selon les estimations de l'OMS.\n\n Protéger son entourage du tabac, notamment les enfants, reste une mesure essentielle de prévention.\n\n Source : OMS — Tabac et nicotine, 26 juin 2026. https://www.who.int/news-room/fact-sheets/detail/tobacco",
+        "articleUrl": "article-daily-tabagisme-passif-chiffre-20261124.html",
+        "source": "OMS — Tabac et nicotine, 26 juin 2026.",
+        "sourceLabel": "OMS — Tabac et nicotine, 26 juin 2026.",
+        "sourceUrl": "https://www.who.int/news-room/fact-sheets/detail/tobacco",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-anorexie-boulimie-fardeau-20261124",
+        "category": "DONNÉES",
+        "icon": "•",
+        "title": "Troubles du comportement alimentaire",
+        "excerpt": "Une publication du 20 novembre alerte sur l'augmentation du fardeau mondial de l'anorexie et de la boulimie. Le repérage précoce reste essentiel.",
+        "body": "Troubles du comportement alimentaire\n\n Une publication du 20 novembre alerte sur l'augmentation du fardeau mondial de l'anorexie et de la boulimie. Le repérage précoce reste essentiel.\n\n Source : JAMA, 20 novembre 2026. https://doi.org/10.1001/jama.2026.24052",
+        "articleUrl": "article-daily-anorexie-boulimie-fardeau-20261124.html",
+        "source": "JAMA, 20 novembre 2026.",
+        "sourceLabel": "JAMA, 20 novembre 2026.",
+        "sourceUrl": "https://doi.org/10.1001/jama.2026.24052",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-acces-soins-dentaires-20261124",
+        "category": "DONNÉES",
+        "icon": "•",
+        "title": "Santé bucco-dentaire",
+        "excerpt": "Une étude anglaise s'intéresse à l'effet des incitations financières sur l'accès aux soins dentaires des patients éloignés du système de soins. Les inégalités d'accès restent un enjeu de santé publique.",
+        "body": "Santé bucco-dentaire\n\n Une étude anglaise s'intéresse à l'effet des incitations financières sur l'accès aux soins dentaires des patients éloignés du système de soins. Les inégalités d'accès restent un enjeu de santé publique.\n\n Source : JAMA Network Open, novembre 2026. https://doi.org/10.1001/jamanetworkopen.2026.42642",
+        "articleUrl": "article-daily-acces-soins-dentaires-20261124.html",
+        "source": "JAMA Network Open, novembre 2026.",
+        "sourceLabel": "JAMA Network Open, novembre 2026.",
+        "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.42642",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-sla-stress-cellulaire-20261124",
+        "category": "DONNÉES",
+        "icon": "•",
+        "title": "Sclérose latérale amyotrophique (maladie de Charcot)",
+        "excerpt": "Un nouvel essai randomisé évalue un traitement expérimental ciblant certains mécanismes du stress cellulaire. Cette recherche ne constitue pas en elle-même la preuve d'un nouveau traitement efficace et disponible.",
+        "body": "Sclérose latérale amyotrophique (maladie de Charcot)\n\n Un nouvel essai randomisé évalue un traitement expérimental ciblant certains mécanismes du stress cellulaire. Cette recherche ne constitue pas en elle-même la preuve d'un nouveau traitement efficace et disponible.\n\n Source : JAMA Network Open, 23 novembre 2026. https://doi.org/10.1001/jamanetworkopen.2026.45545",
+        "articleUrl": "article-daily-sla-stress-cellulaire-20261124.html",
+        "source": "JAMA Network Open, 23 novembre 2026.",
+        "sourceLabel": "JAMA Network Open, 23 novembre 2026.",
+        "sourceUrl": "https://doi.org/10.1001/jamanetworkopen.2026.45545",
+        "image": "",
+        "imageAlt": ""
+      }
+    ]
   }
 ];

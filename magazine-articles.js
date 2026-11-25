@@ -6112,5 +6112,157 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "c59d07c7263bcce8439b8fed3c69e1475056ce9898d4c2e6882b670dcfa20744"
+  },
+  {
+    "id": "daily-zona-douleurs-20261125",
+    "url": "article-daily-zona-douleurs-20261125.html",
+    "title": "Zona : pourquoi les douleurs persistent-elles parfois après la disparition des boutons ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-25",
+    "status": "PUBLISHED",
+    "excerpt": "Même après la guérison des lésions cutanées, le zona peut laisser des douleurs nerveuses persistantes, parfois très invalidantes.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "zona-douleurs"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "83ead49981ad8ea7677ccb0e54d14bad42a6215f4c4e8ea05dd352819a23bc3b"
+  },
+  {
+    "id": "daily-diabete-os-20261125",
+    "url": "article-daily-diabete-os-20261125.html",
+    "title": "Diabète de type 2 : les os sont-ils plus fragiles qu'on ne le pense ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-25",
+    "status": "PUBLISHED",
+    "excerpt": "Le diabète de type 2 peut augmenter le risque de fracture, même lorsque la densité osseuse paraît relativement satisfaisante.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "diabete-os"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "dcd9cad5c04dc19ba3894db74f10e7f4433a14d96f740d70a2ec88244bef7052"
+  },
+  {
+    "id": "daily-prix-fruits-legumes-20261125",
+    "url": "article-daily-prix-fruits-legumes-20261125.html",
+    "title": "Manger plus sainement : le prix des aliments est-il un obstacle majeur ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-25",
+    "status": "PUBLISHED",
+    "excerpt": "Faciliter financièrement l'accès aux fruits et légumes peut modifier les habitudes d'achat, mais le bénéfice médical reste à démontrer.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "prix-fruits-legumes"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "c693b9310c1c61f78599294ec7fc6433cff009552df3833d6ffe7d8081908517"
+  },
+  {
+    "id": "daily-tabac-recompense-20261125",
+    "url": "article-daily-tabac-recompense-20261125.html",
+    "title": "Arrêter de fumer : une récompense financière peut-elle réellement aider ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-25",
+    "status": "PUBLISHED",
+    "excerpt": "Des incitations financières associées à une prise en charge du sevrage pourraient aider certaines personnes à arrêter durablement de fumer.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "tabac-recompense"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "a74364922f3292c3099be75121963decd59ea1aa2ed764173b4c39992b2ad1d3"
+  },
+  {
+    "id": "daily-hta-chiffre-20261125",
+    "url": "article-daily-hta-chiffre-20261125.html",
+    "title": "44 %",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-25",
+    "status": "PUBLISHED",
+    "excerpt": "Des adultes hypertendus dans le monde ignorent qu'ils le sont.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "hta-chiffre"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "a768607fc9654ad65ef9797bb1e546b9ac939c237b6b6cc6d4bf243095cde244"
+  },
+  {
+    "id": "daily-cardiomyopathie-20261125",
+    "url": "article-daily-cardiomyopathie-20261125.html",
+    "title": "Cardiologie : mieux reconnaître la cardiomyopathie hypertrophique",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-25",
+    "status": "PUBLISHED",
+    "excerpt": "Une nouvelle synthèse scientifique fait le point sur cette maladie caractérisée par un épaississement du muscle cardiaque.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "cardiomyopathie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "a2468e0a32e2a697dd0c4965db0e6a7602ef45ab024a93fceedf276291a11d26"
+  },
+  {
+    "id": "daily-sepsis-ambulance-20261125",
+    "url": "article-daily-sepsis-ambulance-20261125.html",
+    "title": "Infections graves : faut-il administrer les antibiotiques dès l'ambulance ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-25",
+    "status": "PUBLISHED",
+    "excerpt": "L'essai randomisé PITSTOP-Antibiotics étudie l'intérêt d'administrer plus précocement des antibiotiques aux patients présentant une suspicion de sepsis.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "sepsis-ambulance"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "3ffcf22ec80c87503762faaa50c16cc17db6d94423d14631554cca5053b68726"
+  },
+  {
+    "id": "daily-amylose-ia-20261125",
+    "url": "article-daily-amylose-ia-20261125.html",
+    "title": "Amylose cardiaque : l'intelligence artificielle au service du diagnostic",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-25",
+    "status": "PUBLISHED",
+    "excerpt": "Une étude évalue un outil d'intelligence artificielle capable d'analyser les électrocardiogrammes afin d'identifier les patients qui pourraient bénéficier d'examens complémentaires pour rechercher une amylose cardiaque.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "amylose-ia"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "19acf2eba5aefe6e2147456a31642432a07d1c69894704bd7d878f24ae56c8b3"
   }
 ];
