@@ -334,19 +334,6 @@
     },
     {
       "left": {
-        "id": "ingestion-produit-toxique-enfant",
-        "title": "Mon enfant a avalé un médicament ou un produit ménager : que faire ?",
-        "type": "fiche"
-      },
-      "right": {
-        "id": "intoxication-produit-menager-enfant",
-        "title": "Mon enfant a avalé un produit ménager : que faire ?",
-        "type": "fiche"
-      },
-      "score": 0.86
-    },
-    {
-      "left": {
         "id": "poux-enfant",
         "title": "Mon enfant a des poux : quel traitement est recommandé ?",
         "type": "fiche"
@@ -360,19 +347,6 @@
     },
     {
       "left": {
-        "id": "pleurs-nourrisson",
-        "title": "Mon bébé pleure beaucoup : quand est-ce normal et quand demander un avis ?",
-        "type": "fiche"
-      },
-      "right": {
-        "id": "regurgitations-nourrisson",
-        "title": "Mon bébé régurgite beaucoup : est-ce normal ?",
-        "type": "fiche"
-      },
-      "score": 0.5
-    },
-    {
-      "left": {
         "id": "migraine-adulte",
         "title": "Migraine : quand faut-il envisager un traitement de fond ?",
         "type": "fiche"
@@ -383,6 +357,19 @@
         "type": "Mag"
       },
       "score": 1
+    },
+    {
+      "left": {
+        "id": "intoxication-produit-menager-enfant",
+        "title": "Mon enfant a avalé un produit ménager : que faire ?",
+        "type": "fiche"
+      },
+      "right": {
+        "id": "ingestion-produit-toxique-enfant",
+        "title": "Mon enfant a avalé un médicament ou un produit ménager : que faire ?",
+        "type": "fiche"
+      },
+      "score": 0.86
     },
     {
       "left": {
