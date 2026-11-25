@@ -249,6 +249,163 @@
         "contentHash": "8627794c2e7f43de6c43ff5adf6942416559bcbd3631f06228939d1bf3401347",
         "snapshotHash": "696d7d2570aadb5db72ee6896d1c7b2f4b34cd0ad7d56cf6e43a9f4795626aff"
       }
+    },
+    {
+      "id": "convulsion-febrile-enfant",
+      "category": "Enfants & parents",
+      "title": "Mon enfant convulse pendant une fièvre : que faut-il faire ?",
+      "keywords": "enfant convulsion fièvre crise fébrile yeux révulsés secousses perte connaissance urgence",
+      "answer": "Les convulsions fébriles surviennent principalement chez les enfants âgés de six mois à cinq ans. Elles sont impressionnantes, mais les formes simples sont généralement sans conséquence neurologique. Pendant la crise, protégez l'enfant, notez sa durée et ne mettez rien dans sa bouche. Une première convulsion nécessite une évaluation médicale rapide.",
+      "detail": "Pourquoi la fièvre peut-elle provoquer des convulsions ?\n\nLe cerveau du jeune enfant est encore en développement. Chez certains enfants prédisposés, une infection accompagnée de fièvre peut déclencher une activité électrique cérébrale excessive et transitoire.\n\nCette réaction peut entraîner une perte de connaissance, une raideur musculaire ou des secousses involontaires.\n\nLa convulsion peut survenir au début d'une infection, parfois avant même que les parents aient remarqué la fièvre. Elle ne signifie pas automatiquement que l'enfant souffre d'épilepsie.\n\nComment reconnaître une convulsion fébrile ?\n\nL'enfant peut perdre le contact avec son entourage, présenter des mouvements involontaires des bras et des jambes ou avoir les yeux révulsés. Après la crise, une période de fatigue ou de somnolence est possible.\n\nUne convulsion fébrile simple est habituellement généralisée, dure moins de quinze minutes et ne se répète pas dans les vingt-quatre heures.\n\nCette définition médicale ne signifie pas qu'il faut attendre quinze minutes avant de demander de l'aide.\n\nQue faire pendant la crise ?\n\nInstallez l'enfant sur une surface sécurisée. Éloignez les objets dangereux, protégez sa tête et placez-le sur le côté dès que possible sans forcer ses mouvements.\n\nNotez l'heure de début de la crise. Ne tentez pas de maintenir ses membres immobiles. Ne placez aucun objet ni doigt dans sa bouche et ne lui donnez pas de médicament oral ou de boisson tant qu'il n'a pas retrouvé une vigilance normale.\n\nDes examens sont-ils nécessaires ?\n\nLe médecin recherche principalement la cause de la fièvre et vérifie l'absence de signes orientant vers une infection neurologique ou une autre maladie.\n\nAprès une convulsion fébrile simple chez un enfant ayant complètement récupéré, un électroencéphalogramme ou une imagerie cérébrale ne sont généralement pas nécessaires de manière systématique.\n\nDes examens complémentaires peuvent être indiqués si la présentation est inhabituelle.\n\nExiste-t-il un risque de récidive ou d'épilepsie ?\n\nCertains enfants présenteront une nouvelle convulsion lors d'un épisode fébrile ultérieur. Cette possibilité dépend notamment de l'âge de la première crise et de la prédisposition individuelle.\n\nLa majorité des enfants ayant présenté une convulsion fébrile simple ne développeront pas d'épilepsie.\n\nLes formes atypiques ou associées à des antécédents neurologiques nécessitent une évaluation individualisée.\n\nPeut-on prévenir les convulsions en faisant baisser la fièvre ?\n\nLes médicaments antipyrétiques peuvent améliorer le confort de l'enfant, mais ils ne préviennent pas de manière fiable les convulsions fébriles.\n\nIl est donc préférable de surveiller l'état général, l'hydratation et l'évolution de la maladie plutôt que de chercher à normaliser constamment la température.",
+      "watch": "Quand appeler le 15 ou le 112 ?\n\nDemandez une aide médicale urgente lors d'une première convulsion, particulièrement si elle est toujours en cours. Appelez immédiatement les secours si la crise atteint cinq minutes, se répète, ne concerne qu'un côté du corps, s'accompagne d'une respiration anormale ou si l'enfant ne récupère pas correctement.\n\nUne convulsion chez un nourrisson de moins de six mois ou associée à une raideur de nuque, des taches violacées ou une altération importante de l'état général nécessite également une prise en charge urgente.",
+      "sources": [
+        {
+          "label": "Assurance Maladie — Convulsions fébriles",
+          "url": "https://www.ameli.fr/assure/sante/urgence/bebe-enfant/convulsions-febriles-enfant"
+        },
+        {
+          "label": "Comprendre la fièvre chez l'enfant",
+          "url": "https://www.ameli.fr/assure/sante/themes/fievre-enfant/comprendre-gerer-fievre-enfant"
+        }
+      ],
+      "readingTime": "4 min",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-25T10:53:00+01:00",
+        "evidence": "Je valide médicalement les versions enrichies suivantes : Convulsions fébriles ; Ingestion toxique ; Pleurs du nourrisson ; Couchage sécurisé du bébé ; Sang dans les selles. J'autorise leur publication selon le pipeline MACASANTÉ, sans duplication, avec synchronisation de l'assistant IA.",
+        "contentHash": "8229cf7055f7713fd85b25bdc8253fc30259414c628b2f7c65a3a949d7810a46",
+        "snapshotHash": "20de2571d503a656bf247d3f68366905d3f06f36b609f3cc34dadd57a43c6f11"
+      }
+    },
+    {
+      "id": "ingestion-produit-toxique-enfant",
+      "category": "Enfants & parents",
+      "title": "Mon enfant a avalé un médicament ou un produit ménager : que faire ?",
+      "keywords": "enfant ingestion toxique médicament produit ménager lessive javel intoxication centre antipoison",
+      "answer": "L'ingestion d'un médicament ou d'un produit potentiellement toxique nécessite un avis immédiat, même en l'absence de symptômes. Ne faites pas vomir votre enfant et contactez un centre antipoison. En cas de signe de gravité ou de suspicion d'ingestion d'une pile bouton, appelez le 15.",
+      "detail": "Pourquoi les jeunes enfants sont-ils particulièrement exposés ?\n\nLes jeunes enfants découvrent leur environnement en portant fréquemment des objets à leur bouche. Ils ne savent pas reconnaître les substances dangereuses et peuvent confondre un médicament avec un bonbon ou un produit ménager avec une boisson.\n\nLeur faible poids peut également rendre certaines quantités de médicaments particulièrement dangereuses.\n\nQuels produits présentent un risque ?\n\nLes médicaments, les capsules de lessive, les produits déboucheurs, les huiles essentielles, les produits contenant de la nicotine et certains liquides automobiles peuvent provoquer des intoxications graves.\n\nLes conséquences dépendent de la nature du produit, de sa concentration, de la quantité absorbée et du poids de l'enfant.\n\nCertains produits provoquent principalement des brûlures digestives, tandis que d'autres peuvent affecter le cerveau, le cœur, les reins ou le foie.\n\nPourquoi ne faut-il pas attendre les symptômes ?\n\nUne intoxication peut initialement passer inaperçue. Certains médicaments, notamment le paracétamol en quantité excessive, peuvent provoquer des lésions graves après une période durant laquelle l'enfant semble aller bien.\n\nL'évaluation du risque doit donc être réalisée dès la découverte de l'ingestion.\n\nQuels renseignements préparer ?\n\nConservez l'emballage et indiquez au professionnel de santé le nom du produit, sa concentration, la quantité possiblement ingérée, l'heure de l'accident, l'âge et le poids de l'enfant.\n\nNe retardez toutefois pas votre appel pour rechercher ces renseignements.\n\nPourquoi ne faut-il pas faire vomir l'enfant ?\n\nProvoquer des vomissements peut entraîner une inhalation du produit dans les poumons ou exposer une seconde fois l'œsophage à une substance corrosive.\n\nLe lait n'est pas un antidote universel. Ne donnez ni aliment, ni boisson, ni médicament sans instruction du centre antipoison ou des secours.\n\nLes piles boutons : un danger particulier\n\nUne pile bouton coincée dans l'œsophage peut générer une réaction électrochimique responsable de brûlures profondes, parfois en quelques heures.\n\nMême si l'ingestion est seulement suspectée, une prise en charge immédiate est nécessaire. L'enfant doit rester à jeun et être orienté rapidement vers une structure adaptée.\n\nComment prévenir les intoxications domestiques ?\n\nRangez les médicaments et produits dangereux dans des placards fermés, hors de portée des enfants. Conservez-les dans leurs emballages d'origine et ne transvasez jamais un produit ménager dans une bouteille alimentaire.\n\nVérifiez également que les compartiments à piles des télécommandes et jouets sont correctement sécurisés.",
+      "watch": "Quand appeler immédiatement les secours ?\n\nAppelez le 15 ou le 112 devant une difficulté respiratoire, une perte de connaissance, une convulsion, une somnolence inhabituelle, une brûlure buccale importante ou une suspicion d'ingestion de pile bouton.",
+      "sources": [
+        {
+          "label": "Assurance Maladie — Intoxication par ingestion",
+          "url": "https://www.ameli.fr/assure/sante/urgence/accidents-domestiques/intoxication-voie-orale-ingestion"
+        },
+        {
+          "label": "HAS — Ingestion de pile bouton",
+          "url": "https://www.has-sante.fr/jcms/p_3316737/fr/que-faire-quand-un-enfant-a-ingere-une-pile-bouton"
+        },
+        {
+          "label": "Centres antipoison",
+          "url": "https://centres-antipoison.net"
+        }
+      ],
+      "readingTime": "4 min",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-25T10:53:00+01:00",
+        "evidence": "Je valide médicalement les versions enrichies suivantes : Convulsions fébriles ; Ingestion toxique ; Pleurs du nourrisson ; Couchage sécurisé du bébé ; Sang dans les selles. J'autorise leur publication selon le pipeline MACASANTÉ, sans duplication, avec synchronisation de l'assistant IA.",
+        "contentHash": "492d019f60e43bdfa99064dc5ddb00a0e6fa27caf0e16df4ab40809b5c3e7fd5",
+        "snapshotHash": "20de2571d503a656bf247d3f68366905d3f06f36b609f3cc34dadd57a43c6f11"
+      }
+    },
+    {
+      "id": "pleurs-nourrisson",
+      "category": "Enfants & parents",
+      "title": "Mon bébé pleure beaucoup : quand faut-il s'inquiéter ?",
+      "keywords": "bébé pleure pleurs nourrisson coliques inconsolable bébé secoué 6 semaines 8 semaines",
+      "answer": "Les pleurs constituent un moyen normal de communication du nourrisson. Ils sont souvent particulièrement fréquents autour de six à huit semaines. Cependant, des pleurs inhabituels ou associés à une modification de l'état général doivent faire rechercher une cause médicale.",
+      "detail": "Pourquoi les bébés pleurent-ils autant ?\n\nLe nourrisson possède encore des capacités limitées pour réguler ses émotions, sa fatigue et les stimulations de son environnement.\n\nIl peut pleurer pour exprimer la faim, un inconfort, un besoin de sommeil ou simplement un besoin de proximité.\n\nLa fréquence des pleurs varie considérablement d'un bébé à l'autre. Elle diminue généralement au cours des premiers mois.\n\nQu'appelle-t-on les coliques du nourrisson ?\n\nLes coliques correspondent à des épisodes répétés de pleurs prolongés chez un nourrisson par ailleurs en bonne santé.\n\nLeur origine est probablement multifactorielle. Elles ne traduisent pas nécessairement une maladie digestive ou une allergie alimentaire.\n\nLe diagnostic repose notamment sur l'absence de signes inquiétants et sur une croissance satisfaisante.\n\nLes pleurs sont-ils toujours liés à un reflux ?\n\nNon. Les régurgitations sont fréquentes chez le nourrisson et le plus souvent physiologiques.\n\nDes pleurs isolés ne permettent pas de diagnostiquer un reflux gastro-œsophagien pathologique et ne justifient pas systématiquement un traitement réduisant l'acidité gastrique.\n\nUn refus alimentaire, une mauvaise prise de poids ou des vomissements inhabituels nécessitent en revanche une évaluation médicale.\n\nComment apaiser son bébé ?\n\nVérifiez ses besoins habituels : alimentation, couche, température et sommeil.\n\nUn environnement calme, le contact physique, un bercement doux ou une promenade peuvent parfois l'apaiser.\n\nIl n'existe cependant pas de méthode universelle et un bébé peut continuer à pleurer malgré des soins parfaitement adaptés.\n\nQue faire lorsque les parents sont épuisés ?\n\nLes pleurs prolongés peuvent entraîner une fatigue importante et un sentiment d'impuissance.\n\nSi vous sentez que vous perdez patience, placez votre bébé sur le dos dans son lit sécurisé, éloignez-vous quelques minutes et demandez à un proche de prendre le relais.\n\nNe secouez jamais un nourrisson : les mouvements violents de sa tête peuvent entraîner des lésions cérébrales irréversibles.\n\nQuand faut-il rechercher une maladie ?\n\nUne consultation est nécessaire lorsque les pleurs deviennent brutalement différents, s'accompagnent d'un refus de boire ou d'une modification inhabituelle du comportement.\n\nLes pleurs persistants peuvent parfois révéler une infection, une douleur ou un autre problème nécessitant un examen clinique.",
+      "watch": "Quand consulter en urgence ?\n\nUne température d'au moins 38 °C chez un nourrisson de moins de trois mois impose une évaluation urgente.\n\nUne difficulté respiratoire, des vomissements verts, une somnolence anormale ou une altération importante de l'état général nécessitent également une prise en charge rapide. Appelez le 15 ou le 112 en présence d'un signe de gravité.",
+      "sources": [
+        {
+          "label": "Assurance Maladie — Syndrome du bébé secoué",
+          "url": "https://www.ameli.fr/assure/sante/urgence/bebe-enfant/syndrome-bebe-secoue"
+        },
+        {
+          "label": "Suivi médical du nourrisson",
+          "url": "https://www.ameli.fr/assure/sante/themes/suivi-medical-de-l-enfant-et-de-l-adolescent/suivi-medical-du-nourrisson-entre-3-mois-et-18-mois"
+        },
+        {
+          "label": "Fièvre de l'enfant",
+          "url": "https://www.ameli.fr/assure/sante/themes/fievre-enfant/bons-reflexes-cas-faut-consulter"
+        }
+      ],
+      "readingTime": "4 min",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-25T10:53:00+01:00",
+        "evidence": "Je valide médicalement les versions enrichies suivantes : Convulsions fébriles ; Ingestion toxique ; Pleurs du nourrisson ; Couchage sécurisé du bébé ; Sang dans les selles. J'autorise leur publication selon le pipeline MACASANTÉ, sans duplication, avec synchronisation de l'assistant IA.",
+        "contentHash": "12eae3f4f7058666c31603c670aca81ba4c665b2e7c53265b6c35eb9d5223654",
+        "snapshotHash": "20de2571d503a656bf247d3f68366905d3f06f36b609f3cc34dadd57a43c6f11"
+      }
+    },
+    {
+      "id": "couchage-bebe-securite-min",
+      "category": "Enfants & parents",
+      "title": "Comment coucher un bébé en toute sécurité ?",
+      "keywords": "bébé nourrisson couchage sommeil lit dos matelas turbulette gigoteuse mort inattendue nourrisson MIN mort subite oreiller couette tour de lit cododo",
+      "answer": "Pour réduire le risque de mort inattendue du nourrisson, couchez votre bébé sur le dos, dans son propre lit, sur un matelas ferme et horizontal. Son environnement de sommeil doit rester dégagé, sans oreiller, couverture, couette ou peluche.",
+      "detail": "Qu'est-ce que la mort inattendue du nourrisson ?\n\nLa mort inattendue du nourrisson désigne un décès brutal qui n'était pas prévisible au regard de l'état de santé connu de l'enfant.\n\nDifférents mécanismes peuvent être impliqués. Certains facteurs environnementaux, notamment les conditions de couchage, peuvent augmenter le risque.\n\nLes mesures de prévention permettent de réduire ce risque sans pouvoir l'éliminer complètement.\n\nPourquoi le couchage sur le dos est-il recommandé ?\n\nLe couchage dorsal limite notamment les risques d'obstruction des voies respiratoires et d'enfouissement du visage dans la literie.\n\nLe couchage sur le côté est instable : le nourrisson peut basculer sur le ventre.\n\nSauf indication médicale exceptionnelle, le dos reste donc la position recommandée pour toutes les périodes de sommeil, y compris les siestes.\n\nComment aménager le lit ?\n\nMatelas : Ferme, horizontal et adapté au lit\nTurbulette : Adaptée à la taille de l'enfant\nOreiller et couette : À éviter\nTour de lit : À éviter\nCale-bébé et réducteur de lit : À éviter\nPeluches : Hors de l'espace de sommeil\n\nIl est recommandé d'installer le lit du bébé dans la chambre des parents durant les six premiers mois, tout en lui conservant son propre espace de couchage.\n\nPourquoi faut-il éviter de trop couvrir son bébé ?\n\nUne température excessive peut perturber la régulation thermique du nourrisson.\n\nUne chambre autour de 18 à 20 °C et des vêtements adaptés permettent généralement de maintenir un environnement confortable.\n\nLe visage et la tête doivent rester dégagés.\n\nLe reflux justifie-t-il de coucher un bébé sur le ventre ?\n\nHabituellement, non. Les régurgitations physiologiques ne justifient pas de modifier les recommandations de couchage.\n\nIl ne faut pas non plus incliner systématiquement le matelas ou utiliser un dispositif de maintien.\n\nComment prévenir la tête plate ?\n\nLorsque le bébé est éveillé et surveillé, favorisez les mouvements libres et proposez progressivement de courtes périodes sur le ventre.\n\nVariez les positions pendant les activités et limitez le temps passé dans les équipements qui restreignent les mouvements.\n\nCes mesures ne doivent jamais conduire à coucher volontairement le nourrisson sur le ventre pour dormir.",
+      "watch": "Les autres mesures de prévention\n\nL'absence d'exposition au tabac, pendant la grossesse et après la naissance, participe à la réduction du risque.\n\nÉvitez également de vous endormir avec votre bébé sur un canapé ou dans un fauteuil.",
+      "sources": [
+        {
+          "label": "HAS — Prévention de la mort inattendue du nourrisson",
+          "url": "https://www.has-sante.fr/jcms/p_3151574/fr/prevention-des-deformations-craniennes-positionnelles-dcp-et-mort-inattendue-du-nourrisson"
+        },
+        {
+          "label": "HAS — Prévenir la tête plate",
+          "url": "https://www.has-sante.fr/jcms/p_3220369/fr/prevenir-la-tete-plate-conseils-aux-parents"
+        }
+      ],
+      "readingTime": "4 min",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-25T10:53:00+01:00",
+        "evidence": "Je valide médicalement les versions enrichies suivantes : Convulsions fébriles ; Ingestion toxique ; Pleurs du nourrisson ; Couchage sécurisé du bébé ; Sang dans les selles. J'autorise leur publication selon le pipeline MACASANTÉ, sans duplication, avec synchronisation de l'assistant IA.",
+        "contentHash": "f1a8ffc41d8eed9a15690e9e363d11020baac8057f448d8c9bba153a682d325c",
+        "snapshotHash": "20de2571d503a656bf247d3f68366905d3f06f36b609f3cc34dadd57a43c6f11"
+      }
+    },
+    {
+      "id": "sang-dans-les-selles",
+      "category": "Digestion & urinaire",
+      "title": "J'ai du sang dans les selles : est-ce inquiétant ?",
+      "keywords": "sang selles sang dans les selles rectorragie rectorragies saignement anal selles rouges selles noires melena méléna hémorroïdes hemorroides fissure anale anus digestion intestin côlon colon",
+      "answer": "La présence de sang dans les selles peut avoir une origine bénigne, notamment des hémorroïdes ou une fissure anale, mais également révéler une maladie digestive. Un saignement inexpliqué nécessite une consultation médicale.",
+      "detail": "Quelle différence entre rectorragie et méléna ?\n\nUne rectorragie correspond à l'émission de sang rouge par l'anus. Elle provient le plus souvent du côlon, du rectum ou de la région anale.\n\nLe méléna correspond à des selles noires, généralement goudronneuses, contenant du sang digéré. Il peut notamment traduire une hémorragie située dans la partie haute du tube digestif.\n\nL'apparence seule ne suffit cependant pas à déterminer précisément l'origine du saignement.\n\nQuelles sont les causes possibles ?\n\nHémorroïdes : Sang rouge, notamment après les selles\nFissure anale : Douleur lors de la défécation\nColite : Diarrhées, douleurs abdominales\nDiverticules : Saignement parfois important et indolore\nPolypes ou cancer colorectal : Saignement parfois discret ou intermittent\nUlcère digestif : Selles noires, parfois douleurs gastriques\n\nPourquoi ne faut-il pas conclure trop rapidement à des hémorroïdes ?\n\nPlusieurs maladies peuvent coexister chez une même personne. Des hémorroïdes connues n'excluent pas une autre origine digestive.\n\nUn saignement répété, même peu abondant, peut également provoquer progressivement une anémie.\n\nQuels examens peuvent être proposés ?\n\nLe médecin recherche les circonstances du saignement, les symptômes associés et les antécédents personnels ou familiaux.\n\nSelon la situation, un examen proctologique, une prise de sang, une coloscopie ou une endoscopie digestive haute peuvent être nécessaires.\n\nLa coloscopie permet notamment d'examiner la muqueuse du côlon et de réaliser certains gestes diagnostiques ou thérapeutiques.\n\nFaut-il réaliser un test de dépistage du cancer colorectal ?\n\nLe dépistage organisé proposé entre 50 et 74 ans concerne principalement les personnes sans symptôme et à risque moyen.\n\nEn présence d'un saignement visible, il faut consulter son médecin plutôt que d'utiliser le test de dépistage pour se rassurer.\n\nQue faire lorsqu'on prend un anticoagulant ?\n\nSignalez systématiquement votre traitement au professionnel de santé.\n\nUn anticoagulant peut favoriser ou majorer un saignement, mais ne dispense pas d'en rechercher la cause.\n\nNe modifiez pas seul votre traitement prescrit.",
+      "watch": "Quand appeler le 15 ou le 112 ?\n\nUn saignement abondant accompagné de pâleur, de sueurs, d'un malaise, d'une perte de connaissance ou d'une faiblesse importante constitue une urgence.\n\nDes selles noires inhabituelles nécessitent également une évaluation médicale rapide.",
+      "sources": [
+        {
+          "label": "Assurance Maladie — Causes des rectorragies",
+          "url": "https://www.ameli.fr/assure/sante/themes/rectorragie-sang-dans-les-selles/definition-causes"
+        },
+        {
+          "label": "Quand consulter ?",
+          "url": "https://www.ameli.fr/assure/sante/themes/rectorragie-sang-dans-les-selles/que-faire-quand-consulter"
+        },
+        {
+          "label": "Examens et traitements",
+          "url": "https://www.ameli.fr/assure/sante/themes/rectorragie-sang-dans-les-selles/consultation-traitement"
+        }
+      ],
+      "readingTime": "4 min",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-25T10:53:00+01:00",
+        "evidence": "Je valide médicalement les versions enrichies suivantes : Convulsions fébriles ; Ingestion toxique ; Pleurs du nourrisson ; Couchage sécurisé du bébé ; Sang dans les selles. J'autorise leur publication selon le pipeline MACASANTÉ, sans duplication, avec synchronisation de l'assistant IA.",
+        "contentHash": "b1d30e0e73d125386142ab097b554cd682dc4111a279ee7512e14c4b055d1459",
+        "snapshotHash": "20de2571d503a656bf247d3f68366905d3f06f36b609f3cc34dadd57a43c6f11"
+      }
     }
   ]
 }
