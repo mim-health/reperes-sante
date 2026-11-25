@@ -317,19 +317,6 @@
     },
     {
       "left": {
-        "id": "poux-enfant",
-        "title": "Mon enfant a des poux : quel traitement est recommandé ?",
-        "type": "fiche"
-      },
-      "right": {
-        "id": "poux-enfant-traitement",
-        "title": "Mon enfant a des poux : quel traitement fonctionne vraiment ?",
-        "type": "fiche"
-      },
-      "score": 0.57
-    },
-    {
-      "left": {
         "id": "migraine-adulte",
         "title": "Migraine : quand faut-il envisager un traitement de fond ?",
         "type": "fiche"
