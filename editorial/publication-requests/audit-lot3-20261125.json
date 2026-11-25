@@ -1,0 +1,485 @@
+{
+  "snapshot": {
+    "schemaVersion": 1,
+    "requestId": "audit-lot3-20261125",
+    "items": [
+      {
+        "kind": "fiche",
+        "body": {
+          "id": "psa-depistage-prostate",
+          "category": "Santé au quotidien",
+          "title": "Faut-il doser le PSA pour dépister le cancer de la prostate ?",
+          "keywords": "PSA prostate cancer prostate dépistage prostate dosage PSA toucher rectal 50 ans 40 ans antécédent familial origine africaine",
+          "answer": "Le dosage du PSA peut contribuer à détecter certains cancers de la prostate avant l'apparition de symptômes. Cependant, il présente aussi des limites et peut conduire à des examens ou des traitements inutiles. En France, le dépistage systématique de tous les hommes sans symptôme n'est pas recommandé. La décision doit être individualisée et discutée avec le médecin.",
+          "detail": "Qu'est-ce que le PSA ?\n\nLe PSA, ou antigène spécifique de la prostate, est une protéine produite par les cellules prostatiques. Une petite quantité passe naturellement dans le sang.\n\nSon dosage peut être utile dans différentes situations médicales, notamment dans l'évaluation d'une suspicion de cancer et dans le suivi après traitement.\n\nCependant, le PSA est spécifique de la prostate, et non du cancer de la prostate.\n\nPourquoi le PSA peut-il augmenter sans cancer ?\n\nUne augmentation du volume bénin de la prostate, une inflammation prostatique ou une infection urinaire peuvent notamment entraîner une élévation du PSA.\n\nCertaines circonstances temporaires et certains médicaments peuvent également modifier sa concentration.\n\nUn résultat élevé doit donc être interprété dans son contexte, en tenant compte de l'âge, des antécédents et des résultats précédents.\n\nInversement, un PSA peu élevé ne permet pas d'exclure formellement un cancer.\n\nQuels sont les avantages du dépistage ?\n\nLe dépistage peut permettre de détecter certains cancers à un stade où ils sont encore localisés et accessibles à un traitement curatif.\n\nDes études européennes ont montré qu'une stratégie de dépistage pouvait réduire la mortalité spécifique par cancer de la prostate à long terme.\n\nToutefois, le bénéfice individuel dépend de nombreux facteurs, notamment de l'âge, de l'état général et du risque initial.\n\nQu'appelle-t-on le surdiagnostic ?\n\nCertains cancers prostatiques évoluent très lentement et n'auraient jamais entraîné de symptômes durant la vie de la personne.\n\nLeur découverte peut conduire à des examens répétés, à une anxiété importante ou à des traitements dont les effets indésirables comprennent notamment des troubles urinaires et sexuels.\n\nLa surveillance active permet aujourd'hui d'éviter ou de différer certains traitements lorsque le cancer présente un faible risque évolutif.\n\nQue se passe-t-il lorsque le PSA est élevé ?\n\nUne élévation du PSA ne signifie pas automatiquement qu'une biopsie est nécessaire.\n\nSelon la situation, le médecin peut proposer un nouveau dosage, un examen clinique, une IRM prostatique ou un avis urologique.\n\nL'IRM contribue à mieux sélectionner les patients chez lesquels des biopsies sont pertinentes.\n\nÀ quel âge faut-il en parler ?\n\nIl n'existe pas en France d'âge unique imposant un dépistage systématique.\n\nUne discussion individualisée peut notamment être pertinente chez les hommes ayant des antécédents familiaux de cancer de la prostate ou d'autres facteurs de risque.\n\nL'espérance de vie, les maladies associées et les préférences personnelles doivent également être prises en compte.\n\nLes bons réflexes\n\nAvant de réaliser un dosage du PSA dans un objectif de dépistage, il est utile de comprendre les conséquences possibles d'un résultat anormal et les différentes options qui pourraient être proposées.",
+          "watch": "Quand consulter ?\n\nDes troubles urinaires persistants, du sang dans les urines ou une modification inhabituelle des symptômes urinaires nécessitent une consultation. Ces symptômes ne signifient pas nécessairement qu'il existe un cancer.",
+          "sources": [
+            {
+              "label": "HAS — Détection précoce du cancer de la prostate",
+              "url": "https://www.has-sante.fr/jcms/c_1623737/fr/"
+            },
+            {
+              "label": "Assurance Maladie — Dépistage du cancer de la prostate",
+              "url": "https://www.ameli.fr/assure/sante/themes/cancer-prostate/depistage"
+            },
+            {
+              "label": "European Association of Urology — Recommandations 2026",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42457454/"
+            }
+          ],
+          "readingTime": "4 min"
+        }
+      },
+      {
+        "kind": "fiche",
+        "body": {
+          "id": "troubles-erection-age-cardio",
+          "category": "Santé au quotidien",
+          "title": "Les troubles de l'érection peuvent-ils révéler un problème cardiovasculaire ?",
+          "keywords": "érection erection problème érection panne sexuelle dysfonction érectile impuissance érection moins forte âge viagra sildenafil tadalafil libido cardiovasculaire coeur diabète tension",
+          "answer": "Oui. Des difficultés érectiles persistantes peuvent parfois constituer un signe précoce d'une atteinte vasculaire. Elles peuvent également être liées à des facteurs psychologiques, hormonaux, neurologiques ou médicamenteux. Il est important de ne pas les considérer systématiquement comme une conséquence normale du vieillissement.",
+          "detail": "Comment fonctionne une érection ?\n\nL'érection repose sur une interaction complexe entre le système nerveux, les hormones et la circulation sanguine.\n\nLors d'une stimulation sexuelle, certains mécanismes entraînent un relâchement des muscles des vaisseaux sanguins du pénis. L'afflux de sang augmente et permet l'érection.\n\nLorsque les artères sont altérées ou que leur capacité à se dilater diminue, ce mécanisme peut devenir moins efficace.\n\nPourquoi existe-t-il un lien avec le cœur ?\n\nLes artères péniennes possèdent un diamètre relativement faible.\n\nUne atteinte de la paroi des artères ou une dysfonction endothéliale peut ainsi se manifester par des difficultés érectiles avant l'apparition de certains symptômes cardiovasculaires.\n\nLes études montrent une association entre dysfonction érectile et augmentation du risque cardiovasculaire, sans que chaque trouble de l'érection soit nécessairement d'origine vasculaire.\n\nQuels facteurs de risque rechercher ?\n\nLes troubles de l'érection partagent plusieurs facteurs de risque avec les maladies cardiovasculaires :\n\n- Hypertension artérielle et diabète.\n- Excès de LDL-cholestérol.\n- Tabagisme.\n- Sédentarité et obésité.\n- Certaines maladies rénales chroniques.\n\nLe stress, la dépression, les troubles du sommeil et certains médicaments peuvent également intervenir.\n\nEst-ce simplement lié à l'âge ?\n\nLa fréquence des troubles érectiles augmente avec l'âge, mais leur apparition ne doit pas être banalisée.\n\nUne difficulté occasionnelle, notamment dans un contexte de fatigue ou de stress, est fréquente.\n\nEn revanche, des troubles persistants ou progressivement aggravés peuvent justifier un bilan médical.\n\nQuel bilan peut être proposé ?\n\nLe médecin s'intéresse aux circonstances d'apparition, à la qualité des érections spontanées, au désir sexuel, aux traitements en cours et aux antécédents.\n\nUne mesure de la pression artérielle, un bilan glycémique et lipidique ainsi qu'un dosage hormonal dans certaines situations peuvent être utiles.\n\nUne évaluation cardiovasculaire complémentaire peut être proposée en fonction du profil de risque.\n\nExiste-t-il des traitements efficaces ?\n\nLes médicaments facilitant l'érection, notamment les inhibiteurs de la phosphodiestérase de type 5, peuvent être efficaces chez de nombreux patients.\n\nIls ne doivent cependant jamais être associés aux dérivés nitrés ou au riociguat en raison du risque de chute importante de la pression artérielle.\n\nLa prise en charge des facteurs cardiovasculaires, une activité physique régulière et l'arrêt du tabac peuvent également améliorer la santé sexuelle.",
+          "watch": "Quand consulter ?\n\nDes troubles érectiles nouveaux ou persistants justifient un avis médical, particulièrement en présence de facteurs de risque cardiovasculaire.\n\nEn cas de douleur thoracique, de malaise ou d'essoufflement inhabituel pendant l'effort ou l'activité sexuelle, une évaluation médicale est nécessaire. Appelez le 15 ou le 112 si les symptômes sont aigus ou importants.",
+          "sources": [
+            {
+              "label": "European Association of Urology — Recommandations sur la dysfonction érectile",
+              "url": "https://uroweb.org/guidelines/sexual-and-reproductive-health/chapter/management-of-erectile-dysfunction"
+            },
+            {
+              "label": "Princeton IV Consensus, 2024",
+              "url": "https://doi.org/10.1093/jsxmed/qdad163"
+            }
+          ],
+          "readingTime": "4 min"
+        }
+      },
+      {
+        "kind": "fiche",
+        "body": {
+          "id": "arthrose-faut-il-bouger",
+          "category": "Os & articulations",
+          "title": "J'ai de l'arthrose : faut-il continuer à bouger ?",
+          "keywords": "arthrose faut il marcher arthrose sport arthrose douleur articulation cartilage genou arthrose hanche arthrose activité physique renforcement",
+          "answer": "Oui. Une activité physique régulière et adaptée constitue l'un des principaux traitements de l'arthrose. Elle contribue à réduire les douleurs, à renforcer les muscles et à préserver la mobilité. Le repos prolongé risque au contraire d'aggraver la perte d'autonomie.",
+          "detail": "Qu'est-ce que l'arthrose ?\n\nL'arthrose est une maladie chronique qui concerne l'ensemble de l'articulation, et pas uniquement le cartilage.\n\nElle peut associer des modifications du cartilage, de l'os situé en dessous, de la membrane synoviale et des structures environnantes.\n\nLes douleurs et la raideur ne sont pas toujours proportionnelles aux anomalies visibles sur les radiographies.\n\nPourquoi le mouvement est-il bénéfique ?\n\nLe cartilage articulaire ne dispose pas de sa propre vascularisation. Les échanges avec le liquide articulaire participent à sa nutrition.\n\nUne mobilisation adaptée favorise ces échanges et contribue également au maintien de la souplesse articulaire.\n\nL'activité physique permet surtout de renforcer les muscles qui stabilisent les articulations et améliorent la capacité à effectuer les gestes quotidiens.\n\nBouger accélère-t-il l'usure du cartilage ?\n\nUne articulation arthrosique n'est pas comparable à une pièce mécanique qui s'userait systématiquement à chaque utilisation.\n\nL'exercice adapté n'est pas considéré comme un facteur d'aggravation systématique de l'arthrose.\n\nEn revanche, des traumatismes répétés, certaines contraintes excessives ou une progression trop rapide de l'effort peuvent favoriser les douleurs.\n\nQuelles activités choisir ?\n\nMarche adaptée : Mobilité et endurance\nVélo : Mobilisation avec peu d'impacts\nNatation : Réduction des contraintes liées au poids\nRenforcement musculaire : Stabilité articulaire\nExercices d'équilibre : Prévention des chutes\nMobilisation douce : Entretien des amplitudes articulaires\n\nLe choix dépend de l'articulation concernée, des douleurs, des capacités physiques et des autres maladies éventuelles.\n\nPeut-on faire de l'exercice lorsqu'on a mal ?\n\nUne gêne modérée pendant une activité n'indique pas nécessairement une lésion supplémentaire.\n\nCependant, si l'effort provoque une augmentation importante ou durable des douleurs, il faut adapter sa durée ou son intensité.\n\nLors d'une poussée douloureuse avec gonflement articulaire, une réduction temporaire des contraintes peut être nécessaire.\n\nLe retour progressif à l'activité reste généralement préférable au repos prolongé.\n\nQuel rôle joue le poids ?\n\nLorsque l'arthrose touche les genoux ou les hanches, un excès de poids peut augmenter les contraintes articulaires.\n\nChez les personnes concernées, une diminution progressive du poids peut améliorer les symptômes, particulièrement lorsqu'elle s'accompagne d'un programme d'exercices.\n\nL'objectif n'est pas de rechercher une performance sportive, mais de préserver la qualité de vie.\n\nFaut-il consulter un kinésithérapeute ?\n\nUn programme personnalisé peut aider à identifier les exercices adaptés, améliorer la confiance dans le mouvement et éviter les gestes excessivement douloureux.",
+          "watch": "Quand consulter rapidement ?\n\nUne articulation brutalement rouge, chaude, très douloureuse ou gonflée, particulièrement en présence de fièvre, ne doit pas être attribuée automatiquement à l'arthrose. Une infection ou une autre cause inflammatoire doit être recherchée rapidement.",
+          "sources": [
+            {
+              "label": "HAS — Activité physique et arthrose",
+              "url": "https://www.has-sante.fr/upload/docs/application/pdf/2022-08/synthese_aps_arthrose_vf.pdf"
+            },
+            {
+              "label": "Inserm — Arthrose",
+              "url": "https://www.inserm.fr/dossier/arthrose/"
+            },
+            {
+              "label": "Assurance Maladie — Traitement de l'arthrose du genou",
+              "url": "https://www.ameli.fr/assure/sante/themes/arthrose-genou/traitement-medical-chirurgical"
+            }
+          ],
+          "readingTime": "4 min"
+        }
+      },
+      {
+        "kind": "fiche",
+        "body": {
+          "id": "trous-memoire-age",
+          "category": "Seniors",
+          "title": "J'ai des trous de mémoire : est-ce simplement lié à l'âge ?",
+          "keywords": "mémoire oubli trous mémoire âge vieillissement Alzheimer cognition concentration démence",
+          "answer": "Certains oublis deviennent plus fréquents avec l'âge, sans nécessairement traduire une maladie neurologique. En revanche, des difficultés de mémoire qui progressent, perturbent les activités quotidiennes ou sont remarquées par l'entourage doivent conduire à une évaluation médicale.",
+          "detail": "Comment fonctionne la mémoire ?\n\nLa mémoire repose sur plusieurs mécanismes complémentaires : enregistrer une information, la conserver et être capable de la retrouver.\n\nAvec l'âge, la vitesse de traitement de l'information peut diminuer. Il devient parfois plus difficile de retrouver rapidement un nom ou de mémoriser plusieurs informations simultanément.\n\nLa fatigue, les distractions ou le manque de sommeil peuvent accentuer ces difficultés.\n\nQuels oublis peuvent être habituels ?\n\nOublier temporairement le nom d'une personne, chercher ses lunettes ou avoir besoin de davantage de temps pour retrouver une information ne signifie pas nécessairement que l'on présente une maladie cognitive.\n\nLorsque l'information revient spontanément ou grâce à un indice, cela peut correspondre à une difficulté de récupération plutôt qu'à une perte de l'information elle-même.\n\nCe mécanisme ne permet toutefois pas, à lui seul, de distinguer un vieillissement normal d'une maladie.\n\nQuels signes doivent attirer l'attention ?\n\nChercher occasionnellement un mot : Souvent banal\nOublier régulièrement des événements récents : À évaluer\nRépéter plusieurs fois les mêmes questions : À évaluer\nSe perdre dans un lieu familier : Consultation nécessaire\nFaire des erreurs inhabituelles dans ses comptes : Consultation nécessaire\nNe plus savoir gérer ses médicaments : Consultation nécessaire\n\nLe retentissement sur l'autonomie est un élément important de l'évaluation.\n\nExiste-t-il des causes réversibles ?\n\nLes troubles de mémoire ne sont pas toujours liés à une maladie neurodégénérative.\n\nUne dépression, une anxiété importante, des troubles du sommeil, une hypothyroïdie, certaines carences ou des médicaments peuvent intervenir.\n\nUne baisse de l'audition ou de la vision peut également gêner l'enregistrement des informations et donner l'impression d'une diminution des capacités cognitives.\n\nComment le médecin évalue-t-il la mémoire ?\n\nL'évaluation repose sur un entretien, un examen clinique et, lorsque cela est pertinent, des tests cognitifs standardisés.\n\nLe médecin s'intéresse à l'évolution des symptômes, aux traitements et aux difficultés rencontrées dans la vie quotidienne.\n\nDes examens biologiques ou une imagerie cérébrale peuvent être proposés selon les résultats.\n\nUn score obtenu lors d'un test cognitif ne suffit pas à établir un diagnostic.\n\nPeut-on entretenir sa mémoire ?\n\nUne activité physique régulière, le maintien des liens sociaux, la correction des troubles auditifs, un sommeil suffisant et la prise en charge des facteurs de risque cardiovasculaire contribuent à la santé cérébrale.\n\nLes activités intellectuelles et les loisirs peuvent également participer au maintien de la stimulation cognitive.\n\nAucun complément alimentaire n'a démontré qu'il pouvait empêcher à lui seul l'apparition d'une maladie d'Alzheimer.",
+          "watch": "Quand consulter en urgence ?\n\nUn trouble de mémoire apparaissant brutalement, particulièrement s'il s'accompagne de difficultés à parler, d'une faiblesse d'un membre, d'une confusion importante ou de troubles de l'équilibre, nécessite une évaluation urgente. Appelez le 15 ou le 112.",
+          "sources": [
+            {
+              "label": "Assurance Maladie — Quand consulter en cas de troubles de la mémoire ?",
+              "url": "https://www.ameli.fr/assure/sante/themes/troubles-memoire/que-faire-quand-consulter"
+            },
+            {
+              "label": "The Lancet — Commission sur la prévention des démences, 2024",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/39096926/"
+            },
+            {
+              "label": "HAS — Parcours de soins des troubles neurocognitifs",
+              "url": "https://www.has-sante.fr/jcms/c_2906096/fr/maladie-d-alzheimer-et-maladies-apparentees-diagnostic-et-prise-en-charge"
+            }
+          ],
+          "readingTime": "4 min"
+        }
+      },
+      {
+        "kind": "fiche",
+        "body": {
+          "id": "q-acouphenes-frequence",
+          "category": "Santé au quotidien",
+          "title": "Pourquoi ai-je des sifflements ou des bourdonnements dans les oreilles ?",
+          "keywords": "acouphenes oreilles sifflement bourdonnement audition orl sommeil un sur cinq 1 sur 5",
+          "answer": "Les acouphènes correspondent à la perception d'un bruit en l'absence de source sonore extérieure identifiable. Ils sont fréquents, notamment avec l'âge ou après une exposition au bruit. Ils ne traduisent pas systématiquement une maladie grave, mais certaines formes nécessitent une consultation rapide.",
+          "detail": "Qu'est-ce qu'un acouphène ?\n\nIl peut s'agir d'un sifflement, d'un bourdonnement, d'un grésillement ou d'un bruit continu.\n\nL'acouphène peut être perçu dans une seule oreille, dans les deux oreilles ou à l'intérieur de la tête.\n\nDans la majorité des cas, le bruit n'est entendu que par la personne concernée.\n\nPourquoi les acouphènes apparaissent-ils ?\n\nLes mécanismes sont complexes. Une diminution des informations transmises par l'oreille interne peut notamment entraîner une modification de l'activité des voies auditives cérébrales.\n\nDifférentes causes peuvent intervenir : vieillissement auditif, exposition sonore excessive, bouchon de cérumen, certaines maladies de l'oreille ou médicaments potentiellement toxiques pour l'audition.\n\nDans certains cas, aucune cause précise n'est retrouvée.\n\nLes acouphènes sont-ils fréquents ?\n\nSelon la Haute Autorité de santé, ils concernent environ 10 à 19 % des adultes en France, avec une fréquence qui augmente avec l'âge.\n\nLeur intensité et leur retentissement varient considérablement d'une personne à l'autre.\n\nPourquoi sont-ils parfois plus gênants le soir ?\n\nLorsque l'environnement devient silencieux, les bruits internes peuvent être davantage perceptibles.\n\nLa fatigue, l'anxiété et les difficultés de sommeil peuvent également augmenter l'attention portée à l'acouphène.\n\nUn fond sonore discret peut parfois réduire cette perception.\n\nQuels examens peuvent être proposés ?\n\nLe médecin recherche notamment une baisse auditive, les circonstances d'apparition et le caractère permanent, intermittent ou pulsatile du bruit.\n\nUn examen ORL et un audiogramme peuvent être nécessaires.\n\nUne imagerie n'est pas systématique, mais peut être indiquée dans certaines formes unilatérales ou pulsatiles, selon les résultats du bilan.\n\nPeut-on traiter les acouphènes ?\n\nLa HAS a publié en 2026 de nouvelles recommandations concernant les acouphènes invalidants chez l'adulte.\n\nLa prise en charge peut associer le traitement d'une cause identifiable, une correction auditive lorsqu'elle est indiquée, un accompagnement psychologique et différentes stratégies visant à diminuer le retentissement sur la vie quotidienne.\n\nLes thérapies cognitives et comportementales peuvent notamment contribuer à réduire la souffrance associée aux acouphènes.\n\nIl n'existe pas de médicament universel permettant de supprimer tous les acouphènes chroniques.\n\nComment protéger son audition ?\n\nLimitez les expositions aux volumes sonores élevés, utilisez des protections adaptées en environnement bruyant et ménagez des pauses lors de l'écoute prolongée de musique.",
+          "watch": "Quand consulter rapidement ?\n\nUn acouphène persistant d'un seul côté ou rythmé par les battements du cœur mérite une évaluation médicale.\n\nUne baisse brutale de l'audition, avec ou sans acouphène, constitue une urgence ORL nécessitant une prise en charge sans délai.\n\nEn cas de céphalée brutale inhabituelle ou de symptômes neurologiques associés, appelez le 15 ou le 112.",
+          "sources": [
+            {
+              "label": "HAS — Acouphènes invalidants chez l'adulte, recommandations 2026",
+              "url": "https://has-sante.fr/jcms/p_4159100/en/acouphenes-invalidants-chez-l-adulte-diagnostic-et-prise-en-charge"
+            },
+            {
+              "label": "Assurance Maladie — Surdité soudaine",
+              "url": "https://www.ameli.fr/assure/sante/urgence/pathologies/surdite-soudaine-que-faire"
+            },
+            {
+              "label": "HAS — Nouvelles recommandations de juin 2026",
+              "url": "https://www.has-sante.fr/jcms/p_4196187/fr/acouphenes-invalidants-des-cles-pour-ameliorer-le-diagnostic-et-la-prise-en-charge-des-adultes"
+            }
+          ],
+          "readingTime": "4 min"
+        }
+      },
+      {
+        "kind": "fiche",
+        "body": {
+          "id": "syndrome-intestin-irritable-que-faire",
+          "category": "Digestion & urinaire",
+          "title": "Syndrome de l'intestin irritable : comment soulager les symptômes ?",
+          "keywords": "syndrome intestin irritable SII côlon colon irritable colopathie fonctionnelle FODMAP fibres constipation diarrhée ballonnements probiotiques hypnose gastroenterologie",
+          "answer": "Le syndrome de l'intestin irritable est un trouble chronique associant des douleurs abdominales et une modification du transit. Il peut être très gênant, mais n'entraîne pas en lui-même de destruction de l'intestin. Une prise en charge personnalisée permet souvent de réduire les symptômes.",
+          "detail": "Qu'est-ce que le syndrome de l'intestin irritable ?\n\nÉgalement appelé colopathie fonctionnelle, il appartient aux troubles des interactions entre l'intestin et le cerveau.\n\nLes douleurs abdominales peuvent être associées à une constipation, une diarrhée ou une alternance des deux.\n\nDes ballonnements sont également fréquents.\n\nPourquoi l'intestin devient-il plus sensible ?\n\nChez certaines personnes, les contractions intestinales, la présence de gaz ou la distension digestive sont ressenties de manière particulièrement intense.\n\nCette hypersensibilité viscérale peut être associée à des modifications de la motricité intestinale, du microbiote et de la communication entre le système nerveux et l'appareil digestif.\n\nLe stress peut amplifier les symptômes, mais cela ne signifie pas qu'ils sont imaginaires.\n\nComment le diagnostic est-il posé ?\n\nLe médecin analyse la fréquence et l'ancienneté des douleurs ainsi que leurs relations avec les selles.\n\nLe diagnostic peut être établi à partir d'un ensemble de critères cliniques, après recherche de signes évoquant une autre maladie.\n\nDes examens complémentaires peuvent être nécessaires, notamment pour rechercher une maladie cœliaque ou inflammatoire de l'intestin.\n\nUne coloscopie n'est pas systématiquement indispensable.\n\nFaut-il supprimer certains aliments ?\n\nLa tolérance alimentaire varie selon les personnes. Il est préférable d'éviter les exclusions multiples et définitives sans identification précise d'un aliment déclencheur.\n\nUne alimentation pauvre en FODMAP, certains glucides fermentescibles, peut améliorer les symptômes chez une partie des patients.\n\nCette démarche comprend une phase temporaire de réduction suivie d'une réintroduction progressive pour déterminer les aliments réellement mal tolérés.\n\nUn accompagnement diététique permet de limiter le risque de restrictions excessives.\n\nLes fibres sont-elles utiles ?\n\nLes fibres solubles, notamment le psyllium ou celles présentes dans l'avoine, peuvent être utiles chez certains patients.\n\nÀ l'inverse, une consommation importante de fibres insolubles, comme le son de blé, peut accentuer les ballonnements ou les douleurs.\n\nL'augmentation des apports doit être progressive et adaptée à la tolérance digestive.\n\nExiste-t-il des médicaments ?\n\nLe traitement dépend du symptôme prédominant. Des antispasmodiques, des traitements de la constipation ou des ralentisseurs du transit peuvent être proposés.\n\nCertaines prises en charge psychologiques, notamment les thérapies cognitives et comportementales ou l'hypnose dirigée vers les symptômes digestifs, peuvent aussi être utiles.\n\nLe syndrome de l'intestin irritable augmente-t-il le risque de cancer ?\n\nLe syndrome de l'intestin irritable n'est pas considéré comme une maladie précancéreuse.\n\nCependant, une personne qui en souffre peut développer une autre maladie digestive. L'apparition de nouveaux symptômes doit donc être évaluée.",
+          "watch": "Quand consulter ?\n\nDu sang dans les selles, un amaigrissement inexpliqué, une anémie, une fièvre, des symptômes nocturnes persistants ou l'apparition récente de troubles digestifs après 50 ans nécessitent un avis médical.",
+          "sources": [
+            {
+              "label": "Société nationale française de gastro-entérologie — Syndrome de l'intestin irritable",
+              "url": "https://www.snfge.org/grand-public/maladies-digestives/syndrome-lintestin-irritable-sii"
+            },
+            {
+              "label": "Assurance Maladie — Conseils et conduite à tenir",
+              "url": "https://www.ameli.fr/assure/sante/themes/syndrome-intestin-irritable/que-faire-quand-consulter"
+            },
+            {
+              "label": "NICE — Recommandations cliniques",
+              "url": "https://www.nice.org.uk/guidance/cg61/chapter/Recommendations"
+            }
+          ],
+          "readingTime": "4 min"
+        }
+      },
+      {
+        "kind": "fiche",
+        "body": {
+          "id": "transaminases-elevees",
+          "category": "Digestion & urinaire",
+          "title": "Mes transaminases sont élevées : est-ce que mon foie est malade ?",
+          "keywords": "transaminases ASAT ALAT foie bilan hépatique GGT phosphatases alcalines bilirubine stéatose alcool médicament muscle hépatologie",
+          "answer": "Une augmentation des transaminases peut traduire une souffrance des cellules du foie, mais elle ne signifie pas nécessairement que le foie fonctionne mal. Les causes sont nombreuses, notamment métaboliques, médicamenteuses, infectieuses ou liées à l'alcool. Un bilan médical permet d'en déterminer l'origine et d'évaluer le risque de complications.",
+          "detail": "Que sont les transaminases ?\n\nLes transaminases sont des enzymes présentes à l'intérieur de certaines cellules de l'organisme.\n\nLes deux principales mesurées lors d'un bilan sanguin sont :\n\nALAT ou ALT : Principalement présente dans le foie\nASAT ou AST : Présente dans le foie, mais également dans les muscles et d'autres tissus\n\nLorsque certaines cellules sont lésées, ces enzymes peuvent être libérées dans le sang.\n\nUne augmentation des ASAT peut donc parfois être d'origine musculaire, notamment après un effort physique intense.\n\nQuelles sont les causes fréquentes ?\n\nUne élévation des transaminases peut notamment être associée à une accumulation de graisse dans le foie, une consommation excessive d'alcool, une hépatite virale, certains médicaments ou compléments alimentaires.\n\nDes maladies auto-immunes, génétiques ou métaboliques peuvent également être en cause.\n\nPlusieurs facteurs peuvent coexister chez une même personne.\n\nQu'est-ce que la maladie du foie gras ?\n\nLa maladie hépatique stéatosique associée à un dysfonctionnement métabolique, appelée MASLD, correspond à une accumulation de graisse dans le foie associée à des facteurs de risque cardiométabolique.\n\nElle est particulièrement fréquente chez les personnes présentant un diabète de type 2, une obésité abdominale ou certaines anomalies lipidiques.\n\nElle peut rester longtemps asymptomatique.\n\nChez certains patients, une inflammation puis une fibrose hépatique peuvent progressivement apparaître.\n\nDes transaminases normales excluent-elles une maladie du foie ?\n\nNon. Certaines maladies chroniques du foie, y compris des formes comportant une fibrose importante, peuvent s'accompagner de transaminases normales ou peu élevées.\n\nInversement, une augmentation importante ne signifie pas automatiquement qu'il existe une cirrhose.\n\nLes transaminases ne mesurent pas directement la capacité du foie à assurer l'ensemble de ses fonctions.\n\nQuels examens complémentaires peuvent être proposés ?\n\nLe médecin peut compléter le bilan par le dosage de la bilirubine, des gamma-GT, des phosphatases alcalines, de l'albumine ou par l'évaluation de la coagulation.\n\nUne échographie hépatique peut rechercher une stéatose ou certaines anomalies morphologiques.\n\nDans certaines situations, un score biologique tel que le FIB-4, associé si nécessaire à une élastographie hépatique, permet d'évaluer le risque de fibrose.\n\nQue faire en attendant le bilan ?\n\nÉvitez l'alcool et signalez au médecin tous vos médicaments et compléments alimentaires.\n\nNe prenez pas de produits prétendument destinés à « détoxifier » le foie : certains peuvent eux-mêmes provoquer une atteinte hépatique.\n\nN'interrompez pas seul un traitement prescrit.",
+          "watch": "Quand consulter rapidement ?\n\nUne coloration jaune de la peau ou des yeux, des urines très foncées, des douleurs abdominales importantes ou des vomissements persistants nécessitent un avis médical rapide.\n\nUne confusion, une altération de la vigilance ou un saignement important associé à une suspicion de maladie hépatique justifie une prise en charge urgente.",
+          "sources": [
+            {
+              "label": "SNFGE — Augmentation modérée des transaminases",
+              "url": "https://www.snfge.org/sites/default/files/recommandations/augmentation_moderee_des_transaminases_0.pdf"
+            },
+            {
+              "label": "EASL–EASD–EASO — Recommandations internationales MASLD, 2024",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/38851997/"
+            },
+            {
+              "label": "EASL — Recommandations sur les maladies hépatiques métaboliques",
+              "url": "https://doi.org/10.1007/s00125-024-06196-3"
+            }
+          ],
+          "readingTime": "4 min"
+        }
+      },
+      {
+        "kind": "fiche",
+        "body": {
+          "id": "intolerance-lactose",
+          "category": "Digestion & urinaire",
+          "title": "Intolérance au lactose : faut-il arrêter tous les produits laitiers ?",
+          "keywords": "lactose intolérance lactase lait produits laitiers ballonnements diarrhée gaz test hydrogène allergie protéines lait calcium",
+          "answer": "Non, pas nécessairement. L'intolérance au lactose correspond à une difficulté à digérer le sucre naturellement présent dans le lait. La plupart des personnes concernées peuvent continuer à consommer certaines quantités de lactose ou des produits laitiers naturellement pauvres en lactose.",
+          "detail": "Qu'est-ce que le lactose ?\n\nLe lactose est un glucide naturellement présent dans le lait des mammifères.\n\nPour être absorbé par l'organisme, il doit être décomposé dans l'intestin grêle par une enzyme appelée lactase.\n\nLorsque cette enzyme est produite en quantité insuffisante, une partie du lactose atteint le côlon sans avoir été digérée.\n\nPourquoi cela provoque-t-il des symptômes ?\n\nDans le côlon, les bactéries intestinales fermentent le lactose non digéré.\n\nCette fermentation peut entraîner une production de gaz, tandis que la présence de lactose augmente également la quantité d'eau dans l'intestin.\n\nCes mécanismes expliquent notamment les ballonnements, les douleurs abdominales, les flatulences et parfois les diarrhées.\n\nLa quantité de lactose consommée influence généralement l'intensité des symptômes.\n\nQuelle différence entre intolérance et allergie au lait ?\n\nL'intolérance au lactose concerne la digestion d'un sucre.\n\nL'allergie aux protéines du lait repose sur une réaction immunitaire et peut entraîner des manifestations digestives, cutanées ou respiratoires, parfois graves.\n\nUn lait sans lactose contient toujours des protéines du lait. Il ne convient donc pas nécessairement à une personne allergique.\n\nQuels produits sont généralement mieux tolérés ?\n\nLait classique : Importante\nLait sans lactose : Très faible\nYaourt nature : Variable, souvent mieux toléré\nFromage à pâte dure affiné : Généralement très faible\nFromage frais : Variable\n\nLa tolérance reste individuelle. Certaines personnes supportent mieux les produits laitiers lorsqu'ils sont consommés au cours d'un repas.\n\nComment confirmer une intolérance ?\n\nUne réduction temporaire du lactose suivie d'une réintroduction progressive peut aider à identifier un lien entre consommation et symptômes.\n\nDans certaines situations, un test respiratoire à l'hydrogène permet d'évaluer la malabsorption du lactose.\n\nIl faut néanmoins distinguer une mauvaise absorption biologique d'une véritable intolérance provoquant des symptômes.\n\nExiste-t-il d'autres causes ?\n\nCertaines maladies intestinales, comme la maladie cœliaque, peuvent entraîner une diminution secondaire de la production de lactase.\n\nLe syndrome de l'intestin irritable peut également provoquer des symptômes similaires.\n\nUne mauvaise tolérance récente et persistante mérite donc parfois une évaluation plus approfondie.\n\nComment préserver ses apports nutritionnels ?\n\nLes produits laitiers constituent notamment une source de protéines et de calcium.\n\nEn cas de réduction importante de leur consommation, veillez à conserver des apports suffisants grâce aux produits tolérés ou à des alternatives nutritionnelles adaptées.\n\nDes compléments contenant de la lactase peuvent être utiles dans certaines situations.",
+          "watch": "Quand consulter ?\n\nUn amaigrissement inexpliqué, du sang dans les selles, des diarrhées nocturnes ou des symptômes persistants malgré la réduction du lactose nécessitent un avis médical.",
+          "sources": [
+            {
+              "label": "Assurance Maladie — Intolérance au lactose : mécanismes et symptômes",
+              "url": "https://www.ameli.fr/assure/sante/themes/intolerance-lactose/definition-symptomes"
+            },
+            {
+              "label": "Alimentation et évolution",
+              "url": "https://www.ameli.fr/assure/sante/themes/intolerance-lactose/alimentation-evolution"
+            },
+            {
+              "label": "Diagnostic et conduite à tenir",
+              "url": "https://www.ameli.fr/assure/sante/themes/intolerance-lactose/que-faire-quand-consulter"
+            }
+          ],
+          "readingTime": "4 min"
+        }
+      },
+      {
+        "kind": "fiche",
+        "body": {
+          "id": "prise-poids-sans-raison",
+          "category": "Santé au quotidien",
+          "title": "Je prends du poids sans avoir changé mon alimentation : pourquoi ?",
+          "keywords": "prise de poids métabolisme masse musculaire sommeil thyroide ménopause médicaments",
+          "answer": "Une prise de poids peut survenir sans modification apparente de l'alimentation. Les changements hormonaux, la diminution de l'activité physique, certains médicaments, les troubles du sommeil ou une rétention d'eau peuvent notamment intervenir. Une prise de poids rapide en quelques jours nécessite une vigilance particulière.",
+          "detail": "Pourquoi le poids varie-t-il naturellement ?\n\nLe poids corporel ne correspond pas uniquement à la quantité de graisse présente dans l'organisme.\n\nIl dépend également de la masse musculaire, de l'eau corporelle, du contenu digestif et des réserves de glycogène.\n\nDes fluctuations de courte durée peuvent donc survenir sans modification significative de la masse grasse.\n\nQuelle différence entre une prise de poids rapide et progressive ?\n\nUne augmentation progressive sur plusieurs mois peut notamment correspondre à une modification de l'équilibre énergétique.\n\nEn revanche, une augmentation de plusieurs kilogrammes en quelques jours peut traduire une accumulation de liquide dans l'organisme.\n\nCette distinction est particulièrement importante chez les personnes présentant une maladie cardiaque, rénale ou hépatique.\n\nLe vieillissement peut-il expliquer une prise de poids ?\n\nAvec l'âge, la masse musculaire et la dépense énergétique peuvent diminuer.\n\nUne alimentation identique à celle des années précédentes peut alors ne plus correspondre exactement aux besoins énergétiques.\n\nLa diminution de l'activité physique quotidienne, parfois très progressive, peut également contribuer à cette évolution.\n\nQuel rôle jouent les hormones ?\n\nLa ménopause peut favoriser une modification de la répartition de la graisse corporelle, notamment au niveau abdominal.\n\nUne hypothyroïdie peut également être associée à une prise de poids généralement modérée, une fatigue, une constipation ou une sensibilité accrue au froid.\n\nCes symptômes ne suffisent cependant pas à poser un diagnostic. Un bilan biologique peut être nécessaire.\n\nCertains médicaments font-ils prendre du poids ?\n\nPlusieurs catégories de médicaments peuvent favoriser une augmentation du poids, notamment certains corticoïdes, psychotropes ou traitements du diabète.\n\nLes mécanismes varient : modification de l'appétit, de la dépense énergétique ou rétention hydrosodée.\n\nIl ne faut pas interrompre un médicament prescrit sans en discuter avec son médecin.\n\nLe manque de sommeil peut-il intervenir ?\n\nUn sommeil insuffisant ou de mauvaise qualité peut influencer l'appétit, les comportements alimentaires et la capacité à maintenir une activité physique régulière.\n\nLe stress chronique peut également modifier les habitudes quotidiennes.\n\nCes facteurs doivent être pris en compte sans culpabiliser la personne concernée.\n\nQuel bilan peut être proposé ?\n\nLe médecin recherche l'ancienneté de la prise de poids, sa vitesse, les modifications thérapeutiques et les symptômes associés.\n\nSelon la situation, il peut proposer un examen clinique et des analyses évaluant notamment la fonction thyroïdienne, rénale ou hépatique.\n\nLes examens hormonaux spécialisés ne sont pas systématiquement nécessaires.",
+          "watch": "Quand consulter rapidement ?\n\nUne augmentation de deux à trois kilogrammes en quelques jours, particulièrement si elle s'accompagne de jambes gonflées ou d'un essoufflement inhabituel, peut révéler une rétention d'eau nécessitant une évaluation rapide.\n\nEn cas d'essoufflement important au repos ou de douleur thoracique, appelez le 15 ou le 112.",
+          "sources": [
+            {
+              "label": "HAS — Parcours de soins du surpoids et de l'obésité chez l'adulte",
+              "url": "https://www.has-sante.fr/jcms/p_3408871/fr/guide-du-parcours-de-soins-surpoids-et-obesite-chez-l-adulte"
+            },
+            {
+              "label": "Assurance Maladie — Hypothyroïdie",
+              "url": "https://www.ameli.fr/assure/sante/themes/hypothyroidie/symptomes-diagnostic-evolution"
+            },
+            {
+              "label": "Signes de l'insuffisance cardiaque",
+              "url": "https://www.ameli.fr/assure/sante/themes/insuffisance-cardiaque/symptomes-diagnotic-evolution"
+            }
+          ],
+          "readingTime": "4 min"
+        }
+      },
+      {
+        "kind": "fiche",
+        "body": {
+          "id": "vertiges-causes",
+          "category": "Santé au quotidien",
+          "title": "J'ai des vertiges : quelles peuvent être les causes ?",
+          "keywords": "vertige oreille interne VPPB neurologie équilibre",
+          "answer": "Les vertiges peuvent être liés à une affection de l'oreille interne, mais également à un problème neurologique ou à d'autres causes médicales. Leur durée, leurs circonstances d'apparition et les symptômes associés orientent le diagnostic. Un vertige brutal accompagné de signes neurologiques constitue une urgence.",
+          "detail": "Qu'est-ce qu'un véritable vertige ?\n\nLe vertige correspond à une illusion de mouvement. La personne peut avoir l'impression que la pièce tourne autour d'elle ou que son propre corps se déplace.\n\nIl doit être distingué d'une sensation de malaise, d'une impression de tête vide ou d'une instabilité sans sensation de mouvement.\n\nCes différentes manifestations peuvent avoir des causes distinctes.\n\nComment fonctionne notre équilibre ?\n\nLe maintien de l'équilibre repose sur les informations provenant de l'oreille interne, de la vision et des récepteurs sensoriels des muscles et des articulations.\n\nLe cerveau combine ces informations pour déterminer la position et les mouvements du corps.\n\nUne perturbation de l'un de ces systèmes peut entraîner un vertige ou une instabilité.\n\nQuelles sont les principales causes ?\n\nVertige positionnel bénin : Crises brèves déclenchées par certains mouvements de tête\nNévrite vestibulaire : Vertige prolongé, souvent accompagné de nausées\nMaladie de Ménière : Crises associées à des symptômes auditifs\nMigraine vestibulaire : Vertiges parfois associés à des manifestations migraineuses\nHypotension orthostatique : Malaise ou étourdissement au passage en position debout\nAVC : Vertige brutal, parfois associé à des signes neurologiques\n\nCes caractéristiques orientent le médecin, mais ne suffisent pas à établir un diagnostic sans examen.\n\nQu'est-ce qu'un vertige positionnel paroxystique bénin ?\n\nDans l'oreille interne, de petites particules appelées otolithes participent normalement à la perception des mouvements.\n\nLorsqu'elles se déplacent dans certains canaux de l'oreille interne, elles peuvent provoquer un vertige bref lors d'un changement de position.\n\nLes symptômes apparaissent fréquemment lorsque la personne se retourne dans son lit, se couche ou relève la tête.\n\nDes manœuvres spécifiques réalisées par un professionnel formé peuvent permettre de repositionner ces particules.\n\nPourquoi faut-il parfois rechercher un AVC ?\n\nCertaines régions du cerveau, notamment le cervelet et le tronc cérébral, participent à l'équilibre.\n\nUn accident vasculaire cérébral touchant ces régions peut se manifester par un vertige brutal et important, parfois même sans paralysie évidente.\n\nIl ne faut donc pas considérer automatiquement qu'un vertige soudain provient de l'oreille interne.\n\nQuels examens peuvent être réalisés ?\n\nLe médecin étudie la durée des symptômes, leurs facteurs déclenchants et les manifestations associées.\n\nL'examen peut comprendre une évaluation des mouvements oculaires, de la marche, de l'équilibre, de l'audition et de la pression artérielle.\n\nUne imagerie cérébrale ou des examens spécialisés peuvent être nécessaires selon le contexte.\n\nQuels réflexes adopter pendant un vertige ?\n\nAsseyez-vous ou allongez-vous dans un endroit sécurisé. Évitez de conduire, de monter sur une échelle ou d'utiliser un équipement dangereux.\n\nChez les personnes âgées, les vertiges augmentent le risque de chute et doivent faire l'objet d'une attention particulière.",
+          "watch": "Quand appeler le 15 ou le 112 ?\n\nUn vertige brutal accompagné d'une difficulté à parler, d'une vision double, d'une faiblesse d'un membre, d'une impossibilité nouvelle à tenir debout ou d'un mal de tête inhabituel et intense nécessite une prise en charge urgente.\n\nUn premier vertige brutal, intense et persistant mérite également une évaluation urgente, même en l'absence de paralysie.",
+          "sources": [
+            {
+              "label": "HAS — Vertiges positionnels paroxystiques bénins",
+              "url": "https://www.has-sante.fr/jcms/c_2819896/fr/vertiges-positionnels-paroxystiques-benins-manoeuvres-diagnostiques-et-therapeutiques"
+            },
+            {
+              "label": "Assurance Maladie — Causes des vertiges",
+              "url": "https://www.ameli.fr/assure/sante/themes/vertiges/definition-mecanisme-causes"
+            },
+            {
+              "label": "Conduite à tenir",
+              "url": "https://www.ameli.fr/assure/sante/themes/vertiges/bons-reflexes-que-faire"
+            }
+          ],
+          "readingTime": "4 min"
+        }
+      }
+    ],
+    "editions": []
+  },
+  "snapshotHash": "12056e89046a822554deca8cc17ff4bae4959f210c0fdce5f9a4af9a6b8f190d",
+  "state": "VALIDATED_PENDING_PUBLICATION",
+  "approval": {
+    "action": "je valide",
+    "validator": "Dr Romain BEDDOK",
+    "validatedAt": "2026-11-25T11:00:00+01:00",
+    "evidence": "Je valide médicalement les versions intégrales enrichies du lot 3, références complémentaires comprises : PSA et dépistage prostatique ; Troubles de l'érection et risque cardiovasculaire ; Arthrose et activité physique ; Troubles de mémoire ; Acouphènes ; Syndrome de l'intestin irritable ; Transaminases élevées ; Intolérance au lactose ; Prise de poids inexpliquée ; Vertiges. J'autorise leur publication immédiate selon le pipeline MACASANTÉ, sans duplication, avec synchronisation de l'assistant IA et vérification effective en production.",
+    "snapshotHash": "12056e89046a822554deca8cc17ff4bae4959f210c0fdce5f9a4af9a6b8f190d"
+  },
+  "targets": [
+    {
+      "kind": "fiche",
+      "id": "psa-depistage-prostate",
+      "assistantPolicy": null,
+      "ficheId": null,
+      "textHash": "c9c5881ffb60793b43a84dad5b81aada6cb6e508ac616c6c8b96e5570aa3273a",
+      "url": "fiches-seo/psa-depistage-prostate.html",
+      "version": "4caa7475209eaf40714a7a4b89e01a0540a822c07d66695004f8c6e9c5c46da4"
+    },
+    {
+      "kind": "fiche",
+      "id": "troubles-erection-age-cardio",
+      "assistantPolicy": null,
+      "ficheId": null,
+      "textHash": "3905c7bfef72576997fcde4a9a2605b5e7481fcceaf059e6cee1c780c621b515",
+      "url": "fiches-seo/troubles-erection-age-cardio.html",
+      "version": "01db80c73fea1653ee9c88cef47a8e9b09dc8c094f2b7ce61bceb99940ab7cab"
+    },
+    {
+      "kind": "fiche",
+      "id": "arthrose-faut-il-bouger",
+      "assistantPolicy": null,
+      "ficheId": null,
+      "textHash": "cb54b02c14f93576a4a4989e7ec3794c7bdea8688f3a494b12c8ca81c0ccbe53",
+      "url": "fiches-seo/arthrose-faut-il-bouger.html",
+      "version": "96b2eef174fe9ae864f1df80c2f4ca15ccfc353f922687b6838188eca86ffe35"
+    },
+    {
+      "kind": "fiche",
+      "id": "trous-memoire-age",
+      "assistantPolicy": null,
+      "ficheId": null,
+      "textHash": "c42b890e3dc00f9536bd2787c284b81d6b9d5dfa807ed499fecf72e309c5d108",
+      "url": "fiches-seo/trous-memoire-age.html",
+      "version": "3705b81379d2fe3c196ed185277be4c751f362a71e71938d14f1c8f70e705a59"
+    },
+    {
+      "kind": "fiche",
+      "id": "q-acouphenes-frequence",
+      "assistantPolicy": null,
+      "ficheId": null,
+      "textHash": "a9d87203e2032f7867dcb661abdf9a974b0396977fcc4b2b0be818750cf6b8c7",
+      "url": "fiches-seo/q-acouphenes-frequence.html",
+      "version": "6fe647870b5a992bd2c7ad909bad00f441133c2d506576c0228f7e1f31a8a1ca"
+    },
+    {
+      "kind": "fiche",
+      "id": "syndrome-intestin-irritable-que-faire",
+      "assistantPolicy": null,
+      "ficheId": null,
+      "textHash": "75d77af14a833d3ac1e72b8577f43f160c07d5aa47a5ded25eb9e2c0784ff9c8",
+      "url": "fiches-seo/syndrome-intestin-irritable-que-faire.html",
+      "version": "095b8687e84f12ca0c8f804b12fad6ab662deb166a82f8c3b04918ba707a231f"
+    },
+    {
+      "kind": "fiche",
+      "id": "transaminases-elevees",
+      "assistantPolicy": null,
+      "ficheId": null,
+      "textHash": "17c5c63da6d683c6451c811e333367fbde7a5cb7db856f6f447d670cf6a579f8",
+      "url": "fiches-seo/transaminases-elevees.html",
+      "version": "5c20e92ba43ddf303d32b16adeeda3305dac7702ea829204abbb323a83a98ab3"
+    },
+    {
+      "kind": "fiche",
+      "id": "intolerance-lactose",
+      "assistantPolicy": null,
+      "ficheId": null,
+      "textHash": "52a4a1e38c3f4486f80472b2fe3776c27c4cad245db91c246059b6131b92dc45",
+      "url": "fiches-seo/intolerance-lactose.html",
+      "version": "73c3a44d1037ec2bb1ce5ba41829138122d5575dfc6d26376116f158c25da66b"
+    },
+    {
+      "kind": "fiche",
+      "id": "prise-poids-sans-raison",
+      "assistantPolicy": null,
+      "ficheId": null,
+      "textHash": "0852f5373e02fc616fe209bfd5cff5afee1cc115474e7619a10b74ee36467e36",
+      "url": "fiches-seo/prise-poids-sans-raison.html",
+      "version": "da001adf1d699a8048c71c4d825fd0a3bd421c72d51b83ddbb902de467eb50fc"
+    },
+    {
+      "kind": "fiche",
+      "id": "vertiges-causes",
+      "assistantPolicy": null,
+      "ficheId": null,
+      "textHash": "78869977c4e25ec59ceb04a63092ff6244a3ccb7ffbe3512758f4093ef338f7b",
+      "url": "fiches-seo/vertiges-causes.html",
+      "version": "ffda2f77ef65d475bbad3d3cfae894e1b30a5297ddb310bffd29313e5dfa0bfb"
+    }
+  ],
+  "history": [
+    {
+      "state": "READY_FOR_VALIDATION",
+      "at": "2026-11-25T11:00:00+01:00"
+    },
+    {
+      "state": "VALIDATED_PENDING_PUBLICATION",
+      "at": "2026-11-25T11:00:00+01:00",
+      "approval": {
+        "action": "je valide",
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-25T11:00:00+01:00",
+        "evidence": "Je valide médicalement les versions intégrales enrichies du lot 3, références complémentaires comprises : PSA et dépistage prostatique ; Troubles de l'érection et risque cardiovasculaire ; Arthrose et activité physique ; Troubles de mémoire ; Acouphènes ; Syndrome de l'intestin irritable ; Transaminases élevées ; Intolérance au lactose ; Prise de poids inexpliquée ; Vertiges. J'autorise leur publication immédiate selon le pipeline MACASANTÉ, sans duplication, avec synchronisation de l'assistant IA et vérification effective en production.",
+        "snapshotHash": "12056e89046a822554deca8cc17ff4bae4959f210c0fdce5f9a4af9a6b8f190d"
+      },
+      "targets": [
+        {
+          "kind": "fiche",
+          "id": "psa-depistage-prostate",
+          "assistantPolicy": null,
+          "ficheId": null,
+          "textHash": "c9c5881ffb60793b43a84dad5b81aada6cb6e508ac616c6c8b96e5570aa3273a",
+          "url": "fiches-seo/psa-depistage-prostate.html",
+          "version": "4caa7475209eaf40714a7a4b89e01a0540a822c07d66695004f8c6e9c5c46da4"
+        },
+        {
+          "kind": "fiche",
+          "id": "troubles-erection-age-cardio",
+          "assistantPolicy": null,
+          "ficheId": null,
+          "textHash": "3905c7bfef72576997fcde4a9a2605b5e7481fcceaf059e6cee1c780c621b515",
+          "url": "fiches-seo/troubles-erection-age-cardio.html",
+          "version": "01db80c73fea1653ee9c88cef47a8e9b09dc8c094f2b7ce61bceb99940ab7cab"
+        },
+        {
+          "kind": "fiche",
+          "id": "arthrose-faut-il-bouger",
+          "assistantPolicy": null,
+          "ficheId": null,
+          "textHash": "cb54b02c14f93576a4a4989e7ec3794c7bdea8688f3a494b12c8ca81c0ccbe53",
+          "url": "fiches-seo/arthrose-faut-il-bouger.html",
+          "version": "96b2eef174fe9ae864f1df80c2f4ca15ccfc353f922687b6838188eca86ffe35"
+        },
+        {
+          "kind": "fiche",
+          "id": "trous-memoire-age",
+          "assistantPolicy": null,
+          "ficheId": null,
+          "textHash": "c42b890e3dc00f9536bd2787c284b81d6b9d5dfa807ed499fecf72e309c5d108",
+          "url": "fiches-seo/trous-memoire-age.html",
+          "version": "3705b81379d2fe3c196ed185277be4c751f362a71e71938d14f1c8f70e705a59"
+        },
+        {
+          "kind": "fiche",
+          "id": "q-acouphenes-frequence",
+          "assistantPolicy": null,
+          "ficheId": null,
+          "textHash": "a9d87203e2032f7867dcb661abdf9a974b0396977fcc4b2b0be818750cf6b8c7",
+          "url": "fiches-seo/q-acouphenes-frequence.html",
+          "version": "6fe647870b5a992bd2c7ad909bad00f441133c2d506576c0228f7e1f31a8a1ca"
+        },
+        {
+          "kind": "fiche",
+          "id": "syndrome-intestin-irritable-que-faire",
+          "assistantPolicy": null,
+          "ficheId": null,
+          "textHash": "75d77af14a833d3ac1e72b8577f43f160c07d5aa47a5ded25eb9e2c0784ff9c8",
+          "url": "fiches-seo/syndrome-intestin-irritable-que-faire.html",
+          "version": "095b8687e84f12ca0c8f804b12fad6ab662deb166a82f8c3b04918ba707a231f"
+        },
+        {
+          "kind": "fiche",
+          "id": "transaminases-elevees",
+          "assistantPolicy": null,
+          "ficheId": null,
+          "textHash": "17c5c63da6d683c6451c811e333367fbde7a5cb7db856f6f447d670cf6a579f8",
+          "url": "fiches-seo/transaminases-elevees.html",
+          "version": "5c20e92ba43ddf303d32b16adeeda3305dac7702ea829204abbb323a83a98ab3"
+        },
+        {
+          "kind": "fiche",
+          "id": "intolerance-lactose",
+          "assistantPolicy": null,
+          "ficheId": null,
+          "textHash": "52a4a1e38c3f4486f80472b2fe3776c27c4cad245db91c246059b6131b92dc45",
+          "url": "fiches-seo/intolerance-lactose.html",
+          "version": "73c3a44d1037ec2bb1ce5ba41829138122d5575dfc6d26376116f158c25da66b"
+        },
+        {
+          "kind": "fiche",
+          "id": "prise-poids-sans-raison",
+          "assistantPolicy": null,
+          "ficheId": null,
+          "textHash": "0852f5373e02fc616fe209bfd5cff5afee1cc115474e7619a10b74ee36467e36",
+          "url": "fiches-seo/prise-poids-sans-raison.html",
+          "version": "da001adf1d699a8048c71c4d825fd0a3bd421c72d51b83ddbb902de467eb50fc"
+        },
+        {
+          "kind": "fiche",
+          "id": "vertiges-causes",
+          "assistantPolicy": null,
+          "ficheId": null,
+          "textHash": "78869977c4e25ec59ceb04a63092ff6244a3ccb7ffbe3512758f4093ef338f7b",
+          "url": "fiches-seo/vertiges-causes.html",
+          "version": "ffda2f77ef65d475bbad3d3cfae894e1b30a5297ddb310bffd29313e5dfa0bfb"
+        }
+      ]
+    }
+  ]
+}
