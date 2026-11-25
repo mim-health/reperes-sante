@@ -118,14 +118,6 @@
       ]
     },
     {
-      "id": "insomnie-adulte",
-      "occurrences": 2,
-      "files": [
-        "backlog-audited-lot-e.js",
-        "backlog-audited-lot-i.js"
-      ]
-    },
-    {
       "id": "oubli-pilule",
       "occurrences": 2,
       "files": [
@@ -612,7 +604,7 @@
   ],
   "counts": {
     "manifestFiles": 159,
-    "rawFiches": 452,
+    "rawFiches": 451,
     "canonicalFiches": 428,
     "magContents": 320
   }
