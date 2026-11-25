@@ -11553,13 +11553,228 @@
       ],
       "medicalStatus": "VALIDATED",
       "publicationStatus": "PUBLISHED",
-      "standalone": true,
       "validation": {
         "validator": "Dr Romain BEDDOK",
         "validatedAt": "2026-11-25T00:00:00+01:00",
         "evidence": "Je valide médicalement l'intégralité de l'édition MACASANTÉ du 25 novembre 2026 et autorise sa publication immédiate en l'état, sans réécriture ni nouvelle validation.",
         "contentHash": "c59d07c7263bcce8439b8fed3c69e1475056ce9898d4c2e6882b670dcfa20744"
       }
+    },
+    {
+      "id": "daily-zona-douleurs-20261125",
+      "title": "Zona : pourquoi les douleurs persistent-elles parfois après la disparition des boutons ?",
+      "answer": "Même après la guérison des lésions cutanées, le zona peut laisser des douleurs nerveuses persistantes, parfois très invalidantes.",
+      "html": "<article><h1>Zona : pourquoi les douleurs persistent-elles parfois après la disparition des boutons ?</h1><p><strong>Réponse courte :</strong> Même après la guérison des lésions cutanées, le zona peut laisser des douleurs nerveuses persistantes, parfois très invalidantes.</p><p>Une synthèse publiée le 23 novembre dans le JAMA, à laquelle participe une équipe française de l'Inserm et de l'hôpital Ambroise-Paré, fait le point sur les douleurs post-zostériennes.</p><p>Le zona est provoqué par la réactivation du virus de la varicelle. Les lésions cutanées disparaissent généralement en deux à quatre semaines. Cependant, certains patients continuent de ressentir des brûlures, des décharges électriques ou une hypersensibilité de la peau.</p><p>Lorsque ces douleurs persistent au-delà de trois mois, on parle de névralgie post-zostérienne.</p><p><strong>Peut-on les traiter ?</strong></p><p>Des médicaments spécifiques des douleurs neuropathiques peuvent être proposés. Certaines approches psychologiques peuvent également aider à mieux vivre avec la douleur.</p><p><strong>En pratique :</strong> il ne faut pas banaliser une douleur persistante après un zona, notamment lorsqu'elle perturbe le sommeil. La vaccination constitue également un moyen de prévention du zona et de ses complications.</p><p>Cette publication est une synthèse clinique, et non un nouvel essai thérapeutique.</p><p>Source : <a href=\"https://doi.org/10.1001/jama.2026.19825\">Vollert J, Attal N, Baron R. Postherpetic Neuralgia. JAMA, 23 novembre 2026.</a></p></article>",
+      "date": "2026-11-25",
+      "url": "article-daily-zona-douleurs-20261125.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "Vollert J, Attal N, Baron R. Postherpetic Neuralgia. JAMA, 23 novembre 2026.",
+          "url": "https://doi.org/10.1001/jama.2026.19825"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-25T00:00:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition MACASANTÉ du 25 novembre 2026 et autorise sa publication immédiate en l'état, sans réécriture ni nouvelle validation.",
+        "contentHash": "83ead49981ad8ea7677ccb0e54d14bad42a6215f4c4e8ea05dd352819a23bc3b"
+      },
+      "keywords": [
+        "zona-douleurs"
+      ]
+    },
+    {
+      "id": "daily-diabete-os-20261125",
+      "title": "Diabète de type 2 : les os sont-ils plus fragiles qu'on ne le pense ?",
+      "answer": "Le diabète de type 2 peut augmenter le risque de fracture, même lorsque la densité osseuse paraît relativement satisfaisante.",
+      "html": "<article><h1>Diabète de type 2 : les os sont-ils plus fragiles qu'on ne le pense ?</h1><p><strong>Réponse courte :</strong> Le diabète de type 2 peut augmenter le risque de fracture, même lorsque la densité osseuse paraît relativement satisfaisante.</p><p>Une étude menée à Hong Kong auprès de 5 817 adultes, dont 629 diabétiques, a évalué le risque de fracture au cours d'un suivi moyen de douze ans.</p><p><strong>Fractures de la hanche — Incidence observée pour 1 000 personnes-années</strong> Avec diabète : 13,27 ; Sans diabète : 3,77. Comparaison brute issue de la cohorte étudiée.</p><p>L'étude souligne l'importance de prendre en compte le diabète dans l'évaluation de la fragilité osseuse.</p><p><strong>En pratique :</strong> la prévention des chutes, le renforcement musculaire et l'évaluation individuelle du risque de fracture sont particulièrement importants chez les personnes diabétiques vieillissantes.</p><p><strong>Limites :</strong> il s'agit d'une étude observationnelle réalisée dans une population asiatique. Ses résultats ne justifient pas de modifier directement les seuils diagnostiques utilisés en France.</p><p>Source : <a href=\"https://doi.org/10.1001/jamanetworkopen.2026.45960\">Lui et al., JAMA Network Open, 24 novembre 2026.</a></p></article>",
+      "date": "2026-11-25",
+      "url": "article-daily-diabete-os-20261125.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "Lui et al., JAMA Network Open, 24 novembre 2026.",
+          "url": "https://doi.org/10.1001/jamanetworkopen.2026.45960"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-25T00:00:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition MACASANTÉ du 25 novembre 2026 et autorise sa publication immédiate en l'état, sans réécriture ni nouvelle validation.",
+        "contentHash": "dcd9cad5c04dc19ba3894db74f10e7f4433a14d96f740d70a2ec88244bef7052"
+      },
+      "keywords": [
+        "diabete-os"
+      ]
+    },
+    {
+      "id": "daily-prix-fruits-legumes-20261125",
+      "title": "Manger plus sainement : le prix des aliments est-il un obstacle majeur ?",
+      "answer": "Faciliter financièrement l'accès aux fruits et légumes peut modifier les habitudes d'achat, mais le bénéfice médical reste à démontrer.",
+      "html": "<article><h1>Manger plus sainement : le prix des aliments est-il un obstacle majeur ?</h1><p><strong>Réponse courte :</strong> Faciliter financièrement l'accès aux fruits et légumes peut modifier les habitudes d'achat, mais le bénéfice médical reste à démontrer.</p><p>Un essai américain a analysé 210 personnes présentant un diabète et une obésité. Certains participants ont bénéficié d'une aide de 160 dollars par mois destinée à l'achat de fruits et légumes.</p><p>Pendant les trois mois de l'étude, cette aide a entraîné une augmentation moyenne des dépenses en fruits et légumes de 92,52 dollars par mois par rapport au groupe témoin.</p><p>En revanche, aucune amélioration statistiquement significative de l'hémoglobine glyquée n'a été démontrée.</p><p><strong>En pratique :</strong> une alimentation équilibrée ne dépend pas uniquement de la volonté individuelle. L'accessibilité et le prix des produits jouent également un rôle. Les légumes surgelés nature et les conserves peu salées peuvent constituer des alternatives pratiques.</p><p><strong>Limites :</strong> essai pilote, courte durée et mesure des achats plutôt que des quantités réellement consommées.</p><p>Source : <a href=\"https://doi.org/10.1001/jamanetworkopen.2026.45233\">Hua et al., JAMA Network Open, 24 novembre 2026.</a></p></article>",
+      "date": "2026-11-25",
+      "url": "article-daily-prix-fruits-legumes-20261125.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "Hua et al., JAMA Network Open, 24 novembre 2026.",
+          "url": "https://doi.org/10.1001/jamanetworkopen.2026.45233"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-25T00:00:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition MACASANTÉ du 25 novembre 2026 et autorise sa publication immédiate en l'état, sans réécriture ni nouvelle validation.",
+        "contentHash": "c693b9310c1c61f78599294ec7fc6433cff009552df3833d6ffe7d8081908517"
+      },
+      "keywords": [
+        "prix-fruits-legumes"
+      ]
+    },
+    {
+      "id": "daily-tabac-recompense-20261125",
+      "title": "Arrêter de fumer : une récompense financière peut-elle réellement aider ?",
+      "answer": "Des incitations financières associées à une prise en charge du sevrage pourraient aider certaines personnes à arrêter durablement de fumer.",
+      "html": "<article><h1>Arrêter de fumer : une récompense financière peut-elle réellement aider ?</h1><p><strong>Réponse courte :</strong> Des incitations financières associées à une prise en charge du sevrage pourraient aider certaines personnes à arrêter durablement de fumer.</p><p>Un essai américain a analysé 3 220 fumeurs orientés vers un dépistage du cancer pulmonaire et appartenant à des populations insuffisamment accompagnées médicalement.</p><p><strong>Arrêt du tabac maintenu pendant six mois</strong> Soins habituels : 4,3 % ; Avec traitements gratuits : 5,1 % ; Avec traitements et récompenses : 8,8 % ; Avec application en plus : 7,2 %. Abstinence confirmée biologiquement.</p><p><strong>En pratique :</strong> arrêter de fumer reste possible à tout âge. Un accompagnement personnalisé et les traitements adaptés restent des outils essentiels.</p><p><strong>Limites :</strong> les taux d'arrêt restent modestes. Le dispositif financier américain n'est pas directement transposable au système français.</p><p>Source : <a href=\"https://doi.org/10.1001/jama.2026.17192\">Hart et al., JAMA, numéro du 24 novembre 2026, première publication en ligne le 5 octobre.</a></p></article>",
+      "date": "2026-11-25",
+      "url": "article-daily-tabac-recompense-20261125.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "Hart et al., JAMA, numéro du 24 novembre 2026, première publication en ligne le 5 octobre.",
+          "url": "https://doi.org/10.1001/jama.2026.17192"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-25T00:00:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition MACASANTÉ du 25 novembre 2026 et autorise sa publication immédiate en l'état, sans réécriture ni nouvelle validation.",
+        "contentHash": "a74364922f3292c3099be75121963decd59ea1aa2ed764173b4c39992b2ad1d3"
+      },
+      "keywords": [
+        "tabac-recompense"
+      ]
+    },
+    {
+      "id": "daily-hta-chiffre-20261125",
+      "title": "44 %",
+      "answer": "Des adultes hypertendus dans le monde ignorent qu'ils le sont.",
+      "html": "<article><h1>44 %</h1><p>Des adultes hypertendus dans le monde ignorent qu'ils le sont.</p><p>44 % non diagnostiqués ; 56 % diagnostiqués.</p><p>Cela représente environ 600 millions de personnes, selon les estimations mondiales de l'OMS pour 2024.</p><p>L'hypertension artérielle évolue souvent silencieusement. Mesurer régulièrement sa tension permet de la dépister avant l'apparition de complications.</p><p>Source : <a href=\"https://www.who.int/publications/i/item/9789240115569\">Rapport mondial de l'OMS sur l'hypertension artérielle, septembre 2025.</a></p></article>",
+      "date": "2026-11-25",
+      "url": "article-daily-hta-chiffre-20261125.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "Rapport mondial de l'OMS sur l'hypertension artérielle, septembre 2025.",
+          "url": "https://www.who.int/publications/i/item/9789240115569"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-25T00:00:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition MACASANTÉ du 25 novembre 2026 et autorise sa publication immédiate en l'état, sans réécriture ni nouvelle validation.",
+        "contentHash": "a768607fc9654ad65ef9797bb1e546b9ac939c237b6b6cc6d4bf243095cde244"
+      },
+      "keywords": [
+        "hta-chiffre"
+      ]
+    },
+    {
+      "id": "daily-cardiomyopathie-20261125",
+      "title": "Cardiologie : mieux reconnaître la cardiomyopathie hypertrophique",
+      "answer": "Une nouvelle synthèse scientifique fait le point sur cette maladie caractérisée par un épaississement du muscle cardiaque.",
+      "html": "<article><h1>Cardiologie : mieux reconnaître la cardiomyopathie hypertrophique</h1><p>Une nouvelle synthèse scientifique fait le point sur cette maladie caractérisée par un épaississement du muscle cardiaque.</p><p>Son diagnostic permet notamment d'évaluer le risque de complications et la nécessité d'un dépistage familial.</p><p>Source : <a href=\"https://doi.org/10.1001/jama.2026.21415\">Ommen SR, JAMA, 23 novembre 2026.</a></p></article>",
+      "date": "2026-11-25",
+      "url": "article-daily-cardiomyopathie-20261125.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "Ommen SR, JAMA, 23 novembre 2026.",
+          "url": "https://doi.org/10.1001/jama.2026.21415"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-25T00:00:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition MACASANTÉ du 25 novembre 2026 et autorise sa publication immédiate en l'état, sans réécriture ni nouvelle validation.",
+        "contentHash": "a2468e0a32e2a697dd0c4965db0e6a7602ef45ab024a93fceedf276291a11d26"
+      },
+      "keywords": [
+        "cardiomyopathie"
+      ]
+    },
+    {
+      "id": "daily-sepsis-ambulance-20261125",
+      "title": "Infections graves : faut-il administrer les antibiotiques dès l'ambulance ?",
+      "answer": "L'essai randomisé PITSTOP-Antibiotics étudie l'intérêt d'administrer plus précocement des antibiotiques aux patients présentant une suspicion de sepsis.",
+      "html": "<article><h1>Infections graves : faut-il administrer les antibiotiques dès l'ambulance ?</h1><p>L'essai randomisé PITSTOP-Antibiotics étudie l'intérêt d'administrer plus précocement des antibiotiques aux patients présentant une suspicion de sepsis.</p><p>Cette recherche vise à mieux définir les stratégies de prise en charge préhospitalière. Aucun bénéfice supplémentaire ne peut être affirmé ici sans analyse détaillée des résultats.</p><p>Source : <a href=\"https://doi.org/10.1001/jama.2026.25627\">Scales et al., JAMA, 24 novembre 2026.</a></p></article>",
+      "date": "2026-11-25",
+      "url": "article-daily-sepsis-ambulance-20261125.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "Scales et al., JAMA, 24 novembre 2026.",
+          "url": "https://doi.org/10.1001/jama.2026.25627"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-25T00:00:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition MACASANTÉ du 25 novembre 2026 et autorise sa publication immédiate en l'état, sans réécriture ni nouvelle validation.",
+        "contentHash": "3ffcf22ec80c87503762faaa50c16cc17db6d94423d14631554cca5053b68726"
+      },
+      "keywords": [
+        "sepsis-ambulance"
+      ]
+    },
+    {
+      "id": "daily-amylose-ia-20261125",
+      "title": "Amylose cardiaque : l'intelligence artificielle au service du diagnostic",
+      "answer": "Une étude évalue un outil d'intelligence artificielle capable d'analyser les électrocardiogrammes afin d'identifier les patients qui pourraient bénéficier d'examens complémentaires pour rechercher une amylose cardiaque.",
+      "html": "<article><h1>Amylose cardiaque : l'intelligence artificielle au service du diagnostic</h1><p>Une étude évalue un outil d'intelligence artificielle capable d'analyser les électrocardiogrammes afin d'identifier les patients qui pourraient bénéficier d'examens complémentaires pour rechercher une amylose cardiaque.</p><p>Cet outil ne remplace pas un diagnostic médical.</p><p>Source : <a href=\"https://doi.org/10.1001/jama.2026.16785\">Croon et al., JAMA, numéro du 24 novembre 2026.</a></p></article>",
+      "date": "2026-11-25",
+      "url": "article-daily-amylose-ia-20261125.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "Croon et al., JAMA, numéro du 24 novembre 2026.",
+          "url": "https://doi.org/10.1001/jama.2026.16785"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-25T00:00:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition MACASANTÉ du 25 novembre 2026 et autorise sa publication immédiate en l'état, sans réécriture ni nouvelle validation.",
+        "contentHash": "19acf2eba5aefe6e2147456a31642432a07d1c69894704bd7d878f24ae56c8b3"
+      },
+      "keywords": [
+        "amylose-ia"
+      ]
     }
   ],
   "editions": [
@@ -13218,6 +13433,64 @@
         },
         {
           "contentId": "daily-sla-stress-cellulaire-20261124",
+          "slot": "DONNÉES",
+          "icon": "•"
+        }
+      ]
+    },
+    {
+      "id": "edition-2026-11-25",
+      "date": "2026-11-25",
+      "publishAt": "2026-11-25T14:28:00+01:00",
+      "complete": true,
+      "items": [
+        {
+          "contentId": "daily-zona-douleurs-20261125",
+          "slot": "À LA UNE",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-diabete-os-20261125",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-prix-fruits-legumes-20261125",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-tabac-recompense-20261125",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-crampes-20261018",
+          "slot": "FICHE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-cholesterol-symptomes-20261125",
+          "slot": "VRAI OU FAUX",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-hta-chiffre-20261125",
+          "slot": "LE CHIFFRE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-cardiomyopathie-20261125",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-sepsis-ambulance-20261125",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-amylose-ia-20261125",
           "slot": "DONNÉES",
           "icon": "•"
         }
