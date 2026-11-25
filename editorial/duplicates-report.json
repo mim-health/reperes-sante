@@ -20,15 +20,6 @@
       ]
     },
     {
-      "id": "trous-memoire-age",
-      "occurrences": 3,
-      "files": [
-        "qa-data-september-2026.js",
-        "backlog-audited-lot-k.js",
-        "backlog-audited-lot-l.js"
-      ]
-    },
-    {
       "id": "transpiration-excessive-hyperhidrose",
       "occurrences": 3,
       "files": [
@@ -412,19 +403,6 @@
     },
     {
       "left": {
-        "id": "syndrome-premenstruel-que-faire",
-        "title": "Syndrome prémenstruel : que peut-on vraiment faire ?",
-        "type": "fiche"
-      },
-      "right": {
-        "id": "syndrome-intestin-irritable-que-faire",
-        "title": "Syndrome de l’intestin irritable : que peut-on vraiment faire ?",
-        "type": "fiche"
-      },
-      "score": 0.5
-    },
-    {
-      "left": {
         "id": "palpitations-quand-consulter",
         "title": "Palpitations : quand faut-il consulter ?",
         "type": "fiche"
@@ -448,19 +426,6 @@
         "type": "Mag"
       },
       "score": 1
-    },
-    {
-      "left": {
-        "id": "vertiges-causes",
-        "title": "Vertiges : les causes fréquentes et les signes d’alerte",
-        "type": "fiche"
-      },
-      "right": {
-        "id": "essoufflement-causes-signes-alerte",
-        "title": "Essoufflement : causes fréquentes et signes d’alerte",
-        "type": "fiche"
-      },
-      "score": 0.67
     },
     {
       "left": {
@@ -647,7 +612,7 @@
   ],
   "counts": {
     "manifestFiles": 159,
-    "rawFiches": 454,
+    "rawFiches": 452,
     "canonicalFiches": 428,
     "magContents": 320
   }
