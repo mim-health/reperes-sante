@@ -1114,6 +1114,80 @@
         "contentHash": "602b459b61baf42a64267c63c404b7d75607bf4a9d388018a7e3610e2837f118",
         "snapshotHash": "a10693de1fc2614f8413ffb71763059b89a6da2bee92974d3a397f42453ebacf"
       }
+    },
+    {
+      "id": "fatigue-enfant-rentree",
+      "category": "Enfants & parents",
+      "title": "Mon enfant est souvent fatigué : quand faut-il s'inquiéter ?",
+      "keywords": "enfant adolescent fatigue rentrée scolaire école collège sommeil dette de sommeil horaires coucher lever écrans rythme vacances épuisé concentration apprentissage",
+      "answer": "Une fatigue passagère est fréquente chez l'enfant, notamment lors de la rentrée scolaire, après une infection ou pendant une période de sommeil insuffisant. Une fatigue persistante, inhabituelle ou associée à d'autres symptômes nécessite cependant une évaluation médicale.",
+      "detail": "Pourquoi un enfant peut-il être fatigué ?\n\nLa croissance, les apprentissages et les activités physiques mobilisent quotidiennement de l'énergie. Lorsque les périodes de récupération sont insuffisantes, une fatigue peut progressivement apparaître.\n\nIl faut également distinguer la fatigue, correspondant à un manque d'énergie, de la somnolence, qui traduit une tendance excessive à s'endormir.\n\nCes deux manifestations peuvent coexister, mais ne conduisent pas nécessairement à rechercher les mêmes causes.\n\nCombien d'heures un enfant doit-il dormir ?\n\nLes besoins de sommeil évoluent avec l'âge.\n\n1 à 2 ans : 11 à 14 heures par 24 heures.\n3 à 5 ans : 10 à 13 heures.\n6 à 12 ans : 9 à 12 heures.\n13 à 18 ans : 8 à 10 heures.\n\nCes durées incluent les siestes chez les plus jeunes et correspondent aux repères de l'American Academy of Sleep Medicine.\n\nQuelles maladies peuvent provoquer une fatigue ?\n\nUne carence en fer, une anémie, une infection prolongée, une hypothyroïdie ou certaines maladies inflammatoires peuvent notamment être responsables.\n\nChez l'adolescent, les règles abondantes, les restrictions alimentaires et certaines difficultés psychologiques doivent également être prises en compte.\n\nUn enfant qui ronfle régulièrement ou présente des pauses respiratoires pendant son sommeil peut souffrir d'un trouble respiratoire nocturne.\n\nLes difficultés scolaires peuvent-elles être responsables ?\n\nUne surcharge d'activités, une anxiété scolaire, un harcèlement ou des difficultés relationnelles peuvent entraîner une fatigue importante.\n\nIl est utile de discuter avec l'enfant de ce qu'il ressent, sans attribuer automatiquement ses symptômes à un manque de motivation.\n\nFaut-il systématiquement réaliser une prise de sang ?\n\nNon. L'interrogatoire et l'examen clinique permettent d'orienter les investigations.\n\nLe médecin évalue notamment la croissance, l'alimentation, les horaires de sommeil et les symptômes associés.\n\nUn bilan sanguin peut être proposé lorsque la fatigue est persistante, inexpliquée ou accompagnée de signes particuliers.\n\nLes vitamines sont-elles utiles ?\n\nUne supplémentation peut être nécessaire lorsqu'une carence est identifiée ou lorsqu'elle correspond à une recommandation médicale spécifique.\n\nEn revanche, les compléments présentés comme des stimulants de l'énergie ne remplacent pas la recherche de la cause de la fatigue.",
+      "watch": "Quand consulter ?\n\nUne fatigue persistante, une pâleur, une perte de poids, une fièvre prolongée, des douleurs inhabituelles ou une diminution importante des activités doivent conduire à consulter.\n\nUne somnolence anormale avec difficulté à réveiller l'enfant, une confusion ou une difficulté respiratoire nécessitent une prise en charge urgente.",
+      "sources": [
+        {
+          "label": "De Nardi et al. — Approach to the child with fatigue, Frontiers in Pediatrics 2022",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36533226/"
+        },
+        {
+          "label": "AASM — Recommended Amount of Sleep for Pediatric Populations, 2016",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4877308/"
+        },
+        {
+          "label": "AAP — Endorsement of AASM sleep recommendations",
+          "url": "https://doi.org/10.1542/peds.2016-1601"
+        },
+        {
+          "label": "Assurance Maladie — Hygiène de vie et bon sommeil de l'enfant",
+          "url": "https://www.ameli.fr/assure/sante/themes/troubles-sommeil-enfant/hygiene-vie-bon-sommeil-enfant"
+        }
+      ],
+      "readingTime": "4 min",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-25T13:36:00+01:00",
+        "evidence": "Je valide médicalement les versions enrichies du lot 5, avec toutes les références scientifiques complémentaires : Fatigue de l'enfant ; Diversification alimentaire ; Poux de tête ; Réseaux sociaux et TDAH ; Mpox ; Moustique tigre et dengue ; Vaccination HPV ; Trousse de pharmacie en voyage ; Alcool et vieillissement ; Alcool et santé cardiovasculaire. J'autorise leur publication immédiate selon le pipeline MACASANTÉ, sans duplication, avec synchronisation de l'assistant IA et vérification effective en production.",
+        "contentHash": "4b9128f15b3545a44e9b1abd382a72204f47b61f8beeee2fdc0ed33d62ce0165",
+        "snapshotHash": "344687906a8dd9d52d248f471b08d2c98d8f177c1a10eab9fe61d010dc52fb84"
+      }
+    },
+    {
+      "id": "diversification-alimentaire",
+      "category": "Enfants & parents",
+      "title": "À quel âge faut-il commencer la diversification alimentaire ?",
+      "keywords": "bébé diversification alimentaire 4 mois 6 mois allergènes oeuf arachide légumes textures lait",
+      "answer": "En France, il est recommandé de commencer la diversification alimentaire entre quatre et six mois révolus chez le nourrisson en bonne santé. Les aliments potentiellement allergisants ne doivent pas être systématiquement introduits plus tardivement.",
+      "detail": "Pourquoi faut-il diversifier l'alimentation ?\n\nAu cours des premiers mois, le lait maternel ou une préparation infantile répond aux principaux besoins nutritionnels du nourrisson.\n\nProgressivement, ses besoins évoluent et de nouveaux aliments permettent notamment de diversifier les apports en fer, en énergie et en micronutriments.\n\nLa diversification participe également à la découverte des goûts et au développement des capacités de mastication.\n\nExiste-t-il un ordre obligatoire d'introduction ?\n\nNon. Les différents groupes d'aliments peuvent être proposés progressivement dès le début de la diversification, avec des textures adaptées.\n\nLes recommandations françaises ne préconisent pas d'ordre rigide d'introduction des légumes, des fruits, des féculents, des protéines ou des principaux allergènes.\n\nFaut-il retarder les aliments allergisants ?\n\nLes anciennes recommandations privilégiaient parfois une introduction tardive de certains aliments afin d'éviter les allergies.\n\nLes connaissances scientifiques ont évolué. L'introduction de l'œuf bien cuit et de l'arachide sous une forme adaptée peut notamment contribuer à prévenir certaines allergies alimentaires.\n\nChez les nourrissons présentant un eczéma sévère ou une allergie déjà diagnostiquée, un accompagnement médical individualisé peut être nécessaire.\n\nQuels aliments proposer ?\n\nLégumes et fruits : texture adaptée, sans sucre ajouté.\nŒuf : bien cuit.\nViande et poisson : bien cuits, quantités adaptées.\nArachide : purée lisse diluée, jamais entière.\nLégumes secs : progressivement, sous forme adaptée.\nMatières grasses : en quantité adaptée aux besoins.\n\nLe lait reste-t-il indispensable ?\n\nOui. Le lait maternel ou infantile conserve une place essentielle pendant la première année.\n\nLe lait de vache ordinaire et les boissons végétales ne doivent pas remplacer une préparation infantile comme alimentation lactée principale avant un an.\n\nQuels aliments faut-il éviter ?\n\nLe miel doit être évité avant un an en raison du risque de botulisme infantile.\n\nLes aliments présentant un risque d'étouffement, notamment les fruits à coque entiers, doivent également être évités.\n\nLes aliments crus d'origine animale et les produits au lait cru nécessitent des précautions particulières chez les jeunes enfants.\n\nComment accompagner la découverte alimentaire ?\n\nRespectez les signes de faim et de satiété. Proposez régulièrement de nouveaux goûts sans obliger l'enfant à manger.\n\nUne première réaction de refus ne signifie pas nécessairement qu'un aliment ne sera jamais apprécié.",
+      "watch": "Quand consulter ?\n\nUne mauvaise prise de poids, des vomissements répétés, des difficultés importantes d'alimentation ou une suspicion d'allergie nécessitent un avis médical.\n\nUne réaction allergique accompagnée d'une difficulté respiratoire ou d'un malaise constitue une urgence : appelez le 15 ou le 112.",
+      "sources": [
+        {
+          "label": "EAACI — Prévention des allergies alimentaires du nourrisson, 2021",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33710678/"
+        },
+        {
+          "label": "HCSP — Révision des repères alimentaires des enfants, 2020",
+          "url": "https://www.hcsp.fr/Explore.cgi/Telecharger?NomFichier=hcspa20200630_rvisidesreprealimepourlesenfan.pdf"
+        },
+        {
+          "label": "Santé publique France — Introduire les allergènes dès 4–6 mois",
+          "url": "https://www.mangerbouger.fr/ressources-pros/ressources-documents-mooc-liens-utiles/professionnels-de-sante/introduire-les-allergenes-alimentaires-des-4-6-mois"
+        },
+        {
+          "label": "Assurance Maladie — Diversification alimentaire",
+          "url": "https://www.ameli.fr/assure/sante/themes/alimentation/alimentation-0-3-ans/debut-diversification-alimentaire"
+        }
+      ],
+      "readingTime": "4 min",
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-25T13:36:00+01:00",
+        "evidence": "Je valide médicalement les versions enrichies du lot 5, avec toutes les références scientifiques complémentaires : Fatigue de l'enfant ; Diversification alimentaire ; Poux de tête ; Réseaux sociaux et TDAH ; Mpox ; Moustique tigre et dengue ; Vaccination HPV ; Trousse de pharmacie en voyage ; Alcool et vieillissement ; Alcool et santé cardiovasculaire. J'autorise leur publication immédiate selon le pipeline MACASANTÉ, sans duplication, avec synchronisation de l'assistant IA et vérification effective en production.",
+        "contentHash": "d74696c207fba5d7e01496ad5f8e95d002a0ba172988950bfa60e1be8fc18771",
+        "snapshotHash": "344687906a8dd9d52d248f471b08d2c98d8f177c1a10eab9fe61d010dc52fb84"
+      }
     }
   ]
 }
