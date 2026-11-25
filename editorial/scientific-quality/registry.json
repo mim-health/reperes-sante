@@ -1,9 +1,9 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "asOf": "2026-11-25",
-  "criteriaVersion": "A01-A12-2026-11-25",
+  "criteriaVersion": "A01-A12-V2-2026-11-25",
   "count": 428,
-  "overdue": 120,
+  "overdue": 118,
   "scientificallyRevalidated": 0,
   "queue": [
     "antibiotiques",
@@ -31,6 +31,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -46,6 +49,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -61,6 +67,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -76,6 +85,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -91,6 +103,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -106,6 +121,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -121,6 +139,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -136,6 +157,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -151,6 +175,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -166,6 +193,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -181,6 +211,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -196,6 +229,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -212,6 +248,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -228,6 +267,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -243,6 +285,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -258,6 +303,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -273,6 +321,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -288,6 +339,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -303,6 +357,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -318,6 +375,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -333,6 +393,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -349,6 +412,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -364,6 +430,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -377,6 +446,9 @@
       "sourceCount": 5,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -392,6 +464,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -407,6 +482,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -422,6 +500,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -437,6 +518,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -450,6 +534,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -465,6 +552,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -478,6 +568,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -493,6 +586,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -508,6 +604,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -521,6 +620,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -537,6 +639,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -550,6 +655,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -565,6 +673,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -580,6 +691,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -593,6 +707,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -606,6 +723,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -621,6 +741,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -634,6 +757,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -647,6 +773,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -662,6 +791,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -677,6 +809,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -692,6 +827,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -707,6 +845,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -720,6 +861,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -735,6 +879,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -748,6 +895,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -764,6 +914,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -779,6 +932,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -794,6 +950,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -810,6 +969,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -826,6 +988,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -842,6 +1007,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -858,6 +1026,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -873,6 +1044,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -888,6 +1062,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -904,6 +1081,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -919,6 +1099,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -934,6 +1117,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -949,6 +1135,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -962,6 +1151,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -977,6 +1169,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -990,6 +1185,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1006,6 +1204,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1019,6 +1220,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1032,6 +1236,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1045,6 +1252,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1060,6 +1270,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1073,6 +1286,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1089,6 +1305,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1104,6 +1323,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1117,6 +1339,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1130,6 +1355,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1143,6 +1371,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1156,6 +1387,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1169,6 +1403,9 @@
       "sourceCount": 8,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1182,6 +1419,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1197,6 +1437,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1212,6 +1455,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1225,6 +1471,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1238,6 +1487,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1251,6 +1503,9 @@
       "sourceCount": 5,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1264,6 +1519,9 @@
       "sourceCount": 5,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1279,6 +1537,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1294,6 +1555,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1309,6 +1573,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1324,6 +1591,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1339,6 +1609,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1354,6 +1627,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1369,6 +1645,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1384,6 +1663,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1399,6 +1681,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1414,6 +1699,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1427,6 +1715,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1442,6 +1733,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1457,6 +1751,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1472,6 +1769,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1487,6 +1787,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1502,6 +1805,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1517,6 +1823,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1530,6 +1839,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1545,6 +1857,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1560,6 +1875,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1575,6 +1893,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1590,6 +1911,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1605,6 +1929,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1620,6 +1947,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1636,6 +1966,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1652,38 +1985,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
-      "review": null
-    },
-    {
-      "id": "diversification-alimentaire",
-      "title": "Diversification alimentaire : quand commencer et par quoi ?",
-      "category": "Enfants & parents",
-      "revision": "0c46140f8722a9d293e59112f83052d4238df77dc061ed52734357dca8e673dd",
-      "historicalDate": "2026-08-20",
-      "deadline": "2026-11-20",
-      "sensitive": true,
-      "sourceCount": 0,
-      "flags": [
-        "NO_DETAIL",
-        "REVIEW_SOURCE_DIVERSITY"
+      "reviewErrors": [
+        "MISSING_REVIEW"
       ],
-      "status": "TO_REVIEW",
-      "review": null
-    },
-    {
-      "id": "poux-enfant",
-      "title": "Mon enfant a des poux : quel traitement est recommandé ?",
-      "category": "Enfants & parents",
-      "revision": "0c5c5453a5243d9c6f7a8e4893a99936d17d4b18e00bead6355d7b5937bf20c3",
-      "historicalDate": "2026-08-20",
-      "deadline": "2026-11-20",
-      "sensitive": true,
-      "sourceCount": 0,
-      "flags": [
-        "NO_DETAIL",
-        "REVIEW_SOURCE_DIVERSITY"
-      ],
-      "status": "TO_REVIEW",
       "review": null
     },
     {
@@ -1699,6 +2003,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1714,6 +2021,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1729,6 +2039,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1744,6 +2057,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1759,6 +2075,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1772,6 +2091,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1787,6 +2109,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1802,6 +2127,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1817,6 +2145,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1832,6 +2163,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1847,6 +2181,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1862,6 +2199,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1877,6 +2217,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1890,6 +2233,9 @@
       "sourceCount": 5,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1906,6 +2252,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1922,6 +2271,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1937,6 +2289,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1952,6 +2307,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1968,6 +2326,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -1984,6 +2345,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2000,6 +2364,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2016,6 +2383,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2031,6 +2401,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2047,6 +2420,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2062,6 +2438,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2077,6 +2456,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2092,6 +2474,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2105,6 +2490,9 @@
       "sourceCount": 7,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2118,6 +2506,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2131,6 +2522,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2144,6 +2538,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2160,6 +2557,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2173,6 +2573,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2186,6 +2589,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2201,6 +2607,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2214,6 +2623,9 @@
       "sourceCount": 5,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2227,6 +2639,9 @@
       "sourceCount": 6,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2242,6 +2657,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2255,6 +2673,9 @@
       "sourceCount": 5,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2270,6 +2691,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2285,6 +2709,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2300,6 +2727,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2315,6 +2745,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2330,6 +2763,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2346,6 +2782,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2361,6 +2800,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2374,6 +2816,9 @@
       "sourceCount": 6,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2387,6 +2832,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2400,6 +2848,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2413,6 +2864,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2426,6 +2880,9 @@
       "sourceCount": 5,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2439,6 +2896,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2452,6 +2912,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2465,6 +2928,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2480,6 +2946,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2495,6 +2964,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2510,6 +2982,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2525,6 +3000,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2538,6 +3016,9 @@
       "sourceCount": 6,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2553,6 +3034,9 @@
         "NO_DETAIL"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2566,6 +3050,9 @@
       "sourceCount": 5,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2579,6 +3066,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2592,6 +3082,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2605,6 +3098,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2618,6 +3114,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2633,6 +3132,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2648,6 +3150,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2661,6 +3166,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2674,6 +3182,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2687,6 +3198,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2703,6 +3217,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2718,6 +3235,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2733,6 +3253,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2748,6 +3271,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2763,6 +3289,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2776,6 +3305,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2791,6 +3323,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2804,6 +3339,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2819,6 +3357,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2834,6 +3375,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2849,6 +3393,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2864,6 +3411,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2879,6 +3429,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2892,6 +3445,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2905,6 +3461,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2920,21 +3479,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
-      "review": null
-    },
-    {
-      "id": "fatigue-enfant-rentree",
-      "title": "Mon enfant est fatigué depuis la rentrée : quand faut-il s’en préoccuper ?",
-      "category": "Enfants & parents",
-      "revision": "15a4f3add8f40f85eb196edd3c367298337b47d0702913443b5368665501aff5",
-      "historicalDate": "2026-08-30",
-      "deadline": "2026-11-30",
-      "sensitive": true,
-      "sourceCount": 4,
-      "flags": [
-        "NO_DETAIL"
+      "reviewErrors": [
+        "MISSING_REVIEW"
       ],
-      "status": "TO_REVIEW",
       "review": null
     },
     {
@@ -2950,6 +3497,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2965,6 +3515,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2981,6 +3534,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -2996,6 +3552,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3012,6 +3571,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3027,6 +3589,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3043,6 +3608,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3058,6 +3626,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3073,6 +3644,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3088,22 +3662,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
-      "review": null
-    },
-    {
-      "id": "reseaux-sociaux-tdah-attention-ados-20260902",
-      "title": "Les réseaux sociaux peuvent-ils provoquer un TDAH chez un adolescent ?",
-      "category": "Ados",
-      "revision": "7033b50c13ccbeaef73633b41b91a9c4c1a31b4ea4edb461278a5f46b878468f",
-      "historicalDate": "2026-09-02",
-      "deadline": "2026-12-02",
-      "sensitive": false,
-      "sourceCount": 0,
-      "flags": [
-        "NO_DETAIL",
-        "REVIEW_SOURCE_DIVERSITY"
+      "reviewErrors": [
+        "MISSING_REVIEW"
       ],
-      "status": "TO_REVIEW",
       "review": null
     },
     {
@@ -3119,6 +3680,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3134,6 +3698,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3149,6 +3716,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3164,6 +3734,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3177,6 +3750,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3190,6 +3766,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3203,6 +3782,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3216,6 +3798,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3229,6 +3814,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3242,6 +3830,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3255,6 +3846,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3268,6 +3862,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3281,6 +3878,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3294,6 +3894,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3307,6 +3910,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3320,6 +3926,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3333,6 +3942,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3348,6 +3960,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3361,6 +3976,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3376,6 +3994,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3389,6 +4010,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3402,6 +4026,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3415,6 +4042,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3428,6 +4058,9 @@
       "sourceCount": 5,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3441,6 +4074,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3454,6 +4090,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3469,6 +4108,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3482,6 +4124,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3495,6 +4140,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3508,6 +4156,9 @@
       "sourceCount": 5,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3521,6 +4172,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3534,6 +4188,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3547,6 +4204,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3560,6 +4220,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3573,6 +4236,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3586,6 +4252,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3601,6 +4270,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3614,6 +4286,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3629,6 +4304,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3644,6 +4322,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3659,6 +4340,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3672,6 +4356,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3688,6 +4375,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3703,6 +4393,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3718,6 +4411,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3731,6 +4427,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3746,6 +4445,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3759,6 +4461,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3774,6 +4479,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3789,6 +4497,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3802,6 +4513,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3817,6 +4531,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3832,6 +4549,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3847,6 +4567,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3862,6 +4585,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3875,6 +4601,9 @@
       "sourceCount": 9,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3890,6 +4619,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3905,6 +4637,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3920,6 +4655,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3935,6 +4673,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3950,6 +4691,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3965,6 +4709,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3980,6 +4727,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -3993,6 +4743,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4006,6 +4759,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4019,6 +4775,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4034,6 +4793,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4047,6 +4809,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4060,6 +4825,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4073,6 +4841,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4088,6 +4859,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4103,6 +4877,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4118,6 +4895,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4133,6 +4913,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4148,6 +4931,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4163,6 +4949,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4178,6 +4967,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4191,6 +4983,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4204,6 +4999,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4219,6 +5017,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4234,6 +5035,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4249,6 +5053,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4262,6 +5069,9 @@
       "sourceCount": 5,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4277,6 +5087,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4290,6 +5103,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4303,6 +5119,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4316,6 +5135,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4329,6 +5151,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4342,6 +5167,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4355,6 +5183,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4368,6 +5199,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4383,6 +5217,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4396,6 +5233,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4409,6 +5249,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4422,6 +5265,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4435,6 +5281,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4448,6 +5297,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4461,6 +5313,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4474,6 +5329,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4489,6 +5347,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4504,6 +5365,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4519,6 +5383,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4534,6 +5401,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4549,6 +5419,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4565,6 +5438,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4580,6 +5456,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4595,6 +5474,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4608,6 +5490,9 @@
       "sourceCount": 5,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4623,6 +5508,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4638,6 +5526,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4653,6 +5544,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4666,6 +5560,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4679,6 +5576,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4692,6 +5592,9 @@
       "sourceCount": 6,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4707,6 +5610,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4722,6 +5628,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4737,6 +5646,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4752,6 +5664,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4767,6 +5682,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4782,6 +5700,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4797,6 +5718,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4812,6 +5736,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4825,6 +5752,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4840,6 +5770,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4853,6 +5786,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4866,6 +5802,9 @@
       "sourceCount": 7,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4879,6 +5818,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4894,6 +5836,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4909,6 +5854,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4924,6 +5872,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4939,6 +5890,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4954,6 +5908,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4969,6 +5926,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4984,6 +5944,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -4997,6 +5960,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5010,6 +5976,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5023,6 +5992,9 @@
       "sourceCount": 5,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5036,6 +6008,9 @@
       "sourceCount": 5,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5049,6 +6024,9 @@
       "sourceCount": 6,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5062,6 +6040,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5075,6 +6056,9 @@
       "sourceCount": 6,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5088,6 +6072,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5101,6 +6088,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5114,6 +6104,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5127,6 +6120,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5140,6 +6136,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5153,6 +6152,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5166,6 +6168,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5179,6 +6184,9 @@
       "sourceCount": 5,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5192,6 +6200,9 @@
       "sourceCount": 6,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5207,6 +6218,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5220,6 +6234,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5235,6 +6252,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5250,6 +6270,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5263,6 +6286,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5276,6 +6302,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5291,6 +6320,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5306,6 +6338,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5321,6 +6356,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5336,6 +6374,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5351,6 +6392,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5366,6 +6410,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5381,6 +6428,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5396,6 +6446,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5411,6 +6464,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5426,6 +6482,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5441,6 +6500,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5454,6 +6516,9 @@
       "sourceCount": 7,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5469,6 +6534,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5482,6 +6550,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5497,6 +6568,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5510,6 +6584,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5523,6 +6600,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5536,6 +6616,9 @@
       "sourceCount": 7,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5549,6 +6632,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5562,6 +6648,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5575,6 +6664,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5588,6 +6680,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5601,6 +6696,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5616,6 +6714,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5631,6 +6732,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5646,6 +6750,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5661,6 +6768,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5677,6 +6787,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5690,6 +6803,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5705,6 +6821,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5721,6 +6840,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5736,6 +6858,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5749,6 +6874,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5764,6 +6892,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5780,6 +6911,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5793,6 +6927,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5808,6 +6945,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5823,6 +6963,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5838,6 +6981,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5851,6 +6997,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5866,6 +7015,9 @@
         "REVIEW_SOURCE_DIVERSITY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5879,6 +7031,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5892,6 +7047,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5905,6 +7063,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5918,6 +7079,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5931,6 +7095,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5946,6 +7113,9 @@
         "AMELI_ONLY"
       ],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5959,6 +7129,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5972,6 +7145,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5985,6 +7161,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -5998,6 +7177,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -6011,6 +7193,9 @@
       "sourceCount": 5,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -6024,6 +7209,9 @@
       "sourceCount": 6,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -6037,6 +7225,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -6050,6 +7241,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -6063,6 +7257,9 @@
       "sourceCount": 4,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -6076,6 +7273,9 @@
       "sourceCount": 5,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -6089,6 +7289,9 @@
       "sourceCount": 3,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -6102,6 +7305,73 @@
       "sourceCount": 5,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
+      "review": null
+    },
+    {
+      "id": "fatigue-enfant-rentree",
+      "title": "Mon enfant est souvent fatigué : quand faut-il s'inquiéter ?",
+      "category": "Enfants & parents",
+      "revision": "788c6bc8a9d19fb19efef1898a80b1b665a165b12bb8d2b19d09fe45481c5357",
+      "historicalDate": "2026-11-25",
+      "deadline": "2027-02-25",
+      "sensitive": true,
+      "sourceCount": 4,
+      "flags": [],
+      "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
+      "review": null
+    },
+    {
+      "id": "diversification-alimentaire",
+      "title": "À quel âge faut-il commencer la diversification alimentaire ?",
+      "category": "Enfants & parents",
+      "revision": "67e89cdf01dffcb3143e4dd76d8fee0060edea1264e9631c4332d6748fe5cd51",
+      "historicalDate": "2026-11-25",
+      "deadline": "2027-02-25",
+      "sensitive": true,
+      "sourceCount": 4,
+      "flags": [],
+      "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
+      "review": null
+    },
+    {
+      "id": "poux-enfant",
+      "title": "Mon enfant a des poux : comment s'en débarrasser efficacement ?",
+      "category": "Enfants & parents",
+      "revision": "e0c50d26f0b56e30c8a80be5144a4371dc944290be492267197a5b693899712f",
+      "historicalDate": "2026-11-25",
+      "deadline": "2027-02-25",
+      "sensitive": true,
+      "sourceCount": 5,
+      "flags": [],
+      "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
+      "review": null
+    },
+    {
+      "id": "reseaux-sociaux-tdah-attention-ados-20260902",
+      "title": "Les réseaux sociaux peuvent-ils provoquer un TDAH chez les adolescents ?",
+      "category": "Ados",
+      "revision": "d337054fd642b3a83951c3db9c0653761187dd6c981abb7ef78c23950e422eb9",
+      "historicalDate": "2026-11-25",
+      "deadline": "2027-02-25",
+      "sensitive": false,
+      "sourceCount": 3,
+      "flags": [],
+      "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     },
     {
@@ -6115,6 +7385,9 @@
       "sourceCount": 6,
       "flags": [],
       "status": "TO_REVIEW",
+      "reviewErrors": [
+        "MISSING_REVIEW"
+      ],
       "review": null
     }
   ]

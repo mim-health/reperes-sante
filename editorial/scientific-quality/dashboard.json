@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 2,
+  "asOf": "2026-11-25",
+  "total": 428,
+  "overdue": 84,
+  "missingDeadline": 34,
+  "sensitive": 121,
+  "sensitiveOpen": 121,
+  "counts": {
+    "TO_REVIEW": 428
+  },
+  "flags": {
+    "REVIEW_SOURCE_DIVERSITY": 235,
+    "NO_DETAIL": 14,
+    "AMELI_ONLY": 29
+  },
+  "scientificallyRevalidated": 0,
+  "audited": 0,
+  "queue": [
+    "antibiotiques",
+    "bebe-tete-moins",
+    "boissons-sucrees",
+    "diarrhee-enfant",
+    "ecrans-petit",
+    "fievre-enfant",
+    "paracetamol",
+    "rash-enfant",
+    "sommeil-bebe",
+    "telephone-myopie-sommeil-enfant"
+  ]
+}
