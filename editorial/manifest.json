@@ -1,12 +1,66 @@
 {
   "schemaVersion": 1,
-  "editionId": "edition-2026-11-25",
-  "editionDate": "2026-11-25",
-  "sourceFingerprint": "1e723eb3b211cb2e1ea60597857be0517f873d2ef39196d2c05930919020ed5b",
+  "editionId": "edition-2026-11-26",
+  "editionDate": "2026-11-26",
+  "sourceFingerprint": "6a59e26ea47eff62d950ff04c74f631566c664d170a0f694e8ba43b5f99874c9",
   "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-daily-hydrocephalie-20261126",
+      "version": "166d19c662f66a74406b82d2e961e85c945f4a4ae425c0d2a81642e63b1f2b68",
+      "url": "article-daily-hydrocephalie-20261126.html",
+      "date": "2026-11-26"
+    },
+    {
+      "id": "mag-daily-ados-reseaux-20261126",
+      "version": "ea42d38c21467eaad06bcd6ce69aa8e4fed638c53f5c06cb0b2559f64ced66cb",
+      "url": "article-daily-ados-reseaux-20261126.html",
+      "date": "2026-11-26"
+    },
+    {
+      "id": "mag-daily-gonococcie-20261126",
+      "version": "06d8ac825e0958553b54b703d0edbd82f4abd9ca322c6a7e1884eb7503e72cbb",
+      "url": "article-daily-gonococcie-20261126.html",
+      "date": "2026-11-26"
+    },
+    {
+      "id": "mag-daily-grossesse-medicaments-20261126",
+      "version": "7feb05b1b8bad00ffd0009535cccb6a4adc8e55feb9a35e14cd60b1f0524b182",
+      "url": "article-daily-grossesse-medicaments-20261126.html",
+      "date": "2026-11-26"
+    },
+    {
+      "id": "mag-daily-gels-arthrose-20261126",
+      "version": "9fc16eb1c26009909c0f663bc556b2bfea7e991c269545a3b156124c8b4a02f2",
+      "url": "article-daily-gels-arthrose-20261126.html",
+      "date": "2026-11-26"
+    },
+    {
+      "id": "mag-daily-gonococcie-chiffre-20261126",
+      "version": "f07412f102bb27e52d62b1f4fb10733be5f40dc89a8bb87c82852e23ef634920",
+      "url": "article-daily-gonococcie-chiffre-20261126.html",
+      "date": "2026-11-26"
+    },
+    {
+      "id": "mag-daily-ia-resumes-20261126",
+      "version": "18553ca068e046a5c8278dac10b2370b381094223c441e7248bea8c0165acc98",
+      "url": "article-daily-ia-resumes-20261126.html",
+      "date": "2026-11-26"
+    },
+    {
+      "id": "mag-daily-reanimation-teach-20261126",
+      "version": "f416f8e99c7d089e3cbc895161000af7476b5654729a4316643ee5add6ed3338",
+      "url": "article-daily-reanimation-teach-20261126.html",
+      "date": "2026-11-26"
+    },
+    {
+      "id": "mag-daily-lepre-20261126",
+      "version": "b34e31e28c4948a61d8ee10d31e0f28a92dbad222347fc44098286073e356375",
+      "url": "article-daily-lepre-20261126.html",
+      "date": "2026-11-26"
+    },
     {
       "id": "mag-daily-cholesterol-symptomes-20261125",
       "version": "c59d07c7263bcce8439b8fed3c69e1475056ce9898d4c2e6882b670dcfa20744",

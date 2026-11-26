@@ -538,6 +538,19 @@
     },
     {
       "left": {
+        "id": "collagene-douleurs-articulaires",
+        "title": "Le collagène peut-il vraiment soulager les douleurs articulaires ?",
+        "type": "fiche"
+      },
+      "right": {
+        "id": "daily-collagene-20261126",
+        "title": "Le collagène peut-il soulager les douleurs articulaires ?",
+        "type": "Mag"
+      },
+      "score": 0.8
+    },
+    {
+      "left": {
         "id": "aspirine-protection-coeur-risques",
         "title": "Prendre de l’aspirine tous les jours protège-t-il le cœur ?",
         "type": "fiche"
@@ -606,6 +619,6 @@
     "manifestFiles": 159,
     "rawFiches": 451,
     "canonicalFiches": 428,
-    "magContents": 328
+    "magContents": 338
   }
 }

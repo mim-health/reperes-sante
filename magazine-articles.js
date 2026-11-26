@@ -6264,5 +6264,195 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "19acf2eba5aefe6e2147456a31642432a07d1c69894704bd7d878f24ae56c8b3"
+  },
+  {
+    "id": "daily-hydrocephalie-20261126",
+    "url": "article-daily-hydrocephalie-20261126.html",
+    "title": "Troubles de la marche et de la mémoire après 65 ans : est-ce forcément le vieillissement ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-26",
+    "status": "PUBLISHED",
+    "excerpt": "Non. Certaines maladies neurologiques potentiellement accessibles à un traitement peuvent provoquer des troubles de la marche, des difficultés cognitives et des troubles urinaires.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "hydrocephalie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "166d19c662f66a74406b82d2e961e85c945f4a4ae425c0d2a81642e63b1f2b68"
+  },
+  {
+    "id": "daily-ados-reseaux-20261126",
+    "url": "article-daily-ados-reseaux-20261126.html",
+    "title": "Adolescents : limiter un seul réseau social suffit-il à réduire le temps d'écran ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-26",
+    "status": "PUBLISHED",
+    "excerpt": "Probablement pas. Les adolescents utilisent plusieurs plateformes, ce qui peut limiter l'efficacité des restrictions isolées.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "ados-reseaux"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "ea42d38c21467eaad06bcd6ce69aa8e4fed638c53f5c06cb0b2559f64ced66cb"
+  },
+  {
+    "id": "daily-gonococcie-20261126",
+    "url": "article-daily-gonococcie-20261126.html",
+    "title": "Gonococcie : pourra-t-on bientôt disposer de davantage de traitements par voie orale ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-26",
+    "status": "PUBLISHED",
+    "excerpt": "L'OMS vient de recommander, sous certaines conditions, un nouvel antibiotique oral contre cette infection sexuellement transmissible.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "gonococcie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "06d8ac825e0958553b54b703d0edbd82f4abd9ca322c6a7e1884eb7503e72cbb"
+  },
+  {
+    "id": "daily-grossesse-medicaments-20261126",
+    "url": "article-daily-grossesse-medicaments-20261126.html",
+    "title": "Grossesse et médicaments : pourquoi manque-t-on encore de données scientifiques ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-26",
+    "status": "PUBLISHED",
+    "excerpt": "Les femmes enceintes et allaitantes ont longtemps été insuffisamment représentées dans les essais cliniques.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "grossesse-medicaments"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "7feb05b1b8bad00ffd0009535cccb6a4adc8e55feb9a35e14cd60b1f0524b182"
+  },
+  {
+    "id": "daily-collagene-20261126",
+    "url": "article-daily-collagene-20261126.html",
+    "title": "Le collagène peut-il soulager les douleurs articulaires ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-26",
+    "status": "PUBLISHED",
+    "excerpt": "Certaines études suggèrent une diminution modeste des douleurs, particulièrement dans l'arthrose du genou.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "collagene"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "collagene-douleurs-articulaires",
+    "version": "c836605fc70d92c5f898ee204e8c11513afe26fe0f5befa8432659b48023fc82"
+  },
+  {
+    "id": "daily-gels-arthrose-20261126",
+    "url": "article-daily-gels-arthrose-20261126.html",
+    "title": "Les gels anti-inflammatoires sont-ils efficaces contre l'arthrose du genou ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-26",
+    "status": "PUBLISHED",
+    "excerpt": "VRAI ! Les anti-inflammatoires locaux peuvent réduire les douleurs liées à l'arthrose du genou.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "gels-arthrose"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "9fc16eb1c26009909c0f663bc556b2bfea7e991c269545a3b156124c8b4a02f2"
+  },
+  {
+    "id": "daily-gonococcie-chiffre-20261126",
+    "url": "article-daily-gonococcie-chiffre-20261126.html",
+    "title": "82,4 millions",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-26",
+    "status": "PUBLISHED",
+    "excerpt": "De nouvelles infections gonococciques estimées chez les adultes dans le monde en 2020.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "gonococcie-chiffre"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "f07412f102bb27e52d62b1f4fb10733be5f40dc89a8bb87c82852e23ef634920"
+  },
+  {
+    "id": "daily-ia-resumes-20261126",
+    "url": "article-daily-ia-resumes-20261126.html",
+    "title": "Intelligence artificielle : comment contrôler les résumés médicaux automatisés ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-26",
+    "status": "PUBLISHED",
+    "excerpt": "Des chercheurs de l'université du Wisconsin ont développé un outil destiné à repérer les erreurs dans les résumés de dossiers médicaux générés par l'intelligence artificielle.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "ia-resumes"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "18553ca068e046a5c8278dac10b2370b381094223c441e7248bea8c0165acc98"
+  },
+  {
+    "id": "daily-reanimation-teach-20261126",
+    "url": "article-daily-reanimation-teach-20261126.html",
+    "title": "Réanimation : améliorer la coordination des soins grâce à la télémédecine",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-26",
+    "status": "PUBLISHED",
+    "excerpt": "L'essai randomisé TEACH étudie l'apport de la télémédecine dans la coordination des procédures visant à faciliter le réveil et la reprise de la respiration spontanée chez les patients sous ventilation mécanique.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "reanimation-teach"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "f416f8e99c7d089e3cbc895161000af7476b5654729a4316643ee5add6ed3338"
+  },
+  {
+    "id": "daily-lepre-20261126",
+    "url": "article-daily-lepre-20261126.html",
+    "title": "Maladies infectieuses : renforcer la recherche sur la lèpre",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-26",
+    "status": "PUBLISHED",
+    "excerpt": "L'OMS annonce la création en Chine de son premier centre collaborateur spécifiquement consacré à la lèpre, afin de renforcer les efforts scientifiques et sanitaires autour de cette maladie.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "lèpre"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "b34e31e28c4948a61d8ee10d31e0f28a92dbad222347fc44098286073e356375"
   }
 ];
