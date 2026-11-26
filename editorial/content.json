@@ -11775,6 +11775,261 @@
       "keywords": [
         "amylose-ia"
       ]
+    },
+    {
+      "id": "daily-hydrocephalie-20261126",
+      "title": "Troubles de la marche et de la mémoire après 65 ans : est-ce forcément le vieillissement ?",
+      "answer": "Non. Certaines maladies neurologiques potentiellement accessibles à un traitement peuvent provoquer des troubles de la marche, des difficultés cognitives et des troubles urinaires.",
+      "html": "<article><h1>Troubles de la marche et de la mémoire après 65 ans : est-ce forcément le vieillissement ?</h1><p><strong>Réponse courte :</strong> Non. Certaines maladies neurologiques potentiellement accessibles à un traitement peuvent provoquer des troubles de la marche, des difficultés cognitives et des troubles urinaires.</p><p>Une publication pédagogique du JAMA, parue le 25 novembre, revient sur l'hydrocéphalie à pression normale.</p><p>Cette maladie est associée à une augmentation du volume des ventricules cérébraux. Elle peut notamment se manifester par :</p><ul><li>Une marche lente, à petits pas, avec des difficultés à démarrer.</li><li>Un ralentissement intellectuel et des troubles cognitifs.</li><li>Des envies pressantes d'uriner ou une incontinence.</li></ul><p>Ces symptômes ne sont pas toujours présents simultanément et peuvent également être liés à d'autres maladies.</p><p>Le diagnostic repose sur une évaluation neurologique, une imagerie cérébrale et parfois des examens complémentaires. Chez certains patients sélectionnés, une intervention visant à dériver le liquide cérébrospinal peut améliorer les symptômes, notamment la marche.</p><p><strong>En pratique :</strong> une dégradation progressive de la marche associée à des troubles cognitifs ne doit pas être systématiquement attribuée à l'âge.</p><p>Nature de la publication : information médicale de synthèse, et non nouvel essai thérapeutique.</p><p>Source : <a href=\"https://doi.org/10.1001/jama.2026.22999\">Walter KL. What Is Idiopathic Normal Pressure Hydrocephalus? JAMA, 25 novembre 2026.</a></p></article>",
+      "date": "2026-11-26",
+      "url": "article-daily-hydrocephalie-20261126.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "Walter KL. What Is Idiopathic Normal Pressure Hydrocephalus? JAMA, 25 novembre 2026.",
+          "url": "https://doi.org/10.1001/jama.2026.22999"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "standalone": true,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-26T13:01:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition éditoriale MACASANTÉ du 26 novembre 2026 et autorise sa mise en ligne immédiate, sans réécriture ni nouvelle validation. Vérifie le déploiement public.",
+        "contentHash": "166d19c662f66a74406b82d2e961e85c945f4a4ae425c0d2a81642e63b1f2b68"
+      },
+      "keywords": [
+        "hydrocephalie"
+      ]
+    },
+    {
+      "id": "daily-ados-reseaux-20261126",
+      "title": "Adolescents : limiter un seul réseau social suffit-il à réduire le temps d'écran ?",
+      "answer": "Probablement pas. Les adolescents utilisent plusieurs plateformes, ce qui peut limiter l'efficacité des restrictions isolées.",
+      "html": "<article><h1>Adolescents : limiter un seul réseau social suffit-il à réduire le temps d'écran ?</h1><p><strong>Réponse courte :</strong> Probablement pas. Les adolescents utilisent plusieurs plateformes, ce qui peut limiter l'efficacité des restrictions isolées.</p><p>Une étude publiée le 25 novembre dans le JAMA a analysé les données d'utilisation des smartphones de 1 803 jeunes.</p><p>Une restriction quotidienne de deux heures concernerait :</p><p>Instagram et Facebook uniquement : 7,7 %.</p><p>Cinq grandes plateformes cumulées : 63,1 %.</p><p>Proportion des participants potentiellement concernés par les restrictions étudiées.</p><p><strong>En pratique :</strong> une démarche familiale portant sur l'ensemble des usages numériques paraît plus cohérente qu'une restriction limitée à une seule application.</p><p><strong>Limites :</strong> étude observationnelle menée auprès d'utilisateurs Android. Les effets réels des restrictions et leurs conséquences sur la santé n'ont pas été évalués.</p><p>Source : <a href=\"https://doi.org/10.1001/jama.2026.22864\">Zhao Y, Hale L, Christakis DA. JAMA, 25 novembre 2026.</a></p></article>",
+      "date": "2026-11-26",
+      "url": "article-daily-ados-reseaux-20261126.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "Zhao Y, Hale L, Christakis DA. JAMA, 25 novembre 2026.",
+          "url": "https://doi.org/10.1001/jama.2026.22864"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "standalone": true,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-26T13:01:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition éditoriale MACASANTÉ du 26 novembre 2026 et autorise sa mise en ligne immédiate, sans réécriture ni nouvelle validation. Vérifie le déploiement public.",
+        "contentHash": "ea42d38c21467eaad06bcd6ce69aa8e4fed638c53f5c06cb0b2559f64ced66cb"
+      },
+      "keywords": [
+        "ados-reseaux"
+      ]
+    },
+    {
+      "id": "daily-gonococcie-20261126",
+      "title": "Gonococcie : pourra-t-on bientôt disposer de davantage de traitements par voie orale ?",
+      "answer": "L'OMS vient de recommander, sous certaines conditions, un nouvel antibiotique oral contre cette infection sexuellement transmissible.",
+      "html": "<article><h1>Gonococcie : pourra-t-on bientôt disposer de davantage de traitements par voie orale ?</h1><p><strong>Réponse courte :</strong> L'OMS vient de recommander, sous certaines conditions, un nouvel antibiotique oral contre cette infection sexuellement transmissible.</p><p>La zoliflodacine constitue une option supplémentaire pour certaines infections génito-urinaires non compliquées.</p><p>Cette avancée est importante dans un contexte de résistances bactériennes croissantes.</p><p>La ceftriaxone injectable demeure néanmoins le traitement de première intention recommandé par l'OMS. Le nouveau médicament ne concerne pas toutes les localisations de l'infection et n'est pas recommandé pendant la grossesse.</p><p><strong>En pratique :</strong> le dépistage, le traitement adapté et la prise en charge des partenaires restent essentiels. Cette recommandation internationale ne signifie pas une disponibilité immédiate du traitement en France.</p><p>Source : <a href=\"https://www.who.int/news/item/25-11-2026-who-recommends-new-oral-treatment-option-for-gonorrhoea-and-reports-new-data-on-antimicrobial-resistance\">OMS, 25 novembre 2026</a></p></article>",
+      "date": "2026-11-26",
+      "url": "article-daily-gonococcie-20261126.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "OMS, 25 novembre 2026",
+          "url": "https://www.who.int/news/item/25-11-2026-who-recommends-new-oral-treatment-option-for-gonorrhoea-and-reports-new-data-on-antimicrobial-resistance"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "standalone": true,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-26T13:01:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition éditoriale MACASANTÉ du 26 novembre 2026 et autorise sa mise en ligne immédiate, sans réécriture ni nouvelle validation. Vérifie le déploiement public.",
+        "contentHash": "06d8ac825e0958553b54b703d0edbd82f4abd9ca322c6a7e1884eb7503e72cbb"
+      },
+      "keywords": [
+        "gonococcie"
+      ]
+    },
+    {
+      "id": "daily-grossesse-medicaments-20261126",
+      "title": "Grossesse et médicaments : pourquoi manque-t-on encore de données scientifiques ?",
+      "answer": "Les femmes enceintes et allaitantes ont longtemps été insuffisamment représentées dans les essais cliniques.",
+      "html": "<article><h1>Grossesse et médicaments : pourquoi manque-t-on encore de données scientifiques ?</h1><p><strong>Réponse courte :</strong> Les femmes enceintes et allaitantes ont longtemps été insuffisamment représentées dans les essais cliniques.</p><p>Cette situation complique parfois l'évaluation des bénéfices et des risques de certains traitements.</p><p>L'OMS vient de lancer une plateforme destinée à faciliter leur inclusion dans la recherche médicale, dans des conditions éthiques et sécurisées.</p><p>L'objectif est de disposer de données plus fiables concernant les médicaments, les vaccins et les autres traitements utilisés pendant la grossesse et l'allaitement.</p><p><strong>En pratique :</strong> une femme enceinte ne doit pas interrompre seule un traitement indispensable. Une évaluation individualisée avec un professionnel de santé reste nécessaire.</p><p>Source : <a href=\"https://www.who.int/news/item/24-11-2026-advancing-the-timely-and-ethical-inclusion-of-pregnant-and-lactating-women-in-clinical-trials\">OMS, 24 novembre 2026</a></p></article>",
+      "date": "2026-11-26",
+      "url": "article-daily-grossesse-medicaments-20261126.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "OMS, 24 novembre 2026",
+          "url": "https://www.who.int/news/item/24-11-2026-advancing-the-timely-and-ethical-inclusion-of-pregnant-and-lactating-women-in-clinical-trials"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "standalone": true,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-26T13:01:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition éditoriale MACASANTÉ du 26 novembre 2026 et autorise sa mise en ligne immédiate, sans réécriture ni nouvelle validation. Vérifie le déploiement public.",
+        "contentHash": "7feb05b1b8bad00ffd0009535cccb6a4adc8e55feb9a35e14cd60b1f0524b182"
+      },
+      "keywords": [
+        "grossesse-medicaments"
+      ]
+    },
+    {
+      "id": "daily-collagene-20261126",
+      "title": "Le collagène peut-il soulager les douleurs articulaires ?",
+      "answer": "Certaines études suggèrent une diminution modeste des douleurs, particulièrement dans l'arthrose du genou.",
+      "html": "<article><h1>Le collagène peut-il soulager les douleurs articulaires ?</h1><p>Certaines études suggèrent une diminution modeste des douleurs, particulièrement dans l'arthrose du genou.</p><p>Cependant, tous les compléments alimentaires ne se valent pas et il n'est pas démontré que le collagène permette de reconstruire le cartilage.</p><p>L'activité physique adaptée et le renforcement musculaire restent des éléments essentiels du traitement de l'arthrose.</p><p>Source : <a href=\"https://macasante.fr/fiche.html?id=collagene-douleurs-articulaires\">Lire la fiche MACASANTÉ</a></p></article>",
+      "date": "2026-11-26",
+      "url": "article-daily-collagene-20261126.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "Lire la fiche MACASANTÉ",
+          "url": "https://macasante.fr/fiche.html?id=collagene-douleurs-articulaires"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "standalone": true,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-26T13:01:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition éditoriale MACASANTÉ du 26 novembre 2026 et autorise sa mise en ligne immédiate, sans réécriture ni nouvelle validation. Vérifie le déploiement public.",
+        "contentHash": "c836605fc70d92c5f898ee204e8c11513afe26fe0f5befa8432659b48023fc82"
+      },
+      "keywords": [
+        "collagene"
+      ],
+      "ficheId": "collagene-douleurs-articulaires",
+      "assistantPolicy": "REFERENCE_FICHE_ONLY",
+      "candidateFiche": false
+    },
+    {
+      "id": "daily-gels-arthrose-20261126",
+      "title": "Les gels anti-inflammatoires sont-ils efficaces contre l'arthrose du genou ?",
+      "answer": "VRAI ! Les anti-inflammatoires locaux peuvent réduire les douleurs liées à l'arthrose du genou.",
+      "html": "<article><h1>Les gels anti-inflammatoires sont-ils efficaces contre l'arthrose du genou ?</h1><p>VRAI ! Les anti-inflammatoires locaux peuvent réduire les douleurs liées à l'arthrose du genou.</p><p>Leur passage dans le sang est généralement inférieur à celui des anti-inflammatoires pris par voie orale, mais leur utilisation n'est pas dépourvue de risques.</p><p><strong>Ils soulagent la douleur, mais ne réparent pas le cartilage.</strong></p><p>Source : <a href=\"https://www.nice.org.uk/guidance/ng226/chapter/Recommendations\">NICE NG226, 2022</a></p></article>",
+      "date": "2026-11-26",
+      "url": "article-daily-gels-arthrose-20261126.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "NICE NG226, 2022",
+          "url": "https://www.nice.org.uk/guidance/ng226/chapter/Recommendations"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "standalone": true,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-26T13:01:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition éditoriale MACASANTÉ du 26 novembre 2026 et autorise sa mise en ligne immédiate, sans réécriture ni nouvelle validation. Vérifie le déploiement public.",
+        "contentHash": "9fc16eb1c26009909c0f663bc556b2bfea7e991c269545a3b156124c8b4a02f2"
+      },
+      "keywords": [
+        "gels-arthrose"
+      ]
+    },
+    {
+      "id": "daily-gonococcie-chiffre-20261126",
+      "title": "82,4 millions",
+      "answer": "De nouvelles infections gonococciques estimées chez les adultes dans le monde en 2020.",
+      "html": "<article><h1>82,4 millions</h1><p>De nouvelles infections gonococciques estimées chez les adultes dans le monde en 2020.</p><p>Estimation mondiale rappelée par l'OMS le 25 novembre 2026.</p><p>Cette infection sexuellement transmissible est curable, mais l'apparition de résistances aux antibiotiques représente une difficulté croissante.</p><p>Le dépistage et la prévention restent indispensables, notamment parce que l'infection peut passer inaperçue.</p><p>Source : <a href=\"https://www.who.int/news/item/25-11-2026-who-recommends-new-oral-treatment-option-for-gonorrhoea-and-reports-new-data-on-antimicrobial-resistance\">OMS, communiqué du 25 novembre 2026</a></p></article>",
+      "date": "2026-11-26",
+      "url": "article-daily-gonococcie-chiffre-20261126.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "OMS, communiqué du 25 novembre 2026",
+          "url": "https://www.who.int/news/item/25-11-2026-who-recommends-new-oral-treatment-option-for-gonorrhoea-and-reports-new-data-on-antimicrobial-resistance"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "standalone": true,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-26T13:01:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition éditoriale MACASANTÉ du 26 novembre 2026 et autorise sa mise en ligne immédiate, sans réécriture ni nouvelle validation. Vérifie le déploiement public.",
+        "contentHash": "f07412f102bb27e52d62b1f4fb10733be5f40dc89a8bb87c82852e23ef634920"
+      },
+      "keywords": [
+        "gonococcie-chiffre"
+      ]
+    },
+    {
+      "id": "daily-ia-resumes-20261126",
+      "title": "Intelligence artificielle : comment contrôler les résumés médicaux automatisés ?",
+      "answer": "Des chercheurs de l'université du Wisconsin ont développé un outil destiné à repérer les erreurs dans les résumés de dossiers médicaux générés par l'intelligence artificielle.",
+      "html": "<article><h1>Intelligence artificielle : comment contrôler les résumés médicaux automatisés ?</h1><p>Des chercheurs de l'université du Wisconsin ont développé un outil destiné à repérer les erreurs dans les résumés de dossiers médicaux générés par l'intelligence artificielle.</p><p>Cette démarche rappelle l'importance du contrôle de qualité avant toute utilisation clinique. Les performances détaillées n'ont pas été vérifiées.</p><p>Source : <a href=\"https://www.med.wisc.edu/news/uw-researchers-build-ai-judge-to-grade-ai-written-patient-summaries/\">University of Wisconsin, 25 novembre 2026</a></p></article>",
+      "date": "2026-11-26",
+      "url": "article-daily-ia-resumes-20261126.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "University of Wisconsin, 25 novembre 2026",
+          "url": "https://www.med.wisc.edu/news/uw-researchers-build-ai-judge-to-grade-ai-written-patient-summaries/"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "standalone": true,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-26T13:01:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition éditoriale MACASANTÉ du 26 novembre 2026 et autorise sa mise en ligne immédiate, sans réécriture ni nouvelle validation. Vérifie le déploiement public.",
+        "contentHash": "18553ca068e046a5c8278dac10b2370b381094223c441e7248bea8c0165acc98"
+      },
+      "keywords": [
+        "ia-resumes"
+      ]
+    },
+    {
+      "id": "daily-reanimation-teach-20261126",
+      "title": "Réanimation : améliorer la coordination des soins grâce à la télémédecine",
+      "answer": "L'essai randomisé TEACH étudie l'apport de la télémédecine dans la coordination des procédures visant à faciliter le réveil et la reprise de la respiration spontanée chez les patients sous ventilation mécanique.",
+      "html": "<article><h1>Réanimation : améliorer la coordination des soins grâce à la télémédecine</h1><p>L'essai randomisé TEACH étudie l'apport de la télémédecine dans la coordination des procédures visant à faciliter le réveil et la reprise de la respiration spontanée chez les patients sous ventilation mécanique.</p><p>Aucun résultat chiffré n'est avancé sans vérification complémentaire.</p><p>Source : <a href=\"https://doi.org/10.1001/jama.2026.25197\">Grissom et al., JAMA, 25 novembre 2026</a></p></article>",
+      "date": "2026-11-26",
+      "url": "article-daily-reanimation-teach-20261126.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "Grissom et al., JAMA, 25 novembre 2026",
+          "url": "https://doi.org/10.1001/jama.2026.25197"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "standalone": true,
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-26T13:01:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition éditoriale MACASANTÉ du 26 novembre 2026 et autorise sa mise en ligne immédiate, sans réécriture ni nouvelle validation. Vérifie le déploiement public.",
+        "contentHash": "f416f8e99c7d089e3cbc895161000af7476b5654729a4316643ee5add6ed3338"
+      },
+      "keywords": [
+        "reanimation-teach"
+      ]
     }
   ],
   "editions": [
