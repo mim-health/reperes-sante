@@ -11793,7 +11793,6 @@
       ],
       "medicalStatus": "VALIDATED",
       "publicationStatus": "PUBLISHED",
-      "standalone": true,
       "validation": {
         "validator": "Dr Romain BEDDOK",
         "validatedAt": "2026-11-26T13:01:00+01:00",
@@ -11821,7 +11820,6 @@
       ],
       "medicalStatus": "VALIDATED",
       "publicationStatus": "PUBLISHED",
-      "standalone": true,
       "validation": {
         "validator": "Dr Romain BEDDOK",
         "validatedAt": "2026-11-26T13:01:00+01:00",
@@ -11849,7 +11847,6 @@
       ],
       "medicalStatus": "VALIDATED",
       "publicationStatus": "PUBLISHED",
-      "standalone": true,
       "validation": {
         "validator": "Dr Romain BEDDOK",
         "validatedAt": "2026-11-26T13:01:00+01:00",
@@ -11877,7 +11874,6 @@
       ],
       "medicalStatus": "VALIDATED",
       "publicationStatus": "PUBLISHED",
-      "standalone": true,
       "validation": {
         "validator": "Dr Romain BEDDOK",
         "validatedAt": "2026-11-26T13:01:00+01:00",
@@ -11905,7 +11901,6 @@
       ],
       "medicalStatus": "VALIDATED",
       "publicationStatus": "PUBLISHED",
-      "standalone": true,
       "validation": {
         "validator": "Dr Romain BEDDOK",
         "validatedAt": "2026-11-26T13:01:00+01:00",
@@ -11936,7 +11931,6 @@
       ],
       "medicalStatus": "VALIDATED",
       "publicationStatus": "PUBLISHED",
-      "standalone": true,
       "validation": {
         "validator": "Dr Romain BEDDOK",
         "validatedAt": "2026-11-26T13:01:00+01:00",
@@ -11964,7 +11958,6 @@
       ],
       "medicalStatus": "VALIDATED",
       "publicationStatus": "PUBLISHED",
-      "standalone": true,
       "validation": {
         "validator": "Dr Romain BEDDOK",
         "validatedAt": "2026-11-26T13:01:00+01:00",
@@ -11992,7 +11985,6 @@
       ],
       "medicalStatus": "VALIDATED",
       "publicationStatus": "PUBLISHED",
-      "standalone": true,
       "validation": {
         "validator": "Dr Romain BEDDOK",
         "validatedAt": "2026-11-26T13:01:00+01:00",
@@ -12020,7 +12012,6 @@
       ],
       "medicalStatus": "VALIDATED",
       "publicationStatus": "PUBLISHED",
-      "standalone": true,
       "validation": {
         "validator": "Dr Romain BEDDOK",
         "validatedAt": "2026-11-26T13:01:00+01:00",
@@ -12029,6 +12020,33 @@
       },
       "keywords": [
         "reanimation-teach"
+      ]
+    },
+    {
+      "id": "daily-lepre-20261126",
+      "title": "Maladies infectieuses : renforcer la recherche sur la lèpre",
+      "answer": "L'OMS annonce la création en Chine de son premier centre collaborateur spécifiquement consacré à la lèpre, afin de renforcer les efforts scientifiques et sanitaires autour de cette maladie.",
+      "html": "<article><h1>Maladies infectieuses : renforcer la recherche sur la lèpre</h1><p>L'OMS annonce la création en Chine de son premier centre collaborateur spécifiquement consacré à la lèpre, afin de renforcer les efforts scientifiques et sanitaires autour de cette maladie.</p><p>Source : <a href=\"https://www.who.int/australia/news/detail/26-11-2026-launch-of-who-s-first-ever-collaborating-centre-on-leprosy-in-china\">OMS, 26 novembre 2026</a>.</p></article>",
+      "date": "2026-11-26",
+      "url": "article-daily-lepre-20261126.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "OMS, 26 novembre 2026",
+          "url": "https://www.who.int/australia/news/detail/26-11-2026-launch-of-who-s-first-ever-collaborating-centre-on-leprosy-in-china"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-26T13:01:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition éditoriale MACASANTÉ du 26 novembre 2026 et autorise sa mise en ligne immédiate, sans réécriture ni nouvelle validation. Vérifie le déploiement public.",
+        "contentHash": "b34e31e28c4948a61d8ee10d31e0f28a92dbad222347fc44098286073e356375"
+      },
+      "keywords": [
+        "lèpre"
       ]
     }
   ],
@@ -13746,6 +13764,64 @@
         },
         {
           "contentId": "daily-amylose-ia-20261125",
+          "slot": "DONNÉES",
+          "icon": "•"
+        }
+      ]
+    },
+    {
+      "id": "edition-2026-11-26",
+      "date": "2026-11-26",
+      "publishAt": "2026-11-26T13:01:00+01:00",
+      "complete": true,
+      "items": [
+        {
+          "contentId": "daily-hydrocephalie-20261126",
+          "slot": "À LA UNE",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-ados-reseaux-20261126",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-gonococcie-20261126",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-grossesse-medicaments-20261126",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-collagene-20261126",
+          "slot": "FICHE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-gels-arthrose-20261126",
+          "slot": "VRAI OU FAUX",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-gonococcie-chiffre-20261126",
+          "slot": "LE CHIFFRE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-ia-resumes-20261126",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-reanimation-teach-20261126",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-lepre-20261126",
           "slot": "DONNÉES",
           "icon": "•"
         }
