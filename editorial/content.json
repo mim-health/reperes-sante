@@ -12048,6 +12048,279 @@
       "keywords": [
         "lèpre"
       ]
+    },
+    {
+      "id": "daily-automesure-tension-20261127",
+      "title": "Votre tension est élevée chez le médecin : êtes-vous forcément hypertendu ?",
+      "answer": "Non. Une tension artérielle élevée lors d'une consultation peut nécessiter une confirmation par des mesures réalisées à domicile ou par un enregistrement sur 24 heures.",
+      "html": "<article><h1>Votre tension est élevée chez le médecin : êtes-vous forcément hypertendu ?</h1><p><strong>Réponse courte :</strong> Non. Une tension artérielle élevée lors d'une consultation peut nécessiter une confirmation par des mesures réalisées à domicile ou par un enregistrement sur 24 heures.</p><p>Certaines personnes présentent une tension plus élevée au cabinet médical que dans leur environnement habituel. C'est ce que l'on appelle l'effet blouse blanche.</p><p>À l'inverse, une tension normale au cabinet peut parfois masquer une hypertension en dehors des consultations.</p><p>Les recommandations européennes de 2024 retiennent un seuil diagnostique à domicile de 135 mmHg pour la pression systolique ou de 85 mmHg pour la pression diastolique, en moyenne sur plusieurs mesures.</p><p>Seuils diagnostiques usuels chez l'adulte : au cabinet 140/90 mmHg ; à domicile 135/85 mmHg.</p><p>Pour obtenir des mesures fiables, utilisez un appareil validé avec un brassard adapté au bras, en position assise et au repos.</p><p><strong>En pratique :</strong> ne modifiez pas votre traitement sur la base d'une mesure isolée. Présentez vos relevés à votre médecin.</p><p><strong>Niveau de preuve :</strong> recommandations de société savante. Les seuils diagnostiques ne doivent pas être confondus avec les objectifs individuels de traitement.</p><p>Source : <a href=\"https://doi.org/10.1093/eurheartj/ehae178\">European Society of Cardiology, recommandations 2024</a></p></article>",
+      "date": "2026-11-27",
+      "url": "article-daily-automesure-tension-20261127.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "European Society of Cardiology, recommandations 2024",
+          "url": "https://doi.org/10.1093/eurheartj/ehae178"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-27T12:27:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition éditoriale MACASANTÉ du 27 novembre 2026 et autorise sa mise en ligne immédiate, sans réécriture ni nouvelle validation. Vérifie le déploiement public et la synchronisation de l'assistant IA.",
+        "contentHash": "54063ad5195ae17cae2b5688f922fb349a052b0d8cec0be89f16ba1b238b5e38"
+      },
+      "keywords": [
+        "automesure-tension"
+      ]
+    },
+    {
+      "id": "daily-insomnie-20261127",
+      "title": "Insomnie chronique : existe-t-il une alternative aux somnifères ?",
+      "answer": "Oui. Les thérapies cognitives et comportementales de l'insomnie constituent le traitement de première intention recommandé chez l'adulte.",
+      "html": "<article><h1>Insomnie chronique : existe-t-il une alternative aux somnifères ?</h1><p><strong>Réponse courte :</strong> Oui. Les thérapies cognitives et comportementales de l'insomnie constituent le traitement de première intention recommandé chez l'adulte.</p><p>Ces thérapies permettent notamment de travailler sur les habitudes de sommeil, les horaires de coucher et les pensées anxieuses associées à l'endormissement.</p><p>Elles peuvent être réalisées en consultation ou au moyen de programmes numériques adaptés.</p><p>Les recommandations européennes de 2023 leur attribuent un niveau de recommandation A. Certains médicaments peuvent être proposés lorsque cette prise en charge ne suffit pas.</p><p><strong>En pratique :</strong> une insomnie persistante mérite une véritable évaluation médicale. Un somnifère pris depuis longtemps ne doit pas être arrêté brutalement sans avis médical.</p><p>Source : <a href=\"https://pubmed.ncbi.nlm.nih.gov/38016484/\">Riemann et al. The European Insomnia Guideline, 2023</a></p></article>",
+      "date": "2026-11-27",
+      "url": "article-daily-insomnie-20261127.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "Riemann et al. The European Insomnia Guideline, 2023",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38016484/"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-27T12:27:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition éditoriale MACASANTÉ du 27 novembre 2026 et autorise sa mise en ligne immédiate, sans réécriture ni nouvelle validation. Vérifie le déploiement public et la synchronisation de l'assistant IA.",
+        "contentHash": "4578bb3bc99fbf5e59c4f5e4551b91bfe1427e1c552946ebc5d31e12e23463d4"
+      },
+      "keywords": [
+        "insomnie"
+      ]
+    },
+    {
+      "id": "daily-chutes-20261127",
+      "title": "Après 65 ans, peut-on réellement réduire son risque de chute ?",
+      "answer": "Oui. Des exercices adaptés et la correction de certains facteurs de risque peuvent contribuer à prévenir les chutes.",
+      "html": "<article><h1>Après 65 ans, peut-on réellement réduire son risque de chute ?</h1><p><strong>Réponse courte :</strong> Oui. Des exercices adaptés et la correction de certains facteurs de risque peuvent contribuer à prévenir les chutes.</p><p>Les recommandations britanniques NICE d'avril 2025 insistent sur plusieurs éléments : l'équilibre, la force musculaire, la coordination, les médicaments et l'aménagement du domicile.</p><p>Une personne ayant chuté plusieurs fois, ou n'ayant pas réussi à se relever seule, mérite une évaluation approfondie.</p><p><strong>En pratique :</strong> la peur de tomber ne doit pas conduire à renoncer systématiquement à toute activité physique. Un programme progressif, adapté aux capacités de chacun, peut aider à préserver son autonomie.</p><p>Source : <a href=\"https://www.nice.org.uk/guidance/ng249/chapter/Recommendations\">NICE NG249, 29 avril 2025</a></p></article>",
+      "date": "2026-11-27",
+      "url": "article-daily-chutes-20261127.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "NICE NG249, 29 avril 2025",
+          "url": "https://www.nice.org.uk/guidance/ng249/chapter/Recommendations"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-27T12:27:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition éditoriale MACASANTÉ du 27 novembre 2026 et autorise sa mise en ligne immédiate, sans réécriture ni nouvelle validation. Vérifie le déploiement public et la synchronisation de l'assistant IA.",
+        "contentHash": "77e3abf0f693d5fb288edf7e10a594e43754bf8fa382b7eeee5450d95b820419"
+      },
+      "keywords": [
+        "chutes"
+      ]
+    },
+    {
+      "id": "daily-sel-20261127",
+      "title": "Manger moins salé : suffit-il de retirer la salière ?",
+      "answer": "Non. Une partie importante du sel consommé provient des aliments préparés.",
+      "html": "<article><h1>Manger moins salé : suffit-il de retirer la salière ?</h1><p><strong>Réponse courte :</strong> Non. Une partie importante du sel consommé provient des aliments préparés.</p><p>Les pains, fromages, charcuteries, sauces et plats industriels peuvent contribuer à des apports élevés en sodium.</p><p>L'OMS recommande aux adultes de consommer moins de cinq grammes de sel par jour, toutes sources confondues.</p><p>Pour réduire ses apports, il est notamment possible de comparer les étiquettes nutritionnelles, de cuisiner davantage et d'utiliser des épices ou des herbes aromatiques.</p><p><strong>Attention :</strong> les substituts de sel contenant du potassium ne conviennent pas à tout le monde, notamment en cas d'insuffisance rénale ou de prise de certains médicaments.</p><p>Source : <a href=\"https://www.who.int/fr/news-room/fact-sheets/detail/sodium-reduction\">OMS — Réduction de l'apport en sodium, fiche actualisée en 2026</a></p></article>",
+      "date": "2026-11-27",
+      "url": "article-daily-sel-20261127.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "OMS — Réduction de l'apport en sodium, fiche actualisée en 2026",
+          "url": "https://www.who.int/fr/news-room/fact-sheets/detail/sodium-reduction"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-27T12:27:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition éditoriale MACASANTÉ du 27 novembre 2026 et autorise sa mise en ligne immédiate, sans réécriture ni nouvelle validation. Vérifie le déploiement public et la synchronisation de l'assistant IA.",
+        "contentHash": "9b292e9f6c33a8bb15818e3c449ce8a40a0b4311370eee3536afc858ecb5d99c"
+      },
+      "keywords": [
+        "sel"
+      ]
+    },
+    {
+      "id": "daily-arthrose-bouger-20261127",
+      "title": "Arthrose : faut-il continuer à bouger malgré les douleurs ?",
+      "answer": "Contrairement à une idée reçue, l'activité physique adaptée fait partie du traitement de l'arthrose.",
+      "html": "<article><h1>Arthrose : faut-il continuer à bouger malgré les douleurs ?</h1><p>Contrairement à une idée reçue, l'activité physique adaptée fait partie du traitement de l'arthrose.</p><p>Le renforcement musculaire, l'entretien de la mobilité et une activité d'endurance appropriée peuvent diminuer les douleurs et améliorer les capacités fonctionnelles.</p><p>Lors d'une poussée très douloureuse, une réduction temporaire de certaines activités peut être nécessaire avant une reprise progressive.</p><p>Source : <a href=\"https://macasante.fr/fiche.html?id=arthrose-faut-il-bouger\">Lire la fiche MACASANTÉ</a></p></article>",
+      "date": "2026-11-27",
+      "url": "article-daily-arthrose-bouger-20261127.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "Lire la fiche MACASANTÉ",
+          "url": "https://macasante.fr/fiche.html?id=arthrose-faut-il-bouger"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-27T12:27:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition éditoriale MACASANTÉ du 27 novembre 2026 et autorise sa mise en ligne immédiate, sans réécriture ni nouvelle validation. Vérifie le déploiement public et la synchronisation de l'assistant IA.",
+        "contentHash": "172df6ff1949dc212a732b13747ff754ec2d6c9fc79fb744d17cd354cb48964d"
+      },
+      "keywords": [
+        "arthrose-bouger"
+      ],
+      "ficheId": "arthrose-faut-il-bouger",
+      "assistantPolicy": "REFERENCE_FICHE_ONLY",
+      "candidateFiche": false
+    },
+    {
+      "id": "daily-renforcement-20261127",
+      "title": "Avec l'âge, il faut éviter de faire du renforcement musculaire.",
+      "answer": "FAUX ! Le renforcement musculaire aide à préserver la force, la mobilité et l'autonomie.",
+      "html": "<article><h1>Avec l'âge, il faut éviter de faire du renforcement musculaire.</h1><p>FAUX ! Le renforcement musculaire aide à préserver la force, la mobilité et l'autonomie.</p><p>L'OMS recommande aux adultes des exercices de renforcement au moins deux jours par semaine, adaptés à leur état de santé.</p><p>Source : <a href=\"https://doi.org/10.1136/BJSPORTS-2020-102955\">OMS, recommandations 2020</a></p></article>",
+      "date": "2026-11-27",
+      "url": "article-daily-renforcement-20261127.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "OMS, recommandations 2020",
+          "url": "https://doi.org/10.1136/BJSPORTS-2020-102955"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-27T12:27:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition éditoriale MACASANTÉ du 27 novembre 2026 et autorise sa mise en ligne immédiate, sans réécriture ni nouvelle validation. Vérifie le déploiement public et la synchronisation de l'assistant IA.",
+        "contentHash": "568da3fdcf0439635b1e7c75acd3378ea6a93acee704af9436deb6a334d82a3a"
+      },
+      "keywords": [
+        "renforcement"
+      ]
+    },
+    {
+      "id": "daily-audition-chiffre-20261127",
+      "title": "430 millions",
+      "answer": "De personnes dans le monde nécessitent une réadaptation en raison d'une déficience auditive incapacitante.",
+      "html": "<article><h1>430 millions</h1><p>De personnes dans le monde nécessitent une réadaptation en raison d'une déficience auditive incapacitante.</p><p>Les difficultés auditives deviennent plus fréquentes avec l'âge. Lorsqu'elles perturbent les conversations ou la vie quotidienne, un bilan auditif peut permettre d'identifier les solutions appropriées.</p><p>Source : <a href=\"https://www.who.int/fr/news-room/fact-sheets/detail/deafness-and-hearing-loss\">OMS, 3 mars 2026</a></p></article>",
+      "date": "2026-11-27",
+      "url": "article-daily-audition-chiffre-20261127.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "OMS, 3 mars 2026",
+          "url": "https://www.who.int/fr/news-room/fact-sheets/detail/deafness-and-hearing-loss"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-27T12:27:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition éditoriale MACASANTÉ du 27 novembre 2026 et autorise sa mise en ligne immédiate, sans réécriture ni nouvelle validation. Vérifie le déploiement public et la synchronisation de l'assistant IA.",
+        "contentHash": "fa37b875cdff57f49aa52b30422adde0c1ff84fcff96a5bb186a8d6797100eb6"
+      },
+      "keywords": [
+        "audition-chiffre"
+      ]
+    },
+    {
+      "id": "daily-orthostatisme-20261127",
+      "title": "Vertiges au lever : pensez aussi à la tension artérielle.",
+      "answer": "Une baisse de tension lors du passage à la position debout peut expliquer certains étourdissements.",
+      "html": "<article><h1>Vertiges au lever : pensez aussi à la tension artérielle.</h1><p>Une baisse de tension lors du passage à la position debout peut expliquer certains étourdissements.</p><p>La recherche d'une hypotension orthostatique et la révision des traitements peuvent être utiles.</p><p>Source : <a href=\"https://www.nice.org.uk/guidance/ng136/chapter/recommendations\">NICE NG136, recommandations actualisées en 2023</a></p></article>",
+      "date": "2026-11-27",
+      "url": "article-daily-orthostatisme-20261127.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "NICE NG136, recommandations actualisées en 2023",
+          "url": "https://www.nice.org.uk/guidance/ng136/chapter/recommendations"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-27T12:27:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition éditoriale MACASANTÉ du 27 novembre 2026 et autorise sa mise en ligne immédiate, sans réécriture ni nouvelle validation. Vérifie le déploiement public et la synchronisation de l'assistant IA.",
+        "contentHash": "27fc44d9c06057621cb8d1af35dc889b277c6783f60907ea5b092d1420871a27"
+      },
+      "keywords": [
+        "orthostatisme"
+      ]
+    },
+    {
+      "id": "daily-activite-courte-20261127",
+      "title": "Activité physique : même les efforts de courte durée comptent.",
+      "answer": "Il n'est plus nécessaire d'effectuer des périodes d'exercice d'au moins dix minutes pour que celles-ci soient comptabilisées dans les recommandations d'activité physique.",
+      "html": "<article><h1>Activité physique : même les efforts de courte durée comptent.</h1><p>Il n'est plus nécessaire d'effectuer des périodes d'exercice d'au moins dix minutes pour que celles-ci soient comptabilisées dans les recommandations d'activité physique.</p><p>Source : <a href=\"https://doi.org/10.1136/BJSPORTS-2020-102955\">OMS 2020, BJSM</a></p></article>",
+      "date": "2026-11-27",
+      "url": "article-daily-activite-courte-20261127.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "OMS 2020, BJSM",
+          "url": "https://doi.org/10.1136/BJSPORTS-2020-102955"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-27T12:27:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition éditoriale MACASANTÉ du 27 novembre 2026 et autorise sa mise en ligne immédiate, sans réécriture ni nouvelle validation. Vérifie le déploiement public et la synchronisation de l'assistant IA.",
+        "contentHash": "252882a4360de50c4e0365977eb2c5ab20d8c2c3ccbd228f7fda86f71ca53b18"
+      },
+      "keywords": [
+        "activite-courte"
+      ]
+    },
+    {
+      "id": "daily-audition-2050-20261127",
+      "title": "Audition : une augmentation mondiale attendue.",
+      "answer": "L'OMS estime que plus de 700 millions de personnes pourraient avoir besoin de réadaptation auditive en 2050.",
+      "html": "<article><h1>Audition : une augmentation mondiale attendue.</h1><p>L'OMS estime que plus de 700 millions de personnes pourraient avoir besoin de réadaptation auditive en 2050.</p><p>Il s'agit d'une projection démographique, et non d'un nombre de patients déjà recensés.</p><p>Source : <a href=\"https://www.who.int/fr/news-room/fact-sheets/detail/deafness-and-hearing-loss\">OMS, mars 2026</a></p></article>",
+      "date": "2026-11-27",
+      "url": "article-daily-audition-2050-20261127.html",
+      "format": "article",
+      "theme": "Santé",
+      "sources": [
+        {
+          "label": "OMS, mars 2026",
+          "url": "https://www.who.int/fr/news-room/fact-sheets/detail/deafness-and-hearing-loss"
+        }
+      ],
+      "medicalStatus": "VALIDATED",
+      "publicationStatus": "PUBLISHED",
+      "validation": {
+        "validator": "Dr Romain BEDDOK",
+        "validatedAt": "2026-11-27T12:27:00+01:00",
+        "evidence": "Je valide médicalement l'intégralité de l'édition éditoriale MACASANTÉ du 27 novembre 2026 et autorise sa mise en ligne immédiate, sans réécriture ni nouvelle validation. Vérifie le déploiement public et la synchronisation de l'assistant IA.",
+        "contentHash": "df75495971b6d96313a6ac2d0b04d920e71063b38a364e12ebf23f36acdd0202"
+      },
+      "keywords": [
+        "audition-2050"
+      ]
     }
   ],
   "editions": [
@@ -13822,6 +14095,64 @@
         },
         {
           "contentId": "daily-lepre-20261126",
+          "slot": "DONNÉES",
+          "icon": "•"
+        }
+      ]
+    },
+    {
+      "id": "edition-2026-11-27",
+      "date": "2026-11-27",
+      "publishAt": "2026-11-27T12:27:00+01:00",
+      "complete": true,
+      "items": [
+        {
+          "contentId": "daily-automesure-tension-20261127",
+          "slot": "À LA UNE",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-insomnie-20261127",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-chutes-20261127",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-sel-20261127",
+          "slot": "À LIRE EN 3 MIN",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-arthrose-bouger-20261127",
+          "slot": "FICHE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-renforcement-20261127",
+          "slot": "VRAI OU FAUX",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-audition-chiffre-20261127",
+          "slot": "LE CHIFFRE DU JOUR",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-orthostatisme-20261127",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-activite-courte-20261127",
+          "slot": "DONNÉES",
+          "icon": "•"
+        },
+        {
+          "contentId": "daily-audition-2050-20261127",
           "slot": "DONNÉES",
           "icon": "•"
         }
