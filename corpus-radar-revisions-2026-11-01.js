@@ -89,3 +89,37 @@
     "validationEvidence": "Instruction explicite du Dr Romain BEDDOK le 1er novembre 2026 : « Apporte nouveautés au corpus alors », après présentation des données TRANSCEND-T2D-2 et FLOWPROMOTE dans le Radar."
   }
 ];for(const patch of patches){let found=false;for(const group of [window.healthQuestions||[],window.extraAuditedQuestions||[]])for(const card of group)if(card.id===patch.id){Object.assign(card,patch);found=true;}if(!found)throw new Error("Missing source card: "+patch.id);}})();
+
+/* Corrections médicalement approuvées le 27 novembre 2026. Audit V2 ouvert. */
+(function(){const patches={
+  "paracetamol": {
+    "watch": "Si vous pensez avoir dépassé la dose recommandée de paracétamol, contactez immédiatement un centre antipoison, même si vous ne ressentez aucun symptôme. En cas de malaise important ou de trouble de la conscience, appelez le 15 ou le 112. N'attendez pas l'apparition de symptômes.\n\nVérifiez systématiquement que les autres médicaments que vous prenez ne contiennent pas également du paracétamol."
+  },
+  "fievre-enfant": {
+    "watch": "Chez un nourrisson de moins de trois mois, toute température de 38 °C ou plus nécessite une évaluation médicale urgente, même si le bébé semble aller bien.\n\nQuel que soit l'âge, si votre enfant présente une difficulté respiratoire importante, est difficile à réveiller ou présente des taches violacées qui ne disparaissent pas à la pression en présence de fièvre, appelez immédiatement le 15 ou le 112.\n\nConsultez également si la fièvre persiste plus de deux jours chez l'enfant de moins de deux ans ou plus de trois jours chez l'enfant plus grand."
+  },
+  "bebe-tete-moins": {
+    "watch": "Si votre bébé boit nettement moins que d'habitude, refuse plusieurs prises ou mouille beaucoup moins ses couches, demandez rapidement un avis médical, particulièrement durant les premiers mois de vie.\n\nSi votre bébé est difficile à réveiller, présente une coloration bleutée, des pauses respiratoires ou une difficulté importante pour respirer, appelez immédiatement le 15 ou le 112.\n\nUne fièvre de 38 °C ou plus avant trois mois nécessite une évaluation médicale urgente."
+  },
+  "rash-enfant": {
+    "watch": "Si votre enfant présente de la fièvre et des taches rouges ou violacées qui ne disparaissent pas lorsque vous appuyez dessus, appelez immédiatement le 15, même si son état général paraît encore satisfaisant.\n\nDes taches inhabituelles qui ne s'effacent pas à la pression, même sans fièvre, nécessitent un avis médical rapide.\n\nUne éruption accompagnée d'une difficulté respiratoire, d'un gonflement de la langue ou d'un malaise impose également d'appeler les secours."
+  },
+  "etat-general-nourrisson": {
+    "watch": "Si votre bébé devient difficile à réveiller, très mou, peu réactif, bleuté ou présente une difficulté respiratoire importante, appelez immédiatement le 15 ou le 112.\n\nUne température de 38 °C ou plus chez un nourrisson de moins de trois mois nécessite une évaluation médicale urgente. Une diminution importante des prises alimentaires ou des urines doit également conduire à demander rapidement un avis médical.\n\nL'absence de fièvre n'exclut pas une maladie grave chez un jeune nourrisson."
+  },
+  "difficulte-respiratoire-enfant": {
+    "watch": "Appelez immédiatement le 15 ou le 112 si votre enfant présente des lèvres bleutées, des pauses respiratoires, un épuisement, des troubles de la vigilance ou un effort important pour respirer.\n\nUne difficulté respiratoire qui apparaît brutalement pendant un repas ou après la manipulation d'un petit objet peut être liée à l'inhalation d'un corps étranger et nécessite une prise en charge urgente.\n\nChez le nourrisson, une respiration difficile associée à une diminution importante des prises alimentaires doit être évaluée rapidement."
+  },
+  "deshydratation-enfant": {
+    "watch": "Si votre enfant urine très peu, ne parvient plus à boire ou vomit toutes ses prises, demandez rapidement un avis médical.\n\nS'il devient difficile à réveiller, très peu réactif ou présente un malaise, appelez le 15 ou le 112.\n\nEn cas de gastro-entérite, utilisez une solution de réhydratation orale préparée exactement selon la notice, proposée en petites quantités répétées. Poursuivez l'allaitement maternel. Les nourrissons de moins de six mois nécessitent une vigilance particulière."
+  },
+  "constipation-enfant": {
+    "watch": "Une constipation apparue dès les premières semaines de vie, un défaut de prise de poids ou des symptômes persistants doivent conduire à consulter un médecin.\n\nLa présence de sang dans les selles ou d'une fièvre associée justifie une consultation dans la journée.\n\nSi votre enfant présente des douleurs abdominales intenses, des vomissements répétés ou un ventre très gonflé, tendu et douloureux, contactez les urgences ou appelez le 15.\n\nUne constipation installée peut nécessiter un traitement laxatif adapté à l'âge, notamment du macrogol, sur conseil médical. L'alimentation seule ne suffit pas toujours."
+  },
+  "oeil-rouge-enfant": {
+    "watch": "En cas de projection d'un produit chimique dans l'œil, commencez immédiatement un rinçage abondant à l'eau, sans attendre un avis médical. Ne frottez pas l'œil. Demandez ensuite une prise en charge ophtalmologique urgente.\n\nUne douleur oculaire importante, une diminution de la vision ou une forte sensibilité à la lumière nécessitent une évaluation ophtalmologique urgente.\n\nChez un enfant de moins de deux ans présentant une conjonctivite, une consultation dans la journée est recommandée.\n\nN'utilisez jamais de collyre contenant des corticoïdes sans avis médical."
+  },
+  "oubli-medicament": {
+    "detail": "La conduite à tenir après l'oubli d'un médicament dépend de sa nature, de la dose prescrite et du temps écoulé depuis l'heure habituelle de prise.\n\nCommencez par vérifier le nom exact du médicament, son dosage et les consignes figurant dans sa notice. Ne doublez pas spontanément la dose suivante : les règles de rattrapage diffèrent selon les traitements.\n\nCertains oublis nécessitent une vigilance particulière, notamment lorsqu'ils concernent une insuline, un anticoagulant, un antiépileptique, un immunosuppresseur ou un traitement indispensable au contrôle d'une maladie chronique.\n\nDans ces situations, demandez rapidement conseil à votre pharmacien ou à votre médecin. Pour l'insuline, suivez votre protocole personnalisé et contrôlez votre glycémie.\n\nEn cas d'oublis répétés, un pilulier, une alarme ou une adaptation de l'organisation des prises peut être utile."
+  }
+};for(const [id,patch] of Object.entries(patches)){let found=false;for(const group of [window.healthQuestions||[],window.extraAuditedQuestions||[]])for(const card of group)if(card.id===id){Object.assign(card,patch);found=true;}if(!found)throw new Error('Missing source card: '+id);}})();
