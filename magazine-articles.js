@@ -6454,5 +6454,195 @@ window.MACA_MAGAZINE_ARTICLES=[
     "medicalStatus": "VALIDATED",
     "referenceFicheId": null,
     "version": "b34e31e28c4948a61d8ee10d31e0f28a92dbad222347fc44098286073e356375"
+  },
+  {
+    "id": "daily-automesure-tension-20261127",
+    "url": "article-daily-automesure-tension-20261127.html",
+    "title": "Votre tension est élevée chez le médecin : êtes-vous forcément hypertendu ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-27",
+    "status": "PUBLISHED",
+    "excerpt": "Non. Une tension artérielle élevée lors d'une consultation peut nécessiter une confirmation par des mesures réalisées à domicile ou par un enregistrement sur 24 heures.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "automesure-tension"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "54063ad5195ae17cae2b5688f922fb349a052b0d8cec0be89f16ba1b238b5e38"
+  },
+  {
+    "id": "daily-insomnie-20261127",
+    "url": "article-daily-insomnie-20261127.html",
+    "title": "Insomnie chronique : existe-t-il une alternative aux somnifères ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-27",
+    "status": "PUBLISHED",
+    "excerpt": "Oui. Les thérapies cognitives et comportementales de l'insomnie constituent le traitement de première intention recommandé chez l'adulte.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "insomnie"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "4578bb3bc99fbf5e59c4f5e4551b91bfe1427e1c552946ebc5d31e12e23463d4"
+  },
+  {
+    "id": "daily-chutes-20261127",
+    "url": "article-daily-chutes-20261127.html",
+    "title": "Après 65 ans, peut-on réellement réduire son risque de chute ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-27",
+    "status": "PUBLISHED",
+    "excerpt": "Oui. Des exercices adaptés et la correction de certains facteurs de risque peuvent contribuer à prévenir les chutes.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "chutes"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "77e3abf0f693d5fb288edf7e10a594e43754bf8fa382b7eeee5450d95b820419"
+  },
+  {
+    "id": "daily-sel-20261127",
+    "url": "article-daily-sel-20261127.html",
+    "title": "Manger moins salé : suffit-il de retirer la salière ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-27",
+    "status": "PUBLISHED",
+    "excerpt": "Non. Une partie importante du sel consommé provient des aliments préparés.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "sel"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "9b292e9f6c33a8bb15818e3c449ce8a40a0b4311370eee3536afc858ecb5d99c"
+  },
+  {
+    "id": "daily-arthrose-bouger-20261127",
+    "url": "article-daily-arthrose-bouger-20261127.html",
+    "title": "Arthrose : faut-il continuer à bouger malgré les douleurs ?",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-27",
+    "status": "PUBLISHED",
+    "excerpt": "Contrairement à une idée reçue, l'activité physique adaptée fait partie du traitement de l'arthrose.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "arthrose-bouger"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": "arthrose-faut-il-bouger",
+    "version": "172df6ff1949dc212a732b13747ff754ec2d6c9fc79fb744d17cd354cb48964d"
+  },
+  {
+    "id": "daily-renforcement-20261127",
+    "url": "article-daily-renforcement-20261127.html",
+    "title": "Avec l'âge, il faut éviter de faire du renforcement musculaire.",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-27",
+    "status": "PUBLISHED",
+    "excerpt": "FAUX ! Le renforcement musculaire aide à préserver la force, la mobilité et l'autonomie.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "renforcement"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "568da3fdcf0439635b1e7c75acd3378ea6a93acee704af9436deb6a334d82a3a"
+  },
+  {
+    "id": "daily-audition-chiffre-20261127",
+    "url": "article-daily-audition-chiffre-20261127.html",
+    "title": "430 millions",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-27",
+    "status": "PUBLISHED",
+    "excerpt": "De personnes dans le monde nécessitent une réadaptation en raison d'une déficience auditive incapacitante.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "audition-chiffre"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "fa37b875cdff57f49aa52b30422adde0c1ff84fcff96a5bb186a8d6797100eb6"
+  },
+  {
+    "id": "daily-orthostatisme-20261127",
+    "url": "article-daily-orthostatisme-20261127.html",
+    "title": "Vertiges au lever : pensez aussi à la tension artérielle.",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-27",
+    "status": "PUBLISHED",
+    "excerpt": "Une baisse de tension lors du passage à la position debout peut expliquer certains étourdissements.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "orthostatisme"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "27fc44d9c06057621cb8d1af35dc889b277c6783f60907ea5b092d1420871a27"
+  },
+  {
+    "id": "daily-activite-courte-20261127",
+    "url": "article-daily-activite-courte-20261127.html",
+    "title": "Activité physique : même les efforts de courte durée comptent.",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-27",
+    "status": "PUBLISHED",
+    "excerpt": "Il n'est plus nécessaire d'effectuer des périodes d'exercice d'au moins dix minutes pour que celles-ci soient comptabilisées dans les recommandations d'activité physique.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "activite-courte"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "252882a4360de50c4e0365977eb2c5ab20d8c2c3ccbd228f7fda86f71ca53b18"
+  },
+  {
+    "id": "daily-audition-2050-20261127",
+    "url": "article-daily-audition-2050-20261127.html",
+    "title": "Audition : une augmentation mondiale attendue.",
+    "format": "article",
+    "category": "Actualité santé",
+    "theme": "Santé",
+    "date": "2026-11-27",
+    "status": "PUBLISHED",
+    "excerpt": "L'OMS estime que plus de 700 millions de personnes pourraient avoir besoin de réadaptation auditive en 2050.",
+    "image": "",
+    "imageAlt": "",
+    "keywords": [
+      "audition-2050"
+    ],
+    "medicalStatus": "VALIDATED",
+    "referenceFicheId": null,
+    "version": "df75495971b6d96313a6ac2d0b04d920e71063b38a364e12ebf23f36acdd0202"
   }
 ];

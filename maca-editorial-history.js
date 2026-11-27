@@ -4524,5 +4524,152 @@ window.MACA_EDITORIAL_HISTORY=[
         "imageAlt": ""
       }
     ]
+  },
+  {
+    "date": "26/11/2026",
+    "editionId": "edition-2026-11-26",
+    "articles": [
+      {
+        "id": "daily-hydrocephalie-20261126",
+        "category": "À LA UNE",
+        "icon": "•",
+        "title": "Troubles de la marche et de la mémoire après 65 ans : est-ce forcément le vieillissement ?",
+        "excerpt": "Non. Certaines maladies neurologiques potentiellement accessibles à un traitement peuvent provoquer des troubles de la marche, des difficultés cognitives et des troubles urinaires.",
+        "body": "Troubles de la marche et de la mémoire après 65 ans : est-ce forcément le vieillissement ?\n\n Réponse courte : Non. Certaines maladies neurologiques potentiellement accessibles à un traitement peuvent provoquer des troubles de la marche, des difficultés cognitives et des troubles urinaires.\n\n Une publication pédagogique du JAMA, parue le 25 novembre, revient sur l'hydrocéphalie à pression normale.\n\n Cette maladie est associée à une augmentation du volume des ventricules cérébraux. Elle peut notamment se manifester par :\n\n Une marche lente, à petits pas, avec des difficultés à démarrer.\n\n Un ralentissement intellectuel et des troubles cognitifs.\n\n Des envies pressantes d'uriner ou une incontinence.\n\n Ces symptômes ne sont pas toujours présents simultanément et peuvent également être liés à d'autres maladies.\n\n Le diagnostic repose sur une évaluation neurologique, une imagerie cérébrale et parfois des examens complémentaires. Chez certains patients sélectionnés, une intervention visant à dériver le liquide cérébrospinal peut améliorer les symptômes, notamment la marche.\n\n En pratique : une dégradation progressive de la marche associée à des troubles cognitifs ne doit pas être systématiquement attribuée à l'âge.\n\n Nature de la publication : information médicale de synthèse, et non nouvel essai thérapeutique.\n\n Source : Walter KL. What Is Idiopathic Normal Pressure Hydrocephalus? JAMA, 25 novembre 2026.",
+        "articleUrl": "article-daily-hydrocephalie-20261126.html",
+        "source": "Walter KL. What Is Idiopathic Normal Pressure Hydrocephalus? JAMA, 25 novembre 2026.",
+        "sourceLabel": "Walter KL. What Is Idiopathic Normal Pressure Hydrocephalus? JAMA, 25 novembre 2026.",
+        "sourceUrl": "https://doi.org/10.1001/jama.2026.22999",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-ados-reseaux-20261126",
+        "category": "À LIRE EN 3 MIN",
+        "icon": "•",
+        "title": "Adolescents : limiter un seul réseau social suffit-il à réduire le temps d'écran ?",
+        "excerpt": "Probablement pas. Les adolescents utilisent plusieurs plateformes, ce qui peut limiter l'efficacité des restrictions isolées.",
+        "body": "Adolescents : limiter un seul réseau social suffit-il à réduire le temps d'écran ?\n\n Réponse courte : Probablement pas. Les adolescents utilisent plusieurs plateformes, ce qui peut limiter l'efficacité des restrictions isolées.\n\n Une étude publiée le 25 novembre dans le JAMA a analysé les données d'utilisation des smartphones de 1 803 jeunes.\n\n Une restriction quotidienne de deux heures concernerait :\n\n Instagram et Facebook uniquement : 7,7 %.\n\n Cinq grandes plateformes cumulées : 63,1 %.\n\n Proportion des participants potentiellement concernés par les restrictions étudiées.\n\n En pratique : une démarche familiale portant sur l'ensemble des usages numériques paraît plus cohérente qu'une restriction limitée à une seule application.\n\n Limites : étude observationnelle menée auprès d'utilisateurs Android. Les effets réels des restrictions et leurs conséquences sur la santé n'ont pas été évalués.\n\n Source : Zhao Y, Hale L, Christakis DA. JAMA, 25 novembre 2026.",
+        "articleUrl": "article-daily-ados-reseaux-20261126.html",
+        "source": "Zhao Y, Hale L, Christakis DA. JAMA, 25 novembre 2026.",
+        "sourceLabel": "Zhao Y, Hale L, Christakis DA. JAMA, 25 novembre 2026.",
+        "sourceUrl": "https://doi.org/10.1001/jama.2026.22864",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-gonococcie-20261126",
+        "category": "À LIRE EN 3 MIN",
+        "icon": "•",
+        "title": "Gonococcie : pourra-t-on bientôt disposer de davantage de traitements par voie orale ?",
+        "excerpt": "L'OMS vient de recommander, sous certaines conditions, un nouvel antibiotique oral contre cette infection sexuellement transmissible.",
+        "body": "Gonococcie : pourra-t-on bientôt disposer de davantage de traitements par voie orale ?\n\n Réponse courte : L'OMS vient de recommander, sous certaines conditions, un nouvel antibiotique oral contre cette infection sexuellement transmissible.\n\n La zoliflodacine constitue une option supplémentaire pour certaines infections génito-urinaires non compliquées.\n\n Cette avancée est importante dans un contexte de résistances bactériennes croissantes.\n\n La ceftriaxone injectable demeure néanmoins le traitement de première intention recommandé par l'OMS. Le nouveau médicament ne concerne pas toutes les localisations de l'infection et n'est pas recommandé pendant la grossesse.\n\n En pratique : le dépistage, le traitement adapté et la prise en charge des partenaires restent essentiels. Cette recommandation internationale ne signifie pas une disponibilité immédiate du traitement en France.\n\n Source : OMS, 25 novembre 2026",
+        "articleUrl": "article-daily-gonococcie-20261126.html",
+        "source": "OMS, 25 novembre 2026",
+        "sourceLabel": "OMS, 25 novembre 2026",
+        "sourceUrl": "https://www.who.int/news/item/25-11-2026-who-recommends-new-oral-treatment-option-for-gonorrhoea-and-reports-new-data-on-antimicrobial-resistance",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-grossesse-medicaments-20261126",
+        "category": "À LIRE EN 3 MIN",
+        "icon": "•",
+        "title": "Grossesse et médicaments : pourquoi manque-t-on encore de données scientifiques ?",
+        "excerpt": "Les femmes enceintes et allaitantes ont longtemps été insuffisamment représentées dans les essais cliniques.",
+        "body": "Grossesse et médicaments : pourquoi manque-t-on encore de données scientifiques ?\n\n Réponse courte : Les femmes enceintes et allaitantes ont longtemps été insuffisamment représentées dans les essais cliniques.\n\n Cette situation complique parfois l'évaluation des bénéfices et des risques de certains traitements.\n\n L'OMS vient de lancer une plateforme destinée à faciliter leur inclusion dans la recherche médicale, dans des conditions éthiques et sécurisées.\n\n L'objectif est de disposer de données plus fiables concernant les médicaments, les vaccins et les autres traitements utilisés pendant la grossesse et l'allaitement.\n\n En pratique : une femme enceinte ne doit pas interrompre seule un traitement indispensable. Une évaluation individualisée avec un professionnel de santé reste nécessaire.\n\n Source : OMS, 24 novembre 2026",
+        "articleUrl": "article-daily-grossesse-medicaments-20261126.html",
+        "source": "OMS, 24 novembre 2026",
+        "sourceLabel": "OMS, 24 novembre 2026",
+        "sourceUrl": "https://www.who.int/news/item/24-11-2026-advancing-the-timely-and-ethical-inclusion-of-pregnant-and-lactating-women-in-clinical-trials",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-collagene-20261126",
+        "category": "FICHE DU JOUR",
+        "icon": "•",
+        "title": "Le collagène peut-il soulager les douleurs articulaires ?",
+        "excerpt": "Certaines études suggèrent une diminution modeste des douleurs, particulièrement dans l'arthrose du genou.",
+        "body": "Le collagène peut-il soulager les douleurs articulaires ?\n\n Certaines études suggèrent une diminution modeste des douleurs, particulièrement dans l'arthrose du genou.\n\n Cependant, tous les compléments alimentaires ne se valent pas et il n'est pas démontré que le collagène permette de reconstruire le cartilage.\n\n L'activité physique adaptée et le renforcement musculaire restent des éléments essentiels du traitement de l'arthrose.\n\n Source : Lire la fiche MACASANTÉ",
+        "articleUrl": "article-daily-collagene-20261126.html",
+        "corpusId": "collagene-douleurs-articulaires",
+        "source": "Lire la fiche MACASANTÉ",
+        "sourceLabel": "Lire la fiche MACASANTÉ",
+        "sourceUrl": "https://macasante.fr/fiche.html?id=collagene-douleurs-articulaires",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-gels-arthrose-20261126",
+        "category": "VRAI OU FAUX",
+        "icon": "•",
+        "title": "Les gels anti-inflammatoires sont-ils efficaces contre l'arthrose du genou ?",
+        "excerpt": "VRAI ! Les anti-inflammatoires locaux peuvent réduire les douleurs liées à l'arthrose du genou.",
+        "body": "Les gels anti-inflammatoires sont-ils efficaces contre l'arthrose du genou ?\n\n VRAI ! Les anti-inflammatoires locaux peuvent réduire les douleurs liées à l'arthrose du genou.\n\n Leur passage dans le sang est généralement inférieur à celui des anti-inflammatoires pris par voie orale, mais leur utilisation n'est pas dépourvue de risques.\n\n Ils soulagent la douleur, mais ne réparent pas le cartilage. \n\n Source : NICE NG226, 2022",
+        "articleUrl": "article-daily-gels-arthrose-20261126.html",
+        "source": "NICE NG226, 2022",
+        "sourceLabel": "NICE NG226, 2022",
+        "sourceUrl": "https://www.nice.org.uk/guidance/ng226/chapter/Recommendations",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-gonococcie-chiffre-20261126",
+        "category": "LE CHIFFRE DU JOUR",
+        "icon": "•",
+        "title": "82,4 millions",
+        "excerpt": "De nouvelles infections gonococciques estimées chez les adultes dans le monde en 2020.",
+        "body": "82,4 millions\n\n De nouvelles infections gonococciques estimées chez les adultes dans le monde en 2020.\n\n Estimation mondiale rappelée par l'OMS le 25 novembre 2026.\n\n Cette infection sexuellement transmissible est curable, mais l'apparition de résistances aux antibiotiques représente une difficulté croissante.\n\n Le dépistage et la prévention restent indispensables, notamment parce que l'infection peut passer inaperçue.\n\n Source : OMS, communiqué du 25 novembre 2026",
+        "articleUrl": "article-daily-gonococcie-chiffre-20261126.html",
+        "source": "OMS, communiqué du 25 novembre 2026",
+        "sourceLabel": "OMS, communiqué du 25 novembre 2026",
+        "sourceUrl": "https://www.who.int/news/item/25-11-2026-who-recommends-new-oral-treatment-option-for-gonorrhoea-and-reports-new-data-on-antimicrobial-resistance",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-ia-resumes-20261126",
+        "category": "DONNÉES",
+        "icon": "•",
+        "title": "Intelligence artificielle : comment contrôler les résumés médicaux automatisés ?",
+        "excerpt": "Des chercheurs de l'université du Wisconsin ont développé un outil destiné à repérer les erreurs dans les résumés de dossiers médicaux générés par l'intelligence artificielle.",
+        "body": "Intelligence artificielle : comment contrôler les résumés médicaux automatisés ?\n\n Des chercheurs de l'université du Wisconsin ont développé un outil destiné à repérer les erreurs dans les résumés de dossiers médicaux générés par l'intelligence artificielle.\n\n Cette démarche rappelle l'importance du contrôle de qualité avant toute utilisation clinique. Les performances détaillées n'ont pas été vérifiées.\n\n Source : University of Wisconsin, 25 novembre 2026",
+        "articleUrl": "article-daily-ia-resumes-20261126.html",
+        "source": "University of Wisconsin, 25 novembre 2026",
+        "sourceLabel": "University of Wisconsin, 25 novembre 2026",
+        "sourceUrl": "https://www.med.wisc.edu/news/uw-researchers-build-ai-judge-to-grade-ai-written-patient-summaries/",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-reanimation-teach-20261126",
+        "category": "DONNÉES",
+        "icon": "•",
+        "title": "Réanimation : améliorer la coordination des soins grâce à la télémédecine",
+        "excerpt": "L'essai randomisé TEACH étudie l'apport de la télémédecine dans la coordination des procédures visant à faciliter le réveil et la reprise de la respiration spontanée chez les patients sous ventilation mécanique.",
+        "body": "Réanimation : améliorer la coordination des soins grâce à la télémédecine\n\n L'essai randomisé TEACH étudie l'apport de la télémédecine dans la coordination des procédures visant à faciliter le réveil et la reprise de la respiration spontanée chez les patients sous ventilation mécanique.\n\n Aucun résultat chiffré n'est avancé sans vérification complémentaire.\n\n Source : Grissom et al., JAMA, 25 novembre 2026",
+        "articleUrl": "article-daily-reanimation-teach-20261126.html",
+        "source": "Grissom et al., JAMA, 25 novembre 2026",
+        "sourceLabel": "Grissom et al., JAMA, 25 novembre 2026",
+        "sourceUrl": "https://doi.org/10.1001/jama.2026.25197",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "daily-lepre-20261126",
+        "category": "DONNÉES",
+        "icon": "•",
+        "title": "Maladies infectieuses : renforcer la recherche sur la lèpre",
+        "excerpt": "L'OMS annonce la création en Chine de son premier centre collaborateur spécifiquement consacré à la lèpre, afin de renforcer les efforts scientifiques et sanitaires autour de cette maladie.",
+        "body": "Maladies infectieuses : renforcer la recherche sur la lèpre\n\n L'OMS annonce la création en Chine de son premier centre collaborateur spécifiquement consacré à la lèpre, afin de renforcer les efforts scientifiques et sanitaires autour de cette maladie.\n\n Source : OMS, 26 novembre 2026 .",
+        "articleUrl": "article-daily-lepre-20261126.html",
+        "source": "OMS, 26 novembre 2026",
+        "sourceLabel": "OMS, 26 novembre 2026",
+        "sourceUrl": "https://www.who.int/australia/news/detail/26-11-2026-launch-of-who-s-first-ever-collaborating-centre-on-leprosy-in-china",
+        "image": "",
+        "imageAlt": ""
+      }
+    ]
   }
 ];

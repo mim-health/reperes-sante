@@ -1,12 +1,66 @@
 {
   "schemaVersion": 1,
-  "editionId": "edition-2026-11-26",
-  "editionDate": "2026-11-26",
-  "sourceFingerprint": "6a59e26ea47eff62d950ff04c74f631566c664d170a0f694e8ba43b5f99874c9",
-  "missingEdition": true,
+  "editionId": "edition-2026-11-27",
+  "editionDate": "2026-11-27",
+  "sourceFingerprint": "6a63e8eeae2af0cd93306315716a077e67d851214f08bbc889f0c56df27b7e26",
+  "missingEdition": false,
   "site": "prepared",
   "assistant": "pending",
   "eligible": [
+    {
+      "id": "mag-daily-automesure-tension-20261127",
+      "version": "54063ad5195ae17cae2b5688f922fb349a052b0d8cec0be89f16ba1b238b5e38",
+      "url": "article-daily-automesure-tension-20261127.html",
+      "date": "2026-11-27"
+    },
+    {
+      "id": "mag-daily-insomnie-20261127",
+      "version": "4578bb3bc99fbf5e59c4f5e4551b91bfe1427e1c552946ebc5d31e12e23463d4",
+      "url": "article-daily-insomnie-20261127.html",
+      "date": "2026-11-27"
+    },
+    {
+      "id": "mag-daily-chutes-20261127",
+      "version": "77e3abf0f693d5fb288edf7e10a594e43754bf8fa382b7eeee5450d95b820419",
+      "url": "article-daily-chutes-20261127.html",
+      "date": "2026-11-27"
+    },
+    {
+      "id": "mag-daily-sel-20261127",
+      "version": "9b292e9f6c33a8bb15818e3c449ce8a40a0b4311370eee3536afc858ecb5d99c",
+      "url": "article-daily-sel-20261127.html",
+      "date": "2026-11-27"
+    },
+    {
+      "id": "mag-daily-renforcement-20261127",
+      "version": "568da3fdcf0439635b1e7c75acd3378ea6a93acee704af9436deb6a334d82a3a",
+      "url": "article-daily-renforcement-20261127.html",
+      "date": "2026-11-27"
+    },
+    {
+      "id": "mag-daily-audition-chiffre-20261127",
+      "version": "fa37b875cdff57f49aa52b30422adde0c1ff84fcff96a5bb186a8d6797100eb6",
+      "url": "article-daily-audition-chiffre-20261127.html",
+      "date": "2026-11-27"
+    },
+    {
+      "id": "mag-daily-orthostatisme-20261127",
+      "version": "27fc44d9c06057621cb8d1af35dc889b277c6783f60907ea5b092d1420871a27",
+      "url": "article-daily-orthostatisme-20261127.html",
+      "date": "2026-11-27"
+    },
+    {
+      "id": "mag-daily-activite-courte-20261127",
+      "version": "252882a4360de50c4e0365977eb2c5ab20d8c2c3ccbd228f7fda86f71ca53b18",
+      "url": "article-daily-activite-courte-20261127.html",
+      "date": "2026-11-27"
+    },
+    {
+      "id": "mag-daily-audition-2050-20261127",
+      "version": "df75495971b6d96313a6ac2d0b04d920e71063b38a364e12ebf23f36acdd0202",
+      "url": "article-daily-audition-2050-20261127.html",
+      "date": "2026-11-27"
+    },
     {
       "id": "mag-daily-hydrocephalie-20261126",
       "version": "166d19c662f66a74406b82d2e961e85c945f4a4ae425c0d2a81642e63b1f2b68",

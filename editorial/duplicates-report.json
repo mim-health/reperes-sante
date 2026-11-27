@@ -187,6 +187,19 @@
     },
     {
       "left": {
+        "id": "chutes",
+        "title": "Chutes après 65 ans : comment réduire le risque ?",
+        "type": "fiche"
+      },
+      "right": {
+        "id": "daily-chutes-20261127",
+        "title": "Après 65 ans, peut-on réellement réduire son risque de chute ?",
+        "type": "Mag"
+      },
+      "score": 0.57
+    },
+    {
+      "left": {
         "id": "mammographie-40-ans",
         "title": "J’ai 40 ans : dois-je déjà faire une mammographie ?",
         "type": "fiche"
@@ -538,6 +551,19 @@
     },
     {
       "left": {
+        "id": "arthrose-faut-il-bouger",
+        "title": "J'ai de l'arthrose : faut-il continuer à bouger ?",
+        "type": "fiche"
+      },
+      "right": {
+        "id": "daily-arthrose-bouger-20261127",
+        "title": "Arthrose : faut-il continuer à bouger malgré les douleurs ?",
+        "type": "Mag"
+      },
+      "score": 0.6
+    },
+    {
+      "left": {
         "id": "collagene-douleurs-articulaires",
         "title": "Le collagène peut-il vraiment soulager les douleurs articulaires ?",
         "type": "fiche"
@@ -619,6 +645,6 @@
     "manifestFiles": 159,
     "rawFiches": 451,
     "canonicalFiches": 428,
-    "magContents": 338
+    "magContents": 348
   }
 }
